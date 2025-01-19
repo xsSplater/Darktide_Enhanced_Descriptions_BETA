@@ -31,9 +31,9 @@ local TALENTS_File = mod:get("enable_talents_file") and mod:io_dofile("Enhanced_
 	--[+ PENANCES +]--
 -- local PENANCES_File = mod:get("enable_penances_file") and mod:io_dofile("Enhanced_descriptions/PENANCES") or {}
 	--[+ NAMES +]--
--- local NAMES_File = mod:get("enable_names_file") and mod:io_dofile("Enhanced_descriptions/NAMES_Enemies_Weapons") or {}
+local NAMES_File = mod:get("enable_names_file") and mod:io_dofile("Enhanced_descriptions/NAMES_Enemies_Weapons") or {}
 	--[+ NAMES Talents and Blessings +]--
--- local NAMES_Talents_Blessings_File = mod:get("enable_names_tal_bless_file") and mod:io_dofile("Enhanced_descriptions/NAMES_Talents_Blessings") or {}
+local NAMES_Talents_Blessings_File = mod:get("enable_names_tal_bless_file") and mod:io_dofile("Enhanced_descriptions/NAMES_Talents_Blessings") or {}
 
 
 
@@ -74,9 +74,9 @@ else
 	TALENTS_Enh_desc_nodes = mod:io_dofile("Enhanced_descriptions/NULL/TALENTS_Enh_desc_nodes_null")
 end
 
+
+
 			-- ============ DO NOT DO ANYTHING BELOW! ============ --
-
-
 
 --[+ Custom unpack function +]--
 	local function custom_unpack(...)
@@ -92,16 +92,18 @@ end
 
 -- FOR TESTS ONLY!!!
 --[+ Function to create a localization template +]--
-local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end
+local function create_template(id, loc_keys, locales, handle_func)
+	return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
+end
 -- FOR TESTS ONLY!!!
 
 mod.localization_templates = {
-	--[+ Add templates loaded from the files: CURIOS_Blessings_Perks.lua, TALENTS.lua, WEAPONS_Blessings_Perks.lua +]--
-	custom_unpack(MENUS_File, CURIOS_File, TALENTS_File, WEAPONS_File),
+	--[+ Add templates loaded from the files... +]--
 	-- custom_unpack(MENUS_File, CURIOS_File, TALENTS_File, WEAPONS_File, PENANCES_File, NAMES_File, NAMES_Talents_Blessings_File),
+	custom_unpack(MENUS_File, CURIOS_File, TALENTS_File, WEAPONS_File, NAMES_File, NAMES_Talents_Blessings_File),
 
 -- FOR TESTS ONLY!!!
--- create_template("weap_testum00", {""}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
+-- create_template("weap_testum00", {"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"ru"}, function(locale, value) return string.gsub(value, "{", "(") end),
 -- FOR TESTS ONLY!!!
 }
 

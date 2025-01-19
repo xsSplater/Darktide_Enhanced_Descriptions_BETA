@@ -12,10 +12,10 @@ local iu_actit = InputUtils.apply_color_to_input_text
 -- Extended descriptions have a lower priority than the main description, imho.
 
 -- If you added/changed something, then you need to duplicate/change the same entry in the list below.
--- For example, you change "ED_VET_Blitz_0_rgb" to "ED_VET_Blitz_0_rgb_urlang", then at the bottom you need to find (CTRL+F) the "ED_VET_Blitz_0_rgb" entries and also rename them from "ED_VET_Blitz_0_rgb = ED_VET_Blitz_0_rgb," to "ED_VET_Blitz_0_rgb_urlang = ED_VET_Blitz_0_rgb_urlang,".
--- If you add a new entry (ex. MyEntry_rgb), just duplicate it in the list below (MyEntry_rgb = MyEntry_rgb,).
+-- For example, you change "ED_VET_Blitz_0_rgb_ru" to "ED_VET_Blitz_0_rgb_ru_urlang", then at the bottom you need to find (CTRL+F) the "ED_VET_Blitz_0_rgb_ru" entries and also rename them from "ED_VET_Blitz_0_rgb_ru = ED_VET_Blitz_0_rgb_ru," to "ED_VET_Blitz_0_rgb_ru_urlang = ED_VET_Blitz_0_rgb_ru_urlang,".
+-- If you add a new entry (ex. MyEntry_rgb_ru), just duplicate it in the list below (MyEntry_rgb_ru = MyEntry_rgb_ru,).
 
-local ppp___ppp = "\n+++-------------------------------------------------+++"
+local ppp______ppp = "\n+++-------------------------------------------------+++"
 local become_invis_drop_all_enemy_aggro = "- Become Invisible dropping all enemy aggro: Melee enemies reaggro immediately to another target if possible, firing Ranged enemies stop shooting, then reaggro if possible."
 local can_be_refr_dur_active_dur = "- Can be refreshed during active duration."
 local doesnt_interact_w_c_a_r_from_curio = "- Does not interact with Combat Ability Regeneration from Curios which only reduces the Maximum cooldown of a Combat Ability."
@@ -35,8 +35,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ ++VETERAN++ +]--
 --[+ +BLITZ+ +]--
 	--[+ Blitz 0 - Frag Grenade +]--
-	local ED_VET_Blitz_0_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Blitz_0_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		-- "- Fuse time: 1.7 seconds.",
 		"- Explosion radius: 10 meters (max), 2 meters (epicenter).",
 		"- Explosion Damage:",
@@ -50,8 +50,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 1 - Frag Grenade +]--
-	local ED_VET_Blitz_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Blitz_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		-- "- Fuse time: 1.7 seconds.",
 		"- Explosion radius: 10 meters (max), 2 meters (epicenter).",
 		"- Explosion Damage:",
@@ -72,8 +72,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 2 - Krak Grenade +]--
-	local ED_VET_Blitz_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Blitz_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Explosion radius: 1.5 meters (epicenter), 5 meters (max).",
 		"- Explosion damage:",
 		"-- Enemies inside epicenter will take more Damage, enemies between epicenter and Max radius will take less Damage depending on distance, enemies that the grenade sticks to always take epicenter damage.",
@@ -90,8 +90,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3 - Smoke Grenade +]--
-	local ED_VET_Blitz_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Blitz_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		-- "- Initial explosion deals no Damage and very light Stagger, 10m radius",
 		"- Smoke cloud effect:",
 		"-- Radius: 5.5 meters.",
@@ -107,37 +107,37 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 --[+ +AURA+ +]--
 	--[+ Aura 0 - Scavenger +]--
-	local ED_VET_Aura_0_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Aura_0_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		doesnt_stack_w_z_same_aura_vet..", multiple Veterans spread their replenished ammo amounts separately.",
 		-- "- For example, with a weapon that has 180 bullets max ammo in reserve: On the first proc, Veteran regains 180x0.01=1.8 bullets which is rounded down to 1; the leftover amount of 1.8-1=0.8 is carried over to the next proc. On the second proc, Veteran regains 180x0.01+0.8=2.6 bullets which is rounded down to 2; the leftover amount of 2.6-2=0.6 is once again carried over to the next proc, and so on. This means, in this case, Veteran gets 1 bullet on the first proc, 2 bullets on the next four procs, and then 1 bullet again on the fifth proc, and so on.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 1 - Survivalist +]--
-	local ED_VET_Aura_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Aura_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		doesnt_stack_w_z_same_aura_vet..", multiple Veterans spread their replenished ammo amounts separately.",
 		"- For example, with a weapon that has 180 bullets max ammo in reserve: On the first proc, Veteran regains 180x0.01=1.8 bullets which is rounded down to 1; the leftover amount of 1.8-1=0.8 is carried over to the next proc. On the second proc, Veteran regains 180x0.01+0.8=2.6 bullets which is rounded down to 2; the leftover amount of 2.6-2=0.6 is once again carried over to the next proc, and so on. This means, in this case, Veteran gets 1 bullet on the first proc, 2 bullets on the next four procs, and then 1 bullet again on the fifth proc, and so on.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Fire Team +]--
-	local ED_VET_Aura_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Aura_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		stacks_add_w_oth_dmg,
 		doesnt_stack_w_z_same_aura_vet..".",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 3 - Close and Kill +]--
-	local ED_VET_Aura_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Aura_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with Movement Speed buffs from \"Infiltrate\", \"Leave No One Behind\", the small Movement Speed node, and Weapon Blessings like \"Rev it Up\".",
 		doesnt_stack_w_z_same_aura_vet..".",
 	}, "\n"), enhdesc_col)
 
 --[+ +ABILITIES+ +]--
 	--[+ Ability 0 - Volley Fire +]--
-	local ED_VET_Ability_0_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_0_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases both Ranged Damage and Ranged Weakspot Damage by 15%.",
 		"- Stacks additively with related Damage buffs.",
 		"- Increases Ranged Stagger strength by 50%.",
@@ -154,8 +154,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1 - Executioner's Stance +]--
-	local ED_VET_Ability_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Grants a plethora of buffs to Veteran:",
 		"-- Immunity to Stuns and Slowdowns from both Melee and Ranged attacks, and Immunity to Suppression.",
 		"-- Veteran's attack actions cannot be interrupted as part of hit reactions.",
@@ -168,28 +168,28 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-1 - Enhanced Target Priority +]--
-	local ED_VET_Ability_1_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_1_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Outlines visible to Allies always last 5 seconds.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-2 - Counter-Fire +]--
-	-- local ED_VET_Ability_1_2_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	-- local ED_VET_Ability_1_2_rgb_ru = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
 	--[+ Ability 1-3 - The Bigger they Are... +]--
-	-- local ED_VET_Ability_1_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	-- local ED_VET_Ability_1_3_rgb_ru = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
 	--[+ Ability 1-4 - Marksman +]--
-	local ED_VET_Ability_1_4_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_1_4_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with other Power level buffs from Weapon Blessings, and multiplicatively with Damage buffs.",
 		"- \"Power level buffs\" increase the Base Power of attacks which benefits Damage, Stagger, and Cleave (where applicable).",
 		"- For \"Infiltrate\", the buff is active immediately, only the duration starts when invisibility ends.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2 - Voice of Command +]--
-	local ED_VET_Ability_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Sets Veteran's Toughness to 100% upon activation.",
 		"- Shout:",
 		"-- Holding the Ability button shows shout range; preview can be block canceled.",
@@ -203,8 +203,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-1 - Duty and Honour +]--
-	local ED_VET_Ability_2_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_2_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- For Veteran, Voice of Command adds 50 bonus Toughness (yellow), additionally to setting Veteran's Toughness to 100% upon activation.",
 		"- For allies who are in coherency with Veteran, Voice of Command adds 50 Toughness upon activation if their Toughness is below 100%.",
 		"- If their Toughness is at or above 100%, Voice of Command adds 50 bonus Toughness (yellow) to Allies.",
@@ -215,8 +215,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-2 - Only In Death Does Duty End +]--
-	local ED_VET_Ability_2_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_2_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- The Revive effect ignores map geometry.",
 		"- Reduces Voice of Command's radius from 9 to 6.03 meters.",
 		"- Allies who are not in this Radius do not get revived regardless of whether they are in Coherency with Veteran or not.",
@@ -226,16 +226,16 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-3 - For the Emperor! +]--
-	local ED_VET_Ability_2_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_2_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Allies get the buff as long as they are in Coherency when the buff is triggered.",
 		"- Stacks additively with the same Talent of another Veteran and with other Damage buffs.",
 		"- Multiplicatively with Power level buffs from Weapon Blessings.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3 - Infiltrate +]--
-	local ED_VET_Ability_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stealth: "..become_invis_drop_all_enemy_aggro,
 		"-- You can still take Damage during Invisibility.",
 		"-- Stealth breaks on: hitting enemies with a Melee attack, any Ranged attack, throwing a grenade (quickthrow, aimed or underhand), finishing a Rescue/Revive/Pull up/Free from net action.",
@@ -248,16 +248,16 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 
 	--[+ Ability 3-1 - Low Profile +]--
-	local ED_VET_Ability_3_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_3_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- When Invisibility ends, grants a weight multiplier for 10 seconds.",
 		"- There are multiple factors that are used to calculate the score which determines enemy target selection of player units.",
 		"- The tldr is that this Talent grants a multiplier which manipulates the score calculation in the player's favor to make it less likely to be targeted by enemies.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-2 - Overwatch +]--
-	local ED_VET_Ability_3_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_3_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- The Cooldown of the Second charge only starts after the First charge finished its Cooldown.",
 		"- Also increases Infiltrate's Maximum Cooldown from 45 to 59.85 seconds.",
 		"- This Max Cooldown increase Stacks additively with Max Cooldown Reductions from Psyker's aura \"Seer's Presence\", Combat Ability Regeneration from Curios, and the mission mutators that Reduce Ability Cooldowns by 20%.",
@@ -265,22 +265,22 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-3 - Hunter's Resolve +]--
-	local ED_VET_Ability_3_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_3_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- The 10 seconds duration starts when Invisibility ends.",
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-4 - Surprise Attack +]--
-	local ED_VET_Ability_3_4_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_3_4_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- The 5 seconds duration starts when Invisibility ends.",
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-5 - Close Quarters Killzone +]--
-	local ED_VET_Ability_3_5_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Ability_3_5_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- For \"Infiltrate\", the buff is active immediately, only the duration starts when Invisibility ends.",
 		"- Beyond 12.5 meters, the Damage buff decreases linearly until it loses its effect at 30 meters:",
 		"_______________________________",
@@ -292,8 +292,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 --[+ +KEYSTONES+ +]--
 	--[+ Keystone 1 - Marksman's Focus +]--
-	local ED_VET_Keystone_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Keystone_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Drops Stacks based on movement:",
 		"-- Walking removes 1 Stack per second.",
 		"-- Sprinting removes 1 Stack every 0.5 seconds.",
@@ -304,16 +304,16 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-1 - Chink in their Armour +]--
-	local ED_VET_Keystone_1_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Keystone_1_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- When at or above 10 Focus Stacks, grants 10% Rending to all attacks boosting Damage against armor types Carapace, Flak, Maniac, Unyielding (including Damage of explosions and DoTs).",
 		"- Only affects Veteran's own Damage.",
 		stacks_add_w_oth_rend_brit,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-2 - Tunnel Vision +]--
-	local ED_VET_Keystone_1_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_VET_Keystone_1_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- This Talent does two things:",
 		"-- 1. Per Focus Stack, increases the amount of any Toughness Replenished by Melee kills and Talents by 5% (up to +50% or, if \"Long Range Assassin\", up to +75%).",
 		"--- Does not apply to Coherency Toughness Regeneration.",
@@ -323,15 +323,15 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"--- Can proc multiple times when Cleaving.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-3 - Long Range Assassin +]--
-	-- local ED_VET_Keystone_1_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+    --[+ Keystone 1-3 - Long Range Assassin +]--
+	-- local ED_VET_Keystone_1_rgb_ru = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-4 - Camouflage +]--
-	-- local ED_VET_Keystone_1_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+    --[+ Keystone 1-4 - Camouflage +]--
+	-- local ED_VET_Keystone_1_rgb_ru = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
-	--[+ Keystone 2 - Focus Target! +]--
-	local ED_VET_Keystone_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 2 - Focus Target! +]--
+	local ED_VET_Keystone_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Upon Tagging an enemy, applies the amount of Focus Target Stacks currently held by Veteran to the enemy (always at least 1), and resets Veteran's Stack count to 1.",
 		"- Per applied Stack, increases any Damage taken by the Tagged enemy by 4%.",
 		"- This debuff lasts for the duration of the Tag (25 seconds) and can Stack up to 8 times on a single enemy.",
@@ -341,25 +341,25 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Multiple Veterans can overwrite each other's Tags unless there are already 8 Stacks on the enemy.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 2-1 - Target Down! +]--
-	local ED_VET_Keystone_2_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 2-1 - Target Down! +]--
+	local ED_VET_Keystone_2_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Up to 40% of Max Toughness/Stamina at 8 Stacks.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 2-2 - Redirect Fire! +]--
-	local ED_VET_Keystone_2_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 2-2 - Redirect Fire! +]--
+	local ED_VET_Keystone_2_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Up to 12% increased Damage at 8 Stacks.",
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 2-3 - Focused Fire +]--
-	-- local ED_VET_Keystone_2_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+    --[+ Keystone 2-3 - Focused Fire +]--
+	-- local ED_VET_Keystone_2_3_rgb_ru = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
-	--[+ Keystone 3 - Weapons Specialist +]--
-	local ED_VET_Keystone_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3 - Weapons Specialist +]--
+	local ED_VET_Keystone_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		-- "- Generally, whether a Stack is allocated to Ranged Specialist or Melee Specialist depends on which weapon is equipped when the enemy dies.",
 		-- "-- Kills by DoTs allocate Stacks accordingly.",
 		-- "-- Kills by DoTs while having other items equipped (Grenade, Medpack, Ammo crate, Books, etc) do not generate any Stacks.",
@@ -367,35 +367,35 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Melee Specialist Stacks additively with related buffs from \"Trench Fighter Drill\" and Celerity Stimm.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-1 - Always Prepared +]--
-	local ED_VET_Keystone_3_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3-1 - Always Prepared +]--
+	local ED_VET_Keystone_3_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- For example, Veteran with 6 Ranged Specialist Stacks and a weapon missing 36 bullets in its clip transfers 36x0.33x(6/10)=7.128 bullets which is rounded up to 8.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-2 - Invigorated +]--
-	local ED_VET_Keystone_3_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3-2 - Invigorated +]--
+	local ED_VET_Keystone_3_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Procs separately to the Stamina Replenishment from \"Duck and Dive\", \"Get Back in the Fight!\", and \"Target Down!\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-3 - On Your Toes +]--
-	local ED_VET_Keystone_3_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3-3 - On Your Toes +]--
+	local ED_VET_Keystone_3_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Each replenishment has a 3 seconds internal Cooldown that is tracked separately.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-4 - Fleeting Fire +]--
-	local ED_VET_Keystone_3_4_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3-4 - Fleeting Fire +]--
+	local ED_VET_Keystone_3_4_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with buffs from \"Marksman's Focus\", \"Tactical Reload\", \"Volley Adept\", the small Reload Speed node, Weapon Perks, Weapon Blessings, and Celerity Stimm.",
 		this_also_incr_speed_load_com_shotg,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-5 - Conditioning +]--
-	local ED_VET_Keystone_3_5_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3-5 - Conditioning +]--
+	local ED_VET_Keystone_3_5_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks multiplicatively with the Stamina Cost Reduction buff from Celerity Stimm:",
 		"-- 1. Reduces Stamina drain while Sprinting.",
 		"--- Stacks multiplicatively with the Sprint Cost Reduction buff from Celerity Stimm and Sprint Efficiency perk on Curios, Ranged and Melee weapons.",
@@ -405,9 +405,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 --[+ +PASSIVES+ +]--
-	--[+ Passive 1 - Longshot +]--
-	local ED_VET_Passive_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 1 - Longshot +]--
+	local ED_VET_Passive_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases any Damage against enemies beyond 12.5 meters.",
 		"- The Damage buff increases linearly up to 20% at 30 meters. Within 12.5 meters distance, the Talent has no effect:",
 		"_______________________________",
@@ -417,25 +417,25 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- This also increases the Damage of explosions and DoTs as long as Veteran stays more than 12.5 meters away from the enemy.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 2 - Close Order Drill +]--
-	local ED_VET_Passive_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 2 - Close Order Drill +]--
+	local ED_VET_Passive_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		-- "- Reduces Toughness Damage taken by 11% per Ally in Coherency.",
 		-- "- Stacks linearly with itself (i.e. 2 Allies = 22%, 3 = 33% Toughness Damage Reduction).",
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 3 - One Motion +]--
-	local ED_VET_Passive_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 3 - One Motion +]--
+	local ED_VET_Passive_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases Wield Speed by 25%.",
 		"- This Reduces the time of Wielding actions when Swapping item slots (Weapons, Grenades, Stimms, Med packs, Ammo crates, Books, etc).",
 		"- For example, when switching to Boltgun or Helbore Lasguns, it takes 1.5 seconds (left-click) or 1.25 seconds (alt fire) until the Shooting/Charging actions can be started. These times are reduced by the Talent to 1.2 seconds and 1 second respectively. For other Weapons, this Talent does not provide significant wield time Reductions.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 4 - Exhilarating Takedown +]--
-	local ED_VET_Passive_4_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 4 - Exhilarating Takedown +]--
+	local ED_VET_Passive_4_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Killing enemies with Ranged Weakspot hits does two things:",
 		"-- 1. Replenishes 15% of Maximum Toughness.",
 		"--- Can proc multiple times per shot when Cleaving.",
@@ -446,23 +446,23 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"--- Stacks multiplicatively with itself, up to 27.1% at Max Stacks (1-0.9³=0.271), and with other Damage Reduction buffs.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 5 - Volley Adept +]--
-	local ED_VET_Passive_5_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 5 - Volley Adept +]--
+	local ED_VET_Passive_5_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- The buff is held until consumed upon Reloading.",
 		"- Stacks additively with Reload Speed buffs from \"Fleeting Fire\", \"Marksman's Focus\", \"Tactical Reload\", the small Reload Speed node, Weapon Perks, Weapon Blessings, and Celerity Stimm.",
 		this_also_incr_speed_load_com_shotg,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 6 - Charismatic +]--
-	local ED_VET_Passive_6_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 6 - Charismatic +]--
+	local ED_VET_Passive_6_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"Increases Veteran's Base Coherency radius from 8 meters to 12 meters.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 7 - Confirmed Kill +]--
-	local ED_VET_Passive_7_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 7 - Confirmed Kill +]--
+	local ED_VET_Passive_7_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Killing an Elite or a Special does two things:",
 		"-- 1. Immediately Replenishes 10% of Maximum Toughness per kill.",
 		"--- Can proc multiple times when Cleaving.",
@@ -471,40 +471,40 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 8 - Tactical Reload +]--
-	local ED_VET_Passive_8_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 8 - Tactical Reload +]--
+	local ED_VET_Passive_8_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases Reload animation Speed by 25% if the current ammo count in clip is above 0 when Reloading.",
 		"- Stacks additively with Reload Speed buffs from \"Fleeting Fire\", \"Marksman's Focus\", \"Volley Adept\", the small Reload Speed node, Weapon Perks, Weapon Blessings, and Celerity Stimm.",
 		this_also_incr_speed_load_com_shotg,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 9 - Out for Blood +]--
-	local ED_VET_Passive_9_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 9 - Out for Blood +]--
+	local ED_VET_Passive_9_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Procs on Melee and Ranged kills as well as on kills from explosions.",
 		"- Procs additionally to Weapon Blessings like \"Inspiring Barrage\", \"Reassuringly Accurate\", \"Gloryhunter\".",
 		"- When the Talent procs on a Melee kill, it replenishes 5% of Max Toughness additionally to Veteran's base 5% of Max Toughness gained on Melee kill.",
 		"- For example, killing 3 enemies with a Melee attack with 184 Max Toughness, Veteran would replenish 184x(0.15+0.15)=55.2 Toughness (HUD rounds: 56).",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 10 - Get Back in the Fight! +]--
-	local ED_VET_Passive_10_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 10 - Get Back in the Fight! +]--
+	local ED_VET_Passive_10_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Lets Veteran move through Fire patches without hindrance.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 11 - Catch a Breath +]--
-	local ED_VET_Passive_11_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 11 - Catch a Breath +]--
+	local ED_VET_Passive_11_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		z_eff_of_this_tougn_rep,
 		"- The proximity check ignores map geometry.",
 		"- Does not interact with Coherency Toughness.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 12 - Grenade Tinkerer +]--
-	local ED_VET_Passive_12_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 12 - Grenade Tinkerer +]--
+	local ED_VET_Passive_12_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Frag Grenade:",
 		"-- Does not affect Bleeds applied by the explosion.",
 		"- Increases the radii of its epicenter and Max Range to 2.5 meters and 12.5 meters respectively.",
@@ -513,17 +513,17 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- The grenade Damage buffs Stack additively with Damage buffs from \"Bring it Down!\", \"Close Quarters Killzone\" (if within 30 meters to the enemy), \"Competitive Urge\", \"Covering Fire\" (if applied to Veteran by another Veteran), \"Longshot\" (if not within 12.5 meters to the enemy), \"Redirect Fire!\", \"Skirmisher\", \"Superiority Complex\" (against Elites ), \"Surprise Attack\", and aura \"Fire Team\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 13 - Covering Fire +]--
-	local ED_VET_Passive_13_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 13 - Covering Fire +]--
+	local ED_VET_Passive_13_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Damage increase can be refreshed during active duration.",
 		stacks_add_w_oth_dmg,
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 14 - Serrated Blade +]--
-	local ED_VET_Passive_14_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 14 - Serrated Blade +]--
+	local ED_VET_Passive_14_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"Melee attacks (including Melee special actions of Ranged weapons) apply 1 Stack of Bleed to enemies.",
 		"- Up to 16 Max Bleed Stacks on a target.",
 		"- Can't apply Bleed through shields.",
@@ -535,56 +535,56 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"-- Above average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 15 - Agile Engagement +]--
-	local ED_VET_Passive_15_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 15 - Agile Engagement +]--
+	local ED_VET_Passive_15_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Active buff duration starts on the respective kill.",
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 16 - Kill Zone +]--
-	local ED_VET_Passive_16_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 16 - Kill Zone +]--
+	local ED_VET_Passive_16_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		stacks_add_w_oth_dmg,
 		"- The proximity check ignores map geometry.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 17 - Opening Salvo +]--
-	local ED_VET_Passive_17_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 17 - Opening Salvo +]--
+	local ED_VET_Passive_17_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"For example, with a weapon that has a clip size of 43 rounds, the additional Crit chance is granted for the first 9 rounds (i.e. as long as the current ammo in clip percentage is greater or equal to 0.8; 35/43=0.81 but 34/43=0.79).",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 18 - Field Improvisation +]--
-	local ED_VET_Passive_18_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 18 - Field Improvisation +]--
+	local ED_VET_Passive_18_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- This Talent upgrades all Ammo crates and Med packs deployed by any player as long as Veteran is alive.",
 		"- Note that the Healing effect is always actively 'fighting' against the initial grimoire_chunk of 40 base Corruption Damage per book. But since this chunk cannot be removed, this can Quickly Drain a Med pack's limited reserve of 500 Health.",
 		"- To a minor extent, this also applies to players who are Downed within the Med pack's 3 meters radius: Despite the consumption of the Health reserve being reduced by 70% when healing a Downed player (the amount of Health restored to a Downed player is also reduced by 90%), the Med pack still can drain fairly quickly. ",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 19 - Twinned Blast +]--
-	local ED_VET_Passive_19_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 19 - Twinned Blast +]--
+	local ED_VET_Passive_19_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Does not interact with the \"Enhanced Blitz\" difficulty mutator.",
 		"- The twinned grenade's fuse time is increased by 0.3 seconds.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 20 - Demolition Stockpile +]--
-	local ED_VET_Passive_20_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 20 - Demolition Stockpile +]--
+	local ED_VET_Passive_20_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Does not interact with the \"Enhanced Blitz\" difficulty mutator.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 21 - Grenadier +]--
-	local ED_VET_Passive_21_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 21 - Grenadier +]--
+	local ED_VET_Passive_21_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with the \"Enhanced Blitz\" difficulty mutator that adds another 2 grenades to Veteran's maximum grenade capacity.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 22 - Leave No One Behind +]--
-	local ED_VET_Passive_22_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 22 - Leave No One Behind +]--
+	local ED_VET_Passive_22_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		-- "This Talent does three things:",
 		"- Always grants Veteran 20% increased Interaction Speed when Reviving Knocked down Allies, when Pulling up them from ledges and Freeing from nets.",
 		"- The Revive speed buff Stacks additively with Revive Speed (Ally) from Curios.",
@@ -595,18 +595,18 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 23 - Precision Strikes +]--
-	local ED_VET_Passive_23_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 23 - Precision Strikes +]--
+	local ED_VET_Passive_23_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 24 - Determined +]--
-	-- local ED_VET_Passive_24_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+    --[+ Passive 24 - Determined +]--
+	-- local ED_VET_Passive_24_rgb_ru = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
-	--[+ Passive 25 - Deadshot +]--
-	local ED_VET_Passive_25_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 25 - Deadshot +]--
+	local ED_VET_Passive_25_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- These buffs Stack additively with respective buffs from \"Executioner's Stance\".",
 		"- The Spread Reduction also Stacks with the related buff from the  \"Run and Gun \" Weapon Blessing.",
 		"- The Recoil Reduction also Stacks with the related buff from the \"Powderburn\" Weapon Blessing.",
@@ -615,23 +615,23 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"{#color(255, 35, 5)}- Note that this Talent has no effect on Plasma Gun.{#reset()}",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 26 - Born Leader +]--
-	local ED_VET_Passive_26_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 26 - Born Leader +]--
+	local ED_VET_Passive_26_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- This is effect is always active, even if Veteran is at 100% Toughness, and considers all Toughness replenished by Talents, Weapon Blessings, and Coherency Regeneration.",
 		"- Does not Stack with the same Talent from another Veteran, each Veteran spreads their amounts separately.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 27 - Keep Their Heads Down! +]--
-	local ED_VET_Passive_27_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 27 - Keep Their Heads Down! +]--
+	local ED_VET_Passive_27_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with related buff from \"Competitive Urge\", the small Suppression node, and the Weapon Blessing \"Powderburn\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 28 - Reciprocity +]--
-	local ED_VET_Passive_28_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 28 - Reciprocity +]--
+	local ED_VET_Passive_28_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Successfully Dodging enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper) and Disabler attacks (Pox Hound jump, Trapper net, Mutant grab) grants Stacks (up to 5).",
 		"- Stacks last for 8 seconds and can be refreshed during active duration.",
 		-- "- Per stack, grants 5% additional crit chance to Melee and Ranged attacks.",
@@ -639,67 +639,67 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- \"The Ghost\", \"Hit and Run\" and \"Stripped Down\" Weapon Blessings can proc this Talent (only against Ranged attacks).",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 29 - Duck and Dive +]--
-	local ED_VET_Passive_29_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 29 - Duck and Dive +]--
+	local ED_VET_Passive_29_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Has an internal cooldown of 3 seconds.",
 		"- Procs on regular Dodges, Sliding Dodges, and Dodges while Sprint Dodging.",
 		"- Note that this Talent requires the character to have more than 0 Stamina.",
 		"- \"The Ghost\", \"Hit and Run\" and \"Stripped Down\" Weapon Blessings can also proc this Talent.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 30 - Fully Loaded +]--
-	local ED_VET_Passive_30_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 30 - Fully Loaded +]--
+	local ED_VET_Passive_30_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases Veteran's maximum Ammo in reserve by 25%.",
 		"- Rounds down.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 31 - Tactical Awareness +]--
-	local ED_VET_Passive_31_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 31 - Tactical Awareness +]--
+	local ED_VET_Passive_31_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		procs_add_conc_stim_rem_cd_red,
 		doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 32 - Desperado +]--
-	local ED_VET_Passive_32_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 32 - Desperado +]--
+	local ED_VET_Passive_32_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Also applies to Melee special actions of Ranged weapons.",
 		"- Crit chance Stacks additively with other sources of Crit chance.",
 		"- Finesse bonus Stacks additively with other Weakspot and Finesse Damage buffs, and multiplicatively with Power level buffs from Weapon Blessings.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 33 - Shock Trooper +]--
-	local ED_VET_Passive_33_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 33 - Shock Trooper +]--
+	local ED_VET_Passive_33_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- For Helbore Lasguns, Infantry Lasguns, Laspistols, and Recon Lasguns, allows every shooting action that Crits to not consume ammo.",
 		"- Weapons with guaranteed Crit sequences (Recon Lasguns) don't consume Ammo for any of the Critical shots.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 34 - Superiority Complex +]--
-	local ED_VET_Passive_34_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 34 - Superiority Complex +]--
+	local ED_VET_Passive_34_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 35 - Iron Will +]--
-	local ED_VET_Passive_35_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 35 - Iron Will +]--
+	local ED_VET_Passive_35_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		stacks_mult_w_other_dmg_red_buffs,
 		"- If Veteran has bonus Toughness (yellow) from \"Duty and Honour\" or Zealot's \"Chorus of Spiritual Fortitude\", the Talent considers the temporary new Maximum for its 75% threshold.",
 		"- For example, with 198 Max Toughness, the Talent will be active as long as Veteran is above 198x0.75=148.5 Toughness; however, with 50 bonus Toughness, the new temporary threshold is (198+50)x0.75=186 Toughness. This temporary threshold lasts until the duration of bonus Toughness expires.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 36 - Demolition Team +]--
-	local ED_VET_Passive_36_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 36 - Demolition Team +]--
+	local ED_VET_Passive_36_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Procs regardless whether Veteran is in Coherency with Allies or not.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 37 - Exploit Weakness +]--
-	local ED_VET_Passive_37_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 37 - Exploit Weakness +]--
+	local ED_VET_Passive_37_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Critical hits with Melee attacks apply a Brittleness debuff to enemies boosting Damage against armor types Carapace, Flak, Maniac, Unyielding (including Damage of explosions and DoTs).",
 		"- Can also be applied by Crit hits with Melee special actions of ranged weapons.",
 		"- Stacks additively with Rending buffs that only boost a character's own Damage.",
@@ -708,47 +708,47 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- It also Stacks additively with the other unique rending_burn_debuff from the \"Penetrating Flame\" Weapon Blessing.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 38 - Onslaught +]--
-	local ED_VET_Passive_38_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 38 - Onslaught +]--
+	local ED_VET_Passive_38_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Repeated Melee and Ranged hits against the same target apply a Brittleness debuff to enemies boosting Damage against armor types Carapace, Flak, Maniac, Unyielding (including damage of explosions and DoTs).",
 		"- Procs on the second hit against an enemy.",
 		"- Stacks additively with the unique Brittleness debuff from \"Exploit Weakness\", with other Brittleness debuffs, and with Rending buffs that only boost a character's own Damage.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 39 - Trench Fighter Drill +]--
-	local ED_VET_Passive_39_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 39 - Trench Fighter Drill +]--
+	local ED_VET_Passive_39_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with related buffs from \"Weapons Specialist\" and Celerity Stimm.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 40 - Skirmisher +]--
-	local ED_VET_Passive_40_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 40 - Skirmisher +]--
+	local ED_VET_Passive_40_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Every second spent sprinting grants Stacks (up to 5).",
 		"- Stacks can be refreshed during active duration.",
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 41 - Competitive Urge +]--
-	local ED_VET_Passive_41_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 41 - Competitive Urge +]--
+	local ED_VET_Passive_41_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		can_be_refr_dur_active_dur,
 		"- The Damage buff and Stagger buff stack additively with other related buffs, and multiplicatively with Power level buffs from Weapon Blessings.",
 		"- The Suppression buff Stacks additively with \"Keep Their Heads Down!\", the small Suppression node, and Weapon Blessing \"Powderburn\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 42 - Rending Strikes +]--
-	local ED_VET_Passive_42_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 42 - Rending Strikes +]--
+	local ED_VET_Passive_42_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Grants 10% Rending to all attacks boosting Damage against armor types Carapace, Flak, Maniac, Unyielding (including Damage of explosions and DoTs).",
 		"- Only affects Veteran's own Damage.",
 		stacks_add_w_oth_rend_brit,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 43 - Bring it Down! +]--
-	local ED_VET_Passive_43_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 43 - Bring it Down! +]--
+	local ED_VET_Passive_43_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases any Damage against enemies with the Ogryn tag (Bulwark, Crusher, Reaper) and against enemies with the Monster tag (Beast of Nurgle, Chaos Spawn, Daemonhost, Plague Ogryn).",
 		stacks_add_w_oth_dmg,
 		"- Does not buff Damage against Captains/Twins who do not have the Monster tag.",
@@ -756,9 +756,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 --[+ ++OGRYN++ +]--
 --[+ +BLITZ+ +]--
-	--[+ Blitz 0 - Big Box of Hurt +]--
-	local ED_OGR_Blitz_0_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Blitz 0 - Big Box of Hurt +]--
+	local ED_OGR_Blitz_0_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Impact damage:",
 		"-- 1850 base.",
 		"-- Slightly increased armor Damage modifier against Unyielding and very low armor Damage modifier against Carapace.",
@@ -769,9 +769,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "- Replenishes all boxes per Grenade pickup.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 1 - Big Friendly Rock +]--
-	local ED_OGR_Blitz_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Blitz 1 - Big Friendly Rock +]--
+	local ED_OGR_Blitz_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Impact damage:",
 		"-- 1200 base.",
 		"-- Slightly increased armor Damage modifier against Maniac.",
@@ -785,18 +785,18 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Doesn't Cleave but may bounce back a bit and Damage/Kill a second closest enemy.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 2 - Bombs Away! +]--
-	local ED_OGR_Blitz_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Blitz 2 - Bombs Away! +]--
+	local ED_OGR_Blitz_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Impact damage: 1850 base. Slightly increased armor Damage modifier against Unyielding and very low armor Damage modifier against Carapace. Has instakill overrides for: Gunners, Shotgunners, Dreg Rager, Mauler, Mutants, Pox Hounds, Poxburster, Corruptor. Direct impact Damage is increased by Rending/Brittleness, by \"Skullcrusher\" blessing (while Staggered), and by Damage buffs from \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Reload and Ready\", \"Soften Them Up\", \"Valuable Distraction\", and small Ranged Damage nodes",
 		-- "- Stagger: Deals high Stagger against all enemies, except for Monstrosities and Captains/Twins.",
 		-- "- Replenishes all boxes per Grenade pickup.",
 		"- Frag grenades: Grenade explosions have epicenter radius of 2 meters, Max Radius of 8 meters. Can Stagger all enemies inside epicenter radius, including Monstrosities and Captains/Twins (only without void shield).",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 3 - Frag Bomb +]--
-	local ED_OGR_Blitz_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Blitz 3 - Frag Bomb +]--
+	local ED_OGR_Blitz_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Fuse time: 2 seconds.",
 		"- Explosion radius:",
 		"-- 2 meters (epicenter), 16 meters (max).",
@@ -808,39 +808,39 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Deals high Stagger against all enemies including Monstrosities, Captains/Twins (only without void shield).",
 	}, "\n"), enhdesc_col)
 
-	--[+ Aura 0 - Intimidating Presence +]--
-	local ED_OGR_Aura_0_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Aura 0 - Intimidating Presence +]--
+	local ED_OGR_Aura_0_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		this_also_buffs_melee_sp_act_guns,
 		"- Stacks additively with other related Damage buffs, and multiplicatively with Power level buffs from Weapon Blessings.",
 		doesnt_stack_w_z_same_aura_ogr,
 	}, "\n"), enhdesc_col)
 
-	--[+ Aura 1 - Bonebreaker's Aura +]--
-	local ED_OGR_Aura_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Aura 1 - Bonebreaker's Aura +]--
+	local ED_OGR_Aura_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		this_also_buffs_melee_sp_act_guns,
 		stacks_add_w_oth_dmg,
 		doesnt_stack_w_z_same_aura_ogr,
 	}, "\n"), enhdesc_col)
 
-	--[+ Aura 2 - Stay Close! +]--
-	local ED_OGR_Aura_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Aura 2 - Stay Close! +]--
+	local ED_OGR_Aura_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases Ogryn's base amount of Coherency Toughness regenerated while in Coherency:",
 		"_______________________________",
-		"Allies: | CTR:                 | After 5 seconds:",
-		"         1 |  3.75 -> 4.69   | 23.44(HUD:~24)",
-		"         2 |  5.63 -> 7.03   | 35.16(HUD:~36)",
-		"         3 |  7.50 -> 9.38   | 46.88(HUD:~47)",
+		"Allies: | CTR:	         | After 5 seconds:",
+		"          1|  3.75 -> 4.69 | 23.44(HUD:~24)",
+		"         2|  5.63 -> 7.03 | 35.16(HUD:~36)",
+		"         3|  7.50 -> 9.38 | 46.88(HUD:~47)",
 		"_______________________________",
 		"- Stacks additively with \"Lynchpin\", keystone \"Feel No Pain\" (including \"Toughest!\"), Toughness Regeneration Speed from Curios, and Veteran's small Talent node \"Inspiring Presence\".",
 		doesnt_stack_w_z_same_aura_ogr,
 	}, "\n"), enhdesc_col)
 
-	--[+ Aura 3 - Coward Culling +]--
-	local ED_OGR_Aura_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Aura 3 - Coward Culling +]--
+	local ED_OGR_Aura_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- For Ogryn, Stacks additively with the \"Ceaseless Barrage\" Weapon Blessing and other related Damage buffs, and multiplicatively with Power level buffs from Weapon Blessings.",
 		doesnt_stack_w_z_same_aura_ogr,
 		"- Breeds that can be Suppressed: Groaner, Dreg Gunner, Dreg Stalker, Reaper, Scab Gunner, Scab Shooter, Scab Stalker.",
@@ -848,8 +848,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 --[+ +ABILITIES+ +]--
 	--[+ Ability 0 - Bull Rush +]--
-	local ED_OGR_Ability_0_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_OGR_Ability_0_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Range: 12 meters.",
 		-- "- Stops at enemies with armor base types Carapace/Unyielding, at Monstrosities, and at Captains/Twins void shield.",
 		"- Deals no Damage on impact.",
@@ -858,9 +858,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "-- Stacks additively with other related buffs.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 1 - Indomitable +]-- 
-	local ED_OGR_Ability_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 1 - Indomitable +]-- 
+	local ED_OGR_Ability_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Range: 24 meters.",
 		"- Charges through Scab Captain/Twins void shield (applies Stagger only without void shield). Stops only at Monstrosities.",
 		"- Charge:",
@@ -874,22 +874,22 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"--- Stacks additively with other related buffs.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 1-1 - Stomping Boots +]--
-	local ED_OGR_Ability_1_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 1-1 - Stomping Boots +]--
+	local ED_OGR_Ability_1_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 1-2 - Trample +]--
-	local ED_OGR_Ability_1_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 1-2 - Trample +]--
+	local ED_OGR_Ability_1_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		stacks_add_w_oth_dmg,
 		"- On charge end, Indomitable's Stagger effect also generates Stacks separately for each enemy hit by it.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 1-3 - Pulverise +]--
-	local ED_OGR_Ability_1_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 1-3 - Pulverise +]--
+	local ED_OGR_Ability_1_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Can apply Bleed through Bulwark shield and Captains/Twins void shield.",
 		"- The Bleeds Stack additively with other sources of Bleed.",
 		"- Bleed:",
@@ -905,9 +905,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"--- Ranged: \"Blaze Away\", \"Deathspitter\", \"Explosive Offensive\", \"Fire Frenzy\", and \"Full Bore\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 2 - Loyal Protector +]--
-	local ED_OGR_Ability_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 2 - Loyal Protector +]--
+	local ED_OGR_Ability_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Radius: 8 meters.",
 		"- Holding the Ability button shows taunt Range. Preview can be Block canceled.",
 		"- On activation, forces at least light Stagger on all enemies within radius for 1 second.",
@@ -918,17 +918,17 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- When Ogryn gets Disabled, the taunt effect is removed from any Disabler enemies (Pox Hounds, Mutant, Trapper) that have been taunted by Ogryn before.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 2-1 - Valuable Distraction +]--
-	local ED_OGR_Ability_2_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 2-1 - Valuable Distraction +]--
+	local ED_OGR_Ability_2_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks multiplicatively with Damage taken debuffs from \"Soften Them Up\" and the Pickaxe special actions (10%), with Damage buffs and with Power level buffs from Weapon Blessings.",
 		"- Does not Stack with the same Talent from another Ogryn.",
 		"- Enemies taunted by the means of \"Attention Seeker\" do not get this debuff.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 2-2 - Go Again +]--
-	local ED_OGR_Ability_2_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 2-2 - Go Again +]--
+	local ED_OGR_Ability_2_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Reduces the remaining Ability Cooldown of Loyal Protector by 1.125 seconds per Stagger action.",
 		"- Procs on successful Pushes, Staggering Melee hits, and Staggering Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		"- Procs once per Stagger action regardless of how many enemies are Staggered.",
@@ -936,49 +936,49 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 2-3 - Big Lungs +]--
-	local ED_OGR_Ability_2_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 2-3 - Big Lungs +]--
+	local ED_OGR_Ability_2_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases taunt base Radius from 8 to 12 meters.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 3 - Point-Blank Barrage +]--
-	local ED_OGR_Ability_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 3 - Point-Blank Barrage +]--
+	local ED_OGR_Ability_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- The forced Reload always procs \"Reloaded and Ready\".",
-		-- "- Ranged weapon attack animation Speed Stacks additively with \"Just Getting Started\" and Celerity Stimm.",
+		"- Ranged weapon attack animation Speed Stacks additively with \"Just Getting Started\" and Celerity Stimm.",
 		"- Reload animation Speed Stacks additively with Reload Speed buffs from \"Pacemaker\" and the small Reload Speed node.",
 		"- Reduction of Movement Speed penalty stacks multiplicatively with the related buff from the \"Roaring Advance\" Weapon Blessing, and Stacks multiplicatively with Movement Speed buffs from \"Get Stuck In\", \"Unstoppable Momentum\" and Veteran's aura \"Close and Kill\".",
 		-- "-- Beyond 12.5 meters, the Damage buff decreases linearly until it loses its effect at 30 meters:",
 		"-- The Damage buff decreases linearly:",
 		"______________________________",
-		"Distance(m):  1-12.5|  15|  20|  25|  30",
-		"Damage(%):         15| ~13|  ~9|  ~5|    0",
+		"Distance(m):1-12.5|  15|  20|  25|  30",
+		"Damage(%):       15| ~13|  ~9|  ~5|    0",
 		"______________________________",
 		"-"..stacks_add_w_oth_dmg,
 		-- "- This also affects explosion damage and DoTs like bleed (from Flechette weapon blessing) while the ranged weapon is equipped as long as Ogryn stays within 30m to the enemy.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 3-1 - Bullet Bravado +]--
-	local ED_OGR_Ability_3_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 3-1 - Bullet Bravado +]--
+	local ED_OGR_Ability_3_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- If a shooting action entails multiple shots (e.g. Ripper Gun left clicks), each shot fired during this action will trigger the Replenishment.",
 		"- The forced reload upon activating \"Point-Blank Barrage\" always triggers this Replenishment.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 3-2 - Hail of Fire +]--
-	local ED_OGR_Ability_3_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 3-2 - Hail of Fire +]--
+	local ED_OGR_Ability_3_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Grants 30% Rending while the Ranged weapon is equipped boosting Damage against armor types Carapace, Flak, Maniac, Unyielding.",
 		"- Only affects Ogryn's own Damage.",
 		"- This also affects Explosion Damage and DoTs like Bleed (from \"Flechette\" Weapon Blessing) while the Ranged weapon is equipped, and the Damage of explosions.",
 		"- Stacks additively with other Rending buffs, including Brittleness debuffs that are applied to enemies.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Ability 3-3 - Light 'em Up +]--
-	local ED_OGR_Ability_3_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Ability 3-3 - Light 'em Up +]--
+	local ED_OGR_Ability_3_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Ranged attacks (including Rock or Grenade projectile direct impact hits) apply 2 Stacks of Burn per hit to enemies, up to 31 Max Burn Stacks on a target.",
 		"- Can apply burn through shields.",
 		-- "- Burn: Same as other sources of Burn. Lasts 4 seconds. Ticks every 0.5 seconds. Refreshes duration on Stack application. High armor Damage modifiers across the board, very low armor Damage modifier against Carapace.",
@@ -990,147 +990,147 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 --[+ +KEYSTONES+ +]--
-	--[+ Keystone 1 - Heavy Hitter +]--
-	local ED_OGR_Keystone_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 1 - Heavy Hitter +]--
+	local ED_OGR_Keystone_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Always generates 1 Stack per attack regardless of how many enemies have been hit.",
 		"- Stacks last 7.5 seconds and can be refreshed during active duration.",
 		stacks_add_w_oth_dmg,
 		"- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-1 - Just Getting Started +]--
-	local ED_OGR_Keystone_1_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 1-1 - Just Getting Started +]--
+	local ED_OGR_Keystone_1_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with related buffs from \"Indomitable\"/\"Bull Rush\", \"Point-Blank Barrage\", and Celerity Stimm.",
 		"- Does currently not have a HUD icon.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-2 - Unstoppable +]--
-	local ED_OGR_Keystone_1_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 1-2 - Unstoppable +]--
+	local ED_OGR_Keystone_1_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- For example, with 160 Max Toughness and \"Smash 'Em!\" equipped, Ogryn replenishes 160x(0.1+0.2)=48 Toughness on killing a single enemy.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-3 - Brutish Momentum +]--
-	local ED_OGR_Keystone_1_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 1-3 - Brutish Momentum +]--
+	local ED_OGR_Keystone_1_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Light attacks cannot generate Stacks (this requires Heavy Melee attacks), they can only maintain the current Stack count.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 2 - Feel No Pain +]--
-	local ED_OGR_Keystone_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 2 - Feel No Pain +]--
+	local ED_OGR_Keystone_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Does not regen Stacks while Disabled or Downed.",
 		"- Increases Ogryn's base amount of Coherency Toughness regenerated while in Coherency by up to 25%:",
 		"_______________________________",
-		"Allies: | CTR:                 | After 5 seconds:",
-		"         1 |  3.75 -> 4.69    | 23.44(HUD:~24)",
-		"         2 |  5.63 -> 7.03   | 35.16(HUD:~36)",
-		"         3 |  7.50 -> 9.38   | 46.88(HUD:~47)",
+		"Allies: | CTR:	         | After 5 seconds:",
+		"          1|  3.75 -> 4.69 | 23.44(HUD:~24)",
+		"         2|  5.63 -> 7.03  | 35.16(HUD:~36)",
+		"         3|  7.50 -> 9.38  | 46.88(HUD:~47)",
 		"_______________________________",
 		"- Stacks additively with Ogryn's Aura \"Stay Close!\", \"Lynchpin\", the keystone node \"Toughest!\", Toughness Regeneration Speed from Curios, and Veteran's small Talent nodes \"Inspiring Presence\".",
 		"- Also reduces Toughness Damage taken.",
 		"- The buff Stacks multiplicatively with itself, up to ~22.4% Toughness Damage Reduction at Max Stacks (1-0.975¹⁰=0.2236), and with other Damage Reduction buffs.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 2-1 - Pained Outburst +]--
-	local ED_OGR_Keystone_2_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 2-1 - Pained Outburst +]--
+	local ED_OGR_Keystone_2_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- When Ogryn is Disabled (e.g. Pounced or Netted etc.), losing the last Stack of \"Feel No Pain\" triggers the knockback explosion and the Toughness replenishment.",
 		"- This also allows Ogryn to free himself from Pox Hounds.",
 		"- When Ogryn gets Downed, the current Stack amount is set to 0 which also procs the Staggering explosion, however, does not proc the Toughness replenishment.",
 		"- The explosion has a radius of 2.5 meters and Staggers all enemies except for Mutants, Monstrosities, and Captains/Twins.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 2-2 - Strongest! +]--
-	local ED_OGR_Keystone_2_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 2-2 - Strongest! +]--
+	local ED_OGR_Keystone_2_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Always adds 1 Stack per push action regardless of how many enemies are pushed.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 2-3 - Toughest! +]--
-	local ED_OGR_Keystone_2_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 2-3 - Toughest! +]--
+	local ED_OGR_Keystone_2_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Doubles Feel No Pain's amount of Coherency Toughness Regenerated while in Coherency from 2.5% to 5% per Stack.",
 		"- Stacks additively with Ogryn's Aura \"Stay Close!\", \"Lynchpin\", Toughness Regeneration Speed from Curios, and Veteran's small Talent node \"Inspiring Presence\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3 - Burst Limiter Override +]--
-	local ED_OGR_Keystone_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3 - Burst Limiter Override +]--
+	local ED_OGR_Keystone_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- For Ripper Guns, the left click shooting action entails multiple shots fired per action.",
 		"- None of the shots consume Ammo on proc.",
 		"- For the remaining weapons, the Talent procs per single shot fired.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-1 - Maximum Firepower +]--
-	local ED_OGR_Keystone_3_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3-1 - Maximum Firepower +]--
+	local ED_OGR_Keystone_3_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Additionally to Ogryn's base Ability Cooldown rate of 1 second per second, reduces the remaining Ability Cooldown by 2 seconds per second for 2 seconds when Burst Limiter Override procs. This results in a total Cooldown Reduction of 6 seconds per proc (2 seconds from base rate + 2x2 seconds from Talent).",
 		"-"..can_be_refr_dur_active_dur,
 		"- Procs additionally to Concentration Stimm's Cooldown Reduction effect of 3 seconds per second.",
 		doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-2 - Good Shootin' +]--
-	local ED_OGR_Keystone_3_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Keystone 3-2 - Good Shootin' +]--
+	local ED_OGR_Keystone_3_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- If a shooting action entails multiple shots (Ripper Guns and Heavy Stubbers left-clicks) and if one of these shots Crits, then all subsequent shots of that action will be converted into Crit shots.",
 		"- For Heavy Stubbers' alt fire (full auto), any Crit shot granted by this Talent procs the guaranteed Crit sequence of 6 shots.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-3 - More Burst Limiter Overrides! +]--
-	-- local ED_OGR_Keystone_3_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+    --[+ Keystone 3-3 - More Burst Limiter Overrides! +]--
+	-- local ED_OGR_Keystone_3_3_rgb_ru = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
 --[+ +PASSIVES+ +]--
-	--[+ Passive 1 - Furious +]--
-	local ED_OGR_Passive_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 1 - Furious +]--
+	local ED_OGR_Passive_1_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks last until next Melee attack and are consumed even if the Melee attack hits nothing.",
 		"- Per Stack, increases Melee Damage by 2.5%.",
 		stacks_add_w_oth_dmg,
 		"- Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback can also proc this Talent.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 2 - Reloaded and Ready +]--
-	local ED_OGR_Passive_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 2 - Reloaded and Ready +]--
+	local ED_OGR_Passive_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		stacks_add_w_oth_dmg,
 		"- The forced Reload of \"Point-Blank Barrage\" procs this Talent (even if the weapon's clip is full).",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 3 - The Best Defence +]--
-	local ED_OGR_Passive_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 3 - The Best Defence +]--
+	local ED_OGR_Passive_3_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Also procs on melee special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		"- If one of the hit enemies dies, the Toughness amount replenished from the Talent is added to Ogryn's base 5% of Maximum Toughness gained on Melee kill.",
 		"- For example, with 140 Max Toughness and if two of the attacked enemies die, Ogryn would replenish 140x(0.2+0.05+0.05)=42 Toughness.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 4 - Heavyweight +]--
-	local ED_OGR_Passive_4_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 4 - Heavyweight +]--
+	local ED_OGR_Passive_4_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases all Damage against Bulwark, Crusher, Plague Ogryn, and Reaper.",
 		stacks_add_w_oth_dmg,
 		"- Also reduces both Toughness and Health Damage taken from Bulwark, Crusher, Plague Ogryn, and Reaper.",
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 5 - Steady Grip +]--
-	local ED_OGR_Passive_5_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 5 - Steady Grip +]--
+	local ED_OGR_Passive_5_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Does not interact with Coherency Toughness Regeneration.",
 		z_eff_of_this_tougn_rep,
 		"- \"Braced\" refers to an action keyword in Ranged Weapon profiles.",
 		"- Using a Weapon's alt fire, like zooming or firing when zoomed in, activates the buff.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 6 - Smash 'Em! +]--
-	local ED_OGR_Passive_6_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 6 - Smash 'Em! +]--
+	local ED_OGR_Passive_6_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Replenishes Toughness when hitting exactly ONE enemy with a Heavy Melee attack.",
 		"- Also procs on Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		"- If the hit enemy dies, the Toughness amount replenished from the Talent is added to Ogryn's base 5% of Maximum Toughness gained on Melee kill.",
@@ -1138,28 +1138,28 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 7 - Lynchpin +]--
-	local ED_OGR_Passive_7_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 7 - Lynchpin +]--
+	local ED_OGR_Passive_7_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases Ogryn's base amount of Coherency Toughness Regenerated (CTR) while in Coherency by 50%:",
 		"_______________________________",
-		"Allies: | CTR:                 | After 5 seconds:",
-		"         1 |  3.75 -> 5.63   | 28.13(HUD:~29)",
-		"         2 |  5.63 -> 8.44  | 42.19(HUD:~43)",
-		"         3 |  7.50 -> 11.25  | 56.25(HUD:~57)",
+		"Allies: | CTR:	              | After 5 seconds:",
+		"          1|  3.75 -> 5.63  | 28.13(HUD:~29)",
+		"          2|  5.63 -> 8.44 | 42.19(HUD:~43)",
+		"          3|  7.50 -> 11.25 | 56.25(HUD:~57)",
 		"_______________________________",
 		"- Stacks additively with Ogryn's Aura \"Stay Close!\", keystone \"Feel No Pain\" (including \"Toughest!\"), Toughness Regeneration Speed from Curios, and Veteran's small Talent node \"Inspiring Presence\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 8 - Slam +]--
-	local ED_OGR_Passive_8_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 8 - Slam +]--
+	local ED_OGR_Passive_8_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with \"Crunch!\" and other related Stagger buffs from Weapon Blessings, and multiplicatively with Power level buffs from Weapon Blessings.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 9 - Soften Them Up +]--
-	local ED_OGR_Passive_9_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 9 - Soften Them Up +]--
+	local ED_OGR_Passive_9_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		can_be_refr_dur_active_dur,
 		"- Can also be applied with Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		"- Does not Stack with the same Talent from another Ogryn.",
@@ -1167,17 +1167,17 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- During calculation, Stacks multiplicatively with Damage buffs and Power level buffs from Weapon Blessings.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 10 - Crunch! +]--
-	local ED_OGR_Passive_10_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 10 - Crunch! +]--
+	local ED_OGR_Passive_10_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with other related Damage buffs and Stagger buffs (from \"Slam\" and Weapon Blessings), and multiplicatively with Power level buffs from Weapon Blessings.",
 		"- \"Fully charged\" means that you have to hold the button until the Heavy attack is executed automatically.",
 		"- Only applies to Heavy attacks of Melee weapons (and Grenadier Gauntlet heavies).",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 11 - Batter +]--
-	local ED_OGR_Passive_11_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 11 - Batter +]--
+	local ED_OGR_Passive_11_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Can't apply Bleed through shields.",
 		"- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		"- Bleed: Same as other sources of Bleed. Lasts 1.5 seconds. Ticks every 0.5 seconds. Refreshes duration on Stack application. Above average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
@@ -1188,19 +1188,19 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"--- Ranged: \"Blaze Away\", \"Explosive Offensive\", \"Deathspitter\", \"Fire Frenzy\", and \"Full Bore\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 12 - Pacemaker +]--
-	local ED_OGR_Passive_12_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 12 - Pacemaker +]--
+	local ED_OGR_Passive_12_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with related buffs from \"Point-Blank Barrage\", the small Reload Speed node, Weapon Perks, and Celerity Stimm.",
 		"- Can proc on Melee and Ranged attacks, Pushes, Explosions, and Staggering Abilities (\"Loyal Protector\", \"Pained Outburst\").",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 13 - Ammo Stash +]--
-	-- local ED_OGR_Passive_13_rgb = iu_actit(table.concat({ },"\n"), enhdesc_col)
+    --[+ Passive 13 - Ammo Stash +]--
+	-- local ED_OGR_Passive_13_rgb_ru = iu_actit(table.concat({ },"\n"), enhdesc_col)
 
-	--[+ Passive 14 - Hard Knocks +]--
-	local ED_OGR_Passive_14_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 14 - Hard Knocks +]--
+	local ED_OGR_Passive_14_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Also buffs the melee special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		stacks_add_w_oth_dmg,
 		"- Generates Stacks when successfully applying instances of Stagger to enemies by Ogryn's Melee and Ranged attacks, Pushes, Explosions, and Staggering Abilities.",
@@ -1222,26 +1222,26 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"_______________________________",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 15 - Too Stubborn to Die +]--
-	local ED_OGR_Passive_15_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 15 - Too Stubborn to Die +]--
+	local ED_OGR_Passive_15_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- When below 33% of Maximum Health, doubles the amount of any Toughness replenished by Melee kills, Talents, and select Weapon Blessings (only \"Momentum\").",
 		"- Does not apply to Coherency Toughness Regeneration.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 16 - Delight in Destruction +]--
-	local ED_OGR_Passive_16_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 16 - Delight in Destruction +]--
+	local ED_OGR_Passive_16_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Reduces both Toughness and Health Damage taken.",
 		"- Considers Bleed Stacks applied to enemies within 8 meters.",
 		"- Checks for Bleeding enemies every second.",
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 17 - Attention Seeker +]--
-	local ED_OGR_Passive_17_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 17 - Attention Seeker +]--
+	local ED_OGR_Passive_17_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Pushing enemies, Blocking enemy Melee attacks or Blocking enemy Ranged attacks (shield only) forces enemies to attack Ogryn.",
 		"- Taunting Ranged enemies forces them into Melee combat (except Gunners and Reapers) Affects Captains/Twins, does not affect Monstrosities..",
 		"- Taunted enemies are visually highlighted.",
@@ -1251,79 +1251,79 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- When Ogryn gets Disabled, the taunt effect is removed from any Disabler enemies (Pox Hounds, Mutant, Trapper) that have been taunted by Ogryn before.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 18 - Get Stuck In +]--
-	local ED_OGR_Passive_18_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 18 - Get Stuck In +]--
+	local ED_OGR_Passive_18_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with Movement Speed buffs from \"Indomitable\"/\"Bull Rush\" and \"Unstoppable Momentum\", and multiplicatively with Movement Speed penalty reduction while braced from \"Point-Blank Barrage\".",
 		"- Also grants Immunity to Stuns from both Melee and Ranged attacks, and Immunity to Suppression.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 19 - Towering Presence +]--
-	local ED_OGR_Passive_19_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 19 - Towering Presence +]--
+	local ED_OGR_Passive_19_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases Ogryn's Base Coherency radius of 8 to 12 meters.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 20 - Unstoppable Momentum +]--
-	local ED_OGR_Passive_20_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 20 - Unstoppable Momentum +]--
+	local ED_OGR_Passive_20_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		can_be_refr_dur_active_dur,
 		"- Stacks additively with Movement Speed buffs from \"Indomitable\"/\"Bull Rush\" and \"Get Stuck In\", and multiplicatively with Movement Speed penalty reductions from \"Point-Blank Barrage\" and the \"Roaring Advance\" Weapon Blessing.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 21 - No Stopping Me! +]--
-	local ED_OGR_Passive_21_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 21 - No Stopping Me! +]--
+	local ED_OGR_Passive_21_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Makes Ogryn's Melee attack actions Uninterruptible during windup phase so that they cannot be canceled as part of hit reactions.",
 		"- \"Windup\" refers to a specific action kind in weapon profiles, it's basically the \"Charging or Ready up movement\" animation before an actual swing is executed.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 22 - Dominate +]--
-	local ED_OGR_Passive_22_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 22 - Dominate +]--
+	local ED_OGR_Passive_22_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- On Elite kill, grants 10% Rending to all attacks for 10 seconds boosting Damage against armor types Carapace, Flak, Maniac, Unyielding (including Damage of Explosions and DoTs like Bleed and Burn applied by Ogryn).",
 		can_be_refr_dur_active_dur,
 		"- Only affects Ogryn's own Damage.",
 		stacks_add_w_oth_rend_brit,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 23 - Payback Time +]--
-	local ED_OGR_Passive_23_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 23 - Payback Time +]--
+	local ED_OGR_Passive_23_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Increases any Damage when taking a Damaging Melee hit or Blocking a Melee hit.",
 		stacks_add_w_oth_dmg,
 		can_be_refr_dur_active_dur,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 24 - Bruiser +]--
-	local ED_OGR_Passive_24_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 24 - Bruiser +]--
+	local ED_OGR_Passive_24_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Procs on any Elite kill by Ogryn and Elite kills by Allies who are in Coherency with Ogryn.",
 		"- This is 1.2 seconds for \"Indomitable\"/\"Bull Rush\", 1.8 seconds for \"Loyal Protector\", and 3.2 seconds for \"Point-Blank Barrage\".",
 		procs_add_conc_stim_rem_cd_red,
 		doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 25 - Big Boom +]--
-	local ED_OGR_Passive_25_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 25 - Big Boom +]--
+	local ED_OGR_Passive_25_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Stacks additively with the \"Blast Zone\" Weapon Blessing.",
 		"- This increases the radii of both the inner epicenter and the outer maximum of explosions.",
 		"- Note that this Talent also increases the radius of explosions that are created by Melee attacks (e.g. Power Maul activated attacks). In this case, Stacks additively with the \"Power Surge\" Weapon Blessing.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 26 - Massacre +]--
-	local ED_OGR_Passive_26_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 26 - Massacre +]--
+	local ED_OGR_Passive_26_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Generates Stacks when enemies die to Ogryn's Melee and Ranged attacks, Explosions, and DoTs, and when Pushed over ledges into map kill boxes by Ogryn.",
 		"- Stacks last 10 seconds and can be refreshed during active duration.",
 		"- Per Stack, grants 1% additional Crit chance to all attacks that can Crit.",
 		"- Stacks additively with other sources of Crit chance.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 27 - Implacable +]--
-	local ED_OGR_Passive_27_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 27 - Implacable +]--
+	local ED_OGR_Passive_27_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Reduces both Toughness and Health Damage taken while winding up Melee attacks.",
 		stacks_mult_w_other_dmg_red_buffs,
 		"- \"Windup\" refers to a specific action kind in weapon profiles, it's basically the \"Charging or Ready up movement\" animation before an actual swing is executed.",
@@ -1331,24 +1331,24 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Does currently not have a HUD icon.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 28 - No Pushover +]--
-	local ED_OGR_Passive_28_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 28 - No Pushover +]--
+	local ED_OGR_Passive_28_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Allows the Push to Stagger all enemies except for Mutants, Monstrosties, and Twins (Captains only without void shield).",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 29 - Won't Give In +]--
-	local ED_OGR_Passive_29_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 29 - Won't Give In +]--
+	local ED_OGR_Passive_29_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Reduces both Toughness and Health Damage taken by 20% per Downed or Incapacitated ally within 20 meters.",
 		"- Stacks linearly with itself: 1 incapacitated Ally=20% Damage Reduction, 2 Allies=40%, 3 Allies=60%",
 		stacks_mult_w_other_dmg_red_buffs,
 		"- \"Incapacitated\" includes: Netted (by Trapper), Pounced (by Pox Hounds), Grabbed (by Daemonhost, Chaos Spawn, Mutants), Eaten by Beast of Nurgle, Hanging from ledge, and waiting for Rescue after respawn.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 30 - Mobile Emplacement +]--
-	local ED_OGR_Passive_30_rgb = iu_actit(table.concat({
-		ppp___ppp,
+    --[+ Passive 30 - Mobile Emplacement +]--
+	local ED_OGR_Passive_30_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
 		"- Reduces both Toughness and Health Damage taken by 20% while braced.",
 		stacks_mult_w_other_dmg_red_buffs,
 		"- \"Braced\" refers to an action keyword in Ranged weapon profiles.",
@@ -1362,168 +1362,168 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 -- In the list below, you also need to add a new entry or change an old one.
 return {
-	ED_VET_Blitz_0_rgb = ED_VET_Blitz_0_rgb,
-	ED_VET_Blitz_1_rgb = ED_VET_Blitz_1_rgb,
-	ED_VET_Blitz_1_1_rgb = ED_VET_Blitz_1_1_rgb,
-	ED_VET_Blitz_1_2_rgb = ED_VET_Blitz_1_2_rgb,
-	ED_VET_Blitz_2_rgb = ED_VET_Blitz_2_rgb,
-	ED_VET_Blitz_2_1_rgb = ED_VET_Blitz_2_1_rgb,
-	ED_VET_Blitz_2_2_rgb = ED_VET_Blitz_2_2_rgb,
-	ED_VET_Blitz_2_3_rgb = ED_VET_Blitz_2_3_rgb,
-	ED_VET_Blitz_3_rgb = ED_VET_Blitz_3_rgb,
-	ED_VET_Blitz_3_1_rgb = ED_VET_Blitz_3_1_rgb,
-	ED_VET_Blitz_3_2_rgb = ED_VET_Blitz_3_2_rgb,
+	ED_VET_Blitz_0_rgb_ru = ED_VET_Blitz_0_rgb_ru,
+	ED_VET_Blitz_1_rgb_ru = ED_VET_Blitz_1_rgb_ru,
+	ED_VET_Blitz_1_1_rgb_ru = ED_VET_Blitz_1_1_rgb_ru,
+	ED_VET_Blitz_1_2_rgb_ru = ED_VET_Blitz_1_2_rgb_ru,
+	ED_VET_Blitz_2_rgb_ru = ED_VET_Blitz_2_rgb_ru,
+	ED_VET_Blitz_2_1_rgb_ru = ED_VET_Blitz_2_1_rgb_ru,
+	ED_VET_Blitz_2_2_rgb_ru = ED_VET_Blitz_2_2_rgb_ru,
+	ED_VET_Blitz_2_3_rgb_ru = ED_VET_Blitz_2_3_rgb_ru,
+	ED_VET_Blitz_3_rgb_ru = ED_VET_Blitz_3_rgb_ru,
+	ED_VET_Blitz_3_1_rgb_ru = ED_VET_Blitz_3_1_rgb_ru,
+	ED_VET_Blitz_3_2_rgb_ru = ED_VET_Blitz_3_2_rgb_ru,
 
-	ED_VET_Aura_0_rgb = ED_VET_Aura_0_rgb,
-	ED_VET_Aura_1_rgb = ED_VET_Aura_1_rgb,
-	ED_VET_Aura_2_rgb = ED_VET_Aura_2_rgb,
-	ED_VET_Aura_3_rgb = ED_VET_Aura_3_rgb,
+	ED_VET_Aura_0_rgb_ru = ED_VET_Aura_0_rgb_ru,
+	ED_VET_Aura_1_rgb_ru = ED_VET_Aura_1_rgb_ru,
+	ED_VET_Aura_2_rgb_ru = ED_VET_Aura_2_rgb_ru,
+	ED_VET_Aura_3_rgb_ru = ED_VET_Aura_3_rgb_ru,
 
-	ED_VET_Ability_0_rgb = ED_VET_Ability_0_rgb,
-	ED_VET_Ability_1_rgb = ED_VET_Ability_1_rgb,
-	ED_VET_Ability_1_1_rgb = ED_VET_Ability_1_1_rgb,
-	ED_VET_Ability_1_2_rgb = ED_VET_Ability_1_2_rgb,
-	ED_VET_Ability_1_3_rgb = ED_VET_Ability_1_3_rgb,
-	ED_VET_Ability_1_4_rgb = ED_VET_Ability_1_4_rgb,
-	ED_VET_Ability_2_rgb = ED_VET_Ability_2_rgb,
-	ED_VET_Ability_2_1_rgb = ED_VET_Ability_2_1_rgb,
-	ED_VET_Ability_2_2_rgb = ED_VET_Ability_2_2_rgb,
-	ED_VET_Ability_2_3_rgb = ED_VET_Ability_2_3_rgb,
-	ED_VET_Ability_3_rgb = ED_VET_Ability_3_rgb,
-	ED_VET_Ability_3_1_rgb = ED_VET_Ability_3_1_rgb,
-	ED_VET_Ability_3_2_rgb = ED_VET_Ability_3_2_rgb,
-	ED_VET_Ability_3_3_rgb = ED_VET_Ability_3_3_rgb,
-	ED_VET_Ability_3_4_rgb = ED_VET_Ability_3_4_rgb,
-	ED_VET_Ability_3_5_rgb = ED_VET_Ability_3_5_rgb,
+	ED_VET_Ability_0_rgb_ru = ED_VET_Ability_0_rgb_ru,
+	ED_VET_Ability_1_rgb_ru = ED_VET_Ability_1_rgb_ru,
+	ED_VET_Ability_1_1_rgb_ru = ED_VET_Ability_1_1_rgb_ru,
+	ED_VET_Ability_1_2_rgb_ru = ED_VET_Ability_1_2_rgb_ru,
+	ED_VET_Ability_1_3_rgb_ru = ED_VET_Ability_1_3_rgb_ru,
+	ED_VET_Ability_1_4_rgb_ru = ED_VET_Ability_1_4_rgb_ru,
+	ED_VET_Ability_2_rgb_ru = ED_VET_Ability_2_rgb_ru,
+	ED_VET_Ability_2_1_rgb_ru = ED_VET_Ability_2_1_rgb_ru,
+	ED_VET_Ability_2_2_rgb_ru = ED_VET_Ability_2_2_rgb_ru,
+	ED_VET_Ability_2_3_rgb_ru = ED_VET_Ability_2_3_rgb_ru,
+	ED_VET_Ability_3_rgb_ru = ED_VET_Ability_3_rgb_ru,
+	ED_VET_Ability_3_1_rgb_ru = ED_VET_Ability_3_1_rgb_ru,
+	ED_VET_Ability_3_2_rgb_ru = ED_VET_Ability_3_2_rgb_ru,
+	ED_VET_Ability_3_3_rgb_ru = ED_VET_Ability_3_3_rgb_ru,
+	ED_VET_Ability_3_4_rgb_ru = ED_VET_Ability_3_4_rgb_ru,
+	ED_VET_Ability_3_5_rgb_ru = ED_VET_Ability_3_5_rgb_ru,
 
-	ED_VET_Keystone_1_rgb = ED_VET_Keystone_1_rgb,
-	ED_VET_Keystone_1_1_rgb = ED_VET_Keystone_1_1_rgb,
-	ED_VET_Keystone_1_2_rgb = ED_VET_Keystone_1_2_rgb,
-	ED_VET_Keystone_1_3_rgb = ED_VET_Keystone_1_3_rgb,
-	ED_VET_Keystone_1_4_rgb = ED_VET_Keystone_1_4_rgb,
-	ED_VET_Keystone_2_rgb = ED_VET_Keystone_2_rgb,
-	ED_VET_Keystone_2_1_rgb = ED_VET_Keystone_2_1_rgb,
-	ED_VET_Keystone_2_2_rgb = ED_VET_Keystone_2_2_rgb,
-	ED_VET_Keystone_2_3_rgb = ED_VET_Keystone_2_3_rgb,
-	ED_VET_Keystone_3_rgb = ED_VET_Keystone_3_rgb,
-	ED_VET_Keystone_3_1_rgb = ED_VET_Keystone_3_1_rgb,
-	ED_VET_Keystone_3_2_rgb = ED_VET_Keystone_3_2_rgb,
-	ED_VET_Keystone_3_3_rgb = ED_VET_Keystone_3_3_rgb,
-	ED_VET_Keystone_3_4_rgb = ED_VET_Keystone_3_4_rgb,
-	ED_VET_Keystone_3_5_rgb = ED_VET_Keystone_3_5_rgb,
+	ED_VET_Keystone_1_rgb_ru = ED_VET_Keystone_1_rgb_ru,
+	ED_VET_Keystone_1_1_rgb_ru = ED_VET_Keystone_1_1_rgb_ru,
+	ED_VET_Keystone_1_2_rgb_ru = ED_VET_Keystone_1_2_rgb_ru,
+	ED_VET_Keystone_1_3_rgb_ru = ED_VET_Keystone_1_3_rgb_ru,
+	ED_VET_Keystone_1_4_rgb_ru = ED_VET_Keystone_1_4_rgb_ru,
+	ED_VET_Keystone_2_rgb_ru = ED_VET_Keystone_2_rgb_ru,
+	ED_VET_Keystone_2_1_rgb_ru = ED_VET_Keystone_2_1_rgb_ru,
+	ED_VET_Keystone_2_2_rgb_ru = ED_VET_Keystone_2_2_rgb_ru,
+	ED_VET_Keystone_2_3_rgb_ru = ED_VET_Keystone_2_3_rgb_ru,
+	ED_VET_Keystone_3_rgb_ru = ED_VET_Keystone_3_rgb_ru,
+	ED_VET_Keystone_3_1_rgb_ru = ED_VET_Keystone_3_1_rgb_ru,
+	ED_VET_Keystone_3_2_rgb_ru = ED_VET_Keystone_3_2_rgb_ru,
+	ED_VET_Keystone_3_3_rgb_ru = ED_VET_Keystone_3_3_rgb_ru,
+	ED_VET_Keystone_3_4_rgb_ru = ED_VET_Keystone_3_4_rgb_ru,
+	ED_VET_Keystone_3_5_rgb_ru = ED_VET_Keystone_3_5_rgb_ru,
 
-	ED_VET_Passive_0_rgb = ED_VET_Passive_0_rgb,
-	ED_VET_Passive_1_rgb = ED_VET_Passive_1_rgb,
-	ED_VET_Passive_2_rgb = ED_VET_Passive_2_rgb,
-	ED_VET_Passive_3_rgb = ED_VET_Passive_3_rgb,
-	ED_VET_Passive_4_rgb = ED_VET_Passive_4_rgb,
-	ED_VET_Passive_5_rgb = ED_VET_Passive_5_rgb,
-	ED_VET_Passive_6_rgb = ED_VET_Passive_6_rgb,
-	ED_VET_Passive_7_rgb = ED_VET_Passive_7_rgb,
-	ED_VET_Passive_8_rgb = ED_VET_Passive_8_rgb,
-	ED_VET_Passive_9_rgb = ED_VET_Passive_9_rgb,
-	ED_VET_Passive_10_rgb = ED_VET_Passive_10_rgb,
-	ED_VET_Passive_11_rgb = ED_VET_Passive_11_rgb,
-	ED_VET_Passive_12_rgb = ED_VET_Passive_12_rgb,
-	ED_VET_Passive_13_rgb = ED_VET_Passive_13_rgb,
-	ED_VET_Passive_14_rgb = ED_VET_Passive_14_rgb,
-	ED_VET_Passive_15_rgb = ED_VET_Passive_15_rgb,
-	ED_VET_Passive_16_rgb = ED_VET_Passive_16_rgb,
-	ED_VET_Passive_17_rgb = ED_VET_Passive_17_rgb,
-	ED_VET_Passive_18_rgb = ED_VET_Passive_18_rgb,
-	ED_VET_Passive_19_rgb = ED_VET_Passive_19_rgb,
-	ED_VET_Passive_20_rgb = ED_VET_Passive_20_rgb,
-	ED_VET_Passive_21_rgb = ED_VET_Passive_21_rgb,
-	ED_VET_Passive_22_rgb = ED_VET_Passive_22_rgb,
-	ED_VET_Passive_23_rgb = ED_VET_Passive_23_rgb,
-	ED_VET_Passive_24_rgb = ED_VET_Passive_24_rgb,
-	ED_VET_Passive_25_rgb = ED_VET_Passive_25_rgb,
-	ED_VET_Passive_26_rgb = ED_VET_Passive_26_rgb,
-	ED_VET_Passive_27_rgb = ED_VET_Passive_27_rgb,
-	ED_VET_Passive_28_rgb = ED_VET_Passive_28_rgb,
-	ED_VET_Passive_29_rgb = ED_VET_Passive_29_rgb,
-	ED_VET_Passive_30_rgb = ED_VET_Passive_30_rgb,
-	ED_VET_Passive_31_rgb = ED_VET_Passive_31_rgb,
-	ED_VET_Passive_32_rgb = ED_VET_Passive_32_rgb,
-	ED_VET_Passive_33_rgb = ED_VET_Passive_33_rgb,
-	ED_VET_Passive_34_rgb = ED_VET_Passive_34_rgb,
-	ED_VET_Passive_35_rgb = ED_VET_Passive_35_rgb,
-	ED_VET_Passive_36_rgb = ED_VET_Passive_36_rgb,
-	ED_VET_Passive_37_rgb = ED_VET_Passive_37_rgb,
-	ED_VET_Passive_38_rgb = ED_VET_Passive_38_rgb,
-	ED_VET_Passive_39_rgb = ED_VET_Passive_39_rgb,
-	ED_VET_Passive_40_rgb = ED_VET_Passive_40_rgb,
-	ED_VET_Passive_41_rgb = ED_VET_Passive_41_rgb,
-	ED_VET_Passive_42_rgb = ED_VET_Passive_42_rgb,
-	ED_VET_Passive_43_rgb = ED_VET_Passive_43_rgb,
+	ED_VET_Passive_0_rgb_ru = ED_VET_Passive_0_rgb_ru,
+	ED_VET_Passive_1_rgb_ru = ED_VET_Passive_1_rgb_ru,
+	ED_VET_Passive_2_rgb_ru = ED_VET_Passive_2_rgb_ru,
+	ED_VET_Passive_3_rgb_ru = ED_VET_Passive_3_rgb_ru,
+	ED_VET_Passive_4_rgb_ru = ED_VET_Passive_4_rgb_ru,
+	ED_VET_Passive_5_rgb_ru = ED_VET_Passive_5_rgb_ru,
+	ED_VET_Passive_6_rgb_ru = ED_VET_Passive_6_rgb_ru,
+	ED_VET_Passive_7_rgb_ru = ED_VET_Passive_7_rgb_ru,
+	ED_VET_Passive_8_rgb_ru = ED_VET_Passive_8_rgb_ru,
+	ED_VET_Passive_9_rgb_ru = ED_VET_Passive_9_rgb_ru,
+	ED_VET_Passive_10_rgb_ru = ED_VET_Passive_10_rgb_ru,
+	ED_VET_Passive_11_rgb_ru = ED_VET_Passive_11_rgb_ru,
+	ED_VET_Passive_12_rgb_ru = ED_VET_Passive_12_rgb_ru,
+	ED_VET_Passive_13_rgb_ru = ED_VET_Passive_13_rgb_ru,
+	ED_VET_Passive_14_rgb_ru = ED_VET_Passive_14_rgb_ru,
+	ED_VET_Passive_15_rgb_ru = ED_VET_Passive_15_rgb_ru,
+	ED_VET_Passive_16_rgb_ru = ED_VET_Passive_16_rgb_ru,
+	ED_VET_Passive_17_rgb_ru = ED_VET_Passive_17_rgb_ru,
+	ED_VET_Passive_18_rgb_ru = ED_VET_Passive_18_rgb_ru,
+	ED_VET_Passive_19_rgb_ru = ED_VET_Passive_19_rgb_ru,
+	ED_VET_Passive_20_rgb_ru = ED_VET_Passive_20_rgb_ru,
+	ED_VET_Passive_21_rgb_ru = ED_VET_Passive_21_rgb_ru,
+	ED_VET_Passive_22_rgb_ru = ED_VET_Passive_22_rgb_ru,
+	ED_VET_Passive_23_rgb_ru = ED_VET_Passive_23_rgb_ru,
+	ED_VET_Passive_24_rgb_ru = ED_VET_Passive_24_rgb_ru,
+	ED_VET_Passive_25_rgb_ru = ED_VET_Passive_25_rgb_ru,
+	ED_VET_Passive_26_rgb_ru = ED_VET_Passive_26_rgb_ru,
+	ED_VET_Passive_27_rgb_ru = ED_VET_Passive_27_rgb_ru,
+	ED_VET_Passive_28_rgb_ru = ED_VET_Passive_28_rgb_ru,
+	ED_VET_Passive_29_rgb_ru = ED_VET_Passive_29_rgb_ru,
+	ED_VET_Passive_30_rgb_ru = ED_VET_Passive_30_rgb_ru,
+	ED_VET_Passive_31_rgb_ru = ED_VET_Passive_31_rgb_ru,
+	ED_VET_Passive_32_rgb_ru = ED_VET_Passive_32_rgb_ru,
+	ED_VET_Passive_33_rgb_ru = ED_VET_Passive_33_rgb_ru,
+	ED_VET_Passive_34_rgb_ru = ED_VET_Passive_34_rgb_ru,
+	ED_VET_Passive_35_rgb_ru = ED_VET_Passive_35_rgb_ru,
+	ED_VET_Passive_36_rgb_ru = ED_VET_Passive_36_rgb_ru,
+	ED_VET_Passive_37_rgb_ru = ED_VET_Passive_37_rgb_ru,
+	ED_VET_Passive_38_rgb_ru = ED_VET_Passive_38_rgb_ru,
+	ED_VET_Passive_39_rgb_ru = ED_VET_Passive_39_rgb_ru,
+	ED_VET_Passive_40_rgb_ru = ED_VET_Passive_40_rgb_ru,
+	ED_VET_Passive_41_rgb_ru = ED_VET_Passive_41_rgb_ru,
+	ED_VET_Passive_42_rgb_ru = ED_VET_Passive_42_rgb_ru,
+	ED_VET_Passive_43_rgb_ru = ED_VET_Passive_43_rgb_ru,
 
-	ED_OGR_Blitz_0_rgb = ED_OGR_Blitz_0_rgb,
-	ED_OGR_Blitz_1_rgb = ED_OGR_Blitz_1_rgb,
-	ED_OGR_Blitz_2_rgb = ED_OGR_Blitz_2_rgb,
-	ED_OGR_Blitz_3_rgb = ED_OGR_Blitz_3_rgb,
+	ED_OGR_Blitz_0_rgb_ru = ED_OGR_Blitz_0_rgb_ru,
+	ED_OGR_Blitz_1_rgb_ru = ED_OGR_Blitz_1_rgb_ru,
+	ED_OGR_Blitz_2_rgb_ru = ED_OGR_Blitz_2_rgb_ru,
+	ED_OGR_Blitz_3_rgb_ru = ED_OGR_Blitz_3_rgb_ru,
 
-	ED_OGR_Aura_0_rgb = ED_OGR_Aura_0_rgb,
-	ED_OGR_Aura_1_rgb = ED_OGR_Aura_1_rgb,
-	ED_OGR_Aura_2_rgb = ED_OGR_Aura_2_rgb,
-	ED_OGR_Aura_3_rgb = ED_OGR_Aura_3_rgb,
+	ED_OGR_Aura_0_rgb_ru = ED_OGR_Aura_0_rgb_ru,
+	ED_OGR_Aura_1_rgb_ru = ED_OGR_Aura_1_rgb_ru,
+	ED_OGR_Aura_2_rgb_ru = ED_OGR_Aura_2_rgb_ru,
+	ED_OGR_Aura_3_rgb_ru = ED_OGR_Aura_3_rgb_ru,
 
-	ED_OGR_Ability_0_rgb = ED_OGR_Ability_0_rgb,
-	ED_OGR_Ability_1_rgb = ED_OGR_Ability_1_rgb,
-	ED_OGR_Ability_1_1_rgb = ED_OGR_Ability_1_1_rgb,
-	ED_OGR_Ability_1_2_rgb = ED_OGR_Ability_1_2_rgb,
-	ED_OGR_Ability_1_3_rgb = ED_OGR_Ability_1_3_rgb,
-	ED_OGR_Ability_2_rgb = ED_OGR_Ability_2_rgb,
-	ED_OGR_Ability_2_1_rgb = ED_OGR_Ability_2_1_rgb,
-	ED_OGR_Ability_2_2_rgb = ED_OGR_Ability_2_2_rgb,
-	ED_OGR_Ability_2_3_rgb = ED_OGR_Ability_2_3_rgb,
-	ED_OGR_Ability_3_rgb = ED_OGR_Ability_3_rgb,
-	ED_OGR_Ability_3_1_rgb = ED_OGR_Ability_3_1_rgb,
-	ED_OGR_Ability_3_2_rgb = ED_OGR_Ability_3_2_rgb,
-	ED_OGR_Ability_3_3_rgb = ED_OGR_Ability_3_3_rgb,
-	ED_OGR_Ability_3_4_rgb = ED_OGR_Ability_3_4_rgb,
+	ED_OGR_Ability_0_rgb_ru = ED_OGR_Ability_0_rgb_ru,
+	ED_OGR_Ability_1_rgb_ru = ED_OGR_Ability_1_rgb_ru,
+	ED_OGR_Ability_1_1_rgb_ru = ED_OGR_Ability_1_1_rgb_ru,
+	ED_OGR_Ability_1_2_rgb_ru = ED_OGR_Ability_1_2_rgb_ru,
+	ED_OGR_Ability_1_3_rgb_ru = ED_OGR_Ability_1_3_rgb_ru,
+	ED_OGR_Ability_2_rgb_ru = ED_OGR_Ability_2_rgb_ru,
+	ED_OGR_Ability_2_1_rgb_ru = ED_OGR_Ability_2_1_rgb_ru,
+	ED_OGR_Ability_2_2_rgb_ru = ED_OGR_Ability_2_2_rgb_ru,
+	ED_OGR_Ability_2_3_rgb_ru = ED_OGR_Ability_2_3_rgb_ru,
+	ED_OGR_Ability_3_rgb_ru = ED_OGR_Ability_3_rgb_ru,
+	ED_OGR_Ability_3_1_rgb_ru = ED_OGR_Ability_3_1_rgb_ru,
+	ED_OGR_Ability_3_2_rgb_ru = ED_OGR_Ability_3_2_rgb_ru,
+	ED_OGR_Ability_3_3_rgb_ru = ED_OGR_Ability_3_3_rgb_ru,
+	ED_OGR_Ability_3_4_rgb_ru = ED_OGR_Ability_3_4_rgb_ru,
 
-	ED_OGR_Keystone_1_rgb = ED_OGR_Keystone_1_rgb,
-	ED_OGR_Keystone_1_1_rgb = ED_OGR_Keystone_1_1_rgb,
-	ED_OGR_Keystone_1_2_rgb = ED_OGR_Keystone_1_2_rgb,
-	ED_OGR_Keystone_1_3_rgb = ED_OGR_Keystone_1_3_rgb,
-	ED_OGR_Keystone_2_rgb = ED_OGR_Keystone_2_rgb,
-	ED_OGR_Keystone_2_1_rgb = ED_OGR_Keystone_2_1_rgb,
-	ED_OGR_Keystone_2_2_rgb = ED_OGR_Keystone_2_2_rgb,
-	ED_OGR_Keystone_2_3_rgb = ED_OGR_Keystone_2_3_rgb,
-	ED_OGR_Keystone_3_rgb = ED_OGR_Keystone_3_rgb,
-	ED_OGR_Keystone_3_1_rgb = ED_OGR_Keystone_3_1_rgb,
-	ED_OGR_Keystone_3_2_rgb = ED_OGR_Keystone_3_2_rgb,
-	ED_OGR_Keystone_3_3_rgb = ED_OGR_Keystone_3_3_rgb,
+	ED_OGR_Keystone_1_rgb_ru = ED_OGR_Keystone_1_rgb_ru,
+	ED_OGR_Keystone_1_1_rgb_ru = ED_OGR_Keystone_1_1_rgb_ru,
+	ED_OGR_Keystone_1_2_rgb_ru = ED_OGR_Keystone_1_2_rgb_ru,
+	ED_OGR_Keystone_1_3_rgb_ru = ED_OGR_Keystone_1_3_rgb_ru,
+	ED_OGR_Keystone_2_rgb_ru = ED_OGR_Keystone_2_rgb_ru,
+	ED_OGR_Keystone_2_1_rgb_ru = ED_OGR_Keystone_2_1_rgb_ru,
+	ED_OGR_Keystone_2_2_rgb_ru = ED_OGR_Keystone_2_2_rgb_ru,
+	ED_OGR_Keystone_2_3_rgb_ru = ED_OGR_Keystone_2_3_rgb_ru,
+	ED_OGR_Keystone_3_rgb_ru = ED_OGR_Keystone_3_rgb_ru,
+	ED_OGR_Keystone_3_1_rgb_ru = ED_OGR_Keystone_3_1_rgb_ru,
+	ED_OGR_Keystone_3_2_rgb_ru = ED_OGR_Keystone_3_2_rgb_ru,
+	ED_OGR_Keystone_3_3_rgb_ru = ED_OGR_Keystone_3_3_rgb_ru,
 
-	ED_OGR_Passive_0_rgb = ED_OGR_Passive_0_rgb,
-	ED_OGR_Passive_1_rgb = ED_OGR_Passive_1_rgb,
-	ED_OGR_Passive_2_rgb = ED_OGR_Passive_2_rgb,
-	ED_OGR_Passive_3_rgb = ED_OGR_Passive_3_rgb,
-	ED_OGR_Passive_4_rgb = ED_OGR_Passive_4_rgb,
-	ED_OGR_Passive_5_rgb = ED_OGR_Passive_5_rgb,
-	ED_OGR_Passive_6_rgb = ED_OGR_Passive_6_rgb,
-	ED_OGR_Passive_7_rgb = ED_OGR_Passive_7_rgb,
-	ED_OGR_Passive_8_rgb = ED_OGR_Passive_8_rgb,
-	ED_OGR_Passive_9_rgb = ED_OGR_Passive_9_rgb,
-	ED_OGR_Passive_10_rgb = ED_OGR_Passive_10_rgb,
-	ED_OGR_Passive_11_rgb = ED_OGR_Passive_11_rgb,
-	ED_OGR_Passive_12_rgb = ED_OGR_Passive_12_rgb,
-	ED_OGR_Passive_13_rgb = ED_OGR_Passive_13_rgb,
-	ED_OGR_Passive_14_rgb = ED_OGR_Passive_14_rgb,
-	ED_OGR_Passive_15_rgb = ED_OGR_Passive_15_rgb,
-	ED_OGR_Passive_16_rgb = ED_OGR_Passive_16_rgb,
-	ED_OGR_Passive_17_rgb = ED_OGR_Passive_17_rgb,
-	ED_OGR_Passive_18_rgb = ED_OGR_Passive_18_rgb,
-	ED_OGR_Passive_19_rgb = ED_OGR_Passive_19_rgb,
-	ED_OGR_Passive_20_rgb = ED_OGR_Passive_20_rgb,
-	ED_OGR_Passive_21_rgb = ED_OGR_Passive_21_rgb,
-	ED_OGR_Passive_22_rgb = ED_OGR_Passive_22_rgb,
-	ED_OGR_Passive_23_rgb = ED_OGR_Passive_23_rgb,
-	ED_OGR_Passive_24_rgb = ED_OGR_Passive_24_rgb,
-	ED_OGR_Passive_25_rgb = ED_OGR_Passive_25_rgb,
-	ED_OGR_Passive_26_rgb = ED_OGR_Passive_26_rgb,
-	ED_OGR_Passive_27_rgb = ED_OGR_Passive_27_rgb,
-	ED_OGR_Passive_28_rgb = ED_OGR_Passive_28_rgb,
-	ED_OGR_Passive_29_rgb = ED_OGR_Passive_29_rgb,
-	ED_OGR_Passive_30_rgb = ED_OGR_Passive_30_rgb,
+	ED_OGR_Passive_0_rgb_ru = ED_OGR_Passive_0_rgb_ru,
+	ED_OGR_Passive_1_rgb_ru = ED_OGR_Passive_1_rgb_ru,
+	ED_OGR_Passive_2_rgb_ru = ED_OGR_Passive_2_rgb_ru,
+	ED_OGR_Passive_3_rgb_ru = ED_OGR_Passive_3_rgb_ru,
+	ED_OGR_Passive_4_rgb_ru = ED_OGR_Passive_4_rgb_ru,
+	ED_OGR_Passive_5_rgb_ru = ED_OGR_Passive_5_rgb_ru,
+	ED_OGR_Passive_6_rgb_ru = ED_OGR_Passive_6_rgb_ru,
+	ED_OGR_Passive_7_rgb_ru = ED_OGR_Passive_7_rgb_ru,
+	ED_OGR_Passive_8_rgb_ru = ED_OGR_Passive_8_rgb_ru,
+	ED_OGR_Passive_9_rgb_ru = ED_OGR_Passive_9_rgb_ru,
+	ED_OGR_Passive_10_rgb_ru = ED_OGR_Passive_10_rgb_ru,
+	ED_OGR_Passive_11_rgb_ru = ED_OGR_Passive_11_rgb_ru,
+	ED_OGR_Passive_12_rgb_ru = ED_OGR_Passive_12_rgb_ru,
+	ED_OGR_Passive_13_rgb_ru = ED_OGR_Passive_13_rgb_ru,
+	ED_OGR_Passive_14_rgb_ru = ED_OGR_Passive_14_rgb_ru,
+	ED_OGR_Passive_15_rgb_ru = ED_OGR_Passive_15_rgb_ru,
+	ED_OGR_Passive_16_rgb_ru = ED_OGR_Passive_16_rgb_ru,
+	ED_OGR_Passive_17_rgb_ru = ED_OGR_Passive_17_rgb_ru,
+	ED_OGR_Passive_18_rgb_ru = ED_OGR_Passive_18_rgb_ru,
+	ED_OGR_Passive_19_rgb_ru = ED_OGR_Passive_19_rgb_ru,
+	ED_OGR_Passive_20_rgb_ru = ED_OGR_Passive_20_rgb_ru,
+	ED_OGR_Passive_21_rgb_ru = ED_OGR_Passive_21_rgb_ru,
+	ED_OGR_Passive_22_rgb_ru = ED_OGR_Passive_22_rgb_ru,
+	ED_OGR_Passive_23_rgb_ru = ED_OGR_Passive_23_rgb_ru,
+	ED_OGR_Passive_24_rgb_ru = ED_OGR_Passive_24_rgb_ru,
+	ED_OGR_Passive_25_rgb_ru = ED_OGR_Passive_25_rgb_ru,
+	ED_OGR_Passive_26_rgb_ru = ED_OGR_Passive_26_rgb_ru,
+	ED_OGR_Passive_27_rgb_ru = ED_OGR_Passive_27_rgb_ru,
+	ED_OGR_Passive_28_rgb_ru = ED_OGR_Passive_28_rgb_ru,
+	ED_OGR_Passive_29_rgb_ru = ED_OGR_Passive_29_rgb_ru,
+	ED_OGR_Passive_30_rgb_ru = ED_OGR_Passive_30_rgb_ru,
 }

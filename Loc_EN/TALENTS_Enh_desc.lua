@@ -239,7 +239,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- Max placement range: 10 meters.",
 		"- Total placement time: 0.6 seconds.",
 		"- You can hold Ability button to preview location and you can cancel it by blocking.",
-		"- Blocks: Ranged hit scan Attacks, projectiles (Bomber grenades), nets (Trappers), and flamethrower direct hits (Flamers)",
+		"- Blocks: Ranged hit scan Attacks, projectiles (Bomber grenades), nets (Trappers), and flamethrower direct hits (Flamers).",
 		"- Ground fire patches and toxic gas clouds expand through the shield.",
 		"- Doesn't block Poxburster explosion.",
 		"- How shield health works:",

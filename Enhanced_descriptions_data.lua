@@ -36,6 +36,19 @@ local options = {
 					return mod:get("enable_curious_file") or true
 				end
 			},
+			{name = mod:localize("enable_penances_file"),
+				setting_id = "enable_penances_file",
+				default_value = true,
+				type = "checkbox",
+				description = mod:localize("enable_penances_file_description"),
+				
+				change = function(new_value)
+					mod:set("enable_penances_file", new_value)
+				end,
+				get = function()
+					return mod:get("enable_penances_file") or true
+				end
+			},
 			{name = mod:localize("enable_weapons_file"),
 				setting_id = "enable_weapons_file",
 				default_value = true,
@@ -60,6 +73,32 @@ local options = {
 				end,
 				get = function()
 					return mod:get("enable_talents_file") or true
+				end
+			},
+			{name = mod:localize("enable_names_file"),
+				setting_id = "enable_names_file",
+				default_value = true,
+				type = "checkbox",
+				description = mod:localize("enable_names_file_description"),
+				
+				change = function(new_value)
+					mod:set("enable_names_file", new_value)
+				end,
+				get = function()
+					return mod:get("enable_names_file") or true
+				end
+			},
+			{name = mod:localize("enable_names_tal_bless_file"),
+				setting_id = "enable_names_tal_bless_file",
+				default_value = false,
+				type = "checkbox",
+				description = mod:localize("enable_names_tal_bless_file_description"),
+				
+				change = function(new_value)
+					mod:set("enable_names_tal_bless_file", new_value)
+				end,
+				get = function()
+					return mod:get("enable_names_tal_bless_file") or true
 				end
 			},
 			{setting_id = "enhanced_descriptions_",
@@ -150,6 +189,7 @@ table.insert(options.options.widgets, create_option_set("health", "red"))
 table.insert(options.options.widgets, create_option_set("peril", "ui_orange_dark"))
 table.insert(options.options.widgets, create_option_set("stamina", "light_salmon"))
 table.insert(options.options.widgets, create_option_set("toughness", "ui_difficulty_1"))
+table.insert(options.options.widgets, create_option_set("coherency", "citadel_kindleflame"))
 
 --[+Buffs+]--
 table.insert(options.options.widgets, create_option_set("cleave", "player_slot_2_bright"))
@@ -172,19 +212,23 @@ table.insert(options.options.widgets, create_option_set("soulblaze", "ui_toughne
 table.insert(options.options.widgets, create_option_set("stagger", "terminal_background_selected"))
 
 --[+Psyker+]--
+table.insert(options.options.widgets, create_option_set("class_psyker", "player_slot_4"))
 table.insert(options.options.widgets, create_option_set("precision", "ui_psyker"))
 
 --[+Ogryn+]--
+table.insert(options.options.widgets, create_option_set("class_ogryn", "player_slot_3"))
 table.insert(options.options.widgets, create_option_set("fnp", "light_coral"))
 table.insert(options.options.widgets, create_option_set("luckyb", "orange"))
 table.insert(options.options.widgets, create_option_set("trample", "forest_green"))
 
 --[+Zealot+]--
+table.insert(options.options.widgets, create_option_set("class_zealot", "player_slot_2"))
 table.insert(options.options.widgets, create_option_set("fury", "hot_pink"))
 table.insert(options.options.widgets, create_option_set("momentum", "ui_red_super_light"))
 table.insert(options.options.widgets, create_option_set("stealth", "ui_grey_light"))
 
 --[+Veteran+]--
+table.insert(options.options.widgets, create_option_set("class_veteran", "player_slot_1"))
 table.insert(options.options.widgets, create_option_set("focus", "dark_violet"))
 table.insert(options.options.widgets, create_option_set("focust", "teal"))
 table.insert(options.options.widgets, create_option_set("meleespec", "ui_hud_red_light"))
@@ -196,5 +240,16 @@ table.insert(options.options.widgets, create_option_set("numbers", "ui_hud_yello
 table.insert(options.options.widgets, create_option_set("variables", "ui_hud_yellow_super_light"))
 table.insert(options.options.widgets, create_option_set("warning", "item_rarity_6"))
 table.insert(options.options.widgets, create_option_set("talents", "ui_input_color"))
+
+--[+Difficulty+]--
+table.insert(options.options.widgets, create_option_set("sedition", "ui_difficulty_1"))
+table.insert(options.options.widgets, create_option_set("uprising", "ui_difficulty_2"))
+table.insert(options.options.widgets, create_option_set("malice", "ui_difficulty_3"))
+table.insert(options.options.widgets, create_option_set("heresy", "ui_difficulty_4"))
+table.insert(options.options.widgets, create_option_set("damnation", "ui_difficulty_5"))
+
+--[+Penances+]--
+table.insert(options.options.widgets, create_option_set("talents_penances", "forest_green"))
+
 
 return options

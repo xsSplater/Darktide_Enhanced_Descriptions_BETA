@@ -11,11 +11,11 @@ local doesnt_stack_w_z_same_aura_ogr_fr = "- Ne se cumule pas avec la même aura
 local doesnt_stack_w_z_same_aura_vet_fr = "- Ne se cumule pas avec la même aura d'un autre Vétéran."
 local procs_add_conc_stim_rem_cd_red_fr = "- Se déclenche en plus de la réduction du temps de recharge du stimulant de concentration de 3 secondes par seconde."
 local stacks_add_w_oth_dmg_fr = "- S'additionne avec d'autres bonus de dégâts et se multiplie avec les bonus de Puissance des bénédictions d'armes."
-local stacks_add_w_oth_rend_brit_fr = "- s'additionne avec d'autres bonus de déchirement et avec les débonus de fragilité appliqués aux ennemis."
+local stacks_add_w_oth_rend_brit_fr = "- s'additionne avec d'autres bonus de déchirement et avec les débuffs de fragilité appliqués aux ennemis."
 local stacks_mult_w_other_dmg_red_buffs_fr = "- se multiplie avec d'autres bonus de réduction de dégâts."
 local this_also_incr_speed_load_com_shotg_fr = "- Cela augmente également la vitesse de chargement de l'action spéciale des fusils à pompe de combat."
 local this_also_buffs_melee_sp_act_guns_fr = "- Cela améliore également les actions spéciales de mêlée des armes : Fusil Ripper, Gantelet lance-grenade (partie mêlée), Tonitruant, Double mitrailleuse et Recul."
-local z_eff_of_this_tougn_rep_fr = "- L'efficacité de cette régénération de robustesse est affectée par certains débonus du joueur comme le gaz toxique."
+local z_eff_of_this_tougn_rep_fr = "- L'efficacité de cette régénération de robustesse est affectée par certains débuffs du joueur comme le gaz toxique."
 
 --[+ ++DESCRIPTIONS AMÉLIORÉES++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)

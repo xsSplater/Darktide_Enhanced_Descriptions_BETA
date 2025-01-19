@@ -5,204 +5,204 @@
 -- Extended descriptions have a lower priority than the main description, imho.
 
 -- If you added/changed something, then you need to duplicate/change the same entry in the list below.
--- For example, you change "ED_CritChncBst_rgb" to "ED_CritChncBst_rgb_urlang", then at the bottom you need to find (CTRL+F) the "ED_CritChncBst_rgb" entries and also rename them from "ED_CritChncBst_rgb = ED_CritChncBst_rgb," to "ED_CritChncBst_rgb_urlang = ED_CritChncBst_rgb_urlang,".
--- If you add a new entry (ex. MyEntry_rgb), just duplicate it in the list below (MyEntry_rgb = MyEntry_rgb,).
+-- For example, you change "ED_CritChncBst_rgb_ru" to "ED_CritChncBst_rgb_ru_urlang", then at the bottom you need to find (CTRL+F) the "ED_CritChncBst_rgb_ru" entries and also rename them from "ED_CritChncBst_rgb_ru = ED_CritChncBst_rgb_ru," to "ED_CritChncBst_rgb_ru_urlang = ED_CritChncBst_rgb_ru_urlang,".
+-- If you add a new entry (ex. MyEntry_rgb_ru), just duplicate it in the list below (MyEntry_rgb_ru = MyEntry_rgb_ru,).
 
 local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
 local ppp___ppp = "+++-------------------------------------------------+++"
-local stacks_add_w_health_buff_cur = "- Stacks additively with Health buffs from Curios."
-local stacks_add_w_sm_mel_dmg_nodes = "- Stacks additively with other small Melee Damage nodes and other related Damage buffs."
-local stacks_mult_power_lvl_weap_bless = "- Stacks multiplicatively with Power level buffs from Weapon Blessings."
-local also_appl_2_health_wl_downed = "- Also applies to Health while downed."
-local stacks_add_w_sm_tghnss_nodes = "- Stacks additively with other small Toughness nodes."
-local cur_max_tghnss_mult_by_tghnss_pc = "- Current max Toughness is multiplied by the Toughness percentage buffs from Curios."
+local stacks_add_w_health_buff_cur = "- Складывается с усилениями здоровья от редкостей."
+local stacks_add_w_sm_mel_dmg_nodes = "- Складывается с другими малыми узлами повышения урона  ближнего боя и другими связанными с ними усилениями урона."
+local stacks_mult_power_lvl_weap_bless = "- Перемножается с усилениями уровня силы от благословений оружия."
+local also_appl_2_health_wl_downed = "- Также применяется к здоровью, если вы выведены из строя."
+local stacks_add_w_sm_tghnss_nodes = "- Складывается с другими малыми узлами повышения стойкости."
+local cur_max_tghnss_mult_by_tghnss_pc = "- Текущая максимальная стойкость умножается на процентные усиления стойкости от редкостей."
 
---[+ ++ENHANCED DESCRIPTIONS++ +]--
+--[+ ++ENHANCED DESCRIPTIONS - РАСШИРЕННЫЕ ОПИСАНИЯ++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
---[+ +NODES+ +]--
-	--[+ Critical Chance Boost +]--
-	local ED_CritChncBst_rgb = iu_actit(table.concat({
+--[+ +NODES - УЗЛЫ+ +]--
+	--[+ Critical Chance Boost - Повышение шанса Критического удара +]--
+	local ED_CritChncBst_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- Works for all attacks that can Crit.",
-		"- Stacks additively with other sources of Crit Chance.",
-	}, "\n"), enhdesc_col) -- Psyker, Veteran
+		"- Работает для всех атак, которые могут наносить критические удары.",
+		"- Складывается с другими источниками шанса критического удара.",
+	}, "\n"), enhdesc_col) -- Псайкер, Ветеран
 
 	--[+ Health Boost Low +]--
-	local ED_HeathBst_L_rgb = iu_actit(table.concat({
+	local ED_HeathBst_L_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
 		also_appl_2_health_wl_downed,
 		stacks_add_w_health_buff_cur,
-		"-- OGRYN: For example, one +21% Health Curio with a +5% Health Perk and this 5% Health node increase Ogryn's Max Health of 300 by 300x(0.21+0.05+0.05)=93 to 393 Health.",
-		"-- VETERAN: For example, one +21% Health Curio with a +5% Health Perk and this 5% Health node increase Veteran's Max Health of 150 by 150x(0.21+0.05+0.05)=46.5 to 196.5 Health (HUD rounds up: 197).",
-	}, "\n"), enhdesc_col) -- Veteran,
+		"-- ОГРИН: Например, одна редкость с +21% к здоровью и с повышением характеристики +5% к здоровью, а также этот узел с +5% к здоровью увеличивают максимальное здоровье Огрина с 300 до 393 единиц здоровья (300x(0,21+0,05+0,05)=93).",
+		"-- ВЕТЕРАН: Например, одна редкость с +21% к здоровью и с повышением характеристики +5% к здоровью, а также этот узел с +5% к здоровью увеличивают максимальное здоровье Ветерана со 150 единиц до 196,5 единиц здоровья (150x(0,21+0,05+0,05)=46,5), HUD округляет в большую сторону: 197.",
+	}, "\n"), enhdesc_col) -- Ветеран
 
 	--[+ Health Boost Medium +]--
-	local ED_HeathBst_M_rgb = iu_actit(table.concat({
+	local ED_HeathBst_M_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
 		also_appl_2_health_wl_downed,
 		stacks_add_w_health_buff_cur,
-		"-- PSYKER: For example, one +21% Health Curio with a +5% Health Perk and this 10% Health node increase Psyker's Max Health of 150 by 150x(0.21+0.05+0.1)=54 to 204 Health.",
-		"-- OGRYN: For example, one +21% Health Curio with a +5% Health Perk and this 10% Health node increase Ogryn's Max Health of 300 by 300x(0.21+0.05+0.1)=108 to 408 Health.",
-		"-- ZEALOT: For example, one +21% Health Curio with a +5% Health Perk and this 10% Health node increase Zealot's Max Health of 200 by 200x(0.21+0.05+0.1)=72 to 272 Health.",
-	}, "\n"), enhdesc_col) -- Psyker, Ogryn, Zealot
+		"-- ПСАЙКЕР: Например, одна редкость с +21% к здоровью и с повышением характеристики +10% к здоровью, а также этот узел с +5% к здоровью увеличивают максимальное здоровье Псайкера со 150 до 204 единиц здоровья (150x(0,21+0,05+0,1)=54).",
+		"-- ОГРИН: Например, одна редкость с +21% к здоровью и с повышением характеристики +10% к здоровью, а также этот узел с +5% к здоровью увеличивают максимальное здоровье Огрина с 300 до 408 здоровья (300x(0,21+0,05+0,1)=108).",
+		"-- ИЗУВЕР: Например, одна редкость с +21% к здоровью и с повышением характеристики +10% к здоровью, а также этот узел с +5% к здоровью увеличивают максимальное здоровье Изувера с 200 до 272 единиц здоровья (200x(0,21+0,05+0,1)=72).",
+	}, "\n"), enhdesc_col) -- Псайкер, Огрин, Изувер
 
 	--[+ Heavy Melee Damage Boost Low + Medium +]--
-	local ED_HMeleeDmgBst_LM_rgb = iu_actit(table.concat({
+	local ED_HMeleeDmgBst_LM_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
 		stacks_add_w_sm_mel_dmg_nodes,
 		stacks_mult_power_lvl_weap_bless,
-		"- This also applies to melee special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Heavy Stubbers, and Kickback.",
-	}, "\n"), enhdesc_col) -- Ogryn
+		"- Это также относится к специальным атакам ближнего боя дробовиков-потрошителей, гренадёрских перчаток (ближний бой), гранатомётов, тяжёлых стабберов и дробовиков.",
+	}, "\n"), enhdesc_col) -- Огрин
 
 	--[+ Inspiring Presence +]--
-	local ED_InspiringP_rgb = iu_actit(table.concat({
+	local ED_InspiringP_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- Stacks additively with Ogryn's Aura \"Stay Close!\" and Toughness Regeneration Speed from Curios.",
-		"- Increases the base amount of Coherency Toughness Regenerated (CTR) per Allies per second:",
+		"- Складывается с аурой огрина «Держись рядом!» и с повышением скорости восстановления стойкости от редкостей.",
+		"- Увеличивает базовое количество Восстанавливаемой Стойкости в Сплочённости(ВСС) в секунду за каждого союзника(Союзн) в сплочённости:",
 		"_______________________________",
-		"Allies: | CTR:                 | After 5 seconds:",
-		"        0 | 0.00 -> 0.00    | 0.00",
-		"         1 | 3.75 -> 4.13      | 20.63 (HUD: 21)",
-		"        2 | 5.63 -> 6.19      | 30.94 (HUD: 31)",
-		"        3 | 7.50 -> 8.25     | 41.25 (HUD: 42)",
+		"Союзн: |ВСС:               |После 5 секунд:",
+		"0            |0.00 -> 0.00  |0.00",
+		"1             |3.75 -> 4.13    |20.63 (HUD: 21)",
+		"2            |5.63 -> 6.19    |30.94 (HUD: 31)",
+		"3            |7.50 -> 8.25    |41.25 (HUD: 42)",
 		"_______________________________",
-	}, "\n"), enhdesc_col) -- Veteran
+	}, "\n"), enhdesc_col) -- Ветеран
 
 	--[+ Melee Damage Boost Low + Medium +]--
-	local ED_MeleeDmgBst_L_M_rgb = iu_actit(table.concat({
+	local ED_MeleeDmgBst_L_M_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
 		stacks_add_w_sm_mel_dmg_nodes,
 		stacks_mult_power_lvl_weap_bless,
-		"- Applies to melee special actions of ranged weapons.",
-	}, "\n"), enhdesc_col) -- Ogryn, Veteran, Zealot
+		"- Применяется к специальным атакам ближнего боя дальнобойного оружия.",
+	}, "\n"), enhdesc_col) -- Огрин, Ветеран, Изувер
 
 	--[+ Movement Speed Boost +]--
-	local ED_MoveSpdBst_rgb = iu_actit(table.concat({
+	local ED_MoveSpdBst_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- PSYKER: Stacks additively with related buffs from: \"Disrupt Destiny\", \"Mettle\", \"Warp Speed\" and weapon Blessings like \"Rev it Up\".",
-		"- ZEALOT: Stacks additively with other small Movement Speed nodes and Movement Speed buffs from \"Shroudfield\", \"Thy Wrath be Swift\", and Weapon Blessings like \"Rev it Up\".",
-		"-- Stacks multiplicatively with Sprinting Speed buff from \"Swift Certainty\".",
-		"- VETERAN: Stacks additively with Movement Speed buffs from \"Infiltrate\", \"Leave No One Behind\", aura \"Close and Kill\", and Weapon Blessings like \"Rev it Up\".",
-	}, "\n"), enhdesc_col) -- Psyker, Veteran, Zealot
+		"- ПСАЙКЕР: суммируется с соответствующими усилениями от: «Прерывания судьбы», «Ретивостью», «Варп-скоростью» и благословениями оружия, такими как «Ускорься».",
+		"- ИЗУВЕР: суммируется с другими малыми узлами повышения скорости передвижения и баффами скорости передвижения от талантов «Покров», «Твой гнев будет быстр» и благословениями оружия, такими как «Ускорься».",
+		"-- Перемножается с усилением скорости бега таланта «Быстрая уверенность».",
+		"- ВЕТЕРАН: суммируется с усилениями скорости передвижения от способностей «Проникновение», «Никого не оставлять позади», аурой «Приблизиться и убить» и благословениями оружия, такими как «Ускорься».",
+	}, "\n"), enhdesc_col) -- Псайкер, Ветеран, Изувер
 
 	--[+ Peril Resistance +]--
-	local ED_PerilRes_rgb = iu_actit(table.concat({
+	local ED_PerilRes_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- Stacks multiplicatively with other small nodes and related Peril cost reduction buffs from \"By Crack of Bone\", \"Becalming Eruption\", \"Empyric Resolve\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\", and Combat Stimm.",
-	}, "\n"), enhdesc_col) -- Psyker,
+		"- Перемножается с другими малыми узлами и соответствующими эффектами снижения стоимости опасности от талантов «Треск костей», «Успокаивающее извержение», «Эмпирическая решимость», «Внутреннее спокойствие», «Кинетический резонанс», «Якорь реальности» и с боевыми стимуляторами.",
+	}, "\n"), enhdesc_col) -- Псайкер,
 
 	--[+ Ranged Damage Boost +]--
-	local ED_RangDmgBst_rgb = iu_actit(table.concat({
+	local ED_RangDmgBst_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- Stacks additively with other small Ranged Damage nodes and other related Damage buffs.",
+		"- Складывается с другими малыми узлами повышения урона дальнего боя и другими связанными с ними усилениями урона.",
 		stacks_mult_power_lvl_weap_bless,
-	}, "\n"), enhdesc_col) -- Psyker, Ogryn, Veteran
+	}, "\n"), enhdesc_col) -- Псайкер, Огрин, Ветеран
 
 	--[+ Reload Boost +]--
-	local ED_ReloadBst_rgb = iu_actit(table.concat({
+	local ED_ReloadBst_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- OGRYN: Stacks additively with Reload speed buffs from \"Pacemaker\", \"Point-Blank Barrage\", Weapon Perks and Blessings, and Celerity Stimm.",
-		"- VETERAN: Stacks additively with Reload speed buffs from \"Fleeting Fire\", \"Marksman's Focus\", \"Tactical Reload\", \"Volley Adept\", Weapon Perks and Blessings, and Celerity Stimm.",
-		"-- This also increases the speed of the loading special action of Combat Shotguns.",
-	}, "\n"), enhdesc_col) -- Ogryn, Veteran
+		"- ОГРИН: суммируется с усилениями скорости перезарядки от талантов «Задающий ритм», «Беспощадный обстрел в упор», характеристиками и благословениями оружия, а также с стимулятором стремительности.",
+		"- ВЕТЕРАН: суммируется с усилениями скорости перезарядки от талантов «Беглый огонь», «Концентрация снайпера», «Тактическая перезарядка», «Адепт залпа», характеристиками и благословениями оружия, а также с стимулятором стремительности.",
+		"-- Это также увеличивает скорость зарядки специальных патронов в боевые дробовики.",
+	}, "\n"), enhdesc_col) -- Огрин, Ветеран
 
 	--[+ Rending Boost +]--
-	local ED_RendingBst_rgb = iu_actit(table.concat({
+	local ED_RendingBst_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- Applies to all Attacks boosting Damage against armor types: Carapace, Flak, Maniac, Unyielding (including Damage of explosions and DoTs like Bleed and Burn applied by Ogryn).",
-		"- Only affects Ogryn's own Damage.",
-		"- Stacks additively with other Rending buffs and with Brittleness debuffs that are applied to enemies.",
-	}, "\n"), enhdesc_col) -- Ogryn,
+		"- Применяется ко всем атакам, увеличивающим урон по типам брони: панцирная, противоосколочная, маньяк, несгибаемый (включая урон от взрывов и DoT-эффектов, таких как кровотечение и горение, наносимых огрином).",
+		"- Влияет только на собственный урон огрина.",
+		"- Складывается с другими эффектами пробивания и хрупкости брони.",
+	}, "\n"), enhdesc_col) -- Огрин,
 
 	--[+ Stamina Boost +]--
-	local ED_StaminaBst_rgb = iu_actit(table.concat({
+	local ED_StaminaBst_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- Stacks additively with Stamina values from Curios, Weapon Perks and Weapon Stamina templates.",
-		"- Each segment of the Stamina bar in the player HUD represents 1 Stamina.",
-	}, "\n"), enhdesc_col) -- Veteran, Zealot
+		"- Складывается со значениями выносливости от редкостей, характеристик и шаблонов выносливости оружия.",
+		"- Каждый сегмент шкалы выносливости в интерфейсе игрока представляет 1 единицу выносливости.",
+	}, "\n"), enhdesc_col) -- Ветеран, Изувер
 
 	--[+ Suppression Boost +]--
-	local ED_SuppressionBst_rgb = iu_actit(table.concat({
+	local ED_SuppressionBst_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- OGRYN: Stacks additively with Suppression buff from Weapon Blessing \"Ceaseless Barrage\".",
-		"- ZEALOT: Stacks additively with Suppression buff from Weapon Blessing \"Powderburn\".",
-		"- VETERAN: Stacks additively with Suppression buffs from \"Competitive Urge\", \"Keep Their Heads Down!\", and Weapon Blessing \"Powderburn\".",
-	}, "\n"), enhdesc_col) -- Ogryn, Veteran, Zealot
+		"- ОГРИН: суммируется с усилением подавления врагов от благословения оружия «Непрерывный обстрел».",
+		"- ИЗУВЕР: суммируется с усилением подавления врагов от благословения оружия «Пороховой ожог».",
+		"- ВЕТЕРАН: суммируется с эффектами подавления врагов от талантов «Соревновательный инстинкт», «Не давай им поднять головы!» и благословения оружия «Пороховой ожог».",
+	}, "\n"), enhdesc_col) -- Огрин, Ветеран, Изувер
 
 	--[+ Stamina Regeneration Boost +]--
-	local ED_StamRegenBst_rgb = iu_actit(table.concat({
+	local ED_StamRegenBst_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- Reduces base Stamina Regeneration Delay from 1 to 0.75 seconds.",
-		"- This time is the Delay before Stamina starts Regenerating after having spent Stamina.",
-		"- Stacks additively with the other small Stamina Regeneration Delay reduction node.",
-	}, "\n"), enhdesc_col) -- Veteran
+		"- Уменьшает базовую задержку восстановления выносливости с 1 до 0,75 секунды.",
+		"- Это время задержки перед началом восстановления выносливости после её расходования.",
+		"- Складывается с другим небольшим узлом снижения задержки восстановления выносливости.",
+	}, "\n"), enhdesc_col) -- Ветеран
 
 	--[+ Toughness Boost Low +]--
-	local ED_TghnsBst_L_rgb = iu_actit(table.concat({
+	local ED_TghnsBst_L_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
 		stacks_add_w_sm_tghnss_nodes,
 		cur_max_tghnss_mult_by_tghnss_pc,
-		"-- PSYKER: For example, at 105 Max Toughness (Psyker's base 60 and three +15 Toughness node) with one +17% Toughness Curio with a +5% Toughness Perk, Psyker's Max Toughness of 105 is increased by 105x(0.17+0.05)=23.1 to 128.1 Toughness (HUD rounds up: 129).",
-		"-- ZEALOT: For example, at 85 Max Toughness (Zealot's base 70 and one +15 Toughness node) with one +17% Toughness Curio with a +5% Toughness Perk, Zealot's Max Toughness of 85 is increased by 85x(0.17+0.05)=18.7 to 103.7 Toughness (HUD rounds up: 104).",
-		"- A character's Maximum Toughness is the Base value that is used in Toughness replenished calculations of most Talents and Blessings.",
-	}, "\n"), enhdesc_col) -- Psyker, Ogryn, Veteran, Zealot
+		"-- ПСАЙКЕР: Например, при максимальной стойкости 105 (базовая стойкость псайкера 60 и три узла +15 стойкости) с одной редкостью +17% к стойкости и с повышением характеристики +5% к стойкости, максимальная стойкость псайкера 105 увеличивается до 128,1 стойкости (105x(0,17+0,05)=23,1), HUD округляет в большую сторону: 129.",
+		"-- ИЗУВЕР: Например, при максимальной стойкости 85 (базовая стойкость изувера 70 и один узел +15 стойкости) с одной редкостью +17% к стойкости с повышением характеристики +5% к стойкости, максимальная стойкость изувера 85 увеличивается до 103,7 стойкости (85x(0,17+0,05)=18,7), HUD округляет в большую сторону: 104.",
+		"- Максимальная стойкость персонажа — это базовое значение, которое используется при расчете восполняемой стойкости большинства талантов и благословений.",
+	}, "\n"), enhdesc_col) -- Псайкер, Огрин, Ветеран, Изувер
 
 	--[+ Toughness Boost Medium +]--
-	local ED_TghnsBst_M_rgb = iu_actit(table.concat({
+	local ED_TghnsBst_M_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
 		stacks_add_w_sm_tghnss_nodes,
 		cur_max_tghnss_mult_by_tghnss_pc,
-		"-- OGRYN: For example, at 75 Max Toughness (Ogryn's base 50 and one +25 Toughness node) with one +17% Toughness Curio with a +5% Toughness Perk, Ogryn's Max Toughness of 75 is increased by 75x(0.17+0.05)=15.75 to 90.75 Toughness (HUD rounds up: 91).",
-		"-- VETERAN: For example, at 150 Max Toughness (Veteran's base 100 and two +25 Toughness nodes) with one +15% Toughness Curio with a +4% Toughness Perk, Veteran's Max Toughness of 150 is increased by 150x(0.15+0.04)=28.5 to 178.5 Toughness (HUD rounds up: 179).",
-		"- A character's Maximum Toughness is the Base value that is used in Toughness replenished calculations of most Talents and Blessings.",
-	}, "\n"), enhdesc_col) -- Ogryn, Veteran
+		"-- ОГРИН: Например, при максимальной стойкости 75 (базовая стойкость огрина 50 и один узел +25 стойкости) с одной редкостью +17% к стойкости с повышением характеристики +5% к стойкости, максимальная стойкость огрина 75 увеличивается до 90,75 стойкости (75x(0,17+0,05)=15,75), HUD округляет в большую сторону: 91.",
+		"-- ВЕТЕРАН: Например, при максимальной стойкости 150 (базовая стойкость ветерана 100 и два узла +25 стойкости) с одной редкостью +15% к стойкости с повышением характеристики +4% к стойкости, максимальная стойкость Ветерана 150 увеличивается до 178,5 стойкости (150x(0,15+0,04)=28,5), HUD округляет в большую сторону: 179.",
+		"- Максимальная стойкость персонажа — это базовое значение, которое используется при расчете восполняемой стойкости большинства талантов и благословений.",
+	}, "\n"), enhdesc_col) -- Огрин, Ветеран
 
 	--[+ Toughness Damage Reduction Low + Medium +]--
-	local ED_TghnsDmgRed_LM_rgb = iu_actit(table.concat({
+	local ED_TghnsDmgRed_LM_rgb_ru = iu_actit(table.concat({
 		"",
 		ppp___ppp,
-		"- Stacks additively with other small Toughness Damage Reduction nodes.",
-		"- Their sum Stacks multiplicatively with other Damage Reduction buffs.",
-		"-- ZEALOT: Stacks additively with \"I Shall Not Fall\".",
-	}, "\n"), enhdesc_col) -- Psyker, Ogryn, Veteran, Zealot
+		"- Складывается с другими малыми узлами снижения урона стойкости.",
+		"- Их сумма перемножается с другими усилениями снижения урона.",
+		"-- ИЗУВЕР: суммируется с талантом «Я не паду».",
+	}, "\n"), enhdesc_col) -- Псайкер, Огрин, Ветеран, Изувер
 
 -- In the list below, you also need to add a new entry or change an old one.
 return {
-	ED_TghnsBst_L_rgb = ED_TghnsBst_L_rgb,
-	ED_TghnsBst_M_rgb = ED_TghnsBst_M_rgb,
-	ED_TghnsDmgRed_LM_rgb = ED_TghnsDmgRed_LM_rgb,
-	ED_PerilRes_rgb = ED_PerilRes_rgb,
-	ED_InspiringP_rgb = ED_InspiringP_rgb,
-	ED_RangDmgBst_rgb = ED_RangDmgBst_rgb,
-	ED_HeathBst_L_rgb = ED_HeathBst_L_rgb,
-	ED_HeathBst_M_rgb = ED_HeathBst_M_rgb,
-	ED_CritChncBst_rgb = ED_CritChncBst_rgb,
-	ED_MoveSpdBst_rgb = ED_MoveSpdBst_rgb,
-	ED_MeleeDmgBst_L_M_rgb = ED_MeleeDmgBst_L_M_rgb,
-	ED_StaminaBst_rgb = ED_StaminaBst_rgb,
-	ED_SuppressionBst_rgb = ED_SuppressionBst_rgb,
-	ED_ReloadBst_rgb = ED_ReloadBst_rgb,
-	ED_StamRegenBst_rgb = ED_StamRegenBst_rgb,
-	ED_RendingBst_rgb = ED_RendingBst_rgb,
-	ED_HMeleeDmgBst_LM_rgb = ED_HMeleeDmgBst_LM_rgb,
+	ED_TghnsBst_L_rgb_ru = ED_TghnsBst_L_rgb_ru,
+	ED_TghnsBst_M_rgb_ru = ED_TghnsBst_M_rgb_ru,
+	ED_TghnsDmgRed_LM_rgb_ru = ED_TghnsDmgRed_LM_rgb_ru,
+	ED_PerilRes_rgb_ru = ED_PerilRes_rgb_ru,
+	ED_InspiringP_rgb_ru = ED_InspiringP_rgb_ru,
+	ED_RangDmgBst_rgb_ru = ED_RangDmgBst_rgb_ru,
+	ED_HeathBst_L_rgb_ru = ED_HeathBst_L_rgb_ru,
+	ED_HeathBst_M_rgb_ru = ED_HeathBst_M_rgb_ru,
+	ED_CritChncBst_rgb_ru = ED_CritChncBst_rgb_ru,
+	ED_MoveSpdBst_rgb_ru = ED_MoveSpdBst_rgb_ru,
+	ED_MeleeDmgBst_L_M_rgb_ru = ED_MeleeDmgBst_L_M_rgb_ru,
+	ED_StaminaBst_rgb_ru = ED_StaminaBst_rgb_ru,
+	ED_SuppressionBst_rgb_ru = ED_SuppressionBst_rgb_ru,
+	ED_ReloadBst_rgb_ru = ED_ReloadBst_rgb_ru,
+	ED_StamRegenBst_rgb_ru = ED_StamRegenBst_rgb_ru,
+	ED_RendingBst_rgb_ru = ED_RendingBst_rgb_ru,
+	ED_HMeleeDmgBst_LM_rgb_ru = ED_HMeleeDmgBst_LM_rgb_ru,
 }

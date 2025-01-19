@@ -31,7 +31,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++Stamina++]--
 	local stam_col = Color[mod:get("stamina_text_colour")](255, true) -- Do not translate this line!
 	local Stamina_rgb = iu_actit("Stamina", stam_col)
-	-- local Stamina_c_r_rgb = iu_actit("Stamina Cost", stam_col)
+	local Stamina_c_r_rgb = iu_actit("Stamina Cost", stam_col)
 	--[++Toughness++]--
 	local tghn_col = Color[mod:get("toughness_text_colour")](255, true) -- Do not translate this line!
 	local Toughness_rgb = iu_actit("Toughness", tghn_col)
@@ -161,8 +161,6 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Pwr_note_rgb = iu_actit(" Strength increases Damage, Stagger and Cleave.", note_col)
 	local Rend_note_rgb = iu_actit(" Rending increases your Damage.", note_col)
 	local Brtl_note_rgb = iu_actit(" Brittleness reduces the enemy's Armor.", note_col)
-	-- local Fire_n_trap_note_rgb = iu_actit(" Doesn't save you from Flamers and Trappers.", note_col)
-	-- local Trauma_note_rgb = iu_actit(" Doesn't work for secondary attacks of Trauma Staff.", note_col)
 	local Trauma_note_rgb = iu_actit("", note_col)
 	local Fire_n_trap_note_rgb = iu_actit("", note_col)
 --[+ Talents +]--
@@ -171,6 +169,39 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Stun_gren_rgb = iu_actit("Stun Grenade", tal_col)
 	local Frag_gren_rgb = iu_actit("Frag Grenade", tal_col)
 	local Fragmentation_gren_rgb = iu_actit("Fragmentation Grenade", tal_col)
+
+	--[+ ++TREAT - СЛОЖНОСТЬ++ +]--
+		--[+ SEDITION - МЯТЕЖ +]--
+		local sed_col = Color[mod:get("sedition_text_colour")](255, true) -- Do not translate this line!
+		local sedition_rgb_ru = iu_actit("Sedition", sed_col)
+		--[+ UPRISING - ВОССТАНИЕ +]--
+		local upr_col = Color[mod:get("uprising_text_colour")](255, true) -- Do not translate this line!
+		local uprising_rgb_ru = iu_actit("Uprising", upr_col)
+		--[+ MALICE - ЗЛОБА +]--
+		local mal_col = Color[mod:get("malice_text_colour")](255, true) -- Do not translate this line!
+		local malice_rgb_ru = iu_actit("Malice", mal_col)
+		--[+ HERESY - ЕРЕСЬ +]--
+		local her_col = Color[mod:get("heresy_text_colour")](255, true) -- Do not translate this line!
+		local heresy_rgb_ru = iu_actit("Heresy", her_col)
+		--[+ DAMNATION - ПРОКЛЯТИЕ +]--
+		local dam_col = Color[mod:get("damnation_text_colour")](255, true) -- Do not translate this line!
+		local damnation_rgb_ru = iu_actit("Damnation", dam_col)
+	--[+ ++VETERAN - ВЕТЕРАН++ +]--
+		local cls_vet_col = Color[mod:get("class_veteran_text_colour")](255, true) -- Do not translate this line!
+		local cls_vet_rgb_ru = iu_actit("Veteran", cls_vet_col)
+		local cls_vet2_rgb_ru = iu_actit("Veteran", cls_vet_col)
+	--[+ ++ZEALOT - Изувер++ +]--
+		local cls_zea_col = Color[mod:get("class_zealot_text_colour")](255, true) -- Do not translate this line!
+		local cls_zea_rgb_ru = iu_actit("Zealot", cls_zea_col)
+		local cls_zea2_rgb_ru = iu_actit("Zealot", cls_zea_col)
+	--[+ ++PSYKER - ПСАЙКЕР++ +]--
+		local cls_psy_col = Color[mod:get("class_psyker_text_colour")](255, true) -- Do not translate this line!
+		local cls_psy_rgb_ru = iu_actit("Psyker", cls_psy_col)
+		local cls_psy2_rgb_ru = iu_actit("Psyker", cls_psy_col)
+	--[+ ++OGRYN - ОГРИН++ +]--
+		local cls_ogr_col = Color[mod:get("class_ogryn_text_colour")](255, true) -- Do not translate this line!
+		local cls_ogr_rgb_ru = iu_actit("Ogryn", cls_ogr_col)
+		local cls_ogr2_rgb_ru = iu_actit("Ogryn", cls_ogr_col)
 
 -- In the list below, you also need to add a new entry or change an old one.
 return {
@@ -206,8 +237,6 @@ return {
 	Crit_hit_color_rgb = Crit_hit_color_rgb,
 	Damage_rgb = Damage_rgb,
 	Damagewrp_rgb = Damagewrp_rgb,
-	Damage_ru_rgb = Damage_ru_rgb,
-	Damagewrp_ru_rgb = Damagewrp_ru_rgb,
 	Electrocute_rgb = Electrocute_rgb,
 	Electrocution_rgb = Electrocution_rgb,
 	Electrocuted_rgb = Electrocuted_rgb,
@@ -260,40 +289,18 @@ return {
 	Brtl_note_rgb = Brtl_note_rgb,
 	Fire_n_trap_note_rgb = Fire_n_trap_note_rgb,
 
-	scriers_gaze_rgb = scriers_gaze_rgb,
-	stun_gren_rgb = stun_gren_rgb,
-	p_stam_var_rgb = p_stam_var_rgb,
-	p_rbc_rgb = p_rbc_rgb,
-	m_tghn_reg_del_rgb = m_tghn_reg_del_rgb,
-	ammo_var_rgb = ammo_var_rgb,
-	blck_var_rgb = blck_var_rgb,
-	blltam_var_rgb = blltam_var_rgb,
-	chnc_var_rgb = chnc_var_rgb,
-	chrgtime_var_rgb = chrgtime_var_rgb,
-	cd_var_rgb = cd_var_rgb,
-	cleave_var_rgb = cleave_var_rgb,
-	crit_var_rgb = crit_var_rgb,
-	critchmax_var_rgb = critchmax_var_rgb,
-	dmg_var_rgb = dmg_var_rgb,
-	dur_var_rgb = dur_var_rgb,
-	hit_var_rgb = hit_var_rgb,
-	impact_var_rgb = impact_var_rgb,
-	maxstks_var_rgb = maxstks_var_rgb,
-	mult_hit_var_rgb = mult_hit_var_rgb,
-	procch_var_rgb = procch_var_rgb,
-	red_var_rgb = red_var_rgb,
-	rending2_var_rgb = rending2_var_rgb,
-	range_var_rgb = range_var_rgb,
-	rangcrtdmg_var_rgb = rangcrtdmg_var_rgb,
-	rend_var_rgb = rend_var_rgb,
-	stacks_var_rgb = stacks_var_rgb,
-	stgr_var_rgb = stgr_var_rgb,
-	stgrrang_var_rgb = stgrrang_var_rgb,
-	stgrrdct_var_rgb = stgrrdct_var_rgb,
-	stam_var_rgb = stam_var_rgb,
-	time_var_rgb = time_var_rgb,
-	tghns_var_rgb = tghns_var_rgb,
-	value_var_rgb = value_var_rgb,
-	warpchrg_var_rgb = warpchrg_var_rgb,
-	weapsprd_var_rgb = weapsprd_var_rgb,
+	sedition_rgb_ru = sedition_rgb_ru,
+	uprising_rgb_ru = uprising_rgb_ru,
+	malice_rgb_ru = malice_rgb_ru,
+	heresy_rgb_ru = heresy_rgb_ru,
+	damnation_rgb_ru = damnation_rgb_ru,
+
+	cls_vet_rgb_ru = cls_vet_rgb_ru,
+	cls_vet2_rgb_ru = cls_vet2_rgb_ru,
+	cls_zea_rgb_ru = cls_zea_rgb_ru,
+	cls_zea2_rgb_ru = cls_zea2_rgb_ru,
+	cls_psy_rgb_ru = cls_psy_rgb_ru,
+	cls_psy2_rgb_ru = cls_psy2_rgb_ru,
+	cls_ogr_rgb_ru = cls_ogr_rgb_ru,
+	cls_ogr2_rgb_ru = cls_ogr2_rgb_ru,
 }
