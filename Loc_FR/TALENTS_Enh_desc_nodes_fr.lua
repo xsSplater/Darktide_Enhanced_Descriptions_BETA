@@ -6,7 +6,7 @@ local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
 local ppp___ppp = "+++-------------------------------------------------+++"
-local stacks_add_w_health_buff_cur_fr = "- S'additionne avec les autres modificateurs de vis des curiosité."
+local stacks_add_w_health_buff_cur_fr = "- S'additionne avec les autres modificateurs de vie des curiosité."
 local stacks_add_w_sm_mel_dmg_nodes_fr = "- S'additionne avec les autres boost de dégats de mélées et autres boost de dommage."
 local stacks_mult_power_lvl_weap_bless_fr = "- Se multiplie avec les boosts de puissance des bénédictions."
 local also_appl_2_health_wl_downed_fr = "- S'applique aussi a la vie des joueurs à terre."
