@@ -38,7 +38,7 @@ local localization_templates = {
 	--[+ Passive +]--
 	-- create_template("talent_tree_main_000_en", {"loc_glossary_talent_default"}, {"en"}, function(locale, value) return "Passive" end),
 	--[+ Russian +]-- Пассивный -- руоф Пассив.
-	--create_template("talent_tree_main_000_ru", {"loc_glossary_talent_default"}, {"ru"}, function(locale, value) return "Пассивный" end),
+	create_template("talent_tree_main_000_ru", {"loc_glossary_talent_default"}, {"ru"}, function(locale, value) return "Пассивный" end),
 
 	--[+ Blitz +]--
 	-- create_template("talent_tree_main_001_en", {"loc_glossary_term_tactical"}, {"en"}, function(locale, value) return "Blitz" end),
@@ -63,7 +63,7 @@ local localization_templates = {
 	--[+ (Lock) Locked +]--
 	-- create_template("talent_tree_main_005_en", {"loc_talent_mechanic_locked"}, {"en"}, function(locale, value) return "Locked" end),
 	--[+ Russian +]-- Закрыт -- руоф Заблокир.
-	--create_template("talent_tree_main_005_ru", {"loc_talent_mechanic_locked"}, {"ru"}, function(locale, value) return "Закрыт" end),
+	create_template("talent_tree_main_005_ru", {"loc_talent_mechanic_locked"}, {"ru"}, function(locale, value) return "Закрыт" end),
 
 	--[+ [LMB] Activate +]--
 	-- create_template("talent_tree_main_006_en", {"loc_talent_menu_tooltip_button_hint_first_level"}, {"en"}, function(locale, value) return "Activate" end),
@@ -78,7 +78,7 @@ local localization_templates = {
 	--[+ [V] View full build  +]--
 	-- create_template("talent_tree_main_008_en", {"loc_alias_talent_builder_view_hotkey_summary"}, {"en"}, function(locale, value) return "View full build" end),
 	--[+ Russian +]-- Посмотреть весь билд -- руоф Осмотреть полную сборку
-	--create_template("talent_tree_main_008_ru", {"loc_alias_talent_builder_view_hotkey_summary"}, {"ru"}, function(locale, value) return "Посмотреть весь билд" end),
+	create_template("talent_tree_main_008_ru", {"loc_alias_talent_builder_view_hotkey_summary"}, {"ru"}, function(locale, value) return "Посмотреть весь билд" end),
 
 	--[+ Full build +]--
 	-- create_template("talent_tree_main_009_en", {"loc_alias_talent_builder_view_popup_title_summary"}, {"en"}, function(locale, value) return "Full build" end),
@@ -99,7 +99,7 @@ local localization_templates = {
 	--[+ Keystone Modifier +]--
 	-- create_template("talent_tree_main_mods_002_en", {"loc_glossary_talent_keystone_modifier"}, {"en"}, function(locale, value) return "Keystone Modifier" end),
 	--[+ Russian +]-- Модификатор ключевого таланта -- руоф Модификатор краеугольного камня
-	--create_template("talent_tree_main_mods_002_ru", {"loc_glossary_talent_keystone_modifier"}, {"ru"}, function(locale, value) return "Модификатор ключевого таланта" end),
+	create_template("talent_tree_main_mods_002_ru", {"loc_glossary_talent_keystone_modifier"}, {"ru"}, function(locale, value) return "Модификатор ключевого таланта" end),
 
 --[+ +SELECTING THIS...+ +]--
 	-- create_template("talent_tree_main_sel_000_en", {"loc_talent_mechanic_exclusive_tactical"}, {"en"}, function(locale, value) return "Selecting this Blitz locks all other Blitzes." end),
