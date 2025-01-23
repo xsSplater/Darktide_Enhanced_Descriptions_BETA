@@ -356,7 +356,7 @@ local localization_templates = {
 	--[+ Aura 1 - Kinetic Presence +]--
 	create_template("talent_tree_psy_aura1_000_desc_en", {"loc_talent_psyker_base_3_description"}, {"en"}, function(locale, value) return "{damage:%s} "..COLORS_KWords.Damage_rgb.." against Elite Enemies for you and Allies in Coherency."..TALENTS_Enh_desc.ED_PSY_Aura_1_rgb end), -- damage: +7.5% -- colors
 	--[+ French +]--
-	create_template("talent_tree_psy_aura1_000_desc_fr", {"loc_talent_psyker_base_3_description"}, {"fr"}, function(locale, value) return "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemis pour vos vous et vos alliés en syntonie."..TALENTS_Enh_desc_fr.ED_PSY_Aura_1_rgb_fr end),
+	create_template("talent_tree_psy_aura1_000_desc_fr", {"loc_talent_psyker_base_3_description"}, {"fr"}, function(locale, value) return "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemis d'élites pour vos vous et vos alliés en syntonie."..TALENTS_Enh_desc_fr.ED_PSY_Aura_1_rgb_fr end),
 	--[+ Russian +]-- Кинетическое присутствие
 	create_template("talent_tree_psy_aura1_000_desc_ru", {"loc_talent_psyker_base_3_description"}, {"ru"}, function(locale, value) return "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." по элитным врагам для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Aura_1_rgb_ru end),
 
