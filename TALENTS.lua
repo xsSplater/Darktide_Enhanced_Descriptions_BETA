@@ -68,7 +68,7 @@ local localization_templates = {
 	--[+ [LMB] Activate +]--
 	-- create_template("talent_tree_main_006_en", {"loc_talent_menu_tooltip_button_hint_first_level"}, {"en"}, function(locale, value) return "Activate" end),
 	--[+ Russian +]-- Включить -- руоф Актив.
-	--create_template("talent_tree_main_006_ru", {"loc_talent_menu_tooltip_button_hint_first_level"}, {"ru"}, function(locale, value) return "Включить" end),
+	create_template("talent_tree_main_006_ru", {"loc_talent_menu_tooltip_button_hint_first_level"}, {"ru"}, function(locale, value) return "Включить" end),
 
 	--[+ [RMB] Deactivate +]--
 	-- create_template("talent_tree_main_007_en", {"loc_talent_menu_tooltip_button_hint_remove_level_first"}, {"en"}, function(locale, value) return "Deactivate" end),
