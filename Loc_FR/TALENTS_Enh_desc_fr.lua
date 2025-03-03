@@ -1058,7 +1058,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		ppp___ppp,
 		"- Active les Coups dans le dos.",
 		"- S'additionne avec les bonus de dégâts de Coup dans le dos de \"Champ d'ombre\" (et \"Perfectionniste\").",
-		"- Se multiplie pendant le calcul avec d'autres bonus de dégâts et les bonus de de Puissance des Bénédictions d'armes.",
+		"- Se multiplie pendant le calcul avec d'autres bonus de dégâts et les bonus de Puissance des Bénédictions d'armes.",
 	}, "\n"), enhdesc_col)
 	
 	--[+ Passive 3 - Onction par le sang +]--
