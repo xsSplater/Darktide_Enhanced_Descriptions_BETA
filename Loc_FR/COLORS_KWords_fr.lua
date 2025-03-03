@@ -173,11 +173,11 @@ local iu_actit = InputUtils.apply_color_to_input_text
 
 	--[++Melee Specialist++ FR]--
 	local meleespec_col = Color[mod:get("meleespec_text_colour")](255, true)
-	local Meleespec_rgb_fr = iu_actit("Spcécialiste en mêlée", meleespec_col)
+	local Meleespec_rgb_fr = iu_actit("Spécialiste en mêlée", meleespec_col)
 
 	--[++Ranged Specialist++ FR]--
 	local rangedspec_col = Color[mod:get("rangedspec_text_colour")](255, true)
-	local Rangedspec_rgb_fr = iu_actit("Spcécialiste à distance", rangedspec_col)
+	local Rangedspec_rgb_fr = iu_actit("Spécialiste à distance", rangedspec_col)
 
 --[+++MISC+++]--
 	--[++Note++ FR]--

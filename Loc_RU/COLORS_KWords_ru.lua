@@ -34,6 +34,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Tghnss_rgb_ru = iu_actit("стойкость", tghn_col)
 	local Toughness_dmg_red_rgb_ru = iu_actit("снижение урона стойкости", tghn_col)
 	local Toughness_dmg_red_u_rgb_ru = iu_actit("снижению урона стойкости", tghn_col)
+	local Toughness_dmg_rgb_ru = iu_actit("урона стойкости", tghn_col)
 	--[++Сплочённость++]--
 	local coher_col = Color[mod:get("coherency_text_colour")](255, true)
 	local Coherency_rgb_ru = iu_actit("сплочённости", coher_col)
@@ -85,6 +86,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Dmg_a_rgb_ru = iu_actit("урона", dmg_col)
 	local Damage_rgb_ru = iu_actit("урону", dmg_col)
 	local Damagewrp_rgb_ru = iu_actit("варп-урону", dmg_col)
+	local Damagewrp_a_rgb_ru = iu_actit("варп-урона", dmg_col)
 	--[++Уязвимое место++]--
 	local wksp_col = Color[mod:get("weakspot_text_colour")](255, true)
 	local Weakspot_rgb_ru = iu_actit("уязвимые места", wksp_col)
@@ -184,11 +186,11 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Trauma_note_rgb_ru = iu_actit("", note_col)
 	local Fire_n_trap_note_rgb_ru = iu_actit("", note_col)
 	--[+ Talents - Таланты+]--
-		local tal_col = Color[mod:get("talents_text_colour")](255, true)
-		local Scriers_gaze_rgb_ru = iu_actit("Взор провидца", tal_col)
-		local Stun_gren_rgb_ru = iu_actit("Оглушающая граната", tal_col)
-		local Frag_gren_rgb_ru = iu_actit("Фраг-граната", tal_col)
-		local Fragmentation_gren_rgb_ru = iu_actit("Осколочная граната", tal_col)
+	local tal_col = Color[mod:get("talents_text_colour")](255, true)
+	local Scriers_gaze_rgb_ru = iu_actit("Взор провидца", tal_col)
+	local Stun_gren_rgb_ru = iu_actit("Оглушающая граната", tal_col)
+	local Frag_gren_rgb_ru = iu_actit("Фраг-граната", tal_col)
+	local Fragmentation_gren_rgb_ru = iu_actit("Осколочная граната", tal_col)
 
 --[+ ++TREAT - СЛОЖНОСТЬ++ +]--
 	--[+ SEDITION - МЯТЕЖ +]--
@@ -270,6 +272,7 @@ return {
 	Dmg_a_rgb_ru = Dmg_a_rgb_ru,
 	Damage_rgb_ru = Damage_rgb_ru,
 	Damagewrp_rgb_ru = Damagewrp_rgb_ru,
+	Damagewrp_a_rgb_ru = Damagewrp_a_rgb_ru,
 	Electrocute_rgb_ru = Electrocute_rgb_ru,
 	Electrocution_rgb_ru = Electrocution_rgb_ru,
 	Electrocuted_rgb_ru = Electrocuted_rgb_ru,
@@ -319,6 +322,7 @@ return {
 	Toughness_rgb_ru = Toughness_rgb_ru,
 	Toughness_dmg_red_rgb_ru = Toughness_dmg_red_rgb_ru,
 	Toughness_dmg_red_u_rgb_ru = Toughness_dmg_red_u_rgb_ru,
+	Toughness_dmg_rgb_ru = Toughness_dmg_rgb_ru,
 	Coherency_rgb_ru = Coherency_rgb_ru,
 	Trample_rgb_ru = Trample_rgb_ru,
 	Weakspot_rgb_ru = Weakspot_rgb_ru,

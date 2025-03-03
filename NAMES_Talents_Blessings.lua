@@ -168,7 +168,7 @@ local localization_templates = {
 	-- create_template("trait_bespoke_049_ext_ru", {"loc_trait_bespoke_toughness_recovery_on_multiple_hits"}, {"ru"}, function(locale, value) return "Моментум" end),
 
 	--[+ Shock & Awe / Shock and Awe - Шок и трепет +]--
-			-- create_template("trait_bespoke_74_ext_ru", {"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"ru"}, function(locale, value) return "Шок и трепет" end),
+	-- create_template("trait_bespoke_74_ext_ru", {"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"ru"}, function(locale, value) return "Шок и трепет" end),
 
 	--[+ Take a Swing - Замах +]--
 	-- create_template("trait_bespoke_050_ext_ru", {"loc_trait_bespoke_weakspot_damage_bonus_on_pushed_enemies"}, {"ru"}, function(locale, value) return "Замах" end),
@@ -677,8 +677,8 @@ local localization_templates = {
 
 	--[+ Ability 2 - Telekine Shield +]--
 	-- create_template("talent_tree_psy_abil2_000_en", {"loc_talent_psyker_combat_ability_shield"}, {"en"}, function(locale, value) return "Telekine Shield" end),
-	--[+ Russian +]-- Телекинический щит
-	-- create_template("talent_tree_psy_abil2_000_ru", {"loc_talent_psyker_combat_ability_shield"}, {"ru"}, function(locale, value) return "Телекинический щит" end),
+	--[+ Russian +]-- Телекинетический щит
+	-- create_template("talent_tree_psy_abil2_000_ru", {"loc_talent_psyker_combat_ability_shield"}, {"ru"}, function(locale, value) return "Телекинетический щит" end),
 
 	--[+ Ability 2-1 - Bolstered Shield +]--
 	-- create_template("talent_tree_psy_abil2_001_en", {"loc_talent_psyker_force_field_charges"}, {"en"}, function(locale, value) return "Bolstered Shield" end),
@@ -768,8 +768,8 @@ local localization_templates = {
 
 	--[+ Keystone 2 - Empowered Psionics +]--
 	-- create_template("talent_tree_psy_keys2_000_en", {"loc_talent_psyker_empowered_ability"}, {"en"}, function(locale, value) return "Empowered Psionics" end),
-	--[+ Russian +]-- Усиленная псионика -- руоф Усиленные псионики
-	create_template("talent_tree_psy_keys2_000_ru", {"loc_talent_psyker_empowered_ability"}, {"ru"}, function(locale, value) return "Усиленная псионика" end),
+	--[+ Russian +]-- руоф Усиленные псионики
+	-- create_template("talent_tree_psy_keys2_000_ru", {"loc_talent_psyker_empowered_ability"}, {"ru"}, function(locale, value) return "Усиленные псионики" end),
 
 	--[+ Keystone 2-1 - Bio-Lodestone +]--
 	-- create_template("talent_tree_psy_keys2_001_en", {"loc_talent_psyker_increase_empower_chain_lighting_chance"}, {"en"}, function(locale, value) return "Bio-Lodestone" end),
@@ -1135,7 +1135,7 @@ local localization_templates = {
 
 	--[+ Keystone 3 - Inexorable Judgement +]--
 	-- create_template("talent_tree_zea_keys3_000_en", {"loc_talent_zealot_quickness"}, {"en"}, function(locale, value) return "Inexorable Judgement" end),
-	--[+ Russian +]-- Неумолимый приговор -- руоф Безжалостностный приговор
+	--[+ Russian +]-- Неумолимый приговор -- руоф Безжалостный приговор
 	create_template("talent_tree_zea_keys3_000_ru", {"loc_talent_zealot_quickness"}, {"ru"}, function(locale, value) return "Неумолимый приговор" end),
 
 	--[+ Keystone 3-1 - Retributor's Stance +]--

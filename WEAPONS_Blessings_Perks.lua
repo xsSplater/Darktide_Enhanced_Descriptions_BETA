@@ -975,7 +975,7 @@ local localization_templates = {
 			-- Vigilant Autoguns -- 0.45% | 0.5% | 0.55% | 0.6%
 	create_template("trait_bespoke_080_desc_ext_en", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.p_crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for each expended round in your weapon. Resets on reload." end), -- crit_chance: +0.6% -- colors
 	--[+ French +]--
-	create_template("trait_bespoke_080_desc_ext_fr", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.p_crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour chaque munition utilisée dans vontre arme. Se réinitialise lorsque vous rechargez." end),
+	create_template("trait_bespoke_080_desc_ext_fr", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.p_crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour chaque munition utilisée dans votre arme. Se réinitialise lorsque vous rechargez." end),
 	--[+ Russian +]-- Круцианская рулетка
 	create_template("trait_bespoke_080_desc_ext_ru", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.p_crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." за каждый израсходованный патрон в вашем оружии. Сбрасывается при перезарядке." end),
 
