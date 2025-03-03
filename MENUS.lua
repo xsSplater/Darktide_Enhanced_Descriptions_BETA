@@ -148,7 +148,10 @@ local localization_templates = {
 	create_template("store_armoury_exchange_weap_rarity6_ext_ru", {"loc_item_weapon_rarity_6"}, {"ru"}, function(locale, value) return "Благородное" end), -- Красное
 
 	--[+ ++WEAPON CARD - КАРТОЧКА ОРУЖИЯ++ +]--
-		--[+ Оружие +]--
+		--[+ Weapon - Оружие +]--
+			--[+ Favorite +]--
+	--[+ Russian +]--
+	create_template("inventory_weapon_perk_title_ext_ru", {"loc_inventory_menu_favorite_item"}, {"ru"}, function(locale, value) return "Избранное" end), -- руоф Добавить в избранное
 			--[+ Perk +]--
 	--[+ Russian +]--
 	create_template("inventory_weapon_perk_title_ext_ru", {"loc_item_type_perk"}, {"ru"}, function(locale, value) return "Характеристики" end), -- руоф Улучшение

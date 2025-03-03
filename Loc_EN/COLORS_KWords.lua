@@ -173,35 +173,35 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[+ ++TREAT - СЛОЖНОСТЬ++ +]--
 		--[+ SEDITION - МЯТЕЖ +]--
 		local sed_col = Color[mod:get("sedition_text_colour")](255, true) -- Do not translate this line!
-		local sedition_rgb_ru = iu_actit("Sedition", sed_col)
+		local sedition_rgb = iu_actit("Sedition", sed_col)
 		--[+ UPRISING - ВОССТАНИЕ +]--
 		local upr_col = Color[mod:get("uprising_text_colour")](255, true) -- Do not translate this line!
-		local uprising_rgb_ru = iu_actit("Uprising", upr_col)
+		local uprising_rgb = iu_actit("Uprising", upr_col)
 		--[+ MALICE - ЗЛОБА +]--
 		local mal_col = Color[mod:get("malice_text_colour")](255, true) -- Do not translate this line!
-		local malice_rgb_ru = iu_actit("Malice", mal_col)
+		local malice_rgb = iu_actit("Malice", mal_col)
 		--[+ HERESY - ЕРЕСЬ +]--
 		local her_col = Color[mod:get("heresy_text_colour")](255, true) -- Do not translate this line!
-		local heresy_rgb_ru = iu_actit("Heresy", her_col)
+		local heresy_rgb = iu_actit("Heresy", her_col)
 		--[+ DAMNATION - ПРОКЛЯТИЕ +]--
 		local dam_col = Color[mod:get("damnation_text_colour")](255, true) -- Do not translate this line!
-		local damnation_rgb_ru = iu_actit("Damnation", dam_col)
+		local damnation_rgb = iu_actit("Damnation", dam_col)
 	--[+ ++VETERAN - ВЕТЕРАН++ +]--
 		local cls_vet_col = Color[mod:get("class_veteran_text_colour")](255, true) -- Do not translate this line!
-		local cls_vet_rgb_ru = iu_actit("Veteran", cls_vet_col)
-		local cls_vet2_rgb_ru = iu_actit("Veteran", cls_vet_col)
+		local cls_vet_rgb = iu_actit("Veteran", cls_vet_col)
+		local cls_vet2_rgb = iu_actit("Veteran", cls_vet_col)
 	--[+ ++ZEALOT - Изувер++ +]--
 		local cls_zea_col = Color[mod:get("class_zealot_text_colour")](255, true) -- Do not translate this line!
-		local cls_zea_rgb_ru = iu_actit("Zealot", cls_zea_col)
-		local cls_zea2_rgb_ru = iu_actit("Zealot", cls_zea_col)
+		local cls_zea_rgb = iu_actit("Zealot", cls_zea_col)
+		local cls_zea2_rgb = iu_actit("Zealot", cls_zea_col)
 	--[+ ++PSYKER - ПСАЙКЕР++ +]--
 		local cls_psy_col = Color[mod:get("class_psyker_text_colour")](255, true) -- Do not translate this line!
-		local cls_psy_rgb_ru = iu_actit("Psyker", cls_psy_col)
-		local cls_psy2_rgb_ru = iu_actit("Psyker", cls_psy_col)
+		local cls_psy_rgb = iu_actit("Psyker", cls_psy_col)
+		local cls_psy2_rgb = iu_actit("Psyker", cls_psy_col)
 	--[+ ++OGRYN - ОГРИН++ +]--
 		local cls_ogr_col = Color[mod:get("class_ogryn_text_colour")](255, true) -- Do not translate this line!
-		local cls_ogr_rgb_ru = iu_actit("Ogryn", cls_ogr_col)
-		local cls_ogr2_rgb_ru = iu_actit("Ogryn", cls_ogr_col)
+		local cls_ogr_rgb = iu_actit("Ogryn", cls_ogr_col)
+		local cls_ogr2_rgb = iu_actit("Ogryn", cls_ogr_col)
 
 -- In the list below, you also need to add a new entry or change an old one.
 return {
@@ -289,18 +289,18 @@ return {
 	Brtl_note_rgb = Brtl_note_rgb,
 	Fire_n_trap_note_rgb = Fire_n_trap_note_rgb,
 
-	sedition_rgb_ru = sedition_rgb_ru,
-	uprising_rgb_ru = uprising_rgb_ru,
-	malice_rgb_ru = malice_rgb_ru,
-	heresy_rgb_ru = heresy_rgb_ru,
-	damnation_rgb_ru = damnation_rgb_ru,
+	sedition_rgb = sedition_rgb,
+	uprising_rgb = uprising_rgb,
+	malice_rgb = malice_rgb,
+	heresy_rgb = heresy_rgb,
+	damnation_rgb = damnation_rgb,
 
-	cls_vet_rgb_ru = cls_vet_rgb_ru,
-	cls_vet2_rgb_ru = cls_vet2_rgb_ru,
-	cls_zea_rgb_ru = cls_zea_rgb_ru,
-	cls_zea2_rgb_ru = cls_zea2_rgb_ru,
-	cls_psy_rgb_ru = cls_psy_rgb_ru,
-	cls_psy2_rgb_ru = cls_psy2_rgb_ru,
-	cls_ogr_rgb_ru = cls_ogr_rgb_ru,
-	cls_ogr2_rgb_ru = cls_ogr2_rgb_ru,
+	cls_vet_rgb = cls_vet_rgb,
+	cls_vet2_rgb = cls_vet2_rgb,
+	cls_zea_rgb = cls_zea_rgb,
+	cls_zea2_rgb = cls_zea2_rgb,
+	cls_psy_rgb = cls_psy_rgb,
+	cls_psy2_rgb = cls_psy2_rgb,
+	cls_ogr_rgb = cls_ogr_rgb,
+	cls_ogr2_rgb = cls_ogr2_rgb,
 }

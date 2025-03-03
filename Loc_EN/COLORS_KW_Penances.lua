@@ -4,83 +4,96 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
---[+ TALENTS - ТАЛАНТЫ +]--
-	--[+ ++VETERAN - ВЕТЕРАН++ +]--
+--[+ TALENTS +]--
+	--[+ ++VETERAN++ +]--
 	local tal_col = Color[mod:get("talents_penances_text_colour")](255, true)
-	local volley_fire_rgb = iu_actit("Залповый огонь", tal_col)
-	local snipcon_rgb = iu_actit("Концентрация снайпера", tal_col)
-	local executioner_stance_rgb = iu_actit("Стойка палача", tal_col)
-	local krak_gr_rgb = iu_actit("Крак-гранату", tal_col)
-	local frag_gr_rgb = iu_actit("Фраг-гранаты", tal_col)
-	local smok_gr_rgb = iu_actit("Дымовой гранаты", tal_col)
-	local fcs_trg_rgb = iu_actit("Важная цель!", tal_col)
-	local scavenger_rgb = iu_actit("Сборщик", tal_col)
-	local voiceoc_rgb = iu_actit("Командный голос", tal_col)
-	local firetim_rgb = iu_actit("Огневая группа", tal_col)
-	local infiltr_rgb = iu_actit("Проникновение", tal_col)
-	local closenkill_rgb = iu_actit("Приблизиться и убить", tal_col)
-	local weapspec_rgb = iu_actit("Специалист по оружию", tal_col)
-	local survivalist_rgb = iu_actit("Выживальщик", tal_col)
+	local volley_fire_rgb = iu_actit("Volley Fire", tal_col)
+	local snipcon_rgb = iu_actit("Marksman's Focus", tal_col)
+	local executioner_stance_rgb = iu_actit("Executioner's Stance", tal_col)
+	local krak_gr_rgb = iu_actit("Krak Grenade", tal_col)
+	local frag_gr_rgb = iu_actit("Frag Grenade", tal_col)
+	local smok_gr_rgb = iu_actit("Smoke Grenade", tal_col)
+	local fcs_trg_rgb = iu_actit("Focus Target!", tal_col)
+	local scavenger_rgb = iu_actit("Scavenger", tal_col)
+	local voiceoc_rgb = iu_actit("Voice of Command", tal_col)
+	local firetim_rgb = iu_actit("Fire Team", tal_col)
+	local infiltr_rgb = iu_actit("Infiltrate", tal_col)
+	local closenkill_rgb = iu_actit("Close and Kill", tal_col)
+	local weapspec_rgb = iu_actit("Weapons Specialist", tal_col)
+	local survivalist_rgb = iu_actit("Survivalist", tal_col)
 
 		--[+ ++ZEALOT - ИЗУВЕР++ +]--
-	local shock_gren0_rgb = iu_actit("Гранату шквального оглушения", tal_col)
-	local shock_gren_rgb = iu_actit("Гранаты шквального оглушения", tal_col)
-	local fire_gren_rgb = iu_actit("Жертвенной гранаты", tal_col)
-	local shock_gren1_rgb = iu_actit("Оглушающую гранату", tal_col)
-	local shock_gren2_rgb = iu_actit("Оглушающие гранаты", tal_col)
-	local chastise_wicked_rgb = iu_actit("Кара для нечестивых", tal_col)
-	local chastise_wicked2_rgb = iu_actit("Кары для нечестивых", tal_col)
-	local fury_faithful_rgb = iu_actit("Ударный страх", tal_col)
-	local martydom_rgb = iu_actit("Мученичества", tal_col)
-	local holy_revenant_rgb = iu_actit("Святой призрак", tal_col)
-	local chorusosf_rgb = iu_actit("Хор духовной стойкости", tal_col)
-	local beaconop_rgb = iu_actit("Маяк непорочности", tal_col)
-	local klinvery_rgb = iu_actit("Клинки веры", tal_col)
-	local shroudf_rgb = iu_actit("Покров", tal_col)
-	local benedict_rgb = iu_actit("Благословение", tal_col)
-	local loner_rgb = iu_actit("Одиночка", tal_col)
-	local fanrage_rgb = iu_actit("Ярость", tal_col)
-	local momentum_rgb = iu_actit("Моментума", tal_col)
-	local inexor_rgb = iu_actit("Безжалостный приговор", tal_col)
-	local blazingp_rgb = iu_actit("Пламенное благочестие", tal_col)
+	local shock_gren0_rgb = iu_actit("Stunstorm Grenade", tal_col)
+	local shock_gren_rgb = iu_actit("Stunstorm Grenade", tal_col) -- -- -- -- -- -- -
+	local fire_gren_rgb = iu_actit("Immolation Grenade", tal_col)
+	local shock_gren1_rgb = iu_actit("Stun Grenade", tal_col)
+	local shock_gren2_rgb = iu_actit("Stun Grenade", tal_col) -- -- -- -- -- -- -- --
+	local chastise_wicked_rgb = iu_actit("Chastise the Wicked", tal_col)
+	local chastise_wicked2_rgb = iu_actit("Chastise the Wicked", tal_col) -- -- -- --
+	local fury_faithful_rgb = iu_actit("Fury of the Faithful", tal_col)
+	local martydom_rgb = iu_actit("Martyrdom", tal_col)
+	local holy_revenant_rgb = iu_actit("Holy Revenant", tal_col)
+	local chorusosf_rgb = iu_actit("Chorus of Spiritual Fortitude", tal_col)
+	local beaconop_rgb = iu_actit("Beacon of Purity", tal_col)
+	local klinvery_rgb = iu_actit("Blades of Faith", tal_col)
+	local shroudf_rgb = iu_actit("Shroudfield", tal_col)
+	local benedict_rgb = iu_actit("Benediction", tal_col)
+	local loner_rgb = iu_actit("Loner", tal_col)
+	local fanrage_rgb = iu_actit("Fury", tal_col)
+	local momentum_rgb = iu_actit("Momentum", tal_col)
+	local inexor_rgb = iu_actit("Inexorable Judgement", tal_col)
+	local blazingp_rgb = iu_actit("Blazing Piety", tal_col)
 	
 		--[+ ++PSYKER - ПСАЙКЕР++ +]--
-	local bburst_rgb = iu_actit("Взрыва разума", tal_col)
-	local bburst0_rgb = iu_actit("Взрыв разума", tal_col)
-	local bburst1_rgb = iu_actit("Разрыв мозга", tal_col)
-	local bburst2_rgb = iu_actit("Разрыва мозга", tal_col)
-	local smite_rgb = iu_actit("Сокрушение", tal_col)
-	local disrdest_rgb = iu_actit("Разрушенная судьба", tal_col)
-	local psy_wrath_rgb = iu_actit("Психокинетический гнев", tal_col)
-	local psy_wrath2_rgb = iu_actit("Вырвавшийся вопль", tal_col)
-	local telekshii_rgb = iu_actit("Телекинетический щит", tal_col)
-	local empsionics_rgb = iu_actit("Усиленные псионики", tal_col)
-	local assail_rgb = iu_actit("Нападение", tal_col)
-	local scriersgaze_rgb = iu_actit("Взор Скрира", tal_col)
-	local kinetpres_rgb = iu_actit("Кинетическое присутствие", tal_col)
-	local prescience_rgb = iu_actit("Предвидение", tal_col)
-	local seerspres_rgb = iu_actit("Присутствие провидца", tal_col)
-	
-		--[+ ++OGRYN - ОГРИН++ +]--
-	local bull_rush_rgb = iu_actit("Бычий натиск", tal_col)
-	local bull_rush2_rgb = iu_actit("Бычьим натиском", tal_col)
-	local bull_rush3_rgb = iu_actit("Бычьего натиска", tal_col)
-	local bull_rush4_rgb = iu_actit("Неукротимость", tal_col)
-	local big_box_rgb = iu_actit("Ящик, полный боли", tal_col)
-	local big_box2_rgb = iu_actit("Кидаю бомбу!", tal_col)
-	local burstlimo_rgb = iu_actit("Взлом ограничителя взрыва", tal_col)
-	local stayclose_rgb = iu_actit("Не расходимся!", tal_col)
-	local loyalprot_rgb = iu_actit("Верный защитник", tal_col)
-	local feelnop_rgb = iu_actit("Неболит", tal_col)
-	local bonebraura_rgb = iu_actit("Аура костолома", tal_col)
-	local cowculaura_rgb = iu_actit("Трусливые отбросы", tal_col)
-	local heavyhitter_rgb = iu_actit("Тяжеловес", tal_col)
-	local bigfriendro_rgb = iu_actit("Большой дружелюбный валун", tal_col)
-	local fragbomb_rgb = iu_actit("Осколочная бомба", tal_col)
-	local pbbarrage_rgb = iu_actit("Решительный натиск", tal_col)
+	local bburst_rgb = iu_actit("Brain Burst", tal_col)
+	local bburst0_rgb = iu_actit("Brain Burst", tal_col) -- -- -- -- -- -- -- -- -- -
+	local bburst1_rgb = iu_actit("Brain Rupture", tal_col)
+	local bburst2_rgb = iu_actit("Brain Rupture", tal_col) -- -- -- -- -- -- -- -- --
+	local smite_rgb = iu_actit("Smite", tal_col)
+	local disrdest_rgb = iu_actit("Disrupt Destiny", tal_col)
+	local psy_wrath_rgb = iu_actit("Psykinetic's Wrath", tal_col)
+	local psy_wrath2_rgb = iu_actit("Venting Shriek", tal_col)
+	local telekshii_rgb = iu_actit("Telekine Shield", tal_col)
+	local empsionics_rgb = iu_actit("Empowered Psionics", tal_col)
+	local assail_rgb = iu_actit("Assail", tal_col)
+	local scriersgaze_rgb = iu_actit("Scrier's Gaze", tal_col)
+	local kinetpres_rgb = iu_actit("Kinetic Presence", tal_col)
+	local prescience_rgb = iu_actit("Prescience", tal_col)
+	local seerspres_rgb = iu_actit("Seer's Presence", tal_col)
 
+		--[+ ++OGRYN - ОГРИН++ +]--
+	local bull_rush_rgb = iu_actit("Bull Rush", tal_col)
+	local bull_rush2_rgb = iu_actit("Bull Rush", tal_col) -- -- -- -- -- -- -- -- --
+	local bull_rush3_rgb = iu_actit("Bull Rush", tal_col) -- -- -- -- -- -- -- -- --
+	local bull_rush4_rgb = iu_actit("Indomitable", tal_col)
+	local big_box_rgb = iu_actit("Big Box of Hurt", tal_col)
+	local big_box2_rgb = iu_actit("Bombs Away!", tal_col)
+	local burstlimo_rgb = iu_actit("Burst Limiter Override", tal_col)
+	local stayclose_rgb = iu_actit("Stay Close!", tal_col)
+	local loyalprot_rgb = iu_actit("Loyal Protector", tal_col)
+	local feelnop_rgb = iu_actit("Feel No Pain", tal_col)
+	local bonebraura_rgb = iu_actit("Bonebreaker's Aura", tal_col)
+	local cowculaura_rgb = iu_actit("Coward Culling", tal_col)
+	local heavyhitter_rgb = iu_actit("Heavy Hitter", tal_col)
+	local bigfriendro_rgb = iu_actit("Big Friendly Rock", tal_col)
+	local fragbomb_rgb = iu_actit("Frag Bomb", tal_col)
+	local pbbarrage_rgb = iu_actit("Point-Blank Barrage", tal_col)
+
+		--[+ +Разные ключевые слова+ +]--
+	local tal_col = Color[mod:get("talents_text_colour")](255, true)
+	local Prologue_p_rgb = iu_actit("Prologue", tal_col)
+	local Curio_p_rgb = iu_actit("Curio", tal_col)
+	local Base_tut_p_rgb = iu_actit("Basic Training", tal_col)
+	local Sir_melk_p_rgb = iu_actit("Sire Melk's Requisitorium", tal_col)
+	local Omnissia_p_rgb = iu_actit("Shrine of the Omnissiah", tal_col)
 
 return {
+	Prologue_p_rgb = Prologue_p_rgb,
+	Curio_p_rgb = Curio_p_rgb,
+	Base_tut_p_rgb = Base_tut_p_rgb,
+	Sir_melk_p_rgb = Sir_melk_p_rgb,
+	Omnissia_p_rgb = Omnissia_p_rgb,
+
 	volley_fire_rgb = volley_fire_rgb,
 	snipcon_rgb = snipcon_rgb,
 	executioner_stance_rgb = executioner_stance_rgb,
