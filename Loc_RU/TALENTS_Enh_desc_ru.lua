@@ -143,7 +143,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Aura 0 - The Quickening +]--
 	local ED_PSY_Aura_0_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- Складывается с восстановлением боевых способностей от редкостей и мутаторами миссий, которые сокращают время восстановления способностей на 20%.",
+		-- "- Складывается с восстановлением боевых способностей от реликвий и мутаторами миссий, которые сокращают время восстановления способностей на 20%.",
 		"- Это сокращает максимальное время восстановления способностей «Сбрасывающий вопль»/«Гнев психокинетика» до 27.75 секунд, «Взор провидца» до 23.125 секунд, а «Телекинический щит» до 37 секунд.",
 		doesnt_stack_aura_psy,
 	}, "\n"), enhdesc_col)
@@ -158,7 +158,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Aura 2 - Seer's Presence +]--
 	local ED_PSY_Aura_2_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		"- Складывается аддитивно с восстановлением боевых способностей от редкостей и мутаторами миссий, которые сокращают время восстановления способностей на 20%.",
+		"- Складывается с восстановлением боевых способностей от реликвий и мутаторами миссий, которые сокращают время восстановления способностей на 20%.",
 		"- Это сокращает максимальное время восстановления способностей «Сбрасывающий вопль»/«Гнев психокинетика» до 27 секунд, «Взор провидца» до 22.5 секунд, а «Телекинический щит» до 36 секунд.",
 		doesnt_stack_aura_psy,
 	}, "\n"), enhdesc_col)
@@ -266,24 +266,24 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Эффект всегда применяется к специалистам, когда они соприкасаются со щитом.",
 		-- "- Щит получает 8 урона за каждое прямое попадание от специалистов и исчезает после 3 \"заблокированных\" специалистов. Соблюдает окно восстановления после урона в 0.33 секунды, что означает, что любое количество прямых попаданий в щит от специалистов, которые происходят в течение 0.33 секунд, считаются как 1 прямое попадание.",
 		"",
-		-- "{#color(255, 35, 5)}- Забаговано: специалисты, которые касаются щита, наносят ему только 1 единицу урона вместо 8.{#reset()}",
+		"{#color(255, 35, 5)}- Забаговано: специалисты, которые касаются щита, наносят ему только 1 единицу урона вместо 8.{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-3 - Telekine Dome +]--
 	local ED_PSY_Ability_2_3_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- Sphere has a radius of 6 meters.",
-		-- "- Protects from enemy attacks at all degrees.",
-		-- "- Has the same properties as the flat shield.",
-		-- "- Also takes Ranged Damage in the same way.",
-		-- "",
-		-- "{#color(255, 35, 5)}- There is currently a bug: Mutants that are successfully Dodged inside the dome always get Staggered.{#reset()}",
+		"- Радиус сферы: 6 метров.",
+		"- Защищает от атак противника со всех сторон.",
+		"- Имеет те же свойства, что и плоский щит.",
+		"- Аналогичным образом получает урон от дальнего боя.",
+		"",
+		"{#color(255, 35, 5)}- Забаговано: мутанты, от которых удалось увернуться внутри купола, всегда ошеломляются.{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-4 - Sanctuary +]--
 	local ED_PSY_Ability_2_4_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- This replenishment effect can Stack if multiple spheres overlap.",
+		"- Этот эффект пополнения может суммироваться, если несколько сфер перекрывают друг друга.",
 		z_eff_of_this_tougn_rep,
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
@@ -291,46 +291,46 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Ability 3 - Scrier's Gaze +]--
 	local ED_PSY_Ability_3_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- While Ability is in overcharging phase Cooldown is paused. However, its remaining cooldown can still be actively reduced by proccing \"Psykinetic's Aura\" or using a Concentration Stimm.",
-		-- "- Its Maximum Cooldown can be Reduced by \"Seer's Presence\", \"Warp Siphon\", Combat Ability Regeneration from Curios, and by the mission mutators that reduce Ability Cooldowns by 20%.",
-		-- "- After overcharging has ended, grants a 1.5 seconds grace period in which Peril-generating actions can be executed without triggering Psyker's self-explosion.",
+		"- Пока способность активирована, перезарядка приостанавливается. Однако её оставшееся время перезарядки всё ещё можно сократить, активировав «Ауру психокинетика» или использовав стимулятор концентрации.",
+		"- Его максимальное время восстановления может быть уменьшено с помощью «Присутствия провидца», «Переливания варпа», регенерации боевых способностей от реликвий и мутаторов миссий, уменьшающих на 20% время восстановления способностей.",
+		"- После окончания действия способности вы получаете дополнительно 1.5 секунды, в течение которых можно выполнять действия, набирающие опасность, без самоподрыва.",
 	}, "\n"), enhdesc_col)
 
 	-- [+ Ability 3-1 - Endurance +]--
 	local ED_PSY_Ability_3_1_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- Does not linger after overcharging phase.",
+		"- Не продлевается после окончания действия способности.",
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
 	-- [+ Ability 3-2 - Precognition +]--
 	local ED_PSY_Ability_3_2_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- Stacks additively with other Weakspot and Finesse Damage buffs.",
-		-- "- Can proc multiple times per attack when Cleaving.",
-		-- "- These stacking Damage buffs are active immediately during the overcharging phase.",
+		"- Складывается с другими усилениями урона по уязвимым местам от ловкости.",
+		"- Может срабатывать несколько раз за атаку при рассечении нескольких врагов.",
+		"- Эти накапливающиеся усиления урона активируются немедленно во время активации способности.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-3 - Warp Speed +]--
 	local ED_PSY_Ability_3_3_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- Does not linger after overcharging phase.",
-		-- "- Stacks additively with movement speed buffs from \"Disrupt Destiny\", \"Mettle\", the small Movement speed node, and Weapon Blessings like \"Rev it Up\".",
+		"- Не продлевается после окончания действия способности.",
+		"- Эффект суммируется с усилениями скорости движения от «Прерывания судьбы», «Ретивости», малого узла скорости движения и благословений оружия, таких как «Ускорься».",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-4 - Reality Anchor +]--
 	local ED_PSY_Ability_3_4_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- Does not linger after overcharging phase.",
-		-- "- Stacks multiplicatively with Peril cost reduction buffs from \"By Crack of Bone\", \"Empyric Resolve\", \"Kinetic Resonance\", small Peril Resistance nodes, and Combat Stimm.",
-		-- "- Can stack with \"Inner Tranquility\" only if Psyker regains Warp charges while overcharging.",
+		"- Не продлевается после окончания действия способности.",
+		"- Перемножается с усилениями снижения набора опасности от «Треска костей», «Эмпирической решимости», «Кинетического резонанса», малых узлов сопротивления опасности и боевых стимуляторов.",
+		"- Может суммироваться с «Внутренним спокойствием», только если псайкер восстанавливает заряды варпа при перегреве.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-5 - Warp Unbound +]--
 	local ED_PSY_Ability_3_5_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
-		-- "- After overcharging has ended, allows Psyker to execute Peril-generating actions while at 100% Peril for 10 seconds without triggering the self-explosion.",
-		-- "- Note that when this 10 seconds duration ends, Scrier's Gaze's base grace period still applies, providing another 1.5 seconds of the same effect.",
+		"- После окончания действия этой способности позволяет псайкеру в течение 10 секунд выполнять действия, набирающие опасность, без самоподрыва даже при 100% опасности.",
+		"- Обратите внимание, что этот модификатор имеет скрытый эффект: по истечении 10 секунд вы получите ещё 1.5 секунды этого же действия.",
 	}, "\n"), enhdesc_col)
 
 --[+ +KEYSTONES+ +]--
@@ -338,7 +338,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_PSY_Keystone_1_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
 		can_be_refr_dur_active_dur,
-		-- "- Interacts with Combat Ability Regeneration from Curios and other Maximum Cooldown Reductions from \"Seer's Presence\" or the mission mutators that reduce Ability cooldowns by 20%.",
+		-- "- Взаимодействует с восстановлением боевых способностей от реликвий и другими максимальными сокращениями перезарядки от «Присутствия провидца» или мутаторами миссий, которые сокращают перезарядку способностей на 20%.		Interacts with Combat Ability Regeneration from Curios and other Maximum Cooldown Reductions from \"Seer's Presence\" or the mission mutators that reduce Ability cooldowns by 20%.",
 		-- "- For example, when Psyker with \"Seer's Presence\" aura (-0.1), 4 Warp charges and 12% Combat Ability Regeneration (-0.12) from Curios uses \"Telekine Shield\", its Maximum cooldown of 40 seconds is first reduced by Curio stat and aura to 40+40x(-0.1-0.12)=31.2 seconds. This Max Cooldown is then considered by Warp Siphon and further reduced by the Warp charge-based reduction to 31.2-31.2x(0.075x4)=21.84 seconds (HUD rounds: 22 seconds).",
 		-- "- Does not interact with Concentration Stimm's remaining Cooldown Reduction effect which increases a character's base Ability Cooldown rate of 1 second per second by additional 3 seconds per second.",
 	}, "\n"), enhdesc_col)

@@ -27,83 +27,89 @@ local localization_templates = {
 
 -- Make changes to this file only if you need them!
 
-	--[+ MELK +]--
- -- HERE IS THE NUMBER HIGHLIGHT IN THE CONTRACTS MENU!
-		--[+ Contracts +]-- Highlighted numbers
-			--[+ Kill Х Monstrosities +]--
+--[+ MELK +]--
+	-- HERE IS THE NUMBER HIGHLIGHT IN THE CONTRACTS MENU!
+	--[+ Contracts +]-- Highlighted numbers
+		--[+ Kill Х Monstrosities +]--
 	create_template("contract_melk_task0_ext_en", {"loc_contracts_task_label_kill_bosses"}, {"en",}, function(locale, value) return "Kill "..COLORS_Numbers.countd_var_rgb.." Monstrosities" end),
 	--[+ Russian +]--
 	create_template("contract_melk_task0_ext_ru", {"loc_contracts_task_label_kill_bosses"}, {"ru",}, function(locale, value) return "Убить "..COLORS_Numbers.countd_var_rgb.." монстров" end),
-			--[+ Collect Х kind +]--
+		--[+ Collect Х kind +]--
 	create_template("contract_melk_task1_ext_en", {"loc_contracts_task_label_collect_resources"}, {"en",}, function(locale, value) return "Collect "..COLORS_Numbers.counts_var_rgb.." {kind:%s}" end),
 	--[+ Russian +]--
 	create_template("contract_melk_task1_ext_ru", {"loc_contracts_task_label_collect_resources"}, {"ru",}, function(locale, value) return "{kind:%s}: собрать "..COLORS_Numbers.counts_var_rgb.." единиц" end),
-			--[+ Kill Х enemy_type with weapon_type +]--
+		--[+ Kill Х enemy_type with weapon_type +]--
 	create_template("contract_melk_task2_ext_en", {"loc_contracts_task_label_kill_minions"}, {"en",}, function(locale, value) return "Kill "..COLORS_Numbers.countd_var_rgb.." {enemy_type:%s} with {weapon_type:%s}" end),
 	--[+ Russian +]--
 	create_template("contract_melk_task2_ext_ru", {"loc_contracts_task_label_kill_minions"}, {"ru",}, function(locale, value) return "{weapon_type:%s}: убейте "..COLORS_Numbers.countd_var_rgb.." врагов типа {enemy_type:%s}" end),
-			--[+ Complete Х missions +]--
+		--[+ Complete Х missions +]--
 	create_template("contract_melk_task3_ext_en", {"loc_contracts_task_label_complete_missions"}, {"en",}, function(locale, value) return "Complete "..COLORS_Numbers.countd_var_rgb.." missions" end),
 	--[+ Russian +]--
 	create_template("contract_melk_task3_ext_ru", {"loc_contracts_task_label_complete_missions"}, {"ru",}, function(locale, value) return "Завершите "..COLORS_Numbers.countd_var_rgb.." миссий" end),
-			--[+ Complete Х missions with no player deaths +]--
+		--[+ Complete Х missions with no player deaths +]--
 	create_template("contract_melk_task4_ext_en", {"loc_contracts_task_label_complete_mission_no_death"}, {"en",}, function(locale, value) return "Complete "..COLORS_Numbers.countd_var_rgb.." missions with no player deaths" end),
 	--[+ Russian +]--
 	create_template("contract_melk_task4_ext_ru", {"loc_contracts_task_label_complete_mission_no_death"}, {"ru",}, function(locale, value) return "Завершите миссии без гибели союзников: "..COLORS_Numbers.countd_var_rgb end),
-			--[+ Pick up Х kind +]--
+		--[+ Pick up Х kind +]--
 	create_template("contract_melk_task5_ext_en", {"loc_contracts_task_label_collect_pickups"}, {"en",}, function(locale, value) return "Pick up "..COLORS_Numbers.counts_var_rgb.." {kind:%s}" end),
 	--[+ Russian +]--
 	create_template("contract_melk_task5_ext_ru", {"loc_contracts_task_label_collect_pickups"}, {"ru",}, function(locale, value) return "{kind:%s}: собрать "..COLORS_Numbers.counts_var_rgb.." штук" end),
 
-		--[+ Menu +]--
+	--[+ Menu +]--
 	--[+ Russian +]--
 	create_template("contract_melk_intro_decs_ext_ru", {"loc_contract_view_intro_description",}, {"ru",}, function(locale, value) return "Ну? Чего ты хочешь?" end),
 	create_template("contract_melk_reward_label_ext_ru", {"loc_contracts_contract_reward_label",}, {"ru",}, function(locale, value) return "Награда за выполнение:" end),
 	create_template("contract_melk_gen_goods_rand_rang_weap_ext_ru", {"loc_contracts_view_general_goods_random_ranged_weapon",}, {"ru",}, function(locale, value) return "Неизвестное оружие дальнего боя" end),
 	create_template("contract_melk_gen_goods_rand_gadget_ext_ru", {"loc_contracts_view_general_goods_random_gadget_defensive",}, {"ru",}, function(locale, value) return "Неизвестная защитная реликвия" end),
 
-		--[+ Task difficulty +]--
+	--[+ Task difficulty +]--
 	--[+ Russian +]--
 	create_template("contracts_melk_compl0_ext_ru", {"loc_contracts_contract_complexity_easy",}, {"ru",}, function(locale, value) return "Низкая" end),
 	create_template("contracts_melk_compl1_ext_ru", {"loc_contracts_contract_complexity_medium",}, {"ru",}, function(locale, value) return "Средняя" end),
 	create_template("contracts_melk_compl2_ext_ru", {"loc_contracts_contract_complexity_hard",}, {"ru",}, function(locale, value) return "Высокая" end),
 
 
-	--[+ HADRON +]--
-		--[+ Menu +]--
+--[+ HADRON +]--
+	--[+ Menu +]--
 	--[+ Russian +]--
 	create_template("hud_hadron_craft1_ext_ru", {"loc_crafting_error_no_consecrate"}, {"ru"}, function(locale, value) return "Максимальный уровень редкости!" end),
 	create_template("hud_hadron_craft2_ext_ru", {"loc_crafting_error_max_power"}, {"ru"}, function(locale, value) return "Максимальный уровень силы!" end),
 	create_template("hud_hadron_craft3_ext_ru", {"loc_mastery_crafting_sacrifice_weapon_title",}, {"ru",}, function(locale, value) return "Пожертвовать оружие" end), -- Жертвенное оружие
 
 
-	--[+ ARSENAL +]--
-		--[+ Menu +]--
+--[+ ARSENAL +]--
 	--[+ Russian +]--
+	--[+ Menu +]--
 	create_template("store_armoury_exchange_intro_decs_ext_ru", {"loc_credits_vendor_view_intro_description",}, {"ru",}, function(locale, value) return "Какая из моих скромных услуг вам требуется?" end),
 	create_template("store_armoury_exchange_buy_ext_ru", {"loc_credits_vendor_view_option_buy",}, {"ru",}, function(locale, value) return "Запросы на оружие и реликвии" end),
 	-- create_template("store_armoury_exchange_brunt_ext_ru", {"loc_credits_goods_vendor_title_text",}, {"ru",}, function(locale, value) return "Арсенал Бранта" end),
 	create_template("store_armoury_exchange_brunt_decs_ext_ru", {"loc_credits_goods_vendor_description_text",}, {"ru",}, function(locale, value) return "Купите нечестивое оружие по вашему выбору." end),
 
 
-	--[+ ++MAIN MENU++ +]--
-		--[+ Кошель +]--
+--[+ ++MAIN MENU++ +]--
 	--[+ Russian +]--
+	--[+ Кошель +]--
 	create_template("main_menu_acc_wallet_ext_ru", {"loc_main_menu_account_wallet_title"}, {"ru"}, function(locale, value) return "Кошелёк аккаунта" end),
-		--[+ Удар. группа +]--
+	--[+ Удар. группа +]--
 	create_template("main_menu_acc_warband_ext_ru", {"loc_main_menu_warband_count", "loc_social_menu_roster_view_display_name"}, {"ru"}, function(locale, value) return "Ударная группа" end),
-		--[+ Предыдущие задания +]--
+	--[+ Предыдущие задания +]--
 	create_template("soc_menu_warband_prev_missions_ext_ru", {"loc_social_menu_roster_players_from_previous_missions"}, {"ru"}, function(locale, value) return "Прошлые игры" end),
-		--[+ Миссии - Золотой уровень +]--
+	--[+ Миссии - Золотой уровень +]--
 	create_template("hud_mission_board_header_auric_ext_ru", {"loc_mission_board_view_header_tertium_hive_auric"}, {"ru"}, function(locale, value) return "Улей Терциум - Операции золотого уровня" end),
 
+--[+ HAVOC - Хаос +]-- руоф Верная смерть
+	create_template("havoc_name_ext_ru", {"loc_havoc_name"}, {"ru"}, function(locale, value) return "Хаос" end),
+	create_template("havoc_reset_rewards_ext_ru", {"loc_havoc_reset_rewards"}, {"ru"}, function(locale, value) return "Награды режима Хаос" end),
+	create_template("havoc_rewards_obj_order_ext_ru", {"loc_havoc_reward_objective_order"}, {"ru"}, function(locale, value) return "Выполнить задание режима Хаос" end),
 
-	--[+ ++KILLFEED++ +]--
+
+
+--[+ ++KILLFEED++ +]--
 	--[+ Russian +]--
 	create_template("hud_killfeed_ext_ru", {"loc_hud_combat_feed_kill_message"}, {"ru"}, function(locale, value) return "{killer:%s} убивает {victim:%s}" end),
 
 
-	--[+ ++TREAT - СЛОЖНОСТЬ++ +]-- colored
+--[+ ++TREAT - СЛОЖНОСТЬ++ +]-- colored
 		--[+ SEDITION - МЯТЕЖ +]--
 	--[+ Russian +]--
 	create_template("mission_board_danger_1_ext_ru", {"loc_mission_board_danger_lowest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.sedition_rgb_ru end),
@@ -121,7 +127,7 @@ local localization_templates = {
 	create_template("mission_board_danger_5_ext_ru", {"loc_mission_board_danger_highest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.damnation_rgb_ru end),
 
 
-	--[+ ++INVENTORY++ +]--
+--[+ ++INVENTORY++ +]--
 		-- [+ Curios - Реликвии +]-- руоф Диковинки
 	--[+ Russian +]--
 	create_template("hud_inventory_attachments_ext_ru", {"loc_inventory_loadout_group_attachments"}, {"ru"}, function(locale, value) return "Реликвии" end),
@@ -147,7 +153,7 @@ local localization_templates = {
  	-- КРАСНОЕ НЕ ПАШЕТ ИЗ-ЗА МОДА?
 	create_template("store_armoury_exchange_weap_rarity6_ext_ru", {"loc_item_weapon_rarity_6"}, {"ru"}, function(locale, value) return "Благородное" end), -- Красное
 
-	--[+ ++WEAPON CARD - КАРТОЧКА ОРУЖИЯ++ +]--
+--[+ ++WEAPON CARD - КАРТОЧКА ОРУЖИЯ++ +]--
 		--[+ Weapon - Оружие +]--
 			--[+ Favorite +]--
 	--[+ Russian +]--
