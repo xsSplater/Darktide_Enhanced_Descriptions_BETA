@@ -129,7 +129,7 @@ local localization_templates = {
 		--[+ -Cost for Sprinting +]--
 	create_template("weap_wpm14_ext_en", {"loc_gadget_sprint_cost_reduction_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.bcm_rgb.." "..COLORS_KWords.Stamina_rgb.." Cost Reduction for Sprinting" end),
 	--[+ French +]--
-	create_template("weap_wpm14_ext_fr", {"loc_gadget_sprint_cost_reduction_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.bcm_rgb.." de coût d'"..COLORS_KWords_fr.Stamina_rgb_fr.." de la course" end),
+	create_template("weap_wpm14_ext_fr", {"loc_gadget_sprint_cost_reduction_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.bcm_rgb.." de réduction du coût d'"..COLORS_KWords_fr.Stamina_rgb_fr.." de la course" end),
 	--[+ Russian +]--
 	create_template("weap_wpm14_ext_ru", {"loc_gadget_sprint_cost_reduction_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.bcm_rgb.." к снижению затрат "..COLORS_KWords_ru.Stamina_rgb_ru.." на бег" end),
 
@@ -473,7 +473,7 @@ local localization_templates = {
 			-- Bully Clubs, Combat Blades -- 12.5% | 15% | 17.5% | 20%
 	create_template("weap_wbm027_desc_ext_en", {"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds when hitting a "..COLORS_KWords.Staggered_rgb.." enemy on Special Action Hit." end), -- crit_chance: +20%, time: 2 -- s->seconds -- rewrite -- colors
 	--[+ French +]--
-	create_template("weap_wbm027_desc_ext_fr", {"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes pendant q'un ennemie "..COLORS_KWords_fr.Staggered_rgb_fr.." grâce à un coup d'action spéciale." end),
+	create_template("weap_wbm027_desc_ext_fr", {"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes pendant qu'un ennemie "..COLORS_KWords_fr.Staggered_rgb_fr.." grâce à un coup d'action spéciale." end),
 	--[+ Russian +]-- Сокрушение -- руоф Смятение
 	create_template("weap_wbm027_desc_ext_ru", {"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при атаке "..COLORS_KWords_ru.Staggered_rgb_ru.." врагов специальными атаками." end),
 
@@ -761,7 +761,7 @@ local localization_templates = {
 			-- Power Swords -- 2.5% & 1 | 5% & 1 | 7.5% & 2 | 10% & 2
 	create_template("weap_wbm062_desc_ext_en", {"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.p_xtrahits_var_rgb.." Extra Chained Energised Hits and "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords.Impact_rgb.." on Energised Hits." end), -- extra_hits: +2, stagger: +10% -- colors
 	--[+ French +]--
-	create_template("weap_wbm062_desc_ext_fr", {"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.p_xtrahits_var_rgb.." Coups d'énergie en chaîne supplémentaires et "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords_fr.Impact_rgb_fr.." lors d'un coup énergisé." end),
+	create_template("weap_wbm062_desc_ext_fr", {"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.p_xtrahits_var_rgb.." Coups d'énergie en chaîne supplémentaires et "..COLORS_Numbers.stgr_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." lors d'un coup énergisé." end),
 	--[+ Russian +]-- Циклер мощности -- руоф Цикл силы
 	create_template("weap_wbm062_desc_ext_ru", {"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.stgr_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru.." при заряженных ударах, а также вы получаете "..COLORS_Numbers.p_xtrahits_var_rgb.." дополнительных заряда к заряженным ударам." end),
 
@@ -841,7 +841,7 @@ local localization_templates = {
 			-- Power Maul -- 10% | 15% | 20% | 25%
 	create_template("weap_wbm072_desc_ext_en", {"loc_trait_bespoke_explosion_on_activated_attacks_on_armor_new_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.explosion_rad_var_rgb.." Explosion Radius to Special Attacks. Special Attacks on Armored Enemies cause an additional Shockwave." end), -- explosion_radius: 25% -- colors
 	--[+ French +]--
-	create_template("weap_wbm072_desc_ext_fr", {"loc_trait_bespoke_explosion_on_activated_attacks_on_armor_new_desc"}, {"fr"}, function(locale, value) return "Le rayon d'explosion des attaques spéciales aumgante de "..COLORS_Numbers.explosion_rad_var_rgb..". Les attaques spéciales sur des ennemies en armure engendrent une onde de choc supplémentaire." end),
+	create_template("weap_wbm072_desc_ext_fr", {"loc_trait_bespoke_explosion_on_activated_attacks_on_armor_new_desc"}, {"fr"}, function(locale, value) return "Le rayon d'explosion des attaques spéciales augmente de "..COLORS_Numbers.explosion_rad_var_rgb..". Les attaques spéciales sur des ennemies en armure engendrent une onde de choc supplémentaire." end),
 	--[+ Russian +]-- Энергетический заряд -- руоф Скачок напряжения
 	create_template("weap_wbm072_desc_ext_ru", {"loc_trait_bespoke_explosion_on_activated_attacks_on_armor_new_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.explosion_rad_var_rgb.." к радиусу взрыва от специальных атак. Специальные атаки по бронированным врагам создают дополнительную ударную волну." end),
 
@@ -849,7 +849,7 @@ local localization_templates = {
 			-- Battle Maul and Shield -- 18s & 15% | 15s & 20% | 12s & 25% | 9s & 30%
 	create_template("weap_wbm073_desc_ext_en", {"loc_trait_block_break_pushes_new_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.block_var_rgb.." Block Cost. Pushes back enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius when Ogryn's "..COLORS_KWords.Stamina_rgb.." reaches "..COLORS_Numbers.n_0_rgb.." from Blocking an attack. Cooldown "..COLORS_Numbers.cd_var_rgb.." seconds." end), -- block_cost: -30%, cooldown: 15 -- colors
 	--[+ French +]--
-	create_template("weap_wbm073_desc_ext_fr", {"loc_trait_block_break_pushes_new_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.block_var_rgb.." de réduction du coût de blocage.Quand l'"..COLORS_KWords_fr.Stamina_rgb_fr.." de l'Ogryn atteint "..COLORS_Numbers.n_0_rgb.." en bloquant des attaques, il repousse les ennemies dans un rayon de "..COLORS_Numbers.n_5_rgb..". Temps de recharge : "..COLORS_Numbers.cd_var_rgb.." secondes." end),
+	create_template("weap_wbm073_desc_ext_fr", {"loc_trait_block_break_pushes_new_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.block_var_rgb.." de réduction du coût de blocage. Quand l'"..COLORS_KWords_fr.Stamina_rgb_fr.." de l'Ogryn atteint "..COLORS_Numbers.n_0_rgb.." en bloquant des attaques, il repousse les ennemies dans un rayon de "..COLORS_Numbers.n_5_rgb.." mètres. Temps de recharge : "..COLORS_Numbers.cd_var_rgb.." secondes." end),
 	--[+ Russian +]-- Последний страж
 	create_template("weap_wbm073_desc_ext_ru", {"loc_trait_block_break_pushes_new_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.block_var_rgb.." от затрат на блок. Вы отталкиваете врагов в радиусе "..COLORS_Numbers.n_5_rgb.." метров, когда уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." огрина достигает "..COLORS_Numbers.n_0_rgb.." при блокировании атак. Восстановление "..COLORS_Numbers.cd_var_rgb.." секунд." end),
 
@@ -1371,9 +1371,9 @@ local localization_templates = {
 
 		--[+ Gets Hot! +]--
 			-- Plasma Gun -- 5.5% & 4% | 7% & 6% | 8.5 & 8% | 10% & 10% (up to +50% & +50%)
-	create_template("weap_wbr026_desc_ext_en", {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"en"}, function(locale, value) return COLORS_KWords.Crit_hit_chance_rgb.." scales by your current "..COLORS_KWords.Heat_rgb.." level up to "..COLORS_Numbers.crit_var_rgb..". Also increases "..COLORS_KWords.Crit_rgb.." Ranged attacks "..COLORS_KWords.Damage_rgb.." by "..COLORS_Numbers.rangcrtdmg_var_rgb.."." end), -- crit_chance: 50%, ranged_crit_damage: 10% -- colors
+	create_template("weap_wbr026_desc_ext_en", {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"en"}, function(locale, value) return ..COLORS_Numbers.crit_var_rgb..COLORS_KWords.Crit_hit_chance_rgb.." scales by your current "..COLORS_KWords.Heat_rgb.." level up to 5 stacks . Also increases "..COLORS_KWords.Crit_rgb.." Ranged attacks "..COLORS_KWords.Damage_rgb.." by "..COLORS_Numbers.rangcrtdmg_var_rgb.." per stacks." end), -- crit_chance: 50%, ranged_crit_damage: 10% -- colors
 	--[+ French +]--
-	create_template("weap_wbr026_desc_ext_fr", {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"fr"}, function(locale, value) return "Le "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.." augmente proportionnellement à votre niveau de "..COLORS_KWords_fr.Heat_rgb_fr.." actuel jusqu'à "..COLORS_Numbers.crit_var_rgb..". Augmente également les "..COLORS_KWords_fr.Crit_hit_color_rgb_fr.." à distance de "..COLORS_Numbers.rangcrtdmg_var_rgb.."." end),
+	create_template("weap_wbr026_desc_ext_fr", {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"fr"}, function(locale, value) return "Augmente de "..COLORS_Numbers.crit_var_rgb.." par cumul le "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.."  proportionnellement à votre niveau de "..COLORS_KWords_fr.Heat_rgb_fr.." actuel. Augmente également les "..COLORS_KWords_fr.Crit_hit_color_rgb_fr.." à distance de "..COLORS_Numbers.rangcrtdmg_var_rgb.." par cumul." end),
 	--[+ Russian +]-- Критическая жара! -- руоф Становится жарко!
 	create_template("weap_wbr026_desc_ext_ru", {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"ru"}, function(locale, value) return "Повышается "..COLORS_KWords_ru.Crt_chance_rgb_ru.." в зависимости от уровня "..COLORS_KWords_ru.Heat_rgb_ru..", вплоть до "..COLORS_Numbers.crit_var_rgb..". Также на "..COLORS_Numbers.rangcrtdmg_var_rgb.." повышается "..COLORS_KWords_ru.Crit_dmg_r_rgb_ru.." от дальнобойных атак." end),
 
