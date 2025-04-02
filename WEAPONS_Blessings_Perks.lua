@@ -1371,7 +1371,7 @@ local localization_templates = {
 
 		--[+ Gets Hot! +]--
 			-- Plasma Gun -- 5.5% & 4% | 7% & 6% | 8.5 & 8% | 10% & 10% (up to +50% & +50%)
-	create_template("weap_wbr026_desc_ext_en", {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"en"}, function(locale, value) return COLORS_KWords.Crit_hit_chance_rgb.." scales by your current "..COLORS_KWords.Heat_rgb.." level up to "..COLORS_Numbers.crit_var_rgb..". Also increases "..COLORS_KWords.Crit_rgb.." Ranged attacks "..COLORS_KWords.Damage_rgb.." by "..COLORS_Numbers.rangcrtdmg_var_rgb.."." end), -- crit_chance: 50%, ranged_crit_damage: 10% -- colors
+	create_template("weap_wbr026_desc_ext_en", {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_hit_chance_rgb.." scales by your current "..COLORS_KWords.Heat_rgb.." level, up to "..COLORS_Numbers.n_5_rgb.." Stacks. Also increases "..COLORS_KWords.Crit_rgb.." Ranged attacks "..COLORS_KWords.Damage_rgb.." by "..COLORS_Numbers.rangcrtdmg_var_rgb.." per Stack." end), -- crit_chance: 50%, ranged_crit_damage: 10% -- colors
 	--[+ French +]--
 	create_template("weap_wbr026_desc_ext_fr", {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"fr"}, function(locale, value) return "Le "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.." augmente proportionnellement à votre niveau de "..COLORS_KWords_fr.Heat_rgb_fr.." actuel jusqu'à "..COLORS_Numbers.crit_var_rgb..". Augmente également les "..COLORS_KWords_fr.Crit_hit_color_rgb_fr.." à distance de "..COLORS_Numbers.rangcrtdmg_var_rgb.."." end),
 	--[+ Russian +]-- Критическая жара! -- руоф Становится жарко!
