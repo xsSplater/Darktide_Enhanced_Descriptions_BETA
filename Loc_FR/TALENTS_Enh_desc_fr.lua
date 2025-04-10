@@ -30,7 +30,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Ne peut pas infliger de Coup Critique.",
 		"- Dégâts de base : 900.",
 		"- Touche toujours un Point faible.",
-		"- Dégâts plus élevés contre Maniaques et Implacables.",
+		-- "- Dégâts plus élevés contre Maniaques et Implacables.",
 		"{#color(255, 35, 5)}- Vous pourriez exploser ! Ne l'utilisez pas si le niveau de Péril est de 97% ou plus !{#reset()}",
 	}, "\n"), enhdesc_col)
 
@@ -40,7 +40,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Ne peut pas infliger de coup critique.",
 		"- Dégâts de base : 1350.",
 		"- Atteint toujours un point faible.",
-		"- Dégâts plus élevés contre les Maniaques et les Implacables.",
+		-- "- Dégâts plus élevés contre les Maniaques et les Implacables.",
 		"- L'attaque principale applique un léger étourdissement à 50 % de charge. Ne peut pas étourdir : Bombardiers, Mutileur, Mutants, Ogryns, Poxbursters, Ragers, Squameux Shotgunners ou Monstrosités.",
 		-- "- À l'impact, étourdit tous les ennemis sauf les Mutants, les Monstrosities et les ennemis avec un bouclier de vide actif.",
 		dmg_is_incr_by_fr,
@@ -68,8 +68,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Ne peut pas infliger de coup critique.",
 		"- Portée maximale : 15 mètres.",
 		"- Ne cible que la zone du torse.",
-		"- Ne peut pas étourdir les Monstruosités et les ennemis avec bouclier de vide actif.",
-		"- Pénétration d'armure moyenne pour toutes les armures, Pénétration d'armure faible contre les carapaces.",
+		-- "- Ne peut pas étourdir les Monstruosités et les ennemis avec bouclier de vide actif.",
+		-- "- Pénétration d'armure moyenne pour toutes les armures, Pénétration d'armure faible contre les carapaces.",
 		dmg_is_incr_by_fr,
 		"{#color(255, 35, 35)}- Vous pouvez seulement exploser si vous portez votre niveau de péril exactement à 100 % avec une attaque chargée et utilisez en même temps une attaque normale !{#reset()}",
 		-- "{#color(255, 35, 35)}- Si vous le jouez comme un imbécile, attendez vous à vous faire insulter par votre équipe.",
@@ -83,7 +83,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Cela augmente également la portée de ciblage de 1 mètre, jusqu'à 16 mètres.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 2-2 - Dégénérescence +]--
+	--[+ Blitz 2-2 - Dégénérescence +]--!!!
 	local ED_PSY_Blitz_2_2_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
 		"- Se multiplie/s avec d'autres malus de dégâts subis comme \"Choc empyrique\" ou \"Distraction utile\" et \"On les ramollit\" d'Ogryn, ou \"Ciblage\" du vétéran, avec les bonus de dégâts, et avec les bonus de Puissance des Bénédictions d'arme.",

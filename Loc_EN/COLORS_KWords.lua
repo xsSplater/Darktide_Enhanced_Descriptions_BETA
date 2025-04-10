@@ -36,6 +36,9 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local tghn_col = Color[mod:get("toughness_text_colour")](255, true) -- Do not translate this line!
 	local Toughness_rgb = iu_actit("Toughness", tghn_col)
 	local Toughness_dmg_red_rgb = iu_actit("Toughness Damage Reduction", tghn_col)
+	--[++Coherency++]--
+	local coher_col = Color[mod:get("coherency_text_colour")](255, true)
+	local Coherency_rgb = iu_actit("Coherency", coher_col)
 --[+++BUFFS+++]--
 	--[++Cleave++]--
 	local clv_col = Color[mod:get("cleave_text_colour")](255, true) -- Do not translate this line!
@@ -218,6 +221,7 @@ return {
 	Heat_rgb = Heat_rgb,
 	Ability_cd_rgb = Ability_cd_rgb,
 	Cd_rgb = Cd_rgb,
+	Coherency_rgb = Coherency_rgb,
 	Combat_ability_rgb = Combat_ability_rgb,
 	Combat_ability_cd_rgb = Combat_ability_cd_rgb,
 	Corruption_rgb = Corruption_rgb,

@@ -14,6 +14,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local ammo_var_rgb = iu_actit("{ammo:%s}", var_col)
 	local attack_spd_var_rgb = iu_actit("{attack_speed:%s}", var_col)
 	local amount_var_rgb = iu_actit("{amount}", var_col)						-- +Penances
+	local amountp_var_rgb = iu_actit("{amount:%s}", var_col)
 	local block_var_rgb = iu_actit("{block_cost:%s}", var_col)
 	local blltam_var_rgb = iu_actit("{bullet_amount:%s}", var_col)
 	local buildup_var_rgb = iu_actit("{buildup_amount:%s}", var_col)
@@ -131,6 +132,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local n_6_rgb = iu_actit("6", var_col)
 	local n_7_rgb = iu_actit("7", var_col)
 	local n_8_rgb = iu_actit("8", var_col)
+	local n_9_rgb = iu_actit("9", var_col)
 	local n_10_rgb = iu_actit("10", var_col)
 	local n_12_rgb = iu_actit("12", var_col)
 	local n_12_5_rgb = iu_actit("12.5", var_col)
@@ -140,6 +142,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local n_30_rgb = iu_actit("30", var_col)
 	local n_40_rgb = iu_actit("40", var_col)
 	local n_50_rgb = iu_actit("50", var_col)
+	local n_64_rgb = iu_actit("64", var_col)
 	local n_200_rgb = iu_actit("200", var_col)
 	local n_340_rgb = iu_actit("340", var_col)
 		--[+ Percentages +]--
@@ -167,6 +170,7 @@ return {
 	abil_cd_rgb = abil_cd_rgb,
 	ammo_var_rgb = ammo_var_rgb,
 	amount_var_rgb = amount_var_rgb,
+	amountp_var_rgb = amountp_var_rgb,
 	attack_spd_var_rgb = attack_spd_var_rgb,
 	bcm_rgb = bcm_rgb,
 	blckcst_rgb = blckcst_rgb,
@@ -281,6 +285,7 @@ return {
 	n_6_rgb = n_6_rgb,
 	n_7_rgb = n_7_rgb,
 	n_8_rgb = n_8_rgb,
+	n_9_rgb = n_9_rgb,
 	n_10_rgb = n_10_rgb,
 	n_12_rgb = n_12_rgb,
 	n_12_5_rgb = n_12_5_rgb,
@@ -290,6 +295,7 @@ return {
 	n_30_rgb = n_30_rgb,
 	n_40_rgb = n_40_rgb,
 	n_50_rgb = n_50_rgb,
+	n_64_rgb = n_64_rgb,
 	n_200_rgb = n_200_rgb,
 	n_340_rgb = n_340_rgb,
 

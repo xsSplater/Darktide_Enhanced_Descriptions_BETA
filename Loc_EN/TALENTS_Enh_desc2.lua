@@ -759,53 +759,57 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Blitz 0 - Big Box of Hurt +]--
 	local ED_OGR_Blitz_0_rgb = iu_actit(table.concat({
 		ppp___ppp,
-		"- Impact damage:",
-		"-- 1850 base.",
-		"-- Slightly increased armor Damage modifier against Unyielding and very low armor Damage modifier against Carapace.",
+		"- Base impact damage: 1850.",
+		-- "-- Slightly increased armor Damage modifier against Unyielding and very low armor Damage modifier against Carapace.", 							--!moved_2_main_desc!
 		"-- Has instakill overrides for: Gunners, Shotgunners, Dreg Rager, Mauler, Mutants, Pox Hounds, Poxburster, Corruptor.",
 		-- "-- Direct impact Damage is increased by Rending/Brittleness, by \"Skullcrusher\" blessing (while Staggered), and by Damage buffs from \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Reload and Ready\", \"Soften Them Up\", \"Valuable Distraction\", and small Ranged Damage nodes",
 		-- "- Stagger:",
 		-- "-- Deals high Stagger against all enemies, except for Monstrosities and Captains/Twins.",
-		-- "- Replenishes all boxes per Grenade pickup.",
+		-- "- Replenishes all boxes per Grenade pickup.",			 	--!moved_2_main_desc!
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 1 - Big Friendly Rock +]--
 	local ED_OGR_Blitz_1_rgb = iu_actit(table.concat({
 		ppp___ppp,
-		"- Impact damage:",
-		"-- 1200 base.",
-		"-- Slightly increased armor Damage modifier against Maniac.",
-		"-- Very low armor Damage modifier against Carapace.",
-		"-- Extra Finesse boost against Unyielding.",
+		"- Base impact damage: 1200.",
+		-- "-- Slightly increased armor Damage modifier against Maniac.", --!moved_2_main_desc!
+		-- "-- Very low armor Damage modifier against Carapace.", 		--!moved_2_main_desc!
+		-- "-- Extra Finesse boost against Unyielding.", 				--!moved_2_main_desc!
 		"-- Has instakill overrides for: Gunners, Shotgunners, Dreg Ragers, Mutants, Pox Hounds, Poxbursters, Corruptors.",
 		"-- Can't oneshot: Maulers, Ogryns and Monstrosities.",
 		"-- Direct impact Damage is increased by Rending/Brittleness, by \"Skullcrusher\" Blessing (while Staggered), and by Damage buffs from \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Reload and Ready\", \"Soften Them Up\" (if applied by another Ogryn), \"Valuable Distraction\", and small Ranged Damage nodes.",
 		"- Deals high Stagger against all enemies. Requires Weakspot hits to Stagger Monstrosities, and Scab Captain/Twins (only without shield).",
-		"- Ogryn cannot pick up Grenade ammo.",
+		-- "- Ogryn cannot pick up Grenade ammo.", 						--!moved_2_main_desc!
 		"- Doesn't Cleave but may bounce back a bit and Damage/Kill a second closest enemy.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 2 - Bombs Away! +]--
+	--[+ Blitz 1-1 - That One Didn't Count +]--
+	-- local ED_OGR_Blitz_1_1_rgb = iu_actit(table.concat({
+			-- ppp______ppp,
+		-- }, "\n"), enhdesc_col)
+
+	--[+ Blitz 2 - Frag Bomb +]--
 	local ED_OGR_Blitz_2_rgb = iu_actit(table.concat({
 		ppp___ppp,
-		"- Impact damage: 1850 base. Slightly increased armor Damage modifier against Unyielding and very low armor Damage modifier against Carapace. Has instakill overrides for: Gunners, Shotgunners, Dreg Rager, Mauler, Mutants, Pox Hounds, Poxburster, Corruptor. Direct impact Damage is increased by Rending/Brittleness, by \"Skullcrusher\" blessing (while Staggered), and by Damage buffs from \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Reload and Ready\", \"Soften Them Up\", \"Valuable Distraction\", and small Ranged Damage nodes",
+		-- "- Fuse time: 2 seconds.", 									--!moved_2_main_desc!
+		"- Explosion radius: 2 meters (epicenter), 16 meters (max).",
+		-- "- Explosion damage:",
+		"-- Base Damage: 1500 (epicenter), 1250 (outside epicenter).",
+		-- "-- Instakill all enemies with an explosion except: Maulers, Crushers, Bulwarks and Monstrosities.",
+		-- "-- Very high armor Damage modifiers across the board, especially against Flak, Maniac, Unyielding.", 											--!moved_2_main_desc!
+		"-- Explosion Damage is increased by Rending/Brittleness, by \"Skullcrusher\" Blessing (while Staggered), and by Damage buffs from \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Soften Them Up\", and \"Valuable Distraction\".",
+		-- "- Deals high Stagger against all enemies including Monstrosities, Captains/Twins (only without void shield).", 									--!moved_2_main_desc!
+	}, "\n"), enhdesc_col)
+
+	--[+ Blitz 3 - Bombs Away! +]--
+	local ED_OGR_Blitz_3_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		"- Impact damage: 1850 base.",
+		-- "- Slightly increased armor Damage modifier against Unyielding and very low armor Damage modifier against Carapace.",
+		-- "- Has instakill overrides for: Gunners, Shotgunners, Dreg Rager, Mauler, Mutants, Pox Hounds, Poxburster, Corruptor. Direct impact Damage is increased by Rending/Brittleness, by \"Skullcrusher\" blessing (while Staggered), and by Damage buffs from \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Reload and Ready\", \"Soften Them Up\", \"Valuable Distraction\", and small Ranged Damage nodes",
 		-- "- Stagger: Deals high Stagger against all enemies, except for Monstrosities and Captains/Twins.",
 		-- "- Replenishes all boxes per Grenade pickup.",
 		"- Frag grenades: Grenade explosions have epicenter radius of 2 meters, Max Radius of 8 meters. Can Stagger all enemies inside epicenter radius, including Monstrosities and Captains/Twins (only without void shield).",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 3 - Frag Bomb +]--
-	local ED_OGR_Blitz_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Fuse time: 2 seconds.",
-		"- Explosion radius:",
-		"-- 2 meters (epicenter), 16 meters (max).",
-		"- Explosion damage:",
-		"-- Base Damage: 1500 (epicenter), 1250 (outside epicenter).",
-		"-- Instakill all enemies with an explosion except: Maulers, Crushers, Bulwarks and Monstrosities.",
-		"-- Very high armor Damage modifiers across the board, especially against Flak, Maniac, Unyielding.",
-		"-- Explosion Damage is increased by Rending/Brittleness, by \"Skullcrusher\" Blessing (while Staggered), and by Damage buffs from \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Soften Them Up\", and \"Valuable Distraction\".",
-		"- Deals high Stagger against all enemies including Monstrosities, Captains/Twins (only without void shield).",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 0 - Intimidating Presence +]--
@@ -939,7 +943,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Ability 2-3 - Big Lungs +]--
 	local ED_OGR_Ability_2_3_rgb = iu_actit(table.concat({
 		ppp___ppp,
-		"- Increases taunt base Radius from 8 to 12 meters.",
+		-- "- Increases taunt base Radius from 8 to 12 meters.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3 - Point-Blank Barrage +]--
@@ -1459,6 +1463,7 @@ return {
 
 	ED_OGR_Blitz_0_rgb = ED_OGR_Blitz_0_rgb,
 	ED_OGR_Blitz_1_rgb = ED_OGR_Blitz_1_rgb,
+	ED_OGR_Blitz_1_1_rgb = ED_OGR_Blitz_1_1_rgb,
 	ED_OGR_Blitz_2_rgb = ED_OGR_Blitz_2_rgb,
 	ED_OGR_Blitz_3_rgb = ED_OGR_Blitz_3_rgb,
 

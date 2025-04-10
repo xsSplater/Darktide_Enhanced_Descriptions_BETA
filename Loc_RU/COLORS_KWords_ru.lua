@@ -121,6 +121,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Stuns_rgb_ru = iu_actit("ошеломлённым", stgr_col)
 	local Stunned_rgb_ru = iu_actit("ошеломлена", stgr_col)
 	local Staggered_rgb_ru = iu_actit("ошеломлённых", stgr_col)
+	local Staggerr_rgb_ru = iu_actit("Ошеломление", stgr_col)
 	--[++Порча++]--
 	local crpt_col = Color[mod:get("corruption_text_colour")](255, true)
 	local Corruption_rgb_ru = iu_actit("порче", crpt_col)
@@ -314,6 +315,7 @@ return {
 	Stuns_rgb_ru = Stuns_rgb_ru,
 	Stunned_rgb_ru = Stunned_rgb_ru,
 	Staggered_rgb_ru = Staggered_rgb_ru,
+	Staggerr_rgb_ru = Staggerr_rgb_ru,
 	Stamina_rgb_ru = Stamina_rgb_ru,
 	Stamina_c_r_rgb_ru = Stamina_c_r_rgb_ru,
 	Stealth_rgb_ru = Stealth_rgb_ru,

@@ -41,7 +41,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- Cannot Crit.",
 		"- Base Damage: 900.",
 		"- Always scores a Weakspot hit.",
-		"- Higher Damage against Maniac and Unyielding.",
+		-- "- Higher Damage against Maniac and Unyielding.",
 		"{#color(255, 35, 5)}- You may Explode! Don't use if Peril level is 97% or above!{#reset()}",
 	}, "\n"), enhdesc_col)
 
@@ -51,25 +51,25 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- Cannot Crit.",
 		"- Base Damage: 1350.",
 		"- Always scores a Weakspot hit.",
-		"- Higher Damage against Maniac and Unyielding.",
+		-- "- Higher Damage against Maniac and Unyielding.",
 		"- Main attack applies a light Charge Stagger at 50% charge level to the targeted enemy. Cannot Stagger: Bombers, Maulers, Mutants, Ogryns, Poxbursters, Ragers, Scab Shotgunners or Monstrosities.",
 		"- On Impact Staggers all enemies except Mutants, Monstrosities and enemies with active void shield.",
 		dmg_is_incr_by,
 		"{#color(255, 35, 5)}- You may Explode! Don't use if Peril level is 97% or above!{#reset()}",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 1-1 - Kinetic Resonance +]--
+	--[+ Blitz 1-1 - Kinetic Resonance +]--!!!
 	local ED_PSY_Blitz_1_1_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- Reduces Brain Rupture's charge time for both primary and secondary attacks.",
-		"- Charge time reduction Stacks additively with \"Empowered Psionics\" buff and Celerity Stimm.",
-		"- Stacks multiplicatively with related buffs from \"By Crack of Bone\", \"Becalming Eruption\", \"Empyric Resolve\", \"Inner Tranquility\", \"Reality Anchor\", small Peril Resistance nodes, Combat Stimm, and the \"Enhanced Blitz\" mutator.",
+		"- Charge time reduction stacks additively with itself (if procced twice in succession with \"Bolstered Shield\") and \"Empowered Psionics\", and multiplicatively/additively with Celerity Stimm's two charge time reductions.",
+		"- Peril Cost Reduction stacks multiplicatively with related buffs from \"By Crack of Bone\", \"Becalming Eruption\", \"Empyric Resolve\", \"Inner Tranquility\", \"Reality Anchor\", small Peril Resistance nodes, Combat Stimm, and the \"Enhanced Blitz\" mutator.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 1-2 - Kinetic Flayer +]--
 	local ED_PSY_Blitz_1_2_rgb = iu_actit(table.concat({
 		ppp___ppp,
-		"- \"Brain Rupture\" attacks triggered by the Talent benefit from \"Empowered Psionics'\" Damage buff without consuming a Stack.",
+		"- \"Brain Rupture\" attacks triggered by the Talent benefit from \"Empowered Psionics\" Damage buff without consuming a Stack.",
 		"{#color(255, 35, 5)}- There is currently a bug: When Peril is above 97%, the Talent triggers and a 15-second Cooldown begins, but the enemy does NOT receive Damage at all.{#reset()}",
 	}, "\n"), enhdesc_col)
 
@@ -79,10 +79,10 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- Cannot crit.",
 		"- Max range: 15 meters.",
 		"- Targets only torso hitzone.",
-		"- Cannot Stagger Monstrosities and enemies with active void shield.",
-		"- Average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
+		-- "- Cannot Stagger Monstrosities and enemies with active void shield.",
+		-- "- Average armor Damage modifiers, low armor Damage modifier against Carapace.",
 		dmg_is_incr_by,
-		-- "- Forces a short Quelling action when reaching 100% Peril removing ~8.5% Peril. If released below 100% Peril, pushes enemies back (if possible).",
+		"- Forces a short Quelling action when reaching 100% Peril removing ~8.5% Peril. If released below 100% Peril, pushes enemies back (if possible).",
 		"{#color(255, 35, 5)}- You can only Explode if you raise your Peril level to exactly 100% with a charged attack and at same time use a normal attack!{#reset()}",
 	}, "\n"), enhdesc_col)
 
@@ -100,18 +100,18 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		ppp___ppp,
 		-- "- The debuff is being applied as long as the enemy is actively affected by \"Smite\".",
 		"- Stacks multiplicatively with other Damage taken debuffs like \"Empyric Shock\" or Ogryn's \"Soften Them Up\", \"Valuable Destruction\" or Veteran's \"Focus Target!\", with Damage buffs, and with Power level buffs from Weapon Blessings.",
-		"- Doesn't Stack with the same debuff applied by another Psyker.",
-		"- Any source that may apply an Electrocution effect to enemies but is not Smite or Charged Strike will not proc Enfeeble.",
+		-- "- Doesn't Stack with the same debuff applied by another Psyker.",
+		"- Any source that may apply an Electrocution effect to enemies but is not \"Smite\" or \"Charged Strike\" will not proc \"Enfeeble\".",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 2-3 - Charged Strike +]--
 	local ED_PSY_Blitz_2_3_rgb = iu_actit(table.concat({
 		ppp___ppp,
-		"- 8 base Damage per tick.",
-		"- The Damage window lasts up to 2 seconds.",
-		"- The Electrocuted state lasts until 2 seconds after the last Damage tick.",
-		"-- Note that the time before the first Damage tick can happen depends on enemy Hit mass (just like with Smite itself), so the more Hit mass an enemy has the longer it will take this Talent's Electrocution effect to deal Damage. As a result, against Monstrosities (20 Hit mass), only 1 Damage tick can be executed before the Damage window of 2 seconds ends.",
-		"-- If Enfeeble is selected, the Electrocution effect receives a more favorable Hit mass cost which effectively doubles its tick rate against most enemies. With Enfeeble, it also benefits from the 10% increased Damage taken debuff. Apparently, each Damage tick adds one debuff Stack increasing the Damage that the debuffed enemy takes accordingly per tick. All attackers can benefit from this only while the Electrocution effect is actively Damaging and applying the debuff (just like with Smite itself).",
+		-- "- Up to 64 base Damage per tick when reaching Max charge level.",
+		-- "- The Damage window lasts up to 2 seconds.",
+		-- "- The Electrocuted state lasts until 2 seconds after the last Damage tick.",
+		"-- Note that the time before the first Damage tick can happen depends on enemy Hit mass (just like with \"Smite\" itself), so the more Hit mass an enemy has the longer it will take before this Talent's Electrocution effect deals Damage. As a result, against Monstrosities (20 Hit mass), only 1 Damage tick can be executed before the Damage window of 2 seconds ends.",
+		"-- If Enfeeble is selected, the Electrocution effect receives a more favorable Hit mass cost, which effectively doubles its tick rate against most enemies, and is also able to reach Max charge level sooner. With \"Enfeeble\", this Talent's Electrocution effect benefits from the 10% increased Damage taken debuff, and attacking players also benefit from it while the Electrocution effect is actively damaging and applying the debuff (just like with \"Smite\" itself).",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3 - Assail +]--
@@ -731,7 +731,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- Only affects Psyker's own Damage.",
 		"- Stacks additively with other Rending buffs and with Brittleness debuffs that are applied to enemies.",
 		warp_attc_refers_to,
-		"{#color(255, 35, 5)}There is currently a bug: The Rending multiplier fails to be applied correctly during Damage calculation.\nTHIS TALENT DOES NOTHING!!!{#reset()}",
+		-- "{#color(255, 35, 5)}There is currently a bug: The Rending multiplier fails to be applied correctly during Damage calculation.\nTHIS TALENT DOES NOTHING!!!{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 31 - True Aim +]--

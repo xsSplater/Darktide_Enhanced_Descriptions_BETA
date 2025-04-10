@@ -744,8 +744,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Blitz 0 - Big Box of Hurt +]--
 	local ED_OGR_Blitz_0_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
-		"- Dégâts d'impact:",
-		"-- 1850 de base.",
+		"- Dégâts d'impact: 1850 de base.", --!!!"- Base impact damage: 1850.",
 		"-- Pénétration d'armure légèrement augmentée contre Implacable et très faible contre Carapace.",
 		"-- Permet les éléminations instantanées pour : Mitrailleurs, Shotgunners, Dreg Rager, Mauler, Mutants, Cerbères, Poxburster, Corruptor.",
 		-- "-- Les dégâts d'impact directs sont augmentés par Déchirure/Fragilité, par la bénédiction \"Brise-crâne\" (lorsqu'étourdi), et par les bonus de dégâts de \"Poids lourd\" (contre les Ogryns), \"L'heure de la vengeance\", \"Arme rechargée et prête\", \"On les ramollit\", \"Distraction utile\" et les petits noeuds de dégâts à distance",
@@ -754,14 +753,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "- récupère toutes les boîtes par récupération de grenade.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 1 - Big Friendly Rock +]--
+	--[+ Blitz 1 - Big Friendly Rock +]--!!!
 	local ED_OGR_Blitz_1_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
-		"- Dégâts d'impact:",
-		"-- 1200 de base.",
-		-- "-- Pénétration d'armure légèrement augmentée contre Maniaque.",
-		-- "-- Très faible pénétration d'armure contre Carapace.",
-		-- "-- Bonus de Finesse supplémentaire contre Implacable.",
+		"- Dégâts d'impact:",--!!!"- Base impact damage: 1200.",
+		"-- 1200 de base.",--!!!
+		"-- Pénétration d'armure légèrement augmentée contre Maniaque.",
+		"-- Très faible pénétration d'armure contre Carapace.",
+		"-- Bonus de Finesse supplémentaire contre Implacable.",
 		"-- Pénétration d'armure légèrement augmentée contre Maniaque. Très faible pénétration d'armure contre Carapace. Bonus de Finesse supplémentaire contre Implacable.",
 		"-- Permet les éléminations instantanées pour : Mitrailleurs, Shotgunners, Dreg Ragers, Mutants, Cerbères, Poxbursters, Corruptors.",
 		"-- Ne peut pas tuer en un coup : Maulers, Ogryns et Montruosités.",
@@ -770,17 +769,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Ne transperce pas mais peut rebondir légèrement et infliger des dégâts/tuer un deuxième ennemi le plus proche.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 2 - Bombs Away! +]--
+	--[+ Blitz 2 - Frag Bomb +]--
 	local ED_OGR_Blitz_2_rgb_fr = iu_actit(table.concat({
-		ppp___ppp,
-		"- Dégâts d'impact : 1850 de base. Pénétration d'armure légèrement augmentée contre Implacable et très faible contre Carapace. Permet les éléminations instantanées pour : Mitrailleurs, Shotgunners, Dreg Rager, Mauler, Mutants, Cerbères, Poxburster, Corruptor. Les dégâts d'impact directs sont augmentés par Déchirure/Fragilité, par la bénédiction \"Brise-crâne\" (lorsqu'étourdi), et par les bonus de dégâts de \"Poids lourd\" (contre les Ogryns), \"L'heure de la vengeance\", \"Arme rechargée et prête\", \"On les ramollit\", \"Distraction utile\" et les petits noeuds de dégâts à distance",
-		-- "- Étourdissement : Inflige un étourdissement élevé à tous les ennemis, sauf aux Montruosités et aux Capitaines/Jumeaux.",
-		-- "- récupère toutes les boîtes par récupération de grenade.",
-		"- Grenades à fragmentation : Les explosions de grenades ont un rayon d'épicentre de 2 mètres, un rayon maximal de 8 mètres. Peut étourdir tous les ennemis à l'intérieur du rayon de l'épicentre, y compris les Montruosités et les Capitaines/Jumeaux (uniquement sans boucliers Void).",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 3 - Frag Bomb +]--
-	local ED_OGR_Blitz_3_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
 		"- Temps de mise à feu : 2 secondes.",
 		"- Rayon d'explosion :",
@@ -791,6 +781,15 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"-- Modificateurs de dégâts d'armure très élevés dans l'ensemble, en particulier contre Armure Légère, Maniaque, Implacable.",
 		"-- Les dégâts d'explosion sont augmentés par Déchirure/Fragilité, par la bénédiction \"Brise-crâne\" (lorsqu'étourdi), et par les bonus de dégâts de \"Poids lourd\" (contre les Ogryns), \"L'heure de la vengeance\", \"On les ramollit\" et \"Distraction utile\".",
 		"- Inflige un étourdissement élevé à tous les ennemis, y compris les Montruosités, les Capitaines/Jumeaux (uniquement sans boucliers Void).",
+	}, "\n"), enhdesc_col)
+
+	--[+ Blitz 3 - Bombs Away! +]--
+	local ED_OGR_Blitz_3_rgb_fr = iu_actit(table.concat({
+		ppp___ppp,
+		"- Dégâts d'impact : 1850 de base. Pénétration d'armure légèrement augmentée contre Implacable et très faible contre Carapace. Permet les éléminations instantanées pour : Mitrailleurs, Shotgunners, Dreg Rager, Mauler, Mutants, Cerbères, Poxburster, Corruptor. Les dégâts d'impact directs sont augmentés par Déchirure/Fragilité, par la bénédiction \"Brise-crâne\" (lorsqu'étourdi), et par les bonus de dégâts de \"Poids lourd\" (contre les Ogryns), \"L'heure de la vengeance\", \"Arme rechargée et prête\", \"On les ramollit\", \"Distraction utile\" et les petits noeuds de dégâts à distance",
+		-- "- Étourdissement : Inflige un étourdissement élevé à tous les ennemis, sauf aux Montruosités et aux Capitaines/Jumeaux.",
+		-- "- récupère toutes les boîtes par récupération de grenade.",
+		"- Grenades à fragmentation : Les explosions de grenades ont un rayon d'épicentre de 2 mètres, un rayon maximal de 8 mètres. Peut étourdir tous les ennemis à l'intérieur du rayon de l'épicentre, y compris les Montruosités et les Capitaines/Jumeaux (uniquement sans boucliers Void).",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 0 - Intimidating Presence +]--
