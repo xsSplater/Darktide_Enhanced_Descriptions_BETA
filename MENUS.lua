@@ -182,121 +182,246 @@ local localization_templates = {
 	create_template("hud_mission_board_header_auric_ext_tw", {"loc_mission_board_view_header_tertium_hive_auric"}, {"zh-tw"}, function(locale, value) return "奧里克任務" end),
 
 --[+ HAVOC - Хаос +]-- руоф Верная смерть
+	--[+ Russian +]--
 	create_template("havoc_name_ext_ru", {"loc_havoc_name"}, {"ru"}, function(locale, value) return "Хаос" end),
+	--[+ 浩劫 - Traditional Chinese +]--
+	create_template("havoc_name_ext_tw", {"loc_havoc_name"}, {"zh-tw"}, function(locale, value) return "浩劫" end), -- 浩劫UI左上
+
+	--[+ Russian +]--
 	create_template("havoc_reset_rewards_ext_ru", {"loc_havoc_reset_rewards"}, {"ru"}, function(locale, value) return "Награды режима Хаос" end),
+	--[+ 浩劫獎勵 - Traditional Chinese +]--
+	create_template("havoc_reset_rewards_ext_tw", {"loc_havoc_reset_rewards"}, {"zh-tw"}, function(locale, value) return "浩劫獎勵" end),
+
+	--[+ Russian +]--
 	create_template("havoc_rewards_obj_order_ext_ru", {"loc_havoc_reward_objective_order"}, {"ru"}, function(locale, value) return "Выполнить задание режима Хаос" end),
+	--[+ 完成任一浩劫任務 - Traditional Chinese +]--
+	create_template("havoc_rewards_obj_order_ext_tw", {"loc_havoc_reward_objective_order"}, {"zh-tw"}, function(locale, value) return "完成任一浩劫任務" end),
 
-
-
+-- TODO 
 --[+ ++KILLFEED++ +]--
 	--[+ Russian +]--
 	create_template("hud_killfeed_ext_ru", {"loc_hud_combat_feed_kill_message"}, {"ru"}, function(locale, value) return "{killer:%s} убивает {victim:%s}" end),
-
+	--[+ Traditional Chinese +]--
+	create_template("hud_killfeed_ext_tw", {"loc_hud_combat_feed_kill_message"}, {"zh-tw"}, function(locale, value) return "{killer:%s} 擊殺 {victim:%s}" end),
 
 --[+ ++TREAT - СЛОЖНОСТЬ++ +]-- colored
-		--[+ SEDITION - МЯТЕЖ +]--
-	--[+ Russian +]--
+	--[+ SEDITION - МЯТЕЖ +]--
+		--[+ Russian +]--
 	create_template("mission_board_danger_1_ext_ru", {"loc_mission_board_danger_lowest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.sedition_rgb_ru end),
-		-- [+ UPRISING - ВОССТАНИЕ +]--
-	--[+ Russian +]--
-	create_template("mission_board_danger_2_ext_ru", {"loc_mission_board_danger_low"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.uprising_rgb_ru end),
-		-- [+ MALICE - ЗЛОБА +]--
-	--[+ Russian +]--
-	create_template("mission_board_danger_3_ext_ru", {"loc_mission_board_danger_medium"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.malice_rgb_ru end),
-		-- [+ HERESY - ЕРЕСЬ +]--
-	--[+ Russian +]--
-	create_template("mission_board_danger_4_ext_ru", {"loc_mission_board_danger_high"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.heresy_rgb_ru end),
-		-- [+ DAMNATION - ПРОКЛЯТИЕ +]--
-	--[+ Russian +]--
-	create_template("mission_board_danger_5_ext_ru", {"loc_mission_board_danger_highest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.damnation_rgb_ru end),
+		--[+  暴動 - Traditional Chinese +]--
+	create_template("mission_board_danger_1_ext_tw", {"loc_mission_board_danger_lowest"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.sedition_rgb_tw end),
+
+
+	-- [+ UPRISING - ВОССТАНИЕ +]--
+		--[+ Russian +]--
+		create_template("mission_board_danger_2_ext_ru", {"loc_mission_board_danger_low"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.uprising_rgb_ru end),
+		--[+  起義 - Traditional Chinese +]--
+	create_template("mission_board_danger_2_ext_tw", {"loc_mission_board_danger_low"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.uprising_rgb_tw end),
+
+	-- [+ MALICE - ЗЛОБА +]--
+		--[+ Russian +]--
+		create_template("mission_board_danger_3_ext_ru", {"loc_mission_board_danger_medium"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.malice_rgb_ru end),
+		--[+  惡毒 - Traditional Chinese +]--
+		create_template("mission_board_danger_3_ext_tw", {"loc_mission_board_danger_medium"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.malice_rgb_tw end),
+
+	-- [+ HERESY - ЕРЕСЬ +]--
+		--[+ Russian +]--
+		create_template("mission_board_danger_4_ext_ru", {"loc_mission_board_danger_high"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.heresy_rgb_ru end),
+		--[+  異端 - Traditional Chinese +]--
+		create_template("mission_board_danger_4_ext_tw", {"loc_mission_board_danger_high"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.heresy_rgb_tw end),
+
+	-- [+ DAMNATION - ПРОКЛЯТИЕ +]--
+		--[+ Russian +]--
+		create_template("mission_board_danger_5_ext_ru", {"loc_mission_board_danger_highest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.damnation_rgb_ru end),
+		--[+  詛咒 - Traditional Chinese +]--
+		create_template("mission_board_danger_5_ext_tw", {"loc_mission_board_danger_highest"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.damnation_rgb_tw end),
 
 
 --[+ ++INVENTORY++ +]--
-		-- [+ Curios - Реликвии +]-- руоф Диковинки
-	--[+ Russian +]--
+	-- [+ Curios - Реликвии +]-- руоф Диковинки
+		--[+ Russian +]--
 	create_template("hud_inventory_attachments_ext_ru", {"loc_inventory_loadout_group_attachments"}, {"ru"}, function(locale, value) return "Реликвии" end),
+		--[+ 珍品 - Traditional Chinese +]--
+	create_template("hud_inventory_attachments_ext_tw", {"loc_inventory_loadout_group_attachments"}, {"zh-tw"}, function(locale, value) return "珍品" end), -- 角色畫面
+
+		--[+ Russian +]--
 	create_template("hud_inventory_attachments1_ext_ru", {"loc_inventory_title_slot_attachment_1"}, {"ru"}, function(locale, value) return "Первая реликвия" end),
+		--[+ 珍品 - Traditional Chinese +]--
+	create_template("hud_inventory_attachments1_ext_tw", {"loc_inventory_title_slot_attachment_1"}, {"zh-tw"}, function(locale, value) return "珍品" end),
+
+		--[+ Russian +]--
 	create_template("hud_inventory_attachments2_ext_ru", {"loc_inventory_title_slot_attachment_2"}, {"ru"}, function(locale, value) return "Вторая реликвия" end),
+		--[+ 珍品 - Traditional Chinese +]--
+	create_template("hud_inventory_attachments2_ext_tw", {"loc_inventory_title_slot_attachment_2"}, {"zh-tw"}, function(locale, value) return "珍品" end),
+
+		--[+ Russian +]--
 	create_template("hud_inventory_attachments3_ext_ru", {"loc_inventory_title_slot_attachment_3"}, {"ru"}, function(locale, value) return "Третья реликвия" end),
-		--[+ Снаряжение +]--
-	--[+ Russian +]--
+		--[+ 珍品 - 庫存 - Traditional Chinese +]--
+	create_template("hud_inventory_attachments3_ext_tw", {"loc_inventory_title_slot_attachment_3"}, {"zh-tw"}, function(locale, value) return "珍品 - 庫存" end),
+
+	--[+ Снаряжение +]--
+		--[+ Russian +]--
 	create_template("hud_inventory_name_ext_ru", {"loc_inventory_view_display_name"}, {"ru"}, function(locale, value) return "Снаряжение" end),
-		--[+ Ноги +]--
-	--[+ Russian +]--
+		--[+ 裝備 - Traditional Chinese +]--
+	create_template("hud_inventory_name_ext_tw", {"loc_inventory_view_display_name"}, {"zh-tw"}, function(locale, value) return "裝備" end),
+
+
+	--[+ Ноги +]--
+		--[+ Russian +]--
 	create_template("hud_cosmetics_slot_lowerbody_ext_ru", {"loc_inventory_title_slot_gear_lowerbody"}, {"ru"}, function(locale, value) return "Ноги" end),
-		--[+ Позы +]--
-	--[+ Russian +]--
+		--[+ 腿部 - Traditional Chinese +]--
+	create_template("hud_cosmetics_slot_lowerbody_ext_tw", {"loc_inventory_title_slot_gear_lowerbody"}, {"zh-tw"}, function(locale, value) return "下半身" end),
+
+	--[+ Позы +]--
+		--[+ Russian +]--
 	create_template("hud_cosmetics_anim_ext_ru", {"loc_inventory_title_slot_animation_end_of_round"}, {"ru"}, function(locale, value) return "Позы" end),
-		--[+ Редкость предметов +]--
-	--[+ Russian +]--
+		--[+ 姿勢 - Traditional Chinese +]--
+	create_template("hud_cosmetics_anim_ext_tw", {"loc_inventory_title_slot_animation_end_of_round"}, {"zh-tw"}, function(locale, value) return "姿勢" end),
+
+	--[+ Редкость предметов +]--
+		--[+ Russian +]--
 	create_template("store_armoury_exchange_weap_rarity1_ext_ru", {"loc_item_weapon_rarity_1"}, {"ru"}, function(locale, value) return "Нечестивое" end), -- Белое
+		----[+ Traditional Chinese +]--
+	create_template("store_armoury_exchange_weap_rarity1_ext_tw", {"loc_item_weapon_rarity_1"}, {"zh-tw"}, function(locale, value) return "褻瀆" end), -- 白色
+		--[+ Russian +]--
 	create_template("store_armoury_exchange_weap_rarity2_ext_ru", {"loc_item_weapon_rarity_2"}, {"ru"}, function(locale, value) return "Очищенное" end), -- Зелёное
+		--[+ Traditional Chinese +]--
+	create_template("store_armoury_exchange_weap_rarity2_ext_tw", {"loc_item_weapon_rarity_2"}, {"zh-tw"}, function(locale, value) return "救贖" end), -- 綠色
+		--[+ Russian +]--
 	create_template("store_armoury_exchange_weap_rarity3_ext_ru", {"loc_item_weapon_rarity_3"}, {"ru"}, function(locale, value) return "Помазанное" end), -- Синее
+		--[+ Traditional Chinese +]--
+	create_template("store_armoury_exchange_weap_rarity3_ext_tw", {"loc_item_weapon_rarity_3"}, {"zh-tw"}, function(locale, value) return "受膏" end), -- 藍色
+		--[+ Russian +]--
 	create_template("store_armoury_exchange_weap_rarity4_ext_ru", {"loc_item_weapon_rarity_4"}, {"ru"}, function(locale, value) return "Возвышенное" end), -- Фиолетовое
+		--[+ Traditional Chinese +]--
+	create_template("store_armoury_exchange_weap_rarity4_ext_tw", {"loc_item_weapon_rarity_4"}, {"zh-tw"}, function(locale, value) return "崇高" end), -- 紫色
+		--[+ Russian +]--
 	create_template("store_armoury_exchange_weap_rarity5_ext_ru", {"loc_item_weapon_rarity_5"}, {"ru"}, function(locale, value) return "Непостижимое" end), -- Рыжее
- 	-- КРАСНОЕ НЕ ПАШЕТ ИЗ-ЗА МОДА?
+		--[+ Traditional Chinese +]--
+	create_template("store_armoury_exchange_weap_rarity5_ext_tw", {"loc_item_weapon_rarity_5"}, {"zh-tw"}, function(locale, value) return "卓越" end), -- 橙色
+		--[+ Russian +]--
+ 		-- КРАСНОЕ НЕ ПАШЕТ ИЗ-ЗА МОДА?
 	create_template("store_armoury_exchange_weap_rarity6_ext_ru", {"loc_item_weapon_rarity_6"}, {"ru"}, function(locale, value) return "Благородное" end), -- Красное
+		--[+ Traditional Chinese +]--
+	create_template("store_armoury_exchange_weap_rarity6_ext_tw", {"loc_item_weapon_rarity_6"}, {"zh-tw"}, function(locale, value) return "神化" end), -- 紅色
 
 --[+ ++WEAPON CARD - КАРТОЧКА ОРУЖИЯ++ +]--
-		--[+ Weapon - Оружие +]--
-			--[+ Favorite +]--
-	--[+ Russian +]--
+	--[+ Weapon - Оружие +]--
+		--[+ Favorite +]--
+			--[+ Russian +]--
 	create_template("inventory_weapon_perk_title_ext_ru", {"loc_inventory_menu_favorite_item"}, {"ru"}, function(locale, value) return "Избранное" end), -- руоф Добавить в избранное
-			--[+ Perk +]--
-	--[+ Russian +]--
+			--[+ Traditional Chinese +]--
+	-- create_template("inventory_weapon_perk_title_ext_tw", {"loc_inventory_menu_favorite_item"}, {"zh-tw"}, function(locale, value) return "最愛" end),
+
+		--[+ Perk +]--
+			--[+ Russian +]--
 	create_template("inventory_weapon_perk_title_ext_ru", {"loc_item_type_perk"}, {"ru"}, function(locale, value) return "Характеристики" end), -- руоф Улучшение
+			--[+ 附加屬性 - Traditional Chinese +]--
+	create_template("inventory_weapon_perk_title_ext_tw", {"loc_item_type_perk"}, {"zh-tw"}, function(locale, value) return "附加屬性" end), -- 
+
+			--[+ Russian +]--
 	create_template("inventory_weapon_action_light_ext_ru", {"loc_weapon_action_title_light"}, {"ru"}, function(locale, value) return "Лёгкая атака" end), -- руоф Простая атака
+			--[+ 輕攻擊 - Traditional Chinese +]--
+	create_template("inventory_weapon_action_light_ext_tw", {"loc_weapon_action_title_light"}, {"zh-tw"}, function(locale, value) return "輕攻擊" end),
+
+			--[+ Russian +]--
 	create_template("inventory_weapon_action_heavy_ext_ru", {"loc_weapon_action_title_heavy"}, {"ru"}, function(locale, value) return "Тяжёлая атака" end), -- руоф Мощная атака
+			--[+ 重攻擊 - Traditional Chinese +]--
+	create_template("inventory_weapon_action_heavy_ext_tw", {"loc_weapon_action_title_heavy"}, {"zh-tw"}, function(locale, value) return "重攻擊" end),
+
+			--[+ Russian +]--
 	create_template("inventory_weapon_action_primary_ext_ru", {"loc_weapon_action_title_primary"}, {"ru"}, function(locale, value) return "Основная атака" end), -- руоф Основное действие - длинно и накладывается
+			--[+ 主要攻擊(杖) - Traditional Chinese +]--
+	create_template("inventory_weapon_action_primary_ext_tw", {"loc_weapon_action_title_primary"}, {"zh-tw"}, function(locale, value) return "主要攻擊" end),
+			--[+ Russian +]--
 	create_template("inventory_weapon_action_secondary_ext_ru", {"loc_weapon_action_title_secondary"}, {"ru"}, function(locale, value) return "Вторичная атака" end), -- Вторичное действие - длинно и накладывается -- руоф Дополнительное действие
+			--[+ 次要攻擊(杖) - Traditional Chinese +]--
+	create_template("inventory_weapon_action_secondary_ext_tw", {"loc_weapon_action_title_secondary"}, {"zh-tw"}, function(locale, value) return "次要攻擊" end),
+			--[+ Russian +]--
 	create_template("inventory_weapon_action_special_ext_ru",{"loc_weapon_action_title_special"}, {"ru"}, function(locale, value) return "Специальная атака" end),
+			--[+ 特殊攻擊(遠程) - Traditional Chinese +]--
+	create_template("inventory_weapon_action_special_ext_tw", {"loc_weapon_action_title_special"}, {"zh-tw"}, function(locale, value) return "特殊攻擊" end),
+			--[+ Russian +]--
 	create_template("inventory_weapon_action_special_att_ext_ru", {"loc_weapon_special_special_attack"}, {"ru"}, function(locale, value) return "Специальная атака" end),
+			--[+ 特殊攻擊(近戰) - Traditional Chinese +]--
+	create_template("inventory_weapon_action_special_att_ext_tw", {"loc_weapon_special_special_attack"}, {"zh-tw"}, function(locale, value) return "特殊攻擊" end),
+
 		--[+ Finesse - Ловкость +]-- руоф Точность
+			--[+ Russian +]--
 	create_template("inventory_weapon_stats_finesse_ext_ru", {"loc_stats_display_finesse_stat"}, {"ru"}, function(locale, value) return "Ловкость" end),
+			--[+ 技巧 - Traditional Chinese +]--
+	create_template("inventory_weapon_stats_finesse_ext_tw", {"loc_stats_display_finesse_stat"}, {"zh-tw"}, function(locale, value) return "技巧" end),
+
 		--[+  - Размер пламени +]-- руоф Область распространения
+			--[+ Russian +]--
 	create_template("inventory_weapon_stats_flame_size_ext_ru", {"loc_stats_display_flame_size_stat"}, {"ru"}, function(locale, value) return "Размер пламени" end),
+			--[+ 火焰範圍 - Traditional Chinese +]--	
+	create_template("inventory_weapon_stats_flame_size_ext_tw", {"loc_stats_display_flame_size_stat"}, {"zh-tw"}, function(locale, value) return "火焰範圍" end),
+
 	-- create_template("inventory_melee_vet_high_cleave_ext_ru", {"loc_weapon_keyword_high_cleave"}, {"ru"}, function(locale, value) return "Рассечение" end),
 	-- create_template("inventory_melee_vet_powersword_ext_ru", {"loc_weapon_keyword_power_weapon"}, {"ru"}, function(locale, value) return "Силовое оружие" end),
 	-- create_template("inventory_range_vet_lasgun_ext_ru", {"loc_weapon_keyword_spray_n_pray"}, {"ru"}, function(locale, value) return "Непрерывная стрельба" end),
+			--[+ Russian +]--
 	create_template("inventory_weapon_stats_control_ext_ru", {"loc_stats_display_control_stat_melee"}, {"ru"}, function(locale, value) return "Сдерживание орд" end),
+			--[+ 群體控制 - Traditional Chinese +]--
+	create_template("inventory_weapon_stats_control_ext_tw", {"loc_stats_display_control_stat_melee"}, {"zh-tw"}, function(locale, value) return "群體控制" end),
+			--[+ Russian +]--
 	create_template("inventory_weapon_stats_display_dodge_dist_ext_ru", {"loc_weapon_stats_display_dodge_distance"}, {"ru"}, function(locale, value) return "Дальность уклонения" end),
+			--[+ 閃避距離 - Traditional Chinese +]--
+	create_template("inventory_weapon_stats_display_dodge_dist_ext_tw", {"loc_weapon_stats_display_dodge_distance"}, {"zh-tw"}, function(locale, value) return "閃避距離" end),
 
 
 --[+ ++LOADING MESSAGES - СООБЩЕНИЯ ПРИ ЗАГРУЗКЕ++ +]--
 	--[+ Reading data from disc - Чтение данных с диска +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 	-- create_template("reading_data_ext_ru", {"loc_wait_reason_read_from_disk"}, {"ru"}, function(locale, value) return "Получение инквизиционных данных" end),
 	create_template("reading_data_ext_ru", {"loc_wait_reason_read_from_disk"}, {"ru"}, function(locale, value) return "Попытка исправить ошибки 3001, 3013, 2014..." end),
+		--[+ Traditional Chinese +]--
+	create_template("reading_data_ext_tw", {"loc_wait_reason_read_from_disk"}, {"zh-tw"}, function(locale, value) return "嘗試修正錯誤 3001, 3013, 2014...S" end),
 
 	--[+ Dedicated Server - Выделенный сервер +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 	create_template("dedicated_server_ext_ru", {"loc_wait_reason_dedicated_server"}, {"ru"}, function(locale, value) return "Выдаём рекаф и брикеты" end),
+		--[+ Traditional Chinese +]--
+	create_template("dedicated_server_ext_tw", {"loc_wait_reason_dedicated_server"}, {"zh-tw"}, function(locale, value) return "正在發放補給品C" end),
 	-- create_template("dedicated_server_ext_ru", {"loc_wait_reason_dedicated_server"}, {"ru"}, function(locale, value) return "Попытка обновить магазин чаще, чем раз в две недели..." end),
 
 	--[+ Waiting for other player(s) - Ожидание других игроков +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 	-- create_template("other_players_ext_ru", {"loc_wait_reason_other_player"}, {"ru"}, function(locale, value) return "Добавление других оперативников к сеансу связи..." end),
 	create_template("other_players_ext_ru", {"loc_wait_reason_other_player"}, {"ru"}, function(locale, value) return "Шлёпаем уборщицу за вырванные кабели..." end),
+		--[+ Traditional Chinese +]--
+	create_template("other_players_ext_tw", {"loc_wait_reason_other_player"}, {"zh-tw"}, function(locale, value) return "正在等待其他玩家加入..." end),
 
 	--[+ Communicating with Fatshark backend - Взаимодействие с бэкэндом Fatshark +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 	create_template("dedicated_server_ext_ru", {"loc_wait_reason_backend"}, {"ru"}, function(locale, value) return "Выходим из отпуска... уже скоро... T_T" end),
+		--[+ Traditional Chinese +]--
+	create_template("dedicated_server_ext_tw", {"loc_wait_reason_backend"}, {"zh-tw"}, function(locale, value) return "正在與Fatshark伺服器進行連線... T_T" end),
 
 	--[+ Store - Магазин +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 	create_template("store_ext_ru", {"loc_wait_reason_store"}, {"ru"}, function(locale, value) return "Попытка обновить магазин чаще, чем раз в две недели... Неудачно!" end),
+		--[+ Traditional Chinese +]--
+	create_template("store_ext_tw", {"loc_wait_reason_store"}, {"zh-tw"}, function(locale, value) return "正在更新商店..." end),
 
 	--[+ Platform Steam - Платформа Steam +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 	create_template("steam_ext_ru", {"loc_wait_reason_platform_steam"}, {"ru"}, function(locale, value) return "Подключение к Steam" end),
+		--[+ Traditional Chinese +]--
+	create_template("steam_ext_tw", {"loc_wait_reason_platform_steam"}, {"zh-tw"}, function(locale, value) return "正在連接Steam..." end),
 
 	--[+ Platform Xbox - Платформа Xbox +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 	create_template("xbox_ext_ru", {"loc_wait_reason_platform_xbox_live"}, {"ru"}, function(locale, value) return "Подключение к Коробокс" end),
+		--[+ Traditional Chinese +]--
+	create_template("xbox_ext_tw", {"loc_wait_reason_platform_xbox_live"}, {"zh-tw"}, function(locale, value) return "正在連接Xbox..." end),
 
 	--[+ Platform PSN - Платформа PSN +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 	create_template("psn_ext_ru", {"loc_wait_reason_platform_psn"}, {"ru"}, function(locale, value) return "Подключение к ПэЭсЭн" end),
+		--[+ Traditional Chinese +]--
+	create_template("psn_ext_tw", {"loc_wait_reason_platform_psn"}, {"zh-tw"}, function(locale, value) return "正在連接PSN..." end),
 
 }
 
