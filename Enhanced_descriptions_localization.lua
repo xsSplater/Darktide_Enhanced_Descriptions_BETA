@@ -12,54 +12,65 @@ local localizations = {
 		en = "Enhanced Descriptions",
 		-- fr = "Descriptions avancées", -- ???
 		ru = "Улучшенные описания",
+		["zh-tw"] = "描述改善",
+		-- ["zh-cn"] = "",
 	},
 	mod_description = {
 		en = "Enhanced Descriptions — fixes and additions to game descriptions. Merged mod. Included TALENTS, CURIOS, WEAPON PERKS and BLESSINGS.",
 		fr = "Descriptions avancées : corrections et ajouts aux descriptions du jeu. Version fusionnée incluant les Talents, Curiosités, Atouts et Bénédictions des armes.",
 		ru = "Улучшенные описания — Улучшенная локализация и расширенные описания ТАЛАНТОВ, БЛАГОСЛОВЕНИЙ и УЛУЧШЕНИЙ ОРУЖИЯ, а также РЕЛИКВИЙ(диковинок), различных МЕНЮ и всех мест, куда я успел добраться.",
+		["zh-tw"] = "描述改善 - 修正和添加遊戲描述。合併的模組。包括天賦、珍品、武器特性和祝福。",
 	},
 
 	enable_weapons_file = {
 		en = "Toggle \"Weapons\" module",
 		fr = "Activer le module des armes",
 		ru = "Модуль «Оружие»",
+		["zh-tw"] = "切換武器模組",
 	},
 	enable_weapons_file_description = {
 		en = "This module highlights the Words and Numbers of Weapon Blessings and Perks. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		fr = "Ce module met en évidence les mots et les chiffres des bénédictions et avantages des armes. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль выделяет слова и числа Благословений и Улучшений Оружия. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		["zh-tw"] = "此模組突出顯示武器祝福和特性的文字和數字。如果您不需要此模組，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}* 要啟用此功能，您需要進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
 	},
 
 	enable_curious_file = {
 		en = "Toggle \"Curios\" module",
 		fr = "Activer le module des curiosités",
 		ru = "Модуль «Реликвии»",
+		["zh-tw"] = "切換珍品模組",
 	},
 	enable_curious_file_description = {
 		en = "This module highlights the Words and Numbers of the Blessings and Perks of the Curios. You can disable this module if you don't need it .\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		fr = "Ce module met en évidence les mots et les chiffres des bénédictions et avantages des curiosités. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль выделяет слова и числа Благословений и Улучшений Реликвий. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		["zh-tw"] = "此模組突出顯示珍品的祝福和特性的文字和數字。如果您不需要此模組，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}* 要啟用此功能，您需要進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
 	},
 
 	enable_menus_file = {
 		en = "Toggle \"Menus\" module",
 		fr = "Activer le module des menus",
 		ru = "Модуль «Меню»",
+		["zh-tw"] = "切換選單(領主)模組",
 	},
 	enable_menus_file_description = {
 		en = "This module highlights the Numbers of the Melk's Contracts. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль исправляет надписи в различных меню. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		["zh-tw"] = "此模組突出顯示領主的合約數字。如果您不需要此模組，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}* 要啟用此功能，您需要進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
 	},
 	enable_talents_file = {
 		en = "Toggle \"Talents\" module",
 		fr = "Activer le module des talents",
 		ru = "Модуль «Таланты»",
+		["zh-tw"] = "切換天賦模組",
 	},
 	enable_talents_file_description = {
 		en = "This module highlights Talent words. You can disable this module if you don't need it, but all Extended Descriptions will also be disabled.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		fr = "Ce module met en avant les mots clés des Talents. Vous pouvez désactiver ce module si vous n'en avez pas besoin mais les descriptions avancées seront également désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль выделяет слова Талантов и немного улучшает описания некоторых из них. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		["zh-tw"] = "此模組突出顯示天賦文字。如果您不需要此模組，但所有擴展描述也將被禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}* 要啟用此功能，您需要進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
 	},
 	enable_penances_file = {
 		en = "{#color(15, 15, 15)}(Toggle \"Penances\" module){#reset()}",
@@ -101,32 +112,38 @@ local localizations = {
 		en = " Extended Descriptions",
 		fr = " Descriptions avancées",
 		ru = " Расширенные описания",
+		["zh-tw"] = " 擴展描述",
 	},
 	enhanced_descriptions_enabled = {
 		en = "Talents - Psyker + Zealot",
 		fr = "Activer descriptions avancées pour Psyker et Fanatique",
 		ru = "Таланты - Псайкер + Изувер",
+		["zh-tw"] = "切換擴展描述 - 天賦 - 靈能者、狂信徒",
 	},
 	enhanced_descriptions_enabled_description = {
 		en = "If you don't need Extended Descriptions for Talents, you can Disable them.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		fr = "Si vous n'avez pas besoin des descriptions étendues pour les talents, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Если вам не нужны Расширенные описания Талантов, вы можете их отключить.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		["zh-tw"] = "如果您不需要天賦的擴展描述，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}* 要啟用此功能，您需要進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
 	},
 	enhanced_descriptions_enabled2 = {
 		en = "Talents - Veteran + Ogryn",
 		fr = "Activer descriptions avancées pour Vétéran et Ogryn",
 		ru = "Таланты - Ветеран + Огрин",
+		["zh-tw"] = "切換擴展描述 - 天賦 - 老兵、歐格林",
 	},
 	enhanced_descriptions_enabled2_description = {
 		en = "If you don't need Extended Descriptions for Talents, you can Disable them.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		fr = "Si vous n'avez pas besoin des descriptions étendues pour les talents, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Если вам не нужны Расширенные описания Талантов, вы можете их отключить.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		["zh-tw"] = "如果您不需要天賦的擴展描述，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}* 要啟用此功能，您需要進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
 	},
 --[+ Enhanced Descriptions - Nodes +]--
 	enhanced_descriptions_nodes_enabled = {
 		en = "Talents - Nodes",
 		fr = "Activer descriptions avancées pour les noeuds des arbres de talents",
 		ru = "Таланты - Узлы",
+		["zh-tw"] = "切換擴展描述 - 天賦節點",
 	},
 	enhanced_descriptions_nodes_enabled_description = {
 		en = "If you don't need Extended Descriptions for small Nodes, you can Disable them.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
@@ -143,6 +160,7 @@ local localizations = {
 		en = "{#color(255, 35, 5)}BETA! FOR NOW ONLY FOR THE RUSSIAN VERSION!{#reset()} If you don't need Extended Descriptions for Penances, you can Disable them. Added some tips for completing Penances.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		-- fr = "Si vous n'avez pas besoin des descriptions étendues pour les noeuds, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Если вам не нужны Расширенные описания Искуплений, вы можете их отключить. Добавлены некоторые советы по выполнению Искуплений. Названия талантов берутся из модуля с исправленными названиями талантов.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		["zh-tw"] = "如果您不需要小節點的擴展描述，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}* 要啟用此功能，您需要進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
 	},
 	enhdesc_colour = {
 		en = "",
@@ -155,26 +173,31 @@ local localizations = {
 		en = " Combat Ability",
 		fr = " Capacité de combat",
 		ru = " Боевая способность",
+		["zh-tw"] = " 戰鬥能力",
 	},
 	health_colour = {
 		en = " Health / Wound",
 		fr = " Santé / Blessure",
 		ru = " Здоровье / Рана",
+		["zh-tw"] = " 生命 / 傷痕",
 	},
 	peril_colour = {
 		en = " Peril",
 		fr = " Péril",
 		ru = " Опасность",
+		["zh-tw"] = " 反噬",
 	},
 	stamina_colour = {
 		en = " Stamina",
 		fr = " Endurance",
 		ru = " Выносливость",
+		["zh-tw"] = " 耐力",
 	},
 	toughness_colour = {
 		en = " Toughness",
 		fr = " Robustesse",
 		ru = " Стойкость",
+		["zh-tw"] = " 韌性",
 	},
 	coherency_colour = {
 		en = " Coherency",
@@ -187,46 +210,55 @@ local localizations = {
 		en = " Cleave",
 		fr = " Transpercement",
 		ru = " Рассечение",
+		["zh-tw"] = " 順劈目標",
 	},
 	crit_colour = {
 		en = " Crit",
 		fr = " Critique",
 		ru = " Криты",
+		["zh-tw"] = " 暴擊",
 	},
 	damage_colour = {
 		en = " Damage",
 		fr = " Dégât",
 		ru = " Урон",
+		["zh-tw"] = " 傷害",
 	},
 	finesse_colour = {
 		en = " Finesse",
 		fr = " Finesse",
 		ru = " Точность",
+		["zh-tw"] = " 技巧",
 	},
 	hit_mass_colour = {
 		en = " Hit Mass",
 		fr = " Coup en masse",
 		ru = " Ударная масса",
+		["zh-tw"] = " 順劈目標",
 	},
 	impact_colour = {
 		en = " Impact",
 		fr = " Impact",
 		ru = " Выведение из равновесия",
+		["zh-tw"] = " 衝擊",
 	},
 	power_colour = {
 		en = " Power",
 		fr = " Puissance",
 		ru = " Сила",
+		["zh-tw"] = " 力量",
 	},
 	rending_colour = {
 		en = " Rending",
 		fr = " Déchirure",
 		ru = " Пробитие брони",
+		["zh-tw"] = " 撕裂",
 	},
 	weakspot_colour = {
 		en = " Weak Spot",
 		fr = " Coup sur point faible",
 		ru = " Уязвимые места",
+		["zh-tw"] = " 弱點",
 	},
 
 --[+Debuffs+]--
@@ -234,36 +266,43 @@ local localizations = {
 		en = " Bleed",
 		fr = " Saignement",
 		ru = " Кровотечение",
+		["zh-tw"] = " 流血",
 	},
 	brittleness_colour = {
 		en = " Brittleness",
 		fr = " Fragilité",
 		ru = " Хрупкость",
+		["zh-tw"] = " 脆弱",
 	},
 	burn_colour = {
 		en = " Burn",
 		fr = " Brûlure",
 		ru = " Горение",
+		["zh-tw"] = " 燃燒",
 	},
 	corruption_colour = {
 		en = " Corruption",
 		fr = " Corruption",
 		ru = " Порча",
+		["zh-tw"] = " 腐化",
 	},
 	electrocuted_colour = {
 		en = " Electrocuted",
 		fr = " Eclair",
 		ru = " Поражение током",
+		["zh-tw"] = " 電擊",
 	},
 	soulblaze_colour = {
 		en = " Soulblaze",
 		fr = " Embrasement d'âme",
 		ru = " Горение души",
+		["zh-tw"] = " 靈魂燃燒",
 	},
 	stagger_colour = {
 		en = " Stagger",
 		fr = " Vacillement",
 		ru = " Ошеломление",
+		["zh-tw"] = " 擊退",
 	},
 
 --[+Psyker+]--
@@ -276,6 +315,7 @@ local localizations = {
 		en = " Precision",
 		fr = " Precision",
 		ru = " Точность",
+		["zh-tw"] = " 精準",
 	},
 
 --[+Ogryn+]--
@@ -288,16 +328,19 @@ local localizations = {
 		en = " Feel No Pain",
 		fr = " Adieu la douleur",
 		ru = "     Неболит",
+		["zh-tw"] = " 麻木",
 	},
 	luckyb_colour = {
 		en = " Lucky bullet",
 		fr = " Balles chanceuses",
 		ru = "     Счастливая пуля",
+		["zh-tw"] = " 幸運子彈",
 	},
 	trample_colour = {
 		en = " Trample",
 		fr = " Piétinement",
 		ru = "     Топот",
+		["zh-tw"] = " 衝鋒",
 	},
 
 --[+Zealot+]--
@@ -310,16 +353,19 @@ local localizations = {
 		en = " Fury",
 		fr = " Piété embrasée",
 		ru = "     Ярость",
+		["zh-tw"] = " 狂怒",
 	},
 	momentum_colour = {
 		en = " Momentum",
 		fr = " Jugement inexorable",
 		ru = "     Моментум",
+		["zh-tw"] = " 勢能",
 	},
 	stealth_colour = {
 		en = " Stealth",
 		fr = " Furtivité",
 		ru = "     Скрытность",
+		["zh-tw"] = " 隱形",
 	},
 
 --[+Veteran+]--
@@ -332,21 +378,25 @@ local localizations = {
 		en = " Focus",
 		fr = " Focalisation",
 		ru = "     Концентрация",
+		["zh-tw"] = " 專注",
 	},
 	focust_colour = {
 		en = " Focus Target",
 		fr = " Ciblage",
 		ru = "     Важная цель",
+		["zh-tw"] = " 專注目標",
 	},
 	meleespec_colour = {
 		en = " Melee Specialist",
 		fr = " Spcécialiste en mêlée",
 		ru = "     Специалист-рукопашник",
+		["zh-tw"] = " 近戰專家",
 	},
 	rangedspec_colour = {
 		en = " Ranged Specialist",
 		fr = " Spcécialiste à distance",
 		ru = "     Специалист-стрелок",
+		["zh-tw"] = " 遠程專家",
 	},
 
 --[+Misc+]--
@@ -354,21 +404,25 @@ local localizations = {
 		en = " Note",
 		fr = " Annotation",
 		ru = " Примечания",
+		["zh-tw"] = " 註釋",
 	},
 	numbers_colour = {
 		en = " Numbers",
 		fr = " Nombres",
 		ru = " Числа",
+		["zh-tw"] = " 數字",
 	},
 	variables_colour = {
 		en = " Variables",
 		fr = " Variables",
 		ru = " Переменные",
+		["zh-tw"] = " 變數",
 	},
 	warning_colour = {
 		en = " Warning",
 		fr = " Alerte",
 		ru = " Предупреждения",
+		["zh-tw"] = " 警告",
 	},
 
 	--[+Difficulty+]--
@@ -415,6 +469,7 @@ local function addLocalisation(localisations, typeName)
 		en = "Color",
 		fr = "Couleur",
 		ru = "Цвет",
+		["zh-tw"] = "顏色",
 	}
 end
 
