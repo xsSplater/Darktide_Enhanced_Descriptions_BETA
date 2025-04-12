@@ -11,9 +11,13 @@ COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
 -- All Keywords are taken from this file by adding to the value "COLORS_KWords.".
 -- For example, in the file "COLORS_KWords.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords.Damage_rgb.".
 
-	--[+ Translations +]-- Add a line with a file of Keywords translated into your language.
-COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr") -- French
-COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw_v2") -- Traditional Chinese
+--[+ Translations +]-- Add a line with a file of Keywords translated into your language.
+	--[+ French +]--
+-- COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr")
+	--[+ Russian +]--
+COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
+	--[+ Traditional Chinese +]--
+COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw_v2")
 
 --[+ Function to create a localization template +]--
 local function create_template(id, loc_keys, locales, handle_func)
@@ -197,7 +201,6 @@ local localization_templates = {
 	--[+ 完成任一浩劫任務 - Traditional Chinese +]--
 	create_template("havoc_rewards_obj_order_ext_tw", {"loc_havoc_reward_objective_order"}, {"zh-tw"}, function(locale, value) return "完成任一浩劫任務" end),
 
--- TODO 
 --[+ ++KILLFEED++ +]--
 	--[+ Russian +]--
 	create_template("hud_killfeed_ext_ru", {"loc_hud_combat_feed_kill_message"}, {"ru"}, function(locale, value) return "{killer:%s} убивает {victim:%s}" end),
@@ -206,6 +209,7 @@ local localization_templates = {
 
 --[+ ++TREAT - СЛОЖНОСТЬ++ +]-- colored
 	--[+ SEDITION - МЯТЕЖ +]--
+	create_template("mission_board_danger_1_ext_en", {"loc_mission_board_danger_lowest"}, {"en"}, function(locale, value) return COLORS_KWords.sedition_rgb end),
 		--[+ Russian +]--
 	create_template("mission_board_danger_1_ext_ru", {"loc_mission_board_danger_lowest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.sedition_rgb_ru end),
 		--[+  暴動 - Traditional Chinese +]--
@@ -213,24 +217,28 @@ local localization_templates = {
 
 
 	-- [+ UPRISING - ВОССТАНИЕ +]--
+		create_template("mission_board_danger_2_ext_en", {"loc_mission_board_danger_low"}, {"en"}, function(locale, value) return COLORS_KWords.uprising_rgb end),
 		--[+ Russian +]--
 		create_template("mission_board_danger_2_ext_ru", {"loc_mission_board_danger_low"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.uprising_rgb_ru end),
 		--[+  起義 - Traditional Chinese +]--
 	create_template("mission_board_danger_2_ext_tw", {"loc_mission_board_danger_low"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.uprising_rgb_tw end),
 
 	-- [+ MALICE - ЗЛОБА +]--
+		create_template("mission_board_danger_3_ext_en", {"loc_mission_board_danger_medium"}, {"en"}, function(locale, value) return COLORS_KWords.malice_rgb end),
 		--[+ Russian +]--
 		create_template("mission_board_danger_3_ext_ru", {"loc_mission_board_danger_medium"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.malice_rgb_ru end),
 		--[+  惡毒 - Traditional Chinese +]--
 		create_template("mission_board_danger_3_ext_tw", {"loc_mission_board_danger_medium"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.malice_rgb_tw end),
 
 	-- [+ HERESY - ЕРЕСЬ +]--
+		create_template("mission_board_danger_4_ext_en", {"loc_mission_board_danger_high"}, {"en"}, function(locale, value) return COLORS_KWords.heresy_rgb end),
 		--[+ Russian +]--
 		create_template("mission_board_danger_4_ext_ru", {"loc_mission_board_danger_high"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.heresy_rgb_ru end),
 		--[+  異端 - Traditional Chinese +]--
 		create_template("mission_board_danger_4_ext_tw", {"loc_mission_board_danger_high"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.heresy_rgb_tw end),
 
 	-- [+ DAMNATION - ПРОКЛЯТИЕ +]--
+		create_template("mission_board_danger_5_ext_en", {"loc_mission_board_danger_highest"}, {"en"}, function(locale, value) return COLORS_KWords.damnation_rgb end),
 		--[+ Russian +]--
 		create_template("mission_board_danger_5_ext_ru", {"loc_mission_board_danger_highest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.damnation_rgb_ru end),
 		--[+  詛咒 - Traditional Chinese +]--
@@ -281,7 +289,7 @@ local localization_templates = {
 	--[+ Редкость предметов +]--
 		--[+ Russian +]--
 	create_template("store_armoury_exchange_weap_rarity1_ext_ru", {"loc_item_weapon_rarity_1"}, {"ru"}, function(locale, value) return "Нечестивое" end), -- Белое
-		----[+ Traditional Chinese +]--
+		--[+ Traditional Chinese +]--
 	create_template("store_armoury_exchange_weap_rarity1_ext_tw", {"loc_item_weapon_rarity_1"}, {"zh-tw"}, function(locale, value) return "褻瀆" end), -- 白色
 		--[+ Russian +]--
 	create_template("store_armoury_exchange_weap_rarity2_ext_ru", {"loc_item_weapon_rarity_2"}, {"ru"}, function(locale, value) return "Очищенное" end), -- Зелёное
@@ -370,7 +378,7 @@ local localization_templates = {
 			--[+ 閃避距離 - Traditional Chinese +]--
 	create_template("inventory_weapon_stats_display_dodge_dist_ext_tw", {"loc_weapon_stats_display_dodge_distance"}, {"zh-tw"}, function(locale, value) return "閃避距離" end),
 
-
+-- JUST FOR FUN --
 --[+ ++LOADING MESSAGES - СООБЩЕНИЯ ПРИ ЗАГРУЗКЕ++ +]--
 	--[+ Reading data from disc - Чтение данных с диска +]--
 		--[+ Russian +]--
@@ -395,7 +403,7 @@ local localization_templates = {
 
 	--[+ Communicating with Fatshark backend - Взаимодействие с бэкэндом Fatshark +]--
 		--[+ Russian +]--
-	create_template("dedicated_server_ext_ru", {"loc_wait_reason_backend"}, {"ru"}, function(locale, value) return "Выходим из отпуска... уже скоро... T_T" end),
+	create_template("dedicated_server_ext_ru", {"loc_wait_reason_backend"}, {"ru"}, function(locale, value) return "Мы сшиваем связь, потому что она порвалась..." end),
 		--[+ Traditional Chinese +]--
 	create_template("dedicated_server_ext_tw", {"loc_wait_reason_backend"}, {"zh-tw"}, function(locale, value) return "正在與Fatshark伺服器進行連線... T_T" end),
 

@@ -1003,25 +1003,37 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-1 - Just Getting Started +]--
-	local ED_OGR_Keystone_1_1_rgb = iu_actit(table.concat({
+	--[+ Keystone 1-1 - Don't Feel a Thing +]--
+	-- local ED_OGR_Keystone_1_1_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 1-2 - Just Getting Started +]--
+	local ED_OGR_Keystone_1_2_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- Stacks additively with related buffs from \"Indomitable\"/\"Bull Rush\", \"Point-Blank Barrage\", and Celerity Stimm.",
 		"- Does currently not have a HUD icon.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-2 - Unstoppable +]--
-	local ED_OGR_Keystone_1_2_rgb = iu_actit(table.concat({
+	--[+ Keystone 1-3 - Unstoppable +]--
+	local ED_OGR_Keystone_1_3_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- For example, with 160 Max Toughness and \"Smash 'Em!\" equipped, Ogryn replenishes 160x(0.1+0.2)=48 Toughness on killing a single enemy.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-3 - Brutish Momentum +]--
-	local ED_OGR_Keystone_1_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Light attacks cannot generate Stacks (this requires Heavy Melee attacks), they can only maintain the current Stack count.",
-	}, "\n"), enhdesc_col)
+	--[+ Keystone 1-4 - Great Cleaver +]--
+	-- local ED_OGR_Keystone_1_4_rgb = iu_actit(table.concat({
+		-- ppp___ppp,
+		-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 1-5 - Impactful +]--
+	-- local ED_OGR_Keystone_1_5_rgb = iu_actit(table.concat({
+		-- ppp___ppp,
+		-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Feel No Pain +]--
 	local ED_OGR_Keystone_2_rgb = iu_actit(table.concat({
@@ -1069,8 +1081,17 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- For the remaining weapons, the Talent procs per single shot fired.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-1 - Maximum Firepower +]--
-	local ED_OGR_Keystone_3_1_rgb = iu_actit(table.concat({
+	--[+ Keystone 3-1 - Back Off! +]--
+	-- local ED_OGR_Keystone_3_1_rgb = iu_actit(table.concat({
+		-- ppp___ppp,
+		-- "- Additionally to Ogryn's base Ability Cooldown rate of 1 second per second, reduces the remaining Ability Cooldown by 2 seconds per second for 2 seconds when Burst Limiter Override procs. This results in a total Cooldown Reduction of 6 seconds per proc (2 seconds from base rate + 2x2 seconds from Talent).",
+	-- 	"-"..can_be_refr_dur_active_dur,
+	-- 	"- Procs additionally to Concentration Stimm's Cooldown Reduction effect of 3 seconds per second.",
+	-- 	doesnt_interact_w_c_a_r_from_curio,
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 3-2 - Maximum Firepower +]--
+	local ED_OGR_Keystone_3_2_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- Additionally to Ogryn's base Ability Cooldown rate of 1 second per second, reduces the remaining Ability Cooldown by 2 seconds per second for 2 seconds when Burst Limiter Override procs. This results in a total Cooldown Reduction of 6 seconds per proc (2 seconds from base rate + 2x2 seconds from Talent).",
 		"-"..can_be_refr_dur_active_dur,
@@ -1078,72 +1099,28 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-2 - Good Shootin' +]--
-	local ED_OGR_Keystone_3_2_rgb = iu_actit(table.concat({
+	--[+ Keystone 3-3 - Good Shootin' +]--
+	local ED_OGR_Keystone_3_3_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- If a shooting action entails multiple shots (Ripper Guns and Heavy Stubbers left-clicks) and if one of these shots Crits, then all subsequent shots of that action will be converted into Crit shots.",
 		"- For Heavy Stubbers' alt fire (full auto), any Crit shot granted by this Talent procs the guaranteed Crit sequence of 6 shots.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-3 - More Burst Limiter Overrides! +]--
-	-- local ED_OGR_Keystone_3_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	--[+ Keystone 3-4 - Heat of Battle +]--
+	-- local ED_OGR_Keystone_3_4_rgb = iu_actit(table.concat({
+		-- ppp___ppp,
+	-- 	"- .",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 3-5 - Good Shootin' +]--
+	-- local ED_OGR_Keystone_3_5_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- .",
+	-- }, "\n"), enhdesc_col)
 
 --[+ +PASSIVES+ +]--
-	--[+ Passive 1 - Furious +]--
+	--[+ Passive 1 - Lynchpin +]--
 	local ED_OGR_Passive_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Stacks last until next Melee attack and are consumed even if the Melee attack hits nothing.",
-		"- Per Stack, increases Melee Damage by 2.5%.",
-		stacks_add_w_oth_dmg,
-		"- Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback can also proc this Talent.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 2 - Reloaded and Ready +]--
-	local ED_OGR_Passive_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		stacks_add_w_oth_dmg,
-		"- The forced Reload of \"Point-Blank Barrage\" procs this Talent (even if the weapon's clip is full).",
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 3 - The Best Defence +]--
-	local ED_OGR_Passive_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Also procs on melee special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Heavy Stubbers, and Kickback.",
-		"- If one of the hit enemies dies, the Toughness amount replenished from the Talent is added to Ogryn's base 5% of Maximum Toughness gained on Melee kill.",
-		"- For example, with 140 Max Toughness and if two of the attacked enemies die, Ogryn would replenish 140x(0.2+0.05+0.05)=42 Toughness.",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 4 - Heavyweight +]--
-	local ED_OGR_Passive_4_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Increases all Damage against Bulwark, Crusher, Plague Ogryn, and Reaper.",
-		stacks_add_w_oth_dmg,
-		"- Also reduces both Toughness and Health Damage taken from Bulwark, Crusher, Plague Ogryn, and Reaper.",
-		stacks_mult_w_other_dmg_red_buffs,
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 5 - Steady Grip +]--
-	local ED_OGR_Passive_5_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Does not interact with Coherency Toughness Regeneration.",
-		z_eff_of_this_tougn_rep,
-		"- \"Braced\" refers to an action keyword in Ranged Weapon profiles.",
-		"- Using a Weapon's alt fire, like zooming or firing when zoomed in, activates the buff.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 6 - Smash 'Em! +]--
-	local ED_OGR_Passive_6_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Replenishes Toughness when hitting exactly ONE enemy with a Heavy Melee attack.",
-		"- Also procs on Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
-		"- If the hit enemy dies, the Toughness amount replenished from the Talent is added to Ogryn's base 5% of Maximum Toughness gained on Melee kill.",
-		"- For example, with 90 Max Toughness and if the attacked enemy dies, Ogryn would replenish 90x(0.2+0.05)=22.5 Toughness.",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 7 - Lynchpin +]--
-	local ED_OGR_Passive_7_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- Increases Ogryn's base amount of Coherency Toughness Regenerated (CTR) while in Coherency by 50%:",
 		"_______________________________",
@@ -1155,20 +1132,81 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Stacks additively with Ogryn's Aura \"Stay Close!\", keystone \"Feel No Pain\" (including \"Toughest!\"), Toughness Regeneration Speed from Curios, and Veteran's small Talent node \"Inspiring Presence\".",
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 8 - Slam +]--
-	local ED_OGR_Passive_8_rgb = iu_actit(table.concat({
+	--[+ Passive 2 - Heavyweight +]--
+	local ED_OGR_Passive_2_rgb = iu_actit(table.concat({
 		ppp___ppp,
-		"- Stacks additively with \"Crunch!\" and other related Stagger buffs from Weapon Blessings, and multiplicatively with Power level buffs from Weapon Blessings.",
+		"- Increases all Damage against Bulwark, Crusher, Plague Ogryn, and Reaper.",
+		stacks_add_w_oth_dmg,
+		"- Also reduces both Toughness and Health Damage taken from Bulwark, Crusher, Plague Ogryn, and Reaper.",
+		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 9 - Soften Them Up +]--
-	local ED_OGR_Passive_9_rgb = iu_actit(table.concat({
+	--[+ Passive 3 - Steady Grip +]--
+	local ED_OGR_Passive_3_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		"- Does not interact with Coherency Toughness Regeneration.",
+		z_eff_of_this_tougn_rep,
+		"- \"Braced\" refers to an action keyword in Ranged Weapon profiles.",
+		"- Using a Weapon's alt fire, like zooming or firing when zoomed in, activates the buff.",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 4 - Smash 'Em! +]--
+	local ED_OGR_Passive_4_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		"- Replenishes Toughness when hitting exactly ONE enemy with a Heavy Melee attack.",
+		"- Also procs on Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
+		"- If the hit enemy dies, the Toughness amount replenished from the Talent is added to Ogryn's base 5% of Maximum Toughness gained on Melee kill.",
+		"- For example, with 90 Max Toughness and if the attacked enemy dies, Ogryn would replenish 90x(0.2+0.05)=22.5 Toughness.",
+		z_eff_of_this_tougn_rep,
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 5 - The Best Defence +]--
+	local ED_OGR_Passive_5_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		"- Also procs on melee special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Heavy Stubbers, and Kickback.",
+		"- If one of the hit enemies dies, the Toughness amount replenished from the Talent is added to Ogryn's base 5% of Maximum Toughness gained on Melee kill.",
+		"- For example, with 140 Max Toughness and if two of the attacked enemies die, Ogryn would replenish 140x(0.2+0.05+0.05)=42 Toughness.",
+		z_eff_of_this_tougn_rep,
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 6 - Furious +]--
+	local ED_OGR_Passive_6_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		"- Stacks last until next Melee attack and are consumed even if the Melee attack hits nothing.",
+		"- Per Stack, increases Melee Damage by 2.5%.",
+		stacks_add_w_oth_dmg,
+		"- Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback can also proc this Talent.",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 7 - Towering Presence +]--
+	local ED_OGR_Passive_7_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		"- Increases Ogryn's Base Coherency radius of 8 to 12 meters.",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 8 - Soften Them Up +]--
+	local ED_OGR_Passive_8_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		can_be_refr_dur_active_dur,
 		"- Can also be applied with Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		"- Does not Stack with the same Talent from another Ogryn.",
 		"- The debuff Stacks additively with the related Damage taken debuff from Pickaxe special actions (+10%), and multiplicatively with \"Valuable Distraction\".",
 		"- During calculation, Stacks multiplicatively with Damage buffs and Power level buffs from Weapon Blessings.",
+	}, "\n"), enhdesc_col)
+
+-- ENDED HERE
+
+	--[+ Passive 00 - Reloaded and Ready +]--
+	local ED_OGR_Passive_00_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		stacks_add_w_oth_dmg,
+		"- The forced Reload of \"Point-Blank Barrage\" procs this Talent (even if the weapon's clip is full).",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 0000 - Slam +]--
+	local ED_OGR_Passive_0000_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		"- Stacks additively with \"Crunch!\" and other related Stagger buffs from Weapon Blessings, and multiplicatively with Power level buffs from Weapon Blessings.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 10 - Crunch! +]--
@@ -1260,12 +1298,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		ppp___ppp,
 		"- Stacks additively with Movement Speed buffs from \"Indomitable\"/\"Bull Rush\" and \"Unstoppable Momentum\", and multiplicatively with Movement Speed penalty reduction while braced from \"Point-Blank Barrage\".",
 		"- Also grants Immunity to Stuns from both Melee and Ranged attacks, and Immunity to Suppression.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 19 - Towering Presence +]--
-	local ED_OGR_Passive_19_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Increases Ogryn's Base Coherency radius of 8 to 12 meters.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 20 - Unstoppable Momentum +]--
@@ -1491,6 +1523,8 @@ return {
 	ED_OGR_Keystone_1_1_rgb = ED_OGR_Keystone_1_1_rgb,
 	ED_OGR_Keystone_1_2_rgb = ED_OGR_Keystone_1_2_rgb,
 	ED_OGR_Keystone_1_3_rgb = ED_OGR_Keystone_1_3_rgb,
+	ED_OGR_Keystone_1_4_rgb = ED_OGR_Keystone_1_4_rgb,
+	ED_OGR_Keystone_1_5_rgb = ED_OGR_Keystone_1_5_rgb,
 	ED_OGR_Keystone_2_rgb = ED_OGR_Keystone_2_rgb,
 	ED_OGR_Keystone_2_1_rgb = ED_OGR_Keystone_2_1_rgb,
 	ED_OGR_Keystone_2_2_rgb = ED_OGR_Keystone_2_2_rgb,
@@ -1499,6 +1533,8 @@ return {
 	ED_OGR_Keystone_3_1_rgb = ED_OGR_Keystone_3_1_rgb,
 	ED_OGR_Keystone_3_2_rgb = ED_OGR_Keystone_3_2_rgb,
 	ED_OGR_Keystone_3_3_rgb = ED_OGR_Keystone_3_3_rgb,
+	ED_OGR_Keystone_3_4_rgb = ED_OGR_Keystone_3_4_rgb,
+	ED_OGR_Keystone_3_5_rgb = ED_OGR_Keystone_3_5_rgb,
 
 	ED_OGR_Passive_0_rgb = ED_OGR_Passive_0_rgb,
 	ED_OGR_Passive_1_rgb = ED_OGR_Passive_1_rgb,
