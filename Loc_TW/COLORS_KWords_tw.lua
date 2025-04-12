@@ -46,7 +46,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Crt_u_chance_rgb_tw = iu_actit("暴擊機率", crt_col)
 	local Crit_chance_rgb_tw = iu_actit("暴擊機率", crt_col)
 	local Crit_m_chance_rgb_tw = iu_actit("近戰暴擊機率", crt_col) -- melee
-	local Crit_r_chance_rgb_tw = iu_actit("遠程暴擊機率", crt_col) -- Ranged
+	local Crit_r_chance_rgb_tw = iu_actit("遠程暴擊機率", crt_col) -- ranged
 	local Crit_hit_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_hit_chance_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_hits_rgb_tw = iu_actit("暴擊", crt_col)
@@ -58,6 +58,8 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Crit_dmg_u_rgb_tw = iu_actit("暴擊傷害", crt_col)
 	local Crit_chance_r_rgb_tw = iu_actit("暴擊機率", crt_col)
 	local Crit_hit_color_rgb_tw = iu_actit("暴擊傷害", crt_col)
+	local Crit_hit_m_color_rgb_tw = iu_actit("近戰暴擊傷害", crt_col)	-- melee
+	local Crit_hit_r_color_rgb_tw = iu_actit("遠程暴擊傷害", crt_col) -- ranged
 	local Crit_hit_om_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_hit_udom_rgb_tw = iu_actit("暴擊", crt_col)
 	--[++撕裂(Rending)++]--
@@ -90,6 +92,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Damage_rgb_tw = iu_actit("傷害", dmg_col)
 	local Damage_res_rgb_tw = iu_actit("傷害抗性", dmg_col)
 	local Damage_melee_rgb_tw = iu_actit("近戰傷害", dmg_col)
+	local Damage_ranged_rgb_tw = iu_actit("遠程傷害", dmg_col)
 	local Damagewrp_rgb_tw = iu_actit("亞空間傷害", dmg_col)
 	local Damagewrp_a_rgb_tw = iu_actit("亞空間傷害", dmg_col)
 	--[++弱點(Weak Spot)++]--
@@ -99,6 +102,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Weakspothits_rgb_tw = iu_actit("命中弱點", wksp_col)
 	local Weakspot_dmg_rgb_tw = iu_actit("弱點傷害", wksp_col)
 	local Weakspot_m_dmg_rgb_tw = iu_actit("近戰弱點傷害", wksp_col)	-- melee
+	local Weakspot_r_dmg_rgb_tw = iu_actit("遠程弱點傷害", wksp_col)	-- ranged
 	local Weakspotv_dmg_rgb_tw = iu_actit("弱點傷害", wksp_col)
 --[+++減益效果(DEBUFFS)+++]--
 	--[++燃燒(Burn)++]--
@@ -275,6 +279,8 @@ return {
 	Crit_dmg_u_rgb_tw = Crit_dmg_u_rgb_tw,
 	Crit_chance_r_rgb_tw = Crit_chance_r_rgb_tw,
 	Crit_hit_color_rgb_tw = Crit_hit_color_rgb_tw,
+	Crit_hit_m_color_rgb_tw = Crit_hit_m_color_rgb_tw,
+	Crit_hit_r_color_rgb_tw = Crit_hit_r_color_rgb_tw,
 	Crit_hit_om_rgb_tw = Crit_hit_om_rgb_tw,
 	Crit_hit_udom_rgb_tw = Crit_hit_udom_rgb_tw,
 	Dmg_rgb_tw = Dmg_rgb_tw,
@@ -282,6 +288,7 @@ return {
 	Damage_rgb_tw = Damage_rgb_tw,
 	Damage_res_rgb_tw = Damage_res_rgb_tw,
 	Damage_melee_rgb_tw = Damage_melee_rgb_tw,
+	Damage_ranged_rgb_tw = Damage_ranged_rgb_tw,
 	Damagewrp_rgb_tw = Damagewrp_rgb_tw,
 	Damagewrp_a_rgb_tw = Damagewrp_a_rgb_tw,
 	Electrocute_rgb_tw = Electrocute_rgb_tw,
@@ -343,6 +350,7 @@ return {
 	Weakspothits_rgb_tw = Weakspothits_rgb_tw,
 	Weakspot_dmg_rgb_tw = Weakspot_dmg_rgb_tw,
 	Weakspot_m_dmg_rgb_tw = Weakspot_m_dmg_rgb_tw,
+	Weakspot_r_dmg_rgb_tw = Weakspot_r_dmg_rgb_tw,
 	Weakspotv_dmg_rgb_tw = Weakspotv_dmg_rgb_tw,
 
 	Trauma_note_rgb_tw = Trauma_note_rgb_tw,

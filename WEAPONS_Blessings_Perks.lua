@@ -28,7 +28,7 @@ local localization_templates = {
 --		create_template("weap_bb0_ext_YOURLANGUAGE", {"loc_trait_melee_common_wield_increased_armored_damage_desc"}, {"YOURLANGUAGE"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords.Damage_rgb_YOURLANGUAGE.." против врагов в противоосколочной броне." end), <- Don't forget the comma at the end!
 
 --[+ ++WEAPON - PERKS++ +]--
-	--[+ Melee +]--
+	--[+ Melee - 近戰武器 +]--
 		--[+ +Damage vs Flak +]--
 	create_template("weap_wpm0_ext_en", {"loc_trait_melee_common_wield_increased_armored_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Flak Armoured Enemies" end),
 	--[+ French +]--
@@ -99,7 +99,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("weap_wpm7_ext_ru", {"loc_trait_melee_common_wield_wield_increase_critical_strike_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.critdmg_var_rgb.." к "..COLORS_KWords_ru.Crit_hit_color_rgb_ru.." в ближнем бою" end),
 	--[+ Traditional Chinese - 暴擊傷害 +]--
-	create_template("weap_wpm7_ext_tw", {"loc_trait_melee_common_wield_wield_increase_critical_strike_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.critdmg_var_rgb.." "..COLORS_KWords_tw.Crit_m_chance_rgb_tw end),
+	create_template("weap_wpm7_ext_tw", {"loc_trait_melee_common_wield_wield_increase_critical_strike_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.critdmg_var_rgb.." "..COLORS_KWords_tw.Crit_hit_m_color_rgb_tw end),
 
 		--[+ +Damage vs Groaners and Poxwalkers +]--
 	create_template("weap_wpm8_ext_en", {"loc_trait_melee_common_wield_increase_horde_enemy_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." Melee "..COLORS_KWords.Damage_rgb.." vs Groaners and Poxwalkers" end),
@@ -164,13 +164,15 @@ local localization_templates = {
 	--[+ Traditional Chinese - 衝刺體力消耗 +]--
 	create_template("weap_wpm14_ext_tw", {"loc_gadget_sprint_cost_reduction_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.bcm_rgb.." "..COLORS_KWords_tw.Stamina_se_rgb_tw end),
 
-	--[+ Ranged +]--
+	--[+ Ranged - 遠程武器 +]--
 		--[+ +Damage vs Flak +]--
 	create_template("weap_wpr0_ext_en", {"loc_trait_ranged_common_wield_armored_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Flak Armoured Enemies" end),
 	--[+ French +]--
 	create_template("weap_wpr0_ext_fr", {"loc_trait_ranged_common_wield_armored_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies en armure légère" end),
 	--[+ Russian +]--
 	create_template("weap_wpr0_ext_ru", {"loc_trait_ranged_common_wield_armored_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." врагам в противоосколочной броне" end),
+	--[+ Traditional Chinese - 防彈護甲的敵人 +]--
+	create_template("weap_wpr0_ext_tw", {"loc_trait_ranged_common_wield_armored_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." vs 防彈護甲的敵人" end),
 
 		--[+ +Damage vs Maniacs +]--
 	create_template("weap_wpr1_ext_en", {"loc_trait_ranged_common_wield_berserker_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Maniacs" end),
@@ -178,6 +180,8 @@ local localization_templates = {
 	create_template("weap_wpr1_ext_fr", {"loc_trait_ranged_common_wield_berserker_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Maniaques" end),
 	--[+ Russian +]--
 	create_template("weap_wpr1_ext_ru", {"loc_trait_ranged_common_wield_berserker_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." маньякам" end),
+	--[+ Traditional Chinese - 狂熱者 +]--
+	create_template("weap_wpr1_ext_tw", {"loc_trait_ranged_common_wield_berserker_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." vs 狂熱者" end),
 
 		--[+ +Damage vs Infested +]--
 	create_template("weap_wpr2_ext_en", {"loc_trait_ranged_common_wield_disgustinglyresilient_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Infested Enemies" end),
@@ -185,6 +189,8 @@ local localization_templates = {
 	create_template("weap_wpr2_ext_fr", {"loc_trait_ranged_common_wield_disgustinglyresilient_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies infestés" end),
 	--[+ Russian +]--
 	create_template("weap_wpr2_ext_ru", {"loc_trait_ranged_common_wield_disgustinglyresilient_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." заражённым" end),
+	--[+ Traditional Chinese - 被感染的敵人 +]--
+	create_template("weap_wpr2_ext_tw", {"loc_trait_ranged_common_wield_disgustinglyresilient_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." vs 被感染的敵人" end),
 
 		--[+ +Damage vs Unyielding +]--
 	create_template("weap_wpr3_ext_en", {"loc_trait_ranged_common_wield_resistant_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Unyielding Enemies" end),
@@ -192,6 +198,8 @@ local localization_templates = {
 	create_template("weap_wpr3_ext_fr", {"loc_trait_ranged_common_wield_resistant_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies implacables" end),
 	--[+ Russian +]--
 	create_template("weap_wpr3_ext_ru", {"loc_trait_ranged_common_wield_resistant_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." несгибаемым" end),
+	--[+ Traditional Chinese - 不屈的敵人 +]--
+	create_template("weap_wpr3_ext_tw", {"loc_trait_ranged_common_wield_resistant_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." vs 不屈的敵人" end),
 
 		--[+ +Damage vs Carapace +]--
 	create_template("weap_wpr4_ext_en", {"loc_trait_ranged_common_wield_superarmor_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Carapace Enemies" end),
@@ -199,6 +207,8 @@ local localization_templates = {
 	create_template("weap_wpr4_ext_fr", {"loc_trait_ranged_common_wield_superarmor_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies en armure carapace" end),
 	--[+ Russian +]--
 	create_template("weap_wpr4_ext_ru", {"loc_trait_ranged_common_wield_superarmor_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." врагам в панцирной броне" end),
+	--[+ Traditional Chinese - 甲殼護甲的敵人 +]--
+	create_template("weap_wpr4_ext_tw", {"loc_trait_ranged_common_wield_superarmor_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." vs 甲殼護甲的敵人" end),
 
 		--[+ +Damage vs Unarmoured +]--
 	create_template("weap_wpr5_ext_en", {"loc_trait_ranged_common_wield_unarmored_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Unarmoured Enemies" end),
@@ -206,6 +216,8 @@ local localization_templates = {
 	create_template("weap_wpr5_ext_fr", {"loc_trait_ranged_common_wield_unarmored_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies sans armure" end),
 	--[+ Russian +]--
 	create_template("weap_wpr5_ext_ru", {"loc_trait_ranged_common_wield_unarmored_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." небронированным" end),
+	--[+ Traditional Chinese - 無護甲敵人 +]--
+	create_template("weap_wpr5_ext_tw", {"loc_trait_ranged_common_wield_unarmored_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." vs 無護甲敵人" end),
 
 		--[+ +Crit chance +]--
 	create_template("weap_wpr6_ext_en", {"loc_trait_ranged_common_wield_increase_crit_chance_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." Ranged "..COLORS_KWords.Crit_chance_r_rgb end),
@@ -213,6 +225,8 @@ local localization_templates = {
 	create_template("weap_wpr6_ext_fr", {"loc_trait_ranged_common_wield_increase_crit_chance_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_r_rgb_fr.." à Distance" end),
 	--[+ Russian +]--
 	create_template("weap_wpr6_ext_ru", {"loc_trait_ranged_common_wield_increase_crit_chance_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." в дальнем бою" end),
+	--[+ Traditional Chinese - 暴擊機率 +]--
+	create_template("weap_db6_ext_zh", {"loc_trait_ranged_common_wield_increase_crit_chance_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_r_chance_rgb_tw end),
 
 		--[+ +Crit damage +]--
 	create_template("weap_wpr7_ext_en", {"loc_trait_ranged_common_wield_wield_increase_critical_strike_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.critdmg_var_rgb.." Ranged "..COLORS_KWords.Crit_hit_color_rgb end),
@@ -220,6 +234,8 @@ local localization_templates = {
 	create_template("weap_wpr7_ext_fr", {"loc_trait_ranged_common_wield_wield_increase_critical_strike_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.critdmg_var_rgb.." "..COLORS_KWords_fr.Crit_hit_color_rgb_fr.." de Distance" end),
 	--[+ Russian +]--
 	create_template("weap_wpr7_ext_ru", {"loc_trait_ranged_common_wield_wield_increase_critical_strike_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.critdmg_var_rgb.." к "..COLORS_KWords_ru.Crit_hit_color_rgb_ru.." в дальнем бою" end),
+	--[+ Traditional Chinese - 暴擊傷害 +]--
+	create_template("weap_wpr7_ext_tw", {"loc_trait_ranged_common_wield_wield_increase_critical_strike_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.critdmg_var_rgb.." "..COLORS_KWords_tw.Crit_hit_r_color_rgb_tw end),
 
 		--[+ +Damage vs Elites +]--
 	create_template("weap_wpr8_ext_en", {"loc_trait_ranged_common_wield_increase_elite_enemy_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." Ranged "..COLORS_KWords.Damage_rgb.." vs Elites" end),
@@ -227,6 +243,8 @@ local localization_templates = {
 	create_template("weap_wpr8_ext_fr", {"loc_trait_ranged_common_wield_increase_elite_enemy_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Élites" end),
 	--[+ Russian +]--
 	create_template("weap_wpr8_ext_ru", {"loc_trait_ranged_common_wield_increase_elite_enemy_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." элитным врагам в дальнем бою" end),
+	--[+ Traditional Chinese - 精英 +]--
+	create_template("weap_wpr8_ext_tw", {"loc_trait_ranged_common_wield_increase_elite_enemy_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_ranged_rgb_tw.." vs 精英" end),
 
 		--[+ +Damage vs Groaners and Poxwalkers +]--
 	create_template("weap_wpr9_ext_en", {"loc_trait_ranged_common_wield_increase_horde_enemy_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." Ranged "..COLORS_KWords.Damage_rgb.." vs Groaners and Poxwalkers" end),
@@ -234,6 +252,8 @@ local localization_templates = {
 	create_template("weap_wpr9_ext_fr", {"loc_trait_ranged_common_wield_increase_horde_enemy_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Grogneurs et Scrofuleux" end),
 	--[+ Russian +]--
 	create_template("weap_wpr9_ext_ru", {"loc_trait_ranged_common_wield_increase_horde_enemy_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." ворчунам и чумным ходокам в дальнем бою" end),
+	--[+ Traditional Chinese - 呻吟者、瘟疫行者 +]--
+	create_template("weap_wpr9_ext_tw", {"loc_trait_ranged_common_wield_increase_horde_enemy_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_ranged_rgb_tw.." vs 呻吟者和瘟疫行者" end),
 
 		--[+ +Damage vs Specialists +]--
 	create_template("weap_wpr10_ext_en", {"loc_trait_ranged_common_wield_increase_special_enemy_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." Ranged "..COLORS_KWords.Damage_rgb.." vs Specialists" end),
@@ -241,6 +261,8 @@ local localization_templates = {
 	create_template("weap_wpr10_ext_fr", {"loc_trait_ranged_common_wield_increase_special_enemy_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Spécialistes" end),
 	--[+ Russian +]--
 	create_template("weap_wpr10_ext_ru", {"loc_trait_ranged_common_wield_increase_special_enemy_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." специалистам в дальнем бою" end),
+	--[+ Traditional Chinese - 專家 +]--
+	create_template("weap_wpr10_ext_tw", {"loc_trait_ranged_common_wield_increase_special_enemy_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_ranged_rgb_tw.." vs 專家" end),
 
 		--[+ +Stamina +]--
 	create_template("weap_wpr11_ext_en", {"loc_trait_ranged_common_wield_increase_stamina_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.stam_var_rgb.." "..COLORS_KWords.Stamina_rgb.." when Weapon is Active" end),
@@ -248,6 +270,8 @@ local localization_templates = {
 	create_template("weap_wpr11_ext_fr", {"loc_trait_ranged_common_wield_increase_stamina_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.stam_var_rgb.." "..COLORS_KWords_fr.Stamina_rgb_fr end),
 	--[+ Russian +]--
 	create_template("weap_wpr11_ext_ru", {"loc_trait_ranged_common_wield_increase_stamina_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.stam_var_rgb.." ячейки "..COLORS_KWords_ru.Stamina_rgb_ru..", когда оружие выбрано " end),
+	--[+ Traditional Chinese - 耐力 +]--
+	create_template("weap_wpr11_ext_tw", {"loc_trait_ranged_common_wield_increase_stamina_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.stam_var_rgb.." "..COLORS_KWords_tw.Stamina_rgb_tw end),
 
 		--[+ +Weakspot damage +]--
 	create_template("weap_wpr12_ext_en", {"loc_trait_ranged_common_wield_increase_weakspot_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.wkspdmg_var_rgb.." Ranged "..COLORS_KWords.Weakspot_dmg_rgb end),
@@ -255,6 +279,8 @@ local localization_templates = {
 	create_template("weap_wpr12_ext_fr", {"loc_trait_ranged_common_wield_increase_weakspot_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.wkspdmg_var_rgb.." "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." à Distance" end),
 	--[+ Russian +]--
 	create_template("weap_wpr12_ext_ru", {"loc_trait_ranged_common_wield_increase_weakspot_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.wkspdmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою" end),
+	--[+ Traditional Chinese - 弱點傷害 +]--
+	create_template("weap_wpr12_ext_tw", {"loc_trait_ranged_common_wield_increase_weakspot_damage_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.wkspdmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_r_dmg_rgb_tw end),
 
 		--[+ +Reload Speed +]--
 	create_template("weap_wpr13_ext_en", {"loc_trait_ranged_common_wield_increase_reload_speed_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." Reload Speed" end),
@@ -262,6 +288,8 @@ local localization_templates = {
 	create_template("weap_wpr13_ext_fr", {"loc_trait_ranged_common_wield_increase_reload_speed_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." Vitesse de rechargement de l'arme" end),
 	--[+ Russian +]--
 	create_template("weap_wpr13_ext_ru", {"loc_trait_ranged_common_wield_increase_reload_speed_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." к скорости перезарядки" end),
+	--[+ Traditional Chinese - 裝填速度 +]--
+	create_template("weap_wpr13_ext_tw", {"loc_trait_ranged_common_wield_increase_reload_speed_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." 裝填速度" end),
 
 
 --[+ ++WEAPON - ОРУЖИЕ - BLESSINGS - БЛАГОСЛОВЕНИЯ++ +]--
