@@ -390,7 +390,7 @@ local localization_templates = {
 		--[+ Russian +]--
 	create_template("dedicated_server_ext_ru", {"loc_wait_reason_dedicated_server"}, {"ru"}, function(locale, value) return "Выдаём рекаф и брикеты" end),
 		--[+ Traditional Chinese +]--
-	create_template("dedicated_server_ext_tw", {"loc_wait_reason_dedicated_server"}, {"zh-tw"}, function(locale, value) return "正在發放補給品" end),
+	create_template("dedicated_server_ext_tw", {"loc_wait_reason_dedicated_server"}, {"zh-tw"}, function(locale, value) return "正在載入著色器或模組包" end),
 	-- create_template("dedicated_server_ext_ru", {"loc_wait_reason_dedicated_server"}, {"ru"}, function(locale, value) return "Попытка обновить магазин чаще, чем раз в две недели..." end),
 
 	--[+ Waiting for other player(s) - Ожидание других игроков +]--
