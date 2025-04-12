@@ -190,7 +190,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("curio_traits13_ext_en", {"loc_trait_gadget_dr_vs_flamer_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Огнемётчиков" end),
 	--[+ 傷害抗性(火焰噴射者) - Traditional Chinese +]--
-	create_template("curio_traits13_ext_tw", {"loc_trait_gadget_dr_vs_flamer_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (毒焰噴射者)" end),
+	create_template("curio_traits13_ext_tw", {"loc_trait_gadget_dr_vs_flamer_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (毒焰噴射者)" end),
 
 		--[+ +Damage Resistance vs Bombers +]--
 	create_template("curio_traits14_ext_en", {"loc_trait_gadget_dr_vs_grenadiers_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Bombers" end),
@@ -199,7 +199,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("curio_traits14_ext_en", {"loc_trait_gadget_dr_vs_grenadiers_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Гренадёров" end),
 	--[+ 傷害抗性(轟炸者) - Traditional Chinese +]--
-	create_template("curio_traits14_ext_tw", {"loc_trait_gadget_dr_vs_grenadiers_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (轟炸者)" end),
+	create_template("curio_traits14_ext_tw", {"loc_trait_gadget_dr_vs_grenadiers_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (轟炸者)" end),
 
 		--[+ +Damage Resistance vs Gunners +]--
 	create_template("curio_traits15_ext_en", {"loc_trait_gadget_dr_vs_gunners_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Gunners" end),
@@ -208,7 +208,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("curio_traits15_ext_en", {"loc_trait_gadget_dr_vs_gunners_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Пулемётчиков" end),
 	--[+ 傷害抗性(砲手) - Traditional Chinese +]--
-	create_template("curio_traits15_ext_tw", {"loc_trait_gadget_dr_vs_gunners_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (砲手)" end),
+	create_template("curio_traits15_ext_tw", {"loc_trait_gadget_dr_vs_gunners_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (砲手)" end),
 
 		--[+ +Damage Resistance vs Pox Hounds +]--
 	create_template("curio_traits16_ext_en", {"loc_trait_gadget_dr_vs_hounds_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Pox Hounds" end),
@@ -217,7 +217,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("curio_traits16_ext_en", {"loc_trait_gadget_dr_vs_hounds_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Чумных гончих" end),
 	--[+ 傷害抗性(瘟疫獵犬) - Traditional Chinese +]--
-	create_template("curio_traits16_ext_tw", {"loc_trait_gadget_dr_vs_hounds_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (瘟疫獵犬)" end),
+	create_template("curio_traits16_ext_tw", {"loc_trait_gadget_dr_vs_hounds_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (瘟疫獵犬)" end),
 
 		--[+ +Damage Resistance vs Mutants +]--
 	create_template("curio_traits17_ext_en", {"loc_trait_gadget_dr_vs_mutants_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Mutants" end),
@@ -226,7 +226,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("curio_traits17_ext_en", {"loc_trait_gadget_dr_vs_mutants_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Мутантов" end),
 	--[+ 傷害抗性(變種人) - Traditional Chinese +]--
-	create_template("curio_traits17_ext_tw", {"loc_trait_gadget_dr_vs_mutants_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (變種人)" end),
+	create_template("curio_traits17_ext_tw", {"loc_trait_gadget_dr_vs_mutants_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (變種人)" end),
 
 		--[+ +Damage Resistance vs Snipers +]--
 	create_template("curio_traits18_ext_en", {"loc_trait_gadget_dr_vs_snipers_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Snipers" end),
@@ -235,7 +235,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("curio_traits18_ext_en", {"loc_trait_gadget_dr_vs_snipers_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Снайперов" end),
 	--[+ 傷害抗性(狙擊手) - Traditional Chinese +]--
-	create_template("curio_traits18_ext_tw", {"loc_trait_gadget_dr_vs_snipers_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (狙擊手)" end),
+	create_template("curio_traits18_ext_tw", {"loc_trait_gadget_dr_vs_snipers_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (狙擊手)" end),
 
 		--[+ +Damage Resistance vs Poxbursters +]-- Cut out???
 	-- create_template("curio_traits19_ext_en", {"loc_trait_gadget_dr_vs_bursters_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Poxbursters" end),
@@ -244,7 +244,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	-- create_template("curio_traits19_ext_en", {"loc_trait_gadget_dr_vs_bursters_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Чумных взрывников" end), -- Вырезано!
 	--[+ 傷害抗性(瘟疫爆者) - Traditional Chinese +]--
-	--create_template("curio_traits19_ext_tw", {"loc_trait_gadget_dr_vs_bursters_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (瘟疫爆裂者)" end), -- Missing --
+	--create_template("curio_traits19_ext_tw", {"loc_trait_gadget_dr_vs_bursters_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (瘟疫爆裂者)" end), -- Missing --
 }
 
 

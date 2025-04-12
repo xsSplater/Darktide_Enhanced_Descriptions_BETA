@@ -84,7 +84,8 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local dmg_col = Color[mod:get("damage_text_colour")](255, true)
 	local Dmg_rgb_tw = iu_actit("傷害", dmg_col)
 	local Dmg_a_rgb_tw = iu_actit("傷害", dmg_col)
-	local Damage_rgb_tw = iu_actit("傷害抗性", dmg_col)
+	local Damage_rgb_tw = iu_actit("傷害", dmg_col)
+	local Damage_res_rgb_tw = iu_actit("傷害抗性", dmg_col)
 	local Damagewrp_rgb_tw = iu_actit("亞空間傷害", dmg_col)
 	local Damagewrp_a_rgb_tw = iu_actit("亞空間傷害", dmg_col)
 	--[++弱點(Weak Spot)++]--
@@ -272,6 +273,7 @@ return {
 	Dmg_rgb_tw = Dmg_rgb_tw,
 	Dmg_a_rgb_tw = Dmg_a_rgb_tw,
 	Damage_rgb_tw = Damage_rgb_tw,
+	Damage_res_rgb_tw = Damage_res_rgb_tw,
 	Damagewrp_rgb_tw = Damagewrp_rgb_tw,
 	Damagewrp_a_rgb_tw = Damagewrp_a_rgb_tw,
 	Electrocute_rgb_tw = Electrocute_rgb_tw,
