@@ -52,6 +52,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Crit_hits_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_hit_e_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_rgb_tw = iu_actit("暴擊", crt_col)
+	local Crit_k_rgb_tw = iu_actit("暴擊擊殺", crt_col)
 	local Crit_ih_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit0_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_dmg_r_rgb_tw = iu_actit("暴擊傷害", crt_col)
@@ -101,6 +102,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Weakspothit_rgb_tw = iu_actit("弱點命中", wksp_col)
 	local Weakspothits_rgb_tw = iu_actit("命中弱點", wksp_col)
 	local Weakspot_dmg_rgb_tw = iu_actit("弱點傷害", wksp_col)
+	local Weakspot_k_dmg_rgb_tw = iu_actit("弱點擊殺", wksp_col)	-- kill
 	local Weakspot_m_dmg_rgb_tw = iu_actit("近戰弱點傷害", wksp_col)	-- melee
 	local Weakspot_r_dmg_rgb_tw = iu_actit("遠程弱點傷害", wksp_col)	-- ranged
 	local Weakspotv_dmg_rgb_tw = iu_actit("弱點傷害", wksp_col)
@@ -130,7 +132,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Stun_rgb_tw = iu_actit("暈眩", stgr_col)
 	local Stuns_rgb_tw = iu_actit("致眩", stgr_col)
 	local Stunned_rgb_tw = iu_actit("已暈眩", stgr_col)
-	local Staggered_rgb_tw = iu_actit("已踉蹌", stgr_col)
+	local Staggered_rgb_tw = iu_actit("硬直中", stgr_col)
 	local Staggerr_rgb_tw = iu_actit("踉蹌", stgr_col)
 	--[++腐敗(Corruption)++]--
 	local crpt_col = Color[mod:get("corruption_text_colour")](255, true)
@@ -189,7 +191,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 --[+++其他(MISC)+++]--
 	--[++備註(Note)++]--
 	local note_col = Color[mod:get("note_text_colour")](255, true)
-	local Fns_note_rgb_tw = iu_actit(" 精準會增加弱點與爆擊傷害。", note_col)
+	local Fns_note_rgb_tw = iu_actit(" 靈巧會增加弱點與爆擊傷害。", note_col)
 	local Pwr_note_rgb_tw = iu_actit(" 威力會增加傷害、踉蹌與破甲。", note_col)
 	local Rend_note_rgb_tw = iu_actit(" 撕裂可以增加傷害。", note_col)
 	local Brtl_note_rgb_tw = iu_actit(" 脆弱會降低敵人的護甲。", note_col)
@@ -273,6 +275,7 @@ return {
 	Crit_hits_rgb_tw = Crit_hits_rgb_tw,
 	Crit_hit_e_rgb_tw = Crit_hit_e_rgb_tw,
 	Crit_rgb_tw = Crit_rgb_tw,
+	Crit_k_rgb_tw = Crit_k_rgb_tw,
 	Crit_ih_rgb_tw = Crit_ih_rgb_tw,
 	Crit0_rgb_tw = Crit0_rgb_tw,
 	Crit_dmg_r_rgb_tw = Crit_dmg_r_rgb_tw,
@@ -349,6 +352,7 @@ return {
 	Weakspothit_rgb_tw = Weakspothit_rgb_tw,
 	Weakspothits_rgb_tw = Weakspothits_rgb_tw,
 	Weakspot_dmg_rgb_tw = Weakspot_dmg_rgb_tw,
+	Weakspot_k_dmg_rgb_tw = Weakspot_k_dmg_rgb_tw,
 	Weakspot_m_dmg_rgb_tw = Weakspot_m_dmg_rgb_tw,
 	Weakspot_r_dmg_rgb_tw = Weakspot_r_dmg_rgb_tw,
 	Weakspotv_dmg_rgb_tw = Weakspotv_dmg_rgb_tw,
