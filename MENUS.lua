@@ -384,7 +384,7 @@ local localization_templates = {
 	-- create_template("reading_data_ext_ru", {"loc_wait_reason_read_from_disk"}, {"ru"}, function(locale, value) return "Получение инквизиционных данных" end),
 	create_template("reading_data_ext_ru", {"loc_wait_reason_read_from_disk"}, {"ru"}, function(locale, value) return "Попытка исправить ошибки 3001, 3013, 2014..." end),
 		--[+ Traditional Chinese +]--
-	create_template("reading_data_ext_tw", {"loc_wait_reason_read_from_disk"}, {"zh-tw"}, function(locale, value) return "嘗試修正錯誤 3001, 3013, 2014..." end),
+	create_template("reading_data_ext_tw", {"loc_wait_reason_read_from_disk"}, {"zh-tw"}, function(locale, value) return "正在從硬碟讀取資料" end), -- 嘗試修正錯誤 3001, 3013, 2014...
 
 	--[+ Dedicated Server - Выделенный сервер +]--
 		--[+ Russian +]--
