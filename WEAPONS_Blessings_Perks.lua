@@ -1219,7 +1219,7 @@ local localization_templates = {
 			--[+ Russian +]-- Неистовая стрельба -- руоф Огненное неистовство
 			create_template("weap_wbr070_desc_ext_ru", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmgcls_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции на "..COLORS_Numbers.time_var_rgb.." секунды после убийства врага на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
 			--[+ Traditional Chinese - 烈火熱焰 +]--
-			-- 爆彈槍, 槍托自動槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍, 撕裂者自動手槍 -- 7% | 8% | 9% | 10% (up to +50%)
+			-- 矛頭爆矢槍, 槍托自動槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍, 撕裂者自動手槍 -- 7% | 8% | 9% | 10% (up to +50%)
 			create_template("weap_wbr070_desc_ext_tw", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.n_12_5_rgb.." 公尺內擊殺敵人，\n"..COLORS_Numbers.dmgcls_var_rgb.." "..COLORS_KWords_tw.Damage_melee_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Deathspitter +]--
@@ -1271,7 +1271,7 @@ local localization_templates = {
 			--[+ Russian +]-- Устрашающий обстрел -- руоф Устрашающий натиск
 			create_template("weap_wbr074_desc_ext_ru", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"ru"}, function(locale, value) return "Вы подавляете врагов после убийства на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров." end),
 			--[+ Traditional Chinese - 恐怖阻擊 +]--
-			-- 撕裂者自動手槍, 爆彈槍, 槍托自動槍, 戰鬥霰彈槍, 雙管霰彈槍, 電流立場法杖, 重型雷射手槍, 步兵自動槍, 偵查雷射槍, 撕裂者自動手槍, 快拔左輪手槍, 虛空爆裂立場法杖, 虛空打擊立場法杖 -- 15 | 20 | 25 | 30
+			-- 撕裂者自動手槍, 矛頭爆矢槍, 槍托自動槍, 戰鬥霰彈槍, 雙管霰彈槍, 電流立場法杖, 重型雷射手槍, 步兵自動槍, 偵查雷射槍, 撕裂者自動手槍, 快拔左輪手槍, 虛空爆裂立場法杖, 虛空打擊立場法杖 -- 15 | 20 | 25 | 30
 			create_template("weap_wbr074_desc_ext_tw", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.n_12_5_rgb.." 公尺內擊殺敵人後，\n對 "..COLORS_Numbers.n_8_rgb.." 公尺內敵人造成壓制效果。" end),
 	
 		--[+ Roaring Advance +]--
@@ -1306,7 +1306,7 @@ local localization_templates = {
 			--[+ Russian +]-- Вдохновляющий обстрел -- руоф Вдохновляющий натиск
 			create_template("weap_wbr077_desc_ext_ru", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
 			--[+ Traditional Chinese - 振奮彈幕 +]--
-			-- 撕裂者自動手槍, 爆彈槍, 槍托自動槍, 重型雷射槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍 -- 1% | 2% | 3% | 4% (up to 20%)
+			-- 撕裂者自動手槍, 矛頭爆矢槍, 槍托自動槍, 重型雷射槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍 -- 1% | 2% | 3% | 4% (up to 20%)
 			create_template("weap_wbr077_desc_ext_tw", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"zh-tw"}, function(locale, value) return "持續射擊時，每消耗 "..COLORS_Numbers.ammo_var_rgb.." 彈藥，\n恢復 "..COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw.."，上限為 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Ghost +]--
@@ -1317,7 +1317,7 @@ local localization_templates = {
 			--[+ Russian +]-- Призрак
 			create_template("weap_wbr078_desc_ext_ru", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"ru"}, function(locale, value) return "Иммунитет к дальнобойным атакам на "..COLORS_Numbers.time_var_rgb.." секунды при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru.."." end),
 			--[+ Traditional Chinese - 幽靈 +]--
-			-- 步兵雷射槍, 雷射手槍, 機動自動槍 -- 0.6 | 0.8 | 1 | 1.2
+			-- 步兵雷射槍, 重型雷射手槍, 機動自動槍 -- 0.6 | 0.8 | 1 | 1.2
 			create_template("weap_wbr078_desc_ext_tw", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"zh-tw"}, function(locale, value) return "命中 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." 時，\n獲得對遠程攻擊的免疫效果，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。" end),
 
 		--[+ Surgical +]--
@@ -1329,7 +1329,8 @@ local localization_templates = {
 			--[+ Russian +]-- Снайперская точность -- руоф Зоркость
 			create_template("weap_wbr079_desc_ext_ru", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." каждые "..COLORS_Numbers.time_var_rgb.." секунды пока вы целитесь во врагов. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Все заряды сбрасываются при стрельбе." end),
 			--[+ Traditional Chinese - 精確打擊 +]--
-			-- 爆彈槍, 槍托自動槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍 -- 0.35s | 0.3s | 0.25s | 0.2s
+			-- 矛頭爆矢槍, 反衝槍, 槍托自動槍 -- 0.35s | 0.3s | 0.25s | 0.2s
+			-- 快拔左輪手槍, 爆彈手槍, 冥潮雷射槍 -- 0.45s | 0.4s | 0.35s | 0.3s
 			create_template("weap_wbr079_desc_ext_tw", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"zh-tw"}, function(locale, value) return "持續瞄準時，\n每 "..COLORS_Numbers.time_var_rgb.." 秒 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n上限為 "..COLORS_Numbers.stacks_var_rgb.." 層，射擊後將重置所有層數。" end),
 
 		--[+ Crucian Roulette +]--
@@ -1353,7 +1354,7 @@ local localization_templates = {
 			--[+ Russian +]-- Смертоностная точность
 			create_template("weap_wbr081_desc_ext_ru", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.critwkspdmg_var_rgb.." к "..COLORS_KWords_ru.Crit_rgb_ru.." "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.."." end),
 			--[+ Traditional Chinese - 致命精準 +]--
-			-- 爆彈槍, 步兵雷射槍, 機動自動槍 -- 70% | 80% | 90% | 100%
+			-- 爆彈手槍, 步兵雷射槍, 機動自動槍 -- 70% | 80% | 90% | 100%
 			create_template("weap_wbr081_desc_ext_tw", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.Crit_rgb_tw.." 時 "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." "..COLORS_Numbers.critwkspdmg_var_rgb.."。" end),
 
 		--[+ No Respite +]--
@@ -1432,7 +1433,7 @@ local localization_templates = {
 			--[+ Russian +]-- Кавалькада
 			create_template("weap_wbr088_desc_ext_ru", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
 			--[+ Traditional Chinese - 接連不斷 +]--
-			-- 撕裂者自動手槍, 爆彈槍, 撕裂槍 -- 3.5% | 4% | 4.5% | 5% (up to +25%)
+			-- 撕裂者自動手槍, 矛頭爆矢槍, 撕裂槍 -- 3.5% | 4% | 4.5% | 5% (up to +25%)
 			create_template("weap_wbr088_desc_ext_tw", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"zh-tw"}, function(locale, value) return "持續射擊時，每消耗 "..COLORS_Numbers.ammo_var_rgb.." 彈藥，\n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，上限為 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Pinning Fire +]--
@@ -1443,7 +1444,7 @@ local localization_templates = {
 			--[+ Russian +]-- Подавляющий огонь -- руоф Схватывающий огонь
 			create_template("weap_wbr089_desc_ext_ru", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." за каждого "..COLORS_KWords_ru.Stun_rgb_ru.." вами врага. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
 			--[+ Traditional Chinese - 鉗制射擊 +]--
-			-- 撕裂者自動手槍, 爆彈槍 -- 4.25% | 4.5% | 4.75% | 5% (up to +25%)
+			-- 撕裂者自動手槍, 矛頭爆矢槍 -- 4.25% | 4.5% | 4.75% | 5% (up to +25%)
 			create_template("weap_wbr089_desc_ext_tw", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"zh-tw"}, function(locale, value) return "使敵人 "..COLORS_KWords_tw.Stun_rgb_tw.." 時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n上限為 "..COLORS_Numbers.stacks_var_rgb.." 層。" .. COLORS_KWords_tw.Pwr_note_rgb_tw end),
 	
 		--[+ Run 'n' Gun - Run and Gun +]--
@@ -1455,7 +1456,7 @@ local localization_templates = {
 			--[+ Russian +]-- Стреляй и беги
 			create_template("weap_wbr090_desc_ext_ru", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"ru"}, function(locale, value) return "Вы можете с этим оружием вести огонь от бедра на бегу. "..COLORS_Numbers.dmgnr_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции пока вы бежите. Также уменьшается разброс оружия на "..COLORS_Numbers.weapsprd_var_rgb.."." end),
 			--[+ Traditional Chinese - 連跑帶打 +]--
-			-- 爆彈槍, 電流力場法杖, 烈焰力場法杖, 反衝槍, 撕裂者自動手槍, 虛空爆裂法杖, 虛空打擊法杖 -- 6% | 9% | 12% | 15% | -30%
+			-- 爆彈手槍, 電流力場法杖, 烈焰力場法杖, 反衝槍, 撕裂者自動手槍, 虛空爆裂法杖, 虛空打擊法杖 -- 6% | 9% | 12% | 15% | -30%
 			-- 雙管霰彈槍 -- 6% | 9% | 12% | 15% | -10%
 			create_template("weap_wbr090_desc_ext_tw", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"zh-tw"}, function(locale, value) return "衝刺時可以腰射。\n衝刺期間近距離傷害 "..COLORS_Numbers.dmgnr_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.."，\n並減少 "..COLORS_Numbers.weapsprd_var_rgb.." 武器散布。" end),
 	
