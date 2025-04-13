@@ -318,7 +318,7 @@ local localization_templates = {
 			-- 突擊鏈斧 -- 10 | 12 | 14 | 16
 			-- 突擊鏈鋸劍 -- 11 | 12 | 13 | 14
 			-- 重型開膛劍 -- 3 | 4 | 5 | 6
-			create_template("weap_wbm001_desc_ext_tw", {"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"zh-tw"}, function(locale, value) return "特殊攻擊時，使其疊加 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.."。\n上限 "..COLORS_Numbers.n_16_rgb.." 層。" end),
+			create_template("weap_wbm001_desc_ext_tw", {"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"zh-tw"}, function(locale, value) return "特殊攻擊時，使其獲得 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.."。\n上限 "..COLORS_Numbers.n_16_rgb.." 層。" end),
 
 		--[+ Bloodthirsty +]--
 			-- Chainaxes, Chainswords, Eviscerators, Force Swords -- 40% | 60% | 80% | 100%
