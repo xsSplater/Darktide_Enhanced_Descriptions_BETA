@@ -1203,46 +1203,46 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 10 - Pumped Up +]--
-	local ED_OGR_Passive_10_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		-- "- ",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_10_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 11 - Focused Fighter +]--
-	local ED_OGR_Passive_11_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		-- "- ",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_11_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 12 - Strongman +]--
-	local ED_OGR_Passive_12_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		-- "- ",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_12_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 13 - Can't Hit Me...Again - Can't Hit Me... Again +]--
-	local ED_OGR_Passive_13_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		-- "- ",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_13_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 14 - Keep Shooting +]--
-	local ED_OGR_Passive_14_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		-- "- ",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_14_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 15 - Beat Them Back +]--
-	local ED_OGR_Passive_15_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		-- "- ",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_15_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 16 - Strike True +]--
-	local ED_OGR_Passive_16_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		-- "- ",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_16_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 17 - Slam +]--
 	local ED_OGR_Passive_17_rgb = iu_actit(table.concat({
@@ -1272,166 +1272,166 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 -- ENDED HERE
 
 	--[+ Passive 00 - Reloaded and Ready +]--
-	local ED_OGR_Passive_00_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		stacks_add_w_oth_dmg,
-		"- The forced Reload of \"Point-Blank Barrage\" procs this Talent (even if the weapon's clip is full).",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_00_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	stacks_add_w_oth_dmg,
+	-- 	"- The forced Reload of \"Point-Blank Barrage\" procs this Talent (even if the weapon's clip is full).",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 11 - Batter +]--
-	local ED_OGR_Passive_11_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Can't apply Bleed through shields.",
-		"- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
-		"- Bleed: Same as other sources of Bleed. Lasts 1.5 seconds. Ticks every 0.5 seconds. Refreshes duration on Stack application. Above average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
-		"- Bleed damage is increased by Rending/Brittleness, by Perks of currently equipped weapons, and by the following buffs from:",
-		"-- Talents: \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Soften Them Up\", and \"Valuable Distraction\" (if applied by another Ogryn).",
-		"-- Blessings (if procced with Weapon before or during Burn's active duration):",
-		"--- Melee: \"Skullcrusher\" (while Staggered), \"Slaughterer\", and \"Tenderiser\" (Bleed ticks don't consume Stacks).",
-		"--- Ranged: \"Blaze Away\", \"Explosive Offensive\", \"Deathspitter\", \"Fire Frenzy\", and \"Full Bore\".",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_11_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Can't apply Bleed through shields.",
+	-- 	"- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
+	-- 	"- Bleed: Same as other sources of Bleed. Lasts 1.5 seconds. Ticks every 0.5 seconds. Refreshes duration on Stack application. Above average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
+	-- 	"- Bleed damage is increased by Rending/Brittleness, by Perks of currently equipped weapons, and by the following buffs from:",
+	-- 	"-- Talents: \"Heavyweight\" (against Ogryns), \"Payback Time\", \"Soften Them Up\", and \"Valuable Distraction\" (if applied by another Ogryn).",
+	-- 	"-- Blessings (if procced with Weapon before or during Burn's active duration):",
+	-- 	"--- Melee: \"Skullcrusher\" (while Staggered), \"Slaughterer\", and \"Tenderiser\" (Bleed ticks don't consume Stacks).",
+	-- 	"--- Ranged: \"Blaze Away\", \"Explosive Offensive\", \"Deathspitter\", \"Fire Frenzy\", and \"Full Bore\".",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 12 - Pacemaker +]--
-	local ED_OGR_Passive_12_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Stacks additively with related buffs from \"Point-Blank Barrage\", the small Reload Speed node, Weapon Perks, and Celerity Stimm.",
-		"- Can proc on Melee and Ranged attacks, Pushes, Explosions, and Staggering Abilities (\"Loyal Protector\", \"Pained Outburst\").",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_12_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Stacks additively with related buffs from \"Point-Blank Barrage\", the small Reload Speed node, Weapon Perks, and Celerity Stimm.",
+	-- 	"- Can proc on Melee and Ranged attacks, Pushes, Explosions, and Staggering Abilities (\"Loyal Protector\", \"Pained Outburst\").",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 14 - Hard Knocks +]--
-	local ED_OGR_Passive_14_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Also buffs the melee special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Heavy Stubbers, and Kickback.",
-		stacks_add_w_oth_dmg,
-		"- Generates Stacks when successfully applying instances of Stagger to enemies by Ogryn's Melee and Ranged attacks, Pushes, Explosions, and Staggering Abilities.",
-		"- The Stack amount generated varies per enemy:",
-		"_______________________________",
-		"Stacks: |Breeds:",
-		"1            |Groaner, Poxwalker, Bruisers,",
-		"              |Stalkers, Scab Shooter, Sniper.",
-		"2            |Gunners, Bombers, Flamers,",
-		"              |Poxburster, Shotgunners,",
-		"              |Trapper, Twins.",
-		"3            |Mauler, Ragers, Pox Hound,",
-		"              |Pox Hound (mutator).",
-		"5            |Bulwark, Crusher, Reaper,",
-		"              |Mutant, Mutant (mutator)",
-		"8            |Daemonhost, Captains",
-		"10           |Plague Ogryn, Chaos Spawn,",
-		"               |Beast of Nurgle.",
-		"_______________________________",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_14_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Also buffs the melee special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Heavy Stubbers, and Kickback.",
+	-- 	stacks_add_w_oth_dmg,
+	-- 	"- Generates Stacks when successfully applying instances of Stagger to enemies by Ogryn's Melee and Ranged attacks, Pushes, Explosions, and Staggering Abilities.",
+	-- 	"- The Stack amount generated varies per enemy:",
+	-- 	"_______________________________",
+	-- 	"Stacks: |Breeds:",
+	-- 	"1            |Groaner, Poxwalker, Bruisers,",
+	-- 	"              |Stalkers, Scab Shooter, Sniper.",
+	-- 	"2            |Gunners, Bombers, Flamers,",
+	-- 	"              |Poxburster, Shotgunners,",
+	-- 	"              |Trapper, Twins.",
+	-- 	"3            |Mauler, Ragers, Pox Hound,",
+	-- 	"              |Pox Hound (mutator).",
+	-- 	"5            |Bulwark, Crusher, Reaper,",
+	-- 	"              |Mutant, Mutant (mutator)",
+	-- 	"8            |Daemonhost, Captains",
+	-- 	"10           |Plague Ogryn, Chaos Spawn,",
+	-- 	"               |Beast of Nurgle.",
+	-- 	"_______________________________",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 15 - Too Stubborn to Die +]--
-	local ED_OGR_Passive_15_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- When below 33% of Maximum Health, doubles the amount of any Toughness replenished by Melee kills, Talents, and select Weapon Blessings (only \"Momentum\").",
-		"- Does not apply to Coherency Toughness Regeneration.",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_15_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- When below 33% of Maximum Health, doubles the amount of any Toughness replenished by Melee kills, Talents, and select Weapon Blessings (only \"Momentum\").",
+	-- 	"- Does not apply to Coherency Toughness Regeneration.",
+	-- 	z_eff_of_this_tougn_rep,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 16 - Delight in Destruction +]--
-	local ED_OGR_Passive_16_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Reduces both Toughness and Health Damage taken.",
-		"- Considers Bleed Stacks applied to enemies within 8 meters.",
-		"- Checks for Bleeding enemies every second.",
-		stacks_mult_w_other_dmg_red_buffs,
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_16_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Reduces both Toughness and Health Damage taken.",
+	-- 	"- Considers Bleed Stacks applied to enemies within 8 meters.",
+	-- 	"- Checks for Bleeding enemies every second.",
+	-- 	stacks_mult_w_other_dmg_red_buffs,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 17 - Attention Seeker +]--
-	local ED_OGR_Passive_17_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Pushing enemies, Blocking enemy Melee attacks or Blocking enemy Ranged attacks (shield only) forces enemies to attack Ogryn.",
-		"- Taunting Ranged enemies forces them into Melee combat (except Gunners and Reapers) Affects Captains/Twins, does not affect Monstrosities..",
-		"- Taunted enemies are visually highlighted.",
-		"- The Taunt lasts 8 seconds.",
-		"- Cannot be refreshed during active duration.",
-		"- \"Loyal Protector\" overwrites this Talent's taunt duration applying its own 15 seconds duration.",
-		"- When Ogryn gets Disabled, the taunt effect is removed from any Disabler enemies (Pox Hounds, Mutant, Trapper) that have been taunted by Ogryn before.",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_17_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Pushing enemies, Blocking enemy Melee attacks or Blocking enemy Ranged attacks (shield only) forces enemies to attack Ogryn.",
+	-- 	"- Taunting Ranged enemies forces them into Melee combat (except Gunners and Reapers) Affects Captains/Twins, does not affect Monstrosities..",
+	-- 	"- Taunted enemies are visually highlighted.",
+	-- 	"- The Taunt lasts 8 seconds.",
+	-- 	"- Cannot be refreshed during active duration.",
+	-- 	"- \"Loyal Protector\" overwrites this Talent's taunt duration applying its own 15 seconds duration.",
+	-- 	"- When Ogryn gets Disabled, the taunt effect is removed from any Disabler enemies (Pox Hounds, Mutant, Trapper) that have been taunted by Ogryn before.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 18 - Get Stuck In +]--
-	local ED_OGR_Passive_18_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Stacks additively with Movement Speed buffs from \"Indomitable\"/\"Bull Rush\" and \"Unstoppable Momentum\", and multiplicatively with Movement Speed penalty reduction while braced from \"Point-Blank Barrage\".",
-		"- Also grants Immunity to Stuns from both Melee and Ranged attacks, and Immunity to Suppression.",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_18_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Stacks additively with Movement Speed buffs from \"Indomitable\"/\"Bull Rush\" and \"Unstoppable Momentum\", and multiplicatively with Movement Speed penalty reduction while braced from \"Point-Blank Barrage\".",
+	-- 	"- Also grants Immunity to Stuns from both Melee and Ranged attacks, and Immunity to Suppression.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 20 - Unstoppable Momentum +]--
-	local ED_OGR_Passive_20_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		can_be_refr_dur_active_dur,
-		"- Stacks additively with Movement Speed buffs from \"Indomitable\"/\"Bull Rush\" and \"Get Stuck In\", and multiplicatively with Movement Speed penalty reductions from \"Point-Blank Barrage\" and the \"Roaring Advance\" Weapon Blessing.",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_20_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	can_be_refr_dur_active_dur,
+	-- 	"- Stacks additively with Movement Speed buffs from \"Indomitable\"/\"Bull Rush\" and \"Get Stuck In\", and multiplicatively with Movement Speed penalty reductions from \"Point-Blank Barrage\" and the \"Roaring Advance\" Weapon Blessing.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 21 - No Stopping Me! +]--
-	local ED_OGR_Passive_21_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Makes Ogryn's Melee attack actions Uninterruptible during windup phase so that they cannot be canceled as part of hit reactions.",
-		"- \"Windup\" refers to a specific action kind in weapon profiles, it's basically the \"Charging or Ready up movement\" animation before an actual swing is executed.",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_21_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Makes Ogryn's Melee attack actions Uninterruptible during windup phase so that they cannot be canceled as part of hit reactions.",
+	-- 	"- \"Windup\" refers to a specific action kind in weapon profiles, it's basically the \"Charging or Ready up movement\" animation before an actual swing is executed.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 22 - Dominate +]--
-	local ED_OGR_Passive_22_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- On Elite kill, grants 10% Rending to all attacks for 10 seconds boosting Damage against armor types Carapace, Flak, Maniac, Unyielding (including Damage of Explosions and DoTs like Bleed and Burn applied by Ogryn).",
-		can_be_refr_dur_active_dur,
-		"- Only affects Ogryn's own Damage.",
-		stacks_add_w_oth_rend_brit,
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_22_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- On Elite kill, grants 10% Rending to all attacks for 10 seconds boosting Damage against armor types Carapace, Flak, Maniac, Unyielding (including Damage of Explosions and DoTs like Bleed and Burn applied by Ogryn).",
+	-- 	can_be_refr_dur_active_dur,
+	-- 	"- Only affects Ogryn's own Damage.",
+	-- 	stacks_add_w_oth_rend_brit,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 24 - Bruiser +]--
-	local ED_OGR_Passive_24_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Procs on any Elite kill by Ogryn and Elite kills by Allies who are in Coherency with Ogryn.",
-		"- This is 1.2 seconds for \"Indomitable\"/\"Bull Rush\", 1.8 seconds for \"Loyal Protector\", and 3.2 seconds for \"Point-Blank Barrage\".",
-		procs_add_conc_stim_rem_cd_red,
-		doesnt_interact_w_c_a_r_from_curio,
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_24_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Procs on any Elite kill by Ogryn and Elite kills by Allies who are in Coherency with Ogryn.",
+	-- 	"- This is 1.2 seconds for \"Indomitable\"/\"Bull Rush\", 1.8 seconds for \"Loyal Protector\", and 3.2 seconds for \"Point-Blank Barrage\".",
+	-- 	procs_add_conc_stim_rem_cd_red,
+	-- 	doesnt_interact_w_c_a_r_from_curio,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 26 - Massacre +]--
-	local ED_OGR_Passive_26_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Generates Stacks when enemies die to Ogryn's Melee and Ranged attacks, Explosions, and DoTs, and when Pushed over ledges into map kill boxes by Ogryn.",
-		"- Stacks last 10 seconds and can be refreshed during active duration.",
-		"- Per Stack, grants 1% additional Crit chance to all attacks that can Crit.",
-		"- Stacks additively with other sources of Crit chance.",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_26_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Generates Stacks when enemies die to Ogryn's Melee and Ranged attacks, Explosions, and DoTs, and when Pushed over ledges into map kill boxes by Ogryn.",
+	-- 	"- Stacks last 10 seconds and can be refreshed during active duration.",
+	-- 	"- Per Stack, grants 1% additional Crit chance to all attacks that can Crit.",
+	-- 	"- Stacks additively with other sources of Crit chance.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 27 - Implacable +]--
-	local ED_OGR_Passive_27_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Reduces both Toughness and Health Damage taken while winding up Melee attacks.",
-		stacks_mult_w_other_dmg_red_buffs,
-		"- \"Windup\" refers to a specific action kind in weapon profiles, it's basically the \"Charging or Ready up movement\" animation before an actual swing is executed.",
-		"- Technically, the Talent does indeed proc every time a weapon attack is in its windup phase, light attacks included. But windup windows can be very short (especially for light attacks), so the Talent works most efficiently during the longer windup windows of Heavy Melee attacks.",
-		"- Does currently not have a HUD icon.",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_27_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Reduces both Toughness and Health Damage taken while winding up Melee attacks.",
+	-- 	stacks_mult_w_other_dmg_red_buffs,
+	-- 	"- \"Windup\" refers to a specific action kind in weapon profiles, it's basically the \"Charging or Ready up movement\" animation before an actual swing is executed.",
+	-- 	"- Technically, the Talent does indeed proc every time a weapon attack is in its windup phase, light attacks included. But windup windows can be very short (especially for light attacks), so the Talent works most efficiently during the longer windup windows of Heavy Melee attacks.",
+	-- 	"- Does currently not have a HUD icon.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 28 - No Pushover +]--
-	local ED_OGR_Passive_28_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Allows the Push to Stagger all enemies except for Mutants, Monstrosties, and Twins (Captains only without void shield).",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_28_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Allows the Push to Stagger all enemies except for Mutants, Monstrosties, and Twins (Captains only without void shield).",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 29 - Won't Give In +]--
-	local ED_OGR_Passive_29_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Reduces both Toughness and Health Damage taken by 20% per Downed or Incapacitated ally within 20 meters.",
-		"- Stacks linearly with itself: 1 incapacitated Ally=20% Damage Reduction, 2 Allies=40%, 3 Allies=60%",
-		stacks_mult_w_other_dmg_red_buffs,
-		"- \"Incapacitated\" includes: Netted (by Trapper), Pounced (by Pox Hounds), Grabbed (by Daemonhost, Chaos Spawn, Mutants), Eaten by Beast of Nurgle, Hanging from ledge, and waiting for Rescue after respawn.",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_29_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Reduces both Toughness and Health Damage taken by 20% per Downed or Incapacitated ally within 20 meters.",
+	-- 	"- Stacks linearly with itself: 1 incapacitated Ally=20% Damage Reduction, 2 Allies=40%, 3 Allies=60%",
+	-- 	stacks_mult_w_other_dmg_red_buffs,
+	-- 	"- \"Incapacitated\" includes: Netted (by Trapper), Pounced (by Pox Hounds), Grabbed (by Daemonhost, Chaos Spawn, Mutants), Eaten by Beast of Nurgle, Hanging from ledge, and waiting for Rescue after respawn.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 30 - Mobile Emplacement +]--
-	local ED_OGR_Passive_30_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Reduces both Toughness and Health Damage taken by 20% while braced.",
-		stacks_mult_w_other_dmg_red_buffs,
-		"- \"Braced\" refers to an action keyword in Ranged weapon profiles.",
-		"- Using a Ranged weapon's alt fire, like zooming or firing when zoomed in, activates the buff.",
-	}, "\n"), enhdesc_col)
+	-- local ED_OGR_Passive_30_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- Reduces both Toughness and Health Damage taken by 20% while braced.",
+	-- 	stacks_mult_w_other_dmg_red_buffs,
+	-- 	"- \"Braced\" refers to an action keyword in Ranged weapon profiles.",
+	-- 	"- Using a Ranged weapon's alt fire, like zooming or firing when zoomed in, activates the buff.",
+	-- }, "\n"), enhdesc_col)
 
 	-- local  = iu_actit(table.concat({
 		-- "\n+++-------------------------------------------------+++",
