@@ -27,6 +27,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++耐力(Stamina)++]--
 	local stam_col = Color[mod:get("stamina_text_colour")](255, true)
 	local Stamina_rgb_tw = iu_actit("耐力", stam_col)
+	local Stamina_se_rgb_tw = iu_actit("衝刺效率", stam_col) -- Sprint Efficiency
 	local Stamina_c_r_rgb_tw = iu_actit("耐力消耗", stam_col) -- 需要確認使用情境
 	--[++韌性(Toughness)++]--
 	local tghn_col = Color[mod:get("toughness_text_colour")](255, true)
@@ -44,17 +45,22 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Crt_chance_rgb_tw = iu_actit("暴擊機率", crt_col)
 	local Crt_u_chance_rgb_tw = iu_actit("暴擊機率", crt_col)
 	local Crit_chance_rgb_tw = iu_actit("暴擊機率", crt_col)
-	local Crit_hit_rgb_tw = iu_actit("暴擊", crt_col)
+	local Crit_m_chance_rgb_tw = iu_actit("近戰暴擊機率", crt_col) -- melee
+	local Crit_r_chance_rgb_tw = iu_actit("遠程暴擊機率", crt_col) -- ranged
+	local Crit_hit_rgb_tw = iu_actit("暴擊命中", crt_col)
 	local Crit_hit_chance_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_hits_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_hit_e_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_rgb_tw = iu_actit("暴擊", crt_col)
+	local Crit_k_rgb_tw = iu_actit("暴擊擊殺", crt_col)
 	local Crit_ih_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit0_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_dmg_r_rgb_tw = iu_actit("暴擊傷害", crt_col)
 	local Crit_dmg_u_rgb_tw = iu_actit("暴擊傷害", crt_col)
 	local Crit_chance_r_rgb_tw = iu_actit("暴擊機率", crt_col)
 	local Crit_hit_color_rgb_tw = iu_actit("暴擊傷害", crt_col)
+	local Crit_hit_m_color_rgb_tw = iu_actit("近戰暴擊傷害", crt_col)	-- melee
+	local Crit_hit_r_color_rgb_tw = iu_actit("遠程暴擊傷害", crt_col) -- ranged
 	local Crit_hit_om_rgb_tw = iu_actit("暴擊", crt_col)
 	local Crit_hit_udom_rgb_tw = iu_actit("暴擊", crt_col)
 	--[++撕裂(Rending)++]--
@@ -72,6 +78,8 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local pwr_col = Color[mod:get("power_text_colour")](255, true)
 	local Power_rgb_tw = iu_actit("威力", pwr_col)
 	local Strength_rgb_tw = iu_actit("威力", pwr_col)
+	local Strength_m_rgb_tw = iu_actit("近戰威力", pwr_col)	-- melee
+	local Strength_r_rgb_tw = iu_actit("遠程威力", pwr_col)	-- ranged
 	--[++靈巧傷害(Finesse)++]--
 	local fns_col = Color[mod:get("finesse_text_colour")](255, true)
 	local Finesse_rgb_tw = iu_actit("靈巧", fns_col)
@@ -79,12 +87,16 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++順劈目標(Hit Mass)++]--
 	local htms_col = Color[mod:get("hit_mass_text_colour")](255, true)
 	local Hit_mass_rgb_tw = iu_actit("順劈目標", htms_col)
-	local Hit_masss_rgb_tw = iu_actit("順劈目標", htms_col)
+	local Hit_masss_rgb_tw = iu_actit("順劈目標抗性", htms_col)
 	--[++傷害(Damage)++]--
 	local dmg_col = Color[mod:get("damage_text_colour")](255, true)
 	local Dmg_rgb_tw = iu_actit("傷害", dmg_col)
 	local Dmg_a_rgb_tw = iu_actit("傷害", dmg_col)
-	local Damage_rgb_tw = iu_actit("傷害抗性", dmg_col)
+	local Damage_rgb_tw = iu_actit("傷害", dmg_col)
+	local Damage_s_rgb_tw = iu_actit("重擊傷害", dmg_col) --Smash
+	local Damage_res_rgb_tw = iu_actit("傷害抗性", dmg_col)
+	local Damage_melee_rgb_tw = iu_actit("近戰傷害", dmg_col)
+	local Damage_ranged_rgb_tw = iu_actit("遠程傷害", dmg_col)
 	local Damagewrp_rgb_tw = iu_actit("亞空間傷害", dmg_col)
 	local Damagewrp_a_rgb_tw = iu_actit("亞空間傷害", dmg_col)
 	--[++弱點(Weak Spot)++]--
@@ -93,6 +105,9 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Weakspothit_rgb_tw = iu_actit("弱點命中", wksp_col)
 	local Weakspothits_rgb_tw = iu_actit("命中弱點", wksp_col)
 	local Weakspot_dmg_rgb_tw = iu_actit("弱點傷害", wksp_col)
+	local Weakspot_k_dmg_rgb_tw = iu_actit("弱點擊殺", wksp_col)	-- kill
+	local Weakspot_m_dmg_rgb_tw = iu_actit("近戰弱點傷害", wksp_col)	-- melee
+	local Weakspot_r_dmg_rgb_tw = iu_actit("遠程弱點傷害", wksp_col)	-- ranged
 	local Weakspotv_dmg_rgb_tw = iu_actit("弱點傷害", wksp_col)
 --[+++減益效果(DEBUFFS)+++]--
 	--[++燃燒(Burn)++]--
@@ -100,8 +115,10 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Burn_rgb_tw = iu_actit("燃燒", brn_col)
 	local Burning_rgb_tw = iu_actit("燃燒中", brn_col)
 	local Burnd_rgb_tw = iu_actit("引燃", brn_col)
-	local Heat_rgb_tw = iu_actit("散熱", brn_col)
-	local Heat2_rgb_tw = iu_actit("過熱", brn_col)
+	--[++熱能(Heat)++]--
+	local Heat_rgb_tw = iu_actit("熱能", brn_col)
+	local Heat_diss_rgb_tw = iu_actit("散熱效率", brn_col) -- diss
+	local Heat2_rgb_tw = iu_actit("熱能", brn_col)
 	--[++靈魂之火(Soulblaze)++]--
 	local slblz_col = Color[mod:get("soulblaze_text_colour")](255, true)
 	local Soulblaze_rgb_tw = iu_actit("靈火", slblz_col)
@@ -118,9 +135,9 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Staggers_rgb_tw = iu_actit("暈眩", stgr_col)
 	local Staggers_e_rgb_tw = iu_actit("暈眩", stgr_col)
 	local Stun_rgb_tw = iu_actit("暈眩", stgr_col)
-	local Stuns_rgb_tw = iu_actit("致眩", stgr_col)
+	local Stuns_rgb_tw = iu_actit("硬直中", stgr_col)
 	local Stunned_rgb_tw = iu_actit("已暈眩", stgr_col)
-	local Staggered_rgb_tw = iu_actit("已踉蹌", stgr_col)
+	local Staggered_rgb_tw = iu_actit("硬直中", stgr_col)
 	local Staggerr_rgb_tw = iu_actit("踉蹌", stgr_col)
 	--[++腐敗(Corruption)++]--
 	local crpt_col = Color[mod:get("corruption_text_colour")](255, true)
@@ -179,7 +196,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 --[+++其他(MISC)+++]--
 	--[++備註(Note)++]--
 	local note_col = Color[mod:get("note_text_colour")](255, true)
-	local Fns_note_rgb_tw = iu_actit(" 精準會增加弱點與爆擊傷害。", note_col)
+	local Fns_note_rgb_tw = iu_actit(" 靈巧會增加弱點與暴擊傷害。", note_col)
 	local Pwr_note_rgb_tw = iu_actit(" 威力會增加傷害、踉蹌與破甲。", note_col)
 	local Rend_note_rgb_tw = iu_actit(" 撕裂可以增加傷害。", note_col)
 	local Brtl_note_rgb_tw = iu_actit(" 脆弱會降低敵人的護甲。", note_col)
@@ -240,6 +257,7 @@ return {
 	Burning_rgb_tw = Burning_rgb_tw,
 	Burnd_rgb_tw = Burnd_rgb_tw,
 	Heat_rgb_tw = Heat_rgb_tw,
+	Heat_diss_rgb_tw = Heat_diss_rgb_tw,
 	Heat2_rgb_tw = Heat2_rgb_tw,
 	Ability_cd_rgb_tw = Ability_cd_rgb_tw,
 	Cd_rgb_tw = Cd_rgb_tw,
@@ -256,22 +274,31 @@ return {
 	Crt_chance_rgb_tw = Crt_chance_rgb_tw,
 	Crt_u_chance_rgb_tw = Crt_u_chance_rgb_tw,
 	Crit_chance_rgb_tw = Crit_chance_rgb_tw,
+	Crit_m_chance_rgb_tw = Crit_m_chance_rgb_tw,
+	Crit_r_chance_rgb_tw = Crit_r_chance_rgb_tw,
 	Crit_hit_rgb_tw = Crit_hit_rgb_tw,
 	Crit_hit_chance_rgb_tw = Crit_hit_chance_rgb_tw,
 	Crit_hits_rgb_tw = Crit_hits_rgb_tw,
 	Crit_hit_e_rgb_tw = Crit_hit_e_rgb_tw,
 	Crit_rgb_tw = Crit_rgb_tw,
+	Crit_k_rgb_tw = Crit_k_rgb_tw,
 	Crit_ih_rgb_tw = Crit_ih_rgb_tw,
 	Crit0_rgb_tw = Crit0_rgb_tw,
 	Crit_dmg_r_rgb_tw = Crit_dmg_r_rgb_tw,
 	Crit_dmg_u_rgb_tw = Crit_dmg_u_rgb_tw,
 	Crit_chance_r_rgb_tw = Crit_chance_r_rgb_tw,
 	Crit_hit_color_rgb_tw = Crit_hit_color_rgb_tw,
+	Crit_hit_m_color_rgb_tw = Crit_hit_m_color_rgb_tw,
+	Crit_hit_r_color_rgb_tw = Crit_hit_r_color_rgb_tw,
 	Crit_hit_om_rgb_tw = Crit_hit_om_rgb_tw,
 	Crit_hit_udom_rgb_tw = Crit_hit_udom_rgb_tw,
 	Dmg_rgb_tw = Dmg_rgb_tw,
 	Dmg_a_rgb_tw = Dmg_a_rgb_tw,
 	Damage_rgb_tw = Damage_rgb_tw,
+	Damage_s_rgb_tw = Damage_s_rgb_tw,
+	Damage_res_rgb_tw = Damage_res_rgb_tw,
+	Damage_melee_rgb_tw = Damage_melee_rgb_tw,
+	Damage_ranged_rgb_tw = Damage_ranged_rgb_tw,
 	Damagewrp_rgb_tw = Damagewrp_rgb_tw,
 	Damagewrp_a_rgb_tw = Damagewrp_a_rgb_tw,
 	Electrocute_rgb_tw = Electrocute_rgb_tw,
@@ -317,9 +344,12 @@ return {
 	Staggered_rgb_tw = Staggered_rgb_tw,
 	Staggerr_rgb_tw = Staggerr_rgb_tw,
 	Stamina_rgb_tw = Stamina_rgb_tw,
+	Stamina_se_rgb_tw = Stamina_se_rgb_tw,
 	Stamina_c_r_rgb_tw = Stamina_c_r_rgb_tw,
 	Stealth_rgb_tw = Stealth_rgb_tw,
 	Strength_rgb_tw = Strength_rgb_tw,
+	Strength_m_rgb_tw = Strength_m_rgb_tw,
+	Strength_r_rgb_tw = Strength_r_rgb_tw,
 	Tghnss_rgb_tw = Tghnss_rgb_tw,
 	Toughness_rgb_tw = Toughness_rgb_tw,
 	Toughness_dmg_red_rgb_tw = Toughness_dmg_red_rgb_tw,
@@ -331,6 +361,9 @@ return {
 	Weakspothit_rgb_tw = Weakspothit_rgb_tw,
 	Weakspothits_rgb_tw = Weakspothits_rgb_tw,
 	Weakspot_dmg_rgb_tw = Weakspot_dmg_rgb_tw,
+	Weakspot_k_dmg_rgb_tw = Weakspot_k_dmg_rgb_tw,
+	Weakspot_m_dmg_rgb_tw = Weakspot_m_dmg_rgb_tw,
+	Weakspot_r_dmg_rgb_tw = Weakspot_r_dmg_rgb_tw,
 	Weakspotv_dmg_rgb_tw = Weakspotv_dmg_rgb_tw,
 
 	Trauma_note_rgb_tw = Trauma_note_rgb_tw,
