@@ -10,11 +10,15 @@ COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
 -- All Keywords are taken from this file by adding to the value "COLORS_KWords.".
 -- For example, in the file "COLORS_KWords.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords.Damage_rgb.".
 
-	--[+ Translations +]-- Add a line with a file of Keywords translated into your language.
-COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr") -- French
-COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru") -- Russian
-COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw_v2") -- Traditional Chinese
-COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn") -- Simplified Chinese
+--[+ Translations +]-- Add a line with a file of Keywords translated into your language.
+	--[+ French +]--
+COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr")
+	--[+ Russian +]--
+COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
+	--[+ Traditional Chinese +]--
+COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw_v2")
+	--[+ Simplified Chinese +]--
+COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
 
 --[+ Function to create a localization template +]--
 local function create_template(id, loc_keys, locales, handle_func)
@@ -293,6 +297,8 @@ local localization_templates = {
 	--[+ Simplified Chinese +]--
 	--create_template("curio_traits19_ext_zh_cn", {"loc_trait_gadget_dr_vs_bursters_desc"}, {"zh-cn"}, function(locale, value) return COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.." 抗性（爆破手）" end), -- Missing --
 }
+
+
 
 			-- ============ DO NOT DO ANYTHING BELOW! ============ --
 
