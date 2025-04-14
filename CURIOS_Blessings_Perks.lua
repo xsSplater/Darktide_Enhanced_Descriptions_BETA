@@ -290,7 +290,7 @@ local localization_templates = {
 	-- create_template("curio_traits19_ext_en", {"loc_trait_gadget_dr_vs_bursters_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Чумных взрывников" end), -- Вырезано!
 	--[+ 傷害抗性(瘟疫爆者) - Traditional Chinese +]--
 	--create_template("curio_traits19_ext_tw", {"loc_trait_gadget_dr_vs_bursters_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (瘟疫爆裂者)" end), -- Missing --
-}	--[+ Simplified Chinese +]--
+	--[+ Simplified Chinese +]--
 	--create_template("curio_traits19_ext_zh_cn", {"loc_trait_gadget_dr_vs_bursters_desc"}, {"zh-cn"}, function(locale, value) return COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.." 抗性（爆破手）" end), -- Missing --
 
 
