@@ -22,18 +22,40 @@ COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr"
 COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
 COLORS_KW_Penances_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KW_Penances_ru")
 
+--[+ Traditional Chinese +]--
+COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
+COLORS_KW_Penances_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KW_Penances_tw")
+
 --[+ Function to create a localization template +]--
 local function create_template(id, loc_keys, locales, handle_func)
 	return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
 end
 
 
-	--[+ Russian +]--
+--[+ Russian +]--
 local complete_1_mission_on_sedition_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше."
+--[+ Traditional Chinese +]--
+local complete_1_mission_on_sedition_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.sedition_rgb_tw.." 或更高難度的任務。"
+
+--[+ Russian +]--
 local complete_1_mission_on_uprising_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше."
+--[+ Traditional Chinese +]--
+local complete_1_mission_on_uprising_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.uprising_rgb_tw.." 或更高難度的任務。"
+
+--[+ Russian +]--
 local complete_1_mission_on_malice_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше."
+--[+ Traditional Chinese +]--
+local complete_1_mission_on_malice_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.malice_rgb_tw.." 或更高難度的任務。"
+
+--[+ Russian +]--
 local complete_1_mission_on_heresy_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше."
+--[+ Traditional Chinese +]--
+local complete_1_mission_on_heresy_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.heresy_rgb_tw.." 或更高難度的任務。"
+
+--[+ Russian +]--
 local complete_1_mission_on_damnation_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше."
+--[+ Traditional Chinese +]--
+local complete_1_mission_on_damnation_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.damnation_rgb_tw.." 或更高難度的任務。"
 
 --[+ Define localization templates +]--
 local localization_templates = {
@@ -45,99 +67,185 @@ local localization_templates = {
 	--[+ Lowerbody +]-- Нижняя часть тела
 	--[+ Russian +]--
 	create_template("lowerbody_gear_ext_desc_ru", {"loc_item_type_gear_lowerbody"}, {"ru"}, function(locale, value) return "Ноги" end),
+	--[+ Traditional Chinese +]--
+	create_template("lowerbody_gear_ext_desc_tw", {"loc_item_type_gear_lowerbody"}, {"zh-tw"}, function(locale, value) return "下半身" end),
+
 	--[+ Private Game - Закрытая игра +]--
 	--[+ Russian +]--
 	-- create_template("private_tag_ext_ru", {"loc_private_tag_name1"}, {"ru"}, function(locale, value) return "Закрытая игра" end),
+	--[+ Traditional Chinese +]--
+	-- create_template("private_tag_ext_tw", {"loc_private_tag_name1"}, {"zh-tw"}, function(locale, value) return "私人遊戲" end),
+
 	--[+ Penance can only be completed in a private game +]-- Искупление может быть выполнено только в закрытой игре
 	--[+ Russian +]--
 	create_template("private_tag_ext_desc_ru", {"loc_private_tag_description"}, {"ru"}, function(locale, value) return "Искупление может быть выполнено только в закрытой игре! Закрытую игру можно создать только в компании с минимум ещё одним игроком." end),
+	--[+ Traditional Chinese +]--
+	create_template("private_tag_ext_desc_tw", {"loc_private_tag_description"}, {"zh-tw"}, function(locale, value) return "\n該苦修限定在私人遊戲完成！\n注意：私人遊戲需要另一名玩家共同組隊。" end),
 
 --[+ ++MISSIONS TYPES - ТИПЫ МИССИЙ++ +]--
 	--[+ Russian +]--
 	create_template("mission_type_1_ext_ru", {"loc_mission_type_01_name"}, {"ru"}, function(locale, value) return "Налёт" end),
+	--[+ Traditional Chinese +]--
+	create_template("mission_type_1_ext_tw", {"loc_mission_type_01_name"}, {"zh-tw"}, function(locale, value) return "突襲" end),
+
+	--[+ Russian +]--
 	-- create_template("mission_type_2_ext_ru", {"loc_mission_type_02_name"}, {"ru"}, function(locale, value) return "Убийство" end),
+	--[+ Traditional Chinese +]--
+	-- create_template("mission_type_2_ext_tw", {"loc_mission_type_02_name"}, {"zh-tw"}, function(locale, value) return "刺殺" end),
+
+	--[+ Russian +]--
 	-- create_template("mission_type_3_ext_ru", {"loc_mission_type_03_name"}, {"ru"}, function(locale, value) return "Расследование" end),
+	--[+ Traditional Chinese +]--
+	-- create_template("mission_type_3_ext_tw", {"loc_mission_type_03_name"}, {"zh-tw"}, function(locale, value) return "調查" end),
+
+	--[+ Russian +]--
 	-- create_template("mission_type_4_ext_ru", {"loc_mission_type_04_name"}, {"ru"}, function(locale, value) return "Диверсия" end),
+	--[+ Traditional Chinese +]--
+	-- create_template("mission_type_4_ext_tw", {"loc_mission_type_04_name"}, {"zh-tw"}, function(locale, value) return "擾亂" end),
+
+	--[+ Russian +]--
 	-- create_template("mission_type_5_ext_ru", {"loc_mission_type_05_name"}, {"ru"}, function(locale, value) return "Атака" end),
+	--[+ Traditional Chinese +]--
+	-- create_template("mission_type_5_ext_tw", {"loc_mission_type_05_name"}, {"zh-tw"}, function(locale, value) return "打擊" end),
+
+	--[+ Russian +]--
 	-- create_template("mission_type_6_ext_ru", {"loc_mission_type_06_name"}, {"ru"}, function(locale, value) return "Шпионаж" end),
+	--[+ Traditional Chinese +]--
+	-- create_template("mission_type_6_ext_tw", {"loc_mission_type_06_name"}, {"zh-tw"}, function(locale, value) return "諜報" end),
+
+	--[+ Russian +]--
 	create_template("mission_type_7_ext_ru", {"loc_mission_type_07_name"}, {"ru"}, function(locale, value) return "Ремонт" end),
+	--[+ Traditional Chinese +]--
+	create_template("mission_type_7_ext_tw", {"loc_mission_type_07_name"}, {"zh-tw"}, function(locale, value) return "修復" end),
 
 --[+ ++ACCOUNT - УЧЁТНАЯ ЗАПИСЬ++ +]--
 	--[+ Account - Учётная запись +]-- -- руоф Учетная запись
-	--[+ Russian +]--
-	create_template("ach_acc_0_ext_ru", {"loc_achievement_category_account_label"}, {"ru"}, function(locale, value) return "Учётная запись" end),
+		--[+ Russian +]--
+		create_template("ach_acc_0_ext_ru", {"loc_achievement_category_account_label"}, {"ru"}, function(locale, value) return "Учётная запись" end),
+		--[+ Traditional Chinese - 帳戶+]--
+		create_template("ach_acc_0_ext_tw", {"loc_achievement_category_account_label"}, {"zh-tw"}, function(locale, value) return "帳戶" end),
 
 		--[+ Two's Company - Двое – компания... +]-- -- руоф А двое лучше
-	--[+ Russian +]--
-		create_template("ach_acc_1_1_ext_ru", {"loc_achievement_multi_class_1_name"}, {"ru"}, function(locale, value) return "Двое – компания..." end),
+			--[+ Russian +]--
+			create_template("ach_acc_1_1_ext_ru", {"loc_achievement_multi_class_1_name"}, {"ru"}, function(locale, value) return "Двое – компания..." end),
+			--[+ Traditional Chinese - 兩人同行 +]--
+			create_template("ach_acc_1_1_ext_tw", {"loc_achievement_multi_class_1_name"}, {"zh-tw"}, function(locale, value) return "兩人同行" end),
+
 
 		--[+ Like a four-leaf clover - Как четырёхлистный клевер +]-- -- Фантастическая четверка
-	--[+ Russian +]--
-		create_template("ach_acc_1_ext_ru", {"loc_achievement_multi_class_2_name",}, {"ru",}, function(locale, value) return "Как четырёхлистный клевер" end),
+			--[+ Russian +]--
+			create_template("ach_acc_1_ext_ru", {"loc_achievement_multi_class_2_name",}, {"ru",}, function(locale, value) return "Как четырёхлистный клевер" end),
+			--[+ Traditional Chinese - 四葉草 +]--
+			create_template("ach_acc_1_ext_tw", {"loc_achievement_multi_class_2_name"}, {"zh-tw"}, function(locale, value) return "四葉草" end),
 
-			--[+ Reach Trust Level 30 with 1-4 classes. +]-- -- Получить уровень доверия 30 следующими классами: 1-4.
+		--[+ Reach Trust Level 30 with 1-4 classes. +]-- -- Получить уровень доверия 30 следующими классами: 1-4.
 			create_template("ach_acc_1_ext_desc_en", {"loc_achievement_multi_class_x_description"}, {"en"}, function(locale, value) return "Reach Trust Level "..COLORS_Numbers.n_30_rgb.." with "..COLORS_Numbers.target_rgb.." classes." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_acc_1_ext_desc_ru", {"loc_achievement_multi_class_x_description"}, {"ru"}, function(locale, value) return "Достигните "..COLORS_Numbers.n_30_rgb.." уровня доверия "..COLORS_Numbers.target_rgb.." классами." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_acc_1_ext_desc_tw", {"loc_achievement_multi_class_x_description"}, {"zh-tw"}, function(locale, value) return "將 "..COLORS_Numbers.target_rgb.." 個職業，都達到信任等級 "..COLORS_Numbers.n_30_rgb.." 。" end),
 
 		--[+ Circles of Trust - Круги доверия (1-6) +]-- -- руоф Круг доверия (1-6)
-	--[+ Russian +]--
-		create_template("ach_acc_7_1_ext_ru", {"loc_achievement_path_of_trust_1_name"}, {"ru"}, function(locale, value) return "Круги доверия (1)" end),
-		create_template("ach_acc_7_2_ext_ru", {"loc_achievement_path_of_trust_2_name"}, {"ru"}, function(locale, value) return "Круги доверия (2)" end),
-		create_template("ach_acc_7_3_ext_ru", {"loc_achievement_path_of_trust_3_name"}, {"ru"}, function(locale, value) return "Круги доверия (3)" end),
-		create_template("ach_acc_7_4_ext_ru", {"loc_achievement_path_of_trust_4_name"}, {"ru"}, function(locale, value) return "Круги доверия (4)" end),
-		create_template("ach_acc_7_5_ext_ru", {"loc_achievement_path_of_trust_5_name"}, {"ru"}, function(locale, value) return "Круги доверия (5)" end),
-		create_template("ach_acc_7_6_ext_ru", {"loc_achievement_path_of_trust_6_name"}, {"ru"}, function(locale, value) return "Круги доверия (6)" end),
+			--[+ Russian +]--
+			create_template("ach_acc_7_1_ext_ru", {"loc_achievement_path_of_trust_1_name"}, {"ru"}, function(locale, value) return "Круги доверия (1)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_acc_7_1_ext_tw", {"loc_achievement_path_of_trust_1_name"}, {"zh-tw"}, function(locale, value) return "互信團體 (1)" end),
+			--[+ Russian +]--
+			create_template("ach_acc_7_2_ext_ru", {"loc_achievement_path_of_trust_2_name"}, {"ru"}, function(locale, value) return "Круги доверия (2)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_acc_7_2_ext_tw", {"loc_achievement_path_of_trust_2_name"}, {"zh-tw"}, function(locale, value) return "互信團體 (2)" end),
 
-			--[+ Complete Path of Trust chapter 6. +]-- -- руоф Пройти главы Пути веры: {target}.
+			--[+ Russian +]--
+			create_template("ach_acc_7_3_ext_ru", {"loc_achievement_path_of_trust_3_name"}, {"ru"}, function(locale, value) return "Круги доверия (3)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_acc_7_3_ext_tw", {"loc_achievement_path_of_trust_3_name"}, {"zh-tw"}, function(locale, value) return "互信團體 (3)" end),
+
+			--[+ Russian +]--
+			create_template("ach_acc_7_4_ext_ru", {"loc_achievement_path_of_trust_4_name"}, {"ru"}, function(locale, value) return "Круги доверия (4)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_acc_7_4_ext_tw", {"loc_achievement_path_of_trust_4_name"}, {"zh-tw"}, function(locale, value) return "互信團體 (4)" end),
+
+			--[+ Russian +]--
+			create_template("ach_acc_7_5_ext_ru", {"loc_achievement_path_of_trust_5_name"}, {"ru"}, function(locale, value) return "Круги доверия (5)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_acc_7_5_ext_tw", {"loc_achievement_path_of_trust_5_name"}, {"zh-tw"}, function(locale, value) return "互信團體 (5)" end),
+
+			--[+ Russian +]--
+			create_template("ach_acc_7_6_ext_ru", {"loc_achievement_path_of_trust_6_name"}, {"ru"}, function(locale, value) return "Круги доверия (6)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_acc_7_6_ext_tw", {"loc_achievement_path_of_trust_6_name"}, {"zh-tw"}, function(locale, value) return "互信團體 (6)" end),
+
+		--[+ Complete Path of Trust chapter 6. +]-- -- руоф Пройти главы Пути веры: {target}.
 			create_template("ach_acc_7_ext_desc_en", {"loc_achievement_path_of_trust_x_description"}, {"en"}, function(locale, value) return "Complete Path of Trust chapter "..COLORS_Numbers.target_rgb.."." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_acc_7_ext_desc_ru", {"loc_achievement_path_of_trust_x_description"}, {"ru"}, function(locale, value) return "Завершить "..COLORS_Numbers.target_rgb.." главу «Пути доверия»." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_acc_7_ext_desc_tw", {"loc_achievement_path_of_trust_x_description"}, {"zh-tw"}, function(locale, value) return "完成第 "..COLORS_Numbers.target_rgb.." 章的互信團體。" end),
 
 		--[+ Don't Let Me Down, Criminal -  +]-- -- руоф Не подведите меня, преступники
-	--[+ Russian +]--
+		--[+ Russian +]--
 		create_template("ach_acc_2_ext_ru", {"loc_achievement_prologue_name"}, {"ru"}, function(locale, value) return "Не подведи меня, преступник" end),
+		--[+ Traditional Chinese - 別讓我失望，罪犯 +]--
+		create_template("ach_acc_2_ext_tw", {"loc_achievement_prologue_name"}, {"zh-tw"}, function(locale, value) return "別讓我失望，罪犯" end),
 
-			--[+ Complete the Prologue. +]-- -- руоф Закончить пролог.
-			create_template("ach_acc_2_ext_desc_en", {"loc_achievement_prologue_description"}, {"en"}, function(locale, value) return "Complete the "..COLORS_KW_Penances.Prologue_p_rgb.."." end),
-	--[+ Russian +]--
-			create_template("ach_acc_2_ext_desc_ru", {"loc_achievement_prologue_description"}, {"ru"}, function(locale, value) return "Пройти "..COLORS_KW_Penances_ru.Prolog_p_rgb_ru.."." end),
+		--[+ Complete the Prologue. +]-- -- руоф Закончить пролог.
+		create_template("ach_acc_2_ext_desc_en", {"loc_achievement_prologue_description"}, {"en"}, function(locale, value) return "Complete the "..COLORS_KW_Penances.Prologue_p_rgb.."." end),
+		--[+ Russian +]--
+		create_template("ach_acc_2_ext_desc_ru", {"loc_achievement_prologue_description"}, {"ru"}, function(locale, value) return "Пройти "..COLORS_KW_Penances_ru.Prolog_p_rgb_ru.."." end),
+		--[+ Traditional Chinese - 完成序章 +]--
+		create_template("ach_acc_2_ext_desc_tw", {"loc_achievement_prologue_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_KW_Penances_tw.Prologue_p_rgb.."。" end),
 
 		--[+ Unconsidered Trifles +]-- -- руоф Непродуманные мелочи
-	--[+ Russian +]--
+		--[+ Russian +]--
 		create_template("ach_acc_4_ext_ru", {"loc_achievement_unlock_gadgets_name"}, {"ru"}, function(locale, value) return "Неучтённые мелочи" end),
+		--[+ Traditional Chinese - 不被考慮的瑣事 +]--
+		create_template("ach_acc_4_ext_tw", {"loc_achievement_unlock_gadgets_name"}, {"zh-tw"}, function(locale, value) return "小零碎" end),
 
-			--[+ Unlock your first Curio slot. -  +]-- -- руоф Открыть вашу первую ячейку для устройства.
-			create_template("ach_acc_4_ext_desc_en", {"loc_achievement_unlock_gadgets_description"}, {"en"}, function(locale, value) return "Unlock your first "..COLORS_KW_Penances.Curio_p_rgb.." slot." end),
-	--[+ Russian +]--
-			create_template("ach_acc_4_ext_desc_ru", {"loc_achievement_unlock_gadgets_description"}, {"ru"}, function(locale, value) return "Разблокируйте вашу первую ячейку "..COLORS_KW_Penances_ru.Curio_p_rgb_ru.."." end),
+		--[+ Unlock your first Curio slot. -  +]-- -- руоф Открыть вашу первую ячейку для устройства.
+		create_template("ach_acc_4_ext_desc_en", {"loc_achievement_unlock_gadgets_description"}, {"en"}, function(locale, value) return "Unlock your first "..COLORS_KW_Penances.Curio_p_rgb.." slot." end),
+		--[+ Russian +]--
+		create_template("ach_acc_4_ext_desc_ru", {"loc_achievement_unlock_gadgets_description"}, {"ru"}, function(locale, value) return "Разблокируйте вашу первую ячейку "..COLORS_KW_Penances_ru.Curio_p_rgb_ru.."." end),
+		--[+ Traditional Chinese - 解鎖第一個小物件插槽 +]--
+		create_template("ach_acc_4_ext_desc_tw", {"loc_achievement_unlock_gadgets_description"}, {"zh-tw"}, function(locale, value) return "解鎖第一個珍品槽" end),
 
 		--[+ Call to Arms -  +]-- -- руоф К оружию!
-	--[+ Russian +]--
+		--[+ Russian +]--
 		create_template("ach_acc_3_ext_ru", {"loc_achievement_basic_training_name"}, {"ru"}, function(locale, value) return "Призыв к оружию" end),
+		--[+ Traditional Chinese - 戰爭召喚 +]--
+		create_template("ach_acc_3_ext_tw", {"loc_achievement_basic_training_name"}, {"zh-tw"}, function(locale, value) return "戰爭召喚" end),
 
-			--[+ Complete Basic Training. +]-- -- руоф Завершите базовое обучение.
-			create_template("ach_acc_3_ext_desc_en", {"loc_achievement_basic_training_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_KW_Penances.Base_tut_p_rgb.."." end),
-	--[+ Russian +]--
-			create_template("ach_acc_3_ext_desc_ru", {"loc_achievement_basic_training_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_KW_Penances_ru.Base_tut_p_rgb_ru.."." end),
+		--[+ Complete Basic Training. +]-- -- руоф Завершите базовое обучение.
+		create_template("ach_acc_3_ext_desc_en", {"loc_achievement_basic_training_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_KW_Penances.Base_tut_p_rgb.."." end),
+		--[+ Russian +]--
+		create_template("ach_acc_3_ext_desc_ru", {"loc_achievement_basic_training_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_KW_Penances_ru.Base_tut_p_rgb_ru.."." end),
+		--[+ Traditional Chinese - 完成基礎訓練 +]--
+		create_template("ach_acc_3_ext_desc_tw", {"loc_achievement_basic_training_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_KW_Penances_tw.Psykhanium_p_rgb.." 的 "..COLORS_KW_Penances_tw.Base_tut_p_rgb.."。" end),
 
 		--[+ Well met, Whippersnapper -  +]-- -- руоф Какая приятная встреча, молокосос
-	--[+ Russian +]--
+		--[+ Russian +]--
 		create_template("ach_acc_5_ext_ru", {"loc_achievement_unlock_contracts_name"}, {"ru"}, function(locale, value) return "Рад встрече, молокосос" end),
+		--[+ Traditional Chinese - 幸會，狂妄的小子 +]--
+		create_template("ach_acc_5_ext_tw", {"loc_achievement_unlock_contracts_name"}, {"zh-tw"}, function(locale, value) return "幸會，狂妄的小子" end),
 
-			--[+ Unlock access to Sire Melk's Requisitorium. -  +]-- -- руоф Получить доступ к реквизиториуму сира Мелка.
-			create_template("ach_acc_5_ext_desc_en", {"loc_achievement_unlock_contracts_description"}, {"en"}, function(locale, value) return "Unlock access to "..COLORS_KW_Penances.Sir_melk_p_rgb.."." end),
-	--[+ Russian +]--
-			create_template("ach_acc_5_ext_desc_ru", {"loc_achievement_unlock_contracts_description"}, {"ru"}, function(locale, value) return "Разблокируйте доступ в "..COLORS_KW_Penances_ru.Sir_melk_p_rgb_ru.."." end),
+		--[+ Unlock access to Sire Melk's Requisitorium. -  +]-- -- руоф Получить доступ к реквизиториуму сира Мелка.
+		create_template("ach_acc_5_ext_desc_en", {"loc_achievement_unlock_contracts_description"}, {"en"}, function(locale, value) return "Unlock access to "..COLORS_KW_Penances.Sir_melk_p_rgb.."." end),
+		--[+ Russian +]--
+		create_template("ach_acc_5_ext_desc_ru", {"loc_achievement_unlock_contracts_description"}, {"ru"}, function(locale, value) return "Разблокируйте доступ в "..COLORS_KW_Penances_ru.Sir_melk_p_rgb_ru.."." end),
+		--[+ Traditional Chinese - 解鎖梅爾克領主的物品 +]--
+		create_template("ach_acc_5_ext_desc_tw", {"loc_achievement_unlock_contracts_description"}, {"zh-tw"}, function(locale, value) return "解鎖 "..COLORS_KW_Penances_tw.Sir_melk_p_rgb.." 。" end),
 
 		--[+ Hail the Omnissiah! - Слава Омниссии! +]--
-	--[+ Russian +]--
+		--[+ Russian +]--
 		-- create_template("ach_acc_6_ext_ru", {"loc_achievement_unlock_crafting_name"}, {"ru"}, function(locale, value) return "Слава Омниссии!" end),
+		--[+ Traditional Chinese - 歐姆尼賽亞萬歲！ +]--
+		-- create_template("ach_acc_6_ext_tw", {"loc_achievement_unlock_crafting_name"}, {"zh-tw"}, function(locale, value) return "歐姆尼賽亞萬歲！" end),
 
-			--[+ Unlock access to the Shrine of the Omnissiah. -  +]-- руоф Откройте доступ к святилищу Омниссии.
-			create_template("ach_acc_6_ext_desc_en", {"loc_achievement_unlock_crafting_description"}, {"en"}, function(locale, value) return "Unlock access to the "..COLORS_KW_Penances.Omnissia_p_rgb.."." end),
-	--[+ Russian +]--
-			create_template("ach_acc_6_ext_desc_ru", {"loc_achievement_unlock_crafting_description"}, {"ru"}, function(locale, value) return "Разблокируйте доступ в "..COLORS_KW_Penances_ru.Omnissia_p_rgb_ru.."." end),
+		--[+ Unlock access to the Shrine of the Omnissiah. -  +]-- руоф Откройте доступ к святилищу Омниссии.
+		create_template("ach_acc_6_ext_desc_en", {"loc_achievement_unlock_crafting_description"}, {"en"}, function(locale, value) return "Unlock access to the "..COLORS_KW_Penances.Omnissia_p_rgb.."." end),
+		--[+ Russian +]--
+		create_template("ach_acc_6_ext_desc_ru", {"loc_achievement_unlock_crafting_description"}, {"ru"}, function(locale, value) return "Разблокируйте доступ в "..COLORS_KW_Penances_ru.Omnissia_p_rgb_ru.."." end),
+		--[+ Traditional Chinese - 解鎖歐姆尼賽亞聖所 +]--
+		create_template("ach_acc_6_ext_desc_tw", {"loc_achievement_unlock_crafting_description"}, {"zh-tw"}, function(locale, value) return "解鎖 "..COLORS_KW_Penances_tw.Omnissia_p_rgb.." 。" end),
 
 --[+ ++CLASSES - КЛАССЫ++ +]--
 	--[+ +VETERAN - ВЕТЕРАН+ +]--

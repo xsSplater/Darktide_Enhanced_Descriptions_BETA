@@ -83,6 +83,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local tal_col = Color[mod:get("talents_text_colour")](255, true)
 	local Prologue_p_rgb = iu_actit("序章", tal_col)
 	local Curio_p_rgb = iu_actit("珍品", tal_col)
+	local Psykhanium_p_rgb = iu_actit("靈能室", tal_col)
 	local Base_tut_p_rgb = iu_actit("基礎訓練", tal_col)
 	local Sir_melk_p_rgb = iu_actit("梅爾克領主的必備品店", tal_col)
 	local Omnissia_p_rgb = iu_actit("歐姆尼賽亞的神龕", tal_col)
@@ -90,6 +91,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 return {
 	Prologue_p_rgb = Prologue_p_rgb,
 	Curio_p_rgb = Curio_p_rgb,
+	Psykhanium_p_rgb = Psykhanium_p_rgb,
 	Base_tut_p_rgb = Base_tut_p_rgb,
 	Sir_melk_p_rgb = Sir_melk_p_rgb,
 	Omnissia_p_rgb = Omnissia_p_rgb,
