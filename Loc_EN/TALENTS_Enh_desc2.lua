@@ -1269,18 +1269,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Only applies to Heavy attacks of Melee weapons (and Grenadier Gauntlet heavies).",
 	}, "\n"), enhdesc_col)
 
--- ENDED HERE
-
-	--[+ Passive 00 - Reloaded and Ready +]--
-	-- local ED_OGR_Passive_00_rgb = iu_actit(table.concat({
-	-- 	ppp___ppp,
-	-- 	stacks_add_w_oth_dmg,
-	-- 	"- The forced Reload of \"Point-Blank Barrage\" procs this Talent (even if the weapon's clip is full).",
-	-- }, "\n"), enhdesc_col)
-
-	--[+ Passive 11 - Batter +]--
-	-- local ED_OGR_Passive_11_rgb = iu_actit(table.concat({
-	-- 	ppp___ppp,
+	--[+ Passive 21 - Batter +]--
+	local ED_OGR_Passive_21_rgb = iu_actit(table.concat({
+		ppp___ppp,
 	-- 	"- Can't apply Bleed through shields.",
 	-- 	"- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 	-- 	"- Bleed: Same as other sources of Bleed. Lasts 1.5 seconds. Ticks every 0.5 seconds. Refreshes duration on Stack application. Above average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
@@ -1289,6 +1280,21 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	-- 	"-- Blessings (if procced with Weapon before or during Burn's active duration):",
 	-- 	"--- Melee: \"Skullcrusher\" (while Staggered), \"Slaughterer\", and \"Tenderiser\" (Bleed ticks don't consume Stacks).",
 	-- 	"--- Ranged: \"Blaze Away\", \"Explosive Offensive\", \"Deathspitter\", \"Fire Frenzy\", and \"Full Bore\".",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 22 - Brutish Strength +]--
+	-- local ED_OGR_Passive_22_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+-- ENDED HERE
+
+	--[+ Passive 00 - Reloaded and Ready +]--
+	-- local ED_OGR_Passive_00_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	stacks_add_w_oth_dmg,
+	-- 	"- The forced Reload of \"Point-Blank Barrage\" procs this Talent (even if the weapon's clip is full).",
 	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 12 - Pacemaker +]--
@@ -1609,4 +1615,23 @@ return {
 	ED_OGR_Passive_28_rgb = ED_OGR_Passive_28_rgb,
 	ED_OGR_Passive_29_rgb = ED_OGR_Passive_29_rgb,
 	ED_OGR_Passive_30_rgb = ED_OGR_Passive_30_rgb,
+	ED_OGR_Passive_31_rgb = ED_OGR_Passive_31_rgb,
+	ED_OGR_Passive_32_rgb = ED_OGR_Passive_32_rgb,
+	ED_OGR_Passive_33_rgb = ED_OGR_Passive_33_rgb,
+	ED_OGR_Passive_34_rgb = ED_OGR_Passive_34_rgb,
+	ED_OGR_Passive_35_rgb = ED_OGR_Passive_35_rgb,
+	ED_OGR_Passive_36_rgb = ED_OGR_Passive_36_rgb,
+	ED_OGR_Passive_37_rgb = ED_OGR_Passive_37_rgb,
+	ED_OGR_Passive_38_rgb = ED_OGR_Passive_38_rgb,
+	ED_OGR_Passive_39_rgb = ED_OGR_Passive_39_rgb,
+	ED_OGR_Passive_40_rgb = ED_OGR_Passive_40_rgb,
+	ED_OGR_Passive_41_rgb = ED_OGR_Passive_41_rgb,
+	ED_OGR_Passive_42_rgb = ED_OGR_Passive_42_rgb,
+	ED_OGR_Passive_43_rgb = ED_OGR_Passive_43_rgb,
+	ED_OGR_Passive_44_rgb = ED_OGR_Passive_44_rgb,
+	ED_OGR_Passive_45_rgb = ED_OGR_Passive_45_rgb,
+	ED_OGR_Passive_46_rgb = ED_OGR_Passive_46_rgb,
+	ED_OGR_Passive_47_rgb = ED_OGR_Passive_47_rgb,
+	ED_OGR_Passive_48_rgb = ED_OGR_Passive_48_rgb,
+	ED_OGR_Passive_49_rgb = ED_OGR_Passive_49_rgb,
 }
