@@ -38,7 +38,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Toughness_dmg_rgb_tw = iu_actit("韌性傷害", tghn_col)
 	--[++協同率(Coherency)++]--
 	local coher_col = Color[mod:get("coherency_text_colour")](255, true)
-	local Coherency_rgb_tw = iu_actit("協同率", coher_col)
+	local Coherency_rgb_tw = iu_actit("協同", coher_col)
 --[+++增益效果(BUFFS)+++]--
 	--[++致命一擊(Crit)++]--
 	local crt_col = Color[mod:get("crit_text_colour")](255, true)
