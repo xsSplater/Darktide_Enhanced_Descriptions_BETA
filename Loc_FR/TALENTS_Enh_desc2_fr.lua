@@ -509,7 +509,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Passive 14 - Serrated Blade +]--
 	local ED_VET_Passive_14_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
-		"Les attaques au corps à corps (y compris les actions spéciales au corps à corps des armes à distance) appliquent 1 cumul de Saignement aux ennemis.",
 		"- Jusqu'à 16 cumuls de Saignement maximum sur une cible.",
 		"- Ne peut pas appliquer de Saignement à travers les boucliers.",
 		"- Saignement :",
@@ -756,16 +755,10 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Blitz 1 - Big Friendly Rock +]--!!!
 	local ED_OGR_Blitz_1_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
-		"- Dégâts d'impact:",--!!!"- Base impact damage: 1200.",
-		"-- 1200 de base.",--!!!
-		"-- Pénétration d'armure légèrement augmentée contre Maniaque.",
-		"-- Très faible pénétration d'armure contre Carapace.",
-		"-- Bonus de Finesse supplémentaire contre Implacable.",
-		"-- Pénétration d'armure légèrement augmentée contre Maniaque. Très faible pénétration d'armure contre Carapace. Bonus de Finesse supplémentaire contre Implacable.",
-		"-- Permet les éléminations instantanées pour : Mitrailleurs, Shotgunners, Dreg Ragers, Mutants, Cerbères, Poxbursters, Corruptors.",
-		"-- Ne peut pas tuer en un coup : Maulers, Ogryns et Montruosités.",
-		"-- Les dégâts d'impact directs sont augmentés par Déchirure/Fragilité, par la bénédiction \"Brise-crâne\" (lorsqu'étourdi), et par les bonus de dégâts de \"Poids lourd\" (contre les Ogryns), \"L'heure de la vengeance\", \"Arme rechargée et prête\", \"On les ramollit\" (si appliqué par un autre Ogryn), \"Distraction utile\" et les petits noeuds de dégâts à distance.",
-		"- Inflige un étourdissement élevé à tous les ennemis. Nécessite des coups de point faible pour étourdir les Montruosités et les Capitaines/Jumeaux (uniquement sans bouclier).",
+		"- Dégâts d'impact: 1200",--!!!"- Base impact damage: 1200.",
+		"- Ne peut pas tuer en un coup : Maulers, Ogryns et Montruosités.",
+		"- Les dégâts d'impact directs sont augmentés par Déchirure/Fragilité, par la bénédiction \"Brise-crâne\" (lorsqu'étourdi), et par les bonus de dégâts de \"Poids lourd\" (contre les Ogryns), \"L'heure de la vengeance\", \"Arme rechargée et prête\", \"On les ramollit\" (si appliqué par un autre Ogryn), \"Distraction utile\" et les petits noeuds de dégâts à distance.",
+		"- Nécessite des coups de point faible pour étourdir les Montruosités et les Capitaines/Jumeaux (uniquement sans bouclier).",
 		"- Ne transperce pas mais peut rebondir légèrement et infliger des dégâts/tuer un deuxième ennemi le plus proche.",
 	}, "\n"), enhdesc_col)
 
