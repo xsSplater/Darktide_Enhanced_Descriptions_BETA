@@ -1124,7 +1124,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Passive 8 - Blood Redemption +]--
 	local ED_ZEA_Passive_8_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
-		"- Augmente la Robustesse maximale de base du Fanatique gagnée sur les éliminations en Mêlée de 5 % à 7,5 %.",
+		"- Augmente la Robustesse maximale de base du Fanatique gagnée sur les éliminations en Mêlée de 5 % à 10 %.",
 		z_eff_of_this_tougn_rep_fr,
 	}, "\n"), enhdesc_col)
 
@@ -1266,7 +1266,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Passive 24 - Holy Revenant +]--
 	local ED_ZEA_Passive_24_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
-		"- Pendant la durée de 5 secondes d'\"Jusqu'à la mort\", vole 0,7 % des Dégâts non-Mêlée et 2,1 % des Dégâts de Mêlée infligés aux ennemis.",
+		"- Pendant la durée de 5 secondes de \"Jusqu'à la mort\", vole 0,7 % des Dégâts non-Mêlée et 2,1 % des Dégâts de Mêlée infligés aux ennemis.",
 		"- Lorsque \"Jusqu'à la mort\" se termine, convertit le montant volé en Santé, jusqu'à 25 % de la Santé maximale du Fanatique.",
 	}, "\n"), enhdesc_col)
 
