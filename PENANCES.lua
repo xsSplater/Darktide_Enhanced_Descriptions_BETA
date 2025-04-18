@@ -1063,126 +1063,206 @@ local localization_templates = {
 		--[+ There is Nothing But the Abyss... +]-- руоф Есть только бездна...
 			--[+ Russian +]--
 			-- create_template("ach_red_zea_6_ext_ru", {"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"ru"}, function(locale, value) return "Есть только бездна..." end),
+			--[+ Traditional Chinese 唯有深淵...... +]--
+			-- create_template("ach_red_zea_6_ext_tw", {"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"zh-tw"}, function(locale, value) return "唯有深淵......" end),
 
-			--[+ On Heresy threat or higher, heal to 25% Health with life gained solely from the Holy Revenant Talent. +]-- -- руоф При угрозе «Ересь» или выше восстановите 25% здоровья исключительно за счет таланта «Святой призрак».
-	--[+ Russian +]--
+		--[+ On Heresy threat or higher, heal to 25% Health with life gained solely from the Holy Revenant Talent. +]-- -- руоф При угрозе «Ересь» или выше восстановите 25% здоровья исключительно за счет таланта «Святой призрак».
+			--[+ Russian +]--
 			create_template("ach_red_zea_6_ext_desc_ru", {"loc_achievement_zealot_2_healed_up_after_resisting_death_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, вылечите до "..COLORS_Numbers.target_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords_ru.Wound_rgb_ru.." за счёт жизни, полученной исключительно от таланта "..COLORS_KW_Penances_ru.holy_revenant_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			--在異端威脅度或更高難度下，使用神聖亡魂天賦恢復25生命值。
+			create_template("ach_red_zea_6_ext_desc_tw", {"loc_achievement_zealot_2_healed_up_after_resisting_death_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n透過 "..COLORS_KW_Penances_tw.Passive_p_rgb_tw.."『"..COLORS_KW_Penances_tw.holy_revenant_rgb_tw.."』回血，將『"..COLORS_KWords_tw.Health_rgb_tw.."』恢復至 "..COLORS_Numbers.target_rgb..COLORS_Numbers.pc_rgb.."。" end),
 
 		--[+ Test of Faith +]-- руоф Испытание веры
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_aura_toughness_damage_reduced_name"}, {"ru"}, function(locale, value) return "Испытание веры" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_aura_toughness_damage_reduced_name"}, {"ru"}, function(locale, value) return "Испытание веры" end),
+			--[+ Traditional Chinese 信仰之試 +]--
+			-- create_template("ach_class_zea_7_ext_tw", {"loc_achievement_zealot_aura_toughness_damage_reduced_name"}, {"zh-tw"}, function(locale, value) return "信仰之試" end),
 
-			--[+ Reduce a total of 1500 Toughness Damage to allies in coherency under the effect of Benediction. +]-- -- руоф Снизьте урон стойкости союзникам под воздействием «Сплоченности» (суммарно 1500), находясь под действием «Благословения».
-	--[+ Russian +]--
+		--[+ Reduce a total of 1500 Toughness Damage to allies in coherency under the effect of Benediction. +]-- -- руоф Снизьте урон стойкости союзникам под воздействием «Сплоченности» (суммарно 1500), находясь под действием «Благословения».
+			--[+ Russian +]--
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_aura_toughness_damage_reduced_description"}, {"ru"}, function(locale, value) return "Снизьте в общей сложности "..COLORS_Numbers.target_rgb.." "..COLORS_KWords_ru.Toughness_dmg_rgb_ru.." союзников, находящихся под действием "..COLORS_KWords_ru.Coherency_rgb_ru..", с помощью ауры "..COLORS_KW_Penances_ru.benedict_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 僅用恩賜效果減少協同中的盟友1500點韌性傷害
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_aura_toughness_damage_reduced_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.benedict_rgb_tw.."』光環，\n與隊友處於『"..COLORS_KWords_tw.Coherency_rgb_tw.."』時，減少『"..COLORS_KWords_tw.Toughness_dmg_rgb_tw.."』共 "..COLORS_Numbers.target_rgb.." 點。" end),
 
 		--[+ Channel Your Rage +]-- руоф Направь свою ярость
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_12_ext_ru", {"loc_achievement_zealot_2_medium_2_name"}, {"ru"}, function(locale, value) return "Направь свою ярость" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_12_ext_ru", {"loc_achievement_zealot_2_medium_2_name"}, {"ru"}, function(locale, value) return "Направь свою ярость" end),
+			--[+ Traditional Chinese 引導憤怒 +]--
+			-- create_template("ach_class_zea_12_ext_tw", {"loc_achievement_zealot_2_medium_2_name"}, {"zh-tw"}, function(locale, value) return "引導憤怒" end),
 
-			--[+ On Malice Threat or higher, kill 1000 enemies with Melee Attacks whilst at at least 3 stacks of Martydom. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (1000) в ближнем бою, сохраняя не менее 3 ед. заряда «Мученичества».
-	--[+ Russian +]--
+		--[+ On Malice Threat or higher, kill 1000 enemies with Melee Attacks whilst at at least 3 stacks of Martydom. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (1000) в ближнем бою, сохраняя не менее 3 ед. заряда «Мученичества».
+			--[+ Russian +]--
 			create_template("ach_class_zea_12_ext_desc_ru", {"loc_achievement_zealot_2_medium_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." врагов в ближнем бою, пока у вас есть хотя бы "..COLORS_Numbers.n_3_rgb.." заряда "..COLORS_KW_Penances_ru.martydom_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，在疊加至少3層殉道的情況下使用近戰攻擊擊殺1000個敵人。
+			create_template("ach_class_zea_12_ext_desc_tw", {"loc_achievement_zealot_2_medium_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n於自身擁有 "..COLORS_Numbers.n_3_rgb.." 層以上 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.martydom_rgb_tw.."』時，\n以近戰擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Have Faith +]-- руоф Не теряй веру
-	--[+ Russian +]--
-		create_template("ach_class_zea_13_ext_ru", {"loc_achievement_zealot_2_hard_2_name"}, {"ru"}, function(locale, value) return "Верь" end),
+			--[+ Russian +]--
+			create_template("ach_class_zea_13_ext_ru", {"loc_achievement_zealot_2_hard_2_name"}, {"ru"}, function(locale, value) return "Верь" end),
+			--[+ Traditional Chinese 心懷信仰 +]--
+			create_template("ach_class_zea_13_ext_tw", {"loc_achievement_zealot_2_hard_2_name"}, {"zh-tw"}, function(locale, value) return "心懷信仰" end),
 
-			--[+ On Heresy Threat or higher, using Chastise the Wicked, dash towards a targeted enemy that is wielding a ranged weapon, 40 times. +]-- руоф Используя «Кару для нечестивых», сделайте рывок в сторону противника с дистанционным оружием при угрозе «Ересь» и выше 40 р.
-	--[+ Russian +]--
+		--[+ On Heresy Threat or higher, using Chastise the Wicked, dash towards a targeted enemy that is wielding a ranged weapon, 40 times. +]-- руоф Используя «Кару для нечестивых», сделайте рывок в сторону противника с дистанционным оружием при угрозе «Ересь» и выше 40 р.
+			--[+ Russian +]--
 			create_template("ach_class_zea_13_ext_desc_ru", {"loc_achievement_zealot_2_hard_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, используя способности "..COLORS_KW_Penances_ru.chastise_wicked_rgb_ru.." или "..COLORS_KW_Penances_ru.fury_faithful_rgb_ru ..", сделайте рывок к врагу у которого в руках дальнобойное оружие. Выполните это задание "..COLORS_Numbers.target_rgb.." раз." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，使用懲戒邪惡，衝向正在使用遠程武器敵人40次。
+			create_template("ach_class_zea_13_ext_desc_tw", {"loc_achievement_zealot_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.chastise_wicked_rgb_tw.."』或『"..COLORS_KW_Penances_tw.fury_faithful_rgb_tw.."』，\n衝刺靠近正在拿遠程武器的敵人旁，共需完成 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Unseen Assassin +]-- руоф Незримый убийца
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"}, {"ru"}, function(locale, value) return "Незримый убийца" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"}, {"ru"}, function(locale, value) return "Незримый убийца" end),
+			--[+ Traditional Chinese 隱形刺客 +]--
+			-- create_template("ach_class_zea_7_ext_tw", {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"}, {"zh-tw"}, function(locale, value) return "隱形刺客" end),
 
-			--[+ Kill 150 Specialists or Elites by backstabbing them while using Shroudfield. +]-- руоф Убейте особых или элитных врагов (150) ответным ударом с помощью «Покрова».
-	--[+ Russian +]--
+		--[+ Kill 150 Specialists or Elites by backstabbing them while using Shroudfield. +]-- руоф Убейте особых или элитных врагов (150) ответным ударом с помощью «Покрова».
+			--[+ Russian +]--
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов ударом в спину под действием способности "..COLORS_KW_Penances_ru.shroudf_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用隱密領域背刺急殺150專家或精英
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.shroudf_rgb_tw.."』技能期間，\n以背刺擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Purging Flames +]-- руоф Очищающее пламя
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_kills_with_fire_grenade_name"}, {"ru"}, function(locale, value) return "Очищающее пламя" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_kills_with_fire_grenade_name"}, {"ru"}, function(locale, value) return "Очищающее пламя" end),
+			--[+ Traditional Chinese 淨化烈焰 +]--
+			-- create_template("ach_class_zea_7_ext_tw", {"loc_achievement_zealot_kills_with_fire_grenade_name"}, {"zh-tw"}, function(locale, value) return "淨化烈焰" end),
 
-			--[+ Burn 2000 enemies using the Immolation Grenade. +]-- руоф Сожгите врагов (2000) с помощью «Жертвенной гранаты».
-	--[+ Russian +]--
+		--[+ Burn 2000 enemies using the Immolation Grenade. +]-- руоф Сожгите врагов (2000) с помощью «Жертвенной гранаты».
+			--[+ Russian +]--
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_kills_with_fire_grenade_description"}, {"ru"}, function(locale, value) return "Сожгите "..COLORS_Numbers.target_rgb.." врагов с помощью "..COLORS_KW_Penances_ru.fire_gren_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用獻祭手榴彈燒死2000名敵人
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_kills_with_fire_grenade_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.fire_gren_rgb_tw.."』燒死 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Buying Time +]-- руоф Передышка
-	--[+ Russian +]--
-		-- create_template("ach_red_zea_2_ext_ru", {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"}, {"ru"}, function(locale, value) return "Выиграй время" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_zea_2_ext_ru", {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"}, {"ru"}, function(locale, value) return "Выиграй время" end),
+			--[+ Traditional Chinese 爭取時間 +]--
+			-- create_template("ach_red_zea_2_ext_tw", {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"}, {"zh-tw"}, function(locale, value) return "爭取時間" end),
 
-			--[+ Using a Stun Grenade, hit an enemy sniper more than 40 metres away. +]-- руоф Поразите вражеского снайпера на расстоянии более 40 м, используя оглушающую гранату.
-	--[+ Russian +]--
+		--[+ Using a Stun Grenade, hit an enemy sniper more than 40 metres away. +]-- руоф Поразите вражеского снайпера на расстоянии более 40 м, используя оглушающую гранату.
+			--[+ Russian +]--
 			create_template("ach_red_zea_2_ext_desc_ru", {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_description"}, {"ru"}, function(locale, value) return "Используя "..COLORS_KW_Penances_ru.shock_gren1_rgb_ru.." или "..COLORS_KW_Penances_ru.shock_gren0_rgb_ru..", поразите вражеского снайпера на расстоянии более "..COLORS_Numbers.target_rgb.." метров."..TALENTS_Enh_desc_penances_ru.ED_Buying_time_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 使用眩暈手雷，集中40米外的敵方狙擊手。
+			create_template("ach_red_zea_2_ext_desc_tw", {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.shock_gren1_rgb_tw.."』或『"..COLORS_KW_Penances_tw.shock_gren0_rgb_tw.."』，\n擊中距離超過 "..COLORS_Numbers.target_rgb.." 公尺的敵方狙擊手。" .. TALENTS_Enh_desc_penances_tw.ED_Buying_time_rgb_tw end),
 
 		--[+ Righteous Anger +]-- руоф Праведный гнев
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"}, {"ru"}, function(locale, value) return "Праведный гнев" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"}, {"ru"}, function(locale, value) return "Праведный гнев" end),
+			--[+ Traditional Chinese 正義之怒 +]--
+			-- create_template("ach_class_zea_7_ext_tw", {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"}, {"zh-tw"}, function(locale, value) return "正義之怒" end),
 
-			--[+ Kill 2000 enemies while in Fury. +]-- руоф Убейте врагов (2000), находясь под действием «Ярости».
-	--[+ Russian +]--
+		--[+ Kill 2000 enemies while in Fury. +]-- руоф Убейте врагов (2000), находясь под действием «Ярости».
+			--[+ Russian +]--
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов, находясь под действием эффекта "..COLORS_KW_Penances_ru.fanrage_rgb_ru.." от ключевого таланта "..COLORS_KW_Penances_ru.blazingp_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在狂怒狀態下擊殺2000名敵人
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KW_Penances_tw.fanrage_rgb_tw.."』發動期間，\n擊殺 "..COLORS_Numbers.target_rgb.." 名敵人，\n該效果來自 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.blazingp_rgb_tw.."』。" end),
 
 		--[+ Abhor the Mutant +]-- руоф Презирай Мутантов
-	--[+ Russian +]--
-		create_template("ach_red_zea_3_ext_ru", {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"}, {"ru"}, function(locale, value) return "Презри мутанта" end),
+			--[+ Russian +]--
+			create_template("ach_red_zea_3_ext_ru", {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"}, {"ru"}, function(locale, value) return "Презри мутанта" end),
+			--[+ Traditional Chinese 憎恨變種人 +]--
+			-- create_template("ach_red_zea_3_ext_tw", {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"}, {"zh-tw"}, function(locale, value) return "憎恨變種人" end),
 
-			--[+ While Dashing with Chastise The Wicked, kill a Mutant with a Melee Attack. +]-- руоф Убейте мутанта атакой в ближнем бою во время рывка, пока действует «Кара для нечестивых».
-	--[+ Russian +]--
+		--[+ While Dashing with Chastise The Wicked, kill a Mutant with a Melee Attack. +]-- руоф Убейте мутанта атакой в ближнем бою во время рывка, пока действует «Кара для нечестивых».
+			--[+ Russian +]--
 			create_template("ach_red_zea_3_ext_desc_ru", {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_description"}, {"ru"}, function(locale, value) return "Во время рывка с помощью способностей "..COLORS_KW_Penances_ru.chastise_wicked_rgb_ru.." или "..COLORS_KW_Penances_ru.fury_faithful_rgb_ru.." убейте Мутанта атакой ближнего боя." end),
+			--[+ Traditional Chinese +]--
+			-- 使用懲戒邪惡的衝刺期間，使用近戰攻擊擊殺1個變種人。
+			create_template("ach_red_zea_3_ext_desc_tw", {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.chastise_wicked_rgb_tw.."』或『"..COLORS_KW_Penances_tw.fury_faithful_rgb_tw.."』發動時，\n以近戰攻擊擊殺一個變種人。" end),
 
 		--[+ Control Crowds +]-- руоф Сдерживание толпы
-	--[+ Russian +]--
-		create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_2_easy_1_name"}, {"ru"}, function(locale, value) return "Управление толпой" end),
+			--[+ Russian +]--
+			create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_2_easy_1_name"}, {"ru"}, function(locale, value) return "Управление толпой" end),
+			--[+ Traditional Chinese 群體控制 +]--
+			-- create_template("ach_class_zea_7_ext_tw", {"loc_achievement_zealot_2_easy_1_name"}, {"zh-tw"}, function(locale, value) return "群體控制" end),
 
-			--[+ Stun 1500 enemies using Stun Grenades. +]-- руоф Оглушите врагов (1500) оглушающими гранатами.
-	--[+ Russian +]--
+		--[+ Stun 1500 enemies using Stun Grenades. +]-- руоф Оглушите врагов (1500) оглушающими гранатами.
+			--[+ Russian +]--
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_2_easy_1_description"}, {"ru"}, function(locale, value) return "Оглушите "..COLORS_Numbers.target_rgb.." врагов, используя "..COLORS_KW_Penances_ru.shock_gren1_rgb_ru.." или "..COLORS_KW_Penances_ru.shock_gren0_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用眩暈手雷眩暈1500個敵人
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_2_easy_1_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.shock_gren1_rgb_tw.."』或『"..COLORS_KW_Penances_tw.shock_gren0_rgb_tw.."』，\n暈眩 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Lethal Pursuit +]-- руоф Смертоносное преследование
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_kills_during_movement_keystone_activated_name"}, {"ru"}, function(locale, value) return "Смертоносное преследование" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_kills_during_movement_keystone_activated_name"}, {"ru"}, function(locale, value) return "Смертоносное преследование" end),
+			--[+ Traditional Chinese 致命追緝 +]--
+			-- create_template("ach_class_zea_7_ext_tw", {"loc_achievement_zealot_kills_during_movement_keystone_activated_name"}, {"zh-tw"}, function(locale, value) return "致命追緝" end),
 
-			--[+ Kill 250 Specialist and Elite enemies while at 15 stacks of Inexorable Judgement or above. +]-- руоф Убейте особых и элитных врагов (250), имея не менее 15 зарядов «Безжалостного приговора».
-	--[+ Russian +]--
+		--[+ Kill 250 Specialist and Elite enemies while at 15 stacks of Inexorable Judgement or above. +]-- руоф Убейте особых и элитных врагов (250), имея не менее 15 зарядов «Безжалостного приговора».
+			--[+ Russian +]--
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_kills_during_movement_keystone_activated_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов, имея не менее "..COLORS_Numbers.n_15_rgb.." зарядов "..COLORS_KW_Penances_ru.momentum_rgb_ru.." от ключевого таланта "..COLORS_KW_Penances_ru.inexor_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在疊加15層或更多層命定審判時，擊殺250名專家和精英。
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_kills_during_movement_keystone_activated_description"}, {"zh-tw"}, function(locale, value) return "擁有 "..COLORS_Numbers.n_15_rgb.." 層『"..COLORS_KW_Penances_tw.momentum_rgb_tw.."』時，擊殺 "..COLORS_Numbers.target_rgb.." 名菁英或專家敵人，\n來源為"..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.inexor_rgb_tw.."』。" end),
 
 		--[+ Shocking Stuff +]-- руоф Шокирующая штучка
-	--[+ Russian +]--
-		-- create_template("ach_red_zea_4_ext_ru", {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"}, {"ru"}, function(locale, value) return "Шокирующие штуки" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_zea_4_ext_ru", {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"}, {"ru"}, function(locale, value) return "Шокирующие штуки" end),
+			--[+ Traditional Chinese 震撼之擊 +]--
+			-- create_template("ach_red_zea_4_ext_tw", {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"}, {"zh-tw"}, function(locale, value) return "震撼之擊" end),
 
-			--[+ On Malice Threat or higher, kill 40 enemies stunned by your grenades, within 10s. +]-- руоф При угрозе «Злоба» или выше убейте врагов (40), оглушенных вашими гранатами, за 10 с.
-	--[+ Russian +]--
+		--[+ On Malice Threat or higher, kill 40 enemies stunned by your grenades, within 10s. +]-- руоф При угрозе «Злоба» или выше убейте врагов (40), оглушенных вашими гранатами, за 10 с.
+			--[+ Russian +]--
 			create_template("ach_red_zea_4_ext_desc_ru",{"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." врагов, оглушённых вашими гранатами, в течение "..COLORS_Numbers.time_wind_rgb.." секунд." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端或更高威脅度下，在10秒內擊殺40個被你手雷眩暈的敵人。
+			create_template("ach_red_zea_4_ext_desc_tw", {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，於 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 名，\n被 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.shock_gren0_rgb_tw.."』、『"..COLORS_KW_Penances_tw.shock_gren1_rgb_tw.."』"..COLORS_KWords_tw.Staggers_rgb_tw.." 的敵人。" end),
 
-		--[+ ++PSYKER - ПСАЙКЕР++ +]--
+	--[+ ++PSYKER - ПСАЙКЕР++ +]--
+	--[+ Russian +]--
 	create_template("ach_class_psy_0_ext_ru", {"loc_class_psyker_title"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_psy_rgb_ru end),
+	--[+ Traditional Chinese 靈能者 +]--
+	-- create_template("ach_class_psy_0_ext_tw", {"loc_class_psyker_title"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.cls_psy_rgb_tw end),
 
-		--[+ ++PROGRESS - ПРОГРЕСС++ +]--
+	--[+ ++PROGRESS - ПРОГРЕСС++ +]--
 		--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_4_ext_ru", {"loc_missions_psyker_2_easy_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Докажите, чего стоите (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_4_ext_ru", {"loc_missions_psyker_2_easy_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Докажите, чего стоите (1-5)" end),
+			--[+ Traditional Chinese 證明你的價值 (1-5) +]--
+			-- create_template("ach_class_psy_4_ext_tw", {"loc_missions_psyker_2_easy_difficulty_1-5_name"}, {"zh-tw"}, function(locale, value) return "證明你的價值 (1-5)" end),
 
-			--[+ Complete 1 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_psy_4_1_ext_desc_ru", {"loc_missions_psyker_2_easy_difficulty_1_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_sedition_threat_ru end),
+			----[+ Traditional Chinese +]--
+			-- 在騷亂威脅度或更高難度下完成1個任務
+			create_template("ach_class_psy_4_1_ext_desc_tw", {"loc_missions_psyker_2_easy_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_sedition_threat_tw end),
 
-			--[+ Complete 1 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Восстание» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Восстание» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_psy_4_2_ext_desc_ru", {"loc_missions_psyker_2_easy_difficulty_2_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_uprising_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在起義威脅度或更高難度下完成1個任務
+			create_template("ach_class_psy_4_2_ext_desc_tw", {"loc_missions_psyker_2_easy_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_uprising_threat_tw end),
 
-			--[+ Complete 1 Missions on Malice Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Malice Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_psy_4_3_ext_desc_ru", {"loc_missions_psyker_2_easy_difficulty_3_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_malice_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下完成1個任務
+			create_template("ach_class_psy_4_3_ext_desc_tw", {"loc_missions_psyker_2_easy_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_malice_threat_tw end),
 
-			--[+ Complete 1 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_psy_4_4_ext_desc_ru", {"loc_missions_psyker_2_easy_difficulty_4_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_heresy_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下完成1個任務
+			create_template("ach_class_psy_4_4_ext_desc_tw", {"loc_missions_psyker_2_easy_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_heresy_threat_tw end),
 
-			--[+ Complete 1 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_psy_4_5_ext_desc_ru", {"loc_missions_psyker_2_easy_difficulty_5_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_damnation_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在詛咒威脅度或更高難度下完成1個任務
+			create_template("ach_class_psy_4_5_ext_desc_tw", {"loc_missions_psyker_2_easy_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_damnation_threat_tw end),
 
 		--[+ Kinetic Killer (1-3) +]-- руоф Кинетический убийца (1-3)
 	--[+ Russian +]--

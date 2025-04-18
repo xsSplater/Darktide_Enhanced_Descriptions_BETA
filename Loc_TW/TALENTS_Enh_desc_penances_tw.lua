@@ -67,7 +67,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Buying Time +]-- руоф Передышка
 	local ED_Buying_time_rgb_tw = iu_actit(table.concat({
-		-- " +++ - Не обязательно попадать в снайпера. Достаточно, чтобы граната просто взорвалась над ним. +++",
+		"\n",
+		" +++ 不用直擊命中狙擊手 +++",
+		"只要在他頭上爆炸就有效。",
 	}, "\n"), enhdesc_col)
 
 	

@@ -40,7 +40,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local benedict_rgb_tw = iu_actit("恩賜", tal_col)
 	local loner_rgb_tw = iu_actit("孤狼", tal_col)
 	local fanrage_rgb_tw = iu_actit("狂怒", tal_col)
-	local momentum_rgb_tw = iu_actit("勢頭", tal_col)
+	local momentum_rgb_tw = iu_actit("勢能", tal_col)
 	local inexor_rgb_tw = iu_actit("命定審判", tal_col)
 	local blazingp_rgb_tw = iu_actit("熾熱虔誠", tal_col)
 	
@@ -87,6 +87,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Aura_i_p_rgb_tw = iu_actit("光環範圍內", tal_col) -- ing
 	local AbilityModifiers_p_rgb_tw = iu_actit("技能修改器", tal_col)
 	local Ability_p_rgb_tw = iu_actit("技能", tal_col)
+	local Passive_p_rgb_tw = iu_actit("被動", tal_col)
 	local KeyStone_p_rgb_tw = iu_actit("鑰石", tal_col)
 	local KeyStone_i_p_rgb_tw = iu_actit("觸發鑰石", tal_col) -- ing
 	local Blitz_p_rgb_tw = iu_actit("閃擊", tal_col)
@@ -100,8 +101,9 @@ return {
 	Curio_p_rgb_tw = Curio_p_rgb_tw,
 	Aura_p_rgb_tw = Aura_p_rgb_tw,
 	Aura_i_p_rgb_tw = Aura_i_p_rgb_tw,
-	Ability_p_rgb_tw = Ability_p_rgb_tw,
 	AbilityModifiers_p_rgb_tw = AbilityModifiers_p_rgb_tw,
+	Ability_p_rgb_tw = Ability_p_rgb_tw,
+	Passive_p_rgb_tw = Passive_p_rgb_tw,
 	KeyStone_p_rgb_tw = KeyStone_p_rgb_tw,
 	KeyStone_i_p_rgb_tw = KeyStone_i_p_rgb_tw,
 	Blitz_p_rgb_tw = Blitz_p_rgb_tw,
