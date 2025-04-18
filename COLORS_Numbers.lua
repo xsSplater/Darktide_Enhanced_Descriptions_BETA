@@ -154,6 +154,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local pc_11_rgb = iu_actit("11%", var_col)
 	local pc_20_rgb = iu_actit("20%", var_col)
 	local pc_25_rgb = iu_actit("25%", var_col)
+	local pc_32_rgb = iu_actit("32%", var_col)
 	local pc_33_rgb = iu_actit("33%", var_col)
 	local pc_40_rgb = iu_actit("40%", var_col)
 	local pc_48_rgb = iu_actit("48%", var_col)
@@ -307,6 +308,7 @@ return {
 	pc_11_rgb = pc_11_rgb,
 	pc_20_rgb = pc_20_rgb,
 	pc_25_rgb = pc_25_rgb,
+	pc_32_rgb = pc_32_rgb,
 	pc_33_rgb = pc_33_rgb,
 	pc_40_rgb = pc_40_rgb,
 	pc_48_rgb = pc_48_rgb,

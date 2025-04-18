@@ -1989,8 +1989,8 @@ local localization_templates = {
 
 	--[+ Passive 17 - Attention Seeker +]--
 	-- create_template("talent_tree_ogr_pas_017_en", {"loc_talent_ranged_enemies_taunt"}, {"en"}, function(locale, value) return "Attention Seeker" end),
-	--[+ Russian +]-- Искатель внимания -- руоф Внимание искателя
-	create_template("talent_tree_ogr_pas_017_ru", {"loc_talent_ranged_enemies_taunt"}, {"ru"}, function(locale, value) return "Искатель внимания" end),
+	--[+ Russian +]-- Провокатор -- руоф Внимание искателя
+	create_template("talent_tree_ogr_pas_017_ru", {"loc_talent_ranged_enemies_taunt"}, {"ru"}, function(locale, value) return "Провокатор" end),
 
 	--[+ Passive 18 - Get Stuck In +]--
 	-- create_template("talent_tree_ogr_pas_018_en", {"loc_talent_ogryn_bull_rush_movement_speed"}, {"en"}, function(locale, value) return "Get Stuck In" end),
