@@ -1288,6 +1288,50 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	-- 	-- "- ",
 	-- }, "\n"), enhdesc_col)
 
+	--[+ Passive 23 - For the Lil'Uns +]--
+	-- local ED_OGR_Passive_23_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Passive 24 - Concentrate +]--
+	-- local ED_OGR_Passive_24_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Passive 25 - Fire Away +]--
+	-- local ED_OGR_Passive_25_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Passive 26 - Simple Minded +]--
+	-- local ED_OGR_Passive_26_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Passive 26 - Simple Minded +]--
+	-- local ED_OGR_Passive_26_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Passive 27 - Unbreakable +]--
+	-- local ED_OGR_Passive_27_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Passive 28 - Too Stubborn to Die +]--
+	local ED_OGR_Passive_28_rgb = iu_actit(table.concat({
+		ppp___ppp,
+		"- When below 33% of Maximum Health, doubles the amount of any Toughness replenished by Melee kills, Talents, and select Weapon Blessings (only \"Momentum\").",
+		"- Does not apply to Coherency Toughness Regeneration.",
+		z_eff_of_this_tougn_rep,
+	}, "\n"), enhdesc_col)
+
 -- ENDED HERE
 
 	--[+ Passive 00 - Reloaded and Ready +]--
@@ -1326,14 +1370,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	-- 	"10           |Plague Ogryn, Chaos Spawn,",
 	-- 	"               |Beast of Nurgle.",
 	-- 	"_______________________________",
-	-- }, "\n"), enhdesc_col)
-
-	--[+ Passive 15 - Too Stubborn to Die +]--
-	-- local ED_OGR_Passive_15_rgb = iu_actit(table.concat({
-	-- 	ppp___ppp,
-	-- 	"- When below 33% of Maximum Health, doubles the amount of any Toughness replenished by Melee kills, Talents, and select Weapon Blessings (only \"Momentum\").",
-	-- 	"- Does not apply to Coherency Toughness Regeneration.",
-	-- 	z_eff_of_this_tougn_rep,
 	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 16 - Delight in Destruction +]--
