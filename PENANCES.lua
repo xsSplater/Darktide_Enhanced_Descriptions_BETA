@@ -383,7 +383,7 @@ local localization_templates = {
 			create_template("ach_class_vet_3_3_ext_desc_ru", {"loc_achievement_missions_veteran_2_objective_3_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_vet2_rgb_ru.."." end),
 			--[+ Traditional Chinese +]--
 			-- 在異端威脅度或更高難度下，使用老兵完成每種類型的任務至少一項。
-			create_template("ach_class_vet_3_3_ext_desc_tw", {"loc_achievement_missions_veteran_2_objective_3_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." ，在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，\n完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。" end),
+			create_template("ach_class_vet_3_3_ext_desc_tw", {"loc_achievement_missions_veteran_2_objective_3_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。" end),
 
 		--[+ Fire Down Range +]-- -- руоф Заградительный огонь
 			--[+ Russian +]--
@@ -516,7 +516,7 @@ local localization_templates = {
 			create_template("ach_red_vet_1_1_ext_desc_ru", {"loc_missions_veteran_2_medium_difficulty_1_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше." end),
 			--[+ Traditional Chinese +]--
 			-- 在騷亂威脅度或更高難度下完成5個任務。
-			create_template("ach_red_vet_1_1_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，完成 "..COLORS_Numbers.target_rgb.." 次任務。" end),
+			create_template("ach_red_vet_1_1_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 			--[+ Complete 5 Missions on Uprising Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Восстание» или выше.
 			create_template("ach_red_vet_1_2_ext_desc_en", {"loc_missions_veteran_2_medium_difficulty_2_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_Numbers.target_rgb.." Missions on "..COLORS_KWords.uprising_rgb.." Threat or higher." end),
@@ -524,7 +524,7 @@ local localization_templates = {
 			create_template("ach_red_vet_1_2_ext_desc_ru", {"loc_missions_veteran_2_medium_difficulty_2_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше." end),
 			--[+ Traditional Chinese +]--
 			-- 在起意威脅度或更高難度下完成5個任務。
-			create_template("ach_red_vet_1_2_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，完成 "..COLORS_Numbers.target_rgb.." 次任務。" end),
+			create_template("ach_red_vet_1_2_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 			--[+ Complete 5 Missions on Malice Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Злоба» или выше.
 			create_template("ach_red_vet_1_3_ext_desc_en",  {"loc_missions_veteran_2_medium_difficulty_3_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_Numbers.target_rgb.." Missions on "..COLORS_KWords.malice_rgb.." Threat or higher." end),
@@ -532,7 +532,7 @@ local localization_templates = {
 			create_template("ach_red_vet_1_3_ext_desc_ru",  {"loc_missions_veteran_2_medium_difficulty_3_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше." end),
 			--[+ Traditional Chinese +]--
 			-- 在惡意威脅度或更高難度下完成5個任務。
-			create_template("ach_red_vet_1_3_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成 "..COLORS_Numbers.target_rgb.." 次任務。" end),
+			create_template("ach_red_vet_1_3_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 			--[+ Complete 5 Missions on Heresy Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Ересь» или выше.
 			create_template("ach_red_vet_1_4_ext_desc_en", {"loc_missions_veteran_2_medium_difficulty_4_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_Numbers.target_rgb.." Missions on "..COLORS_KWords.heresy_rgb.." Threat or higher." end),
@@ -540,7 +540,7 @@ local localization_templates = {
 			create_template("ach_red_vet_1_4_ext_desc_ru", {"loc_missions_veteran_2_medium_difficulty_4_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше." end),
 			--[+ Traditional Chinese +]--
 			-- 在異端威脅度或更高難度下完成5個任務。
-			create_template("ach_red_vet_1_4_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成 "..COLORS_Numbers.target_rgb.." 次任務。" end),
+			create_template("ach_red_vet_1_4_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 			--[+ Complete 5 Missions on Damnation Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
 			create_template("ach_red_vet_1_5_ext_desc_en", {"loc_missions_veteran_2_medium_difficulty_5_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_Numbers.target_rgb.." Missions on "..COLORS_KWords.damnation_rgb.." Threat or higher." end),
@@ -548,7 +548,7 @@ local localization_templates = {
 			create_template("ach_red_vet_1_5_ext_desc_ru", {"loc_missions_veteran_2_medium_difficulty_5_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше." end),
 			--[+ Traditional Chinese +]--
 			-- 在詛咒威脅度或更高難度下完成5個任務。
-			create_template("ach_red_vet_1_5_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，完成 "..COLORS_Numbers.target_rgb.." 次任務。" end),
+			create_template("ach_red_vet_1_5_ext_desc_tw", {"loc_missions_veteran_2_medium_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 		--[+ I Love the Militarum! (1-6) +]--
 			--[+ Russian +]--
@@ -608,7 +608,7 @@ local localization_templates = {
 			--[+ Traditional Chinese +]--
 			-- 在異端威脅度或更高難度下，
 			-- 使火力齊射的啟動時間超過20秒，需要達成5次。
-			create_template("ach_class_vet_13_ext_desc_tw", {"loc_achievement_veteran_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KWords_tw.heresy_rgb_tw.." 或更高難度中，\n啟動 "..COLORS_KW_Penances_tw.Ability_p_rgb.."『"..COLORS_KW_Penances_tw.executioner_stance_rgb.."』持續 "..COLORS_Numbers.time_rgb.." 秒以上。\n完成此苦修需達成 "..COLORS_Numbers.target_rgb.." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb end),			
+			create_template("ach_class_vet_13_ext_desc_tw", {"loc_achievement_veteran_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n啟動 "..COLORS_KW_Penances_tw.Ability_p_rgb.."『"..COLORS_KW_Penances_tw.executioner_stance_rgb.."』持續 "..COLORS_Numbers.time_rgb.." 秒以上。\n完成此苦修需達成 "..COLORS_Numbers.target_rgb.." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb end),			
 
 		--[+ Stand up and Fight! +]-- -- руоф Встань и сражайся!
 			--[+ Russian +]--
@@ -788,176 +788,281 @@ local localization_templates = {
 			-- 擊殺500名被「鎖定目標！」標記的敵人
 			create_template("ach_class_vet_8_ext_desc_tw", {"loc_achievement_veteran_kills_with_improved_tag_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名被 "..COLORS_KW_Penances_tw.KeyStone_p_rgb.."『"..COLORS_KW_Penances_tw.fcs_trg_rgb.."』標記的敵人。" end),
 
-
 	--[+ +ZEALOT - ИЗУВЕР+ +]--
-	--[+ Russian +]--
-	create_template("ach_class_zea_0_ext_ru", {"loc_class_zealot_title"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_zea_rgb_ru end),
+		--[+ Russian +]--
+		create_template("ach_class_zea_0_ext_ru", {"loc_class_zealot_title"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_zea_rgb_ru end),
+    	--[+ Traditional Chinese 狂信徒 +]--
+		create_template("ach_class_zea_0_ext_tw", {"loc_class_zealot_title"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.cls_zea_rgb_tw end),
 
-	--[+ ПРОГРЕСС +]--
+	--[+ ПРОГРЕСС - 進度 +]--
 		--[+ Prove Your Worth (1-5) - Докажите, чего стоите (1-5) +]-- -- руоф Докажи, чего стоишь (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_4_ext_ru", {"loc_missions_zealot_2_easy_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Докажите, чего стоите (1-5)" end),
-
-			--[+ Complete 1 Missions on Sedition Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
-	--[+ Russian +]--
+			--[+ Russian +]--
+    		-- create_template("ach_class_zea_4_ext_ru", {"loc_missions_zealot_2_easy_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Докажите, чего стоите (1-5)" end),
+			--[+ Traditional Chinese 證明你的價值 +]--
+			-- create_template("ach_class_zea_4_ext_tw", {"loc_missions_zealot_2_easy_difficulty_1-5_name"}, {"zh-tw"}, function(locale, value) return "證明你的價值 (1-5)" end),
+			
+		--[+ Complete 1 Missions on Sedition Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_zea_4_1_ext_desc_ru", {"loc_missions_zealot_2_easy_difficulty_1_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_sedition_threat_ru end),
+			----[+ Traditional Chinese +]--
+			-- 在騷亂威脅度或更高難度下完成1個任務
+			create_template("ach_class_zea_4_1_ext_desc_tw", {"loc_missions_zealot_2_easy_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_sedition_threat_tw end),
 
-			--[+ Complete 1 Missions on Uprising Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Восстание» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Uprising Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Восстание» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_zea_4_2_ext_desc_ru", {"loc_missions_zealot_2_easy_difficulty_2_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_uprising_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在起義威脅度或更高難度下完成1個任務
+			create_template("ach_class_zea_4_2_ext_desc_tw", {"loc_missions_zealot_2_easy_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_uprising_threat_tw end),
 
-			--[+ Complete 1 Missions on Malice Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Malice Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_zea_4_3_ext_desc_ru", {"loc_missions_zealot_2_easy_difficulty_3_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_malice_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下完成1個任務
+			create_template("ach_class_vet_4_3_ext_desc_tw", {"loc_missions_zealot_2_easy_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_malice_threat_tw end),
 
-			--[+ Complete 1 Missions on Heresy Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Heresy Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_zea_4_4_ext_desc_ru", {"loc_missions_zealot_2_easy_difficulty_4_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_heresy_threat_ru end),
-
-			--[+ Complete 1 Missions on Damnation Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
-	--[+ Russian +]--
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下完成1個任務
+			create_template("ach_class_zea_4_4_ext_desc_tw", {"loc_missions_zealot_2_easy_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_heresy_threat_tw end),
+		
+		--[+ Complete 1 Missions on Damnation Threat or higher. -  +]-- -- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_zea_4_5_ext_desc_ru", {"loc_missions_zealot_2_easy_difficulty_5_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_damnation_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在詛咒威脅度或更高難度下完成1個任務
+			create_template("ach_class_zea_4_5_ext_desc_tw", {"loc_missions_zealot_2_easy_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_damnation_threat_tw end),
 
 		--[+ Sainted Path (1-3) - Путь святого (1-3) +]-- руоф Священный путь (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_14_ext_ru", {"loc_achievement_group_class_zealot_2_1-3_name"}, {"ru"}, function(locale, value) return "Путь святого (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_14_ext_ru", {"loc_achievement_group_class_zealot_2_1-3_name"}, {"ru"}, function(locale, value) return "Путь святого (1-3)" end),
+			--[+ Traditional Chinese 朝聖之路 (1-3) +]--
+			-- create_template("ach_class_zea_14_ext_tw", {"loc_achievement_group_class_zealot_2_1-3_name"}, {"zh-tw"}, function(locale, value) return "朝聖之路 (1-3)" end),
 
-			--[+ Complete the following Penances as the Zealot -  +]-- -- руоф Выполнить следующие искупления за Изувера.
-	--[+ Russian +]--
+		--[+ Complete the following Penances as the Zealot -  +]-- -- руоф Выполнить следующие искупления за Изувера.
+			--[+ Russian +]--
 			create_template("ach_class_zea_9_ext_desc_ru", {"loc_group_zealot_2_rank_4_difficulty_3_description", "loc_group_zealot_2_rank_5_difficulty_4_description", "loc_group_zealot_2_rank_1_difficulty_1_description", "loc_group_zealot_2_rank_2_difficulty_2_description", "loc_achievement_group_class_zealot_2_description", "loc_group_class_challenges_zealot_2_x_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления "..COLORS_KWords_ru.cls_zea2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用狂信徒完成以下苦修
+			create_template("ach_class_zea_9_ext_desc_tw", {"loc_group_zealot_2_rank_4_difficulty_3_description", "loc_group_zealot_2_rank_5_difficulty_4_description", "loc_group_zealot_2_rank_1_difficulty_1_description", "loc_group_zealot_2_rank_2_difficulty_2_description", "loc_achievement_group_class_zealot_2_description", "loc_group_class_challenges_zealot_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成以下苦修。" end),
 
 		--[+ Master Your Tools -  +]-- -- руоф Знай свое дело
-	--[+ Russian +]--
-		create_template("ach_class_zea_12_ext_ru", {"loc_achievement_zealot_2_hard_1_name"}, {"ru"}, function(locale, value) return "Знай своё дело" end),
+			--[+ Russian +]--
+			create_template("ach_class_zea_12_ext_ru", {"loc_achievement_zealot_2_hard_1_name"}, {"ru"}, function(locale, value) return "Знай своё дело" end),
+			--[+ Traditional Chinese 掌握工具 +]--
+			create_template("ach_class_zea_12_ext_tw", {"loc_achievement_zealot_2_hard_1_name"}, {"zh-tw"}, function(locale, value) return "掌握工具" end),
 
-			--[+ On Heresy Threat or higher, kill 75 Elite or Specialist enemies with Powered Melee Attacks (Chain or Power weapons). -  +]-- -- руоф При угрозе «Ересь» или выше убейте элитных врагов или специалистов (75) усиленными атаками в ближнем бою (цепным или психосиловым оружием).
-	--[+ Russian +]--
+		--[+ On Heresy Threat or higher, kill 75 Elite or Specialist enemies with Powered Melee Attacks (Chain or Power weapons). -  +]-- -- руоф При угрозе «Ересь» или выше убейте элитных врагов или специалистов (75) усиленными атаками в ближнем бою (цепным или психосиловым оружием).
+			--[+ Russian +]--
 			create_template("ach_class_zea_12_ext_desc_ru", {"loc_achievement_zealot_2_hard_1_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов в ближнем бою специальными атаками цепного или силового оружия." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，使用動力近戰攻擊（鏈鋸或動力武器）擊殺75名精英或專家敵人。
+			create_template("ach_class_zea_12_ext_desc_tw", {"loc_achievement_zealot_2_hard_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用特殊攻擊（鏈鋸系列、上古神刃），\n擊殺 "..COLORS_Numbers.target_rgb.." 名菁英或專家敵人。" end),
 
 		--[+ Doomseeker (1-5) -  +]-- -- руоф Искатель судьбы (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_2_ext_ru", {"loc_achievement_missions_zealot_2_1-5_name"}, {"ru"}, function(locale, value) return "Искатель судьбы (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_2_ext_ru", {"loc_achievement_missions_zealot_2_1-5_name"}, {"ru"}, function(locale, value) return "Искатель судьбы (1-5)" end),
+			---[+ Traditional Chinese 尋求毀滅者 +]--
+			-- create_template("ach_class_zea_2_ext_tw", {"loc_achievement_missions_zealot_2_1-5_name"}, {"zh-tw"}, function(locale, value) return "尋求毀滅者 (1-5)" end),
 
-			--[+ Complete 100 Missions as a Zealot. -  +]-- -- Выполнить Изувером задания: 100.
-	--[+ Russian +]--
+		--[+ Complete 100 Missions as a Zealot. -  +]-- -- Выполнить Изувером задания: 100.
+			--[+ Russian +]--
 			create_template("ach_class_zea_2_ext_desc_ru", {"loc_achievement_missions_zealot_2_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий "..COLORS_KWords_ru.cls_zea2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用狂信徒完成xx項任務
+			create_template("ach_class_zea_2_ext_desc_tw", {"loc_achievement_missions_zealot_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 		--[+ Maniacal Laughter (6) -  +]-- -- руоф Маниакальный смех (6)
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_1_ext_ru", {"loc_achievement_rank_zealot_2_6_name"}, {"ru"}, function(locale, value) return "Маниакальный смех (6)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_1_ext_ru", {"loc_achievement_rank_zealot_2_6_name"}, {"ru"}, function(locale, value) return "Маниакальный смех (6)" end),
+			--[+ Traditional Chinese 瘋狂的笑聲 +]--
 
-			--[+ Reach Trust Level 30 as a Zealot. -  +]-- -- руоф Заслужить уровень доверия 30, играя за Изувера.
-	--[+ Russian +]--
+		--[+ Reach Trust Level 30 as a Zealot. -  +]-- -- руоф Заслужить уровень доверия 30, играя за Изувера.
+			--[+ Russian +]--
 			create_template("ach_class_zea_1_ext_desc_ru", {"loc_achievement_rank_zealot_2_x_description"}, {"ru"}, function(locale, value) return "Достигните "..COLORS_Numbers.target_rgb.." уровня доверия "..COLORS_KWords_ru.cls_zea2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用狂信徒達到信任等級xx
+			create_template("ach_class_zea_1_ext_desc_tw", {"loc_achievement_rank_zealot_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。" end),
 
 		--[+ Just A Flesh Wound - Просто царапина +]--
-	--[+ Russian +]--
-		-- create_template("ach_red_zea_7_ext_ru", {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_name"}, {"ru"}, function(locale, value) return "Просто царапина" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_zea_7_ext_ru", {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_name"}, {"ru"}, function(locale, value) return "Просто царапина" end),
+			--[+ Traditional Chinese 只是皮外傷 +]--
+			-- create_template("ach_red_zea_7_ext_tw", {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_name"}, {"zh-tw"}, function(locale, value) return "只是皮外傷" end),
 
-			--[+ Complete a full mission on Heresy Threat or higher in under 20 minutes, with less than a Wound's worth of Health remaining for 75% of the time. (Private Game: Penance can only be completed in a private game) - +]--
-	--[+ Russian +]--
+		--[+ Complete a full mission on Heresy Threat or higher in under 20 minutes, with less than a Wound's worth of Health remaining for 75% of the time. (Private Game: Penance can only be completed in a private game) - +]--
+			--[+ Russian +]--
 			create_template("ach_red_zea_7_ext_desc_ru", {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_description"}, {"ru"}, function(locale, value) return "Завершите полностью миссию на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, менее чем за "..COLORS_Numbers.time_wind_rgb.." минут, при этом "..COLORS_Numbers.health_pc_rgb.." времени у вас должно быть не более одного сегмента "..COLORS_KWords_ru.Wound_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端或更高威脅度下，在20分鐘內完成1次完整任務，且在75的時間內聲明職不能高於1個生命段。
+			create_template("ach_red_zea_7_ext_desc_tw", {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，在 "..COLORS_Numbers.time_wind_rgb.." 分鐘內完成整場任務，\n且其中 "..COLORS_Numbers.health_pc_rgb.." 的時間，只有一格 "..COLORS_KWords_tw.Health_rgb_tw.."。\n" end),
 
 		--[+ Up Close and Personal - С близкого расстояния +]--
-	--[+ Russian +]--
-		-- create_template("ach_red_zea_5_ext_ru", {"loc_achievement_zealot_2_not_use_ranged_attacks_name"}, {"ru"}, function(locale, value) return "С близкого расстояния" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_zea_5_ext_ru", {"loc_achievement_zealot_2_not_use_ranged_attacks_name"}, {"ru"}, function(locale, value) return "С близкого расстояния" end),
+			--[+ Traditional Chinese 零距離接觸 +]--
+			-- create_template("ach_red_zea_5_ext_tw", {"loc_achievement_zealot_2_not_use_ranged_attacks_name"}, {"zh-tw"}, function(locale, value) return "零距離接觸" end),
 
-			--[+ Complete a full Mission on Malice Threat or higher without firing a shot. -  +]-- -- При угрозе «Злоба» или выше полностью завершите задание, не сделав ни одного выстрела.
-	--[+ Russian +]--
+		--[+ Complete a full Mission on Malice Threat or higher without firing a shot. -  +]-- -- При угрозе «Злоба» или выше полностью завершите задание, не сделав ни одного выстрела.
+			--[+ Russian +]--
 			create_template("ach_red_zea_5_ext_desc_ru", {"loc_achievement_zealot_2_not_use_ranged_attacks_description"}, {"ru"}, function(locale, value) return "Завершите полностью миссию на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, не сделав ни одного выстрела." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端或更高威脅度下，在1槍不開的情況下完成1個完整任務。
+			create_template("ach_red_zea_5_ext_desc_tw", {"loc_achievement_zealot_2_not_use_ranged_attacks_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n全程參與任務且不使用任何遠程攻擊。" end),
 
 		--[+ Fight the Good Fight (1-5) - Сражайтесь достойно (1-5) +]-- руоф Сражайся достойно (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_red_zea_1_ext_ru", {"loc_missions_zealot_2_medium_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Сражайтесь достойно (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_zea_1_ext_ru", {"loc_missions_zealot_2_medium_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Сражайтесь достойно (1-5)" end),
+			--[+ Traditional Chinese 為正義而戰 +]--
+			-- create_template("ach_red_zea_1_ext_tw", {"loc_missions_zealot_2_medium_difficulty_1-5_name"}, {"zh-tw"}, function(locale, value) return "為正義而戰 (1-5)" end),
 
-			--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_zea_1_1_ext_desc_ru", {"loc_missions_zealot_2_medium_difficulty_1_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_zea2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在騷亂威脅度或更高難度下完成5個任務。
+			create_template("ach_red_zea_1_1_ext_desc_tw", {"loc_missions_zealot_2_medium_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
+			--[+ Russian +]--	
 			create_template("ach_red_zea_1_2_ext_desc_ru", {"loc_missions_zealot_2_medium_difficulty_2_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_zea2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在起義威脅度或更高難度下完成5個任務。
+			create_template("ach_red_zea_1_2_ext_desc_tw", {"loc_missions_zealot_2_medium_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_zea_1_3_ext_desc_ru", {"loc_missions_zealot_2_medium_difficulty_3_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_zea2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下完成5個任務。
+			create_template("ach_red_zea_1_3_ext_desc_tw", {"loc_missions_zealot_2_medium_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_zea_1_4_ext_desc_ru", {"loc_missions_zealot_2_medium_difficulty_4_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_zea2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下完成5個任務。
+			create_template("ach_red_zea_1_4_ext_desc_tw", {"loc_missions_zealot_2_medium_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_zea_1_5_ext_desc_ru", {"loc_missions_zealot_2_medium_difficulty_5_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_zea2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在詛咒威脅度或更高難度下完成5個任務。
+			create_template("ach_red_zea_1_5_ext_desc_tw", {"loc_missions_zealot_2_medium_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 		--[+ Find Their Weakness - Найди их слабости +]-- руоф Узнай их слабости
-	--[+ Russian +]--
-		create_template("ach_class_zea_11_ext_ru", {"loc_achievement_zealot_2_medium_1_name"}, {"ru"}, function(locale, value) return "Найди их слабости" end),
+			--[+ Russian +]--
+			create_template("ach_class_zea_11_ext_ru", {"loc_achievement_zealot_2_medium_1_name"}, {"ru"}, function(locale, value) return "Найди их слабости" end),
+			--[+ Traditional Chinese 洞悉弱點 +]--
+			create_template("ach_class_zea_11_ext_tw", {"loc_achievement_zealot_2_medium_1_name"}, {"zh-tw"}, function(locale, value) return "洞悉弱點" end),
 
-			--[+ On Malice Threat or higher, kill 75 Stunned enemies with Critical Hits. +]-- руоф При угрозе «Злоба» или выше убейте оглушенных врагов (75) критическими ударами.
-	--[+ Russian +]--
+		--[+ On Malice Threat or higher, kill 75 Stunned enemies with Critical Hits. +]-- руоф При угрозе «Злоба» или выше убейте оглушенных врагов (75) критическими ударами.
+			--[+ Russian +]--
 			create_template("ach_class_zea_11_ext_desc_ru", {"loc_achievement_zealot_2_medium_1_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." "..COLORS_KWords_ru.Staggered_rgb_ru.." врагов "..COLORS_KWords_ru.Crit_hits_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，使用致命一擊擊殺75個被眩暈的敵人
+			create_template("ach_class_zea_11_ext_desc_tw", {"loc_achievement_zealot_2_medium_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KWords_tw.Crit_k_rgb_tw.." 共 "..COLORS_Numbers.target_rgb.." 名處於 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人。" end),
 
 		--[+ Praise the God-Emperor! (1-3) +]-- руоф Хвала Богу-Императору! (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_3_ext_ru", {"loc_achievement_missions_zealot_2_objective_1-3_name"}, {"ru"}, function(locale, value) return "Хвала Богу-Императору! (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_3_ext_ru", {"loc_achievement_missions_zealot_2_objective_1-3_name"}, {"ru"}, function(locale, value) return "Хвала Богу-Императору! (1-3)" end),
+			--[+ Traditional Chinese 讚頌神皇！ +]--
+			-- create_template("ach_class_zea_3_ext_tw", {"loc_achievement_missions_zealot_2_objective_1-3_name"}, {"zh-tw"}, function(locale, value) return "讚頌神皇！ (1-3)" end),
 
-			--[+ As a Zealot, complete a Mission of each type. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа.
-	--[+ Russian +]--
+		--[+ As a Zealot, complete a Mission of each type. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа.
+			--[+ Russian +]--
 			create_template("ach_class_zea_3_1_ext_desc_ru", {"loc_achievement_missions_zealot_2_objective_1_description"}, {"ru"}, function(locale, value) return "Завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_zea2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用狂信徒，完成每種類型的任務至少一項。
+			create_template("ach_class_zea_3_1_ext_desc_tw", {"loc_achievement_missions_zealot_2_objective_1_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。" end),
 
-			--[+ As a Zealot, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ As a Zealot, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_zea_3_3_ext_desc_ru", {"loc_achievement_missions_zealot_2_objective_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_zea2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
+			create_template("ach_class_zea_3_3_ext_desc_tw", {"loc_achievement_missions_zealot_2_objective_2_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。" end),
 
-			--[+ As a Zealot, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ As a Zealot, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_zea_3_4_ext_desc_ru", {"loc_achievement_missions_zealot_2_objective_3_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_zea2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
+			create_template("ach_class_zea_3_4_ext_desc_tw", {"loc_achievement_missions_zealot_2_objective_3_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。" end),
 
 	--[+ +СПОСОБНОСТИ+ +]--
 		--[+ Blessed be Thine Aim +]-- -- руоф Благословен будь твой прицел
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"}, {"ru"}, function(locale, value) return "Благословен будь твой прицел" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_7_ext_ru", {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"}, {"ru"}, function(locale, value) return "Благословен будь твой прицел" end),
+			--[+ Traditional Chinese 聖佑汝之瞄準 +]--
+			-- create_template("ach_class_zea_7_ext_tw", {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"}, {"zh-tw"}, function(locale, value) return "聖佑汝之瞄準" end),
 
-			--[+ Kill 500 Specialist and Elites using Blades of Faith. +]-- -- руоф Убейте особых и элитных врагов (500) с помощью «Клинков веры».
-	--[+ Russian +]--
+		--[+ Kill 500 Specialist and Elites using Blades of Faith. +]-- -- руоф Убейте особых и элитных врагов (500) с помощью «Клинков веры».
+			--[+ Russian +]--
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов используя "..COLORS_KW_Penances_ru.klinvery_rgb_ru.."."..TALENTS_Enh_desc_penances_ru.ED_Blessed_be_thine_aim_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 使用信仰之刃急殺500名專家或精英。
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb.."『"..COLORS_KW_Penances_tw.klinvery_rgb.."』擊殺 "..COLORS_Numbers.target_rgb.." 名精英或特殊敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Blessed_be_thine_aim_rgb end),
 
 		--[+ Behind Enemy Lines +]-- -- руоф В тылу врага
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_8_ext_ru", {"loc_achievement_zealot_aura_backstab_kills_while_alone_name"}, {"ru"}, function(locale, value) return "В тылу врага" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_8_ext_ru", {"loc_achievement_zealot_aura_backstab_kills_while_alone_name"}, {"ru"}, function(locale, value) return "В тылу врага" end),
+			--[+ Traditional Chinese 深入敵後 +]--
+			-- create_template("ach_class_zea_8_ext_tw", {"loc_achievement_zealot_aura_backstab_kills_while_alone_name"}, {"zh-tw"}, function(locale, value) return "深入敵後" end),
 
-			--[+ Kill 200 Ranged enemies with backstab, while not in Coherency while under the effect of the Loner ability. +]-- -- руоф Убейте врагов дальнего боя (200) ударом в спину, не находясь под действием «Сплоченности».
-	--[+ Russian +]--
+		--[+ Kill 200 Ranged enemies with backstab, while not in Coherency while under the effect of the Loner ability. +]-- -- руоф Убейте врагов дальнего боя (200) ударом в спину, не находясь под действием «Сплоченности».
+			--[+ Russian +]--
 			create_template("ach_class_zea_8_ext_desc_ru", {"loc_achievement_zealot_aura_backstab_kills_while_alone_description"}, {"ru"}, function(locale, value) return "Убейте ударом в спину "..COLORS_Numbers.target_rgb.." врагов с дальнобойным оружием под эффектом ауры "..COLORS_KW_Penances_ru.loner_rgb_ru..", пока вы не находитесь под действием "..COLORS_KWords_ru.Coherency_rgb_ru.." с другими союзниками." end),
+			--[+ Traditional Chinese +]--
+			-- 在沒有協同中沒有的情況下，使用背刺急殺200名遠程敵人。
+			create_template("ach_class_zea_8_ext_desc_tw", {"loc_achievement_zealot_aura_backstab_kills_while_alone_description"}, {"zh-tw"}, function(locale, value) return "處於 "..COLORS_KW_Penances_tw.Aura_p_rgb.."『"..COLORS_KWords_tw.Coherency_rgb_tw.."』狀態且未受到『"..COLORS_KW_Penances_tw.loner_rgb.."』光環時，\n背刺擊殺 "..COLORS_Numbers.target_rgb.." 名遠程武器敵人。" end),
 
 		--[+ Inspiring Oratory - Вдохновляющая речь +]--
-	--[+ Russian +]--
-		-- create_template("ach_class_zea_8_ext_ru", {"loc_achievement_zealot_team_toughness_restored_with_chorus_name"}, {"ru"}, function(locale, value) return "Вдохновляющая речь" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_zea_8_ext_ru", {"loc_achievement_zealot_team_toughness_restored_with_chorus_name"}, {"ru"}, function(locale, value) return "Вдохновляющая речь" end),
+			--[+ Traditional Chinese 激勵演說 +]--
+			-- create_template("ach_class_zea_8_ext_tw", {"loc_achievement_zealot_team_toughness_restored_with_chorus_name"}, {"zh-tw"}, function(locale, value) return "激勵演說" end),
 
-			--[+ Restore 7500 toughness to other players using Chorus of Spir_I_tual Fortitude. +]-- -- руоф Восстановите другим игрокам 7500 стойкости с помощью «Хор духовной стойкости».
-	--[+ Russian +]--
+		--[+ Restore 7500 toughness to other players using Chorus of Spir_I_tual Fortitude. +]-- -- руоф Восстановите другим игрокам 7500 стойкости с помощью «Хор духовной стойкости».
+			--[+ Russian +]--
 			create_template("ach_class_zea_8_ext_desc_ru", {"loc_achievement_zealot_team_toughness_restored_with_chorus_description"}, {"ru"}, function(locale, value) return "Восстановите другим игрокам "..COLORS_Numbers.target_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." с помощью способности "..COLORS_KW_Penances_ru.chorusosf_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用不區靈魂聖歌恢復其他玩家7500點韌性
+			create_template("ach_class_zea_8_ext_desc_tw", {"loc_achievement_zealot_team_toughness_restored_with_chorus_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Ability_p_rgb.."『"..COLORS_KW_Penances_tw.chorusosf_rgb.."』，\n恢復隊友共計 "..COLORS_Numbers.target_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。" end),
 
 		--[+ Trust in the Emperor +]-- руоф Верьте в Императора
-	--[+ Russian +]--
-		create_template("ach_class_zea_8_ext_ru", {"loc_achievement_zealot_aura_corruption_healed_name"}, {"ru"}, function(locale, value) return "Верь в Императора" end),
+			--[+ Russian +]--
+			create_template("ach_class_zea_8_ext_ru", {"loc_achievement_zealot_aura_corruption_healed_name"}, {"ru"}, function(locale, value) return "Верь в Императора" end),
+			--[+ Traditional Chinese 相信帝皇 +]--
+			create_template("ach_class_zea_8_ext_tw", {"loc_achievement_zealot_aura_corruption_healed_name"}, {"zh-tw"}, function(locale, value) return "相信帝皇" end),
 
-			--[+ Heal 5000 Corruption Damage to allies in coherency under the effect of Beacon of Purity. +]-- -- руоф Исцелите урон скверной союзникам под воздействием «Сплоченности» (5000), находясь под действием «Маяка непорочности».
-	--[+ Russian +]--
+		--[+ Heal 5000 Corruption Damage to allies in coherency under the effect of Beacon of Purity. +]-- -- руоф Исцелите урон скверной союзникам под воздействием «Сплоченности» (5000), находясь под действием «Маяка непорочности».
+			--[+ Russian +]--
 			create_template("ach_class_zea_8_ext_desc_ru", {"loc_achievement_zealot_aura_corruption_healed_description"}, {"ru"}, function(locale, value) return "Исцелите "..COLORS_Numbers.target_rgb.." урона от "..COLORS_KWords_ru.Corruption_i_rgb_ru.." союзникам под действием "..COLORS_KWords_ru.Coherency_rgb_ru.." с помощью эффекта ауры "..COLORS_KW_Penances_ru.beaconop_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用純潔信標的效果治療協同中盟友5000點腐敗傷害。
+			create_template("ach_class_zea_8_ext_desc_tw", {"loc_achievement_zealot_aura_corruption_healed_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Aura_p_rgb.."『"..COLORS_KW_Penances_tw.beaconop_rgb.."』，並處於『"..COLORS_KWords_tw.Coherency_rgb_tw.."』狀態下，\n幫隊友恢復 "..COLORS_Numbers.target_rgb.." 點『"..COLORS_KWords_tw.Corruption_i_rgb_tw.."』。" end),
 
 		--[+ Stay Strong +]-- руоф Будь сильным
-	--[+ Russian +]--
-		create_template("ach_class_zea_8_ext_ru", {"loc_achievement_zealot_2_easy_2_name"}, {"ru"}, function(locale, value) return "Держись" end),
+			--[+ Russian +]--
+			create_template("ach_class_zea_8_ext_ru", {"loc_achievement_zealot_2_easy_2_name"}, {"ru"}, function(locale, value) return "Держись" end),
+			--[+ Traditional Chinese 保持堅強 +]--
+			create_template("ach_class_zea_8_ext_tw", {"loc_achievement_zealot_2_easy_2_name"}, {"zh-tw"}, function(locale, value) return "保持堅強" end),
 
-			--[+ Replenish 7500 Toughness using Chastise the Wicked. +]-- -- руоф Восстановите стойкость «Карой для нечестивых» 7500 р.
-	--[+ Russian +]--
+		--[+ Replenish 7500 Toughness using Chastise the Wicked. +]-- -- руоф Восстановите стойкость «Карой для нечестивых» 7500 р.
+			--[+ Russian +]--
 			create_template("ach_class_zea_8_ext_desc_ru", {"loc_achievement_zealot_2_easy_2_description"}, {"ru"}, function(locale, value) return "Восстановите "..COLORS_Numbers.target_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru..", используя способности "..COLORS_KW_Penances_ru.chastise_wicked_rgb_ru.." или "..COLORS_KW_Penances_ru.fury_faithful_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用懲戒邪惡後恢復7500點韌性。
+			create_template("ach_class_zea_8_	ext_desc_tw", {"loc_achievement_zealot_2_easy_2_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Ability_p_rgb.."『"..COLORS_KW_Penances_tw.chastise_wicked_rgb.."』或『"..COLORS_KW_Penances_tw.fury_faithful_rgb.."』恢復 "..COLORS_Numbers.target_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。" end),
 
 		--[+ There is Nothing But the Abyss... +]-- руоф Есть только бездна...
-	--[+ Russian +]--
-		-- create_template("ach_red_zea_6_ext_ru", {"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"ru"}, function(locale, value) return "Есть только бездна..." end),
+			--[+ Russian +]--
+			-- create_template("ach_red_zea_6_ext_ru", {"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"ru"}, function(locale, value) return "Есть только бездна..." end),
 
 			--[+ On Heresy threat or higher, heal to 25% Health with life gained solely from the Holy Revenant Talent. +]-- -- руоф При угрозе «Ересь» или выше восстановите 25% здоровья исключительно за счет таланта «Святой призрак».
 	--[+ Russian +]--
