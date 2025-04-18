@@ -422,7 +422,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 3-2 - Providence subtilisée +]--
 	local ED_PSY_Keystone_3_2_rgb_fr = iu_actit(table.concat({
 		ppp___ppp,
-		"- Il y a 2% de chances que le Talent se déclenche sur le même kill en même temps que \"Méditation de guerre\" en supprimant 25% de Péril total.",
+		"- S'additionne à \"Par la fissure de l'os\" et  \"Quiétude par le massacre\". Cet effet peu se déclencher en même temps que \"Méditation de guerre\" atténuant 15% de péril au total.",
 	}, "\n"), enhdesc_col)
 
 --[+ Keystone 3-3 - Lingering Influence +]--
@@ -502,7 +502,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Supprime 10 % de Péril de la quantité de Péril actuelle.",
 		"- A 10 % de chances de se déclencher lorsque des ennemis meurent des attaques de mêlée et à distance du Psyker, des capacités Infligeant des dégâts, des DoT et lorsqu'ils sont poussés par-dessus les rebords dans les zones de mort de la carte par le Psyker.",
 		"- Se déclenche en plus de \"Par la fissure de l'os\" et \"Quiétude par le massacre\".",
-		"- Il y a 2 % de chances que le Talent se déclenche sur le même kill en même temps que \"Providence subtilisée\" en supprimant 25 % de Péril total.",
+		"- Si le Talent se déclenche sur la même élimination en même temps que \"Providence subtilisée\" cela atténue 15 % de Péril total.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 8 - Wildfire +]--
@@ -1339,7 +1339,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Pousse des cibles supplémentaires (si possible) lorsqu'elles se trouvent dans l'angle de poussée effectif.",
 		"- La Poussée ne peut pas Étourdir : Broyeur, Mutants, Furax, Monstruosités et Capitaines/Jumeaux.",
 		"- Le coup de bouclier de Rempart, bien qu'il n'inflige aucun dégât, déclenche le Talent.",
-		"- Ne se déclenche pas lorsque le Fanatiques est immobilisé ou abattu.",
+		"- Ne se déclenche pas lorsque le Fanatique est immobilisé ou abattu.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 33 - Faith's Fortitude +]--
