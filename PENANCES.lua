@@ -276,7 +276,7 @@ local localization_templates = {
 			create_template("ach_class_vet_7_ext_desc_ru", {"loc_achievement_veteran_2_easy_1_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов в "..COLORS_KWords_ru.Weakspot_rgb_ru.." из дальнобойного оружия."..TALENTS_Enh_desc_penances_ru.ED_Headshot_rgb_ru end),
 			--[+ Traditional Chinese +]--
 			-- 使用遠端弱點攻擊擊殺350個敵人
-			create_template("ach_class_vet_7_ext_desc_tw", {"loc_achievement_veteran_2_easy_1_description"}, {"zh-tw"}, function(locale, value) return "使用遠程武器 "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." "..COLORS_Numbers.target_rgb.." 名敵人。"..TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb end),
+			create_template("ach_class_vet_7_ext_desc_tw", {"loc_achievement_veteran_2_easy_1_description"}, {"zh-tw"}, function(locale, value) return "使用遠程武器 "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." "..COLORS_Numbers.target_rgb.." 名敵人。"..TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw end),
 
 		--[+ On Target (1) +]-- -- руоф Держи прицел
 			--[+ Russian +]--
@@ -472,7 +472,7 @@ local localization_templates = {
 			--[+ Traditional Chinese +]--
 			-- 在惡毒或更高威脅度下，
 			-- 在不承受任何近戰傷害的情況下完成1次完整的任務。
-			create_template("ach_red_vet_5_ext_desc_tw", {"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，\n完成一次任務且不受到近戰傷害。"..TALENTS_Enh_desc_penances_tw.ED_No_dmg_taken_corrupt_rgb end),
+			create_template("ach_red_vet_5_ext_desc_tw", {"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，\n完成一次任務且不受到近戰傷害。"..TALENTS_Enh_desc_penances_tw.ED_No_dmg_taken_corrupt_rgb_tw end),
 
 		--[+ One In the Chamber +]-- -- руоф Последний патрон
 			--[+ Russian +]--
@@ -502,7 +502,7 @@ local localization_templates = {
 			--[+ Traditional Chinese +]--
 			-- 以異教徒或以上威脅度完成任務，
 			-- 用光所有彈藥，並且保持90的精準度。
-			create_template("ach_red_vet_7_ext_desc_tw", {"loc_achievement_veteran_2_no_missed_shots_empty_ammo_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，\n命中率在 "..COLORS_Numbers.target_rgb..COLORS_Numbers.pc_rgb.." 以上，且撤離時無任何備彈"..TALENTS_Enh_desc_penances_tw.ED_No_missed_shots_rgb end),
+			create_template("ach_red_vet_7_ext_desc_tw", {"loc_achievement_veteran_2_no_missed_shots_empty_ammo_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，\n命中率在 "..COLORS_Numbers.target_rgb..COLORS_Numbers.pc_rgb.." 以上，且撤離時無任何備彈"..TALENTS_Enh_desc_penances_tw.ED_No_missed_shots_rgb_tw end),
 
 		--[+ Fight the Good Fight (1-5) +]--
 			--[+ Russian +]--
@@ -578,7 +578,7 @@ local localization_templates = {
 			--[+ Traditional Chinese +]--
 			-- 在武器專家效果啟動時，
 			-- 使用暴擊弱點命中擊殺250名專家或精英
-			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.KeyStone_i_p_rgb_tw.."『"..COLORS_KW_Penances_tw.weapspec_rgb_tw.."』時，\n使用 "..COLORS_KWords_tw.Crit_hits_rgb_tw.." 加上 "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." "..COLORS_Numbers.target_rgb.." 名菁英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb end),
+			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.KeyStone_i_p_rgb_tw.."『"..COLORS_KW_Penances_tw.weapspec_rgb_tw.."』時，\n使用 "..COLORS_KWords_tw.Crit_hits_rgb_tw.." 加上 "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." "..COLORS_Numbers.target_rgb.." 名菁英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw end),
 
 		--[+ Stay Alert +]-- -- руоф Будь начеку
 			--[+ Russian +]--
@@ -608,7 +608,7 @@ local localization_templates = {
 			--[+ Traditional Chinese +]--
 			-- 在異端威脅度或更高難度下，
 			-- 使火力齊射的啟動時間超過20秒，需要達成5次。
-			create_template("ach_class_vet_13_ext_desc_tw", {"loc_achievement_veteran_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n啟動 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』持續 "..COLORS_Numbers.time_rgb.." 秒以上。\n完成此苦修需達成 "..COLORS_Numbers.target_rgb.." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb end),			
+			create_template("ach_class_vet_13_ext_desc_tw", {"loc_achievement_veteran_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n啟動 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』持續 "..COLORS_Numbers.time_rgb.." 秒以上。\n完成此苦修需達成 "..COLORS_Numbers.target_rgb.." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb_tw end),			
 
 		--[+ Stand up and Fight! +]-- -- руоф Встань и сражайся!
 			--[+ Russian +]--
@@ -678,7 +678,7 @@ local localization_templates = {
 			create_template("ach_red_vet_3_ext_desc_ru", {"loc_achievement_veteran_2_unbounced_grenade_kills_description"}, {"ru"}, function(locale, value) return "Поразите взрывом "..COLORS_KW_Penances_ru.frag_gr_rgb_ru.." "..COLORS_Numbers.target_rgb.." врагов так, чтобы граната ни разу не отскочила от земли."..TALENTS_Enh_desc_penances_ru.ED_Long_bomb_rgb_ru end),
 			--[+ Traditional Chinese +]--
 			-- 使用碎片手雷殺死5名敵人，且手雷沒有落地彈起。
-			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_veteran_2_unbounced_grenade_kills_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.frag_gr_rgb_tw.."』擊殺 "..COLORS_Numbers.target_rgb.." 名敵人，且手榴彈在引爆前不得碰觸地面。" .. TALENTS_Enh_desc_penances_tw.ED_Long_bomb_rgb end),
+			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_veteran_2_unbounced_grenade_kills_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.frag_gr_rgb_tw.."』擊殺 "..COLORS_Numbers.target_rgb.." 名敵人，且手榴彈在引爆前不得碰觸地面。" .. TALENTS_Enh_desc_penances_tw.ED_Long_bomb_rgb_tw end),
 
 
 		--[+ Smoke Screen +]--
@@ -707,7 +707,7 @@ local localization_templates = {
 			--[+ Traditional Chinese +]--
 			-- 以異教徒或以上威脅度，僅用1次火力齊射，
 			-- 以武器的次要動作擊中5名高亮的敵人的弱點，將其急殺。
-			create_template("ach_red_vet_6_ext_desc_tw", {"loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n在單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』期間，\n使用瞄準射擊 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." ，擊殺 "..COLORS_Numbers.target_rgb.." 名被標記的敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb end),
+			create_template("ach_red_vet_6_ext_desc_tw", {"loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n在單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』期間，\n使用瞄準射擊 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." ，擊殺 "..COLORS_Numbers.target_rgb.." 名被標記的敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw end),
 
 		--[+ Unseen Predator +]-- руоф Невидимый хищник
 			--[+ Russian +]--
@@ -720,7 +720,7 @@ local localization_templates = {
 			create_template("ach_red_vet_3_ext_desc_ru", {"loc_achievement_veteran_infiltrate_supress_description"}, {"ru"}, function(locale, value) return "Подавите врагов "..COLORS_Numbers.target_rgb.." с помощью способности "..COLORS_KW_Penances_ru.infiltr_rgb_ru.."."..TALENTS_Enh_desc_penances_ru.ED_Unseen_predator_rgb_ru end),
 			--[+ Traditional Chinese +]--
 			-- 使用滲透既能壓制750名敵人。
-			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_veteran_infiltrate_supress_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.infiltr_rgb_tw.."』壓制 "..COLORS_Numbers.target_rgb.." 名敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Unseen_predator_rgb end),
+			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_veteran_infiltrate_supress_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.infiltr_rgb_tw.."』壓制 "..COLORS_Numbers.target_rgb.." 名敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Unseen_predator_rgb_tw end),
 
 		--[+ Marked For Death - Отмеченные на смерть +]-- -- руоф Отмечены смертью
 			--[+ Russian +]--
@@ -733,7 +733,7 @@ local localization_templates = {
 			create_template("ach_red_vet_2_ext_desc_ru", {"loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_description"}, {"ru"}, function(locale, value) return "За одно использование способностей "..COLORS_KW_Penances_ru.volley_fire_rgb_ru.." или "..COLORS_KW_Penances_ru.executioner_stance_rgb_ru.." поразите "..COLORS_Numbers.target_rgb.." врагов прицельными выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." ни разу не промахнувшись. {#color(177, 144, 0)}+++ - Стреляйте врагам в голову. +++{#reset()}"..TALENTS_Enh_desc_penances_ru.ED_Headshot_rgb_ru end),
 			--[+ Traditional Chinese +]--
 			-- 在單次火力騎射期間使用武器的次要動作命中敵人的弱點4次，且不打偏1發子彈。
-			create_template("ach_red_vet_2_ext_desc_tw", {"loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_description"}, {"zh-tw"}, function(locale, value) return "於單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』期間，\n使用瞄準射擊連續命中 "..COLORS_Numbers.target_rgb.." 名敵人的 "..COLORS_KWords_tw.Weakspot_rgb_tw.."，且不得中斷。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb end),
+			create_template("ach_red_vet_2_ext_desc_tw", {"loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_description"}, {"zh-tw"}, function(locale, value) return "於單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』期間，\n使用瞄準射擊連續命中 "..COLORS_Numbers.target_rgb.." 名敵人的 "..COLORS_KWords_tw.Weakspot_rgb_tw.."，且不得中斷。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw end),
 
 		--[+ Resupply Allies +]-- -- руоф Поделись с ближним
 			--[+ Russian +]--
@@ -1006,7 +1006,7 @@ local localization_templates = {
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов используя "..COLORS_KW_Penances_ru.klinvery_rgb_ru.."."..TALENTS_Enh_desc_penances_ru.ED_Blessed_be_thine_aim_rgb_ru end),
 			--[+ Traditional Chinese +]--
 			-- 使用信仰之刃急殺500名專家或精英。
-			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.klinvery_rgb_tw.."』擊殺 "..COLORS_Numbers.target_rgb.." 名精英或特殊敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Blessed_be_thine_aim_rgb end),
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.klinvery_rgb_tw.."』擊殺 "..COLORS_Numbers.target_rgb.." 名精英或特殊敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Blessed_be_thine_aim_rgb_tw end),
 
 		--[+ Behind Enemy Lines +]-- -- руоф В тылу врага
 			--[+ Russian +]--
