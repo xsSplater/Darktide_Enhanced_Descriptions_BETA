@@ -98,7 +98,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Damage_melee_rgb_tw = iu_actit("近戰傷害", dmg_col)
 	local Damage_ranged_rgb_tw = iu_actit("遠程傷害", dmg_col)
 	local Damagewrp_rgb_tw = iu_actit("亞空間傷害", dmg_col)
-	local Damagewrp_a_rgb_tw = iu_actit("亞空間傷害", dmg_col)
+	local Damagewrp_a_rgb_tw = iu_actit("亞空間攻擊", dmg_col)
 	--[++弱點(Weak Spot)++]--
 	local wksp_col = Color[mod:get("weakspot_text_colour")](255, true)
 	local Weakspot_rgb_tw = iu_actit("弱點", wksp_col)

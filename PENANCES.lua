@@ -1265,141 +1265,228 @@ local localization_templates = {
 			create_template("ach_class_psy_4_5_ext_desc_tw", {"loc_missions_psyker_2_easy_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_damnation_threat_tw end),
 
 		--[+ Kinetic Killer (1-3) +]-- руоф Кинетический убийца (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_14_ext_ru", {"loc_achievement_group_class_psyker_2_1-3_name"}, {"ru"}, function(locale, value) return "Кинетический убийца (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_14_ext_ru", {"loc_achievement_group_class_psyker_2_1-3_name"}, {"ru"}, function(locale, value) return "Кинетический убийца (1-3)" end),
+			--[+ Traditional Chinese 靈能殺手 (1-3) +]--
+			-- create_template("ach_class_psy_14_ext_tw", {"loc_achievement_group_class_psyker_2_1-3_name"}, {"zh-tw"}, function(locale, value) return "靈能殺手 (1-3)" end),
 
-			--[+ Complete the following Penances as the Psyker. +]-- руоф Выполните следующие искупления за Псайкера.
-	--[+ Russian +]--
+		--[+ Complete the following Penances as the Psyker. +]-- руоф Выполните следующие искупления за Псайкера.
+			--[+ Russian +]--
 			create_template("ach_red_psy_8_ext_desc_ru", {"loc_group_class_challenges_psyker_2_x_description", "loc_achievement_group_class_psyker_2_description", "loc_group_psyker_2_rank_4_difficulty_3_description", "loc_group_psyker_2_rank_5_difficulty_4_description", "loc_group_psyker_2_rank_1_difficulty_1_description","loc_group_psyker_2_rank_2_difficulty_2_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления "..COLORS_KWords_ru.cls_psy2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用靈能者完成以下苦修
+			create_template("ach_red_psy_8_ext_desc_tw", {"loc_group_psyker_2_rank_4_difficulty_3_description", "loc_group_psyker_2_rank_5_difficulty_4_description", "loc_group_psyker_2_rank_1_difficulty_1_description", "loc_group_psyker_2_rank_2_difficulty_2_description", "loc_achievement_group_class_psyker_2_description", "loc_group_class_challenges_psyker_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成以下苦修。" end),
 
 		--[+ Unleash the Warp - Высвободи варп +]-- руоф Извергни варп
-	--[+ Russian +]--
-		create_template("ach_class_psy_12_ext_ru", {"loc_achievement_psyker_2_medium_2_name"}, {"ru"}, function(locale, value) return "Высвободи варп" end),
+			--[+ Russian +]--
+			create_template("ach_class_psy_12_ext_ru", {"loc_achievement_psyker_2_medium_2_name"}, {"ru"}, function(locale, value) return "Высвободи варп" end),
+			--[+ Traditional Chinese 亞空間釋放 +]--
+			create_template("ach_class_psy_12_ext_tw", {"loc_achievement_psyker_2_medium_2_name"}, {"zh-tw"}, function(locale, value) return "亞空間釋放" end),
 
-			--[+ On Malice Threat or higher, kill 2500 enemies with Warp attacks. +]-- руоф При угрозе «Злоба» или выше убейте врагов (2500) варп-атаками.
-	--[+ Russian +]--
+		--[+ On Malice Threat or higher, kill 2500 enemies with Warp attacks. +]-- руоф При угрозе «Злоба» или выше убейте врагов (2500) варп-атаками.
+			--[+ Russian +]--
 			create_template("ach_class_psy_12_ext_desc_ru", {"loc_achievement_psyker_2_medium_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." врагов варп-атаками."..TALENTS_Enh_desc_penances_ru.ED_Unleash_warp_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，使用亞空間攻擊擊殺2500個敵人。
+			create_template("ach_class_psy_12_ext_desc_tw", {"loc_achievement_psyker_2_medium_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KWords_tw.Damagewrp_a_rgb_tw.." 擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。"..TALENTS_Enh_desc_penances_tw.ED_Unleash_warp_rgb_tw end),
 
 		--[+ Keep Your Distance +]-- руоф Не подходи близко
-	--[+ Russian +]--
-		create_template("ach_class_psy_13_ext_ru", {"loc_achievement_psyker_2_hard_2_name"}, {"ru"}, function(locale, value) return "Держи дистанцию" end),
+			--[+ Russian +]--
+			create_template("ach_class_psy_13_ext_ru", {"loc_achievement_psyker_2_hard_2_name"}, {"ru"}, function(locale, value) return "Держи дистанцию" end),
+			--[+ Traditional Chinese 保持距離 +]--
+			-- create_template("ach_class_psy_13_ext_tw", {"loc_achievement_psyker_2_hard_2_name"}, {"zh-tw"}, function(locale, value) return "保持距離" end),
 
-			--[+ On Heresy Threat or higher, complete 3 full Missions without being hit in melee by an Elite enemy. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы элитный враг ни разу не попал по вам в ближнем бою.
-	--[+ Russian +]--
+		--[+ On Heresy Threat or higher, complete 3 full Missions without being hit in melee by an Elite enemy. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы элитный враг ни разу не попал по вам в ближнем бою.
+			--[+ Russian +]--
 			create_template("ach_class_psy_13_ext_desc_ru", {"loc_achievement_psyker_2_hard_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, завершите полностью "..COLORS_Numbers.target_rgb.." миссии без получения ударов в ближнем бою от элитных врагов." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，不被精英敵人近戰命中的情況下完成3個任務。
+			create_template("ach_class_psy_13_ext_desc_tw", {"loc_achievement_psyker_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n完成 "..COLORS_Numbers.target_rgb.." 場任務，且未曾被菁英敵人以近戰攻擊命中。" end),
 
 		--[+ Cliffhanger +]-- руоф Не подходи близко
-	--[+ Russian +]--
-		create_template("ach_red_psy_3_ext_ru", {"loc_achievement_psyker_2_edge_kills_last_2_sec_name"}, {"ru"}, function(locale, value) return "Неожиданный поворот" end),
+			--[+ Russian +]--
+			create_template("ach_red_psy_3_ext_ru", {"loc_achievement_psyker_2_edge_kills_last_2_sec_name"}, {"ru"}, function(locale, value) return "Неожиданный поворот" end),
+			--[+ Traditional Chinese 懸崖邊緣 +]--
+			-- create_template("ach_red_psy_3_ext_tw", {"loc_achievement_psyker_2_edge_kills_last_2_sec_name"}, {"zh-tw"}, function(locale, value) return "懸崖邊緣" end),
 
-			--[+ Kill 7 enemies within 2s by knocking them off a ledge. +]-- руоф Убейте врагов (7) за 2 с., сбросив их с уступа.
-	--[+ Russian +]--
+		--[+ Kill 7 enemies within 2s by knocking them off a ledge. +]-- руоф Убейте врагов (7) за 2 с., сбросив их с уступа.
+			--[+ Russian +]--
 			create_template("ach_red_psy_3_ext_desc_ru", {"loc_achievement_psyker_2_edge_kills_last_2_sec_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов в течение "..COLORS_Numbers.time_wind_rgb.." секунд, сбросив их с уступа."..TALENTS_Enh_desc_penances_ru.ED_Cliffhanger_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在2秒內透過將敵人從邊緣擊落擊殺7名敵人。
+			create_template("ach_red_psy_3_ext_desc_tw", {"loc_achievement_psyker_2_edge_kills_last_2_sec_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.time_wind_rgb.." 秒內，將 "..COLORS_Numbers.target_rgb.." 名敵人推落邊緣擊殺。" .. TALENTS_Enh_desc_penances_tw.ED_Cliffhanger_rgb_tw end),
 
 		--[+ Lifeleech (1-5) +]-- руоф Похититель жизни (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_2_ext_ru", {"loc_achievement_missions_psyker_2_1-5_name"}, {"ru"}, function(locale, value) return "Похититель жизни (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_2_ext_ru", {"loc_achievement_missions_psyker_2_1-5_name"}, {"ru"}, function(locale, value) return "Похититель жизни (1-5)" end),
+			--[+ Traditional Chinese 生命榨取 +]--
+			-- create_template("ach_class_psy_2_ext_tw", {"loc_achievement_missions_psyker_2_1-5_name"}, {"zh-tw"}, function(locale, value) return "生命榨取 (1-5)" end),
 
-			--[+ Complete 100 Missions as a Psyker. +]-- руоф Выполнить Псайкером задания: 100.
-	--[+ Russian +]--
+		--[+ Complete 100 Missions as a Psyker. +]-- руоф Выполнить Псайкером задания: 100.
+			--[+ Russian +]--
 			create_template("ach_class_psy_2_ext_desc_ru", {"loc_achievement_missions_psyker_2_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий "..COLORS_KWords_ru.cls_psy2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用靈能者完成xx項任務。
+			create_template("ach_class_psy_2_ext_desc_tw", {"loc_achievement_missions_psyker_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 		--[+ Touch the Void (1-3) +]-- руоф Прикоснись к пустоте (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_3_ext_ru", {"loc_achievement_missions_psyker_2_objective_1-3_name"}, {"ru"}, function(locale, value) return "Коснись Пустоты (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_3_ext_ru", {"loc_achievement_missions_psyker_2_objective_1-3_name"}, {"ru"}, function(locale, value) return "Коснись Пустоты (1-3)" end),
+			--[+ Traditional Chinese 觸碰虛空 +]--
+			-- create_template("ach_class_psy_3_ext_tw", {"loc_achievement_missions_psyker_2_objective_1-3_name"}, {"zh-tw"}, function(locale, value) return "觸碰虛空 (1-3)" end),
 
-			--[+ As a Psyker, complete a Mission of each type. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа.
-	--[+ Russian +]--
+		--[+ As a Psyker, complete a Mission of each type. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа.
+			--[+ Russian +]--
 			create_template("ach_class_psy_3_1_ext_desc_ru", {"loc_achievement_missions_psyker_2_objective_1_description"}, {"ru"}, function(locale, value) return "Завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_psy2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用靈能者，完成每種類型的任務至少一項。
+			create_template("ach_class_psy_3_1_ext_desc_tw", {"loc_achievement_missions_psyker_2_objective_1_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。" end),
 
-			--[+ As a Psyker, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ As a Psyker, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_psy_3_2_ext_desc_ru", {"loc_achievement_missions_psyker_2_objective_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_psy2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，使用靈能者完成每種類型的任務至少一項。
+			create_template("ach_class_psy_3_2_ext_desc_tw", {"loc_achievement_missions_psyker_2_objective_2_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。" end),
 
-			--[+ As a Psyker, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ As a Psyker, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_psy_3_3_ext_desc_ru", {"loc_achievement_missions_psyker_2_objective_3_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_psy2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，使用靈能者完成每種類型的任務至少一項。
+			create_template("ach_class_psy_3_3_ext_desc_tw", {"loc_achievement_missions_psyker_2_objective_3_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。" end),
 
 		--[+ Mind over Matter (1-6) +]-- руоф Разум превыше материи (1-6)
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_1_ext_ru", {"loc_achievement_rank_psyker_2_1-6_name"}, {"ru"}, function(locale, value) return "Разум превыше материи (1-6)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_1_ext_ru", {"loc_achievement_rank_psyker_2_1-6_name"}, {"ru"}, function(locale, value) return "Разум превыше материи (1-6)" end),
+			--[+ Traditional Chinese 心勝於物 (1-6) +]--
 
-			--[+ Reach Trust Level 30 as a Psyker. +]-- руоф Заслужить уровень доверия 30, играя за Псайкера.
-	--[+ Russian +]--
+		--[+ Reach Trust Level 30 as a Psyker. +]-- руоф Заслужить уровень доверия 30, играя за Псайкера.
+			--[+ Russian +]--
 			create_template("ach_class_psy_1_ext_desc_ru", {"loc_achievement_rank_psyker_2_x_description"}, {"ru"}, function(locale, value) return "Достигните "..COLORS_Numbers.target_rgb.." уровня доверия "..COLORS_KWords_ru.cls_psy2_rgb_ru.."." end),
+			-- [+ Traditional Chinese +]--
+			-- 使用靈能者達到信任等級xx
+			create_template("ach_class_psy_1_ext_desc_tw", {"loc_achievement_rank_psyker_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。" end),
 
 		--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_red_psy_1_ext_ru", {"loc_missions_psyker_2_medium_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Сражайтесь достойно (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_psy_1_ext_ru", {"loc_missions_psyker_2_medium_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Сражайтесь достойно (1-5)" end),
+			--[+ Traditional Chinese 為了正義而戰 +]--
+			-- create_template("ach_red_psy_1_ext_tw", {"loc_missions_psyker_2_medium_difficulty_1-5_name"}, {"zh-tw"}, function(locale, value) return "戰鬥的好戰鬥 (1-5)" end),
 
-			--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_psy_1_1_ext_desc_ru", {"loc_missions_psyker_2_medium_difficulty_1_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_psy2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在騷亂威脅度或更高難度下完成5個任務。
+			create_template("ach_red_psy_1_1_ext_desc_tw", {"loc_missions_psyker_2_medium_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_psy_1_2_ext_desc_ru", {"loc_missions_psyker_2_medium_difficulty_2_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_psy2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在起義威脅度或更高難度下完成5個任務。
+			create_template("ach_red_psy_1_2_ext_desc_tw", {"loc_missions_psyker_2_medium_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_psy_1_3_ext_desc_ru", {"loc_missions_psyker_2_medium_difficulty_3_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_psy2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下完成5個任務。
+			create_template("ach_red_psy_1_3_ext_desc_tw", {"loc_missions_psyker_2_medium_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_psy_1_4_ext_desc_ru", {"loc_missions_psyker_2_medium_difficulty_4_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_psy2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下完成5個任務。
+			create_template("ach_red_psy_1_4_ext_desc_tw", {"loc_missions_psyker_2_medium_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_psy_1_5_ext_desc_ru", {"loc_missions_psyker_2_medium_difficulty_5_description"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_psy2_rgb_ru.." завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在詛咒威脅度或更高難度下完成5個任務。
+			create_template("ach_red_psy_1_5_ext_desc_tw", {"loc_missions_psyker_2_medium_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 	--[+ +СПОСОБНОСТИ+ +]--
 		--[+ Charged with Purpose +]-- руоф Заряженные целью
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_name"}, {"ru"}, function(locale, value) return "Заряженные целью" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_name"}, {"ru"}, function(locale, value) return "Заряженные целью" end),
+			--[+ Traditional Chinese 壓倒性的存在 +]--
+			-- create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_name"}, {"zh-tw"}, function(locale, value) return "壓倒性的存在" end),
 
-			--[+ Kill 2500 enemies stunned by your Smite. Kills made by your Smite. Kills made by your team members also count. +]-- руоф Убейте врагов (2500), оглушенных вашим «Сокрушением». Убийства, совершенные членами команды, тоже учитываются.
-	--[+ Russian +]--
+		--[+ Kill 2500 enemies stunned by your Smite. Kills made by your Smite. Kills made by your team members also count. +]-- руоф Убейте врагов (2500), оглушенных вашим «Сокрушением». Убийства, совершенные членами команды, тоже учитываются.
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов, оглушённых вашим блицом "..COLORS_KW_Penances_ru.smite_rgb_ru..". Убийства, совершённые членами вашей команды, также учитываются." end),
+			--[+ Traditional Chinese +]--
+			-- 擊殺2500名受你懲戒眩暈的敵人。由小隊成員造成的擊殺也算。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名被 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.smite_rgb_tw.."』"..COLORS_KWords_tw.Staggers_rgb_tw.." 的敵人。\n由隊友擊殺的也會計算。" end),
 
 		--[+ Defy Fate +]-- руоф Брось вызов судьбе
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_time_at_max_unnatural_name"}, {"ru"}, function(locale, value) return "Брось вызов судьбе" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_time_at_max_unnatural_name"}, {"ru"}, function(locale, value) return "Брось вызов судьбе" end),
+			--[+ Traditional Chinese 抵抗命運 +]--
+			-- create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_time_at_max_unnatural_name"}, {"zh-tw"}, function(locale, value) return "抵抗命運" end),
 
-			--[+ Maintain 15 stacks or more of Disrupt Destiny for a total of 1800 seconds. +]-- руоф Удерживайте не менее 15 зарядов «Разрушенной судьбы» на протяжении 1800 с.
-	--[+ Russian +]--
+		--[+ Maintain 15 stacks or more of Disrupt Destiny for a total of 1800 seconds. +]-- руоф Удерживайте не менее 15 зарядов «Разрушенной судьбы» на протяжении 1800 с.
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_time_at_max_unnatural_description"}, {"ru"}, function(locale, value) return "Поддерживайте не менее "..COLORS_Numbers.n_15_rgb.." зарядов "..COLORS_KWords_ru.Precision_rgb_ru.." от ключевого таланта "..COLORS_KW_Penances_ru.disrdest_rgb_ru.." на протяжении "..COLORS_Numbers.n_30_rgb.." минут." end), -- 1800 секунд ("..COLORS_Numbers.target_rgb.." секунд)
+			--[+ Traditional Chinese +]--
+			-- 維持15層或更多層擾動命運至少1800秒。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_time_at_max_unnatural_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.disrdest_rgb_tw.."』效果下，\n維持至少 "..COLORS_Numbers.n_15_rgb.." 層『"..COLORS_KWords_tw.Precision_rgb_tw.."』狀態，累積達 "..COLORS_Numbers.n_30_rgb.." 分鐘。" end),
 
 		--[+ Warp Battery +]-- руоф Варп-аккумулятор
-	--[+ Russian +]--
-		-- create_template("ach_red_psy_4_ext_ru", {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_name"}, {"ru"}, function(locale, value) return "Варп-аккумулятор" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_psy_4_ext_ru", {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_name"}, {"ru"}, function(locale, value) return "Варп-аккумулятор" end),
+			--[+ Traditional Chinese 亞空間電池 +]--
+			-- create_template("ach_red_psy_4_ext_tw", {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_name"}, {"zh-tw"}, function(locale, value) return "亞空間電池" end),
 
-			--[+ While on Malice Threat or higher, in a single session maintain maximum Warp Charges for 120s. +]-- руоф При угрозе «Злоба» или выше в режиме одиночной игры поддерживайте максимум варп-зарядов в течение 120 с.
-	--[+ Russian +]--
+		--[+ While on Malice Threat or higher, in a single session maintain maximum Warp Charges for 120s. +]-- руоф При угрозе «Злоба» или выше в режиме одиночной игры поддерживайте максимум варп-зарядов в течение 120 с.
+			--[+ Russian +]--
 			create_template("ach_red_psy_4_ext_desc_ru", {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, в течение одной миссии сохраняйте максимальное количество зарядов варпа в течение "..COLORS_Numbers.target_rgb.." секунд."..TALENTS_Enh_desc_penances_ru.ED_Warp_battery_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，單個任務分段內保持最大亞空間充能120秒。
+			create_template("ach_red_psy_4_ext_desc_tw", {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，於單場任務中持續維持最高層數亞空間充能 "..COLORS_Numbers.target_rgb.." 秒。" .. TALENTS_Enh_desc_penances_tw.ED_Warp_battery_rgb_tw end),
 
 		--[+ Pick n' Mix +]-- руоф Выбирай и смешивай
-	--[+ Russian +]--
-		-- create_template("ach_red_psy_6_ext_ru", {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_name"}, {"ru"}, function(locale, value) return "Выбирай и смешивай" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_psy_6_ext_ru", {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_name"}, {"ru"}, function(locale, value) return "Выбирай и смешивай" end),
+			--[+ Traditional Chinese 每樣來點 +]--
+			-- create_template("ach_red_psy_6_ext_tw", {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_name"}, {"zh-tw"}, function(locale, value) return "每樣來點" end),
 
-			--[+ While on Heresy Threat or higher, use Brain Burst to kill 4 different Elite or Specialist enemies within 12s. +]-- руоф При угрозе «Ересь» или выше используйте «Взрыв разума», чтобы убить различных врагов (4) ранга элита или специалист за 12 с.
-	--[+ Russian +]--
+		--[+ While on Heresy Threat or higher, use Brain Burst to kill 4 different Elite or Specialist enemies within 12s. +]-- руоф При угрозе «Ересь» или выше используйте «Взрыв разума», чтобы убить различных врагов (4) ранга элита или специалист за 12 с.
+			--[+ Russian +]--
 			create_template("ach_red_psy_6_ext_desc_ru", {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, используйте блиц "..COLORS_KW_Penances_ru.bburst0_rgb_ru..", чтобы убить "..COLORS_Numbers.target_rgb.." разных элитных врагов или специалистов в течение "..COLORS_Numbers.time_wind_rgb.." секунд."..TALENTS_Enh_desc_penances_ru.ED_Pick_n_mix_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，在12米內使用大腦爆裂擊殺4個不同的精英或專家敵人。
+			create_template("ach_red_psy_6_ext_desc_tw", {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』，\n在 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 種不同的精英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Pick_n_mix_rgb_tw end),
 
 		--[+ Mind's Aegis +]-- руоф Защита разума
-	--[+ Russian +]--
-		create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_damage_blocked_with_shield_name"}, {"ru"}, function(locale, value) return "Эгида разума" end),
+			--[+ Russian +]--
+			create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_damage_blocked_with_shield_name"}, {"ru"}, function(locale, value) return "Эгида разума" end),
+			--[+ Traditional Chinese 心靈之盾 +]--
+			-- create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_damage_blocked_with_shield_name"}, {"zh-tw"}, function(locale, value) return "心靈之盾" end),
 
-			--[+ Absorb 150000 Damage with Telekine Shield. +]-- руоф Поглотите урон (150000) с помощью «Телекинетического щита».
-	--[+ Russian +]--
+		--[+ Absorb 150000 Damage with Telekine Shield. +]-- руоф Поглотите урон (150000) с помощью «Телекинетического щита».
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_damage_blocked_with_shield_description"}, {"ru"}, function(locale, value) return "Поглотите "..COLORS_Numbers.target_rgb.." урона с помощью способности "..COLORS_KW_Penances_ru.telekshii_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用念力護頓吸收150000點傷害。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_damage_blocked_with_shield_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.telekshii_rgb_tw.."』防護 "..COLORS_Numbers.target_rgb.." 點傷害。" end),
 
 		--[+ Skilled in Psykhana +]-- руоф Знаток Псайканы
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_kills_with_empowered_abilites_name"}, {"ru"}, function(locale, value) return "Знаток Псайканы" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_kills_with_empowered_abilites_name"}, {"ru"}, function(locale, value) return "Знаток Псайканы" end),
+			--[+ Traditional Chinese 熟練靈能 +]--
+			-- create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_kills_with_empowered_abilites_name"}, {"zh-tw"}, function(locale, value) return "熟練靈能" end),
 
-			--[+ Kill 250 Specialists or Elites using abilities empowered by Empowered Psionics. +]-- руоф Убейте особых или элитных врагов (250) с помощью способностей, улучшенных «Усиленными псиониками».
-	--[+ Russian +]--
+		--[+ Kill 250 Specialists or Elites using abilities empowered by Empowered Psionics. +]-- руоф Убейте особых или элитных врагов (250) с помощью способностей, улучшенных «Усиленными псиониками».
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_kills_with_empowered_abilites_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов с помощью способностей, усиленных ключевым талантом "..COLORS_KW_Penances_ru.empsionics_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用以靈能強化提升過的技能擊殺250名專家或精英。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_kills_with_empowered_abilites_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.empsionics_rgb_tw.."』後的能力，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Not Even Close +]-- руоф Как бы не так
 	--[+ Russian +]--
