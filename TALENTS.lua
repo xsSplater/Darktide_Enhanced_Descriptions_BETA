@@ -2326,8 +2326,22 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_023_desc_en", {"loc_talent_ogryn_protect_allies_desc"}, {"en"}, function(locale, value) return "{power:%s} "..COLORS_KWords.Strength_rgb.." and {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds when an Ally's "..COLORS_KWords.Toughness_rgb.." breaks. Cooldown {cooldown:%s} seconds.\n\n{revive_speed:%s} Revive Speed and "..COLORS_KWords.Stun_rgb.." Immunity for{duration:%s} seconds when an Ally is Knocked Down." end), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_23_rgb
 	--[+ French +]--!!!
 	-- create_template("talent_tree_ogr_pas_023_desc_fr", {"loc_talent_ogryn_protect_allies_desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_23_rgb_fr
+	--[+ Russian +]-- Месиво
+	create_template("talent_tree_ogr_pas_023_desc_ru", {"loc_talent_ogryn_protect_allies_desc"}, {"ru"}, function(locale, value) return "{power:%s} к "..COLORS_KWords.Strength_rgb_ru.." и {toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." на {duration:%s} секунд, когда "..COLORS_KWords_ru.Tghnss_rgb_ru.." союзника пробивают. Восстановление {cooldown:%s} секунд.\n\n{revive_speed:%s} к скорости возрождения и иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." на {duration:%s} секунд, когда союзник сбит с ног." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_23_rgb_ru
+
+	--[+ Passive 24 - Concentrate +]--
+	create_template("talent_tree_ogr_pas_024_desc_en", {"loc_talent_ogryn_drain_stamina_for_handling_desc"}, {"en"}, function(locale, value) return "{sway_reduction:%s} Sway Reduction,\n{spread_reduction:%s} Spread Reduction and\n{recoil_reduction:%s} Recoil Reduction while bracing your Ranged Weapon, but lose {stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second." end), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_24_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_024_desc_fr", {"loc_talent_ogryn_drain_stamina_for_handling_desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_24_rgb_fr
 	--[+ Russian +]-- Месиво 
-	-- create_template("talent_tree_ogr_pas_023_desc_ru", {"loc_talent_ogryn_protect_allies_desc"}, {"ru"}, function(locale, value) return "{stacks:%s} заряда "..COLORS_KWords_ru.Bleed_rgb_ru.." накладывается на врага атаками ближнего боя. Увеличивается до {heavy_stacks:%s} при тяжёлом ударе ближнего боя. Вплоть до "..COLORS_Numbers.n_16_rgb.." зарядов на цель." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_23_rgb_ru
+	create_template("talent_tree_ogr_pas_024_desc_ru", {"loc_talent_ogryn_drain_stamina_for_handling_desc"}, {"ru"}, function(locale, value) return "{sway_reduction:%s} к уменьшению раскачивания,\n{spread_reduction:%s} к уменьшению разброса и\n{recoil_reduction:%s} к уменьшению отдачи при прицеливании из оружия дальнего боя, но при этом теряется {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." в секунду." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_24_rgb_ru
+
+	--[+ Passive 25 - Fire Away +]--
+	-- create_template("talent_tree_ogr_pas_025_desc_en", {"loc_talent_ogryn_explosions_burn_close_desc"}, {"en"}, function(locale, value) return "Your Explosions apply {:%s}1 Stack of "..COLORS_KWords.Burn_rgb..". {:%s}2 Stacks if close range. Max Stacks {:%s}8." end), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_25_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_025_desc_fr", {"loc_talent_ogryn_drain_stamina_for_handling_desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_25_rgb_fr
+	--[+ Russian +]-- Месиво 
+	-- create_template("talent_tree_ogr_pas_025_desc_ru", {"loc_talent_ogryn_drain_stamina_for_handling_desc"}, {"ru"}, function(locale, value) return "{sway_reduction:%s} к уменьшению раскачивания,\n{spread_reduction:%s} к уменьшению разброса и\n{recoil_reduction:%s} к уменьшению отдачи при прицеливании из оружия дальнего боя, но при этом теряется {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." в секунду." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_25_rgb_ru
 
 -- ENDED HERE
 
