@@ -578,7 +578,7 @@ local localization_templates = {
 			--[+ Traditional Chinese +]--
 			-- 在武器專家效果啟動時，
 			-- 使用暴擊弱點命中擊殺250名專家或精英
-			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.KeyStone_i_p_rgb_tw.."『"..COLORS_KW_Penances_tw.weapspec_rgb_tw.."』時，\n使用 "..COLORS_KWords_tw.Crit_hits_rgb_tw.." 加上 "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." "..COLORS_Numbers.target_rgb.." 名菁英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw end),
+			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.KeyStone_i_p_rgb_tw.."『"..COLORS_KW_Penances_tw.weapspec_rgb_tw.."』時，\n使用 "..COLORS_KWords_tw.Crit_hits_rgb_tw.." 加上 "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw end),
 
 		--[+ Stay Alert +]-- -- руоф Будь начеку
 			--[+ Russian +]--
@@ -860,7 +860,7 @@ local localization_templates = {
 			create_template("ach_class_zea_12_ext_desc_ru", {"loc_achievement_zealot_2_hard_1_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов в ближнем бою специальными атаками цепного или силового оружия." end),
 			--[+ Traditional Chinese +]--
 			-- 在異端威脅度或更高難度下，使用動力近戰攻擊（鏈鋸或動力武器）擊殺75名精英或專家敵人。
-			create_template("ach_class_zea_12_ext_desc_tw", {"loc_achievement_zealot_2_hard_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用特殊攻擊（鏈鋸系列、上古神刃），\n擊殺 "..COLORS_Numbers.target_rgb.." 名菁英或專家敵人。" end),
+			create_template("ach_class_zea_12_ext_desc_tw", {"loc_achievement_zealot_2_hard_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用特殊攻擊（鏈鋸系列、上古神刃），\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Doomseeker (1-5) -  +]-- -- руоф Искатель судьбы (1-5)
 			--[+ Russian +]--
@@ -1201,7 +1201,7 @@ local localization_templates = {
 			create_template("ach_class_zea_7_ext_desc_ru", {"loc_achievement_zealot_kills_during_movement_keystone_activated_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов, имея не менее "..COLORS_Numbers.n_15_rgb.." зарядов "..COLORS_KW_Penances_ru.momentum_rgb_ru.." от ключевого таланта "..COLORS_KW_Penances_ru.inexor_rgb_ru.."." end),
 			--[+ Traditional Chinese +]--
 			-- 在疊加15層或更多層命定審判時，擊殺250名專家和精英。
-			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_kills_during_movement_keystone_activated_description"}, {"zh-tw"}, function(locale, value) return "擁有 "..COLORS_Numbers.n_15_rgb.." 層『"..COLORS_KW_Penances_tw.momentum_rgb_tw.."』時，擊殺 "..COLORS_Numbers.target_rgb.." 名菁英或專家敵人，\n來源為"..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.inexor_rgb_tw.."』。" end),
+			create_template("ach_class_zea_7_ext_desc_tw", {"loc_achievement_zealot_kills_during_movement_keystone_activated_description"}, {"zh-tw"}, function(locale, value) return "擁有 "..COLORS_Numbers.n_15_rgb.." 層『"..COLORS_KW_Penances_tw.momentum_rgb_tw.."』時，擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人，\n來源為"..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.inexor_rgb_tw.."』。" end),
 
 		--[+ Shocking Stuff +]-- руоф Шокирующая штучка
 			--[+ Russian +]--
@@ -1301,7 +1301,7 @@ local localization_templates = {
 			create_template("ach_class_psy_13_ext_desc_ru", {"loc_achievement_psyker_2_hard_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, завершите полностью "..COLORS_Numbers.target_rgb.." миссии без получения ударов в ближнем бою от элитных врагов." end),
 			--[+ Traditional Chinese +]--
 			-- 在異端威脅度或更高難度下，不被精英敵人近戰命中的情況下完成3個任務。
-			create_template("ach_class_psy_13_ext_desc_tw", {"loc_achievement_psyker_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n完成 "..COLORS_Numbers.target_rgb.." 場任務，且未曾被菁英敵人以近戰攻擊命中。" end),
+			create_template("ach_class_psy_13_ext_desc_tw", {"loc_achievement_psyker_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n完成 "..COLORS_Numbers.target_rgb.." 場任務，且未曾被精英敵人以近戰攻擊命中。" end),
 
 		--[+ Cliffhanger +]-- руоф Не подходи близко
 			--[+ Russian +]--
@@ -1646,177 +1646,287 @@ local localization_templates = {
 			create_template("ach_red_psy_5_ext_desc_tw", {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n利用因『"..COLORS_KWords_tw.Peril_rgb_tw.."』超過『"..COLORS_Numbers.pc_100_rgb.."』而引發的靈能爆炸，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英敵人。" end),
 
 	--[+ ++OGRYN - ОГРИН++ +]--
-	create_template("ach_class_ogr_0_ext_ru", {"loc_class_ogryn_title"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_ogr_rgb_ru end),
+		create_template("ach_class_ogr_0_ext_ru", {"loc_class_ogryn_title"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_ogr_rgb_ru end),
+		create_template("ach_class_ogr_0_ext_tw", {"loc_class_ogryn_title"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.cls_ogr_rgb_tw end),
 
 	--[+ ПРОГРЕСС +]--
 		--[+ Beat-em-Up (1-3) +]-- руоф Всех порву/Бей их всех (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_3_ext_ru", {"loc_achievement_missions_ogryn_2_objective_3_name"}, {"ru"}, function(locale, value) return "Избей-их-всех (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_3_ext_ru", {"loc_achievement_missions_ogryn_2_objective_3_name"}, {"ru"}, function(locale, value) return "Избей-их-всех (1-3)" end),
+			--[+ Traditional Chinese 揍扁他們 +]--
+			-- create_template("ach_class_ogr_3_ext_tw", {"loc_achievement_missions_ogryn_2_objective_3_name"}, {"zh-tw"}, function(locale, value) return "揍扁他們 (1-3)" end),
 
-			--[+ As a Ogryn, complete a Mission of each type. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
-	--[+ Russian +]--
+		--[+ As a Ogryn, complete a Mission of each type. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_3_1_ext_desc_ru", {"loc_achievement_missions_ogryn_2_objective_1_description"}, {"ru"}, function(locale, value) return "Завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_ogr2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用歐格林，完成每種類型的任務至少一項。
+			create_template("ach_class_ogr_3_1_ext_desc_tw", {"loc_achievement_missions_ogryn_2_objective_1_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。" end),
 
-			--[+ As a Ogryn, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ As a Ogryn, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_3_3_ext_desc_ru", {"loc_achievement_missions_ogryn_2_objective_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_ogr2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
+			create_template("ach_class_ogr_3_3_ext_desc_tw", {"loc_achievement_missions_ogryn_2_objective_2_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。" end),
 
-			--[+ As a Ogryn, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
-	--[+ Russian +]--
+		--[+ As a Ogryn, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_3_4_ext_desc_ru", {"loc_achievement_missions_ogryn_2_objective_3_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_ogr2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
+			create_template("ach_class_ogr_3_4_ext_desc_tw", {"loc_achievement_missions_ogryn_2_objective_3_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。" end),
 
 		--[+ Keep Them Grounded +]-- руоф Вали их!
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_8_ext_ru", {"loc_achievement_ogryn_2_easy_2_name"}, {"ru"}, function(locale, value) return "Вали их!" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_8_ext_ru", {"loc_achievement_ogryn_2_easy_2_name"}, {"ru"}, function(locale, value) return "Вали их!" end),
+			--[+ Traditional Chinese 全部打倒 +]--
+			-- create_template("ach_class_ogr_8_ext_tw", {"loc_achievement_ogryn_2_easy_2_name"}, {"zh-tw"}, function(locale, value) return "全部打倒" end),
 
-			--[+ Knock Down 5000 enemies. +]-- руоф Сбейте с ног врагов 5000 р.
-	--[+ Russian +]--
+		--[+ Knock Down 5000 enemies. +]-- руоф Сбейте с ног врагов 5000 р.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_8_ext_desc_ru", {"loc_achievement_ogryn_2_easy_2_description"}, {"ru"}, function(locale, value) return "Сбейте с ног "..COLORS_Numbers.target_rgb.." врагов." end),
+			--[+ Traditional Chinese +]--
+			-- 擊倒5000個敵人。
+			create_template("ach_class_ogr_8_ext_desc_tw", {"loc_achievement_ogryn_2_easy_2_description"}, {"zh-tw"}, function(locale, value) return "擊倒 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Keep Your Friends Close +]-- руоф Держи друзей близко
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_12_ext_ru", {"loc_achievement_ogryn_2_hard_1_name"}, {"ru"}, function(locale, value) return "Держи друзей близко" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_12_ext_ru", {"loc_achievement_ogryn_2_hard_1_name"}, {"ru"}, function(locale, value) return "Держи друзей близко" end),
+			--[+ Traditional Chinese 與朋友保持親密 +]--
+			-- create_template("ach_class_ogr_12_ext_tw", {"loc_achievement_ogryn_2_hard_1_name"}, {"zh-tw"}, function(locale, value) return "與朋友保持親密" end),
 
-			--[+ On Heresy Threat or higher, complete 3 full Missions without any allies being Knocked Down or Incapacitated for longer than 10 seconds, and without any allies dying. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы ни один союзник не умер и не был сбит с ног или небоестрособен дольше 10 с.
-	--[+ Russian +]--
+		--[+ On Heresy Threat or higher, complete 3 full Missions without any allies being Knocked Down or Incapacitated for longer than 10 seconds, and without any allies dying. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы ни один союзник не умер и не был сбит с ног или небоестрособен дольше 10 с.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_12_ext_desc_ru", {"loc_achievement_ogryn_2_hard_1_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, завершите полностью "..COLORS_Numbers.target_rgb.." миссии так, чтобы никто из союзников не был выведен из строя или сбит с ног более "..COLORS_Numbers.time_rgb.." секунд и чтобы никто из союзников не был убит." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，在沒有盟友被擊倒或無法行動超過30秒，且沒有盟友死亡的情況下完成3個完整任務。
+			create_template("ach_class_ogr_12_ext_desc_tw", {"loc_achievement_ogryn_2_hard_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，完整完成 "..COLORS_Numbers.target_rgb.." 場任務，\n且期間無任何隊友陣亡，或被擊倒超過 "..COLORS_Numbers.time_rgb.." 秒。" end),
 
 		--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_4_ext_ru", {"loc_missions_ogryn_2_easy_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Докажи, чего стоишь (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_4_ext_ru", {"loc_missions_ogryn_2_easy_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Докажи, чего стоишь (1-5)" end),
+			--[+ Traditional Chinese 證明你的價值 +]--
+			-- create_template("ach_class_ogr_4_ext_tw", {"loc_missions_ogryn_2_easy_difficulty_1-5_name"}, {"zh-tw"}, function(locale, value) return "證明你的價值 (1-5)" end),
 
-			--[+ Complete 1 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_4_1_ext_desc_ru", {"loc_missions_ogryn_2_easy_difficulty_1_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_sedition_threat_ru end),
+			----[+ Traditional Chinese +]--
+			-- 在騷亂威脅度或更高難度下完成1個任務
+			create_template("ach_class_ogr_4_1_ext_desc_tw", {"loc_missions_ogryn_2_easy_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_sedition_threat_tw end),
 
-			--[+ Complete 1 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Восстание» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Восстание» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_4_2_ext_desc_ru", {"loc_missions_ogryn_2_easy_difficulty_2_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_uprising_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在起義威脅度或更高難度下完成1個任務
+			create_template("ach_class_ogr_4_2_ext_desc_tw", {"loc_missions_ogryn_2_easy_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_uprising_threat_tw end),
 
-			--[+ Complete 1 Missions on Malice Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Malice Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_4_3_ext_desc_ru", {"loc_missions_ogryn_2_easy_difficulty_3_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_malice_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下完成1個任務
+			create_template("ach_class_ogr_4_3_ext_desc_tw", {"loc_missions_ogryn_2_easy_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_malice_threat_tw end), 
 
-			--[+ Complete 1 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_4_4_ext_desc_ru", {"loc_missions_ogryn_2_easy_difficulty_4_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_heresy_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下完成1個任務
+			create_template("ach_class_ogr_4_4_ext_desc_tw", {"loc_missions_ogryn_2_easy_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_heresy_threat_tw end),
 
-			--[+ Complete 1 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
-	--[+ Russian +]--
+		--[+ Complete 1 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_4_5_ext_desc_ru", {"loc_missions_ogryn_2_easy_difficulty_5_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_damnation_threat_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在詛咒威脅度或更高難度下完成1個任務
+			create_template("ach_class_ogr_4_5_ext_desc_tw", {"loc_missions_ogryn_2_easy_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_damnation_threat_tw end),
 
 		--[+ Friends Will be Friends +]-- руоф Друзья останутся друзьями
-	--[+ Russian +]--
-		-- create_template("ach_red_ogr_4_ext_ru", {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_name"}, {"ru"}, function(locale, value) return "Друзья останутся друзьями" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_ogr_4_ext_ru", {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_name"}, {"ru"}, function(locale, value) return "Друзья останутся друзьями" end),
+			--[+ Traditional Chinese 朋友永遠是朋友 +]--
+			-- create_template("ach_red_ogr_4_ext_tw", {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_name"}, {"zh-tw"}, function(locale, value) return "朋友永遠是朋友" end),
 
-			--[+ Stay in Conherency with a living teammate at all times during a full Mission on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше постоянно оставайтесь под эффектом «Сплоченность» с живым товарищем по команде во время задания.
-	--[+ Russian +]--
+		--[+ Stay in Conherency with a living teammate at all times during a full Mission on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше постоянно оставайтесь под эффектом «Сплоченность» с живым товарищем по команде во время задания.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_4_ext_desc_ru", {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, всегда оставайтесь под действием "..COLORS_KWords_ru.Coherency_rgb_ru.." с живым союзником на всём протяжении миссии." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，在1次完整任務期間與1位存活的隊友始終保持協同。
+			create_template("ach_red_ogr_4_ext_desc_tw", {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n整場任務期間始終與至少一名存活隊友保持在『"..COLORS_KWords_tw.Coherency_rgb_tw.."』範圍內。" end),
 
 		--[+ Bone 'ead (1-3) +]-- руоф Костяная башка (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_14_ext_ru", {"loc_achievement_group_class_ogryn_2_1-3_name"}, {"ru"}, function(locale, value) return "Костагаловый (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_14_ext_ru", {"loc_achievement_group_class_ogryn_2_1-3_name"}, {"ru"}, function(locale, value) return "Костагаловый (1-3)" end),
+			--[+ Traditional Chinese 骨頭骨腦 (1-3) +]--
 
-			--[+ Complete the following Penances as the Ogryn. +]-- руоф Выполните следующие искупления за Огрина.
-	--[+ Russian +]--
+		--[+ Complete the following Penances as the Ogryn. +]-- руоф Выполните следующие искупления за Огрина.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_8_ext_desc_ru", {"loc_group_class_challenges_ogryn_2_x_description", "loc_achievement_group_class_ogryn_2_description", "loc_group_ogryn_2_rank_4_difficulty_3_description", "loc_group_ogryn_2_rank_5_difficulty_4_description", "loc_group_ogryn_2_rank_1_difficulty_1_description", "loc_group_ogryn_2_rank_2_difficulty_2_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления "..COLORS_KWords_ru.cls_ogr2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用歐格林完成以下苦修。
+			create_template("ach_class_ogr_14_ext_desc_tw", {"loc_achievement_group_class_ogryn_2_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成以下苦修。" end),
 
 		--[+ Got a Bone to Pick (1-6) +]-- руоф Крепкий орешек (1-6)
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_1_ext_ru", {"loc_achievement_rank_ogryn_2_6_name"}, {"ru"}, function(locale, value) return "Мститель (1-6)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_1_ext_ru", {"loc_achievement_rank_ogryn_2_6_name"}, {"ru"}, function(locale, value) return "Мститель (1-6)" end),
+			--[+ Traditional Chinese 撿塊骨頭 +]--
+			-- create_template("ach_class_ogr_1_ext_tw", {"loc_achievement_rank_ogryn_2_6_name"}, {"zh-tw"}, function(locale, value) return "撿塊骨頭" end),
 
-			--[+ Reach Trust Level 30 as a Ogryn. +]-- руоф Получить уровень доверия 30, играя за Огрина.
-	--[+ Russian +]--
+		--[+ Reach Trust Level 30 as a Ogryn. +]-- руоф Получить уровень доверия 30, играя за Огрина.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_1_ext_desc_ru", {"loc_achievement_rank_ogryn_2_x_description"}, {"ru"}, function(locale, value) return "Достигните "..COLORS_Numbers.target_rgb.." уровня доверия "..COLORS_KWords_ru.cls_ogr2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用歐格林達到信任等級xx。
+			create_template("ach_class_ogr_1_ext_desc_tw", {"loc_achievement_rank_ogryn_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。" end),
 
 		--[+ Built Like a Tank (1-5) +]-- руоф Настоящий танк (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_2_ext_ru", {"loc_achievement_missions_ogryn_2_1-5_name"}, {"ru"}, function(locale, value) return "Крепкий как танк (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_2_ext_ru", {"loc_achievement_missions_ogryn_2_1-5_name"}, {"ru"}, function(locale, value) return "Крепкий как танк (1-5)" end),
+			--[+ Traditional Chinese 如坦克一般 +]--
+			-- create_template("ach_class_ogr_2_ext_tw", {"loc_achievement_missions_ogryn_2_1-5_name"}, {"zh-tw"}, function(locale, value) return "如坦克一般 (1-5)" end),
 
-			--[+ Complete 100 Missions as a Ogryn. +]-- руоф Выполнить Огрином задания: 100.
-	--[+ Russian +]--
+		--[+ Complete 100 Missions as a Ogryn. +]-- руоф Выполнить Огрином задания: 100.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_2_ext_desc_ru", {"loc_achievement_missions_ogryn_2_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий "..COLORS_KWords_ru.cls_ogr2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用歐格林完成xx個任務。
+			create_template("ach_class_ogr_2_ext_desc_tw", {"loc_achievement_missions_ogryn_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 		--[+ Cleave Them Down +]-- руоф Порви их!
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_12_ext_ru", {"loc_achievement_ogryn_2_medium_2_name"}, {"ru"}, function(locale, value) return "Рассеки их" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_12_ext_ru", {"loc_achievement_ogryn_2_medium_2_name"}, {"ru"}, function(locale, value) return "Рассеки их" end),
+			--[+ Traditional Chinese 砍翻他們 +]--
+			-- create_template("ach_class_ogr_12_ext_tw", {"loc_achievement_ogryn_2_medium_2_name"}, {"zh-tw"}, function(locale, value) return "砍翻他們" end),
 
-			--[+ On Malice Threat or higher, kill 2 enemies with a single Melee Attack 250 times. +]-- руоф При угрозе «Злоба» или выше 250 р. убейте врагов (2) одной атакой ближнего бой.
-	--[+ Russian +]--
+		--[+ On Malice Threat or higher, kill 2 enemies with a single Melee Attack 250 times. +]-- руоф При угрозе «Злоба» или выше 250 р. убейте врагов (2) одной атакой ближнего бой.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_12_ext_desc_ru", {"loc_achievement_ogryn_2_medium_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, убейте "..COLORS_Numbers.amount_var_rgb.." врагов одной атакой ближнего боя "..COLORS_Numbers.target_rgb.." раз." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意或更高難度下，使用一次近戰攻擊擊殺2個敵，需要達成250次。
+			create_template("ach_class_ogr_12_ext_desc_tw", {"loc_achievement_ogryn_2_medium_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n單次近戰攻擊擊殺 "..COLORS_Numbers.amount_var_rgb.." 名敵人，共達成 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Help Everyone +]-- руоф Спаси всех
-	--[+ Russian +]--
-		create_template("ach_class_ogr_7_ext_ru", {"loc_achievement_ogryn_2_easy_1_name"}, {"ru"}, function(locale, value) return "Помогай всем" end),
+			--[+ Russian +]--
+			create_template("ach_class_ogr_7_ext_ru", {"loc_achievement_ogryn_2_easy_1_name"}, {"ru"}, function(locale, value) return "Помогай всем" end),
+			--[+ Traditional Chinese 樂於助人 +]--
+			-- create_template("ach_class_ogr_7_ext_tw", {"loc_achievement_ogryn_2_easy_1_name"}, {"zh-tw"}, function(locale, value) return "樂於助人" end),
 
-			--[+ Revive or Assist 40 Knocked Down or Incapacitated allies. +]-- руоф Воскресите небоеспособных союзников или помогите союзникам, сбитым с ног, 40 р.
-	--[+ Russian +]--
+		--[+ Revive or Assist 40 Knocked Down or Incapacitated allies. +]-- руоф Воскресите небоеспособных союзников или помогите союзникам, сбитым с ног, 40 р.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_7_ext_desc_ru", {"loc_achievement_ogryn_2_easy_1_description"}, {"ru"}, function(locale, value) return "Возродите или поднимите "..COLORS_Numbers.target_rgb..", выведенных из строя или сбитых с ног, союзников." end),
+			--[+ Traditional Chinese +]--
+			-- 復活或協助40個被擊倒或無法行動的盟友。
+			create_template("ach_class_ogr_7_ext_desc_tw", {"loc_achievement_ogryn_2_easy_1_description"}, {"zh-tw"}, function(locale, value) return "救起或復活 "..COLORS_Numbers.target_rgb.." 名被擊倒或癱瘓的隊友。" end),
 
 		--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_red_ogr_1_ext_ru", {"loc_missions_ogryn_2_medium_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Сражайся достойно (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_ogr_1_ext_ru", {"loc_missions_ogryn_2_medium_difficulty_1-5_name"}, {"ru"}, function(locale, value) return "Сражайся достойно (1-5)" end),
+			--[+ Traditional Chinese 為正義而戰 +]--
+			-- create_template("ach_red_ogr_1_ext_tw", {"loc_missions_ogryn_2_medium_difficulty_1-5_name"}, {"zh-tw"}, function(locale, value) return "為正義而戰 (1-5)" end),
 
-			--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_1_1_ext_desc_ru", {"loc_missions_ogryn_2_medium_difficulty_1_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在騷亂威脅度或更高難度下完成5個任務。
+			create_template("ach_red_ogr_1_1_ext_desc_tw", {"loc_missions_ogryn_2_medium_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_1_2_ext_desc_ru", {"loc_missions_ogryn_2_medium_difficulty_2_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在起義威脅度或更高難度下完成5個任務。
+			create_template("ach_red_ogr_1_2_ext_desc_tw", {"loc_missions_ogryn_2_medium_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_1_3_ext_desc_ru", {"loc_missions_ogryn_2_medium_difficulty_3_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下完成5個任務。
+			create_template("ach_red_ogr_1_3_ext_desc_tw", {"loc_missions_ogryn_2_medium_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_1_4_ext_desc_ru", {"loc_missions_ogryn_2_medium_difficulty_4_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下完成5個任務。
+			create_template("ach_red_ogr_1_4_ext_desc_tw", {"loc_missions_ogryn_2_medium_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
-			--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
-	--[+ Russian +]--
+		--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_1_5_ext_desc_ru", {"loc_missions_ogryn_2_medium_difficulty_5_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在詛咒威脅度或更高難度下完成5個任務。
+			create_template("ach_red_ogr_1_5_ext_desc_tw", {"loc_missions_ogryn_2_medium_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。" end),
 
 	--[+ +СПОСОБНОСТИ+ +]--
 		--[+ Munitorum's Favour +]-- руоф Благосклонность Муниторума
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"ru"}, function(locale, value) return "Благосклонность Муниторума" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"ru"}, function(locale, value) return "Благосклонность Муниторума" end),
+			--[+ Traditional Chinese 軍務部的恩賜 +]--
+			-- create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"zh-tw"}, function(locale, value) return "軍務部的恩賜" end),	
 
-			--[+ Shoot 4500 free rounds of ammo, courtesy of the Burst Limiter Override. +]-- руоф Стреляйте бесплатными боеприпасами (4500) благодаря «Взлому отсечки очереди».
-	--[+ Russian +]--
+		--[+ Shoot 4500 free rounds of ammo, courtesy of the Burst Limiter Override. +]-- руоф Стреляйте бесплатными боеприпасами (4500) благодаря «Взлому отсечки очереди».
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_leadbelcher_free_shot_description"}, {"ru"}, function(locale, value) return "Отстреляйте "..COLORS_Numbers.target_rgb.." бесплатных патронов, полученных с помощью ключевого таланта "..COLORS_KW_Penances_ru.burstlimo_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在爆限超載的效果下自由射擊4500發彈藥。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_leadbelcher_free_shot_description"}, {"zh-tw"}, function(locale, value) return "射出 "..COLORS_Numbers.target_rgb.." 發由 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.burstlimo_rgb_tw.."』所獲得的免費子彈。" end),
 
 		--[+ Be Your Best +]-- руоф Будь лучшим
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_13_ext_ru", {"loc_achievement_ogryn_2_hard_2_name"}, {"ru"}, function(locale, value) return "Будь лучшим" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_13_ext_ru", {"loc_achievement_ogryn_2_hard_2_name"}, {"ru"}, function(locale, value) return "Будь лучшим" end),
+			--[+ Traditional Chinese 盡力而為 +]--
+			-- create_template("ach_class_ogr_13_ext_tw", {"loc_achievement_ogryn_2_hard_2_name"}, {"zh-tw"}, function(locale, value) return "盡力而為" end),
 
-			--[+ On Heresy Threat or higher, hit 4 consecutive Elite or Specialist enemies with Big Boxes of Hurt, without missing. Do this 5 times. +]-- руоф При угрозе «Ересь» или выше попадите по элитным врагам или специалистам х4 подряд «Ящиком, полным боли", ни разу не промахиваясь. Повторите 5 р.
-	--[+ Russian +]--
+		--[+ On Heresy Threat or higher, hit 4 consecutive Elite or Specialist enemies with Big Boxes of Hurt, without missing. Do this 5 times. +]-- руоф При угрозе «Ересь» или выше попадите по элитным врагам или специалистам х4 подряд «Ящиком, полным боли", ни разу не промахиваясь. Повторите 5 р.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_13_ext_desc_ru", {"loc_achievement_ogryn_2_hard_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, попадите не промахиваясь последовательно по "..COLORS_Numbers.amount_var_rgb.." элитным врагам или специалистам, используя блиц "..COLORS_KW_Penances_ru.big_box_rgb_ru.." или "..COLORS_KW_Penances_ru.big_box2_rgb_ru..". Повторите это задание "..COLORS_Numbers.target_rgb.." раз." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，使用大炸藥箱連續擊中4名精英或專家敵人，中途不能打空。累積完成5次。
+			create_template("ach_class_ogr_13_ext_desc_tw", {"loc_achievement_ogryn_2_hard_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.big_box_rgb_tw.."』或『"..COLORS_KW_Penances_tw.big_box2_rgb_tw.."』，\n連續成功命中 "..COLORS_Numbers.amount_var_rgb.." 名精英或專家敵人。需達成 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Loyal Protector +]-- руоф Верный защитник
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_team_toughness_restored_aura_name"}, {"ru"}, function(locale, value) return "Верный защитник" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_team_toughness_restored_aura_name"}, {"ru"}, function(locale, value) return "Верный защитник" end),
+			--[+ Traditional Chinese 忠誠守衛 +]--
+			-- create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_team_toughness_restored_aura_name"}, {"zh-tw"}, function(locale, value) return "忠誠守衛" end),
 
-			--[+ Restore a total of 15000 Toughness to you or allies in coherency with Stay Close. +]-- руоф Восстановите стойкость свою или союзников под действием «Сплоченности» (суммарно 15000) с помощью «Держись рядом».
-	--[+ Russian +]--
+		--[+ Restore a total of 15000 Toughness to you or allies in coherency with Stay Close. +]-- руоф Восстановите стойкость свою или союзников под действием «Сплоченности» (суммарно 15000) с помощью «Держись рядом».
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_team_toughness_restored_aura_description"}, {"ru"}, function(locale, value) return "Восстановите суммарно "..COLORS_Numbers.target_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." себе или союзникам, находящимся под действием "..COLORS_KWords_ru.Coherency_rgb_ru..", с помощью эффекта ауры "..COLORS_KW_Penances_ru.stayclose_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用相互靠近恢復自身或協同中盟友總計15000點韌性。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_team_toughness_restored_aura_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.stayclose_rgb_tw.."』效果，\n為自己或處於『"..COLORS_KWords_tw.Coherency_rgb_tw.."』範圍內的隊友，\n恢復累計 "..COLORS_Numbers.target_rgb.." 點『"..COLORS_KWords_tw.Toughness_rgb_tw.."』。" end),
 
 		--[+ Pick on Someone Your Own Size +]-- руоф Выбирай по размеру
-	--[+ Russian +]--
-		create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_taunt_shout_hit_name"}, {"ru"}, function(locale, value) return "Выбери кого-то своего размера" end),
+			--[+ Russian +]--
+			create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_taunt_shout_hit_name"}, {"ru"}, function(locale, value) return "Выбери кого-то своего размера" end),
+			--[+ Traditional Chinese 別欺負弱小 +]--
+			-- create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_taunt_shout_hit_name"}, {"zh-tw"}, function(locale, value) return "別欺負弱小" end),
 
-			--[+ Taunt 1000 Specialist or Elite enemies using Loyal Protector. +]-- руоф Спровоцируйте особых или элитных врагов (1000) с помощью «Верного защитника».
-	--[+ Russian +]--
+		--[+ Taunt 1000 Specialist or Elite enemies using Loyal Protector. +]-- руоф Спровоцируйте особых или элитных врагов (1000) с помощью «Верного защитника».
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_taunt_shout_hit_description"}, {"ru"}, function(locale, value) return "Спровоцируйте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов с помощью способности "..COLORS_KW_Penances_ru.loyalprot_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用忠誠守衛嘲諷1000名專家或精英
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_taunt_shout_hit_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.loyalprot_rgb_tw.."』嘲諷，\n吸引 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Gone Bowling +]-- руоф Играю в боулинг
-	--[+ Russian +]--
-		-- create_template("ach_red_ogr_5_ext_ru", {"loc_achievement_ogryn_2_bull_rushed_100_enemies_name"}, {"ru"}, function(locale, value) return "Играю в боулинг" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_ogr_5_ext_ru", {"loc_achievement_ogryn_2_bull_rushed_100_enemies_name"}, {"ru"}, function(locale, value) return "Играю в боулинг" end),
+			--[+ Traditional Chinese 全中 +]--
+			-- create_template("ach_red_ogr_5_ext_tw", {"loc_achievement_ogryn_2_bull_rushed_100_enemies_name"}, {"zh-tw"}, function(locale, value) return "全中" end),
 
-			--[+ Knock down 60 enemies with a single Bull Rush on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше сбейте с ног одним зарядом «Бычьего натиска» врагов: 60.
-	--[+ Russian +]--
+		--[+ Knock down 60 enemies with a single Bull Rush on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше сбейте с ног одним зарядом «Бычьего натиска» врагов: 60.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_5_ext_desc_ru", {"loc_achievement_ogryn_2_bull_rushed_100_enemies_description"}, {"ru"}, function(locale, value) return "Сбейте "..COLORS_Numbers.target_rgb.." врагов за одно использование способности "..COLORS_KW_Penances_ru.bull_rush_rgb_ru.." или "..COLORS_KW_Penances_ru.bull_rush4_rgb_ru.." на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡毒或以上威脅度，用1次蠻牛衝撞擊倒60名敵人。
+			create_template("ach_red_ogr_5_ext_desc_tw", {"loc_achievement_ogryn_2_bull_rushed_100_enemies_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
 	--[+ Russian +]--
