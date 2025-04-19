@@ -2428,296 +2428,483 @@ local localization_templates = {
 			-- 幫助xx00名被擊倒的幹員站起來。
 			create_template("ach_tea_2_ext_desc_tw", {"loc_achievement_assists_x_description"}, {"zh-tw"}, function(locale, value) return "協助 "..COLORS_Numbers.target_rgb.." 位被擊倒的隊友重返戰場。" end),
 
-		--[+ +HERETICS - ЕРЕТИКИ+ +]--
+	--[+ +HERETICS - ЕРЕТИКИ - 異端 + +]--
 		--[+ Heretics +]-- руоф Еретические
-	--[+ Russian +]--
-		create_template("ach_her_0_ext_ru", {"loc_achievement_category_enemies_label"}, {"ru"}, function(locale, value) return "Еретики" end),
+			--[+ Russian +]--
+			create_template("ach_her_0_ext_ru", {"loc_achievement_category_enemies_label"}, {"ru"}, function(locale, value) return "Еретики" end),
+			--[+ Traditional Chinese 異端 +]--
+			create_template("ach_her_0_ext_tw", {"loc_achievement_category_enemies_label"}, {"zh-tw"}, function(locale, value) return "異端" end),
 
 		--[+ Heretics +]-- руоф Барабанная дробь
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_shotgunner_spread_dodged_name"}, {"ru"}, function(locale, value) return "Барабанная дробь" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_shotgunner_spread_dodged_name"}, {"ru"}, function(locale, value) return "Барабанная дробь" end),
+			--[+ Traditional Chinese 霰彈槍 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_shotgunner_spread_dodged_name"}, {"zh-tw"}, function(locale, value) return "霰彈槍" end),
 
-			--[+  +]-- руоф Увернитесь от разброса из дробовика (50). [По 1 за каждого отброса с дробовиком]
-	--[+ Russian +]--
+		--[+  +]-- руоф Увернитесь от разброса из дробовика (50). [По 1 за каждого отброса с дробовиком]
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_shotgunner_spread_dodged_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 躲掉50次霰彈槍攻擊。[每個渣滓或血痂霰彈手只能算一次]
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_shotgunner_spread_dodged_description"}, {"zh-tw"}, function(locale, value) return "躲掉 "..COLORS_Numbers.target_rgb.." 名霰彈槍敵人，每名只計算1次。" end),
 
 		--[+ Lex Vigilant +]-- руоф Бдительность Закона
-	--[+ Russian +]--
-		create_template("ach_her_9_ext_ru", {"loc_achievement_all_cultist_elites_killed_name"}, {"ru"}, function(locale, value) return "Закон Неусыпный" end),
+			--[+ Russian +]--
+			create_template("ach_her_9_ext_ru", {"loc_achievement_all_cultist_elites_killed_name"}, {"ru"}, function(locale, value) return "Закон Неусыпный" end),
+			--[+ Traditional Chinese 法律的警示 +]--
+			create_template("ach_her_9_ext_tw", {"loc_achievement_all_cultist_elites_killed_name"}, {"zh-tw"}, function(locale, value) return "法律的警示" end),
 
-			--[+ Kill 10 of each Dreg elite. +]-- руоф Убейте элитных отбросов (по 10 каждого вида).
-	--[+ Russian +]--
+		--[+ Kill 10 of each Dreg elite. +]-- руоф Убейте элитных отбросов (по 10 каждого вида).
+			--[+ Russian +]--
 			create_template("ach_her_9_ext_desc_ru", {"loc_achievement_all_cultist_elites_killed_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов каждого типа из элитных дрегов." end),
+			--[+ Traditional Chinese +]--
+			-- 擊殺每種渣滓精英各10名。
+			create_template("ach_her_9_ext_desc_tw", {"loc_achievement_all_cultist_elites_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺每種『渣滓』精英各 "..COLORS_Numbers.target_rgb.." 名。" end),
 
 		--[+  +]-- руоф Бойся топора
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_crusher_overhead_smash_dodged_name"}, {"ru"}, function(locale, value) return "Бойся топора" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_crusher_overhead_smash_dodged_name"}, {"ru"}, function(locale, value) return "Бойся топора" end),
+			--[+ Traditional Chinese 不為魚肉 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_crusher_overhead_smash_dodged_name"}, {"zh-tw"}, function(locale, value) return "不為魚肉" end),
 
-			--[+ Kill 10 of each Dreg elite. +]-- руоф Увернитесь от рубящих ударов огринов-дробителей 50 р. [Считается только одно уклонение за каждого огрина-дробителя]
-	--[+ Russian +]--
+		--[+ Kill 10 of each Dreg elite. +]-- руоф Увернитесь от рубящих ударов огринов-дробителей 50 р. [Считается только одно уклонение за каждого огрина-дробителя]
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_crusher_overhead_smash_dodged_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 躲避50次歐格林輾壓者的過頭斬擊。[每個歐格林輾壓者只能算一次]
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_crusher_overhead_smash_dodged_description"}, {"zh-tw"}, function(locale, value) return "躲避 "..COLORS_Numbers.target_rgb.." 名輾壓者的重鎚攻擊，每名只計算1次。" end),
 
 		--[+  +]-- руоф Будь здоров
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"ru"}, function(locale, value) return "Будь здоров" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"ru"}, function(locale, value) return "Будь здоров" end),
+			--[+ Traditional Chinese 早日康復 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"zh-tw"}, function(locale, value) return "早日康復" end),
 
-			--[+  +]-- руоф Убейте тварь Нургла так, чтобы ни один член команды не пострадал от ее гниющей рвоты.
-	--[+ Russian +]--
+		--[+  +]-- руоф Убейте тварь Нургла так, чтобы ни один член команды не пострадал от ее гниющей рвоты.
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 在沒有任何小隊成員被納垢巨獸的腐敗嘔吐擊中的情況下擊殺一隻納垢巨獸。
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description"}, {"zh-tw"}, function(locale, value) return "在沒有任何小隊成員被納垢巨獸的腐敗嘔吐擊中的情況下擊殺  "..COLORS_Numbers.target_rgb.." 隻納垢巨獸。" end),
 
 		--[+ Blowout +]-- руоф Взрывной успех
-	--[+ Russian +]--
-		-- create_template("ach_her_5_ext_ru", {"loc_achievement_melee_renegade_name"}, {"ru"}, function(locale, value) return "Взрыв" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_5_ext_ru", {"loc_achievement_melee_renegade_name"}, {"ru"}, function(locale, value) return "Взрыв" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_5_ext_tw", {"loc_achievement_melee_renegade_name"}, {"zh-tw"}, function(locale, value) return "爆發" end),
 
-			--[+ Kill 10 Bombers with melee attacks. +]-- руоф Убить взрывунов в ближнем бою: 10.
-	--[+ Russian +]--
+		--[+ Kill 10 Bombers with melee attacks. +]-- руоф Убить взрывунов в ближнем бою: 10.
+			--[+ Russian +]--
 			-- create_template("ach_her_5_ext_desc_ru", {"loc_achievement_melee_renegade_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." Чумных взрывников атаками ближнего боя." end),
+			--[+ Traditional Chinese +]--
+			-- 利用近戰攻擊擊殺10名轟炸者。 -- Need to check if this is correct.
+			create_template("ach_her_5_ext_desc_tw", {"loc_achievement_melee_renegade_description"}, {"zh-tw"}, function(locale, value) return "使用近戰攻擊擊殺 "..COLORS_Numbers.target_rgb.." 隻瘟疫爆者。" end),
 
 		--[+  +]-- руоф Задуем свечи
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"ru"}, function(locale, value) return "Задуем свечи" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"ru"}, function(locale, value) return "Задуем свечи" end),
+			--[+ Traditional Chinese 熄滅蠟燭 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"zh-tw"}, function(locale, value) return "熄滅蠟燭" end),
 
-			--[+  +]-- руоф Убейте огнеметчиков из числа скабов и отбросов (50) до того, как они используют свои способности.
-	--[+ Russian +]--
+		-- !!Duplicate loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description --
+		--[+  +]-- руоф Убейте огнеметчиков из числа скабов и отбросов (50) до того, как они используют свои способности.
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_her_1_ext_desc_tw", {"loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description"}, {"zh-tw"}, function(locale, value) return "在沒有任何小隊成員被納垢巨獸的腐敗嘔吐擊中的情況下擊殺  "..COLORS_Numbers.target_rgb.." 隻納垢巨獸。" end),
+		-- !!Duplicate loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description --
 
 		--[+ Bullying the Bully +]-- руоф Запугивание задиры
-	--[+ Russian +]--
-		create_template("ach_her_18_ext_ru", {"loc_achievement_ogryn_gunner_melee_name"}, {"ru"}, function(locale, value) return "Задирание задиры" end),
+			--[+ Russian +]--
+			create_template("ach_her_18_ext_ru", {"loc_achievement_ogryn_gunner_melee_name"}, {"ru"}, function(locale, value) return "Задирание задиры" end),
+			--[+ Traditional Chinese 恃強凌強 +]--
+			create_template("ach_her_18_ext_tw", {"loc_achievement_ogryn_gunner_melee_name"}, {"zh-tw"}, function(locale, value) return "恃強凌強" end),
 
-			--[+ Kill 10 Reapers in melee. +]-- руоф Убейте Жнеца (10) в ближнем бою.
-	--[+ Russian +]--
+		--[+ Kill 10 Reapers in melee. +]-- руоф Убейте Жнеца (10) в ближнем бою.
+			--[+ Russian +]--
 			create_template("ach_her_18_ext_desc_ru", {"loc_achievement_ogryn_gunner_melee_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." Жнецов в ближнем бою." end),
+			--[+ Traditional Chinese +]--
+			-- 近戰殺死10名收割者。
+			create_template("ach_her_18_ext_desc_tw", {"loc_achievement_ogryn_gunner_melee_description"}, {"zh-tw"}, function(locale, value) return "使用近戰攻擊擊殺 "..COLORS_Numbers.target_rgb.." 名收割者。" end),
 
 		--[+ Cull the Traitors +]-- руоф Избавиться от предателей
-	--[+ Russian +]--
-		create_template("ach_her_7_ext_ru", {"loc_achievement_group_enemies_renegades_name"}, {"ru"}, function(locale, value) return "Уничтожьте предателей" end),
+			--[+ Russian +]--
+			create_template("ach_her_7_ext_ru", {"loc_achievement_group_enemies_renegades_name"}, {"ru"}, function(locale, value) return "Уничтожьте предателей" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_7_ext_tw", {"loc_achievement_group_enemies_renegades_name"}, {"zh-tw"}, function(locale, value) return "剷除叛徒" end),
 
-			--[+ Complete the following Scab Penances. +]-- руоф Выполнить следующие скаб-искупления.
-	--[+ Russian +]--
+		--[+ Complete the following Scab Penances. +]-- руоф Выполнить следующие скаб-искупления.
+			--[+ Russian +]--
 			create_template("ach_her_7_ext_desc_ru", {"loc_achievement_group_enemies_renegades_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления, связанные со скабами." end),
+			--[+ Traditional Chinese +]--
+			-- 完成下列『血痂』相關苦修。
+			-- Not used in the zh-tw
+			create_template("ach_her_7_ext_desc_tw", {"loc_achievement_group_enemies_renegades_description"}, {"zh-tw"}, function(locale, value) return "完成下列『血痂』相關苦修。" end),
 
 		--[+ Banishment +]-- руоф Изгнание
-	--[+ Russian +]--
-		-- create_template("ach_her_16_ext_ru", {"loc_achievement_all_chaos_killed_name"}, {"ru"}, function(locale, value) return "Изгнание" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_16_ext_ru", {"loc_achievement_all_chaos_killed_name"}, {"ru"}, function(locale, value) return "Изгнание" end),
+			--[+ Traditional Chinese 敢盡殺絕 +]--
+			create_template("ach_her_16_ext_tw", {"loc_achievement_all_chaos_killed_name"}, {"zh-tw"}, function(locale, value) return "敢盡殺絕" end),
 
-			--[+ Kill every type of Terror. +]-- руоф Убейте все виды ужасов.
-	--[+ Russian +]--
+		--[+ Kill every type of Terror. +]-- руоф Убейте все виды ужасов.
+			--[+ Russian +]--
 			create_template("ach_her_16_ext_desc_ru", {"loc_achievement_all_chaos_killed_description"}, {"ru"}, function(locale, value) return "Убейте врагов каждого типа из Ужасов хаоса." end),
+			--[+ Traditional Chinese +]--
+			-- 擊殺全種族恐魔。
+			create_template("ach_her_16_ext_desc_tw", {"loc_achievement_all_chaos_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺所有類型的『混沌恐懼體』敵人各 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Banisher +]-- руоф Изгоняющий демонов
-	--[+ Russian +]--
-		create_template("ach_her_19_ext_ru", {"loc_achievement_banish_daemonhost_name"}, {"ru"}, function(locale, value) return "Изгоняющий" end),
+			--[+ Russian +]--
+			create_template("ach_her_19_ext_ru", {"loc_achievement_banish_daemonhost_name"}, {"ru"}, function(locale, value) return "Изгоняющий" end),
+			--[+ Traditional Chinese 放逐者 +]--
+			create_template("ach_her_19_ext_tw", {"loc_achievement_banish_daemonhost_name"}, {"zh-tw"}, function(locale, value) return "放逐者" end),
 
-			--[+ Banish a Daemonhost. +]-- руоф Изгоните демонхоста.
-	--[+ Russian +]--
+		--[+ Banish a Daemonhost. +]-- руоф Изгоните демонхоста.
+			--[+ Russian +]--
 			create_template("ach_her_19_ext_desc_ru",{"loc_achievement_banish_daemonhost_description"}, {"ru"}, function(locale, value) return "Изгоните Демонхоста." end),
+			--[+ Traditional Chinese +]--
+			-- 放逐一個惡魔宿主。
+			create_template("ach_her_19_ext_desc_tw", {"loc_achievement_banish_daemonhost_description"}, {"zh-tw"}, function(locale, value) return "殺死 "..COLORS_Numbers.target_rgb.." 個惡魔宿主。" end),
 
 		--[+  +]-- руоф К бою готов!
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_training_grounds_fully_unlocked_name"}, {"ru"}, function(locale, value) return "К бою готов!" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_training_grounds_fully_unlocked_name"}, {"ru"}, function(locale, value) return "К бою готов!" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_training_grounds_fully_unlocked_name"}, {"zh-tw"}, function(locale, value) return "準備開打！" end),
 
-			--[+  +]-- руоф Полностью разблокируйте тренировочную площадку.
-	--[+ Russian +]--
+		--[+  +]-- руоф Полностью разблокируйте тренировочную площадку.
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_training_grounds_fully_unlocked_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 完整解鎖訓練場。
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_training_grounds_fully_unlocked_description"}, {"zh-tw"}, function(locale, value) return "完整解鎖訓練場。" end),
 
 		--[+  +]-- руоф Как ты подкрался?
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_bulwark_backstab_damage_inflicted_name"}, {"ru"}, function(locale, value) return "Как ты подкрался?" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_bulwark_backstab_damage_inflicted_name"}, {"ru"}, function(locale, value) return "Как ты подкрался?" end),
+			--[+ Traditional Chinese 意外一擊 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_bulwark_backstab_damage_inflicted_name"}, {"zh-tw"}, function(locale, value) return "意外一擊" end),
 
-			--[+  +]-- руоф Нанесите урон (25000) огрину-бастиону ударом в спину.
-	--[+ Russian +]--
+		--[+  +]-- руоф Нанесите урон (25000) огрину-бастиону ударом в спину.
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_bulwark_backstab_damage_inflicted_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 使用背刺對歐格林堡壘造成25000點傷害
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_bulwark_backstab_damage_inflicted_description"}, {"zh-tw"}, function(locale, value) return "使用背刺對歐格林堡壘造成 "..COLORS_Numbers.target_rgb.." 點傷害" end),
 
 		--[+ Traitorous Collective +]-- руоф Коллектив предателей
-	--[+ Russian +]--
-		-- create_template("ach_her_3_ext_ru", {"loc_achievement_all_renegades_killed_name"}, {"ru"}, function(locale, value) return "Коллектив предателей" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_3_ext_ru", {"loc_achievement_all_renegades_killed_name"}, {"ru"}, function(locale, value) return "Коллектив предателей" end),
+			--[+ Traditional Chinese 叛軍集團 +]--
+			create_template("ach_her_3_ext_tw", {"loc_achievement_all_renegades_killed_name"}, {"zh-tw"}, function(locale, value) return "叛軍集團" end),
 
-			--[+ Kill every type Scab enemy. +]-- руоф Убейте все виды врагов-Скабов.
-	--[+ Russian +]--
+		--[+ Kill every type Scab enemy. +]-- руоф Убейте все виды врагов-Скабов.
+			--[+ Russian +]--
 			create_template("ach_her_3_ext_desc_ru", {"loc_achievement_all_renegades_killed_description"}, {"ru"}, function(locale, value) return "Убейте врагов Скабов каждого типа." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_3_ext_desc_tw", {"loc_achievement_all_renegades_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺所有類型的『血痂』敵人各 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Nightmare Patrol +]-- руоф Кошмарный патруль
-	--[+ Russian +]--
-		-- create_template("ach_her_14_ext_ru", {"loc_achievement_all_chaos_specials_killed_name"}, {"ru"}, function(locale, value) return "Кошмарный патруль" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_14_ext_ru", {"loc_achievement_all_chaos_specials_killed_name"}, {"ru"}, function(locale, value) return "Кошмарный патруль" end),
+			--[+ Traditional Chinese 夢魘巡查隊 +]--
+			create_template("ach_her_14_ext_tw", {"loc_achievement_all_chaos_specials_killed_name"}, {"zh-tw"}, function(locale, value) return "夢魘巡查隊" end),
 
-			--[+ Kill 10 of each type of Terror Specialist. +]-- руоф Убейте специалистов из числа Ужасов: 10 каждого типа.
-	--[+ Russian +]--
+		--[+ Kill 10 of each type of Terror Specialist. +]-- руоф Убейте специалистов из числа Ужасов: 10 каждого типа.
+			--[+ Russian +]--
 			create_template("ach_her_14_ext_desc_ru", {"loc_achievement_all_chaos_specials_killed_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов Ужасов хаоса." end),
+			--[+ Traditional Chinese +]--
+			-- 擊殺10個每種類型的恐魔專家。
+			create_template("ach_her_14_ext_desc_tw", {"loc_achievement_all_chaos_specials_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺每種『混沌恐懼體』專家敵人各 "..COLORS_Numbers.target_rgb.." 名。" end),
 
 		--[+  +]-- руоф Как ты подкрался?
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_name"}, {"ru"}, function(locale, value) return "Как ты подкрался?" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_name"}, {"ru"}, function(locale, value) return "Как ты подкрался?" end),
+			--[+ Traditional Chinese 怪物驅散 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_name"}, {"zh-tw"}, function(locale, value) return "怪物驅散" end),
 
-			--[+  +]-- руоф Убейте отродье Хаоса так, чтобы не схватили ни одного члена команды.
-	--[+ Russian +]--
+		--[+  +]-- руоф Убейте отродье Хаоса так, чтобы не схватили ни одного члена команды.
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 在沒有任何小隊成員被渾沌魔物抓住的情況下擊殺一隻渾沌魔物。
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_description"}, {"zh-tw"}, function(locale, value) return "在沒有任何小隊成員被渾沌魔物抓住的情況下擊殺 "..COLORS_Numbers.target_rgb.." 隻渾沌魔物。" end),
 
 		--[+  +]-- руоф Не попасться в сети
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_trapper_net_dodged_name"}, {"ru"}, function(locale, value) return "Не попасться в сети" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_trapper_net_dodged_name"}, {"ru"}, function(locale, value) return "Не попасться в сети" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_trapper_net_dodged_name"}, {"zh-tw"}, function(locale, value) return "漏網之魚" end),
 
-			--[+  +]-- руоф Увернитесь от сетей ловушечника (50). [По 1 за каждого ловушечника]
-	--[+ Russian +]--
+		--[+  +]-- руоф Увернитесь от сетей ловушечника (50). [По 1 за каждого ловушечника]
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_trapper_net_dodged_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 躲避50次陷阱兵的網子。[每個陷阱兵只能算一次]			
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_trapper_net_dodged_description"}, {"zh-tw"}, function(locale, value) return "躲避 "..COLORS_Numbers.target_rgb.." 名陷阱兵的網子，每名只計算1次。" end),
 
 		--[+  +]-- руоф Обезвреживатель
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_grenadier_killed_before_attack_occured_name"}, {"ru"}, function(locale, value) return "Обезвреживатель" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_grenadier_killed_before_attack_occured_name"}, {"ru"}, function(locale, value) return "Обезвреживатель" end),
+			--[+ Traditional Chinese +]--
+			-- Not used in the zh-tw
+			-- create_template("ach_her_1_ext_tw", {"loc_achievement_grenadier_killed_before_attack_occured_name"}, {"zh-tw"}, function(locale, value) return "拆彈專家" end),
 
-			--[+  +]-- руоф Убейте гренадеров из числа скабов и отбросов (50) до того, как они используют свои способности.
-	--[+ Russian +]--
+		--[+  +]-- руоф Убейте гренадеров из числа скабов и отбросов (50) до того, как они используют свои способности.
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_grenadier_killed_before_attack_occured_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- Not used in the zh-tw
 
 		--[+  +]-- руоф Отвали от меня!
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_pox_hounds_pushed_name"}, {"ru"}, function(locale, value) return "Отвали от меня!" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_pox_hounds_pushed_name"}, {"ru"}, function(locale, value) return "Отвали от меня!" end),
+			--[+ Traditional Chinese 滾遠一點！ +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_pox_hounds_pushed_name"}, {"zh-tw"}, function(locale, value) return "滾遠一點！" end),
 
-			--[+  +]-- руоф Подбросьте чумных гончих (50) в воздух. [По 1 за каждую гончую]
-	--[+ Russian +]--
+		--[+  +]-- руоф Подбросьте чумных гончих (50) в воздух. [По 1 за каждую гончую]
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_pox_hounds_pushed_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 在半空中推開50隻瘟疫獵犬。[每隻獵犬只能算一次]
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_pox_hounds_pushed_description"}, {"zh-tw"}, function(locale, value) return "推開 "..COLORS_Numbers.target_rgb.." 隻瘟疫獵犬，每隻只計算1次。" end),
 
 		--[+ Dreg Hunter (1-5) +]-- руоф Охотник на отбросов (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_her_11_ext_ru", {"loc_achievement_kill_cultists_1-5_name"}, {"ru"}, function(locale, value) return "Охотник на дрегов (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_11_ext_ru", {"loc_achievement_kill_cultists_1-5_name"}, {"ru"}, function(locale, value) return "Охотник на дрегов (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_her_11_ext_tw", {"loc_achievement_kill_cultists_1-5_name"}, {"zh-tw"}, function(locale, value) return "渣滓獵手 (1-5)" end),
 
-			--[+ Kill 25000 Dregs. +]-- руоф Убить отбросов: 25000.
-	--[+ Russian +]--
+		--[+ Kill 25000 Dregs. +]-- руоф Убить отбросов: 25000.
+			--[+ Russian +]--
 			create_template("ach_her_11_ext_desc_ru", {"loc_achievement_kill_cultists_x_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." дрегов." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_11_ext_desc_tw", {"loc_achievement_kill_cultists_x_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名『渣滓』敵人。" end),
 
 		--[+ Purge the Heretics +]-- руоф Очистить еретиков
-	--[+ Russian +]--
-		create_template("ach_her_13_ext_ru", {"loc_achievement_group_enemies_cultists_name"}, {"ru"}, function(locale, value) return "Очисти еретиков" end),
+			--[+ Russian +]--
+			create_template("ach_her_13_ext_ru", {"loc_achievement_group_enemies_cultists_name"}, {"ru"}, function(locale, value) return "Очисти еретиков" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_13_ext_tw", {"loc_achievement_group_enemies_cultists_name"}, {"zh-tw"}, function(locale, value) return "淨化異端" end),
 
-			--[+ Complete the following Dreg Penances. +]-- руоф Выполнить следующие искупления отбросов.
-	--[+ Russian +]--
+		--[+ Complete the following Dreg Penances. +]-- руоф Выполнить следующие искупления отбросов.
+			--[+ Russian +]--
 			create_template("ach_her_13_ext_desc_ru", {"loc_achievement_group_enemies_cultists_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления, связанные с дрегами." end),
+			--[+ Traditional Chinese +]--
+			-- 完成下列渣滓相關苦修。
+			create_template("ach_her_13_ext_desc_tw", {"loc_achievement_group_enemies_cultists_description"}, {"zh-tw"}, function(locale, value) return "完成下列『渣滓』相關苦修。" end),
 
 		--[+ Cleanse the Taint +]-- руоф Очистить порчу
-	--[+ Russian +]--
-		create_template("ach_her_20_ext_ru", {"loc_achievement_group_enemies_chaos_name"}, {"ru"}, function(locale, value) return "Очисти порчу" end),
+			--[+ Russian +]--
+			create_template("ach_her_20_ext_ru", {"loc_achievement_group_enemies_chaos_name"}, {"ru"}, function(locale, value) return "Очисти порчу" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_20_ext_tw", {"loc_achievement_group_enemies_chaos_name"}, {"zh-tw"}, function(locale, value) return "除污去穢" end),
  
-			--[+ Complete the following Terror Penances. +]-- руоф Выполнить следующие ужасные искупления.
-	--[+ Russian +]--
+		--[+ Complete the following Terror Penances. +]-- руоф Выполнить следующие ужасные искупления.
+			--[+ Russian +]--
 			create_template("ach_her_20_ext_desc_ru", {"loc_achievement_group_enemies_chaos_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления, связанные с Ужасами варпа." end),
+			--[+ Traditional Chinese +]--
+			-- 完成下列恐魔相關苦修。
+			create_template("ach_her_20_ext_desc_tw", {"loc_achievement_group_enemies_chaos_description"}, {"zh-tw"}, function(locale, value) return "完成下列『恐魔』相關苦修。" end),
 
 		--[+ Renegade Master +]-- руоф Повелитель-отступник
-	--[+ Russian +]--
-		create_template("ach_her_1_ext_ru", {"loc_achievement_all_renegade_specials_killed_name"}, {"ru"}, function(locale, value) return "Мастер-отступник" end),
+			--[+ Russian +]--
+			create_template("ach_her_1_ext_ru", {"loc_achievement_all_renegade_specials_killed_name"}, {"ru"}, function(locale, value) return "Мастер-отступник" end),
+			--[+ Traditional Chinese 叛軍主宰 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_all_renegade_specials_killed_name"}, {"zh-tw"}, function(locale, value) return "叛軍主宰" end),
 
-			--[+ Kill 10 of each Scab Specialist enemy. +]-- руоф Убейте Скабов-специалистов (по 10 каждого вида).
-	--[+ Russian +]--
+		--[+ Kill 10 of each Scab Specialist enemy. +]-- руоф Убейте Скабов-специалистов (по 10 каждого вида).
+			--[+ Russian +]--
 			create_template("ach_her_1_ext_desc_ru", {"loc_achievement_all_renegade_specials_killed_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из скабов-специалистов." end),
+			--[+ Traditional Chinese +]--
+			-- 殺死每種血痂專家敵人各10名。
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_all_renegade_specials_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺每種『血痂』專家敵人各 "..COLORS_Numbers.target_rgb.." 名。" end),
 
 		--[+ Decapitation Protocol +]-- руоф Протокол обезглавливания
-	--[+ Russian +]--
-		-- create_template("ach_her_12_ext_ru", {"loc_achievement_cultiss_berzerker_head_name"}, {"ru"}, function(locale, value) return "Протокол обезглавливания" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_12_ext_ru", {"loc_achievement_cultiss_berzerker_head_name"}, {"ru"}, function(locale, value) return "Протокол обезглавливания" end),
+			--[+ Traditional Chinese +]--
+			-- Not used in the zh-tw
+			create_template("ach_her_12_ext_tw", {"loc_achievement_cultiss_berzerker_head_name"}, {"zh-tw"}, function(locale, value) return "斬首協議" end),
 
-			--[+ Kill 10 Dreg Ragers with Headshots. +]-- руоф Убейте отброса-буйного (10) выстрелом в голову.
-	--[+ Russian +]--
+		--[+ Kill 10 Dreg Ragers with Headshots. +]-- руоф Убейте отброса-буйного (10) выстрелом в голову.
+			--[+ Russian +]--
 			create_template("ach_her_12_ext_desc_ru", {"loc_achievement_cultist_berzerker_head_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." дрегов Берсерков в голову." end),
+			--[+ Traditional Chinese +]--
+			-- 爆頭殺死10名渣滓暴怒者。
+			create_template("ach_her_12_ext_desc_tw", {"loc_achievement_cultist_berzerker_head_description"}, {"zh-tw"}, function(locale, value) return "使用爆頭擊殺 "..COLORS_Numbers.target_rgb.." 名渣滓狂怒者。" end),
 
 		--[+ Purification Protocol +]-- руоф Протокол очищения
-	--[+ Russian +]--
-		-- create_template("ach_her_15_ext_ru", {"loc_achievement_all_chaos_elites_killed_name"}, {"ru"}, function(locale, value) return "Протокол очищения" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_15_ext_ru", {"loc_achievement_all_chaos_elites_killed_name"}, {"ru"}, function(locale, value) return "Протокол очищения" end),
+			--[+ Traditional Chinese 淨化協議 +]--
+			create_template("ach_her_15_ext_tw", {"loc_achievement_all_chaos_elites_killed_name"}, {"zh-tw"}, function(locale, value) return "淨化協議" end),
 
-			--[+ Kill 10 Elite Terrors. +]-- руоф Убейте элитных врагов из числа Ужасов: 10.
-	--[+ Russian +]--
+		--[+ Kill 10 Elite Terrors. +]-- руоф Убейте элитных врагов из числа Ужасов: 10.
+			--[+ Russian +]--
 			create_template("ach_her_15_ext_desc_ru", {"loc_achievement_all_chaos_elites_killed_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов каждого типа из элиты Ужасов хаоса." end),
+			--[+ Traditional Chinese +]--
+			-- 擊殺10個精英恐魔。
+			create_template("ach_her_15_ext_desc_tw", {"loc_achievement_all_chaos_elites_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺每種『混沌恐懼體』精英敵人各 "..COLORS_Numbers.target_rgb.." 名。" end),
 
 		--[+  +]-- руоф Прыткие пятки
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_mutant_charge_dodged_name"}, {"ru"}, function(locale, value) return "Прыткие пятки" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_mutant_charge_dodged_name"}, {"ru"}, function(locale, value) return "Прыткие пятки" end),
+			--[+ Traditional Chinese 快腳 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_mutant_charge_dodged_name"}, {"zh-tw"}, function(locale, value) return "快腳" end),
 
-			--[+  +]-- руоф Увернитесь от атак мутантов (50). [По 1 за каждого мутанта]
-	--[+ Russian +]--
+		--[+  +]-- руоф Увернитесь от атак мутантов (50). [По 1 за каждого мутанта]
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru",{"loc_achievement_mutant_charge_dodged_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end), -- ???????????
+			--[+ Traditional Chinese +]--
+			-- 躲避50次變種人衝鋒。[每個突擊變種人只能算一次]
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_mutant_charge_dodged_description"}, {"zh-tw"}, function(locale, value) return "躲避 "..COLORS_Numbers.target_rgb.." 名變種人的衝鋒，每名只計算1次。" end),
 
 		--[+  +]-- руоф Решающий рывок
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_cultist_gunner_shot_dodged_name"}, {"ru"}, function(locale, value) return "Решающий рывок" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_cultist_gunner_shot_dodged_name"}, {"ru"}, function(locale, value) return "Решающий рывок" end),
+			--[+ Traditional Chinese 快跑 +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_cultist_gunner_shot_dodged_name"}, {"zh-tw"}, function(locale, value) return "快跑" end),
 
-			--[+  +]-- руоф Увернитесь от выстрелов пулеметчика (500) во время бега.
-	--[+ Russian +]--
+		--[+  +]-- руоф Увернитесь от выстрелов пулеметчика (500) во время бега.
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_cultist_gunner_shot_dodged_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 衝刺時躲掉500次槍手射擊。
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_cultist_gunner_shot_dodged_description"}, {"zh-tw"}, function(locale, value) return "衝刺時躲掉 "..COLORS_Numbers.target_rgb.." 次槍手射擊。" end),
 
 		--[+ Scab Picker (1-5) +]-- руоф Сборщик скабов (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_her_4_ext_ru", {"loc_achievement_kill_renegades_1-5_name"}, {"ru"}, function(locale, value) return "Сборщик скабов (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_4_ext_ru", {"loc_achievement_kill_renegades_1-5_name"}, {"ru"}, function(locale, value) return "Сборщик скабов (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_her_4_ext_tw", {"loc_achievement_kill_renegades_1-5_name"}, {"zh-tw"}, function(locale, value) return "血痂採集者 (1-5)" end),
 
-			--[+ Kill 25000 Scabs. +]-- руоф Убить Скабов: 12500.
-	--[+ Russian +]--
+		--[+ Kill 25000 Scabs. +]-- руоф Убить Скабов: 12500.
+			--[+ Russian +]--
 			create_template("ach_her_4_ext_desc_ru",{"loc_achievement_kill_renegades_x_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 殺死xxx00名血痂敵人。
+			create_template("ach_her_4_ext_desc_tw", {"loc_achievement_kill_renegades_x_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名『血痂』敵人。" end),
 
 		--[+  +]-- руоф Сейчас рванет!
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru",{"loc_achievement_team_poxburster_damage_avoided_name"}, {"ru"}, function(locale, value) return "Сейчас рванёт!" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru",{"loc_achievement_team_poxburster_damage_avoided_name"}, {"ru"}, function(locale, value) return "Сейчас рванёт!" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_team_poxburster_damage_avoided_name"}, {"zh-tw"}, function(locale, value) return "要爆炸了！" end),
 
-			--[+  +]-- руоф Убейте чумных взрывунов (50), чтобы ни вы, ни члены команды не получили урона.
-	-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_team_poxburster_damage_avoided_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+		--[+  +]-- руоф Убейте чумных взрывунов (50), чтобы ни вы, ни члены команды не получили урона.
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_team_poxburster_damage_avoided_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 擊殺50名瘟疫爆者，且自己和隊友都沒受到傷害。
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_team_poxburster_damage_avoided_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名瘟疫爆者，且自己和隊友都沒受到傷害。" end),
 
 		--[+ Elitist +]-- руоф Сторонник элиты
-	create_template("ach_her_2_ext_ru", {"loc_achievement_all_renegade_elites_killed_name"}, {"ru"}, function(locale, value) return "Элитарист" end),
+			--[+ Russian +]--
+			create_template("ach_her_2_ext_ru", {"loc_achievement_all_renegade_elites_killed_name"}, {"ru"}, function(locale, value) return "Элитарист" end),
+			--[+ Traditional Chinese 精英主義者 +]--
+			create_template("ach_her_2_ext_tw", {"loc_achievement_all_renegade_elites_killed_name"}, {"zh-tw"}, function(locale, value) return "精英主義者" end),
 
-			--[+ Kill 10 of each Scab elite enemy. +]-- руоф Убейте элитных Скабов (по 10 каждого вида).
-	--[+ Russian +]--
+		--[+ Kill 10 of each Scab elite enemy. +]-- руоф Убейте элитных Скабов (по 10 каждого вида).
+			--[+ Russian +]--
 			create_template("ach_her_2_ext_desc_ru", {"loc_achievement_all_renegade_elites_killed_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из элитных скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 殺死每種血痂精英敵人各10名。
+			create_template("ach_her_2_ext_desc_tw", {"loc_achievement_all_renegade_elites_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺每種『血痂』精英敵人各 "..COLORS_Numbers.target_rgb.." 名。" end),
 
 		--[+  +]-- руоф Танец смерти
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_team_poxburster_damage_avoided_name"}, {"ru"}, function(locale, value) return "Танец смерти" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_team_poxburster_damage_avoided_name"}, {"ru"}, function(locale, value) return "Танец смерти" end),
+			-- [+ Traditional Chinese +]--
+			-- Not used in the zh-tw
+			-- create_template("ach_her_1_ext_tw", {"loc_achievement_team_poxburster_damage_avoided_name"}, {"zh-tw"}, function(locale, value) return "死亡之舞" end),
 
-			--[+  +]-- руоф Увернитесь от ударов палача (50). [По 1 за каждого палача]
-	--[+ Russian +]--
+		--[+  +]-- руоф Увернитесь от ударов палача (50). [По 1 за каждого палача]
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_team_poxburster_damage_avoided_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 躲避50次重鎚兵的攻擊。[每個重鎚兵只能算一次]
+			-- Not used in the zh-tw
+			-- create_template("ach_her_1_ext_desc_tw", {"loc_achievement_team_poxburster_damage_avoided_description"}, {"zh-tw"}, function(locale, value) return "躲避 "..COLORS_Numbers.target_rgb.." 名重鎚兵的攻擊，每名只計算1次。" end),
 
 		--[+ Lex Triumphant +]-- руоф Торжество Закона
-	--[+ Russian +]--
-		create_template("ach_her_8_ext_ru", {"loc_achievement_all_cultist_specials_killed_name"}, {"ru"}, function(locale, value) return "Закон Торжествующий" end),
+			--[+ Russian +]--
+			create_template("ach_her_8_ext_ru", {"loc_achievement_all_cultist_specials_killed_name"}, {"ru"}, function(locale, value) return "Закон Торжествующий" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_8_ext_tw", {"loc_achievement_all_cultist_specials_killed_name"}, {"zh-tw"}, function(locale, value) return "法律的凱旋" end),
 
-			--[+ Kill 10 of each Dreg Specialist. +]-- руоф Убейте отбросов-специалистов (по 10 каждого вида).
-	--[+ Russian +]--
+		--[+ Kill 10 of each Dreg Specialist. +]-- руоф Убейте отбросов-специалистов (по 10 каждого вида).
+			--[+ Russian +]--
 			create_template("ach_her_8_ext_desc_ru", {"loc_achievement_all_cultist_specials_killed_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов дрегов." end),
+			--[+ Traditional Chinese +]--
+			--擊殺每種渣滓專家各10名。
+			create_template("ach_her_8_ext_desc_tw", {"loc_achievement_all_cultist_specials_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺每種『渣滓』專家敵人各 "..COLORS_Numbers.target_rgb.." 名。" end),
 
 		--[+ Hard Labour +]-- руоф Тяжелый труд
-	--[+ Russian +]--
-		create_template("ach_her_6_ext_ru", {"loc_achievement_executor_non_headshot_name"}, {"ru"}, function(locale, value) return "Тяжёлый труд" end),
+			--[+ Russian +]--
+			create_template("ach_her_6_ext_ru", {"loc_achievement_executor_non_headshot_name"}, {"ru"}, function(locale, value) return "Тяжёлый труд" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_6_ext_tw", {"loc_achievement_executor_non_headshot_name"}, {"zh-tw"}, function(locale, value) return "苦工" end),
 
-			--[+ Kill 10 Scab Maulers without using Headshots. +]-- руоф Убейте Скаба-Палача (10), не используя выстрел в голову.
-	--[+ Russian +]--
+		--[+ Kill 10 Scab Maulers without using Headshots. +]-- руоф Убейте Скаба-Палача (10), не используя выстрел в голову.
+			--[+ Russian +]--
 			create_template("ach_her_6_ext_desc_ru", {"loc_achievement_executor_non_headshot_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." Разрубателей без попаданий по голове." end),
+			--[+ Traditional Chinese +]--
+			-- 在不爆頭的情況下殺死10名血痂重鎚者。
+			create_template("ach_her_6_ext_desc_tw", {"loc_achievement_executor_non_headshot_description"}, {"zh-tw"}, function(locale, value) return "在不爆頭的情況下擊殺 "..COLORS_Numbers.target_rgb.." 名『血痂』重鎚者。" end),
 
 		--[+  +]-- руоф Хорошие рефлексы
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_sniper_dodged_name"}, {"ru"}, function(locale, value) return "Хорошие рефлексы" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_sniper_dodged_name"}, {"ru"}, function(locale, value) return "Хорошие рефлексы" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_sniper_dodged_name"}, {"zh-tw"}, function(locale, value) return "高超反射" end),
 
-			--[+  +]-- руоф Увернитесь от выстрелов снайпера (50). [По 1 за каждого снайпера]
-	--[+ Russian +]--
+		--[+  +]-- руоф Увернитесь от выстрелов снайпера (50). [По 1 за каждого снайпера]
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_sniper_dodged_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 躲避50次狙擊手的射擊。[每個狙擊手只能算一次]
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_sniper_dodged_description"}, {"zh-tw"}, function(locale, value) return "躲避 "..COLORS_Numbers.target_rgb.." 名狙擊手的射擊，每名只計算1次。" end),
 
 		--[+ Purgator (1-5) +]-- руоф Чистильщик (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_her_17_ext_ru", {"loc_achievement_kill_chaos_1-5_name"}, {"ru"}, function(locale, value) return "Очиститель (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_17_ext_ru", {"loc_achievement_kill_chaos_1-5_name"}, {"ru"}, function(locale, value) return "Очиститель (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_her_17_ext_tw", {"loc_achievement_kill_chaos_1-5_name"}, {"zh-tw"}, function(locale, value) return "滌罪者 (1-5)" end),
 
-			--[+ Kill 25000 Poxwalkers and other Terrors of the warp. +]-- руоф Убить чумных ходоков и других врагов из числа Ужасов варпа: 15000.
-	--[+ Russian +]--
+		--[+ Kill 25000 Poxwalkers and other Terrors of the warp. +]-- руоф Убить чумных ходоков и других врагов из числа Ужасов варпа: 15000.
+			--[+ Russian +]--
 			create_template("ach_her_17_ext_desc_ru", {"loc_achievement_kill_chaos_x_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." Чумных ходоков и других Ужасов варпа." end),
+			--[+ Traditional Chinese +]--
+			-- 擊殺xx000個瘟疫行者和其他亞空間恐魔。
+			create_template("ach_her_17_ext_desc_tw", {"loc_achievement_kill_chaos_x_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名瘟疫行者和其他亞空間恐魔。" end),
 
 		--[+ Dreg Cleanser +]-- руоф Чистильщик отбросов
-	--[+ Russian +]--
-		create_template("ach_her_10_ext_ru", {"loc_achievement_all_cultists_killed_name"}, {"ru"}, function(locale, value) return "Чистильщик дрегов" end),
+			--[+ Russian +]--
+			create_template("ach_her_10_ext_ru", {"loc_achievement_all_cultists_killed_name"}, {"ru"}, function(locale, value) return "Чистильщик дрегов" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_10_ext_tw", {"loc_achievement_all_cultists_killed_name"}, {"zh-tw"}, function(locale, value) return "渣滓清潔師" end),
 
-			--[+ Kill every type of Dreg. +]-- руоф Убейте все виды отбросов.
-	--[+ Russian +]--
+		--[+ Kill every type of Dreg. +]-- руоф Убейте все виды отбросов.
+			--[+ Russian +]--
 			create_template("ach_her_10_ext_desc_ru", {"loc_achievement_all_cultists_killed_description"}, {"ru"}, function(locale, value) return "Убейте врагов каждого типа из дрегов." end),
+			--[+ Traditional Chinese +]--
+			--擊殺每種類型的渣滓。
+			create_template("ach_her_10_ext_desc_tw", {"loc_achievement_all_cultists_killed_description"}, {"zh-tw"}, function(locale, value) return "擊殺每種類型的『渣滓』敵人。" end),
 
 		--[+  +]-- руоф Это всё, на что ты способен?
-	--[+ Russian +]--
-		-- create_template("ach_her_1_ext_ru", {"loc_achievement_ogryn_gunner_shot_dodged_name"}, {"ru"}, function(locale, value) return "Это всё, на что ты способен?" end),
+			--[+ Russian +]--
+			-- create_template("ach_her_1_ext_ru", {"loc_achievement_ogryn_gunner_shot_dodged_name"}, {"ru"}, function(locale, value) return "Это всё, на что ты способен?" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_her_1_ext_tw", {"loc_achievement_ogryn_gunner_shot_dodged_name"}, {"zh-tw"}, function(locale, value) return "這就是你的極限了？" end),
 
-			--[+  +]-- руоф Увернитесь от атак огрина-жнеца (500) во время бега.
-	--[+ Russian +]--
+		--[+  +]-- руоф Увернитесь от атак огрина-жнеца (500) во время бега.
+			--[+ Russian +]--
 			-- create_template("ach_her_1_ext_desc_ru", {"loc_achievement_ogryn_gunner_shot_dodged_description"}, {"ru"}, function(locale, value) return "Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов." end),
+			--[+ Traditional Chinese +]--
+			-- 衝次時躲掉500次歐格林收割者射擊。
+			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_ogryn_gunner_shot_dodged_description"}, {"zh-tw"}, function(locale, value) return "衝刺時躲掉 "..COLORS_Numbers.target_rgb.." 次歐格林收割者射擊。" end),
 
 	--[+ +MISSIONS - МИССИИ+ +]--
 		--[+ Missions +]-- руоф Задания
