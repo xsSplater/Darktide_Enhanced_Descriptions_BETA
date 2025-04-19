@@ -527,10 +527,15 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("talent_tree_oper_mod_001_en",{"loc_talent_warp_charge_low"}, {"ru"}, function(locale, value) return "Сопротивление опасности" end),
 
-	--[+ Ranged Damage Boost - Повышение урона дальнего боя +]--
-	-- create_template("talent_tree_oper_mod_004_en", {"loc_talent_ranged_damage_low"}, {"en"}, function(locale, value) return "Ranged Damage Boost" end), -- ranged_damage:+5% -- Psyker, Ogryn, Veteran
+	--[+ Ranged Damage Boost Low - Повышение урона дальнего боя малое +]--
+	create_template("talent_tree_oper_mod_004_en", {"loc_talent_ranged_damage_low"}, {"en"}, function(locale, value) return "Ranged Damage Boost Low" end), -- ranged_damage:+5% -- Psyker, Ogryn, Veteran
 	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_004_ru", {"loc_talent_ranged_damage_low"}, {"ru"}, function(locale, value) return "Повышение урона дальнего боя" end),
+	create_template("talent_tree_oper_mod_004_ru", {"loc_talent_ranged_damage_low"}, {"ru"}, function(locale, value) return "Повышение урона дальнего боя малое" end),
+
+	--[+ Ranged Damage Boost Medium - Повышение урона дальнего боя среднее +]--
+	create_template("talent_tree_oper_mod_004_en", {"loc_talent_ranged_damage_medium"}, {"en"}, function(locale, value) return "Ranged Damage Boost Medium" end), -- ranged_damage:+5% -- Psyker, Ogryn, Veteran
+	--[+ Russian +]--
+	create_template("talent_tree_oper_mod_004_ru", {"loc_talent_ranged_damage_medium"}, {"ru"}, function(locale, value) return "Повышение урона дальнего боя среднее" end),
 
 	--[+ Reload Boost - Повышение скорости перезарядки +]--
 	-- create_template("talent_tree_oper_mod_011_en", {"loc_talent_reload_speed_low"}, {"en"}, function(locale, value) return "Reload Boost" end), -- reload_speed: +5% -- Ogryn, Veteran
