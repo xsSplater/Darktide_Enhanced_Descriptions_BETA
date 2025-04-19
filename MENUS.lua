@@ -347,68 +347,68 @@ local localization_templates = {
 	--[+ SEDITION - МЯТЕЖ +]--
 	create_template("mission_board_danger_1_ext_en",
 		{"loc_mission_board_danger_lowest"}, {"en"},
-			loc_text("COLORS_KWords.sedition_rgb)),
+			loc_text(COLORS_KWords.sedition_rgb)),
 	--[+ Russian +]--
 	create_template("mission_board_danger_1_ext_ru",
 		{"loc_mission_board_danger_lowest"}, {"ru"},
-			loc_text("COLORS_KWords_ru.sedition_rgb_ru)),
+			loc_text(COLORS_KWords_ru.sedition_rgb_ru)),
 	--[+  暴動 - Traditional Chinese +]--
 	create_template("mission_board_danger_1_ext_tw",
 		{"loc_mission_board_danger_lowest"}, {"zh-tw"},
-			loc_text("COLORS_KWords_tw.sedition_rgb_tw)),
+			loc_text(COLORS_KWords_tw.sedition_rgb_tw)),
 
 
 	-- [+ UPRISING - ВОССТАНИЕ +]--
 	create_template("mission_board_danger_2_ext_en",
 		{"loc_mission_board_danger_low"}, {"en"},
-			loc_text("COLORS_KWords.uprising_rgb)),
+			loc_text(COLORS_KWords.uprising_rgb)),
 	--[+ Russian +]--
 	create_template("mission_board_danger_2_ext_ru",
 		{"loc_mission_board_danger_low"}, {"ru"},
-			loc_text("COLORS_KWords_ru.uprising_rgb_ru)),
+			loc_text(COLORS_KWords_ru.uprising_rgb_ru)),
 	--[+  起義 - Traditional Chinese +]--
 	create_template("mission_board_danger_2_ext_tw",
 		{"loc_mission_board_danger_low"}, {"zh-tw"},
-			loc_text("COLORS_KWords_tw.uprising_rgb_tw)),
+			loc_text(COLORS_KWords_tw.uprising_rgb_tw)),
 
 	-- [+ MALICE - ЗЛОБА +]--
 	create_template("mission_board_danger_3_ext_en",
 		{"loc_mission_board_danger_medium"}, {"en"},
-			loc_text("COLORS_KWords.malice_rgb)),
+			loc_text(COLORS_KWords.malice_rgb)),
 	--[+ Russian +]--
 	create_template("mission_board_danger_3_ext_ru",
 		{"loc_mission_board_danger_medium"}, {"ru"},
-			loc_text("COLORS_KWords_ru.malice_rgb_ru)),
+			loc_text(COLORS_KWords_ru.malice_rgb_ru)),
 	--[+  惡毒 - Traditional Chinese +]--
 	create_template("mission_board_danger_3_ext_tw",
 		{"loc_mission_board_danger_medium"}, {"zh-tw"},
-			loc_text("COLORS_KWords_tw.malice_rgb_tw)),
+			loc_text(COLORS_KWords_tw.malice_rgb_tw)),
 
 	-- [+ HERESY - ЕРЕСЬ +]--
 	create_template("mission_board_danger_4_ext_en",
 		{"loc_mission_board_danger_high"}, {"en"},
-			loc_text("COLORS_KWords.heresy_rgb)),
+			loc_text(COLORS_KWords.heresy_rgb)),
 	--[+ Russian +]--
 	create_template("mission_board_danger_4_ext_ru",
 		{"loc_mission_board_danger_high"}, {"ru"},
-			loc_text("COLORS_KWords_ru.heresy_rgb_ru)),
+			loc_text(COLORS_KWords_ru.heresy_rgb_ru)),
 	--[+  異端 - Traditional Chinese +]--
 	create_template("mission_board_danger_4_ext_tw",
 		{"loc_mission_board_danger_high"}, {"zh-tw"},
-			loc_text("COLORS_KWords_tw.heresy_rgb_tw)),
+			loc_text(COLORS_KWords_tw.heresy_rgb_tw)),
 
 	-- [+ DAMNATION - ПРОКЛЯТИЕ +]--
 	create_template("mission_board_danger_5_ext_en",
 		{"loc_mission_board_danger_highest"}, {"en"},
-			loc_text("COLORS_KWords.damnation_rgb)),
+			loc_text(COLORS_KWords.damnation_rgb)),
 	--[+ Russian +]--
 	create_template("mission_board_danger_5_ext_ru",
 		{"loc_mission_board_danger_highest"}, {"ru"},
-			loc_text("COLORS_KWords_ru.damnation_rgb_ru)),
+			loc_text(COLORS_KWords_ru.damnation_rgb_ru)),
 	--[+  詛咒 - Traditional Chinese +]--
 	create_template("mission_board_danger_5_ext_tw",
 		{"loc_mission_board_danger_highest"}, {"zh-tw"},
-			loc_text("COLORS_KWords_tw.damnation_rgb_tw)),
+			loc_text(COLORS_KWords_tw.damnation_rgb_tw)),
 
 
 --[+ ++INVENTORY++ +]--
