@@ -2155,8 +2155,8 @@ local localization_templates = {
 
 	--[+ Keystone 3-3 - Good Shootin' +]--
 	create_template("talent_tree_ogr_keys3_003_desc_en", {"loc_talent_ogryn_critical_leadbelcher_desc"}, {"en"}, function(locale, value) return "The shot that triggers "..COLORS_KWords.Lucky_bullet_rgb.." is a guaranteed "..COLORS_KWords.Crit_rgb.." (if it Hits)." end), -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_3_rgb
-	--[+ French +]--
-	create_template("talent_tree_ogr_keys3_003_desc_fr", {"loc_talent_ogryn_critical_leadbelcher_desc"}, {"fr"}, function(locale, value) return "Le tir qui déclenche "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." est un "..COLORS_KWords_fr.Crit_hit_rgb_fr.." garanti (s'il touche)."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_3_rgb_fr end),
+	--[+ French +]--!!!
+	create_template("talent_tree_ogr_keys3_003_desc_fr", {"loc_talent_ogryn_critical_leadbelcher_desc"}, {"fr"}, function(locale, value) return "Le tir qui déclenche "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." est un "..COLORS_KWords_fr.Crit_hit_rgb_fr.." garanti (s'il touche)." end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_3_rgb_fr
 	--[+ Russian +]-- Хорошая стрельба -- руоф Хороший выстрел
 	create_template("talent_tree_ogr_keys3_003_desc_ru", {"loc_talent_ogryn_critical_leadbelcher_desc"}, {"ru"}, function(locale, value) return "Выстрел активировавший "..COLORS_KWords_ru.Lucky_bullet_rgb_ru.." гарантированно будет "..COLORS_KWords_ru.Crit_hit_om_rgb_ru.." (если попадёт)." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_3_3_rgb_ru
 
