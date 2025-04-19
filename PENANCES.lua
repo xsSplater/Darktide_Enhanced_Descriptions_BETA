@@ -2331,66 +2331,102 @@ local localization_templates = {
 			-- 使用滑步躲開1名敵人的攻擊。
 			create_template("ach_red_vet_5_ext_desc_tw", {"loc_achievement_slide_dodge_description"}, {"zh-tw"}, function(locale, value) return "使用滑行動作閃避一次敵方攻擊。" end),
 
-	--[+ +TEAM - КОМАНДА+ +]--
+	--[+ +TEAM - КОМАНДА - 小隊 + +]--
 		--[+ Team +]-- руоф Команда
-	--[+ Russian +]--
-		-- create_template("ach_tea_0_ext_ru", {"loc_achievement_category_teamplay_label"}, {"ru"}, function(locale, value) return "Команда" end),
+			--[+ Russian +]--
+			-- create_template("ach_tea_0_ext_ru", {"loc_achievement_category_teamplay_label"}, {"ru"}, function(locale, value) return "Команда" end),
+			--[+ Traditional Chinese 小隊 +]--
+			create_template("ach_tea_0_ext_tw", {"loc_achievement_category_teamplay_label"}, {"zh-tw"}, function(locale, value) return "小隊" end),
 
 		--[+ War's Not Over (1-5) +]-- руоф Война не окончена (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_tea_1_ext_ru", {"loc_achievement_revive_1-5_name"}, {"ru"}, function(locale, value) return "Война не окончена (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_tea_1_ext_ru", {"loc_achievement_revive_1-5_name"}, {"ru"}, function(locale, value) return "Война не окончена (1-5)" end),
+			--[+ Traditional Chinese 戰爭未完 +]--
 
-			--[+ Rescue a total of 500 Operatives. +]-- руоф Спасти оперативников: 500.
-	--[+ Russian +]--
+		--[+ Rescue a total of 500 Operatives. +]-- руоф Спасти оперативников: 500.
+			--[+ Russian +]--
 			create_template("ach_tea_1_ext_desc_ru", {"loc_achievement_revive_x_description"}, {"ru"}, function(locale, value) return "Спасите в общей сложности "..COLORS_Numbers.target_rgb.." оперативников." end),
+			--[+ Traditional Chinese +]--
+			-- 拯救總共xx名幹員。
+			create_template("ach_tea_1_ext_desc_tw", {"loc_achievement_revive_x_description"}, {"zh-tw"}, function(locale, value) return "累計救援 "..COLORS_Numbers.target_rgb.." 位幹員。" end),
 
 		--[+ Discipline & Teamwork (1-5) +]-- руоф Дисциплина и командная работа (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_tea_6_ext_ru", {"loc_achievement_deployables_1-5_name"}, {"ru"}, function(locale, value) return "Дисциплина и командная работа (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_tea_6_ext_ru", {"loc_achievement_deployables_1-5_name"}, {"ru"}, function(locale, value) return "Дисциплина и командная работа (1-5)" end),
+			--[+ Traditional Chinese 紀律和協作 +]--
+			-- create_template("ach_tea_6_ext_tw", {"loc_achievement_deployables_1-5_name"}, {"zh-tw"}, function(locale, value) return "紀律和協作 (1-5)" end),
 
-			--[+ Share 500 ammo or health packs. +]-- руоф Поделиться боеприпасами или аптечкой: 500.
-	--[+ Russian +]--
+		--[+ Share 500 ammo or health packs. +]-- руоф Поделиться боеприпасами или аптечкой: 500.
+			--[+ Russian +]--
 			create_template("ach_tea_6_ext_desc_ru", {"loc_achievement_deployables_x_description"}, {"ru"}, function(locale, value) return "Поделитесь "..COLORS_Numbers.target_rgb.." раз ящиками с боеприпасами или медикаментами." end),
+			--[+ Traditional Chinese +]--
+			-- 分享xxx次彈藥或醫療包。
+			create_template("ach_tea_6_ext_desc_tw", {"loc_achievement_deployables_x_description"}, {"zh-tw"}, function(locale, value) return "分享彈藥箱或醫療箱共計 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Good Samaritan +]-- руоф Добрый самаритянин
-	--[+ Russian +]--
-		-- create_template("ach_tea_7_ext_ru", {"loc_achievement_group_cooperation_name"}, {"ru"}, function(locale, value) return "Добрый самаритянин" end),
+			--[+ Russian +]--
+			-- create_template("ach_tea_7_ext_ru", {"loc_achievement_group_cooperation_name"}, {"ru"}, function(locale, value) return "Добрый самаритянин" end),
+			--[+ Traditional Chinese 樂善好施 +]--
+			create_template("ach_tea_7_ext_tw", {"loc_achievement_group_cooperation_name"}, {"zh-tw"}, function(locale, value) return "樂善好施" end),
 
-			--[+ Complete the following Team Penances. +]-- руоф Выполнить следующие командные искупления.
-	--[+ Russian +]--
+		--[+ Complete the following Team Penances. +]-- руоф Выполнить следующие командные искупления.
+			--[+ Russian +]--
 			create_template("ach_tea_7_ext_desc_ru", {"loc_achievement_group_cooperation_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления команды." end),
+			--[+ Traditional Chinese +]--
+			-- 完成下列小隊相關苦修。
+			create_template("ach_tea_7_ext_desc_tw", {"loc_achievement_group_cooperation_description"}, {"zh-tw"}, function(locale, value) return "完成下列小隊相關苦修。" end),
 
 		--[+ Buddy Up +]-- руоф Закадычные друзья
-	--[+ Russian +]--
-		create_template("ach_tea_4_ext_ru", {"loc_achievement_coherency_toughness_name"}, {"ru"}, function(locale, value) return "Сотрудничество" end),
+			--[+ Russian +]--
+			create_template("ach_tea_4_ext_ru", {"loc_achievement_coherency_toughness_name"}, {"ru"}, function(locale, value) return "Сотрудничество" end),
+			--[+ Traditional Chinese 救友扶傷 +]--
+			create_template("ach_tea_4_ext_tw", {"loc_achievement_coherency_toughness_name"}, {"zh-tw"}, function(locale, value) return "救友扶傷" end),
 
-			--[+ Replenish 2000 Toughness from Coherency. +]-- руоф С помощью «Сплоченности» восстановить стойкость: 2000.
-	--[+ Russian +]--
+		--[+ Replenish 2000 Toughness from Coherency. +]-- руоф С помощью «Сплоченности» восстановить стойкость: 2000.
+			--[+ Russian +]--
 			create_template("ach_tea_4_ext_desc_ru", {"loc_achievement_coherency_toughness_description"}, {"ru"}, function(locale, value) return "Восстановите "..COLORS_Numbers.target_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." под действием "..COLORS_KWords_ru.Coherency_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 通過協同補充2000點韌性。
+			create_template("ach_tea_4_ext_desc_tw", {"loc_achievement_coherency_toughness_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.Coherency_rgb_tw.."』狀態下，恢復 "..COLORS_Numbers.target_rgb.." 點『"..COLORS_KWords_tw.Toughness_rgb_tw.."』。" end),
 
 		--[+ Dream Team +]-- руоф Закадычные друзья
-	--[+ Russian +]--
-		create_template("ach_tea_3_ext_ru",{"loc_achievement_flawless_team_name"}, {"ru",}, function(locale, value) return "Команда мечты" end),
+			--[+ Russian +]--
+			create_template("ach_tea_3_ext_ru",{"loc_achievement_flawless_team_name"}, {"ru",}, function(locale, value) return "Команда мечты" end),
+			--[+ Traditional Chinese 最佳陣容 +]--
+			create_template("ach_tea_3_ext_tw", {"loc_achievement_flawless_team_name"}, {"zh-tw"}, function(locale, value) return "最佳陣容" end),
 
-			--[+ Complete 100 missions without anyone being downed. +]-- руоф Завершите 100 заданий так, чтобы никто в группе не был сбит с ног.
-	--[+ Russian +]--
+		--[+ Complete 100 missions without anyone being downed. +]-- руоф Завершите 100 заданий так, чтобы никто в группе не был сбит с ног.
+			--[+ Russian +]--
 			create_template("ach_tea_3_ext_desc_ru", {"loc_achievement_flawless_team_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий так, чтобы никого из команды не сбили с ног." end),
+			--[+ Traditional Chinese +]--
+			-- 在全員不被擊倒的情況下完成100項任務。
+			create_template("ach_tea_3_ext_desc_tw", {"loc_achievement_flawless_team_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 場任務，且隊伍中無任何成員被擊倒。" end),
 
 		--[+ Leave No One Behind +]-- руоф Никого не оставляйте позади
-	--[+ Russian +]--
-		create_template("ach_tea_5_ext_ru", {"loc_achievement_revive_all_namе"}, {"ru"}, function(locale, value) return "Никого не бросать" end),
+			--[+ Russian +]--
+			create_template("ach_tea_5_ext_ru", {"loc_achievement_revive_all_namе"}, {"ru"}, function(locale, value) return "Никого не бросать" end),
+			--[+ Traditional Chinese 不拋棄不放棄 +]--
+			create_template("ach_tea_5_ext_tw", {"loc_achievement_revive_all_namе"}, {"zh-tw"}, function(locale, value) return "不拋棄不放棄" end),
 
-			-- [+ Complete a single mission after Rescuing 3 different Operatives at least once from captivity. +]-- руоф Завершите одно задание, вызволив из плена различных оперативников (3) хотя бы один раз.
-	--[+ Russian +]--
+		-- [+ Complete a single mission after Rescuing 3 different Operatives at least once from captivity. +]-- руоф Завершите одно задание, вызволив из плена различных оперативников (3) хотя бы один раз.
+			--[+ Russian +]--
 			create_template("ach_tea_5_ext_desc_ru", {"loc_achievement_revive_all_description"}, {"ru"}, function(locale, value) return "Завершите одну миссию, освободив из плена "..COLORS_Numbers.target_rgb.." разных оперативников хотя бы по разу." end),
+			--[+ Traditional Chinese +]--
+			-- 拯救3個不同的被俘幹員後完成1個任務。
+			create_template("ach_tea_5_ext_desc_tw", {"loc_achievement_revive_all_description"}, {"zh-tw"}, function(locale, value) return "在單場任務中，至少各救出一次共 "..COLORS_Numbers.target_rgb.." 位不同的隊友。" end),
 
 		--[+ Up and at 'Em! (1-5) +]-- руоф Подъем! (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_tea_2_ext_ru", {"loc_achievement_assists_1-5_name"}, {"ru"}, function(locale, value) return "Поднимайся и вперёд! (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_tea_2_ext_ru", {"loc_achievement_assists_1-5_name"}, {"ru"}, function(locale, value) return "Поднимайся и вперёд! (1-5)" end),
+			--[+ Traditional Chinese 起來幹活 +]--
+			-- create_template("ach_tea_2_ext_tw", {"loc_achievement_assists_1-5_name"}, {"zh-tw"}, function(locale, value) return "起來幹活 (1-5)" end),
 
-			--[+ Help 1000 downed Operatives back up. +]-- руоф Помочь подняться поваленным оперативникам: 1000.
-	--[+ Russian +]--
+		--[+ Help 1000 downed Operatives back up. +]-- руоф Помочь подняться поваленным оперативникам: 1000.
+			--[+ Russian +]--
 			create_template("ach_tea_2_ext_desc_ru", {"loc_achievement_assists_x_description"}, {"ru"}, function(locale, value) return "Помогите "..COLORS_Numbers.target_rgb.." сбитым с ног оперативникам вернуться в бой." end),
+			--[+ Traditional Chinese +]--
+			-- 幫助xx00名被擊倒的幹員站起來。
+			create_template("ach_tea_2_ext_desc_tw", {"loc_achievement_assists_x_description"}, {"zh-tw"}, function(locale, value) return "協助 "..COLORS_Numbers.target_rgb.." 位被擊倒的隊友重返戰場。" end),
 
 		--[+ +HERETICS - ЕРЕТИКИ+ +]--
 		--[+ Heretics +]-- руоф Еретические
