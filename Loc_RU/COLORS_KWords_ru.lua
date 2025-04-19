@@ -190,7 +190,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local tal_col = Color[mod:get("talents_text_colour")](255, true)
 	local Scriers_gaze_rgb_ru = iu_actit("Взор провидца", tal_col)
 	local Stun_gren_rgb_ru = iu_actit("Оглушающая граната", tal_col)
-	local Frag_gren_rgb_ru = iu_actit("Фраг-граната", tal_col)
+	local Frag_gren_rgb_ru = iu_actit("Фраг-гранату", tal_col)
 	local Fragmentation_gren_rgb_ru = iu_actit("Осколочная граната", tal_col)
 
 --[+ ++TREAT - СЛОЖНОСТЬ++ +]--
