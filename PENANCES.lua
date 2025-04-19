@@ -2906,285 +2906,516 @@ local localization_templates = {
 			-- 衝次時躲掉500次歐格林收割者射擊。
 			create_template("ach_her_1_ext_desc_tw", {"loc_achievement_ogryn_gunner_shot_dodged_description"}, {"zh-tw"}, function(locale, value) return "衝刺時躲掉 "..COLORS_Numbers.target_rgb.." 次歐格林收割者射擊。" end),
 
-	--[+ +MISSIONS - МИССИИ+ +]--
+	--[+ +MISSIONS - МИССИИ - 任務 + +]--
 		--[+ Missions +]-- руоф Задания
-	--[+ Russian +]--
-		create_template("ach_mis_0_ext_ru", {"loc_achievement_category_missions_label"}, {"ru"}, function(locale, value) return "Миссии" end),
+			--[+ Russian +]--
+			create_template("ach_mis_0_ext_ru", {"loc_achievement_category_missions_label"}, {"ru"}, function(locale, value) return "Миссии" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_0_ext_tw", {"loc_achievement_category_missions_label"}, {"zh-tw"}, function(locale, value) return "任務" end),
 
 		--[+ General Missions +]-- руоф Обычные задания
-	--[+ Russian +]--
-		create_template("ach_mis_00_ext_ru", {"loc_achievement_subcategory_missions_general_label"}, {"ru"}, function(locale, value) return "Основные миссии" end),
+			--[+ Russian +]--
+			create_template("ach_mis_00_ext_ru", {"loc_achievement_subcategory_missions_general_label"}, {"ru"}, function(locale, value) return "Основные миссии" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_00_ext_tw", {"loc_achievement_subcategory_missions_general_label"}, {"zh-tw"}, function(locale, value) return "常規任務" end),
 
 		--[+  +]-- руоф Архивариус
-	--[+ Russian +]--
-		-- create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_5_name"}, {"ru"}, function(locale, value) return "Архивариус" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_5_name"}, {"ru"}, function(locale, value) return "Архивариус" end),
+			--[+ Traditional Chinese +]--
+			-- Only work in level 5?
+			create_template("ach_mis_1_ext_tw", {"loc_achievement_type_1_mission_5_name"}, {"zh-tw"}, function(locale, value) return "突擊派對 (5)" end),
 
-			--[+ Complete 250 Raid missions. +]-- руоф Восстановите писания из заданий: 100.
-	--[+ Russian +]--
+		--[+ Complete 250 Raid missions. +]-- руоф Восстановите писания из заданий: 100.
+			--[+ Russian +]--
 			create_template("ach_mis_1_ext_desc_ru", {"loc_achievement_type_1_mission_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий налётов." end),
+			--[+ Traditional Chinese +]--
+			-- 完成100次突襲任務。
+			create_template("ach_mis_1_ext_desc_tw", {"loc_achievement_type_1_mission_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次突襲任務。" end),
 
 		--[+ Atoman Auxilia (1-4) +]-- руоф Ауксилии Атомы (1-4)
-	--[+ Russian +]--
-		-- create_template("ach_mis_8_ext_ru", {"loc_achievement_missions_1-4_name"}, {"ru"}, function(locale, value) return "Ауксилии Атомы (1-4)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_8_ext_ru", {"loc_achievement_missions_1-4_name"}, {"ru"}, function(locale, value) return "Ауксилии Атомы (1-4)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_mis_8_ext_tw", {"loc_achievement_missions_1-4_name"}, {"zh-tw"}, function(locale, value) return "亞托瑪輔助軍" end),
  
-			--[+ Complete 1000 Missions. +]-- руоф Выполнить задания: 500.
-	--[+ Russian +]--
+		--[+ Complete 1000 Missions. +]-- руоф Выполнить задания: 500.
+			--[+ Russian +]--
 			create_template("ach_mis_8_ext_desc_ru", {"loc_achievement_missions_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx00次任務。
+			create_template("ach_mis_8_ext_desc_tw", {"loc_achievement_missions_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次任務。" end),
+
 
 		--[+ Auspex Drill (1-5) +]-- руоф Ауспекс-тренировка (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_mis_9_ext_ru", {"loc_achievement_scan_1-5_name"}, {"ru",}, handle_func = function(locale, value) return "Ауспекс взлом (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_9_ext_ru", {"loc_achievement_scan_1-5_name"}, {"ru",}, handle_func = function(locale, value) return "Ауспекс взлом (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_mis_9_ext_tw", {"loc_achievement_scan_1-5_name"}, {"zh-tw"}, function(locale, value) return "鳥卜儀訓練 (1-5)" end),
 
-			--[+ Scan 200 Auspex targets. +]-- руоф Просканировать целей ауспекса: 200.
-	--[+ Russian +]--
+		--[+ Scan 200 Auspex targets. +]-- руоф Просканировать целей ауспекса: 200.
+			--[+ Russian +]--
 			create_template("ach_mis_9_ext_desc_ru", {"loc_achievement_scan_x_description"}, {"ru"}, function(locale, value) return "Просканируйте "..COLORS_Numbers.target_rgb.." целей ауспекса." end),
+			--[+ Traditional Chinese +]--
+			-- 掃描200名占卜者。
+			create_template("ach_mis_9_ext_desc_tw", {"loc_achievement_scan_x_description"}, {"zh-tw"}, function(locale, value) return "掃描 "..COLORS_Numbers.target_rgb.." 個鳥卜儀目標。" end),
 
 		--[+ Flawless interrogator +]-- руоф Безупречный опросчик
-	--[+ Russian +]--
-		-- create_template("ach_mis_11_ext_ru", {"loc_achievement_hack_perfect_name"}, {"ru",}, handle_func = function(locale, value) return "Безупречный опросчик" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_11_ext_ru", {"loc_achievement_hack_perfect_name"}, {"ru",}, handle_func = function(locale, value) return "Безупречный опросчик" end),
+			--[+ Traditional Chinese 完美審訊者 +]--
+			create_template("ach_mis_11_ext_tw", {"loc_achievement_hack_perfect_name"}, {"zh-tw"}, function(locale, value) return "完美審訊者" end),
 
-			--[+ Complete a Data Interrogation without an incorrect auspex entry. +]-- руоф Завершите опрос данных без выбора неправильной записи ауспекса.
-	--[+ Russian +]--
+		--[+ Complete a Data Interrogation without an incorrect auspex entry. +]-- руоф Завершите опрос данных без выбора неправильной записи ауспекса.
+			--[+ Russian +]--
 			create_template("ach_mis_11_ext_desc_ru", {"loc_achievement_hack_perfect_description"}, {"ru"}, function(locale, value) return "Завершите опрос данных без выбора неправильной записи в ауспексе." end),
+			--[+ Traditional Chinese +]--
+			-- 在使用卜測儀輸入並且沒有出現錯誤的情況下完成1次數據查詢。
+			create_template("ach_mis_11_ext_desc_tw", {"loc_achievement_hack_perfect_description"}, {"zh-tw"}, function(locale, value) return "在沒有輸入錯誤的情況下完成"..COLORS_Numbers.target_rgb.."次數據查詢。" end),
 
 	--[+ +Становление легенды+ +]--
 		--[+ The Legend Grows? +]-- руоф Становление легенды:\nНовобранец Инквизиции
-	--[+ Russian +]--
-		-- create_template("ach_mis_13_ext_ru", {"loc_achievement_mission_difficulty_objectives_1_name"}, {"ru"}, function(locale, value) return "Становление легенды:\nНовобранец Инквизиции" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_13_ext_ru", {"loc_achievement_mission_difficulty_objectives_1_name"}, {"ru"}, function(locale, value) return "Становление легенды:\nНовобранец Инквизиции" end),
+			--[+ Traditional Chinese 審判庭的新手 +]--
+			create_template("ach_mis_13_ext_tw", {"loc_achievement_mission_difficulty_objectives_1_name"}, {"zh-tw"}, function(locale, value) return "審判庭的新手" end),
 
-			--[+ Complete each mission type on Sedition Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Мятеж» или выше.
-	--[+ Russian +]--
+		--[+ Complete each mission type on Sedition Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Мятеж» или выше.
+			--[+ Russian +]--
 			create_template("ach_mis_13_1_ext_desc_ru", {"loc_achievement_mission_difficulty_objectives_1_description"}, {"ru"}, function(locale, value) return "Завершите каждый тип миссий на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在騷亂威脅度或更高級別下完成全部任務類型。
+			create_template("ach_mis_13_1_ext_desc_tw", {"loc_achievement_mission_difficulty_objectives_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，完成每種任務類型。" end),
 
 		--[+ The Legend Grows? +]-- руоф Становление легенды:\nВетеран Инквизиции
-	--[+ Russian +]--
-		-- create_template("ach_mis_13_ext_ru", {"loc_achievement_mission_difficulty_objectives_2_name"}, {"ru"}, function(locale, value) return "Становление легенды:\nВетеран Инквизиции" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_13_ext_ru", {"loc_achievement_mission_difficulty_objectives_2_name"}, {"ru"}, function(locale, value) return "Становление легенды:\nВетеран Инквизиции" end),
+			--[+ Traditional Chinese - 審判庭的老兵 +]--
+			create_template("ach_mis_13_ext_tw", {"loc_achievement_mission_difficulty_objectives_2_name"}, {"zh-tw"}, function(locale, value) return "審判庭的老兵" end),
 
-			--[+ Complete each mission type on Uprising Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Восстание» или выше.
-	--[+ Russian +]--
+		--[+ Complete each mission type on Uprising Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Восстание» или выше.
+			--[+ Russian +]--
 			create_template("ach_mis_13_1_ext_desc_ru", {"loc_achievement_mission_difficulty_objectives_2_description"}, {"ru"}, function(locale, value) return "Завершите каждый тип миссий на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在起義威脅度或更高級別下完成全部任務類型。
+			create_template("ach_mis_13_1_ext_desc_tw", {"loc_achievement_mission_difficulty_objectives_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，完成每種任務類型。" end),
 
 		--[+ The Legend Grows? +]-- руоф Становление легенды:\nЭталон Инквизиции
-	--[+ Russian +]--
-		-- create_template("ach_mis_13_ext_ru",  {"loc_achievement_mission_difficulty_objectives_3_name"}, {"ru"}, function(locale, value) return "Становление легенды:\nЭталон Инквизиции" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_13_ext_ru",  {"loc_achievement_mission_difficulty_objectives_3_name"}, {"ru"}, function(locale, value) return "Становление легенды:\nЭталон Инквизиции" end),
+			--[+ Traditional Chinese - 審判庭的模範 +]--
+			create_template("ach_mis_13_ext_tw", {"loc_achievement_mission_difficulty_objectives_3_name"}, {"zh-tw"}, function(locale, value) return "審判庭的模範" end),
 
-			--[+ Complete each mission type on Malice Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
-	--[+ Russian +]--
+		--[+ Complete each mission type on Malice Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+			--[+ Russian +]--
 			create_template("ach_mis_13_1_ext_desc_ru", {"loc_achievement_mission_difficulty_objectives_3_description"}, {"ru"}, function(locale, value) return "Завершите каждый тип миссий на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高級別下完成全部任務類型。
+			create_template("ach_mis_13_1_ext_desc_tw", {"loc_achievement_mission_difficulty_objectives_3_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成每種任務類型。" end),
 
 		--[+ The Legend Grows? +]-- руоф Становление легенды:\nЛегенда Инквизиции
-	--[+ Russian +]--
-		-- create_template("ach_mis_13_ext_ru", {"loc_achievement_mission_difficulty_objectives_4_name"}, {"ru"}, function(locale, value) return "Становление легенды:\nЛегенда Инквизиции" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_13_ext_ru", {"loc_achievement_mission_difficulty_objectives_4_name"}, {"ru"}, function(locale, value) return "Становление легенды:\nЛегенда Инквизиции" end),
+			--[+ Traditional Chinese - 審判庭的傳奇 +]--
+			create_template("ach_mis_13_ext_tw", {"loc_achievement_mission_difficulty_objectives_4_name"}, {"zh-tw"}, function(locale, value) return "審判庭的傳奇" end),
 
-			--[+ Complete each mission type on Heresy Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
-	--[+ Russian +]--
+		--[+ Complete each mission type on Heresy Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
+			--[+ Russian +]--
 			create_template("ach_mis_13_1_ext_desc_ru", {"loc_achievement_mission_difficulty_objectives_4_description"}, {"ru"}, function(locale, value) return "Завершите каждый тип миссий на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在叛亂威脅度或更高級別下完成全部任務類型。
+			create_template("ach_mis_13_1_ext_desc_tw", {"loc_achievement_mission_difficulty_objectives_4_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成每種任務類型。" end),
 
+		-- I think this is redundant?; the penance only ranges from 1 to 4. 
 		--[+ The Legend Grows? +]-- руоф Становление легенды
-	--[+ Russian +]--
-		-- create_template("ach_mis_13_ext_ru", {"loc_achievement_mission_difficulty_objectives_5_name"}, {"ru"}, function(locale, value) return "Становление легенды" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_13_ext_ru", {"loc_achievement_mission_difficulty_objectives_5_name"}, {"ru"}, function(locale, value) return "Становление легенды" end),
+			--[+ Traditional Chinese - 審判庭的傳奇 +]--
 
-			--[+ Complete each mission type on Damnation Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Проклятие» или выше.
-	--[+ Russian +]--
+		--[+ Complete each mission type on Damnation Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Проклятие» или выше.
+			--[+ Russian +]--
 			create_template("ach_mis_13_1_ext_desc_ru", {"loc_achievement_mission_difficulty_objectives_5_description"}, {"ru"}, function(locale, value) return "Завершите каждый тип миссий на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_mis_13_1_ext_desc_tw", {"loc_achievement_mission_difficulty_objectives_5_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，完成每種任務類型。" end),
 
 	--[+ +Налёты+ +]--
 		--[+ Raiding Party (1) +]-- руоф Вечеринка налетчиков (1)
-	--[+ Russian +]--
-		create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_1_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (1)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_1_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (1)" end),
+			----[+ Traditional Chinese 突擊派對 (1) +]--
+			create_template("ach_mis_1_ext_tw", {"loc_achievement_type_1_mission_1_name"}, {"zh-tw"}, function(locale, value) return "突擊派對 (1)" end),
 
 		--[+ Raiding Party (2) +]-- руоф Вечеринка налетчиков (2)
-	--[+ Russian +]--
-		create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_2_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (2)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_2_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (2)" end),
+			----[+ Traditional Chinese 突擊派對 (2) +]--
+			create_template("ach_mis_1_ext_tw", {"loc_achievement_type_1_mission_2_name"}, {"zh-tw"}, function(locale, value) return "突擊派對 (2)" end),
 
 		--[+ Raiding Party (3) +]-- руоф Вечеринка налетчиков (3)
-	--[+ Russian +]--
-		create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_3_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (3)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_3_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (3)" end),
+			----[+ Traditional Chinese 突擊派對 (3) +]--
+			create_template("ach_mis_1_ext_tw", {"loc_achievement_type_1_mission_3_name"}, {"zh-tw"}, function(locale, value) return "突擊派對 (3)" end),
 
 		--[+ Raiding Party (4) +]-- руоф Вечеринка налетчиков (4)
-	--[+ Russian +]--
-		create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_4_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (4)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_4_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (4)" end),
+			----[+ Traditional Chinese 突擊派對 (4) +]--
+			create_template("ach_mis_1_ext_tw", {"loc_achievement_type_1_mission_4_name"}, {"zh-tw"}, function(locale, value) return "突擊派對 (4)" end),
 
 		--[+ Raiding Party (5) +]-- руоф Вечеринка налетчиков (5)
-	--[+ Russian +]--
-		create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_5_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (5)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_1_ext_ru", {"loc_achievement_type_1_mission_5_name"}, {"ru"}, function(locale, value) return "Группа налётчиков (5)" end),
+			----[+ Traditional Chinese 突擊派對 (5) +]--
+			create_template("ach_mis_1_ext_tw", {"loc_achievement_type_1_mission_5_name"}, {"zh-tw"}, function(locale, value) return "突擊派對 (5)" end),
 
-			--[+ Complete 250 Raid missions. +]-- руоф Выполните задания типа «Налет»: 100.
-	--[+ Russian +]--
+		--[+ Complete 250 Raid missions. +]-- руоф Выполните задания типа «Налет»: 100.
+			--[+ Russian +]--
 			create_template("ach_mis_1_ext_desc_ru", {"loc_achievement_type_1_mission_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." налётов." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx次突襲任務。
+			create_template("ach_mis_1_ext_desc_tw", {"loc_achievement_type_1_mission_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次突襲任務。" end),
 
 	--[+ +Расследования+ +]--
 		--[+ No Stone Unturned (1) +]-- руоф Всё вверх дном (1)
-	--[+ Russian +]--
-		create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_1_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (1)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_1_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (1)" end),
+			----[+ Traditional Chinese 不留死角 (1) +]--
+			create_template("ach_mis_3_ext_tw", {"loc_achievement_type_3_mission_1_name"}, {"zh-tw"}, function(locale, value) return "不留死角 (1)" end),
 
 		--[+ No Stone Unturned (2) +]-- руоф Всё вверх дном (2)
-	--[+ Russian +]--
-		create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_2_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (2)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_2_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (2)" end),
+			----[+ Traditional Chinese 不留死角 (2) +]--
+			create_template("ach_mis_3_ext_tw", {"loc_achievement_type_3_mission_2_name"}, {"zh-tw"}, function(locale, value) return "不留死角 (2)" end),
 
 		--[+ No Stone Unturned (3) +]-- руоф Всё вверх дном (3)
-	--[+ Russian +]--
-		create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_3_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (3)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_3_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (3)" end),
+			----[+ Traditional Chinese 不留死角 (3) +]--
+			create_template("ach_mis_3_ext_tw", {"loc_achievement_type_3_mission_3_name"}, {"zh-tw"}, function(locale, value) return "不留死角 (3)" end),
 
 		--[+ No Stone Unturned (4) +]-- руоф Всё вверх дном (4)
-	--[+ Russian +]--
-		create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_4_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (4)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_4_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (4)" end),
+			----[+ Traditional Chinese 不留死角 (4) +]--
+			create_template("ach_mis_3_ext_tw", {"loc_achievement_type_3_mission_4_name"}, {"zh-tw"}, function(locale, value) return "不留死角 (4)" end),
 
 		--[+ No Stone Unturned (5) +]-- руоф Всё вверх дном (5)
-	--[+ Russian +]--
-		create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_5_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (5)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_3_ext_ru", {"loc_achievement_type_3_mission_5_name"}, {"ru"}, function(locale, value) return "Заглянуть под каждый камень (5)" end),
+			----[+ Traditional Chinese 不留死角 (5) +]--
 
-			--[+ Complete 100 Investigation missions. +]-- руоф Завершите задания типа «Расследования»: 100.
-	--[+ Russian +]--
+		--[+ Complete 100 Investigation missions. +]-- руоф Завершите задания типа «Расследования»: 100.
+			--[+ Russian +]--
 			create_template("ach_mis_3_ext_desc_ru", {"loc_achievement_type_3_mission_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." расследований." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx次調查任務。
+			create_template("ach_mis_3_ext_desc_tw", {"loc_achievement_type_3_mission_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次調查任務。" end),
 
 	--[+ +Диверсии+ +]--
 		--[+ Disruptive Behavior (1) +]-- руоф Диверсант - звучит гордо (1)
-	--[+ Russian +]--
-		create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_1_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (1)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_1_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (1)" end),
+			----[+ Traditional Chinese 搗亂行為 (1) +]--
+			create_template("ach_mis_4_ext_tw", {"loc_achievement_type_4_mission_1_name"}, {"zh-tw"}, function(locale, value) return "搗亂行為 (1)" end),
 
 		--[+ Disruptive Behavior (2) +]-- руоф Диверсант - звучит гордо (2)
-	--[+ Russian +]--
-		create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_2_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (2)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_2_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (2)" end),
+			----[+ Traditional Chinese 搗亂行為 (2) +]--
+			create_template("ach_mis_4_ext_tw", {"loc_achievement_type_4_mission_2_name"}, {"zh-tw"}, function(locale, value) return "搗亂行為 (2)" end),
 
 		--[+ Disruptive Behavior (3) +]-- руоф Диверсант - звучит гордо (3)
-	--[+ Russian +]--
-		create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_3_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (3)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_3_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (3)" end),
+			----[+ Traditional Chinese 搗亂行為 (3) +]--
+			create_template("ach_mis_4_ext_tw", {"loc_achievement_type_4_mission_3_name"}, {"zh-tw"}, function(locale, value) return "搗亂行為 (3)" end),
 
 		--[+ Disruptive Behavior (4) +]-- руоф Диверсант - звучит гордо (4)
-	--[+ Russian +]--
-		create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_4_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (4)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_4_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (4)" end),
+			----[+ Traditional Chinese 搗亂行為 (4) +]--
+			create_template("ach_mis_4_ext_tw", {"loc_achievement_type_4_mission_4_name"}, {"zh-tw"}, function(locale, value) return "搗亂行為 (4)" end),
 
 		--[+ Disruptive Behavior (5) +]-- руоф Диверсант - звучит гордо (5)
-	--[+ Russian +]--
-		create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_5_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (5)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_4_ext_ru", {"loc_achievement_type_4_mission_5_name"}, {"ru"}, function(locale, value) return "Деструктивное поведение (5)" end),
+			----[+ Traditional Chinese 搗亂行為 (5) +]--
+			create_template("ach_mis_4_ext_tw", {"loc_achievement_type_4_mission_5_name"}, {"zh-tw"}, function(locale, value) return "搗亂行為 (5)" end),
 
-			--[+ Complete 150 Disruption missions. +]-- руоф Завершить задания типа «Диверсия»: 100.
-	--[+ Russian +]--
+		--[+ Complete 150 Disruption missions. +]-- руоф Завершить задания типа «Диверсия»: 100.
+			--[+ Russian +]--
 			create_template("ach_mis_4_ext_desc_ru", {"loc_achievement_type_4_mission_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." диверсий." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx次擾亂任務。
+			create_template("ach_mis_4_ext_desc_tw", {"loc_achievement_type_4_mission_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次擾亂任務。" end),
 
 	--[+ +Ликвидации+ +]--
 		--[+ Seek, Locate, Destroy (1) +]-- руоф Ищите, находите, уничтожайте (1)
-	--[+ Russian +]--
-		create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_1_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (1)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_1_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (1)" end),
+			----[+ Traditional Chinese 尋找、定位、摧毀 (1) +]--
+			create_template("ach_mis_2_ext_tw", {"loc_achievement_type_2_mission_1_name"}, {"zh-tw"}, function(locale, value) return "尋找、定位、摧毀 (1)" end),
 
 		--[+ Seek, Locate, Destroy (2) +]-- руоф Ищите, находите, уничтожайте (2)
-	--[+ Russian +]--
-		create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_2_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (2)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_2_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (2)" end),
+			----[+ Traditional Chinese 尋找、定位、摧毀 (2) +]--
+			create_template("ach_mis_2_ext_tw", {"loc_achievement_type_2_mission_2_name"}, {"zh-tw"}, function(locale, value) return "尋找、定位、摧毀 (2)" end),
 
 		--[+ Seek, Locate, Destroy (3) +]-- руоф Ищите, находите, уничтожайте (3)
-	--[+ Russian +]--
-		create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_3_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (3)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_3_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (3)" end),
+			----[+ Traditional Chinese 尋找、定位、摧毀 (3) +]--
+			create_template("ach_mis_2_ext_tw", {"loc_achievement_type_2_mission_3_name"}, {"zh-tw"}, function(locale, value) return "尋找、定位、摧毀 (3)" end),
 
 		--[+ Seek, Locate, Destroy (4) +]-- руоф Ищите, находите, уничтожайте (4)
-	--[+ Russian +]--
-		create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_4_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (4)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_4_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (4)" end),
+			----[+ Traditional Chinese 尋找、定位、摧毀 (4) +]--
+			create_template("ach_mis_2_ext_tw", {"loc_achievement_type_2_mission_4_name"}, {"zh-tw"}, function(locale, value) return "尋找、定位、摧毀 (4)" end),
 
 		--[+ Seek, Locate, Destroy (5) +]-- руоф Ищите, находите, уничтожайте (5)
-	--[+ Russian +]--
-		create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_5_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (5)" end),
+			--[+ Russian +]--
+			create_template("ach_mis_2_ext_ru", {"loc_achievement_type_2_mission_5_name"}, {"ru"}, function(locale, value) return "Искать, найти, ликвидировать (5)" end),
+			----[+ Traditional Chinese 尋找、定位、摧毀 (4) +]--
+			create_template("ach_mis_2_ext_tw", {"loc_achievement_type_2_mission_5_name"}, {"zh-tw"}, function(locale, value) return "尋找、定位、摧毀 (5)" end),
 
-			--[+ Complete 200 Assassination missions. +]-- руоф Выполнить заданий на убийство: 100.
-	--[+ Russian +]--
+		--[+ Complete 200 Assassination missions. +]-- руоф Выполнить заданий на убийство: 100.
+			--[+ Russian +]--
 			create_template("ach_mis_2_ext_desc_ru", {"loc_achievement_type_2_mission_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." ликвидаций." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx個刺殺任務。
+			create_template("ach_mis_2_ext_desc_tw", {"loc_achievement_type_2_mission_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次刺殺任務。" end),
 
 	--[+ +Шпионаж+ +]--
 		--[+ Master of Intrique (1-5) +]-- руоф Мастер интриги (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_mis_6_ext_ru", {"loc_achievement_type_6_mission_1-5_name"}, {"ru"}, function(locale, value) return "Мастер интриг (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_6_ext_ru", {"loc_achievement_type_6_mission_1-5_name"}, {"ru"}, function(locale, value) return "Мастер интриг (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_mis_6_ext_tw", {"loc_achievement_type_6_mission_1-5_name"}, {"zh-tw"}, function(locale, value) return "陰謀大師 (1-5)" end),
 
-			--[+ Complete 150 Espionage missions. +]-- руоф Завершите задания типа «Шпионаж»: 100.
-	--[+ Russian +]--
+		--[+ Complete 150 Espionage missions. +]-- руоф Завершите задания типа «Шпионаж»: 100.
+			--[+ Russian +]--
 			create_template("ach_mis_6_ext_desc_ru", {"loc_achievement_type_6_mission_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." шпионских миссий." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx次破壞任務。
+			create_template("ach_mis_6_ext_desc_tw", {"loc_achievement_type_6_mission_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次破壞任務。" end),
 
 		--[+ Mission Improbable +]-- руоф Задание невыполнимо
-	--[+ Russian +]--
-		create_template("ach_mis_14_ext_ru", {"loc_achievement_group_missions_name"}, {"ru"}, function(locale, value) return "Миссия невыполнима" end),
+			--[+ Russian +]--
+			create_template("ach_mis_14_ext_ru", {"loc_achievement_group_missions_name"}, {"ru"}, function(locale, value) return "Миссия невыполнима" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_14_ext_tw", {"loc_achievement_group_missions_name"}, {"zh-tw"}, function(locale, value) return "不可能的任務" end),
 
-			--[+ Complete the following Mission Penances. +]-- руоф Выполните следующие искупления с заданиями.
-	--[+ Russian +]--
+		--[+ Complete the following Mission Penances. +]-- руоф Выполните следующие искупления с заданиями.
+			--[+ Russian +]--
 			create_template("ach_mis_14_ext_desc_ru", {"loc_achievement_group_missions_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления, связанные с миссиями." end),
+			--[+ Traditional Chinese +]--
+			-- 完成下列任務苦修。
+			create_template("ach_mis_14_ext_desc_tw", {"loc_achievement_group_missions_description"}, {"zh-tw"}, function(locale, value) return "完成以下任務苦修。" end),
 
 		--[+  +]-- руоф Задержи дыхание (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_mis_1_ext_ru", {"loc_achievement_mission_tox_gas_x_name"}, {"ru"}, function(locale, value) return "Задержи дыхание (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_1_ext_ru", {"loc_achievement_mission_tox_gas_x_name"}, {"ru"}, function(locale, value) return "Задержи дыхание (1-3)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_mis_1_ext_tw", {"loc_achievement_mission_tox_gas_x_name"}, {"zh-tw"}, function(locale, value) return "屏住呼吸 (1-3)" end),
 
-			--[+  +]-- руоф Завершите задание с обстоятельством «чумной газ» 50 р.
-	--[+ Russian +]--
+		--[+  +]-- руоф Завершите задание с обстоятельством «чумной газ» 50 р.
+			--[+ Russian +]--
 			-- create_template("ach_mis_1_ext_desc_ru", {"loc_achievement_mission_tox_gas_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий налётов." end),
+			--[+ Traditional Chinese +]--
+			-- 在瘟疫毒氣情境下完成x個任務
+			create_template("ach_mis_1_ext_desc_tw", {"loc_achievement_mission_tox_gas_x_description"}, {"zh-tw"}, function(locale, value) return "在瘟疫毒氣情境下，完成 "..COLORS_Numbers.target_rgb.." 次任務。" end),
 
 		--[+  +]-- руоф Запретные тексты (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_mis_1_ext_ru", {"loc_achievement_mission_grimoire_recovery_name"}, {"ru"}, function(locale, value) return "Запретные тексты (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_1_ext_ru", {"loc_achievement_mission_grimoire_recovery_name"}, {"ru"}, function(locale, value) return "Запретные тексты (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_mis_1_ext_tw", {"loc_achievement_mission_grimoire_recovery_name"}, {"zh-tw"}, function(locale, value) return "禁忌文本 (1-5)" end),
 
-			--[+  +]-- руоф Соберите и извлеките гримуары (75).
-	--[+ Russian +]--
+		--[+  +]-- руоф Соберите и извлеките гримуары (75).
+			--[+ Russian +]--
 			-- create_template("ach_mis_1_ext_desc_ru", {"loc_achievement_mission_grimoire_recovery_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий налётов." end),
+			--[+ Traditional Chinese +]--
+			-- 收集並回收xx本法術書。
+			create_template("ach_mis_1_ext_desc_tw", {"loc_achievement_mission_grimoire_recovery_description"}, {"zh-tw"}, function(locale, value) return "收集並回收 "..COLORS_Numbers.target_rgb.." 本法術書。" end),
 
 		--[+  +]-- руоф Искатель
-	--[+ Russian +]--
-		-- create_template("ach_mis_1_ext_ru", {"loc_achievement_amount_of_chests_opened_name"}, {"ru"}, function(locale, value) return "Искатель" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_1_ext_ru", {"loc_achievement_amount_of_chests_opened_name"}, {"ru"}, function(locale, value) return "Искатель" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_1_ext_tw", {"loc_achievement_amount_of_chests_opened_name"}, {"zh-tw"}, function(locale, value) return "尋寶者" end),
 
-			--[+  +]-- руоф Откройте сундуки: 2500. Сундуки, открытые членами команды, тоже учитываются.
-	--[+ Russian +]--
+		--[+  +]-- руоф Откройте сундуки: 2500. Сундуки, открытые членами команды, тоже учитываются.
+			--[+ Russian +]--
 			-- create_template("ach_mis_1_ext_desc_ru", {"loc_achievement_amount_of_chests_opened_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий налётов." end),
+			--[+ Traditional Chinese +]--
+			-- 打開xx個寶箱。盟友打開的也算。
+			create_template("ach_mis_1_ext_desc_tw", {"loc_achievement_amount_of_chests_opened_description"}, {"zh-tw"}, function(locale, value) return "打開 "..COLORS_Numbers.target_rgb.." 個寶箱。盟友打開的也算。" end),
 
 		--[+ The Machine Whisperer +]-- руоф Заклинатель машин
-	--[+ Russian +]--
-		-- create_template("ach_mis_10_ext_ru", {"loc_achievement_hack_5_name"}, {"ru"}, function(locale, value) return "Опросчик (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_10_ext_ru", {"loc_achievement_hack_5_name"}, {"ru"}, function(locale, value) return "Опросчик (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_mis_10_ext_tw", {"loc_achievement_hack_5_name"}, {"zh-tw"}, function(locale, value) return "機械低語者 (1-5)" end),
 
-			--[+ Complete 200 successful data-interrogations. +]-- руоф Выполнить успешных опросов: 200.
-	--[+ Russian +]--
+		--[+ Complete 200 successful data-interrogations. +]-- руоф Выполнить успешных опросов: 200.
+			--[+ Russian +]--
 			create_template("ach_mis_10_ext_desc_ru", {"loc_achievement_hack_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." успешных опросов данных." end),
+			--[+ Traditional Chinese +]--
+			-- 成功完成xx次數據詢問。
+			create_template("ach_mis_10_ext_desc_tw", {"loc_achievement_hack_x_description"}, {"zh-tw"}, function(locale, value) return "成功完成 "..COLORS_Numbers.target_rgb.." 次數據詢問。" end),
+
+		--[+ Strike Force (1) +]-- руоф Ударная группа (1)
+			--[+ Russian +]--
+			-- create_template("ach_mis__ext_ru", {"loc_achievement_type_5_mission_1_name"}, {"ru"}, function(locale, value) return "Ударная группа (4)" end),
+			--[+ Traditional Chinese 打擊力量 (1) +]--
+			create_template("ach_mis_5_ext_tw", {"loc_achievement_type_5_mission_1_name"}, {"zh-tw"}, function(locale, value) return "打擊力量 (1)" end),
+
+		--[+ Strike Force (2) +]-- руоф Ударная группа (2)
+			--[+ Russian +]--
+			-- create_template("ach_mis_5_ext_ru", {"loc_achievement_type_5_mission_2_name"}, {"ru"}, function(locale, value) return "Ударная группа (2)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_5_ext_tw", {"loc_achievement_type_5_mission_2_name"}, {"zh-tw"}, function(locale, value) return "打擊力量 (2)" end),
+
+		--[+ Strike Force (3) +]-- руоф Ударная группа (3)
+			--[+ Russian +]--
+			-- create_template("ach_mis_5_ext_ru", {"loc_achievement_type_5_mission_3_name"}, {"ru"}, function(locale, value) return "Ударная группа (3)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_5_ext_tw", {"loc_achievement_type_5_mission_3_name"}, {"zh-tw"}, function(locale, value) return "打擊力量 (3)" end),			
 
 		--[+ Strike Force (4) +]-- руоф Ударная группа (4)
-	--[+ Russian +]--
-		-- create_template("ach_mis_5_ext_ru", {"loc_achievement_type_5_mission_4_name"}, {"ru"}, function(locale, value) return "Ударная группа (4)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_5_ext_ru", {"loc_achievement_type_5_mission_4_name"}, {"ru"}, function(locale, value) return "Ударная группа (4)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_5_ext_tw", {"loc_achievement_type_5_mission_4_name"}, {"zh-tw"}, function(locale, value) return "打擊力量 (4)" end),
 
-			--[+ Complete 200 Strike missions. +]-- руоф Завершите задания типа «Удар»: 200.
-	--[+ Russian +]--
+		--[+ Strike Force (5) +]-- руоф Ударная группа (5)
+			--[+ Russian +]--
+			-- create_template("ach_mis_5_ext_ru", {"loc_achievement_type_5_mission_5_name"}, {"ru"}, function(locale, value) return "Ударная группа (5)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_5_ext_tw", {"loc_achievement_type_5_mission_5_name"}, {"zh-tw"}, function(locale, value) return "打擊力量 (5)" end),
+
+		--[+ Complete 200 Strike missions. +]-- руоф Завершите задания типа «Удар»: 200.
+			--[+ Russian +]--
 			create_template("ach_mis_5_ext_desc_ru", {"loc_achievement_type_5_mission_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." ударных миссий." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx次打擊任務。
+			create_template("ach_mis_5_ext_desc_tw", {"loc_achievement_type_5_mission_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次打擊任務。" end),
+
+		--[+ Omnissiah's Hand (1) +]-- руоф Рука Омниссии (1)
+			--[+ Russian +]--
+			-- create_template("ach_mis_7_ext_ru", {"loc_achievement_type_7_mission_2_name"}, {"ru"}, function(locale, value) return "Рука Омниссии (2)" end),
+			--[+ Traditional Chinese 歐姆尼賽亞之手 (1) +]--
+			create_template("ach_mis_7_ext_tw", {"loc_achievement_type_7_mission_1_name"}, {"zh-tw"}, function(locale, value) return "歐姆尼賽亞之手 (1)" end),
 
 		--[+ Omnissiah's Hand (2) +]-- руоф Рука Омниссии (2)
-	--[+ Russian +]--
-		-- create_template("ach_mis_7_ext_ru", {"loc_achievement_type_7_mission_2_name"}, {"ru"}, function(locale, value) return "Рука Омниссии (2)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_7_ext_ru", {"loc_achievement_type_7_mission_2_name"}, {"ru"}, function(locale, value) return "Рука Омниссии (2)" end),
+			--[+ Traditional Chinese 歐姆尼賽亞之手 (2) +]--
+			create_template("ach_mis_7_ext_tw", {"loc_achievement_type_7_mission_2_name"}, {"zh-tw"}, function(locale, value) return "歐姆尼賽亞之手 (2)" end),
+		
+		--[+ Omnissiah's Hand (3) +]-- руоф Рука Омниссии (3)
+			--[+ Russian +]--
+			-- create_template("ach_mis_7_ext_ru", {"loc_achievement_type_7_mission_3_name"}, {"ru"}, function(locale, value) return "Рука Омниссии (3)" end),
+			--[+ Traditional Chinese 歐姆尼賽亞之手 (3) +]--
+			create_template("ach_mis_7_ext_tw", {"loc_achievement_type_7_mission_3_name"}, {"zh-tw"}, function(locale, value) return "歐姆尼賽亞之手 (3)" end),
 
-			--[+ Complete 100 Repair missions. +]-- руоф Завершите задания типа «Ремонт»: 100.
-	--[+ Russian +]--
+		--[+ Omnissiah's Hand (4) +]-- руоф Рука Омниссии (4)
+			--[+ Russian +]--
+			-- create_template("ach_mis_7_ext_ru", {"loc_achievement_type_7_mission_4_name"}, {"ru"}, function(locale, value) return "Рука Омниссии (4)" end),
+			--[+ Traditional Chinese 歐姆尼賽亞之手 (4) +]--
+			create_template("ach_mis_7_ext_tw", {"loc_achievement_type_7_mission_4_name"}, {"zh-tw"}, function(locale, value) return "歐姆尼賽亞之手 (4)" end),
+
+		--[+ Omnissiah's Hand (5) +]-- руоф Рука Омниссии (5)
+			--[+ Russian +]--
+			-- create_template("ach_mis_7_ext_ru", {"loc_achievement_type_7_mission_5_name"}, {"ru"}, function(locale, value) return "Рука Омниссии (5)" end),
+			--[+ Traditional Chinese 歐姆尼賽亞之手 (5) +]--
+			create_template("ach_mis_7_ext_tw", {"loc_achievement_type_7_mission_5_name"}, {"zh-tw"}, function(locale, value) return "歐姆尼賽亞之手 (5)" end),
+
+		--[+ Complete 100 Repair missions. +]-- руоф Завершите задания типа «Ремонт»: 100.
+			--[+ Russian +]--
 			create_template("ach_mis_7_ext_desc_ru", {"loc_achievement_type_7_mission_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." ремонтных миссий." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx次修理任務。
+			create_template("ach_mis_7_ext_desc_tw", {"loc_achievement_type_7_mission_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次修理任務。" end),
+
+		--[+ Adapt to the Environment (1) +]-- руоф Приспособление к среде (1)
+			--[+ Russian +]--
+			-- create_template("ach_mis_12_ext_ru", {"loc_achievement_mission_circumstace_1_name"}, {"ru"}, function(locale, value) return "Адаптируйтесь к окружающей среде (1)" end),
+			--[+ Traditional Chinese 適應環境 (1) +]--
+			create_template("ach_mis_12_ext_tw", {"loc_achievement_mission_circumstace_1_name"}, {"zh-tw"}, function(locale, value) return "適應環境 (1)" end),
+
+		--[+ Adapt to the Environment (2) +]-- руоф Приспособление к среде (2)
+			--[+ Russian +]--
+			-- create_template("ach_mis_12_ext_ru", {"loc_achievement_mission_circumstace_2_name"}, {"ru"}, function(locale, value) return "Адаптируйтесь к окружающей среде (2)" end),
+			--[+ Traditional Chinese 適應環境 (2) +]--
+			create_template("ach_mis_12_ext_tw", {"loc_achievement_mission_circumstace_2_name"}, {"zh-tw"}, function(locale, value) return "適應環境 (2)" end),
+
+		--[+ Adapt to the Environment (3) +]-- руоф Приспособление к среде (3)
+			--[+ Russian +]--
+			-- create_template("ach_mis_12_ext_ru", {"loc_achievement_mission_circumstace_3_name"}, {"ru"}, function(locale, value) return "Адаптируйтесь к окружающей среде (3)" end),
+			--[+ Traditional Chinese 適應環境 (3) +]--
+			create_template("ach_mis_12_ext_tw", {"loc_achievement_mission_circumstace_3_name"}, {"zh-tw"}, function(locale, value) return "適應環境 (3)" end),
+
+		--[+ Adapt to the Environment (4) +]-- руоф Приспособление к среде (4)
+			--[+ Russian +]--
+			-- create_template("ach_mis_12_ext_ru", {"loc_achievement_mission_circumstace_4_name"}, {"ru"}, function(locale, value) return "Адаптируйтесь к окружающей среде (4)" end),
+			--[+ Traditional Chinese 適應環境 (4) +]--
+			create_template("ach_mis_12_ext_tw", {"loc_achievement_mission_circumstace_4_name"}, {"zh-tw"}, function(locale, value) return "適應環境 (4)" end),
 
 		--[+ Adapt to the Environment (5) +]-- руоф Приспособление к среде (5)
-	--[+ Russian +]--
-		-- create_template("ach_mis_12_ext_ru", {"loc_achievement_mission_circumstace_5_name"}, {"ru"}, function(locale, value) return "Адаптируйтесь к окружающей среде (5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_12_ext_ru", {"loc_achievement_mission_circumstace_5_name"}, {"ru"}, function(locale, value) return "Адаптируйтесь к окружающей среде (5)" end),
+			--[+ Traditional Chinese 適應環境 (5) +]--
+			create_template("ach_mis_12_ext_tw", {"loc_achievement_mission_circumstace_5_name"}, {"zh-tw"}, function(locale, value) return "適應環境 (5)" end),
 
-			--[+ Complete 500 Special Condition Missions. +]-- руоф Завершите задания с особыми обстоятельствами: 500.
-	--[+ Russian +]--
+		--[+ Complete 500 Special Condition Missions. +]-- руоф Завершите задания с особыми обстоятельствами: 500.
+			--[+ Russian +]--
 			create_template("ach_mis_12_ext_desc_ru", {"loc_achievement_mission_circumstace_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий со специальными условиями." end),
+			--[+ Traditional Chinese +]--
+			-- 完成xx次特殊情境任務。
+			create_template("ach_mis_12_ext_desc_tw", {"loc_achievement_mission_circumstace_x_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_Numbers.target_rgb.." 次特殊情境任務。" end),
 
+	--[+ + En - RU - 探索 + +]--
 		--[+ The Orthus Offensive +]-- руоф Ортусское наступление
-	--[+ Russian +]--
-		-- create_template("ach_mis_000_ext_ru", {"loc_achievement_subcategory_twins_mission_label"}, {"ru"}, function(locale, value) return "Ортусское наступление" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_000_ext_ru", {"loc_achievement_subcategory_twins_mission_label"}, {"ru"}, function(locale, value) return "Ортусское наступление" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_000_ext_tw", {"loc_achievement_subcategory_twins_mission_label"}, {"zh-tw"}, function(locale, value) return "歐特魯斯攻勢" end),
 
 		--[+ Two Birds with One Stone +]-- руоф Двух зайцев одним выстрелом
-	--[+ Russian +]--
-		-- create_template("ach_mis_15_ext_ru", {"loc_achievement_mission_twins_win_name"}, {"ru"}, function(locale, value) return "Двух птичек одним камнем" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_15_ext_ru", {"loc_achievement_mission_twins_win_name"}, {"ru"}, function(locale, value) return "Двух птичек одним камнем" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_15_ext_tw", {"loc_achievement_mission_twins_win_name"}, {"zh-tw"}, function(locale, value) return "一石二鳥" end),
 
-			--[+ Defeat the Karnak Twins during The Orthus Offensive on any Threat. +]-- руоф Победить близнецов Карнак во время «Ортусского наступления» на любом уровне угрозы.
-	--[+ Russian +]--
+		--[+ Defeat the Karnak Twins during The Orthus Offensive on any Threat. +]-- руоф Победить близнецов Карнак во время «Ортусского наступления» на любом уровне угрозы.
+			--[+ Russian +]--
 			create_template("ach_mis_15_ext_desc_ru", {"loc_achievement_mission_twins_win_description"}, {"ru"}, function(locale, value) return "Победить близнецов Карнак во время Ортусского наступления на любой сложности." end),
+			--[+ Traditional Chinese +]--
+			-- 在任意威脅度下，在雙頭犬攻勢期間擊敗卡納克雙子。
+			create_template("ach_mis_15_ext_desc_tw", {"loc_achievement_mission_twins_win_description"}, {"zh-tw"}, function(locale, value) return "在任意威脅度下，\n在雙頭犬攻勢任務中擊敗卡納克雙子。" end),
 
 		--[+ Two Birds with One Stone (Extremis) +]-- руоф Двух зайцев одним выстрелом (экстремис)
-	--[+ Russian +]--
-		-- create_template("ach_mis_16_ext_ru", {"loc_achievement_difficult_mission_twins_win_name"}, {"ru"}, function(locale, value) return "Двух птичек одним камнем (Экстремис)" end),
+			--[+ Russian +]--
+			-- create_template("ach_mis_16_ext_ru", {"loc_achievement_difficult_mission_twins_win_name"}, {"ru"}, function(locale, value) return "Двух птичек одним камнем (Экстремис)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_mis_16_ext_tw", {"loc_achievement_difficult_mission_twins_win_name"}, {"zh-tw"}, function(locale, value) return "一石二鳥 (終極版)" end),
 
-			--[+ Defeat the Karnak Twins during The Orthus Offensive on Damnation Threat Level. +]-- руоф Победить близнецов Карнак во время «Ортусского наступления» при угрозе «Проклятие».
-	--[+ Russian +]--
+		--[+ Defeat the Karnak Twins during The Orthus Offensive on Damnation Threat Level. +]-- руоф Победить близнецов Карнак во время «Ортусского наступления» при угрозе «Проклятие».
+			--[+ Russian +]--
 			create_template("ach_mis_16_ext_desc_ru", {"loc_achievement_difficult_mission_twins_win_description"}, {"ru"}, function(locale, value) return "Победить близнецов Карнак во время Ортусского наступления на сложности "..COLORS_KWords_ru.damnation_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在詛咒威脅度下，在雙頭犬攻勢期間擊敗卡納克雙子。
+			create_template("ach_mis_16_ext_desc_tw", {"loc_achievement_difficult_mission_twins_win_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.damnation_rgb_tw.."』威脅度下，\n在雙頭犬攻勢任務中擊敗卡納克雙子。" end),
 
-	--[+ +REDACTED - ДАННЫЕ ИЗЪЯТЫ+ +]--
-		--[+ Redacted +]-- руоф Данные изъяты
-	-- create_template("ach_red_0_ext_ru", {"loc_achievement_category_class_challenges_label"}, {"ru"}, function(locale, value) return "Данные изъяты" end),
-
+		--[+ +REDACTED - ДАННЫЕ ИЗЪЯТЫ+ +]--
+			--[+ Redacted +]-- руоф Данные изъяты
+			-- create_template("ach_red_0_ext_ru", {"loc_achievement_category_class_challenges_label"}, {"ru"}, function(locale, value) return "Данные изъяты" end),
+			--[+ Traditional Chinese +]--
 }
 
 --[+ Return the localization templates +]--
