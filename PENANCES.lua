@@ -1489,100 +1489,161 @@ local localization_templates = {
 			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_kills_with_empowered_abilites_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.empsionics_rgb_tw.."』後的能力，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Not Even Close +]-- руоф Как бы не так
-	--[+ Russian +]--
-		-- create_template("ach_red_psy_2_ext_ru", {"loc_achievement_psyker_2_smite_hound_mid_leap_name"}, {"ru"}, function(locale, value) return "Как бы не так" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_psy_2_ext_ru", {"loc_achievement_psyker_2_smite_hound_mid_leap_name"}, {"ru"}, function(locale, value) return "Как бы не так" end),
+			--[+ Traditional Chinese 差的遠 +]--
+			-- create_template("ach_red_psy_2_ext_tw", {"loc_achievement_psyker_2_smite_hound_mid_leap_name"}, {"zh-tw"}, function(locale, value) return "差的遠" end),
 
-			--[+ Kill a pouncing Pox Hound with Brain Burst. +]-- руоф Убейте с помощью «Взрыва разума» Чумную Гончую, когда она набрасывается на вас.
-	--[+ Russian +]--
+		--[+ Kill a pouncing Pox Hound with Brain Burst. +]-- руоф Убейте с помощью «Взрыва разума» Чумную Гончую, когда она набрасывается на вас.
+			--[+ Russian +]--
 			create_template("ach_red_psy_2_ext_desc_ru", {"loc_achievement_psyker_2_smite_hound_mid_leap_description"}, {"ru"}, function(locale, value) return "Убейте, прыгнувшую Чумную гончую, с помощью блица "..COLORS_KW_Penances_ru.bburst0_rgb_ru.." или "..COLORS_KW_Penances_ru.bburst1_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用顱腦爆裂殺死1之猛撲而來的瘟疫獵犬
+			create_template("ach_red_psy_2_ext_desc_tw", {"loc_achievement_psyker_2_smite_hound_mid_leap_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n擊殺猛撲中的瘟疫獵犬。" end),
 
 		--[+ Mind Lance - Копьё разума +]-- руоф Копье разума
-	--[+ Russian +]--
-		create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_elite_or_special_kills_with_assail_name"}, {"ru"}, function(locale, value) return "Копьё разума" end),
+			--[+ Russian +]--
+			create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_elite_or_special_kills_with_assail_name"}, {"ru"}, function(locale, value) return "Копьё разума" end),
+			--[+ Traditional Chinese 心靈之槍 +]--
+			create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_elite_or_special_kills_with_assail_name"}, {"zh-tw"}, function(locale, value) return "心靈之槍" end),
 
-			--[+ Kill 250 Specialists and Elites using Assail. +]-- руоф Убейте особых или элитных врагов (250) с помощью «Нападения».
-	--[+ Russian +]--
+		--[+ Kill 250 Specialists and Elites using Assail. +]-- руоф Убейте особых или элитных врагов (250) с помощью «Нападения».
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_elite_or_special_kills_with_assail_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов с помощью блица "..COLORS_KW_Penances_ru.assail_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用靈能攻擊擊殺250名專家或精英。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_elite_or_special_kills_with_assail_description"}, {"zh-tw"}, function(locale, value) return "使用『"..COLORS_KW_Penances_tw.assail_rgb_tw.."』擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Malleus Monstronum +]-- руоф Маллеус Монстронум
-	--[+ Russian +]--
-		-- create_template("ach_red_psy_7_ext_ru", {"loc_achievement_psyker_2_kill_boss_solo_with_smite_name"}, {"ru"}, function(locale, value) return "Маллеус Монстронум" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_psy_7_ext_ru", {"loc_achievement_psyker_2_kill_boss_solo_with_smite_name"}, {"ru"}, function(locale, value) return "Маллеус Монстронум" end),
+			--[+ Traditional Chinese 憎惡之錘 +]--
+			-- create_template("ach_red_psy_7_ext_tw", {"loc_achievement_psyker_2_kill_boss_solo_with_smite_name"}, {"zh-tw"}, function(locale, value) return "憎惡之錘" end),
 
-			--[+ While on Heresy Threat or higher kill a Monstrosity after damaging 50% of its health with your Brain Burst. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше снесите чудовищу 50% здоровья «Взрывом разума», а затем убейте его.
-	--[+ Russian +]--
+		--[+ While on Heresy Threat or higher kill a Monstrosity after damaging 50% of its health with your Brain Burst. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше снесите чудовищу 50% здоровья «Взрывом разума», а затем убейте его.
+			--[+ Russian +]--
 			create_template("ach_red_psy_7_ext_desc_ru", {"loc_achievement_psyker_2_kill_boss_solo_with_smite_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, убейте Монстра после того, как вы нанесли ему не менее "..COLORS_Numbers.pc_50_rgb.." урона здоровью с помощью блица "..COLORS_KW_Penances_ru.bburst0_rgb_ru.." или "..COLORS_KW_Penances_ru.bburst1_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端或更高威脅度下，使用大腦爆裂對1頭巨獸造成其生命值50的傷害後將其擊殺
+			create_template("ach_red_psy_7_ext_desc_tw", {"loc_achievement_psyker_2_kill_boss_solo_with_smite_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n對巨獸造成不少於 "..COLORS_Numbers.pc_50_rgb.." 的生命值傷害，並將其擊殺。" end),
 
 		--[+ Perilous Focus +]-- руоф Пагубная концентрация
-	--[+ Russian +]--
-		create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_kills_during_overcharge_stance_name"}, {"ru"}, function(locale, value) return "Угрожающая концентрация" end),
+			--[+ Russian +]--
+			create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_kills_during_overcharge_stance_name"}, {"ru"}, function(locale, value) return "Угрожающая концентрация" end),
+			--[+ Traditional Chinese 險惡聚焦 +]--
+			create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_kills_during_overcharge_stance_name"}, {"zh-tw"}, function(locale, value) return "險惡聚焦" end),
 
-			--[+ Kill 40 enemies under the effects of a single Scrier's Gaze activation. +]-- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
-	--[+ Russian +]--
+		--[+ Kill 40 enemies under the effects of a single Scrier's Gaze activation. +]-- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_kills_during_overcharge_stance_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов, находясь под эффектом способности "..COLORS_KW_Penances_ru.scriersgaze_rgb_ru..", в течение однократного её применения." end),
+			--[+ Traditional Chinese +]--
+			-- 於同一次賽爾凝視效果期間，擊殺40名敵人。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_kills_during_overcharge_stance_description"}, {"zh-tw"}, function(locale, value) return "單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.scriersgaze_rgb_tw.."』期間，擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Overwhelming Presence +]-- руоф Подавляющее присутствие
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_team_elite_aura_kills_name"}, {"ru"}, function(locale, value) return "Подавляющее присутствие" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_team_elite_aura_kills_name"}, {"ru"}, function(locale, value) return "Подавляющее присутствие" end),
+			--[+ Traditional Chinese 壓倒性的存在 +]--
+			-- create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_team_elite_aura_kills_name"}, {"zh-tw"}, function(locale, value) return "壓倒性的存在" end),
 
-			--[+ Kill 2500 Elite or Specialist enemies while under the effect of Kinetic Presence. Kill made by any affected team member also count. +]-- руоф Убейте особых или элитных врагов (2500), находясь под действием «Кинетического присутствия». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
-	--[+ Russian +]--
+		--[+ Kill 2500 Elite or Specialist enemies while under the effect of Kinetic Presence. Kill made by any affected team member also count. +]-- руоф Убейте особых или элитных врагов (2500), находясь под действием «Кинетического присутствия». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_team_elite_aura_kills_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов, находясь под действием ауры "..COLORS_KW_Penances_ru.kinetpres_rgb_ru..". Убийства, совершённые любым членом команды, находящимся под действием эффекта ауры, тоже учитываются." end),
+			--[+ Traditional Chinese +]--
+			-- 在動能釋放效果啟動時擊殺2500名精英或專家敵人。由獲得效果的小隊成員造成的擊殺也算。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_team_elite_aura_kills_description"}, {"zh-tw"}, function(locale, value) return "處於 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.kinetpres_rgb_tw.."』期間，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。\n隊友在此光環下的擊殺也會計算。" end),
 
 		--[+ Power Up +]-- руоф Полный заряд
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_11_ext_ru", {"loc_achievement_psyker_2_medium_1_name"}, {"ru"}, function(locale, value) return "Полный заряд" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_11_ext_ru", {"loc_achievement_psyker_2_medium_1_name"}, {"ru"}, function(locale, value) return "Полный заряд" end),
+			--[+ Traditional Chinese 能量提升 +]--
+			-- create_template("ach_class_psy_11_ext_tw", {"loc_achievement_psyker_2_medium_1_name"}, {"zh-tw"}, function(locale, value) return "能量提升" end),
 
-			--[+ On Malice Threat or higher, kill 100 Elite or Specialist enemies with Brain Burst while at maximum Warp Charges. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов или специалистов (100) «Взрывом разума» с максимальным количеством варп-зарядов.
-	--[+ Russian +]--
+		--[+ On Malice Threat or higher, kill 100 Elite or Specialist enemies with Brain Burst while at maximum Warp Charges. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов или специалистов (100) «Взрывом разума» с максимальным количеством варп-зарядов.
+			--[+ Russian +]--
 			create_template("ach_class_psy_11_ext_desc_ru", {"loc_achievement_psyker_2_medium_1_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов с помощью блица "..COLORS_KW_Penances_ru.bburst0_rgb_ru.." или "..COLORS_KW_Penances_ru.bburst1_rgb_ru.." пока у вас максимальное количество варп-зарядов." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，再亞空間充能層數達到最高後，使用顱腦爆裂擊殺100名精英或專家敵人。
+			create_template("ach_class_psy_11_ext_desc_tw", {"loc_achievement_psyker_2_medium_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n當自身亞空間充能達最大時，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Prioritise Targets +]-- руоф Приоритетные цели
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_2_easy_1_name"}, {"ru"}, function(locale, value) return "Приоритетные цели" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_2_easy_1_name"}, {"ru"}, function(locale, value) return "Приоритетные цели" end),
+			--[+ Traditional Chinese 優先目標 +]--
+			-- create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_2_easy_1_name"}, {"zh-tw"}, function(locale, value) return "優先目標" end),
 
-			--[+ Kill 200 Elite or Specialist enemies with Brain Burst. +]-- руоф Убейте элитных врагов или специалистов (200) «Взрывом разума».
-	--[+ Russian +]--
+		--[+ Kill 200 Elite or Specialist enemies with Brain Burst. +]-- руоф Убейте элитных врагов или специалистов (200) «Взрывом разума».
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_2_easy_1_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов с помощью блица "..COLORS_KW_Penances_ru.bburst0_rgb_ru.." или "..COLORS_KW_Penances_ru.bburst1_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用顱腦爆裂擊殺200名精英或專家敵人。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_2_easy_1_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Shoot Fast +]-- руоф Стреляй от бедра
-	--[+ Russian +]--
-		create_template("ach_class_psy_12_ext_ru", {"loc_achievement_psyker_2_hard_1_name"}, {"ru"}, function(locale, value) return "Стреляй быстро" end),
+			--[+ Russian +]--
+			create_template("ach_class_psy_12_ext_ru", {"loc_achievement_psyker_2_hard_1_name"}, {"ru"}, function(locale, value) return "Стреляй быстро" end),
+			--[+ Traditional Chinese 快槍手 +]--
+			create_template("ach_class_psy_12_ext_tw", {"loc_achievement_psyker_2_hard_1_name"}, {"zh-tw"}, function(locale, value) return "快槍手" end),
 
-			--[+ On Heresy Threat or higher, kill 25 Pox Hounds, Mutants or Scab Trappers using Brain Burst before they incapacitate you or an ally. +]-- руоф При угрозе «Ересь» или выше убейте Чумных гончих, Мутантов или Скабов-Ловушечников (25) «Взрывом разума», пока они не успели обезвредить вас или союзника.
-	--[+ Russian +]--
+		--[+ On Heresy Threat or higher, kill 25 Pox Hounds, Mutants or Scab Trappers using Brain Burst before they incapacitate you or an ally. +]-- руоф При угрозе «Ересь» или выше убейте Чумных гончих, Мутантов или Скабов-Ловушечников (25) «Взрывом разума», пока они не успели обезвредить вас или союзника.
+			--[+ Russian +]--
 			create_template("ach_class_psy_12_ext_desc_ru", {"loc_achievement_psyker_2_hard_1_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." Чумных гончих, Мутантов или Ловушечников, используя "..COLORS_KW_Penances_ru.bburst0_rgb_ru.." или "..COLORS_KW_Penances_ru.bburst1_rgb_ru.." до того как они вывели из строя вас или союзника." end),
+			--[+ Traditional Chinese +]--
+			-- 在異端威脅度或更高難度下，在瘟疫獵犬、變種人、或血痂陷阱兵使你或你的盟友無法行動前，擊殺25個此類敵人。
+			create_template("ach_class_psy_12_ext_desc_tw", {"loc_achievement_psyker_2_hard_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n在瘟疫獵犬、突變者或陷阱兵使你或隊友癱瘓前，\n擊殺他們，共計 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Lucky BLow +]-- руоф Счастливый удар
-	--[+ Russian +]--
-		create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_team_critical_hits_name"}, {"ru"}, function(locale, value) return "Удачный удар" end),
+			--[+ Russian +]--
+			create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_team_critical_hits_name"}, {"ru"}, function(locale, value) return "Удачный удар" end),
+			--[+ Traditional Chinese 幸運一擊 +]--
+			create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_team_critical_hits_name"}, {"zh-tw"}, function(locale, value) return "幸運一擊" end),
 
-			--[+ Critically strike 7500 enemies while under the effects of Prescience. Critical strikes made by any affected team member also count. +]-- руоф Нанесите врагам критические удары (7500), находясь под действием «Предвидения». Критические удары любого члена команды под действием эффекта тоже учитываются.
-	--[+ Russian +]--
+		--[+ Critically strike 7500 enemies while under the effects of Prescience. Critical strikes made by any affected team member also count. +]-- руоф Нанесите врагам критические удары (7500), находясь под действием «Предвидения». Критические удары любого члена команды под действием эффекта тоже учитываются.
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_team_critical_hits_description"}, {"ru"}, function(locale, value) return "Нанесите врагам "..COLORS_Numbers.target_rgb.." критических ударов, находясь под действием ауры "..COLORS_KW_Penances_ru.prescience_rgb_ru..". Критические удары любого члена команды, находящегося под действием эффекта ауры, тоже учитываются." end),
+			--[+ Traditional Chinese +]--
+			-- 在預兆效果啟動時報及7500名敵人。由獲得效果的小隊成員造成的暴擊也算。
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_team_critical_hits_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.prescience_rgb_tw.."』期間，對敵人造成 "..COLORS_Numbers.target_rgb.." 次致命一擊。\n隊友在此光環下造成的致命一擊也會計算。" end),
 
 		--[+ Blessed by Fate +]-- руоф Хранимый судьбой
-	--[+ Russian +]--
-		create_template("ach_class_psy_8_ext_ru", {"loc_achievement_psyker_2_easy_2_name"}, {"ru"}, function(locale, value) return "Благословенный судьбой" end),
+			--[+ Russian +]--
+			create_template("ach_class_psy_8_ext_ru", {"loc_achievement_psyker_2_easy_2_name"}, {"ru"}, function(locale, value) return "Благословенный судьбой" end),
+			--[+ Traditional Chinese 命運保佑 +]--
+			create_template("ach_class_psy_8_ext_tw", {"loc_achievement_psyker_2_easy_2_name"}, {"zh-tw"}, function(locale, value) return "命運保佑" end),
 
-			--[+ Use Psykinetic's Wrath to survive Perils of the Warp 50 times. +]-- руоф Воспользуйтесь «Психокинетическим гневом» 50 р., чтобы не погибнуть от угозы варпа.
-	--[+ Russian +]--
+		--[+ Use Psykinetic's Wrath to survive Perils of the Warp 50 times. +]-- руоф Воспользуйтесь «Психокинетическим гневом» 50 р., чтобы не погибнуть от угозы варпа.
+			--[+ Russian +]--
 			create_template("ach_class_psy_8_ext_desc_ru", {"loc_achievement_psyker_2_easy_2_description"}, {"ru"}, function(locale, value) return "Используйте "..COLORS_Numbers.target_rgb.." раз способность "..COLORS_KW_Penances_ru.psy_wrath_rgb_ru.." или "..COLORS_KW_Penances_ru.psy_wrath2_rgb_ru..", чтобы избежать самоподрыва от превышения "..COLORS_Numbers.pc_100_rgb.." уровня "..COLORS_KWords_ru.Peril_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用靈能學者之怒在亞空間反噬中倖存50次。
+			create_template("ach_class_psy_8_ext_desc_tw", {"loc_achievement_psyker_2_easy_2_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.psy_wrath_rgb_tw.."』或『"..COLORS_KW_Penances_tw.psy_wrath2_rgb_tw.."』技能，\n成功避免因『"..COLORS_KWords_tw.Peril_rgb_tw.."』超過『"..COLORS_Numbers.pc_100_rgb.."』而引發靈能爆炸。" end),
 
 		--[+ Empyric Recovery +]-- руоф Эмпирическое восстановление
-	--[+ Russian +]--
-		-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_team_cooldown_reduced_name"}, {"ru"}, function(locale, value) return "Эмпирическое восстановление" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_psy_7_ext_ru", {"loc_achievement_psyker_team_cooldown_reduced_name"}, {"ru"}, function(locale, value) return "Эмпирическое восстановление" end),
+			--[+ Traditional Chinese 經驗恢復 +]--
+			-- create_template("ach_class_psy_7_ext_tw", {"loc_achievement_psyker_team_cooldown_reduced_name"}, {"zh-tw"}, function(locale, value) return "經驗恢復" end),
 
-			--[+ Restore you or your allies' abilities a total of 2000 seconds faster, while under the effects of Seer's Presence. +]-- руоф Восстановите способности свои или союзников суммарно на 2000 с. быстрее, находясь под действием «Присутствия провидца».
-	--[+ Russian +]--
+		--[+ Restore you or your allies' abilities a total of 2000 seconds faster, while under the effects of Seer's Presence. +]-- руоф Восстановите способности свои или союзников суммарно на 2000 с. быстрее, находясь под действием «Присутствия провидца».
+			--[+ Russian +]--
 			create_template("ach_class_psy_7_ext_desc_ru", {"loc_achievement_psyker_team_cooldown_reduced_description"}, {"ru"}, function(locale, value) return "Сократите, суммарно на "..COLORS_Numbers.target_rgb.." секунд, время восстановления способностей себе или вашим союзникам с помощью эффекта ауры "..COLORS_KW_Penances_ru.seerspres_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用先知之眼效果加快自身或盟友的技能恢復時間2000秒。
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_psy_7_ext_desc_tw", {"loc_achievement_psyker_team_cooldown_reduced_description"}, {"zh-tw"}, function(locale, value) return "透過 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.seerspres_rgb_tw.."』效果，\n為自己或隊友縮短技能冷卻時間達 "..COLORS_Numbers.target_rgb.." 秒。" end),
 
 		--[+ Going Out With a Bang +]-- руоф Эффектный выход
-	--[+ Russian +]--
-		create_template("ach_red_psy_5_ext_ru", {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"}, {"ru"}, function(locale, value) return "Взрывной финал" end),
-
-			--[+ While on Malice Threat or higher, kill 1 elite enemies with a single Perils of the Warp explosion. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов (1) за однократное применение угрозы от взрыва варпа.
-	--[+ Russian +]--
+			--[+ Russian +]--
+			create_template("ach_red_psy_5_ext_ru", {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"}, {"ru"}, function(locale, value) return "Взрывной финал" end),
+			--[+ Traditional Chinese 赫然死亡 +]--
+			-- create_template("ach_red_psy_5_ext_tw", {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"}, {"zh-tw"}, function(locale, value) return "赫然死亡" end),
+			
+		--[+ While on Malice Threat or higher, kill 1 elite enemies with a single Perils of the Warp explosion. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов (1) за однократное применение угрозы от взрыва варпа.
+			--[+ Russian +]--
 			create_template("ach_red_psy_5_ext_desc_ru", {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." элитного врага самоподрывом псайкера от превышения "..COLORS_Numbers.pc_100_rgb.." уровня "..COLORS_KWords_ru.Peril_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，使用亞空間反噬殺死1個精英敵人。
+			create_template("ach_red_psy_5_ext_desc_tw", {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n利用因『"..COLORS_KWords_tw.Peril_rgb_tw.."』超過『"..COLORS_Numbers.pc_100_rgb.."』而引發的靈能爆炸，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英敵人。" end),
 
 	--[+ ++OGRYN - ОГРИН++ +]--
 	create_template("ach_class_ogr_0_ext_ru", {"loc_class_ogryn_title"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_ogr_rgb_ru end),
