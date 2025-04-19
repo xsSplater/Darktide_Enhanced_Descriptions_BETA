@@ -28,7 +28,7 @@ local localizations = {
 		fr = "Activer le module des armes",
 		ru = "Модуль «Оружие»",
 		["zh-tw"] = "切換『武器』模組",
-		["zh-cn"] = "启用 \"武器\" 模块",
+		["zh-cn"] = "启用「武器」模块",
 	},
 	enable_weapons_file_description = {
 		en = "This module highlights the Words and Numbers of Weapon Blessings and Perks. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
@@ -43,7 +43,7 @@ local localizations = {
 		fr = "Activer le module des curiosités",
 		ru = "Модуль «Реликвии»",
 		["zh-tw"] = "切換『珍品』模組",
-		["zh-cn"] = "启用 \"珍品\" 模块",
+		["zh-cn"] = "启用「珍品」模块",
 	},
 	enable_curious_file_description = {
 		en = "This module highlights the Words and Numbers of the Blessings and Perks of the Curios. You can disable this module if you don't need it .\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
@@ -58,7 +58,7 @@ local localizations = {
 		fr = "Activer le module des menus",
 		ru = "Модуль «Меню»",
 		["zh-tw"] = "切換『領主』模組",
-		["zh-cn"] = "启用 \"菜单\" 模块",
+		["zh-cn"] = "启用「菜单」模块",
 	},
 	enable_menus_file_description = {
 		en = "This module highlights the Numbers of the Melk's Contracts. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
@@ -72,7 +72,7 @@ local localizations = {
 		fr = "Activer le module des talents",
 		ru = "Модуль «Таланты»",
 		["zh-tw"] = "切換『天賦』模組",
-		["zh-cn"] = "启用 \"天赋\" 模块",
+		["zh-cn"] = "启用 「天赋」模块",
 	},
 	enable_talents_file_description = {
 		en = "This module highlights Talent words. You can disable this module if you don't need it, but all Extended Descriptions will also be disabled.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
@@ -86,7 +86,7 @@ local localizations = {
 		-- fr = "",
 		ru = "Модуль «Искупления»",
 		["zh-tw"] = "{#color(15, 15, 15)}(切換『苦修』模組){#reset()}",
-		["zh-cn"] = "{#color(15, 15, 15)}（启用 \"苦修\" 模块）{#reset()}",
+		["zh-cn"] = "（启用「苦修」模块）",
 	},
 	enable_penances_file_description = { -- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
 		en = "{#color(255, 35, 5)}BETA! FOR NOW ONLY FOR THE RUSSIAN VERSION!{#reset()} This module highlights the Words and Numbers of the Penances. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
@@ -102,7 +102,7 @@ local localizations = {
 		-- fr = "",
 		ru = "Модуль «Названия врагов и оружия»",
 		["zh-tw"] = "{#color(15, 15, 15)}(切換『敵人與武器名稱』模組){#reset()}",
-		["zh-cn"] = "{#color(15, 15, 15)}(启用 \"敌人与武器名称\" 模块){#reset()}",
+		["zh-cn"] = "{#color(15, 15, 15)}(启用「敌人与武器名称」模块){#reset()}",
 	},
 	enable_names_file_description = { -- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
 		en = "{#color(255, 35, 5)}FOR RUSSIAN VERSION ONLY!{#reset()}",
@@ -110,14 +110,14 @@ local localizations = {
 		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль меняет названия некоторых врагов и видов брони, а также улучшает названия некоторого оружия, моделей и кузниц. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
 		["zh-tw"] = "{#color(255, 35, 5)}測試版！僅供俄語版本使用！{#reset()} 此模組將高亮敵人與武器名稱。可以按需球開關此模組。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n若使用此功能，你需要在 Darktide Mod Framework 中開啟開發者模式。{#reset()}",
-		["zh-cn"] = "{#color(255, 35, 5)}测试版！仅供俄语版本使用！{#reset()} 此模块将高亮敌人与武器名称。可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+		["zh-cn"] = "{#color(255, 35, 5)}仅供俄语版本使用！{#reset()}此模块将高亮敌人与武器名称。可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
 	},
 	enable_names_tal_bless_file = {
 		en = "{#color(15, 15, 15)}(Toggle \"Names of Talents and Blessings\" module){#reset()}",
 		-- fr = "",
 		ru = "Модуль «Названия талантов и благословений»",
 		["zh-tw"] = "{#color(15, 15, 15)}(切換『天賦與祝福名稱』模組){#reset()}",
-		["zh-cn"] = "{#color(15, 15, 15)}(启用 \"天赋与祝福名称\" 模块){#reset()}",
+		["zh-cn"] = "{#color(15, 15, 15)}(启用「天赋与祝福名称」模块){#reset()}",
 	},
 	enable_names_tal_bless_file_description = {	-- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
 		en = "{#color(255, 35, 5)}FOR RUSSIAN VERSION ONLY!{#reset()}",
@@ -125,7 +125,7 @@ local localizations = {
 		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль меняет названия некоторых Талантов и Благословений. Вы можете конечно отключить этот модуль, но тогда названия талантов в Расширенных описаниях и в Искуплениях не будут совпадать. Более правильный перевод, но может немного ухудшать понимание вами других игроков и другими игроками вас, т.к. будет чуть сложнее соотносить названия.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
 		["zh-tw"] = "{#color(255, 35, 5)}測試版！僅供俄語版本使用！{#reset()} 此模組將高亮天賦與祝福名稱。可以按需球開關此模組。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n若使用此功能，你需要在 Darktide Mod Framework 中開啟開發者模式。{#reset()}",
-		["zh-cn"] = "{#color(255, 35, 5)}测试版！仅供俄语版本使用！{#reset()} 此模块将高亮天赋与祝福名称。可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+		["zh-cn"] = "{#color(255, 35, 5)}仅供俄语版本使用！{#reset()}此模块将高亮天赋与祝福名称。可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
 	},
 
 --[+ Enhanced Descriptions - Talents +]--
@@ -134,7 +134,7 @@ local localizations = {
 		fr = " Descriptions avancées",
 		ru = " Расширенные описания",
 		["zh-tw"] = " 擴充描述",
-		["zh-cn"] = "扩充描述",
+		["zh-cn"] = " 扩充描述",
 	},
 	enhanced_descriptions_enabled = {
 		en = "Talents - Psyker + Zealot",
@@ -243,7 +243,7 @@ local localizations = {
 		-- fr = "",
 		ru = " Сплочённость",
 		["zh-tw"] = " 協同",
-		["zh-cn"] = " 协同",
+		["zh-cn"] = " 连携",
 	},
 
 --[+Buffs+]--
