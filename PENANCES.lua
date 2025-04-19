@@ -2081,160 +2081,255 @@ local localization_templates = {
 			-- 使用蠻牛衝撞來中斷瘟疫歐格林的衝鋒。
 			create_template("ach_red_ogr_2_ext_desc_tw", {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_description"}, {"zh-tw"}, function(locale, value) return "用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n中斷瘟疫歐格林的衝鋒。" ..TALENTS_Enh_desc_penances_tw.ED_Im_in_charge_rgb_tw end),
 
-	--[+ +TACTICAL - ТАКТИЧЕСКИЕ+ +]--
+	--[+ +TACTICAL - ТАКТИЧЕСКИЕ - 戰術 + +]--
 		--[+ OFFENSIVE - АТАКА +]--
 		--[+ Offensive +]-- руоф Наступление
-	--[+ Russian +]--
-		create_template("ach_off_0_ext_ru", {"loc_achievement_category_offensive_label"}, {"ru"}, function(locale, value) return "Атака" end),
+			--[+ Russian +]--
+			create_template("ach_off_0_ext_ru", {"loc_achievement_category_offensive_label"}, {"ru"}, function(locale, value) return "Атака" end),
+			--[+ Traditional Chinese 攻擊 +]--
+			create_template("ach_off_0_ext_tw", {"loc_achievement_category_offensive_label"}, {"zh-tw"}, function(locale, value) return "攻擊" end),
 
 		--[+  +]-- руоф Враг моего врага - мой друг
-	--[+ Russian +]--
-		-- create_template("ach_off_1_ext_ru", {"loc_achievement_enemies_killed_by_poxburster_name"}, {"ru"}, function(locale, value) return "Враг моего врага - мой друг" end),
+			--[+ Russian +]--
+			-- create_template("ach_off_1_ext_ru", {"loc_achievement_enemies_killed_by_poxburster_name"}, {"ru"}, function(locale, value) return "Враг моего врага - мой друг" end),
+			create_template("ach_off_1_ext_tw", {"loc_achievement_enemies_killed_by_poxburster_name"}, {"zh-tw"}, function(locale, value) return "敵人的敵人即朋友" end),
 
-			--[+  +]-- руоф Убейте врагов (10), уничтожив рядом с ними чумного Взрывуна.
-	--[+ Russian +]--
+		--[+  +]-- руоф Убейте врагов (10), уничтожив рядом с ними чумного Взрывуна.
+			--[+ Russian +]--
 			create_template("ach_off_1_ext_desc_ru", {"loc_achievement_enemies_killed_by_poxburster_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов, уничтожив рядом с ними Чумного взрывника." end),
+			--[+ Traditional Chinese +]--
+			-- 使用瘟疫爆者的爆炸即鯊100名敵人。
+			create_template("ach_off_1_ext_desc_tw", {"loc_achievement_enemies_killed_by_poxburster_description"}, {"zh-tw"}, function(locale, value) return "引爆瘟疫爆者以擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Flyswatter +]-- руоф Мухобойка
-	--[+ Russian +]--
-		-- create_template("ach_off_5_ext_ru", {"loc_achievement_enemies_climbing_name"}, {"ru"}, function(locale, value) return "Мухобойка" end),
+			--[+ Russian +]--
+			-- create_template("ach_off_5_ext_ru", {"loc_achievement_enemies_climbing_name"}, {"ru"}, function(locale, value) return "Мухобойка" end),
+			--[+ Traditional Chinese 蒼蠅拍 +]--
+			create_template("ach_off_5_ext_tw", {"loc_achievement_enemies_climbing_name"}, {"zh-tw"}, function(locale, value) return "蒼蠅拍" end),
 
-			--[+ Kill 50 climbing enemies. +]-- руоф Убить карабкающихся врагов: 50.
-	--[+ Russian +]--
+		--[+ Kill 50 climbing enemies. +]-- руоф Убить карабкающихся врагов: 50.
+			--[+ Russian +]--
 			create_template("ach_off_5_ext_desc_ru", {"loc_achievement_enemies_climbing_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов, карабкающихся наверх." end),
+			--[+ Traditional Chinese +]--
+			-- 殺死50名攀爬的敵人。
+			create_template("ach_off_5_ext_desc_tw", {"loc_achievement_enemies_climbing_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名正在攀爬中的敵人。" end),
 
-		--[+  +]-- руоф На примете
-	--[+ Russian +]--
-		-- create_template("ach_off_1_ext_ru", {"loc_achievement_enemies_killed_by_barrels_name"}, {"ru"}, function(locale, value) return "На примете" end),
+		--[+  +]-- руоф На примете 
+			--[+ Russian +]--
+			-- create_template("ach_off_1_ext_ru", {"loc_achievement_enemies_killed_by_barrels_name"}, {"ru"}, function(locale, value) return "На примете" end),
+			--[+ Traditional Chinese 狀態意識 +]--
+			create_template("ach_off_1_ext_tw", {"loc_achievement_enemies_killed_by_barrels_name"}, {"zh-tw"}, function(locale, value) return "狀態意識" end),
 
-			--[+ Kill 500000 enemies in total. +]-- руоф Убейте врагов (100) с помощью взрывных бочек.
-	--[+ Russian +]--
+		--[+ Kill 500000 enemies in total. +]-- руоф Убейте врагов (100) с помощью взрывных бочек.
+			--[+ Russian +]--
 			create_template("ach_off_1_ext_desc_ru", {"loc_achievement_enemies_killed_by_barrels_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов с помощью взрывных бочек." end),
+			--[+ Traditional Chinese +]--
+			-- 使用爆炸統擊殺xx名敵人。
+			create_template("ach_off_1_ext_desc_tw", {"loc_achievement_enemies_killed_by_barrels_description"}, {"zh-tw"}, function(locale, value) return "利用爆炸桶擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Attack, Attack, Attack! +]-- руоф Нападай, нападай!
-	--[+ Russian +]--
-		create_template("ach_off_7_ext_ru", {"loc_achievement_group_offence_name"}, {"ru"}, function(locale, value) return "Атакуй, атакуй, атакуй!" end),
+			--[+ Russian +]--
+			create_template("ach_off_7_ext_ru", {"loc_achievement_group_offence_name"}, {"ru"}, function(locale, value) return "Атакуй, атакуй, атакуй!" end),
+			--[+ Traditional Chinese 攻擊，攻擊，攻擊！ +]--
+			create_template("ach_off_7_ext_tw", {"loc_achievement_group_offence_name"}, {"zh-tw"}, function(locale, value) return "攻擊, 攻擊, 攻擊!" end),
 
-			--[+ Complete the following Offence Penances. +]-- руоф Выполните следующие искупления с атакой.
-	--[+ Russian +]--
+		--[+ Complete the following Offence Penances. +]-- руоф Выполните следующие искупления с атакой.
+			--[+ Russian +]--
 			create_template("ach_off_7_ext_desc_ru", {"loc_achievement_group_offence_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления атаки." end),
+			--[+ Traditional Chinese +]--
+			-- 完成下列攻擊苦修。
+			create_template("ach_off_7_ext_desc_tw", {"loc_achievement_group_offence_description"}, {"zh-tw"}, function(locale, value) return "完成以下攻擊型苦修任務。" end),
 
+		-- Duplicate? loc_achievement_enemies_killed_by_barrels_name --
 		--[+  +]-- руоф Не время для ран
-	--[+ Russian +]--
-		-- create_template("ach_off_1_ext_ru", {"loc_achievement_enemies_killed_by_barrels_name"}, {"ru"}, function(locale, value) return "Не время для ран" end),
+			--[+ Russian +]--
+			-- create_template("ach_off_1_ext_ru", {"loc_achievement_enemies_killed_by_barrels_name"}, {"ru"}, function(locale, value) return "Не время для ран" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_off_1_ext_tw", {"loc_achievement_enemies_killed_by_barrels_name"}, {"zh-tw"}, function(locale, value) return "狀態意識" end),
 
-			--[+  +]-- руоф Действуя сообща, выполните задание при угрозе «Ересь» или выше так, чтобы всех вас не сбили с ног более 5 р.
-	--[+ Russian +]--
+		--[+  +]-- руоф Действуя сообща, выполните задание при угрозе «Ересь» или выше так, чтобы всех вас не сбили с ног более 5 р.
+			--[+ Russian +]--
 			-- create_template("ach_off_1_ext_desc_ru", {"loc_achievement_enemies_killed_by_barrels_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов с помощью взрывных бочек." end),
+			--[+ Traditional Chinese +]--
+			-- 使用爆炸統擊殺xx名敵人。
+			-- create_template("ach_off_1_ext_desc_tw", {"loc_achievement_enemies_killed_by_barrels_description"}, {"zh-tw"}, function(locale, value) return "利用爆炸桶擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
+		-- Duplicate? loc_achievement_enemies_killed_by_barrels_name, loc_achievement_enemies_killed_by_barrels_description --
 
 		--[+ Frenzied Killer (1-3) +]-- руоф Неистовый убийца (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_off_4_ext_ru", {"loc_achievement_fast_enemies_1-3_name"}, {"ru"}, function(locale, value) return "Бешеный убийца (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_off_4_ext_ru", {"loc_achievement_fast_enemies_1-3_name"}, {"ru"}, function(locale, value) return "Бешеный убийца (1-3)" end),
+			--[+ Traditional Chinese 狂熱殺手 +]--
+			create_template("ach_off_4_ext_tw", {"loc_achievement_fast_enemies_1-3_name"}, {"zh-tw"}, function(locale, value) return "狂熱殺手 (1-3)" end),
 
-			--[+ Kill 120 enemies in 30s. +]-- руоф Убить врагов: 60 за 30 с.
-	--[+ Russian +]--
+		--[+ Kill 120 enemies in 30s. +]-- руоф Убить врагов: 60 за 30 с.
+			--[+ Russian +]--
 			create_template("ach_off_4_ext_desc_ru", {"loc_achievement_fast_enemies_x_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов за "..COLORS_Numbers.time_wind_rgb.." секунд." end),
+			--[+ Traditional Chinese +]--
+			-- 在30秒內擊殺xx名敵人。
+			create_template("ach_off_4_ext_desc_tw", {"loc_achievement_fast_enemies_x_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Purge the Heretic (1-5) +]-- руоф Очистить еретиков (1-5)
-	--[+ Russian +]--
-		-- create_template("ach_off_1_ext_ru", {"loc_achievement_enemies_1-5_name"}, {"ru"}, function(locale, value) return "Очистить еретиков (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_off_1_ext_ru", {"loc_achievement_enemies_1-5_name"}, {"ru"}, function(locale, value) return "Очистить еретиков (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_off_1_ext_tw", {"loc_achievement_enemies_1-5_name"}, {"zh-tw"}, function(locale, value) return "淨化異端 (1-5)" end),
 
-			--[+ Kill 500000 enemies in total. +]-- руоф Убить всего врагов: 500000.
-	--[+ Russian +]--
+		--[+ Kill 500000 enemies in total. +]-- руоф Убить всего врагов: 500000.
+			--[+ Russian +]--
 			create_template("ach_off_1_ext_desc_ru", {"loc_achievement_enemies_x_description"}, {"ru"}, function(locale, value) return "Убейте в сумме "..COLORS_Numbers.target_rgb.." врагов." end),
+			--[+ Traditional Chinese +]--
+			-- 總共殺死xx0000名敵人。
+			create_template("ach_off_1_ext_desc_tw", {"loc_achievement_enemies_x_description"}, {"zh-tw"}, function(locale, value) return "累計擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Dodge This (1-3) +]-- руоф Попробуй увернись (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_off_6_ext_ru", {"loc_achievement_fast_headshot_1-3_name"}, {"ru"}, function(locale, value) return "Увернись от этого (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_off_6_ext_ru", {"loc_achievement_fast_headshot_1-3_name"}, {"ru"}, function(locale, value) return "Увернись от этого (1-3)" end),
+			--[+ Traditional Chinese 躲得開嗎 +]--
+			-- create_template("ach_off_6_ext_tw", {"loc_achievement_fast_headshot_1-3_name"}, {"zh-tw"}, function(locale, value) return "躲得開嗎 (1-3)" end),
 
-			--[+ Kill 15 enemies with Headshots within 10s. +]-- руоф Убить врагов выстрелами в голову: 15 за 10 с.
-	--[+ Russian +]--
+		--[+ Kill 15 enemies with Headshots within 10s. +]-- руоф Убить врагов выстрелами в голову: 15 за 10 с.
+			--[+ Russian +]--
 			create_template("ach_off_6_ext_desc_ru", {"loc_achievement_fast_headshot_x_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов выстрелами в голову в течение "..COLORS_Numbers.n_10_rgb.." секунд." end),
+			--[+ Traditional Chinese +]--
+			-- 在10秒內擊殺xx名敵人。
+			create_template("ach_off_6_ext_desc_tw", {"loc_achievement_fast_headshot_x_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.n_10_rgb.." 秒內以爆頭擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Time to Die (1-3) +]-- руоф Пора умирать (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_off_3_ext_ru", {"loc_achievement_boss_fast_1-3_name"}, {"ru"}, function(locale, value) return "Время умирать (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_off_3_ext_ru", {"loc_achievement_boss_fast_1-3_name"}, {"ru"}, function(locale, value) return "Время умирать (1-3)" end),
+			--[+ Traditional Chinese 死亡將至 +]--
+			-- create_template("ach_off_3_ext_tw", {"loc_achievement_boss_fast_1-3_name"}, {"zh-tw"}, function(locale, value) return "死亡將至 (1-3)" end),
 
-			--[+ Kill a Monstrosity in 5s or less. +]-- руоф Убить чудовище за 5 с или меньше.
-	--[+ Russian +]--
+		--[+ Kill a Monstrosity in 5s or less. +]-- руоф Убить чудовище за 5 с или меньше.
+			--[+ Russian +]--
 			create_template("ach_off_3_ext_desc_ru", {"loc_achievement_boss_fast_x_description"}, {"ru"}, function(locale, value) return "Убейте Монстра за "..COLORS_Numbers.target_rgb.." секунд или меньше." end),
+			--[+ Traditional Chinese +]--
+			-- 在x秒內擊殺一隻巨獸。
+			create_template("ach_off_3_ext_desc_tw", {"loc_achievement_boss_fast_x_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.target_rgb.." 秒內擊殺一隻巨獸。" end),
 
 		--[+ Serial Killer +]-- руоф Серийный убийца
-	--[+ Russian +]--
-		-- create_template("ach_off_2_ext_ru", {"loc_achievement_consecutive_headshots_name"}, {"ru"}, function(locale, value) return "Серийный убийца" end),
+			--[+ Russian +]--
+			-- create_template("ach_off_2_ext_ru", {"loc_achievement_consecutive_headshots_name"}, {"ru"}, function(locale, value) return "Серийный убийца" end),
+			--[+ Traditional Chinese 連環殺手 +]--
+			create_template("ach_off_2_ext_tw", {"loc_achievement_consecutive_headshots_name"}, {"zh-tw"}, function(locale, value) return "連環殺手" end),
 
-			--[+ Kill 20 consecutive enemies with headshots. +]-- руоф Последовательно убейте выстрелами в голову врагов (20).
-	--[+ Russian +]--
+		--[+ Kill 20 consecutive enemies with headshots. +]-- руоф Последовательно убейте выстрелами в голову врагов (20).
+			--[+ Russian +]--
 			create_template("ach_off_2_ext_desc_ru", {"loc_achievement_consecutive_headshots_description"}, {"ru"}, function(locale, value) return "Совершите "..COLORS_Numbers.target_rgb.." последовательных убийств выстрелами врагам в голову." end),
+			--[+ Traditional Chinese +]--
+			-- 連續爆頭殺死20名敵人
+			create_template("ach_off_2_ext_desc_tw", {"loc_achievement_consecutive_headshots_description"}, {"zh-tw"}, function(locale, value) return "連續爆頭擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
-		--[+ +DEFENSIVE - ЗАЩИТА+ +]--
+	--[+ +DEFENSIVE - ЗАЩИТА - 防禦 + +]--
 		--[+ Defensive +]-- руоф Оборона
-	--[+ Russian +]--
-		create_template("ach_red_vet_0_ext_ru", {"loc_achievement_category_defensive_label"}, {"ru"}, function(locale, value) return "Защита" end),
+			--[+ Russian +]--
+			create_template("ach_red_vet_0_ext_ru", {"loc_achievement_category_defensive_label"}, {"ru"}, function(locale, value) return "Защита" end),
+			--[+ Traditional Chinese 防禦 +]--
+			create_template("ach_red_vet_0_ext_tw", {"loc_achievement_category_defensive_label"}, {"zh-tw"}, function(locale, value) return "防禦" end),
 
 		--[+ Flawless Execution (1-3) +]-- руоф Безупречная казнь (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_red_vet_3_ext_ru", {"loc_achievement_flawless_mission_1-3_name"}, {"ru"}, function(locale, value) return "Безупречное исполнение (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_vet_3_ext_ru", {"loc_achievement_flawless_mission_1-3_name"}, {"ru"}, function(locale, value) return "Безупречное исполнение (1-3)" end),
+			--[+ Traditional Chinese 完美處決 +]--
+			-- create_template("ach_red_vet_3_ext_tw", {"loc_achievement_flawless_mission_1-3_name"}, {"zh-tw"}, function(locale, value) return "完美執行（1-3）" end),
 
-			--[+ Complete 10 missions in a row without being downed on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше выполнить несколько заданий подряд (15) так, чтобы никто в группе не был сбит с ног.
-	--[+ Russian +]--
+		--[+ Complete 10 missions in a row without being downed on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше выполнить несколько заданий подряд (15) так, чтобы никто в группе не был сбит с ног.
+			--[+ Russian +]--
 			create_template("ach_red_vet_3_ext_desc_ru", {"loc_achievement_flawless_mission_x_description"}, {"ru"}, function(locale, value) return "Выполните "..COLORS_Numbers.target_rgb.." миссий подряд, не будучи ни разу сбитым с ног, на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡毒或更高難度下，在不被擊倒的情況下連續完成x個任務。
+			create_template("ach_red_vet_3_ext_desc_tw", {"loc_achievement_flawless_mission_x_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，連續完成 "..COLORS_Numbers.target_rgb.." 場任務且期間未曾被擊倒。" end),
 
 		--[+ Case for the Defence +]-- руоф Версия защиты
-	--[+ Russian +]--
-		create_template("ach_red_vet_8_ext_ru", {"loc_achievement_group_defence_name"}, {"ru"}, function(locale, value) return "Дело в пользу защиты" end),
+			--[+ Russian +]--
+			create_template("ach_red_vet_8_ext_ru", {"loc_achievement_group_defence_name"}, {"ru"}, function(locale, value) return "Дело в пользу защиты" end),
+			--[+ Traditional Chinese 防禦典型 +]--
+			create_template("ach_red_vet_8_ext_tw", {"loc_achievement_group_defence_name"}, {"zh-tw"}, function(locale, value) return "防禦典型" end),
 
-			--[+ Complete the following Defence Penances. +]-- руоф Выполните следующие искупления с обороной.
-	--[+ Russian +]--
+		--[+ Complete the following Defence Penances. +]-- руоф Выполните следующие искупления с обороной.
+			--[+ Russian +]--
 			create_template("ach_red_vet_8_ext_desc_ru", {"loc_achievement_group_defence_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления защиты." end),
+			--[+ Traditional Chinese +]--
+			-- 完成下列防禦苦修任務。
+			create_template("ach_red_vet_8_ext_desc_tw", {"loc_achievement_group_defence_description"}, {"zh-tw"}, function(locale, value) return "完成以下防禦型苦修任務。" end),
 
 		--[+ Zigging and Zagging +]-- руоф Вертись волчком
-	--[+ Russian +]--
-		create_template("ach_red_vet_4_ext_ru", {"loc_achievement_total_sprint_dodges_name"}, {"ru"}, function(locale, value) return "Уворачиваться и уклоняться" end),
+			--[+ Russian +]--
+			create_template("ach_red_vet_4_ext_ru", {"loc_achievement_total_sprint_dodges_name"}, {"ru"}, function(locale, value) return "Уворачиваться и уклоняться" end),
+			--[+ Traditional Chinese 閃電走位 +]--
+			create_template("ach_red_vet_4_ext_tw", {"loc_achievement_total_sprint_dodges_name"}, {"zh-tw"}, function(locale, value) return "閃電走位" end),
 
-			--[+ Dodge a total of 99 shots by sprinting. +]-- руоф При помощи бега уклониться от выстрелов: 99.
-	--[+ Russian +]--
+		--[+ Dodge a total of 99 shots by sprinting. +]-- руоф При помощи бега уклониться от выстрелов: 99.
+			--[+ Russian +]--
 			create_template("ach_red_vet_4_ext_desc_ru", {"loc_achievement_total_sprint_dodges_description"}, {"ru"}, function(locale, value) return "Уклонитесь от "..COLORS_Numbers.target_rgb.." выстрелов с помощью бега." end),
+			--[+ Traditional Chinese +]--
+			-- 通過衝刺總共閃避99次攻擊。
+			create_template("ach_red_vet_4_ext_desc_tw", {"loc_achievement_total_sprint_dodges_description"}, {"zh-tw"}, function(locale, value) return "透過衝刺閃避 "..COLORS_Numbers.target_rgb.." 發射攻擊。" end),
 
 		--[+ The Emperor Protects (1-3) +]-- руоф Император защищает (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_red_vet_1_ext_ru", {"loc_achievement_fast_blocks_1-3_name"}, {"ru"}, function(locale, value) return "Император защищает (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_vet_1_ext_ru", {"loc_achievement_fast_blocks_1-3_name"}, {"ru"}, function(locale, value) return "Император защищает (1-3)" end),
+			--[+ Traditional Chinese 帝皇的護佑 +]--
+			-- create_template("ach_red_vet_1_ext_tw", {"loc_achievement_fast_blocks_1-3_name"}, {"zh-tw"}, function(locale, value) return "帝皇的護佑 (1-3)" end),
 
-			--[+ Block 900 damage in 10s. +]-- руоф Блокировать 900 ед. урона в течение 10 с.
-	--[+ Russian +]--
+		--[+ Block 900 damage in 10s. +]-- руоф Блокировать 900 ед. урона в течение 10 с.
+			--[+ Russian +]--
 			create_template("ach_red_vet_1_ext_desc_ru", {"loc_achievement_fast_blocks_x_description"}, {"ru"}, function(locale, value) return "Заблокируйте "..COLORS_Numbers.target_rgb.." единиц урона за "..COLORS_Numbers.time_wind_rgb.." секунд." end),
+			--[+ Traditional Chinese +]--
+			-- 在xx秒內格檔xxx點傷害值。
+			create_template("ach_red_vet_1_ext_desc_tw", {"loc_achievement_fast_blocks_x_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.time_wind_rgb.." 秒內格擋 "..COLORS_Numbers.target_rgb.." 傷害。" end),
 
 		--[+ Untouchable +]-- руоф Неприкасаемый
-	--[+ Russian +]--
-		-- create_template("ach_red_vet_7_ext_ru", {"loc_achievement_mission_no_damage_name"}, {"ru"}, function(locale, value) return "Неприкасаемый" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_vet_7_ext_ru", {"loc_achievement_mission_no_damage_name"}, {"ru"}, function(locale, value) return "Неприкасаемый" end),
+			--[+ Traditional Chinese 不可觸碰 +]--
+			create_template("ach_red_vet_7_ext_tw", {"loc_achievement_mission_no_damage_name"}, {"zh-tw"}, function(locale, value) return "不可觸碰" end),
 
-			--[+ Complete a Mission without taking any Health damage. +]-- руоф Выполнить задание, не получив урона.
-	--[+ Russian +]--
+		--[+ Complete a Mission without taking any Health damage. +]-- руоф Выполнить задание, не получив урона.
+			--[+ Russian +]--
 			create_template("ach_red_vet_7_ext_desc_ru", {"loc_achievement_mission_no_damage_description"}, {"ru"}, function(locale, value) return "Завершите миссию, не получив урона "..COLORS_KWords_ru.Health_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 完成1個任務而不受到任何生命值傷害。
+			create_template("ach_red_vet_7_ext_desc_tw", {"loc_achievement_mission_no_damage_description"}, {"zh-tw"}, function(locale, value) return "在未受到任何『"..COLORS_KWords_tw.Health_rgb_tw.."』傷害的情況下完成一場任務。" end),
 
 		--[+ Preternatural Dodge (1-3) +]-- руоф Сверхъестественное уклонение (1-3)
-	--[+ Russian +]--
-		-- create_template("ach_red_vet_2_ext_ru", {"loc_achievement_consecutive_dodge_1-3_name"}, {"ru"}, function(locale, value) return "Сверхъестественное уклонение (1-3)" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_vet_2_ext_ru", {"loc_achievement_consecutive_dodge_1-3_name"}, {"ru"}, function(locale, value) return "Сверхъестественное уклонение (1-3)" end),
+			--[+ Traditional Chinese 超現實閃避 +]--
+			-- create_template("ach_red_vet_2_ext_tw", {"loc_achievement_consecutive_dodge_1-3_name"}, {"zh-tw"}, function(locale, value) return "超現實閃避 (1-3)" end),
 
-			--[+ Dodge 20 attacks without taking damage. +]-- руоф Уклониться от ударов без получения урона: 20.
-	--[+ Russian +]--
+		--[+ Dodge 20 attacks without taking damage. +]-- руоф Уклониться от ударов без получения урона: 20.
+			--[+ Russian +]--
 			create_template("ach_red_vet_2_ext_desc_ru", {"loc_achievement_consecutive_dodge_x_description"}, {"ru"}, function(locale, value) return "Уклонитесь от "..COLORS_Numbers.target_rgb.." атак, не получив урона." end),
+			--[+ Traditional Chinese +]--
+			-- 閃避xx次攻擊而不受傷害。
+			create_template("ach_red_vet_2_ext_desc_tw", {"loc_achievement_consecutive_dodge_x_description"}, {"zh-tw"}, function(locale, value) return "連續閃避 "..COLORS_Numbers.target_rgb.." 次攻擊且不受到任何傷害。" end),
 
 		--[+ Violent Tendencies +]-- руоф Склонность к жестокости
-	--[+ Russian +]--
-		-- create_template("ach_red_vet_6_ext_ru", {"loc_achievement_melee_toughness_name"}, {"ru"}, function(locale, value) return "Склонность к жестокости" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_vet_6_ext_ru", {"loc_achievement_melee_toughness_name"}, {"ru"}, function(locale, value) return "Склонность к жестокости" end),
+			--[+ Traditional Chinese 暴力傾向 +]--
+			-- create_template("ach_red_vet_6_ext_tw", {"loc_achievement_melee_toughness_name"}, {"zh-tw"}, function(locale, value) return "暴力傾向" end),
 
-			--[+ Regenerate 40000 Toughness from melee kills. +]-- руоф С помощью убийств в ближнем бою восстановить стойкость: 40000.
-	--[+ Russian +]--
+		--[+ Regenerate 40000 Toughness from melee kills. +]-- руоф С помощью убийств в ближнем бою восстановить стойкость: 40000.
+			--[+ Russian +]--
 			create_template("ach_red_vet_6_ext_desc_ru", {"loc_achievement_melee_toughness_description"}, {"ru"}, function(locale, value) return "Восстановите "..COLORS_Numbers.target_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." от убийств в ближнем бою." end),
+			--[+ Traditional Chinese +]--
+			-- 從近戰擊殺中回復40000點韌性。
+			create_template("ach_red_vet_6_ext_desc_tw", {"loc_achievement_melee_toughness_description"}, {"zh-tw"}, function(locale, value) return "透過近戰擊殺恢復 "..COLORS_Numbers.target_rgb.." 點『"..COLORS_KWords_tw.Toughness_rgb_tw.."』。" end),
 
 		--[+ Figure Four +]-- руоф Ускользнул
-	--[+ Russian +]--
-		create_template("ach_red_vet_5_ext_ru", {"loc_achievement_slide_dodge_name"}, {"ru"}, function(locale, value) return "Выход в ноги" end),
+			--[+ Russian +]--
+			create_template("ach_red_vet_5_ext_ru", {"loc_achievement_slide_dodge_name"}, {"ru"}, function(locale, value) return "Выход в ноги" end),
+			--[+ Traditional Chinese 四字固 +]--
+			create_template("ach_red_vet_5_ext_tw", {"loc_achievement_slide_dodge_name"}, {"zh-tw"}, function(locale, value) return "四字固" end),
 
-			--[+ Use your Slide to avoid an enemy attack. +]-- руоф Использовать «Скольжение» для уклонения от атаки врага.
-	--[+ Russian +]--
+		--[+ Use your Slide to avoid an enemy attack. +]-- руоф Использовать «Скольжение» для уклонения от атаки врага.
+			--[+ Russian +]--
 			create_template("ach_red_vet_5_ext_desc_ru", {"loc_achievement_slide_dodge_description"}, {"ru"}, function(locale, value) return "Используйте подкат, чтобы избежать атаки врага." end),
+			--[+ Traditional Chinese +]--
+			-- 使用滑步躲開1名敵人的攻擊。
+			create_template("ach_red_vet_5_ext_desc_tw", {"loc_achievement_slide_dodge_description"}, {"zh-tw"}, function(locale, value) return "使用滑行動作閃避一次敵方攻擊。" end),
 
 	--[+ +TEAM - КОМАНДА+ +]--
 		--[+ Team +]-- руоф Команда
