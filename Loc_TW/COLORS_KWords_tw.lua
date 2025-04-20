@@ -118,7 +118,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++熱能(Heat)++]--
 	local Heat_rgb_tw = iu_actit("熱能", brn_col)
 	local Heat_diss_rgb_tw = iu_actit("散熱效率", brn_col) -- diss
-	local Heat2_rgb_tw = iu_actit("熱能", brn_col)
+	local Heat2_rgb_tw = iu_actit("充能", brn_col)
 	--[++靈魂之火(Soulblaze)++]--
 	local slblz_col = Color[mod:get("soulblaze_text_colour")](255, true)
 	local Soulblaze_rgb_tw = iu_actit("靈火", slblz_col)
