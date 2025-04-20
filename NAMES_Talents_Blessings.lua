@@ -1534,7 +1534,6 @@ local localization_templates = {
 		{"loc_trait_bespoke_weakspot_projectile_hit_increases_reload_speed"}, {"tw"},
 			loc_text("迅雷反射")),
 
-
 --[+ ++TALENTS - ТАЛАНТЫ ++ +]--
 --[+ +NODES - УЗЛЫ+ +]--
 	--[+ Critical Chance Boost - Повышение шанса Критического удара +]-- Усиление вероятности крит. удара
@@ -1545,6 +1544,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_006_ru",
 		{"loc_talent_crit_chance_low"}, {"ru"},
 			loc_text("Повышение шанса Критического удара")),
+	--[+ Traditional Chinese - 暴擊機率增幅 +]-- +5%暴擊機率 -- 靈能者, 老兵
+	create_template("talent_tree_oper_mod_006_tw",
+		{"loc_talent_crit_chance_low"}, {"tw"},
+			loc_text("暴擊機率增幅")),
 
 	--[+ Health Boost Low - Повышение Здоровья малое +]--
 	create_template("talent_tree_oper_mod_005_l_en",
@@ -1554,6 +1557,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_005_l_ru",
 		{"loc_talent_health_low"}, {"ru"},
 			loc_text("Повышение Здоровья малое")),
+	--[+ Traditional Chinese - 生命增幅(小) +]-- +5%生命 -- 歐格林, 老兵
+	create_template("talent_tree_oper_mod_005_l_tw",
+		{"loc_talent_health_low"}, {"tw"},
+			loc_text("生命增幅(小)")),
 
 	--[+ Health Boost Medium - Повышение Здоровья среднее +]--
 	create_template("talent_tree_oper_mod_005_m_en",
@@ -1563,6 +1570,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_005_m_ru",
 		{"loc_talent_health_medium"}, {"ru"},
 			loc_text("Повышение Здоровья среднее")),
+	--[+ Traditional Chinese - 生命增幅(中) +]-- +10%生命 -- 靈能者, 歐格林, 狂信徒
+	create_template("talent_tree_oper_mod_005_m_tw",
+		{"loc_talent_health_medium"}, {"tw"},
+			loc_text("生命增幅(中)")),
 
 	--[+ Heavy Melee Damage Boost Low - Повышение урона тяжёлых атак ближнего боя малое +]--
 	create_template("talent_tree_oper_mod_014_l_en",
@@ -1572,6 +1583,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_014_l_ru",
 		{"loc_talent_melee_heavy_damage_low"}, {"ru"},
 			loc_text("Повышение урона тяжёлых атак ближнего боя малое")),
+	--[+ Traditional Chinese - 重擊傷害增幅(小) +]-- +5%重擊傷害 -- 歐格林
+	create_template("talent_tree_oper_mod_014_l_tw",
+		{"loc_talent_melee_heavy_damage_low"}, {"tw"},
+			loc_text("重擊傷害增幅(小)")),
 
 	--[+ Heavy Melee Damage Boost Medium - Повышение урона тяжёлых атак ближнего боя среднее +]--
 	create_template("talent_tree_oper_mod_014_m_en",
@@ -1581,6 +1596,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_014_m_ru",
 		{"loc_talent_melee_heavy_damage_medium"}, {"ru"},
 			loc_text("Повышение урона тяжёлых атак ближнего боя среднее")),
+	--[+ Traditional Chinese - 重擊傷害增幅(中) +]-- +10%重擊傷害 -- 歐格林
+	create_template("talent_tree_oper_mod_014_m_tw",
+		{"loc_talent_melee_heavy_damage_medium"}, {"tw"},
+			loc_text("重擊傷害增幅(中)")),
 
 	--[+ Inspiring Presence - Вдохновляющее присутствие +]--
 	-- create_template("talent_tree_oper_mod_003_en",
@@ -1590,6 +1609,10 @@ local localization_templates = {
 	-- create_template("talent_tree_oper_mod_003_ru",
 		-- {"loc_talent_coherency_regen_low"}, {"ru"},
 			-- loc_text("Вдохновляющее присутствие")),
+	--[+ Traditional Chinese - 鼓舞人心 +]-- -- +10%協同中的韌性恢復再生 -- 老兵
+	create_template("talent_tree_oper_mod_003_tw",
+		{"loc_talent_coherency_regen_low"}, {"tw"},
+			loc_text("鼓舞人心")),
 
 	--[+ Melee Damage Boost Low - Повышение урона атак ближнего боя малое +]--
 	create_template("talent_tree_oper_mod_008_en",
@@ -1599,6 +1622,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_008_ru",
 		{"loc_talent_melee_damage_boost_low"}, {"ru"},
 			loc_text("Повышение урона атак ближнего боя малое")),
+	--[+ Traditional Chinese - 近戰傷害增幅(小) +]-- +5%近戰傷害 -- 歐格林, 老兵, 狂信徒
+	create_template("talent_tree_oper_mod_008_tw",
+		{"loc_talent_melee_damage_boost_low"}, {"tw"},
+			loc_text("近戰傷害增幅(小)")),
 
 	--[+ Melee Damage Boost Medium - Повышение урона атак ближнего боя среднее +]--
 	create_template("talent_tree_oper_mod_008_1_en",
@@ -1608,6 +1635,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_008_1_ru",
 		{"loc_talent_melee_damage_boost_medium"}, {"ru"},
 			loc_text("Повышение урона атак ближнего боя среднее")),
+	--[+ Traditional Chinese - 近戰傷害增幅(中) +]-- +10%近戰傷害 -- 老兵
+	create_template("talent_tree_oper_mod_008_1_tw",
+		{"loc_talent_melee_damage_boost_medium"}, {"tw"},
+			loc_text("近戰傷害增幅(中)")),
 
 	--[+ Movement Speed Boost - Повышение скорости движения +]--
 	-- create_template("talent_tree_oper_mod_007_en",
@@ -1616,6 +1647,10 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("talent_tree_oper_mod_007_en",{"loc_talent_movement_speed_low"}, {"ru"},
 			loc_text("Повышение скорости движения")),
+	--[+ Traditional Chinese - 移動速度增幅 +]-- -- +5%移動速度 -- 靈能者, 老兵, 狂信徒
+	create_template("talent_tree_oper_mod_007_tw",
+		{"loc_talent_movement_speed_low"}, {"tw"},
+			loc_text("移動速度增幅")),
 
 	--[+ Peril Resistance - Сопротивление опасности +]--
 	-- create_template("talent_tree_oper_mod_001_en",
@@ -1624,6 +1659,10 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("talent_tree_oper_mod_001_en",{"loc_talent_warp_charge_low"}, {"ru"},
 			loc_text("Сопротивление опасности")),
+	--[+ Traditional Chinese - 反噬抗性 +]-- -- -5%反噬 -- 靈能者
+	create_template("talent_tree_oper_mod_001_tw",
+		{"loc_talent_warp_charge_low"}, {"tw"},
+			loc_text("反噬抗性")),
 
 	--[+ Ranged Damage Boost Low - Повышение урона дальнего боя малое +]--
 	create_template("talent_tree_oper_mod_004_en",
@@ -1633,6 +1672,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_004_ru",
 		{"loc_talent_ranged_damage_low"}, {"ru"},
 			loc_text("Повышение урона дальнего боя малое")),
+	--[+ Traditional Chinese - 遠程傷害增幅(小) +]-- +5%遠程傷害 -- 靈能者, 歐格林, 老兵
+	create_template("talent_tree_oper_mod_004_tw",
+		{"loc_talent_ranged_damage_low"}, {"tw"},
+			loc_text("遠程傷害增幅(小)")),
 
 	--[+ Ranged Damage Boost Medium - Повышение урона дальнего боя среднее +]--
 	create_template("talent_tree_oper_mod_004_en",
@@ -1642,6 +1685,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_004_ru",
 		{"loc_talent_ranged_damage_medium"}, {"ru"},
 			loc_text("Повышение урона дальнего боя среднее")),
+	--[+ Traditional Chinese - 遠程傷害增幅(中) +]-- -- +10%遠程傷害 -- 靈能者, 歐格林, 老兵
+	create_template("talent_tree_oper_mod_004_tw",
+		{"loc_talent_ranged_damage_medium"}, {"tw"},
+			loc_text("遠程傷害增幅(中)")),
 
 	--[+ Reload Boost - Повышение скорости перезарядки +]--
 	-- create_template("talent_tree_oper_mod_011_en",
@@ -1651,6 +1698,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_011_ru",
 		{"loc_talent_reload_speed_low"}, {"ru"},
 			loc_text("Повышение скорости перезарядки")),
+	--[+ Traditional Chinese - 換彈速度增幅 +]-- -- +5%換彈速度提高 -- 歐格林, 老兵
+	create_template("talent_tree_oper_mod_011_tw",
+		{"loc_talent_reload_speed_low"}, {"tw"},
+			loc_text("換彈速度增幅")),
 
 	--[+ Rending Boost - Повышение пробивания брони +]--
 	-- create_template("talent_tree_oper_mod_013_en",
@@ -1660,6 +1711,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_013_ru",
 		{"loc_talent_armor_pen_low"}, {"ru"},
 			loc_text("Повышение пробивания брони")),
+	--[+ Traditional Chinese - 撕裂增強 +]-- -- +5%撕裂 -- 歐格林
+	create_template("talent_tree_oper_mod_013_tw",
+		{"loc_talent_armor_pen_low"}, {"tw"},
+			loc_text("撕裂增強")),
 
 	--[+ Stamina Boost - Повышение выносливости +]--
 	-- create_template("talent_tree_oper_mod_009_en",
@@ -1669,6 +1724,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_009_ru",
 		{"loc_talent_stamina_low"}, {"ru"},
 			loc_text("Повышение выносливости")),
+	--[+ Traditional Chinese - 耐力增幅 +]-- -- +1耐力 -- 老兵, 狂信徒
+	create_template("talent_tree_oper_mod_009_tw",
+		{"loc_talent_stamina_low"}, {"tw"},
+			loc_text("耐力增幅")),
 
 	--[+ Stamina Regeneration Boost - Повышение восстановления выносливости +]--
 	-- create_template("talent_tree_oper_mod_012_en",
@@ -1678,6 +1737,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_012_ru",
 		{"loc_talent_stamina_regen_delay"}, {"ru"},
 			loc_text("Повышение восстановления выносливости")),
+	--[+ Traditional Chinese - 耐力恢復增幅 +]-- -- 0.25耐力恢復 -- 老兵
+	create_template("talent_tree_oper_mod_012_tw",
+		{"loc_talent_stamina_regen_delay"}, {"tw"},
+			loc_text("耐力恢復增幅")),
 
 	--[+ Suppression Boost - Повышение подавления врагов +]--
 	-- create_template("talent_tree_oper_mod_010_en",
@@ -1687,6 +1750,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_010_ru",
 		{"loc_talent_suppression_low"}, {"ru"},
 			loc_text("Повышение подавления")),
+	--[+ Traditional Chinese - 壓制增幅 +]-- -- +25%壓制 -- 歐格林, 老兵, 狂信徒
+	create_template("talent_tree_oper_mod_010_tw",
+		{"loc_talent_suppression_low"}, {"tw"},
+			loc_text("壓制增幅")),
 
 	--[+ Toughness Boost Low - Повышение стойкости малое +]--
 	create_template("talent_tree_oper_mod_000_l_en",
@@ -1696,6 +1763,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_000_l_ru",
 		{"loc_talent_toughness_boost_low"}, {"ru"},
 			loc_text("Повышение стойкости малое")),
+	--[+ Traditional Chinese - 韌性增幅(小) +]-- -- +15%韌性 -- 靈能者, 歐格林, 老兵, 狂信徒
+	create_template("talent_tree_oper_mod_000_l_tw",
+		{"loc_talent_toughness_boost_low"}, {"tw"},
+			loc_text("韌性增幅(小)")),
 
 	--[+ Toughness Boost Medium - Повышение стойкости среднее +]--
 	create_template("talent_tree_oper_mod_000_m_en",
@@ -1705,6 +1776,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_000_m_ru",
 		{"loc_talent_toughness_boost_medium"}, {"ru"},
 			loc_text("Повышение стойкости среднее")),
+	--[+ Traditional Chinese - 韌性增幅(中) +]-- -- +25%韌性 -- 歐格林, 老兵
+	create_template("talent_tree_oper_mod_000_m_tw",
+		{"loc_talent_toughness_boost_medium"}, {"tw"},
+			loc_text("韌性增幅(中)")),
 
 	--[+ Toughness Damage Reduction Low - Снижение урона стойкости малое +]--
 	create_template("talent_tree_oper_mod_002_l_en",
@@ -1714,6 +1789,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_002_l_ru",
 		{"loc_talent_toughness_damage_reduction_low"}, {"ru"},
 			loc_text("Снижение урона стойкости малое")),
+	--[+ Traditional Chinese - 韌性減傷(小) +]-- -- +5%韌性減傷 -- 靈能者, 老兵, 狂信徒
+	create_template("talent_tree_oper_mod_002_l_tw",
+		{"loc_talent_toughness_damage_reduction_low"}, {"tw"},
+			loc_text("韌性減傷(小)")),
 
 	--[+ Toughness Damage Reduction Medium - Снижение урона стойкости среднее +]--
 	create_template("talent_tree_oper_mod_002_m_en",{"loc_talent_toughness_damage_reduction_medium"}, {"en"},
@@ -1721,7 +1800,10 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("talent_tree_oper_mod_002_m_en",{"loc_talent_toughness_damage_reduction_medium"}, {"ru"},
 			loc_text("Снижение урона стойкости среднее")),
-
+	--[+ Traditional Chinese - 韌性減傷(中) +]-- -- +10%韌性減傷 -- 歐格林, 老兵
+	create_template("talent_tree_oper_mod_002_m_tw",
+		{"loc_talent_toughness_damage_reduction_medium"}, {"tw"},
+			loc_text("韌性減傷(中)")),
 
 --[+ ++PSYKER - ПСАЙКЕР++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
