@@ -27,56 +27,107 @@ local localization_templates = {
 --[+ ++WEAPON BLESSINGS++ +]--
 	--[+ Melee +]--
 	--[+ Opportunist - Оппортунист +]-- -- руоф Приспособленец
+	--[+ Russian +]
 	create_template("trait_bespoke_000_ext_ru",
 		{"loc_trait_bespoke_armor_penetration_against_staggered"}, {"ru"},
 			loc_text( "Оппортунист")),
+	--[+ Traditional Chinese - 機會主義者 +]--
+	create_template("trait_bespoke_000_ext_tw",
+		{"loc_trait_bespoke_armor_penetration_against_staggered"}, {"tw"},
+			loc_text("機會主義者")),
 
 	--[+ Bloodletter - Кровопускатель +]-- -- руоф Кровопускание
+	--[+ Russian +]
 	create_template("trait_bespoke_001_ext_ru",
 		{"loc_trait_bespoke_bleed_on_activated_hit"}, {"ru"},
 				loc_text("Кровопускатель")),
+	--[+ Traditional Chinese - 放血者 +]--
+	create_template("trait_bespoke_001_ext_tw",
+		{"loc_trait_bespoke_bleed_on_activated_hit"}, {"tw"},
+				loc_text("放血者")),
 
 	--[+ Bloodthirsty - Кровожадный +]-- -- руоф Жажда крови
+	--[+ Russian +]
 	create_template("trait_bespoke_002_ext_ru",
 		{"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill"}, {"ru"},
 			loc_text("Кровожадный")),
+	--[+ Traditional Chinese - 嗜血 +]--
+	create_template("trait_bespoke_002_ext_tw",
+		{"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill"}, {"tw"},
+			loc_text("嗜血")),
 
 	--[+ Headtaker - Головорез +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_003_ext_ru",
 		-- {"loc_trait_bespoke_increase_power_on_hit"}, {"ru"},
 			-- loc_text("Головорез")),
+	--[+ Traditional Chinese - 奪顱者 +]--
+	create_template("trait_bespoke_003_ext_tw",
+		{"loc_trait_bespoke_increase_power_on_hit"}, {"tw"},
+			loc_text("奪顱者")),
 
 	--[+ Slaughterer - Мясник +]-- -- руоф Душегуб
+	--[+ Russian +]
 	create_template("trait_bespoke_004_ext_ru",
 		{"loc_trait_bespoke_increase_power_on_kill"}, {"ru"},
 			loc_text("Мясник")),
+	--[+ Traditional Chinese - 殺戮者 +]--
+	create_template("trait_bespoke_004_ext_tw",
+		{"loc_trait_bespoke_increase_power_on_kill"}, {"tw"},
+			loc_text("殺戮者")),
 
 	--[+ Rev it up - Ускорься +]-- -- руоф Бодрость
+	--[+ Russian +]
 	create_template("trait_bespoke_005_ext_ru",
 		{"loc_trait_bespoke_movement_speed_on_activation"}, {"ru"},
 			loc_text("Ускорься")),
+	--[+ Traditional Chinese - 提速 +]--
+	create_template("trait_bespoke_005_ext_tw",
+		{"loc_trait_bespoke_movement_speed_on_activation"}, {"tw"},
+			loc_text("提速")),
 
 	--[+ Thrust - Выпад +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_006_ext_ru",
 		-- {"loc_trait_bespoke_power_bonus_based_on_charge_time"}, {"ru"},
 			-- loc_text("Выпад")),
+	--[+ Traditional Chinese - 推進 +]--
+	create_template("trait_bespoke_006_ext_tw",
+		{"loc_trait_bespoke_power_bonus_based_on_charge_time"}, {"tw"},
+			loc_text("推進")),
 
 	--[+ Thunderous - Громовой удар +]-- -- руоф Словно раскаты грома?
+	--[+ Russian +]
 	create_template("trait_bespoke_007_ext_ru",
 		{"loc_trait_bespoke_targets_receive_rending_debuff"}, {"ru"},
 			loc_text("Громовой удар")),
+	--[+ Traditional Chinese - 雷鳴 +]--
+	create_template("trait_bespoke_007_ext_tw",
+		{"loc_trait_bespoke_targets_receive_rending_debuff"}, {"tw"},
+			loc_text("雷鳴")),
 
 	--[+ Wrath - Гнев +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_008_ext_ru",
 		-- {"loc_trait_bespoke_chained_hits_increases_cleave"}, {"ru"},
 			-- loc_text("Гнев")),
+	--[+ Traditional Chinese - 憤怒 +]--
+	create_template("trait_bespoke_008_ext_tw",
+		{"loc_trait_bespoke_chained_hits_increases_cleave"}, {"tw"},
+			loc_text("憤怒")),
 
 	--[+ Shred - Кромсание +]-- -- руоф Расстрел?
+	--[+ Russian +]
 	create_template("trait_bespoke_009_ext_ru",
 		{"loc_trait_bespoke_chained_hits_increases_crit_chance"}, {"ru"},
 			loc_text("Кромсание")),
+	--[+ Traditional Chinese - 粉碎 +]--
+	create_template("trait_bespoke_009_ext_tw",
+		{"loc_trait_bespoke_chained_hits_increases_crit_chance"}, {"tw"},
+			loc_text("粉碎")),
 
 	--[+ Savage Sweep - Дикий взмах +]-- -- руоф Дикость
+	--[+ Russian +]
 	create_template("trait_bespoke_010_ext_ru",
 		{"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits"}, {"ru"},
 			loc_text("Дикий взмах")),
@@ -85,379 +136,752 @@ local localization_templates = {
 	-- create_template("trait_bespoke_011_ext_ru",
 		-- {"loc_trait_bespoke_increased_melee_damage_on_multiple_hits"}, {"ru"},
 			-- loc_text("Буйство")),
+	--[+ Traditional Chinese - 野蠻橫掃 +]--
+	create_template("trait_bespoke_010_ext_tw",
+		{"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits"}, {"tw"},
+			loc_text("野蠻橫掃")),
 
 	--[+ Devastating Strike - Разрушительный удар +]-- -- руоф Сокрушительный удар
+	--[+ Russian +]
 	create_template("trait_bespoke_012_ext_ru",
 		{"loc_trait_bespoke_infinite_melee_cleave_on_crit"}, {"ru"},
 			loc_text("Разрушительный удар")),
+	--[+ Traditional Chinese - 毀滅打擊 +]--
+	create_template("trait_bespoke_012_ext_tw",
+		{"loc_trait_bespoke_infinite_melee_cleave_on_crit"}, {"tw"},
+			loc_text("毀滅打擊")),
 
 	--[+ Decimator - Дециматор +]--
 	-- create_template("trait_bespoke_013_ext_ru",
 		-- {"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"ru"},
 			-- loc_text("Дециматор")),
+	--[+ Traditional Chinese - 屠戮者 +]--
+	create_template("trait_bespoke_013_ext_tw",
+		{"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"tw"},
+			loc_text("屠戮者")),
 
 	--[+ Brutal Momentum - Жестокий импульс +]-- -- руоф Суровый моментум
+	--[+ Russian +]
 	create_template("trait_bespoke_014_ext_ru",
 		{"loc_trait_bespoke_infinite_cleave_on_weakspot_kill"}, {"ru"},
 			loc_text("Жестокий импульс")),
+	--[+ Traditional Chinese - 野蠻攻勢 +]--
+	create_template("trait_bespoke_014_ext_tw",
+		{"loc_trait_bespoke_infinite_cleave_on_weakspot_kill"}, {"tw"},
+			loc_text("野蠻攻勢")),
 
 	--[+ Limbsplitter - Расчленитель +]-- -- руоф Расщепитель
+	--[+ Russian +]
 	create_template("trait_bespoke_015_ext_ru",
 		{"loc_trait_bespoke_power_bonus_on_first_attack"}, {"ru"},
 			loc_text("Расчленитель")),
+	--[+ Traditional Chinese - 斷肢者 +]--
+	create_template("trait_bespoke_015_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_first_attack"}, {"tw"},
+			loc_text("斷肢者")),
 
 	--[+ All or Nothing - Всё или ничего +]-- -- руоф Все или ничего
+	--[+ Russian +]
 	create_template("trait_bespoke_016_ext_ru",
 		{"loc_trait_bespoke_power_bonus_scaled_on_stamina"}, {"ru"},
 			loc_text("Всё или ничего")),
+	--[+ Traditional Chinese - 孤注一擲 +]--
+	create_template("trait_bespoke_016_ext_tw",
+		{"loc_trait_bespoke_power_bonus_scaled_on_stamina"}, {"tw"},
+			loc_text("孤注一擲")),
 
 	--[+ Decapitator - Обезглавливатель +]-- -- руоф Палач
+	--[+ Russian +]
 	create_template("trait_bespoke_017_ext_ru",
 		{"loc_trait_bespoke_stacking_rending_on_one_hit_kills"}, {"ru"},
 			loc_text("Обезглавливатель")),
+	--[+ Traditional Chinese - 斬首者 +]--
+	create_template("trait_bespoke_017_ext_tw",
+		{"loc_trait_bespoke_stacking_rending_on_one_hit_kills"}, {"tw"},
+			loc_text("斬首者")),
 
 	--[+ Agile - Проворный +]-- -- руоф Ловкий
+	--[+ Russian +]
 	create_template("trait_bespoke_018_ext_ru",
 		{"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit"}, {"ru"},
 			loc_text("Проворный")),
+	--[+ Traditional Chinese - 敏捷 +]--
+	create_template("trait_bespoke_018_ext_tw",
+		{"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit"}, {"tw"},
+			loc_text("敏捷")),
 
 	--[+ Slaughter Spree - Резня +]-- -- руоф  Убойная сила
+	--[+ Russian +]
 	create_template("trait_bespoke_019_ext_ru",
 		{"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill"}, {"ru"},
 			loc_text("Резня")),
+	--[+ Traditional Chinese - 殺戮狂潮 +]--
+	create_template("trait_bespoke_019_ext_tw",
+		{"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill"}, {"tw"},
+			loc_text("殺戮狂潮")),
 
 	--[+ Relentless Strikes - Безжалостные удары +]-- -- руоф Безжалостность
+	--[+ Russian +]
 	create_template("trait_bespoke_020_ext_ru",
 		{"loc_trait_bespoke_power_bonus_on_same_enemy_attacks"}, {"ru"},
 			loc_text("Безжалостные удары")),
+	--[+ Traditional Chinese - 持續打擊 +]--
+	create_template("trait_bespoke_020_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_same_enemy_attacks"}, {"tw"},
+			loc_text("持續打擊")),
 
 	--[+ Flesh Tearer - Раздиратель плоти +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_021_ext_ru",
 		-- {"loc_trait_bespoke_bleed_on_crit_melee"}, {"ru"},
 			-- loc_text("Раздиратель плоти")),
+	--[+ Traditional Chinese - 血肉撕裂者 +]--
+	create_template("trait_bespoke_021_ext_ru",
+		{"loc_trait_bespoke_bleed_on_crit_melee"}, {"tw"},
+			loc_text("血肉撕裂者")),
 
 	--[+ Lacerate - Терзание +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_022_ext_ru",
 		-- {"loc_trait_bespoke_bleed_on_non_weakspot_hit"}, {"ru"},
 			-- loc_text("Терзание")),
+	--[+ Traditional Chinese - 撕裂 +]--
+	create_template("trait_bespoke_022_ext_tw",
+		{"loc_trait_bespoke_bleed_on_non_weakspot_hit"}, {"tw"},
+			loc_text("撕裂")),
 
 	--[+ Executor - Каратель +]-- -- руоф Экзекутор
+	--[+ Russian +]
 	create_template("trait_bespoke_023_ext_ru",
 		{"loc_trait_bespoke_chained_weakspot_hits_increases_power"}, {"ru"},
 			loc_text("Каратель")),
+	--[+ Traditional Chinese - 行刑者 +]--
+	create_template("trait_bespoke_023_ext_tw",
+		{"loc_trait_bespoke_chained_weakspot_hits_increases_power"}, {"tw"},
+			loc_text("行刑者")),
 
 	--[+ Riposte - Ответный удар +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_024_ext_ru",
 		-- {"loc_trait_bespoke_dodge_grants_crit_chance"}, {"ru"},
 			-- loc_text("Ответный удар")),
+	--[+ Traditional Chinese - 還擊 +]--
+	create_template("trait_bespoke_024_ext_tw",
+		{"loc_trait_bespoke_dodge_grants_crit_chance"}, {"tw"},
+			loc_text("還擊")),
 
 	--[+ Precognition - Предвидение +]-- -- руоф Познание
+	--[+ Russian +]
 	create_template("trait_bespoke_025_ext_ru",
 		{"loc_trait_bespoke_dodge_grants_finesse_bonus"}, {"ru"},
 			loc_text("Предвидение")),
+	--[+ Traditional Chinese - 未卜先知 +]--
+	create_template("trait_bespoke_025_ext_tw",
+		{"loc_trait_bespoke_dodge_grants_finesse_bonus"}, {"tw"},
+			loc_text("未卜先知")),
 
 	--[+ Haymaker - Жнец +]-- (*Косарь) -- руоф Коса
+	--[+ Russian +]
 	create_template("trait_bespoke_026_ext_ru",
 		{"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance"}, {"ru"},
 			loc_text("Жнец")),
+	--[+ Traditional Chinese - 強力一擊 +]--
+	create_template("trait_bespoke_026_ext_tw",
+		{"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance"}, {"tw"},
+			loc_text("強力一擊")),
 
 	--[+ Smackdown - Сокрушение +]-- -- руоф Смятение
+	--[+ Russian +]
 	create_template("trait_bespoke_027_ext_ru",
 		{"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy"}, {"ru"},
 			loc_text("Сокрушение")),
+	--[+ Traditional Chinese - 擊倒 +]--
+	create_template("trait_bespoke_027_ext_tw",
+		{"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy"}, {"tw"},
+			loc_text("擊倒")),
 
 	--[+ Mercy Killer - Милосердный убийца +]-- -- руоф Милосердие
+	--[+ Russian +]
 	create_template("trait_bespoke_028_ext_ru",
 		{"loc_trait_bespoke_increased_weakspot_damage_on_bleeding"}, {"ru"},
 			loc_text("Милосердный убийца")),
+	--[+ Traditional Chinese - 仁慈殺手 +]--
+	create_template("trait_bespoke_028_ext_tw",
+		{"loc_trait_bespoke_increased_weakspot_damage_on_bleeding"}, {"tw"},
+			loc_text("仁慈殺手")),
 
 	--[+ Ruthless Backstab - Беспощадный удар в спину +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_029_ext_ru",
 		-- {"loc_trait_bespoke_rending_on_backstabs"}, {"ru"},
 			-- loc_text("Беспощадный удар в спину")),
+	--[+ Traditional Chinese - 無情背刺 +]--
+	create_template("trait_bespoke_029_ext_tw",
+		{"loc_trait_bespoke_rending_on_backstabs"}, {"tw"},
+			loc_text("無情背刺")),
 
 	--[+ Uncanny Strike - Жуткий удар +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_030_ext_ru",
 		-- {"loc_trait_bespoke_stacking_rending_on_weakspot"}, {"ru"},
 			-- loc_text("Жуткий удар")),
+	--[+ Traditional Chinese - 詭異打擊 +]--
+	create_template("trait_bespoke_030_ext_tw",
+		{"loc_trait_bespoke_stacking_rending_on_weakspot"}, {"tw"},
+			loc_text("詭異打擊")),
 
 	--[+ Trauma - Травма +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_031_ext_ru",
 		-- {"loc_trait_bespoke_consecutive_hits_increases_stagger"}, {"ru"},
 			-- loc_text("Травма")),
+	--[+ Traditional Chinese - 創傷 +]--
+	create_template("trait_bespoke_031_ext_tw",
+		{"loc_trait_bespoke_consecutive_hits_increases_stagger"}, {"tw"},
+			loc_text("創傷")),
 
 	--[+ Vicious Slice - Жестокий рарез +]-- -- руоф Жестокая нарезка
+	--[+ Russian +]
 	create_template("trait_bespoke_032_ext_ru",
 		{"loc_trait_bespoke_increase_stagger_per_hit_in_sweep"}, {"ru"},
 			loc_text("Жестокий рарез")),
+	--[+ Traditional Chinese - 凶狠切割 +]--
+	create_template("trait_bespoke_032_ext_tw",
+		{"loc_trait_bespoke_increase_stagger_per_hit_in_sweep"}, {"tw"},
+			loc_text("凶狠切割")),
 
 	--[+ Hammerblow - Молотобой +]-- -- руоф Удар молотом
+	--[+ Russian +]
 	create_template("trait_bespoke_033_ext_ru",
 		{"loc_trait_bespoke_stacking_increase_impact_on_hit"}, {"ru"},
 			loc_text("Молотобой")),
+	--[+ Traditional Chinese - 錘擊 +]--
+	create_template("trait_bespoke_033_ext_tw",
+		{"loc_trait_bespoke_stacking_increase_impact_on_hit"}, {"tw"},
+			loc_text("錘擊")),
 
 	--[+ Skullcrusher - Череподробитель +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_034_ext_ru",
 		-- {"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff"}, {"ru"},
 			-- loc_text("Череподробитель")),
+	--[+ Traditional Chinese - 粉碎者 +]--
+	create_template("trait_bespoke_034_ext_tw",
+		{"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff"}, {"tw"},
+			loc_text("粉碎者")),
 
 	--[+ Thunderstrike - Громобой +]-- -- руоф Гроза
+	--[+ Russian +]
 	create_template("trait_bespoke_035_ext_ru",
 		{"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff"}, {"ru"},
 			loc_text("Громобой")),
+	--[+ Traditional Chinese - 雷霆打擊 +]--
+	create_template("trait_bespoke_035_ext_tw",
+		{"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff"}, {"tw"},
+			loc_text("雷霆打擊")),
 
 	--[+ Chained Deathblow - Цепочка смертельных ударов +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_036_ext_ru",
 		-- {"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill"}, {"ru"},
 			-- loc_text("Цепочка смертельных ударов")),
+	--[+ Traditional Chinese - 致命連擊 +]--
+	create_template("trait_bespoke_036_ext_tw",
+		{"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill"}, {"tw"},
+			loc_text("致命連擊")),
 
 	--[+ Deathblow - Смертельный удар +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_037_ext_ru",
 		-- {"loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill"}, {"ru"},
 			-- loc_text("Смертельный удар")),
+	--[+ Traditional Chinese - 致命一擊 +]--
+	create_template("trait_bespoke_037_ext_tw",
+		{"loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill"}, {"tw"},
+			loc_text("致命一擊")),
 
 	--[+ Perfect Strike - Безупречный удар +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_038_ext_ru",
 		-- {"loc_trait_bespoke_pass_past_armor_on_crit_new"}, {"ru"},
 			-- loc_text("Безупречный удар")),
+	--[+ Traditional Chinese - 完美一擊 +]--
+	create_template("trait_bespoke_038_ext_tw",
+		{"loc_trait_bespoke_pass_past_armor_on_crit_new"}, {"tw"},
+			loc_text("完美一擊")),
 
 	--[+ Bladed Momentum - Лезвийный импульс +]-- -- руоф Моментум лезвия
+	--[+ Russian +]
 	create_template("trait_bespoke_039_ext_ru",
 		{"loc_trait_bespoke_stacking_rending_on_cleave"}, {"ru"},
 			loc_text("Лезвийный импульс")),
+	--[+ Traditional Chinese - 利刃攻勢 +]--
+	create_template("trait_bespoke_039_ext_tw",
+		{"loc_trait_bespoke_stacking_rending_on_cleave"}, {"tw"},
+			loc_text("利刃攻勢")),
 
 	--[+ Deflector - Отражатель +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_040_ext_ru",
 		-- {"loc_trait_bespoke_can_block_ranged_desc"}, {"ru"},
 			-- loc_text("Отражатель")),
+	--[+ Traditional Chinese - 偏轉 +]--
+	create_template("trait_bespoke_040_ext_tw",
+		{"loc_trait_bespoke_can_block_ranged_desc"}, {"tw"},
+			loc_text("偏轉")),
 
 	--[+ Exorcist - Экзорцист +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_041_ext_ru",
 		-- {"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge"}, {"ru"},
 			-- loc_text("Экзорцист")),
+	--[+ Traditional Chinese - 驅魔者 +]--
+	create_template("trait_bespoke_041_ext_tw",
+		{"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge"}, {"tw"},
+			loc_text("驅魔者")),
 
 	--[+ Superiority - Превосходство +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_042_ext_ru",
 		-- {"loc_trait_bespoke_elite_kills_grants_stackable_power"}, {"ru"},
 			-- loc_text("Превосходство")),
+	--[+ Traditional Chinese - 優勢 +]--
+	create_template("trait_bespoke_042_ext_tw",
+		{"loc_trait_bespoke_elite_kills_grants_stackable_power"}, {"tw"},
+			loc_text("優勢")),
 
 	--[+ Blazing Spirit - Пылающий дух +]--
+	--[+ Russian +]
 		 -- create_template("trait_bespoke_043_ext_ru",
 		-- {"loc_trait_bespoke_warp_burninating_on_crit"}, {"ru"},
 			-- loc_text("Пылающий дух")),
+	--[+ Traditional Chinese - 燃燒靈魂 +]--
+	create_template("trait_bespoke_043_ext_tw",
+		{"loc_trait_bespoke_warp_burninating_on_crit"}, {"tw"},
+			loc_text("燃燒靈魂")),
 
 	--[+ Unstable Power - Нестабильная мощь +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_044_ext_ru",
 		-- {"loc_trait_bespoke_warp_charge_power_bonus"}, {"ru"},
 			-- loc_text("Нестабильная мощь")),
+	--[+ Traditional Chinese - 不穩定能量 +]--
+	create_template("trait_bespoke_044_ext_tw",
+		{"loc_trait_bespoke_warp_charge_power_bonus"}, {"tw"},
+			loc_text("不穩定能量")),
 
 	--[+ Lightning Reflexes - Молниеносные рефлексы +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_045_ext_ru",
 		-- {"loc_trait_bespoke_block_has_chance_to_stun_with_cd"}, {"ru"},
 			-- loc_text("Молниеносные рефлексы")),
+	--[+ Traditional Chinese - 閃電反射 +]--
+	create_template("trait_bespoke_045_ext_tw",
+		{"loc_trait_bespoke_block_has_chance_to_stun_with_cd"}, {"tw"},
+			loc_text("閃電反射")),
 
 	--[+ High Voltage - Высокое напряжение +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_046_ext_ru",
 		-- {"loc_trait_bespoke_damage_bonus_vs_electrocuded"}, {"ru"},
 			-- loc_text("Высокое напряжение")),
+	--[+ Traditional Chinese - 高壓電 +]--
+	create_template("trait_bespoke_046_ext_tw",
+		{"loc_trait_bespoke_damage_bonus_vs_electrocuded"}, {"tw"},
+			loc_text("高壓電")),
 
 	--[+ Falter - Дрожь +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_047_ext_ru",
 		-- {"loc_trait_bespoke_negate_stagger_reduction_on_weakspot"}, {"ru"},
 			-- loc_text("Дрожь")),
+	--[+ Traditional Chinese - 踉蹌 +]--
+	create_template("trait_bespoke_047_ext_tw",
+		{"loc_trait_bespoke_negate_stagger_reduction_on_weakspot"}, {"tw"},
+			loc_text("踉蹌")),
 
 	--[+ Overwhelming Force - Подавляющая сила +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_048_ext_ru",
 		-- {"loc_trait_bespoke_staggering_hits_has_chance_to_stun"}, {"ru"},
 			-- loc_text("Подавляющая сила")),
+	--[+ Traditional Chinese - 壓倒性的武力 +]--
+	create_template("trait_bespoke_048_ext_tw",
+		{"loc_trait_bespoke_staggering_hits_has_chance_to_stun"}, {"tw"},
+			loc_text("壓倒性的武力")),
 
 	--[+ Momentum - Моментум +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_049_ext_ru",
 		-- {"loc_trait_bespoke_toughness_recovery_on_multiple_hits"}, {"ru"},
 			-- loc_text("Моментум")),
+	--[+ Traditional Chinese - 勢頭 +]--
+	create_template("trait_bespoke_049_ext_tw",
+		{"loc_trait_bespoke_toughness_recovery_on_multiple_hits"}, {"tw"},
+			loc_text("勢頭")),
 
 	--[+ Shock & Awe / Shock and Awe - Шок и трепет +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_74_ext_ru",
 		-- {"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"ru"},
 			-- loc_text("Шок и трепет")),
+	--[+ Traditional Chinese - 震懾 +]--
+	create_template("trait_bespoke_74_ext_tw",
+		{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"tw"},
+			loc_text("震懾")),
 
 	--[+ Take a Swing - Замах +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_050_ext_ru",
 		-- {"loc_trait_bespoke_weakspot_damage_bonus_on_pushed_enemies"}, {"ru"},
 			-- loc_text("Замах")),
+	--[+ Traditional Chinese - 揮拳出擊 +]--
+	create_template("trait_bespoke_050_ext_tw",
+		{"loc_trait_bespoke_weakspot_damage_bonus_on_pushed_enemies"}, {"tw"},
+			loc_text("揮拳出擊")),
 
 	--[+ Supercharge - Суперзаряд +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_051_ext_ru",
 		-- {"loc_trait_bespoke_armor_rend_on_activated_attacks"}, {"ru"},
 			-- loc_text("Суперзаряд")),
+	--[+ Traditional Chinese - 超級充能 +]--
+	create_template("trait_bespoke_051_ext_tw",
+		{"loc_trait_bespoke_armor_rend_on_activated_attacks"}, {"tw"},
+			loc_text("超級充能")),
 
 	--[+ Power Cycler - Циклер мощности +]-- -- руоф Цикл силы
+	--[+ Russian +]
 	-- create_template("trait_bespoke_052_ext_ru",
 		-- {"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks"}, {"ru"},
 			-- loc_text("Циклер мощности")),
-
+	--[+ Traditional Chinese - 能量循環 +]--
+	create_template("trait_bespoke_052_ext_tw",
+		{"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks"}, {"tw"},
+			loc_text("能量循環")),
+			
 	--[+ Sunder - Сокрушение +]-- -- руоф Сандер
+	--[+ Russian +]
 	create_template("trait_bespoke_053_ext_ru",
 		{"loc_trait_bespoke_infinite_armor_cleave_on_activated_attacks"}, {"ru"},
 			loc_text("Сокрушение")),
+	--[+ Traditional Chinese - 破甲 +]--
+	create_template("trait_bespoke_053_ext_tw",
+		{"loc_trait_bespoke_infinite_armor_cleave_on_activated_attacks"}, {"tw"},
+			loc_text("破甲")),
+
 
 	--[+ Sucker Punch - Удар исподтишка +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_054_ext_ru",
 		-- {"loc_trait_bespoke_increased_crit_chance_after_punch"}, {"ru"},
 			-- loc_text("Удар исподтишка")),
+	--[+ Traditional Chinese - 突然襲擊 +]--
+	create_template("trait_bespoke_054_ext_tw",
+		{"loc_trait_bespoke_increased_crit_chance_after_punch"}, {"tw"},
+			loc_text("突然襲擊")),
 
 	--[+ Confident Strike - Уверенный удар +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_055_ext_ru",
 		-- {"loc_trait_bespoke_toughness_recovery_on_chained_attacks"}, {"ru"},
 			-- loc_text("Уверенный удар")),
+	--[+ Traditional Chinese - 堅定打擊 +]--
+	create_template("trait_bespoke_055_ext_tw",
+		{"loc_trait_bespoke_toughness_recovery_on_chained_attacks"}, {"tw"},
+			loc_text("堅定打擊")),
 
 	--[+ No Guts, No Glory - Нет смелости — нет славы +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_056_ext_ru",
 		-- {"loc_trait_bespoke_toughness_regen_on_punching_elites"}, {"ru"},
 			-- loc_text("Нет смелости — нет славы")),
+	--[+ Traditional Chinese - 不入虎穴，焉得虎子 +]--
+	create_template("trait_bespoke_056_ext_tw",
+		{"loc_trait_bespoke_toughness_regen_on_punching_elites"}, {"tw"},
+			loc_text("不入虎穴，焉得虎子")),
 
 	--[+ Bash - Удар +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_057_ext_ru",
 		-- {"loc_trait_bespoke_crit_chance_on_push"}, {"ru"},
 			-- loc_text("Удар")),
+	--[+ Traditional Chinese - 猛撞 +]--
+	create_template("trait_bespoke_057_ext_tw",
+		{"loc_trait_bespoke_crit_chance_on_push"}, {"tw"},
+			loc_text("猛撞")),
 
 	--[+ Tenderiser - Молот мясника +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_058_ext_ru",
 		-- {"loc_trait_bespoke_increased_power_on_weapon_special_follow_up_hits"}, {"ru"},
 			-- loc_text("Молот мясника")),
+	--[+ Traditional Chinese - 肉槌 +]--
+	create_template("trait_bespoke_058_ext_tw",
+		{"loc_trait_bespoke_increased_power_on_weapon_special_follow_up_hits"}, {"tw"},
+			loc_text("肉槌")),
 
 	--[+ Unstoppable Force - Неудержимая сила +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_059_ext_ru",
 		-- {"loc_trait_bespoke_pass_past_armor_and_damage_on_heavy_attack"}, {"ru"},
 			-- loc_text("Неудержимая сила")),
+	--[+ Traditional Chinese - 勢不可擋 +]--
+	create_template("trait_bespoke_059_ext_tw",
+		{"loc_trait_bespoke_pass_past_armor_and_damage_on_heavy_attack"}, {"tw"},
+			loc_text("勢不可擋")),
 
 	--[+ Torment - Истязание +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_060_ext_ru",
 		-- {"loc_trait_bespoke_increase_power_on_weapon_special_hit_desc"}, {"ru"},
 			-- loc_text("Истязание")),
+	--[+ Traditional Chinese - 凌遲 +]--
+	create_template("trait_bespoke_060_ext_tw",
+		{"loc_trait_bespoke_increase_power_on_weapon_special_hit_desc"}, {"tw"},
+			loc_text("凌遲")),
 
 	--[+ Slow and Steady - Медленно, но верно +]-- -- руоф Медленный и упорный
+	--[+ Russian +]
 	create_template("trait_bespoke_061_ext_ru",
 		{"loc_trait_bespoke_toughness_on_hit_based_on_charge_time"}, {"ru"},
 			loc_text("Медленно, но верно")),
+	--[+ Traditional Chinese - 緩慢而確實 +]--
+	create_template("trait_bespoke_061_ext_tw",
+		{"loc_talent_bespoke_toughness_on_hit_based_on_charge_time"}, {"tw"},
+			loc_text("緩慢而確實")),
 
 	--[+ Power Surge - Энергетический заряд +]-- -- руоф Скачок напряжения
+	--[+ Russian +]
 	create_template("trait_bespoke_062_ext_ru",
 		{"loc_trait_bespoke_explosion_on_activated_attacks_on_armor"}, {"ru"},
 			loc_text("Энергетический заряд")),
+	--[+ Traditional Chinese - 能量湧動 +]--
+	create_template("trait_bespoke_062_ext_tw",
+		{"loc_trait_bespoke_explosion_on_activated_attacks_on_armor"}, {"tw"},
+			loc_text("能量湧動")),
 
 	--[+ Last Guard - Последний страж +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_063_ext_ru",
 		-- {"loc_trait_block_break_pushes"}, {"ru"},
 			-- loc_text("Последний страж")),
+	--[+ Traditional Chinese - 最後防線 +]--
+	create_template("trait_bespoke_063_ext_tw",
+		{"loc_trait_block_break_pushes"}, {"tw"},
+			loc_text("最後防線")),
 
 	--[+ Offensive Defence - Атакующая защита +]-- -- руоф Активная оборона
+	--[+ Russian +]
 	-- create_template("trait_bespoke_064_ext_ru",
 		-- {"loc_trait_damage_bonus_on_block"}, {"ru"},
 			-- loc_text("Атакующая защита")),
+	--[+ Traditional Chinese - 反守為攻 +]--
+	create_template("trait_bespoke_064_ext_tw",
+		{"loc_trait_damage_bonus_on_block"}, {"tw"},
+			loc_text("反守為攻")),
 
 	--[+ Murderous Tranquility - Убийственное спокойствие +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_065_ext_ru",
 		-- {"loc_trait_bespoke_vent_warp_charge_on_multiple_hits"}, {"ru"},
 			-- loc_text("Убийственное спокойствие")),
+	--[+ Traditional Chinese - 兇殘之寧 +]--
+	create_template("trait_bespoke_065_ext_tw",
+		{"loc_trait_bespoke_vent_warp_charge_on_multiple_hits"}, {"tw"},
+			loc_text("兇殘之寧")),
 
 	--[+ Warp Slice - Варп нарезка +]-- -- руоф Варп-удар
+	--[+ Russian +]
 	create_template("trait_bespoke_066_ext_ru",
 		{"loc_trait_bespoke_wind_slash_crits"}, {"ru"},
 			loc_text("Варп нарезка")),
+	--[+ Traditional Chinese - 亞空間斬擊 +]--
+	create_template("trait_bespoke_066_ext_tw",
+		{"loc_trait_bespoke_wind_slash_crits"}, {"tw"},
+			loc_text("亞空間斬擊")),
 
 	--[+ Ranged - Дальний бой +]--
+	--[+ Russian +]
 	--[+ Raking Fire - Огонь по тылам +]-- -- руоф Обстрел
 	-- create_template("trait_bespoke_065_ext_ru",
 		-- {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking"}, {"ru"},
 			-- loc_text("Огонь по тылам")),
+	--[+ Traditional Chinese - 掃射 +]--
+	create_template("trait_bespoke_065_ext_tw",
+		{"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking"}, {"tw"},
+			loc_text("掃射")),
 
 	--[+ Dumdum - Дум-дум +]-- -- руоф Дамдам
+	--[+ Russian +]
 	create_template("trait_bespoke_066_ext_ru",
 		{"loc_trait_bespoke_consecutive_hits_increases_close_damage"}, {"ru"},
 			loc_text("Дум-дум")),
+	--[+ Traditional Chinese - 達姆彈 +]--
+	create_template("trait_bespoke_066_ext_tw",
+		{"loc_trait_bespoke_consecutive_hits_increases_close_damage"}, {"tw"},
+			loc_text("達姆彈")),
 
 	--[+ Hit & Run /  Hit and Run - Бей и беги +]--
 	-- create_template("trait_bespoke_067_ext_ru",
 		-- {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill"}, {"ru"},
 			-- loc_text("Бей и беги")),
+	--[+ Traditional Chinese - 游擊 +]--
+	create_template("trait_bespoke_067_ext_tw",
+		{"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill"}, {"tw"},
+			loc_text("游擊")),
 
 	--[+ Sustained Fire - Непрерывная стрельба +]-- -- руоф Непрерывный огонь
+	--[+ Russian +]
 	create_template("trait_bespoke_068_ext_ru",
 		{"loc_trait_bespoke_followup_shots_ranged_damage"}, {"ru"},
 			loc_text("Непрерывная стрельба")),
+	--[+ Traditional Chinese - 持續射擊 +]--
+	create_template("trait_bespoke_068_ext_tw",
+		{"loc_trait_bespoke_followup_shots_ranged_damage"}, {"tw"},
+			loc_text("持續射擊")),
 
 	--[+ Punishing Salvo - Карательный залп +]--
 	-- create_template("trait_bespoke_069_ext_ru",
 		-- {"loc_trait_bespoke_followup_shots_ranged_weakspot_damage"}, {"ru"},
 			-- loc_text("Карательный залп")),
+	--[+ Traditional Chinese - 懲罰射擊 +]--
+	create_template("trait_bespoke_069_ext_tw",
+		{"loc_trait_bespoke_followup_shots_ranged_weakspot_damage"}, {"tw"},
+			loc_text("懲罰射擊")),
 
 	--[+ Fire Frenzy - Неистовая стрельба +]-- -- руоф Огненное неистовство
+	--[+ Russian +]
 	create_template("trait_bespoke_070_ext_ru",
 		{"loc_trait_bespoke_increase_close_damage_on_close_kill"}, {"ru"},
 			loc_text("Неистовая стрельба")),
+	--[+ Traditional Chinese - 烈火熱焰 +]--
+	create_template("trait_bespoke_070_ext_tw",
+		{"loc_trait_bespoke_increase_close_damage_on_close_kill"}, {"tw"},
+			loc_text("烈火熱焰")),
 
 	--[+ Deathspitter - Смертоплюй +]-- -- руоф Смертоносец
+	--[+ Russian +]
 	create_template("trait_bespoke_071_ext_ru",
 		{"loc_trait_bespoke_increase_power_on_close_kill"}, {"ru"},
 			loc_text("Смертоплюй")),
+	--[+ Traditional Chinese - 死亡噴吐 +]--
+	create_template("trait_bespoke_071_ext_tw",
+		{"loc_trait_bespoke_increase_power_on_close_kill"}, {"tw"},
+			loc_text("死亡噴吐")),
 
 	--[+ Stripped Down - Сбросить лишнее +]-- -- руоф Срез
+	--[+ Russian +]
 	create_template("trait_bespoke_072_ext_ru",
 		{"loc_trait_bespoke_increased_sprint_speed"}, {"ru"},
 			loc_text("Сбросить лишнее")),
+	--[+ Traditional Chinese - 輕裝 +]--
+	create_template("trait_bespoke_072_ext_tw",
+		{"loc_trait_bespoke_increased_sprint_speed"}, {"tw"},
+			loc_text("輕裝")),
 
 	--[+ Speedload - Быстрая перезарядка +]-- -- руоф Скоростная загрузка (facepalm)
+	--[+ Russian +]
 	create_template("trait_bespoke_073_ext_ru",
 		{"loc_trait_bespoke_reload_speed_on_slide"}, {"ru"},
 			loc_text("Быстрая перезарядка")),
+	--[+ Traditional Chinese - 快速裝彈 +]--
+	create_template("trait_bespoke_073_ext_tw",
+		{"loc_trait_bespoke_reload_speed_on_slide"}, {"tw"},
+			loc_text("快速裝彈")),
 
 	--[+ Terrifying Barrage - Устрашающий обстрел +]-- -- руоф Устрашающий натиск
+	--[+ Russian +]
 	create_template("trait_bespoke_074_ext_ru",
 		{"loc_trait_bespoke_suppression_on_close_kill"}, {"ru"},
 			loc_text("Устрашающий огонь")),
+	--[+ Traditional Chinese - 恐怖阻擊 +]--
+	create_template("trait_bespoke_074_ext_tw",
+		{"loc_trait_bespoke_suppression_on_close_kill"}, {"tw"},
+			loc_text("恐怖阻擊")),
 
 	--[+ Roaring Advance - Ревущее наступление +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_075_ext_ru",
 		-- {"loc_trait_bespoke_movement_speed_on_continuous_fire"}, {"ru"},
 			-- loc_text("Ревущее наступление")),
+	--[+ Traditional Chinese - 咆哮突進 +]--
+	create_template("trait_bespoke_075_ext_tw",
+		{"loc_trait_bespoke_movement_speed_on_continuous_fire"}, {"tw"},
+			loc_text("咆哮突進")),
 
 	--[+ Ceaseless Barrage - Непрерывный обстрел +]-- -- руоф Беспощадный натиск
+	--[+ Russian +]
 	create_template("trait_bespoke_076_ext_ru",
 		{"loc_trait_bespoke_suppression_on_continuous_fire"}, {"ru"},
 			loc_text("Непрерывный огонь")),
+	--[+ Traditional Chinese - 持續阻擊 +]--
+	create_template("trait_bespoke_076_ext_tw",
+		{"loc_trait_bespoke_suppression_on_continuous_fire"}, {"tw"},
+			loc_text("持續阻擊")),
 
 	--[+ Inspiring Barrage - Вдохновляющий обстрел +]-- -- руоф Вдохновляющий натиск
+	--[+ Russian +]
 	create_template("trait_bespoke_077_ext_ru",
 		{"loc_trait_bespoke_toughness_on_continuous_fire"}, {"ru"},
 			loc_text("Вдохновляющий обстрел")),
+	--[+ Traditional Chinese - 振奮彈幕 +]--
+	create_template("trait_bespoke_077_ext_tw",
+		{"loc_trait_bespoke_toughness_on_continuous_fire"}, {"tw"},
+			loc_text("振奮彈幕")),
 
 	--[+ Ghost - Призрак +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_078_ext_ru",
 		-- {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot"}, {"ru"},
 			-- loc_text("Призрак")),
+	--[+ Traditional Chinese - 幽靈 +]--
+	create_template("trait_bespoke_078_ext_tw",
+		{"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot"}, {"tw"},
+			loc_text("幽靈")),
 
 	--[+ Surgical - Снайперская точность - +]-- -- руоф Зоркость
+	--[+ Russian +]
 	create_template("trait_bespoke_079_ext_ru",
 		{"loc_trait_bespoke_crit_chance_based_on_aim_time"}, {"ru"},
 			loc_text("Снайперская точность")),
+	--[+ Traditional Chinese - 精確打擊 +]--
+	create_template("trait_bespoke_079_ext_tw",
+		{"loc_trait_bespoke_crit_chance_based_on_aim_time"}, {"tw"},
+			loc_text("精確打擊")),
 
 	--[+ Crucian Roulette - Круцианская рулетка +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_080_ext_ru",
 		-- {"loc_trait_bespoke_crit_chance_based_on_ammo_left"}, {"ru"},
 			-- loc_text("Круцианская рулетка")),
+	--[+ Traditional Chinese - 克魯錫安輪盤 +]--
+	create_template("trait_bespoke_080_ext_tw",
+		{"loc_trait_bespoke_crit_chance_based_on_ammo_left"}, {"tw"},
+			loc_text("克魯錫安輪盤")),
 
 	--[+ Deadly Accurate - Смертоностная точность +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_081_ext_ru",
 		-- {"loc_trait_bespoke_crit_weakspot_finesse"}, {"ru"},
 			-- loc_text("Смертоностная точность")),
+	--[+ Traditional Chinese - 致命精準 +]--
+	create_template("trait_bespoke_081_ext_tw",
+		{"loc_trait_bespoke_crit_weakspot_finesse"}, {"tw"},
+			loc_text("致命精準")),
 
 	--[+ No Respite - Без передышки +]-- -- руоф Нет отдыху
+	--[+ Russian +]
 	create_template("trait_bespoke_082_ext_ru",
 		{"loc_trait_bespoke_stagger_count_bonus_damage"}, {"ru"},
 			loc_text("Без передышки")),
+	--[+ Traditional Chinese - 刻不容緩 +]--
+	create_template("trait_bespoke_082_ext_tw",
+		{"loc_trait_bespoke_stagger_count_bonus_damage"}, {"tw"},
+			loc_text("刻不容緩")),
 
 	--[+ Opening Salvo - Первый выстрел залпа +]-- -- руоф Открывающий залп
+	--[+ Russian +]
 	create_template("trait_bespoke_083_ext_ru",
 		{"loc_trait_bespoke_power_bonus_on_first_shot"}, {"ru"},
 			loc_text("Первый выстрел залпа")),
@@ -471,321 +895,644 @@ local localization_templates = {
 	-- create_template("trait_bespoke_085_ext_ru",
 		-- {"loc_trait_bespoke_suppression_negation_on_weakspot"}, {"ru"},
 			-- loc_text("Промеж глаз")),
+	--[+ Traditional Chinese - 開啟齊射 +]--
+	create_template("trait_bespoke_083_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_first_shot"}, {"tw"},
+			loc_text("開啟齊射")),
 
 	--[+ Blaze Away - Стрельба без устали +]-- -- руоф Энтузиазм
+	--[+ Russian +]
 	create_template("trait_bespoke_086_ext_ru",
 		{"loc_trait_bespoke_power_bonus_on_continuous_fire"}, {"ru"},
 			loc_text("Стрельба без устали")),
+	--[+ Traditional Chinese - 連續發射 +]--
+	create_template("trait_bespoke_086_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_continuous_fire"}, {"tw"},
+			loc_text("連續發射")),
 
 	--[+ Powderburn - Пороховой ожог +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_087_ext_ru",
 		-- {"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills"}, {"ru"},
 			-- loc_text("Пороховой ожог")),
+	--[+ Traditional Chinese - 火藥灼傷 +]--
+	create_template("trait_bespoke_087_ext_tw",
+		{"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills"}, {"tw"},
+			loc_text("火藥灼傷")),
 
 	--[+ Cavalcade - Кавалькада +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_088_ext_ru",
 		-- {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire"}, {"ru"},
 			-- loc_text("Кавалькада")),
+	--[+ Traditional Chinese - 接連不斷 +]--
+	create_template("trait_bespoke_088_ext_tw",
+		{"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire"}, {"tw"},
+			loc_text("接連不斷")),
 
 	--[+ Pinning Fire - Подавляющий огонь +]-- -- руоф Схватывающий огонь
+	--[+ Russian +]
 	create_template("trait_bespoke_089_ext_ru",
 		{"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies"}, {"ru"},
 			loc_text("Подавляющий огонь")),
+	--[+ Traditional Chinese - 鉗制射擊 +]--
+	create_template("trait_bespoke_089_ext_tw",
+		{"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies"}, {"tw"},
+			loc_text("鉗制射擊")),
 
 	--[+ Run 'n' Gun (Run and Gun) - Стреляй и беги +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_090_ext_ru",
 		-- {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats"}, {"ru"},
 			-- loc_text("Стреляй и беги")),
+	--[+ Traditional Chinese - 連跑帶打 +]--
+	create_template("trait_bespoke_090_ext_tw",
+		{"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats"}, {"tw"},
+			loc_text("連跑帶打")),
 
 	--[+ Puncture - Прокол +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_091_ext_ru",
 		-- {"loc_trait_bespoke_bleed_on_ranged"}, {"ru"},
 			-- loc_text("Прокол")),
+	--[+ Traditional Chinese - 出血穿透 +]--
+	create_template("trait_bespoke_091_ext_tw",
+		{"loc_trait_bespoke_bleed_on_ranged"}, {"tw"},
+			loc_text("出血穿透")),
 
 	--[+ Lethal Proximity - Смертельное сближение +]--
+	--[+ Russian +]
 	create_template("trait_bespoke_092_ext_ru",
 		{"loc_trait_bespoke_close_explosion"}, {"ru"},
 			loc_text("Смертельное сближение")),
+	--[+ Traditional Chinese - 致命零距離 +]--
+	create_template("trait_bespoke_092_ext_tw",
+		{"loc_trait_bespoke_close_explosion"}, {"tw"},
+			loc_text("致命零距離")),
 
 	--[+ Point Blank - В упор +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_093_ext_ru",
 		-- {"loc_trait_bespoke_crit_chance_bonus_on_melee_kills"}, {"ru"},
 			-- loc_text("В упор")),
+	--[+ Traditional Chinese - 近身平射 +]--
+	create_template("trait_bespoke_093_ext_tw",
+		{"loc_trait_bespoke_crit_chance_bonus_on_melee_kills"}, {"tw"},
+			loc_text("近身平射")),
 
 	--[+ Execution - Казнь +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_094_ext_ru",
 		-- {"loc_trait_bespoke_damage_vs_stagger"}, {"ru"},
 			-- loc_text("Казнь")),
+	--[+ Traditional Chinese - 處決 +]--
+	create_template("trait_bespoke_094_ext_tw",
+		{"loc_trait_bespoke_damage_vs_stagger"}, {"tw"},
+			loc_text("處決")),
 
 	--[+ Gloryhunter - Охотник за славой +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_095_ext_ru",
 		-- {"loc_trait_bespoke_toughness_on_elite_kills"}, {"ru"},
 			-- loc_text("Охотник за славой")),
+	--[+ Traditional Chinese - 榮耀獵手 +]--
+	create_template("trait_bespoke_095_ext_tw",
+		{"loc_trait_bespoke_toughness_on_elite_kills"}, {"tw"},
+			loc_text("榮耀獵手")),
 
 	--[+ Surge - Энергетический всплеск +]-- -- руоф Импульс
+	--[+ Russian +]
 	create_template("trait_bespoke_096_ext_ru",
 		{"loc_trait_bespoke_double_shot_on_crit"}, {"ru"},
 			loc_text("Энергетический всплеск")),
+	--[+ Traditional Chinese - 湧動 +]--
+	create_template("trait_bespoke_096_ext_tw",
+		{"loc_trait_bespoke_double_shot_on_crit"}, {"tw"},
+			loc_text("湧動")),
+
 
 	--[+ Warp Flurry - Варп-шквал +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_097_ext_ru",
 		-- {"loc_trait_bespoke_faster_charge_on_chained_secondary_attacks"}, {"ru"},
 			-- loc_text("Варп-шквал")),
+	--[+ Traditional Chinese - 亞空間亂舞 +]--
+	create_template("trait_bespoke_097_ext_tw",
+		{"loc_trait_bespoke_faster_charge_on_chained_secondary_attacks"}, {"tw"},
+			loc_text("亞空間亂舞")),
 
 	--[+ Warp Nexus - Связь с варпом +]-- -- руоф Варп-сектор
+	--[+ Russian +]
 	create_template("trait_bespoke_098_ext_ru",
 		{"loc_trait_bespoke_increased_crit_chance_scaled_on_peril"}, {"ru"},
 			loc_text("Связь с варпом")),
+	--[+ Traditional Chinese - 亞空間樞紐 +]--
+	create_template("trait_bespoke_098_ext_tw",
+		{"loc_trait_bespoke_increased_crit_chance_scaled_on_peril"}, {"tw"},
+			loc_text("亞空間樞紐")),
 
 	--[+ Transfer Peril - Перемещение опасности +]-- -- руоф Перемещение угрозы
+	--[+ Russian +]
 	create_template("trait_bespoke_099_ext_ru",
 		{"loc_trait_bespoke_peril_vent_on_weakspot_hit"}, {"ru"},
 			loc_text("Перемещение опасности")),
+	--[+ Traditional Chinese - 轉移反噬 +]--
+	create_template("trait_bespoke_099_ext_tw",
+		{"loc_trait_bespoke_peril_vent_on_weakspot_hit"}, {"tw"},
+			loc_text("轉移反噬")),
 
 	--[+ Rending Shockwave - Разрушительная волна +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_100_ext_ru",
 		-- {"loc_trait_bespoke_rend_armor_on_aoe_charge"}, {"ru"},
 			-- loc_text("Разрушительная волна")),
+	--[+ Traditional Chinese - 撕扯震盪 +]--
+	create_template("trait_bespoke_100_ext_tw",
+		{"loc_trait_bespoke_rend_armor_on_aoe_charge"}, {"tw"},
+			loc_text("撕扯震盪")),
 
 	--[+ Focused Channelling - Сосредоточенный призыв +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_101_ext_ru",
 		-- {"loc_trait_bespoke_uninterruptable_while_charging_and_movement"}, {"ru"},
 			-- loc_text("Сосредоточенный призыв")),
+	--[+ Traditional Chinese - 專注引導 +]--
+	create_template("trait_bespoke_101_ext_tw",
+		{"loc_trait_bespoke_uninterruptable_while_charging_and_movement"}, {"tw"},
+			loc_text("專注引導")),
 
 	--[+ Blazing Spirit - Пылающий дух +]-- -- руоф Пламенный дух
+	--[+ Russian +]
 	create_template("trait_bespoke_102_ext_ru",
 		{"loc_trait_bespoke_warpfire_burn_on_crit"}, {"ru"},
 			loc_text("Пылающий дух")),
+	--[+ Traditional Chinese - 燃燒靈魂 +]--
+	create_template("trait_bespoke_102_ext_tw",
+		{"loc_trait_bespoke_warpfire_burn_on_crit"}, {"tw"},
+			loc_text("燃燒靈魂")),
 
 	--[+ Penetrating Flame - Проникающее пламя +]-- -- руоф Убойное пламя
+	--[+ Russian +]
 	create_template("trait_bespoke_103_ext_ru",
 		{"loc_trait_bespoke_armor_rending_from_dot_burning"}, {"ru"},
 			loc_text("Проникающее пламя")),
+	--[+ Traditional Chinese - 穿透火焰 +]--
+	create_template("trait_bespoke_103_ext_tw",
+		{"loc_trait_bespoke_armor_rending_from_dot_burning"}, {"tw"},
+			loc_text("穿透火焰")),
 
 	--[+ Showstopper - Взрывной финал +]-- -- руоф Театральная пауза
+	--[+ Russian +]
 	create_template("trait_bespoke_104_ext_ru",
 		{"loc_trait_bespoke_chance_to_explode_elites_on_kill"}, {"ru"},
 			loc_text("Взрывной финал")),
+	--[+ Traditional Chinese - 嘆為觀止 +]--
+	create_template("trait_bespoke_104_ext_tw",
+		{"loc_trait_bespoke_chance_to_explode_elites_on_kill"}, {"tw"},
+			loc_text("嘆為觀止")),
+
 
 	--[+ Infernus - Инфернус +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_105_ext_ru",
 		-- {"loc_trait_bespoke_burninating_on_crit"}, {"ru"},
 			-- loc_text("Инфернус")),
+	--[+ Traditional Chinese - 煉獄 +]--
+	create_template("trait_bespoke_105_ext_tw",
+		{"loc_trait_bespoke_burninating_on_crit"}, {"tw"},
+			loc_text("煉獄")),
 
 	--[+ Efficiency - Эффективность +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_106_ext_ru",
 		-- {"loc_trait_bespoke_first_shot_ammo_cost_reduction"}, {"ru"},
 			-- loc_text("Эффективность")),
+	--[+ Traditional Chinese - 效率 +]--
+	create_template("trait_bespoke_106_ext_tw",
+		{"loc_trait_bespoke_first_shot_ammo_cost_reduction"}, {"tw"},
+			loc_text("效率")),
 
 	--[+ Concentrated Fire - Сосредоточенный огонь +]-- -- руоф Интенсивный огонь
+	--[+ Russian +]
 	create_template("trait_bespoke_107_ext_ru",
 		{"loc_trait_bespoke_crit_chance_on_chained_weakspot_hits"}, {"ru"},
 			loc_text("Сосредоточенный огонь")),
+	--[+ Traditional Chinese - 集中火力 +]--
+	create_template("trait_bespoke_107_ext_tw",
+		{"loc_trait_bespoke_crit_chance_on_chained_weakspot_hits"}, {"tw"},
+			loc_text("集中火力")),
 
 	--[+ Desperado - Сорвиголова +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_108_ext_ru",
 		-- {"loc_trait_bespoke_crit_chance_on_successful_dodge"}, {"ru"},
 			-- loc_text("Сорвиголова")),
+	--[+ Traditional Chinese - 亡命之徒 +]--
+	create_template("trait_bespoke_108_ext_tw",
+		{"loc_trait_bespoke_crit_chance_on_successful_dodge"}, {"tw"},
+			loc_text("亡命之徒")),
 
 	--[+ Reassuringly Accurate - Успокаивающая точность +]-- -- руоф Внушительная точность
+	--[+ Russian +]
 	create_template("trait_bespoke_109_ext_ru",
 		{"loc_trait_bespoke_toughness_on_crit_kills"}, {"ru"},
 			loc_text("Успокаивающая точность")),
+	--[+ Traditional Chinese - 慰藉精準 +]--
+	create_template("trait_bespoke_109_ext_tw",
+		{"loc_trait_bespoke_toughness_on_crit_kills"}, {"tw"},
+			loc_text("慰藉精準")),
 
 	--[+ Flechette - Флешетта +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_110_ext_ru",
 		-- {"loc_trait_bespoke_bleed_on_crit_ranged"}, {"ru"},
 			-- loc_text("Флешетта")),
+	--[+ Traditional Chinese - 飛鏢彈 +]--
+	create_template("trait_bespoke_110_ext_tw",
+		{"loc_trait_bespoke_bleed_on_crit_ranged"}, {"tw"},
+			loc_text("飛鏢彈")),
 
 	--[+ Man-Stopper - Человекоостанавливатель +]-- -- руоф Усмирение
+	--[+ Russian +]
 	create_template("trait_bespoke_111_ext_ru",
 		{"loc_trait_bespoke_cleave_on_crit"}, {"ru"},
 			loc_text("Человекоостанавливатель")),
+	--[+ Traditional Chinese - 大口徑彈藥 +]--
+	create_template("trait_bespoke_111_ext_tw",
+		{"loc_trait_bespoke_cleave_on_crit"}, {"tw"},
+			loc_text("大口徑彈藥")),
 
 	--[+ Scattershot - Выстрел дробью +]-- -- руоф Разброс
+	--[+ Russian +]
 	create_template("trait_bespoke_112_ext_ru",
 		{"loc_trait_bespoke_crit_chance_on_hitting_multiple_with_one_shot"}, {"ru"},
 			loc_text("Выстрел дробью")),
+	--[+ Traditional Chinese - 散彈 +]--
+	create_template("trait_bespoke_112_ext_tw",
+		{"loc_trait_bespoke_crit_chance_on_hitting_multiple_with_one_shot"}, {"tw"},
+			loc_text("散彈")),
 
 	--[+ Full Bore - Полный калибр +]-- -- руоф Напор
+	--[+ Russian +]
 	create_template("trait_bespoke_113_ext_ru",
 		{"loc_trait_bespoke_power_bonus_on_hitting_single_enemy_with_all"}, {"ru"},
 			loc_text("Полный калибр")),
+	--[+ Traditional Chinese - 全孔射擊 +]--
+	create_template("trait_bespoke_113_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_hitting_single_enemy_with_all"}, {"tw"},
+			loc_text("全孔射擊")),
 
 	--[+ Both Barrels - Дуплет +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_114_ext_ru",
 		-- {"loc_trait_bespoke_reload_speed_on_ranged_weapon_special_kill"}, {"ru"},
 			-- loc_text("Дуплет")),
+	--[+ Traditional Chinese - 雙管齊發 +]--
+	create_template("trait_bespoke_114_ext_tw",
+		{"loc_trait_bespoke_reload_speed_on_ranged_weapon_special_kill"}, {"tw"},
+			loc_text("雙管齊發")),
 
 	--[+ Trickshooter - Меткий стрелок +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_115_ext_ru",
 		-- {"loc_trait_bespoke_power_bonus_on_chained_weakspot_hits"}, {"ru"},
 			-- loc_text("Меткий стрелок")),
+	--[+ Traditional Chinese - 狡猾射手 +]--
+	create_template("trait_bespoke_115_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_chained_weakspot_hits"}, {"tw"},
+			loc_text("狡猾射手")),
 
 	--[+ Hand-Cannon - Ручная пушка +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_116_ext_ru",
 		-- {"loc_trait_bespoke_rending_on_crit"}, {"ru"},
 			-- loc_text("Ручная пушка")),
+	--[+ Traditional Chinese - 手銃 +]--
+	create_template("trait_bespoke_116_ext_tw",
+		{"loc_trait_bespoke_rending_on_crit"}, {"tw"},
+			loc_text("手銃")),
 
 	--[+ Shattering Impact - Сокрушающий удар +]-- -- руоф Рассеивающий импульс
+	--[+ Russian +]
 	create_template("trait_bespoke_117_ext_ru",
 		{"loc_trait_bespoke_armor_rend_on_projectile_hit"}, {"ru"},
 			loc_text("Сокрушающий удар")),
+	--[+ Traditional Chinese - 破碎衝擊 +]--
+	create_template("trait_bespoke_117_ext_tw",
+		{"loc_trait_bespoke_armor_rend_on_projectile_hit"}, {"tw"},
+			loc_text("破碎衝擊")),
 
 	--[+ Everlasting Flame - Неугасимое пламя +]-- -- руоф Бесконечное пламя
+	--[+ Russian +]
 	create_template("trait_bespoke_118_ext_ru",
 		{"loc_trait_bespoke_ammo_spent_from_reserve_on_crit"}, {"ru"},
 			loc_text("Неугасимое пламя")),
+	--[+ Traditional Chinese - 永燃烈焰 +]--
+	create_template("trait_bespoke_118_ext_tw",
+		{"loc_trait_bespoke_ammo_spent_from_reserve_on_crit"}, {"tw"},
+			loc_text("永燃烈焰")),
 
 	--[+ Quickflame - Скорое пламя +]-- -- руоф Воспламенение
+	--[+ Russian +]
 	create_template("trait_bespoke_119_ext_ru",
 		{"loc_trait_bespoke_faster_reload_on_empty_clip"}, {"ru"},
 			loc_text("Скорое пламя")),
+	--[+ Traditional Chinese - 迅捷火焰 +]--
+	create_template("trait_bespoke_119_ext_tw",
+		{"loc_trait_bespoke_faster_reload_on_empty_clip"}, {"tw"},
+			loc_text("迅捷火焰")),
 
 	--[+ Fan the Flames - Разжечь пламя +]-- -- руоф Раздувая пламя
+	--[+ Russian +]
 	create_template("trait_bespoke_120_ext_ru",
 		{"loc_trait_bespoke_ignore_stagger_reduction_with_primary_on_burning"}, {"ru"},
 			loc_text("Разжечь пламя")),
+	--[+ Traditional Chinese - 煽風點火 +]--
+	create_template("trait_bespoke_120_ext_tw",
+		{"loc_trait_bespoke_ignore_stagger_reduction_with_primary_on_burning"}, {"tw"},
+			loc_text("煽風點火")),
 
 	--[+ Overpressure - Избыточное давление +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_121_ext_ru",
 		-- {"loc_trait_bespoke_power_scales_with_clip_percentage"}, {"ru"},
 			-- loc_text("Избыточное давление")),
+	--[+ Traditional Chinese - 超壓 +]--
+	create_template("trait_bespoke_121_ext_tw",
+		{"loc_trait_bespoke_power_scales_with_clip_percentage"}, {"tw"},
+			loc_text("超壓")),
 
 	--[+ Hot-Shot - Жгучий выстрел +]-- -- руоф В точку
+	--[+ Russian +]
 	create_template("trait_bespoke_122_ext_ru",
 		{"loc_trait_bespoke_cleave_on_weakspot_hits"}, {"ru"},
 			loc_text("Жгучий выстрел")),
+	--[+ Traditional Chinese - 激射 +]--
+	create_template("trait_bespoke_122_ext_tw",
+		{"loc_trait_bespoke_cleave_on_weakspot_hits"}, {"tw"},
+			loc_text("激射")),
 
 	--[+ Weight of Fire - Мощь огня +]-- -- руоф Плотность огня
+	--[+ Russian +]
 	create_template("trait_bespoke_123_ext_ru",
 		{"loc_trait_bespoke_faster_charge_on_chained_attacks"}, {"ru"},
 			loc_text("Мощь огня")),
+	--[+ Traditional Chinese - 猛攻 +]--
+	create_template("trait_bespoke_123_ext_tw",
+		{"loc_trait_bespoke_faster_charge_on_chained_attacks"}, {"tw"},
+			loc_text("猛攻")),
+
 
 	--[+ Armourbane - Бронебой +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_124_ext_ru",
 		-- {"loc_trait_bespoke_rend_armor_on_charged_shots"}, {"ru"},
 			-- loc_text("Бронебой")),
+	--[+ Traditional Chinese - 護甲之禍 +]--
+	create_template("trait_bespoke_124_ext_tw",
+		{"loc_trait_bespoke_rend_armor_on_charged_shots"}, {"tw"},
+			loc_text("護甲之禍")),
 
 	--[+ Power Blast - Мощный выстрел +]-- -- руоф Мощный взрыв
+	--[+ Russian +]
 	create_template("trait_bespoke_125_ext_ru",
 		{"loc_trait_bespoke_increased_crit_chance_bonus_based_on_charge_time"}, {"ru"},
 			loc_text("Мощный выстрел")),
+	--[+ Traditional Chinese - 聚能爆發 +]--
+	create_template("trait_bespoke_125_ext_tw",
+		{"loc_trait_bespoke_increased_crit_chance_bonus_based_on_charge_time"}, {"tw"},
+			loc_text("聚能爆發")),
 
 	--[+ Gets Hot! - Критическая жара! +]-- -- руоф Становится жарко!
+	--[+ Russian +]
 	create_template("trait_bespoke_126_ext_ru",
 		{"loc_trait_bespoke_crit_chance_scaled_on_heat"}, {"ru"},
 			loc_text("Критическая жара!")),
+	--[+ Traditional Chinese - 燃起來! +]--
+	create_template("trait_bespoke_126_ext_tw",
+		{"loc_trait_bespoke_crit_chance_scaled_on_heat"}, {"tw"},
+			loc_text("燃起來!")),
 
 	--[+ Volatile - Испарение +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_127_ext_ru",
 		-- {"loc_trait_bespoke_lower_overheat_gives_faster_charge"}, {"ru"},
 			-- loc_text("Испарение")),
+	--[+ Traditional Chinese - 熱力震盪 +]--
+	create_template("trait_bespoke_127_ext_tw",
+		{"loc_trait_bespoke_lower_overheat_gives_faster_charge"}, {"tw"},
+			loc_text("熱力震盪")),
 
 	--[+ Blaze Away - Стрельба без устали +]-- ALT --  -- руоф Энтузиазм
+	--[+ Russian +]
 	create_template("trait_bespoke_128_ext_ru",
 		{"loc_trait_bespoke_power_bonus_on_continuous_fire_alternative"}, {"ru"},
 			loc_text("Стрельба без устали")),
+	--[+ Traditional Chinese - 連續發射 +]--
+	create_template("trait_bespoke_128_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_continuous_fire_alternative"}, {"tw"},
+			loc_text("連續發射")),
 
 	--[+ Rising Heat - Нарастающий жар +]-- -- руоф Сильная жара
+	--[+ Russian +]
 	create_template("trait_bespoke_129_ext_ru",
 		{"loc_trait_bespoke_power_bonus_scaled_on_heat"}, {"ru"},
 			loc_text("Нарастающий жар")),
+	--[+ Traditional Chinese - 升溫 +]--
+	create_template("trait_bespoke_129_ext_tw",
+		{"loc_trait_bespoke_power_bonus_scaled_on_heat"}, {"tw"},
+			loc_text("升溫")),
 
 	--[+ Optimised Cooling - Оптимизированное охлаждение +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_130_ext_ru",
 		-- {"loc_trait_bespoke_reduced_heat_on_continuous"}, {"ru"},
 			-- loc_text("Оптимизированное охлаждение")),
+	--[+ Traditional Chinese - 優化冷卻 +]--
+	create_template("trait_bespoke_130_ext_tw",
+		{"loc_trait_bespoke_reduced_heat_on_continuous"}, {"tw"},
+			loc_text("優化冷卻")),
 
 	--[+ Focused Cooling - Сфокусированное охлаждение +]-- -- руоф Сосредоточенное охлаждение
+	--[+ Russian +]
 	create_template("trait_bespoke_131_ext_ru",
 		{"loc_trait_bespoke_reduced_overheat_on_crits"}, {"ru"},
 			loc_text("Сфокусированное охлаждение")),
+	--[+ Traditional Chinese - 專注冷卻 +]--
+	create_template("trait_bespoke_131_ext_tw",
+		{"loc_trait_bespoke_reduced_overheat_on_crits"}, {"tw"},
+			loc_text("專注冷卻")),
 
 	--[+ Gauntlet Momentum - Импульс перчатки +]-- -- руоф Перчатка моментума
+	--[+ Russian +]
 	create_template("trait_bespoke_132_ext_ru",
 		{"loc_trait_bespoke_power_bonus_on_chained_melee"}, {"ru"},
 			loc_text("Импульс перчатки")),
+	--[+ Traditional Chinese - 交叉動量 +]--
+	create_template("trait_bespoke_132_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_chained_melee"}, {"tw"},
+			loc_text("交叉動量")),
 
 	--[+ Pulverise - Измельчение +]-- -- руоф Пульверизация
+	--[+ Russian +]
 	create_template("trait_bespoke_133_ext_ru",
 		{"loc_trait_bespoke_crit_chance_on_melee_kill"}, {"ru"},
 			loc_text("Измельчение")),
+	--[+ Traditional Chinese - 粉碎 +]--
+	create_template("trait_bespoke_133_ext_tw",
+		{"loc_trait_bespoke_crit_chance_on_melee_kill"}, {"tw"},
+			loc_text("粉碎")),
 
 	--[+ Disruptive - Разрывной эффект +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_134_ext_ru",
 		-- {"loc_trait_bespoke_melee_power_bonus_after_explosion"}, {"ru"},
 			-- loc_text("Разрывной эффект")),
+	--[+ Traditional Chinese - 顛覆性力量 +]--
+	create_template("trait_bespoke_134_ext_tw",
+		{"loc_trait_bespoke_melee_power_bonus_after_explosion"}, {"tw"},
+			loc_text("顛覆性力量")),
 
 	--[+ Explosive Offensive - Взрывное наступление +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_135_ext_ru",
 		-- {"loc_trait_bespoke_power_bonus_after_weapon_special_multiple"}, {"ru"},
 			-- loc_text("Взрывное наступление")),
+	--[+ Traditional Chinese - 爆炸使我強大 +]--
+	create_template("trait_bespoke_135_ext_tw",
+		{"loc_trait_bespoke_power_bonus_after_weapon_special_multiple"}, {"tw"},
+			loc_text("爆炸使我強大")),
 
 	--[+ Pinpointing target - Бомбардировка цели +]-- -- руоф Определение цели
+	--[+ Russian +]
 	-- create_template("trait_bespoke_136_ext_ru",
 		-- {"loc_trait_bespoke_power_bonus_based_on_charge_time_ranged"}, {"ru"},
 			-- loc_text("Определение цели")),
+	--[+ Traditional Chinese - 精確定位 +]--
+	create_template("trait_bespoke_136_ext_tw",
+		{"loc_trait_bespoke_power_bonus_based_on_charge_time_ranged"}, {"tw"},
+			loc_text("精確定位")),
 
 	--[+ Charmed Reload - Зачарованная перезарядка +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_137_ext_ru",
 		-- {"loc_trait_bespoke_ammo_refill_from_reserve_on_crit"}, {"ru"},
 			-- loc_text("Зачарованная перезарядка")),
+	--[+ Traditional Chinese - 魔力彈藥 +]--
+	create_template("trait_bespoke_137_ext_tw",
+		{"loc_trait_bespoke_ammo_refill_from_reserve_on_crit"}, {"tw"},
+			loc_text("魔力彈藥")),
 
 	--[+ Overwhelming Fire - Подавляющий огонь +]-- -- руоф Огонь на поражение
+	--[+ Russian +]
 	create_template("trait_bespoke_138_ext_ru",
 		{"loc_trait_bespoke_power_bonus_on_chained_hits_on_single_target"}, {"ru"},
 			loc_text("Подавляющий огонь")),
+	--[+ Traditional Chinese - 壓倒性火力 +]--
+	create_template("trait_bespoke_138_ext_tw",
+		{"loc_trait_bespoke_power_bonus_on_chained_hits_on_single_target"}, {"tw"},
+			loc_text("壓倒性火力")),
 
 	--[+ Can opener - Открывашка +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_139_ext_ru",
 		-- {"loc_trait_bespoke_armor_rending_bayonette"}, {"ru"},
 			-- loc_text("Открывашка")),
+	--[+ Traditional Chinese - 開罐器 +]--
+	create_template("trait_bespoke_139_ext_tw",
+		{"loc_trait_bespoke_armor_rending_bayonette"}, {"tw"},
+			loc_text("開罐器")),
 
 	--[+ Born in blood - Рождённый в крови +]-- -- руоф РождЕнный в крови
+	--[+ Russian +]
 	-- create_template("trait_bespoke_140_ext_ru",
 		-- {"loc_trait_bespoke_toughness_on_close_range_kills"}, {"ru"},
 			-- loc_text("Рождённый в крови")),
+	--[+ Traditional Chinese - 浴血而生 +]--
+	create_template("trait_bespoke_140_ext_tw",
+		{"loc_trait_bespoke_toughness_on_close_range_kills"}, {"tw"},
+			loc_text("浴血而生")),
 
 	--[+ Pierce - Пробивание +]-- -- руоф Прокол
+	--[+ Russian +]
 	-- create_template("trait_bespoke_141_ext_ru",
 		-- {"loc_trait_bespoke_pass_trough_armor_on_weapon_special_and_stagger"}, {"ru"},
 			-- loc_text("Прокол")),
+	--[+ Traditional Chinese - 穿透 +]--
+	create_template("trait_bespoke_141_ext_tw",
+		{"loc_trait_bespoke_pass_trough_armor_on_weapon_special_and_stagger"}, {"tw"},
+			loc_text("穿透")),
 
 	--[+ Punishing Fire - Карательный обстрел +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_142_ext_ru",
 		-- {"loc_trait_bespoke_shot_power_bonus_after_weapon_special_cleave"}, {"ru"},
 			-- loc_text("Карательный обстрел")),
+	--[+ Traditional Chinese - 懲罰射擊 +]--
+	create_template("trait_bespoke_142_ext_tw",
+		{"loc_trait_bespoke_shot_power_bonus_after_weapon_special_cleave"}, {"tw"},
+			loc_text("懲罰射擊")),
 
 	--[+ Inspiring Barrage - Вдохновляющий обстрел +]-- ALT -- руоф Вдохновляющий натиск
+	--[+ Russian +]
 	create_template("trait_bespoke_143_ext_ru",
 		{"loc_trait_bespoke_toughness_on_continuous_fire_alternative"}, {"ru"},
 			loc_text("Вдохновляющий обстрел")),
+	--[+ Traditional Chinese - 激勵彈幕 +]--
+	create_template("trait_bespoke_143_ext_tw",
+		{"loc_trait_bespoke_toughness_on_continuous_fire_alternative"}, {"tw"},
+			loc_text("激勵彈幕")),
 
 	--[+ Expansive - Экспансивный +]-- -- руоф Расширение
+	--[+ Russian +]
 	create_template("trait_bespoke_144_ext_ru",
 		{"loc_trait_bespoke_weapon_special_power_bonus_after_one_shots"}, {"ru"},
 			loc_text("Экспансивный")),
+	--[+ Traditional Chinese - 擴展性 +]--
+	create_template("trait_bespoke_144_ext_tw",
+		{"loc_trait_bespoke_weapon_special_power_bonus_after_one_shots"}, {"tw"},
+			loc_text("擴展性")),
 
 	--[+ Shrapnel - Шрапнель +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_145_ext_ru",
 		-- {"loc_trait_bespoke_close_explosion_applies_bleed"}, {"ru"},
 			-- loc_text("Шрапнель")),
+	--[+ Traditional Chinese - 破片四射 +]--
+	create_template("trait_bespoke_145_ext_tw",
+		{"loc_trait_bespoke_close_explosion_applies_bleed"}, {"tw"},
+			loc_text("破片四射")),
 
 	--[+ Blast Zone - Зона взрыва +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_146_ext_ru",
 		-- {"loc_trait_bespoke_explosion_radius_bonus_on_continuous_fire"}, {"ru"},
 			-- loc_text("Зона взрыва")),
+	--[+ Traditional Chinese - 狂轟猛炸 +]--
+	create_template("trait_bespoke_146_ext_tw",
+		{"loc_trait_bespoke_explosion_radius_bonus_on_continuous_fire"}, {"tw"},
+			loc_text("狂轟猛炸")),
+
 
 	--[+ Adhesive Charge - Липкий заряд +]-- -- руоф Цепной заряд
+	--[+ Russian +]
 	create_template("trait_bespoke_147_ext_ru",
 		{"loc_trait_bespoke_grenades_stick_to_monsters_and_damage"}, {"ru"},
 			loc_text("Липкий заряд")),
+	--[+ Traditional Chinese - 黏著炸藥 +]--
+	create_template("trait_bespoke_147_ext_tw",
+		{"loc_trait_bespoke_grenades_stick_to_monsters_and_damage"}, {"tw"},
+			loc_text("黏著炸藥")),
 
 	--[+ Marksman's Reflex - Рефлекс стрелка +]--
+	--[+ Russian +]
 	-- create_template("trait_bespoke_148_ext_ru",
 		-- {"loc_trait_bespoke_weakspot_projectile_hit_increases_reload_speed"}, {"ru"},
 			-- loc_text("Рефлекс стрелка")),
+	--[+ Traditional Chinese - 迅雷反射 +]--
+	create_template("trait_bespoke_148_ext_tw",
+		{"loc_trait_bespoke_weakspot_projectile_hit_increases_reload_speed"}, {"tw"},
+			loc_text("迅雷反射")),
 
 
 --[+ ++TALENTS - ТАЛАНТЫ ++ +]--
