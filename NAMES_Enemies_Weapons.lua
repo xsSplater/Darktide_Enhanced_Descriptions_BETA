@@ -53,7 +53,7 @@ local localization_templates = {
 		--[+ Poxwalker mutated - Чумной ходок слабый мутировавший +]--
 		create_template("enemies_chaos_poxwalker_mut_ext_ru",
 			{"loc_breed_display_name_chaos_mutated_poxwalker"}, {"ru"},
-				loc_text("Чумной ходок мутировавший")),\
+				loc_text("Чумной ходок мутировавший")),
 		--[+ Traditional Chinese  +]--
 
 	--[+ Специалисты - 專家 +]--
