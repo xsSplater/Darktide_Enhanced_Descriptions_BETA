@@ -85,15 +85,15 @@ local localizations = {
 		en = "{#color(15, 15, 15)}(Toggle \"Penances\" module){#reset()}",
 		-- fr = "",
 		ru = "Модуль «Искупления»",
-		["zh-tw"] = "{#color(15, 15, 15)}(切換『苦修』模組){#reset()}",
+		["zh-tw"] = "切換『苦修』模組)",
 		["zh-cn"] = "（启用「苦修」模块）",
 	},
 	enable_penances_file_description = { -- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
 		en = "{#color(255, 35, 5)}BETA! FOR NOW ONLY FOR THE RUSSIAN VERSION!{#reset()} This module highlights the Words and Numbers of the Penances. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль выделяет слова Искуплений и немного переписывает некоторые из них. Названия талантов берутся из модуля с исправленными названиями талантов! Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "{#color(255, 35, 5)}測試版！僅供俄語版本使用！{#reset()} 此模組將高亮苦修中的數字。可以按需球開關此模組。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n若使用此功能，你需要在 Darktide Mod Framework 中開啟開發者模式。{#reset()}",
-		["zh-cn"] = "{#color(255, 35, 5)}测试版！仅供俄语版本使用！{#reset()} 此模块将高亮苦修中的数字。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+		["zh-tw"] = "{#color(255, 35, 5)}測試版！僅供俄、繁中版本使用！{#reset()} 此模組將高亮苦修中的數字。可以按需球開關此模組。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n若使用此功能，你需要在 Darktide Mod Framework 中開啟開發者模式。{#reset()}",
+    ["zh-cn"] = "{#color(255, 35, 5)}测试版！仅供俄语版本使用！{#reset()} 此模块将高亮苦修中的数字。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
 	},
 
 	-- FOR RUSSIAN VERSION ONLY!
