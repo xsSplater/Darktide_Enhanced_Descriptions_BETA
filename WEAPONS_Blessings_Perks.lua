@@ -3864,7 +3864,7 @@ local localization_templates = {
 			-- 電漿槍 -- 2% | 3% | 4% | 5% (up to +25%)
 			create_template("weap_wbr025_desc_ext_tw",
 				{"loc_trait_bespoke_increased_crit_chance_bonus_based_on_charge_time_desc"}, {"zh-tw"},
-					loc_text("依據 "..COLORS_KWords_tw.Heat_rgb_tw.." 等級，\n "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmin_var_rgb.." 到 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmax_var_rgb.." "..COLORS_KWords_tw.Crt_chance_rgb_tw.."。")),
+					loc_text("依據 "..COLORS_KWords_tw.Heat2_rgb_tw.." 等級，\n "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmin_var_rgb.." 到 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmax_var_rgb.." "..COLORS_KWords_tw.Crt_chance_rgb_tw.."。")),
 
 		--[+ Gets Hot! +]--
 			-- Plasma Gun -- 5.5% & 4% | 7% & 6% | 8.5 & 8% | 10% & 10% (up to +50% & +50%)
@@ -3905,7 +3905,7 @@ local localization_templates = {
 			-- 電漿槍 -- 2.5% | 3% | 3.5% | 4% (up to 20%)
 			create_template("weap_wbr027_desc_ext_tw",
 				{"loc_trait_bespoke_lower_overheat_gives_faster_charge_desc"}, {"zh-tw"},
-					loc_text("在 "..COLORS_KWords_tw.Heat2_rgb_tw.." 較低時，充能速度 "..COLORS_Numbers.p_chrgspd_var_rgb.."，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。")),
+					loc_text("在 "..COLORS_KWords_tw.Heat_rgb_tw.." 較低時，充能速度 "..COLORS_Numbers.p_chrgspd_var_rgb.."，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。")),
 
 		--[+ Blaze Away +]-- ALT
 			-- Autopistol, Heavy Stubbers, Grenadier Gauntlet, Plasma Gun -- 5% | 6% | 7% | 8% (up to +40%)

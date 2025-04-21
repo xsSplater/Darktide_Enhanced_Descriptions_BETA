@@ -1440,9 +1440,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_name"}, {"ru"},
 			-- loc_text("Просто царапина")),
 	--[+ Traditional Chinese 只是皮外傷 +]--
-	-- create_template("ach_red_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_name"}, {"zh-tw"},
-			-- loc_text("只是皮外傷")),
+	create_template("ach_red_zea_7_ext_tw",
+		{"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_name"}, {"zh-tw"},
+			loc_text("只是皮外傷")),
 
 	--[+ Complete a full mission on Heresy Threat or higher in under 20 minutes, with less than a Wound's worth of Health remaining for 75% of the time. (Private Game: Penance can only be completed in a private game) - +]--
 	--[+ Russian +]--
@@ -1461,9 +1461,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_2_not_use_ranged_attacks_name"}, {"ru"},
 			-- loc_text("С близкого расстояния")),
 	--[+ Traditional Chinese 零距離接觸 +]--
-	-- create_template("ach_red_zea_5_ext_tw",
-		-- {"loc_achievement_zealot_2_not_use_ranged_attacks_name"}, {"zh-tw"},
-			-- loc_text("零距離接觸")),
+	create_template("ach_red_zea_5_ext_tw",
+		{"loc_achievement_zealot_2_not_use_ranged_attacks_name"}, {"zh-tw"},
+			loc_text("零距離接觸")),
 
 	--[+ Complete a full Mission on Malice Threat or higher without firing a shot. -  +]-- -- При угрозе «Злоба» или выше полностью завершите задание, не сделав ни одного выстрела.
 	--[+ Russian +]--
@@ -1612,9 +1612,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"}, {"ru"},
 			--loc_text("Благословен будь твой прицел")),
 	--[+ Traditional Chinese 聖佑汝之瞄準 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"}, {"zh-tw"},
-			--loc_text("聖佑汝之瞄準")),
+	create_template("ach_class_zea_7_ext_tw",
+		{"loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_name"}, {"zh-tw"},
+			loc_text("聖佑汝之瞄準")),
 
 	--[+ Kill 500 Specialist and Elites using Blades of Faith. +]-- -- руоф Убейте особых и элитных врагов (500) с помощью «Клинков веры».
 	--[+ Russian +]--
@@ -1633,9 +1633,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_aura_backstab_kills_while_alone_name"}, {"ru"},
 			-- loc_text("В тылу врага")),
 	--[+ Traditional Chinese 深入敵後 +]--
-	-- create_template("ach_class_zea_8_ext_tw",
-		-- {"loc_achievement_zealot_aura_backstab_kills_while_alone_name"}, {"zh-tw"},
-			-- loc_text("深入敵後")),
+	create_template("ach_class_zea_8_ext_tw",
+		{"loc_achievement_zealot_aura_backstab_kills_while_alone_name"}, {"zh-tw"},
+			loc_text("深入敵後")),
 
 	--[+ Kill 200 Ranged enemies with backstab, while not in Coherency while under the effect of the Loner ability. +]-- -- руоф Убейте врагов дальнего боя (200) ударом в спину, не находясь под действием «Сплоченности».
 	--[+ Russian +]--
@@ -1654,9 +1654,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_team_toughness_restored_with_chorus_name"}, {"ru"},
 			-- loc_text("Вдохновляющая речь")),
 	--[+ Traditional Chinese 激勵演說 +]--
-	-- create_template("ach_class_zea_8_ext_tw",
-		-- {"loc_achievement_zealot_team_toughness_restored_with_chorus_name"}, {"zh-tw"},
-			-- loc_text("激勵演說")),
+	create_template("ach_class_zea_8_ext_tw",
+		{"loc_achievement_zealot_team_toughness_restored_with_chorus_name"}, {"zh-tw"},
+			loc_text("激勵演說")),
 
 	--[+ Restore 7500 toughness to other players using Chorus of Spir_I_tual Fortitude. +]-- -- руоф Восстановите другим игрокам 7500 стойкости с помощью «Хор духовной стойкости».
 	--[+ Russian +]--
@@ -1717,9 +1717,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"ru"},
 			--loc_text("Есть только бездна...")),
 	--[+ Traditional Chinese 唯有深淵...... +]--
-	-- create_template("ach_red_zea_6_ext_tw",
-		-- {"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"zh-tw"},
-			-- loc_text("唯有深淵......")),
+	create_template("ach_red_zea_6_ext_tw",
+		{"loc_achievement_zealot_2_healed_up_after_resisting_death_name"}, {"zh-tw"},
+			loc_text("唯有深淵......")),
 
 	--[+ On Heresy threat or higher, heal to 25% Health with life gained solely from the Holy Revenant Talent. +]-- -- руоф При угрозе «Ересь» или выше восстановите 25% здоровья исключительно за счет таланта «Святой призрак».
 	--[+ Russian +]--
@@ -1738,9 +1738,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_aura_toughness_damage_reduced_name"}, {"ru"},
 			--loc_text("Испытание веры")),
 	--[+ Traditional Chinese 信仰之試 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_aura_toughness_damage_reduced_name"}, {"zh-tw"},
-			--loc_text("信仰之試")),
+	create_template("ach_class_zea_7_ext_tw",
+		{"loc_achievement_zealot_aura_toughness_damage_reduced_name"}, {"zh-tw"},
+			loc_text("信仰之試")),
 
 	--[+ Reduce a total of 1500 Toughness Damage to allies in coherency under the effect of Benediction. +]-- -- руоф Снизьте урон стойкости союзникам под воздействием «Сплоченности» (суммарно 1500), находясь под действием «Благословения».
 	--[+ Russian +]--
@@ -1759,9 +1759,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_2_medium_2_name"}, {"ru"},
 			-- loc_text("Направь свою ярость")),
 	--[+ Traditional Chinese 引導憤怒 +]--
-	-- create_template("ach_class_zea_12_ext_tw",
-		-- {"loc_achievement_zealot_2_medium_2_name"}, {"zh-tw"},
-			-- loc_text("引導憤怒")),
+	create_template("ach_class_zea_12_ext_tw",
+		{"loc_achievement_zealot_2_medium_2_name"}, {"zh-tw"},
+			loc_text("引導憤怒")),
 
 	--[+ On Malice Threat or higher, kill 1000 enemies with Melee Attacks whilst at at least 3 stacks of Martydom. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (1000) в ближнем бою, сохраняя не менее 3 ед. заряда «Мученичества».
 	--[+ Russian +]--
@@ -1801,9 +1801,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"}, {"ru"},
 			-- loc_text("Незримый убийца")),
 	--[+ Traditional Chinese 隱形刺客 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"}, {"zh-tw"},
-			-- loc_text("隱形刺客")),
+	create_template("ach_class_zea_7_ext_tw",
+		{"loc_achievement_zealot_elite_or_special_kills_with_shroudfield_name"}, {"zh-tw"},
+			loc_text("隱形刺客")),
 
 	--[+ Kill 150 Specialists or Elites by backstabbing them while using Shroudfield. +]-- руоф Убейте особых или элитных врагов (150) ответным ударом с помощью «Покрова».
 	--[+ Russian +]--
@@ -1822,9 +1822,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_kills_with_fire_grenade_name"}, {"ru"},
 			-- loc_text("Очищающее пламя")),
 	--[+ Traditional Chinese 淨化烈焰 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_kills_with_fire_grenade_name"}, {"zh-tw"},
-			-- loc_text("淨化烈焰")),
+	create_template("ach_class_zea_7_ext_tw",
+		{"loc_achievement_zealot_kills_with_fire_grenade_name"}, {"zh-tw"},
+			loc_text("淨化烈焰")),
 
 	--[+ Burn 2000 enemies using the Immolation Grenade. +]-- руоф Сожгите врагов (2000) с помощью «Жертвенной гранаты».
 	--[+ Russian +]--
@@ -1843,9 +1843,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"}, {"ru"},
 			-- loc_text("Выиграй время")),
 	--[+ Traditional Chinese 爭取時間 +]--
-	-- create_template("ach_red_zea_2_ext_tw",
-		-- {"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"}, {"zh-tw"},
-			-- loc_text("爭取時間")),
+	create_template("ach_red_zea_2_ext_tw",
+		{"loc_achievement_zealot_2_stagger_sniper_with_grenade_distance_name"}, {"zh-tw"},
+			loc_text("爭取時間")),
 
 	--[+ Using a Stun Grenade, hit an enemy sniper more than 40 metres away. +]-- руоф Поразите вражеского снайпера на расстоянии более 40 м, используя оглушающую гранату.
 	--[+ Russian +]--
@@ -1864,9 +1864,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"}, {"ru"},
 			-- loc_text("Праведный гнев")),
 	--[+ Traditional Chinese 正義之怒 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"}, {"zh-tw"},
-			-- loc_text("正義之怒")),
+	create_template("ach_class_zea_7_ext_tw",
+		{"loc_achievement_zealot_elite_or_special_kills_during_fanatic_rage_name"}, {"zh-tw"},
+			loc_text("正義之怒")),
 
 	--[+ Kill 2000 enemies while in Fury. +]-- руоф Убейте врагов (2000), находясь под действием «Ярости».
 	--[+ Russian +]--
@@ -1885,9 +1885,9 @@ local localization_templates = {
 		{"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"}, {"ru"},
 			loc_text("Презри мутанта")),
 	--[+ Traditional Chinese 憎恨變種人 +]--
-	-- create_template("ach_red_zea_3_ext_tw",
-		-- {"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"}, {"zh-tw"},
-			-- loc_text("憎恨變種人")),
+	create_template("ach_red_zea_3_ext_tw",
+		{"loc_achievement_zelot_2_kill_mutant_charger_with_melee_while_dashing_name"}, {"zh-tw"},
+			loc_text("憎恨變種人")),
 
 	--[+ While Dashing with Chastise The Wicked, kill a Mutant with a Melee Attack. +]-- руоф Убейте мутанта атакой в ближнем бою во время рывка, пока действует «Кара для нечестивых».
 	--[+ Russian +]--
@@ -1906,9 +1906,9 @@ local localization_templates = {
 		{"loc_achievement_zealot_2_easy_1_name"}, {"ru"},
 			loc_text("Управление толпой")),
 	--[+ Traditional Chinese 群體控制 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_2_easy_1_name"}, {"zh-tw"},
-			-- loc_text("群體控制")),
+	create_template("ach_class_zea_7_ext_tw",
+		{"loc_achievement_zealot_2_easy_1_name"}, {"zh-tw"},
+			loc_text("群體控制")),
 
 	--[+ Stun 1500 enemies using Stun Grenades. +]-- руоф Оглушите врагов (1500) оглушающими гранатами.
 	--[+ Russian +]--
@@ -1927,9 +1927,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_kills_during_movement_keystone_activated_name"}, {"ru"},
 			-- loc_text("Смертоносное преследование")),
 	--[+ Traditional Chinese 致命追緝 +]--
-	-- create_template("ach_class_zea_7_ext_tw",
-		-- {"loc_achievement_zealot_kills_during_movement_keystone_activated_name"}, {"zh-tw"},
-			-- loc_text("致命追緝")),
+	create_template("ach_class_zea_7_ext_tw",
+		{"loc_achievement_zealot_kills_during_movement_keystone_activated_name"}, {"zh-tw"},
+			loc_text("致命追緝")),
 
 	--[+ Kill 250 Specialist and Elite enemies while at 15 stacks of Inexorable Judgement or above. +]-- руоф Убейте особых и элитных врагов (250), имея не менее 15 зарядов «Безжалостного приговора».
 	--[+ Russian +]--
@@ -1948,9 +1948,9 @@ local localization_templates = {
 		-- {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"}, {"ru"},
 			-- loc_text("Шокирующие штуки")),
 	--[+ Traditional Chinese 震撼之擊 +]--
-	-- create_template("ach_red_zea_4_ext_tw",
-		-- {"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"}, {"zh-tw"},
-			-- loc_text("震撼之擊")),
+	create_template("ach_red_zea_4_ext_tw",
+		{"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_name"}, {"zh-tw"},
+			loc_text("震撼之擊")),
 
 	--[+ On Malice Threat or higher, kill 40 enemies stunned by your grenades, within 10s. +]-- руоф При угрозе «Злоба» или выше убейте врагов (40), оглушенных вашими гранатами, за 10 с.
 	--[+ Russian +]--
@@ -1968,9 +1968,9 @@ local localization_templates = {
 		{"loc_class_psyker_title"}, {"ru"},
 			loc_text(COLORS_KWords_ru.cls_psy_rgb_ru)),
 	--[+ Traditional Chinese 靈能者 +]--
-	-- create_template("ach_class_psy_0_ext_tw",
-		-- {"loc_class_psyker_title"}, {"zh-tw"},
-			--loc_text(COLORS_KWords_tw.cls_psy_rgb_tw)),
+	create_template("ach_class_psy_0_ext_tw",
+		{"loc_class_psyker_title"}, {"zh-tw"},
+			loc_text(COLORS_KWords_tw.cls_psy_rgb_tw)),
 
 --[+ ++PROGRESS - ПРОГРЕСС++ +]--
 	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
@@ -2086,9 +2086,9 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_hard_2_name"}, {"ru"},
 			loc_text("Держи дистанцию")),
 	--[+ Traditional Chinese 保持距離 +]--
-	-- create_template("ach_class_psy_13_ext_tw",
-		-- {"loc_achievement_psyker_2_hard_2_name"}, {"zh-tw"},
-			--loc_text("保持距離")),
+	create_template("ach_class_psy_13_ext_tw",
+		{"loc_achievement_psyker_2_hard_2_name"}, {"zh-tw"},
+			loc_text("保持距離")),
 
 	--[+ On Heresy Threat or higher, complete 3 full Missions without being hit in melee by an Elite enemy. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы элитный враг ни разу не попал по вам в ближнем бою.
 	--[+ Russian +]--
@@ -2107,9 +2107,9 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_edge_kills_last_2_sec_name"}, {"ru"},
 			loc_text("Неожиданный поворот")),
 	--[+ Traditional Chinese 懸崖邊緣 +]--
-	-- create_template("ach_red_psy_3_ext_tw",
-		-- {"loc_achievement_psyker_2_edge_kills_last_2_sec_name"}, {"zh-tw"},
-			--loc_text("懸崖邊緣")),
+	create_template("ach_red_psy_3_ext_tw",
+		{"loc_achievement_psyker_2_edge_kills_last_2_sec_name"}, {"zh-tw"},
+			loc_text("懸崖邊緣")),
 
 	--[+ Kill 7 enemies within 2s by knocking them off a ledge. +]-- руоф Убейте врагов (7) за 2 с., сбросив их с уступа.
 	--[+ Russian +]--
@@ -2192,6 +2192,9 @@ local localization_templates = {
 		-- {"loc_achievement_rank_psyker_2_1-6_name"}, {"ru"},
 			--loc_text("Разум превыше материи (1-6)")),
 	--[+ Traditional Chinese 心勝於物 (1-6) +]--
+	-- create_template("ach_class_psy_1_ext_tw",
+		-- {"loc_achievement_rank_psyker_2_1-6_name"}, {"zh-tw"},
+			--loc_text("心勝於物 (1-6)")),
 
 	--[+ Reach Trust Level 30 as a Psyker. +]-- руоф Заслужить уровень доверия 30, играя за Псайкера.
 	--[+ Russian +]--
@@ -2212,7 +2215,7 @@ local localization_templates = {
 	--[+ Traditional Chinese 為了正義而戰 +]--
 	-- create_template("ach_red_psy_1_ext_tw",
 		-- {"loc_missions_psyker_2_medium_difficulty_1-5_name"}, {"zh-tw"},
-			-- loc_text("戰鬥的好戰鬥 (1-5)")),
+			-- loc_text("為了正義而戰 (1-5)")),
 
 	--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
 	--[+ Russian +]--
@@ -2276,9 +2279,9 @@ local localization_templates = {
 		-- {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_name"}, {"ru"},
 			--loc_text("Заряженные целью")),
 	--[+ Traditional Chinese 壓倒性的存在 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_name"}, {"zh-tw"},
-			--loc_text("壓倒性的存在")),
+	create_template("ach_class_psy_7_ext_tw",
+		{"loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_name"}, {"zh-tw"},
+			loc_text("壓倒性的存在")),
 
 	--[+ Kill 2500 enemies stunned by your Smite. Kills made by your Smite. Kills made by your team members also count. +]-- руоф Убейте врагов (2500), оглушенных вашим «Сокрушением». Убийства, совершенные членами команды, тоже учитываются.
 	--[+ Russian +]--
@@ -2297,9 +2300,9 @@ local localization_templates = {
 		-- {"loc_achievement_psyker_time_at_max_unnatural_name"}, {"ru"},
 			-- loc_text("Брось вызов судьбе")),
 	--[+ Traditional Chinese 抵抗命運 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_time_at_max_unnatural_name"}, {"zh-tw"},
-			-- loc_text("抵抗命運")),
+	create_template("ach_class_psy_7_ext_tw",
+		{"loc_achievement_psyker_time_at_max_unnatural_name"}, {"zh-tw"},
+			loc_text("抵抗命運")),
 
 	--[+ Maintain 15 stacks or more of Disrupt Destiny for a total of 1800 seconds. +]-- руоф Удерживайте не менее 15 зарядов «Разрушенной судьбы» на протяжении 1800 с.
 	--[+ Russian +]--
@@ -2318,11 +2321,11 @@ local localization_templates = {
 		-- {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_name"}, {"ru"},
 			-- loc_text("Варп-аккумулятор")),
 	--[+ Traditional Chinese 亞空間電池 +]--
-	-- create_template("ach_red_psy_4_ext_tw",
-		-- {"loc_achievement_psyker_2_stay_at_max_souls_for_duration_name"}, {"zh-tw"},
-			-- loc_text("亞空間電池")),
+	create_template("ach_red_psy_4_ext_tw",
+		{"loc_achievement_psyker_2_stay_at_max_souls_for_duration_name"}, {"zh-tw"},
+			loc_text("亞空間電池")),
 
-		--[+ While on Malice Threat or higher, in a single session maintain maximum Warp Charges for 120s. +]-- руоф При угрозе «Злоба» или выше в режиме одиночной игры поддерживайте максимум варп-зарядов в течение 120 с.
+	--[+ While on Malice Threat or higher, in a single session maintain maximum Warp Charges for 120s. +]-- руоф При угрозе «Злоба» или выше в режиме одиночной игры поддерживайте максимум варп-зарядов в течение 120 с.
 	--[+ Russian +]--
 	create_template("ach_red_psy_4_ext_desc_ru",
 		{"loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"}, {"ru"},
@@ -2333,17 +2336,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，於單場任務中持續維持最高層數亞空間充能 "..COLORS_Numbers.target_rgb.." 秒。" .. TALENTS_Enh_desc_penances_tw.ED_Warp_battery_rgb_tw)),
 
-		--[+ Pick n' Mix +]-- руоф Выбирай и смешивай
+	--[+ Pick n' Mix +]-- руоф Выбирай и смешивай
 	--[+ Russian +]--
 	-- create_template("ach_red_psy_6_ext_ru",
 		-- {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_name"}, {"ru"},
 			-- loc_text("Выбирай и смешивай")),
 	--[+ Traditional Chinese 每樣來點 +]--
-	-- create_template("ach_red_psy_6_ext_tw",
-		-- {"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_name"}, {"zh-tw"},
-			-- loc_text("每樣來點")),
+	create_template("ach_red_psy_6_ext_tw",
+		{"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_name"}, {"zh-tw"},
+			loc_text("每樣來點")),
 
-		--[+ While on Heresy Threat or higher, use Brain Burst to kill 4 different Elite or Specialist enemies within 12s. +]-- руоф При угрозе «Ересь» или выше используйте «Взрыв разума», чтобы убить различных врагов (4) ранга элита или специалист за 12 с.
+	--[+ While on Heresy Threat or higher, use Brain Burst to kill 4 different Elite or Specialist enemies within 12s. +]-- руоф При угрозе «Ересь» или выше используйте «Взрыв разума», чтобы убить различных врагов (4) ранга элита или специалист за 12 с.
 	--[+ Russian +]--
 	create_template("ach_red_psy_6_ext_desc_ru",
 		{"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_description"}, {"ru"},
@@ -2354,17 +2357,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』，\n在 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 種不同的精英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Pick_n_mix_rgb_tw)),
 
-		--[+ Mind's Aegis +]-- руоф Защита разума
+	--[+ Mind's Aegis +]-- руоф Защита разума
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_ru",
 		{"loc_achievement_psyker_damage_blocked_with_shield_name"}, {"ru"},
 			loc_text("Эгида разума")),
 	--[+ Traditional Chinese 心靈之盾 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_damage_blocked_with_shield_name"}, {"zh-tw"},
-			-- loc_text("心靈之盾")),
+	create_template("ach_class_psy_7_ext_tw",
+		{"loc_achievement_psyker_damage_blocked_with_shield_name"}, {"zh-tw"},
+			loc_text("心靈之盾")),
 
-		--[+ Absorb 150000 Damage with Telekine Shield. +]-- руоф Поглотите урон (150000) с помощью «Телекинетического щита».
+	--[+ Absorb 150000 Damage with Telekine Shield. +]-- руоф Поглотите урон (150000) с помощью «Телекинетического щита».
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_damage_blocked_with_shield_description"}, {"ru"},
@@ -2375,17 +2378,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_damage_blocked_with_shield_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.telekshii_rgb_tw.."』防護 "..COLORS_Numbers.target_rgb.." 點傷害。")),
 
-		--[+ Skilled in Psykhana +]-- руоф Знаток Псайканы
+	--[+ Skilled in Psykhana +]-- руоф Знаток Псайканы
 	--[+ Russian +]--
 	-- create_template("ach_class_psy_7_ext_ru",
 		-- {"loc_achievement_psyker_kills_with_empowered_abilites_name"}, {"ru"},
 			-- loc_text("Знаток Псайканы")),
 	--[+ Traditional Chinese 熟練靈能 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_kills_with_empowered_abilites_name"}, {"zh-tw"},
-			-- loc_text("熟練靈能")),
+	create_template("ach_class_psy_7_ext_tw",
+		{"loc_achievement_psyker_kills_with_empowered_abilites_name"}, {"zh-tw"},
+			loc_text("熟練靈能")),
 
-		--[+ Kill 250 Specialists or Elites using abilities empowered by Empowered Psionics. +]-- руоф Убейте особых или элитных врагов (250) с помощью способностей, улучшенных «Усиленными псиониками».
+	--[+ Kill 250 Specialists or Elites using abilities empowered by Empowered Psionics. +]-- руоф Убейте особых или элитных врагов (250) с помощью способностей, улучшенных «Усиленными псиониками».
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_kills_with_empowered_abilites_description"}, {"ru"},
@@ -2396,17 +2399,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_kills_with_empowered_abilites_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.empsionics_rgb_tw.."』後的能力，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
 
-		--[+ Not Even Close +]-- руоф Как бы не так
+	--[+ Not Even Close +]-- руоф Как бы не так
 	--[+ Russian +]--
 	-- create_template("ach_red_psy_2_ext_ru",
 		-- {"loc_achievement_psyker_2_smite_hound_mid_leap_name"}, {"ru"},
 			-- loc_text("Как бы не так")),
 	--[+ Traditional Chinese 差的遠 +]--
-	-- create_template("ach_red_psy_2_ext_tw",
-		-- {"loc_achievement_psyker_2_smite_hound_mid_leap_name"}, {"zh-tw"},
-			-- loc_text("差的遠")),
+	create_template("ach_red_psy_2_ext_tw",
+		{"loc_achievement_psyker_2_smite_hound_mid_leap_name"}, {"zh-tw"},
+			loc_text("差的遠")),
 
-		--[+ Kill a pouncing Pox Hound with Brain Burst. +]-- руоф Убейте с помощью «Взрыва разума» Чумную Гончую, когда она набрасывается на вас.
+	--[+ Kill a pouncing Pox Hound with Brain Burst. +]-- руоф Убейте с помощью «Взрыва разума» Чумную Гончую, когда она набрасывается на вас.
 	--[+ Russian +]--
 	create_template("ach_red_psy_2_ext_desc_ru",
 		{"loc_achievement_psyker_2_smite_hound_mid_leap_description"}, {"ru"},
@@ -2417,7 +2420,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_smite_hound_mid_leap_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n擊殺猛撲中的瘟疫獵犬。")),
 
-		--[+ Mind Lance - Копьё разума +]-- руоф Копье разума
+	--[+ Mind Lance - Копьё разума +]-- руоф Копье разума
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_ru",
 		{"loc_achievement_psyker_elite_or_special_kills_with_assail_name"}, {"ru"},
@@ -2427,7 +2430,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_elite_or_special_kills_with_assail_name"}, {"zh-tw"},
 			loc_text("心靈之槍")),
 
-		--[+ Kill 250 Specialists and Elites using Assail. +]-- руоф Убейте особых или элитных врагов (250) с помощью «Нападения».
+	--[+ Kill 250 Specialists and Elites using Assail. +]-- руоф Убейте особых или элитных врагов (250) с помощью «Нападения».
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_elite_or_special_kills_with_assail_description"}, {"ru"},
@@ -2438,17 +2441,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_elite_or_special_kills_with_assail_description"}, {"zh-tw"},
 			loc_text("使用『"..COLORS_KW_Penances_tw.assail_rgb_tw.."』擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
 
-		--[+ Malleus Monstronum +]-- руоф Маллеус Монстронум
+	--[+ Malleus Monstronum +]-- руоф Маллеус Монстронум
 	--[+ Russian +]--
 	-- create_template("ach_red_psy_7_ext_ru",
 		-- {"loc_achievement_psyker_2_kill_boss_solo_with_smite_name"}, {"ru"},
 			-- loc_text("Маллеус Монстронум")),
 	--[+ Traditional Chinese 憎惡之錘 +]--
-	-- create_template("ach_red_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_2_kill_boss_solo_with_smite_name"}, {"zh-tw"},
-			-- loc_text("憎惡之錘")),
+	create_template("ach_red_psy_7_ext_tw",
+		{"loc_achievement_psyker_2_kill_boss_solo_with_smite_name"}, {"zh-tw"},
+			loc_text("憎惡之錘")),
 
-		--[+ While on Heresy Threat or higher kill a Monstrosity after damaging 50% of its health with your Brain Burst. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше снесите чудовищу 50% здоровья «Взрывом разума», а затем убейте его.
+	--[+ While on Heresy Threat or higher kill a Monstrosity after damaging 50% of its health with your Brain Burst. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше снесите чудовищу 50% здоровья «Взрывом разума», а затем убейте его.
 	--[+ Russian +]--
 	create_template("ach_red_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_2_kill_boss_solo_with_smite_description"}, {"ru"},
@@ -2459,7 +2462,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_kill_boss_solo_with_smite_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n對巨獸造成不少於 "..COLORS_Numbers.pc_50_rgb.." 的生命值傷害，並將其擊殺。")),
 
-		--[+ Perilous Focus +]-- руоф Пагубная концентрация
+	--[+ Perilous Focus +]-- руоф Пагубная концентрация
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_ru",
 		{"loc_achievement_psyker_kills_during_overcharge_stance_name"}, {"ru"},
@@ -2469,7 +2472,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_kills_during_overcharge_stance_name"}, {"zh-tw"},
 			loc_text("險惡聚焦")),
 
-		--[+ Kill 40 enemies under the effects of a single Scrier's Gaze activation. +]-- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
+	--[+ Kill 40 enemies under the effects of a single Scrier's Gaze activation. +]-- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_kills_during_overcharge_stance_description"}, {"ru"},
@@ -2480,17 +2483,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_kills_during_overcharge_stance_description"}, {"zh-tw"},
 			loc_text("單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.scriersgaze_rgb_tw.."』期間，擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Overwhelming Presence +]-- руоф Подавляющее присутствие
+	--[+ Overwhelming Presence +]-- руоф Подавляющее присутствие
 	--[+ Russian +]--
 	-- create_template("ach_class_psy_7_ext_ru",
 		-- {"loc_achievement_psyker_team_elite_aura_kills_name"}, {"ru"},
 			-- loc_text("Подавляющее присутствие")),
 	--[+ Traditional Chinese 壓倒性的存在 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_team_elite_aura_kills_name"}, {"zh-tw"},
-			-- loc_text("壓倒性的存在")),
+	create_template("ach_class_psy_7_ext_tw",
+		{"loc_achievement_psyker_team_elite_aura_kills_name"}, {"zh-tw"},
+			loc_text("壓倒性的存在")),
 
-		--[+ Kill 2500 Elite or Specialist enemies while under the effect of Kinetic Presence. Kill made by any affected team member also count. +]-- руоф Убейте особых или элитных врагов (2500), находясь под действием «Кинетического присутствия». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
+	--[+ Kill 2500 Elite or Specialist enemies while under the effect of Kinetic Presence. Kill made by any affected team member also count. +]-- руоф Убейте особых или элитных врагов (2500), находясь под действием «Кинетического присутствия». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_team_elite_aura_kills_description"}, {"ru"},
@@ -2501,17 +2504,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_team_elite_aura_kills_description"}, {"zh-tw"},
 			loc_text("處於 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.kinetpres_rgb_tw.."』期間，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。\n隊友在此光環下的擊殺也會計算。")),
 
-		--[+ Power Up +]-- руоф Полный заряд
+	--[+ Power Up +]-- руоф Полный заряд
 	--[+ Russian +]--
 	-- create_template("ach_class_psy_11_ext_ru",
 		-- {"loc_achievement_psyker_2_medium_1_name"}, {"ru"},
 			-- loc_text("Полный заряд")),
 	--[+ Traditional Chinese 能量提升 +]--
-	-- create_template("ach_class_psy_11_ext_tw",
-		-- {"loc_achievement_psyker_2_medium_1_name"}, {"zh-tw"},
-			-- loc_text("能量提升")),
+	create_template("ach_class_psy_11_ext_tw",
+		{"loc_achievement_psyker_2_medium_1_name"}, {"zh-tw"},
+			loc_text("能量提升")),
 
-		--[+ On Malice Threat or higher, kill 100 Elite or Specialist enemies with Brain Burst while at maximum Warp Charges. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов или специалистов (100) «Взрывом разума» с максимальным количеством варп-зарядов.
+	--[+ On Malice Threat or higher, kill 100 Elite or Specialist enemies with Brain Burst while at maximum Warp Charges. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов или специалистов (100) «Взрывом разума» с максимальным количеством варп-зарядов.
 	--[+ Russian +]--
 	create_template("ach_class_psy_11_ext_desc_ru",
 		{"loc_achievement_psyker_2_medium_1_description"}, {"ru"},
@@ -2522,17 +2525,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_medium_1_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n當自身亞空間充能達最大時，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
 
-		--[+ Prioritise Targets +]-- руоф Приоритетные цели
+	--[+ Prioritise Targets +]-- руоф Приоритетные цели
 	--[+ Russian +]--
 	-- create_template("ach_class_psy_7_ext_ru",
 		-- {"loc_achievement_psyker_2_easy_1_name"}, {"ru"},
 			-- loc_text("Приоритетные цели")),
 	--[+ Traditional Chinese 優先目標 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_2_easy_1_name"}, {"zh-tw"},
-			-- loc_text("優先目標")),
+	create_template("ach_class_psy_7_ext_tw",
+		{"loc_achievement_psyker_2_easy_1_name"}, {"zh-tw"},
+			loc_text("優先目標")),
 
-		--[+ Kill 200 Elite or Specialist enemies with Brain Burst. +]-- руоф Убейте элитных врагов или специалистов (200) «Взрывом разума».
+	--[+ Kill 200 Elite or Specialist enemies with Brain Burst. +]-- руоф Убейте элитных врагов или специалистов (200) «Взрывом разума».
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_2_easy_1_description"}, {"ru"},
@@ -2543,7 +2546,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_easy_1_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
 
-		--[+ Shoot Fast +]-- руоф Стреляй от бедра
+	--[+ Shoot Fast +]-- руоф Стреляй от бедра
 	--[+ Russian +]--
 	create_template("ach_class_psy_12_ext_ru",
 		{"loc_achievement_psyker_2_hard_1_name"}, {"ru"},
@@ -2553,7 +2556,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_hard_1_name"}, {"zh-tw"},
 			loc_text("快槍手")),
 
-		--[+ On Heresy Threat or higher, kill 25 Pox Hounds, Mutants or Scab Trappers using Brain Burst before they incapacitate you or an ally. +]-- руоф При угрозе «Ересь» или выше убейте Чумных гончих, Мутантов или Скабов-Ловушечников (25) «Взрывом разума», пока они не успели обезвредить вас или союзника.
+	--[+ On Heresy Threat or higher, kill 25 Pox Hounds, Mutants or Scab Trappers using Brain Burst before they incapacitate you or an ally. +]-- руоф При угрозе «Ересь» или выше убейте Чумных гончих, Мутантов или Скабов-Ловушечников (25) «Взрывом разума», пока они не успели обезвредить вас или союзника.
 	--[+ Russian +]--
 	create_template("ach_class_psy_12_ext_desc_ru",
 		{"loc_achievement_psyker_2_hard_1_description"}, {"ru"},
@@ -2564,7 +2567,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_hard_1_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n在瘟疫獵犬、突變者或陷阱兵使你或隊友癱瘓前，\n擊殺他們，共計 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ Lucky BLow +]-- руоф Счастливый удар
+	--[+ Lucky BLow +]-- руоф Счастливый удар
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_ru",
 		{"loc_achievement_psyker_team_critical_hits_name"}, {"ru"},
@@ -2574,7 +2577,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_team_critical_hits_name"}, {"zh-tw"},
 			loc_text("幸運一擊")),
 
-		--[+ Critically strike 7500 enemies while under the effects of Prescience. Critical strikes made by any affected team member also count. +]-- руоф Нанесите врагам критические удары (7500), находясь под действием «Предвидения». Критические удары любого члена команды под действием эффекта тоже учитываются.
+	--[+ Critically strike 7500 enemies while under the effects of Prescience. Critical strikes made by any affected team member also count. +]-- руоф Нанесите врагам критические удары (7500), находясь под действием «Предвидения». Критические удары любого члена команды под действием эффекта тоже учитываются.
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_team_critical_hits_description"}, {"ru"},
@@ -2585,7 +2588,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_team_critical_hits_description"}, {"zh-tw"},
 			loc_text("在 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.prescience_rgb_tw.."』期間，對敵人造成 "..COLORS_Numbers.target_rgb.." 次致命一擊。\n隊友在此光環下造成的致命一擊也會計算。")),
 
-		--[+ Blessed by Fate +]-- руоф Хранимый судьбой
+	--[+ Blessed by Fate +]-- руоф Хранимый судьбой
 	--[+ Russian +]--
 	create_template("ach_class_psy_8_ext_ru",
 		{"loc_achievement_psyker_2_easy_2_name"}, {"ru"},
@@ -2595,7 +2598,7 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_easy_2_name"}, {"zh-tw"},
 			loc_text("命運保佑")),
 
-		--[+ Use Psykinetic's Wrath to survive Perils of the Warp 50 times. +]-- руоф Воспользуйтесь «Психокинетическим гневом» 50 р., чтобы не погибнуть от угозы варпа.
+	--[+ Use Psykinetic's Wrath to survive Perils of the Warp 50 times. +]-- руоф Воспользуйтесь «Психокинетическим гневом» 50 р., чтобы не погибнуть от угозы варпа.
 	--[+ Russian +]--
 	create_template("ach_class_psy_8_ext_desc_ru",
 		{"loc_achievement_psyker_2_easy_2_description"}, {"ru"},
@@ -2606,17 +2609,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_2_easy_2_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.psy_wrath_rgb_tw.."』或『"..COLORS_KW_Penances_tw.psy_wrath2_rgb_tw.."』技能，\n成功避免因『"..COLORS_KWords_tw.Peril_rgb_tw.."』超過『"..COLORS_Numbers.pc_100_rgb.."』而引發靈能爆炸。")),
 
-		--[+ Empyric Recovery +]-- руоф Эмпирическое восстановление
+	--[+ Empyric Recovery +]-- руоф Эмпирическое восстановление
 	--[+ Russian +]--
 	-- create_template("ach_class_psy_7_ext_ru",
 		-- {"loc_achievement_psyker_team_cooldown_reduced_name"}, {"ru"},
 			-- loc_text("Эмпирическое восстановление")),
 	--[+ Traditional Chinese 經驗恢復 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_team_cooldown_reduced_name"}, {"zh-tw"},
-			-- loc_text("經驗恢復")),
+	create_template("ach_class_psy_7_ext_tw",
+		{"loc_achievement_psyker_team_cooldown_reduced_name"}, {"zh-tw"},
+			loc_text("經驗恢復")),
 
-		--[+ Restore you or your allies' abilities a total of 2000 seconds faster, while under the effects of Seer's Presence. +]-- руоф Восстановите способности свои или союзников суммарно на 2000 с. быстрее, находясь под действием «Присутствия провидца».
+	--[+ Restore you or your allies' abilities a total of 2000 seconds faster, while under the effects of Seer's Presence. +]-- руоф Восстановите способности свои или союзников суммарно на 2000 с. быстрее, находясь под действием «Присутствия провидца».
 	--[+ Russian +]--
 	create_template("ach_class_psy_7_ext_desc_ru",
 		{"loc_achievement_psyker_team_cooldown_reduced_description"}, {"ru"},
@@ -2628,17 +2631,17 @@ local localization_templates = {
 		{"loc_achievement_psyker_team_cooldown_reduced_description"}, {"zh-tw"},
 			loc_text("透過 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.seerspres_rgb_tw.."』效果，\n為自己或隊友縮短技能冷卻時間達 "..COLORS_Numbers.target_rgb.." 秒。")),
 
-		--[+ Going Out With a Bang +]-- руоф Эффектный выход
+	--[+ Going Out With a Bang +]-- руоф Эффектный выход
 	--[+ Russian +]--
 	create_template("ach_red_psy_5_ext_ru",
 		{"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"}, {"ru"},
 			loc_text("Взрывной финал")),
 	--[+ Traditional Chinese 赫然死亡 +]--
-	-- create_template("ach_red_psy_5_ext_tw",
-		-- {"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"}, {"zh-tw"},
-			-- loc_text("赫然死亡")),
+	create_template("ach_red_psy_5_ext_tw",
+		{"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"}, {"zh-tw"},
+			loc_text("赫然死亡")),
 	
-		--[+ While on Malice Threat or higher, kill 1 elite enemies with a single Perils of the Warp explosion. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов (1) за однократное применение угрозы от взрыва варпа.
+	--[+ While on Malice Threat or higher, kill 1 elite enemies with a single Perils of the Warp explosion. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов (1) за однократное применение угрозы от взрыва варпа.
 	--[+ Russian +]--
 	create_template("ach_red_psy_5_ext_desc_ru",
 		{"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"}, {"ru"},
@@ -2658,7 +2661,7 @@ local localization_templates = {
 			loc_text(COLORS_KWords_tw.cls_ogr_rgb_tw)),
 
 	--[+ ПРОГРЕСС +]--
-		--[+ Beat-em-Up (1-3) +]-- руоф Всех порву/Бей их всех (1-3)
+	--[+ Beat-em-Up (1-3) +]-- руоф Всех порву/Бей их всех (1-3)
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_3_ext_ru",
 		-- {"loc_achievement_missions_ogryn_2_objective_3_name"}, {"ru"},
@@ -2668,7 +2671,7 @@ local localization_templates = {
 		-- {"loc_achievement_missions_ogryn_2_objective_3_name"}, {"zh-tw"},
 			-- loc_text("揍扁他們 (1-3)")),
 
-		--[+ As a Ogryn, complete a Mission of each type. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
+	--[+ As a Ogryn, complete a Mission of each type. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_3_1_ext_desc_ru",
 		{"loc_achievement_missions_ogryn_2_objective_1_description"}, {"ru"},
@@ -2679,7 +2682,7 @@ local localization_templates = {
 		{"loc_achievement_missions_ogryn_2_objective_1_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
 
-		--[+ As a Ogryn, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+	--[+ As a Ogryn, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_3_3_ext_desc_ru",
 		{"loc_achievement_missions_ogryn_2_objective_2_description"}, {"ru"},
@@ -2690,7 +2693,7 @@ local localization_templates = {
 		{"loc_achievement_missions_ogryn_2_objective_2_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
 
-		--[+ As a Ogryn, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
+	--[+ As a Ogryn, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_3_4_ext_desc_ru",
 		{"loc_achievement_missions_ogryn_2_objective_3_description"}, {"ru"},
@@ -2701,17 +2704,17 @@ local localization_templates = {
 		{"loc_achievement_missions_ogryn_2_objective_3_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。")),
 
-		--[+ Keep Them Grounded +]-- руоф Вали их!
+	--[+ Keep Them Grounded +]-- руоф Вали их!
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_8_ext_ru",
 		-- {"loc_achievement_ogryn_2_easy_2_name"}, {"ru"},
 			-- loc_text("Вали их!")),
 	--[+ Traditional Chinese 全部打倒 +]--
-	-- create_template("ach_class_ogr_8_ext_tw",
-		-- {"loc_achievement_ogryn_2_easy_2_name"}, {"zh-tw"},
-			-- loc_text("全部打倒")),
+	create_template("ach_class_ogr_8_ext_tw",
+		{"loc_achievement_ogryn_2_easy_2_name"}, {"zh-tw"},
+			loc_text("全部打倒")),
 
-		--[+ Knock Down 5000 enemies. +]-- руоф Сбейте с ног врагов 5000 р.
+	--[+ Knock Down 5000 enemies. +]-- руоф Сбейте с ног врагов 5000 р.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_8_ext_desc_ru",
 		{"loc_achievement_ogryn_2_easy_2_description"}, {"ru"},
@@ -2722,17 +2725,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_easy_2_description"}, {"zh-tw"},
 			loc_text("擊倒 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Keep Your Friends Close +]-- руоф Держи друзей близко
+	--[+ Keep Your Friends Close +]-- руоф Держи друзей близко
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_12_ext_ru",
 		-- {"loc_achievement_ogryn_2_hard_1_name"}, {"ru"},
 			-- loc_text("Держи друзей близко")),
 	--[+ Traditional Chinese 與朋友保持親密 +]--
-	-- create_template("ach_class_ogr_12_ext_tw",
-		-- {"loc_achievement_ogryn_2_hard_1_name"}, {"zh-tw"},
-			-- loc_text("與朋友保持親密")),
+	create_template("ach_class_ogr_12_ext_tw",
+		{"loc_achievement_ogryn_2_hard_1_name"}, {"zh-tw"},
+			loc_text("與朋友保持親密")),
 
-		--[+ On Heresy Threat or higher, complete 3 full Missions without any allies being Knocked Down or Incapacitated for longer than 10 seconds, and without any allies dying. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы ни один союзник не умер и не был сбит с ног или небоестрособен дольше 10 с.
+	--[+ On Heresy Threat or higher, complete 3 full Missions without any allies being Knocked Down or Incapacitated for longer than 10 seconds, and without any allies dying. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы ни один союзник не умер и не был сбит с ног или небоестрособен дольше 10 с.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_12_ext_desc_ru",
 		{"loc_achievement_ogryn_2_hard_1_description"}, {"ru"},
@@ -2743,7 +2746,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_hard_1_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，完整完成 "..COLORS_Numbers.target_rgb.." 場任務，\n且期間無任何隊友陣亡，或被擊倒超過 "..COLORS_Numbers.time_rgb.." 秒。")),
 
-		--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
+	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_4_ext_ru",
 		-- {"loc_missions_ogryn_2_easy_difficulty_1-5_name"}, {"ru"},
@@ -2753,7 +2756,7 @@ local localization_templates = {
 		-- {"loc_missions_ogryn_2_easy_difficulty_1-5_name"}, {"zh-tw"},
 			-- loc_text("證明你的價值 (1-5)")),
 
-		--[+ Complete 1 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
+	--[+ Complete 1 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_4_1_ext_desc_ru",
 		{"loc_missions_ogryn_2_easy_difficulty_1_description"}, {"ru"},
@@ -2764,7 +2767,7 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_easy_difficulty_1_description"}, {"zh-tw"},
 			loc_text(complete_1_mission_on_sedition_threat_tw)),
 
-		--[+ Complete 1 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Восстание» или выше.
+	--[+ Complete 1 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Восстание» или выше.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_4_2_ext_desc_ru",
 		{"loc_missions_ogryn_2_easy_difficulty_2_description"}, {"ru"},
@@ -2775,7 +2778,7 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_easy_difficulty_2_description"}, {"zh-tw"},
 			loc_text(complete_1_mission_on_uprising_threat_tw)),
 
-		--[+ Complete 1 Missions on Malice Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Злоба» или выше.
+	--[+ Complete 1 Missions on Malice Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Злоба» или выше.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_4_3_ext_desc_ru",
 		{"loc_missions_ogryn_2_easy_difficulty_3_description"}, {"ru"},
@@ -2786,7 +2789,7 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_easy_difficulty_3_description"}, {"zh-tw"},
 			loc_text(complete_1_mission_on_malice_threat_tw)), 
 
-		--[+ Complete 1 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Ересь» или выше.
+	--[+ Complete 1 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Ересь» или выше.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_4_4_ext_desc_ru",
 		{"loc_missions_ogryn_2_easy_difficulty_4_description"}, {"ru"},
@@ -2797,7 +2800,7 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_easy_difficulty_4_description"}, {"zh-tw"},
 			loc_text(complete_1_mission_on_heresy_threat_tw)),
 
-		--[+ Complete 1 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
+	--[+ Complete 1 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_4_5_ext_desc_ru",
 		{"loc_missions_ogryn_2_easy_difficulty_5_description"}, {"ru"},
@@ -2808,17 +2811,17 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_easy_difficulty_5_description"}, {"zh-tw"},
 			loc_text(complete_1_mission_on_damnation_threat_tw)),
 
-		--[+ Friends Will be Friends +]-- руоф Друзья останутся друзьями
+	--[+ Friends Will be Friends +]-- руоф Друзья останутся друзьями
 	--[+ Russian +]--
 	-- create_template("ach_red_ogr_4_ext_ru",
 		-- {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_name"}, {"ru"},
 			-- loc_text("Друзья останутся друзьями")),
 	--[+ Traditional Chinese 朋友永遠是朋友 +]--
-	-- create_template("ach_red_ogr_4_ext_tw",
-		-- {"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_name"}, {"zh-tw"},
-			-- loc_text("朋友永遠是朋友")),
+	create_template("ach_red_ogr_4_ext_tw",
+		{"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_name"}, {"zh-tw"},
+			loc_text("朋友永遠是朋友")),
 
-		--[+ Stay in Conherency with a living teammate at all times during a full Mission on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше постоянно оставайтесь под эффектом «Сплоченность» с живым товарищем по команде во время задания.
+	--[+ Stay in Conherency with a living teammate at all times during a full Mission on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше постоянно оставайтесь под эффектом «Сплоченность» с живым товарищем по команде во время задания.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_4_ext_desc_ru",
 		{"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"}, {"ru"},
@@ -2829,14 +2832,14 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n整場任務期間始終與至少一名存活隊友保持在『"..COLORS_KWords_tw.Coherency_rgb_tw.."』範圍內。")),
 
-		--[+ Bone 'ead (1-3) +]-- руоф Костяная башка (1-3)
+	--[+ Bone 'ead (1-3) +]-- руоф Костяная башка (1-3)
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_14_ext_ru",
 		-- {"loc_achievement_group_class_ogryn_2_1-3_name"}, {"ru"},
 			-- loc_text("Костагаловый (1-3)")),
 	--[+ Traditional Chinese 骨頭骨腦 (1-3) +]--
 
-		--[+ Complete the following Penances as the Ogryn. +]-- руоф Выполните следующие искупления за Огрина.
+	--[+ Complete the following Penances as the Ogryn. +]-- руоф Выполните следующие искупления за Огрина.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_8_ext_desc_ru",
 		{"loc_group_class_challenges_ogryn_2_x_description", "loc_achievement_group_class_ogryn_2_description", "loc_group_ogryn_2_rank_4_difficulty_3_description", "loc_group_ogryn_2_rank_5_difficulty_4_description", "loc_group_ogryn_2_rank_1_difficulty_1_description", "loc_group_ogryn_2_rank_2_difficulty_2_description"}, {"ru"},
@@ -2847,15 +2850,65 @@ local localization_templates = {
 		{"loc_achievement_group_class_ogryn_2_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成以下苦修。")),
 
-		--[+ Got a Bone to Pick (1-6) +]-- руоф Крепкий орешек (1-6)
+	--[+ Got a Bone to Pick (1) +]-- руоф Крепкий орешек (1)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_1_ext_ru",
+		-- {"loc_achievement_rank_ogryn_2_1_name"}, {"ru"},
+			-- loc_text("Мститель (1)")),
+	--[+ Traditional Chinese 撿塊骨頭 +]--
+	create_template("ach_class_ogr_1_ext_tw",
+		{"loc_achievement_rank_ogryn_2_1_name"}, {"zh-tw"},
+			loc_text("撿塊骨頭 (1)")),
+
+	--[+ Got a Bone to Pick (2) +]-- руоф Крепкий орешек (2)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_1_ext_ru",
+		-- {"loc_achievement_rank_ogryn_2_2_name"}, {"ru"},
+			-- loc_text("Мститель (2)")),
+	--[+ Traditional Chinese 撿塊骨頭 +]--
+	create_template("ach_class_ogr_1_ext_tw",
+		{"loc_achievement_rank_ogryn_2_2_name"}, {"zh-tw"},
+			loc_text("撿塊骨頭 (2)")),
+
+	--[+ Got a Bone to Pick (3) +]-- руоф Крепкий орешек (3)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_1_ext_ru",
+		-- {"loc_achievement_rank_ogryn_2_3_name"}, {"ru"},
+			-- loc_text("Мститель (3)")),
+	--[+ Traditional Chinese 撿塊骨頭 +]--
+	create_template("ach_class_ogr_1_ext_tw",
+		{"loc_achievement_rank_ogryn_2_3_name"}, {"zh-tw"},
+			loc_text("撿塊骨頭 (3)")),
+			
+	--[+ Got a Bone to Pick (4) +]-- руоф Крепкий орешек (4)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_1_ext_ru",
+		-- {"loc_achievement_rank_ogryn_2_4_name"}, {"ru"},
+			-- loc_text("Мститель (4)")),
+	--[+ Traditional Chinese 撿塊骨頭 +]--
+	create_template("ach_class_ogr_1_ext_tw",
+		{"loc_achievement_rank_ogryn_2_4_name"}, {"zh-tw"},
+			loc_text("撿塊骨頭 (4)")),
+	
+	--[+ Got a Bone to Pick (5) +]-- руоф Крепкий орешек (5)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_1_ext_ru",
+		-- {"loc_achievement_rank_ogryn_2_5_name"}, {"ru"},
+			-- loc_text("Мститель (5)")),
+	--[+ Traditional Chinese 撿塊骨頭 +]--
+	create_template("ach_class_ogr_1_ext_tw",
+		{"loc_achievement_rank_ogryn_2_5_name"}, {"zh-tw"},
+			loc_text("撿塊骨頭 (5)")),
+
+	--[+ Got a Bone to Pick (6) +]-- руоф Крепкий орешек (6)
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_1_ext_ru",
 		-- {"loc_achievement_rank_ogryn_2_6_name"}, {"ru"},
-			-- loc_text("Мститель (1-6)")),
+			-- loc_text("Мститель (6)")),
 	--[+ Traditional Chinese 撿塊骨頭 +]--
-	-- create_template("ach_class_ogr_1_ext_tw",
-		-- {"loc_achievement_rank_ogryn_2_6_name"}, {"zh-tw"},
-			-- loc_text("撿塊骨頭")),
+	create_template("ach_class_ogr_1_ext_tw",
+		{"loc_achievement_rank_ogryn_2_6_name"}, {"zh-tw"},
+			loc_text("撿塊骨頭 (6)")),
 
 		--[+ Reach Trust Level 30 as a Ogryn. +]-- руоф Получить уровень доверия 30, играя за Огрина.
 	--[+ Russian +]--
@@ -2868,17 +2921,57 @@ local localization_templates = {
 		{"loc_achievement_rank_ogryn_2_x_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
 
-		--[+ Built Like a Tank (1-5) +]-- руоф Настоящий танк (1-5)
+	--[+ Built Like a Tank (1) +]-- руоф Настоящий танк (1)
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_2_ext_ru",
-		-- {"loc_achievement_missions_ogryn_2_1-5_name"}, {"ru"},
-			-- loc_text("Крепкий как танк (1-5)")),
-	--[+ Traditional Chinese 如坦克一般 +]--
-	-- create_template("ach_class_ogr_2_ext_tw",
-		-- {"loc_achievement_missions_ogryn_2_1-5_name"}, {"zh-tw"},
-			-- loc_text("如坦克一般 (1-5)")),
+		-- {"loc_achievement_missions_ogryn_2_1_name"}, {"ru"},
+			-- loc_text("Крепкий как танк (1)")),
+	--[+ Traditional Chinese 如坦克一般 (1) +]--
+	create_template("ach_class_ogr_2_ext_tw",
+		{"loc_achievement_missions_ogryn_2_1_name"}, {"zh-tw"},
+			loc_text("如坦克一般 (1)")),
 
-		--[+ Complete 100 Missions as a Ogryn. +]-- руоф Выполнить Огрином задания: 100.
+	--[+ Built Like a Tank (2) +]-- руоф Настоящий танк (2)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_2_ext_ru",
+		-- {"loc_achievement_missions_ogryn_2_2_name"}, {"ru"},
+			-- loc_text("Крепкий как танк (2)")),
+	--[+ Traditional Chinese 如坦克一般 (2) +]--
+	create_template("ach_class_ogr_2_ext_tw",
+		{"loc_achievement_missions_ogryn_2_2_name"}, {"zh-tw"},
+			loc_text("如坦克一般 (2)")),
+
+	--[+ Built Like a Tank (3) +]-- руоф Настоящий танк (3)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_2_ext_ru",
+		-- {"loc_achievement_missions_ogryn_2_3_name"}, {"ru"},
+			-- loc_text("Крепкий как танк (3)")),
+	--[+ Traditional Chinese 如坦克一般 (3) +]--
+	create_template("ach_class_ogr_2_ext_tw",
+		{"loc_achievement_missions_ogryn_2_3_name"}, {"zh-tw"},
+			loc_text("如坦克一般 (3)")),
+
+	--[+ Built Like a Tank (4) +]-- руоф Настоящий танк (4)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_2_ext_ru",
+		-- {"loc_achievement_missions_ogryn_2_4_name"}, {"ru"},
+			-- loc_text("Крепкий как танк (4)")),
+	--[+ Traditional Chinese 如坦克一般 (4) +]--
+	create_template("ach_class_ogr_2_ext_tw",
+		{"loc_achievement_missions_ogryn_2_4_name"}, {"zh-tw"},
+			loc_text("如坦克一般 (4)")),
+
+	--[+ Built Like a Tank (5) +]-- руоф Настоящий танк (5)
+	--[+ Russian +]--
+	-- create_template("ach_class_ogr_2_ext_ru",
+		-- {"loc_achievement_missions_ogryn_2_5_name"}, {"ru"},
+			-- loc_text("Крепкий как танк (5)")),
+	--[+ Traditional Chinese 如坦克一般 (5) +]--
+	create_template("ach_class_ogr_2_ext_tw",
+		{"loc_achievement_missions_ogryn_2_5_name"}, {"zh-tw"},
+			loc_text("如坦克一般 (5)")),
+
+	--[+ Complete 100 Missions as a Ogryn. +]-- руоф Выполнить Огрином задания: 100.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_2_ext_desc_ru",
 		{"loc_achievement_missions_ogryn_2_x_description"}, {"ru"},
@@ -2889,17 +2982,17 @@ local localization_templates = {
 		{"loc_achievement_missions_ogryn_2_x_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
-		--[+ Cleave Them Down +]-- руоф Порви их!
+	--[+ Cleave Them Down +]-- руоф Порви их!
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_12_ext_ru",
 		-- {"loc_achievement_ogryn_2_medium_2_name"}, {"ru"},
 			-- loc_text("Рассеки их")),
 	--[+ Traditional Chinese 砍翻他們 +]--
-	-- create_template("ach_class_ogr_12_ext_tw",
-		-- {"loc_achievement_ogryn_2_medium_2_name"}, {"zh-tw"},
-			-- loc_text("砍翻他們")),
+	create_template("ach_class_ogr_12_ext_tw",
+		{"loc_achievement_ogryn_2_medium_2_name"}, {"zh-tw"},
+			loc_text("砍翻他們")),
 
-		--[+ On Malice Threat or higher, kill 2 enemies with a single Melee Attack 250 times. +]-- руоф При угрозе «Злоба» или выше 250 р. убейте врагов (2) одной атакой ближнего бой.
+	--[+ On Malice Threat or higher, kill 2 enemies with a single Melee Attack 250 times. +]-- руоф При угрозе «Злоба» или выше 250 р. убейте врагов (2) одной атакой ближнего бой.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_12_ext_desc_ru",
 		{"loc_achievement_ogryn_2_medium_2_description"}, {"ru"},
@@ -2910,17 +3003,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_medium_2_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n單次近戰攻擊擊殺 "..COLORS_Numbers.amount_var_rgb.." 名敵人，共達成 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ Help Everyone +]-- руоф Спаси всех
+	--[+ Help Everyone +]-- руоф Спаси всех
 	--[+ Russian +]--
 	create_template("ach_class_ogr_7_ext_ru",
 		{"loc_achievement_ogryn_2_easy_1_name"}, {"ru"},
 			loc_text("Помогай всем")),
 	--[+ Traditional Chinese 樂於助人 +]--
-	-- create_template("ach_class_ogr_7_ext_tw",
-		-- {"loc_achievement_ogryn_2_easy_1_name"}, {"zh-tw"},
-			-- loc_text("樂於助人")),
+	create_template("ach_class_ogr_7_ext_tw",
+		{"loc_achievement_ogryn_2_easy_1_name"}, {"zh-tw"},
+			loc_text("樂於助人")),
 
-		--[+ Revive or Assist 40 Knocked Down or Incapacitated allies. +]-- руоф Воскресите небоеспособных союзников или помогите союзникам, сбитым с ног, 40 р.
+	--[+ Revive or Assist 40 Knocked Down or Incapacitated allies. +]-- руоф Воскресите небоеспособных союзников или помогите союзникам, сбитым с ног, 40 р.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_7_ext_desc_ru",
 		{"loc_achievement_ogryn_2_easy_1_description"}, {"ru"},
@@ -2931,17 +3024,57 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_easy_1_description"}, {"zh-tw"},
 			loc_text("救起或復活 "..COLORS_Numbers.target_rgb.." 名被擊倒或癱瘓的隊友。")),
 
-		--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5)
+	--[+ Fight the Good Fight (1) +]-- руоф Сражайся достойно (1)
 	--[+ Russian +]--
 	-- create_template("ach_red_ogr_1_ext_ru",
-		-- {"loc_missions_ogryn_2_medium_difficulty_1-5_name"}, {"ru"},
-			-- loc_text("Сражайся достойно (1-5)")),
-	--[+ Traditional Chinese 為正義而戰 +]--
-	-- create_template("ach_red_ogr_1_ext_tw",
-		-- {"loc_missions_ogryn_2_medium_difficulty_1-5_name"}, {"zh-tw"},
-			-- loc_text("為正義而戰 (1-5)")),
+		-- {"loc_missions_ogryn_2_medium_difficulty_1_name"}, {"ru"},
+			-- loc_text("Сражайся достойно (1)")),
+	--[+ Traditional Chinese 為正義而戰 (1) +]--
+	create_template("ach_red_ogr_1_ext_tw",
+		{"loc_missions_ogryn_2_medium_difficulty_1_name"}, {"zh-tw"},
+			loc_text("為正義而戰 (1)")),
 
-		--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
+	--[+ Fight the Good Fight (2) +]-- руоф Сражайся достойно (2)
+	--[+ Russian +]--
+	-- create_template("ach_red_ogr_1_ext_ru",
+		-- {"loc_missions_ogryn_2_medium_difficulty_2_name"}, {"ru"},
+			-- loc_text("Сражайся достойно (2)")),
+	--[+ Traditional Chinese 為正義而戰 (2) +]--
+	create_template("ach_red_ogr_1_ext_tw",
+		{"loc_missions_ogryn_2_medium_difficulty_2_name"}, {"zh-tw"},
+			loc_text("為正義而戰 (2)")),
+	
+	--[+ Fight the Good Fight (3) +]-- руоф Сражайся достойно (3)
+	--[+ Russian +]--
+	-- create_template("ach_red_ogr_1_ext_ru",
+		-- {"loc_missions_ogryn_2_medium_difficulty_3_name"}, {"ru"},
+			-- loc_text("Сражайся достойно (3)")),
+	--[+ Traditional Chinese 為正義而戰 (3) +]--
+	create_template("ach_red_ogr_1_ext_tw",
+		{"loc_missions_ogryn_2_medium_difficulty_3_name"}, {"zh-tw"},
+			loc_text("為正義而戰 (3)")),
+
+	--[+ Fight the Good Fight (4) +]-- руоф Сражайся достойно (4)
+	--[+ Russian +]--
+	-- create_template("ach_red_ogr_1_ext_ru",	
+		-- {"loc_missions_ogryn_2_medium_difficulty_4_name"}, {"ru"},
+			-- loc_text("Сражайся достойно (4)")),
+	--[+ Traditional Chinese 為正義而戰 (4) +]--
+	create_template("ach_red_ogr_1_ext_tw",
+		{"loc_missions_ogryn_2_medium_difficulty_4_name"}, {"zh-tw"},
+			loc_text("為正義而戰 (4)")),
+
+	----[+ Fight the Good Fight (5) +]-- руоф Сражайся достойно (5)
+	--[+ Russian +]--
+	-- create_template("ach_red_ogr_1_ext_ru",
+		-- {"loc_missions_ogryn_2_medium_difficulty_5_name"}, {"ru"},
+			-- loc_text("Сражайся достойно (5)")),
+	--[+ Traditional Chinese 為正義而戰 (5) +]--
+	create_template("ach_red_ogr_1_ext_tw",
+		{"loc_missions_ogryn_2_medium_difficulty_5_name"}, {"zh-tw"},
+			loc_text("為正義而戰 (5)")),
+
+	--[+ Complete 5 Missions on Sedition Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Мятеж» или выше.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_1_1_ext_desc_ru",
 		{"loc_missions_ogryn_2_medium_difficulty_1_description"}, {"ru"},
@@ -2952,7 +3085,7 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_medium_difficulty_1_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
-		--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
+	--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_1_2_ext_desc_ru",
 		{"loc_missions_ogryn_2_medium_difficulty_2_description"}, {"ru"},
@@ -2963,7 +3096,7 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_medium_difficulty_2_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
-		--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
+	--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_1_3_ext_desc_ru",
 		{"loc_missions_ogryn_2_medium_difficulty_3_description"}, {"ru"},
@@ -2974,7 +3107,7 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_medium_difficulty_3_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
-		--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
+	--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_1_4_ext_desc_ru",
 		{"loc_missions_ogryn_2_medium_difficulty_4_description"}, {"ru"},
@@ -2985,7 +3118,7 @@ local localization_templates = {
 		{"loc_missions_ogryn_2_medium_difficulty_4_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
-		--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
+	--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_1_5_ext_desc_ru",
 		{"loc_missions_ogryn_2_medium_difficulty_5_description"}, {"ru"},
@@ -3003,11 +3136,11 @@ local localization_templates = {
 		-- {"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"ru"},
 			-- loc_text("Благосклонность Муниторума")),
 	--[+ Traditional Chinese 軍務部的恩賜 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"zh-tw"},
-			-- loc_text("軍務部的恩賜")),	
+	create_template("ach_class_ogr_11_ext_tw",
+		{"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"zh-tw"},
+			loc_text("軍務部的恩賜")),	
 
-		--[+ Shoot 4500 free rounds of ammo, courtesy of the Burst Limiter Override. +]-- руоф Стреляйте бесплатными боеприпасами (4500) благодаря «Взлому отсечки очереди».
+	--[+ Shoot 4500 free rounds of ammo, courtesy of the Burst Limiter Override. +]-- руоф Стреляйте бесплатными боеприпасами (4500) благодаря «Взлому отсечки очереди».
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_leadbelcher_free_shot_description"}, {"ru"},
@@ -3018,17 +3151,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_leadbelcher_free_shot_description"}, {"zh-tw"},
 			loc_text("射出 "..COLORS_Numbers.target_rgb.." 發由 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.burstlimo_rgb_tw.."』所獲得的免費子彈。")),
 
-		--[+ Be Your Best +]-- руоф Будь лучшим
+	--[+ Be Your Best +]-- руоф Будь лучшим
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_13_ext_ru",
 		-- {"loc_achievement_ogryn_2_hard_2_name"}, {"ru"},
 			-- loc_text("Будь лучшим")),
 	--[+ Traditional Chinese 盡力而為 +]--
-	-- create_template("ach_class_ogr_13_ext_tw",
-		-- {"loc_achievement_ogryn_2_hard_2_name"}, {"zh-tw"},
-			-- loc_text("盡力而為")),
+	create_template("ach_class_ogr_13_ext_tw",
+		{"loc_achievement_ogryn_2_hard_2_name"}, {"zh-tw"},
+			loc_text("盡力而為")),
 
-		--[+ On Heresy Threat or higher, hit 4 consecutive Elite or Specialist enemies with Big Boxes of Hurt, without missing. Do this 5 times. +]-- руоф При угрозе «Ересь» или выше попадите по элитным врагам или специалистам х4 подряд «Ящиком, полным боли", ни разу не промахиваясь. Повторите 5 р.
+	--[+ On Heresy Threat or higher, hit 4 consecutive Elite or Specialist enemies with Big Boxes of Hurt, without missing. Do this 5 times. +]-- руоф При угрозе «Ересь» или выше попадите по элитным врагам или специалистам х4 подряд «Ящиком, полным боли", ни разу не промахиваясь. Повторите 5 р.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_13_ext_desc_ru",
 		{"loc_achievement_ogryn_2_hard_2_description"}, {"ru"},
@@ -3039,17 +3172,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_hard_2_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.big_box_rgb_tw.."』或『"..COLORS_KW_Penances_tw.big_box2_rgb_tw.."』，\n連續成功命中 "..COLORS_Numbers.amount_var_rgb.." 名精英或專家敵人。需達成 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ Loyal Protector +]-- руоф Верный защитник
+	--[+ Loyal Protector +]-- руоф Верный защитник
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_11_ext_ru",
 		-- {"loc_achievement_ogryn_team_toughness_restored_aura_name"}, {"ru"},
 			-- loc_text("Верный защитник")),
 	--[+ Traditional Chinese 忠誠守衛 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_team_toughness_restored_aura_name"}, {"zh-tw"},
-			-- loc_text("忠誠守衛")),
+	create_template("ach_class_ogr_11_ext_tw",
+		{"loc_achievement_ogryn_team_toughness_restored_aura_name"}, {"zh-tw"},
+			loc_text("忠誠守衛")),
 
-		--[+ Restore a total of 15000 Toughness to you or allies in coherency with Stay Close. +]-- руоф Восстановите стойкость свою или союзников под действием «Сплоченности» (суммарно 15000) с помощью «Держись рядом».
+	--[+ Restore a total of 15000 Toughness to you or allies in coherency with Stay Close. +]-- руоф Восстановите стойкость свою или союзников под действием «Сплоченности» (суммарно 15000) с помощью «Держись рядом».
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_team_toughness_restored_aura_description"}, {"ru"},
@@ -3060,17 +3193,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_team_toughness_restored_aura_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.stayclose_rgb_tw.."』效果，\n為自己或處於『"..COLORS_KWords_tw.Coherency_rgb_tw.."』範圍內的隊友，\n恢復累計 "..COLORS_Numbers.target_rgb.." 點『"..COLORS_KWords_tw.Toughness_rgb_tw.."』。")),
 
-		--[+ Pick on Someone Your Own Size +]-- руоф Выбирай по размеру
+	--[+ Pick on Someone Your Own Size +]-- руоф Выбирай по размеру
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_ru",
 		{"loc_achievement_ogryn_taunt_shout_hit_name"}, {"ru"},
 			loc_text("Выбери кого-то своего размера")),
 	--[+ Traditional Chinese 別欺負弱小 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_taunt_shout_hit_name"}, {"zh-tw"},
-			-- loc_text("別欺負弱小")),
+	create_template("ach_class_ogr_11_ext_tw",
+		{"loc_achievement_ogryn_taunt_shout_hit_name"}, {"zh-tw"},
+			loc_text("別欺負弱小")),
 
-		--[+ Taunt 1000 Specialist or Elite enemies using Loyal Protector. +]-- руоф Спровоцируйте особых или элитных врагов (1000) с помощью «Верного защитника».
+	--[+ Taunt 1000 Specialist or Elite enemies using Loyal Protector. +]-- руоф Спровоцируйте особых или элитных врагов (1000) с помощью «Верного защитника».
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_taunt_shout_hit_description"}, {"ru"},
@@ -3081,17 +3214,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_taunt_shout_hit_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.loyalprot_rgb_tw.."』嘲諷，\n吸引 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
 
-		--[+ Gone Bowling +]-- руоф Играю в боулинг
+	--[+ Gone Bowling +]-- руоф Играю в боулинг
 	--[+ Russian +]--
 	-- create_template("ach_red_ogr_5_ext_ru",
 		-- {"loc_achievement_ogryn_2_bull_rushed_100_enemies_name"}, {"ru"},
 			-- loc_text("Играю в боулинг")),
 	--[+ Traditional Chinese 全中 +]--
-	-- create_template("ach_red_ogr_5_ext_tw",
-		-- {"loc_achievement_ogryn_2_bull_rushed_100_enemies_name"}, {"zh-tw"},
-			-- loc_text("全中")),
+	create_template("ach_red_ogr_5_ext_tw",
+		{"loc_achievement_ogryn_2_bull_rushed_100_enemies_name"}, {"zh-tw"},
+			loc_text("全中")),
 
-		--[+ Knock down 60 enemies with a single Bull Rush on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше сбейте с ног одним зарядом «Бычьего натиска» врагов: 60.
+	--[+ Knock down 60 enemies with a single Bull Rush on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше сбейте с ног одним зарядом «Бычьего натиска» врагов: 60.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_5_ext_desc_ru",
 		{"loc_achievement_ogryn_2_bull_rushed_100_enemies_description"}, {"ru"},
@@ -3102,17 +3235,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_bull_rushed_100_enemies_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
+	--[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
 	--[+ Russian +]--
 	-- create_template("ach_red_ogr_6_ext_ru",
 		-- {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"}, {"ru"},
 			-- loc_text("Меня не остановить!")),
 	--[+ Traditional Chinese 別讓我停下 +]--
-	-- create_template("ach_red_ogr_6_ext_tw",
-		-- {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"}, {"zh-tw"},
-			-- loc_text("別讓我停下")),
+	create_template("ach_red_ogr_6_ext_tw",
+		{"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"}, {"zh-tw"},
+			loc_text("別讓我停下")),
 
-		--[+ Move 40 metres with Bull Rush in under 20s on Heresy Threat or higher. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше переместитесь на 40 м с помощью «Бычьего натиска» менее чем за 20 с.
+	--[+ Move 40 metres with Bull Rush in under 20s on Heresy Threat or higher. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше переместитесь на 40 м с помощью «Бычьего натиска» менее чем за 20 с.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_6_ext_desc_ru",
 		{"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_description"}, {"ru"},
@@ -3123,17 +3256,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n於 "..COLORS_Numbers.time_wind_rgb.." 秒內，使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』技能移動累計 "..COLORS_Numbers.target_rgb.." 公尺。" ..TALENTS_Enh_desc_penances_tw.ED_Dont_stop_me_now_rgb_tw)),
 
-		--[+ Can't Catch Me! +]-- руоф Меня не поймать
+	--[+ Can't Catch Me! +]-- руоф Меня не поймать
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_ru",
 		{"loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"}, {"ru"},
 			loc_text("Меня не поймать!")),
 	--[+ Traditional Chinese 抓不到我！ +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"}, {"zh-tw"},
-			-- loc_text("抓不到我！")),
+	create_template("ach_class_ogr_11_ext_tw",
+		{"loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"}, {"zh-tw"},
+			loc_text("抓不到我！")),
 
-		--[+ Kill 2500 enemies while at 7 stacks or higher of Feel No Pain. +]-- руоф Убейте врагов (2500), сохраняя не менее 7 ед. заряда «Неболита».
+	--[+ Kill 2500 enemies while at 7 stacks or higher of Feel No Pain. +]-- руоф Убейте врагов (2500), сохраняя не менее 7 ед. заряда «Неболита».
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_feel_no_pain_kills_at_max_description"}, {"ru"},
@@ -3144,7 +3277,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_feel_no_pain_kills_at_max_description"}, {"zh-tw"},
 			loc_text("在擁有不少於 "..COLORS_Numbers.n_7_rgb.." 層"..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.feelnop_rgb_tw.."』效果時，擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Eat This! +]-- руоф Получи!
+	--[+ Eat This! +]-- руоф Получи!
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_ru",
 		{"loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"}, {"ru"},
@@ -3154,7 +3287,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"}, {"zh-tw"},
 			loc_text("嚐嚐這個！")),
 
-		--[+ Kill 75 Specialists or Elites with the Big Friendly Rock. +]-- руоф Убейте особых или элитных врагов (75) с помощью «Большого дружелюбного валуна».
+	--[+ Kill 75 Specialists or Elites with the Big Friendly Rock. +]-- руоф Убейте особых или элитных врагов (75) с помощью «Большого дружелюбного валуна».
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_grenade_rock_elites_or_specialists_description"}, {"ru"},
@@ -3165,14 +3298,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_grenade_rock_elites_or_specialists_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bigfriendro_rgb_tw.."』擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
 
-		--[+ Pile On +]-- руоф Навались
+	--[+ Pile On +]-- руоф Навались
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_11_ext_ru",
 		-- {"loc_achievement_ogryn_team_heavy_aura_kills_name"}, {"ru"},
 			-- loc_text("Навались")),
 	--[+ Traditional Chinese 堆起來 +]--
+	create_template("ach_class_ogr_11_ext_tw",
+		{"loc_achievement_ogryn_team_heavy_aura_kills_name"}, {"zh-tw"},
+			loc_text("堆起來")),
 
-		--[+ Kill 5000 enemies with Heavy Attacks while under the effect of Bonebreaker's Aura. Heavy Attack kills made by your team members also count. +]-- руоф Убейте врагов (5000) мощными атаками, находясь под действием «Ауры костолома». Если члены команды убивают мощными атаками, это тоже учитывается.
+	--[+ Kill 5000 enemies with Heavy Attacks while under the effect of Bonebreaker's Aura. Heavy Attack kills made by your team members also count. +]-- руоф Убейте врагов (5000) мощными атаками, находясь под действием «Ауры костолома». Если члены команды убивают мощными атаками, это тоже учитывается.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_team_heavy_aura_kills_description"}, {"ru"},
@@ -3183,7 +3319,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_team_heavy_aura_kills_description"}, {"zh-tw"},
 			loc_text("在 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bonebraura_rgb_tw.."』效果內，\n以蓄力攻擊擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。\n隊友的蓄力擊殺也會計算。")),
 
-		--[+ Sustained Fire +]-- руоф Непрерывный огонь
+	--[+ Sustained Fire +]-- руоф Непрерывный огонь
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_ru",
 		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_name"}, {"ru"},
@@ -3193,7 +3329,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_name"}, {"zh-tw"},
 			loc_text("猛攻")),
 
-		--[+ Kill 5000 enemies with heavy attacks, while maintaining 5 stacks of Heavy Hitter. +]-- руоф Убейте врагов (5000) мощными атаками, удерживая 5 зарядов «Тяжеловеса».
+	--[+ Kill 5000 enemies with heavy attacks, while maintaining 5 stacks of Heavy Hitter. +]-- руоф Убейте врагов (5000) мощными атаками, удерживая 5 зарядов «Тяжеловеса».
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"ru"},
@@ -3205,7 +3341,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"zh-tw"},
 			loc_text("在維持 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.heavyhitter_rgb_tw.."』達到 "..COLORS_Numbers.n_5_rgb.." 層的狀態下，使用蓄力攻擊擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Clear the Path +]-- руоф Расчисти путь
+	--[+ Clear the Path +]-- руоф Расчисти путь
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_11_ext_ru",
 		-- {"loc_achievement_ogryn_2_medium_1_name"}, {"ru"},
@@ -3215,7 +3351,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_medium_1_name"}, {"zh-tw"},
 			loc_text("掃清道路")),
 
-		--[+ On Malice Threat or higher, knock down 3 Ranged enemies using Bull Rush, 25 times. +]-- руоф При угрозе «Злоба» или выше сбейте с ног врагов (3) с дистанционной атакой с помощью «Бычьего натиска» 25 р.
+	--[+ On Malice Threat or higher, knock down 3 Ranged enemies using Bull Rush, 25 times. +]-- руоф При угрозе «Злоба» или выше сбейте с ног врагов (3) с дистанционной атакой с помощью «Бычьего натиска» 25 р.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_2_medium_1_description"}, {"ru"},
@@ -3226,17 +3362,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_medium_1_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n擊倒 "..COLORS_Numbers.num_enemies_rgb.." 名持遠程武器的敵人 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ Crowd Control +]-- руоф Сдерживание толпы
+	--[+ Crowd Control +]-- руоф Сдерживание толпы
 	--[+ Russian +]--
 	-- create_template("ach_class_ogr_11_ext_ru",
 		-- {"loc_achievement_ogryn_grenade_frag_group_of_enemies_name"}, {"ru"},
 			-- loc_text("Сдерживание толпы")),
 	--[+ Traditional Chinese 群體控制 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_grenade_frag_group_of_enemies_name"}, {"zh-tw"},
-			-- loc_text("群體控制")),
+	create_template("ach_class_ogr_11_ext_tw",
+		{"loc_achievement_ogryn_grenade_frag_group_of_enemies_name"}, {"zh-tw"},
+			loc_text("群體控制")),
 
-		--[+ With one Frag Bomb kill 25 enemies, 25 times. +]-- руоф Убейте врагов (25) одной «Осколочной бомбой» 25 р.
+	--[+ With one Frag Bomb kill 25 enemies, 25 times. +]-- руоф Убейте врагов (25) одной «Осколочной бомбой» 25 р.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_grenade_frag_group_of_enemies_description"}, {"ru"},
@@ -3247,17 +3383,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_grenade_frag_group_of_enemies_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.fragbomb_rgb_tw.."』，單次擊殺 "..COLORS_Numbers.amount_var_rgb.." 名敵人。\n共需達成 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ Spray and Pray (To the Emperor) +]-- руоф Стреляй и восхваляй (Императора)
+	--[+ Spray and Pray (To the Emperor) +]-- руоф Стреляй и восхваляй (Императора)
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_ru",
 		{"loc_achievement_ogryn_kills_during_barrage_threshold_name"}, {"ru"},
 			loc_text("Стреляй и молись (Императору)")),
 	--[+ Traditional Chinese 掃射，然後向帝皇祈禱吧 +]--
-	-- create_template("ach_class_ogr_11_ext_tw",
-		-- {"loc_achievement_ogryn_kills_during_barrage_threshold_name"}, {"zh-tw"},
-			-- loc_text("掃射，然後向帝皇祈禱吧")),
+	create_template("ach_class_ogr_11_ext_tw",
+		{"loc_achievement_ogryn_kills_during_barrage_threshold_name"}, {"zh-tw"},
+			loc_text("掃射，然後向帝皇祈禱吧")),
 
-		--[+ Kill 25 enemies, 50 times, during a single activation of Point-Blank Barrage. +]-- руоф Убейте врагов (25) 50 р. во время однократной активации «Решительного натиска».
+	--[+ Kill 25 enemies, 50 times, during a single activation of Point-Blank Barrage. +]-- руоф Убейте врагов (25) 50 р. во время однократной активации «Решительного натиска».
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_kills_during_barrage_threshold_description"}, {"ru"},
@@ -3268,14 +3404,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_kills_during_barrage_threshold_description"}, {"zh-tw"},
 			loc_text("使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.pbbarrage_rgb_tw.."』一次擊殺 "..COLORS_Numbers.amount_var_rgb.." 名敵人。\n完成此目標共需達成 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ You Can't Hide from Us! +]-- руоф От нас не спрятаться!
+	--[+ You Can't Hide from Us! +]-- руоф От нас не спрятаться!
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_ru",
 		{"loc_achievement_ogryn_team_suppressed_aura_kills_name"}, {"ru"},
 			loc_text("Тебе от нас не спрятаться!")),
 	--[+ Traditional Chinese 你躲不掉的！ +]--
+	create_template("ach_class_ogr_11_ext_tw",
+		{"loc_achievement_ogryn_team_suppressed_aura_kills_name"}, {"zh-tw"},
+			loc_text("你躲不掉的！")),
 
-		--[+ Kill 7500 suppressed enemies while under the effect of Coward Culling. Kills made by any affected team member also count. +]-- руоф Убейте ослабленных врагов (7500), находясь под действием «Трусливые отбросы». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
+	--[+ Kill 7500 suppressed enemies while under the effect of Coward Culling. Kills made by any affected team member also count. +]-- руоф Убейте ослабленных врагов (7500), находясь под действием «Трусливые отбросы». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
 	--[+ Russian +]--
 	create_template("ach_class_ogr_11_ext_desc_ru",
 		{"loc_achievement_ogryn_team_suppressed_aura_kills_description"}, {"ru"},
@@ -3286,14 +3425,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_team_suppressed_aura_kills_description"}, {"zh-tw"},
 			loc_text("在 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.cowculaura_rgb_tw.."』效果內，擊殺 "..COLORS_Numbers.target_rgb.." 名被壓制的敵人。\n隊友在光環下所造成的擊殺同樣會被計算。")),
 
-		--[+ Something In Your Eye - У тебя что-то в глазу +]-- руоф Нечто в твоих глазах
+	--[+ Something In Your Eye - У тебя что-то в глазу +]-- руоф Нечто в твоих глазах
 	--[+ Russian +]--
 	create_template("ach_red_ogr_3_ext_ru",
 		{"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"}, {"ru"},
 			loc_text("У тебя что-то в глазу")),
 	--[+ Traditional Chinese 你眼睛裡有東西 +]--
+	create_template("ach_red_ogr_3_ext_tw",
+		{"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"}, {"zh-tw"},
+			loc_text("你眼睛裡有東西")),
 
-		--[+ Kill a Corruptor by hitting it in the eye with your grenade box. +]-- руоф Убейте осквернителя, попав ему в глаз гранатой.
+	--[+ Kill a Corruptor by hitting it in the eye with your grenade box. +]-- руоф Убейте осквернителя, попав ему в глаз гранатой.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_3_ext_desc_ru",
 		{"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"}, {"ru"},
@@ -3304,17 +3446,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"}, {"zh-tw"},
 			loc_text("用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.big_box_rgb_tw.."』直接擊中腐蝕者眼睛將其擊殺。" ..TALENTS_Enh_desc_penances_tw.ED_Something_in_your_eye_rgb_tw)),
 
-		--[+ Heavyweight Champion +]-- руоф Чемпион-тяжеловес
+	--[+ Heavyweight Champion +]-- руоф Чемпион-тяжеловес
 	--[+ Russian +]--
 	-- create_template("ach_red_ogr_7_ext_ru",
 		-- {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_name"}, {"ru"},
 			-- loc_text("Чемпион-тяжеловес")),
 	--[+ Traditional Chinese 重量級冠軍 +]--
-	-- create_template("ach_red_ogr_7_ext_tw",
-		-- {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_name"}, {"zh-tw"},
-			-- loc_text("重量級冠軍")),
+	create_template("ach_red_ogr_7_ext_tw",
+		{"loc_achievement_ogryn_2_bull_rushed_4_ogryns_name"}, {"zh-tw"},
+			loc_text("重量級冠軍")),
 
-		--[+ On Heresy Threat or higher, knock down 4 enemy Ogryns (Bulwarks, Crushers, Plague Ogryns, and/or Reapers) with a single Bull Rush charge. +]-- руоф При угрозе «Ересь» или выше сбейте с ног одним зарядом «Бычьего натиска» вражеских Огринов (Бастион, Дробитель, Чумной Огрин и/или Жнец): 4.
+	--[+ On Heresy Threat or higher, knock down 4 enemy Ogryns (Bulwarks, Crushers, Plague Ogryns, and/or Reapers) with a single Bull Rush charge. +]-- руоф При угрозе «Ересь» или выше сбейте с ног одним зарядом «Бычьего натиска» вражеских Огринов (Бастион, Дробитель, Чумной Огрин и/или Жнец): 4.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_7_ext_desc_ru",
 		{"loc_achievement_ogryn_2_bull_rushed_4_ogryns_description"}, {"ru"},
@@ -3325,14 +3467,17 @@ local localization_templates = {
 		{"loc_achievement_ogryn_2_bull_rushed_4_ogryns_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵方歐格林。\n歐格林敵人包含：堡壘、粉碎者、收割者與瘟疫歐格林。" ..TALENTS_Enh_desc_penances_tw.ED_Heavyweight_champion_rgb_tw)),
 
-		--[+ I'm in Charge - Я главный +]-- руоф Я главнее
+	--[+ I'm in Charge - Я главный +]-- руоф Я главнее
 	--[+ Russian +]--
 	create_template("ach_red_ogr_2_ext_ru",
 		{"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_name"}, {"ru"},
 			loc_text("Я главный")),
 	--[+ Traditional Chinese 對衝 +]--
+	create_template("ach_red_ogr_2_ext_tw",
+		{"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_name"}, {"zh-tw"},
+			loc_text("對衝")),
 
-		--[+ Use Bull Rush to interrupt a Plague Ogryn's charge. +]-- руоф Используйте «Бычий натиск», чтобы прервать рывок Чумного Огрина.
+	--[+ Use Bull Rush to interrupt a Plague Ogryn's charge. +]-- руоф Используйте «Бычий натиск», чтобы прервать рывок Чумного Огрина.
 	--[+ Russian +]--
 	create_template("ach_red_ogr_2_ext_desc_ru",
 		{"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_description"}, {"ru"},
@@ -3355,7 +3500,7 @@ local localization_templates = {
 		{"loc_achievement_category_offensive_label"}, {"zh-tw"},
 			loc_text("攻擊")),
 
-		--[+  +]-- руоф Враг моего врага - мой друг
+	--[+  +]-- руоф Враг моего врага - мой друг
 	--[+ Russian +]--
 	-- create_template("ach_off_1_ext_ru",
 		-- {"loc_achievement_enemies_killed_by_poxburster_name"}, {"ru"},
@@ -3364,7 +3509,7 @@ local localization_templates = {
 		{"loc_achievement_enemies_killed_by_poxburster_name"}, {"zh-tw"},
 			loc_text("敵人的敵人即朋友")),
 
-		--[+  +]-- руоф Убейте врагов (10), уничтожив рядом с ними чумного Взрывуна.
+	--[+  +]-- руоф Убейте врагов (10), уничтожив рядом с ними чумного Взрывуна.
 	--[+ Russian +]--
 	create_template("ach_off_1_ext_desc_ru",
 		{"loc_achievement_enemies_killed_by_poxburster_description"}, {"ru"},
@@ -3375,7 +3520,7 @@ local localization_templates = {
 		{"loc_achievement_enemies_killed_by_poxburster_description"}, {"zh-tw"},
 			loc_text("引爆瘟疫爆者以擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Flyswatter +]-- руоф Мухобойка
+	--[+ Flyswatter +]-- руоф Мухобойка
 	--[+ Russian +]--
 	-- create_template("ach_off_5_ext_ru",
 		-- {"loc_achievement_enemies_climbing_name"}, {"ru"},
@@ -3385,7 +3530,7 @@ local localization_templates = {
 		{"loc_achievement_enemies_climbing_name"}, {"zh-tw"},
 			loc_text("蒼蠅拍")),
 
-		--[+ Kill 50 climbing enemies. +]-- руоф Убить карабкающихся врагов: 50.
+	--[+ Kill 50 climbing enemies. +]-- руоф Убить карабкающихся врагов: 50.
 	--[+ Russian +]--
 	create_template("ach_off_5_ext_desc_ru",
 		{"loc_achievement_enemies_climbing_description"}, {"ru"},
@@ -3396,7 +3541,7 @@ local localization_templates = {
 		{"loc_achievement_enemies_climbing_description"}, {"zh-tw"},
 			loc_text("擊殺 "..COLORS_Numbers.target_rgb.." 名正在攀爬中的敵人。")),
 
-		--[+  +]-- руоф На примете 
+	--[+  +]-- руоф На примете 
 	--[+ Russian +]--
 	-- create_template("ach_off_1_ext_ru",
 		-- {"loc_achievement_enemies_killed_by_barrels_name"}, {"ru"},
@@ -3406,7 +3551,7 @@ local localization_templates = {
 		{"loc_achievement_enemies_killed_by_barrels_name"}, {"zh-tw"},
 			loc_text("狀態意識")),
 
-		--[+ Kill 500000 enemies in total. +]-- руоф Убейте врагов (100) с помощью взрывных бочек.
+	--[+ Kill 500000 enemies in total. +]-- руоф Убейте врагов (100) с помощью взрывных бочек.
 	--[+ Russian +]--
 	create_template("ach_off_1_ext_desc_ru",
 		{"loc_achievement_enemies_killed_by_barrels_description"}, {"ru"},
@@ -3417,7 +3562,7 @@ local localization_templates = {
 		{"loc_achievement_enemies_killed_by_barrels_description"}, {"zh-tw"},
 			loc_text("利用爆炸桶擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Attack, Attack, Attack! +]-- руоф Нападай, нападай!
+	--[+ Attack, Attack, Attack! +]-- руоф Нападай, нападай!
 	--[+ Russian +]--
 	create_template("ach_off_7_ext_ru",
 		{"loc_achievement_group_offence_name"}, {"ru"},
@@ -3427,7 +3572,7 @@ local localization_templates = {
 		{"loc_achievement_group_offence_name"}, {"zh-tw"},
 			loc_text("攻擊, 攻擊, 攻擊!")),
 
-		--[+ Complete the following Offence Penances. +]-- руоф Выполните следующие искупления с атакой.
+	--[+ Complete the following Offence Penances. +]-- руоф Выполните следующие искупления с атакой.
 	--[+ Russian +]--
 	create_template("ach_off_7_ext_desc_ru",
 		{"loc_achievement_group_offence_description"}, {"ru"},
@@ -3438,7 +3583,7 @@ local localization_templates = {
 		{"loc_achievement_group_offence_description"}, {"zh-tw"},
 			loc_text("完成以下攻擊型苦修任務。")),
 
-		-- Duplicate? loc_achievement_enemies_killed_by_barrels_name --
+	-- !! Duplicate? loc_achievement_enemies_killed_by_barrels_name --
 		--[+  +]-- руоф Не время для ран
 	--[+ Russian +]--
 	-- create_template("ach_off_1_ext_ru",
@@ -3459,9 +3604,9 @@ local localization_templates = {
 	-- create_template("ach_off_1_ext_desc_tw",
 		-- {"loc_achievement_enemies_killed_by_barrels_description"}, {"zh-tw"},
 			-- loc_text("利用爆炸桶擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
-		-- Duplicate? loc_achievement_enemies_killed_by_barrels_name, loc_achievement_enemies_killed_by_barrels_description --
+	-- !! Duplicate? loc_achievement_enemies_killed_by_barrels_name, loc_achievement_enemies_killed_by_barrels_description --
 
-		--[+ Frenzied Killer (1-3) +]-- руоф Неистовый убийца (1-3)
+	--[+ Frenzied Killer (1-3) +]-- руоф Неистовый убийца (1-3)
 	--[+ Russian +]--
 	-- create_template("ach_off_4_ext_ru",
 		-- {"loc_achievement_fast_enemies_1-3_name"}, {"ru"},
@@ -3471,7 +3616,7 @@ local localization_templates = {
 		{"loc_achievement_fast_enemies_1-3_name"}, {"zh-tw"},
 			loc_text("狂熱殺手 (1-3)")),
 
-		--[+ Kill 120 enemies in 30s. +]-- руоф Убить врагов: 60 за 30 с.
+	--[+ Kill 120 enemies in 30s. +]-- руоф Убить врагов: 60 за 30 с.
 	--[+ Russian +]--
 	create_template("ach_off_4_ext_desc_ru",
 		{"loc_achievement_fast_enemies_x_description"}, {"ru"},
@@ -3482,7 +3627,7 @@ local localization_templates = {
 		{"loc_achievement_fast_enemies_x_description"}, {"zh-tw"},
 			loc_text("在 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Purge the Heretic (1-5) +]-- руоф Очистить еретиков (1-5)
+	--[+ Purge the Heretic (1-5) +]-- руоф Очистить еретиков (1-5)
 	--[+ Russian +]--
 	-- create_template("ach_off_1_ext_ru",
 		-- {"loc_achievement_enemies_1-5_name"}, {"ru"},
@@ -3492,7 +3637,7 @@ local localization_templates = {
 		-- {"loc_achievement_enemies_1-5_name"}, {"zh-tw"},
 			-- loc_text("淨化異端 (1-5)")),
 
-		--[+ Kill 500000 enemies in total. +]-- руоф Убить всего врагов: 500000.
+	--[+ Kill 500000 enemies in total. +]-- руоф Убить всего врагов: 500000.
 	--[+ Russian +]--
 	create_template("ach_off_1_ext_desc_ru",
 		{"loc_achievement_enemies_x_description"}, {"ru"},
@@ -3503,17 +3648,37 @@ local localization_templates = {
 		{"loc_achievement_enemies_x_description"}, {"zh-tw"},
 			loc_text("累計擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Dodge This (1-3) +]-- руоф Попробуй увернись (1-3)
+	--[+ Dodge This (1) +]-- руоф Попробуй увернись (1)
 	--[+ Russian +]--
 	-- create_template("ach_off_6_ext_ru",
-		-- {"loc_achievement_fast_headshot_1-3_name"}, {"ru"},
-			-- loc_text("Увернись от этого (1-3)")),
+		-- {"loc_achievement_fast_headshot_1_name"}, {"ru"},
+			-- loc_text("Увернись от этого (1)")),
 	--[+ Traditional Chinese 躲得開嗎 +]--
-	-- create_template("ach_off_6_ext_tw",
-		-- {"loc_achievement_fast_headshot_1-3_name"}, {"zh-tw"},
-			-- loc_text("躲得開嗎 (1-3)")),
+	create_template("ach_off_6_ext_tw",
+		{"loc_achievement_fast_headshot_1_name"}, {"zh-tw"},
+			loc_text("躲得開嗎 (1)")),
 
-		--[+ Kill 15 enemies with Headshots within 10s. +]-- руоф Убить врагов выстрелами в голову: 15 за 10 с.
+	--[+ Dodge This (2) +]-- руоф Попробуй увернись (2)
+	--[+ Russian +]--
+	-- create_template("ach_off_6_ext_ru",
+		-- {"loc_achievement_fast_headshot_2_name"}, {"ru"},
+			-- loc_text("Увернись от этого (2)")),
+	--[+ Traditional Chinese 躲得開嗎 +]--
+	create_template("ach_off_6_ext_tw",
+		{"loc_achievement_fast_headshot_2_name"}, {"zh-tw"},
+			loc_text("躲得開嗎 (2)")),
+	
+	--[+ Dodge This (3) +]-- руоф Попробуй увернись (3)
+	--[+ Russian +]--
+	-- create_template("ach_off_6_ext_ru",
+		-- {"loc_achievement_fast_headshot_3_name"}, {"ru"},
+			-- loc_text("Увернись от этого (3)")),
+	--[+ Traditional Chinese 躲得開嗎 +]--
+	create_template("ach_off_6_ext_tw",
+		{"loc_achievement_fast_headshot_3_name"}, {"zh-tw"},
+			loc_text("躲得開嗎 (3)")),
+
+	--[+ Kill 15 enemies with Headshots within 10s. +]-- руоф Убить врагов выстрелами в голову: 15 за 10 с.
 	--[+ Russian +]--
 	create_template("ach_off_6_ext_desc_ru",
 		{"loc_achievement_fast_headshot_x_description"}, {"ru"},
@@ -3524,17 +3689,37 @@ local localization_templates = {
 		{"loc_achievement_fast_headshot_x_description"}, {"zh-tw"},
 			loc_text("在 "..COLORS_Numbers.n_10_rgb.." 秒內以爆頭擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
-		--[+ Time to Die (1-3) +]-- руоф Пора умирать (1-3)
+	--[+ Time to Die (1) +]-- руоф Пора умирать (1)
 	--[+ Russian +]--
 	-- create_template("ach_off_3_ext_ru",
-		-- {"loc_achievement_boss_fast_1-3_name"}, {"ru"},
-			-- loc_text("Время умирать (1-3)")),
+		-- {"loc_achievement_boss_fast_1_name"}, {"ru"},
+			-- loc_text("Время умирать (1)")),
 	--[+ Traditional Chinese 死亡將至 +]--
-	-- create_template("ach_off_3_ext_tw",
-		-- {"loc_achievement_boss_fast_1-3_name"}, {"zh-tw"},
-			-- loc_text("死亡將至 (1-3)")),
+	create_template("ach_off_3_ext_tw",
+		{"loc_achievement_boss_fast_1_name"}, {"zh-tw"},
+			loc_text("死亡將至 (1)")),
 
-		--[+ Kill a Monstrosity in 5s or less. +]-- руоф Убить чудовище за 5 с или меньше.
+	--[+ Time to Die (2) +]-- руоф Пора умирать (2)
+	--[+ Russian +]--
+	-- create_template("ach_off_3_ext_ru",
+		-- {"loc_achievement_boss_fast_2_name"}, {"ru"},
+			-- loc_text("Время умирать (2)")),
+	--[+ Traditional Chinese 死亡將至 +]--
+	create_template("ach_off_3_ext_tw",
+		{"loc_achievement_boss_fast_2_name"}, {"zh-tw"},
+			loc_text("死亡將至 (2)")),
+
+	--[+ Time to Die (3) +]-- руоф Пора умирать (3)
+	--[+ Russian +]--
+	-- create_template("ach_off_3_ext_ru",
+		-- {"loc_achievement_boss_fast_3_name"}, {"ru"},
+			-- loc_text("Время умирать (3)")),
+	--[+ Traditional Chinese 死亡將至 +]--
+	create_template("ach_off_3_ext_tw",
+		{"loc_achievement_boss_fast_3_name"}, {"zh-tw"},
+			loc_text("死亡將至 (3)")),
+
+	--[+ Kill a Monstrosity in 5s or less. +]-- руоф Убить чудовище за 5 с или меньше.
 	--[+ Russian +]--
 	create_template("ach_off_3_ext_desc_ru",
 		{"loc_achievement_boss_fast_x_description"}, {"ru"},
@@ -3545,7 +3730,7 @@ local localization_templates = {
 		{"loc_achievement_boss_fast_x_description"}, {"zh-tw"},
 			loc_text("在 "..COLORS_Numbers.target_rgb.." 秒內擊殺一隻巨獸。")),
 
-		--[+ Serial Killer +]-- руоф Серийный убийца
+	--[+ Serial Killer +]-- руоф Серийный убийца
 	--[+ Russian +]--
 	-- create_template("ach_off_2_ext_ru",
 		-- {"loc_achievement_consecutive_headshots_name"}, {"ru"},
@@ -3555,7 +3740,7 @@ local localization_templates = {
 		{"loc_achievement_consecutive_headshots_name"}, {"zh-tw"},
 			loc_text("連環殺手")),
 
-		--[+ Kill 20 consecutive enemies with headshots. +]-- руоф Последовательно убейте выстрелами в голову врагов (20).
+	--[+ Kill 20 consecutive enemies with headshots. +]-- руоф Последовательно убейте выстрелами в голову врагов (20).
 	--[+ Russian +]--
 	create_template("ach_off_2_ext_desc_ru",
 		{"loc_achievement_consecutive_headshots_description"}, {"ru"},
@@ -3577,17 +3762,37 @@ local localization_templates = {
 		{"loc_achievement_category_defensive_label"}, {"zh-tw"},
 			loc_text("防禦")),
 
-		--[+ Flawless Execution (1-3) +]-- руоф Безупречная казнь (1-3)
+	--[+ Flawless Execution (1) +]-- руоф Безупречная казнь (1)
 	--[+ Russian +]--
 	-- create_template("ach_red_vet_3_ext_ru",
-		-- {"loc_achievement_flawless_mission_1-3_name"}, {"ru"},
-			-- loc_text("Безупречное исполнение (1-3)")),
-	--[+ Traditional Chinese 完美處決 +]--
-	-- create_template("ach_red_vet_3_ext_tw",
-		-- {"loc_achievement_flawless_mission_1-3_name"}, {"zh-tw"},
-			-- loc_text("完美執行（1-3）")),
+		-- {"loc_achievement_flawless_mission_1_name"}, {"ru"},
+			-- loc_text("Безупречное исполнение (1)")),
+	--[+ Traditional Chinese 完美處決 (1) +]--
+	create_template("ach_red_vet_3_ext_tw",
+		{"loc_achievement_flawless_mission_1_name"}, {"zh-tw"},
+			loc_text("完美處決（1）")),
 
-		--[+ Complete 10 missions in a row without being downed on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше выполнить несколько заданий подряд (15) так, чтобы никто в группе не был сбит с ног.
+	--[+ Flawless Execution (2) +]-- руоф Безупречная казнь (2)
+	--[+ Russian +]--
+	-- create_template("ach_red_vet_3_ext_ru",
+		-- {"loc_achievement_flawless_mission_2_name"}, {"ru"},
+			-- loc_text("Безупречное исполнение (2)")),
+	--[+ Traditional Chinese 完美處決 (2) +]--
+	create_template("ach_red_vet_3_ext_tw",
+		{"loc_achievement_flawless_mission_2_name"}, {"zh-tw"},
+			loc_text("完美處決（2）")),
+
+	--[+ Flawless Execution (3) +]-- руоф Безупречная казнь (3)
+	--[+ Russian +]--
+	-- create_template("ach_red_vet_3_ext_ru",
+		-- {"loc_achievement_flawless_mission_3_name"}, {"ru"},
+			-- loc_text("Безупречное исполнение (3)")),
+	--[+ Traditional Chinese 完美處決 (3) +]--
+	create_template("ach_red_vet_3_ext_tw",
+		{"loc_achievement_flawless_mission_3_name"}, {"zh-tw"},
+			loc_text("完美處決（3）")),
+
+	--[+ Complete 10 missions in a row without being downed on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше выполнить несколько заданий подряд (15) так, чтобы никто в группе не был сбит с ног.
 	--[+ Russian +]--
 	create_template("ach_red_vet_3_ext_desc_ru",
 		{"loc_achievement_flawless_mission_x_description"}, {"ru"},
@@ -3598,7 +3803,7 @@ local localization_templates = {
 		{"loc_achievement_flawless_mission_x_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，連續完成 "..COLORS_Numbers.target_rgb.." 場任務且期間未曾被擊倒。")),
 
-		--[+ Case for the Defence +]-- руоф Версия защиты
+	--[+ Case for the Defence +]-- руоф Версия защиты
 	--[+ Russian +]--
 	create_template("ach_red_vet_8_ext_ru",
 		{"loc_achievement_group_defence_name"}, {"ru"},
@@ -3608,7 +3813,7 @@ local localization_templates = {
 		{"loc_achievement_group_defence_name"}, {"zh-tw"},
 			loc_text("防禦典型")),
 
-		--[+ Complete the following Defence Penances. +]-- руоф Выполните следующие искупления с обороной.
+	--[+ Complete the following Defence Penances. +]-- руоф Выполните следующие искупления с обороной.
 	--[+ Russian +]--
 	create_template("ach_red_vet_8_ext_desc_ru",
 		{"loc_achievement_group_defence_description"}, {"ru"},
@@ -3619,7 +3824,7 @@ local localization_templates = {
 		{"loc_achievement_group_defence_description"}, {"zh-tw"},
 			loc_text("完成以下防禦型苦修任務。")),
 
-		--[+ Zigging and Zagging +]-- руоф Вертись волчком
+	--[+ Zigging and Zagging +]-- руоф Вертись волчком
 	--[+ Russian +]--
 	create_template("ach_red_vet_4_ext_ru",
 		{"loc_achievement_total_sprint_dodges_name"}, {"ru"},
@@ -3629,7 +3834,7 @@ local localization_templates = {
 		{"loc_achievement_total_sprint_dodges_name"}, {"zh-tw"},
 			loc_text("閃電走位")),
 
-		--[+ Dodge a total of 99 shots by sprinting. +]-- руоф При помощи бега уклониться от выстрелов: 99.
+	--[+ Dodge a total of 99 shots by sprinting. +]-- руоф При помощи бега уклониться от выстрелов: 99.
 	--[+ Russian +]--
 	create_template("ach_red_vet_4_ext_desc_ru",
 		{"loc_achievement_total_sprint_dodges_description"}, {"ru"},
@@ -3640,17 +3845,37 @@ local localization_templates = {
 		{"loc_achievement_total_sprint_dodges_description"}, {"zh-tw"},
 			loc_text("透過衝刺閃避 "..COLORS_Numbers.target_rgb.." 發射攻擊。")),
 
-		--[+ The Emperor Protects (1-3) +]-- руоф Император защищает (1-3)
+	--[+ The Emperor Protects (1) +]-- руоф Император защищает (1)
 	--[+ Russian +]--
 	-- create_template("ach_red_vet_1_ext_ru",
-		-- {"loc_achievement_fast_blocks_1-3_name"}, {"ru"},
-			-- loc_text("Император защищает (1-3)")),
-	--[+ Traditional Chinese 帝皇的護佑 +]--
-	-- create_template("ach_red_vet_1_ext_tw",
-		-- {"loc_achievement_fast_blocks_1-3_name"}, {"zh-tw"},
-			-- loc_text("帝皇的護佑 (1-3)")),
+		-- {"loc_achievement_fast_blocks_1_name"}, {"ru"},
+			-- loc_text("Император защищает (1)")),
+	--[+ Traditional Chinese 帝皇的護佑 (1) +]--
+	create_template("ach_red_vet_1_ext_tw",
+		{"loc_achievement_fast_blocks_1_name"}, {"zh-tw"},
+			loc_text("帝皇的護佑 (1)")),
+	
+	--[+ The Emperor Protects (2) +]-- руоф Император защищает (2)
+	--[+ Russian +]--
+	-- create_template("ach_red_vet_1_ext_ru",
+		-- {"loc_achievement_fast_blocks_2_name"}, {"ru"},
+			-- loc_text("Император защищает (2)")),
+	--[+ Traditional Chinese 帝皇的護佑 (2) +]--
+	create_template("ach_red_vet_1_ext_tw",
+		{"loc_achievement_fast_blocks_2_name"}, {"zh-tw"},
+			loc_text("帝皇的護佑 (2)")),
 
-		--[+ Block 900 damage in 10s. +]-- руоф Блокировать 900 ед. урона в течение 10 с.
+	--[+ The Emperor Protects (3) +]-- руоф Император защищает (3)
+	--[+ Russian +]--
+	-- create_template("ach_red_vet_1_ext_ru",
+		-- {"loc_achievement_fast_blocks_3_name"}, {"ru"},
+			-- loc_text("Император защищает (3)")),
+	--[+ Traditional Chinese 帝皇的護佑 (3) +]--
+	create_template("ach_red_vet_1_ext_tw",
+		{"loc_achievement_fast_blocks_3_name"}, {"zh-tw"},
+			loc_text("帝皇的護佑 (3)")),
+
+	--[+ Block 900 damage in 10s. +]-- руоф Блокировать 900 ед. урона в течение 10 с.
 	--[+ Russian +]--
 	create_template("ach_red_vet_1_ext_desc_ru",
 		{"loc_achievement_fast_blocks_x_description"}, {"ru"},
@@ -3661,7 +3886,7 @@ local localization_templates = {
 		{"loc_achievement_fast_blocks_x_description"}, {"zh-tw"},
 			loc_text("在 "..COLORS_Numbers.time_wind_rgb.." 秒內格擋 "..COLORS_Numbers.target_rgb.." 傷害。")),
 
-		--[+ Untouchable +]-- руоф Неприкасаемый
+	--[+ Untouchable +]-- руоф Неприкасаемый
 	--[+ Russian +]--
 	-- create_template("ach_red_vet_7_ext_ru",
 		-- {"loc_achievement_mission_no_damage_name"}, {"ru"},
@@ -3671,7 +3896,7 @@ local localization_templates = {
 		{"loc_achievement_mission_no_damage_name"}, {"zh-tw"},
 			loc_text("不可觸碰")),
 
-		--[+ Complete a Mission without taking any Health damage. +]-- руоф Выполнить задание, не получив урона.
+	--[+ Complete a Mission without taking any Health damage. +]-- руоф Выполнить задание, не получив урона.
 	--[+ Russian +]--
 	create_template("ach_red_vet_7_ext_desc_ru",
 		{"loc_achievement_mission_no_damage_description"}, {"ru"},
@@ -3682,17 +3907,37 @@ local localization_templates = {
 		{"loc_achievement_mission_no_damage_description"}, {"zh-tw"},
 			loc_text("在未受到任何『"..COLORS_KWords_tw.Health_rgb_tw.."』傷害的情況下完成一場任務。")),
 
-		--[+ Preternatural Dodge (1-3) +]-- руоф Сверхъестественное уклонение (1-3)
+	--[+ Preternatural Dodge (1) +]-- руоф Сверхъестественное уклонение (1)
 	--[+ Russian +]--
 	-- create_template("ach_red_vet_2_ext_ru",
-		-- {"loc_achievement_consecutive_dodge_1-3_name"}, {"ru"},
-			-- loc_text("Сверхъестественное уклонение (1-3)")),
-	--[+ Traditional Chinese 超現實閃避 +]--
-	-- create_template("ach_red_vet_2_ext_tw",
-		-- {"loc_achievement_consecutive_dodge_1-3_name"}, {"zh-tw"},
-			-- loc_text("超現實閃避 (1-3)")),
+		-- {"loc_achievement_consecutive_dodge_1_name"}, {"ru"},
+			-- loc_text("Сверхъестественное уклонение (1)")),
+	--[+ Traditional Chinese 超現實閃避 (1) +]--
+	create_template("ach_red_vet_2_ext_tw",
+		{"loc_achievement_consecutive_dodge_1_name"}, {"zh-tw"},
+			loc_text("超現實閃避 (1)")),
+	
+	--[+ Preternatural Dodge (2) +]-- руоф Сверхъестественное уклонение (2)
+	--[+ Russian +]--
+	-- create_template("ach_red_vet_2_ext_ru",
+		-- {"loc_achievement_consecutive_dodge_2_name"}, {"ru"},
+			-- loc_text("Сверхъестественное уклонение (2)")),
+	--[+ Traditional Chinese 超現實閃避 (2) +]--
+	create_template("ach_red_vet_2_ext_tw",
+		{"loc_achievement_consecutive_dodge_2_name"}, {"zh-tw"},
+			loc_text("超現實閃避 (2)")),
+	
+	--[+ Preternatural Dodge (3) +]-- руоф Сверхъестественное уклонение (3)
+	--[+ Russian +]--
+	-- create_template("ach_red_vet_2_ext_ru",
+		-- {"loc_achievement_consecutive_dodge_3_name"}, {"ru"},
+			-- loc_text("Сверхъестественное уклонение (3)")),
+	--[+ Traditional Chinese 超現實閃避 (3) +]--
+	create_template("ach_red_vet_2_ext_tw",
+		{"loc_achievement_consecutive_dodge_3_name"}, {"zh-tw"},
+			loc_text("超現實閃避 (3)")),
 
-		--[+ Dodge 20 attacks without taking damage. +]-- руоф Уклониться от ударов без получения урона: 20.
+	--[+ Dodge 20 attacks without taking damage. +]-- руоф Уклониться от ударов без получения урона: 20.
 	--[+ Russian +]--
 	create_template("ach_red_vet_2_ext_desc_ru",
 		{"loc_achievement_consecutive_dodge_x_description"}, {"ru"},
@@ -3703,17 +3948,17 @@ local localization_templates = {
 		{"loc_achievement_consecutive_dodge_x_description"}, {"zh-tw"},
 			loc_text("連續閃避 "..COLORS_Numbers.target_rgb.." 次攻擊且不受到任何傷害。")),
 
-		--[+ Violent Tendencies +]-- руоф Склонность к жестокости
+	--[+ Violent Tendencies +]-- руоф Склонность к жестокости
 	--[+ Russian +]--
 	-- create_template("ach_red_vet_6_ext_ru",
 		-- {"loc_achievement_melee_toughness_name"}, {"ru"},
 			-- loc_text("Склонность к жестокости")),
 	--[+ Traditional Chinese 暴力傾向 +]--
-	-- create_template("ach_red_vet_6_ext_tw",
-		-- {"loc_achievement_melee_toughness_name"}, {"zh-tw"},
-			-- loc_text("暴力傾向")),
+	create_template("ach_red_vet_6_ext_tw",
+		{"loc_achievement_melee_toughness_name"}, {"zh-tw"},
+			loc_text("暴力傾向")),
 
-		--[+ Regenerate 40000 Toughness from melee kills. +]-- руоф С помощью убийств в ближнем бою восстановить стойкость: 40000.
+	--[+ Regenerate 40000 Toughness from melee kills. +]-- руоф С помощью убийств в ближнем бою восстановить стойкость: 40000.
 	--[+ Russian +]--
 	create_template("ach_red_vet_6_ext_desc_ru",
 		{"loc_achievement_melee_toughness_description"}, {"ru"},
@@ -3724,7 +3969,7 @@ local localization_templates = {
 		{"loc_achievement_melee_toughness_description"}, {"zh-tw"},
 			loc_text("透過近戰擊殺恢復 "..COLORS_Numbers.target_rgb.." 點『"..COLORS_KWords_tw.Toughness_rgb_tw.."』。")),
 
-		--[+ Figure Four +]-- руоф Ускользнул
+	--[+ Figure Four +]-- руоф Ускользнул
 	--[+ Russian +]--
 	create_template("ach_red_vet_5_ext_ru",
 		{"loc_achievement_slide_dodge_name"}, {"ru"},
@@ -3734,7 +3979,7 @@ local localization_templates = {
 		{"loc_achievement_slide_dodge_name"}, {"zh-tw"},
 			loc_text("四字固")),
 
-		--[+ Use your Slide to avoid an enemy attack. +]-- руоф Использовать «Скольжение» для уклонения от атаки врага.
+	--[+ Use your Slide to avoid an enemy attack. +]-- руоф Использовать «Скольжение» для уклонения от атаки врага.
 	--[+ Russian +]--
 	create_template("ach_red_vet_5_ext_desc_ru",
 		{"loc_achievement_slide_dodge_description"}, {"ru"},
@@ -3756,14 +4001,17 @@ local localization_templates = {
 		{"loc_achievement_category_teamplay_label"}, {"zh-tw"},
 			loc_text("小隊")),
 
-		--[+ War's Not Over (1-5) +]-- руоф Война не окончена (1-5)
+	--[+ War's Not Over (1-5) +]-- руоф Война не окончена (1-5)
 	--[+ Russian +]--
 	-- create_template("ach_tea_1_ext_ru",
 		-- {"loc_achievement_revive_1-5_name"}, {"ru"},
 			-- loc_text("Война не окончена (1-5)")),
-	--[+ Traditional Chinese 戰爭未完 +]--
+	--[+ Traditional Chinese 戰爭未完 (1-5) +]--
+	create_template("ach_tea_1_ext_tw",
+		{"loc_achievement_revive_1-5_name"}, {"zh-tw"},
+			loc_text("戰爭未完 (1-5)")),
 
-		--[+ Rescue a total of 500 Operatives. +]-- руоф Спасти оперативников: 500.
+	--[+ Rescue a total of 500 Operatives. +]-- руоф Спасти оперативников: 500.
 	--[+ Russian +]--
 	create_template("ach_tea_1_ext_desc_ru",
 		{"loc_achievement_revive_x_description"}, {"ru"},
@@ -3774,17 +4022,17 @@ local localization_templates = {
 		{"loc_achievement_revive_x_description"}, {"zh-tw"},
 			loc_text("累計救援 "..COLORS_Numbers.target_rgb.." 位幹員。")),
 
-		--[+ Discipline & Teamwork (1-5) +]-- руоф Дисциплина и командная работа (1-5)
+	--[+ Discipline & Teamwork (1-5) +]-- руоф Дисциплина и командная работа (1-5)
 	--[+ Russian +]--
 	-- create_template("ach_tea_6_ext_ru",
 		-- {"loc_achievement_deployables_1-5_name"}, {"ru"},
 			-- loc_text("Дисциплина и командная работа (1-5)")),
 	--[+ Traditional Chinese 紀律和協作 +]--
 	-- create_template("ach_tea_6_ext_tw",
-		-- {"loc_achievement_deployables_1-5_name"}, {"zh-tw"},
-			-- loc_text("紀律和協作 (1-5)")),
+	-- 	{"loc_achievement_deployables_1-5_name"}, {"zh-tw"},
+	-- 		loc_text("紀律和協作 (1-5)")),
 
-		--[+ Share 500 ammo or health packs. +]-- руоф Поделиться боеприпасами или аптечкой: 500.
+	--[+ Share 500 ammo or health packs. +]-- руоф Поделиться боеприпасами или аптечкой: 500.
 	--[+ Russian +]--
 	create_template("ach_tea_6_ext_desc_ru",
 		{"loc_achievement_deployables_x_description"}, {"ru"},
@@ -3795,7 +4043,7 @@ local localization_templates = {
 		{"loc_achievement_deployables_x_description"}, {"zh-tw"},
 			loc_text("分享彈藥箱或醫療箱共計 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ Good Samaritan +]-- руоф Добрый самаритянин
+	--[+ Good Samaritan +]-- руоф Добрый самаритянин
 	--[+ Russian +]--
 	-- create_template("ach_tea_7_ext_ru",
 		-- {"loc_achievement_group_cooperation_name"}, {"ru"},
@@ -3805,7 +4053,7 @@ local localization_templates = {
 		{"loc_achievement_group_cooperation_name"}, {"zh-tw"},
 			loc_text("樂善好施")),
 
-		--[+ Complete the following Team Penances. +]-- руоф Выполнить следующие командные искупления.
+	--[+ Complete the following Team Penances. +]-- руоф Выполнить следующие командные искупления.
 	--[+ Russian +]--
 	create_template("ach_tea_7_ext_desc_ru",
 		{"loc_achievement_group_cooperation_description"}, {"ru"},
@@ -3816,7 +4064,7 @@ local localization_templates = {
 		{"loc_achievement_group_cooperation_description"}, {"zh-tw"},
 			loc_text("完成下列小隊相關苦修。")),
 
-		--[+ Buddy Up +]-- руоф Закадычные друзья
+	--[+ Buddy Up +]-- руоф Закадычные друзья
 	--[+ Russian +]--
 	create_template("ach_tea_4_ext_ru",
 		{"loc_achievement_coherency_toughness_name"}, {"ru"},
@@ -3826,7 +4074,7 @@ local localization_templates = {
 		{"loc_achievement_coherency_toughness_name"}, {"zh-tw"},
 			loc_text("救友扶傷")),
 
-		--[+ Replenish 2000 Toughness from Coherency. +]-- руоф С помощью «Сплоченности» восстановить стойкость: 2000.
+	--[+ Replenish 2000 Toughness from Coherency. +]-- руоф С помощью «Сплоченности» восстановить стойкость: 2000.
 	--[+ Russian +]--
 	create_template("ach_tea_4_ext_desc_ru",
 		{"loc_achievement_coherency_toughness_description"}, {"ru"},
@@ -3837,7 +4085,7 @@ local localization_templates = {
 		{"loc_achievement_coherency_toughness_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.Coherency_rgb_tw.."』狀態下，恢復 "..COLORS_Numbers.target_rgb.." 點『"..COLORS_KWords_tw.Toughness_rgb_tw.."』。")),
 
-		--[+ Dream Team +]-- руоф Закадычные друзья
+	--[+ Dream Team +]-- руоф Закадычные друзья
 	--[+ Russian +]--
 	create_template("ach_tea_3_ext_ru",
 		{"loc_achievement_flawless_team_name"}, {"ru",},
@@ -3847,7 +4095,7 @@ local localization_templates = {
 		{"loc_achievement_flawless_team_name"}, {"zh-tw"},
 			loc_text("最佳陣容")),
 
-		--[+ Complete 100 missions without anyone being downed. +]-- руоф Завершите 100 заданий так, чтобы никто в группе не был сбит с ног.
+	--[+ Complete 100 missions without anyone being downed. +]-- руоф Завершите 100 заданий так, чтобы никто в группе не был сбит с ног.
 	--[+ Russian +]--
 	create_template("ach_tea_3_ext_desc_ru",
 		{"loc_achievement_flawless_team_description"}, {"ru"},
@@ -3858,7 +4106,7 @@ local localization_templates = {
 		{"loc_achievement_flawless_team_description"}, {"zh-tw"},
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 場任務，且隊伍中無任何成員被擊倒。")),
 
-		--[+ Leave No One Behind +]-- руоф Никого не оставляйте позади
+	--[+ Leave No One Behind +]-- руоф Никого не оставляйте позади
 	--[+ Russian +]--
 	create_template("ach_tea_5_ext_ru",
 		{"loc_achievement_revive_all_namе"}, {"ru"},
@@ -3868,7 +4116,7 @@ local localization_templates = {
 		{"loc_achievement_revive_all_namе"}, {"zh-tw"},
 			loc_text("不拋棄不放棄")),
 
-		-- [+ Complete a single mission after Rescuing 3 different Operatives at least once from captivity. +]-- руоф Завершите одно задание, вызволив из плена различных оперативников (3) хотя бы один раз.
+	-- [+ Complete a single mission after Rescuing 3 different Operatives at least once from captivity. +]-- руоф Завершите одно задание, вызволив из плена различных оперативников (3) хотя бы один раз.
 	--[+ Russian +]--
 	create_template("ach_tea_5_ext_desc_ru",
 		{"loc_achievement_revive_all_description"}, {"ru"},
@@ -3879,17 +4127,57 @@ local localization_templates = {
 		{"loc_achievement_revive_all_description"}, {"zh-tw"},
 			loc_text("在單場任務中，至少各救出一次共 "..COLORS_Numbers.target_rgb.." 位不同的隊友。")),
 
-		--[+ Up and at 'Em! (1-5) +]-- руоф Подъем! (1-5)
+	--[+ Up and at 'Em! (1) +]-- руоф Подъем! (1)
 	--[+ Russian +]--
 	-- create_template("ach_tea_2_ext_ru",
-		-- {"loc_achievement_assists_1-5_name"}, {"ru"},
-			-- loc_text("Поднимайся и вперёд! (1-5)")),
-	--[+ Traditional Chinese 起來幹活 +]--
-	-- create_template("ach_tea_2_ext_tw",
-		-- {"loc_achievement_assists_1-5_name"}, {"zh-tw"},
-			-- loc_text("起來幹活 (1-5)")),
+		-- {"loc_achievement_assists_1_name"}, {"ru"},
+			-- loc_text("Поднимайся и вперёд! (1)")),
+	--[+ Traditional Chinese 起來幹活 (1-) +]--
+	create_template("ach_tea_2_ext_tw",
+		{"loc_achievement_assists_1_name"}, {"zh-tw"},
+			loc_text("起來幹活！ (1)")),
 
-		--[+ Help 1000 downed Operatives back up. +]-- руоф Помочь подняться поваленным оперативникам: 1000.
+	--[+ Up and at 'Em! (2) +]-- руоф Подъем! (2)
+	--[+ Russian +]--
+	-- create_template("ach_tea_2_ext_ru",
+		-- {"loc_achievement_assists_2_name"}, {"ru"},
+			-- loc_text("Поднимайся и вперёд! (2)")),
+	--[+ Traditional Chinese 起來幹活！ (2) +]--
+	create_template("ach_tea_2_ext_tw",
+		{"loc_achievement_assists_2_name"}, {"zh-tw"},
+			loc_text("起來幹活！ (2)")),
+
+	--[+ Up and at 'Em! (3) +]-- руоф Подъем! (3)
+	--[+ Russian +]--
+	-- create_template("ach_tea_2_ext_ru",
+		-- {"loc_achievement_assists_3_name"}, {"ru"},
+			-- loc_text("Поднимайся и вперёд! (3)")),
+	--[+ Traditional Chinese 起來幹活！ (3) +]--
+	create_template("ach_tea_2_ext_tw",
+		{"loc_achievement_assists_3_name"}, {"zh-tw"},
+			loc_text("起來幹活！ (3)")),
+
+	--[+ Up and at 'Em! (4) +]-- руоф Подъем! (4)
+	--[+ Russian +]--
+	-- create_template("ach_tea_2_ext_ru",
+		-- {"loc_achievement_assists_4_name"}, {"ru"},
+			-- loc_text("Поднимайся и вперёд! (4)")),
+	--[+ Traditional Chinese 起來幹活！ (4) +]--
+	create_template("ach_tea_2_ext_tw",
+		{"loc_achievement_assists_4_name"}, {"zh-tw"},
+			loc_text("起來幹活！ (4)")),
+
+	--[+ Up and at 'Em! (5) +]-- руоф Подъем! (5)
+	--[+ Russian +]--
+	-- create_template("ach_tea_2_ext_ru",
+		-- {"loc_achievement_assists_5_name"}, {"ru"},
+			-- loc_text("Поднимайся и вперёд! (5)")),
+	--[+ Traditional Chinese 起來幹活！ (5) +]--
+	create_template("ach_tea_2_ext_tw",
+		{"loc_achievement_assists_5_name"}, {"zh-tw"},
+			loc_text("起來幹活！ (5)")),
+
+	--[+ Help 1000 downed Operatives back up. +]-- руоф Помочь подняться поваленным оперативникам: 1000.
 	--[+ Russian +]--
 	create_template("ach_tea_2_ext_desc_ru",
 		{"loc_achievement_assists_x_description"}, {"ru"},
@@ -3911,7 +4199,7 @@ local localization_templates = {
 		{"loc_achievement_category_enemies_label"}, {"zh-tw"},
 			loc_text("異端")),
 
-		--[+ Heretics +]-- руоф Барабанная дробь
+	--[+ Heretics +]-- руоф Барабанная дробь
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_shotgunner_spread_dodged_name"}, {"ru"},
@@ -3921,7 +4209,7 @@ local localization_templates = {
 		{"loc_achievement_shotgunner_spread_dodged_name"}, {"zh-tw"},
 			loc_text("霰彈槍")),
 
-		--[+  +]-- руоф Увернитесь от разброса из дробовика (50). [По 1 за каждого отброса с дробовиком]
+	--[+  +]-- руоф Увернитесь от разброса из дробовика (50). [По 1 за каждого отброса с дробовиком]
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_shotgunner_spread_dodged_description"}, {"ru"},
@@ -3932,7 +4220,7 @@ local localization_templates = {
 		{"loc_achievement_shotgunner_spread_dodged_description"}, {"zh-tw"},
 			loc_text("躲掉 "..COLORS_Numbers.target_rgb.." 名霰彈槍敵人，每名只計算1次。")),
 
-		--[+ Lex Vigilant +]-- руоф Бдительность Закона
+	--[+ Lex Vigilant +]-- руоф Бдительность Закона
 	--[+ Russian +]--
 	create_template("ach_her_9_ext_ru",
 		{"loc_achievement_all_cultist_elites_killed_name"}, {"ru"},
@@ -3942,7 +4230,7 @@ local localization_templates = {
 		{"loc_achievement_all_cultist_elites_killed_name"}, {"zh-tw"},
 			loc_text("法律的警示")),
 
-		--[+ Kill 10 of each Dreg elite. +]-- руоф Убейте элитных отбросов (по 10 каждого вида).
+	--[+ Kill 10 of each Dreg elite. +]-- руоф Убейте элитных отбросов (по 10 каждого вида).
 	--[+ Russian +]--
 	create_template("ach_her_9_ext_desc_ru",
 		{"loc_achievement_all_cultist_elites_killed_description"}, {"ru"},
@@ -3953,7 +4241,7 @@ local localization_templates = {
 		{"loc_achievement_all_cultist_elites_killed_description"}, {"zh-tw"},
 			loc_text("擊殺每種『渣滓』精英各 "..COLORS_Numbers.target_rgb.." 名。")),
 
-		--[+  +]-- руоф Бойся топора
+	--[+  +]-- руоф Бойся топора
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_crusher_overhead_smash_dodged_name"}, {"ru"},
@@ -3963,7 +4251,7 @@ local localization_templates = {
 		{"loc_achievement_crusher_overhead_smash_dodged_name"}, {"zh-tw"},
 			loc_text("不為魚肉")),
 
-		--[+ Kill 10 of each Dreg elite. +]-- руоф Увернитесь от рубящих ударов огринов-дробителей 50 р. [Считается только одно уклонение за каждого огрина-дробителя]
+	--[+ Kill 10 of each Dreg elite. +]-- руоф Увернитесь от рубящих ударов огринов-дробителей 50 р. [Считается только одно уклонение за каждого огрина-дробителя]
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_crusher_overhead_smash_dodged_description"}, {"ru"},
@@ -3974,7 +4262,7 @@ local localization_templates = {
 		{"loc_achievement_crusher_overhead_smash_dodged_description"}, {"zh-tw"},
 			loc_text("躲避 "..COLORS_Numbers.target_rgb.." 名輾壓者的重鎚攻擊，每名只計算1次。")),
 
-		--[+  +]-- руоф Будь здоров
+	--[+  +]-- руоф Будь здоров
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"ru"},
@@ -3984,7 +4272,7 @@ local localization_templates = {
 		{"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"zh-tw"},
 			loc_text("早日康復")),
 
-		--[+  +]-- руоф Убейте тварь Нургла так, чтобы ни один член команды не пострадал от ее гниющей рвоты.
+	--[+  +]-- руоф Убейте тварь Нургла так, чтобы ни один член команды не пострадал от ее гниющей рвоты.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description"}, {"ru"},
@@ -3995,7 +4283,7 @@ local localization_templates = {
 		{"loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description"}, {"zh-tw"},
 			loc_text("在沒有任何小隊成員被納垢巨獸的腐敗嘔吐擊中的情況下擊殺  "..COLORS_Numbers.target_rgb.." 隻納垢巨獸。")),
 
-		--[+ Blowout +]-- руоф Взрывной успех
+	--[+ Blowout +]-- руоф Взрывной успех
 	--[+ Russian +]--
 	-- create_template("ach_her_5_ext_ru",
 		-- {"loc_achievement_melee_renegade_name"}, {"ru"},
@@ -4005,7 +4293,7 @@ local localization_templates = {
 		{"loc_achievement_melee_renegade_name"}, {"zh-tw"},
 			loc_text("爆發")),
 
-		--[+ Kill 10 Bombers with melee attacks. +]-- руоф Убить взрывунов в ближнем бою: 10.
+	--[+ Kill 10 Bombers with melee attacks. +]-- руоф Убить взрывунов в ближнем бою: 10.
 	--[+ Russian +]--
 	-- create_template("ach_her_5_ext_desc_ru",
 		-- {"loc_achievement_melee_renegade_description"}, {"ru"},
@@ -4016,7 +4304,7 @@ local localization_templates = {
 		{"loc_achievement_melee_renegade_description"}, {"zh-tw"},
 			loc_text("使用近戰攻擊擊殺 "..COLORS_Numbers.target_rgb.." 隻瘟疫爆者。")),
 
-		--[+  +]-- руоф Задуем свечи
+	--[+  +]-- руоф Задуем свечи
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"ru"},
@@ -4026,7 +4314,7 @@ local localization_templates = {
 		{"loc_achievement_team_team_chaos_beast_of_nurgle_slain_no_corruption_name"}, {"zh-tw"},
 			loc_text("熄滅蠟燭")),
 
-		-- !!Duplicate loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description --
+	-- !!Duplicate loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description --
 		--[+  +]-- руоф Убейте огнеметчиков из числа скабов и отбросов (50) до того, как они используют свои способности.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
@@ -4036,9 +4324,9 @@ local localization_templates = {
 	-- create_template("ach_her_1_ext_desc_tw",
 		-- {"loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description"}, {"zh-tw"},
 			-- loc_text("在沒有任何小隊成員被納垢巨獸的腐敗嘔吐擊中的情況下擊殺  "..COLORS_Numbers.target_rgb.." 隻納垢巨獸。")),
-		-- !!Duplicate loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description --
+	-- !!Duplicate loc_achievement_team_chaos_beast_of_nurgle_slain_no_corruption_description --
 
-		--[+ Bullying the Bully +]-- руоф Запугивание задиры
+	--[+ Bullying the Bully +]-- руоф Запугивание задиры
 	--[+ Russian +]--
 	create_template("ach_her_18_ext_ru",
 		{"loc_achievement_ogryn_gunner_melee_name"}, {"ru"},
@@ -4048,7 +4336,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_gunner_melee_name"}, {"zh-tw"},
 			loc_text("恃強凌強")),
 
-		--[+ Kill 10 Reapers in melee. +]-- руоф Убейте Жнеца (10) в ближнем бою.
+	--[+ Kill 10 Reapers in melee. +]-- руоф Убейте Жнеца (10) в ближнем бою.
 	--[+ Russian +]--
 	create_template("ach_her_18_ext_desc_ru",
 		{"loc_achievement_ogryn_gunner_melee_description"}, {"ru"},
@@ -4059,7 +4347,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_gunner_melee_description"}, {"zh-tw"},
 			loc_text("使用近戰攻擊擊殺 "..COLORS_Numbers.target_rgb.." 名收割者。")),
 
-		--[+ Cull the Traitors +]-- руоф Избавиться от предателей
+	--[+ Cull the Traitors +]-- руоф Избавиться от предателей
 	--[+ Russian +]--
 	create_template("ach_her_7_ext_ru",
 		{"loc_achievement_group_enemies_renegades_name"}, {"ru"},
@@ -4069,7 +4357,7 @@ local localization_templates = {
 		{"loc_achievement_group_enemies_renegades_name"}, {"zh-tw"},
 			loc_text("剷除叛徒")),
 
-		--[+ Complete the following Scab Penances. +]-- руоф Выполнить следующие скаб-искупления.
+	--[+ Complete the following Scab Penances. +]-- руоф Выполнить следующие скаб-искупления.
 	--[+ Russian +]--
 	create_template("ach_her_7_ext_desc_ru",
 		{"loc_achievement_group_enemies_renegades_description"}, {"ru"},
@@ -4081,7 +4369,7 @@ local localization_templates = {
 		{"loc_achievement_group_enemies_renegades_description"}, {"zh-tw"},
 			loc_text("完成下列『血痂』相關苦修。")),
 
-		--[+ Banishment +]-- руоф Изгнание
+	--[+ Banishment +]-- руоф Изгнание
 	--[+ Russian +]--
 	-- create_template("ach_her_16_ext_ru",
 		-- {"loc_achievement_all_chaos_killed_name"}, {"ru"},
@@ -4091,7 +4379,7 @@ local localization_templates = {
 		{"loc_achievement_all_chaos_killed_name"}, {"zh-tw"},
 			loc_text("敢盡殺絕")),
 
-		--[+ Kill every type of Terror. +]-- руоф Убейте все виды ужасов.
+	--[+ Kill every type of Terror. +]-- руоф Убейте все виды ужасов.
 	--[+ Russian +]--
 	create_template("ach_her_16_ext_desc_ru",
 		{"loc_achievement_all_chaos_killed_description"}, {"ru"},
@@ -4102,7 +4390,7 @@ local localization_templates = {
 		{"loc_achievement_all_chaos_killed_description"}, {"zh-tw"},
 			loc_text("擊殺所有類型的『混沌恐懼體』敵人各 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ Banisher +]-- руоф Изгоняющий демонов
+	--[+ Banisher +]-- руоф Изгоняющий демонов
 	--[+ Russian +]--
 	create_template("ach_her_19_ext_ru",
 		{"loc_achievement_banish_daemonhost_name"}, {"ru"},
@@ -4112,7 +4400,7 @@ local localization_templates = {
 		{"loc_achievement_banish_daemonhost_name"}, {"zh-tw"},
 			loc_text("放逐者")),
 
-		--[+ Banish a Daemonhost. +]-- руоф Изгоните демонхоста.
+	--[+ Banish a Daemonhost. +]-- руоф Изгоните демонхоста.
 	--[+ Russian +]--
 	create_template("ach_her_19_ext_desc_ru",{"loc_achievement_banish_daemonhost_description"}, {"ru"},
 			loc_text("Изгоните Демонхоста.")),
@@ -4122,7 +4410,7 @@ local localization_templates = {
 		{"loc_achievement_banish_daemonhost_description"}, {"zh-tw"},
 			loc_text("殺死 "..COLORS_Numbers.target_rgb.." 個惡魔宿主。")),
 
-		--[+  +]-- руоф К бою готов!
+	--[+  +]-- руоф К бою готов!
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_training_grounds_fully_unlocked_name"}, {"ru"},
@@ -4132,7 +4420,7 @@ local localization_templates = {
 		{"loc_achievement_training_grounds_fully_unlocked_name"}, {"zh-tw"},
 			loc_text("準備開打！")),
 
-		--[+  +]-- руоф Полностью разблокируйте тренировочную площадку.
+	--[+  +]-- руоф Полностью разблокируйте тренировочную площадку.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_training_grounds_fully_unlocked_description"}, {"ru"},
@@ -4143,7 +4431,7 @@ local localization_templates = {
 		{"loc_achievement_training_grounds_fully_unlocked_description"}, {"zh-tw"},
 			loc_text("完整解鎖訓練場。")),
 
-		--[+  +]-- руоф Как ты подкрался?
+	--[+  +]-- руоф Как ты подкрался?
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_bulwark_backstab_damage_inflicted_name"}, {"ru"},
@@ -4153,7 +4441,7 @@ local localization_templates = {
 		{"loc_achievement_bulwark_backstab_damage_inflicted_name"}, {"zh-tw"},
 			loc_text("意外一擊")),
 
-		--[+  +]-- руоф Нанесите урон (25000) огрину-бастиону ударом в спину.
+	--[+  +]-- руоф Нанесите урон (25000) огрину-бастиону ударом в спину.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_bulwark_backstab_damage_inflicted_description"}, {"ru"},
@@ -4164,7 +4452,7 @@ local localization_templates = {
 		{"loc_achievement_bulwark_backstab_damage_inflicted_description"}, {"zh-tw"},
 			loc_text("使用背刺對歐格林堡壘造成 "..COLORS_Numbers.target_rgb.." 點傷害")),
 
-		--[+ Traitorous Collective +]-- руоф Коллектив предателей
+	--[+ Traitorous Collective +]-- руоф Коллектив предателей
 	--[+ Russian +]--
 	-- create_template("ach_her_3_ext_ru",
 		-- {"loc_achievement_all_renegades_killed_name"}, {"ru"},
@@ -4174,7 +4462,7 @@ local localization_templates = {
 		{"loc_achievement_all_renegades_killed_name"}, {"zh-tw"},
 			loc_text("叛軍集團")),
 
-		--[+ Kill every type Scab enemy. +]-- руоф Убейте все виды врагов-Скабов.
+	--[+ Kill every type Scab enemy. +]-- руоф Убейте все виды врагов-Скабов.
 	--[+ Russian +]--
 	create_template("ach_her_3_ext_desc_ru",
 		{"loc_achievement_all_renegades_killed_description"}, {"ru"},
@@ -4184,7 +4472,7 @@ local localization_templates = {
 		{"loc_achievement_all_renegades_killed_description"}, {"zh-tw"},
 			loc_text("擊殺所有類型的『血痂』敵人各 "..COLORS_Numbers.target_rgb.." 次。")),
 
-		--[+ Nightmare Patrol +]-- руоф Кошмарный патруль
+	--[+ Nightmare Patrol +]-- руоф Кошмарный патруль
 	--[+ Russian +]--
 	-- create_template("ach_her_14_ext_ru",
 		-- {"loc_achievement_all_chaos_specials_killed_name"}, {"ru"},
@@ -4194,7 +4482,7 @@ local localization_templates = {
 		{"loc_achievement_all_chaos_specials_killed_name"}, {"zh-tw"},
 			loc_text("夢魘巡查隊")),
 
-		--[+ Kill 10 of each type of Terror Specialist. +]-- руоф Убейте специалистов из числа Ужасов: 10 каждого типа.
+	--[+ Kill 10 of each type of Terror Specialist. +]-- руоф Убейте специалистов из числа Ужасов: 10 каждого типа.
 	--[+ Russian +]--
 	create_template("ach_her_14_ext_desc_ru",
 		{"loc_achievement_all_chaos_specials_killed_description"}, {"ru"},
@@ -4205,7 +4493,7 @@ local localization_templates = {
 		{"loc_achievement_all_chaos_specials_killed_description"}, {"zh-tw"},
 			loc_text("擊殺每種『混沌恐懼體』專家敵人各 "..COLORS_Numbers.target_rgb.." 名。")),
 
-		--[+  +]-- руоф Как ты подкрался?
+	--[+  +]-- руоф Как ты подкрался?
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_name"}, {"ru"},
@@ -4215,7 +4503,7 @@ local localization_templates = {
 		{"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_name"}, {"zh-tw"},
 			loc_text("怪物驅散")),
 
-		--[+  +]-- руоф Убейте отродье Хаоса так, чтобы не схватили ни одного члена команды.
+	--[+  +]-- руоф Убейте отродье Хаоса так, чтобы не схватили ни одного члена команды.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_description"}, {"ru"},
@@ -4226,7 +4514,7 @@ local localization_templates = {
 		{"loc_achievement_team_chaos_spawned_killed_no_players_grabbed_description"}, {"zh-tw"},
 			loc_text("在沒有任何小隊成員被渾沌魔物抓住的情況下擊殺 "..COLORS_Numbers.target_rgb.." 隻渾沌魔物。")),
 
-		--[+  +]-- руоф Не попасться в сети
+	--[+  +]-- руоф Не попасться в сети
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_trapper_net_dodged_name"}, {"ru"},
@@ -4236,7 +4524,7 @@ local localization_templates = {
 		{"loc_achievement_trapper_net_dodged_name"}, {"zh-tw"},
 			loc_text("漏網之魚")),
 
-		--[+  +]-- руоф Увернитесь от сетей ловушечника (50). [По 1 за каждого ловушечника]
+	--[+  +]-- руоф Увернитесь от сетей ловушечника (50). [По 1 за каждого ловушечника]
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_trapper_net_dodged_description"}, {"ru"},
@@ -4247,7 +4535,7 @@ local localization_templates = {
 		{"loc_achievement_trapper_net_dodged_description"}, {"zh-tw"},
 			loc_text("躲避 "..COLORS_Numbers.target_rgb.." 名陷阱兵的網子，每名只計算1次。")),
 
-		--[+  +]-- руоф Обезвреживатель
+	--[+  +]-- руоф Обезвреживатель
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_grenadier_killed_before_attack_occured_name"}, {"ru"},
@@ -4258,7 +4546,7 @@ local localization_templates = {
 		-- {"loc_achievement_grenadier_killed_before_attack_occured_name"}, {"zh-tw"},
 			-- loc_text("拆彈專家")),
 
-		--[+  +]-- руоф Убейте гренадеров из числа скабов и отбросов (50) до того, как они используют свои способности.
+	--[+  +]-- руоф Убейте гренадеров из числа скабов и отбросов (50) до того, как они используют свои способности.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_grenadier_killed_before_attack_occured_description"}, {"ru"},
@@ -4266,7 +4554,7 @@ local localization_templates = {
 	--[+ Traditional Chinese +]--
 	-- Not used in the zh-tw
 
-		--[+  +]-- руоф Отвали от меня!
+	--[+  +]-- руоф Отвали от меня!
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_pox_hounds_pushed_name"}, {"ru"},
@@ -4276,7 +4564,7 @@ local localization_templates = {
 		{"loc_achievement_pox_hounds_pushed_name"}, {"zh-tw"},
 			loc_text("滾遠一點！")),
 
-		--[+  +]-- руоф Подбросьте чумных гончих (50) в воздух. [По 1 за каждую гончую]
+	--[+  +]-- руоф Подбросьте чумных гончих (50) в воздух. [По 1 за каждую гончую]
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_pox_hounds_pushed_description"}, {"ru"},
@@ -4287,17 +4575,58 @@ local localization_templates = {
 		{"loc_achievement_pox_hounds_pushed_description"}, {"zh-tw"},
 			loc_text("推開 "..COLORS_Numbers.target_rgb.." 隻瘟疫獵犬，每隻只計算1次。")),
 
-		--[+ Dreg Hunter (1-5) +]-- руоф Охотник на отбросов (1-5)
+	--[+ Dreg Hunter (1) +]-- руоф Охотник на отбросов (1)
 	--[+ Russian +]--
 	-- create_template("ach_her_11_ext_ru",
-		-- {"loc_achievement_kill_cultists_1-5_name"}, {"ru"},
-			-- loc_text("Охотник на дрегов (1-5)")),
-	--[+ Traditional Chinese +]--
-	-- create_template("ach_her_11_ext_tw",
-		-- {"loc_achievement_kill_cultists_1-5_name"}, {"zh-tw"},
-			-- loc_text("渣滓獵手 (1-5)")),
+		-- {"loc_achievement_kill_cultists_1_name"}, {"ru"},
+			-- loc_text("Охотник на дрегов (1)")),
+	--[+ Traditional Chinese 渣滓獵手 (1) +]--
+	create_template("ach_her_11_ext_tw",
+		{"loc_achievement_kill_cultists_1_name"}, {"zh-tw"},
+			loc_text("渣滓獵手 (1)")),
+	
+	--[+ Dreg Hunter (2) +]-- руоф Охотник на отбросов (2)
+	--[+ Russian +]--
+	-- create_template("ach_her_11_ext_ru",
+		-- {"loc_achievement_kill_cultists_2_name"}, {"ru"},
+			-- loc_text("Охотник на дрегов (2)")),
+	--[+ Traditional Chinese 渣滓獵手 (2) +]--
+	create_template("ach_her_11_ext_tw",
+		{"loc_achievement_kill_cultists_2_name"}, {"zh-tw"},
+			loc_text("渣滓獵手 (2)")),
 
-		--[+ Kill 25000 Dregs. +]-- руоф Убить отбросов: 25000.
+	--[+ Dreg Hunter (3) +]-- руоф Охотник на отбросов (3)
+	--[+ Russian +]--
+	-- create_template("ach_her_11_ext_ru",
+		-- {"loc_achievement_kill_cultists_3_name"}, {"ru"},
+			-- loc_text("Охотник на дрегов (3)")),
+	--[+ Traditional Chinese 渣滓獵手 (3) +]--
+	create_template("ach_her_11_ext_tw",
+		{"loc_achievement_kill_cultists_3_name"}, {"zh-tw"},
+			loc_text("渣滓獵手 (3)")),
+
+	--[+ Dreg Hunter (4) +]-- руоф Охотник на отбросов (4)
+	--[+ Russian +]--
+	-- create_template("ach_her_11_ext_ru",
+		-- {"loc_achievement_kill_cultists_4_name"}, {"ru"},
+			-- loc_text("Охотник на дрегов (4)")),
+	--[+ Traditional Chinese 渣滓獵手 (4) +]--
+	create_template("ach_her_11_ext_tw",
+		{"loc_achievement_kill_cultists_4_name"}, {"zh-tw"},
+			loc_text("渣滓獵手 (4)")),
+
+	--[+ Dreg Hunter (5) +]-- руоф Охотник на отбросов (5)
+	--[+ Russian +]--
+	-- create_template("ach_her_11_ext_ru",
+		-- {"loc_achievement_kill_cultists_5_name"}, {"ru"},
+			-- loc_text("Охотник на дрегов (5)")),
+	--[+ Traditional Chinese 渣滓獵手 (5) +]--
+	create_template("ach_her_11_ext_tw",
+		{"loc_achievement_kill_cultists_5_name"}, {"zh-tw"},
+			loc_text("渣滓獵手 (5)")),
+
+
+	--[+ Kill 25000 Dregs. +]-- руоф Убить отбросов: 25000.
 	--[+ Russian +]--
 	create_template("ach_her_11_ext_desc_ru",
 		{"loc_achievement_kill_cultists_x_description"}, {"ru"},
@@ -4307,7 +4636,7 @@ local localization_templates = {
 		{"loc_achievement_kill_cultists_x_description"}, {"zh-tw"},
 			loc_text("擊殺 "..COLORS_Numbers.target_rgb.." 名『渣滓』敵人。")),
 
-		--[+ Purge the Heretics +]-- руоф Очистить еретиков
+	--[+ Purge the Heretics +]-- руоф Очистить еретиков
 	--[+ Russian +]--
 	create_template("ach_her_13_ext_ru",
 		{"loc_achievement_group_enemies_cultists_name"}, {"ru"},
@@ -4317,7 +4646,7 @@ local localization_templates = {
 		{"loc_achievement_group_enemies_cultists_name"}, {"zh-tw"},
 			loc_text("淨化異端")),
 
-		--[+ Complete the following Dreg Penances. +]-- руоф Выполнить следующие искупления отбросов.
+	--[+ Complete the following Dreg Penances. +]-- руоф Выполнить следующие искупления отбросов.
 	--[+ Russian +]--
 	create_template("ach_her_13_ext_desc_ru",
 		{"loc_achievement_group_enemies_cultists_description"}, {"ru"},
@@ -4328,7 +4657,7 @@ local localization_templates = {
 		{"loc_achievement_group_enemies_cultists_description"}, {"zh-tw"},
 			loc_text("完成下列『渣滓』相關苦修。")),
 
-		--[+ Cleanse the Taint +]-- руоф Очистить порчу
+	--[+ Cleanse the Taint +]-- руоф Очистить порчу
 	--[+ Russian +]--
 	create_template("ach_her_20_ext_ru",
 		{"loc_achievement_group_enemies_chaos_name"}, {"ru"},
@@ -4338,7 +4667,7 @@ local localization_templates = {
 		{"loc_achievement_group_enemies_chaos_name"}, {"zh-tw"},
 			loc_text("除污去穢")),
  
-		--[+ Complete the following Terror Penances. +]-- руоф Выполнить следующие ужасные искупления.
+	--[+ Complete the following Terror Penances. +]-- руоф Выполнить следующие ужасные искупления.
 	--[+ Russian +]--
 	create_template("ach_her_20_ext_desc_ru",
 		{"loc_achievement_group_enemies_chaos_description"}, {"ru"},
@@ -4349,7 +4678,7 @@ local localization_templates = {
 		{"loc_achievement_group_enemies_chaos_description"}, {"zh-tw"},
 			loc_text("完成下列『恐魔』相關苦修。")),
 
-		--[+ Renegade Master +]-- руоф Повелитель-отступник
+	--[+ Renegade Master +]-- руоф Повелитель-отступник
 	--[+ Russian +]--
 	create_template("ach_her_1_ext_ru",
 		{"loc_achievement_all_renegade_specials_killed_name"}, {"ru"},
@@ -4359,7 +4688,7 @@ local localization_templates = {
 		{"loc_achievement_all_renegade_specials_killed_name"}, {"zh-tw"},
 			loc_text("叛軍主宰")),
 
-		--[+ Kill 10 of each Scab Specialist enemy. +]-- руоф Убейте Скабов-специалистов (по 10 каждого вида).
+	--[+ Kill 10 of each Scab Specialist enemy. +]-- руоф Убейте Скабов-специалистов (по 10 каждого вида).
 	--[+ Russian +]--
 	create_template("ach_her_1_ext_desc_ru",
 		{"loc_achievement_all_renegade_specials_killed_description"}, {"ru"},
@@ -4370,7 +4699,7 @@ local localization_templates = {
 		{"loc_achievement_all_renegade_specials_killed_description"}, {"zh-tw"},
 			loc_text("擊殺每種『血痂』專家敵人各 "..COLORS_Numbers.target_rgb.." 名。")),
 
-		--[+ Decapitation Protocol +]-- руоф Протокол обезглавливания
+	--[+ Decapitation Protocol +]-- руоф Протокол обезглавливания
 	--[+ Russian +]--
 	-- create_template("ach_her_12_ext_ru",
 		-- {"loc_achievement_cultiss_berzerker_head_name"}, {"ru"},
@@ -4381,7 +4710,7 @@ local localization_templates = {
 		{"loc_achievement_cultiss_berzerker_head_name"}, {"zh-tw"},
 			loc_text("斬首協議")),
 
-		--[+ Kill 10 Dreg Ragers with Headshots. +]-- руоф Убейте отброса-буйного (10) выстрелом в голову.
+	--[+ Kill 10 Dreg Ragers with Headshots. +]-- руоф Убейте отброса-буйного (10) выстрелом в голову.
 	--[+ Russian +]--
 	create_template("ach_her_12_ext_desc_ru",
 		{"loc_achievement_cultist_berzerker_head_description"}, {"ru"},
@@ -4392,7 +4721,7 @@ local localization_templates = {
 		{"loc_achievement_cultist_berzerker_head_description"}, {"zh-tw"},
 			loc_text("使用爆頭擊殺 "..COLORS_Numbers.target_rgb.." 名渣滓狂怒者。")),
 
-		--[+ Purification Protocol +]-- руоф Протокол очищения
+	--[+ Purification Protocol +]-- руоф Протокол очищения
 	--[+ Russian +]--
 	-- create_template("ach_her_15_ext_ru",
 		-- {"loc_achievement_all_chaos_elites_killed_name"}, {"ru"},
@@ -4402,7 +4731,7 @@ local localization_templates = {
 		{"loc_achievement_all_chaos_elites_killed_name"}, {"zh-tw"},
 			loc_text("淨化協議")),
 
-		--[+ Kill 10 Elite Terrors. +]-- руоф Убейте элитных врагов из числа Ужасов: 10.
+	--[+ Kill 10 Elite Terrors. +]-- руоф Убейте элитных врагов из числа Ужасов: 10.
 	--[+ Russian +]--
 	create_template("ach_her_15_ext_desc_ru",
 		{"loc_achievement_all_chaos_elites_killed_description"}, {"ru"},
@@ -4413,7 +4742,7 @@ local localization_templates = {
 		{"loc_achievement_all_chaos_elites_killed_description"}, {"zh-tw"},
 			loc_text("擊殺每種『混沌恐懼體』精英敵人各 "..COLORS_Numbers.target_rgb.." 名。")),
 
-		--[+  +]-- руоф Прыткие пятки
+	--[+  +]-- руоф Прыткие пятки
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_mutant_charge_dodged_name"}, {"ru"},
@@ -4423,7 +4752,7 @@ local localization_templates = {
 		{"loc_achievement_mutant_charge_dodged_name"}, {"zh-tw"},
 			loc_text("快腳")),
 
-		--[+  +]-- руоф Увернитесь от атак мутантов (50). [По 1 за каждого мутанта]
+	--[+  +]-- руоф Увернитесь от атак мутантов (50). [По 1 за каждого мутанта]
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_mutant_charge_dodged_description"}, {"ru"},
@@ -4434,7 +4763,7 @@ local localization_templates = {
 		{"loc_achievement_mutant_charge_dodged_description"}, {"zh-tw"},
 			loc_text("躲避 "..COLORS_Numbers.target_rgb.." 名變種人的衝鋒，每名只計算1次。")),
 
-		--[+  +]-- руоф Решающий рывок
+	--[+  +]-- руоф Решающий рывок
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_cultist_gunner_shot_dodged_name"}, {"ru"},
@@ -4444,7 +4773,7 @@ local localization_templates = {
 		{"loc_achievement_cultist_gunner_shot_dodged_name"}, {"zh-tw"},
 			loc_text("快跑")),
 
-		--[+  +]-- руоф Увернитесь от выстрелов пулеметчика (500) во время бега.
+	--[+  +]-- руоф Увернитесь от выстрелов пулеметчика (500) во время бега.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_cultist_gunner_shot_dodged_description"}, {"ru"},
@@ -4455,17 +4784,57 @@ local localization_templates = {
 		{"loc_achievement_cultist_gunner_shot_dodged_description"}, {"zh-tw"},
 			loc_text("衝刺時躲掉 "..COLORS_Numbers.target_rgb.." 次槍手射擊。")),
 
-		--[+ Scab Picker (1-5) +]-- руоф Сборщик скабов (1-5)
+	--[+ Scab Picker (1) +]-- руоф Сборщик скабов (1)
 	--[+ Russian +]--
 	-- create_template("ach_her_4_ext_ru",
 		-- {"loc_achievement_kill_renegades_1-5_name"}, {"ru"},
-			-- loc_text("Сборщик скабов (1-5)")),
-	--[+ Traditional Chinese +]--
-	-- create_template("ach_her_4_ext_tw",
-		-- {"loc_achievement_kill_renegades_1-5_name"}, {"zh-tw"},
-			-- loc_text("血痂採集者 (1-5)")),
+			-- loc_text("Сборщик скабов (1)")),
+	--[+ Traditional Chinese 血痂採集者 (1) +]--
+	create_template("ach_her_4_ext_tw",
+		{"loc_achievement_kill_renegades_1_name"}, {"zh-tw"},
+			loc_text("血痂採集者 (1-)")),
+	
+	--[+ Scab Picker (2) +]-- руоф Сборщик скабов (2)
+	--[+ Russian +]--
+	-- create_template("ach_her_4_ext_ru",
+		-- {"loc_achievement_kill_renegades_1-5_name"}, {"ru"},
+			-- loc_text("Сборщик скабов (2)")),
+	--[+ Traditional Chinese 血痂採集者 (2) +]--
+	create_template("ach_her_4_ext_tw",
+		{"loc_achievement_kill_renegades_2_name"}, {"zh-tw"},
+			loc_text("血痂採集者 (2)")),
+	
+	--[+ Scab Picker (3) +]-- руоф Сборщик скабов (3)
+	--[+ Russian +]--
+	-- create_template("ach_her_4_ext_ru",
+		-- {"loc_achievement_kill_renegades_1-5_name"}, {"ru"},
+			-- loc_text("Сборщик скабов (3)")),
+	--[+ Traditional Chinese 血痂採集者 (3) +]--
+	create_template("ach_her_4_ext_tw",
+		{"loc_achievement_kill_renegades_3_name"}, {"zh-tw"},
+			loc_text("血痂採集者 (3)")),
 
-		--[+ Kill 25000 Scabs. +]-- руоф Убить Скабов: 12500.
+	--[+ Scab Picker (4) +]-- руоф Сборщик скабов (4)
+	--[+ Russian +]--
+	-- create_template("ach_her_4_ext_ru",
+		-- {"loc_achievement_kill_renegades_1-5_name"}, {"ru"},
+			-- loc_text("Сборщик скабов (4)")),
+	--[+ Traditional Chinese 血痂採集者 (4) +]--
+	create_template("ach_her_4_ext_tw",
+		{"loc_achievement_kill_renegades_4_name"}, {"zh-tw"},
+			loc_text("血痂採集者 (4)")),
+
+	--[+ Scab Picker (5) +]-- руоф Сборщик скабов (5)
+	--[+ Russian +]--
+	-- create_template("ach_her_4_ext_ru",
+		-- {"loc_achievement_kill_renegades_1-5_name"}, {"ru"},
+			-- loc_text("Сборщик скабов (5)")),
+	--[+ Traditional Chinese 血痂採集者 (5) +]--
+	create_template("ach_her_4_ext_tw",
+		{"loc_achievement_kill_renegades_5_name"}, {"zh-tw"},
+			loc_text("血痂採集者 (5)")),
+
+	--[+ Kill 25000 Scabs. +]-- руоф Убить Скабов: 12500.
 	--[+ Russian +]--
 	create_template("ach_her_4_ext_desc_ru",{"loc_achievement_kill_renegades_x_description"}, {"ru"},
 			loc_text("Убейте "..COLORS_Numbers.target_rgb.." скабов.")),
@@ -4475,7 +4844,7 @@ local localization_templates = {
 		{"loc_achievement_kill_renegades_x_description"}, {"zh-tw"},
 			loc_text("擊殺 "..COLORS_Numbers.target_rgb.." 名『血痂』敵人。")),
 
-		--[+  +]-- руоф Сейчас рванет!
+	--[+  +]-- руоф Сейчас рванет!
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_team_poxburster_damage_avoided_name"}, {"ru"},
@@ -4485,7 +4854,7 @@ local localization_templates = {
 		{"loc_achievement_team_poxburster_damage_avoided_name"}, {"zh-tw"},
 			loc_text("要爆炸了！")),
 
-		--[+  +]-- руоф Убейте чумных взрывунов (50), чтобы ни вы, ни члены команды не получили урона.
+	--[+  +]-- руоф Убейте чумных взрывунов (50), чтобы ни вы, ни члены команды не получили урона.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_team_poxburster_damage_avoided_description"}, {"ru"},
@@ -4496,7 +4865,7 @@ local localization_templates = {
 		{"loc_achievement_team_poxburster_damage_avoided_description"}, {"zh-tw"},
 			loc_text("擊殺 "..COLORS_Numbers.target_rgb.." 名瘟疫爆者，且自己和隊友都沒受到傷害。")),
 
-		--[+ Elitist +]-- руоф Сторонник элиты
+	--[+ Elitist +]-- руоф Сторонник элиты
 	--[+ Russian +]--
 	create_template("ach_her_2_ext_ru",
 		{"loc_achievement_all_renegade_elites_killed_name"}, {"ru"},
@@ -4506,7 +4875,7 @@ local localization_templates = {
 		{"loc_achievement_all_renegade_elites_killed_name"}, {"zh-tw"},
 			loc_text("精英主義者")),
 
-		--[+ Kill 10 of each Scab elite enemy. +]-- руоф Убейте элитных Скабов (по 10 каждого вида).
+	--[+ Kill 10 of each Scab elite enemy. +]-- руоф Убейте элитных Скабов (по 10 каждого вида).
 	--[+ Russian +]--
 	create_template("ach_her_2_ext_desc_ru",
 		{"loc_achievement_all_renegade_elites_killed_description"}, {"ru"},
@@ -4517,7 +4886,7 @@ local localization_templates = {
 		{"loc_achievement_all_renegade_elites_killed_description"}, {"zh-tw"},
 			loc_text("擊殺每種『血痂』精英敵人各 "..COLORS_Numbers.target_rgb.." 名。")),
 
-		--[+  +]-- руоф Танец смерти
+	--[+  +]-- руоф Танец смерти
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_team_poxburster_damage_avoided_name"}, {"ru"},
@@ -4528,19 +4897,19 @@ local localization_templates = {
 		-- {"loc_achievement_team_poxburster_damage_avoided_name"}, {"zh-tw"},
 			-- loc_text("死亡之舞")),
 
-		--[+  +]-- руоф Увернитесь от ударов палача (50). [По 1 за каждого палача]
+	--[+  +]-- руоф Увернитесь от ударов палача (50). [По 1 за каждого палача]
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_team_poxburster_damage_avoided_description"}, {"ru"},
 			-- loc_text("Убейте по "..COLORS_Numbers.target_rgb.." врагов каждого типа из специалистов скабов.")),
 	--[+ Traditional Chinese +]--
 	-- 躲避50次重鎚兵的攻擊。[每個重鎚兵只能算一次]
--- Not used in the zh-tw!
+	-- Not used in the zh-tw!
 	-- create_template("ach_her_1_ext_desc_tw",
 		-- {"loc_achievement_team_poxburster_damage_avoided_description"}, {"zh-tw"},
 			-- loc_text("躲避 "..COLORS_Numbers.target_rgb.." 名重鎚兵的攻擊，每名只計算1次。")),
 
-		--[+ Lex Triumphant +]-- руоф Торжество Закона
+	--[+ Lex Triumphant +]-- руоф Торжество Закона
 	--[+ Russian +]--
 	create_template("ach_her_8_ext_ru",
 		{"loc_achievement_all_cultist_specials_killed_name"}, {"ru"},
@@ -4550,7 +4919,7 @@ local localization_templates = {
 		{"loc_achievement_all_cultist_specials_killed_name"}, {"zh-tw"},
 			loc_text("法律的凱旋")),
 
-		--[+ Kill 10 of each Dreg Specialist. +]-- руоф Убейте отбросов-специалистов (по 10 каждого вида).
+	--[+ Kill 10 of each Dreg Specialist. +]-- руоф Убейте отбросов-специалистов (по 10 каждого вида).
 	--[+ Russian +]--
 	create_template("ach_her_8_ext_desc_ru",
 		{"loc_achievement_all_cultist_specials_killed_description"}, {"ru"},
@@ -4561,7 +4930,7 @@ local localization_templates = {
 		{"loc_achievement_all_cultist_specials_killed_description"}, {"zh-tw"},
 			loc_text("擊殺每種『渣滓』專家敵人各 "..COLORS_Numbers.target_rgb.." 名。")),
 
-		--[+ Hard Labour +]-- руоф Тяжелый труд
+	--[+ Hard Labour +]-- руоф Тяжелый труд
 	--[+ Russian +]--
 	create_template("ach_her_6_ext_ru",
 		{"loc_achievement_executor_non_headshot_name"}, {"ru"},
@@ -4571,7 +4940,7 @@ local localization_templates = {
 		{"loc_achievement_executor_non_headshot_name"}, {"zh-tw"},
 			loc_text("苦工")),
 
-		--[+ Kill 10 Scab Maulers without using Headshots. +]-- руоф Убейте Скаба-Палача (10), не используя выстрел в голову.
+	--[+ Kill 10 Scab Maulers without using Headshots. +]-- руоф Убейте Скаба-Палача (10), не используя выстрел в голову.
 	--[+ Russian +]--
 	create_template("ach_her_6_ext_desc_ru",
 		{"loc_achievement_executor_non_headshot_description"}, {"ru"},
@@ -4582,7 +4951,7 @@ local localization_templates = {
 		{"loc_achievement_executor_non_headshot_description"}, {"zh-tw"},
 			loc_text("在不爆頭的情況下擊殺 "..COLORS_Numbers.target_rgb.." 名『血痂』重鎚者。")),
 
-		--[+  +]-- руоф Хорошие рефлексы
+	--[+  +]-- руоф Хорошие рефлексы
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_sniper_dodged_name"}, {"ru"},
@@ -4592,7 +4961,7 @@ local localization_templates = {
 		{"loc_achievement_sniper_dodged_name"}, {"zh-tw"},
 			loc_text("高超反射")),
 
-		--[+  +]-- руоф Увернитесь от выстрелов снайпера (50). [По 1 за каждого снайпера]
+	--[+  +]-- руоф Увернитесь от выстрелов снайпера (50). [По 1 за каждого снайпера]
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_sniper_dodged_description"}, {"ru"},
@@ -4603,17 +4972,57 @@ local localization_templates = {
 		{"loc_achievement_sniper_dodged_description"}, {"zh-tw"},
 			loc_text("躲避 "..COLORS_Numbers.target_rgb.." 名狙擊手的射擊，每名只計算1次。")),
 
-		--[+ Purgator (1-5) +]-- руоф Чистильщик (1-5)
+	--[+ Purgator (1) +]-- руоф Чистильщик (1)
 	--[+ Russian +]--
 	-- create_template("ach_her_17_ext_ru",
-		-- {"loc_achievement_kill_chaos_1-5_name"}, {"ru"},
-			-- loc_text("Очиститель (1-5)")),
-	--[+ Traditional Chinese +]--
-	-- create_template("ach_her_17_ext_tw",
-		-- {"loc_achievement_kill_chaos_1-5_name"}, {"zh-tw"},
-			-- loc_text("滌罪者 (1-5)")),
+		-- {"loc_achievement_kill_chaos_1_name"}, {"ru"},
+			-- loc_text("Очиститель (1)")),
+	--[+ Traditional Chinese 滌罪者 (1) +]--
+	create_template("ach_her_17_ext_tw",
+		{"loc_achievement_kill_chaos_1_name"}, {"zh-tw"},
+			loc_text("滌罪者 (1)")),
 
-		--[+ Kill 25000 Poxwalkers and other Terrors of the warp. +]-- руоф Убить чумных ходоков и других врагов из числа Ужасов варпа: 15000.
+	--[+ Purgator (2) +]-- руоф Чистильщик (2)
+	--[+ Russian +]--
+	-- create_template("ach_her_17_ext_ru",
+		-- {"loc_achievement_kill_chaos_2_name"}, {"ru"},
+			-- loc_text("Очиститель (2)")),
+	--[+ Traditional Chinese 滌罪者 (2) +]--
+	create_template("ach_her_17_ext_tw",
+		{"loc_achievement_kill_chaos_2_name"}, {"zh-tw"},
+			loc_text("滌罪者 (2)")),
+
+	--[+ Purgator (3) +]-- руоф Чистильщик (3)
+	--[+ Russian +]--
+	-- create_template("ach_her_17_ext_ru",
+		-- {"loc_achievement_kill_chaos_3_name"}, {"ru"},
+			-- loc_text("Очиститель (3)")),
+	--[+ Traditional Chinese 滌罪者 (3) +]--
+	create_template("ach_her_17_ext_tw",
+		{"loc_achievement_kill_chaos_3_name"}, {"zh-tw"},
+			loc_text("滌罪者 (3)")),
+
+	--[+ Purgator (4) +]-- руоф Чистильщик (4)
+	--[+ Russian +]--
+	-- create_template("ach_her_17_ext_ru",
+		-- {"loc_achievement_kill_chaos_4_name"}, {"ru"},
+			-- loc_text("Очиститель (4)")),
+	--[+ Traditional Chinese 滌罪者 (4) +]--
+	create_template("ach_her_17_ext_tw",
+		{"loc_achievement_kill_chaos_4_name"}, {"zh-tw"},
+			loc_text("滌罪者 (4)")),
+	
+	--[+ Purgator (5) +]-- руоф Чистильщик (5)
+	--[+ Russian +]--
+	-- create_template("ach_her_17_ext_ru",
+		-- {"loc_achievement_kill_chaos_5_name"}, {"ru"},
+			-- loc_text("Очиститель (5)")),
+	--[+ Traditional Chinese 滌罪者 (5) +]--
+	create_template("ach_her_17_ext_tw",
+		{"loc_achievement_kill_chaos_5_name"}, {"zh-tw"},
+			loc_text("滌罪者 (5)")),
+
+	--[+ Kill 25000 Poxwalkers and other Terrors of the warp. +]-- руоф Убить чумных ходоков и других врагов из числа Ужасов варпа: 15000.
 	--[+ Russian +]--
 	create_template("ach_her_17_ext_desc_ru",
 		{"loc_achievement_kill_chaos_x_description"}, {"ru"},
@@ -4624,7 +5033,7 @@ local localization_templates = {
 		{"loc_achievement_kill_chaos_x_description"}, {"zh-tw"},
 			loc_text("擊殺 "..COLORS_Numbers.target_rgb.." 名瘟疫行者和其他亞空間恐魔。")),
 
-		--[+ Dreg Cleanser +]-- руоф Чистильщик отбросов
+	--[+ Dreg Cleanser +]-- руоф Чистильщик отбросов
 	--[+ Russian +]--
 	create_template("ach_her_10_ext_ru",
 		{"loc_achievement_all_cultists_killed_name"}, {"ru"},
@@ -4634,7 +5043,7 @@ local localization_templates = {
 		{"loc_achievement_all_cultists_killed_name"}, {"zh-tw"},
 			loc_text("渣滓清潔師")),
 
-		--[+ Kill every type of Dreg. +]-- руоф Убейте все виды отбросов.
+	--[+ Kill every type of Dreg. +]-- руоф Убейте все виды отбросов.
 	--[+ Russian +]--
 	create_template("ach_her_10_ext_desc_ru",
 		{"loc_achievement_all_cultists_killed_description"}, {"ru"},
@@ -4645,7 +5054,7 @@ local localization_templates = {
 		{"loc_achievement_all_cultists_killed_description"}, {"zh-tw"},
 			loc_text("擊殺每種類型的『渣滓』敵人。")),
 
-		--[+  +]-- руоф Это всё, на что ты способен?
+	--[+  +]-- руоф Это всё, на что ты способен?
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_ru",
 		-- {"loc_achievement_ogryn_gunner_shot_dodged_name"}, {"ru"},
@@ -4655,7 +5064,7 @@ local localization_templates = {
 		{"loc_achievement_ogryn_gunner_shot_dodged_name"}, {"zh-tw"},
 			loc_text("這就是你的極限了？")),
 
-		--[+  +]-- руоф Увернитесь от атак огрина-жнеца (500) во время бега.
+	--[+  +]-- руоф Увернитесь от атак огрина-жнеца (500) во время бега.
 	--[+ Russian +]--
 	-- create_template("ach_her_1_ext_desc_ru",
 		-- {"loc_achievement_ogryn_gunner_shot_dodged_description"}, {"ru"},
@@ -4677,7 +5086,7 @@ local localization_templates = {
 		{"loc_achievement_category_missions_label"}, {"zh-tw"},
 			loc_text("任務")),
 
-		--[+ General Missions +]-- руоф Обычные задания
+	--[+ General Missions +]-- руоф Обычные задания
 	--[+ Russian +]--
 	create_template("ach_mis_00_ext_ru",
 		{"loc_achievement_subcategory_missions_general_label"}, {"ru"},
@@ -4687,18 +5096,18 @@ local localization_templates = {
 		{"loc_achievement_subcategory_missions_general_label"}, {"zh-tw"},
 			loc_text("常規任務")),
 
-		--[+  +]-- руоф Архивариус
+	--[+  +]-- руоф Архивариус
 	--[+ Russian +]--
 	-- create_template("ach_mis_1_ext_ru",
 		-- {"loc_achievement_type_1_mission_5_name"}, {"ru"},
 			-- loc_text("Архивариус")),
 	--[+ Traditional Chinese +]--
-	-- Only work in level 5?
-	create_template("ach_mis_1_ext_tw",
-		{"loc_achievement_type_1_mission_5_name"}, {"zh-tw"},
-			loc_text("突擊派對 (5)")),
+	-- Not used in the zh-tw
+	-- create_template("ach_mis_1_ext_tw",
+	-- 	{"loc_achievement_type_1_mission_5_name"}, {"zh-tw"},
+	-- 		loc_text("突擊派對 (5)")),
 
-		--[+ Complete 250 Raid missions. +]-- руоф Восстановите писания из заданий: 100.
+	--[+ Complete 250 Raid missions. +]-- руоф Восстановите писания из заданий: 100.
 	--[+ Russian +]--
 	create_template("ach_mis_1_ext_desc_ru",
 		{"loc_achievement_type_1_mission_x_description"}, {"ru"},
@@ -4709,17 +5118,18 @@ local localization_templates = {
 		{"loc_achievement_type_1_mission_x_description"}, {"zh-tw"},
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次突襲任務。")),
 
-		--[+ Atoman Auxilia (1-4) +]-- руоф Ауксилии Атомы (1-4)
+	--[+ Atoman Auxilia (1-4) +]-- руоф Ауксилии Атомы (1-4)
 	--[+ Russian +]--
 	-- create_template("ach_mis_8_ext_ru",
 		-- {"loc_achievement_missions_1-4_name"}, {"ru"},
 			-- loc_text("Ауксилии Атомы (1-4)")),
 	--[+ Traditional Chinese +]--
+	-- Not used in the zh-tw
 	-- create_template("ach_mis_8_ext_tw",
 		-- {"loc_achievement_missions_1-4_name"}, {"zh-tw"},
 			-- loc_text("亞托瑪輔助軍")),
  
-		--[+ Complete 1000 Missions. +]-- руоф Выполнить задания: 500.
+	--[+ Complete 1000 Missions. +]-- руоф Выполнить задания: 500.
 	--[+ Russian +]--
 	create_template("ach_mis_8_ext_desc_ru",
 		{"loc_achievement_missions_x_description"}, {"ru"},
@@ -4731,17 +5141,57 @@ local localization_templates = {
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次任務。")),
 
 
-		--[+ Auspex Drill (1-5) +]-- руоф Ауспекс-тренировка (1-5)
+	--[+ Auspex Drill (1) +]-- руоф Ауспекс-тренировка (1)
 	--[+ Russian +]--
 	-- create_template("ach_mis_9_ext_ru",
-		-- {"loc_achievement_scan_1-5_name"}, {"ru",},
-			-- loc_text("Ауспекс взлом (1-5)")),
-	--[+ Traditional Chinese +]--
-	-- create_template("ach_mis_9_ext_tw",
-		-- {"loc_achievement_scan_1-5_name"}, {"zh-tw"},
-			-- loc_text("鳥卜儀訓練 (1-5)")),
+		-- {"loc_achievement_scan_1_name"}, {"ru",},
+			-- loc_text("Ауспекс взлом (1)")),
+	--[+ Traditional Chinese 鳥卜儀訓練 (1) +]--
+	create_template("ach_mis_9_ext_tw",
+		{"loc_achievement_scan_1_name"}, {"zh-tw"},
+			loc_text("鳥卜儀訓練 (1)")),
+	
+	--[+ Auspex Drill (2) +]-- руоф Ауспекс-тренировка (2)
+	--[+ Russian +]--
+	-- create_template("ach_mis_9_ext_ru",
+		-- {"loc_achievement_scan_2_name"}, {"ru",},
+			-- loc_text("Ауспекс взлом (2)")),
+	--[+ Traditional Chinese 鳥卜儀訓練 (2) +]--
+	create_template("ach_mis_9_ext_tw",
+		{"loc_achievement_scan_2_name"}, {"zh-tw"},
+			loc_text("鳥卜儀訓練 (2)")),
 
-		--[+ Scan 200 Auspex targets. +]-- руоф Просканировать целей ауспекса: 200.
+	--[+ Auspex Drill (3) +]-- руоф Ауспекс-тренировка (3)
+	--[+ Russian +]--
+	-- create_template("ach_mis_9_ext_ru",
+		-- {"loc_achievement_scan_3_name"}, {"ru",},
+			-- loc_text("Ауспекс взлом (3)")),
+	--[+ Traditional Chinese 鳥卜儀訓練 (3) +]--
+	create_template("ach_mis_9_ext_tw",
+		{"loc_achievement_scan_3_name"}, {"zh-tw"},
+			loc_text("鳥卜儀訓練 (3)")),
+
+	--[+ Auspex Drill (4) +]-- руоф Ауспекс-тренировка (4)
+	--[+ Russian +]--
+	-- create_template("ach_mis_9_ext_ru",
+		-- {"loc_achievement_scan_4_name"}, {"ru",},
+			-- loc_text("Ауспекс взлом (4)")),
+	--[+ Traditional Chinese 鳥卜儀訓練 (4) +]--
+	create_template("ach_mis_9_ext_tw",
+		{"loc_achievement_scan_4_name"}, {"zh-tw"},
+			loc_text("鳥卜儀訓練 (4)")),
+
+	--[+ Auspex Drill (5) +]-- руоф Ауспекс-тренировка (5)
+	--[+ Russian +]--
+	-- create_template("ach_mis_9_ext_ru",
+		-- {"loc_achievement_scan_5_name"}, {"ru",},
+			-- loc_text("Ауспекс взлом (5)")),
+	--[+ Traditional Chinese 鳥卜儀訓練 (5) +]--
+	create_template("ach_mis_9_ext_tw",
+		{"loc_achievement_scan_5_name"}, {"zh-tw"},
+			loc_text("鳥卜儀訓練 (5)")),
+
+	--[+ Scan 200 Auspex targets. +]-- руоф Просканировать целей ауспекса: 200.
 	--[+ Russian +]--
 	create_template("ach_mis_9_ext_desc_ru",
 		{"loc_achievement_scan_x_description"}, {"ru"},
@@ -4752,7 +5202,7 @@ local localization_templates = {
 		{"loc_achievement_scan_x_description"}, {"zh-tw"},
 			loc_text("掃描 "..COLORS_Numbers.target_rgb.." 個鳥卜儀目標。")),
 
-		--[+ Flawless interrogator +]-- руоф Безупречный опросчик
+	--[+ Flawless interrogator +]-- руоф Безупречный опросчик
 	--[+ Russian +]--
 	-- create_template("ach_mis_11_ext_ru",
 		-- {"loc_achievement_hack_perfect_name"}, {"ru",},
@@ -4762,7 +5212,7 @@ local localization_templates = {
 		{"loc_achievement_hack_perfect_name"}, {"zh-tw"},
 			loc_text("完美審訊者")),
 
-		--[+ Complete a Data Interrogation without an incorrect auspex entry. +]-- руоф Завершите опрос данных без выбора неправильной записи ауспекса.
+	--[+ Complete a Data Interrogation without an incorrect auspex entry. +]-- руоф Завершите опрос данных без выбора неправильной записи ауспекса.
 	--[+ Russian +]--
 	create_template("ach_mis_11_ext_desc_ru",
 		{"loc_achievement_hack_perfect_description"}, {"ru"},
@@ -4784,7 +5234,7 @@ local localization_templates = {
 		{"loc_achievement_mission_difficulty_objectives_1_name"}, {"zh-tw"},
 			loc_text("審判庭的新手")),
 
-		--[+ Complete each mission type on Sedition Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Мятеж» или выше.
+	--[+ Complete each mission type on Sedition Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Мятеж» или выше.
 	--[+ Russian +]--
 	create_template("ach_mis_13_1_ext_desc_ru",
 		{"loc_achievement_mission_difficulty_objectives_1_description"}, {"ru"},
@@ -4795,7 +5245,7 @@ local localization_templates = {
 		{"loc_achievement_mission_difficulty_objectives_1_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
-		--[+ The Legend Grows? +]-- руоф Становление легенды:\nВетеран Инквизиции
+	--[+ The Legend Grows? +]-- руоф Становление легенды:\nВетеран Инквизиции
 	--[+ Russian +]--
 	-- create_template("ach_mis_13_ext_ru",
 		-- {"loc_achievement_mission_difficulty_objectives_2_name"}, {"ru"},
@@ -4805,7 +5255,7 @@ local localization_templates = {
 		{"loc_achievement_mission_difficulty_objectives_2_name"}, {"zh-tw"},
 			loc_text("審判庭的老兵")),
 
-		--[+ Complete each mission type on Uprising Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Восстание» или выше.
+	--[+ Complete each mission type on Uprising Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Восстание» или выше.
 	--[+ Russian +]--
 	create_template("ach_mis_13_1_ext_desc_ru",
 		{"loc_achievement_mission_difficulty_objectives_2_description"}, {"ru"},
@@ -4816,7 +5266,7 @@ local localization_templates = {
 		{"loc_achievement_mission_difficulty_objectives_2_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
-		--[+ The Legend Grows? +]-- руоф Становление легенды:\nЭталон Инквизиции
+	--[+ The Legend Grows? +]-- руоф Становление легенды:\nЭталон Инквизиции
 	--[+ Russian +]--
 	-- create_template("ach_mis_13_ext_ru",
 		-- {"loc_achievement_mission_difficulty_objectives_3_name"}, {"ru"},
@@ -4826,7 +5276,7 @@ local localization_templates = {
 		{"loc_achievement_mission_difficulty_objectives_3_name"}, {"zh-tw"},
 			loc_text("審判庭的模範")),
 
-		--[+ Complete each mission type on Malice Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+	--[+ Complete each mission type on Malice Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
 	--[+ Russian +]--
 	create_template("ach_mis_13_1_ext_desc_ru",
 		{"loc_achievement_mission_difficulty_objectives_3_description"}, {"ru"},
@@ -4837,7 +5287,7 @@ local localization_templates = {
 		{"loc_achievement_mission_difficulty_objectives_3_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
-		--[+ The Legend Grows? +]-- руоф Становление легенды:\nЛегенда Инквизиции
+	--[+ The Legend Grows? +]-- руоф Становление легенды:\nЛегенда Инквизиции
 	--[+ Russian +]--
 	-- create_template("ach_mis_13_ext_ru",
 		-- {"loc_achievement_mission_difficulty_objectives_4_name"}, {"ru"},
@@ -4847,7 +5297,7 @@ local localization_templates = {
 		{"loc_achievement_mission_difficulty_objectives_4_name"}, {"zh-tw"},
 			loc_text("審判庭的傳奇")),
 
-		--[+ Complete each mission type on Heresy Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
+	--[+ Complete each mission type on Heresy Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
 	--[+ Russian +]--
 	create_template("ach_mis_13_1_ext_desc_ru",
 		{"loc_achievement_mission_difficulty_objectives_4_description"}, {"ru"},
@@ -4866,7 +5316,7 @@ local localization_templates = {
 			-- loc_text("Становление легенды")),
 	--[+ Traditional Chinese - 審判庭的傳奇 +]--
 
-		--[+ Complete each mission type on Damnation Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Проклятие» или выше.
+	--[+ Complete each mission type on Damnation Threat or higher. +]-- руоф Выполнить по меньшей мере одно задание каждого типа при угрозе «Проклятие» или выше.
 	--[+ Russian +]--
 	create_template("ach_mis_13_1_ext_desc_ru",
 		{"loc_achievement_mission_difficulty_objectives_5_description"}, {"ru"},
@@ -4877,57 +5327,57 @@ local localization_templates = {
 			-- loc_text("在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
 	--[+ +Налёты+ +]--
-		--[+ Raiding Party (1) +]-- руоф Вечеринка налетчиков (1)
+	--[+ Raiding Party (1) +]-- руоф Вечеринка налетчиков (1)
 	--[+ Russian +]--
 	create_template("ach_mis_1_ext_ru",
 		{"loc_achievement_type_1_mission_1_name"}, {"ru"},
 			loc_text("Группа налётчиков (1)")),
-	----[+ Traditional Chinese 突擊派對 (1) +]--
+	--[+ Traditional Chinese 突擊派對 (1) +]--
 	create_template("ach_mis_1_ext_tw",
 		{"loc_achievement_type_1_mission_1_name"}, {"zh-tw"},
 			loc_text("突擊派對 (1)")),
 
-		--[+ Raiding Party (2) +]-- руоф Вечеринка налетчиков (2)
+	--[+ Raiding Party (2) +]-- руоф Вечеринка налетчиков (2)
 	--[+ Russian +]--
 	create_template("ach_mis_1_ext_ru",
 		{"loc_achievement_type_1_mission_2_name"}, {"ru"},
 			loc_text("Группа налётчиков (2)")),
-	----[+ Traditional Chinese 突擊派對 (2) +]--
+	--[+ Traditional Chinese 突擊派對 (2) +]--
 	create_template("ach_mis_1_ext_tw",
 		{"loc_achievement_type_1_mission_2_name"}, {"zh-tw"},
 			loc_text("突擊派對 (2)")),
 
-		--[+ Raiding Party (3) +]-- руоф Вечеринка налетчиков (3)
+	--[+ Raiding Party (3) +]-- руоф Вечеринка налетчиков (3)
 	--[+ Russian +]--
 	create_template("ach_mis_1_ext_ru",
 		{"loc_achievement_type_1_mission_3_name"}, {"ru"},
 			loc_text("Группа налётчиков (3)")),
-	----[+ Traditional Chinese 突擊派對 (3) +]--
+	--[+ Traditional Chinese 突擊派對 (3) +]--
 	create_template("ach_mis_1_ext_tw",
 		{"loc_achievement_type_1_mission_3_name"}, {"zh-tw"},
 			loc_text("突擊派對 (3)")),
 
-		--[+ Raiding Party (4) +]-- руоф Вечеринка налетчиков (4)
+	--[+ Raiding Party (4) +]-- руоф Вечеринка налетчиков (4)
 	--[+ Russian +]--
 	create_template("ach_mis_1_ext_ru",
 		{"loc_achievement_type_1_mission_4_name"}, {"ru"},
 			loc_text("Группа налётчиков (4)")),
-	----[+ Traditional Chinese 突擊派對 (4) +]--
+	--[+ Traditional Chinese 突擊派對 (4) +]--
 	create_template("ach_mis_1_ext_tw",
 		{"loc_achievement_type_1_mission_4_name"}, {"zh-tw"},
 			loc_text("突擊派對 (4)")),
 
-		--[+ Raiding Party (5) +]-- руоф Вечеринка налетчиков (5)
+	--[+ Raiding Party (5) +]-- руоф Вечеринка налетчиков (5)
 	--[+ Russian +]--
 	create_template("ach_mis_1_ext_ru",
 		{"loc_achievement_type_1_mission_5_name"}, {"ru"},
 			loc_text("Группа налётчиков (5)")),
-	----[+ Traditional Chinese 突擊派對 (5) +]--
+	--[+ Traditional Chinese 突擊派對 (5) +]--
 	create_template("ach_mis_1_ext_tw",
 		{"loc_achievement_type_1_mission_5_name"}, {"zh-tw"},
 			loc_text("突擊派對 (5)")),
 
-		--[+ Complete 250 Raid missions. +]-- руоф Выполните задания типа «Налет»: 100.
+	--[+ Complete 250 Raid missions. +]-- руоф Выполните задания типа «Налет»: 100.
 	--[+ Russian +]--
 	create_template("ach_mis_1_ext_desc_ru",
 		{"loc_achievement_type_1_mission_x_description"}, {"ru"},
@@ -4939,54 +5389,54 @@ local localization_templates = {
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次突襲任務。")),
 
 	--[+ +Расследования+ +]--
-		--[+ No Stone Unturned (1) +]-- руоф Всё вверх дном (1)
+	--[+ No Stone Unturned (1) +]-- руоф Всё вверх дном (1)
 	--[+ Russian +]--
 	create_template("ach_mis_3_ext_ru",
 		{"loc_achievement_type_3_mission_1_name"}, {"ru"},
 			loc_text("Заглянуть под каждый камень (1)")),
-	----[+ Traditional Chinese 不留死角 (1) +]--
+	--[+ Traditional Chinese 不留死角 (1) +]--
 	create_template("ach_mis_3_ext_tw",
 		{"loc_achievement_type_3_mission_1_name"}, {"zh-tw"},
 			loc_text("不留死角 (1)")),
 
-		--[+ No Stone Unturned (2) +]-- руоф Всё вверх дном (2)
+	--[+ No Stone Unturned (2) +]-- руоф Всё вверх дном (2)
 	--[+ Russian +]--
 	create_template("ach_mis_3_ext_ru",
 		{"loc_achievement_type_3_mission_2_name"}, {"ru"},
 			loc_text("Заглянуть под каждый камень (2)")),
-	----[+ Traditional Chinese 不留死角 (2) +]--
+	--[+ Traditional Chinese 不留死角 (2) +]--
 	create_template("ach_mis_3_ext_tw",
 		{"loc_achievement_type_3_mission_2_name"}, {"zh-tw"},
 			loc_text("不留死角 (2)")),
 
-		--[+ No Stone Unturned (3) +]-- руоф Всё вверх дном (3)
+	--[+ No Stone Unturned (3) +]-- руоф Всё вверх дном (3)
 	--[+ Russian +]--
 	create_template("ach_mis_3_ext_ru",
 		{"loc_achievement_type_3_mission_3_name"}, {"ru"},
 			loc_text("Заглянуть под каждый камень (3)")),
-	----[+ Traditional Chinese 不留死角 (3) +]--
+	--[+ Traditional Chinese 不留死角 (3) +]--
 	create_template("ach_mis_3_ext_tw",
 		{"loc_achievement_type_3_mission_3_name"}, {"zh-tw"},
 			loc_text("不留死角 (3)")),
 
-		--[+ No Stone Unturned (4) +]-- руоф Всё вверх дном (4)
+	--[+ No Stone Unturned (4) +]-- руоф Всё вверх дном (4)
 	--[+ Russian +]--
 	create_template("ach_mis_3_ext_ru",
 		{"loc_achievement_type_3_mission_4_name"}, {"ru"},
 			loc_text("Заглянуть под каждый камень (4)")),
-	----[+ Traditional Chinese 不留死角 (4) +]--
+	--[+ Traditional Chinese 不留死角 (4) +]--
 	create_template("ach_mis_3_ext_tw",
 		{"loc_achievement_type_3_mission_4_name"}, {"zh-tw"},
 			loc_text("不留死角 (4)")),
 
-		--[+ No Stone Unturned (5) +]-- руоф Всё вверх дном (5)
+	--[+ No Stone Unturned (5) +]-- руоф Всё вверх дном (5)
 	--[+ Russian +]--
 	create_template("ach_mis_3_ext_ru",
 		{"loc_achievement_type_3_mission_5_name"}, {"ru"},
 			loc_text("Заглянуть под каждый камень (5)")),
-	----[+ Traditional Chinese 不留死角 (5) +]--
+	--[+ Traditional Chinese 不留死角 (5) +]--
 
-		--[+ Complete 100 Investigation missions. +]-- руоф Завершите задания типа «Расследования»: 100.
+	--[+ Complete 100 Investigation missions. +]-- руоф Завершите задания типа «Расследования»: 100.
 	--[+ Russian +]--
 	create_template("ach_mis_3_ext_desc_ru",
 		{"loc_achievement_type_3_mission_x_description"}, {"ru"},
@@ -4998,57 +5448,57 @@ local localization_templates = {
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次調查任務。")),
 
 	--[+ +Диверсии+ +]--
-		--[+ Disruptive Behavior (1) +]-- руоф Диверсант - звучит гордо (1)
+	--[+ Disruptive Behavior (1) +]-- руоф Диверсант - звучит гордо (1)
 	--[+ Russian +]--
 	create_template("ach_mis_4_ext_ru",
 		{"loc_achievement_type_4_mission_1_name"}, {"ru"},
 			loc_text("Деструктивное поведение (1)")),
-	----[+ Traditional Chinese 搗亂行為 (1) +]--
+	--[+ Traditional Chinese 搗亂行為 (1) +]--
 	create_template("ach_mis_4_ext_tw",
 		{"loc_achievement_type_4_mission_1_name"}, {"zh-tw"},
 			loc_text("搗亂行為 (1)")),
 
-		--[+ Disruptive Behavior (2) +]-- руоф Диверсант - звучит гордо (2)
+	--[+ Disruptive Behavior (2) +]-- руоф Диверсант - звучит гордо (2)
 	--[+ Russian +]--
 	create_template("ach_mis_4_ext_ru",
 		{"loc_achievement_type_4_mission_2_name"}, {"ru"},
 			loc_text("Деструктивное поведение (2)")),
-	----[+ Traditional Chinese 搗亂行為 (2) +]--
+	--[+ Traditional Chinese 搗亂行為 (2) +]--
 	create_template("ach_mis_4_ext_tw",
 		{"loc_achievement_type_4_mission_2_name"}, {"zh-tw"},
 			loc_text("搗亂行為 (2)")),
 
-		--[+ Disruptive Behavior (3) +]-- руоф Диверсант - звучит гордо (3)
+	--[+ Disruptive Behavior (3) +]-- руоф Диверсант - звучит гордо (3)
 	--[+ Russian +]--
 	create_template("ach_mis_4_ext_ru",
 		{"loc_achievement_type_4_mission_3_name"}, {"ru"},
 			loc_text("Деструктивное поведение (3)")),
-	----[+ Traditional Chinese 搗亂行為 (3) +]--
+	--[+ Traditional Chinese 搗亂行為 (3) +]--
 	create_template("ach_mis_4_ext_tw",
 		{"loc_achievement_type_4_mission_3_name"}, {"zh-tw"},
 			loc_text("搗亂行為 (3)")),
 
-		--[+ Disruptive Behavior (4) +]-- руоф Диверсант - звучит гордо (4)
+	--[+ Disruptive Behavior (4) +]-- руоф Диверсант - звучит гордо (4)
 	--[+ Russian +]--
 	create_template("ach_mis_4_ext_ru",
 		{"loc_achievement_type_4_mission_4_name"}, {"ru"},
 			loc_text("Деструктивное поведение (4)")),
-	----[+ Traditional Chinese 搗亂行為 (4) +]--
+	--[+ Traditional Chinese 搗亂行為 (4) +]--
 	create_template("ach_mis_4_ext_tw",
 		{"loc_achievement_type_4_mission_4_name"}, {"zh-tw"},
 			loc_text("搗亂行為 (4)")),
 
-		--[+ Disruptive Behavior (5) +]-- руоф Диверсант - звучит гордо (5)
+	--[+ Disruptive Behavior (5) +]-- руоф Диверсант - звучит гордо (5)
 	--[+ Russian +]--
 	create_template("ach_mis_4_ext_ru",
 		{"loc_achievement_type_4_mission_5_name"}, {"ru"},
 			loc_text("Деструктивное поведение (5)")),
-	----[+ Traditional Chinese 搗亂行為 (5) +]--
+	--[+ Traditional Chinese 搗亂行為 (5) +]--
 	create_template("ach_mis_4_ext_tw",
 		{"loc_achievement_type_4_mission_5_name"}, {"zh-tw"},
 			loc_text("搗亂行為 (5)")),
 
-		--[+ Complete 150 Disruption missions. +]-- руоф Завершить задания типа «Диверсия»: 100.
+	--[+ Complete 150 Disruption missions. +]-- руоф Завершить задания типа «Диверсия»: 100.
 	--[+ Russian +]--
 	create_template("ach_mis_4_ext_desc_ru",
 		{"loc_achievement_type_4_mission_x_description"}, {"ru"},
@@ -5060,57 +5510,57 @@ local localization_templates = {
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次擾亂任務。")),
 
 	--[+ +Ликвидации+ +]--
-		--[+ Seek, Locate, Destroy (1) +]-- руоф Ищите, находите, уничтожайте (1)
+	--[+ Seek, Locate, Destroy (1) +]-- руоф Ищите, находите, уничтожайте (1)
 	--[+ Russian +]--
 	create_template("ach_mis_2_ext_ru",
 		{"loc_achievement_type_2_mission_1_name"}, {"ru"},
 			loc_text("Искать, найти, ликвидировать (1)")),
-	----[+ Traditional Chinese 尋找、定位、摧毀 (1) +]--
+	--[+ Traditional Chinese 尋找、定位、摧毀 (1) +]--
 	create_template("ach_mis_2_ext_tw",
 		{"loc_achievement_type_2_mission_1_name"}, {"zh-tw"},
 			loc_text("尋找、定位、摧毀 (1)")),
 
-		--[+ Seek, Locate, Destroy (2) +]-- руоф Ищите, находите, уничтожайте (2)
+	--[+ Seek, Locate, Destroy (2) +]-- руоф Ищите, находите, уничтожайте (2)
 	--[+ Russian +]--
 	create_template("ach_mis_2_ext_ru",
 		{"loc_achievement_type_2_mission_2_name"}, {"ru"},
 			loc_text("Искать, найти, ликвидировать (2)")),
-	----[+ Traditional Chinese 尋找、定位、摧毀 (2) +]--
+	--[+ Traditional Chinese 尋找、定位、摧毀 (2) +]--
 	create_template("ach_mis_2_ext_tw",
 		{"loc_achievement_type_2_mission_2_name"}, {"zh-tw"},
 			loc_text("尋找、定位、摧毀 (2)")),
 
-		--[+ Seek, Locate, Destroy (3) +]-- руоф Ищите, находите, уничтожайте (3)
+	--[+ Seek, Locate, Destroy (3) +]-- руоф Ищите, находите, уничтожайте (3)
 	--[+ Russian +]--
 	create_template("ach_mis_2_ext_ru",
 		{"loc_achievement_type_2_mission_3_name"}, {"ru"},
 			loc_text("Искать, найти, ликвидировать (3)")),
-	----[+ Traditional Chinese 尋找、定位、摧毀 (3) +]--
+	--[+ Traditional Chinese 尋找、定位、摧毀 (3) +]--
 	create_template("ach_mis_2_ext_tw",
 		{"loc_achievement_type_2_mission_3_name"}, {"zh-tw"},
 			loc_text("尋找、定位、摧毀 (3)")),
 
-		--[+ Seek, Locate, Destroy (4) +]-- руоф Ищите, находите, уничтожайте (4)
+	--[+ Seek, Locate, Destroy (4) +]-- руоф Ищите, находите, уничтожайте (4)
 	--[+ Russian +]--
 	create_template("ach_mis_2_ext_ru",
 		{"loc_achievement_type_2_mission_4_name"}, {"ru"},
 			loc_text("Искать, найти, ликвидировать (4)")),
-	----[+ Traditional Chinese 尋找、定位、摧毀 (4) +]--
+	--[+ Traditional Chinese 尋找、定位、摧毀 (4) +]--
 	create_template("ach_mis_2_ext_tw",
 		{"loc_achievement_type_2_mission_4_name"}, {"zh-tw"},
 			loc_text("尋找、定位、摧毀 (4)")),
 
-		--[+ Seek, Locate, Destroy (5) +]-- руоф Ищите, находите, уничтожайте (5)
+	--[+ Seek, Locate, Destroy (5) +]-- руоф Ищите, находите, уничтожайте (5)
 	--[+ Russian +]--
 	create_template("ach_mis_2_ext_ru",
 		{"loc_achievement_type_2_mission_5_name"}, {"ru"},
 			loc_text("Искать, найти, ликвидировать (5)")),
-	----[+ Traditional Chinese 尋找、定位、摧毀 (4) +]--
+	--[+ Traditional Chinese 尋找、定位、摧毀 (4) +]--
 	create_template("ach_mis_2_ext_tw",
 		{"loc_achievement_type_2_mission_5_name"}, {"zh-tw"},
 			loc_text("尋找、定位、摧毀 (5)")),
 
-		--[+ Complete 200 Assassination missions. +]-- руоф Выполнить заданий на убийство: 100.
+	--[+ Complete 200 Assassination missions. +]-- руоф Выполнить заданий на убийство: 100.
 	--[+ Russian +]--
 	create_template("ach_mis_2_ext_desc_ru",
 		{"loc_achievement_type_2_mission_x_description"}, {"ru"},
@@ -5122,17 +5572,57 @@ local localization_templates = {
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次刺殺任務。")),
 
 	--[+ +Шпионаж+ +]--
-		--[+ Master of Intrique (1-5) +]-- руоф Мастер интриги (1-5)
+	--[+ Master of Intrique (1) +]-- руоф Мастер интриги (1)
 	--[+ Russian +]--
 	-- create_template("ach_mis_6_ext_ru",
-		-- {"loc_achievement_type_6_mission_1-5_name"}, {"ru"},
-			-- loc_text("Мастер интриг (1-5)")),
-	--[+ Traditional Chinese +]--
-	-- create_template("ach_mis_6_ext_tw",
-		-- {"loc_achievement_type_6_mission_1-5_name"}, {"zh-tw"},
-			-- loc_text("陰謀大師 (1-5)")),
+		-- {"loc_achievement_type_6_mission_1_name"}, {"ru"},
+			-- loc_text("Мастер интриг (1)")),
+	--[+ Traditional Chinese 陰謀大師 (1) +]--
+	create_template("ach_mis_6_ext_tw",
+		{"loc_achievement_type_6_mission_1_name"}, {"zh-tw"},
+			loc_text("陰謀大師 (1)")),
 
-		--[+ Complete 150 Espionage missions. +]-- руоф Завершите задания типа «Шпионаж»: 100.
+	--[+ Master of Intrique (2) +]-- руоф Мастер интриги (2)
+	--[+ Russian +]--
+	-- create_template("ach_mis_6_ext_ru",
+		--{"loc_achievement_type_6_mission_2_name"}, {"ru"},
+			-- loc_text("Мастер интриг (2)")),
+	--[+ Traditional Chinese 陰謀大師 (2) +]--
+	create_template("ach_mis_6_ext_tw",
+		{"loc_achievement_type_6_mission_2_name"}, {"zh-tw"},
+			loc_text("陰謀大師 (2)")),
+
+	--[+ Master of Intrique (3) +]-- руоф Мастер интриги (3)
+	--[+ Russian +]--
+	-- create_template("ach_mis_6_ext_ru",
+		-- {"loc_achievement_type_6_mission_3_name"}, {"ru"},
+			-- loc_text("Мастер интриг (3)")),
+	--[+ Traditional Chinese 陰謀大師 (3) +]--
+	create_template("ach_mis_6_ext_tw",
+		{"loc_achievement_type_6_mission_3_name"}, {"zh-tw"},
+			loc_text("陰謀大師 (3)")),
+
+	--[+ Master of Intrique (4) +]-- руоф Мастер интриги (4)
+	--[+ Russian +]--
+	-- create_template("ach_mis_6_ext_ru",
+		-- {"loc_achievement_type_6_mission_4_name"}, {"ru"},
+			-- loc_text("Мастер интриг (4)")),
+	--[+ Traditional Chinese 陰謀大師 (4) +]--
+	create_template("ach_mis_6_ext_tw",
+		{"loc_achievement_type_6_mission_4_name"}, {"zh-tw"},
+			loc_text("陰謀大師 (4)")),
+
+	--[+ Master of Intrique (5) +]-- руоф Мастер интриги (5)
+	--[+ Russian +]--
+	-- create_template("ach_mis_6_ext_ru",
+		-- {"loc_achievement_type_6_mission_5_name"}, {"ru"},
+			-- loc_text("Мастер интриг (5)")),
+	--[+ Traditional Chinese 陰謀大師 (5) +]--
+	create_template("ach_mis_6_ext_tw",
+		{"loc_achievement_type_6_mission_5_name"}, {"zh-tw"},
+			loc_text("陰謀大師 (5)")),
+
+	--[+ Complete 150 Espionage missions. +]-- руоф Завершите задания типа «Шпионаж»: 100.
 	--[+ Russian +]--
 	create_template("ach_mis_6_ext_desc_ru",
 		{"loc_achievement_type_6_mission_x_description"}, {"ru"},
@@ -5143,7 +5633,7 @@ local localization_templates = {
 		{"loc_achievement_type_6_mission_x_description"}, {"zh-tw"},
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次破壞任務。")),
 
-		--[+ Mission Improbable +]-- руоф Задание невыполнимо
+	--[+ Mission Improbable +]-- руоф Задание невыполнимо
 	--[+ Russian +]--
 	create_template("ach_mis_14_ext_ru",
 		{"loc_achievement_group_missions_name"}, {"ru"},
@@ -5153,7 +5643,7 @@ local localization_templates = {
 		{"loc_achievement_group_missions_name"}, {"zh-tw"},
 			loc_text("不可能的任務")),
 
-		--[+ Complete the following Mission Penances. +]-- руоф Выполните следующие искупления с заданиями.
+	--[+ Complete the following Mission Penances. +]-- руоф Выполните следующие искупления с заданиями.
 	--[+ Russian +]--
 	create_template("ach_mis_14_ext_desc_ru",
 		{"loc_achievement_group_missions_description"}, {"ru"},
@@ -5164,7 +5654,7 @@ local localization_templates = {
 		{"loc_achievement_group_missions_description"}, {"zh-tw"},
 			loc_text("完成以下任務苦修。")),
 
-		--[+  +]-- руоф Задержи дыхание (1-3)
+	--[+  +]-- руоф Задержи дыхание (1-3)
 	--[+ Russian +]--
 	-- create_template("ach_mis_1_ext_ru",
 		-- {"loc_achievement_mission_tox_gas_x_name"}, {"ru"},
@@ -5174,7 +5664,7 @@ local localization_templates = {
 		-- {"loc_achievement_mission_tox_gas_x_name"}, {"zh-tw"},
 			-- loc_text("屏住呼吸 (1-3)")),
 
-		--[+  +]-- руоф Завершите задание с обстоятельством «чумной газ» 50 р.
+	--[+  +]-- руоф Завершите задание с обстоятельством «чумной газ» 50 р.
 	--[+ Russian +]--
 	-- create_template("ach_mis_1_ext_desc_ru",
 		-- {"loc_achievement_mission_tox_gas_x_description"}, {"ru"},
@@ -5185,7 +5675,7 @@ local localization_templates = {
 		{"loc_achievement_mission_tox_gas_x_description"}, {"zh-tw"},
 			loc_text("在瘟疫毒氣情境下，完成 "..COLORS_Numbers.target_rgb.." 次任務。")),
 
-		--[+  +]-- руоф Запретные тексты (1-5)
+	--[+  +]-- руоф Запретные тексты (1-5)
 	--[+ Russian +]--
 	-- create_template("ach_mis_1_ext_ru",
 		-- {"loc_achievement_mission_grimoire_recovery_name"}, {"ru"},
@@ -5195,7 +5685,7 @@ local localization_templates = {
 		-- {"loc_achievement_mission_grimoire_recovery_name"}, {"zh-tw"},
 			-- loc_text("禁忌文本 (1-5)")),
 
-		--[+  +]-- руоф Соберите и извлеките гримуары (75).
+	--[+  +]-- руоф Соберите и извлеките гримуары (75).
 	--[+ Russian +]--
 	-- create_template("ach_mis_1_ext_desc_ru",
 		-- {"loc_achievement_mission_grimoire_recovery_description"}, {"ru"},
@@ -5206,7 +5696,7 @@ local localization_templates = {
 		{"loc_achievement_mission_grimoire_recovery_description"}, {"zh-tw"},
 			loc_text("收集並回收 "..COLORS_Numbers.target_rgb.." 本法術書。")),
 
-		--[+  +]-- руоф Искатель
+	--[+  +]-- руоф Искатель
 	--[+ Russian +]--
 	-- create_template("ach_mis_1_ext_ru",
 		-- {"loc_achievement_amount_of_chests_opened_name"}, {"ru"},
@@ -5216,7 +5706,7 @@ local localization_templates = {
 		{"loc_achievement_amount_of_chests_opened_name"}, {"zh-tw"},
 			loc_text("尋寶者")),
 
-		--[+  +]-- руоф Откройте сундуки: 2500. Сундуки, открытые членами команды, тоже учитываются.
+	--[+  +]-- руоф Откройте сундуки: 2500. Сундуки, открытые членами команды, тоже учитываются.
 	--[+ Russian +]--
 	-- create_template("ach_mis_1_ext_desc_ru",
 		-- {"loc_achievement_amount_of_chests_opened_description"}, {"ru"},
@@ -5227,17 +5717,17 @@ local localization_templates = {
 		{"loc_achievement_amount_of_chests_opened_description"}, {"zh-tw"},
 			loc_text("打開 "..COLORS_Numbers.target_rgb.." 個寶箱。盟友打開的也算。")),
 
-		--[+ The Machine Whisperer +]-- руоф Заклинатель машин
+	--[+ The Machine Whisperer +]-- руоф Заклинатель машин
 	--[+ Russian +]--
 	-- create_template("ach_mis_10_ext_ru",
 		-- {"loc_achievement_hack_5_name"}, {"ru"},
 			-- loc_text("Опросчик (1-5)")),
 	--[+ Traditional Chinese +]--
 	-- create_template("ach_mis_10_ext_tw",
-		-- {"loc_achievement_hack_5_name"}, {"zh-tw"},
-			-- loc_text("機械低語者 (1-5)")),
+	-- 	{"loc_achievement_hack_5_name"}, {"zh-tw"},
+	-- 		loc_text("機械低語者 (1-5)")),
 
-		--[+ Complete 200 successful data-interrogations. +]-- руоф Выполнить успешных опросов: 200.
+	--[+ Complete 200 successful data-interrogations. +]-- руоф Выполнить успешных опросов: 200.
 	--[+ Russian +]--
 	create_template("ach_mis_10_ext_desc_ru",
 		{"loc_achievement_hack_x_description"}, {"ru"},
@@ -5248,7 +5738,7 @@ local localization_templates = {
 		{"loc_achievement_hack_x_description"}, {"zh-tw"},
 			loc_text("成功完成 "..COLORS_Numbers.target_rgb.." 次數據詢問。")),
 
-		--[+ Strike Force (1) +]-- руоф Ударная группа (1)
+	--[+ Strike Force (1) +]-- руоф Ударная группа (1)
 	--[+ Russian +]--
 	-- create_template("ach_mis__ext_ru",
 		-- {"loc_achievement_type_5_mission_1_name"}, {"ru"},
@@ -5258,7 +5748,7 @@ local localization_templates = {
 		{"loc_achievement_type_5_mission_1_name"}, {"zh-tw"},
 			loc_text("打擊力量 (1)")),
 
-		--[+ Strike Force (2) +]-- руоф Ударная группа (2)
+	--[+ Strike Force (2) +]-- руоф Ударная группа (2)
 	--[+ Russian +]--
 	-- create_template("ach_mis_5_ext_ru",
 		-- {"loc_achievement_type_5_mission_2_name"}, {"ru"},
@@ -5268,7 +5758,7 @@ local localization_templates = {
 		{"loc_achievement_type_5_mission_2_name"}, {"zh-tw"},
 			loc_text("打擊力量 (2)")),
 
-		--[+ Strike Force (3) +]-- руоф Ударная группа (3)
+	--[+ Strike Force (3) +]-- руоф Ударная группа (3)
 	--[+ Russian +]--
 	-- create_template("ach_mis_5_ext_ru",
 		-- {"loc_achievement_type_5_mission_3_name"}, {"ru"},
@@ -5278,7 +5768,7 @@ local localization_templates = {
 		{"loc_achievement_type_5_mission_3_name"}, {"zh-tw"},
 			loc_text("打擊力量 (3)")),	
 
-		--[+ Strike Force (4) +]-- руоф Ударная группа (4)
+	--[+ Strike Force (4) +]-- руоф Ударная группа (4)
 	--[+ Russian +]--
 	-- create_template("ach_mis_5_ext_ru",
 		-- {"loc_achievement_type_5_mission_4_name"}, {"ru"},
@@ -5288,7 +5778,7 @@ local localization_templates = {
 		{"loc_achievement_type_5_mission_4_name"}, {"zh-tw"},
 			loc_text("打擊力量 (4)")),
 
-		--[+ Strike Force (5) +]-- руоф Ударная группа (5)
+	--[+ Strike Force (5) +]-- руоф Ударная группа (5)
 	--[+ Russian +]--
 	-- create_template("ach_mis_5_ext_ru",
 		-- {"loc_achievement_type_5_mission_5_name"}, {"ru"},
@@ -5298,7 +5788,7 @@ local localization_templates = {
 		{"loc_achievement_type_5_mission_5_name"}, {"zh-tw"},
 			loc_text("打擊力量 (5)")),
 
-		--[+ Complete 200 Strike missions. +]-- руоф Завершите задания типа «Удар»: 200.
+	--[+ Complete 200 Strike missions. +]-- руоф Завершите задания типа «Удар»: 200.
 	--[+ Russian +]--
 	create_template("ach_mis_5_ext_desc_ru",
 		{"loc_achievement_type_5_mission_x_description"}, {"ru"},
@@ -5309,7 +5799,7 @@ local localization_templates = {
 		{"loc_achievement_type_5_mission_x_description"}, {"zh-tw"},
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次打擊任務。")),
 
-		--[+ Omnissiah's Hand (1) +]-- руоф Рука Омниссии (1)
+	--[+ Omnissiah's Hand (1) +]-- руоф Рука Омниссии (1)
 	--[+ Russian +]--
 	-- create_template("ach_mis_7_ext_ru",
 		-- {"loc_achievement_type_7_mission_2_name"}, {"ru"},
@@ -5319,7 +5809,7 @@ local localization_templates = {
 		{"loc_achievement_type_7_mission_1_name"}, {"zh-tw"},
 			loc_text("歐姆尼賽亞之手 (1)")),
 
-		--[+ Omnissiah's Hand (2) +]-- руоф Рука Омниссии (2)
+	--[+ Omnissiah's Hand (2) +]-- руоф Рука Омниссии (2)
 	--[+ Russian +]--
 	-- create_template("ach_mis_7_ext_ru",
 		-- {"loc_achievement_type_7_mission_2_name"}, {"ru"},
@@ -5329,7 +5819,7 @@ local localization_templates = {
 		{"loc_achievement_type_7_mission_2_name"}, {"zh-tw"},
 			loc_text("歐姆尼賽亞之手 (2)")),
 		
-		--[+ Omnissiah's Hand (3) +]-- руоф Рука Омниссии (3)
+	--[+ Omnissiah's Hand (3) +]-- руоф Рука Омниссии (3)
 	--[+ Russian +]--
 	-- create_template("ach_mis_7_ext_ru",
 		-- {"loc_achievement_type_7_mission_3_name"}, {"ru"},
@@ -5339,7 +5829,7 @@ local localization_templates = {
 		{"loc_achievement_type_7_mission_3_name"}, {"zh-tw"},
 			loc_text("歐姆尼賽亞之手 (3)")),
 
-		--[+ Omnissiah's Hand (4) +]-- руоф Рука Омниссии (4)
+	--[+ Omnissiah's Hand (4) +]-- руоф Рука Омниссии (4)
 	--[+ Russian +]--
 	-- create_template("ach_mis_7_ext_ru",
 		-- {"loc_achievement_type_7_mission_4_name"}, {"ru"},
@@ -5349,7 +5839,7 @@ local localization_templates = {
 		{"loc_achievement_type_7_mission_4_name"}, {"zh-tw"},
 			loc_text("歐姆尼賽亞之手 (4)")),
 
-		--[+ Omnissiah's Hand (5) +]-- руоф Рука Омниссии (5)
+	--[+ Omnissiah's Hand (5) +]-- руоф Рука Омниссии (5)
 	--[+ Russian +]--
 	-- create_template("ach_mis_7_ext_ru",
 		-- {"loc_achievement_type_7_mission_5_name"}, {"ru"},
@@ -5359,7 +5849,7 @@ local localization_templates = {
 		{"loc_achievement_type_7_mission_5_name"}, {"zh-tw"},
 			loc_text("歐姆尼賽亞之手 (5)")),
 
-		--[+ Complete 100 Repair missions. +]-- руоф Завершите задания типа «Ремонт»: 100.
+	--[+ Complete 100 Repair missions. +]-- руоф Завершите задания типа «Ремонт»: 100.
 	--[+ Russian +]--
 	create_template("ach_mis_7_ext_desc_ru",
 		{"loc_achievement_type_7_mission_x_description"}, {"ru"},
@@ -5370,7 +5860,7 @@ local localization_templates = {
 		{"loc_achievement_type_7_mission_x_description"}, {"zh-tw"},
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次修理任務。")),
 
-		--[+ Adapt to the Environment (1) +]-- руоф Приспособление к среде (1)
+	--[+ Adapt to the Environment (1) +]-- руоф Приспособление к среде (1)
 	--[+ Russian +]--
 	-- create_template("ach_mis_12_ext_ru",
 		-- {"loc_achievement_mission_circumstace_1_name"}, {"ru"},
@@ -5380,7 +5870,7 @@ local localization_templates = {
 		{"loc_achievement_mission_circumstace_1_name"}, {"zh-tw"},
 			loc_text("適應環境 (1)")),
 
-		--[+ Adapt to the Environment (2) +]-- руоф Приспособление к среде (2)
+	--[+ Adapt to the Environment (2) +]-- руоф Приспособление к среде (2)
 	--[+ Russian +]--
 	-- create_template("ach_mis_12_ext_ru",
 		-- {"loc_achievement_mission_circumstace_2_name"}, {"ru"},
@@ -5390,7 +5880,7 @@ local localization_templates = {
 		{"loc_achievement_mission_circumstace_2_name"}, {"zh-tw"},
 			loc_text("適應環境 (2)")),
 
-		--[+ Adapt to the Environment (3) +]-- руоф Приспособление к среде (3)
+	--[+ Adapt to the Environment (3) +]-- руоф Приспособление к среде (3)
 	--[+ Russian +]--
 	-- create_template("ach_mis_12_ext_ru",
 		-- {"loc_achievement_mission_circumstace_3_name"}, {"ru"},
@@ -5400,7 +5890,7 @@ local localization_templates = {
 		{"loc_achievement_mission_circumstace_3_name"}, {"zh-tw"},
 			loc_text("適應環境 (3)")),
 
-		--[+ Adapt to the Environment (4) +]-- руоф Приспособление к среде (4)
+	--[+ Adapt to the Environment (4) +]-- руоф Приспособление к среде (4)
 	--[+ Russian +]--
 	-- create_template("ach_mis_12_ext_ru",
 		-- {"loc_achievement_mission_circumstace_4_name"}, {"ru"},
@@ -5410,7 +5900,7 @@ local localization_templates = {
 		{"loc_achievement_mission_circumstace_4_name"}, {"zh-tw"},
 			loc_text("適應環境 (4)")),
 
-		--[+ Adapt to the Environment (5) +]-- руоф Приспособление к среде (5)
+	--[+ Adapt to the Environment (5) +]-- руоф Приспособление к среде (5)
 	--[+ Russian +]--
 	-- create_template("ach_mis_12_ext_ru",
 		-- {"loc_achievement_mission_circumstace_5_name"}, {"ru"},
@@ -5420,7 +5910,7 @@ local localization_templates = {
 		{"loc_achievement_mission_circumstace_5_name"}, {"zh-tw"},
 			loc_text("適應環境 (5)")),
 
-		--[+ Complete 500 Special Condition Missions. +]-- руоф Завершите задания с особыми обстоятельствами: 500.
+	--[+ Complete 500 Special Condition Missions. +]-- руоф Завершите задания с особыми обстоятельствами: 500.
 	--[+ Russian +]--
 	create_template("ach_mis_12_ext_desc_ru",
 		{"loc_achievement_mission_circumstace_x_description"}, {"ru"},
@@ -5432,7 +5922,7 @@ local localization_templates = {
 			loc_text("完成 "..COLORS_Numbers.target_rgb.." 次特殊情境任務。")),
 
 	--[+ + En - RU - 探索 + +]--
-		--[+ The Orthus Offensive +]-- руоф Ортусское наступление
+	--[+ The Orthus Offensive +]-- руоф Ортусское наступление
 	--[+ Russian +]--
 	-- create_template("ach_mis_000_ext_ru",
 		-- {"loc_achievement_subcategory_twins_mission_label"}, {"ru"},
@@ -5442,7 +5932,7 @@ local localization_templates = {
 		{"loc_achievement_subcategory_twins_mission_label"}, {"zh-tw"},
 			loc_text("歐特魯斯攻勢")),
 
-		--[+ Two Birds with One Stone +]-- руоф Двух зайцев одним выстрелом
+	--[+ Two Birds with One Stone +]-- руоф Двух зайцев одним выстрелом
 	--[+ Russian +]--
 	-- create_template("ach_mis_15_ext_ru",
 		-- {"loc_achievement_mission_twins_win_name"}, {"ru"},
@@ -5452,7 +5942,7 @@ local localization_templates = {
 		{"loc_achievement_mission_twins_win_name"}, {"zh-tw"},
 			loc_text("一石二鳥")),
 
-		--[+ Defeat the Karnak Twins during The Orthus Offensive on any Threat. +]-- руоф Победить близнецов Карнак во время «Ортусского наступления» на любом уровне угрозы.
+	--[+ Defeat the Karnak Twins during The Orthus Offensive on any Threat. +]-- руоф Победить близнецов Карнак во время «Ортусского наступления» на любом уровне угрозы.
 	--[+ Russian +]--
 	create_template("ach_mis_15_ext_desc_ru",
 		{"loc_achievement_mission_twins_win_description"}, {"ru"},
@@ -5463,7 +5953,7 @@ local localization_templates = {
 		{"loc_achievement_mission_twins_win_description"}, {"zh-tw"},
 			loc_text("在任意威脅度下，\n在雙頭犬攻勢任務中擊敗卡納克雙子。")),
 
-		--[+ Two Birds with One Stone (Extremis) +]-- руоф Двух зайцев одним выстрелом (экстремис)
+	--[+ Two Birds with One Stone (Extremis) +]-- руоф Двух зайцев одним выстрелом (экстремис)
 	--[+ Russian +]--
 	-- create_template("ach_mis_16_ext_ru",
 		-- {"loc_achievement_difficult_mission_twins_win_name"}, {"ru"},
@@ -5473,7 +5963,7 @@ local localization_templates = {
 		{"loc_achievement_difficult_mission_twins_win_name"}, {"zh-tw"},
 			loc_text("一石二鳥 (終極版)")),
 
-		--[+ Defeat the Karnak Twins during The Orthus Offensive on Damnation Threat Level. +]-- руоф Победить близнецов Карнак во время «Ортусского наступления» при угрозе «Проклятие».
+	--[+ Defeat the Karnak Twins during The Orthus Offensive on Damnation Threat Level. +]-- руоф Победить близнецов Карнак во время «Ортусского наступления» при угрозе «Проклятие».
 	--[+ Russian +]--
 	create_template("ach_mis_16_ext_desc_ru",
 		{"loc_achievement_difficult_mission_twins_win_description"}, {"ru"},
@@ -5484,7 +5974,7 @@ local localization_templates = {
 		{"loc_achievement_difficult_mission_twins_win_description"}, {"zh-tw"},
 			loc_text("在『"..COLORS_KWords_tw.damnation_rgb_tw.."』威脅度下，\n在雙頭犬攻勢任務中擊敗卡納克雙子。")),
 
-		--[+ +REDACTED - ДАННЫЕ ИЗЪЯТЫ+ +]--
+	--[+ +REDACTED - ДАННЫЕ ИЗЪЯТЫ+ +]--
 	--[+ Redacted +]-- руоф Данные изъяты
 	-- create_template("ach_red_0_ext_ru",
 		-- {"loc_achievement_category_class_challenges_label"}, {"ru"},
