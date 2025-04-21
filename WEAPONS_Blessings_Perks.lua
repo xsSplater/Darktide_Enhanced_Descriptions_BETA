@@ -3886,8 +3886,8 @@ local localization_templates = {
 			-- 電漿槍 -- 5.5% & 4% | 7% & 6% | 8.5 & 8% | 10% & 10% (up to +50% & +50%)
 			create_template("weap_wbr026_desc_ext_tw",
 				{"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"zh-tw"},
-					loc_text("依據 "..COLORS_KWords_tw.Heat_rgb_tw.." 提升 "..COLORS_KWords_tw.Crt_chance_rgb_tw.."，\n最高 "..COLORS_Numbers.crit_var_rgb.."。\n遠程攻擊 "..COLORS_KWords_tw.Crit_dmg_r_rgb_tw.." 提升 "..COLORS_Numbers.rangcrtdmg_var_rgb.."。")),
-	
+					loc_text("依據 "..COLORS_KWords_tw.Heat_rgb_tw.." 提升 "..COLORS_KWords_tw.Crt_chance_rgb_tw.."，\n每層 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_hits_rgb_tw.." 跟 "..COLORS_Numbers.rangcrtdmg_var_rgb.." "..COLORS_KWords_tw.Crit_hit_r_color_rgb_tw.."。\n上限 "..COLORS_Numbers.n_5_rgb.." 層，共 "..COLORS_Numbers.pc_50_rgb.." 。")),
+
 		--[+ Volatile +]--
 			-- Plasma Gun -- 2.5% | 3% | 3.5% | 4% (up to 20%)
 			create_template("weap_wbr027_desc_ext_en",
