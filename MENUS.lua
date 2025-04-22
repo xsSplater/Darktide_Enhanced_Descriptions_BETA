@@ -266,6 +266,11 @@ local localization_templates = {
 		{"loc_contracts_view_general_goods_random_gadget_defensive"}, {"zh-cn"},
 			loc_text("未知的珍品")),
 
+	--[+ New Contract Notification Message +]--
+	--[+ Simplified Chinese - 新的每周合同可用 +]--
+	create_template("notification_new_contract_ext_zh_cn",
+		{"loc_notification_new_contract"}, {"zh-cn"},
+			loc_text("新的每周合同可用")),
 
 --[+ HADRON - 欧姆尼塞亚神龛 +]--
 	--[+ Menu +]--
