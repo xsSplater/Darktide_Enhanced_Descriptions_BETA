@@ -72,7 +72,7 @@ local localizations = {
 		fr = "Activer le module des talents",
 		ru = "Модуль «Таланты»",
 		["zh-tw"] = "切換『天賦』模組",
-		["zh-cn"] = "启用 「天赋」模块",
+		["zh-cn"] = "启用「天赋」模块",
 	},
 	enable_talents_file_description = {
 		en = "This module highlights Talent words. You can disable this module if you don't need it, but all Extended Descriptions will also be disabled.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
