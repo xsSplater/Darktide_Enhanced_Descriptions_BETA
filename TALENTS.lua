@@ -740,7 +740,7 @@ local localization_templates = {
 	-- 積蓄你的靈能力量，釋放後對單個敵人造成巨大傷害。對防彈護甲和甲殼護甲敵人造成的效果減弱。
 	create_template("talent_tree_psy_blitz0_000_desc_tw",
 		{"loc_ability_psyker_smite_description_new"}, {"zh-tw"},
-			loc_text("凝聚靈能，對單一敵人造成"..COLORS_KWords_tw.Dmg_rgb_tw.."。\n對防彈、甲殼敵人效果較差，\n但對狂熱者與不屈有較高"..COLORS_KWords_tw.Dmg_rgb_tw.."。"..TALENTS_Enh_desc_tw.ED_PSY_Blitz_0_rgb_tw)),
+			loc_text("凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_rgb_tw.." 。"..TALENTS_Enh_desc_tw.ED_PSY_Blitz_0_rgb_tw.."。")),
 
 	--[+ Blitz 1 - Brain Rupture +]--
 	create_template("talent_tree_psy_blitz1_000_desc_en",
@@ -758,7 +758,7 @@ local localization_templates = {
 	-- 積蓄靈能力量，釋放時可對單個敵人造成巨大傷害。對防彈護甲和甲殼護甲敵人效果減弱。\n\n該天賦是可造成{damage:%s}傷害的{talent_old:%s}的加強版。
 	create_template("talent_tree_psy_blitz1_000_desc_tw",
 		{"loc_talent_psyker_brain_burst_improved_description"}, {"zh-tw"},
-			loc_text("凝聚靈能，對單一敵人造成"..COLORS_KWords_tw.Dmg_rgb_tw.."。\n對防彈、甲殼敵人效果較差，\n但對狂熱者與不屈有較高"..COLORS_KWords_tw.Dmg_rgb_tw.."。"..TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_rgb_tw)),
+			loc_text("凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。"..TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_rgb_tw)),
 
 	--[+ Blitz 1-1 - Kinetic Resonance +]--
 	create_template("talent_tree_psy_blitz1_001_desc_en",
@@ -774,9 +774,9 @@ local localization_templates = {
 			loc_text("{smite_attack_speed:%s} к ускорению заряжания вашего блица {talent_name:%s} после использования вашей "..COLORS_KWords_ru.Combat_ability_rgb_ru..", также генерируется на {warp_charge_cost:%s} меньше "..COLORS_KWords_ru.Peril_rgb_ru.." в течение {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Blitz_1_1_rgb_ru)),
 	--[+ Traditional Chinese - 動能共鳴+]--
 	-- 使用戰鬥技能會加快{talent_name:%s}充能{smite_attack_speed:%s}且降低反噬生成{warp_charge_cost:%s}，持續{duration:%s}秒。
-		create_template("talent_tree_psy_blitz1_001_desc_tw",
-		{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"zh-tw"},
-			loc_text("{smite_attack_speed:%s} 增加閃擊充能速度 {talent_name:%s} ，在使用"..COLORS_KWords_tw.Combat_ability_rgb_tw.."後生效，並且在 {duration:%s} 秒內，靈能消耗減少 {warp_charge_cost:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_1_rgb_tw)),
+	create_template("talent_tree_psy_blitz1_001_desc_tw",
+	{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"zh-tw"},
+		loc_text("使用 "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 後 {smite_attack_speed:%s} 增加閃擊充能速度 {talent_name:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_1_rgb_tw)),
 
 	--[+ Blitz 1-2 - Kinetic Flayer +]--
 	create_template("talent_tree_psy_blitz1_002_desc_en",
@@ -794,7 +794,7 @@ local localization_templates = {
 	-- 對專家、精英與巨獸進行攻擊時，所有攻擊都有{smite_chance:%s}機率使目標{talent_name:%s}。反噬處於危險線以上時無法觸發，此外，觸發後有{time:%s}秒冷卻時間。
 	create_template("talent_tree_psy_blitz1_002_desc_tw",
 		{"loc_talent_psyker_smite_on_hit_special_elite_desc"}, {"zh-tw"},
-			loc_text("當你的"..COLORS_KWords_tw.Peril_rgb_tw.."低於"..COLORS_Numbers.pc_97_rgb.."時，對專家、菁英與怪物的攻擊有 {smite_chance:%s} 機率觸發 {talent_name:%s}，對其造成"..COLORS_KWords_tw.Dmg_rgb_tw.."。\n冷卻時間：{time:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_2_rgb_tw)),
+			loc_text("當 "..COLORS_KWords_tw.Peril_rgb_tw.." 低於 "..COLORS_Numbers.pc_97_rgb.. " 時，\n有 {smite_chance:%s} 機率觸發 {talent_name:%s}，\n冷卻 {time:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_2_rgb_tw)),
 
 	--[+ Blitz 2 - Smite +]--
 	create_template("talent_tree_psy_blitz2_000_desc_en",
@@ -810,9 +810,9 @@ local localization_templates = {
 			loc_text("Вы выпускаете поток цепной биомолнии, которая медленно распространяется между врагами, нанося им низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." "..COLORS_KWords_ru.Electrocuted_rgb_ru.." с течением времени и очень высокое "..COLORS_KWords_ru.Stagger_rgb_ru..".\nВторичная заряженная атака наносит больше "..COLORS_KWords_ru.Dmg_a_rgb_ru.." при высвобождении, а также быстрее распространяется.\nНе может ошеломить монстров и врагов с активным пустотным щитом. Средний урон по всем видам брони, низкий урон по панцирной броне."..TALENTS_Enh_desc_ru.ED_PSY_Blitz_2_rgb_ru)),
 	--[+ Traditional Chinese - 懲戒 +]--
 	-- 釋放一道生物閃電。這是一種快速定向攻擊，可在造成傷害時鎖定並擊暈敵人。技能效果可擴散到附近的敵人，充能增加擴散速度和傷害。
-		create_template("talent_tree_psy_blitz2_000_desc_tw",
+	create_template("talent_tree_psy_blitz2_000_desc_tw",
 		{"loc_ability_psyker_chain_lightning_description"}, {"zh-tw"},
-			loc_text("釋放一道生物閃電，敵人間跳躍，造成低"..COLORS_KWords_tw.Damage_rgb_tw.."並持續"..COLORS_KWords_tw.Electrocutes_rgb_tw.."，附帶強烈"..COLORS_KWords_tw.Stagger_rgb_tw.."。\n蓄力可提升"..COLORS_KWords_tw.Damage_rgb_tw.."與傳導範圍。\n" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_rgb_tw)),
+			loc_text("釋放一道生物閃電在敵人間跳躍，\n並造成低 "..COLORS_KWords_tw.Damage_rgb_tw.." 並持續 "..COLORS_KWords_tw.Electrocutes_rgb_tw.."，\n附帶強烈 "..COLORS_KWords_tw.Stagger_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_rgb_tw)),
 
 	--[+ Blitz 2-1 - Lightning Storm +]--
 	create_template("talent_tree_psy_blitz2_001_desc_en",
@@ -832,7 +832,6 @@ local localization_templates = {
 		{"loc_talent_psyker_increased_chain_lightning_size_description"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 的閃電跳躍次數從 "..COLORS_Numbers.n_1_rgb.." 提升至 "..COLORS_Numbers.n_2_rgb.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_1_rgb_tw)),
 
-
 	--[+ Blitz 2-2 - Enfeeble +]--
 	create_template("talent_tree_psy_blitz2_002_desc_en",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"en"},
@@ -849,7 +848,7 @@ local localization_templates = {
 	-- 遭受你電擊的敵人受到所有來源的基礎傷害增加{damage:%s}。
 	create_template("talent_tree_psy_blitz2_002_desc_tw",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"zh-tw"},
-			loc_text("{talent_name:%s} "..COLORS_KWords_tw.Electrocution_rgb_tw.." 的敵人，受到的 "..COLORS_KWords_tw.Dmg_a_rgb_tw.." {damage:%s}。\n只要 {talent_name:%s} 持續，詛咒將一直存在。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_2_rgb_tw)),
+			loc_text("{talent_name:%s} "..COLORS_KWords_tw.Electrocution_rgb_tw.." 的敵人，受到的 "..COLORS_KWords_tw.Dmg_a_rgb_tw.." {damage:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_2_rgb_tw)),
 
 	--[+ Blitz 2-3 - Charged Strike +]--
 	create_template("talent_tree_psy_blitz2_002_desc_en",
