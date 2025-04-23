@@ -20,7 +20,7 @@ if enhanced_descriptions_enabled then
 	--[+ Traditional Chinese +]--
 	-- TALENTS_Enh_desc_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc_tw")
 	--[+ Simplified Chinese +]--
-	-- TALENTS_Enh_desc_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc_zh_cn")
+	TALENTS_Enh_desc_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc_zh_cn")
 else
 	TALENTS_Enh_desc = mod:io_dofile("Enhanced_descriptions/Loc_EN/NULL/TALENTS_Enh_desc_null")
 	--[+ French +]--
@@ -30,7 +30,7 @@ else
 	--[+ Traditional Chinese +]--
 	-- TALENTS_Enh_desc_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/NULL/TALENTS_Enh_desc_tw_null")
 	--[+ Simplified Chinese +]--
-	-- TALENTS_Enh_desc_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc_zh_cn_null")
+	TALENTS_Enh_desc_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc_zh_cn_null")
 end
 
 --[+ Toggle ENHANCED DESCRIPTIONS - Main 2 +]--
@@ -45,7 +45,7 @@ if enhanced_descriptions_enabled2 then
 	--[+ Traditional Chinese +]--
 	-- TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc2_tw")
 	--[+ Simplified Chinese +]--
-	-- TALENTS_Enh_desc2_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc2_zh_cn")
+	TALENTS_Enh_desc2_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc2_zh_cn")
 else
 	TALENTS_Enh_desc2 = mod:io_dofile("Enhanced_descriptions/Loc_EN/NULL/TALENTS_Enh_desc2_null")
 	--[+ French +]--
@@ -55,7 +55,7 @@ else
 	--[+ Traditional Chinese +]--
 	-- TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/NULL/TALENTS_Enh_desc2_tw_null")
 	--[+ Simplified Chinese +]--
-	-- TALENTS_Enh_desc2_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc2_zh_cn_null")
+	TALENTS_Enh_desc2_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc2_zh_cn_null")
 end
 
 --[+ Toggle ENHANCED DESCRIPTIONS - Nodes +]--
@@ -70,7 +70,7 @@ if enhanced_descriptions_nodes_enabled then
 	--[+ Traditional Chinese +]--
 	-- TALENTS_Enh_desc_nodes_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc_nodes_tw")
 	--[+ Simplified Chinese +]--
-	-- TALENTS_Enh_desc_nodes_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc_nodes_zh_cn")
+	TALENTS_Enh_desc_nodes_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc_nodes_zh_cn")
 else
 	TALENTS_Enh_desc_nodes = mod:io_dofile("Enhanced_descriptions/Loc_EN/NULL/TALENTS_Enh_desc_nodes_null")
 	--[+ French +]--
@@ -80,7 +80,7 @@ else
 	--[+ Traditional Chinese +]--
 	-- TALENTS_Enh_desc_nodes_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/NULL/TALENTS_Enh_desc_nodes_tw_null")
 	--[+ Simplified Chinese +]--
-	-- TALENTS_Enh_desc_nodes_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc_nodes_zh_cn_null")
+	TALENTS_Enh_desc_nodes_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc_nodes_zh_cn_null")
 end
 
 --[+ Loading colors of Keywords and Numbers +]--
@@ -100,7 +100,7 @@ COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru"
 	--[+ Traditional Chinese +]--
 -- COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
 	--[+ Simplified Chinese +]--
--- COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
+COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
 
 
 --[+ Function to create a localization template +]--
@@ -134,6 +134,7 @@ local localization_templates = {
 	create_template("talent_tree_main_000_ru",
 		{"loc_glossary_talent_default"}, {"ru"},
 			loc_text("Пассивный")),
+	--[+ Simplified Chinese - 被动 +]--
 
 	--[+ Blitz +]--
 	-- create_template("talent_tree_main_001_en",
@@ -143,6 +144,7 @@ local localization_templates = {
 	-- create_template("talent_tree_main_001_ru",
 		-- {"loc_glossary_term_tactical"}, {"ru"},
 			-- loc_text("Блиц")),
+	--[+ Simplified Chinese - 闪击 +]--
 
 	--[+ Aura +]--
 	-- create_template("talent_tree_main_002_en",
@@ -152,6 +154,7 @@ local localization_templates = {
 	-- create_template("talent_tree_main_002_ru",
 		-- {"loc_glossary_term_aura"}, {"ru"},
 			-- loc_text("Аура")),
+	--[+ Simplified Chinese - 光环 +]--
 
 	--[+ Ability +]--
 	-- create_template("talent_tree_main_003_en",
@@ -161,6 +164,7 @@ local localization_templates = {
 	-- create_template("talent_tree_main_003_ru",
 		-- {"loc_glossary_term_class_ability"}, {"ru"},
 			-- loc_text("Способность")),
+	--[+ Simplified Chinese - 能力 +]--
 
 	--[+ Keystone  +]--
 	-- create_template("talent_tree_main_004_en",
@@ -170,6 +174,7 @@ local localization_templates = {
 	-- create_template("talent_tree_main_004_ru",
 		-- {"loc_glossary_talent_keystone"}, {"ru"},
 			-- loc_text("Ключевой талант")),
+	--[+ Simplified Chinese - 楔石 +]--			
 
 	--[+ (Lock) Locked +]--
 	-- create_template("talent_tree_main_005_en",
@@ -179,6 +184,7 @@ local localization_templates = {
 	create_template("talent_tree_main_005_ru",
 		{"loc_talent_mechanic_locked"}, {"ru"},
 			loc_text("Закрыт")),
+	--[+ Simplified Chinese - 已锁定 +]--
 
 	--[+ [LMB] Activate +]--
 	-- create_template("talent_tree_main_006_en",
@@ -188,6 +194,7 @@ local localization_templates = {
 	create_template("talent_tree_main_006_ru",
 		{"loc_talent_menu_tooltip_button_hint_first_level"}, {"ru"},
 			loc_text("Включить")),
+	--[+ Simplified Chinese - [LMB] 激活 +]--
 
 	--[+ [RMB] Deactivate +]--
 	-- create_template("talent_tree_main_007_en",
@@ -197,6 +204,10 @@ local localization_templates = {
 	-- create_template("talent_tree_main_007_ru",
 		-- {"loc_talent_menu_tooltip_button_hint_remove_level_first"}, {"ru"},
 			-- loc_text("Отключить")),
+	--[+ Simplified Chinese - [RMB] 撤销 +]--
+	create_template("talent_tree_main_007_zh_cn",
+		{"loc_talent_menu_tooltip_button_hint_remove_level_first"}, {"zh-cn"},
+			loc_text("撤销")),
 
 	--[+ [V] View full build  +]--
 	-- create_template("talent_tree_main_008_en",
@@ -206,6 +217,10 @@ local localization_templates = {
 	create_template("talent_tree_main_008_ru",
 		{"loc_alias_talent_builder_view_hotkey_summary"}, {"ru"},
 			loc_text("Посмотреть весь билд")),
+	--[+ Simplified Chinese - [v] 查看完整构筑 +]--
+	create_template("talent_tree_main_008_zh_cn",
+	{"loc_alias_talent_builder_view_hotkey_summary"}, {"zh-cn"},
+		loc_text("查看完整构筑")),
 	
 	--[+ Full build +]--
 	-- create_template("talent_tree_main_009_en",
@@ -215,6 +230,10 @@ local localization_templates = {
 	create_template("talent_tree_main_009_ru",
 		{"loc_alias_talent_builder_view_popup_title_summary"}, {"ru"},
 			loc_text("Весь билд")),
+	--[+ Simplified Chinese - 完整构筑 +]--
+	create_template("talent_tree_main_009_zh_cn",
+	{"loc_alias_talent_builder_view_popup_title_summary"}, {"zh-cn"},
+		loc_text("完整构筑")),
 
 --[+ +MODIFIERS+ +]--
 	--[+ Operative Modifier +]--
@@ -225,6 +244,7 @@ local localization_templates = {
 	-- create_template("talent_tree_main_mods_000_ru",
 		-- {"loc_glossary_talent_stat"}, {"ru"},
 			-- loc_text("Модификатор оперативника")),
+	--[+ Simplified Chinese - 特工修正 +]--
 
 	--[+ Ability Modifier +]--
 	-- create_template("talent_tree_main_mods_001_en",
@@ -234,6 +254,7 @@ local localization_templates = {
 	-- create_template("talent_tree_main_mods_001_ru",
 		-- {"loc_glossary_talent_ability_modifier"}, {"ru"},
 			-- loc_text("Модификатор способности")),
+	--[+ Simplified Chinese - 能力修正 +]--
 
 	--[+ Keystone Modifier +]--
 	-- create_template("talent_tree_main_mods_002_en",
@@ -243,6 +264,7 @@ local localization_templates = {
 	create_template("talent_tree_main_mods_002_ru",
 		{"loc_glossary_talent_keystone_modifier"}, {"ru"},
 			loc_text("Модификатор ключевого таланта")),
+			--[+ Simplified Chinese - 楔石修正 +]--		
 
 --[+ +SELECTING THIS...+ +]--
 	-- create_template("talent_tree_main_sel_000_en",
@@ -252,7 +274,8 @@ local localization_templates = {
 	create_template("talent_tree_main_sel_000_ru",
 		{"loc_talent_mechanic_exclusive_tactical"}, {"ru"},
 			loc_text("Выбор этого Блица закрывает все остальные Блицы.")),
-
+	--[+ Simplified Chinese - 锁定闪击 +]--
+	
 	-- create_template("talent_tree_main_sel_001_en",
 		-- {"loc_talent_mechanic_exclusive_aura"}, {"en"},
 			-- loc_text("Selecting this Aura locks all other Auras.")),
@@ -260,6 +283,7 @@ local localization_templates = {
 	create_template("talent_tree_main_sel_001_ru",
 		{"loc_talent_mechanic_exclusive_aura"}, {"ru"},
 			loc_text("Выбор этой Ауры закрывает все остальные Ауры.")),
+	--[+ Simplified Chinese - 锁定光环 +]--
 
 	-- create_template("talent_tree_main_sel_002_en",
 		-- {"loc_talent_mechanic_exclusive_ability"}, {"en"},
@@ -268,6 +292,7 @@ local localization_templates = {
 	create_template("talent_tree_main_sel_002_ru",
 		{"loc_talent_mechanic_exclusive_ability"}, {"ru"},
 			loc_text("Выбор этой Способности закрывает все остальные Способности.")),
+	--[+ Simplified Chinese - 锁定能力 +]--
 
 	-- create_template("talent_tree_main_sel_003_en",
 		-- {"loc_talent_mechanic_mutually_exclusive"}, {"en"},
@@ -276,6 +301,7 @@ local localization_templates = {
 	create_template("talent_tree_main_sel_003_ru",
 		{"loc_talent_mechanic_mutually_exclusive"}, {"ru"},
 			loc_text("Выбор этого Таланта закрывает другие Таланты.")),
+	--[+ Simplified Chinese - 锁定天赋 +]--
 
 	-- create_template("talent_tree_main_sel_004_en",
 		-- {"loc_talent_mechanic_exclusive_keystone"}, {"en"},
@@ -284,7 +310,7 @@ local localization_templates = {
 	create_template("talent_tree_main_sel_004_ru",
 		{"loc_talent_mechanic_exclusive_keystone"}, {"ru"},
 			loc_text("Выбор этого Ключевого таланта закрывает все остальные Ключевые таланты.")),
-	--[+ Russian +]--
+	--[+ Simplified Chinese - 锁定楔石 +]--
 
 
 --[+ +NODES - УЗЛЫ+ +]--
@@ -300,6 +326,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_006_desc_ru",
 		{"loc_talent_crit_chance_low_desc"}, {"ru"},
 			loc_text("{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_CritChncBst_rgb_ru)),
+	--[+ Simplified Chinese 暴击几率强化 +]--
+	create_template("talent_tree_oper_mod_006_desc_zh_cn",
+		{"loc_talent_crit_chance_low_desc"}, {"zh-cn"},
+			loc_text("{crit_chance:%s} "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_CritChncBst_rgb_zh_cn)),
 
 	--[+ Health Boost Low +]--
 	create_template("talent_tree_oper_mod_005_l_desc_en",
@@ -313,6 +343,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_005_l_desc_ru",
 		{"loc_talent_health_low_desc"}, {"ru"},
 			loc_text("{health:%s} к "..COLORS_KWords_ru.Health_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_HeathBst_L_rgb_ru)),
+	--[+ Simplified Chinese 生命强化 低 +]--
+	create_template("talent_tree_oper_mod_005_l_desc_zh_cn",
+		{"loc_talent_health_low_desc"}, {"zh-cn"},
+			loc_text("{health:%s} "..COLORS_KWords_zh_cn.Health_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_HeathBst_L_rgb_zh_cn)),
 
 	--[+ Health Boost Medium +]--
 	create_template("talent_tree_oper_mod_005_m_desc_en",
@@ -326,6 +360,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_005_m_desc_ru",
 		{"loc_talent_health_medium_desc"}, {"ru"},
 			loc_text("{health:%s} к "..COLORS_KWords_ru.Health_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_HeathBst_M_rgb_ru)),
+	--[+ Simplified Chinese 生命强化 中 +]--
+	create_template("talent_tree_oper_mod_005_m_desc_zh_cn",
+		{"loc_talent_health_medium_desc"}, {"zh-cn"},
+			loc_text("{health:%s} "..COLORS_KWords_zh_cn.Health_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_HeathBst_M_rgb_zh_cn)),
 
 	--[+ Heavy Melee Damage Boost Low +]--
 	create_template("talent_tree_oper_mod_014_l_desc_en",
@@ -365,6 +403,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_003_desc_ru",
 		{"loc_talent_coherency_regen_low_desc"}, {"ru"},
 			loc_text("{coherency_regen:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восполняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_InspiringP_rgb_ru)),
+	--[+ Simplified Chinese 振奋人心 +]--
+	create_template("talent_tree_oper_mod_005_m_desc_zh_cn",
+		{"loc_talent_coherency_regen_low_desc"}, {"zh-cn"},
+			loc_text("你和与你"..COLORS_KWords_zh_cn.Coherency_rgb_zh_cn.."的盟友 {coherency_regen:%s} "..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.."回复。"..TALENTS_Enh_desc_nodes_zh_cn.ED_InspiringP_rgb_zh_cn)),
 
 	--[+ Melee Damage Boost Low +]--
 	create_template("talent_tree_oper_mod_008_desc_en",
@@ -378,6 +420,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_008_desc_ru",
 		{"loc_talent_melee_damage_boost_low_desc"}, {"ru"},
 			loc_text("{melee_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." атак ближнего боя."..TALENTS_Enh_desc_nodes_ru.ED_MeleeDmgBst_L_M_rgb_ru)),
+	--[+ Simplified Chinese 近战伤害强化 低 +]--
+	create_template("talent_tree_oper_mod_008_desc_zh_cn",
+		{"loc_talent_melee_damage_boost_low_desc"}, {"zh-cn"},
+			loc_text("{melee_damage:%s} 近战"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_MeleeDmgBst_L_M_rgb_zh_cn)),
 
 	--[+ Melee Damage Boost Medium +]--
 	create_template("talent_tree_oper_mod_008_desc_en",
@@ -391,6 +437,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_008_desc_ru",
 		{"loc_talent_melee_damage_boost_medium_desc"}, {"ru"},
 			loc_text("{melee_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." атак ближнего боя."..TALENTS_Enh_desc_nodes_ru.ED_MeleeDmgBst_L_M_rgb_ru)),
+	--[+ Simplified Chinese 近战伤害强化 中 +]--
+	create_template("talent_tree_oper_mod_008_desc_zh_cn",
+		{"loc_talent_melee_damage_boost_medium_desc"}, {"zh-cn"},
+			loc_text("{melee_damage:%s} 近战"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_MeleeDmgBst_L_M_rgb_zh_cn)),
 
 	--[+ Movement Speed Boost +]--
 	create_template("talent_tree_oper_mod_007_desc_en",
@@ -404,6 +454,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_007_desc_ru",
 		{"loc_talent_movement_speed_low_desc"}, {"ru"},
 			loc_text("{movement_speed:%s} к скорости движения."..TALENTS_Enh_desc_nodes_ru.ED_MoveSpdBst_rgb_ru)),
+	--[+ Simplified Chinese 移动速度强化 +]--
+	create_template("talent_tree_oper_mod_007_desc_zh_cn",
+		{"loc_talent_movement_speed_low_desc"}, {"zh-cn"},
+			loc_text("{movement_speed:%s} 移动速度。"..TALENTS_Enh_desc_nodes_zh_cn.ED_MoveSpdBst_rgb_zh_cn)),
 
 	--[+ Peril Resistance +]--
 	create_template("talent_tree_oper_mod_001_desc_en",
@@ -417,6 +471,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_001_desc_ru",
 		{"loc_talent_warp_charge_low_desc"}, {"ru"},
 			loc_text("{warp_charge:%s} генерации "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_PerilRes_rgb_ru)),
+	--[+ Simplified Chinese 危机值抗性 +]--
+	create_template("talent_tree_oper_mod_001_desc_zh_cn",
+		{"loc_talent_warp_charge_low_desc"}, {"zh-cn"},
+			loc_text("{warp_charge:%s} "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."产生。"..TALENTS_Enh_desc_nodes_zh_cn.ED_PerilRes_rgb_zh_cn)),
 
 	--[+ Ranged Damage Boost Low +]--
 	create_template("talent_tree_oper_mod_004l_desc_en",
@@ -430,6 +488,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_004l_desc_ru",
 		{"loc_talent_ranged_damage_low_desc"}, {"ru"},
 			loc_text("{ranged_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." дальнего боя."..TALENTS_Enh_desc_nodes_ru.ED_RangDmgBst_rgb_ru)),
+	--[+ Simplified Chinese 远程伤害强化 低 +]--
+	create_template("talent_tree_oper_mod_004l_desc_zh_cn",
+		{"loc_talent_ranged_damage_low_desc"}, {"zh-cn"},
+			loc_text("{ranged_damage:%s} 远程"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_RangDmgBst_rgb_zh_cn)),
 
 	--[+ Ranged Damage Boost Medium +]--
 	-- create_template("talent_tree_oper_mod_004m_desc_en",
@@ -443,6 +505,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_004m_desc_ru",
 		{"loc_talent_ranged_damage_medium_desc"}, {"ru"},
 			loc_text("{ranged_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." дальнего боя."..TALENTS_Enh_desc_nodes_ru.ED_RangDmgBst_rgb_ru)),
+	--[+ Simplified Chinese 远程伤害强化 中 +]--
+	create_template("talent_tree_oper_mod_004m_desc_zh_cn",
+		{"loc_talent_ranged_damage_medium_desc"}, {"zh-cn"},
+		loc_text("{ranged_damage:%s} 远程"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_RangDmgBst_rgb_zh_cn)),
 
 	--[+ Reload Boost +]--
 	create_template("talent_tree_oper_mod_011_desc_en",
@@ -456,6 +522,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_011_desc_ru",
 		{"loc_talent_reload_speed_low_desc"}, {"ru"},
 			loc_text("{reload_speed:%s} к скорости перезарядки."..TALENTS_Enh_desc_nodes_ru.ED_ReloadBst_rgb_ru)),
+	--[+ Simplified Chinese 装弹强化 +]--
+	create_template("talent_tree_oper_mod_011_desc_zh_cn",
+		{"loc_talent_reload_speed_low_desc"}, {"zh-cn"},
+			loc_text("{reload_speed:%s} 装弹速度。"..TALENTS_Enh_desc_nodes_zh_cn.ED_ReloadBst_rgb_zh_cn)),
 
 	--[+ Rending Boost +]--
 	create_template("talent_tree_oper_mod_013_desc_en",
@@ -469,6 +539,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_013_desc_ru",
 		{"loc_talent_armor_pen_low_desc"}, {"ru"},
 			loc_text("{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_RendingBst_rgb_ru)),
+	--[+ Simplified Chinese 撕裂强化 +]--
+	create_template("talent_tree_oper_mod_013_desc_zh_cn",
+		{"loc_talent_armor_pen_low_desc"}, {"zh-cn"},
+			loc_text("{rending:%s} "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_RendingBst_rgb_zh_cn)),
 
 	--[+ Stamina Boost +]--
 	create_template("talent_tree_oper_mod_009_desc_en",
@@ -482,6 +556,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_009_desc_ru",
 		{"loc_talent_stamina_low_desc"}, {"ru"},
 			loc_text("{stamina:%s} к "..COLORS_KWords_ru.Stamina_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_StaminaBst_rgb_ru)),
+	--[+ Simplified Chinese 体力强化 +]--
+	create_template("talent_tree_oper_mod_009_desc_zh_cn",
+		{"loc_talent_stamina_low_desc"}, {"zh-cn"},
+			loc_text("{stamina:%s} "..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_StaminaBst_rgb_zh_cn)),
 
 	--[+ Stamina Regeneration Boost +]--
 	create_template("talent_tree_oper_mod_012_desc_en",
@@ -495,6 +573,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_012_desc_ru",
 		{"loc_talent_stamina_regen_delay_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.n_minus_rgb.."{duration:%s} секунд от задержки восстановления "..COLORS_KWords_ru.Stamina_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_StamRegenBst_rgb_ru)),
+	--[+ Simplified Chinese 体力回复强化 +]--
+	create_template("talent_tree_oper_mod_012_desc_zh_cn",
+		{"loc_talent_stamina_regen_delay_desc"}, {"zh-cn"},
+			loc_text(COLORS_Numbers.n_minus_rgb.."{duration:%s} 秒"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."回复延迟。"..TALENTS_Enh_desc_nodes_zh_cn.ED_StamRegenBst_rgb_zh_cn)),
 
 	--[+ Suppression Boost +]--
 	create_template("talent_tree_oper_mod_010_desc_en",
@@ -508,6 +590,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_010_desc_ru",
 		{"loc_talent_suppression_low_desc"}, {"ru"},
 			loc_text("{suppression:%s} к подавлению, применяемому к врагам."..TALENTS_Enh_desc_nodes_ru.ED_SuppressionBst_rgb_ru)),
+	--[+ Simplified Chinese 压制强化 +]--
+	create_template("talent_tree_oper_mod_010_desc_zh_cn",
+		{"loc_talent_suppression_low_desc"}, {"zh-cn"},
+			loc_text("{suppression:%s} 对敌人造成的压制效果。"..TALENTS_Enh_desc_nodes_zh_cn.ED_SuppressionBst_rgb_zh_cn)),
 
 	--[+ Toughness Boost Low +]--
 	create_template("talent_tree_oper_mod_000_l_desc_en",
@@ -521,6 +607,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_000_l_desc_ru",
 		{"loc_talent_toughness_boost_low_desc"}, {"ru"},
 			loc_text("{toughness:%s} к "..COLORS_KWords_ru.Toughness_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_TghnsBst_L_rgb_ru)),
+	--[+ Simplified Chinese - 韧性强化 低 +]--
+	create_template("talent_tree_oper_mod_000_l_desc_zh_cn",
+		{"loc_talent_toughness_boost_low_desc"}, {"zh-cn"},
+			loc_text("{toughness:%s} "..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_TghnsBst_L_rgb_zh_cn)),
 
 	--[+ Toughness Boost Medium +]--
 	create_template("talent_tree_oper_mod_000_m_desc_en",
@@ -534,6 +624,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_000_m_desc_ru",
 		{"loc_talent_toughness_boost_medium_desc"}, {"ru"},
 			loc_text("{toughness:%s} к "..COLORS_KWords_ru.Toughness_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_TghnsBst_M_rgb_ru)),
+	--[+ Simplified Chinese -韧性强化 中 +]--
+	create_template("talent_tree_oper_mod_000_m_desc_ru",
+		{"loc_talent_toughness_boost_medium_desc"}, {"zh-cn"},
+		loc_text("{toughness:%s} "..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_TghnsBst_M_rgb_zh_cn)),
 
 	--[+ Toughness Damage Reduction Low +]--
 	create_template("talent_tree_oper_mod_002_l_desc_en",
@@ -547,6 +641,10 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_002_l_desc_ru",
 		{"loc_talent_toughness_damage_reduction_low_desc"}, {"ru"},
 			loc_text("{toughness:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_TghnsDmgRed_LM_rgb_ru)),
+	--[+ Simplified Chinese - 韧性伤害减免 低 +]--
+	create_template("talent_tree_oper_mod_002_l_desc_zh_cn",
+		{"loc_talent_toughness_damage_reduction_low_desc"}, {"zh-cn"},
+			loc_text("{toughness:%s} "..COLORS_KWords_zh_cn.Toughness_dmg_red_u_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_TghnsDmgRed_LM_rgb_zh_cn)),
 
 	--[+ Toughness Damage Reduction Medium +]--
 	create_template("talent_tree_oper_mod_002_m_desc_en",{"loc_talent_toughness_damage_reduction_medium_desc"}, {"en"},
@@ -557,6 +655,9 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("talent_tree_oper_mod_002_m_desc_en",{"loc_talent_toughness_damage_reduction_medium_desc"}, {"ru"},
 			loc_text("{toughness:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.."."..TALENTS_Enh_desc_nodes_ru.ED_TghnsDmgRed_LM_rgb_ru)),
+	--[+ Simplified Chinese - 韧性伤害减免 中 +]--
+	create_template("talent_tree_oper_mod_002_m_desc_zh_cn",{"loc_talent_toughness_damage_reduction_medium_desc"}, {"zh-cn"},
+			loc_text("{toughness:%s} "..COLORS_KWords_zh_cn.Toughness_dmg_red_u_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_TghnsDmgRed_LM_rgb_zh_cn)),
 
 
 --[+ ++PSYKER - ПСАЙКЕР++ +]--
