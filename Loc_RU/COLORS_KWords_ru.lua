@@ -55,6 +55,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Crit_dmg_u_rgb_ru = iu_actit("критическому урону", crt_col)
 	local Crit_chance_r_rgb_ru = iu_actit("критическом выстреле", crt_col)
 	local Crit_hit_color_rgb_ru = iu_actit("урону критического удара", crt_col)
+	local Crit_shot_color_rgb_ru = iu_actit("урону критического выстрела", crt_col)
 	local Crit_hit_om_rgb_ru = iu_actit("критическим выстрелом", crt_col)
 	local Crit_hit_udom_rgb_ru = iu_actit("критическим ударом", crt_col)
 	--[++Пробивание++]--
@@ -267,6 +268,7 @@ return {
 	Crit_dmg_u_rgb_ru = Crit_dmg_u_rgb_ru,
 	Crit_chance_r_rgb_ru = Crit_chance_r_rgb_ru,
 	Crit_hit_color_rgb_ru = Crit_hit_color_rgb_ru,
+	Crit_shot_color_rgb_ru = Crit_shot_color_rgb_ru,
 	Crit_hit_om_rgb_ru = Crit_hit_om_rgb_ru,
 	Crit_hit_udom_rgb_ru = Crit_hit_udom_rgb_ru,
 	Dmg_rgb_ru = Dmg_rgb_ru,

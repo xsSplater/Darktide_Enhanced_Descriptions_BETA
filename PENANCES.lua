@@ -11,9 +11,8 @@ COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
 
 COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
 -- All Keywords are taken from this file by adding to the value "COLORS_KWords_ru.".
--- For example, in the file "COLORS_KWords_ru.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords_ru.Damage_rgb.".
+-- For example, in the file "COLORS_KWords_ru.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords_ru.Damage_rgb_ru.".
 COLORS_KW_Penances = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KW_Penances")
-TALENTS_Enh_desc_penances = mod:io_dofile("Enhanced_descriptions/Loc_EN/TALENTS_Enh_desc_penances")
 
 --[+ Translations +]-- Add a line with a file of Keywords translated into your language.
 --[+ French +]--
@@ -22,12 +21,35 @@ COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr"
 --[+ Russian +]--
 COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
 COLORS_KW_Penances_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KW_Penances_ru")
-TALENTS_Enh_desc_penances_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/TALENTS_Enh_desc_penances_ru")
 
 --[+ Traditional Chinese +]--
 COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
 COLORS_KW_Penances_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KW_Penances_tw")
-TALENTS_Enh_desc_penances_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc_penances_tw")
+
+--[+ Toggle ENHANCED DESCRIPTIONS - PENANCES +]--
+local enhanced_descriptions_penances_enabled = mod:get("enhanced_descriptions_penances_enabled")
+if enhanced_descriptions_penances_enabled then
+	TALENTS_Enh_desc_penances = mod:io_dofile("Enhanced_descriptions/Loc_EN/TALENTS_Enh_desc_penances")
+--[+ Translations +]-- The line below is for the Extended Penance Descriptions and after "else" "null" files with lines that "hide" Extended Descriptions.
+	--[+ French +]--
+	-- TALENTS_Enh_desc_penances_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/TALENTS_Enh_desc_penances_fr")
+	--[+ Russian +]--
+	TALENTS_Enh_desc_penances_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/TALENTS_Enh_desc_penances_ru")
+	--[+ Traditional Chinese +]--
+	TALENTS_Enh_desc_penances_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc_penances_tw")
+	--[+ Simplified Chinese +]--
+	-- TALENTS_Enh_desc_penances_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc_penances_zh_cn")
+else
+	TALENTS_Enh_desc_penances = mod:io_dofile("Enhanced_descriptions/Loc_EN/NULL/TALENTS_Enh_desc_penances_null")
+	--[+ French +]--
+	-- TALENTS_Enh_desc_penances_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/NULL/TALENTS_Enh_desc_penances_fr_null")
+	--[+ Russian +]--
+	TALENTS_Enh_desc_penances_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/NULL/TALENTS_Enh_desc_penances_ru_null")
+	--[+ Traditional Chinese +]--
+	TALENTS_Enh_desc_penances_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/NULL/TALENTS_Enh_desc_penances_tw_null")
+	--[+ Simplified Chinese +]--
+	-- TALENTS_Enh_desc_penances_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc_penances_zh_cn_null")
+end
 
 --[+ Function to create a localization template +]--
 local function create_template(id, loc_keys, locales, handle_func)
@@ -1000,7 +1022,7 @@ local localization_templates = {
 	-- 使火力齊射的啟動時間超過20秒，需要達成5次。
 	create_template("ach_class_vet_13_ext_desc_tw",
 		{"loc_achievement_veteran_2_hard_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n啟動 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』持續 "..COLORS_Numbers.time_rgb.." 秒以上。\n完成此苦修需達成 "..COLORS_Numbers.target_rgb.." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb_tw)),	
+			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n啟動 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』持續 "..COLORS_Numbers.time_rgb.." 秒以上。\n完成此苦修需達成 "..COLORS_Numbers.target_rgb.." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb_tw)),
 
 	--[+ Stand up and Fight! +]-- -- руоф Встань и сражайся!
 	--[+ Russian +]--
@@ -3140,7 +3162,7 @@ local localization_templates = {
 	--[+ Traditional Chinese 軍務部的恩賜 +]--
 	create_template("ach_class_ogr_11_ext_tw",
 		{"loc_achievement_ogryn_leadbelcher_free_shot_name"}, {"zh-tw"},
-			loc_text("軍務部的恩賜")),	
+			loc_text("軍務部的恩賜")),
 
 	--[+ Shoot 4500 free rounds of ammo, courtesy of the Burst Limiter Override. +]-- руоф Стреляйте бесплатными боеприпасами (4500) благодаря «Взлому отсечки очереди».
 	--[+ Russian +]--
@@ -5768,7 +5790,7 @@ local localization_templates = {
 	--[+ Traditional Chinese +]--
 	create_template("ach_mis_5_ext_tw",
 		{"loc_achievement_type_5_mission_3_name"}, {"zh-tw"},
-			loc_text("打擊力量 (3)")),	
+			loc_text("打擊力量 (3)")),
 
 	--[+ Strike Force (4) +]-- руоф Ударная группа (4)
 	--[+ Russian +]--

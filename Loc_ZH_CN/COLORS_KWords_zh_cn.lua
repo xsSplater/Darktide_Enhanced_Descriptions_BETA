@@ -15,7 +15,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 --[+++MAIN+++]--
 	--[++Combat Ability CD++]--
 	local cmbtab_col = Color[mod:get("combat_ability_text_colour")](255, true) -- Do not translate this line!
-	local Ability_cd_rgb_zh_cn = iu_actit("“能力冷却", cmbtab_col)
+	local Ability_cd_rgb_zh_cn = iu_actit("能力冷却", cmbtab_col)
 	local Cd_rgb_zh_cn = iu_actit("冷却", cmbtab_col)
 	local Combat_abil_rgb_zh_cn = iu_actit("作战技能", cmbtab_col)
 	local Combat_ability_rgb_zh_cn = iu_actit("作战技能", cmbtab_col)
