@@ -20,12 +20,12 @@ COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw"
 
 local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除所有敵人的仇恨：若可能，近戰敵人會立即將仇恨轉移至其他目標；正在射擊的遠程敵人則會停止射擊，隨後若可能會重新鎖定目標。"
 local can_be_refr_dur_active_dur = "- 可在效果持續期間內重新觸發。"
-local doesnt_stack_aura_psy = "- 不會與另一位靈能者的相同光環效果疊加。"
+local doesnt_stack_aura_psy = "- 相同光環效果不會疊加。"
 local doesnt_interact_w_c_a_r_from_curio = "- 不會與珍品提供的 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 效果互動，因為該效果只會縮短戰鬥技能的最大冷卻時間。"
 local dmg_is_incr_by = "- 傷害會受到撕裂、脆弱、[碎顱者]祝福（針對被踉蹌的敵人）以及[靈能強化]、[至天高之力]、[亞空間震波]、[擾動命運]、[惡意攻勢]、[完美時機]、[占卜者的注視]（含[預知未來]）、[亞空間騎士]、光環[動能釋放]（對精英單位）和小型遠程傷害節點的增益所提升。"
 local procs_on_succss_dodging = "- 在成功閃避敵方近戰或遠程攻擊（不含砲手、收割者、狙擊手），以及壓制型攻擊（瘟疫獵犬跳撲、陷阱兵網子、變種人擄抓）時觸發。"
 local red_both_tghns_n_health_dmg = "- 同時減少所受到的韌性與生命值傷害。"
-local stacks_add_w_oth_dmg = "- 與其他傷害增益做加法疊加，並與武器祝福提供的力量等級加成做乘法疊加。"
+local stacks_add_w_oth_dmg = "- 與傷害增益做加法疊加。\n- 與武器祝福的威力做乘法疊加。"
 local stacks_mult_w_other_dmg_red_buffs = "- 與其他傷害減免增益做乘法疊加。"
 local succss_dodge_means = "- [成功閃避]指的是透過適時的閃避或滑行動作，閃避已鎖定玩家的敵方攻擊。"
 local warp_attc_refers_to = "- [亞空間攻擊]指的是所有傷害類型標示為[亞空間傷害]的攻擊，包括靈能劍的啟動攻擊、靈能法杖的主、副攻擊、感電（[懲戒]、電能法杖的副攻擊、電擊槌的特殊動作）、[靈魂之火]、[顱腦崩裂]、[顱腦爆裂]、[靈能攻擊]以及[刺耳尖嘯]。"
@@ -195,8 +195,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Aura 0 - The Quickening +]--
 	local ED_PSY_Aura_0_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 與珍品提供的戰鬥技能回復，以及可使技能冷卻縮短 20% 的任務事件（mutators）相加疊加。",
-		"- 這會將[靈能尖嘯]、[靈能學者之怒]的最大冷卻時間減少至 27.75 秒、[占卜者的注視]減少至 23.125 秒、[念力護盾]減少至 37 秒。",
+		"- 珍品屬性、[閃擊強化]效果相加疊加。",
+		"",
+		"- 以下技能的CD冷卻時間：",
+		"- [靈能尖嘯]減少至 27.75 秒",
+		"- [靈能學者之怒]減少至 27.75 秒",
+		"- [占卜者的注視]減少至 23.125 秒",
+		"- [念力護盾]減少至 37 秒。",
 		doesnt_stack_aura_psy,
 	}, "\n"), enhdesc_col)
 
@@ -210,8 +215,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Aura 2 - Seer's Presence +]--
 	local ED_PSY_Aura_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 與珍品提供的戰鬥技能回復，以及可使技能冷卻縮短 20% 的任務事件相加疊加。",
-		"- 這會將[靈能尖嘯]、[靈能學者之怒]的最大冷卻時間減少至 27 秒、占卜者的注視]減少至 22.5 秒、[念力護盾]減少至 36 秒。",
+		"- 珍品屬性、[閃擊強化]效果相加疊加。",
+		"",
+		"- 以下技能的CD冷卻時間：",
+		"- [靈能尖嘯]減少至 27 秒",
+		"- [靈能學者之怒]減少至 27 秒",
+		"- [占卜者的注視]減少至 22.5 秒",
+		"- [念力護盾]減少至 36 秒。",
 		doesnt_stack_aura_psy,
 	}, "\n"), enhdesc_col)
 

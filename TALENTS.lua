@@ -1042,6 +1042,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_aura0_000_desc_ru",
 		{"loc_talent_psyker_aura_reduced_ability_cooldown_description"}, {"ru"},
 			loc_text("{cooldown_reduction:%s} к сокращению времени "..COLORS_KWords_ru.Combat_ability_cd_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Aura_0_rgb_ru)),
+	--[+ Traditional Chinese - 加速 +]--
+	-- 你和協同中的盟友技能冷卻縮減增加{cooldown_reduction:%s}。
+	create_template("talent_tree_psy_aura0_000_desc_tw",
+		{"loc_talent_psyker_aura_reduced_ability_cooldown_description"}, {"zh-tw"},
+			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友，\n"..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.."縮短 {cooldown_reduction:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Aura_0_rgb_tw)),
 
 	--[+ Aura 1 - Kinetic Presence +]--
 	create_template("talent_tree_psy_aura1_000_desc_en",
@@ -1055,6 +1060,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_aura1_000_desc_ru",
 		{"loc_talent_psyker_base_3_description"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." по элитным врагам для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Aura_1_rgb_ru)),
+	--[+ Traditional Chinese - 動能釋放 +]--
+	-- 你和協同中的盟友可對精英敵人造成額外{damage:%s}傷害。
+		create_template("talent_tree_psy_aura1_000_desc_tw",
+		{"loc_talent_psyker_base_3_description"}, {"zh-tw"},
+			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友，\n對精英敵人造成的"..COLORS_KWords_tw.Damage_rgb_tw.."提高 {damage:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Aura_1_rgb_tw)),
 
 	--[+ Aura 2 - Seer's Presence +]--
 	create_template("talent_tree_psy_aura2_000_desc_en",
@@ -1068,6 +1078,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_aura2_000_desc_ru",
 		{"loc_talent_psyker_cooldown_aura_improved_description"}, {"ru"},
 			loc_text("{cooldown_reduction:%s} к сокращению времени "..COLORS_KWords_ru.Combat_ability_cd_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".\n\nЭто улучшенная версия ауры {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Aura_2_rgb_ru)),
+	--[+ Traditional Chinese - 先知之眼 +]--
+	-- 你和協同中的盟友{cooldown_reduction:%s}技能冷卻縮減。\n\n該天賦為{talent_name:%s}的增強版。
+	create_template("talent_tree_psy_aura2_000_desc_tw",
+		{"loc_talent_psyker_cooldown_aura_improved_description"}, {"zh-tw"},
+			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友，"..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.."縮短 {cooldown_reduction:%s}。\n\n這是強化版的光環 {talent_name:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Aura_2_rgb_tw)),
 
 	--[+ Aura 3 - Prescience +]--
 	create_template("talent_tree_psy_aura3_000_desc_en",
@@ -1081,6 +1096,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_aura3_000_desc_ru",
 		{"loc_ability_psyker_gunslinger_aura_description"}, {"ru"},
 			loc_text("{critical_strike_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Aura_3_rgb_ru)),
+	--[+ Traditional Chinese - 預兆 +]--	
+	--你和協同中的盟友獲得{critical_strike_chance:%s}暴擊機率。
+	create_template("talent_tree_psy_aura3_000_desc_tw",
+		{"loc_ability_psyker_gunslinger_aura_description"}, {"zh-tw"},
+			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."中的隊友，\n"..COLORS_KWords_tw.Crit_chance_rgb_tw.."提高 {critical_strike_chance:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Aura_3_rgb_tw)),
 
 --[+ +ABILITIES - СПОСОБНОСТИ+ +]--
 	--[+ Ability 0 - Psykinetic's Wrath +]--

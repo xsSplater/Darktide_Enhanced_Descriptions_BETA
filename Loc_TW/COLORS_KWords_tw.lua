@@ -39,6 +39,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++協同率(Coherency)++]--
 	local coher_col = Color[mod:get("coherency_text_colour")](255, true)
 	local Coherency_rgb_tw = iu_actit("協同", coher_col)
+	local Coherencing_rgb_tw = iu_actit("協同中", coher_col)
 --[+++增益效果(BUFFS)+++]--
 	--[++致命一擊(Crit)++]--
 	local crt_col = Color[mod:get("crit_text_colour")](255, true)
@@ -369,7 +370,8 @@ return {
 	Toughness_dmg_red_rgb_tw = Toughness_dmg_red_rgb_tw,
 	Toughness_dmg_red_u_rgb_tw = Toughness_dmg_red_u_rgb_tw,
 	Toughness_dmg_rgb_tw = Toughness_dmg_rgb_tw,
-	Coherency_rgb_tw = Coherency_rgb_tw,
+    Coherency_rgb_tw = Coherency_rgb_tw,
+	Coherencing_rgb_tw = Coherencing_rgb_tw,
 	Trample_rgb_tw = Trample_rgb_tw,
 	Weakspot_rgb_tw = Weakspot_rgb_tw,
 	Weakspothit_rgb_tw = Weakspothit_rgb_tw,
