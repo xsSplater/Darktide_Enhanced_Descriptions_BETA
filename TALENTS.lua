@@ -288,7 +288,7 @@ local localization_templates = {
 	-- create_template("talent_tree_main_mods_000_ru",
 		-- {"loc_glossary_talent_stat"}, {"ru"},
 			-- loc_text("Модификатор оперативника")),
-	--[+ Traditional Chinese 特工修正 +]--
+	--[+ Traditional Chinese 幹員修改器 +]--
 	create_template("talent_tree_main_mods_000_tw",
 		{"loc_glossary_talent_stat"}, {"zh-tw"},
 			loc_text("幹員修改器")),
@@ -969,6 +969,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz2_002_desc_ru",
 		{"loc_talent_psyker_chain_lightning_damage_heavy_attacks_desc"}, {"ru"},
 			loc_text("Ваши тяжёлые атаки ближнего боя накладывают на врагов эффект "..COLORS_KWords_ru.Electrocution_rgb_ru..", наносящий им "..COLORS_KWords_ru.Dmg_rgb_ru..".\nДо "..COLORS_Numbers.n_64_rgb.." единиц базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." за срабатывание при максимальном уровне заряда.\nОкно "..COLORS_KWords_ru.Dmg_a_rgb_ru.." длится "..COLORS_Numbers.n_2_rgb.." секунды. Эффект "..COLORS_KWords_ru.Electrocution_rgb_ru.." длится "..COLORS_Numbers.n_2_rgb.." секунды после последнего нанесения "..COLORS_KWords_ru.Dmg_a_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Blitz_2_3_rgb_ru)),
+	--[+ Traditional Chinese - 蓄力打擊 +]--
+	-- 你的近戰重擊會電擊敵人，並對其造成傷害。
+	create_template("talent_tree_psy_blitz2_002_desc_tw",
+		{"loc_talent_psyker_chain_lightning_damage_heavy_attacks_desc"}, {"zh-tw"},
+			loc_text("重擊敵人時，\n施加敵人 "..COLORS_KWords_tw.Electrocution_rgb_tw.." 並產生 "..COLORS_KWords_tw.Dmg_c_rgb_tw.." 。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_3_rgb_tw)),
 
 	--[+ Blitz 3 - Assail +]--
 	create_template("talent_tree_psy_blitz3_000_desc_en",
@@ -982,6 +987,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz3_000_desc_ru",
 		{"loc_ability_psyker_blitz_throwing_knives_description"}, {"ru"},
 			loc_text("Вы бросаете быстрые, самонаводящиеся снаряды, сформированные из психической энергии, которые следуют за прицелом игрока в течение "..COLORS_Numbers.n_2_5_rgb.." секунды в ближайшего врага. Наносит "..COLORS_Numbers.n_200_rgb.." базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." первой цели и генерирует "..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru..".\nВторичной атакой вы запускаете самонаводящийся снаряд, который летит до "..COLORS_Numbers.n_3_rgb.." секунд и гарантированно поражает врагов в радиусе "..COLORS_Numbers.n_50_rgb.." метров. Наносит "..COLORS_Numbers.n_340_rgb.." базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." и генерирует "..COLORS_Numbers.pc_25_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Blitz_3_rgb_ru)),
+	--[+ Traditional Chinese - 靈能攻擊 +]--
+	-- 投擲高速、自動鎖敵的靈能投擲物。攻擊有甲殼護甲的敵人時效果較差。
+	create_template("talent_tree_psy_blitz3_000_desc_tw",
+		{"loc_ability_psyker_blitz_throwing_knives_description"}, {"zh-tw"},
+			loc_text("投擲高速、自動鎖敵的靈能投擲物。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_rgb_tw)),
 
 	--[+ Blitz 3-1 - Ethereal Shards +]--
 	create_template("talent_tree_psy_blitz3_001_desc_en",
@@ -995,6 +1005,12 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz3_001_desc_ru",
 		{"loc_talent_psyker_throwing_knives_pierce_description"}, {"ru"},
 			loc_text("С "..COLORS_Numbers.n_2_rgb.." до "..COLORS_Numbers.n_3_rgb.." увеличивается количество врагов, которых пронзают снаряды таланта {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Blitz_3_1_rgb_ru)),
+	--[+ Traditional Chinese - 乙太碎片 +]--
+	-- {talent_name:%s}的投射物可擊穿額外目標。
+	create_template("talent_tree_psy_blitz3_001_desc_tw",
+		{"loc_talent_psyker_throwing_knives_pierce_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 的穿透數量從 "..COLORS_Numbers.n_2_rgb.." 提升至 "..COLORS_Numbers.n_3_rgb.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_1_rgb_tw)),
+
 
 	--[+ Blitz 3-2 - Quick Shards +]--
 	create_template("talent_tree_psy_blitz3_002_desc_en",
