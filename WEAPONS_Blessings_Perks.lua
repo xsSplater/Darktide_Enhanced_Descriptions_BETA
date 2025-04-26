@@ -3344,21 +3344,21 @@ local localization_templates = {
 			create_template("weap_wbr003_desc_ext_en",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"en"},
 					-- loc_text("Direct hits apply "..COLORS_Numbers.stacks_num_var_rgb.." Stacks of "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Stacks "..COLORS_Numbers.maxstks_var_rgb.." times."..COLORS_KWords.Brtl_note_rgb)), -- num_stacks: 4, rending_percentage: 2.5%, duration: 5, max_stacks: 16 -- colors
-					loc_text("Direct hits apply "..COLORS_Numbers.n_1_rgb.." Stack of "..COLORS_Numbers.pc_4_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Stacks "..COLORS_Numbers.n_5_rgb.." times, up to "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords.Brtl_note_rgb)), -- num_stacks: 4, rending_percentage: 1%, duration: 5, max_stacks: 10 -- colors
+					loc_text("Direct hits apply "..COLORS_Numbers.n_1_rgb.." Stacks of "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Stacks "..COLORS_Numbers.n_5_rgb.." times, up to "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords.Brtl_note_rgb)), -- num_stacks: 4, rending_percentage: 1%, duration: 5, max_stacks: 10 -- colors
 			--[+ French +]--
 			-- create_template("weap_wbr003_desc_ext_fr",
 				-- {"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"fr"},
 					-- loc_text("Les coups directs appliquent "..COLORS_Numbers.stacks_num_var_rgb.." cumuls de "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords_fr.Brittleness_rgb_fr.." pendant "..COLORS_Numbers.dur_var_rgb.." secondes. Se cumule "..COLORS_Numbers.maxstks_var_rgb.." fois."..COLORS_KWords_fr.Brtl_note_rgb_fr)),
 			create_template("weap_wbr003_desc_ext_fr",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"fr"},
-					loc_text("Les coups directs appliquent "..COLORS_Numbers.n_1_rgb.." cumul de "..COLORS_Numbers.pc_4_rgb.." "..COLORS_KWords_fr.Brittleness_rgb_fr.." pendant "..COLORS_Numbers.dur_var_rgb.." secondes. Se cumule "..COLORS_Numbers.n_5_rgb.." fois, Jusqu'à "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords_fr.Brtl_note_rgb_fr)),
+					loc_text("Les coups directs appliquent "..COLORS_Numbers.n_1_rgb.." cumul de "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords_fr.Brittleness_rgb_fr.." pendant "..COLORS_Numbers.dur_var_rgb.." secondes. Se cumule "..COLORS_Numbers.n_5_rgb.." fois, Jusqu'à "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords_fr.Brtl_note_rgb_fr)),
 			--[+ Russian - Проникающее пламя -- руоф Убойное пламя +]--
 			-- create_template("weap_wbr003_desc_ext_ru",
 				-- {"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"ru"},
 					-- loc_text("Прямые попадания накладывают "..COLORS_Numbers.stacks_num_var_rgb.." заряда по "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." на "..COLORS_Numbers.dur_var_rgb.." секунд. Суммируется до "..COLORS_Numbers.maxstks_var_rgb.." раз."..COLORS_KWords_ru.Brtl_note_rgb_ru)),
 			create_template("weap_wbr003_desc_ext_ru",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"ru"},
-					loc_text("Прямые попадания накладывают "..COLORS_Numbers.n_1_rgb.." заряд "..COLORS_Numbers.pc_4_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." на "..COLORS_Numbers.dur_var_rgb.." секунд. Суммируется до "..COLORS_Numbers.n_5_rgb.." раз, вплоть до "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords_ru.Brtl_note_rgb_ru)),
+					loc_text("Прямые попадания накладывают "..COLORS_Numbers.n_1_rgb.." заряд "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." на "..COLORS_Numbers.dur_var_rgb.." секунд. Суммируется до "..COLORS_Numbers.n_5_rgb.." раз, вплоть до "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords_ru.Brtl_note_rgb_ru)),
 			--[+ Traditional Chinese - 穿透烈焰 +]--
 			-- 淨化噴火器, 烈焰力場法杖 -- 1 | 2 | 3 | 4
 			-- create_template("weap_wbr003_desc_ext_tw",
@@ -3366,11 +3366,11 @@ local localization_templates = {
 					-- loc_text("被攻擊目標獲得 "..COLORS_Numbers.stacks_num_var_rgb.." 層 "..COLORS_Numbers.rending_pc_var_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.maxstks_var_rgb.." 層。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
 			create_template("weap_wbr003_desc_ext_tw",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-tw"},
-					loc_text("被攻擊目標獲得 "..COLORS_Numbers.n_1_rgb.." 層 "..COLORS_Numbers.pc_4_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.n_5_rgb.." 層。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
+					loc_text("被攻擊目標獲得 "..COLORS_Numbers.n_1_rgb.." 層 "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.n_5_rgb.." 層。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
 			--[+ Simplified Chinese - 穿透火焰 +]--
 			create_template("weap_wbr003_desc_ext_zh_cn",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-cn"},
-					loc_text("命中时，对目标施加 "..COLORS_Numbers.n_1_rgb.." 层 "..COLORS_Numbers.pc_4_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层，最高 "..COLORS_Numbers.pc_20_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),
+					loc_text("命中时，对目标施加 "..COLORS_Numbers.n_1_rgb.." 层 "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层，最高 "..COLORS_Numbers.pc_20_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),
 	--Incorrect description: https://forums.fatsharkgames.com/t/inferno-staff-penetrating-flame-not-working-as-intended-or-incorrect-description/106932 「create_template("weap_wbr003_desc_ext_zh_cn",
 				-- {"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-cn"},
 					-- loc_text("命中时，对目标施加 "..COLORS_Numbers.stacks_num_var_rgb.." 层 "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 层。最高 "..COLORS_Numbers.pc_40_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),」
