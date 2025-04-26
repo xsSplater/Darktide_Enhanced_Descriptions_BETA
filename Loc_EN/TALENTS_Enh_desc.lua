@@ -602,7 +602,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- The debuff stacks multiplicatively with itself, up to 33.8% (1.06⁵=1.338), with other Damage taken debuffs on enemies from \"Enfeeble\", Ogryn's \"Soften Them Up\", \"Valuable Destruction\", Veteran's \"Focus Target!\", and multiplicatively with Damage buffs and with Power level buffs from Weapon Blessings.",
 		warp_attc_refers_to,
 		"",
-		"{#color(255, 35, 5)}- There is currently a bug: Inferno Staff left-clicks do not apply the debuff.{#reset()}",
+		-- "{#color(255, 35, 5)}- There is currently a bug: Inferno Staff left-clicks do not apply the debuff.{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 17 - By Crack of Bone +]--

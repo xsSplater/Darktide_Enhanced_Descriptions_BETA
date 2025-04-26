@@ -2060,9 +2060,9 @@ local localization_templates = {
 			create_template("weap_wbm059_ext_en",
 				{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"en"},
 					loc_text("Shock and Awe")), -- &->and
-			-- create_template("weap_wbm059_desc_ext_en",
-				-- {"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill_desc"}, {"en"},
-					-- loc_text(COLORS_Numbers.hitmass_var_rgb.." Enemy "..COLORS_KWords.Hit_mass_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Kill.")), -- hit_mass: -60%, time: 2 -- s->seconds -- colors
+			create_template("weap_wbm059_desc_ext_en",
+				{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill_desc"}, {"en"},
+					loc_text(COLORS_Numbers.hitmass_var_rgb.." Enemy "..COLORS_KWords.Hit_mass_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Kill.")), -- hit_mass: -40%, time: 2 -- s->seconds -- colors
 			--[+ French +]--
 			create_template("weap_wbm059_desc_ext_fr",
 				{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill_desc"}, {"fr"},
