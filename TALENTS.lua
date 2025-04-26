@@ -1399,6 +1399,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_001_desc_ru",
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"ru"},
 			loc_text("Пока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru..", вы получаете {tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_1_rgb_ru)),
+	--[+ Traditional Chinese - 堅韌 +]--
+	--{talent_name:%s}啟動期間獲得{tdr:%s}韌性減傷。
+	create_template("talent_tree_psy_abil3_001_desc_tw",
+		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"zh-tw"},
+			loc_text("當"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."啟動時，\n獲得 {tdr:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_1_rgb_tw)),
 
 	--[+ Ability 3-2 - Precognition +]--
 	create_template("talent_tree_psy_abil3_002_desc_en",
@@ -1412,6 +1417,17 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_002_desc_ru",
 		{"loc_ability_psyker_overcharge_weakspot_description"}, {"ru"},
 			loc_text("Пока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru..", убийства в "..COLORS_KWords_ru.Weakspot_rgb_ru.." засчитываются как {second:%s} секунда под действием этой способности.\n\nЗа каждую секунду под действием способности "..COLORS_KWords_ru.Scriers_gaze_rgb_ru..", вы также получаете {finesse_damage_per_stack:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." от "..COLORS_KWords_ru.Finesse_rgb_ru..", до максимальных {max_finesse_damage:%s}. Эффект держится {duration:%s} секунд после окончания действия таланта "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_2_rgb_ru)),
+	--[+ Ability 3-2 - Precognition +]--
+	--[+ Traditional Chinese - 預知未來 +]--
+	--每次弱點擊殺視作在{talent_name:%s}狀態下{second:%s}秒持續時間。\n\n持續{talent_name:%s}狀態每一秒賦予{finesse_damage_per_stack:%s}靈巧傷害（最多{max_finesse_damage%s}），脫離{talent_name:%s}狀態後效果延續{duration:%s}秒。
+	create_template("talent_tree_psy_abil3_002_desc_tw",
+		{"loc_ability_psyker_overcharge_weakspot_description"}, {"zh-tw"},
+			loc_text("當"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."啟動時，\n"
+			.."\n"
+			.."- "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 敵人會延長技能 {second:%s} 秒。\n"
+			.."- 每秒 {finesse_damage_per_stack:%s} "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.."，最高 {max_finesse_damage:%s}，\n"
+			.."- {talent_name:%s} 技能結束後可持續 {duration:%s} 秒。"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_2_rgb_tw)),
 
 	--[+ Ability 3-3 - Warp Speed +]--
 	create_template("talent_tree_psy_abil3_003_desc_en",
@@ -1425,6 +1441,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_003_desc_ru",
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"ru"},
 			loc_text("Пока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru..", вы получаете {movement_speed:%s} к скорости движения."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_3_rgb_ru)),
+	--[+ Traditional Chinese - 亞空間加速 +]--
+	--{talent_name:%s}啟動期間獲得{movement_speed:%s}移動速度。
+	create_template("talent_tree_psy_abil3_003_desc_tw",
+		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"zh-tw"},
+		loc_text("當"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."啟動時，移動速度提高 {movement_speed:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_3_rgb_tw)),
 
 	--[+ Ability 3-4 - Reality Anchor +]--
 	create_template("talent_tree_psy_abil3_004_desc_en",
@@ -1438,6 +1459,13 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_004_desc_ru",
 		{"loc_ability_psyker_overcharge_reduced_warp_charge_description"}, {"ru"},
 			loc_text("Пока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru..", вы получаете {warp_charge:%s} к генерированию "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_4_rgb_ru)),
+	--[+ Traditional Chinese - 現實錨點 +]--
+	--{talent_name:%s}啟動期間還會降低{warp_charge:%s}已生成的反噬。
+	create_template("talent_tree_psy_abil3_004_desc_tw",
+		{"loc_ability_psyker_overcharge_reduced_warp_charge_description"}, {"zh-tw"},
+			loc_text("當"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."啟動時，\n"
+			.."立即降低 {warp_charge:%s}"..COLORS_KWords_tw.Peril_rgb_tw.."。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_4_rgb_tw)),
 
 	--[+ Ability 3-5 - Warp Unbound +]--
 	create_template("talent_tree_psy_abil3_005_desc_en",
@@ -1451,6 +1479,19 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_005_desc_ru",
 		{"loc_talent_psyker_overcharge_infinite_casting_desc"}, {"ru"},
 			loc_text("В течение "..COLORS_Numbers.n_10_rgb.." секунд после окончания действия способности "..COLORS_KWords_ru.Scriers_gaze_rgb_ru..", вы можете использовать все генерирующие "..COLORS_KWords_ru.Perl_rgb_ru.." действия без угрозы взрыва, даже при "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_5_rgb_ru)),
+	--[+ Traditional Chinese - 亞空間突破 +]--
+	-- {talent_name:%s}的效果持續時間內也能避免亞空間反噬所造成的超載效果。
+	create_template("talent_tree_psy_abil3_005_desc_tw",
+		{"loc_talent_psyker_overcharge_infinite_casting_desc"}, {"zh-tw"},
+		-- loc_text("在"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."結束後的"..COLORS_Numbers.n_10_rgb.."秒內，你可以無限制使用所有會產生"..COLORS_KWords_tw.Peril_rgb_tw.."的技能
+		--，且不會爆炸，即使達到"..COLORS_Numbers.pc_100_rgb.."的"..COLORS_KWords_tw.Peril_rgb_tw.."。" )),
+		loc_text("{talent_name:%s} 期間，免疫反噬超載效果。\n"
+		.."\n"
+		.."- 在"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."結束後的"..COLORS_Numbers.n_10_rgb.."秒內，\n"
+		.."--可以無限制使用所有會產生"..COLORS_KWords_tw.Peril_rgb_tw.."的技能，\n"
+		.."--即使達到"..COLORS_Numbers.pc_100_rgb.."的"..COLORS_KWords_tw.Peril_rgb_tw.."，也不會爆炸。\n"
+		.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_5_rgb_tw
+	)),
 
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
 	--[+ Keystone 1 - Warp Siphon +]--

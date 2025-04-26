@@ -44,20 +44,12 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- 基礎傷害 900 。",
 		"- "..COLORS_KWords_tw.Crit_n_chance_rgb_tw.."。",
 		"- 永遠視為"..COLORS_KWords_tw.Weakspothit_rgb_tw.."。",
-		"- 對防彈、甲殼敵人效果不佳。",
-		"- 對狂熱者與不屈有 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。",
 		peril_explosion_alert,
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 1 - Brain Rupture +]--
 	local ED_PSY_Blitz_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 基礎傷害：1350。",
-		"- "..COLORS_KWords_tw.Crit_n_chance_rgb_tw.."。",
-		"- 永遠視為 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 。",
-		"- 對防彈、甲殼敵人效果不佳。",
-		"- 對狂熱者與不屈有 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。",
-		"",
 		"- 充能達到 "..COLORS_Numbers.pc_50_rgb.." 時，使目標 "..COLORS_KWords_tw.Stagger_s_rgb_tw.." 。",
 		"-- "..COLORS_KWords_tw.Stagger_w_rgb_tw.." 對以下目標無效 ",
 		"-- 轟炸者、重錘兵、變種人、歐格林、",
@@ -397,31 +389,40 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	-- [+ Ability 3-2 - Precognition +]--
 	local ED_PSY_Ability_3_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 與其他[弱點]與[技巧]增益效果相加計算。",
+		"- 與[弱點]與[技巧]增益相加計算。",
 		"- [順劈目標]時，每次攻擊可多次觸發。",
-		"- 這些可疊加的傷害增益會在超載階段立即生效。",
+		"- 疊加傷害會在超載階段立即生效。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-3 - Warp Speed +]--
 	local ED_PSY_Ability_3_3_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 不會在超載階段結束後持續存在。",
-		"- 與[擾動命運]、[堅毅]、[移動速度增幅]和武器祝福如[提速]的移動速度增益相加疊加。",
+		"- 超載階段結束後立即結束。",
+		"- 與天賦、祝福的移動速度相加疊加",
+		"--武器祝福：[提速]",
+		"--天賦：",
+		"--[擾動命運]、[堅毅]、[移動速度增幅]",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-4 - Reality Anchor +]--
 	local ED_PSY_Ability_3_4_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 不會在超載階段結束後持續存在。",
-		"- 與[骨折後遺症]、[亞空間意志]、[動能共鳴]、小型反噬抗性節點和戰鬥興奮劑的反噬值消耗減少效果做乘法疊加。",
-		"- 只有在靈能者在超載期間恢復亞空間充能時，才能與[平心靜氣]疊加。",
+		"- 不會在能力結束後延長效果。",
+		"- 超載結束後才能與[平心靜氣]疊加。",
+		"- 與天賦、戰鬥興奮劑、節點的反噬值消耗減少做乘法疊加",
+		"- 天賦：",
+		"--[骨折後遺症]、[亞空間意志]、",
+		"--[動能共鳴]、小型反噬抗性節點。",
+		"",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-5 - Warp Unbound +]--
 	local ED_PSY_Ability_3_5_rgb_tw = iu_actit(table.concat({
-		"\n",
-    	"- 超載結束後，允許靈能者在100%反噬值下執行反噬生成動作10秒而不會觸發自我爆炸。",
-    	"- 請注意，當這10秒持續時間結束時，[占卜者的注視]的基本緩衝時間仍然適用，提供額外1.5秒的相同效果。",
+		"",
+    	"- 超載結束後",
+		"--在 100% "..COLORS_KWords_tw.Peril_rgb_tw.."下持續10秒不會自爆。",
+		"--結束後[占卜者的注視]緩衝仍生效。",
+		"--並提供額外 1.5 秒的相同效果。",
 	}, "\n"), enhdesc_col)
 
 --[+ +KEYSTONES+ +]--
