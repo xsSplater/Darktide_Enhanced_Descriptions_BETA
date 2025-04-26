@@ -847,7 +847,10 @@ local localization_templates = {
 	-- 積蓄你的靈能力量，釋放後對單個敵人造成巨大傷害。對防彈護甲和甲殼護甲敵人造成的效果減弱。
 	create_template("talent_tree_psy_blitz0_000_desc_tw",
 		{"loc_ability_psyker_smite_description_new"}, {"zh-tw"},
-			loc_text("凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_rgb_tw.." 。"..TALENTS_Enh_desc_tw.ED_PSY_Blitz_0_rgb_tw.."。")),
+			loc_text("凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_rgb_tw.." 。\n"
+			.."- 對防彈、甲殼敵人效果不佳。\n"
+			.."- 對狂熱者與不屈有 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。\n"
+			..TALENTS_Enh_desc_tw.ED_PSY_Blitz_0_rgb_tw.."。")),
 
 	--[+ Blitz 1 - Brain Rupture +]--
 	create_template("talent_tree_psy_blitz1_000_desc_en",
@@ -865,7 +868,14 @@ local localization_templates = {
 	-- 積蓄靈能力量，釋放時可對單個敵人造成巨大傷害。對防彈護甲和甲殼護甲敵人效果減弱。\n\n該天賦是可造成{damage:%s}傷害的{talent_old:%s}的加強版。
 	create_template("talent_tree_psy_blitz1_000_desc_tw",
 		{"loc_talent_psyker_brain_burst_improved_description"}, {"zh-tw"},
-			loc_text("凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。"..TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_rgb_tw)),
+			loc_text("凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。\n"
+			.."- 基礎傷害：1350。\n"
+			.."- "..COLORS_KWords_tw.Crit_n_chance_rgb_tw.."。\n"
+			.."- 永遠視為 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 。\n"
+			.."- 對防彈、甲殼敵人效果不佳。\n"
+			.."- 對狂熱者與不屈有 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。\n"
+			.."這是 {talent_old:%s} 的強化版本\n"
+			..TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_rgb_tw)),
 
 	--[+ Blitz 1-1 - Kinetic Resonance +]--
 	create_template("talent_tree_psy_blitz1_001_desc_en",
@@ -883,7 +893,11 @@ local localization_templates = {
 	-- 使用戰鬥技能會加快{talent_name:%s}充能{smite_attack_speed:%s}且降低反噬生成{warp_charge_cost:%s}，持續{duration:%s}秒。
 	create_template("talent_tree_psy_blitz1_001_desc_tw",
 	{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"zh-tw"},
-		loc_text("使用 "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 後 {smite_attack_speed:%s} 增加閃擊充能速度 {talent_name:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_1_rgb_tw)),
+		loc_text("使用 "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 後 {smite_attack_speed:%s} 增加閃擊充能速度 {talent_name:%s}。\n" 
+		.."\n"
+		.."- 持續 {duration:%s} 秒，期間靈能消耗減少 {warp_charge_cost:%s}。\n"
+		.."- 縮短顱腦崩裂的蓄力時間。\n"
+		.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_1_rgb_tw)),
 
 	--[+ Blitz 1-2 - Kinetic Flayer +]--
 	create_template("talent_tree_psy_blitz1_002_desc_en",
@@ -919,7 +933,11 @@ local localization_templates = {
 	-- 釋放一道生物閃電。這是一種快速定向攻擊，可在造成傷害時鎖定並擊暈敵人。技能效果可擴散到附近的敵人，充能增加擴散速度和傷害。
 	create_template("talent_tree_psy_blitz2_000_desc_tw",
 		{"loc_ability_psyker_chain_lightning_description"}, {"zh-tw"},
-			loc_text("釋放一道生物閃電在敵人間跳躍，\n並造成低 "..COLORS_KWords_tw.Damage_rgb_tw.." 並持續 "..COLORS_KWords_tw.Electrocutes_rgb_tw.."，\n附帶強烈 "..COLORS_KWords_tw.Stagger_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_rgb_tw)),
+			loc_text("釋放一道生物閃電在敵人間跳躍，\n並造成低 "..COLORS_KWords_tw.Damage_rgb_tw.." 並持續 "..COLORS_KWords_tw.Electrocutes_rgb_tw.."，\n附帶強烈 "..COLORS_KWords_tw.Stagger_rgb_tw.."。\n"
+			.."- 蓄力可提升"..COLORS_KWords_tw.Damage_rgb_tw.."與傳導範圍。\n"
+			.."- 無法對巨獸或力場護盾敵人造成踉蹌。\n"
+			.."- 所有護甲中等穿透，甲殼護甲低穿透。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_rgb_tw)),
 
 	--[+ Blitz 2-1 - Lightning Storm +]--
 	create_template("talent_tree_psy_blitz2_001_desc_en",
@@ -955,7 +973,11 @@ local localization_templates = {
 	-- 遭受你電擊的敵人受到所有來源的基礎傷害增加{damage:%s}。
 	create_template("talent_tree_psy_blitz2_002_desc_tw",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"zh-tw"},
-			loc_text("{talent_name:%s} "..COLORS_KWords_tw.Electrocution_rgb_tw.." 的敵人，受到的 "..COLORS_KWords_tw.Dmg_a_rgb_tw.." {damage:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_2_rgb_tw)),
+			loc_text("{talent_name:%s} "..COLORS_KWords_tw.Electrocution_rgb_tw.." 的敵人，受到的 "..COLORS_KWords_tw.Dmg_a_rgb_tw.." {damage:%s}。\n" 
+			.."\n"
+			.."- {talent_name:%s} 持續中的易傷效果將一直存在。\n" 
+			.."-不會與其他靈能者[衰弱詛咒]疊加。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_2_rgb_tw)),
 
 	--[+ Blitz 2-3 - Charged Strike +]--
 	create_template("talent_tree_psy_blitz2_002_desc_en",
@@ -973,7 +995,12 @@ local localization_templates = {
 	-- 你的近戰重擊會電擊敵人，並對其造成傷害。
 	create_template("talent_tree_psy_blitz2_002_desc_tw",
 		{"loc_talent_psyker_chain_lightning_damage_heavy_attacks_desc"}, {"zh-tw"},
-			loc_text("重擊敵人時，\n施加敵人 "..COLORS_KWords_tw.Electrocution_rgb_tw.." 並產生 "..COLORS_KWords_tw.Dmg_c_rgb_tw.." 。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_3_rgb_tw)),
+			loc_text("重擊敵人時，\n施加敵人 "..COLORS_KWords_tw.Electrocution_rgb_tw.." 並產生 "..COLORS_KWords_tw.Dmg_c_rgb_tw.." 。\n"	
+			.."- "..COLORS_KWords_tw.Dmg_d_rgb_tw.." 基礎為 "..COLORS_Numbers.n_8_rgb.." 。\n"
+			.."- 蓄力達最大時 "..COLORS_KWords_tw.Dmg_d_rgb_tw.." 可達 "..COLORS_Numbers.n_64_rgb.."/s\n"
+			.."- Dot持續時間最長 "..COLORS_Numbers.n_2_rgb.."s。\n"
+			.."- "..COLORS_KWords_tw.Electrocution_rgb_tw.." 效果在最後一次Dot傷害後持續 "..COLORS_Numbers.n_2_rgb.."s 。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_3_rgb_tw)),
 
 	--[+ Blitz 3 - Assail +]--
 	create_template("talent_tree_psy_blitz3_000_desc_en",
@@ -991,7 +1018,13 @@ local localization_templates = {
 	-- 投擲高速、自動鎖敵的靈能投擲物。攻擊有甲殼護甲的敵人時效果較差。
 	create_template("talent_tree_psy_blitz3_000_desc_tw",
 		{"loc_ability_psyker_blitz_throwing_knives_description"}, {"zh-tw"},
-			loc_text("投擲高速、自動鎖敵的靈能投擲物。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_rgb_tw)),
+			loc_text("投擲高速、自動鎖敵的靈能投擲物。\n"
+			.."- 自動追蹤準星附近敵人，持續"..COLORS_Numbers.n_2_5_rgb.."秒。\n"
+			.."- 首個目標"..COLORS_Numbers.n_200_rgb..""..COLORS_KWords_tw.Dmg_a_rgb_tw.."並產生"..COLORS_Numbers.pc_10_rgb..""..COLORS_KWords_tw.Peril_rgb_tw.."。\n"
+			.."\n"
+			.."- 副攻擊追蹤"..COLORS_Numbers.n_3_rgb.."s，可命中"..COLORS_Numbers.n_50_rgb.."m內敵人。\n"
+			.."--造成"..COLORS_Numbers.n_340_rgb.."點"..COLORS_KWords_tw.Dmg_a_rgb_tw.."，並產生"..COLORS_Numbers.pc_25_rgb.." "..COLORS_KWords_tw.Peril_rgb_tw.."。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_rgb_tw)),
 
 	--[+ Blitz 3-1 - Ethereal Shards +]--
 	create_template("talent_tree_psy_blitz3_001_desc_en",
@@ -1119,7 +1152,15 @@ local localization_templates = {
 	-- 釋放一波亞空間能量，造成前方敵人暈眩。\n平息{warpcharge_vent:%s}反噬。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_psy_abiㄕl0_000_desc_tw",
 		{"loc_talent_psyker_shout_ability_description"}, {"zh-tw"},
-			loc_text("釋放出一道錐形的靈能波動，\n造成前方敵人"..COLORS_KWords_tw.Stagger_rgb_tw.."。\n" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_0_rgb_tw)),
+			-- loc_text("你釋放一道錐形的靈能波動，\n使用此能力可避免靈能反噬。\n冷卻時間：{cooldown:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_0_rgb_tw)),
+
+			loc_text("釋放出一道錐形的靈能波動，\n造成前方敵人"..COLORS_KWords_tw.Stagger_rgb_tw.."。\n" 
+			.."\n"
+			.."- 使用時會平息 {warpcharge_vent:%s} 的 "..COLORS_KWords_tw.Peril_rgb_tw.." 。\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。\n"
+			..""
+			.."- 攻擊範圍最遠可達"..COLORS_Numbers.n_30_rgb.."m\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_0_rgb_tw)),
 
 	--[+ Ability 1 - Venting Shriek +]--
 	create_template("talent_tree_psy_abil1_000_desc_en",
@@ -1137,7 +1178,15 @@ local localization_templates = {
 	-- 釋放一波亞空間能量，造成前方敵人暈眩，並平息{warpcharge_vent:%s}反噬。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{talent_name:%s}的增強版。
 	create_template("talent_tree_psy_abil1_000_desc_tw",
 		{"loc_talent_psyker_shout_vent_warp_charge_description"}, {"zh-tw"},
-			loc_text("釋放出一道錐形的靈能波動，\n造成前方敵人"..COLORS_KWords_tw.Stagger_rgb_tw.."。\n\n這是強化版的技能 {talent_name:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_rgb_tw)),
+			loc_text("釋放出一道錐形的靈能波動，\n造成前方敵人"..COLORS_KWords_tw.Stagger_rgb_tw.."。\n"
+			.."\n"
+			.."- 使用時會平息 {warpcharge_vent:%s} 的 "..COLORS_KWords_tw.Peril_rgb_tw.." 。\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。\n"
+			.."- 可以用來防止 "..COLORS_KWords_tw.Perl_e_rgb_tw.." 。\n"
+			.."- 攻擊範圍最遠可達 "..COLORS_Numbers.n_30_rgb.."m 。\n"
+			.."- 靈能波動可穿透任何障礙物。\n"
+			.."- 可穿牆將瘟疫獵犬從隊友身上推開。\n"
+			.."\n這是強化版的技能 {talent_name:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_rgb_tw)),
 
 	--[+ Ability 1-1 - Becalming Eruption +]--
 	create_template("talent_tree_psy_abil1_001_desc_en",
@@ -1190,7 +1239,7 @@ local localization_templates = {
 	--[+ Traditional Chinese - 蔓延火焰 +]--
 	create_template("talent_tree_psy_abil1_003_desc_tw",
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"zh-tw"},
-			loc_text("{talent_name:%s} 會依據你當前的"..COLORS_KWords_tw.Peril_rgb_tw.."，\n對命中的目標施加 "..COLORS_Numbers.n_1_rgb.." 至 {warpfire_stacks:%s} 層"..COLORS_KWords_tw.Soulblaze_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_3_rgb_tw)),
+			loc_text("{talent_name:%s} 依據當前的"..COLORS_KWords_tw.Peril_rgb_tw.."，\n對命中的目標施加 "..COLORS_Numbers.n_1_rgb.." 至 {warpfire_stacks:%s} 層"..COLORS_KWords_tw.Soulblaze_rgb_tw.."。"..TALENTS_Enh_desc_tw.ED_PSY_Ability_1_3_rgb_tw)),
 
 	--[+ Ability 2 - Telekine Shield +]--
 	create_template("talent_tree_psy_abil2_000_desc_en",
@@ -1208,7 +1257,13 @@ local localization_templates = {
 	-- 在身前展開一道持續{duration:%s}秒的靈能護盾。護盾能阻擋敵人的遠程攻擊，但你和盟友的射擊不受影響。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_psy_abil2_000_desc_tw",
 		{"loc_talent_psyker_combat_ability_shield_description"}, {"zh-tw"},
-			loc_text("在你面前生成一道靈能護盾，持續 {duration:%s} 秒。\n冷卻時間：{cooldown:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_rgb_tw)),
+			loc_text("在面前生成靈能護盾，持續 {duration:%s} 秒。\n"
+			.."\n"
+			.."- 阻擋敵方射擊，友方可穿透護盾射擊。\n"
+			.."- 長按技能預覽位置，透過格擋取消。\n"
+			.."\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。" 
+			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_rgb_tw)),
 
 	--[+ Ability 2-1 - Bolstered Shield +]--
 	create_template("talent_tree_psy_abil2_001_desc_en",
@@ -1244,7 +1299,14 @@ local localization_templates = {
 	-- {ability:%s}有{proc_chance:%s}的幾率使經過其中的敵人遭受電擊。專家敵人經過時也有{special_proc_chance:%s}的幾率遭受電擊，但也會使{ability:%s}受損。
 	create_template("talent_tree_psy_abil2_002_desc_tw",
 		{"loc_talent_psyker_force_field_stun_increased_new_description"}, {"zh-tw"},
-			loc_text("{ability:%s} 有機率 "..COLORS_KWords_tw.Electrocute_rgb_tw.." 穿越的敵人。\n精英敵人有 {special_proc_chance:%s} 機率被"..COLORS_KWords_tw.Electrocuted_rgb_tw.."，但會對 {ability:%s} 造成傷害。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_2_rgb_tw)),
+			loc_text("{ability:%s} 有機率 "..COLORS_KWords_tw.Electrocute_rgb_tw.." 穿越的敵人。\n" 
+			.."- "..COLORS_KWords_tw.Electrocute_rgb_tw.."機率：\n"
+			.."--Boss：無法暈眩。\n"
+			.."--一般敵人：{proc_chance:%s}\n"
+			.."--精英：{special_proc_chance:%s}，但會損傷{ability:%s}。\n"
+			.."--專家：{special_proc_chance:%s}，但會損傷{ability:%s}。\n"
+			.."--菁英與專家會對 {ability:%s} 造成傷害。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_2_rgb_tw)),
 
 	--[+ Ability 2-3 - Telekine Dome +]--
 	create_template("talent_tree_psy_abil2_003_desc_en",
@@ -1258,6 +1320,14 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil2_003_desc_ru",
 		{"loc_talent_psyker_force_field_dome_new_desc"}, {"ru"},
 			loc_text("{talent_name:%s} теперь формирует сферу радиусом "..COLORS_Numbers.n_6_rgb.." метров, которая держится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_2_3_rgb_ru)),
+	--[+ Traditional Chinese - 念力穹頂 +]--
+	-- {talent_name:%s}現在形成一個持續{duration:%s}秒的球形護盾。
+	create_template("talent_tree_psy_abil2_003_desc_tw",
+		{"loc_talent_psyker_force_field_dome_new_desc"}, {"zh-tw"},
+		-- loc_text("，持續 {duration:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_3_rgb_tw)),
+			loc_text("{talent_name:%s} 會形成圓形護盾，持續 {duration:%s} 秒。\n" 
+			.."- 球體半徑為"..COLORS_Numbers.n_6_rgb.."公尺。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_3_rgb_tw)),
 
 	--[+ Ability 2-4 - Sanctuary +]--
 	create_template("talent_tree_psy_abil2_004_desc_en",
@@ -1271,7 +1341,19 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil2_004_desc_ru",
 		{"loc_talent_psyker_force_field_grants_toughness_desc"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." в секунду восстанавливается для всех игроков, которых защищает {talent_name:%s}.\n{toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." на {duration:%s} секунд получаете вы и ваши союзники, если вас защищал {talent_name:%s}, в момент его рассеивания."..TALENTS_Enh_desc_ru.ED_PSY_Ability_2_4_rgb_ru)),
-
+	--[+ Traditional Chinese - 庇護所 +]--
+	-- 你的{talent_name:%s}內的盟友每秒恢復{toughness:%s}韌性。當你的{talent_name:%s}消散，身處其中的所有盟友獲得{toughness_damage_reduction:%s}韌性減傷，持續{duration:%s}秒。
+	create_template("talent_tree_psy_abil2_004_desc_tw",
+			{"loc_talent_psyker_force_field_grants_toughness_desc"}, {"zh-tw"},
+			loc_text("恢復{talent_name:%s}內的玩家"..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+			.."\n"
+			.."- 每秒恢復 {toughness:%s} 點"..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+			.."\n"
+			.."- 當{talent_name:%s}消散，保護範圍內的玩家，\n"
+			.."--將獲得{toughness_damage_reduction:%s}"..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n"
+			.."- 持續 {duration:%s} 秒。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_4_rgb_tw)),
+			
 	--[+ Ability 3 - Scrier's Gaze +]--
 	create_template("talent_tree_psy_abil3_000_desc_en",
 		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"en"},
@@ -1284,6 +1366,26 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_000_desc_ru",
 		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"ru"},
 			loc_text("Вы получаете "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." и сбрасываете {vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..", а также получаете {base_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." и иммунитет к подавлению.\nПока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." каждую секунду вы получаете {damage_per_stack:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", вплоть до максимума в {max_damage:%s}. Этот эффект сохраняется в течение {duration:%s} секунд после того как "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." перестаёт действовать.\nПока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." растёт. Убийство врагов замедляет автогенерацию "..COLORS_KWords_ru.Peril_rgb_ru.." за счёт уменьшения таймера эффекта на "..COLORS_Numbers.n_033_rgb.." секунды за убийство.\nПри {max_peril:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." способность заканчивает своё действие.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_rgb_ru)),
+	--[+ Traditional Chinese - 占卜者的注視 +]--
+	-- 觸發占卜師的注視。進入占卜師的注視後，平息{vent:%s}反噬，並獲得{base_damage:%s}傷害、{crit_chance:%s}暴擊機率，以及壓制免疫。在注視中每秒獲得疊加傷害{damage_per_stack:%s}，最高至{max_damage}。離開注視後該效果保留{duration:%s}秒。\n\n在占卜師的注視中，你的反噬會累積。擊殺敵人會暫時減緩累積速度。反噬達到{max_peril:%s}後，占卜師的注視結束。\n\n基礎冷卻時間：{cooldown:%s}秒
+	create_template("talent_tree_psy_abil3_000_desc_tw",
+		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"zh-tw"},
+			loc_text("進入{talent_name:%s}，並獲得以下效果：\n\n"
+			.."- 平息 {vent:%s} "..COLORS_KWords_tw.Peril_rgb_tw.." 。\n"
+			.."- 獲得 {base_damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.." 。\n"
+			.."- {crit_chance:%s} "..COLORS_KWords_tw.Crit_chance_rgb_tw.." 。\n"
+			.."- 免疫壓制。\n"
+			.."\n"
+			.."- {talent_name:%s} 時間內，\n"
+			.."--每秒提升 {damage_per_stack:%s} "..COLORS_KWords_tw.Damage_rgb_tw.." ，最高 {max_damage:%s}。\n"
+			.."-- {talent_name:%s} 技能結束後可持續 {duration:%s} 秒。\n"
+			.."\n"
+			.."-{talent_name:%s} 期間 "..COLORS_KWords_tw.Peril_rgb_tw.." 會逐漸上升。\n"
+			.."\n"
+			.."-擊殺敵人可減緩 "..COLORS_KWords_tw.Peril_rgb_tw.." 累積，並縮短技能 "..COLORS_Numbers.n_033_rgb.." 秒/擊殺。\n"
+			.."- "..COLORS_KWords_tw.Peril_rgb_tw.." 達到 {max_peril:%s} 時，技能立即結束。\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。\n"
+			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_rgb_tw)),
 
 	--[+ Ability 3-1 - Endurance +]--
 	create_template("talent_tree_psy_abil3_001_desc_en",
