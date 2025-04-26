@@ -2060,9 +2060,9 @@ local localization_templates = {
 			create_template("weap_wbm059_ext_en",
 				{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"en"},
 					loc_text("Shock and Awe")), -- &->and
-			-- create_template("weap_wbm059_desc_ext_en",
-				-- {"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill_desc"}, {"en"},
-					-- loc_text(COLORS_Numbers.hitmass_var_rgb.." Enemy "..COLORS_KWords.Hit_mass_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Kill.")), -- hit_mass: -60%, time: 2 -- s->seconds -- colors
+			create_template("weap_wbm059_desc_ext_en",
+				{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill_desc"}, {"en"},
+					loc_text(COLORS_Numbers.hitmass_var_rgb.." Enemy "..COLORS_KWords.Hit_mass_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Kill.")), -- hit_mass: -40%, time: 2 -- s->seconds -- colors
 			--[+ French +]--
 			create_template("weap_wbm059_desc_ext_fr",
 				{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill_desc"}, {"fr"},
@@ -3311,6 +3311,8 @@ local localization_templates = {
 				{"loc_trait_bespoke_uninterruptable_while_charging_and_movement_desc"}, {"zh-cn"},
 					loc_text("次要攻击蓄力期间 "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.red_var_rgb.." 移动速度惩罚，\n同时敌人的近战及远程攻击无法眩晕你。")),
 
+
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		--[+ BLAZING SPIRIT +]--
 		-- Voidblast Staff, Voidstrike Staff -- 1 | 2 | 3 | 4
 			create_template("weap_wbr002_desc_ext_en",
@@ -3333,32 +3335,47 @@ local localization_templates = {
 			create_template("weap_wbr002_desc_ext_zh_cn",
 				{"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-cn"},
 					loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时, 对敌人施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_KWords_zh_cn.Soulblaze_rgb_zh_cn.."。")), -- 描述存在BUG，炙焰力场巨剑错误使用该段描述，暂时移除字段：「"最多叠加 "..COLORS_Numbers.n_6_rgb.." 层。"」以确保描述不会出现错误。
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		--[+ PENETRATING FLAME +]--
 		-- Flamer, Inferno Staff -- 1 | 2 | 3 | 4
 			create_template("weap_wbr003_desc_ext_en",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"en"},
-					loc_text("Direct hits apply "..COLORS_Numbers.stacks_num_var_rgb.." Stacks of "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Stacks "..COLORS_Numbers.maxstks_var_rgb.." times."..COLORS_KWords.Brtl_note_rgb)), -- num_stacks: 4, rending_percentage: 1, duration: 5, max_stacks: 20 -- stacks: 4 -- %%->% -- colors
+					-- loc_text("Direct hits apply "..COLORS_Numbers.stacks_num_var_rgb.." Stacks of "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Stacks "..COLORS_Numbers.maxstks_var_rgb.." times."..COLORS_KWords.Brtl_note_rgb)), -- num_stacks: 4, rending_percentage: 2.5%, duration: 5, max_stacks: 16 -- colors
+					loc_text("Direct hits apply "..COLORS_Numbers.n_1_rgb.." Stacks of "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Up to "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords.Brtl_note_rgb)), -- num_stacks: 4, rending_percentage: 1%, duration: 5, max_stacks: 10 -- colors
 			--[+ French +]--
+			-- create_template("weap_wbr003_desc_ext_fr",
+				-- {"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"fr"},
+					-- loc_text("Les coups directs appliquent "..COLORS_Numbers.stacks_num_var_rgb.." cumuls de "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords_fr.Brittleness_rgb_fr.." pendant "..COLORS_Numbers.dur_var_rgb.." secondes. Se cumule "..COLORS_Numbers.maxstks_var_rgb.." fois."..COLORS_KWords_fr.Brtl_note_rgb_fr)),
 			create_template("weap_wbr003_desc_ext_fr",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"fr"},
-					loc_text("Les coups directs appliquent "..COLORS_Numbers.stacks_num_var_rgb.." cumuls de "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords_fr.Brittleness_rgb_fr.." pendant "..COLORS_Numbers.dur_var_rgb.." secondes. Se cumule "..COLORS_Numbers.maxstks_var_rgb.." fois."..COLORS_KWords_fr.Brtl_note_rgb_fr)),
-			--[+ Russian +]-- Проникающее пламя -- руоф Убойное пламя
+					loc_text("Les coups directs appliquent "..COLORS_Numbers.n_1_rgb.." cumul de "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords_fr.Brittleness_rgb_fr.." pendant "..COLORS_Numbers.dur_var_rgb.." secondes. Jusqu'à "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords_fr.Brtl_note_rgb_fr)),
+			--[+ Russian - Проникающее пламя -- руоф Убойное пламя +]--
+			-- create_template("weap_wbr003_desc_ext_ru",
+				-- {"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"ru"},
+					-- loc_text("Прямые попадания накладывают "..COLORS_Numbers.stacks_num_var_rgb.." заряда по "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." на "..COLORS_Numbers.dur_var_rgb.." секунд. Суммируется до "..COLORS_Numbers.maxstks_var_rgb.." раз."..COLORS_KWords_ru.Brtl_note_rgb_ru)),
 			create_template("weap_wbr003_desc_ext_ru",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"ru"},
-					loc_text("Прямые попадания накладывают "..COLORS_Numbers.stacks_num_var_rgb.." заряда по "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." на "..COLORS_Numbers.dur_var_rgb.." секунд. Суммируется до "..COLORS_Numbers.maxstks_var_rgb.." раз."..COLORS_KWords_ru.Brtl_note_rgb_ru)),
+					loc_text("Прямые попадания накладывают "..COLORS_Numbers.n_1_rgb.." заряд "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." на "..COLORS_Numbers.dur_var_rgb.." секунд. Вплоть до "..COLORS_Numbers.pc_20_rgb.."."..COLORS_KWords_ru.Brtl_note_rgb_ru)),
 			--[+ Traditional Chinese - 穿透烈焰 +]--
 			-- 淨化噴火器, 烈焰力場法杖 -- 1 | 2 | 3 | 4
+			-- create_template("weap_wbr003_desc_ext_tw",
+				-- {"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-tw"},
+					-- loc_text("被攻擊目標獲得 "..COLORS_Numbers.stacks_num_var_rgb.." 層 "..COLORS_Numbers.rending_pc_var_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.maxstks_var_rgb.." 層。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
 			create_template("weap_wbr003_desc_ext_tw",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-tw"},
-					loc_text("被攻擊目標獲得 "..COLORS_Numbers.stacks_num_var_rgb.." 層 "..COLORS_Numbers.rending_pc_var_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.maxstks_var_rgb.." 層。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
+					loc_text("被攻擊目標獲得 "..COLORS_Numbers.n_1_rgb.." 層 "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.n_5_rgb.." 層。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
 			--[+ Simplified Chinese - 穿透火焰 +]--
 			create_template("weap_wbr003_desc_ext_zh_cn",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-cn"},
-					loc_text("命中时，对目标施加 "..COLORS_Numbers.stacks_num_var_rgb.." 层 "..COLORS_Numbers.n_1_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.n_2_rgb..COLORS_Numbers.n_0_rgb.." 层，最高 "..COLORS_Numbers.pc_40_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),
+					loc_text("命中时，对目标施加 "..COLORS_Numbers.n_1_rgb.." 层 "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n最高 "..COLORS_Numbers.pc_20_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),
 	--Incorrect description: https://forums.fatsharkgames.com/t/inferno-staff-penetrating-flame-not-working-as-intended-or-incorrect-description/106932 「create_template("weap_wbr003_desc_ext_zh_cn",
 				-- {"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-cn"},
 					-- loc_text("命中时，对目标施加 "..COLORS_Numbers.stacks_num_var_rgb.." 层 "..COLORS_Numbers.rending_pc_var_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 层。最高 "..COLORS_Numbers.pc_40_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),」
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 		--[+ SHOWSTOPPER +]--
 		-- Flamer, Inferno Staff -- 10% | 15% | 20% | 25
@@ -3778,6 +3795,8 @@ local localization_templates = {
 				{"loc_trait_bespoke_power_scales_with_clip_percentage_desc"}, {"zh-cn"},
 					loc_text("随弹匣剩余弹药叠加层数，\n每消耗弹匣容量 "..COLORS_Numbers.pc_20_rgb.." 的弹药\n"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
+
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		--[+ HOT-SHOT +]--
 		-- Helbore Lasguns -- 80% | 70% | 60% | 50% (bugged)???
 			create_template("weap_wbr022_desc_ext_en",
@@ -3800,6 +3819,8 @@ local localization_templates = {
 			create_template("weap_wbr022_desc_ext_zh_cn",
 				{"loc_trait_bespoke_cleave_on_weakspot_hits_desc"}, {"zh-cn"},
 					loc_text(COLORS_KWords_zh_cn.Weakspothits_rgb_zh_cn.."使目标"..COLORS_KWords_zh_cn.Hit_masss_rgb_zh_cn.."降至 "..COLORS_Numbers.hit_mass_red_var_rgb.."。"..COLORS_KWords_zh_cn.Hit_Mass_note_rgb_zh_cn.."{#color(255, 35, 5)}\n（BUG：祝福等级升高，效果变弱。）{#reset()}")),
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 		--[+ WEIGHT OF FIRE +]--
 		-- Helbore Lasguns -- 6% | 8% | 10% | 12% (up to 60%)
@@ -4013,6 +4034,8 @@ local localization_templates = {
 				{"loc_trait_bespoke_reduced_overheat_on_crits_desc"}, {"zh-cn"},
 					loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时，减少 "..COLORS_Numbers.heat_pc_var_rgb.." "..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."积累。")),
 
+
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		--[+ GAUNTLET MOMENTUM +]--
 		-- Grenadier Gauntlet -- 5% | 5% | 5% | 5% (up to +50%) (bugged)
 			create_template("weap_wbr032_desc_ext_en",
@@ -4035,6 +4058,8 @@ local localization_templates = {
 			create_template("weap_wbr032_desc_ext_zh_cn",
 				{"loc_trait_bespoke_power_bonus_on_chained_melee_desc"}, {"zh-cn"},
 					loc_text("臂铠近战攻击命中敌人时\n"..COLORS_Numbers.pwr_var_rgb.." 臂铠近战"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。{#color(255, 35, 5)}\n（BUG：无论祝福级别如何，\n数值始终为 +5% 强度。）{#reset()}"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 		--[+ PULVERISE +]--
 		-- Grenadier Gauntlet -- 10% | 15% | 20% | 25%
