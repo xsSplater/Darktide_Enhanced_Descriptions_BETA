@@ -24,6 +24,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Peril_rgb_tw = iu_actit("反噬", prl_col)
 	local Perils_rgb_tw = iu_actit("反噬", prl_col)
 	local Perl_rgb_tw = iu_actit("反噬", prl_col)
+	local Perl_e_rgb_tw = iu_actit("反噬爆炸", prl_col)
 	--[++耐力(Stamina)++]--
 	local stam_col = Color[mod:get("stamina_text_colour")](255, true)
 	local Stamina_rgb_tw = iu_actit("耐力", stam_col)
@@ -340,6 +341,7 @@ return {
 	Perl_rgb_tw = Perl_rgb_tw,
 	Peril_rgb_tw = Peril_rgb_tw,
 	Perils_rgb_tw = Perils_rgb_tw,
+	Perl_e_rgb_tw = Perl_e_rgb_tw,
 	Power_rgb_tw = Power_rgb_tw,
 	Precision_rgb_tw = Precision_rgb_tw,
 	Rangedspec_rgb_tw = Rangedspec_rgb_tw,

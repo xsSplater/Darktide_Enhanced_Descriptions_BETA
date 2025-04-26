@@ -1115,6 +1115,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil0_000_desc_ru",
 		{"loc_talent_psyker_shout_ability_description"}, {"ru"},
 			loc_text("Вы высвобождаете конусообразную волну варп-энергии на расстояние до "..COLORS_Numbers.n_30_rgb.." метров, которая накладывает "..COLORS_KWords_ru.Stagger_rgb_ru.." на врагов перед вами и подавляет {warpcharge_vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..".\nПрименение этой способности предотвращает самоподрыв.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_0_rgb_ru)),
+	--[+ Traditional Chinese - 靈能學者之怒 +]--
+	-- 釋放一波亞空間能量，造成前方敵人暈眩。\n平息{warpcharge_vent:%s}反噬。\n\n基礎冷卻時間：{cooldown:%s}秒。
+	create_template("talent_tree_psy_abiㄕl0_000_desc_tw",
+		{"loc_talent_psyker_shout_ability_description"}, {"zh-tw"},
+			loc_text("釋放出一道錐形的靈能波動，\n造成前方敵人"..COLORS_KWords_tw.Stagger_rgb_tw.."。\n" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_0_rgb_tw)),
 
 	--[+ Ability 1 - Venting Shriek +]--
 	create_template("talent_tree_psy_abil1_000_desc_en",
@@ -1128,6 +1133,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_000_desc_ru",
 		{"loc_talent_psyker_shout_vent_warp_charge_description"}, {"ru"},
 			loc_text("Вы высвобождаете конусообразную волну варп-энергии на расстояние до "..COLORS_Numbers.n_30_rgb.." метров, которая накладывает "..COLORS_KWords_ru.Stagger_rgb_ru.." на врагов перед вами и подавляет {warpcharge_vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..".\nПрименение этой способности предотвращает самоподрыв.\n\nВремя восстановления: {cooldown:%s} секунд.\n\nЭто улучшенная версия способности {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Ability_1_rgb_ru)),
+	--[+ Traditional Chinese - 靈能尖嘯 +]--
+	-- 釋放一波亞空間能量，造成前方敵人暈眩，並平息{warpcharge_vent:%s}反噬。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{talent_name:%s}的增強版。
+	create_template("talent_tree_psy_abil1_000_desc_tw",
+		{"loc_talent_psyker_shout_vent_warp_charge_description"}, {"zh-tw"},
+			loc_text("釋放出一道錐形的靈能波動，\n造成前方敵人"..COLORS_KWords_tw.Stagger_rgb_tw.."。\n\n這是強化版的技能 {talent_name:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_rgb_tw)),
 
 	--[+ Ability 1-1 - Becalming Eruption +]--
 	create_template("talent_tree_psy_abil1_001_desc_en",
@@ -1141,6 +1151,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_001_desc_ru",
 		{"loc_talent_psyker_shout_reduces_warp_charge_generation_description"}, {"ru"},
 			loc_text("{talent_name:%s} теперь снижает генерацию "..COLORS_KWords_ru.Peril_rgb_ru.." на {warp_generation:%s} за каждого поражённого врага. Вплоть до {max_stacks:%s}"..COLORS_Numbers.pc_rgb..". Длится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_1_1_rgb_ru)),
+	--[+ Traditional Chinese - 平靜进發 +]--
+	-- 每命中一個敵人{talent_name:%s}都會降低反噬生成{warp_generation:%s}，可疊加{max_stacks:%s}次，持續{duration:%s}秒。
+		create_template("talent_tree_psy_abil1_001_desc_tw",
+		{"loc_talent_psyker_shout_reduces_warp_charge_generation_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s}每命中一名敵人，\n降低 {warp_generation:%s} "..COLORS_KWords_tw.Peril_rgb_tw.."，最多 {max_stacks:%s}"..COLORS_Numbers.pc_rgb.."，持續 {duration:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_1_rgb_tw)),
 
 	--[+ Ability 1-2 - Warp Rupture +]--
 	create_template("talent_tree_psy_abil1_002_desc_en",
@@ -1154,7 +1169,12 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_002_desc_ru",
 		{"loc_talent_psyker_shout_damage_per_warp_charge_description"}, {"ru"},
 			loc_text("Ваш {talent_name:%s} теперь также наносит от {base_damage:%s} до {max_damage:%s} единиц "..COLORS_KWords_ru.Dmg_a_rgb_ru.." в зависимости от вашего текущего уровня "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Ability_1_2_rgb_ru)),
-
+	--[+ Traditional Chinese - 亞空間爆發 +]--
+	-- 根據當前反噬程度，{talent_name:%s}還會賦予{base_damage:%s}-{max_damage:%s}傷害。
+	create_template("talent_tree_psy_abil1_002_desc_tw",
+		{"loc_talent_psyker_shout_damage_per_warp_charge_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 會依據當前的"..COLORS_KWords_tw.Peril_rgb_tw.."，\n造成 {base_damage:%s} 至 {max_damage:%s} 點"..COLORS_KWords_tw.Dmg_a_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_2_rgb_tw)),
+	
 	--[+ Ability 1-3 - Warp Creeping Flames +]--
 	create_template("talent_tree_psy_abil1_003_desc_en",
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"en"},
@@ -1167,6 +1187,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_003_desc_ru",
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"ru"},
 			loc_text("{talent_name:%s} накладывает от "..COLORS_Numbers.n_1_rgb.." до {warpfire_stacks:%s} зарядов "..COLORS_KWords_ru.Soulblaze_rgb_ru.." на поражённые цели в зависимости от вашего текущего уровня "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Ability_1_3_rgb_ru)),
+	--[+ Traditional Chinese - 蔓延火焰 +]--
+	create_template("talent_tree_psy_abil1_003_desc_tw",
+		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 會依據你當前的"..COLORS_KWords_tw.Peril_rgb_tw.."，\n對命中的目標施加 "..COLORS_Numbers.n_1_rgb.." 至 {warpfire_stacks:%s} 層"..COLORS_KWords_tw.Soulblaze_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_3_rgb_tw)),
 
 	--[+ Ability 2 - Telekine Shield +]--
 	create_template("talent_tree_psy_abil2_000_desc_en",
@@ -1180,6 +1204,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil2_000_desc_ru",
 		{"loc_talent_psyker_combat_ability_shield_description"}, {"ru"},
 			loc_text("Создаёт перед вами психический щит на {duration:%s} секунды. Щит блокирует вражеские выстрелы, в то время как вы и союзники все ещё можете стрелять сквозь него.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_2_rgb_ru)),
+	--[+ Traditional Chinese - 念力護盾 +]--
+	-- 在身前展開一道持續{duration:%s}秒的靈能護盾。護盾能阻擋敵人的遠程攻擊，但你和盟友的射擊不受影響。\n\n基礎冷卻時間：{cooldown:%s}秒。
+	create_template("talent_tree_psy_abil2_000_desc_tw",
+		{"loc_talent_psyker_combat_ability_shield_description"}, {"zh-tw"},
+			loc_text("在你面前生成一道靈能護盾，持續 {duration:%s} 秒。\n冷卻時間：{cooldown:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_rgb_tw)),
 
 	--[+ Ability 2-1 - Bolstered Shield +]--
 	create_template("talent_tree_psy_abil2_001_desc_en",
@@ -1193,6 +1222,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil2_001_desc_ru",
 		{"loc_talent_psyker_force_field_charges_description"}, {"ru"},
 			loc_text("{talent_name:%s} теперь имеет {max_charges:%s} заряда."..TALENTS_Enh_desc_ru.ED_PSY_Ability_2_1_rgb_ru)),
+	--[+ Traditional Chinese - 強化護盾 +]--
+	-- {talent_name:%s}現在可以疊加{max_charges:%s}層充能。
+	create_template("talent_tree_psy_abil2_001_desc_tw",
+		{"loc_talent_psyker_force_field_charges_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 現在擁有 {max_charges:%s} 次充能。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_1_rgb_tw)),
 
 	--[+ Ability 2-2 - Enervating Threshold +]--
 	create_template("talent_tree_psy_abil2_002_desc_en",
@@ -1206,6 +1240,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil2_002_desc_ru",
 		{"loc_talent_psyker_force_field_stun_increased_new_description"}, {"ru"},
 			loc_text("{ability:%s} имеет {proc_chance:%s} шанс наложить "..COLORS_KWords_ru.Electrocute_rgb_ru.." на врагов, которые проходят сквозь него. Враги-специалисты имеют {special_proc_chance:%s} шанс поражения "..COLORS_KWords_ru.Electrocuted_rgb_ru..", но также повреждают {ability:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Ability_2_2_rgb_ru)),
+	--[+ Traditional Chinese - 衰弱界線 +]--
+	-- {ability:%s}有{proc_chance:%s}的幾率使經過其中的敵人遭受電擊。專家敵人經過時也有{special_proc_chance:%s}的幾率遭受電擊，但也會使{ability:%s}受損。
+	create_template("talent_tree_psy_abil2_002_desc_tw",
+		{"loc_talent_psyker_force_field_stun_increased_new_description"}, {"zh-tw"},
+			loc_text("{ability:%s} 有機率 "..COLORS_KWords_tw.Electrocute_rgb_tw.." 穿越的敵人。\n精英敵人有 {special_proc_chance:%s} 機率被"..COLORS_KWords_tw.Electrocuted_rgb_tw.."，但會對 {ability:%s} 造成傷害。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_2_rgb_tw)),
 
 	--[+ Ability 2-3 - Telekine Dome +]--
 	create_template("talent_tree_psy_abil2_003_desc_en",
