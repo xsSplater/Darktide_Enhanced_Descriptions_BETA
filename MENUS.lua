@@ -380,10 +380,10 @@ local localization_templates = {
 	create_template("main_menu_acc_warband_ext_ru",
 		{"loc_main_menu_warband_count", "loc_social_menu_roster_view_display_name"}, {"ru"},
 			loc_text("Ударная группа")),
-	--[+ 群組 - Traditional Chinese +]--
+	--[+ 突擊小隊 - Traditional Chinese +]--
 	create_template("main_menu_acc_warband_ext_tw",
 		{"loc_main_menu_warband_count", "loc_social_menu_roster_view_display_name"}, {"zh-tw"},
-			loc_text("群組")),
+			loc_text("突擊小隊")),
 
 	--[+ Soical's Menu +]--
 
