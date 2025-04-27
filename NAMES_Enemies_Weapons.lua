@@ -287,7 +287,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]-- color(120, 220, 255)
 			create_template("weapons_marks_chainaxe1_ext_zh",
 				{"loc_weapon_mark_chainaxe_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_chainaxe2_ext_ru",
 				{"loc_weapon_mark_chainaxe_p1_m2"}, {"ru"},
@@ -295,7 +295,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK XII +]-- color(160, 140, 255)
 			create_template("weapons_marks_chainaxe2_ext_zh",
 				{"loc_weapon_mark_chainaxe_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(160, 140, 255)}MK XII{#reset()}")),
+					loc_text("{#color(160, 140, 255)}MK 12 型{#reset()}")),
 
 		--[+ Assault Chainsword - Штурмовой пиломеч +]-- -- руоф Штурмовой цепной меч
 			--[+ Russian +]	
@@ -341,7 +341,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_chainsword1_ext_zh",
 				{"loc_weapon_mark_chainsword_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_chainsword2_ext_ru",
 				{"loc_weapon_mark_chainsword_p1_m2"}, {"ru"},
@@ -349,7 +349,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK XIIIg +]--
 			create_template("weapons_marks_chainsword2_ext_zh",
 				{"loc_weapon_mark_chainsword_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK XIIIg{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 13G 型{#reset()}")),
 
 		--[+ Combat Axe - Боевой топор +]--
 			--[+ Russian +]	
@@ -413,7 +413,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_combataxe1_ext_zh",
 				{"loc_weapon_mark_combataxe_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK III{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 3 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combataxe2_ext_ru",
 				{"loc_weapon_mark_combataxe_p1_m2"}, {"ru"},
@@ -421,7 +421,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_combataxe2_ext_zh",
 				{"loc_weapon_mark_combataxe_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(224, 42, 7)}MK V{#reset()}")),
+					loc_text("{#color(224, 42, 7)}MK 5 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combataxe3_ext_ru",
 				{"loc_weapon_mark_combataxe_p1_m3"}, {"ru"},
@@ -429,7 +429,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VIII +]--
 			create_template("weapons_marks_combataxe3_ext_zh",
 				{"loc_weapon_mark_combataxe_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK VIII{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 8 型{#reset()}")),
 
 		--[+ Tactical Axe - Тактический топор +]--
 			--[+ Russian +]	
@@ -491,7 +491,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_combataxe1_2_ext_zh",
 				{"loc_weapon_mark_combataxe_p2_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combataxe2_2_ext_ru",
 				{"loc_weapon_mark_combataxe_p2_m2"}, {"ru"},
@@ -499,7 +499,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_combataxe2_2_ext_zh",
 				{"loc_weapon_mark_combataxe_p2_m2"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combataxe3_2_ext_ru",
 				{"loc_weapon_mark_combataxe_p2_m3"}, {"ru"},
@@ -507,7 +507,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VII +]--
 			create_template("weapons_marks_combataxe3_2_ext_zh",
 				{"loc_weapon_mark_combataxe_p2_m3"}, {"zh-tw"},
-					loc_text("{#color(233, 165, 161)}MK VII{#reset()}")),
+					loc_text("{#color(233, 165, 161)}MK 7 型{#reset()}")),
 
 		--[+ Combat Blade - Боевой клинок +]--
 			--[+ Russian +]	
@@ -554,7 +554,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_combatknife1_ext_zh",
 				{"loc_weapon_mark_combatknife_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK III{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 3 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combatknife2_ext_ru",
 				{"loc_weapon_mark_combatknife_p1_m2"}, {"ru"},
@@ -562,7 +562,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_combatknife2_ext_zh",
 				{"loc_weapon_mark_combatknife_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(235, 186, 38)}MK VI{#reset()}")),
+					loc_text("{#color(235, 186, 38)}MK 6 型{#reset()}")),
 
 		--[+ "Devil's Claw" Sword - Меч «Дьявольский коготь» +]--
 			--[+ Russian +]	
@@ -624,7 +624,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK I +]--
 			create_template("weapons_marks_combatsword1_ext_zh",
 				{"loc_weapon_mark_combatsword_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(197, 191, 38)}MK I{#reset()}")),
+					loc_text("{#color(197, 191, 38)}MK 1 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combatsword2_ext_ru",
 				{"loc_weapon_mark_combatsword_p1_m2"}, {"ru"},
@@ -632,7 +632,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_combatsword2_ext_zh",
 				{"loc_weapon_mark_combatsword_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combatsword3_ext_ru",
 				{"loc_weapon_mark_combatsword_p1_m3"}, {"ru"},
@@ -640,7 +640,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VII +]--
 			create_template("weapons_marks_combatsword3_ext_zh",
 				{"loc_weapon_mark_combatsword_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(233, 165, 161)}MK VII{#reset()}")),
+					loc_text("{#color(233, 165, 161)}MK 7 型{#reset()}")),
 
 		--[+ Heavy Sword - Тяжёлый меч +]-- руоф Тяжелый меч
 			--[+ Russian +]	
@@ -701,7 +701,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_combatsword1_2_ext_zh",
 				{"loc_weapon_mark_combatsword_p2_m1"}, {"zh-tw"},
-					loc_text("{#color(235, 186, 38)}MK VI{#reset()}")),
+					loc_text("{#color(235, 186, 38)}MK 6 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combatsword2_2_ext_ru",
 				{"loc_weapon_mark_combatsword_p2_m2"}, {"ru"},
@@ -709,7 +709,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VII +]--
 			create_template("weapons_marks_combatsword2_2_ext_zh",
 				{"loc_weapon_mark_combatsword_p2_m2"}, {"zh-tw"},
-					loc_text("{#color(233, 165, 161)}MK VII{#reset()}")),
+					loc_text("{#color(233, 165, 161)}MK 7 型{#reset()}")),
 			--[+ Russian +]	
 			create_template("weapons_marks_combatsword3_2_ext_ru",
 				{"loc_weapon_mark_combatsword_p2_m3"}, {"ru"},
@@ -717,7 +717,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IX +]--
 			create_template("weapons_marks_combatsword3_2_ext_zh",
 				{"loc_weapon_mark_combatsword_p2_m3"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK IX{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 9 型{#reset()}")),
 
 		--[+ Duelling Sword - Дуэльный меч +]--
 			--[+ Russian +]	
@@ -779,7 +779,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_combatsword1_3_ext_zh",
 				{"loc_weapon_mark_combatsword_p3_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_combatsword2_3_ext_ru",
 				{"loc_weapon_mark_combatsword_p3_m2"}, {"ru"},
@@ -787,7 +787,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_combatsword2_3_ext_zh",
 				{"loc_weapon_mark_combatsword_p3_m2"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_combatsword3_3_ext_ru",
 				{"loc_weapon_mark_combatsword_p3_m3"}, {"ru"},
@@ -795,7 +795,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_combatsword3_3_ext_zh",
 				{"loc_weapon_mark_combatsword_p3_m3"}, {"zh-tw"},
-					loc_text("{#color(224, 42, 7)}MK V{#reset()}")),
+					loc_text("{#color(224, 42, 7)}MK 5 型{#reset()}")),
 
 		--[+ Blaze Force Greatsword - Пылающий психосиловой двуручный меч +]-- руоф Длинный пламенный психосиловой меч
 			--[+ Russian +]
@@ -843,7 +843,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_forcesword_2h1_ext_zh",
 				{"loc_weapon_mark_forcesword_2h_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(235, 186, 38)}MK VI{#reset()}")),
+					loc_text("{#color(235, 186, 38)}MK 6 型{#reset()}")),
 
 			--[+ Russian +]
 			create_template("weapons_marks_forcesword_2h2_ext_ru",
@@ -852,7 +852,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VIII +]--
 			create_template("weapons_marks_forcesword_2h2_ext_zh",
 				{"loc_weapon_mark_forcesword_2h_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK VIII{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 8 型{#reset()}")),
 
 		--[+ Blaze Force Sword - Пылающий психосиловой меч +]-- руоф Пламенный психосиловой меч
 			--[+ Russian +]	
@@ -914,7 +914,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_forcesword1_ext_zh",
 				{"loc_weapon_mark_forcesword_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_forcesword2_ext_ru",
 				{"loc_weapon_mark_forcesword_p1_m2"}, {"ru"},
@@ -922,7 +922,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_forcesword2_ext_zh",
 				{"loc_weapon_mark_forcesword_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_forcesword3_ext_ru",
 				{"loc_weapon_mark_forcesword_p1_m3"}, {"ru"},
@@ -930,7 +930,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_forcesword3_ext_zh",
 				{"loc_weapon_mark_forcesword_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(224, 42, 7)}MK V{#reset()}")),
+					loc_text("{#color(224, 42, 7)}MK 5 型{#reset()}")),
 
 		--[+ Shock Maul - Шоковая булава +]--
 			--[+ Russian +]
@@ -976,7 +976,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK Ia +]--
 			create_template("weapons_marks_powermaul1_ext_zh",
 				{"loc_weapon_mark_powermaul_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(212, 115, 211)}MK Ia{#reset()}")),
+					loc_text("{#color(212, 115, 211)}MK 1A 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_powermaul2_ext_ru",
 				{"loc_weapon_mark_powermaul_p1_m2"}, {"ru"},
@@ -984,7 +984,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_powermaul2_ext_zh",
 				{"loc_weapon_mark_powermaul_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK III{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 3 型{#reset()}")),
 
 		--[+ +RANGED - ДАЛЬНИЙ БОЙ+ +]--
 
@@ -1048,7 +1048,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK I +]--
 			create_template("weapons_marks_autogun1_ext_zh",
 				{"loc_weapon_mark_autogun_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(197, 191, 38)}MK I{#reset()}")),
+					loc_text("{#color(197, 191, 38)}MK 1 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_autogun2_ext_ru",
 				{"loc_weapon_mark_autogun_p1_m2"}, {"ru"},
@@ -1056,7 +1056,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_autogun2_ext_zh",
 				{"loc_weapon_mark_autogun_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(224, 42, 7)}MK V{#reset()}")),
+					loc_text("{#color(224, 42, 7)}MK 5 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_autogun3_ext_ru",
 				{"loc_weapon_mark_autogun_p1_m3"}, {"ru"},
@@ -1064,7 +1064,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VIII +]--
 			create_template("weapons_marks_autogun3_ext_zh",
 				{"loc_weapon_mark_autogun_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK VIII{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 8 型{#reset()}")),
 
 		--[+ Braced Autogun - Усиленный автомат +]--
 			--[+ Russian +]
@@ -1126,7 +1126,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_autogun1_2_ext_zh",
 				{"loc_weapon_mark_autogun_p2_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_autogun2_2_ext_ru",
 				{"loc_weapon_mark_autogun_p2_m2"}, {"ru"},
@@ -1134,7 +1134,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_autogun2_2_ext_zh",
 				{"loc_weapon_mark_autogun_p2_m2"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_autogun3_2_ext_ru",
 				{"loc_weapon_mark_autogun_p2_m3"}, {"ru"},
@@ -1142,7 +1142,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VIII +]--
 			create_template("weapons_marks_autogun3_2_ext_zh",
 				{"loc_weapon_mark_autogun_p2_m3"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK VIII{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 8 型{#reset()}")),
 
 		--[+ Vigilant Autogun - Вигилянтский автомат +]-- руоф Автомат «Бдительность»
 			--[+ Russian +]
@@ -1204,7 +1204,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_autogun1_ext_zh",
 				{"loc_weapon_mark_autogun_p3_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK III{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 3 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_autogun2_ext_ru",
 				{"loc_weapon_mark_autogun_p3_m2"}, {"ru"},
@@ -1212,7 +1212,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VII +]--
 			create_template("weapons_marks_autogun2_ext_zh",
 				{"loc_weapon_mark_autogun_p3_m2"}, {"zh-tw"},
-					loc_text("{#color(233, 165, 161)}MK VII{#reset()}")),
+					loc_text("{#color(233, 165, 161)}MK 7 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_autogun3_ext_ru",
 				{"loc_weapon_mark_autogun_p3_m3"}, {"ru"},
@@ -1220,7 +1220,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IX +]--
 			create_template("weapons_marks_autogun3_ext_zh",
 				{"loc_weapon_mark_autogun_p3_m3"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IX{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 9 型{#reset()}")),
 
 		--[+ Shredder Autopistol - Автопистолет-крошитель +]--
 			--[+ Russian +]
@@ -1280,7 +1280,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_boltpistol1_ext_zh",
 				{"loc_weapon_mark_boltpistol_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 
 		--[+ Voidblast Force Staff - Травматический психосиловой посох +]-- (Trauma) руоф Психосиловой посох взрывной пустоты
 			--[+ Russian +]
@@ -1308,7 +1308,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_forcestaff1_ext_zh",
 				{"loc_weapon_mark_forcestaff_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK III{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 3 型{#reset()}")),
 
 		--[+ Inferno Force Staff - Психосиловой посох Инферно +]-- руоф Огневой психосиловой посох
 			--[+ Russian +]
@@ -1338,7 +1338,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_forcestaff1_2_ext_zh",
 				{"loc_weapon_mark_forcestaff_p2_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 
 		--[+ Electrokinetic Force Staff - Психосиловой посох Электрокинетик +]-- руоф Электрокинетический психосиловой посох
 			--[+ Russian +]
@@ -1368,7 +1368,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_forcestaff1_3_ext_zh",
 				{"loc_weapon_mark_forcestaff_p3_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK VI{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 6 型{#reset()}")),
 
 		--[+ Voidstrike Force Staff - Психосиловой посох Пустоты +]-- руоф Психосиловой пустотный посох
 			--[+ Russian +]
@@ -1398,7 +1398,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_forcestaff1_4_ext_zh",
 				{"loc_weapon_mark_forcestaff_p4_m1"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 
 		--[+ Infantry Lasgun - Лазвинтовка пехоты +]-- руоф Пехотный лазган
 			--[+ Russian +]
@@ -1460,7 +1460,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VII +]--
 			create_template("weapons_marks_lasgun1_ext_zh",
 				{"loc_weapon_mark_lasgun_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(233, 165, 161)}MK VII{#reset()}")),
+					loc_text("{#color(233, 165, 161)}MK 8 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_lasgun2_ext_ru",
 				{"loc_weapon_mark_lasgun_p1_m2"}, {"ru"},
@@ -1468,7 +1468,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IIb +]--
 			create_template("weapons_marks_lasgun2_ext_zh",
 				{"loc_weapon_mark_lasgun_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(90, 233, 70)}MK IIb{#reset()}")),
+					loc_text("{#color(90, 233, 70)}MK 2B 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_lasgun3_ext_ru",
 				{"loc_weapon_mark_lasgun_p1_m3"}, {"ru"},
@@ -1476,7 +1476,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IX +]--
 			create_template("weapons_marks_lasgun3_ext_zh",
 				{"loc_weapon_mark_lasgun_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IX{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 9 型{#reset()}")),
 
 		--[+ Recon Lasgun - Лазвинтовка разведки +]-- руоф Разведывательный лазган
 			--[+ Russian +]
@@ -1538,7 +1538,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VIc +]--
 			create_template("weapons_marks_lasgun1_3_ext_zh",
 				{"loc_weapon_mark_lasgun_p3_m1"}, {"zh-tw"},
-					loc_text("{#color(175, 225, 125)}MK VIc{#reset()}")),
+					loc_text("{#color(175, 225, 125)}MK 6C 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_lasgun2_3_ext_ru",
 				{"loc_weapon_mark_lasgun_p3_m2"}, {"ru"},
@@ -1546,7 +1546,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK XII +]--
 			create_template("weapons_marks_lasgun2_3_ext_zh",
 				{"loc_weapon_mark_lasgun_p3_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK XII{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 12 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_lasgun3_3_ext_ru",
 				{"loc_weapon_mark_lasgun_p3_m3"}, {"ru"},
@@ -1554,7 +1554,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK XIV +]--
 			create_template("weapons_marks_lasgun3_3_ext_zh",
 				{"loc_weapon_mark_lasgun_p3_m3"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK XIV{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 14 型{#reset()}")),
 
 		--[+ Heavy Laspistol - Тяжёлый лазпистолет +]-- руоф Тяжелый лазпистолет
 			--[+ Russian +]
@@ -1600,7 +1600,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_laspistol1_ext_zh",
 				{"loc_weapon_mark_laspistol_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_laspistol3_ext_ru",
 				{"loc_weapon_mark_laspistol_p1_m3"}, {"ru"},
@@ -1608,7 +1608,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK X +]--
 			create_template("weapons_marks_laspistol3_ext_zh",
 				{"loc_weapon_mark_laspistol_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(175, 100, 150)}MK X{#reset()}")),
+					loc_text("{#color(175, 100, 150)}MK 10 型{#reset()}")),
 
 		--[+ Combat Shotgun - Боевой дробовик +]--
 			--[+ Russian +]
@@ -1670,7 +1670,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_shotgun1_ext_zh",
 				{"loc_weapon_mark_shotgun_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK VI{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 6 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_shotgun2_ext_ru",
 				{"loc_weapon_mark_shotgun_p1_m2"}, {"ru"},
@@ -1678,7 +1678,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VII +]--
 			create_template("weapons_marks_shotgun2_ext_zh",
 				{"loc_weapon_mark_shotgun_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(233, 165, 161)}MK VII{#reset()}")),
+					loc_text("{#color(233, 165, 161)}MK 7 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_shotgun3_ext_ru",
 				{"loc_weapon_mark_shotgun_p1_m3"}, {"ru"},
@@ -1686,7 +1686,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IX +]--
 			create_template("weapons_marks_shotgun3_ext_zh",
 				{"loc_weapon_mark_shotgun_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IX{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 9 型{#reset()}")),
 
 		--[+ Double-Barrelled Shotgun - Двухствольный дробовик +]--
 			--[+ Russian +]
@@ -1716,7 +1716,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK XI +]--
 			create_template("weapons_marks_shotgun1_2_ext_zh",
 				{"loc_weapon_mark_shotgun_p2_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK XI{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 11 型{#reset()}")),
 
 		--[+ Quickdraw Stub Revolver - Быстровытаскиваемый стаб-револьвер +]-- руоф Скорострельный стаб-револьвер
 			--[+ Russian +]
@@ -1762,7 +1762,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IIa +]--
 			create_template("weapons_marks_stubrevolver1_ext_zh",
 				{"loc_weapon_mark_stubrevolver_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK IIa{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2A 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_stubrevolver2_ext_ru",
 				{"loc_weapon_mark_stubrevolver_p1_m2"}, {"ru"},
@@ -1770,7 +1770,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK XIV +]--
 			create_template("weapons_marks_stubrevolver2_ext_zh",
 				{"loc_weapon_mark_stubrevolver_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK XIV{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 14 型{#reset()}")),
 
 	--[+ +ZEALOT - ИЗУВЕР+ +]--
 		--[+ +MELEE - БЛИЖНИЙ БОЙ+ +]--
@@ -1819,7 +1819,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_2h_eviscerator1_ext_zh",
 				{"loc_weapon_mark_chainsword_2h_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK III{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_2h_eviscerator2_ext_ru",
 				{"loc_weapon_mark_chainsword_2h_p1_m2"}, {"ru"},
@@ -1827,7 +1827,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK XV +]--
 			create_template("weapons_marks_2h_eviscerator2_ext_zh",
 				{"loc_weapon_mark_chainsword_2h_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK XV{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 15 型{#reset()}")),
 
 		--[+ Crusher - Дробитель +]--
 			--[+ Russian +]
@@ -1857,7 +1857,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IVe +]--
 			create_template("weapons_marks_powermaul_2h_1_ext_zh",
 				{"loc_weapon_mark_powermaul_2h_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IVe{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4E 型{#reset()}")),
 
 		--[+ Relic Blade - Реликвийный клинок +]-- руоф Клинок реликвий
 			--[+ Russian +]
@@ -1903,7 +1903,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK X +]--
 			create_template("weapons_marks_powersword_2h_1_ext_zh",
 				{"loc_weapon_mark_powersword_2h_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(175, 100, 150)}MK X{#reset()}")),
+					loc_text("{#color(175, 100, 150)}MK 10 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_powersword_2h_2_ext_ru",
 				{"loc_weapon_mark_powersword_2h_p1_m2"}, {"ru"},
@@ -1911,7 +1911,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_powersword_2h_2_ext_zh",
 				{"loc_weapon_mark_powersword_2h_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 
 		--[+ Thunder Hammer - Громовой молот +]--
 			--[+ Russian +]
@@ -1957,7 +1957,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_thunderhammer_2h_1_ext_zh",
 				{"loc_weapon_mark_thunderhammer_2h_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_thunderhammer_2h_2_ext_ru",
 				{"loc_weapon_mark_thunderhammer_2h_p1_m2"}, {"ru"},
@@ -1965,7 +1965,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_thunderhammer_2h_2_ext_zh",
 				{"loc_weapon_mark_thunderhammer_2h_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK IV{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 4 型{#reset()}")),
 
 		--[+ +RANGED - ДАЛЬНИЙ БОЙ+ +]--
 
@@ -1997,7 +1997,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IIb +]--
 			create_template("weapons_marks_bolter1_ext_zh",
 				{"loc_weapon_mark_bolter_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK IIb{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2B 型{#reset()}")),
 
 		--[+ Purgation Flamer - Огнемёт очищения +]-- руоф Огнемет чистки
 			--[+ Russian +]
@@ -2027,7 +2027,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_flamer1_ext_zh",
 				{"loc_weapon_mark_flamer_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK III{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3 型{#reset()}")),
 	--[+ +VETERAN - ВЕТЕРАН+ +]--
 		--[+ +MELEE - БЛИЖНИЙ БОЙ+ +]--
 
@@ -2091,7 +2091,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK I +]--
 			create_template("weapons_marks_combataxe1_3_ext_zh",
 				{"loc_weapon_mark_combataxe_p3_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK I{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 1 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_combataxe2_3_ext_ru",
 				{"loc_weapon_mark_combataxe_p3_m2"}, {"ru"},
@@ -2099,7 +2099,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_combataxe2_3_ext_zh",
 				{"loc_weapon_mark_combataxe_p3_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK III{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_combataxe3_3_ext_ru",
 				{"loc_weapon_mark_combataxe_p3_m3"}, {"ru"},
@@ -2107,7 +2107,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VII +]--
 			create_template("weapons_marks_combataxe3_3_ext_zh",
 				{"loc_weapon_mark_combataxe_p3_m3"}, {"zh-tw"},
-					loc_text("{#color(233, 165, 161)}MK VII{#reset()}")),
+					loc_text("{#color(233, 165, 161)}MK 7 型{#reset()}")),
 
 		--[+ Power Sword - Силовой меч +]--
 			--[+ Russian +]
@@ -2152,7 +2152,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_powersword1_ext_zh",
 				{"loc_weapon_mark_powersword_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK III{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_powersword2_ext_ru",
 				{"loc_weapon_mark_powersword_p1_m2"}, {"ru"},
@@ -2160,7 +2160,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_powersword2_ext_zh",
 				{"loc_weapon_mark_powersword_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK VI{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 6 型{#reset()}")),
 
 		--[+ +RANGED - ДАЛЬНИЙ БОЙ+ +]--
 
@@ -2224,7 +2224,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IIIa +]--
 			create_template("weapons_marks_lasgun1_4_ext_zh",
 				{"loc_weapon_mark_lasgun_p2_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK IIIa{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3A 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_lasgun2_4_ext_ru",
 				{"loc_weapon_mark_lasgun_p2_m2"}, {"ru"},
@@ -2232,7 +2232,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_lasgun2_4_ext_zh",
 				{"loc_weapon_mark_lasgun_p2_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK V{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 5 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_lasgun3_4_ext_ru",
 				{"loc_weapon_mark_lasgun_p2_m3"}, {"ru"},
@@ -2240,7 +2240,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_lasgun3_4_ext_zh",
 				{"loc_weapon_mark_lasgun_p2_m3"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK IV{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 4 型{#reset()}")),
 
 			--[+ Plasma Gun - Плазмомёт +]--
 			--[+ Russian +]
@@ -2270,7 +2270,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_plasmagun1_ext_zh",
 				{"loc_weapon_mark_plasmagun_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(98, 211, 55)}MK II{#reset()}")),
+					loc_text("{#color(98, 211, 55)}MK 2 型{#reset()}")),
 
 	--[+ +OGRYN - ОГРИН+ +]--
 		--[+ +MELEE - БЛИЖНИЙ БОЙ+ +]--
@@ -2335,7 +2335,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_ogryn_club1_ext_zh",
 				{"loc_weapon_mark_ogryn_club_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK III{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_club2_ext_ru",
 				{"loc_weapon_mark_ogryn_club_p1_m2"}, {"ru"},
@@ -2343,7 +2343,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK XIX +]--
 			create_template("weapons_marks_ogryn_club2_ext_zh",
 				{"loc_weapon_mark_ogryn_club_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(200, 100, 100)}MK XIX{#reset()}")),
+					loc_text("{#color(200, 100, 100)}MK 19 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_club3_ext_ru",
 				{"loc_weapon_mark_ogryn_club_p1_m3"}, {"ru"},
@@ -2351,7 +2351,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_ogryn_club3_ext_zh",
 				{"loc_weapon_mark_ogryn_club_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK V{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 5 型{#reset()}")),
 
 		--[+ Bully Club - Дубина задиры +]-- руоф Палица задиры
 			--[+ Russian +]
@@ -2413,7 +2413,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK I +]--
 			create_template("weapons_marks_ogryn_club1_2_ext_zh",
 				{"loc_weapon_mark_ogryn_club_p2_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK I{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 1 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_club2_2_ext_ru",
 				{"loc_weapon_mark_ogryn_club_p2_m2"}, {"ru"},
@@ -2421,7 +2421,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_ogryn_club2_2_ext_zh",
 				{"loc_weapon_mark_ogryn_club_p2_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK II{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 2 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_club3_2_ext_ru",
 				{"loc_weapon_mark_ogryn_club_p2_m3"}, {"ru"},
@@ -2429,7 +2429,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IIIb +]--
 			create_template("weapons_marks_ogryn_club3_2_ext_zh",
 				{"loc_weapon_mark_ogryn_club_p2_m3"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK IIIb{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3B 型{#reset()}")),
 
 		--[+ Cleaver - Тесак +]-- руоф Рубило
 			--[+ Russian +]
@@ -2490,7 +2490,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_ogryn_combatblade1_ext_zh",
 				{"loc_weapon_mark_ogryn_combatblade_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK VI{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 6 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_combatblade2_ext_ru",
 				{"loc_weapon_mark_ogryn_combatblade_p1_m2"}, {"ru"},
@@ -2498,7 +2498,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_ogryn_combatblade2_ext_zh",
 				{"loc_weapon_mark_ogryn_combatblade_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK III{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_combatblade3_ext_ru",
 				{"loc_weapon_mark_ogryn_combatblade_p1_m3"}, {"ru"},
@@ -2506,7 +2506,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_ogryn_combatblade3_ext_zh",
 				{"loc_weapon_mark_ogryn_combatblade_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK IV{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 4 型{#reset()}")),
 
 		--[+ Delver's Pickaxe - Кирка искателя +]-- руоф Кирка копателя
 			--[+ Russian +]
@@ -2568,7 +2568,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK Ia +]--
 			create_template("weapons_marks_ogryn_pickaxe_2h1_ext_zh",
 				{"loc_weapon_mark_ogryn_pickaxe_2h_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK Ia{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 1A 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_pickaxe_2h2_ext_ru",
 				{"loc_weapon_mark_ogryn_pickaxe_2h_p1_m2"}, {"ru"},
@@ -2576,7 +2576,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_ogryn_pickaxe_2h2_ext_zh",
 				{"loc_weapon_mark_ogryn_pickaxe_2h_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK III{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_pickaxe_2h3_ext_ru",
 				{"loc_weapon_mark_ogryn_pickaxe_2h_p1_m3"}, {"ru"},
@@ -2584,7 +2584,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_ogryn_pickaxe_2h3_ext_zh",
 				{"loc_weapon_mark_ogryn_pickaxe_2h_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK II{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 2 型{#reset()}")),
 
 		--[+ Power Maul - Силовая булава +]--
 			--[+ Russian +]
@@ -2615,7 +2615,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK I +]--
 			create_template("weapons_marks_ogryn_powermaul1_ext_zh",
 				{"loc_weapon_mark_ogryn_powermaul_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK I{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 1 型{#reset()}")),
 
 		--[+ Battle Maul & Slab Shield - Боевая булава и щит-плита +]-- руоф Боевая булава и щит верзилы
 			--[+ Russian +]
@@ -2675,7 +2675,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK III +]--
 			create_template("weapons_marks_ogryn_gauntlet1_ext_zh",
 				{"loc_weapon_mark_ogryn_gauntlet_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK III{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3 型{#reset()}")),
 
 			--[+ Twin-Linked Heavy Stubber - Спаренный тяжёлый пулемёт +]-- руоф Спаренный тяжелый пулемет
 			--[+ Russian +]
@@ -2737,19 +2737,23 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_ogryn_heavystubber1_ext_zh",
 				{"loc_weapon_mark_ogryn_heavystubber_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK V{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 5 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_heavystubber2_ext_ru",
 				{"loc_weapon_mark_ogryn_heavystubber_p1_m2"}, {"ru"},
 					loc_text("Модель IV")),
 			--[+ Traditional Chinese MK IV +]--
+			create_template("weapons_marks_ogryn_heavystubber2_ext_zh",
+				{"loc_weapon_mark_ogryn_heavystubber_p1_m2"}, {"zh-tw"},
+					loc_text("{#color(255, 150, 200)}MK IV{#reset()}")),
+			--[+ Russian +]
 			create_template("weapons_marks_ogryn_heavystubber3_ext_ru",
 				{"loc_weapon_mark_ogryn_heavystubber_p1_m3"}, {"ru"},
 					loc_text("Модель VII")),
 			--[+ Traditional Chinese MK VII +]--
-			create_template("weapons_marks_ogryn_heavystubber2_ext_zh",
-				{"loc_weapon_mark_ogryn_heavystubber_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK IV{#reset()}")),
+			create_template("weapons_marks_ogryn_heavystubber3_ext_zh",
+				{"loc_weapon_mark_ogryn_heavystubber_p1_m3"}, {"zh-tw"},
+					loc_text("{#color(193, 115, 221)}MK 7 型{#reset()}")),
 
 			--[+ Heavy Stubber - Тяжёлый пулемёт +]-- руоф Тяжелый пулемет
 			--[+ Russian +]
@@ -2889,7 +2893,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK II +]--
 			create_template("weapons_marks_ogryn_rippergun1_ext_zh",
 				{"loc_weapon_mark_ogryn_rippergun_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK II{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 2 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_rippergun2_ext_ru",
 				{"loc_weapon_mark_ogryn_rippergun_p1_m2"}, {"ru"},
@@ -2897,7 +2901,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_ogryn_rippergun2_ext_zh",
 				{"loc_weapon_mark_ogryn_rippergun_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK V{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 5 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_rippergun3_ext_ru",
 				{"loc_weapon_mark_ogryn_rippergun_p1_m3"}, {"ru"},
@@ -2905,7 +2909,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_ogryn_rippergun3_ext_zh",
 				{"loc_weapon_mark_ogryn_rippergun_p1_m3"}, {"zh-tw"},
-					loc_text("{#color(193, 115, 221)}MK VI{#reset()}")),
+					loc_text("{#color(193, 115, 221)}MK 6 型{#reset()}")),
 
 		--[+ Kickback - Дробовик «Отбойник» +]-- руоф Отбойник
 			--[+ Russian +]
@@ -2965,7 +2969,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VI +]--
 			create_template("weapons_marks_ogryn_thumper2_ext_zh",
 				{"loc_weapon_mark_ogryn_thumper_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK VI{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 6 型{#reset()}")),
 }
 
 --[+ Return the localization templates +]--
