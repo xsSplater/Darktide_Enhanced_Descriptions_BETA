@@ -3375,7 +3375,7 @@ local localization_templates = {
 					-- loc_text("被攻擊目標獲得 "..COLORS_Numbers.stacks_num_var_rgb.." 層 "..COLORS_Numbers.rending_pc_var_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.maxstks_var_rgb.." 層。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
 			create_template("weap_wbr003_desc_ext_tw",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-tw"},
-					loc_text("被攻擊目標獲得 "..COLORS_Numbers.n_1_rgb.." 層 "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.pc_20_rgb.." 層。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
+					loc_text("被攻擊目標獲得 "..COLORS_Numbers.n_1_rgb.." 層 "..COLORS_Numbers.stacks_num_var_rgb..COLORS_Numbers.pc_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.pc_20_rgb.." 。" .. COLORS_KWords_tw.Brtl_note_rgb_tw)),
 			--[+ Simplified Chinese - 穿透火焰 +]--
 			create_template("weap_wbr003_desc_ext_zh_cn",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"zh-cn"},
