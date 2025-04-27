@@ -452,9 +452,9 @@ local localization_templates = {
 
 	--[+ Blazing Spirit - Пылающий дух +]--
 	--[+ Russian +]--
-		 -- create_template("trait_bespoke_043_ext_ru",
-		-- {"loc_trait_bespoke_warp_burninating_on_crit"}, {"ru"},
-			-- loc_text("Пылающий дух")),
+		 create_template("trait_bespoke_043_ext_ru",
+		{"loc_trait_bespoke_warp_burninating_on_crit"}, {"ru"},
+			loc_text("Пылающий дух")),
 	--[+ Traditional Chinese - 燃燒靈魂 +]--
 	create_template("trait_bespoke_043_ext_tw",
 		{"loc_trait_bespoke_warp_burninating_on_crit"}, {"zh-tw"},
@@ -1061,7 +1061,7 @@ local localization_templates = {
 		{"loc_trait_bespoke_uninterruptable_while_charging_and_movement"}, {"zh-tw"},
 			loc_text("專注引導")),
 
-	--[+ Blazing Spirit - Пылающий дух +]-- -- руоф Пламенный дух
+	--[+ Blazing Spirit - Пылающий дух - руоф Пламенный дух +]--
 	--[+ Russian +]--
 	create_template("trait_bespoke_102_ext_ru",
 		{"loc_trait_bespoke_warpfire_burn_on_crit"}, {"ru"},

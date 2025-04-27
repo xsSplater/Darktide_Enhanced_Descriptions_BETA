@@ -80,7 +80,8 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Rending_rgb = iu_actit("Rending", rend_col)
 	--[++Weak Spot++]--
 	local wksp_col = Color[mod:get("weakspot_text_colour")](255, true) -- Do not translate this line!
-	local Weakspot_rgb = iu_actit("Weak Spot", wksp_col)
+	local Weak_spot_rgb = iu_actit("Weak Spot", wksp_col)
+	local Weakspot_rgb = iu_actit("Weakspot", wksp_col)
 	local Weakspothit_rgb = iu_actit("Weak Spot Hit", wksp_col)
 	local Weakspothits_rgb = iu_actit("Weak Spot Hits", wksp_col)
 	local Weakspot_dmg_rgb = iu_actit("Weak Spot Damage", wksp_col)
@@ -282,6 +283,7 @@ return {
 	Toughness_dmg_red_rgb = Toughness_dmg_red_rgb,
 	Trample_rgb = Trample_rgb,
 	Weakspot_rgb = Weakspot_rgb,
+	Weak_spot_rgb = Weak_spot_rgb,
 	Weakspothit_rgb = Weakspothit_rgb,
 	Weakspothits_rgb = Weakspothits_rgb,
 	Weakspot_dmg_rgb = Weakspot_dmg_rgb,
