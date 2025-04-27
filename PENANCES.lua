@@ -3359,11 +3359,10 @@ local localization_templates = {
 		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"ru"},
 			loc_text("Убейте "..COLORS_Numbers.target_rgb.." врагов заряженными атаками, удерживая "..COLORS_Numbers.n_5_rgb.." зарядов ключевого таланта "..COLORS_KW_Penances_ru.heavyhitter_rgb_ru..".")),
 	--[+ Traditional Chinese +]--
-	-- !! This description is not used in zh-tw. !! --
 	-- 在重拳出擊層數疊滿時，使用重擊擊殺5000名敵人。
 	create_template("ach_class_ogr_11_ext_desc_tw",
-		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"zh-tw"},
-			loc_text("在維持 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.heavyhitter_rgb_tw.."』達到 "..COLORS_Numbers.n_5_rgb.." 層的狀態下，使用蓄力攻擊擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
+		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_new_description"}, {"zh-tw"},
+			loc_text("維持 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.heavyhitter_rgb_tw.."』達到 "..COLORS_Numbers.n_5_rgb.." 層時，\n使用重擊擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
 	--[+ Clear the Path +]-- руоф Расчисти путь
 	--[+ Russian +]--

@@ -1772,9 +1772,8 @@ local localization_templates = {
 			loc_text("Каждую секунду враги в радиусе "..COLORS_Numbers.n_40_rgb.." метров могут быть отмечены. Убийство отмеченного врага восстанавливает {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..", даёт {move_speed:%s} к скорости передвижения на {move_speed_duration:%s} секунды, а также добавляет заряд "..COLORS_KWords_ru.Precision_rgb_ru.." на {bonus_duration} секунды.\nКаждый заряд "..COLORS_KWords_ru.Precision_rgb_ru.." даёт: {base_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru.." и {weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru..".\nЗаряды "..COLORS_KWords_ru.Precision_rgb_ru.." накапливаются до {bonus_stacks:%s} раз и, когда срок действия заканчивается, снимается "..COLORS_Numbers.n_1_rgb.." заряд, а длительность оставшихся зарядов обновляется."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_3_rgb_ru)),
 	--[+ Traditional Chinese - 擾動命運 +]--
 	--每秒有機率標記{radius:%s}公尺內的敵人。擊殺被標記的敵人會在{move_speed_duration:%s}秒內恢復{toughness:%s}韌性，並獲得持續{move_speed_duration:%s}秒的{move_speed:%s}移動速度加成，以及持續{bonus_duration}秒的精準加成。\n\n每層精準加成會賦予{base_damage:%s}傷害、{crit_damage:%s}暴擊傷害和{weakspot_damage:%s}弱點傷害。精準加成可疊加{bonus_stacks:%s}層，且會在持續時間結束後降低一層並重新計算持續時間。
-	-- Not working in zh-tw
 	create_template("talent_tree_psy_keys3_000_desc_tw",
-			{"loc_talent_psyker_marked_enemies_passive_new_desc"}, {"zh-tw"},
+			{"loc_talent_psyker_marked_enemies_passive_updated_desc"}, {"zh-tw"},
 			loc_text("自動標記範圍內的敵人。\n"
 					.."\n"
 				.."- 標記間隔 1s。\n"

@@ -1708,7 +1708,6 @@ local localization_templates = {
 			--[+ Traditional Chinese - 燃燒靈魂 +]--
 			-- 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
 			-- The staff is currently using this description in zh-tw, 
-			-- and the Force Greatsword not used in zh-tw.
 			create_template("weap_wbm043_desc_ext_tw",
 				{"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"},
 					loc_text(COLORS_KWords_tw.Crit_hit_rgb_tw.." 敵人時，\n使其獲得 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." 層的 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."。\n上限 "..COLORS_Numbers.n_6_rgb.." 層，烈焰力場巨劍 "..COLORS_Numbers.n_12_rgb.." 層。")),
@@ -3195,9 +3194,8 @@ local localization_templates = {
 					loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." в дальнем бою. Вы выпускаете "..COLORS_Numbers.value_var_rgb.." снаряда при "..COLORS_KWords_ru.Crit_chance_r_rgb_ru.." основной атакой.")),
 			--[+ Traditional Chinese - 湧動 +]--
 			-- 電流力場法杖, 虛空爆破力場法杖, 虛空打擊力場法杖(無效) -- 2% | 3% | 4% | 5%
-			-- The Voidstrike Staff not used in zh-tw.
 			create_template("weap_wbr096_desc_ext_tw",
-				{"loc_trait_bespoke_double_shot_on_primary_crit_and_crit_chance_desc"}, {"zh-tw"},
+				{"loc_trait_bespoke_double_shot_on_crit_and_crit_chance_desc"}, {"zh-tw"},
 					loc_text("遠程攻擊 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.." 。\n當主攻擊 "..COLORS_KWords_tw.Crit_rgb_tw.." 會自動發射 "..COLORS_Numbers.value_var_rgb.." 次。")),
 			--[+ Simplified Chinese - 激涌 +]--
 			create_template("weap_wbr096_desc_ext_zh_cn",
@@ -3337,9 +3335,9 @@ local localization_templates = {
 					loc_text(COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." получает враг при "..COLORS_KWords_ru.Crit_hit_rgb_ru..".")), --  Вплоть до "..COLORS_Numbers.n_6_rgb.." зарядов.
 			--[+ Traditional Chinese - 燃燒靈魂 +]-- 這個說明同時也被套用在烈焰力場巨劍，但是他最多12層。
 			-- 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
-			-- create_template("weap_wbr002_desc_ext_tw",
-				-- {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"},
-					-- loc_text("敵人於 "..COLORS_KWords_tw.Crit_hit_rgb_tw.." 時會獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."，上限 "..COLORS_Numbers.n_6_rgb.." 層。")),
+			create_template("weap_wbr002_desc_ext_tw",
+				{"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"zh-tw"},
+					loc_text("敵人於 "..COLORS_KWords_tw.Crit_hit_rgb_tw.." 時會獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."，上限 "..COLORS_Numbers.n_6_rgb.." 層。")),
 			--[+ Simplified Chinese - 烈焰之魂 +]--
 			create_template("weap_wbr002_desc_ext_zh_cn",
 				{"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-cn"},
