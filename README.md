@@ -16,8 +16,9 @@ __*Let us know if you spot any issues!*__
 
 ## Manual Installation:
 1. Extract the mod into your **Mods** folder.
+   
 	*For example: `..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\Enhanced_descriptions\`*
-2. Add the mod's name to **mod_load_order.txt**.
+2. Add **Enhanced_descriptions** to **mod_load_order.txt** manually or with my [Mod Load Order File Maker](https://www.nexusmods.com/warhammer40kdarktide/mods/139).
 3. Launch the game and enjoy!
 ***
 
