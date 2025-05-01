@@ -2394,6 +2394,11 @@ local localization_templates = {
 	create_template("talent_tree_zea_aura0_000_desc_ru",
 		{"loc_talent_zealot_aura_toughness_damage_coherency_desc"}, {"ru"},
 			loc_text("{damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Aura_0_n_1_rgb_ru)),
+	--[+ Traditional Chinese - 帝皇之諭 +]--
+	-- 你和協同中的盟友{damage_reduction:%s}韌性減傷。
+	create_template("talent_tree_zea_aura0_000_desc_tw",
+			{"loc_talent_zealot_aura_toughness_damage_coherency_desc"}, {"zh-tw"},
+				loc_text("與"..COLORS_KWords_tw.Coherencing_rgb_tw.."盟友 {damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw)),
 
 	--[+ Aura 1 - Benediction +]--
 	create_template("talent_tree_zea_aura_001_desc_en",
@@ -2407,6 +2412,12 @@ local localization_templates = {
 	create_template("talent_tree_zea_aura_001_desc_ru",
 		{"loc_talent_zealot_toughness_aura_efficiency_desc"}, {"ru"},
 			loc_text("{damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".\n\nЭто улучшенная версия базовой ауры - {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Aura_0_n_1_rgb_ru)),
+	--[+ Traditional Chinese - 恩賜 +]--
+	--你和協同中的盟友{damage_reduction:%s}韌性減傷。\n\n該天賦是{talent_name:%s}的增強版。
+	create_template("talent_tree_zea_aura_001_desc_tw",
+			{"loc_talent_zealot_toughness_aura_efficiency_desc"}, {"zh-tw"},
+				loc_text("與"..COLORS_KWords_tw.Coherencing_rgb_tw.."盟友 {damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n\n"
+				.."這是基礎光環 {talent_name:%s} 的強化版本。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw)),
 
 	--[+ Aura 2 - Beacon of Purity +]--
 	create_template("talent_tree_zea_aura_002_desc_en",
@@ -2420,6 +2431,13 @@ local localization_templates = {
 	create_template("talent_tree_zea_aura_002_desc_ru",
 		{"loc_talent_zealot_corruption_healing_coherency_improved_desc"}, {"ru"},
 			loc_text("{corruption:%s} единицы "..COLORS_KWords_ru.Corruption_i_rgb_ru.." очищается для текущей "..COLORS_KWords_ru.Wound_y_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." каждую секунду."..TALENTS_Enh_desc_ru.ED_ZEA_Aura_2_rgb_ru)),
+	--[+ Traditional Chinese - 純潔信標 +]--
+	-- 每{interval:%s}秒為你和協同中的盟友淨化當前傷勢下{corruption:%s}腐敗。
+	create_template("talent_tree_zea_aura_002_desc_tw",
+			{"loc_talent_zealot_corruption_healing_coherency_improved_desc"}, {"zh-tw"},
+				loc_text("與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的盟友，\n"
+				.."- 每秒淨化當前 "..COLORS_KWords_tw.Wound_y_rgb_tw.." 的 "..COLORS_KWords_tw.Corruption_i_rgb_tw.." {corruption:%s} 點。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Aura_2_rgb_tw)),
 
 	--[+ Aura 3 - Loner +]--
 	create_template("talent_tree_zea_aura_003_desc_en",
@@ -2433,6 +2451,15 @@ local localization_templates = {
 	create_template("talent_tree_zea_aura_003_desc_ru",
 		{"loc_talent_zealot_always_in_coherency_description"}, {"ru"},
 			loc_text("Восстановление "..COLORS_KWords_ru.Toughness_rgb_ru.." в "..COLORS_KWords_ru.Coherency_rgb_ru.." всегда будет расчитываться так, будто рядом с вами как минимум ещё "..COLORS_Numbers.n_1_rgb.." игрок, что поднимает нижний порог восстановления "..COLORS_KWords_ru.Toughness_rgb_ru.." с "..COLORS_Numbers.n_0_rgb.." до "..COLORS_Numbers.n_3_75_rgb.." в секунду."..TALENTS_Enh_desc_ru.ED_ZEA_Aura_3_rgb_ru)),
+	--[+ Traditional Chinese - 孤狼 +]--
+	--你始終被視作擁有至少{coherency_min_stack:%s}層協同。
+	create_template("talent_tree_zea_aura_003_desc_tw",
+		{"loc_talent_zealot_always_in_coherency_description"}, {"zh-tw"},
+			loc_text(
+			"系統默認身旁至少有"..COLORS_Numbers.n_1_rgb.."名玩家。\n"
+			.."\n"
+			.."-"..COLORS_KWords_tw.Toughness_rs_rgb_tw.." 從 "..COLORS_Numbers.n_0_rgb.." 提升至每秒 "..COLORS_Numbers.n_3_75_rgb.." 。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Aura_3_rgb_tw)),
 
 --[+ +ABILITIES - СПОСОБНОСТИ+ +]--
 	--[+ Ability 0 - Chastise the Wicked +]--

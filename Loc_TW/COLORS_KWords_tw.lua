@@ -33,6 +33,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++韌性(Toughness)++]--
 	local tghn_col = Color[mod:get("toughness_text_colour")](255, true)
 	local Toughness_rgb_tw = iu_actit("韌性", tghn_col)
+	local Toughness_rs_rgb_tw = iu_actit("韌性恢復速度", tghn_col) --Recovery speed
 	local Tghnss_rgb_tw = iu_actit("韌性", tghn_col)
 	local Toughness_dmg_red_rgb_tw = iu_actit("韌性傷害減免", tghn_col)
 	local Toughness_dmg_red_u_rgb_tw = iu_actit("韌性傷害減免", tghn_col)
@@ -375,6 +376,7 @@ return {
 	Strength_r_rgb_tw = Strength_r_rgb_tw,
 	Tghnss_rgb_tw = Tghnss_rgb_tw,
 	Toughness_rgb_tw = Toughness_rgb_tw,
+	Toughness_rs_rgb_tw = Toughness_rs_rgb_tw,
 	Toughness_dmg_red_rgb_tw = Toughness_dmg_red_rgb_tw,
 	Toughness_dmg_red_u_rgb_tw = Toughness_dmg_red_u_rgb_tw,
 	Toughness_dmg_rgb_tw = Toughness_dmg_rgb_tw,

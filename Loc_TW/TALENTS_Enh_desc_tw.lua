@@ -947,13 +947,15 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	local ED_ZEA_Aura_0_n_1_rgb_tw = iu_actit(table.concat({
 		"\n",
 		stacks_mult_w_other_dmg_red_buffs,
-		"- 不會與另一位狂信徒施放的同一光環效果重複疊加。",
+		"- 同一光環效果不會重複生效。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Beacon of Purity(純潔信標) +]--
 	local ED_ZEA_Aura_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 恢復速率足以抵銷法術書的腐蝕傷害，不過首次造成的40腐蝕傷害無法消除。",
+		"- 可以抵擋法術書的 "..COLORS_KWords_tw.Corruption_i_rgb_tw.." 。",
+		"- 法術書的首次 "..COLORS_KWords_tw.Corruption_i_rgb_tw.." 無法消除。",
+		"- 法術書的首次傷害："..COLORS_Numbers.n_40_rgb.." 點"
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 3 - Loner(孤狼) +]--
