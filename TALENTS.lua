@@ -2474,6 +2474,16 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil0_000_desc_ru",
 		{"loc_talent_zealot_2_combat_description_new"}, {"ru"},
 			loc_text("Вы совершаете рывок вперёд, восстанавливая {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..". Ваш следующий удар ближнего боя получает на "..COLORS_Numbers.n_3_rgb.." секунды "..COLORS_Numbers.n_plus_rgb.."{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и будет гарантированно "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..".\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_0_rgb_ru)),
+	--[+ Traditional Chinese - 懲奸除惡 +]--
+	-- 向前猛衝，恢復{toughness%s}韌性。你的下一次近戰攻擊命中時造成的傷害{damage%s}且必定暴擊。\n\n基礎冷卻時間：{cooldown:%s}秒。
+	create_template("talent_tree_zea_abil0_000_desc_tw",
+			{"loc_talent_zealot_2_combat_description_new"}, {"zh-tw"},
+				loc_text("向前方衝鋒並恢復 "..COLORS_Numbers.n_50_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+				.."\n"
+				.."- "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_second_rgb.." 內首次攻擊 "..COLORS_Numbers.n_plus_rgb.."{damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."\n"
+				.."--必定 "..COLORS_KWords_tw.Crit_hit_udom_rgb_tw.. " 。\n"
+				.."\n"
+				.."- 冷卻時間：{cooldown:%s} 秒。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_0_rgb_tw)),
 
 	--[+ Ability 1 - Fury of the Faithful +]--
 	create_template("talent_tree_zea_abil1_000_desc_en",
@@ -2487,6 +2497,18 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil1_000_desc_ru",
 		{"loc_talent_zealot_attack_speed_after_dash_desc"}, {"ru"},
 			loc_text("Вы совершаете рывок вперёд, восстанавливая {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и получая {attack_speed:%s} к скорости атаки на {time:%s} секунд. Ваш следующий удар ближнего боя получает на "..COLORS_Numbers.n_3_rgb.." секунды {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и будет гарантированно "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..".\nВремя восстановления: {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_rgb_ru)),
+	--[+ Traditional Chinese - 有信者之怒 +]--
+	--向前猛衝，恢復{toughness:%s}韌性，同時獲得{attack_speed:%s}攻擊速度，持續{time:%s}秒。下一次近戰攻擊命中時，附加{damage:%s}傷害，且必定暴擊。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{talent_name:%s}的增強版。
+	create_template("talent_tree_zea_abil1_000_desc_tw",
+			{"loc_talent_zealot_attack_speed_after_dash_desc"}, {"zh-tw"},
+				loc_text("向前方衝鋒並恢復 "..COLORS_Numbers.n_50_rgb.." 點"..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+				.."\n"
+				.."- "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_second_rgb.." 內首次攻擊 {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."\n"
+				.."--必定 "..COLORS_KWords_tw.Crit_hit_udom_rgb_tw.. " 。\n"
+				.."\n"
+				.."- {attack_speed:%s} 攻擊速度加成，持續 {time:%s} 秒。\n"
+				.."- 冷卻時間：{cooldown:%s} 秒。"
+				.."\n\n這是 {talent_name:%s} 能力的強化版本。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_rgb_tw)),
 
 	--[+ Ability 1-1 - Redoubled Zeal +]--
 	create_template("talent_tree_zea_abil1_001_desc_en",
@@ -2500,6 +2522,11 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil1_001_desc_ru",
 		{"loc_talent_zealot_dash_has_more_charges_desc"}, {"ru"},
 			loc_text("Способность {talent_name:%s} теперь имеет {charges:%s} заряда."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_1_rgb_ru)),
+	--[+ Traditional Chinese - 倍增狂熱 +]--
+	--{talent_name:%s}已有{charges:%s}層充能。
+	create_template("talent_tree_zea_abil1_001_desc_tw",
+		{"loc_talent_zealot_dash_has_more_charges_desc"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 現在擁有 {charges:%s} 次使用次數。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_1_rgb_tw)),
 
 	--[+ Ability 1-2 - Invocation of Death +]--
 	create_template("talent_tree_zea_abil1_002_desc_en",
@@ -2513,6 +2540,15 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil1_002_desc_ru",
 		{"loc_talent_maniac_cooldown_on_melee_crits_buff_desc"}, {"ru"},
 			loc_text("{cooldown_regen:%s} к скорости "..COLORS_KWords_ru.Ability_cd_rgb_ru.." на {duration:%s} секунды при "..COLORS_KWords_ru.Crit_hit_e_rgb_ru.." ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_2_rgb_ru)),
+	--[+ Traditional Chinese - 死亡禱文 +]--
+	--近戰暴擊可提升{cooldown_regen:%s}技能冷卻時間恢復，持續{duration:%s}秒。
+	create_template("talent_tree_zea_abil1_002_desc_tw",
+			{"loc_talent_maniac_cooldown_on_melee_crits_buff_desc"}, {"zh-tw"},
+				loc_text("當近戰 "..COLORS_KWords_tw.Crit_hit_e_rgb_tw.." 時，加速 "..COLORS_KWords_tw.Ability_cd_rgb_tw.." 速度。\n"
+				.."\n"
+				.."- "..COLORS_KWords_tw.Ability_cd_rgb_tw.." 恢復速度 {cooldown_regen:%s} 。\n"
+				.."- 持續 {duration:%s} 秒。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_2_rgb_tw)),
 
 	--[+ Ability 2 - Chorus of Spiritual Fortitude +]--
 	create_template("talent_tree_zea_abil2_000_desc_en",
@@ -2526,6 +2562,24 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_000_desc_ru",
 		{"loc_talent_zealot_bolstering_prayer_variant_two_description"}, {"ru"},
 			loc_text("Вы берёте в руки Святую реликвию, которая испускает до "..COLORS_Numbers.n_7_rgb.." импульсов энергии, раз в {interval:%s} секунды.\nКаждый импульс даёт изуверу и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." от атак ближнего и дальнего боя, а также в течение "..COLORS_Numbers.n_1_5_rgb.." секунд вас нельзя убить.\nКаждый импульс восполняет {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru..". Если у союзника полный запас "..COLORS_KWords_ru.Toughness_rgb_ru..", он вместо этого получает {flat_toughness:%s} максимальной жёлтой "..COLORS_KWords_ru.Toughness_rgb_ru.." за импульс, вплоть до {max_toughness:%s}.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_rgb_ru)),
+	--[+ Traditional Chinese - 不屈靈魂合唱 +]--
+	--運用一件每{interval:%s}秒釋放一次能量脈衝的聖物。引導時，協同中的盟友獲得眩暈免疫和無敵。\n\n每次脈衝為協同中的盟友恢復{toughness:%s}韌性。若盟友韌性值已滿，則會提高{flat_toughness:%s}最大韌性值，最多提高{max_toughness}。\n\n基礎冷卻時間：{cooldown:%s}秒。
+	create_template("talent_tree_zea_abil2_000_desc_tw",
+			{"loc_talent_zealot_bolstering_prayer_variant_two_description"}, {"zh-tw"},
+				loc_text(
+				"揮舞聖物幫助 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友恢復 "..COLORS_KWords_tw.Toughness_rgb_tw.." ，\n"
+				.."並暫時突破 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 上限。\n"
+				.."\n"
+				.."- 每 {interval:%s} 秒產生1次能量脈衝，共 "..COLORS_Numbers.n_7_rgb.." 次。\n"
+				.."\n"
+				.."- 下列效果需在"..COLORS_KWords_tw.Coherencing_rgb_tw.."才會生效：\n"
+				.."- 脈衝免疫近戰與遠程攻擊的 "..COLORS_KWords_tw.Stagger_rgb_tw.."。\n"
+				.."- 每波脈衝會恢復 "..COLORS_Numbers.n_45_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+				.."- "..COLORS_Numbers.n_1_5_rgb.." 秒內無法被擊殺。\n"
+				.."- "..COLORS_KWords_tw.Toughness_rgb_tw.." 已滿時 {flat_toughness:%s} 點黃色 "..COLORS_KWords_tw.Toughness_m_rgb_tw.."。\n"
+				.."- "..COLORS_KWords_tw.Toughness_m_rgb_tw.."".." 最多 {max_toughness:%s}，持續 "..COLORS_Numbers.n_10_rgb.." 秒。\n"
+				.."- 冷卻時間：{cooldown:%s} 秒。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_rgb_tw)),
 
 	--[+ Ability 2-1 - Holy Cause +]--
 	create_template("talent_tree_zea_abil2_001_desc_en",
@@ -2539,6 +2593,16 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_001_desc_ru",
 		{"loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"}, {"ru"},
 			loc_text("После {stacks:%s} импульса, вы и союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." получаете {toughness:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..". Длится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_1_rgb_ru)),
+	--[+ Traditional Chinese - 神聖事業 +]--
+	--為你和協同中的盟友貫注所有{stacks:%s}層脈衝，賦予{toughness:%s}韌性減傷，持續{duration:%s}秒。
+	create_template("talent_tree_zea_abil2_001_desc_tw",
+			{"loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"}, {"zh-tw"},
+				loc_text("第 {stacks:%s} 次之後的脈衝，\n"
+				.."可以 {toughness:%s} 的"..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n"
+				.."\n"
+				.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友才有 "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n"
+				.."- 上限 "..COLORS_Numbers.n_1_rgb.." 層，持續 {duration:%s} 秒。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_1_rgb_tw)),
 
 	--[+ Ability 2-2 - Banishing Light +]--
 	create_template("talent_tree_zea_abil2_002_desc_en",
@@ -2552,6 +2616,11 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_002_desc_ru",
 		{"loc_talent_zealot_channel_staggers_desc"}, {"ru"},
 			loc_text("Каждый импульс способности {talent_name:%s} также "..COLORS_KWords_ru.Staggers_e_rgb_ru.." и подавляет врагов. Дальность распространения увеличивается с каждым импульсом."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_2_rgb_ru)),
+	--[+ Traditional Chinese - 放逐之光 +]--
+	-- {talent_name:%s}的每次脈衝都會壓制敵人並導致暈眩，影響範圍隨脈衝次數增加。
+	create_template("talent_tree_zea_abil2_002_desc_tw",
+			{"loc_talent_zealot_channel_staggers_desc"}, {"zh-tw"},
+				loc_text("{talent_name:%s} 脈衝會 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 並壓制敵人。\n".."- 脈衝的影響範圍會逐漸擴大。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_2_rgb_tw)),
 
 	--[+ Ability 2-3 - Ecclesiarch's Call +]--
 	create_template("talent_tree_zea_abil2_003_desc_en",
@@ -2565,6 +2634,16 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_003_desc_ru",
 		{"loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"}, {"ru"},
 			loc_text("После {stacks:%s} импульса, вы и союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." получаете {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..". Длится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_3_rgb_ru)),
+	--[+ Traditional Chinese - 教宗之喚 +]--
+	--為你和協同中的盟友貫注所有{stacks:%s}層脈衝，提高{damage:%s}傷害，持續{duration:%s}秒。
+	create_template("talent_tree_zea_abil2_003_desc_tw",
+			{"loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"}, {"zh-tw"},
+				loc_text("第 {stacks:%s} 次之後的脈衝， {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
+
+				.."\n"
+				.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友才有 "..COLORS_KWords_tw.Damage_rgb_tw.." 加成。\n"
+				.."- 上限 "..COLORS_Numbers.n_1_rgb.." 層，持續 {duration:%s} 秒。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_3_rgb_tw)),
 
 	--[+ Ability 2-4 - Martyr's Purpose +]--
 	create_template("talent_tree_zea_abil2_004_desc_en",
@@ -2578,6 +2657,16 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_004_desc_ru",
 		{"loc_talent_zealot_damage_taken_restores_cd_description"}, {"ru"},
 			loc_text("Каждый полученный {cooldown_restore:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru.." "..COLORS_KWords_ru.Health_rgb_ru.." сокращает время "..COLORS_KWords_ru.Combat_ability_cd_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_4_rgb_ru)),
+	--[+ Traditional Chinese - 殉道者之願 +]--
+	--受到的{cooldown_restore:%s}傷害轉化為技能冷卻縮減。
+create_template("talent_tree_zea_abil2_004_desc_tw",
+		{"loc_talent_zealot_damage_taken_restores_cd_description"}, {"zh-tw"},
+			loc_text(""..COLORS_KWords_tw.Health_rgb_tw.." 受到 "..COLORS_KWords_tw.Dmg_a_rgb_tw.." 時，縮短冷卻時間。\n"
+			.."\n"
+			.."- 受到 "..COLORS_Numbers.n_1_rgb.." 點 "..COLORS_KWords_tw.Health_rgb_tw.." "..COLORS_KWords_tw.Dmg_a_rgb_tw.."時，\n"
+			.."--將縮短 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 的冷卻時間。\n"
+			.."--秒數 ＝ CD ×（受到生命傷害 × 0.01）"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_4_rgb_tw)),
 
 	--[+ Ability 3 - Shroudfield +]--
 	create_template("talent_tree_zea_abil3_000_desc_en",
@@ -2591,6 +2680,20 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil3_000_desc_ru",
 		{"loc_ability_zealot_stealth_description"}, {"ru"},
 			loc_text("Вы входите в режим "..COLORS_KWords_ru.Stealth_rgb_ru.." на {duration:%s} секунды и получаете {movement_speed:%s} к скорости движения.\nВаша следующая атака ближнего боя получает:\n{backstab_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударе в спину,\n{finesse_damage:%s} к "..COLORS_KWords_ru.Finesse_dmg_rgb_ru.." и\n{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru..".\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_rgb_ru)),
+	--[+ Traditional Chinese - 隱秘領域 +]--
+	--進入潛行狀態{duration:%s}秒。潛行期間獲得{movement_speed:%s}移動速度，{backstab_damage:%s}背刺傷害，{finesse_damage:%s}靈巧傷害和{crit_chance:%s}暴擊幾率。\n\n基礎冷卻時間：{cooldown:%s}秒。
+	create_template("talent_tree_zea_abil3_000_desc_tw",
+		{"loc_ability_zealot_stealth_description"}, {"zh-tw"},
+			loc_text(
+				"進入"..COLORS_KWords_tw.Stealth_rgb_tw.."狀態，獲得以下增益：\n"
+				.."- {movement_speed:%s} 的移動速度加成。\n"
+				.."- 背刺"..COLORS_KWords_tw.Dmg_rgb_tw.." {backstab_damage:%s} 。\n"
+				.."- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." {finesse_damage:%s} 。\n"
+				.."- "..COLORS_KWords_tw.Crt_chance_rgb_tw.." {crit_chance:%s} 。\n"
+				.."- 冷卻時間：{cooldown:%s} 秒。"
+				.."\n"
+				.."- 持續{duration:%s} 秒。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_rgb_tw)),
 
 	--[+ Ability 3-1 - Master-Crafted Shroudfield +]--
 	create_template("talent_tree_zea_abil3_001_desc_en",

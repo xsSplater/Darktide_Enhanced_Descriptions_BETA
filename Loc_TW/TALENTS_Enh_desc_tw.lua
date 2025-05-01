@@ -18,10 +18,10 @@ local iu_actit = InputUtils.apply_color_to_input_text
 COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
 COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw") -- Traditional Chinese
 
-local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除所有敵人的仇恨：若可能，近戰敵人會立即將仇恨轉移至其他目標；正在射擊的遠程敵人則會停止射擊，隨後若可能會重新鎖定目標。"
+local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除仇恨：\n-- 近戰敵人將仇恨轉移至隊友。\n-- 遠程敵人會停火並換目標。"
 local can_be_refr_dur_active_dur = "- 可在效果持續期間內重新觸發。"
 local doesnt_stack_aura_psy = "- 相同光環效果不會疊加。"
-local doesnt_interact_w_c_a_r_from_curio = "- 不會與珍品提供的 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 效果互動，因為該效果只會縮短戰鬥技能的最大冷卻時間。"
+local doesnt_interact_w_c_a_r_from_curio = "- 不與珍品 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 疊加，\n-- 該效果只縮短戰鬥技能最大冷卻時間。"
 local dmg_is_incr_by = "- 傷害會受到撕裂、脆弱、[碎顱者]祝福(針對被踉蹌的敵人)以及[靈能強化]、[至天高之力]、[亞空間震波]、[擾動命運]、[惡意攻勢]、[完美時機]、[占卜者的注視](含[預知未來])、[亞空間騎士]、光環[動能釋放](對精英單位)和小型遠程傷害節點的增益所提升。"
 local procs_on_succss_dodging = "- 在成功閃避敵方近戰或遠程攻擊(不含砲手、收割者、狙擊手)，以及壓制型攻擊(瘟疫獵犬跳撲、陷阱兵網子、變種人擄抓)時觸發。"
 local red_both_tghns_n_health_dmg = "- 同時減少所受到的韌性與生命值傷害。"
@@ -968,43 +968,53 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Ability 1 - Fury of the Faithful(有信者之怒) +]--
 	local ED_ZEA_Ability_0_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 突進距離：",
-		"-- 基礎：7米。",
-		"-- 瞄準：最遠21米。",
-		"- 突進時獲得韌性傷害免疫並且閃避所有攻擊。",
-		"- 碰撞到敵人時，在3米範圍內造成輕微踉蹌。",
+		"- 衝鋒距離：",
+		"-- 基礎："..COLORS_Numbers.n_7_rgb..COLORS_Numbers.n_meter_rgb.." 。",
+		"-- 瞄準：最遠 "..COLORS_Numbers.n_21_rgb..COLORS_Numbers.n_meter_rgb.." 。",
+		"",
+		"- 衝鋒時韌性傷害免疫且閃避所有攻擊。",
+		"- 碰撞敵人時， "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_meter_rgb.." 內敵人 "..COLORS_KWords_tw.Stagger_s_rgb_tw.." 。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-1 - Redoubled Zeal(倍增狂熱) +]--
 	local ED_ZEA_Ability_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 突進：",
-		"-- 範圍：基礎7米；(輔助動作時)最遠可達21米。",
-		"-- 無法在跳躍或下落時啟用。",
-		"-- 無法改變方向，但可透過格擋或向後鍵取消突進。",
-		"-- 突進期間閃避所有攻擊並獲得韌性傷害免疫。",
-		"-- 可能會被不屈敵人、甲殼、巨獸以及虛空護盾阻擋。",
-		"- 近戰穿甲加成：",
-		"-- 下次近戰攻擊在啟動後3秒內獲得針對甲殼、防彈、狂熱者、不屈敵人的100%撕裂。",
+		"- 衝鋒距離：",
+		"-- 基礎："..COLORS_Numbers.n_7_rgb..COLORS_Numbers.n_meter_rgb.." 。",
+		"-- 瞄準：最遠 "..COLORS_Numbers.n_21_rgb..COLORS_Numbers.n_meter_rgb.." 。",
+		"",
+		"- 無法在跳躍或落下時使用。",
+		"- 無法改變方向",
+		"- 可透過格擋或向後鍵取消衝鋒。",
+		"- 衝鋒時韌性傷害免疫且閃避所有攻擊。",
+		"",
+		"- 會被以下敵人中斷衝鋒",
+		"-- 不屈敵人、甲殼、巨獸、虛空護盾",
+		"",
+		"- 穿甲加成：",
+		"-- 以下單位額外附加 "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.."。",
+		"-- 甲殼、防彈、狂熱者、不屈敵人。",
 		"-- 第一次近戰攻擊會消耗此Buff。",
-		"-- 遠程攻擊無法受此Buff加成。",
-		"-- 與其他天賦的攻擊速度Buff以及敏捷興奮劑效果採加法疊加。",
+		"-- 遠程攻擊不會獲得此Buff加成。",
+		"",
+		"- 與天賦、敏捷興奮劑攻速採加法疊加。",
+		-- "-- 與其他天賦的攻擊速度Buff以及敏捷興奮劑效果採加法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-1 - Redoubled Zeal(倍增狂熱) +]--
 	local ED_ZEA_Ability_1_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 第二段充能的冷卻只有在第一段充能完成冷卻後才會開始。",
+		"- 第二段CD會在第一段CD結束才開始。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-2 - Invocation of Death(死亡禱文) +]--
 	local ED_ZEA_Ability_1_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 每次觸發共減少12秒冷卻時間，",
-		"  其中包含基礎4秒加天賦提供4次，",
-		"  每2秒等於額外8秒，共計12秒。",
+		"- "..COLORS_Numbers.n_4_rgb..COLORS_Numbers.n_second_rgb.." 內共減少 "..COLORS_Numbers.n_12_rgb..COLORS_Numbers.n_second_rgb.." 冷卻時間，",
+		-- "  其中包含基礎4秒加天賦提供4次，",
+		-- "  每2秒等於額外8秒，共計12秒。",
 		can_be_refr_dur_active_dur,
-		"- 與[專注興奮劑]的剩餘冷卻縮短效果(每秒3秒)同時生效。",
+		"- [專注興奮劑]冷卻縮短效果同時生效。",
 		doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
@@ -1012,54 +1022,88 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	local ED_ZEA_Ability_2_rgb_tw = iu_actit(table.concat({
 		"\n",
 		"- 範圍：10米。",
-		"- 在效果持續期間，可刷新對眩暈或無敵的免疫效果。",
-		"- [無敵]表示玩家的生命值不會低於1，但多餘的生命值仍可能被削減。",
-		"- 額外的黃色韌性持續10秒，且不會與另一位狂信徒使用相同天賦所提供的韌性重疊。但會與老兵天賦[責任與榮耀]的額外韌性採加法疊加。",
-		"- 額外韌性相當於第二條韌性槽，可藉由近戰擊殺、對應天賦或武器祝福恢復。",
+		"- 持續期間內可刷新對免疫、無敵效果。",
+		"- 同一天賦效果不會重複生效。",
+		"- 與老兵[責任與榮耀]加法疊加。",
+		"",
+		"- [無敵]",
+		"-- 玩家生命值將不會低於1，",
+		"-- 但生命值仍可能被削減。",
+		-- "- 額外韌性相當於第二條韌性槽，可藉由近戰擊殺、對應天賦或武器祝福恢復。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-1 - Holy Cause(神聖事業) +]--
 	local ED_ZEA_Ability_2_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 當Buff觸發時，只要盟友處於協同範圍內，就會獲得此Buff。",
+		"- 只要處於協同範圍，就會獲得此Buff。",
 		stacks_mult_w_other_dmg_red_buffs,
-		"- 不會與另一位狂信徒使用相同天賦重複疊加。",
+		"- 同一天賦效果不會重複生效。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-2 - Banishing Light(放逐之光) +]--
 	local ED_ZEA_Ability_2_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 這個天賦有三個效果：",
-		"-- 1. 讓脈衝可以對10米內、不可壓制的敵人造成踉蹌。若是巨獸或隊長/雙胞胎且距離小於4米，則在第1、3、5、7次脈衝時施加強制踉蹌，其餘不可壓制的敵人(小於4米)則每次脈衝都會被強制踉蹌。強制踉蹌持續2秒。",
-		"-- 2. 每次脈衝都對10米內可壓制的敵人施加極高的壓制，並提高壓制衰減延遲。",
-		"--- 可壓制的敵人：瘟疫殭屍(本天賦特例)、渣滓砲手、渣滓槍手、血痂砲手、血痂射手、血痂槍手、收割者、砲手。",
-		"-- 3. 在引導期間，每秒將脈衝半徑由10米增加0.1米，最多到10.5米。此範圍內的敵人將受到壓制或踉蹌(但強制踉蹌的固定範圍不變)。",
+		"- 造成 "..COLORS_Numbers.n_10_rgb..COLORS_Numbers.n_meter_rgb.." 內的敵人 "..COLORS_KWords_tw.Staggers_e_rgb_tw.."。",
+		"",
+		"- "..COLORS_Numbers.n_10_rgb..COLORS_Numbers.n_meter_rgb.." 內敵人施加壓制並降低壓制衰減。",
+		"- 脈衝半徑每秒 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_01_rgb..COLORS_Numbers.n_meter_rgb.."，最多到"..COLORS_Numbers.n_10_5_rgb..COLORS_Numbers.n_meter_rgb.."。",
+		"",		
+		"-- 巨獸、隊長、雙胞胎有以下限制：",
+		"---距離在 "..COLORS_Numbers.n_4_rgb..COLORS_Numbers.n_meter_rgb.." 內。",
+		"---第1、3、5、7次脈衝時 "..COLORS_KWords_tw.Staggers_e_rgb_tw.."。",
+		"---"..COLORS_KWords_tw.Staggers_e_rgb_tw.." 持續 "..COLORS_Numbers.n_2_rgb..COLORS_Numbers.n_second_rgb.." 。",
+		-- "- 這個天賦有三個效果：",
+		-- "-- 1. 讓脈衝可以對10米內、不可壓制的敵人造成踉蹌。若是巨獸或隊長/雙胞胎且距離小於4米，則在第1、3、5、7次脈衝時施加強制踉蹌，其餘不可壓制的敵人(小於4米)則每次脈衝都會被強制踉蹌。強制踉蹌持續2秒。",
+		-- "-- 2. 每次脈衝都對10米內可壓制的敵人施加極高的壓制，並提高壓制衰減延遲。",
+		-- "--- 可壓制的敵人：瘟疫殭屍(本天賦特例)、渣滓砲手、渣滓槍手、血痂砲手、血痂射手、血痂槍手、收割者、砲手。",
+		-- "-- 3. 在引導期間，每秒將脈衝半徑由10米增加0.1米，最多到10.5米。此範圍內的敵人將受到壓制或踉蹌(但強制踉蹌的固定範圍不變)。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-3 - Ecclesiarch's Call(教宗之喚) +]--
 	local ED_ZEA_Ability_2_3_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 當Buff觸發時，只要盟友處於協同範圍內，就會獲得此Buff。",
+		"- 只要處於協同範圍，就會獲得此Buff。",
 		stacks_add_w_oth_dmg,
-		"- 不會與另一位狂信徒使用相同天賦重複疊加。",
+		"- 同一天賦效果不會重複生效。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-4 - Martyr's Purpose(殉道者之願) +]--
 	local ED_ZEA_Ability_2_4_rgb_tw = iu_actit(table.concat({
 		"\n",
 		"- 倒地時不會觸發。",
-		"- 例如，若狂信徒的[不屈靈魂合唱]仍有55秒冷卻，且受到80點生命傷害，則剩餘冷卻55秒會被減少：60 x (80 x 0.01) = 48秒，最後只剩7秒。",
-		"- 與[專注興奮劑]的3秒/秒冷卻縮短效果同時生效。",
-		"- 不會與來自珍品的戰鬥技能再生效果互動，後者僅減少戰鬥技能的最大冷卻時間。",
+		"- [專注興奮劑]冷卻縮短效果同時生效。",
+		"",
+		"- 以狂信徒[不屈靈魂合唱]為例：",
+		"- 技能最大冷卻：60 秒。",
+		"- 當前剩餘冷卻：55 秒。",
+		"- 受到生命傷害：80 點。",
+		"- 當前剩餘冷卻：55 秒。",
+		"- 冷卻減少：60 × (80 × 0.01) = 48 秒。",
+		"- 最終剩餘冷卻：55 - 48 = 7 秒。",
+		"",
+		doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3 - Shroudfield(隱秘領域) +]--
 	local ED_ZEA_Ability_3_rgb_tw = iu_actit(table.concat({
 		"\n",
+		"- 隱形時仍會受傷。",
+		"",
 		become_invis_drop_all_enemy_aggro,
-		"- 隱形時仍然可能受傷。",
-		"- 會解除隱形的動作包括：以近戰攻擊命中敵人、任何遠程攻擊、投擲手雷(快速、瞄準或拋擲)、完成救援/復甦/拉起隊友或掙脫束縛的動作；投擲刀只有在命中目標時才會破除隱形。",
-		"- 不會解除隱形的動作包括：推擊敵人、使用興奮劑(自用或給隊友)、在隱形前已丟出去的手雷爆炸、主動的持續傷害效果、操作占卜儀與小遊戲等。",
+		"",
+		"- 以下動作會解除隱形：",
+		"-- 近戰攻擊命中敵人、遠程攻擊開火",
+		"-- 投擲手雷、",
+		-- "-- 完成救援/復甦/拉起隊友或掙脫束縛的動作；",
+		"-- 任何協助隊友的動作，",
+		"-- 投擲飛刀只有命中時才會破除隱形。",
+		"",
+		"- 以下動作不會解除隱形：",
+		"-- 推擊敵人、用興奮劑(自用或給隊友)、",
+		"-- 在隱形前丟出去的手雷爆炸、",
+		"-- Dot持續傷害效果、",
+		"-- 操作占卜儀與小遊戲等。",
+		"",
 		"{#color(255, 35, 5)}無法躲避惡魔宿主!{#reset()}",
 	}, "\n"), enhdesc_col)
 
