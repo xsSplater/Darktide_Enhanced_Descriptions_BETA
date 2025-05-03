@@ -97,6 +97,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local dmg_col = Color[mod:get("damage_text_colour")](255, true)
 	local Dmg_rgb_tw = iu_actit("傷害", dmg_col)
 	local Dmg_a_rgb_tw = iu_actit("傷害", dmg_col)
+	local Dmg_bs_rgb_tw = iu_actit("背刺傷害", dmg_col) -- backstab_damage
 	local Dmg_b_rgb_tw = iu_actit("基礎傷害", dmg_col)
 	local Dmg_h_rgb_tw = iu_actit("較高傷害", dmg_col) -- high
 	local Dmg_h2_rgb_tw = iu_actit("高額傷害", dmg_col) -- high
@@ -309,6 +310,7 @@ return {
 	Crit_hit_udom_rgb_tw = Crit_hit_udom_rgb_tw,
 	Dmg_rgb_tw = Dmg_rgb_tw,
 	Dmg_a_rgb_tw = Dmg_a_rgb_tw,
+	Dmg_bs_rgb_tw = Dmg_bs_rgb_tw,
 	Dmg_b_rgb_tw = Dmg_b_rgb_tw,
 	Dmg_h_rgb_tw = Dmg_h_rgb_tw,
 	Dmg_h2_rgb_tw = Dmg_h2_rgb_tw,

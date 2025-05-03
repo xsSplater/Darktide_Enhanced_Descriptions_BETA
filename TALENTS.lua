@@ -2685,7 +2685,7 @@ create_template("talent_tree_zea_abil2_004_desc_tw",
 			loc_text(
 				"進入"..COLORS_KWords2_tw.Stealth_rgb_tw.."狀態，獲得以下增益：\n"
 				.."- {movement_speed:%s} 的移動速度加成。\n"
-				.."- 背刺"..COLORS_KWords_tw.Dmg_rgb_tw.." {backstab_damage:%s} 。\n"
+				.."- "..COLORS_KWords_tw.Dmg_bs_rgb_tw.." {backstab_damage:%s} 。\n"
 				.."- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." {finesse_damage:%s} 。\n"
 				.."- "..COLORS_KWords_tw.Crt_chance_rgb_tw.." {crit_chance:%s} 。\n"
 				.."- 冷卻時間：{cooldown:%s} 秒。"
@@ -2729,7 +2729,7 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 		{"loc_talent_zealot_stealth_increased_damage_description"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 額外提供：\n"
 			.."\n"
-			.."- 背刺"..COLORS_KWords_tw.Dmg_rgb_tw.." {damage_2:%s}。\n"
+			.."- "..COLORS_KWords_tw.Dmg_bs_rgb_tw.." {damage_2:%s}。\n"
 			.."- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." {damage:%s} 。\n"
 			.."- 技能冷卻時間增加 {cooldown:%s}。\n"
 			..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_2_rgb_tw)),
@@ -2746,6 +2746,14 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_abil3_003_desc_ru",
 		{"loc_talent_zealot_leaving_stealth_restores_toughness_desc"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за {time:%s} секунд после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru..". Также вы получите {damage:%s} к снижению "..COLORS_KWords_ru.Dmg_a_rgb_ru.." на {time:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_3_rgb_ru)),
+	--[+ Traditional Chinese - 振奮啟示 +]--
+	--脫離潛行後，{talent_name:%s}提供{tdr%s}韌性減傷，持續{duration%s}秒。
+	create_template("talent_tree_zea_abil3_003_desc_tw",
+			{"loc_talent_zealot_leaving_stealth_restores_toughness_desc"}, {"zh-tw"},
+				loc_text("脫離 "..COLORS_KWords2_tw.Stealth_rgb_tw.." 後觸發以下效果：\n"
+				.."- 在 {time:%s} 秒內恢復 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 的 {toughness:%s} 。\n"
+				.."- {damage:%s} "..COLORS_KWords_tw.Toughness_dmg_red_rgb_tw.."，持續 {time:%s} 秒。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_3_rgb_tw)),
 
 	--[+ Ability 3-4 - Pious Cut-Throat +]--
 	create_template("talent_tree_zea_abil3_004_desc_en",

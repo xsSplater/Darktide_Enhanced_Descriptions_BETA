@@ -1123,7 +1123,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Ability 3-3 - Invigorating Revelation(振奮啟示) +]--
 	local ED_ZEA_Ability_3_3_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 當隱形結束時，在接下來5秒內每秒恢復相當於最大韌性的8%。",
+		"- 脫隱時，每秒恢復 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 8%。",
 		red_both_tghns_n_health_dmg,
 		stacks_mult_w_other_dmg_red_buffs,
 		z_eff_of_this_tougn_rep,
