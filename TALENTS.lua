@@ -2302,10 +2302,10 @@ local localization_templates = {
 	--[+ Traditional Chinese - 眩暈手雷 +]--
 	-- 投擲一枚眩暈手雷，電擊爆炸範圍內敵人並致眩。
 	create_template("talent_tree_zea_blitz0_000_desc_tw",
-			{"loc_ability_shock_grenade_description"}, {"zh-tw"},
-				loc_text("投擲一顆 "..COLORS_KWords2_tw.Stun_gren_rgb_tw.. "，\n"
-				.."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
-				 ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_0_rgb_tw)),
+		{"loc_ability_shock_grenade_description"}, {"zh-tw"},
+			loc_text("投擲一顆 "..COLORS_KWords2_tw.Stun_gren_rgb_tw.. "，\n"
+			.."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_0_rgb_tw)),
 
 	--[+ Blitz 1 - Stunstorm Grenade +]--
 	create_template("talent_tree_zea_blitz1_000_desc_en",
@@ -2322,12 +2322,12 @@ local localization_templates = {
 	--[+ Traditional Chinese - 眩暈風暴手雷 +]--
 	-- 投擲一枚手雷，使爆炸範圍內的所有敵人眩暈。\n\n該天賦是{talent_name:%s}的增強版，擁有{radius:%s}爆炸範圍。
 	create_template("talent_tree_zea_blitz1_000_desc_tw",
-			{"loc_zealot_improved_stun_grenade_desc"}, {"zh-tw"},
-				loc_text("投擲一顆 "..COLORS_KWords2_tw.Stun_gren_rgb_tw.." ，\n"
-				.."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
-				.."。\n\n這是 {talent_name:%s} 天賦的強化版本，\n"
-				.."爆炸半徑增加 {radius:%s}。"
-				..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_1_rgb_tw)),
+		{"loc_zealot_improved_stun_grenade_desc"}, {"zh-tw"},
+			loc_text("投擲一顆 "..COLORS_KWords2_tw.Stun_gren_rgb_tw.." ，\n"
+			.."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
+			.."。\n\n這是 {talent_name:%s} 天賦的強化版本，\n"
+			.."爆炸半徑增加 {radius:%s}。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_1_rgb_tw)),
 
 	--[+ Blitz 2 - Immolation Grenade +]--
 	create_template("talent_tree_zea_blitz2_000_desc_en",
@@ -2344,14 +2344,14 @@ local localization_templates = {
 	--[+ Traditional Chinese - 獻祭手雷 +]--
 	-- 投擲一枚手雷，在爆炸處形成一層燃燒的液體，燃燒並使敵人暈眩, 同時阻擋他們的道路。針對無護甲敵人最為有效。
 	create_template("talent_tree_zea_blitz2_000_desc_tw",
-			{"loc_talent_ability_fire_grenade_desc"}, {"zh-tw"},
-				loc_text("投擲一顆 {talent_name:%s}，\n"
-				.."爆炸後產生火焰地面，\n"
-				.."該火焰可 "..COLORS_KWords_tw.Burnd_rgb_tw.." 並 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 敵人，\n"
-				.."\n"
-				.."- 火焰會迫使敵人改變路線。\n"
-				.."- 對無裝甲敵人最為有效。" 
-				..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_2_rgb_tw)),
+		{"loc_talent_ability_fire_grenade_desc"}, {"zh-tw"},
+			loc_text("投擲一顆 {talent_name:%s}，\n"
+			.."爆炸後產生火焰地面，\n"
+			.."該火焰可 "..COLORS_KWords_tw.Burnd_rgb_tw.." 並 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 敵人，\n"
+			.."\n"
+			.."- 火焰會迫使敵人改變路線。\n"
+			.."- 對無裝甲敵人最為有效。" 
+			..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_2_rgb_tw)),
 
 	--[+ Blitz 3 - Blades of Faith +]--
 	create_template("talent_tree_zea_blitz3_000_desc_en",
@@ -2368,16 +2368,16 @@ local localization_templates = {
 	--[+ Traditional Chinese - 信仰之刃 +]--
 	--擲出一把聖化小刀，可對單體敵人造成高額傷害。這把小刀對大多數敵人效果拔群，但對護甲堅固的敵人威力較弱。\n\n-快速投擲\n-近戰擊殺精英和專家敵人可補充一把小刀\n-使用彈藥箱可補充小刀
 	create_template("talent_tree_zea_blitz3_000_desc_tw",
-			{"loc_ability_zealot_throwing_knifes_desc"}, {"zh-tw"},
-				loc_text("投擲 {talent_name:%s}，對單一敵人 "..COLORS_KWords_tw.Dmg_h2_rgb_tw.." 。\n"
-				.."\n"
-				.."- 快速投擲。\n"
-				.."- 大多敵人"..COLORS_KWords_tw.Dmg_h2_rgb_tw.."，對重甲傷害極低。\n"
-				.."\n"
-				.."- 擊殺菁英或專家可回復"..COLORS_Numbers.n_1_rgb.."把匕首，\n"
-				.."- 小型彈藥包回復"..COLORS_Numbers.n_2_rgb.."把。\n"
-				.."- 大型彈藥包回復"..COLORS_Numbers.n_6_rgb.."把。\n"
-				.."- 彈藥箱回復全部匕首。" ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_3_rgb_tw)),
+		{"loc_ability_zealot_throwing_knifes_desc"}, {"zh-tw"},
+			loc_text("投擲 {talent_name:%s}，對單一敵人 "..COLORS_KWords_tw.Dmg_h2_rgb_tw.." 。\n"
+			.."\n"
+			.."- 快速投擲。\n"
+			.."- 大多敵人"..COLORS_KWords_tw.Dmg_h2_rgb_tw.."，對重甲傷害極低。\n"
+			.."\n"
+			.."- 擊殺菁英或專家可回復"..COLORS_Numbers.n_1_rgb.."把匕首，\n"
+			.."- 小型彈藥包回復"..COLORS_Numbers.n_2_rgb.."把。\n"
+			.."- 大型彈藥包回復"..COLORS_Numbers.n_6_rgb.."把。\n"
+			.."- 彈藥箱回復全部匕首。" ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_3_rgb_tw)),
 
 --[+ +AURA - АУРА+ +]--
 	--[+ Aura 0 - The Emperors's Will +]--
@@ -2395,8 +2395,8 @@ local localization_templates = {
 	--[+ Traditional Chinese - 帝皇之諭 +]--
 	-- 你和協同中的盟友{damage_reduction:%s}韌性減傷。
 	create_template("talent_tree_zea_aura0_000_desc_tw",
-			{"loc_talent_zealot_aura_toughness_damage_coherency_desc"}, {"zh-tw"},
-				loc_text("與"..COLORS_KWords_tw.Coherencing_rgb_tw.."盟友 {damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw)),
+		{"loc_talent_zealot_aura_toughness_damage_coherency_desc"}, {"zh-tw"},
+			loc_text("與"..COLORS_KWords_tw.Coherencing_rgb_tw.."盟友 {damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw)),
 
 	--[+ Aura 1 - Benediction +]--
 	create_template("talent_tree_zea_aura_001_desc_en",
@@ -2413,9 +2413,9 @@ local localization_templates = {
 	--[+ Traditional Chinese - 恩賜 +]--
 	--你和協同中的盟友{damage_reduction:%s}韌性減傷。\n\n該天賦是{talent_name:%s}的增強版。
 	create_template("talent_tree_zea_aura_001_desc_tw",
-			{"loc_talent_zealot_toughness_aura_efficiency_desc"}, {"zh-tw"},
-				loc_text("與"..COLORS_KWords_tw.Coherencing_rgb_tw.."盟友 {damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n\n"
-				.."這是基礎光環 {talent_name:%s} 的強化版本。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw)),
+		{"loc_talent_zealot_toughness_aura_efficiency_desc"}, {"zh-tw"},
+			loc_text("與"..COLORS_KWords_tw.Coherencing_rgb_tw.."盟友 {damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n\n"
+			.."這是基礎光環 {talent_name:%s} 的強化版本。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw)),
 
 	--[+ Aura 2 - Beacon of Purity +]--
 	create_template("talent_tree_zea_aura_002_desc_en",
@@ -2432,10 +2432,10 @@ local localization_templates = {
 	--[+ Traditional Chinese - 純潔信標 +]--
 	-- 每{interval:%s}秒為你和協同中的盟友淨化當前傷勢下{corruption:%s}腐敗。
 	create_template("talent_tree_zea_aura_002_desc_tw",
-			{"loc_talent_zealot_corruption_healing_coherency_improved_desc"}, {"zh-tw"},
-				loc_text("與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的盟友，\n"
-				.."- 每秒淨化當前 "..COLORS_KWords_tw.Wound_y_rgb_tw.." 的 "..COLORS_KWords_tw.Corruption_i_rgb_tw.." {corruption:%s} 點。"
-				..TALENTS_Enh_desc_tw.ED_ZEA_Aura_2_rgb_tw)),
+		{"loc_talent_zealot_corruption_healing_coherency_improved_desc"}, {"zh-tw"},
+			loc_text("與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的盟友，\n"
+			.."- 每秒淨化當前 "..COLORS_KWords_tw.Wound_y_rgb_tw.." 的 "..COLORS_KWords_tw.Corruption_i_rgb_tw.." {corruption:%s} 點。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Aura_2_rgb_tw)),
 
 	--[+ Aura 3 - Loner +]--
 	create_template("talent_tree_zea_aura_003_desc_en",
@@ -2475,13 +2475,13 @@ local localization_templates = {
 	--[+ Traditional Chinese - 懲奸除惡 +]--
 	-- 向前猛衝，恢復{toughness%s}韌性。你的下一次近戰攻擊命中時造成的傷害{damage%s}且必定暴擊。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_zea_abil0_000_desc_tw",
-			{"loc_talent_zealot_2_combat_description_new"}, {"zh-tw"},
-				loc_text("向前方衝鋒並恢復 "..COLORS_Numbers.n_50_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
-				.."\n"
-				.."- "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_second_rgb.." 內首次攻擊 "..COLORS_Numbers.n_plus_rgb.."{damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."\n"
-				.."--必定 "..COLORS_KWords_tw.Crit_hit_udom_rgb_tw.. " 。\n"
-				.."\n"
-				.."- 冷卻時間：{cooldown:%s} 秒。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_0_rgb_tw)),
+		{"loc_talent_zealot_2_combat_description_new"}, {"zh-tw"},
+			loc_text("向前方衝鋒並恢復 "..COLORS_Numbers.n_50_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+			.."\n"
+			.."- "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_second_rgb.." 內首次攻擊 "..COLORS_Numbers.n_plus_rgb.."{damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."\n"
+			.."--必定 "..COLORS_KWords_tw.Crit_hit_udom_rgb_tw.. " 。\n"
+			.."\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_0_rgb_tw)),
 
 	--[+ Ability 1 - Fury of the Faithful +]--
 	create_template("talent_tree_zea_abil1_000_desc_en",
@@ -2498,15 +2498,15 @@ local localization_templates = {
 	--[+ Traditional Chinese - 有信者之怒 +]--
 	--向前猛衝，恢復{toughness:%s}韌性，同時獲得{attack_speed:%s}攻擊速度，持續{time:%s}秒。下一次近戰攻擊命中時，附加{damage:%s}傷害，且必定暴擊。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{talent_name:%s}的增強版。
 	create_template("talent_tree_zea_abil1_000_desc_tw",
-			{"loc_talent_zealot_attack_speed_after_dash_desc"}, {"zh-tw"},
-				loc_text("向前方衝鋒並恢復 "..COLORS_Numbers.n_50_rgb.." 點"..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
-				.."\n"
-				.."- "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_second_rgb.." 內首次攻擊 {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."\n"
-				.."--必定 "..COLORS_KWords_tw.Crit_hit_udom_rgb_tw.. " 。\n"
-				.."\n"
-				.."- {attack_speed:%s} 攻擊速度加成，持續 {time:%s} 秒。\n"
-				.."- 冷卻時間：{cooldown:%s} 秒。"
-				.."\n\n這是 {talent_name:%s} 能力的強化版本。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_rgb_tw)),
+		{"loc_talent_zealot_attack_speed_after_dash_desc"}, {"zh-tw"},
+			loc_text("向前方衝鋒並恢復 "..COLORS_Numbers.n_50_rgb.." 點"..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+			.."\n"
+			.."- "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_second_rgb.." 內首次攻擊 {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."\n"
+			.."--必定 "..COLORS_KWords_tw.Crit_hit_udom_rgb_tw.. " 。\n"
+			.."\n"
+			.."- {attack_speed:%s} 攻擊速度加成，持續 {time:%s} 秒。\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。"
+			.."\n\n這是 {talent_name:%s} 能力的強化版本。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_rgb_tw)),
 
 	--[+ Ability 1-1 - Redoubled Zeal +]--
 	create_template("talent_tree_zea_abil1_001_desc_en",
@@ -2541,12 +2541,12 @@ local localization_templates = {
 	--[+ Traditional Chinese - 死亡禱文 +]--
 	--近戰暴擊可提升{cooldown_regen:%s}技能冷卻時間恢復，持續{duration:%s}秒。
 	create_template("talent_tree_zea_abil1_002_desc_tw",
-			{"loc_talent_maniac_cooldown_on_melee_crits_buff_desc"}, {"zh-tw"},
-				loc_text("當近戰 "..COLORS_KWords_tw.Crit_hit_e_rgb_tw.." 時，加速 "..COLORS_KWords_tw.Ability_cd_rgb_tw.." 速度。\n"
-				.."\n"
-				.."- "..COLORS_KWords_tw.Ability_cd_rgb_tw.." 恢復速度 {cooldown_regen:%s} 。\n"
-				.."- 持續 {duration:%s} 秒。"
-				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_2_rgb_tw)),
+		{"loc_talent_maniac_cooldown_on_melee_crits_buff_desc"}, {"zh-tw"},
+			loc_text("當近戰 "..COLORS_KWords_tw.Crit_hit_e_rgb_tw.." 時，加速 "..COLORS_KWords_tw.Ability_cd_rgb_tw.." 速度。\n"
+			.."\n"
+			.."- "..COLORS_KWords_tw.Ability_cd_rgb_tw.." 恢復速度 {cooldown_regen:%s} 。\n"
+			.."- 持續 {duration:%s} 秒。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_2_rgb_tw)),
 
 	--[+ Ability 2 - Chorus of Spiritual Fortitude +]--
 	create_template("talent_tree_zea_abil2_000_desc_en",
@@ -2563,21 +2563,21 @@ local localization_templates = {
 	--[+ Traditional Chinese - 不屈靈魂合唱 +]--
 	--運用一件每{interval:%s}秒釋放一次能量脈衝的聖物。引導時，協同中的盟友獲得眩暈免疫和無敵。\n\n每次脈衝為協同中的盟友恢復{toughness:%s}韌性。若盟友韌性值已滿，則會提高{flat_toughness:%s}最大韌性值，最多提高{max_toughness}。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_zea_abil2_000_desc_tw",
-			{"loc_talent_zealot_bolstering_prayer_variant_two_description"}, {"zh-tw"},
-				loc_text(
-				"揮舞聖物幫助 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友恢復 "..COLORS_KWords_tw.Toughness_rgb_tw.." ，\n"
-				.."並暫時突破 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 上限。\n"
-				.."\n"
-				.."- 每 {interval:%s} 秒產生1次能量脈衝，共 "..COLORS_Numbers.n_7_rgb.." 次。\n"
-				.."\n"
-				.."- 下列效果需在"..COLORS_KWords_tw.Coherencing_rgb_tw.."才會生效：\n"
-				.."- 脈衝免疫近戰與遠程攻擊的 "..COLORS_KWords_tw.Stagger_rgb_tw.."。\n"
-				.."- 每波脈衝會恢復 "..COLORS_Numbers.n_45_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
-				.."- "..COLORS_Numbers.n_1_5_rgb.." 秒內無法被擊殺。\n"
-				.."- "..COLORS_KWords_tw.Toughness_rgb_tw.." 已滿時 {flat_toughness:%s} 點黃色 "..COLORS_KWords_tw.Toughness_m_rgb_tw.."。\n"
-				.."- "..COLORS_KWords_tw.Toughness_m_rgb_tw.."".." 最多 {max_toughness:%s}，持續 "..COLORS_Numbers.n_10_rgb.." 秒。\n"
-				.."- 冷卻時間：{cooldown:%s} 秒。"
-				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_rgb_tw)),
+		{"loc_talent_zealot_bolstering_prayer_variant_two_description"}, {"zh-tw"},
+			loc_text(
+			"揮舞聖物幫助 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友恢復 "..COLORS_KWords_tw.Toughness_rgb_tw.." ，\n"
+			.."並暫時突破 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 上限。\n"
+			.."\n"
+			.."- 每 {interval:%s} 秒產生1次能量脈衝，共 "..COLORS_Numbers.n_7_rgb.." 次。\n"
+			.."\n"
+			.."- 下列效果需在"..COLORS_KWords_tw.Coherencing_rgb_tw.."才會生效：\n"
+			.."- 脈衝免疫近戰與遠程攻擊的 "..COLORS_KWords_tw.Stagger_rgb_tw.."。\n"
+			.."- 每波脈衝會恢復 "..COLORS_Numbers.n_45_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+			.."- "..COLORS_Numbers.n_1_5_rgb.." 秒內無法被擊殺。\n"
+			.."- "..COLORS_KWords_tw.Toughness_rgb_tw.." 已滿時 {flat_toughness:%s} 點黃色 "..COLORS_KWords_tw.Toughness_m_rgb_tw.."。\n"
+			.."- "..COLORS_KWords_tw.Toughness_m_rgb_tw.."".." 最多 {max_toughness:%s}，持續 "..COLORS_Numbers.n_10_rgb.." 秒。\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_rgb_tw)),
 
 	--[+ Ability 2-1 - Holy Cause +]--
 	create_template("talent_tree_zea_abil2_001_desc_en",
@@ -2594,13 +2594,13 @@ local localization_templates = {
 	--[+ Traditional Chinese - 神聖事業 +]--
 	--為你和協同中的盟友貫注所有{stacks:%s}層脈衝，賦予{toughness:%s}韌性減傷，持續{duration:%s}秒。
 	create_template("talent_tree_zea_abil2_001_desc_tw",
-			{"loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"}, {"zh-tw"},
-				loc_text("第 {stacks:%s} 次之後的脈衝，\n"
-				.."可以 {toughness:%s} 的"..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n"
-				.."\n"
-				.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友才有 "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n"
-				.."- 上限 "..COLORS_Numbers.n_1_rgb.." 層，持續 {duration:%s} 秒。"
-				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_1_rgb_tw)),
+		{"loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"}, {"zh-tw"},
+			loc_text("第 {stacks:%s} 次之後的脈衝，\n"
+			.."可以 {toughness:%s} 的"..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n"
+			.."\n"
+			.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友才有 "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n"
+			.."- 上限 "..COLORS_Numbers.n_1_rgb.." 層，持續 {duration:%s} 秒。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_1_rgb_tw)),
 
 	--[+ Ability 2-2 - Banishing Light +]--
 	create_template("talent_tree_zea_abil2_002_desc_en",
@@ -2617,8 +2617,8 @@ local localization_templates = {
 	--[+ Traditional Chinese - 放逐之光 +]--
 	-- {talent_name:%s}的每次脈衝都會壓制敵人並導致暈眩，影響範圍隨脈衝次數增加。
 	create_template("talent_tree_zea_abil2_002_desc_tw",
-			{"loc_talent_zealot_channel_staggers_desc"}, {"zh-tw"},
-				loc_text("{talent_name:%s} 脈衝會 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 並壓制敵人。\n".."- 脈衝的影響範圍會逐漸擴大。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_2_rgb_tw)),
+		{"loc_talent_zealot_channel_staggers_desc"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 脈衝會 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 並壓制敵人。\n".."- 脈衝的影響範圍會逐漸擴大。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_2_rgb_tw)),
 
 	--[+ Ability 2-3 - Ecclesiarch's Call +]--
 	create_template("talent_tree_zea_abil2_003_desc_en",
@@ -2635,13 +2635,13 @@ local localization_templates = {
 	--[+ Traditional Chinese - 教宗之喚 +]--
 	--為你和協同中的盟友貫注所有{stacks:%s}層脈衝，提高{damage:%s}傷害，持續{duration:%s}秒。
 	create_template("talent_tree_zea_abil2_003_desc_tw",
-			{"loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"}, {"zh-tw"},
-				loc_text("第 {stacks:%s} 次之後的脈衝， {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
+		{"loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"}, {"zh-tw"},
+			loc_text("第 {stacks:%s} 次之後的脈衝， {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
 
-				.."\n"
-				.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友才有 "..COLORS_KWords_tw.Damage_rgb_tw.." 加成。\n"
-				.."- 上限 "..COLORS_Numbers.n_1_rgb.." 層，持續 {duration:%s} 秒。"
-				..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_3_rgb_tw)),
+			.."\n"
+			.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友才有 "..COLORS_KWords_tw.Damage_rgb_tw.." 加成。\n"
+			.."- 上限 "..COLORS_Numbers.n_1_rgb.." 層，持續 {duration:%s} 秒。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_3_rgb_tw)),
 
 	--[+ Ability 2-4 - Martyr's Purpose +]--
 	create_template("talent_tree_zea_abil2_004_desc_en",
@@ -2657,7 +2657,7 @@ local localization_templates = {
 			loc_text("Каждый полученный {cooldown_restore:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru.." "..COLORS_KWords_ru.Health_rgb_ru.." сокращает время "..COLORS_KWords_ru.Combat_ability_cd_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_4_rgb_ru)),
 	--[+ Traditional Chinese - 殉道者之願 +]--
 	--受到的{cooldown_restore:%s}傷害轉化為技能冷卻縮減。
-create_template("talent_tree_zea_abil2_004_desc_tw",
+	create_template("talent_tree_zea_abil2_004_desc_tw",
 		{"loc_talent_zealot_damage_taken_restores_cd_description"}, {"zh-tw"},
 			loc_text(""..COLORS_KWords_tw.Health_rgb_tw.." 受到 "..COLORS_KWords_tw.Dmg_a_rgb_tw.." 時，縮短冷卻時間。\n"
 			.."\n"
@@ -2707,7 +2707,7 @@ create_template("talent_tree_zea_abil2_004_desc_tw",
 			loc_text("Длительность действия "..COLORS_KWords_ru.Stealth_rgb_ru.." увеличивается с "..COLORS_Numbers.n_3_rgb.." до {duration_2:%s} секунд.")),
 	--[+ Ability 3-1 - Master-Crafted Shroudfield +]--
 	-- 潛行持續時間增至{duration_2:%s}秒。
-create_template("talent_tree_zea_abil3_001_desc_tw",
+	create_template("talent_tree_zea_abil3_001_desc_tw",
 		{"loc_talent_zealot_increased_stealth_duration_description"}, {"zh-tw"},
 			loc_text(""..COLORS_KWords2_tw.Stealth_rgb_tw.."的持續時間從 "..COLORS_Numbers.n_3_rgb.." 秒延長至 {duration_2:%s} 秒。")),
 
@@ -2792,13 +2792,13 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	--狂怒時獲得{crit_chance:%s}暴擊幾率，持續{duration:%s}秒。{radius:%s}公尺範圍內有{max_stacks:%s}個敵人死亡時觸發狂怒。
 
 	create_template("talent_tree_zea_keys1_000_desc_tw",
-			{"loc_talent_zealot_fanatic_rage_desc"}, {"zh-tw"},
-				loc_text("{radius:%s} "..COLORS_Numbers.n_meter_rgb.." 內擊殺 {max_stacks:%s} 名敵人，\n"
-				.."獲得以下效果：\n"
-				.."- 進入"..COLORS_KWords2_tw.Fury_i_rgb_tw.."狀態。\n"
-				.."- {crit_chance:%s} "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，持續 {duration:%s} 秒。\n"
-				.."- 擊殺敵人可延長 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 的持續時間。"
-				..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_rgb_tw)),
+		{"loc_talent_zealot_fanatic_rage_desc"}, {"zh-tw"},
+			loc_text("{radius:%s} "..COLORS_Numbers.n_meter_rgb.." 內擊殺 {max_stacks:%s} 名敵人，\n"
+			.."獲得以下效果：\n"
+			.."- 進入"..COLORS_KWords2_tw.Fury_i_rgb_tw.."狀態。\n"
+			.."- {crit_chance:%s} "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，持續 {duration:%s} 秒。\n"
+			.."- 擊殺敵人可延長 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 的持續時間。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_rgb_tw)),
 
 	--[+ Keystone 1-1 - Stalwart +]--
 	create_template("talent_tree_zea_keys1_001_desc_en",
@@ -2855,10 +2855,10 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	--[+ Traditional Chinese - 迅疾狂熱 +]--
 	-- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
 	create_template("talent_tree_zea_keys1_003_desc_tw",
-			{"loc_talent_zealot_shared_fanatic_rage_desc"}, {"zh-tw"},
-				loc_text(""..COLORS_Numbers.n_25_rgb.." 層 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 時， "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友獲得：\n"
-				.."- "..COLORS_KWords_tw.Crit_chance_rgb_tw.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." 。"
-				..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_3_rgb_tw)),
+		{"loc_talent_zealot_shared_fanatic_rage_desc"}, {"zh-tw"},
+			loc_text(""..COLORS_Numbers.n_25_rgb.." 層 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 時， "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友獲得：\n"
+			.."- "..COLORS_KWords_tw.Crit_chance_rgb_tw.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." 。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_3_rgb_tw)),
 
 	--[+ Keystone 1-4 - Righteous Warrior +]--
 	create_template("talent_tree_zea_keys1_004_desc_en",
@@ -2875,8 +2875,8 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	--[+ Traditional Chinese - 正義勇士 +]--
 	-- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
 	create_template("talent_tree_zea_keys1_004_desc_tw",
-			{"loc_talent_zealot_fanatic_rage_improved_desc"}, {"zh-tw"},
-				loc_text("{talent_name:%s} 額外賦予 {crit_chance:%s} "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_4_rgb_tw)),
+		{"loc_talent_zealot_fanatic_rage_improved_desc"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 額外賦予 {crit_chance:%s} "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_4_rgb_tw)),
 
 	--[+ Keystone 2 - Martyrdom +]--
 	create_template("talent_tree_zea_keys2_000_desc_en",
@@ -2890,6 +2890,14 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys2_000_desc_ru",
 		{"loc_talent_zealot_martyrdom_desc"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя за каждую потерянную "..COLORS_KWords_ru.Wound_u_rgb_ru..". Складывается вплоть до {max_wounds:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_rgb_ru)),
+	--[+ Traditional Chinese - 殉道 +]--
+	-- 每個缺損的傷口使你獲得{damage:%s}近戰傷害，最多計算{max_wounds:%s}個缺損傷口。
+	create_template("talent_tree_zea_keys2_000_desc_tw",
+		{"loc_talent_zealot_martyrdom_desc"}, {"zh-tw"},
+			loc_text(
+				"每失去一格 "..COLORS_KWords_tw.Wound_u_rgb_tw.." 獲得：\n"
+				.."-  {damage:%s}  "..COLORS_KWords_tw.Damage_melee_rgb_tw.." ，上限 {max_wounds:%s} 層。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_rgb_tw)),
 
 	--[+ Keystone 2-1 - I Shall Not Fall +]--
 	create_template("talent_tree_zea_keys2_001_desc_en",
@@ -2903,6 +2911,13 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys2_001_desc_ru",
 		{"loc_talent_zealot_martyrdom_grants_toughness_desc"}, {"ru"},
 			loc_text("{toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." даётся талантом {talent_name:%s} за каждую потерянную "..COLORS_KWords_ru.Wound_u_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_1_rgb_ru)),
+	--[+ Traditional Chinese - 不滅意志 +]--
+	--根據傷口治癒數量，{talent_name:%s}將提供{toughness_damage_reduction:%s}韌性減傷效果。
+	create_template("talent_tree_zea_keys2_001_desc_tw",
+		{"loc_talent_zealot_martyrdom_grants_toughness_desc"}, {"zh-tw"},
+			loc_text("每失去一格 "..COLORS_KWords_tw.Wound_u_rgb_tw.." {talent_name:%s} 提供：\n"
+				.."- {toughness_damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_1_rgb_tw)),
 
 	--[+ Keystone 2-2 - Maniac +]--
 	create_template("talent_tree_zea_keys2_002_desc_en",
@@ -2916,6 +2931,12 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys2_002_desc_ru",
 		{"loc_talent_zealot_attack_speed_per_martyrdom_desc"}, {"ru"},
 			loc_text("{attack_speed:%s} к скорости атаки даётся талантом {talent_name:%s} за каждую потерянную "..COLORS_KWords_ru.Wound_u_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_2_rgb_ru)),
+	--[+ Traditional Chinese - 狂燥之心 +]--
+	--{talent_name:%s}還會使每個缺損傷口為你獲得{attack_speed:%s}攻擊速度。
+	create_template("talent_tree_zea_keys2_002_desc_tw",
+		{"loc_talent_zealot_attack_speed_per_martyrdom_desc"}, {"zh-tw"},
+			loc_text("每失去一格 "..COLORS_KWords_tw.Wound_u_rgb_tw.." {talent_name:%s} 提供：\n"
+			.."- {attack_speed:%s} 攻擊速度。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_2_rgb_tw)),
 
 	--[+ Keystone 3 - Inexorable Judgement +]--
 	create_template("talent_tree_zea_keys3_000_desc_en",
@@ -2929,6 +2950,18 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys3_000_desc_ru",
 		{"loc_talent_zealot_quickness_desc"}, {"ru"},
 			loc_text("Движение даёт вам заряды "..COLORS_KWords_ru.Momentum_rgb_ru..". Суммируется {max_stacks:%s} раз.\nПри попадании по врагу, вы тратите все заряды "..COLORS_KWords_ru.Momentum_rgb_ru.." и за каждый заряд получаете на {duration:%s} секунд:\n{damage_modifier:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n{melee_attack_speed:%s} к скорости атаки в ближнем бою,\n{ranged_attack_speed:%s} к скорости атаки в дальнем бою."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_rgb_ru)),
+	--[+ Traditional Chinese - 命定審判 +]--
+	--移動積累勢能（可疊加{max_stacks:%s}層）。\n\n命中後，消耗所有勢能，每層賦予{melee_attack_speed:%s}近戰攻擊速度，{ranged_attack_speed:%s}遠端攻擊速度和{damage_modifier:%s}傷害，持續{duration:%s}秒。
+	create_template("talent_tree_zea_keys3_000_desc_tw",
+		{"loc_talent_zealot_quickness_desc"}, {"zh-tw"},
+			loc_text("移動時會獲得 "..COLORS_KWords2_tw.Momentum_rgb_tw.."。\n"
+			.."- 上限 {max_stacks:%s} 層。\n"
+			.."- 命中敵人將消耗全部 "..COLORS_KWords2_tw.Momentum_rgb_tw.." 每層提供：\n"
+			.."-- {damage_modifier:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
+			.."-- {melee_attack_speed:%s} 近戰攻擊速度。\n"
+			.."-- {ranged_attack_speed:%s} 遠程攻擊速度。\n"
+			.."-- 持續時間：{duration:%s} 秒。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_rgb_tw)),
 
 	--[+ Keystone 3-1 - Retributor's Stance +]--
 	create_template("talent_tree_zea_keys3_001_desc_en",
@@ -2942,6 +2975,11 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys3_001_desc_ru",
 		{"loc_talent_zealot_quickness_toughness_per_stack_desc"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстановливается за каждый потраченный заряд "..COLORS_KWords_ru.Momentum_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_1_rgb_ru)),
+	--[+ Traditional Chinese - 懲戒者姿態 +]--
+	--每消耗一層勢能恢復{toughness:%s}韌性。
+	create_template("talent_tree_zea_keys3_001_desc_tw",
+	{"loc_talent_zealot_quickness_toughness_per_stack_desc"}, {"zh-tw"},
+		loc_text("每消耗一層 "..COLORS_KWords2_tw.Momentum_rgb_tw.." 恢復 {toughness:%s} "..COLORS_KWords_tw.Toughness_m_rgb_tw.."。"..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_1_rgb_tw)),
 
 	--[+ Keystone 3-2 - Inebriate's Poise +]--
 	create_template("talent_tree_zea_keys3_002_desc_en",
@@ -2955,6 +2993,11 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys3_002_desc_ru",
 		{"loc_talent_zealot_quickness_dodge_stacks_desc"}, {"ru"},
 			loc_text("{stacks:%s} заряда "..COLORS_KWords_ru.Momentum_rgb_ru.." вы получаете при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_2_rgb_ru)),
+	--[+ Traditional Chinese - 飄忽身形 +]--
+	-- 成功閃避積累{stacks:%s}層勢能。
+	create_template("talent_tree_zea_keys3_002_desc_tw",
+		{"loc_talent_zealot_quickness_dodge_stacks_desc"}, {"zh-tw"},
+			loc_text("成功閃避時，獲得 {stacks:%s} 層 "..COLORS_KWords2_tw.Momentum_rgb_tw.." 。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_2_rgb_tw)),
 
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - Disdain +]--
