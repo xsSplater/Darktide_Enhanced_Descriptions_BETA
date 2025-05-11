@@ -222,6 +222,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Scriers_gaze_rgb_tw = iu_actit("占卜者的凝視", tal_col)
 	local Stun_gren_rgb_tw = iu_actit("眩暈手榴彈", tal_col)
 	local Frag_gren_rgb_tw = iu_actit("破片手榴彈", tal_col)
+	local Krak_gren_rgb_tw = iu_actit("穿甲手榴彈", tal_col)
 	local Fragmentation_gren_rgb_tw = iu_actit("破片手榴彈", tal_col)
 
 --[+++難度(DIFFICULTY)+++]--
@@ -262,6 +263,7 @@ return {
 	Scriers_gaze_rgb_tw = Scriers_gaze_rgb_tw,
 	Stun_gren_rgb_tw = Stun_gren_rgb_tw,
 	Frag_gren_rgb_tw = Frag_gren_rgb_tw,
+	Krak_gren_rgb_tw = Krak_gren_rgb_tw,
 	Fragmentation_gren_rgb_tw = Fragmentation_gren_rgb_tw,
 
 	-- Bleed_rgb_tw = Bleed_rgb_tw,

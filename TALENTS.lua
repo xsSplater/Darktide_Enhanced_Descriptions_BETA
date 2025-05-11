@@ -43,7 +43,7 @@ if enhanced_descriptions_enabled2 then
 	--[+ Russian +]--
 	TALENTS_Enh_desc2_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/TALENTS_Enh_desc2_ru")
 	--[+ Traditional Chinese +]--
-	-- TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc2_tw")
+	TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc2_tw")
 	--[+ Simplified Chinese +]--
 	TALENTS_Enh_desc2_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc2_zh_cn")
 else
@@ -53,7 +53,7 @@ else
 	--[+ Russian +]--
 	TALENTS_Enh_desc2_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/NULL/TALENTS_Enh_desc2_ru_null")
 	--[+ Traditional Chinese +]--
-	-- TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/NULL/TALENTS_Enh_desc2_tw_null")
+	TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/NULL/TALENTS_Enh_desc2_tw_null")
 	--[+ Simplified Chinese +]--
 	TALENTS_Enh_desc2_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc2_zh_cn_null")
 end
@@ -2790,7 +2790,6 @@ local localization_templates = {
 			loc_text("Когда {max_stacks:%s} врагов погибает в радиусе {radius:%s} метров от вас, вы входите в режим "..COLORS_KWords_ru.Fury_i_rgb_ru.." и получаете {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на {duration:%s} секунд. Длительность действия "..COLORS_KWords_ru.Fury_i_rgb_ru.." можно обновить, убивая врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_rgb_ru)),
 	--[+ Traditional Chinese - 熾熱虔誠 +]--
 	--狂怒時獲得{crit_chance:%s}暴擊幾率，持續{duration:%s}秒。{radius:%s}公尺範圍內有{max_stacks:%s}個敵人死亡時觸發狂怒。
-
 	create_template("talent_tree_zea_keys1_000_desc_tw",
 		{"loc_talent_zealot_fanatic_rage_desc"}, {"zh-tw"},
 			loc_text("{radius:%s} "..COLORS_Numbers.n_meter_rgb.." 內擊殺 {max_stacks:%s} 名敵人，\n"
@@ -3457,6 +3456,11 @@ local localization_templates = {
 	create_template("talent_tree_vet_blitz_000_desc_ru",
 		{"loc_ability_frag_grenade_description"}, {"ru"},
 			loc_text("Вы бросаете "..COLORS_KWords_ru.Fragmentation_gren_rgb_ru..", которая взрывается после "..COLORS_Numbers.n_1_7_rgb.." секунды."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_0_rgb_ru)),
+	--[+ Traditional Chinese - 破片手雷 +]--
+	--破片手雷，在引信短暫燃燒後爆炸。
+	create_template("talent_tree_vet_blitz_000_desc_tw",
+		{"loc_ability_frag_grenade_description"}, {"zh-tw"},
+			loc_text("投擲一顆 "..COLORS_KWords2_tw.Fragmentation_gren_rgb_tw.." ，在 "..COLORS_Numbers.n_1_7_rgb..COLORS_Numbers.n_second_rgb.." 後爆炸。\n" ..TALENTS_Enh_desc2_tw.ED_VET_Blitz_0_rgb_tw)),
 
 	--[+ Blitz 1 - Shredder Frag Grenade +]--
 	create_template("talent_tree_vet_blitz1_000_desc_en",
@@ -3470,6 +3474,16 @@ local localization_templates = {
 	create_template("talent_tree_vet_blitz1_000_desc_ru",
 		{"loc_talent_veteran_grenade_apply_bleed_desc"}, {"ru"},
 			loc_text("Вы бросаете "..COLORS_KWords_ru.Frag_gren_rgb_ru..", которая взрывается после "..COLORS_Numbers.n_1_7_rgb.." секунды. Накладывает {stacks:%s} зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." на всех поражённых взрывом врагов, нанося "..COLORS_KWords_ru.Dmg_rgb_ru.." с течением времени. До "..COLORS_Numbers.n_16_rgb.." зарядов "..COLORS_KWords_ru.Bleed_rgb_ru..".\nЭто улучшенная версия таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_1_rgb_ru)),
+	--[+ Traditional Chinese - 粉碎者破片手雷 +]--
+	-- 投擲一枚破片手雷，手雷會在短暫延時後爆炸，使被擊中的所有敵人疊加{stacks:%s}層流血，造成持續傷害。\n\n該天賦為{talent_name:%s}的增強版。
+	create_template("talent_tree_vet_blitz1_000_desc_tw",
+		{"loc_talent_veteran_grenade_apply_bleed_desc"}, {"zh-tw"},
+			loc_text("投擲一顆 "..COLORS_KWords2_tw.Frag_gren_rgb_tw.." ，在 "..COLORS_Numbers.n_1_7_rgb..COLORS_Numbers.n_second_rgb.." 後爆炸。\n"
+			.."\n"
+			.."- 施加 {stacks:%s} 層 "..COLORS_KWords_tw.Bleed_rgb_tw.."，造成 "..COLORS_KWords_tw.Dmg_c_rgb_tw.." 。\n"
+			.."- 上限 "..COLORS_Numbers.n_16_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.."。\n\n"
+			.."這是 {talent_name:%s} 天賦的強化版本。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Blitz_1_rgb_tw)),
 
 	--[+ Blitz 2 - Krak Grenade +]--
 	create_template("talent_tree_vet_blitz2_000_desc_en",
@@ -3483,6 +3497,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_blitz2_000_desc_ru",
 		{"loc_talent_ability_krak_grenade_desc"}, {"ru"},
 			loc_text("Вы бросаете гранату, которая взрывается после "..COLORS_Numbers.n_2_rgb.." секунд и наносит разрушительный "..COLORS_KWords_ru.Dmg_rgb_ru..". Граната прилипает к панцирной и противоосколочной броне, а также к несгибаемым врагам."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_2_rgb_ru)),
+	--[+ Traditional Chinese - 穿甲手雷 +]--
+	-- 投擲一枚能造成毀滅性傷害的手雷。該手雷會粘附在身著防彈護甲、甲殼護甲和不屈的敵人身上。
+	create_template("talent_tree_vet_blitz2_000_desc_tw",
+		{"loc_talent_ability_krak_grenade_desc"}, {"zh-tw"},
+			loc_text("投擲一顆 "..COLORS_KWords2_tw.Krak_gren_rgb_tw.." ，在 "..COLORS_Numbers.n_2_rgb..COLORS_Numbers.n_second_rgb.." 後爆炸，\n"
+			.."造成毀滅性的"..COLORS_KWords_tw.Dmg_rgb_tw.."。\n"
+			.."- 可黏附在防彈、甲殼、不屈敵人身上。" ..TALENTS_Enh_desc2_tw.ED_VET_Blitz_2_rgb_tw)),
 
 	--[+ Blitz 3 - Smoke Grenade +]--
 	create_template("talent_tree_vet_blitz3_000_desc_en",
@@ -3496,6 +3517,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_blitz3_000_desc_ru",
 		{"loc_ability_smoke_grenade_description"}, {"ru"},
 			loc_text("Вы бросаете гранату, которая взрывается после "..COLORS_Numbers.n_1_5_rgb.." секунды и создаёт облако дыма на {duration:%s} секунд. Дым блокирует линию обзора большинства врагов и снижает расстояние обзора врагов внутри него."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_3_rgb_ru)),
+	--[+ Traditional Chinese - 煙霧手雷 +]--
+	-- 投擲一枚手雷，釋放持續{duration:%s}秒的煙霧。煙霧能阻擋大部分敵人的視線並降低煙霧內敵人的可視範圍。
+	create_template("talent_tree_vet_blitz3_000_desc_tw",
+		{"loc_ability_smoke_grenade_description"}, {"zh-tw"},
+			loc_text("投擲一顆手榴彈，將在 "..COLORS_Numbers.n_1_5_rgb.." 秒後爆炸，\n"
+			.."- 在地面產生持續 {duration:%s} 秒的煙霧。\n"
+			.."- 煙霧遮蔽大多數敵人的視線。\n"
+			.."- 降低敵人在煙霧中的視野距離。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Blitz_3_rgb_tw)),
 
 --[+ +AURA - АУРА+ +]--
 	--[+ Aura 0 - Scavenger +]--
