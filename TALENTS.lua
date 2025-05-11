@@ -3540,6 +3540,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_aura_000_desc_ru",
 		{"loc_talent_veteran_elite_kills_grant_ammo_coop_cd_desc"}, {"ru"},
 			loc_text("{ammo:%s} боеприпасов пополняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..", когда кто-либо из вас убивает элитного врага или специалиста. Это может происходить раз в {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Aura_0_rgb_ru)),
+	--[+ Traditional Chinese - 拾荒者 +]--
+	--每次你擊殺精英或專家敵人，你和協同中的盟友都能獲得{ammo:%s}發彈藥。此效果每{cooldown:%s}秒可觸發一次。
+	create_template("talent_tree_vet_aura_000_desc_tw",
+		{"loc_talent_veteran_elite_kills_grant_ammo_coop_cd_desc"}, {"zh-tw"},
+			loc_text("當你或"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友擊殺菁英或專家時，\n"
+			.."- 每人回復 {ammo:%s} 發彈藥。\n"
+			.."- 每 {cooldown:%s} 秒可觸發一次。" ..TALENTS_Enh_desc2_tw.ED_VET_Aura_0_rgb_tw)),
 
 	--[+ Aura 1 - Survivalist +]--
 	create_template("talent_tree_vet_aura_001_desc_en",
@@ -3553,6 +3560,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_aura_001_desc_ru",
 		{"loc_talent_veteran_elite_kills_grant_ammo_coop_improved_cd_desc"}, {"ru"},
 			loc_text("{ammo_2:%s} боеприпасов пополняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..", когда кто-либо из вас убивает элитного врага или специалиста. Это может происходить раз в {cooldown:%s} секунд.\n\nЭто улучшенная версия ауры {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Aura_1_rgb_ru)),
+	--[+ Traditional Chinese - 生存專家 +]--
+	-- 每次你擊殺精英或專家敵人，你和協同中的盟友都能獲得{ammo_2:%s}發彈藥。此效果每{cooldown:%s}秒可觸發一次。\n\n此為{talent_name:%s}的強化版。
+	create_template("talent_tree_vet_aura_001_desc_tw",
+		{"loc_talent_veteran_elite_kills_grant_ammo_coop_improved_cd_desc"}, {"zh-tw"},
+			loc_text("當你或"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友擊殺菁英或專家時，\n"
+			.."- 每人回復 {ammo_2:%s} 發彈藥。\n"
+			.."- 每 {cooldown:%s} 秒可觸發一次。\n\n"
+			.. "這是光環 {talent_name:%s} 的強化版本。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Aura_1_rgb_tw)),
 
 	--[+ Aura 2 - Fire Team +]--
 	create_template("talent_tree_vet_aura_002_desc_en",
@@ -3566,6 +3582,11 @@ local localization_templates = {
 	create_template("talent_tree_vet_aura_002_desc_ru",
 		{"loc_talent_veteran_damage_coherency_desc"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Aura_2_rgb_ru)),
+	--[+ Traditional Chinese - 火力小分隊 +]--
+	--你和協同中的盟友傷害增加{damage:%s}。
+	create_template("talent_tree_vet_aura_002_desc_tw",
+		{"loc_talent_veteran_damage_coherency_desc"}, {"zh-tw"},
+			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友獲得 {damage:%s} 的"..COLORS_KWords_tw.Damage_rgb_tw.."。" ..TALENTS_Enh_desc2_tw.ED_VET_Aura_2_rgb_tw)),
 
 	--[+ Aura 3 - Close and Kill +]--
 	create_template("talent_tree_vet_aura_003_desc_en",
@@ -3579,6 +3600,12 @@ local localization_templates = {
 	create_template("talent_tree_vet_aura_003_desc_ru",
 		{"loc_talent_veteran_movement_speed_coherency_desc"}, {"ru"},
 			loc_text("{movement_speed:%s} к скорости движения для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Aura_3_rgb_ru)),
+	--[+ Traditional Chinese - 抵近殺敵 +]--
+	-- 你和協同中的盟友移動速度增加{movement_speed:%s}。
+--[+ Russian +]-- 接近並擊殺
+	create_template("talent_tree_vet_aura_003_desc_tw",
+		{"loc_talent_veteran_movement_speed_coherency_desc"}, {"zh-tw"},
+			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友獲得 {movement_speed:%s} 的移動速度加成。" ..TALENTS_Enh_desc2_tw.ED_VET_Aura_3_rgb_tw)),
 
 --[+ +ABILITIES+ +]--
 	--[+ Ability 0 - Volley Fire +]--

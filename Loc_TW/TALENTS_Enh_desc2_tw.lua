@@ -24,7 +24,7 @@ local doesnt_interact_w_c_a_r_from_curio = "- 不會與珍品提供的 "..COLORS
 local doesnt_stack_w_z_same_aura_ogr = "- 無法與其他歐格林的相同光環疊加。"
 local doesnt_stack_w_z_same_aura_vet = "- 無法與其他老兵的相同光環疊加。"
 local procs_add_conc_stim_rem_cd_red = "- 此觸發效果會額外疊加在專注興奮劑的每秒縮短3秒冷卻時間效果之上。"
-local stacks_add_w_oth_dmg = "- 與其他傷害增益以加法疊加，並與武器祝福提供的威力等級加成以乘法疊加。"
+local stacks_add_w_oth_dmg = "- 與其他傷害增益以加法疊加。\n- 與武器祝福威力乘法疊加。"
 local stacks_add_w_oth_rend_brit = "- 與其他撕裂增益，以及敵人身上的脆弱減益以加法疊加。"
 local stacks_mult_w_other_dmg_red_buffs = "- 與其他傷害減免增益以乘法疊加。"
 local this_also_incr_speed_load_com_shotg = "- 此效果同時提升戰鬥霰彈槍的特殊裝填動作速度。"
@@ -114,29 +114,50 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ +AURA+ +]--
 	--[+ Aura 0 - Scavenger(拾荒者) +]--
 	local ED_VET_Aura_0_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		doesnt_stack_w_z_same_aura_vet.."，若有多名老兵則分別回復各自的彈藥量。",
+		"\n",
+		doesnt_stack_w_z_same_aura_vet,
+		"- 有多名老兵則分別回復各自的彈藥量。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 1 - Survivalist(生存專家) +]--
 	local ED_VET_Aura_1_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		doesnt_stack_w_z_same_aura_vet.."，若有多名老兵則分別回復各自的彈藥量。",
-		"- 例如，若武器備彈量為180發：首次觸發時回復180x0.01=1.8發，向下取整為1發；留下0.8發至下次觸發。第二次觸發時回復(180x0.01)+0.8=2.6發，向下取整為2發；再留0.6發到下次觸發，如此循環。也就是第一次觸發回復1發，接下來四次觸發各回復2發，第五次後又回復1發，如此往復。",
+		"\n",
+		doesnt_stack_w_z_same_aura_vet,
+		"- 有多名老兵則分別回復各自的彈藥量。",
+		"",
+		"- 回彈公式：",
+		"-- 備彈量 × 1% = 回彈量（包含小數）。",
+		"-- 回彈量向下取整，保留餘數下次累加。",
+		"",
+		"- 範例：武器備彈量為180發",
+		"- 因此每一次回彈量基礎為：",
+		"-- 180 × 0.01 = 1.8 發，",
+		"",
+		"-- 回彈流程",
+		"- 第1次回復 0 + 1.8 發（留 0.8 發）。",
+		"- 第2次回復 0.8 + 1.8 發（留 0.6 發）。",
+		"- 第3次回復 0.6 + 1.8 發（留 0.4 發）。",
+		"- 第4次回復 0.4 + 1.8 發（留 0.2 發）。",
+		"- 第5次回復 0.2 + 1.8 發（留 0.0 發）。",
+		"-- 然後重新進入循環。"
+		-- "- 例如，若武器備彈量為180發：首次觸發時回復180x0.01=1.8發，向下取整為1發；留下0.8發至下次觸發。第二次觸發時回復(180x0.01)+0.8=2.6發，向下取整為2發；再留0.6發到下次觸發，如此循環。也就是第一次觸發回復1發，接下來四次觸發各回復2發，第五次後又回復1發，如此往復。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Fire Team(火力小分隊) +]--
 	local ED_VET_Aura_2_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
+		"\n",
 		stacks_add_w_oth_dmg,
-		doesnt_stack_w_z_same_aura_vet.."。",
+		doesnt_stack_w_z_same_aura_vet,
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 3 - Close and Kill(抵近殺敵) +]--
 	local ED_VET_Aura_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 與「滲透」、「不拋棄不放棄」、小型移動速度天賦，以及武器祝福「提速的移動速度加成採加法疊加。",
-		doesnt_stack_w_z_same_aura_vet..".",
+		"- 與以下移動速度採加法疊加：",
+		"- 滲透、不拋棄不放棄、",
+		"- 小型移動天賦、提速(武器祝福)",
+		"",
+		doesnt_stack_w_z_same_aura_vet,
 	}, "\n"), enhdesc_col)
 
 --[+ +ABILITIES+ +]--
