@@ -1,3 +1,5 @@
+[![Darktide](https://global-uploads.webflow.com/6346a2e14dce674426be40ac/637f9b5a8de2a3c4122f0291_6346ea11b9acfa58c8f5a014_Darktide_Logo_2022-2.png)](https://www.playdarktide.com)
+
 # ENHANCED DESCRIPTIONS
 [![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 
