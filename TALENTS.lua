@@ -43,7 +43,7 @@ if enhanced_descriptions_enabled2 then
 	--[+ Russian +]--
 	TALENTS_Enh_desc2_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/TALENTS_Enh_desc2_ru")
 	--[+ Traditional Chinese +]--
-	-- TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc2_tw")
+	TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/TALENTS_Enh_desc2_tw")
 	--[+ Simplified Chinese +]--
 	TALENTS_Enh_desc2_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/TALENTS_Enh_desc2_zh_cn")
 else
@@ -53,7 +53,7 @@ else
 	--[+ Russian +]--
 	TALENTS_Enh_desc2_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/NULL/TALENTS_Enh_desc2_ru_null")
 	--[+ Traditional Chinese +]--
-	-- TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/NULL/TALENTS_Enh_desc2_tw_null")
+	TALENTS_Enh_desc2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/NULL/TALENTS_Enh_desc2_tw_null")
 	--[+ Simplified Chinese +]--
 	TALENTS_Enh_desc2_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc2_zh_cn_null")
 end
@@ -98,7 +98,7 @@ COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr"
 	--[+ Russian +]--
 COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
 	--[+ Traditional Chinese +]--
--- COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
+COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
 	--[+ Simplified Chinese +]--
 COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
 
@@ -328,7 +328,7 @@ local localization_templates = {
 	create_template("talent_tree_main_mods_002_tw",
 		{"loc_glossary_talent_keystone_modifier"}, {"zh-tw"},
 			loc_text("鑰石修改器")),
-			--[+ Simplified Chinese - 楔石修正 +]--		
+			--[+ Simplified Chinese - 楔石修正 +]--
 
 --[+ +SELECTING THIS...+ +]--
 	-- create_template("talent_tree_main_sel_000_en",
