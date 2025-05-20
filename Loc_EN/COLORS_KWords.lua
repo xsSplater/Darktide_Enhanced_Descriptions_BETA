@@ -43,6 +43,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++Cleave++]--
 	local clv_col = Color[mod:get("cleave_text_colour")](255, true) -- Do not translate this line!
 	local Cleave_rgb = iu_actit("Cleave", clv_col)
+	local Cleaved_rgb = iu_actit("Cleaved", clv_col)
 	local Cleaving_rgb = iu_actit("Cleaving", clv_col)
 	--[++Crit Chance/Hit/Damage++]--
 	local crt_col = Color[mod:get("crit_text_colour")](255, true) -- Do not translate this line!
@@ -82,9 +83,9 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local wksp_col = Color[mod:get("weakspot_text_colour")](255, true) -- Do not translate this line!
 	local Weak_spot_rgb = iu_actit("Weak Spot", wksp_col)
 	local Weakspot_rgb = iu_actit("Weakspot", wksp_col)
-	local Weakspothit_rgb = iu_actit("Weak Spot Hit", wksp_col)
-	local Weakspothits_rgb = iu_actit("Weak Spot Hits", wksp_col)
-	local Weakspot_dmg_rgb = iu_actit("Weak Spot Damage", wksp_col)
+	local Weakspothit_rgb = iu_actit("Weakspot Hit", wksp_col)
+	local Weakspothits_rgb = iu_actit("Weakspot Hits", wksp_col)
+	local Weakspot_dmg_rgb = iu_actit("Weakspot Damage", wksp_col)
 --[+++DEBUFFS+++]--
 	--[++Bleed++]--
 	local bld_col = Color[mod:get("bleed_text_colour")](255, true) -- Do not translate this line!
@@ -100,6 +101,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Heat_rgb = iu_actit("Heat", brn_col)
 	--[++Corruption++]--
 	local crpt_col = Color[mod:get("corruption_text_colour")](255, true) -- Do not translate this line!
+	local Corrupted_rgb = iu_actit("Corrupted", crpt_col)
 	local Corruption_rgb = iu_actit("Corruption", crpt_col)
 	local Corruptdmg_rgb = iu_actit("Corruption Damage", crpt_col)
 	--[++Electrocuted++]--
@@ -225,9 +227,11 @@ return {
 	Coherency_rgb = Coherency_rgb,
 	Combat_ability_rgb = Combat_ability_rgb,
 	Combat_ability_cd_rgb = Combat_ability_cd_rgb,
+	Corrupted_rgb = Corrupted_rgb,
 	Corruption_rgb = Corruption_rgb,
 	Corruptdmg_rgb = Corruptdmg_rgb,
 	Cleave_rgb = Cleave_rgb,
+	Cleaved_rgb = Cleaved_rgb,
 	Cleaving_rgb = Cleaving_rgb,
 	Crt_chance_rgb = Crt_chance_rgb,
 	Crit_chance_rgb = Crit_chance_rgb,
