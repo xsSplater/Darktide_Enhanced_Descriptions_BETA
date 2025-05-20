@@ -17,12 +17,13 @@ local iu_actit = InputUtils.apply_color_to_input_text
 
 local ppp___ppp = "\n+++-------------------------------------------------+++"
 COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw") -- Traditional Chinese
-
-local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並清除所有敵人仇恨：若可能的話，近戰敵人會立刻轉而鎖定其他目標，遠程敵人則會停止射擊，然後在可能時再度鎖定。"
+local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除仇恨：\n-- 近戰敵人將仇恨轉移至隊友。\n-- 遠程敵人會停火並換目標。"
 local can_be_refr_dur_active_dur = "- 可以在效果持續期間刷新。"
 local doesnt_interact_w_c_a_r_from_curio = "- 不會與珍品提供的 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 效果互動，因為該效果只會縮短戰鬥技能的最大冷卻時間。"
 local doesnt_stack_w_z_same_aura_ogr = "- 無法與其他歐格林的相同光環疊加。"
 local doesnt_stack_w_z_same_aura_vet = "- 無法與其他老兵的相同光環疊加。"
+local doesnt_stack_w_z_same_talents = "- 無法與其他相同天賦疊加。"
+local stacks_additively_w_z_same_talents = "- 與其他相同天賦採加法疊加。"
 local procs_add_conc_stim_rem_cd_red = "- 此觸發效果會額外疊加在專注興奮劑的每秒縮短3秒冷卻時間效果之上。"
 local stacks_add_w_oth_dmg = "- 與其他傷害增益以加法疊加。\n- 與武器祝福威力乘法疊加。"
 local stacks_add_w_oth_rend_brit = "- 與其他撕裂增益，以及敵人身上的脆弱減益以加法疊加。"
@@ -164,20 +165,25 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Ability 0 - Volley Fire(火力齊射) +]--
 	local ED_VET_Ability_0_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 提升遠程傷害與遠程弱點傷害15%。",
+		-- "- 提升遠程傷害與遠程弱點傷害15%。",
 		"- 與其他相關傷害增益採加法疊加。",
 		"- 使遠程攻擊的踉蹌強度提升50%。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1 - Executioner's Stance(處決者姿態) +]--
 	local ED_VET_Ability_1_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 提供多種增益：",
-		"-- 免疫近戰和遠程攻擊造成的眩暈與減速(Slowdowns)，也免疫壓制。",
-		"-- 老兵的攻擊不會因受擊硬直而被中斷。",
+		"\n",
+		"- 提供下列增益：",
+		"-- 免疫壓制。",
+		"-- 免疫近戰和遠程造成的眩暈與減速。",
+		-- "-- 免疫近戰和遠程攻擊造成的眩暈與減速(Slowdowns)，也免疫壓制。",
+		"-- 攻擊不會因受擊硬直而被中斷。",
 		"-- 武器散射(Spread)降低38%。",
-		"-- 武器後座力(Recoil)降低24%，並將隨機後座改為固定後座模式。",
-		"-- 武器擺動(Sway)降低60%，且視野輕微縮放。",
+		"-- 武器後座力(Recoil)降低24%。",
+		"-- 隨機後座改為固定後座模式。",
+		"-- 武器擺動(Sway)降低60%。",
+		"-- 視野輕微縮放。",
+		"",
 		"- 與其他相關傷害增益採加法疊加。",
 		"- 使遠程攻擊的踉蹌強度提升100%。",
 		"- 若老兵遭控場則此效果提前結束。",
@@ -186,7 +192,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Ability 1-1 - Enhanced Target Priority(目標引導增強) +]--
 	local ED_VET_Ability_1_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 老兵給予隊友的紅框顯示(Outlines)固定維持5秒。",
+		"- 給予隊友的紅框固定維持5秒。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-2 - Counter-Fire(火力反擊) +]--
@@ -197,106 +203,143 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 	--[+ Ability 1-4 - Marksman(鷹眼) +]--
 	local ED_VET_Ability_1_4_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 與其他武器祝福的威力(Power level)增益採加法疊加，並與傷害增益採乘法計算。",
-		"- 「威力增益」表示提升攻擊基礎數值，可同時增進傷害、踉蹌與順劈。",
-		"- 對「滲透」而言，增益會立即生效，但計時會在隱形結束時才開始。",
+		"",
+		"- 與武器威力採加法疊加。",
+		"- 與傷害增益採乘法疊加。",
+		-- "- 與其他武器祝福的威力(Power level)增益採加法疊加，並與傷害增益採乘法計算。",
+		"-"..COLORS_KWords2_tw.Pwr_note_rgb_tw,
+		-- "- 「威力增益」表示提升攻擊基礎數值，可同時增進傷害、踉蹌與順劈。",
+		-- "- 對「滲透」而言，增益會立即生效，但計時會在隱形結束時才開始。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2 - Voice of Command(發號施令) +]--
 	local ED_VET_Ability_2_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 啟動時將老兵的韌性設為100%。",
-		"- 喊聲(Shout)：",
-		"-- 按住技能鍵可顯示喊聲範圍，預覽時可用格擋取消。",
+		"\n",
+		"- 戰吼：",
+		"-- 按住技能可顯示範圍，可用格擋取消。",
 		"-- 半徑：9米。",
 		"-- 範圍內所有敵人都會被踉蹌。",
 		"-- 踉蹌強度隨距離遞減。",
 		"-- 已處於踉蹌的敵人不會再次受到影響。",
-		"-- 針對碾壓者、重錘兵、變種人、收割者、巨獸以及沒有虛空護盾的隊長、雙胞胎，可強制施加重踉蹌2.5秒。",
-		"-- 若老兵處於堡壘面前則不會踉蹌盾兵，除非不是正面。",
+		"-- 對以下單位可強制施加重踉蹌2.5秒。",
+		"--- 碾壓者、重錘兵、變種人、收割者、",
+		"--- 巨獸、無虛空護盾的隊長、雙胞胎。",
+		"--- 堡壘面前則無法踉蹌。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-1 - Duty and Honour(責任與榮譽) +]--
 	local ED_VET_Ability_2_1_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 對老兵本人：「發號施令」除了將韌性設為100%外，還額外提供50點黃韌性(Temporary Toughness)。",
-		"- 若隊友與老兵處於協同範圍內，則在技能啟動時：",
-		"-- 若隊友韌性低於100%，直接回復50點韌性。",
-		"-- 若隊友韌性已達100%或更高，改為額外提供50點黃韌性。",
-		"- 「超凡魅力」可增加此天賦的有效範圍。",
+		"",
+		"- 韌性全滿時，提供50點黃韌性。",
 		"- 老兵自身的額外韌性持續15秒。",
-		"- 可與自身或其他老兵重複施放，並可與狂信徒的「不屈靈魂合唱」提供的黃韌性加法疊加。",
-		"- 此部分額外韌性會像第二條韌性槽，可透過近戰擊殺、相應天賦或武器祝福進行補充。",
+		"",
+		"- 賦予隊友效果：",
+		"-- 韌性低於100%，回復50點韌性。",
+		"-- 韌性達100%，額外提供50點黃韌性。",
+		"",
+		"-「超凡魅力」可增加範圍。",
+		"-- 以下的黃韌可以疊加",
+		"--- 其他老兵的「發號施令」。",
+		"--- 狂信徒的「不屈靈魂合唱」。",
+		"",
+		"- 此部分額外韌性會像第二條韌性槽，",
+		"--可透過擊殺、天賦、武器祝福補充。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-2 - Only In Death Does Duty End(只有死亡，職責才會終結) +]--
 	local ED_VET_Ability_2_2_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
+		"",
 		"- 復活效果不受地形阻隔。",
-		"- 將「發號施令」的有效半徑由9米降至6.03米。",
-		"- 不在此範圍內的隊友無法被復活，無論是否在協同範圍。",
-		"- 也將「發號施令」的最大冷卻時間由30秒增加到45秒。",
-		"- 此額外冷卻會與靈能者光環「先知之眼」、珍品的戰鬥技能冷卻以及任務中的「技能冷卻減少20%」等效果加法疊加。",
-		"- 例如，一名擁有此天賦的老兵在玩「漩渦(Maelstrom)」關卡(-0.2)並配戴三個4%戰鬥技能冷卻珍品(-0.12)，其「發號施令」最大冷卻時間計算方式為30 + 30x(0.5 - 0.32) = 35.4秒。",
+		"- 有效半徑由"..COLORS_Numbers.n_9_rgb..COLORS_Numbers.n_meter_rgb.."降至"..COLORS_Numbers.n_6_03_rgb..COLORS_Numbers.n_meter_rgb.."。",
+		"- 無關協同狀態，範圍外無法被復活。",
+		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 由 "..COLORS_Numbers.n_30_rgb..COLORS_Numbers.n_second_rgb.." 增加到 "..COLORS_Numbers.n_45_rgb..COLORS_Numbers.n_second_rgb.." 。",
+		"",
+		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 可透過下面方式減少。",
+		"- 靈能者光環「先知之眼」。",
+		"- 珍品的戰鬥技能冷卻。",
+		"- 任務「技能冷卻減少20%」。",
+		-- "- 例，一名擁有此天賦的老兵在玩「漩渦(Maelstrom)」關卡(-0.2)並配戴三個4%戰鬥技能冷卻珍品(-0.12)，其「發號施令」最大冷卻時間計算方式為30 + 30x(0.5 - 0.32) = 35.4秒。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-3 - For the Emperor!(為了皇帝！) +]--
 	local ED_VET_Ability_2_3_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 只要在天賦觸發時，隊友處於協同範圍內，便可獲得此增益。",
-		"- 與其他老兵同樣天賦的效果以及其他傷害增益採加法疊加。",
-		"- 與武器祝福等提供的威力(Power level)增益採乘法計算。",
+		"",
+		"- 發動時需再協同範圍內才可獲得增益。",
+		stacks_additively_w_z_same_talents,
+		"- 與武器祝福的威力增益採乘法計算。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3 - Infiltrate(滲透) +]--
 	local ED_VET_Ability_3_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 隱形： "..become_invis_drop_all_enemy_aggro,
-		"-- 進入隱形後仍可能受到傷害。",
-		"-- 下列行為會破除隱形：以近戰攻擊命中敵人、任意遠程攻擊、投擲手雷(快扔、瞄準或拋投)、完成救援/復甦/拉起或解網動作。",
-		"-- 下列行為不會破除隱形：拋投手雷(Underhand)時若未命中敵人、推擊敵人、使用興奮劑(自身或給隊友)、在隱形前丟出的手雷爆炸、已啟動的持續傷害效果(DoT)、操作占卜儀或小遊戲。",
-		"{#color(255, 35, 5)}惡魔宿主不受此效果影響！{#reset()}",
+		"",
+		"- "..COLORS_KWords2_tw.Stealth_rgb_tw.."： ",
+		become_invis_drop_all_enemy_aggro,
+		"",
+		"- 進入隱形後仍可能受到傷害。",
+		"",
+		"- 以下動作會解除隱形：",
+		"-- 近戰攻擊命中敵人、遠程攻擊開火",
+		"-- 投擲手雷、",
+		-- "-- 完成救援/復甦/拉起隊友或掙脫束縛的動作；",
+		"-- 任何協助隊友的動作，",
+		"-- 投擲飛刀只有命中時才會破除隱形。",
+		"",
+		"- 以下動作不會解除隱形：",
+		"-- 推擊敵人、用興奮劑(自用或給隊友)、",
+		"-- 在隱形前丟出去的手雷爆炸、",
+		"-- Dot持續傷害效果、",
+		"-- 操作占卜儀與小遊戲等。",
+		"",
+		"{#color(255, 35, 5)}無法躲避惡魔宿主!{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-1 - Low Profile(低調) +]--
 	local ED_VET_Ability_3_1_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 當隱形結束後，持續10秒套用額外的權重倍率。",
+		"\n",
+		"- 當隱形結束後：",
+		"-- 被攻擊的機率翻倍。",
+		"-- 持續 "..COLORS_Numbers.n_10_rgb..COLORS_Numbers.n_second_rgb.."。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-2 - Overwatch(掩護射擊) +]--
 	local ED_VET_Ability_3_2_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 第二段充能的冷卻，只有在第一段充能結束後才會開始。",
-		"- 同時將「滲透」的最大冷卻由45秒增加至59.85秒。",
-		"- 此額外冷卻與靈能者光環「先知之眼」、珍品的戰鬥技能冷卻以及「技能冷卻減少20%」等效果加法疊加。",
-		"- 例如，一名老兵在「漩渦(Maelstrom)」(-0.2)關卡中並與具有冷卻光環(-0.1)的靈能者組隊，其「滲透」最大冷卻計算方式為45 + 45 x (0.33 - 0.3) = 46.35秒。",
+		"",
+		"- 第二次充能僅在第一次結束後開始。",
+		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 由 "..COLORS_Numbers.n_45_rgb..COLORS_Numbers.n_second_rgb.." 增加到 "..COLORS_Numbers.n_59_85_rgb..COLORS_Numbers.n_second_rgb.." 。",
+		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 可透過下面方式減少。",
+		"- 靈能者光環「先知之眼」。",
+		"- 珍品的戰鬥技能冷卻。",
+		"- 任務「技能冷卻減少20%」。",
+		-- "- 例如，一名老兵在「漩渦(Maelstrom)」(-0.2)關卡中並與具有冷卻光環(-0.1)的靈能者組隊，其「滲透」最大冷卻計算方式為45 + 45 x (0.33 - 0.3) = 46.35秒。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-3 - Hunter's Resolve(獵手決意) +]--
 	local ED_VET_Ability_3_3_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 10秒效果會在隱形結束後才開始計時。",
+		"\n",
+		"- "..COLORS_Numbers.n_10_rgb..COLORS_Numbers.n_second_rgb.." 效果會在隱形結束後才開始計時。",
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-4 - Surprise Attack(突襲) +]--
 	local ED_VET_Ability_3_4_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 5秒效果會在隱形結束後才開始計時。",
+		"\n",
+		"- "..COLORS_Numbers.n_5_rgb..COLORS_Numbers.n_second_rgb.." 效果會在隱形結束後才開始計時。",
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-5 - Close Quarters Killzone(肉搏戰) +]--
 	local ED_VET_Ability_3_5_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 對「滲透」而言，增益會立即生效，但計時會在隱形結束時才開始。",
-		"- 超過12.5米後，傷害增益會隨距離線性衰減，至30米時歸0：",
+		"\n",
+		"- 使用「滲透」時，",
+		"-- 增益立即生效，",
+		"-- 但計時在隱形結束才開始。",
+		"",
+		"- 傷害增益會隨距離線性衰減，",
 		"_______________________________",
 		"距離(m):    1-12.5|   15|   20|   25|   30",
 		"傷害(%):           15| ~13|   ~9|   ~4|    0",
 		"_______________________________",
+		"",
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 

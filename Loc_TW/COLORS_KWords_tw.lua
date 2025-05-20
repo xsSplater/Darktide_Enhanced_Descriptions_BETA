@@ -16,6 +16,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++健康(Health)++]--
 	local hlth_col = Color[mod:get("health_text_colour")](255, true)
 	local Health_rgb_tw = iu_actit("生命", hlth_col)
+	local Health_rgb_m_tw = iu_actit("最大生命", hlth_col) -- max
 	local Wound_rgb_tw = iu_actit("傷痕", hlth_col)
 	local Wounds_rgb_tw = iu_actit("傷痕", hlth_col)
 	local Wound_u_rgb_tw = iu_actit("傷痕", hlth_col)
@@ -29,6 +30,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++耐力(Stamina)++]--
 	local stam_col = Color[mod:get("stamina_text_colour")](255, true)
 	local Stamina_rgb_tw = iu_actit("耐力", stam_col)
+	local Stamina_rgb_m_tw = iu_actit("最大耐力", stam_col) -- max
 	local Stamina_se_rgb_tw = iu_actit("衝刺效率", stam_col) -- Sprint Efficiency
 	local Stamina_c_r_rgb_tw = iu_actit("耐力消耗", stam_col) -- 需要確認使用情境
 	--[++韌性(Toughness)++]--
@@ -341,6 +343,7 @@ return {
 	-- Fury_rgb_tw = Fury_rgb_tw,
 	-- Fury_i_rgb_tw = Fury_i_rgb_tw,
 	Health_rgb_tw = Health_rgb_tw,
+	Health_rgb_m_tw = Health_rgb_m_tw,
 	Wound_rgb_tw = Wound_rgb_tw,
 	Wounds_rgb_tw = Wounds_rgb_tw,
 	Wound_u_rgb_tw = Wound_u_rgb_tw,
@@ -375,6 +378,7 @@ return {
 	Staggered_rgb_tw = Staggered_rgb_tw,
 	Staggerr_rgb_tw = Staggerr_rgb_tw,
 	Stamina_rgb_tw = Stamina_rgb_tw,
+	Stamina_rgb_m_tw = Stamina_rgb_m_tw,
 	Stamina_se_rgb_tw = Stamina_se_rgb_tw,
 	Stamina_c_r_rgb_tw = Stamina_c_r_rgb_tw,
 	-- Stealth_rgb_tw = Stealth_rgb_tw,

@@ -1250,7 +1250,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_autopistol1_ext_zh",
 				{"loc_weapon_mark_autopistol_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 
 		--[+ Bolt Pistol - Болт-пистолет +]--
 			--[+ Russian +]

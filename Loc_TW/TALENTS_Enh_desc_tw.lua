@@ -331,7 +331,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Ability 2-1 - Bolstered Shield +]--
 	local ED_PSY_Ability_2_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 第二次充能僅在第一次冷卻結束後開始。",
+		"- 第二次充能僅在第一次結束後開始。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-2 - Enervating Threshold +]--

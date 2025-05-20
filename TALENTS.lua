@@ -3620,6 +3620,16 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil_000_desc_ru",
 		{"loc_ability_veteran_base_ability_desc"}, {"ru"},
 			loc_text("Вы входите в стойку дальнего боя на {duration:%s} секунд. Входя в эту стойку, вы мгновенно экипируете своё оружие дальнего боя и получаете:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою и\n{weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою. Ваш разброс и отдача также значительно уменьшаются.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_0_rgb_ru)),
+	--[+ Traditional Chinese - 火力齊射 +]--
+	--進入遠端姿態{duration:%d}秒後，立即裝備你的遠端武器並將附近的精英和專家敵人認定為優先目標。在此姿態下，你造成的遠程傷害{damage:%d}。
+	create_template("talent_tree_vet_abil_000_desc_tw",
+		{"loc_ability_veteran_base_ability_desc"}, {"zh-tw"},
+			loc_text("立即裝備遠程武器進入戰鬥姿態：\n"
+			.."- {damage:%s} "..COLORS_KWords_tw.Damage_ranged_rgb_tw.."。\n"
+			.."- {weakspot_damage:%s} "..COLORS_KWords_tw.Weakspot_r_dmg_rgb_tw.."。\n"
+			.."- 射擊散佈與後座力大幅降低。\n"
+			.."- 持續 {duration:%s} 秒。\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。" ..TALENTS_Enh_desc2_tw.ED_VET_Ability_0_rgb_tw)),
 
 	--[+ Ability 1 - Executioner's Stance +]--
 	create_template("talent_tree_vet_abil1_000_desc_en",
@@ -3633,6 +3643,24 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil1_000_desc_ru",
 		{"loc_talent_veteran_combat_ability_elite_and_special_outlines_refresh_description"}, {"ru"},
 			loc_text("Вы входите в стойку дальнего боя на {duration:%s} секунд. Входя в эту стойку, вы мгновенно экипируете своё оружие дальнего боя и получаете:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою и\n{weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою. Ваш разброс и отдача также значительно уменьшаются.\nЭлитные враги и специалисты размером с человека в пределах "..COLORS_Numbers.n_50_rgb.." метров от ветерана подсвечиваются на {duration:%s} секунд.\nУбийство подсвеченного врага обновляет активную длительность на {refresh_duration:%s} секунд. Это также обновляет длительность подсветки врагов для ветерана.\nВремя восстановления: {cooldown:%s} секунд.\nЭто улучшенная версия способности {old_talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Ability_1_rgb_ru)),
+	--[+ Traditional Chinese - 處決者姿態 +]--
+	--進入遠程狀態，持續{duration:%s}秒。在遠程狀態下，你會立即裝備遠程武器，造成{damage:%s}遠程傷害和{weakspot_damage:%s}遠程弱點傷害，並大幅減少武器散射和後座力。\n\n還可在{duration:%s}秒內追蹤識別人類大小的精英和專家敵人。\n\n擊殺追蹤中的敵人將使技能效果延長{refresh_duration:%s}秒。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{old_talent_name:%s}的強化版。
+	create_template("talent_tree_vet_abil1_000_desc_tw",
+		{"loc_talent_veteran_combat_ability_elite_and_special_outlines_refresh_description"}, {"zh-tw"},
+			loc_text("立即裝備遠程武器進入戰鬥姿態：\n"
+			.." {damage:%s} "..COLORS_KWords_tw.Damage_ranged_rgb_tw.."。\n"
+			.."- {weakspot_damage:%s} "..COLORS_KWords_tw.Weakspot_r_dmg_rgb_tw.."。\n"
+			.."- 射擊散佈與後座力大幅降低。\n"
+			.."- 持續 {duration:%s} 秒。\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。\n"
+			.."\n"
+			.."- 額外獲得標記狀態：\n"
+			.."-- 自動標記 "..COLORS_Numbers.n_50_rgb..COLORS_Numbers.n_meter_rgb.." 內的人形菁英與專家。\n"
+			.."-- 標記持續 {duration:%s} 秒。\n"
+			.."-- 擊殺被標記的敵人時：\n"
+			.."--- 延長技能效果 {refresh_duration:%s} 秒。\n"
+			.."--- 刷新標記狀態。\n"
+			.."\n這是技能 {old_talent_name:%s} 的強化版本。" ..TALENTS_Enh_desc2_tw.ED_VET_Ability_1_rgb_tw)),
 
 	--[+ Ability 1-1 - Enhanced Target Priority +]--
 	create_template("talent_tree_vet_abil1_001_desc_en",
@@ -3646,6 +3674,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil1_001_desc_ru",
 		{"loc_talent_veteran_combat_ability_coherency_outlines_description"}, {"ru"},
 			loc_text("{talent_name:%s} теперь также подсвечивает всех элитных врагов и специалистов размером с человека и для ваших союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." на {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_1_1_rgb_ru)),
+	--[+ Traditional Chinese - 目標引導增強 +]--
+	-- {talent_name:%s}在{duration:%s}秒內為協同中的盟友顯示精英和專家敵人輪廓。
+	create_template("talent_tree_vet_abil1_001_desc_tw",
+		{"loc_talent_veteran_combat_ability_coherency_outlines_description"}, {"zh-tw"},
+			loc_text("為 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友標記敵人。\n"
+			.."- 可標記人形大小的菁英與專家敵人。\n"
+			.."- 持續 {duration:%s} 秒。" ..TALENTS_Enh_desc2_tw.ED_VET_Ability_1_1_rgb_tw)),
 
 	--[+ Ability 1-2 - Counter-Fire +]--
 	create_template("talent_tree_vet_abil1_002_desc_en",
@@ -3659,6 +3694,14 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil1_002_desc_ru",
 		{"loc_talent_veteran_combat_ability_ranged_enemies_outlines_description"}, {"ru"},
 			loc_text("{talent_name:%s} теперь также подсвечивает других дальнобойных врагов: скабов-охотников, дрегов-охотников и скабов-стрелков.")),
+	--[+ Traditional Chinese - 火力反擊 +]--
+	-- {talent_name:%s}現在顯示所有人形遠端敵人的輪廓。
+	create_template("talent_tree_vet_abil1_002_desc_tw",
+		{"loc_talent_veteran_combat_ability_ranged_enemies_outlines_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 現在會標記以下遠程敵人。\n"
+			.."- 血痂射手、渣滓射手。\n"
+			.."- 血痂獵人、渣滓獵人。\n"
+			.."- 人形大小的菁英與專家敵人。")),
 
 	--[+ Ability 1-3 - The Bigger they Are... +]--
 	create_template("talent_tree_vet_abil1_003_desc_en",
@@ -3672,6 +3715,12 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil1_003_desc_ru",
 		{"loc_talent_veteran_combat_ability_ogryn_outlines_description"}, {"ru"},
 			loc_text("{talent_name:%s} теперь также подсвечивает бастионов, крушителей и жнецов.")),
+	--[+ Traditional Chinese - 敵人越大... +]--
+	-- {talent_name:%s}現在可顯示所有歐格林敵人的輪廓。
+	create_template("talent_tree_vet_abil1_003_desc_tw",
+		{"loc_talent_veteran_combat_ability_ogryn_outlines_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 現在會標示以下敵人：\n"
+			.."- 堡壘、輾壓者、收割者。")),
 
 	--[+ Ability 1-4 - Marksman +]--
 	create_template("talent_tree_vet_abil1_004_desc_en",
@@ -3685,6 +3734,14 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil1_004_desc_ru",
 		{"loc_talent_veteran_ability_marksman_desc"}, {"ru"},
 			loc_text("{power:%s} к "..COLORS_KWords_ru.Strength_rgb_ru.." получают все атаки в "..COLORS_KWords_ru.Weakspot_rgb_ru.." на {duration:%s} секунд после активации "..COLORS_KWords_ru.Combat_ability_rgb_ru..".\n\nПри использовании способности {talent_name:%s}, этот талант начинает действовать после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_1_4_rgb_ru)),
+	--[+ Traditional Chinese - 鷹眼 +]--
+	-- 使用技能後的{duration%s}秒內，命中任意弱點即可獲得{power%s}強度。\n\n使用{talent_name:%s}時，效果將在脫離潛行狀態後生效。
+	create_template("talent_tree_vet_abil1_004_desc_tw",
+		{"loc_talent_veteran_ability_marksman_desc"}, {"zh-tw"},
+			loc_text("使用 "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 後獲得以下效果：\n"
+			.."- "..COLORS_KWords_tw.Weakspothits_rgb_tw.." ， {power:%s} "..COLORS_KWords_tw.Strength_rgb_tw.."，持續 {duration:%s} 秒。\n\n"
+			.."- 使用 {talent_name:%s} 時，在脫離 "..COLORS_KWords2_tw.Stealth_rgb_tw.." 後生效。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Ability_1_4_rgb_tw)),
 
 	--[+ Ability 2 - Voice of Command +]--
 	create_template("talent_tree_vet_abil2_000_desc_en",
@@ -3698,6 +3755,14 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil2_000_desc_ru",
 		{"loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"}, {"ru"},
 			loc_text("Восполняет всю вашу "..COLORS_KWords_ru.Tghnss_rgb_ru.." и "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов в радиусе {range:%s} метров.\n\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_rgb_ru)),
+	--[+ Traditional Chinese - 發號施令 +]--
+	-- 恢復你的韌性並使{range:%s}公尺內敵人暈眩。\n\n基礎冷卻時間{cooldown:%s}秒。
+	create_template("talent_tree_vet_abil2_000_desc_tw",
+		{"loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"}, {"zh-tw"},
+			loc_text("- 瞬間恢復 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 。\n"
+			.."- "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 半徑 {range:%s} 公尺內的所有敵人。\n"
+			.."- 冷卻時間：{cooldown:%s} 秒。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Ability_2_rgb_tw)),
 
 	--[+ Ability 2-1 - Duty and Honour +]--
 	create_template("talent_tree_vet_abil2_001_desc_en",
@@ -3711,6 +3776,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil2_001_desc_ru",
 		{"loc_talent_veteran_combat_ability_increase_and_restore_toughness_to_coherency_description"}, {"ru"},
 			loc_text("{talent_name:%s} теперь также даёт вам и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." на {duration:%s} секунд. Это может повысить ваш максимальный уровень "..COLORS_KWords_ru.Toughness_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_1_rgb_ru)),
+	--[+ Traditional Chinese - 責任與榮譽 +]--
+	--{talent_name:%s}還能為你和協同中的盟友提供{toughness:%s}韌性，持續{duration:%s}秒。此數值可超過你的韌性上限。
+	create_template("talent_tree_vet_abil2_001_desc_tw",
+		{"loc_talent_veteran_combat_ability_increase_and_restore_toughness_to_coherency_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 會賦予 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友以下狀態：\n"
+			.."- {toughness:%s} 點 "..COLORS_KWords_tw.Toughness_rgb_tw.." 。\n"
+			.."- 持續 {duration:%s} 秒。\n"
+			.."- 此效果可暫時提升你的 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Ability_2_1_rgb_tw)),
 
 	--[+ Ability 2-2 - Only In Death Does Duty End +]--
 	create_template("talent_tree_vet_abil2_002_desc_en",
@@ -3724,6 +3798,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil2_002_desc_ru",
 		{"loc_talent_veteran_combat_ability_revives_description"}, {"ru"},
 			loc_text("{talent_name:%s} поднимает сбитых с ног союзников в радиусе действия, но этот радиус уменьшается на {range:%s}, а также увеличивается время "..COLORS_KWords_ru.Ability_cd_rgb_ru.." на {ability_cooldown:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_2_rgb_ru)),
+	--[+ Traditional Chinese - 只有死亡，職責才會終結 +]--
+	-- {talent_name:%s}復活範圍內被擊倒的盟友，但同時範圍將縮小{range%s}，並增加{ability_cooldown:%s}技能冷卻時間。
+	create_template("talent_tree_vet_abil2_002_desc_tw",
+		{"loc_talent_veteran_combat_ability_revives_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 可使範圍內倒地的隊友立即復甦。\n"
+			.."- {#color(255,0,0)}MK 4 型{#reset()}\n"
+			.."- 範圍將減少 {range:%s} 。\n"
+			.."- "..COLORS_KWords_tw.Ability_cd_rgb_tw.."增加 {ability_cooldown:%s} 秒。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Ability_2_2_rgb_tw)),
 
 	--[+ Ability 2-3 - For the Emperor! +]--
 	create_template("talent_tree_vet_abil2_003_desc_en",
@@ -3737,6 +3820,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil2_003_desc_ru",
 		{"loc_talent_veteran_combat_ability_melee_and_ranged_damage_to_coherency_description"}, {"ru"},
 			loc_text("Ваша "..COLORS_KWords_ru.Combat_abil_rgb_ru.." даёт на {duration:%s} секунд вам и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru..":\n{melee_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в ближнем бою и\n{ranged_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_3_rgb_ru)),
+	--[+ Traditional Chinese - 為了皇帝！ +]--
+	-- 你的戰鬥技能賦予你和協同中的盟友{melee_damage:%s}近戰基礎傷害和{ranged_damage:%s}遠端基礎傷害，持續{duration:%s}秒。
+	create_template("talent_tree_vet_abil2_003_desc_tw",
+		{"loc_talent_veteran_combat_ability_melee_and_ranged_damage_to_coherency_description"}, {"zh-tw"},
+			loc_text("你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友獲得：\n"
+			.."- {melee_damage:%s} "..COLORS_KWords_tw.Damage_melee_rgb_tw.." 。\n"
+			.."- {ranged_damage:%s} "..COLORS_KWords_tw.Damage_ranged_rgb_tw.." 。\n"
+			.."- 持續 {duration:%s} 秒。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Ability_2_3_rgb_tw)),
 
 	--[+ Ability 3 - Infiltrate +]--
 	create_template("talent_tree_vet_abil3_000_desc_en",
@@ -3750,6 +3842,18 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil3_000_desc_ru",
 		{"loc_talent_veteran_invisibility_on_combat_ability_desc"}, {"ru"},
 			loc_text("Вы входите в режим "..COLORS_KWords_ru.Stealth_rgb_ru.." на {duration:%s} секунд, восполняя всю "..COLORS_KWords_ru.Tghnss_rgb_ru.." и получая {movement_speed:%s} к скорости движения. Выход из "..COLORS_KWords_ru.Stealth_rgb_ru.." подавляет ближайших врагов. Любые атаки выведут вас из режима "..COLORS_KWords_ru.Stealth_rgb_ru..".\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_rgb_ru)),
+	--[+ Traditional Chinese - 滲透 +]--
+	-- 恢復所有韌性，進入潛行狀態{duration:%s}秒，獲得{movement_speed:%s}移動速度。脫離潛行時會壓制附近敵人。採取攻擊將使你脫離潛行狀態。\n\n脫離潛行後{after_duration%s}秒內會獲得{threat_multiplier:%s}威脅和{tdr%s}韌性減傷。\n\n基礎冷卻時間：{cooldown:%s}秒。
+	create_template("talent_tree_vet_abil3_000_desc_tw",
+		{"loc_talent_veteran_invisibility_on_combat_ability_desc"}, {"zh-tw"},
+			loc_text("進入 "..COLORS_KWords2_tw.Stealth_rgb_tw.." 狀態，並獲得以下狀態：\n"
+			.."- 恢復全部 "..COLORS_KWords_tw.Tghnss_rgb_tw.." 。\n"
+			.."- {movement_speed:%s} 的移動速度。\n"
+			.."- 持續 {duration:%s} 秒。\n"
+			.."\n"
+			.."- 離開 "..COLORS_KWords2_tw.Stealth_rgb_tw.." 時會壓制周圍敵人。\n"
+			.."- 任何攻擊都會脫離 "..COLORS_KWords2_tw.Stealth_rgb_tw.. " 狀態。\n"
+			.."- 冷卻時間：{cooldown:%s}"..COLORS_Numbers.n_second_rgb.." 。" ..TALENTS_Enh_desc2_tw.ED_VET_Ability_3_rgb_tw)),
 
 	--[+ Ability 3-1 - Low Profile +]--
 	create_template("talent_tree_vet_abil3_001_desc_en",
@@ -3763,6 +3867,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil3_001_desc_ru",
 		{"loc_talent_veteran_reduced_threat_after_stealth_desc"}, {"ru"},
 			loc_text("{threat_multiplier:%s} к вероятности выбора врагами вас своей целью на {duration:%s} секунд после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_1_rgb_ru)),
+	--[+ Traditional Chinese - 低調 +]--
+	-- 脫離潛行後{threat_multiplier:%s}威脅，持續{duration:%s}秒。
+	create_template("talent_tree_vet_abil3_001_desc_tw",
+		{"loc_talent_veteran_reduced_threat_after_stealth_desc"}, {"zh-tw"},
+			loc_text("脫離 "..COLORS_KWords2_tw.Stealth_rgb_tw.." 狀態後，\n"
+			.."{duration:%s} 秒內被攻擊的機率降低至 {threat_multiplier:%s}。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Ability_3_1_rgb_tw)),
 
 	--[+ Ability 3-2 - Overwatch +]--
 	create_template("talent_tree_vet_abil3_002_desc_en",
@@ -3776,6 +3887,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil3_002_desc_ru",
 		{"loc_talent_veteran_combat_ability_extra_charge_description"}, {"ru"},
 			loc_text("Вы получаете {charges:%s} заряд "..COLORS_KWords_ru.Combat_ability_rgb_ru..", но на {ability_cooldown:%s} повышается её время "..COLORS_KWords_ru.Cd_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_2_rgb_ru)),
+	--[+ Traditional Chinese - 低調 +]--
+	--你的戰鬥技能獲得{charges:%s}充能，但冷卻時間增加{ability_cooldown:%s}。
+	create_template("talent_tree_vet_abil3_002_desc_tw",
+		{"loc_talent_veteran_combat_ability_extra_charge_description"}, {"zh-tw"},
+		loc_text("獲得 {charges:%s} 次 "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 充能，\n"
+		.."但技能 "..COLORS_KWords_tw.Cd_rgb_tw.." 將增加 {ability_cooldown:%s}"..COLORS_Numbers.n_second_rgb.." 。"
+		..TALENTS_Enh_desc2_tw.ED_VET_Ability_3_2_rgb_tw)),
 
 	--[+ Ability 3-3 - Hunter's Resolve +]--
 	create_template("talent_tree_vet_abil3_003_desc_en",
@@ -3789,6 +3907,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil3_003_desc_ru",
 		{"loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"}, {"ru"},
 			loc_text("{tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." даётся на {duration:%s} секунд способностью {talent_name:%s} после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_3_rgb_ru)),
+	--[+ Traditional Chinese - 獵手決意 +]--
+	-- 脫離潛行後，{talent_name:%s}提供{tdr%s}韌性減傷，持續{duration%s}秒。
+	create_template("talent_tree_vet_abil3_003_desc_tw",
+		{"loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"}, {"zh-tw"},
+			loc_text("離開 "..COLORS_KWords2_tw.Stealth_rgb_tw.." 後，\n"
+			.."- {talent_name:%s} 將提供 {tdr:%s} 的 "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.." ，\n"
+			.."- 持續 {duration:%s}"..COLORS_Numbers.n_second_rgb.." 。" ..TALENTS_Enh_desc2_tw.ED_VET_Ability_3_3_rgb_tw)),
 
 	--[+ Ability 3-4 - Surprise Attack +]--
 	create_template("talent_tree_vet_abil3_004_desc_en",
@@ -3802,6 +3927,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil3_004_desc_ru",
 		{"loc_talent_veteran_damage_bonus_leaving_invisibility_desc"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." даётся на {duration:%s} секунд способностью {talent_name:%s} после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_4_rgb_ru)),
+	--[+ Traditional Chinese - 突襲襲擊 +]--
+	-- 脫離潛行後，{talent_name:%s}對附近敵人造成{damage%s}傷害，持續{duration%s}秒。
+	create_template("talent_tree_vet_abil3_004_desc_tw",
+		{"loc_talent_veteran_damage_bonus_leaving_invisibility_desc"}, {"zh-tw"},
+			loc_text("離開"..COLORS_KWords2_tw.Stealth_rgb_tw.."後，\n"
+			.."- {talent_name:%s} 將提供 {damage:%s} 的"..COLORS_KWords_tw.Damage_rgb_tw.."加成。\n"
+			.."- 持續 {duration:%s} 秒。" ..TALENTS_Enh_desc2_tw.ED_VET_Ability_3_4_rgb_tw)),
 
 	--[+ Ability 3-5 - Close Quarters Killzone +]--
 	create_template("talent_tree_vet_abil3_005_desc_en",
@@ -3815,6 +3947,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_abil3_005_desc_ru",
 		{"loc_talent_veteran_ability_assault_desc"}, {"ru"},
 			loc_text("{power:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров на {duration:%s} секунд после использования "..COLORS_KWords_ru.Combat_ability_rgb_ru..".\n\nПри использовании способности {talent_name:%s}, этот талант начинает действовать после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_5_rgb_ru)),
+	--[+ Traditional Chinese - 肉搏戰 +]--
+	-- 使用戰鬥技能時可獲得{power%s}近戰傷害加成，持續{duration%s}秒。\n\n當使用{talent_name:%s}時，該效果將於脫離潛行狀態後開始生效。
+	create_template("talent_tree_vet_abil3_005_desc_tw",
+		{"loc_talent_veteran_ability_assault_desc"}, {"zh-tw"},
+			loc_text("使用"..COLORS_KWords_tw.Combat_ability_rgb_tw.."後："
+			.."- 距離 "..COLORS_Numbers.n_12_5_rgb..COLORS_Numbers.n_meter_rgb.." 內 {power:%s} "..COLORS_KWords_tw.Damage_rgb_tw.." 。\n"
+			.."- 持續 {duration:%s} 秒。\n\n"
+			.."- 使用 {talent_name:%s} 時，\n"
+			.."- 效果會在離開 "..COLORS_KWords2_tw.Stealth_rgb_tw.." 後生效。" ..TALENTS_Enh_desc2_tw.ED_VET_Ability_3_5_rgb_tw)),
 
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
 	--[+ Keystone 1 - Marksman's Focus +]--

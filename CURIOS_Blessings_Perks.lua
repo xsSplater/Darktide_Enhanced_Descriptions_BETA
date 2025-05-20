@@ -57,7 +57,7 @@ local localization_templates = {
 	--[+ 生命 - Traditional Chinese +]--
 	create_template("curio_bless0_ext_tw",
 		{"loc_inate_gadget_health_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.maxhlth_rgb.." 最大 "..COLORS_KWords_tw.Health_rgb_tw)),
+			loc_text(COLORS_Numbers.maxhlth_rgb.." "..COLORS_KWords_tw.Health_rgb_m_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_bless0_ext_zh_cn",
 		{"loc_inate_gadget_health_desc"}, {"zh-cn"},
@@ -99,7 +99,7 @@ local localization_templates = {
 	--[+ 耐力 - Traditional Chinese +]--
 	create_template("curio_bless2_ext_tw",
 		{"loc_inate_gadget_stamina_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.maxstam_rgb.." 最大 "..COLORS_KWords_tw.Stamina_rgb_tw)),
+			loc_text(COLORS_Numbers.maxstam_rgb.." "..COLORS_KWords_tw.Stamina_rgb_m_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_bless2_ext_zh_cn",
 		{"loc_inate_gadget_stamina_desc"}, {"zh-cn"},
@@ -120,7 +120,7 @@ local localization_templates = {
 	--[+ 韌性 - Traditional Chinese +]--
 	create_template("curio_bless3_ext_tw",
 		{"loc_inate_gadget_toughness_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.maxtghns_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw)),
+			loc_text(COLORS_Numbers.maxtghns_rgb.." "..COLORS_KWords_tw.Toughness_m_rgb_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_bless3_ext_zh_cn",
 		{"loc_inate_gadget_toughness_desc"}, {"zh-cn"},
@@ -142,7 +142,7 @@ local localization_templates = {
 	--[+ 戰鬥技能冷卻 - Traditional Chinese +]--
 	create_template("curio_traits0_ext_tw",
 		{"loc_gadget_cooldown_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.abil_cd_rgb.." "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 冷卻")),
+			loc_text(COLORS_Numbers.abil_cd_rgb.." "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits0_ext_zh_cn",
 		{"loc_gadget_cooldown_desc"}, {"zh-cn"},
@@ -205,7 +205,7 @@ local localization_templates = {
 	--[+ 生命 - Traditional Chinese +]--
 	create_template("curio_traits3_ext_tw",
 		{"loc_trait_gadget_health_increase_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.maxhlth_rgb.." 最大 "..COLORS_KWords_tw.Health_rgb_tw)),
+			loc_text(COLORS_Numbers.maxhlth_rgb.." "..COLORS_KWords_tw.Health_rgb_m_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits3_ext_zh_cn",
 		{"loc_trait_gadget_health_increase_desc"}, {"zh-cn"},
@@ -305,7 +305,7 @@ local localization_templates = {
 	--[+ 韌性 - Traditional Chinese +]--
 	create_template("curio_traits8_ext_tw",
 		{"loc_trait_gadget_toughness_increase_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.maxtghns_rgb.." 最大 "..COLORS_KWords_tw.Toughness_rgb_tw)),
+			loc_text(COLORS_Numbers.maxtghns_rgb.." "..COLORS_KWords_tw.Toughness_m_rgb_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits8_ext_zh_cn",
 		{"loc_trait_gadget_toughness_increase_desc"}, {"zh-cn"},
@@ -326,7 +326,7 @@ local localization_templates = {
 	--[+ 韌性恢復 - Traditional Chinese +]--
 	create_template("curio_traits9_ext_tw",
 		{"loc_gadget_toughness_regen_delay_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.tghn_reg_del_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw.." 韌性恢復速度")),
+			loc_text(COLORS_Numbers.tghn_reg_del_rgb.." "..COLORS_KWords_tw.Toughness_rs_rgb_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits9_ext_zh_cn",
 		{"loc_gadget_toughness_regen_delay_desc"}, {"zh-cn"},

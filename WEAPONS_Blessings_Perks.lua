@@ -989,7 +989,7 @@ local localization_templates = {
 			-- 戰鬥斧, 工兵鏟, 戰術斧 -- 2% | 3% | 4% | 5% (up to +50%)
 			create_template("weap_wbm013_desc_ext_tw",
 				{"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"zh-tw"},
-					loc_text("連續攻擊任意目標超過 "..COLORS_Numbers.n_2_rgb.." 次時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n需連續命中不得揮空"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+					loc_text("攻擊任意目標超過 "..COLORS_Numbers.n_2_rgb.." 次時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n需連續命中不得揮空。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 屠戮者 +]--
 			create_template("weap_wbm013_desc_ext_zh_cn",
 				{"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"zh-cn"},
