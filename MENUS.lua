@@ -18,6 +18,7 @@ COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
 COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
 	--[+ Traditional Chinese +]--
 COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
+COLORS_KWords2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords2_tw")
 	--[+ Simplified Chinese +]--
 COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
 
@@ -462,7 +463,7 @@ local localization_templates = {
 	--[+  暴動 - Traditional Chinese +]--
 	create_template("mission_board_danger_1_ext_tw",
 		{"loc_mission_board_danger_lowest"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.sedition_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.sedition_rgb_tw)),
 	--[+ Simplified Chinese - 煽动 +]--
 	create_template("mission_board_danger_1_ext_zh_cn",
 		{"loc_mission_board_danger_lowest"}, {"zh-cn"},
@@ -480,7 +481,7 @@ local localization_templates = {
 	--[+  起義 - Traditional Chinese +]--
 	create_template("mission_board_danger_2_ext_tw",
 		{"loc_mission_board_danger_low"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.uprising_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.uprising_rgb_tw)),
 	--[+ Simplified Chinese - 起义 +]--
 	create_template("mission_board_danger_2_ext_zh_cn",
 		{"loc_mission_board_danger_low"}, {"zh-cn"},
@@ -497,7 +498,7 @@ local localization_templates = {
 	--[+  惡毒 - Traditional Chinese +]--
 	create_template("mission_board_danger_3_ext_tw",
 		{"loc_mission_board_danger_medium"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.malice_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.malice_rgb_tw)),
 	--[+ Simplified Chinese - 憎恶 +]--
 	create_template("mission_board_danger_3_ext_zh_cn",
 		{"loc_mission_board_danger_medium"}, {"zh-cn"},
@@ -514,7 +515,7 @@ local localization_templates = {
 	--[+  異端 - Traditional Chinese +]--
 	create_template("mission_board_danger_4_ext_tw",
 		{"loc_mission_board_danger_high"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.heresy_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.heresy_rgb_tw)),
 	--[+ Simplified Chinese - 异端 +]--
 	create_template("mission_board_danger_4_ext_zh_cn",
 		{"loc_mission_board_danger_high"}, {"zh-cn"},
@@ -531,7 +532,7 @@ local localization_templates = {
 	--[+  詛咒 - Traditional Chinese +]--
 	create_template("mission_board_danger_5_ext_tw",
 		{"loc_mission_board_danger_highest"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.damnation_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.damnation_rgb_tw)),
 	--[+ Simplified Chinese - 诅咒 +]--
 	create_template("mission_board_danger_5_ext_zh_cn",
 		{"loc_mission_board_danger_highest"}, {"zh-cn"},

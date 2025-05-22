@@ -157,7 +157,7 @@ local localization_templates = {
 			-- loc_text("Дециматор")),
 	--[+ Traditional Chinese - 屠戮者 +]--
 	create_template("trait_bespoke_013_ext_tw",
-		{"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"zh-tw"},
+		{"loc_trait_bespoke_chained_hits_increases_power"}, {"zh-tw"},
 			loc_text("屠戮者")),
 
 	--[+ Brutal Momentum - Жестокий импульс +]-- -- руоф Суровый моментум

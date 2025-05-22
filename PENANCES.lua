@@ -24,6 +24,7 @@ COLORS_KW_Penances_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KW_Pe
 
 --[+ Traditional Chinese +]--
 COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
+COLORS_KWords2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords2_tw")
 COLORS_KW_Penances_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KW_Penances_tw")
 
 --[+ Toggle ENHANCED DESCRIPTIONS - PENANCES +]--
@@ -65,27 +66,27 @@ end
 	--[+ Russian +]--
 	local complete_1_mission_on_sedition_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше."
 	--[+ Traditional Chinese +]--
-	local complete_1_mission_on_sedition_threat_tw = "完成『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
+	local complete_1_mission_on_sedition_threat_tw = "完成『"..COLORS_KWords2_tw.sedition_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 	--[+ Russian +]--
 	local complete_1_mission_on_uprising_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше."
 	--[+ Traditional Chinese +]--
-	local complete_1_mission_on_uprising_threat_tw = "完成『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
+	local complete_1_mission_on_uprising_threat_tw = "完成『"..COLORS_KWords2_tw.uprising_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 	--[+ Russian +]--
 	local complete_1_mission_on_malice_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше."
 	--[+ Traditional Chinese +]--
-	local complete_1_mission_on_malice_threat_tw = "完成『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
+	local complete_1_mission_on_malice_threat_tw = "完成『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 	--[+ Russian +]--
 	local complete_1_mission_on_heresy_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше."
 	--[+ Traditional Chinese +]--
-	local complete_1_mission_on_heresy_threat_tw = "完成『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
+	local complete_1_mission_on_heresy_threat_tw = "完成『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 	--[+ Russian +]--
 	local complete_1_mission_on_damnation_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше."
 	--[+ Traditional Chinese +]--
-	local complete_1_mission_on_damnation_threat_tw = "完成『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
+	local complete_1_mission_on_damnation_threat_tw = "完成『"..COLORS_KWords2_tw.damnation_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 --[+ Define localization templates +]--
 local localization_templates = {
@@ -438,7 +439,7 @@ local localization_templates = {
 	--[+ Traditional Chinese 老兵 +]--
 	create_template("ach_class_vet_0_ext_tw",
 		{"loc_class_veteran_title"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.cls_vet_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.cls_vet_rgb_tw)),
 
 --[+ ПРОГРЕСС +]--
 	--[+ Stay Accurate - Будь точным +]-- -- руоф Держи прицел
@@ -544,7 +545,7 @@ local localization_templates = {
 	-- 使用老兵完成以下苦修。
 	create_template("ach_class_vet_14_ext_desc_tw",
 		{"loc_achievement_group_class_veteran_2_description", "loc_group_class_challenges_veteran_2_x_description", "loc_group_veteran_2_rank_4_difficulty_3_description", "loc_group_veteran_2_rank_5_difficulty_4_description", "loc_group_veteran_2_rank_1_difficulty_1_description", "loc_group_veteran_2_rank_2_difficulty_2_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." 完成以下苦修。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_vet_rgb_tw.." 完成以下苦修。")),
 
 	--[+ Veteran Master of War +]-- -- руоф Ветеран — знаток войны
 	--[+ Russian +]--
@@ -592,7 +593,7 @@ local localization_templates = {
 	-- 使用老兵，完成每種類型的任務至少一項。
 	create_template("ach_class_vet_3_1_ext_desc_tw",
 		{"loc_achievement_missions_veteran_2_objective_1_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_vet_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
 
 	--[+ Vantage Point (2) +]-- -- руоф Точка обзора (2)
 	--[+ Russian +]--
@@ -616,7 +617,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，使用老兵完成每種類型的任務至少一項。
 	create_template("ach_class_vet_3_2_ext_desc_tw",
 		{"loc_achievement_missions_veteran_2_objective_2_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_vet_rgb_tw.." ，\n在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
 
 	--[+ Vantage Point (3) +]-- -- руоф Точка обзора (3)
 	--[+ Russian +]--
@@ -640,7 +641,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，使用老兵完成每種類型的任務至少一項。
 	create_template("ach_class_vet_3_3_ext_desc_tw",
 		{"loc_achievement_missions_veteran_2_objective_3_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_vet_rgb_tw.." ，\n在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。")),
 
 	--[+ Fire Down Range +]-- -- руоф Заградительный огонь
 	--[+ Russian +]--
@@ -664,7 +665,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，擊殺100個離你30公尺之外的敵人。
 	create_template("ach_class_vet_12_ext_desc_tw",
 		{"loc_achievement_veteran_2_medium_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，\n擊殺 "..COLORS_Numbers.target_rgb.." 名距離 "..COLORS_Numbers.dist_rgb.." 公尺以上的敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，\n擊殺 "..COLORS_Numbers.target_rgb.." 名距離 "..COLORS_Numbers.dist_rgb.." 公尺以上的敵人。")),
 
 	--[+ Prove Your Worth (1-5) +]--
 	--[+ Russian +]--
@@ -768,7 +769,7 @@ local localization_templates = {
 	-- 使用老兵完成xx項任務
 	create_template("ach_class_vet_2_ext_desc_tw",
 		{"loc_achievement_missions_veteran_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 次任務。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_vet_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 次任務。")),
 
 	--[+ On Overwatch - На чеку +]-- -- руоф Под прикрытием
 	--[+ Russian +]--
@@ -793,7 +794,7 @@ local localization_templates = {
 	-- 在不承受任何近戰傷害的情況下完成1次完整的任務。
 	create_template("ach_red_vet_5_ext_desc_tw",
 		{"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，\n完成一次任務且不受到近戰傷害。"..TALENTS_Enh_desc_penances_tw.ED_No_dmg_taken_corrupt_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，\n完成一次任務且不受到近戰傷害。"..TALENTS_Enh_desc_penances_tw.ED_No_dmg_taken_corrupt_rgb_tw)),
 
 	--[+ One In the Chamber +]-- -- руоф Последний патрон
 	--[+ Russian +]--
@@ -818,7 +819,7 @@ local localization_templates = {
 	-- 在1次任務中用彈夾中的最後1發子彈殺死8名敵人。
 	create_template("ach_red_vet_4_ext_desc_tw",
 		{"loc_achievement_veteran_2_kills_with_last_round_in_mag_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，\n使用最後一發子彈擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，\n使用最後一發子彈擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
 	--[+ Make Every Shot Count - Сделай каждый выстрел важным +]-- -- руоф Стрельба наверняка
 	--[+ Russian +]--
@@ -843,7 +844,7 @@ local localization_templates = {
 	-- 用光所有彈藥，並且保持90的精準度。
 	create_template("ach_red_vet_7_ext_desc_tw",
 		{"loc_achievement_veteran_2_no_missed_shots_empty_ammo_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，\n命中率在 "..COLORS_Numbers.target_rgb..COLORS_Numbers.pc_rgb.." 以上，且撤離時無任何備彈"..TALENTS_Enh_desc_penances_tw.ED_No_missed_shots_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，\n命中率在 "..COLORS_Numbers.target_rgb..COLORS_Numbers.pc_rgb.." 以上，且撤離時無任何備彈"..TALENTS_Enh_desc_penances_tw.ED_No_missed_shots_rgb_tw)),
 
 	--[+ Fight the Good Fight (1-5) +]--
 	--[+ Russian +]--
@@ -867,7 +868,7 @@ local localization_templates = {
 	-- 在騷亂威脅度或更高難度下完成5個任務。
 	create_template("ach_red_vet_1_1_ext_desc_tw",
 		{"loc_missions_veteran_2_medium_difficulty_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Uprising Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Восстание» или выше.
 	create_template("ach_red_vet_1_2_ext_desc_en",
@@ -881,7 +882,7 @@ local localization_templates = {
 	-- 在起意威脅度或更高難度下完成5個任務。
 	create_template("ach_red_vet_1_2_ext_desc_tw",
 		{"loc_missions_veteran_2_medium_difficulty_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Malice Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Злоба» или выше.
 	create_template("ach_red_vet_1_3_ext_desc_en",
@@ -894,7 +895,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下完成5個任務。
 	create_template("ach_red_vet_1_3_ext_desc_tw",
 		{"loc_missions_veteran_2_medium_difficulty_3_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Heresy Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Ересь» или выше.
 	create_template("ach_red_vet_1_4_ext_desc_en",
@@ -908,7 +909,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下完成5個任務。
 	create_template("ach_red_vet_1_4_ext_desc_tw",
 		{"loc_missions_veteran_2_medium_difficulty_4_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Damnation Threat or higher. +]-- -- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
 	create_template("ach_red_vet_1_5_ext_desc_en",
@@ -922,7 +923,7 @@ local localization_templates = {
 	-- 在詛咒威脅度或更高難度下完成5個任務。
 	create_template("ach_red_vet_1_5_ext_desc_tw",
 		{"loc_missions_veteran_2_medium_difficulty_5_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_vet2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ I Love the Militarum! (1-6) +]--
 	--[+ Russian +]--
@@ -946,7 +947,7 @@ local localization_templates = {
 	-- 使用老兵達到信任等級xx。
 	create_template("ach_class_vet_1_ext_desc_tw",
 		{"loc_achievement_rank_veteran_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_vet_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
 
 --[+ СПОСОБНОСТИ - 技能 +]--
 	--[+ Adept Assassin - Адепт-ассасин +]-- -- руоф Искусный убийца
@@ -997,7 +998,7 @@ local localization_templates = {
 	-- 擊殺150個被處決者姿態標記的敵人
 	create_template("ach_class_vet_11_ext_desc_tw",
 		{"loc_achievement_veteran_2_medium_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，擊殺 "..COLORS_Numbers.target_rgb.." 名，\n被 "..COLORS_KW_Penances_tw.AbilityModifiers_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』標記的敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，擊殺 "..COLORS_Numbers.target_rgb.." 名，\n被 "..COLORS_KW_Penances_tw.AbilityModifiers_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』標記的敵人。")),
 
 	--[+ Be Methodical - Будь методичным +]-- -- руоф Будь собран
 	--[+ Russian +]--
@@ -1022,7 +1023,7 @@ local localization_templates = {
 	-- 使火力齊射的啟動時間超過20秒，需要達成5次。
 	create_template("ach_class_vet_13_ext_desc_tw",
 		{"loc_achievement_veteran_2_hard_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n啟動 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』持續 "..COLORS_Numbers.time_rgb.." 秒以上。\n完成此苦修需達成 "..COLORS_Numbers.target_rgb.." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n啟動 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』持續 "..COLORS_Numbers.time_rgb.." 秒以上。\n完成此苦修需達成 "..COLORS_Numbers.target_rgb.." 次。" .. TALENTS_Enh_desc_penances_tw.ED_On_heresy_volley_rgb_tw)),
 
 	--[+ Stand up and Fight! +]-- -- руоф Встань и сражайся!
 	--[+ Russian +]--
@@ -1172,7 +1173,7 @@ local localization_templates = {
 	-- 以武器的次要動作擊中5名高亮的敵人的弱點，將其急殺。
 	create_template("ach_red_vet_6_ext_desc_tw",
 		{"loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n在單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』期間，\n使用瞄準射擊 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." ，擊殺 "..COLORS_Numbers.target_rgb.." 名被標記的敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n在單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』期間，\n使用瞄準射擊 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." ，擊殺 "..COLORS_Numbers.target_rgb.." 名被標記的敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Headshot_rgb_tw)),
 
 	--[+ Unseen Predator +]-- руоф Невидимый хищник
 	--[+ Russian +]--
@@ -1257,7 +1258,7 @@ local localization_templates = {
 	-- 在單次火力齊射期中擊殺2個精英或專家敵人，需要達成50次。
 	create_template("ach_class_vet_12_ext_desc_tw",
 		{"loc_achievement_veteran_2_hard_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n於單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』期間，\n擊殺 "..COLORS_Numbers.num_enemies_rgb.." 名精英或專家敵人。此任務共需達成 "..COLORS_Numbers.target_rgb.." 次。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n於單次 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.volley_fire_rgb_tw.."』或『"..COLORS_KW_Penances_tw.executioner_stance_rgb_tw.."』期間，\n擊殺 "..COLORS_Numbers.num_enemies_rgb.." 名精英或專家敵人。此任務共需達成 "..COLORS_Numbers.target_rgb.." 次。")),
 
 	--[+ Killshot Ready +]--
 	--[+ Russian +]--
@@ -1278,7 +1279,7 @@ local localization_templates = {
 	-- 在疊加10曾獲更多層鷹眼聚焦時，擊殺2500名敵人。
 	create_template("ach_class_vet_8_ext_desc_tw",
 		{"loc_achievement_veteran_enemies_killed_with_max_focus_fire_description"}, {"zh-tw"},
-			loc_text("在累積至少 "..COLORS_Numbers.n_10_rgb.." 層 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.snipcon_rgb_tw.."』的 "..COLORS_KWords_tw.Focus_rgb_tw.." 時，\n擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
+			loc_text("在累積至少 "..COLORS_Numbers.n_10_rgb.." 層 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.snipcon_rgb_tw.."』的 "..COLORS_KWords2_tw.Focus_rgb_tw.." 時，\n擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
 	--[+ Focus Soldier! +]-- -- руоф Солдат в прицеле!
 	--[+ Russian +]--
@@ -1309,7 +1310,7 @@ local localization_templates = {
 	--[+ Traditional Chinese 狂信徒 +]--
 	create_template("ach_class_zea_0_ext_tw",
 		{"loc_class_zealot_title"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.cls_zea_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.cls_zea_rgb_tw)),
 
 --[+ ПРОГРЕСС - 進度 +]--
 	--[+ Prove Your Worth (1-5) - Докажите, чего стоите (1-5) +]-- -- руоф Докажи, чего стоишь (1-5)
@@ -1396,7 +1397,7 @@ local localization_templates = {
 	-- 使用狂信徒完成以下苦修
 	create_template("ach_class_zea_9_ext_desc_tw",
 		{"loc_group_zealot_2_rank_4_difficulty_3_description", "loc_group_zealot_2_rank_5_difficulty_4_description", "loc_group_zealot_2_rank_1_difficulty_1_description", "loc_group_zealot_2_rank_2_difficulty_2_description", "loc_achievement_group_class_zealot_2_description", "loc_group_class_challenges_zealot_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成以下苦修。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." 完成以下苦修。")),
 
 	--[+ Master Your Tools -  +]-- -- руоф Знай свое дело
 	--[+ Russian +]--
@@ -1417,7 +1418,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，使用動力近戰攻擊（鏈鋸或動力武器）擊殺75名精英或專家敵人。
 	create_template("ach_class_zea_12_ext_desc_tw",
 		{"loc_achievement_zealot_2_hard_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用特殊攻擊（鏈鋸系列、上古神刃），\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n使用特殊攻擊（鏈鋸系列、上古神刃），\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
 
 	--[+ Doomseeker (1-5) -  +]-- -- руоф Искатель судьбы (1-5)
 	--[+ Russian +]--
@@ -1438,7 +1439,7 @@ local localization_templates = {
 	-- 使用狂信徒完成xx項任務
 	create_template("ach_class_zea_2_ext_desc_tw",
 		{"loc_achievement_missions_zealot_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Maniacal Laughter (6) -  +]-- -- руоф Маниакальный смех (6)
 	--[+ Russian +]--
@@ -1456,7 +1457,7 @@ local localization_templates = {
 	-- 使用狂信徒達到信任等級xx
 	create_template("ach_class_zea_1_ext_desc_tw",
 		{"loc_achievement_rank_zealot_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
 
 	--[+ Just A Flesh Wound - Просто царапина +]--
 	--[+ Russian +]--
@@ -1477,7 +1478,7 @@ local localization_templates = {
 	-- 在異端或更高威脅度下，在20分鐘內完成1次完整任務，且在75的時間內聲明職不能高於1個生命段。
 	create_template("ach_red_zea_7_ext_desc_tw",
 		{"loc_achievement_zealot_2_health_on_last_segment_enough_during_mission_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，在 "..COLORS_Numbers.time_wind_rgb.." 分鐘內完成整場任務，\n且其中 "..COLORS_Numbers.health_pc_rgb.." 的時間，只有一格 "..COLORS_KWords_tw.Health_rgb_tw.."。\n")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，在 "..COLORS_Numbers.time_wind_rgb.." 分鐘內完成整場任務，\n且其中 "..COLORS_Numbers.health_pc_rgb.." 的時間，只有一格 "..COLORS_KWords_tw.Health_rgb_tw.."。\n")),
 
 	--[+ Up Close and Personal - С близкого расстояния +]--
 	--[+ Russian +]--
@@ -1498,7 +1499,7 @@ local localization_templates = {
 	-- 在異端或更高威脅度下，在1槍不開的情況下完成1個完整任務。
 	create_template("ach_red_zea_5_ext_desc_tw",
 		{"loc_achievement_zealot_2_not_use_ranged_attacks_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n全程參與任務且不使用任何遠程攻擊。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n全程參與任務且不使用任何遠程攻擊。")),
 
 	--[+ Fight the Good Fight (1-5) - Сражайтесь достойно (1-5) +]-- руоф Сражайся достойно (1-5)
 	--[+ Russian +]--
@@ -1519,7 +1520,7 @@ local localization_templates = {
 	-- 在騷亂威脅度或更高難度下完成5個任務。
 	create_template("ach_red_zea_1_1_ext_desc_tw",
 		{"loc_missions_zealot_2_medium_difficulty_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
 	--[+ Russian +]--	
@@ -1530,7 +1531,7 @@ local localization_templates = {
 	-- 在起義威脅度或更高難度下完成5個任務。
 	create_template("ach_red_zea_1_2_ext_desc_tw",
 		{"loc_missions_zealot_2_medium_difficulty_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
 	--[+ Russian +]--
@@ -1541,7 +1542,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下完成5個任務。
 	create_template("ach_red_zea_1_3_ext_desc_tw",
 		{"loc_missions_zealot_2_medium_difficulty_3_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
 	--[+ Russian +]--
@@ -1552,7 +1553,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下完成5個任務。
 	create_template("ach_red_zea_1_4_ext_desc_tw",
 		{"loc_missions_zealot_2_medium_difficulty_4_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
 	--[+ Russian +]--
@@ -1563,7 +1564,7 @@ local localization_templates = {
 	-- 在詛咒威脅度或更高難度下完成5個任務。
 	create_template("ach_red_zea_1_5_ext_desc_tw",
 		{"loc_missions_zealot_2_medium_difficulty_5_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Find Their Weakness - Найди их слабости +]-- руоф Узнай их слабости
 	--[+ Russian +]--
@@ -1584,7 +1585,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，使用致命一擊擊殺75個被眩暈的敵人
 	create_template("ach_class_zea_11_ext_desc_tw",
 		{"loc_achievement_zealot_2_medium_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KWords_tw.Crit_k_rgb_tw.." 共 "..COLORS_Numbers.target_rgb.." 名處於 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KWords_tw.Crit_k_rgb_tw.." 共 "..COLORS_Numbers.target_rgb.." 名處於 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人。")),
 
 	--[+ Praise the God-Emperor! (1-3) +]-- руоф Хвала Богу-Императору! (1-3)
 	--[+ Russian +]--
@@ -1605,7 +1606,7 @@ local localization_templates = {
 	-- 使用狂信徒，完成每種類型的任務至少一項。
 	create_template("ach_class_zea_3_1_ext_desc_tw",
 		{"loc_achievement_missions_zealot_2_objective_1_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
 
 	--[+ As a Zealot, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
 	--[+ Russian +]--
@@ -1616,7 +1617,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
 	create_template("ach_class_zea_3_3_ext_desc_tw",
 		{"loc_achievement_missions_zealot_2_objective_2_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." ，\n在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
 
 	--[+ As a Zealot, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
 	--[+ Russian +]--
@@ -1627,7 +1628,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
 	create_template("ach_class_zea_3_4_ext_desc_tw",
 		{"loc_achievement_missions_zealot_2_objective_3_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_zea2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_zea2_rgb_tw.." ，\n在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。")),
 
 --[+ +СПОСОБНОСТИ+ +]--
 	--[+ Blessed be Thine Aim +]-- -- руоф Благословен будь твой прицел
@@ -1754,7 +1755,7 @@ local localization_templates = {
 	--在異端威脅度或更高難度下，使用神聖亡魂天賦恢復25生命值。
 	create_template("ach_red_zea_6_ext_desc_tw",
 		{"loc_achievement_zealot_2_healed_up_after_resisting_death_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n透過 "..COLORS_KW_Penances_tw.Passive_p_rgb_tw.."『"..COLORS_KW_Penances_tw.holy_revenant_rgb_tw.."』回血，將『"..COLORS_KWords_tw.Health_rgb_tw.."』恢復至 "..COLORS_Numbers.target_rgb..COLORS_Numbers.pc_rgb.."。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n透過 "..COLORS_KW_Penances_tw.Passive_p_rgb_tw.."『"..COLORS_KW_Penances_tw.holy_revenant_rgb_tw.."』回血，將『"..COLORS_KWords_tw.Health_rgb_tw.."』恢復至 "..COLORS_Numbers.target_rgb..COLORS_Numbers.pc_rgb.."。")),
 
 	--[+ Test of Faith +]-- руоф Испытание веры
 	--[+ Russian +]--
@@ -1796,7 +1797,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，在疊加至少3層殉道的情況下使用近戰攻擊擊殺1000個敵人。
 	create_template("ach_class_zea_12_ext_desc_tw",
 		{"loc_achievement_zealot_2_medium_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n於自身擁有 "..COLORS_Numbers.n_3_rgb.." 層以上 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.martydom_rgb_tw.."』時，\n以近戰擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n於自身擁有 "..COLORS_Numbers.n_3_rgb.." 層以上 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.martydom_rgb_tw.."』時，\n以近戰擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
 	--[+ Have Faith +]-- руоф Не теряй веру
 	--[+ Russian +]--
@@ -1817,7 +1818,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，使用懲戒邪惡，衝向正在使用遠程武器敵人40次。
 	create_template("ach_class_zea_13_ext_desc_tw",
 		{"loc_achievement_zealot_2_hard_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.chastise_wicked_rgb_tw.."』或『"..COLORS_KW_Penances_tw.fury_faithful_rgb_tw.."』，\n衝刺靠近正在拿遠程武器的敵人旁，共需完成 "..COLORS_Numbers.target_rgb.." 次。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.chastise_wicked_rgb_tw.."』或『"..COLORS_KW_Penances_tw.fury_faithful_rgb_tw.."』，\n衝刺靠近正在拿遠程武器的敵人旁，共需完成 "..COLORS_Numbers.target_rgb.." 次。")),
 
 	--[+ Unseen Assassin +]-- руоф Незримый убийца
 	--[+ Russian +]--
@@ -1984,7 +1985,7 @@ local localization_templates = {
 	-- 在異端或更高威脅度下，在10秒內擊殺40個被你手雷眩暈的敵人。
 	create_template("ach_red_zea_4_ext_desc_tw",
 		{"loc_achievement_zealot_2_kills_of_shocked_enemies_last_15_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，於 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 名，\n被 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.shock_gren0_rgb_tw.."』、『"..COLORS_KW_Penances_tw.shock_gren1_rgb_tw.."』"..COLORS_KWords_tw.Staggers_rgb_tw.." 的敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，於 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 名，\n被 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.shock_gren0_rgb_tw.."』、『"..COLORS_KW_Penances_tw.shock_gren1_rgb_tw.."』"..COLORS_KWords_tw.Staggers_rgb_tw.." 的敵人。")),
 
 --[+ ++PSYKER - ПСАЙКЕР++ +]--
 	--[+ Russian +]--
@@ -1994,7 +1995,7 @@ local localization_templates = {
 	--[+ Traditional Chinese 靈能者 +]--
 	create_template("ach_class_psy_0_ext_tw",
 		{"loc_class_psyker_title"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.cls_psy_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.cls_psy_rgb_tw)),
 
 --[+ ++PROGRESS - ПРОГРЕСС++ +]--
 	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
@@ -2081,7 +2082,7 @@ local localization_templates = {
 	-- 使用靈能者完成以下苦修
 	create_template("ach_red_psy_8_ext_desc_tw",
 		{"loc_group_psyker_2_rank_4_difficulty_3_description", "loc_group_psyker_2_rank_5_difficulty_4_description", "loc_group_psyker_2_rank_1_difficulty_1_description", "loc_group_psyker_2_rank_2_difficulty_2_description", "loc_achievement_group_class_psyker_2_description", "loc_group_class_challenges_psyker_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成以下苦修。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." 完成以下苦修。")),
 
 	--[+ Unleash the Warp - Высвободи варп +]-- руоф Извергни варп
 	--[+ Russian +]--
@@ -2102,7 +2103,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，使用亞空間攻擊擊殺2500個敵人。
 	create_template("ach_class_psy_12_ext_desc_tw",
 		{"loc_achievement_psyker_2_medium_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KWords_tw.Damagewrp_a_rgb_tw.." 擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。"..TALENTS_Enh_desc_penances_tw.ED_Unleash_warp_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KWords_tw.Damagewrp_a_rgb_tw.." 擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。"..TALENTS_Enh_desc_penances_tw.ED_Unleash_warp_rgb_tw)),
 
 	--[+ Keep Your Distance +]-- руоф Не подходи близко
 	--[+ Russian +]--
@@ -2123,7 +2124,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，不被精英敵人近戰命中的情況下完成3個任務。
 	create_template("ach_class_psy_13_ext_desc_tw",
 		{"loc_achievement_psyker_2_hard_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n完成 "..COLORS_Numbers.target_rgb.." 場任務，且未曾被精英敵人以近戰攻擊命中。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n完成 "..COLORS_Numbers.target_rgb.." 場任務，且未曾被精英敵人以近戰攻擊命中。")),
 
 	--[+ Cliffhanger +]-- руоф Не подходи близко
 	--[+ Russian +]--
@@ -2165,7 +2166,7 @@ local localization_templates = {
 	-- 使用靈能者完成xx項任務。
 	create_template("ach_class_psy_2_ext_desc_tw",
 		{"loc_achievement_missions_psyker_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Touch the Void (1-3) +]-- руоф Прикоснись к пустоте (1-3)
 	--[+ Russian +]--
@@ -2186,7 +2187,7 @@ local localization_templates = {
 	-- 使用靈能者，完成每種類型的任務至少一項。
 	create_template("ach_class_psy_3_1_ext_desc_tw",
 		{"loc_achievement_missions_psyker_2_objective_1_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
 
 	--[+ As a Psyker, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
 	--[+ Russian +]--
@@ -2197,7 +2198,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，使用靈能者完成每種類型的任務至少一項。
 	create_template("ach_class_psy_3_2_ext_desc_tw",
 		{"loc_achievement_missions_psyker_2_objective_2_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." ，\n在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
 
 	--[+ As a Psyker, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
 	--[+ Russian +]--
@@ -2208,7 +2209,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，使用靈能者完成每種類型的任務至少一項。
 	create_template("ach_class_psy_3_3_ext_desc_tw",
 		{"loc_achievement_missions_psyker_2_objective_3_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." ，\n在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
 
 	--[+ Mind over Matter (1-6) +]-- руоф Разум превыше материи (1-6)
 	--[+ Russian +]--
@@ -2229,7 +2230,7 @@ local localization_templates = {
 	-- 使用靈能者達到信任等級xx
 	create_template("ach_class_psy_1_ext_desc_tw",
 		{"loc_achievement_rank_psyker_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
 
 	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5)
 	--[+ Russian +]--
@@ -2250,7 +2251,7 @@ local localization_templates = {
 	-- 在騷亂威脅度或更高難度下完成5個任務。
 	create_template("ach_red_psy_1_1_ext_desc_tw",
 		{"loc_missions_psyker_2_medium_difficulty_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
 	--[+ Russian +]--
@@ -2261,7 +2262,7 @@ local localization_templates = {
 	-- 在起義威脅度或更高難度下完成5個任務。
 	create_template("ach_red_psy_1_2_ext_desc_tw",
 		{"loc_missions_psyker_2_medium_difficulty_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
 	--[+ Russian +]--
@@ -2272,7 +2273,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下完成5個任務。
 	create_template("ach_red_psy_1_3_ext_desc_tw",
 		{"loc_missions_psyker_2_medium_difficulty_3_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
 	--[+ Russian +]--
@@ -2283,7 +2284,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下完成5個任務。
 	create_template("ach_red_psy_1_4_ext_desc_tw",
 		{"loc_missions_psyker_2_medium_difficulty_4_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
 	--[+ Russian +]--
@@ -2294,7 +2295,7 @@ local localization_templates = {
 	-- 在詛咒威脅度或更高難度下完成5個任務。
 	create_template("ach_red_psy_1_5_ext_desc_tw",
 		{"loc_missions_psyker_2_medium_difficulty_5_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_psy2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 --[+ +СПОСОБНОСТИ+ +]--
 	--[+ Charged with Purpose +]-- руоф Заряженные целью
@@ -2337,7 +2338,7 @@ local localization_templates = {
 	-- 維持15層或更多層擾動命運至少1800秒。
 	create_template("ach_class_psy_7_ext_desc_tw",
 		{"loc_achievement_psyker_time_at_max_unnatural_description"}, {"zh-tw"},
-			loc_text("在 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.disrdest_rgb_tw.."』效果下，\n維持至少 "..COLORS_Numbers.n_15_rgb.." 層『"..COLORS_KWords_tw.Precision_rgb_tw.."』狀態，累積達 "..COLORS_Numbers.n_30_rgb.." 分鐘。")),
+			loc_text("在 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.disrdest_rgb_tw.."』效果下，\n維持至少 "..COLORS_Numbers.n_15_rgb.." 層『"..COLORS_KWords2_tw.Precision_rgb_tw.."』狀態，累積達 "..COLORS_Numbers.n_30_rgb.." 分鐘。")),
 
 	--[+ Warp Battery +]-- руоф Варп-аккумулятор
 	--[+ Russian +]--
@@ -2358,7 +2359,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，單個任務分段內保持最大亞空間充能120秒。
 	create_template("ach_red_psy_4_ext_desc_tw",
 		{"loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，於單場任務中持續維持最高層數亞空間充能 "..COLORS_Numbers.target_rgb.." 秒。" .. TALENTS_Enh_desc_penances_tw.ED_Warp_battery_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，於單場任務中持續維持最高層數亞空間充能 "..COLORS_Numbers.target_rgb.." 秒。" .. TALENTS_Enh_desc_penances_tw.ED_Warp_battery_rgb_tw)),
 
 	--[+ Pick n' Mix +]-- руоф Выбирай и смешивай
 	--[+ Russian +]--
@@ -2379,7 +2380,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，在12米內使用大腦爆裂擊殺4個不同的精英或專家敵人。
 	create_template("ach_red_psy_6_ext_desc_tw",
 		{"loc_achievement_psyker_2_elite_or_special_kills_with_smite_last_10_sec_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』，\n在 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 種不同的精英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Pick_n_mix_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』，\n在 "..COLORS_Numbers.time_wind_rgb.." 秒內擊殺 "..COLORS_Numbers.target_rgb.." 種不同的精英或專家敵人。" .. TALENTS_Enh_desc_penances_tw.ED_Pick_n_mix_rgb_tw)),
 
 	--[+ Mind's Aegis +]-- руоф Защита разума
 	--[+ Russian +]--
@@ -2484,7 +2485,7 @@ local localization_templates = {
 	-- 在異端或更高威脅度下，使用大腦爆裂對1頭巨獸造成其生命值50的傷害後將其擊殺
 	create_template("ach_red_psy_7_ext_desc_tw",
 		{"loc_achievement_psyker_2_kill_boss_solo_with_smite_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n對巨獸造成不少於 "..COLORS_Numbers.pc_50_rgb.." 的生命值傷害，並將其擊殺。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n對巨獸造成不少於 "..COLORS_Numbers.pc_50_rgb.." 的生命值傷害，並將其擊殺。")),
 
 	--[+ Perilous Focus +]-- руоф Пагубная концентрация
 	--[+ Russian +]--
@@ -2547,7 +2548,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，再亞空間充能層數達到最高後，使用顱腦爆裂擊殺100名精英或專家敵人。
 	create_template("ach_class_psy_11_ext_desc_tw",
 		{"loc_achievement_psyker_2_medium_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n當自身亞空間充能達最大時，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n當自身亞空間充能達最大時，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。")),
 
 	--[+ Prioritise Targets +]-- руоф Приоритетные цели
 	--[+ Russian +]--
@@ -2589,7 +2590,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，在瘟疫獵犬、變種人、或血痂陷阱兵使你或你的盟友無法行動前，擊殺25個此類敵人。
 	create_template("ach_class_psy_12_ext_desc_tw",
 		{"loc_achievement_psyker_2_hard_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n在瘟疫獵犬、突變者或陷阱兵使你或隊友癱瘓前，\n擊殺他們，共計 "..COLORS_Numbers.target_rgb.." 次。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bburst0_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bburst1_rgb_tw.."』，\n在瘟疫獵犬、突變者或陷阱兵使你或隊友癱瘓前，\n擊殺他們，共計 "..COLORS_Numbers.target_rgb.." 次。")),
 
 	--[+ Lucky BLow +]-- руоф Счастливый удар
 	--[+ Russian +]--
@@ -2674,7 +2675,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，使用亞空間反噬殺死1個精英敵人。
 	create_template("ach_red_psy_5_ext_desc_tw",
 		{"loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n利用因『"..COLORS_KWords_tw.Peril_rgb_tw.."』超過『"..COLORS_Numbers.pc_100_rgb.."』而引發的靈能爆炸，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n利用因『"..COLORS_KWords_tw.Peril_rgb_tw.."』超過『"..COLORS_Numbers.pc_100_rgb.."』而引發的靈能爆炸，\n擊殺 "..COLORS_Numbers.target_rgb.." 名精英敵人。")),
 
 	--[+ ++OGRYN - ОГРИН++ +]--
 		create_template("ach_class_ogr_0_ext_ru",
@@ -2682,7 +2683,7 @@ local localization_templates = {
 			loc_text(COLORS_KWords_ru.cls_ogr_rgb_ru)),
 		create_template("ach_class_ogr_0_ext_tw",
 		{"loc_class_ogryn_title"}, {"zh-tw"},
-			loc_text(COLORS_KWords_tw.cls_ogr_rgb_tw)),
+			loc_text(COLORS_KWords2_tw.cls_ogr_rgb_tw)),
 
 	--[+ ПРОГРЕСС +]--
 	--[+ Beat-em-Up (1-3) +]-- руоф Всех порву/Бей их всех (1-3)
@@ -2704,7 +2705,7 @@ local localization_templates = {
 	-- 使用歐格林，完成每種類型的任務至少一項。
 	create_template("ach_class_ogr_3_1_ext_desc_tw",
 		{"loc_achievement_missions_ogryn_2_objective_1_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。")),
 
 	--[+ As a Ogryn, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
 	--[+ Russian +]--
@@ -2715,7 +2716,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
 	create_template("ach_class_ogr_3_3_ext_desc_tw",
 		{"loc_achievement_missions_ogryn_2_objective_2_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." ，\n在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。")),
 
 	--[+ As a Ogryn, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
 	--[+ Russian +]--
@@ -2726,7 +2727,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，使用狂信徒完成每種類型的任務至少一項。
 	create_template("ach_class_ogr_3_4_ext_desc_tw",
 		{"loc_achievement_missions_ogryn_2_objective_3_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." ，\n在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." ，\n在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。")),
 
 	--[+ Keep Them Grounded +]-- руоф Вали их!
 	--[+ Russian +]--
@@ -2768,7 +2769,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，在沒有盟友被擊倒或無法行動超過30秒，且沒有盟友死亡的情況下完成3個完整任務。
 	create_template("ach_class_ogr_12_ext_desc_tw",
 		{"loc_achievement_ogryn_2_hard_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，完整完成 "..COLORS_Numbers.target_rgb.." 場任務，\n且期間無任何隊友陣亡，或被擊倒超過 "..COLORS_Numbers.time_rgb.." 秒。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，完整完成 "..COLORS_Numbers.target_rgb.." 場任務，\n且期間無任何隊友陣亡，或被擊倒超過 "..COLORS_Numbers.time_rgb.." 秒。")),
 
 	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5)
 	--[+ Russian +]--
@@ -2854,7 +2855,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，在1次完整任務期間與1位存活的隊友始終保持協同。
 	create_template("ach_red_ogr_4_ext_desc_tw",
 		{"loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n整場任務期間始終與至少一名存活隊友保持在『"..COLORS_KWords_tw.Coherency_rgb_tw.."』範圍內。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n整場任務期間始終與至少一名存活隊友保持在『"..COLORS_KWords_tw.Coherency_rgb_tw.."』範圍內。")),
 
 	--[+ Bone 'ead (1-3) +]-- руоф Костяная башка (1-3)
 	--[+ Russian +]--
@@ -2872,7 +2873,7 @@ local localization_templates = {
 	-- 使用歐格林完成以下苦修。
 	create_template("ach_class_ogr_14_ext_desc_tw",
 		{"loc_achievement_group_class_ogryn_2_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成以下苦修。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." 完成以下苦修。")),
 
 	--[+ Got a Bone to Pick (1) +]-- руоф Крепкий орешек (1)
 	--[+ Russian +]--
@@ -2943,7 +2944,7 @@ local localization_templates = {
 	-- 使用歐格林達到信任等級xx。
 	create_template("ach_class_ogr_1_ext_desc_tw",
 		{"loc_achievement_rank_ogryn_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." 達到信任等級 "..COLORS_Numbers.target_rgb.." 。")),
 
 	--[+ Built Like a Tank (1) +]-- руоф Настоящий танк (1)
 	--[+ Russian +]--
@@ -3004,7 +3005,7 @@ local localization_templates = {
 	-- 使用歐格林完成xx個任務。
 	create_template("ach_class_ogr_2_ext_desc_tw",
 		{"loc_achievement_missions_ogryn_2_x_description"}, {"zh-tw"},
-			loc_text("使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Cleave Them Down +]-- руоф Порви их!
 	--[+ Russian +]--
@@ -3025,7 +3026,7 @@ local localization_templates = {
 	-- 在惡意或更高難度下，使用一次近戰攻擊擊殺2個敵，需要達成250次。
 	create_template("ach_class_ogr_12_ext_desc_tw",
 		{"loc_achievement_ogryn_2_medium_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n單次近戰攻擊擊殺 "..COLORS_Numbers.amount_var_rgb.." 名敵人，共達成 "..COLORS_Numbers.target_rgb.." 次。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n單次近戰攻擊擊殺 "..COLORS_Numbers.amount_var_rgb.." 名敵人，共達成 "..COLORS_Numbers.target_rgb.." 次。")),
 
 	--[+ Help Everyone +]-- руоф Спаси всех
 	--[+ Russian +]--
@@ -3107,7 +3108,7 @@ local localization_templates = {
 	-- 在騷亂威脅度或更高難度下完成5個任務。
 	create_template("ach_red_ogr_1_1_ext_desc_tw",
 		{"loc_missions_ogryn_2_medium_difficulty_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.sedition_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Uprising Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Восстание» или выше.
 	--[+ Russian +]--
@@ -3118,7 +3119,7 @@ local localization_templates = {
 	-- 在起義威脅度或更高難度下完成5個任務。
 	create_template("ach_red_ogr_1_2_ext_desc_tw",
 		{"loc_missions_ogryn_2_medium_difficulty_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.uprising_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Malice Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Злоба» или выше.
 	--[+ Russian +]--
@@ -3129,7 +3130,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下完成5個任務。
 	create_template("ach_red_ogr_1_3_ext_desc_tw",
 		{"loc_missions_ogryn_2_medium_difficulty_3_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Heresy Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Ересь» или выше.
 	--[+ Russian +]--
@@ -3140,7 +3141,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下完成5個任務。
 	create_template("ach_red_ogr_1_4_ext_desc_tw",
 		{"loc_missions_ogryn_2_medium_difficulty_4_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ Complete 5 Missions on Damnation Threat or higher. +]-- руоф Выполните задания (5) при угрозе «Проклятие» или выше.
 	--[+ Russian +]--
@@ -3151,7 +3152,7 @@ local localization_templates = {
 	-- 在詛咒威脅度或更高難度下完成5個任務。
 	create_template("ach_red_ogr_1_5_ext_desc_tw",
 		{"loc_missions_ogryn_2_medium_difficulty_5_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
+			loc_text("在『"..COLORS_KWords2_tw.damnation_rgb_tw.."』或更高難度下，使用 "..COLORS_KWords2_tw.cls_ogr2_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 項任務。")),
 
 	--[+ +СПОСОБНОСТИ+ +]--
 		--[+ Munitorum's Favour +]-- руоф Благосклонность Муниторума
@@ -3194,7 +3195,7 @@ local localization_templates = {
 	-- 在異端威脅度或更高難度下，使用大炸藥箱連續擊中4名精英或專家敵人，中途不能打空。累積完成5次。
 	create_template("ach_class_ogr_13_ext_desc_tw",
 		{"loc_achievement_ogryn_2_hard_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.big_box_rgb_tw.."』或『"..COLORS_KW_Penances_tw.big_box2_rgb_tw.."』，\n連續成功命中 "..COLORS_Numbers.amount_var_rgb.." 名精英或專家敵人。需達成 "..COLORS_Numbers.target_rgb.." 次。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.big_box_rgb_tw.."』或『"..COLORS_KW_Penances_tw.big_box2_rgb_tw.."』，\n連續成功命中 "..COLORS_Numbers.amount_var_rgb.." 名精英或專家敵人。需達成 "..COLORS_Numbers.target_rgb.." 次。")),
 
 	--[+ Loyal Protector +]-- руоф Верный защитник
 	--[+ Russian +]--
@@ -3257,7 +3258,7 @@ local localization_templates = {
 	-- 在惡毒或以上威脅度，用1次蠻牛衝撞擊倒60名敵人。
 	create_template("ach_red_ogr_5_ext_desc_tw",
 		{"loc_achievement_ogryn_2_bull_rushed_100_enemies_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵人。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
 	--[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
 	--[+ Russian +]--
@@ -3278,7 +3279,7 @@ local localization_templates = {
 	-- 在異端或更高威脅度下，在20秒內使用蠻牛衝撞移動40公尺。
 	create_template("ach_red_ogr_6_ext_desc_tw",
 		{"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n於 "..COLORS_Numbers.time_wind_rgb.." 秒內，使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』技能移動累計 "..COLORS_Numbers.target_rgb.." 公尺。" ..TALENTS_Enh_desc_penances_tw.ED_Dont_stop_me_now_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n於 "..COLORS_Numbers.time_wind_rgb.." 秒內，使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』技能移動累計 "..COLORS_Numbers.target_rgb.." 公尺。" ..TALENTS_Enh_desc_penances_tw.ED_Dont_stop_me_now_rgb_tw)),
 
 	--[+ Can't Catch Me! +]-- руоф Меня не поймать
 	--[+ Russian +]--
@@ -3359,11 +3360,10 @@ local localization_templates = {
 		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"ru"},
 			loc_text("Убейте "..COLORS_Numbers.target_rgb.." врагов заряженными атаками, удерживая "..COLORS_Numbers.n_5_rgb.." зарядов ключевого таланта "..COLORS_KW_Penances_ru.heavyhitter_rgb_ru..".")),
 	--[+ Traditional Chinese +]--
-	-- !! This description is not used in zh-tw. !! --
 	-- 在重拳出擊層數疊滿時，使用重擊擊殺5000名敵人。
 	create_template("ach_class_ogr_11_ext_desc_tw",
-		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"zh-tw"},
-			loc_text("在維持 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.heavyhitter_rgb_tw.."』達到 "..COLORS_Numbers.n_5_rgb.." 層的狀態下，使用蓄力攻擊擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
+		{"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_new_description"}, {"zh-tw"},
+			loc_text("維持 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.heavyhitter_rgb_tw.."』達到 "..COLORS_Numbers.n_5_rgb.." 層時，\n使用重擊擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。")),
 
 	--[+ Clear the Path +]-- руоф Расчисти путь
 	--[+ Russian +]--
@@ -3384,7 +3384,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高難度下，使用蠻牛沖撞擊倒3個遠程敵人25次。
 	create_template("ach_class_ogr_11_ext_desc_tw",
 		{"loc_achievement_ogryn_2_medium_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n擊倒 "..COLORS_Numbers.num_enemies_rgb.." 名持遠程武器的敵人 "..COLORS_Numbers.target_rgb.." 次。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n擊倒 "..COLORS_Numbers.num_enemies_rgb.." 名持遠程武器的敵人 "..COLORS_Numbers.target_rgb.." 次。")),
 
 	--[+ Crowd Control +]-- руоф Сдерживание толпы
 	--[+ Russian +]--
@@ -3489,7 +3489,7 @@ local localization_templates = {
 	-- 以異教徒或以上威脅度，用1次蠻牛衝撞擊倒4個歐格林敵人（堡壘、粉碎者、瘟疫歐格林和/或收割者）。
 	create_template("ach_red_ogr_7_ext_desc_tw",
 		{"loc_achievement_ogryn_2_bull_rushed_4_ogryns_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵方歐格林。\n歐格林敵人包含：堡壘、粉碎者、收割者與瘟疫歐格林。" ..TALENTS_Enh_desc_penances_tw.ED_Heavyweight_champion_rgb_tw)),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵方歐格林。\n歐格林敵人包含：堡壘、粉碎者、收割者與瘟疫歐格林。" ..TALENTS_Enh_desc_penances_tw.ED_Heavyweight_champion_rgb_tw)),
 
 	--[+ I'm in Charge - Я главный +]-- руоф Я главнее
 	--[+ Russian +]--
@@ -3825,7 +3825,7 @@ local localization_templates = {
 	-- 在惡毒或更高難度下，在不被擊倒的情況下連續完成x個任務。
 	create_template("ach_red_vet_3_ext_desc_tw",
 		{"loc_achievement_flawless_mission_x_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，連續完成 "..COLORS_Numbers.target_rgb.." 場任務且期間未曾被擊倒。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度中，連續完成 "..COLORS_Numbers.target_rgb.." 場任務且期間未曾被擊倒。")),
 
 	--[+ Case for the Defence +]-- руоф Версия защиты
 	--[+ Russian +]--
@@ -5267,7 +5267,7 @@ local localization_templates = {
 	-- 在騷亂威脅度或更高級別下完成全部任務類型。
 	create_template("ach_mis_13_1_ext_desc_tw",
 		{"loc_achievement_mission_difficulty_objectives_1_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度下，完成每種任務類型。")),
+			loc_text("在『"..COLORS_KWords2_tw.sedition_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
 	--[+ The Legend Grows? +]-- руоф Становление легенды:\nВетеран Инквизиции
 	--[+ Russian +]--
@@ -5288,7 +5288,7 @@ local localization_templates = {
 	-- 在起義威脅度或更高級別下完成全部任務類型。
 	create_template("ach_mis_13_1_ext_desc_tw",
 		{"loc_achievement_mission_difficulty_objectives_2_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度下，完成每種任務類型。")),
+			loc_text("在『"..COLORS_KWords2_tw.uprising_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
 	--[+ The Legend Grows? +]-- руоф Становление легенды:\nЭталон Инквизиции
 	--[+ Russian +]--
@@ -5309,7 +5309,7 @@ local localization_templates = {
 	-- 在惡意威脅度或更高級別下完成全部任務類型。
 	create_template("ach_mis_13_1_ext_desc_tw",
 		{"loc_achievement_mission_difficulty_objectives_3_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成每種任務類型。")),
+			loc_text("在『"..COLORS_KWords2_tw.malice_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
 	--[+ The Legend Grows? +]-- руоф Становление легенды:\nЛегенда Инквизиции
 	--[+ Russian +]--
@@ -5330,7 +5330,7 @@ local localization_templates = {
 	-- 在叛亂威脅度或更高級別下完成全部任務類型。
 	create_template("ach_mis_13_1_ext_desc_tw",
 		{"loc_achievement_mission_difficulty_objectives_4_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，完成每種任務類型。")),
+			loc_text("在『"..COLORS_KWords2_tw.heresy_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
 		-- I think this is redundant?; the penance only ranges from 1 to 4. 
 		--[+ The Legend Grows? +]-- руоф Становление легенды
@@ -5348,7 +5348,7 @@ local localization_templates = {
 	--[+ Traditional Chinese +]--
 	-- create_template("ach_mis_13_1_ext_desc_tw",
 		-- {"loc_achievement_mission_difficulty_objectives_5_description"}, {"zh-tw"},
-			-- loc_text("在『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度下，完成每種任務類型。")),
+			-- loc_text("在『"..COLORS_KWords2_tw.damnation_rgb_tw.."』或更高難度下，完成每種任務類型。")),
 
 	--[+ +Налёты+ +]--
 	--[+ Raiding Party (1) +]-- руоф Вечеринка налетчиков (1)
@@ -5996,7 +5996,7 @@ local localization_templates = {
 	-- 在詛咒威脅度下，在雙頭犬攻勢期間擊敗卡納克雙子。
 	create_template("ach_mis_16_ext_desc_tw",
 		{"loc_achievement_difficult_mission_twins_win_description"}, {"zh-tw"},
-			loc_text("在『"..COLORS_KWords_tw.damnation_rgb_tw.."』威脅度下，\n在雙頭犬攻勢任務中擊敗卡納克雙子。")),
+			loc_text("在『"..COLORS_KWords2_tw.damnation_rgb_tw.."』威脅度下，\n在雙頭犬攻勢任務中擊敗卡納克雙子。")),
 
 	--[+ +REDACTED - ДАННЫЕ ИЗЪЯТЫ+ +]--
 	--[+ Redacted +]-- руоф Данные изъяты

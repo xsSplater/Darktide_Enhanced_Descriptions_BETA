@@ -104,7 +104,6 @@ else
 	TALENTS_Enh_desc_nodes_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc_nodes_zh_cn_null")
 end
 
-
 --[+ Function to create a localization template +]--
 local function create_template(id, loc_keys, locales, handle_func)
 	return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }

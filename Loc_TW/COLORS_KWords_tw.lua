@@ -9,12 +9,14 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local cmbtab_col = Color[mod:get("combat_ability_text_colour")](255, true)
 	local Ability_cd_rgb_tw = iu_actit("技能冷卻", cmbtab_col)
 	local Cd_rgb_tw = iu_actit("冷卻", cmbtab_col)
+	local Cd_rgb_m_tw = iu_actit("最大冷卻", cmbtab_col) -- max
 	local Combat_abil_rgb_tw = iu_actit("戰鬥技能", cmbtab_col)
 	local Combat_ability_rgb_tw = iu_actit("戰鬥技能", cmbtab_col)
 	local Combat_ability_cd_rgb_tw = iu_actit("戰鬥技能冷卻", cmbtab_col)
 	--[++健康(Health)++]--
 	local hlth_col = Color[mod:get("health_text_colour")](255, true)
 	local Health_rgb_tw = iu_actit("生命", hlth_col)
+	local Health_rgb_m_tw = iu_actit("最大生命", hlth_col) -- max
 	local Wound_rgb_tw = iu_actit("傷痕", hlth_col)
 	local Wounds_rgb_tw = iu_actit("傷痕", hlth_col)
 	local Wound_u_rgb_tw = iu_actit("傷痕", hlth_col)
@@ -28,11 +30,14 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++耐力(Stamina)++]--
 	local stam_col = Color[mod:get("stamina_text_colour")](255, true)
 	local Stamina_rgb_tw = iu_actit("耐力", stam_col)
+	local Stamina_rgb_m_tw = iu_actit("最大耐力", stam_col) -- max
 	local Stamina_se_rgb_tw = iu_actit("衝刺效率", stam_col) -- Sprint Efficiency
 	local Stamina_c_r_rgb_tw = iu_actit("耐力消耗", stam_col) -- 需要確認使用情境
 	--[++韌性(Toughness)++]--
 	local tghn_col = Color[mod:get("toughness_text_colour")](255, true)
 	local Toughness_rgb_tw = iu_actit("韌性", tghn_col)
+	local Toughness_m_rgb_tw = iu_actit("最大韌性", tghn_col) -- max
+	local Toughness_rs_rgb_tw = iu_actit("韌性恢復速度", tghn_col) --Recovery speed
 	local Tghnss_rgb_tw = iu_actit("韌性", tghn_col)
 	local Toughness_dmg_red_rgb_tw = iu_actit("韌性傷害減免", tghn_col)
 	local Toughness_dmg_red_u_rgb_tw = iu_actit("韌性傷害減免", tghn_col)
@@ -95,8 +100,11 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local dmg_col = Color[mod:get("damage_text_colour")](255, true)
 	local Dmg_rgb_tw = iu_actit("傷害", dmg_col)
 	local Dmg_a_rgb_tw = iu_actit("傷害", dmg_col)
+	local Dmg_bs_rgb_tw = iu_actit("背刺傷害", dmg_col) -- backstab_damage
+	local Dmg_bs_K_rgb_tw = iu_actit("背刺擊殺", dmg_col) -- backstab kill
 	local Dmg_b_rgb_tw = iu_actit("基礎傷害", dmg_col)
 	local Dmg_h_rgb_tw = iu_actit("較高傷害", dmg_col) -- high
+	local Dmg_h2_rgb_tw = iu_actit("高額傷害", dmg_col) -- high
 	local Dmg_c_rgb_tw = iu_actit("持續傷害(Dot)", dmg_col) -- Continuous Damage
 	local Dmg_d_rgb_tw = iu_actit("Dot傷害", dmg_col) -- Dot
 	local Dmg_v_rgb_tw = iu_actit("易傷", dmg_col) -- Vulnerable
@@ -166,100 +174,100 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++脆弱(Brittleness)++]--
 	local brtl_col = Color[mod:get("brittleness_text_colour")](255, true)
 	local Brittleness_rgb_tw = iu_actit("脆弱", brtl_col)
---[+++靈能者(PSYKER)+++]--
-	--[++精準(Precision)++]--
-	local prcsn_col = Color[mod:get("precision_text_colour")](255, true)
-	local Precision_rgb_tw = iu_actit("精準加成", prcsn_col)
---[+++歐格林(OGRYN)+++]--
-	--[++麻木(Feel No Pain)++]--
-	local fnp_col = Color[mod:get("fnp_text_colour")](255, true)
-	local Feel_no_pain_rgb_tw = iu_actit("麻木", fnp_col)
-	--[++幸運子彈(Lucky Bullet)++]--
-	local luckyb_col = Color[mod:get("luckyb_text_colour")](255, true)
-	local Lucky_bullet_rgb_tw = iu_actit("幸運子彈", luckyb_col)
-	--[++踐踏(Trample)++]--
-	local trample_col = Color[mod:get("trample_text_colour")](255, true)
-	local Trample_rgb_tw = iu_actit("踐踏", trample_col)
---[+++狂信徒(ZEALOT)+++]--
-	--[++勢能(Momentum)++]--
-	local moment_col = Color[mod:get("momentum_text_colour")](255, true)
-	local Momentum_rgb_tw = iu_actit("勢能", moment_col)
-	--[++隱身(Stealth)++]--
-	local stlth_col = Color[mod:get("stealth_text_colour")](255, true)
-	local Stealth_rgb_tw = iu_actit("隱身", stlth_col)
-	--[++狂怒(Fury)++]--
-	local fury_col = Color[mod:get("fury_text_colour")](255, true)
-	local Fury_rgb_tw = iu_actit("狂怒", fury_col)
-	local Fury_i_rgb_tw = iu_actit("狂怒", fury_col)
---[+++老兵(VETERAN)+++]--
-	--[++專注目標(Focus Target)++]--
-	local focust_col = Color[mod:get("focust_text_colour")](255, true)
-	local Focus_Target_rgb_tw = iu_actit("專注目標", focust_col)
-	--[++專注(Focus)++]--
-	local focus_col = Color[mod:get("focus_text_colour")](255, true)
-	local Focus_rgb_tw = iu_actit("專注", focus_col)
-	--[++近戰專家(Melee Specialist)++]--
-	local meleespec_col = Color[mod:get("meleespec_text_colour")](255, true)
-	local Meleespec_rgb_tw = iu_actit("近戰專家", meleespec_col)
-	--[++遠程專家(Ranged Specialist)++]--
-	local rangedspec_col = Color[mod:get("rangedspec_text_colour")](255, true)
-	local Rangedspec_rgb_tw = iu_actit("遠程專家", rangedspec_col)
---[+++其他(MISC)+++]--
-	--[++備註(Note)++]--
-	local note_col = Color[mod:get("note_text_colour")](255, true)
-	local Fns_note_rgb_tw = iu_actit(" 靈巧會增加弱點與暴擊傷害。", note_col)
-	local Pwr_note_rgb_tw = iu_actit(" 威力會增加傷害、踉蹌與破甲。", note_col)
-	local Rend_note_rgb_tw = iu_actit(" 撕裂可以增加傷害。", note_col)
-	local Brtl_note_rgb_tw = iu_actit(" 脆弱會降低敵人的護甲。", note_col)
-	local Hit_Mass_note_rgb_tw = iu_actit(" 順劈目標可使你打擊更多敵人。", note_col)
-	local Trauma_note_rgb_tw = iu_actit("", note_col)
-	local Fire_n_trap_note_rgb_tw = iu_actit("", note_col)
-	--[+ 天賦(Talents) +]--
-	local tal_col = Color[mod:get("talents_text_colour")](255, true)
-	local Scriers_gaze_rgb_tw = iu_actit("占卜者的凝視", tal_col)
-	local Stun_gren_rgb_tw = iu_actit("眩暈手榴彈", tal_col)
-	local Frag_gren_rgb_tw = iu_actit("破片手榴彈", tal_col)
-	local Fragmentation_gren_rgb_tw = iu_actit("破片手榴彈", tal_col)
+-- --[+++靈能者(PSYKER)+++]--
+-- 	--[++精準(Precision)++]--
+-- 	local prcsn_col = Color[mod:get("precision_text_colour")](255, true)
+-- 	local Precision_rgb_tw = iu_actit("精準加成", prcsn_col)
+-- --[+++歐格林(OGRYN)+++]--
+-- 	--[++麻木(Feel No Pain)++]--
+-- 	local fnp_col = Color[mod:get("fnp_text_colour")](255, true)
+-- 	local Feel_no_pain_rgb_tw = iu_actit("麻木", fnp_col)
+-- 	--[++幸運子彈(Lucky Bullet)++]--
+-- 	local luckyb_col = Color[mod:get("luckyb_text_colour")](255, true)
+-- 	local Lucky_bullet_rgb_tw = iu_actit("幸運子彈", luckyb_col)
+-- 	--[++踐踏(Trample)++]--
+-- 	local trample_col = Color[mod:get("trample_text_colour")](255, true)
+-- 	local Trample_rgb_tw = iu_actit("踐踏", trample_col)
+-- --[+++狂信徒(ZEALOT)+++]--
+-- 	--[++勢能(Momentum)++]--
+-- 	local moment_col = Color[mod:get("momentum_text_colour")](255, true)
+-- 	local Momentum_rgb_tw = iu_actit("勢能", moment_col)
+-- 	--[++隱身(Stealth)++]--
+-- 	local stlth_col = Color[mod:get("stealth_text_colour")](255, true)
+-- 	local Stealth_rgb_tw = iu_actit("隱身", stlth_col)
+-- 	--[++狂怒(Fury)++]--
+-- 	local fury_col = Color[mod:get("fury_text_colour")](255, true)
+-- 	local Fury_rgb_tw = iu_actit("狂怒", fury_col)
+-- 	local Fury_i_rgb_tw = iu_actit("狂怒", fury_col)
+-- --[+++老兵(VETERAN)+++]--
+-- 	--[++專注目標(Focus Target)++]--
+-- 	local focust_col = Color[mod:get("focust_text_colour")](255, true)
+-- 	local Focus_Target_rgb_tw = iu_actit("專注目標", focust_col)
+-- 	--[++專注(Focus)++]--
+-- 	local focus_col = Color[mod:get("focus_text_colour")](255, true)
+-- 	local Focus_rgb_tw = iu_actit("專注", focus_col)
+-- 	--[++近戰專家(Melee Specialist)++]--
+-- 	local meleespec_col = Color[mod:get("meleespec_text_colour")](255, true)
+-- 	local Meleespec_rgb_tw = iu_actit("近戰專家", meleespec_col)
+-- 	--[++遠程專家(Ranged Specialist)++]--
+-- 	local rangedspec_col = Color[mod:get("rangedspec_text_colour")](255, true)
+-- 	local Rangedspec_rgb_tw = iu_actit("遠程專家", rangedspec_col)
+-- --[+++其他(MISC)+++]--
+-- 	--[++備註(Note)++]--
+-- 	local note_col = Color[mod:get("note_text_colour")](255, true)
+-- 	local Fns_note_rgb_tw = iu_actit(" 靈巧會增加弱點與暴擊傷害。", note_col)
+-- 	local Pwr_note_rgb_tw = iu_actit(" 威力會增加傷害、踉蹌與破甲。", note_col)
+-- 	local Rend_note_rgb_tw = iu_actit(" 撕裂可以增加傷害。", note_col)
+-- 	local Brtl_note_rgb_tw = iu_actit(" 脆弱會降低敵人的護甲。", note_col)
+-- 	local Hit_Mass_note_rgb_tw = iu_actit(" 順劈目標可使你打擊更多敵人。", note_col)
+-- 	local Trauma_note_rgb_tw = iu_actit("", note_col)
+-- 	local Fire_n_trap_note_rgb_tw = iu_actit("", note_col)
+-- 	--[+ 天賦(Talents) +]--
+-- 	local tal_col = Color[mod:get("talents_text_colour")](255, true)
+-- 	local Scriers_gaze_rgb_tw = iu_actit("占卜者的凝視", tal_col)
+-- 	local Stun_gren_rgb_tw = iu_actit("眩暈手榴彈", tal_col)
+-- 	local Frag_gren_rgb_tw = iu_actit("破片手榴彈", tal_col)
+-- 	local Fragmentation_gren_rgb_tw = iu_actit("破片手榴彈", tal_col)
 
---[+++難度(DIFFICULTY)+++]--
-	--[+ 暴動(Sedition) +]--
-	local sed_col = Color[mod:get("sedition_text_colour")](255, true)
-	local sedition_rgb_tw = iu_actit("暴動", sed_col)
-	--[+ 起義(Uprising) +]--
-	local upr_col = Color[mod:get("uprising_text_colour")](255, true)
-	local uprising_rgb_tw = iu_actit("起義", upr_col)
-	--[+ 惡毒(Malice) +]--
-	local mal_col = Color[mod:get("malice_text_colour")](255, true)
-	local malice_rgb_tw = iu_actit("惡毒", mal_col)
-	--[+ 異端(Heresy) +]--
-	local her_col = Color[mod:get("heresy_text_colour")](255, true)
-	local heresy_rgb_tw = iu_actit("異端", her_col)
-	--[+ 詛咒(Damnation) +]--
-	local dam_col = Color[mod:get("damnation_text_colour")](255, true)
-	local damnation_rgb_tw = iu_actit("詛咒", dam_col)
---[+++老兵(VETERAN)+++]--
-	local cls_vet_col = Color[mod:get("class_veteran_text_colour")](255, true)
-	local cls_vet_rgb_tw = iu_actit("老兵", cls_vet_col)
-	local cls_vet2_rgb_tw = iu_actit("老兵", cls_vet_col)
---[+++狂信徒(ZEALOT)+++]--
-	local cls_zea_col = Color[mod:get("class_zealot_text_colour")](255, true)
-	local cls_zea_rgb_tw = iu_actit("狂信徒", cls_zea_col)
-	local cls_zea2_rgb_tw = iu_actit("狂信徒", cls_zea_col)
---[+++靈能者(PSYKER)+++]--
-	local cls_psy_col = Color[mod:get("class_psyker_text_colour")](255, true)
-	local cls_psy_rgb_tw = iu_actit("靈能者", cls_psy_col)
-	local cls_psy2_rgb_tw = iu_actit("靈能者", cls_psy_col)
---[+++歐格林(OGRYN)+++]--
-	local cls_ogr_col = Color[mod:get("class_ogryn_text_colour")](255, true)
-	local cls_ogr_rgb_tw = iu_actit("歐格林", cls_ogr_col)
-	local cls_ogr2_rgb_tw = iu_actit("歐格林", cls_ogr_col)
+-- --[+++難度(DIFFICULTY)+++]--
+-- 	--[+ 暴動(Sedition) +]--
+-- 	local sed_col = Color[mod:get("sedition_text_colour")](255, true)
+-- 	local sedition_rgb_tw = iu_actit("暴動", sed_col)
+-- 	--[+ 起義(Uprising) +]--
+-- 	local upr_col = Color[mod:get("uprising_text_colour")](255, true)
+-- 	local uprising_rgb_tw = iu_actit("起義", upr_col)
+-- 	--[+ 惡毒(Malice) +]--
+-- 	local mal_col = Color[mod:get("malice_text_colour")](255, true)
+-- 	local malice_rgb_tw = iu_actit("惡毒", mal_col)
+-- 	--[+ 異端(Heresy) +]--
+-- 	local her_col = Color[mod:get("heresy_text_colour")](255, true)
+-- 	local heresy_rgb_tw = iu_actit("異端", her_col)
+-- 	--[+ 詛咒(Damnation) +]--
+-- 	local dam_col = Color[mod:get("damnation_text_colour")](255, true)
+-- 	local damnation_rgb_tw = iu_actit("詛咒", dam_col)
+-- --[+++老兵(VETERAN)+++]--
+-- 	local cls_vet_col = Color[mod:get("class_veteran_text_colour")](255, true)
+-- 	local cls_vet_rgb_tw = iu_actit("老兵", cls_vet_col)
+-- 	local cls_vet2_rgb_tw = iu_actit("老兵", cls_vet_col)
+-- --[+++狂信徒(ZEALOT)+++]--
+-- 	local cls_zea_col = Color[mod:get("class_zealot_text_colour")](255, true)
+-- 	local cls_zea_rgb_tw = iu_actit("狂信徒", cls_zea_col)
+-- 	local cls_zea2_rgb_tw = iu_actit("狂信徒", cls_zea_col)
+-- --[+++靈能者(PSYKER)+++]--
+-- 	local cls_psy_col = Color[mod:get("class_psyker_text_colour")](255, true)
+-- 	local cls_psy_rgb_tw = iu_actit("靈能者", cls_psy_col)
+-- 	local cls_psy2_rgb_tw = iu_actit("靈能者", cls_psy_col)
+-- --[+++歐格林(OGRYN)+++]--
+-- 	local cls_ogr_col = Color[mod:get("class_ogryn_text_colour")](255, true)
+-- 	local cls_ogr_rgb_tw = iu_actit("歐格林", cls_ogr_col)
+-- 	local cls_ogr2_rgb_tw = iu_actit("歐格林", cls_ogr_col)
 
 
 return {
-	Scriers_gaze_rgb_tw = Scriers_gaze_rgb_tw,
-	Stun_gren_rgb_tw = Stun_gren_rgb_tw,
-	Frag_gren_rgb_tw = Frag_gren_rgb_tw,
-	Fragmentation_gren_rgb_tw = Fragmentation_gren_rgb_tw,
+	-- Scriers_gaze_rgb_tw = Scriers_gaze_rgb_tw,
+	-- Stun_gren_rgb_tw = Stun_gren_rgb_tw,
+	-- Frag_gren_rgb_tw = Frag_gren_rgb_tw,
+	-- Fragmentation_gren_rgb_tw = Fragmentation_gren_rgb_tw,
 
 	Bleed_rgb_tw = Bleed_rgb_tw,
 	Bleeding_rgb_tw = Bleeding_rgb_tw,
@@ -272,6 +280,7 @@ return {
 	Heat2_rgb_tw = Heat2_rgb_tw,
 	Ability_cd_rgb_tw = Ability_cd_rgb_tw,
 	Cd_rgb_tw = Cd_rgb_tw,
+	Cd_rgb_m_tw = Cd_rgb_m_tw,
 	Combat_abil_rgb_tw = Combat_abil_rgb_tw,
 	Combat_ability_rgb_tw = Combat_ability_rgb_tw,
 	Combat_ability_cd_rgb_tw = Combat_ability_cd_rgb_tw,
@@ -306,8 +315,11 @@ return {
 	Crit_hit_udom_rgb_tw = Crit_hit_udom_rgb_tw,
 	Dmg_rgb_tw = Dmg_rgb_tw,
 	Dmg_a_rgb_tw = Dmg_a_rgb_tw,
+	Dmg_bs_rgb_tw = Dmg_bs_rgb_tw,
+	Dmg_bs_K_rgb_tw = Dmg_bs_K_rgb_tw,
 	Dmg_b_rgb_tw = Dmg_b_rgb_tw,
 	Dmg_h_rgb_tw = Dmg_h_rgb_tw,
+	Dmg_h2_rgb_tw = Dmg_h2_rgb_tw,
 	Dmg_c_rgb_tw = Dmg_c_rgb_tw,
 	Dmg_d_rgb_tw = Dmg_d_rgb_tw,
 	Dmg_v_rgb_tw = Dmg_v_rgb_tw,
@@ -323,14 +335,15 @@ return {
 	Electrocuted_rgb_tw = Electrocuted_rgb_tw,
 	Electrocutes_rgb_tw = Electrocutes_rgb_tw,
 	Electrcuting_rgb_tw = Electrcuting_rgb_tw,
-	Feel_no_pain_rgb_tw = Feel_no_pain_rgb_tw,
+	-- Feel_no_pain_rgb_tw = Feel_no_pain_rgb_tw,
 	Finesse_rgb_tw = Finesse_rgb_tw,
 	Finesse_dmg_rgb_tw = Finesse_dmg_rgb_tw,
-	Focus_rgb_tw = Focus_rgb_tw,
-	Focus_Target_rgb_tw = Focus_Target_rgb_tw,
-	Fury_rgb_tw = Fury_rgb_tw,
-	Fury_i_rgb_tw = Fury_i_rgb_tw,
+	-- Focus_rgb_tw = Focus_rgb_tw,
+	-- Focus_Target_rgb_tw = Focus_Target_rgb_tw,
+	-- Fury_rgb_tw = Fury_rgb_tw,
+	-- Fury_i_rgb_tw = Fury_i_rgb_tw,
 	Health_rgb_tw = Health_rgb_tw,
+	Health_rgb_m_tw = Health_rgb_m_tw,
 	Wound_rgb_tw = Wound_rgb_tw,
 	Wounds_rgb_tw = Wounds_rgb_tw,
 	Wound_u_rgb_tw = Wound_u_rgb_tw,
@@ -338,16 +351,16 @@ return {
 	Hit_mass_rgb_tw = Hit_mass_rgb_tw,
 	Hit_masss_rgb_tw = Hit_masss_rgb_tw,
 	Impact_rgb_tw = Impact_rgb_tw,
-	Lucky_bullet_rgb_tw = Lucky_bullet_rgb_tw,
-	Meleespec_rgb_tw = Meleespec_rgb_tw,
-	Momentum_rgb_tw = Momentum_rgb_tw,
+	-- Lucky_bullet_rgb_tw = Lucky_bullet_rgb_tw,
+	-- Meleespec_rgb_tw = Meleespec_rgb_tw,
+	-- Momentum_rgb_tw = Momentum_rgb_tw,
 	Perl_rgb_tw = Perl_rgb_tw,
 	Peril_rgb_tw = Peril_rgb_tw,
 	Perils_rgb_tw = Perils_rgb_tw,
 	Perl_e_rgb_tw = Perl_e_rgb_tw,
 	Power_rgb_tw = Power_rgb_tw,
-	Precision_rgb_tw = Precision_rgb_tw,
-	Rangedspec_rgb_tw = Rangedspec_rgb_tw,
+	-- Precision_rgb_tw = Precision_rgb_tw,
+	-- Rangedspec_rgb_tw = Rangedspec_rgb_tw,
 	Rending_rgb_tw = Rending_rgb_tw,
 	Soulblaze_rgb_tw = Soulblaze_rgb_tw,
 	Soulblaze_k_rgb_tw = Soulblaze_k_rgb_tw,
@@ -365,20 +378,23 @@ return {
 	Staggered_rgb_tw = Staggered_rgb_tw,
 	Staggerr_rgb_tw = Staggerr_rgb_tw,
 	Stamina_rgb_tw = Stamina_rgb_tw,
+	Stamina_rgb_m_tw = Stamina_rgb_m_tw,
 	Stamina_se_rgb_tw = Stamina_se_rgb_tw,
 	Stamina_c_r_rgb_tw = Stamina_c_r_rgb_tw,
-	Stealth_rgb_tw = Stealth_rgb_tw,
+	-- Stealth_rgb_tw = Stealth_rgb_tw,
 	Strength_rgb_tw = Strength_rgb_tw,
 	Strength_m_rgb_tw = Strength_m_rgb_tw,
 	Strength_r_rgb_tw = Strength_r_rgb_tw,
 	Tghnss_rgb_tw = Tghnss_rgb_tw,
 	Toughness_rgb_tw = Toughness_rgb_tw,
+	Toughness_m_rgb_tw = Toughness_m_rgb_tw,
+	Toughness_rs_rgb_tw = Toughness_rs_rgb_tw,
 	Toughness_dmg_red_rgb_tw = Toughness_dmg_red_rgb_tw,
 	Toughness_dmg_red_u_rgb_tw = Toughness_dmg_red_u_rgb_tw,
 	Toughness_dmg_rgb_tw = Toughness_dmg_rgb_tw,
     Coherency_rgb_tw = Coherency_rgb_tw,
 	Coherencing_rgb_tw = Coherencing_rgb_tw,
-	Trample_rgb_tw = Trample_rgb_tw,
+	-- Trample_rgb_tw = Trample_rgb_tw,
 	Weakspot_rgb_tw = Weakspot_rgb_tw,
 	Weakspothit_rgb_tw = Weakspothit_rgb_tw,
 	Weakspothits_rgb_tw = Weakspothits_rgb_tw,
@@ -388,26 +404,26 @@ return {
 	Weakspot_r_dmg_rgb_tw = Weakspot_r_dmg_rgb_tw,
 	Weakspotv_dmg_rgb_tw = Weakspotv_dmg_rgb_tw,
 
-	Trauma_note_rgb_tw = Trauma_note_rgb_tw,
-	Fns_note_rgb_tw = Fns_note_rgb_tw,
-	Pwr_note_rgb_tw = Pwr_note_rgb_tw,
-	Rend_note_rgb_tw = Rend_note_rgb_tw,
-	Brtl_note_rgb_tw = Brtl_note_rgb_tw,
-	Hit_Mass_note_rgb_tw = Hit_Mass_note_rgb_tw,
-	Fire_n_trap_note_rgb_tw = Fire_n_trap_note_rgb_tw,
+	-- Trauma_note_rgb_tw = Trauma_note_rgb_tw,
+	-- Fns_note_rgb_tw = Fns_note_rgb_tw,
+	-- Pwr_note_rgb_tw = Pwr_note_rgb_tw,
+	-- Rend_note_rgb_tw = Rend_note_rgb_tw,
+	-- Brtl_note_rgb_tw = Brtl_note_rgb_tw,
+	-- Hit_Mass_note_rgb_tw = Hit_Mass_note_rgb_tw,
+	-- Fire_n_trap_note_rgb_tw = Fire_n_trap_note_rgb_tw,
 
-	sedition_rgb_tw = sedition_rgb_tw,
-	uprising_rgb_tw = uprising_rgb_tw,
-	malice_rgb_tw = malice_rgb_tw,
-	heresy_rgb_tw = heresy_rgb_tw,
-	damnation_rgb_tw = damnation_rgb_tw,
+	-- sedition_rgb_tw = sedition_rgb_tw,
+	-- uprising_rgb_tw = uprising_rgb_tw,
+	-- malice_rgb_tw = malice_rgb_tw,
+	-- heresy_rgb_tw = heresy_rgb_tw,
+	-- damnation_rgb_tw = damnation_rgb_tw,
 
-	cls_vet_rgb_tw = cls_vet_rgb_tw,
-	cls_vet2_rgb_tw = cls_vet2_rgb_tw,
-	cls_zea_rgb_tw = cls_zea_rgb_tw,
-	cls_zea2_rgb_tw = cls_zea2_rgb_tw,
-	cls_psy_rgb_tw = cls_psy_rgb_tw,
-	cls_psy2_rgb_tw = cls_psy2_rgb_tw,
-	cls_ogr_rgb_tw = cls_ogr_rgb_tw,
-	cls_ogr2_rgb_tw = cls_ogr2_rgb_tw,
+	-- cls_vet_rgb_tw = cls_vet_rgb_tw,
+	-- cls_vet2_rgb_tw = cls_vet2_rgb_tw,
+	-- cls_zea_rgb_tw = cls_zea_rgb_tw,
+	-- cls_zea2_rgb_tw = cls_zea2_rgb_tw,
+	-- cls_psy_rgb_tw = cls_psy_rgb_tw,
+	-- cls_psy2_rgb_tw = cls_psy2_rgb_tw,
+	-- cls_ogr_rgb_tw = cls_ogr_rgb_tw,
+	-- cls_ogr2_rgb_tw = cls_ogr2_rgb_tw,
 }

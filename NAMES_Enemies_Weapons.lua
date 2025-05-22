@@ -1250,7 +1250,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_autopistol1_ext_zh",
 				{"loc_weapon_mark_autopistol_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(120, 220, 255)}MK IV{#reset()}")),
+					loc_text("{#color(120, 220, 255)}MK 4 型{#reset()}")),
 
 		--[+ Bolt Pistol - Болт-пистолет +]--
 			--[+ Russian +]
@@ -1460,7 +1460,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK VII +]--
 			create_template("weapons_marks_lasgun1_ext_zh",
 				{"loc_weapon_mark_lasgun_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(233, 165, 161)}MK 8 型{#reset()}")),
+					loc_text("{#color(233, 165, 161)}MK 7 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_lasgun2_ext_ru",
 				{"loc_weapon_mark_lasgun_p1_m2"}, {"ru"},
@@ -2745,7 +2745,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IV +]--
 			create_template("weapons_marks_ogryn_heavystubber2_ext_zh",
 				{"loc_weapon_mark_ogryn_heavystubber_p1_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK IV{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 6 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_heavystubber3_ext_ru",
 				{"loc_weapon_mark_ogryn_heavystubber_p1_m3"}, {"ru"},
@@ -2815,7 +2815,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IIa +]--
 			create_template("weapons_marks_ogryn_heavystubber1_2_ext_zh",
 				{"loc_weapon_mark_ogryn_heavystubber_p2_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK IIa{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 2A 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_heavystubber2_2_ext_ru",
 				{"loc_weapon_mark_ogryn_heavystubber_p2_m2"}, {"ru"},
@@ -2823,7 +2823,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK IIIa +]--
 			create_template("weapons_marks_ogryn_heavystubber2_2_ext_zh",
 				{"loc_weapon_mark_ogryn_heavystubber_p2_m2"}, {"zh-tw"},
-					loc_text("{#color(255, 150, 200)}MK IIIa{#reset()}")),
+					loc_text("{#color(255, 150, 200)}MK 3A 型{#reset()}")),
 			--[+ Russian +]
 			create_template("weapons_marks_ogryn_heavystubber3_2_ext_ru",
 				{"loc_weapon_mark_ogryn_heavystubber_p2_m3"}, {"ru"},
@@ -2939,7 +2939,7 @@ local localization_templates = {
 			--[+ Traditional Chinese MK V +]--
 			create_template("weapons_marks_ogryn_thumper1_ext_zh",
 				{"loc_weapon_mark_ogryn_thumper_p1_m1"}, {"zh-tw"},
-					loc_text("{#color(255, 100, 200)}MK V{#reset()}")),
+					loc_text("{#color(255, 100, 200)}MK 5 型{#reset()}")),
 
 			--[+ Rumbler - Гранатомёт «Громобой» +]-- руоф Рамблер
 			--[+ Russian +]
