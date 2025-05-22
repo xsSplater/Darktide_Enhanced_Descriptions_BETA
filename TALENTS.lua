@@ -8,6 +8,27 @@
 
 local mod = get_mod("Enhanced_descriptions")
 
+--[+ Loading colors of Keywords and Numbers +]--
+COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
+-- All Numbers are taken from this file by adding to the value "COLORS_Numbers.".
+-- For example, in the game the Damage value is taken from the variable {damage:%s}, which in the file "COLORS_Numbers.lua" is replaced by dmg_var_rgb and to add the highlighted number to the text, we write the damage number to the text as "..COLORS_Numbers.dmg_var_rgb..".
+
+COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
+-- All Keywords are taken from this file by adding to the value "COLORS_KWords.".
+-- For example, in the file "COLORS_KWords.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords.Damage_rgb.".
+
+	--[+ Translations +]-- Add a line with a file of Keywords translated into your language.
+	--[+ French +]--
+COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr")
+	--[+ Russian +]--
+COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
+	--[+ Traditional Chinese +]--
+COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
+COLORS_KWords2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords2_tw")
+	--[+ Simplified Chinese +]--
+COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
+
+
 --[+ Toggle ENHANCED DESCRIPTIONS - Main +]--
 local enhanced_descriptions_enabled = mod:get("enhanced_descriptions_enabled")
 if enhanced_descriptions_enabled then
@@ -82,27 +103,6 @@ else
 	--[+ Simplified Chinese +]--
 	TALENTS_Enh_desc_nodes_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/NULL/TALENTS_Enh_desc_nodes_zh_cn_null")
 end
-
---[+ Loading colors of Keywords and Numbers +]--
-COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
--- All Numbers are taken from this file by adding to the value "COLORS_Numbers.".
--- For example, in the game the Damage value is taken from the variable {damage:%s}, which in the file "COLORS_Numbers.lua" is replaced by dmg_var_rgb and to add the highlighted number to the text, we write the damage number to the text as "..COLORS_Numbers.dmg_var_rgb..".
-
-COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
--- All Keywords are taken from this file by adding to the value "COLORS_KWords.".
--- For example, in the file "COLORS_KWords.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords.Damage_rgb.".
-
-	--[+ Translations +]-- Add a line with a file of Keywords translated into your language.
-	--[+ French +]--
-COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr")
-	--[+ Russian +]--
-COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
-	--[+ Traditional Chinese +]--
-COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
-COLORS_KWords2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords2_tw")
-	--[+ Simplified Chinese +]--
-COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
-
 
 --[+ Function to create a localization template +]--
 local function create_template(id, loc_keys, locales, handle_func)
