@@ -113,7 +113,6 @@ local iu_actit = InputUtils.apply_color_to_input_text
 
 		--[+ Numbers +]--
 	local n_minus_rgb = iu_actit("-", var_col)
-	local n_minus_rgb = iu_actit("-", var_col)
 	local n_plus_rgb = iu_actit("+", var_col)
 	local n_meter_rgb = iu_actit("m", var_col) -- meter
 	local n_second_rgb = iu_actit("s", var_col) -- second
