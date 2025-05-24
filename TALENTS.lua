@@ -4334,7 +4334,17 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys2_000_desc_ru",
 		{"loc_talent_veteran_improved_tag_description"}, {"ru"},
 			loc_text("Вы получаете заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru.." каждые {time:%s} секунды. Суммируется {max_stacks:%s} раз.\nОтметка врага применяет все заряды "..COLORS_KWords_ru.Focus_Target_rgb_ru.." к нему. Враг получает дополнительно {damage:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru.." за каждый заряд. Количество зарядов "..COLORS_KWords_ru.Focus_Target_rgb_ru.." сбрасывается до "..COLORS_Numbers.n_1_rgb.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_rgb_ru)),
-
+	--[+ Traditional Chinese - 鎖定目標 +]--
+	-- 每{time:%s}秒獲得一次鎖定目標效果（可疊加{max_stacks:%s}層）。\n\n標記敵人將對其施加鎖定目標效果，每一層鎖定目標將使敵人受到{damage:%s}額外傷害，其後鎖定目標效果層數重置為1。
+	create_template("talent_tree_vet_keys2_000_desc_tw",
+		{"loc_talent_veteran_improved_tag_description"}, {"zh-tw"},
+		loc_text(
+			"每 {time:%s} 秒獲得一層 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." ，最多 {max_stacks:%s} 層。\n\n"
+			..Arrow_right_.." 標記時，套用全部 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 層數。\n"
+			..Arrow_right_.." 該敵人每層將額外受到 {damage:%s} "..COLORS_KWords_tw.Dmg_a_rgb_tw.." 。\n"
+			..Arrow_right_.." "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 會重置為 "..COLORS_Numbers.n_1_rgb.."。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_2_rgb_tw)),
+			
 	--[+ KEYSTONE 2-1 - Target Down! +]--
 	create_template("talent_tree_vet_keys2_001_desc_en",
 		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"en"},
@@ -4347,6 +4357,16 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys2_001_desc_ru",
 		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." восполняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." за каждый заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru..", когда вы убиваете отмеченного врага."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_1_rgb_ru)),
+	--[+ Traditional Chinese - 目標擊倒! +]--
+	-- 若標記的敵人死亡，每一層鎖定目標效果為你和協同中的隊友恢復{toughness:%s}韌性和{stamina:%s}耐力。
+	create_template("talent_tree_vet_keys2_001_desc_tw",
+		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"zh-tw"},
+		loc_text(
+			"當擊殺 "..COLORS_KWords2_tw.Focus_Target_s_rgb_tw.." 的敵人時，\n"
+			.."你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友獲得以下效果：\n"
+			..Arrow_up_green.." 每層 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 恢復 {toughness:%s}  "..COLORS_KWords_tw.Toughness_m_rgb_tw.."。\n"
+			..Arrow_up_green.." 每層 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 恢復 {stamina:%s}  "..COLORS_KWords_tw.Stamina_rgb_m_tw.."。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_2_1_rgb_tw)),
 
 	--[+ KEYSTONE 2-2 - Redirect Fire! +]--
 	create_template("talent_tree_vet_keys2_002_desc_en",
@@ -4360,6 +4380,17 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys2_002_desc_ru",
 		{"loc_talent_veteran_improved_tag_dead_coherency_bonus_description"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." за каждый заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru..", когда вы убиваете отмеченного врага. Длится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_2_rgb_ru)),
+	--[+ Traditional Chinese - 轉移火力! +]--
+	--若標記的敵人死亡，每一層鎖定目標效果為你和協同中的隊友減傷{damage:%s}，持續{duration:%s}秒。
+	create_template("talent_tree_vet_keys2_002_desc_tw",
+		{"loc_talent_veteran_improved_tag_dead_coherency_bonus_description"}, {"zh-tw"},
+		loc_text(
+			"當擊殺 "..COLORS_KWords2_tw.Focus_Target_s_rgb_tw.." 的敵人時，\n"
+			.."你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友獲得以下效果：\n"
+			.."\n"
+			..Arrow_up_green.." 每層 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 增加 {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
+			..Arrow_right_.."  持續 {duration:%s} 秒。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_2_2_rgb_tw)),
 
 	--[+ KEYSTONE 2-3 - Focused Fire +]--
 	create_template("talent_tree_vet_keys2_003_desc_en",
@@ -4373,6 +4404,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys2_003_desc_ru",
 		{"loc_talent_veteran_improved_tag_more_damage_description"}, {"ru"},
 			loc_text("С "..COLORS_Numbers.n_5_rgb.." до {max_stacks:%s} увеличивается максимальное количество зарядов "..COLORS_KWords_ru.Focus_Target_rgb_ru..".")),
+	--[+ Traditional Chinese - 集中火力 +]--
+	--鎖定目標最大層數增加至{max_stacks:%s}。
+	create_template("talent_tree_vet_keys2_003_desc_tw",
+		{"loc_talent_veteran_improved_tag_more_damage_description"}, {"zh-tw"},
+		loc_text(
+			"提高 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 的最大層數：\n"
+			..Arrow_up_green.." 從 "..COLORS_Numbers.n_5_rgb.." 層提高至 {max_stacks:%s} 層。\n")),
 
 	--[+ KEYSTONE 3 - Weapons Specialist +]--
 	create_template("talent_tree_vet_keys3_000_desc_en",

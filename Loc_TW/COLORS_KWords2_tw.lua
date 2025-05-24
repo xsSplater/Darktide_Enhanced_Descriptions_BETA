@@ -31,9 +31,10 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Fury_rgb_tw = iu_actit("狂怒", fury_col)
 	local Fury_i_rgb_tw = iu_actit("狂怒", fury_col)
 --[+++老兵(VETERAN)+++]--
-	--[++專注目標(Focus Target)++]--
+	--[++鎖定目標(Focus Target)++]--
 	local focust_col = Color[mod:get("focust_text_colour")](255, true)
-	local Focus_Target_rgb_tw = iu_actit("專注目標", focust_col)
+	local Focus_Target_rgb_tw = iu_actit("鎖定目標", focust_col)
+	local Focus_Target_s_rgb_tw = iu_actit("鎖定", focust_col) --Simply
 	--[++專注(Focus)++]--
 	local focus_col = Color[mod:get("focus_text_colour")](255, true)
 	local Focus_rgb_tw = iu_actit("專注", focus_col)
@@ -105,6 +106,7 @@ return {
 	Feel_no_pain_rgb_tw = Feel_no_pain_rgb_tw,
 	Focus_rgb_tw = Focus_rgb_tw,
 	Focus_Target_rgb_tw = Focus_Target_rgb_tw,
+	Focus_Target_s_rgb_tw = Focus_Target_s_rgb_tw,
 	Fury_rgb_tw = Fury_rgb_tw,
 	Fury_i_rgb_tw = Fury_i_rgb_tw,
 	Lucky_bullet_rgb_tw = Lucky_bullet_rgb_tw,
