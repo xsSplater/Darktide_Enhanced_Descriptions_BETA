@@ -5252,6 +5252,13 @@ local localization_templates = {
 	create_template("talent_tree_ogr_aura0_000_desc_ru",
 		{"loc_talent_ogryn_2_base_4_description_new"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." тяжёлых атак ближнего боя для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_0_rgb_ru)),
+	--[+ Traditional Chinese - 威嚇氣場 +]--
+	create_template("talent_tree_ogr_aura0_000_desc_tw",
+		{"loc_talent_ogryn_2_base_4_description_new"}, {"zh-tw"},
+		loc_text(
+			"你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n\n"
+			..Arrow_up_green.." {damage:%s} "..COLORS_KWords_tw.Damage_s_rgb_tw.." 。\n"
+			..TALENTS_Enh_desc2_tw.ED_OGR_Aura_0_rgb_tw)),
 
 	--[+ AURA 1 - Bonebreaker's Aura +]--
 	create_template("talent_tree_ogr_aura1_000_desc_en",
@@ -5265,6 +5272,15 @@ local localization_templates = {
 	create_template("talent_tree_ogr_aura1_000_desc_ru",
 		{"loc_talent_damage_aura_improved_new"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." тяжёлых атак ближнего боя для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".\n\nЭто улучшенная версия ауры {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_1_rgb_ru)),
+	--[+ Traditional Chinese - 破骨者之環 +]--
+	--你和協同中的盟友的近戰攻擊傷害提高{damage:%s}。\n\n該天賦是{talent_name:%s}的強化版。
+	create_template("talent_tree_ogr_aura1_000_desc_tw",
+		{"loc_talent_damage_aura_improved_new"}, {"zh-tw"},
+		loc_text(
+			"你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
+			..Arrow_up_green.." {damage:%s} "..COLORS_KWords_tw.Damage_s_rgb_tw.." 。\n\n"
+			..Arrow_right_.." 此為 {talent_name:%s} 的強化版。\n"
+			..TALENTS_Enh_desc2_tw.ED_OGR_Aura_1_rgb_tw)),
 
 	--[+ AURA 2 - Stay Close! +]--
 	create_template("talent_tree_ogr_aura2_000_desc_en",
@@ -5278,6 +5294,14 @@ local localization_templates = {
 	create_template("talent_tree_ogr_aura2_000_desc_ru",
 		{"loc_talent_ogryn_toughness_regen_aura_desc"}, {"ru"},
 			loc_text("{toughness_regen_rate_modifier:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восполняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_2_rgb_ru)),
+	--[+ Traditional Chinese - 跟緊我! +]--
+	--你和協同中的盟友{coherency_regen:%s}韌性恢復。
+	create_template("talent_tree_ogr_aura2_000_desc_tw",
+		{"loc_talent_ogryn_toughness_regen_aura_desc"}, {"zh-tw"},
+		loc_text(
+			"你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
+			..Arrow_up_green.." {toughness_regen_rate_modifier:%s} "..COLORS_KWords_tw.Toughness_rs_rgb_tw.."。\n"
+			..TALENTS_Enh_desc2_tw.ED_OGR_Aura_2_rgb_tw)),
 
 	--[+ AURA 3 - Coward Culling +]--
 	create_template("talent_tree_ogr_aura3_000_desc_en",
@@ -5291,6 +5315,15 @@ local localization_templates = {
 	create_template("talent_tree_ogr_aura3_000_desc_ru",
 		{"loc_talent_ogryn_damage_vs_suppressed_new_desc"}, {"ru"},
 			loc_text("{suppression:%s} к подавлению врагов.\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." по подавленным врагам для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_3_rgb_ru)),
+	--[+ Traditional Chinese - 優勝劣汰 +]--
+	-- 你和協同中的盟友對被壓制的敵人造成的傷害增加{damage:%s}。
+	create_template("talent_tree_ogr_aura3_000_desc_tw",
+		{"loc_talent_ogryn_damage_vs_suppressed_new_desc"}, {"zh-tw"},
+		loc_text(
+			"你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
+			..Arrow_up_green.." 提升 {suppression:%s} 壓制效果。\n"
+			..Arrow_up_green.." 對被壓制敵人增加 {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
+			..TALENTS_Enh_desc2_tw.ED_OGR_Aura_3_rgb_tw)),
 
 --[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 	--[+ ABILITY 0 - Bull Rush +]--
