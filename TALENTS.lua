@@ -4224,7 +4224,23 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_000_desc_ru",
 		{"loc_talent_veteran_snipers_focus_alt_description"}, {"ru"},
 			loc_text("Убийства выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." дают {stacks:%s} заряда "..COLORS_KWords_ru.Focus_rgb_ru..". До максимума в {max_stacks} зарядов. Бег, подкаты и ходьба снимают заряды.\nКаждый заряд "..COLORS_KWords_ru.Focus_rgb_ru.." даёт:\n{reload_speed:%s} к скорости перезарядки и\n{power:%s} к усилению "..COLORS_KWords_ru.Finesse_rgb_ru.." для дальнобойных атак.\nУбийства выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." позволят вам передвигаться без потери зарядов в течение {grace_time:%s} секунд. Попадания выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." позволят вам передвигаться без потери зарядов в течение {grace_time_hit:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_rgb_ru)),
-
+	--[+ Traditional Chinese - 狙擊專注 +]--
+	-- 遠程弱點擊殺後獲得{stacks:%s}層專注，最多疊加{max_stacks}層。衝刺、滑鏟或行走會消耗已疊加層數。\n\n每層專注可使你獲得{power:%s}遠程靈巧強度和{reload_speed:%s}換彈速度。\n\n遠程弱點擊殺後的{grace_time:%s}秒內，移動時不會消耗專注層數。遠程弱點命中後的{grace_time_hit:%s}秒內，移動時不會消耗專注層數。
+	create_template("talent_tree_vet_keys1_000_desc_tw",
+	{"loc_talent_veteran_snipers_focus_alt_description"}, {"zh-tw"},
+	loc_text(COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 敵人後可獲得 {stacks:%s} 層 "..COLORS_KWords2_tw.Focus_rgb_tw.." 。\n\n"
+	.."每層 "..COLORS_KWords2_tw.Focus_rgb_tw.." 可提供：\n"
+	..Arrow_up_green.." {power:%s}  "..COLORS_KWords_tw.Finesse_dmg_r_rgb_tw.." 。\n"
+	..Arrow_up_green.." {reload_speed:%s} 裝填速度。\n"
+	.."\n"
+	..Arrow_right_.." 最多 {max_stacks} 層。\n"
+	..Arrow_right_.." 衝刺、滑鏟或行走會消耗 "..COLORS_KWords2_tw.Focus_rgb_tw.." 。\n"
+	.."\n"
+	.."以下情況移動不會消耗 "..COLORS_KWords2_tw.Focus_rgb_tw.." 層數：\n"
+	..Arrow_right_.." "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." {grace_time:%s} 秒內可自由移動。\n"
+	..Arrow_right_.." "..COLORS_KWords_tw.Weakspothits_rgb_tw.." {grace_time_hit:%s} 秒內可自由移動。\n"
+	.. TALENTS_Enh_desc2_tw.ED_VET_Keystone_1_rgb_tw)),
+	
 	--[+ KEYSTONE 1-1 - Chink in their Armour +]--
 	create_template("talent_tree_vet_keys1_001_desc_en",
 		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"en"},
@@ -4237,6 +4253,14 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_001_desc_ru",
 		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"ru"},
 			loc_text("{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru..", когда у вас {stacks:%s} или более зарядов "..COLORS_KWords_ru.Focus_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_1_rgb_ru)),
+	--[+ Translations Chinese - 滲透盔甲 +]--
+	-- {stacks:%s}層及以上專注時附加{rending:%s}撕裂效果。
+	create_template("talent_tree_vet_keys1_001_desc_tw",
+		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"zh-tw"},
+		loc_text(
+			"當 "..COLORS_KWords2_tw.Focus_rgb_tw.." 達到 {stacks:%s} 層以上時：\n"
+			..Arrow_up_green.. " {rending:%s} "..COLORS_KWords_tw.Rending_rgb_tw.."。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_1_1_rgb_tw)),
 
 	--[+ KEYSTONE 1-2 - Tunnel Vision +]--
 	create_template("talent_tree_vet_keys1_002_desc_en",
@@ -4250,6 +4274,14 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_002_desc_ru",
 		{"loc_talent_veteran_snipers_focus_stamina_bonus_desc"}, {"ru"},
 			loc_text("{toughness_replenish_multiplier:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждый заряд "..COLORS_KWords_ru.Focus_rgb_ru..". Убийства в "..COLORS_KWords_ru.Weakspot_rgb_ru.." дополнительно восстанавливают {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_2_rgb_ru)),
+	--[+ Translations Chinese - 視野狹窄 +]--
+	-- 每層專注恢復{toughness_replenish_multiplier:%s}韌性。此外，弱點擊殺也會使你恢復{stamina:%s}耐力。
+	create_template("talent_tree_vet_keys1_002_desc_tw",
+	{"loc_talent_veteran_snipers_focus_stamina_bonus_desc"}, {"zh-tw"},
+	loc_text(
+			Arrow_up_green.." 每層 "..COLORS_KWords2_tw.Focus_rgb_tw.." 可恢復 {toughness_replenish_multiplier:%s} 的 "..COLORS_KWords_tw.Toughness_rgb_tw.." 。\n"
+			..Arrow_up_green.." "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 時額外恢復 {stamina:%s} "..COLORS_KWords_tw.Stamina_rgb_tw.."。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_1_2_rgb_tw)),
 
 	--[+ KEYSTONE 1-3 - Long Range Assassin +]--
 	create_template("talent_tree_vet_keys1_003_desc_en",
@@ -4263,6 +4295,12 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_003_desc_ru",
 		{"loc_talent_veteran_snipers_focus_increased_stacks_description"}, {"ru"},
 			loc_text("С {stacks:%s} до {new_stacks:%s} увеличивается максимальное количество зарядов "..COLORS_KWords_ru.Focus_rgb_ru..".")),
+	--[+ Translations Chinese - 遠程刺客 +]--
+	--專注最大疊加層數從{stacks:%s}增加至{new_stacks:%s}。
+	create_template("talent_tree_vet_keys1_003_desc_tw",
+		{"loc_talent_veteran_snipers_focus_increased_stacks_description"}, {"zh-tw"},
+		loc_text(
+			Arrow_up_green.." 將 "..COLORS_KWords2_tw.Focus_rgb_tw.." 上限從 {stacks:%s} 提高至 {new_stacks:%s}。")),
 
 	--[+ KEYSTONE 1-4 - Camouflage +]--
 	create_template("talent_tree_vet_keys1_004_desc_en",
@@ -4276,6 +4314,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_004_desc_ru",
 		{"loc_talent_veteran_snipers_focus_stacks_on_still_description"}, {"ru"},
 			loc_text("Вы получаете {stack:%s} заряд "..COLORS_KWords_ru.Focus_rgb_ru.." каждые {time:%s} секунды, если стоите на месте или передвигаетесь присев.")),
+	--[+ Translations Chinese - 偽裝 +]--
+	-- 站立不動或蹲下行走時，每{time:%s}秒獲得{stack:%s}層專注。
+	create_template("talent_tree_vet_keys1_004_desc_tw",
+		{"loc_talent_veteran_snipers_focus_stacks_on_still_description"}, {"zh-tw"},
+		loc_text(
+			"當靜止不動或蹲走時：\n"
+			..Arrow_up_green.." 每 {time:%s} 秒獲得 {stack:%s} 層 "..COLORS_KWords2_tw.Focus_rgb_tw.." 。")),
 
 	--[+ KEYSTONE 2 - Focus Target! +]--
 	create_template("talent_tree_vet_keys2_000_desc_en",
@@ -4289,7 +4334,17 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys2_000_desc_ru",
 		{"loc_talent_veteran_improved_tag_description"}, {"ru"},
 			loc_text("Вы получаете заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru.." каждые {time:%s} секунды. Суммируется {max_stacks:%s} раз.\nОтметка врага применяет все заряды "..COLORS_KWords_ru.Focus_Target_rgb_ru.." к нему. Враг получает дополнительно {damage:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru.." за каждый заряд. Количество зарядов "..COLORS_KWords_ru.Focus_Target_rgb_ru.." сбрасывается до "..COLORS_Numbers.n_1_rgb.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_rgb_ru)),
-
+	--[+ Traditional Chinese - 鎖定目標 +]--
+	-- 每{time:%s}秒獲得一次鎖定目標效果（可疊加{max_stacks:%s}層）。\n\n標記敵人將對其施加鎖定目標效果，每一層鎖定目標將使敵人受到{damage:%s}額外傷害，其後鎖定目標效果層數重置為1。
+	create_template("talent_tree_vet_keys2_000_desc_tw",
+		{"loc_talent_veteran_improved_tag_description"}, {"zh-tw"},
+		loc_text(
+			"每 {time:%s} 秒獲得一層 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." ，最多 {max_stacks:%s} 層。\n\n"
+			..Arrow_right_.." 標記時，套用全部 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 層數。\n"
+			..Arrow_right_.." 該敵人每層將額外受到 {damage:%s} "..COLORS_KWords_tw.Dmg_a_rgb_tw.." 。\n"
+			..Arrow_right_.." "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 會重置為 "..COLORS_Numbers.n_1_rgb.."。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_2_rgb_tw)),
+			
 	--[+ KEYSTONE 2-1 - Target Down! +]--
 	create_template("talent_tree_vet_keys2_001_desc_en",
 		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"en"},
@@ -4302,6 +4357,16 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys2_001_desc_ru",
 		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." восполняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." за каждый заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru..", когда вы убиваете отмеченного врага."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_1_rgb_ru)),
+	--[+ Traditional Chinese - 目標擊倒! +]--
+	-- 若標記的敵人死亡，每一層鎖定目標效果為你和協同中的隊友恢復{toughness:%s}韌性和{stamina:%s}耐力。
+	create_template("talent_tree_vet_keys2_001_desc_tw",
+		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"zh-tw"},
+		loc_text(
+			"當擊殺 "..COLORS_KWords2_tw.Focus_Target_s_rgb_tw.." 的敵人時，\n"
+			.."你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友獲得以下效果：\n"
+			..Arrow_up_green.." 每層 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 恢復 {toughness:%s}  "..COLORS_KWords_tw.Toughness_m_rgb_tw.."。\n"
+			..Arrow_up_green.." 每層 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 恢復 {stamina:%s}  "..COLORS_KWords_tw.Stamina_rgb_m_tw.."。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_2_1_rgb_tw)),
 
 	--[+ KEYSTONE 2-2 - Redirect Fire! +]--
 	create_template("talent_tree_vet_keys2_002_desc_en",
@@ -4315,6 +4380,17 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys2_002_desc_ru",
 		{"loc_talent_veteran_improved_tag_dead_coherency_bonus_description"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." за каждый заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru..", когда вы убиваете отмеченного врага. Длится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_2_rgb_ru)),
+	--[+ Traditional Chinese - 轉移火力! +]--
+	--若標記的敵人死亡，每一層鎖定目標效果為你和協同中的隊友減傷{damage:%s}，持續{duration:%s}秒。
+	create_template("talent_tree_vet_keys2_002_desc_tw",
+		{"loc_talent_veteran_improved_tag_dead_coherency_bonus_description"}, {"zh-tw"},
+		loc_text(
+			"當擊殺 "..COLORS_KWords2_tw.Focus_Target_s_rgb_tw.." 的敵人時，\n"
+			.."你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友獲得以下效果：\n"
+			.."\n"
+			..Arrow_up_green.." 每層 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 增加 {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
+			..Arrow_right_.."  持續 {duration:%s} 秒。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_2_2_rgb_tw)),
 
 	--[+ KEYSTONE 2-3 - Focused Fire +]--
 	create_template("talent_tree_vet_keys2_003_desc_en",
@@ -4328,6 +4404,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys2_003_desc_ru",
 		{"loc_talent_veteran_improved_tag_more_damage_description"}, {"ru"},
 			loc_text("С "..COLORS_Numbers.n_5_rgb.." до {max_stacks:%s} увеличивается максимальное количество зарядов "..COLORS_KWords_ru.Focus_Target_rgb_ru..".")),
+	--[+ Traditional Chinese - 集中火力 +]--
+	--鎖定目標最大層數增加至{max_stacks:%s}。
+	create_template("talent_tree_vet_keys2_003_desc_tw",
+		{"loc_talent_veteran_improved_tag_more_damage_description"}, {"zh-tw"},
+		loc_text(
+			"提高 "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 的最大層數：\n"
+			..Arrow_up_green.." 從 "..COLORS_Numbers.n_5_rgb.." 層提高至 {max_stacks:%s} 層。\n")),
 
 	--[+ KEYSTONE 3 - Weapons Specialist +]--
 	create_template("talent_tree_vet_keys3_000_desc_en",
@@ -4341,6 +4424,30 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys3_000_desc_ru",
 		{"loc_talent_veteran_weapon_switch_description"}, {"ru"},
 			loc_text("Вы получаете заряд "..COLORS_KWords_ru.Rangedspec_rgb_ru.." при убийстве в ближнем бою. Суммируется до {ranged_stacks:%s} раз.\nВы получаете заряд "..COLORS_KWords_ru.Meleespec_rgb_ru.." при убийстве в дальнем бою. Суммируется {melee_stacks:%s} раз.\n\nКогда вы берёте в руки оружие дальнего боя, вы активируете эффект "..COLORS_KWords_ru.Rangedspec_rgb_ru.." и получаете за каждый заряд прибавку для следующего выстрела:\n{ranged_attack_speed:%s} к скорости атаки и\n{ranged_crit_chance:%s} к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru..". Длится {ranged_duration:%s} секунд.\n\nКогда вы берёте в руки оружие ближнего боя, вы активируете эффект "..COLORS_KWords_ru.Meleespec_rgb_ru.." и получаете:\n{melee_attack_speed:%s} к скорости атаки,\n"..COLORS_Numbers.n_plus_rgb.."{dodge_modifier:%s} к скорости и дистанции уклонений. Длится {melee_duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_rgb_ru)),
+	--[+ Traditional Chinese - 武器專家 +]--
+	--近戰擊殺後獲得遠端專家效果（可疊加{ranged_stacks:%s}層）。遠端擊殺後獲得近戰專家效果（可疊加{melee_stacks:%s}層）。\n\n裝備遠端武器時，啟動遠端專家效果，每層效果使你的下一次射擊獲得{ranged_attack_speed:%s}遠端攻擊速度和{ranged_crit_chance:%s}遠程暴擊幾率，持續{ranged_duration:%s}秒。\n\n裝備近戰武器後，啟動近戰專家效果，使你獲得{melee_attack_speed:%s}近戰攻擊速度，{dodge_modifier:%s}閃避速度和閃避距離。持續{melee_duration:%s}秒。
+	create_template("talent_tree_vet_keys3_000_desc_tw",
+		{"loc_talent_veteran_weapon_switch_description"}, {"zh-tw"},
+			loc_text(
+			"當你使用近戰武器擊殺敵人時，\n"
+			..Arrow_up_green.." 獲得一層 "..COLORS_KWords2_tw.Rangedspec_rgb_tw.."，可累積至 {ranged_stacks:%s} 層。\n"
+			.."\n"
+			.."當你使用遠程武器擊殺敵人時，\n"
+			..Arrow_up_green.." 獲得一層 "..COLORS_KWords2_tw.Meleespec_rgb_tw.."，可累積至 {melee_stacks:%s} 層。\n"
+			.."\n"
+			.."裝備遠程武器時，\n"
+			.."將啟動 "..COLORS_KWords2_tw.Rangedspec_rgb_tw.." 效果，每層提供：\n"
+			..Arrow_up_green.." {ranged_attack_speed:%s} 遠程攻擊速度。\n"
+			..Arrow_up_green.." {ranged_crit_chance:%s} "..COLORS_KWords_tw.Crt_u_chance_rgb_tw.."。\n"
+			..Arrow_right_.."  效果持續 {ranged_duration:%s} 秒。\n"
+			.."\n"
+			.."裝備近戰武器時，\n"
+			.."將啟動 "..COLORS_KWords2_tw.Meleespec_rgb_tw.." 效果，提供：\n"
+			..Arrow_up_green.." {melee_attack_speed:%s} 近戰攻擊速度。\n"
+			..Arrow_up_green.." {dodge_modifier:%s} 閃避速度與距離。\n"
+			..Arrow_right_.."  效果持續 {melee_duration:%s} 秒。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_3_rgb_tw
+		)),
 
 	--[+ KEYSTONE 3-1 - Always Prepared +]--
 	create_template("talent_tree_vet_keys3_001_desc_en",
@@ -4354,6 +4461,18 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys3_001_desc_ru",
 		{"loc_talent_veteran_weapon_switch_replenish_ammo_description"}, {"ru"},
 			loc_text("Активация "..COLORS_KWords_ru.Rangedspec_rgb_ru.." заряжает до {ammo:%s} недостающих патронов в вашем магазине из резерва за каждый заряд. Округляется в большую сторону."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_1_rgb_ru)),
+	--[+ Traditional Chinese - 有備無患 +]--
+	-- 激活遠程專家時每層效果將為彈藥儲備中補充最多{ammo:%s}的彈藥損失，向上取整。
+	--  {ammo:%s} was 3.3% buy actually it 33%.
+	create_template("talent_tree_vet_keys3_001_desc_tw",
+		{"loc_talent_veteran_weapon_switch_replenish_ammo_description"}, {"zh-tw"},
+		loc_text(
+			"啟動 "..COLORS_KWords2_tw.Rangedspec_rgb_tw.." 時，\n"
+			.."\n"
+			..Arrow_up_green.." 每層可補充 "..COLORS_Numbers.pc_33_rgb.." 彈匣的彈藥，\n"
+			..Arrow_right_.." 從備彈中補至彈匣內。\n"
+			..Arrow_right_.." 以無條件進位方式計算。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_3_1_rgb_tw)),
 
 	--[+ KEYSTONE 3-2 - Invigorated +]--
 	create_template("talent_tree_vet_keys3_002_desc_en",
@@ -4367,6 +4486,14 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys3_002_desc_ru",
 		{"loc_talent_veteran_weapon_switch_replenish_stamina_description"}, {"ru"},
 			loc_text("Активация "..COLORS_KWords_ru.Meleespec_rgb_ru.." восстанавливает {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_2_rgb_ru)),
+	--[+ Traditional Chinese - 活力煥發 +]--
+	-- 激活近戰專家使恢復{stamina:%s}耐力。
+	create_template("talent_tree_vet_keys3_002_desc_tw",
+		{"loc_talent_veteran_weapon_switch_replenish_stamina_description"}, {"zh-tw"},
+		loc_text(
+			"啟動 "..COLORS_KWords2_tw.Meleespec_rgb_tw.." 時，\n"
+			..Arrow_up_green.." 恢復 {stamina:%s} "..COLORS_KWords_tw.Stamina_rgb_tw.."。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_3_2_rgb_tw)),
 
 	--[+ KEYSTONE 3-3 - On Your Toes +]--
 	create_template("talent_tree_vet_keys3_003_desc_en",
@@ -4380,6 +4507,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys3_003_desc_ru",
 		{"loc_talent_veteran_weapon_switch_replenish_toughness_description"}, {"ru"},
 			loc_text("Активация "..COLORS_KWords_ru.Meleespec_rgb_ru.." или "..COLORS_KWords_ru.Rangedspec_rgb_ru.." восстанавливает {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..". {cooldown:%s} секунды восстанавливается каждый."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_3_rgb_ru)),
+	--[+ Traditional Chinese - 時刻警覺 +]--
+	-- 激活近戰專家和遠程專家時恢復{toughness:%s}韌性，冷卻時間{cooldown:%s}秒。
+	create_template("talent_tree_vet_keys3_003_desc_tw",
+		{"loc_talent_veteran_weapon_switch_replenish_toughness_description"}, {"zh-tw"},
+		loc_text(
+			"啟動 "..COLORS_KWords2_tw.Meleespec_rgb_tw.." 或 "..COLORS_KWords2_tw.Rangedspec_rgb_tw.." 時，\n"
+			..Arrow_up_green.." 恢復 {toughness:%s} "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+			..Arrow_right_.." 每次冷卻為 {cooldown:%s} 秒。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_3_3_rgb_tw)),
 
 	--[+ KEYSTONE 3-4 - Fleeting Fire +]--
 	create_template("talent_tree_vet_keys3_004_desc_en",
@@ -4393,6 +4529,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys3_004_desc_ru",
 		{"loc_talent_veteran_weapon_switch_reload_speed_description"}, {"ru"},
 			loc_text("Активация "..COLORS_KWords_ru.Rangedspec_rgb_ru.." даёт {reload_speed:%s} к скорости перезарядки оружия на {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_4_rgb_ru)),
+	--[+ Traditional Chinese - 集火 +]--
+	-- 激活遠程專家時獲得{reload_speed:%s}換彈速度，持續{duration:%s}秒。
+	create_template("talent_tree_vet_keys3_004_desc_tw",
+		{"loc_talent_veteran_weapon_switch_reload_speed_description"}, {"zh-tw"},
+		loc_text(
+			"啟動 "..COLORS_KWords2_tw.Rangedspec_rgb_tw.." 時，\n"
+			..Arrow_up_green.." 獲得 {reload_speed:%s} 換彈速度。\n"
+			..Arrow_right_.." 效果持續 {duration:%s} 秒。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_3_4_rgb_tw)),
 
 	--[+ KEYSTONE 3-5 - Conditioning +]--
 	create_template("talent_tree_vet_keys3_005_desc_en",
@@ -4406,6 +4551,15 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys3_005_desc_ru",
 		{"loc_talent_veteran_weapon_switch_stamina_reduction_description"}, {"ru"},
 			loc_text("Активация "..COLORS_KWords_ru.Meleespec_rgb_ru.." даёт {stamina_reduction:%s} к сокращению затрат "..COLORS_KWords_ru.Stamina_rgb_ru.." на {duration:%s} секунды."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_5_rgb_ru)),
+	--[+ Traditional Chinese - 身體調節 +]--
+	-- 激活近戰專家時耐力消耗減少{stamina_reduction:%s}，持續{duration:%s}秒。
+	create_template("talent_tree_vet_keys3_005_desc_tw",
+		{"loc_talent_veteran_weapon_switch_stamina_reduction_description"}, {"zh-tw"},
+		loc_text(
+			"啟動 "..COLORS_KWords2_tw.Meleespec_rgb_tw.." 時，\n"
+			..Arrow_up_green.." {stamina_reduction:%s} "..COLORS_KWords_tw.Stamina_c_r_rgb_tw.." 減少。\n"
+			..Arrow_right_.." 效果持續 {duration:%s} 秒。\n"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_3_5_rgb_tw)),
 
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - Longshot +]--
