@@ -5135,6 +5135,17 @@ local localization_templates = {
 	create_template("talent_tree_ogr_blitz0_000_desc_ru",
 		{"loc_ability_ogryn_grenade_box_description"}, {"ru"},
 			loc_text("Вы бросаете коробку гранат с огромной силой и энтузиазмом, чтобы нанести высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\nНемного увеличен "..COLORS_KWords_ru.Dmg_rgb_ru.." против несгибаемых врагов и очень низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." против панцирной брони.\nПополняет все ящики при подборе гранат."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_0_rgb_ru)),
+	--[+ Traditional Chinese - 巨量傷害盒 +]--
+	--激情地奮力投出手雷箱，對單一敵人造成大量傷害。
+	create_template("talent_tree_ogr_blitz0_000_desc_tw",
+		{"loc_ability_ogryn_grenade_box_description"}, {"zh-tw"},
+		loc_text(
+			"投擲一個手榴彈箱攻擊單一敵人。\n"
+			.."\n"
+			..Arrow_up_green.." 對不屈敵人造成稍高 "..COLORS_KWords_tw.Dmg_rgb_tw.."。\n"
+			..Arrow_down_red.." 對裝甲敵人造成非常低 "..COLORS_KWords_tw.Dmg_rgb_tw.."。\n"
+			..Arrow_right_.." 撿拾手榴彈時補滿所有彈箱。\n"
+			..TALENTS_Enh_desc2_tw.ED_OGR_Blitz_0_rgb_tw)),
 
 	--[+ BLITZ 1 - Big Friendly Rock +]--
 	create_template("talent_tree_ogr_blitz1_000_desc_en",
@@ -5148,6 +5159,20 @@ local localization_templates = {
 	create_template("talent_tree_ogr_blitz1_000_desc_ru",
 		{"loc_ability_ogryn_friend_rock_desc"}, {"ru"},
 			loc_text("Вы бросаете большой камень или обломок бетона в одного врага. Вы подбираете новый камень каждые {recharge:%s} секунд и можете иметь при себе до {max_charges:%s} камней одновременно.\nСлегка увеличен "..COLORS_KWords_ru.Dmg_rgb_ru.." против маньяков и очень низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." против панцирной брони. Дополнительное усиление от "..COLORS_KWords_ru.Finesse_rgb_ru.." против несгибаемых.\nОгрин не может подбирать гранаты."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_1_rgb_ru)),
+	--[+ Traditional Chinese - 投石問路 +]--
+	-- 向單個敵人投擲一塊巨石或一大塊垃圾。對甲殼護甲和不屈敵人的效果減弱。你每{recharge:%s}秒撿起一塊新岩石，一次可同時舉起{max_charges:%s}塊岩石。
+	create_template("talent_tree_ogr_blitz1_000_desc_tw",
+		{"loc_ability_ogryn_friend_rock_desc"}, {"zh-tw"},
+		loc_text(
+			"投擲巨石 攻擊單一敵人。\n"
+			..Arrow_right_.." 每 {recharge:%s} 秒獲得一顆新石頭。\n"
+			..Arrow_right_.." 最多可持有 {max_charges:%s} 顆。\n"
+			..Arrow_up_green.." 對狂暴敵人造成 "..COLORS_KWords_tw.Dmg_h_rgb_tw.."。\n"
+			..Arrow_down_red.." 對裝甲敵人造成非常低 "..COLORS_KWords_tw.Dmg_rgb_tw.."。\n"
+			..Arrow_up_green.." 對不屈敵人額外強化 "..COLORS_KWords_tw.Finesse_rgb_tw.." 效果。\n"
+			..Arrow_down_red.." 歐格林無法撿拾手榴彈。\n"
+			..TALENTS_Enh_desc2_tw.ED_OGR_Blitz_1_rgb_tw
+		)),
 
 	--[+ BLITZ 1-1 - That One Didn't Count +]--
 	create_template("talent_tree_ogr_blitz1_001_desc_en",
@@ -5161,6 +5186,14 @@ local localization_templates = {
 	create_template("talent_tree_ogr_blitz1_001_desc_ru",
 		{"loc_talent_ogryn_replenish_rock_on_miss_desc"}, {"ru"},
 			loc_text("{talent_name:%s} восстанавливает заряд, если вы попали в "..COLORS_KWords_ru.Weakspothit_rgb_ru.." или не попали ни в кого. Восстановление "..COLORS_Numbers.cd_dur_var_rgb.." секунд.")),
+	--[+ Traditional Chinese - 那下不算! +]--
+	-- 命中弱點或未命中任何敵人時，{talent_name:%s}將恢復一次充能。冷卻時間{cooldown_duration:%s}秒。
+	create_template("talent_tree_ogr_blitz1_001_desc_tw",
+		{"loc_talent_ogryn_replenish_rock_on_miss_desc"}, {"zh-tw"},
+		loc_text(
+			"{talent_name:%s} 若 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." 或未命中敵人，\n\n"
+			..Arrow_up_green.." 將恢復一個使用次數。\n"
+			..Arrow_right_.." 冷卻為 "..COLORS_Numbers.cd_dur_var_rgb.." 秒。\n")),
 
 	--[+ BLITZ 2 - Frag Bomb +]--
 	create_template("talent_tree_ogr_blitz2_000_desc_en",
@@ -5174,6 +5207,15 @@ local localization_templates = {
 	create_template("talent_tree_ogr_blitz2_000_desc_ru",
 		{"loc_ability_ogryn_grenade_demolition_desc"}, {"ru"},
 			loc_text("Вы бросаете огринского размера "..COLORS_KWords_ru.Frag_gren_rgb_ru.." с радиусом взрыва до {radius:%s} метров, наносящую увеличенный "..COLORS_KWords_ru.Dmg_rgb_ru.." в центре."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_2_rgb_ru)),
+	--[+ Traditional Chinese - 破片炸彈 +]--
+	-- 投擲一枚歐格林尺寸（唯一完美的尺寸！）的破片手雷，爆炸範圍{radius:%s}公尺，爆心造成更高傷害。
+	create_template("talent_tree_ogr_blitz2_000_desc_tw",
+		{"loc_ability_ogryn_grenade_demolition_desc"}, {"zh-tw"},
+		loc_text(
+			"投擲一顆歐格林專用 "..COLORS_KWords2_tw.Frag_gren_rgb_tw.."。\n"
+			..Arrow_up_green.." 爆炸半徑最大為 {radius:%s} 公尺。\n"
+			..Arrow_up_green.." 中心區域造成更高 "..COLORS_KWords_tw.Dmg_rgb_tw.."。\n"
+			..TALENTS_Enh_desc2_tw.ED_OGR_Blitz_2_rgb_tw)),
 
 	--[+ BLITZ 3 - Bombs Away! +]--
 	create_template("talent_tree_ogr_blitz3_000_desc_en",
@@ -5187,6 +5229,15 @@ local localization_templates = {
 	create_template("talent_tree_ogr_blitz3_000_desc_ru",
 		{"loc_talent_bonebreaker_grenade_super_armor_explosion_desc"}, {"ru"},
 			loc_text("Вы бросаете коробку гранат с огромной силой и энтузиазмом, чтобы нанести высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\nПри попадании по врагу ящик разбивается, разбрасывая вокруг цели {num_grenades:%s} гранат.\nЭто улучшенная версия таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_3_rgb_ru)),
+	--[+ Traditional Chinese - 投彈完畢! +]--
+	-- 激情地奮力投出手雷箱，對單個敵人造成大量傷害。\n\n手雷箱擊中敵人即破壞，{num_grenades:%s}個即將爆炸的手雷散落於目標周圍。\n\n該天賦是{talent_name%s}的增強版。
+	create_template("talent_tree_ogr_blitz3_000_desc_tw",
+		{"loc_talent_bonebreaker_grenade_super_armor_explosion_desc"}, {"zh-tw"},
+		loc_text(
+			"投擲一個手榴彈箱攻擊單一敵人。\n"
+			..Arrow_up_green.." 命中敵人後向四周拋出 {num_grenades:%s} 顆手榴彈。\n\n"
+			.."此為 {talent_name:%s} 的強化版本。\n"
+			..TALENTS_Enh_desc2_tw.ED_OGR_Blitz_3_rgb_tw)),
 
 --[+ +AURA - АУРА+ +]--
 	--[+ AURA 0 - Intimidating Presence +]--
