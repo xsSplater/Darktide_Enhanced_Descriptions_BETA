@@ -2479,6 +2479,10 @@ local localization_templates = {
 	create_template("talent_tree_zea_blitz0_000_desc_en",
 		{"loc_ability_shock_grenade_description"}, {"en"},
 			loc_text("Throw a "..COLORS_KWords.Stun_gren_rgb.." that "..COLORS_KWords.Electrocutes_rgb.." and "..COLORS_KWords.Stuns_rgb.." all Enemies within its blast radius.\n"
+					..Arrow_up_green.." Ignores Bulwark shields.\n"
+					..Arrow_up_green.." Can be refreshed during active duration.\n"
+					..Arrow_right_.." Fuse time: "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
+					..Arrow_right_.." Explosion radius: "..COLORS_Numbers.n_8_rgb.." meters.\n"
 					..TALENTS_Enh_desc.ED_ZEA_Blitz_0_rgb)), -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_blitz0_000_desc_fr",
@@ -2499,8 +2503,14 @@ local localization_templates = {
 	--[+ BLITZ 1 - Stunstorm Grenade +]--
 	create_template("talent_tree_zea_blitz1_000_desc_en",
 		{"loc_zealot_improved_stun_grenade_desc"}, {"en"},
-			loc_text("Throw a "..COLORS_KWords.Stun_gren_rgb.." that explodes and applies a staggering "..COLORS_KWords.Electrocution_rgb.." effect to all enemies within its range.\n\nThis is an augmented version of {talent_name:%s} with {radius:%s} blast radius.\n"
-					..TALENTS_Enh_desc.ED_ZEA_Blitz_1_rgb)), -- talent_name: Stun Grenade, radius: +50% -- colors
+			loc_text("Throw a "..COLORS_KWords.Stun_gren_rgb.." that explodes and applies a staggering "..COLORS_KWords.Electrocution_rgb.." effect to all enemies within its range.\n"
+					..Arrow_right_.." This is an augmented version of {talent_name:%s} with {radius:%s} blast radius. Up to "..COLORS_Numbers.n_12_rgb.." meters.\n"
+					..Arrow_up_green.." Ignores Bulwark shields.\n"
+					..Arrow_up_green.." Can be refreshed during active duration.\n"
+					..Arrow_up_green.." "..COLORS_KWords.Staggers_rgb.." all enemies in range except Mutants, Scab Captains and Monstrosities.\n"
+					..Arrow_right_.." Fuse time: "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
+					..Arrow_right_.." Explosion radius: "..COLORS_Numbers.n_8_rgb.." meters.\n"
+					..TALENTS_Enh_desc.ED_ZEA_Blitz_0_rgb)), -- talent_name: Stun Grenade, radius: +50% -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_blitz1_000_desc_fr",
 		{"loc_zealot_improved_stun_grenade_desc"}, {"fr"},
@@ -2523,6 +2533,7 @@ local localization_templates = {
 	create_template("talent_tree_zea_blitz2_000_desc_en",
 		{"loc_talent_ability_fire_grenade_desc"}, {"en"},
 			loc_text("Throw a grenade that leaves a layer of flaming liquid, "..COLORS_KWords.Burning_rgb.." and "..COLORS_KWords.Staggering_rgb.." enemies, and barring their path. Most effective against Unarmoured Enemies.\n"
+					..Arrow_right_.." Fuse time: "..COLORS_Numbers.n_1_7_rgb.." seconds.\n"
 					..TALENTS_Enh_desc.ED_ZEA_Blitz_2_rgb)), -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_blitz2_000_desc_fr",
@@ -2548,6 +2559,15 @@ local localization_templates = {
 	create_template("talent_tree_zea_blitz3_000_desc_en",
 		{"loc_ability_zealot_throwing_knifes_desc"}, {"en"},
 			loc_text("Throw a consecrated knife to deal High "..COLORS_KWords.Damage_rgb.." to a Single Enemy.\n"
+					..Arrow_up_green.." High armor "..COLORS_KWords.Damage_rgb.." modifiers against Maniac and Infested.\n"
+					..Arrow_up_green.." Extra "..COLORS_KWords.Finesse_rgb.." boosts against Unarmoured and Flak.\n"
+					..Arrow_up_green.." Deals No "..COLORS_KWords.Damage_rgb.." against Carapace unless "..COLORS_KWords.Weakspot_rgb.." like Mauler head.\n"
+					..Arrow_up_green.." Can Cleave "..COLORS_Numbers.n_1_rgb.." Groaner, Poxwalker, Scab/Dreg Stalker or Scab Shooter.\n"
+					..Arrow_up_green.." Headshot kills all enemies except Ogryns, Ragers, Maulers and Monstrosities.\n"
+					..Arrow_right_.." Quick Throw.\n"
+					..Arrow_right_.." No "..COLORS_KWords.Damage_rgb.." falloff.\n"
+					..Arrow_right_.." Ammo: Replenishes "..COLORS_Numbers.n_1_rgb.." knife per melee Elite or Special kill. "..COLORS_Numbers.n_2_rgb.." knives per small ammo pickup. "..COLORS_Numbers.n_6_rgb.." knives per big ammo pickup. All knives per ammo crate.\n"
+					..Arrow_right_.." The knife flies along a curving trajectory.\n"
 					..TALENTS_Enh_desc.ED_ZEA_Blitz_3_rgb)), -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_blitz3_000_desc_fr",
@@ -2576,6 +2596,7 @@ local localization_templates = {
 	create_template("talent_tree_zea_aura0_000_desc_en",
 		{"loc_talent_zealot_aura_toughness_damage_coherency_desc"}, {"en"},
 			loc_text("{damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
+					..Arrow_down_red.." Does not Stack with the same Aura from another Zealot.\n"
 					..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb)), -- damage_reduction: +7.5% - colors
 	--[+ French +]--
 	create_template("talent_tree_zea_aura0_000_desc_fr",
@@ -2594,7 +2615,8 @@ local localization_templates = {
 	--[+ AURA 1 - Benediction +]--
 	create_template("talent_tree_zea_aura_001_desc_en",
 		{"loc_talent_zealot_toughness_aura_efficiency_desc"}, {"en"},
-			loc_text("{damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n\nThis is an augmented version of the base Aura - {talent_name:%s}.\n"
+			loc_text("{damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
+					..Arrow_right_.." This is an augmented version of the base Aura - {talent_name:%s}.\n"
 					..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb)), -- damage_reduction: +15%. talent_name: The Emperor's Will -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_aura_001_desc_fr",
@@ -2660,7 +2682,12 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil0_000_desc_en",
 		{"loc_talent_zealot_2_combat_description_new"}, {"en"},
 			loc_text("Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb..". Your next Melee Hit gains for "..COLORS_Numbers.n_3_rgb.." seconds {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\nBase Cooldown: {cooldown:%s} seconds.\n"
-					..TALENTS_Enh_desc.ED_ZEA_Ability_0_rgb)), -- toughness: 50%, damage: 25%, cooldown: 30 -- s->seconds -- colors
+					..Arrow_up_green.." Grants immunity to "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." and you Dodge all attacks while dashing.\n"
+					..Arrow_up_green.." Applies a light "..COLORS_KWords.Stagger_rgb.." on impact in a "..COLORS_Numbers.n_3_rgb.." meters radius.\n"
+					..Arrow_right_.." Dash Range:\n"
+					..Arrow_right_..Arrow_right_.." Base: "..COLORS_Numbers.n_7_rgb.." meters.\n"
+					..Arrow_right_..Arrow_right_.." Aimed: up to "..COLORS_Numbers.n_21_rgb.." meters.\n")),
+					-- ..TALENTS_Enh_desc.ED_ZEA_Ability_0_rgb)), -- toughness: 50%, damage: 25%, cooldown: 30 -- s->seconds -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil0_000_desc_fr",
 		{"loc_talent_zealot_2_combat_description_new"}, {"fr"},
@@ -2683,7 +2710,19 @@ local localization_templates = {
 	--[+ ABILITY 1 - Fury of the Faithful +]--
 	create_template("talent_tree_zea_abil1_000_desc_en",
 		{"loc_talent_zealot_attack_speed_after_dash_desc"}, {"en"},
-			loc_text("Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and gaining {attack_speed:%s} Attack Speed for {time:%s} seconds. Your next Melee Hit gains {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\nBase Cooldown: {cooldown:%s} seconds.\nThis is an augmented version of {talent_name:%s}.\n"
+			loc_text("Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and gaining {attack_speed:%s} Attack Speed for {time:%s} seconds. Your next Melee Hit gains {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\nBase Cooldown: {cooldown:%s} seconds.\n"
+					..Arrow_right_.." This is an augmented version of {talent_name:%s}.\n"
+					..Arrow_up_green.." Melee armor penetration buff:\n"
+					..Arrow_right_..Arrow_right_.." Adds a "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Rending_rgb.." against Carapace, Flak, Maniac, Unyielding armor types to the next Melee Attack within "..COLORS_Numbers.n_3_rgb.." seconds after activation.\n"
+					..Arrow_right_..Arrow_right_.." The first Melee Attack within the duration consumes this buff.\n"
+					..Arrow_right_..Arrow_right_.." Ranged attacks do NOT benefit from this buff.\n"
+					..Arrow_up_green.." Grants immunity to "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." and you Dodge all attacks while dashing.\n"
+					..Arrow_right_.." Dash Range:\n"
+					..Arrow_right_..Arrow_right_.." Base: "..COLORS_Numbers.n_7_rgb.." meters.\n"
+					..Arrow_right_..Arrow_right_.." Aimed: up to "..COLORS_Numbers.n_21_rgb.." meters.\n"
+					..Arrow_right_.." You can't change direction, but you can cancel the dash with Block or Back buttons.\n"
+					..Arrow_right_.." Cannot be activated while jumping or falling.\n"
+					..Arrow_right_.." You can be stopped by Unyielding, Carapace, Monstrosities, as well as the Void shields.\n"
 					..TALENTS_Enh_desc.ED_ZEA_Ability_1_rgb)), -- toughness: 50%, attack_speed: +20%, time: 10, damage: +25%, cooldown: 30, talent_name: Chastise the Wicked -- &->and -- s->seconds -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil1_000_desc_fr",
@@ -2710,7 +2749,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil1_001_desc_en",
 		{"loc_talent_zealot_dash_has_more_charges_desc"}, {"en"},
 			loc_text("{talent_name:%s} now has {charges:%s} charges.\n"
-					..TALENTS_Enh_desc.ED_ZEA_Ability_1_1_rgb)), -- talent_name: Fury of the Faithful, charges: 2.
+					..Arrow_down_red.." The Cooldown of the Second charge only starts after the First charge finished its Cooldown.\n")),
+					-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_1_rgb)), -- talent_name: Fury of the Faithful, charges: 2.
 	--[+ French +]--
 	create_template("talent_tree_zea_abil1_001_desc_fr",
 		{"loc_talent_zealot_dash_has_more_charges_desc"}, {"fr"},
@@ -2729,6 +2769,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil1_002_desc_en",
 		{"loc_talent_maniac_cooldown_on_melee_crits_buff_desc"}, {"en"},
 			loc_text("{cooldown_regen:%s} "..COLORS_KWords.Ability_cd_rgb.." Regeneration for {duration:%s} seconds on Melee "..COLORS_KWords.Crit_hits_rgb..".\n"
+					..Arrow_up_green.." Can be refreshed during active duration.\n"
+					..Arrow_down_red.." Does not interact with "..COLORS_KWords.Combat_ability_rgb.." Regeneration from Curios which only reduces the Maximum cooldown of a "..COLORS_KWords.Combat_ability_rgb..".\n"
 					..TALENTS_Enh_desc.ED_ZEA_Ability_1_2_rgb)), -- cooldown_regen: +200%, duration: 4 -- s->seconds -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil1_002_desc_fr",
@@ -2751,7 +2793,14 @@ local localization_templates = {
 	--[+ ABILITY 2 - Chorus of Spiritual Fortitude +]--
 	create_template("talent_tree_zea_abil2_000_desc_en",
 		{"loc_talent_zealot_bolstering_prayer_variant_two_description"}, {"en"},
-			loc_text("Wield a Holy relic that releases pulses of energy "..COLORS_Numbers.n_7_rgb.." times every {interval:%s} seconds.\nEach pulse grants Zealot and Allies in "..COLORS_KWords.Coherency_rgb.." immunity to "..COLORS_KWords.Stuns_rgb.." from both Melee and Ranged attacks and Invulnerability for "..COLORS_Numbers.n_1_5_rgb.." seconds.\nEach pulse Replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." to Allies in "..COLORS_KWords.Coherency_rgb..". If the Ally is at full "..COLORS_KWords.Toughness_rgb.." they instead gain {flat_toughness:%s} Max (yellow) "..COLORS_KWords.Toughness_rgb.." up to a total of {max_toughness:%s}.\nBase Cooldown: {cooldown:%s} seconds.\n"
+			loc_text("Wield a Holy relic that releases pulses of energy "..COLORS_Numbers.n_7_rgb.." times every {interval:%s} seconds.\nBase Cooldown: {cooldown:%s} seconds.\n"
+					..Arrow_up_green.." Each pulse grants Zealot and Allies in "..COLORS_KWords.Coherency_rgb.." immunity to "..COLORS_KWords.Stuns_rgb.." from both Melee and Ranged attacks and Invulnerability for "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
+					..Arrow_up_green.." Each pulse Replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." to Allies in "..COLORS_KWords.Coherency_rgb..". If the Ally is at full "..COLORS_KWords.Toughness_rgb.." they instead gain {flat_toughness:%s} Max (yellow) "..COLORS_KWords.Toughness_rgb.." up to a total of {max_toughness:%s}.\n"
+					..Arrow_up_green.." Immunity to "..COLORS_KWords.Stuns_rgb.." and Invulnerability can be refreshed during active duration.\n"
+					..Arrow_right_.." Radius: "..COLORS_Numbers.n_10_rgb.." meters.\n"
+					..Arrow_right_.." Bonus "..COLORS_KWords.Toughness_rgb.." acts as a 'second' "..COLORS_KWords.Toughness_rgb.." bar and can be replenished by Melee kills, respective Talents, and Weapon Blessings.\n"
+					..Arrow_right_.." Yellow "..COLORS_KWords.Toughness_rgb.." bonus lasts "..COLORS_Numbers.n_10_rgb.." seconds and does not Stack with bonus "..COLORS_KWords.Toughness_rgb.." from the same Talent of another Zealot. But does Stack additively with Veteran's bonus "..COLORS_KWords.Toughness_rgb.." from \"Duty and Honour\".\n"
+					..Arrow_right_.." \"Invulnerability\" means that player "..COLORS_KWords.Health_rgb.." can't fall below "..COLORS_Numbers.n_1_rgb..". Players can still lose any "..COLORS_KWords.Health_rgb.." above "..COLORS_Numbers.n_1_rgb..".\n"
 					..TALENTS_Enh_desc.ED_ZEA_Ability_2_rgb)), -- interval: 0.8, toughness: 45%, flat_toughness: +20, max_toughness: +100, cooldown: 60 -- s->seconds -- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil2_000_desc_fr",
@@ -4240,7 +4289,7 @@ local localization_templates = {
 	..Arrow_right_.." "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." {grace_time:%s} 秒內可自由移動。\n"
 	..Arrow_right_.." "..COLORS_KWords_tw.Weakspothits_rgb_tw.." {grace_time_hit:%s} 秒內可自由移動。\n"
 	.. TALENTS_Enh_desc2_tw.ED_VET_Keystone_1_rgb_tw)),
-	
+
 	--[+ KEYSTONE 1-1 - Chink in their Armour +]--
 	create_template("talent_tree_vet_keys1_001_desc_en",
 		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"en"},
@@ -4344,7 +4393,7 @@ local localization_templates = {
 			..Arrow_right_.." 該敵人每層將額外受到 {damage:%s} "..COLORS_KWords_tw.Dmg_a_rgb_tw.." 。\n"
 			..Arrow_right_.." "..COLORS_KWords2_tw.Focus_Target_rgb_tw.." 會重置為 "..COLORS_Numbers.n_1_rgb.."。\n"
 			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_2_rgb_tw)),
-			
+
 	--[+ KEYSTONE 2-1 - Target Down! +]--
 	create_template("talent_tree_vet_keys2_001_desc_en",
 		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"en"},
@@ -4446,8 +4495,7 @@ local localization_templates = {
 			..Arrow_up_green.." {melee_attack_speed:%s} 近戰攻擊速度。\n"
 			..Arrow_up_green.." {dodge_modifier:%s} 閃避速度與距離。\n"
 			..Arrow_right_.."  效果持續 {melee_duration:%s} 秒。\n"
-			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_3_rgb_tw
-		)),
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_3_rgb_tw)),
 
 	--[+ KEYSTONE 3-1 - Always Prepared +]--
 	create_template("talent_tree_vet_keys3_001_desc_en",
