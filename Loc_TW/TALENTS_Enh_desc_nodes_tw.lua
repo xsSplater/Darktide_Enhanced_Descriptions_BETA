@@ -22,6 +22,7 @@ local stacks_mult_power_lvl_weap_bless = "- 與武器祝福提供的威力強化
 local stacks_add_w_sm_tghnss_nodes = "- 與韌性節點加法疊加。"
 local cur_max_tghnss_mult_by_tghnss_pc = "- 最大韌性受珍品的韌性比例乘法疊加。"
 
+
 --[+ ++ENHANCED DESCRIPTIONS++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 

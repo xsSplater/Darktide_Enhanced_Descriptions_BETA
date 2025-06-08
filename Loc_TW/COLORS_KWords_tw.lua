@@ -4,6 +4,7 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
+
 --[+++主要(MAIN)+++]--
 	--[++戰鬥能力CD(Combat Ability CD)++]--
 	local cmbtab_col = Color[mod:get("combat_ability_text_colour")](255, true)

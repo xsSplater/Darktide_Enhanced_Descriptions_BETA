@@ -4,10 +4,11 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
---[+ ++ENHANCED DESCRIPTIONS - РАСШИРЕННЫЕ ОПИСАНИЯ++ +]--
+
+--[+ ++ENHANCED DESCRIPTIONS++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
---[+ +PENANCES - ИСКУПЛЕНИЯ+ +]--
+--[+ +PENANCES+ +]--
 	local ED_Headshot_rgb_ru = ""
 
 	local ED_No_dmg_taken_corrupt_rgb_ru = ""

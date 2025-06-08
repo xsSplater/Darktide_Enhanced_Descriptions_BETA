@@ -1,7 +1,5 @@
 ---@diagnostic disable: undefined-global
 
-			-- ============ DO NOT DO ANYTHING BELOW! ============ --
-
 local mod = get_mod("Enhanced_descriptions")
 
 --[+ ++ENHANCED DESCRIPTIONS++ +]--

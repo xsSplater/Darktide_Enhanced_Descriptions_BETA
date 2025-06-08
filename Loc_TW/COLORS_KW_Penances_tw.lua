@@ -4,6 +4,7 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
+
 --[+ 天賦 +]--
 	--[+ ++老兵 ++ +]--
 	local tal_col = Color[mod:get("talents_penances_text_colour")](255, true)

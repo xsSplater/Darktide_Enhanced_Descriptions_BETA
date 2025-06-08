@@ -4,6 +4,7 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
+
 --[+ ++ENHANCED DESCRIPTIONS - 增強苦修描述 ++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
