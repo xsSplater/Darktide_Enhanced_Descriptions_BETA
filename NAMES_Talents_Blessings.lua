@@ -169,11 +169,11 @@ local localization_templates = {
 		{"loc_trait_bespoke_chained_hits_increases_power"}, {"zh-tw"},
 			loc_text("屠戮者")),
 
-	--[+ Brutal Momentum - Жестокий импульс +]-- -- руоф Суровый моментум
+	--[+ Brutal Momentum - Жестокий моментум +]-- руоф Суровый моментум
 	--[+ Russian +]--
 	create_template("trait_bespoke_014_ext_ru",
 		{"loc_trait_bespoke_infinite_cleave_on_weakspot_kill"}, {"ru"},
-			loc_text("Жестокий импульс")),
+			loc_text("Жестокий моментум")),
 	--[+ Traditional Chinese - 野蠻攻勢 +]--
 	create_template("trait_bespoke_014_ext_tw",
 		{"loc_trait_bespoke_infinite_cleave_on_weakspot_kill"}, {"zh-tw"},
