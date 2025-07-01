@@ -236,28 +236,33 @@ table.insert(options.options.widgets, create_option_set("electrocuted", "citadel
 table.insert(options.options.widgets, create_option_set("soulblaze", "ui_toughness_default"))
 table.insert(options.options.widgets, create_option_set("stagger", "terminal_background_selected"))
 
---[+Psyker+]--
+--[+PSYKER+]--
 table.insert(options.options.widgets, create_option_set("class_psyker", "player_slot_4"))
 table.insert(options.options.widgets, create_option_set("precision", "ui_psyker"))
 
---[+Ogryn+]--
+--[+OGRYN+]--
 table.insert(options.options.widgets, create_option_set("class_ogryn", "player_slot_3"))
 table.insert(options.options.widgets, create_option_set("fnp", "light_coral"))
 table.insert(options.options.widgets, create_option_set("luckyb", "orange"))
 table.insert(options.options.widgets, create_option_set("trample", "forest_green"))
 
---[+Zealot+]--
+--[+ZEALOT+]--
 table.insert(options.options.widgets, create_option_set("class_zealot", "player_slot_2"))
 table.insert(options.options.widgets, create_option_set("fury", "hot_pink"))
 table.insert(options.options.widgets, create_option_set("momentum", "ui_red_super_light"))
 table.insert(options.options.widgets, create_option_set("stealth", "ui_grey_light"))
 
---[+Veteran+]--
+--[+VETERAN+]--
 table.insert(options.options.widgets, create_option_set("class_veteran", "player_slot_1"))
 table.insert(options.options.widgets, create_option_set("focus", "dark_violet"))
 table.insert(options.options.widgets, create_option_set("focust", "teal"))
 table.insert(options.options.widgets, create_option_set("meleespec", "ui_hud_red_light"))
 table.insert(options.options.widgets, create_option_set("rangedspec", "citadel_the_fang_grey"))
+
+--[+ARBITES+]--
+table.insert(options.options.widgets, create_option_set("class_arbites", "player_slot_4")) --!!!ЦВЕТ!!!
+table.insert(options.options.widgets, create_option_set("meleejust", "sandy_brown"))
+table.insert(options.options.widgets, create_option_set("rangedjust", "royal_blue"))
 
 --[+Misc+]--
 table.insert(options.options.widgets, create_option_set("note", "terminal_text_warning_dark"))
@@ -272,6 +277,7 @@ table.insert(options.options.widgets, create_option_set("uprising", "ui_difficul
 table.insert(options.options.widgets, create_option_set("malice", "ui_difficulty_3"))
 table.insert(options.options.widgets, create_option_set("heresy", "ui_difficulty_4"))
 table.insert(options.options.widgets, create_option_set("damnation", "ui_difficulty_5"))
+table.insert(options.options.widgets, create_option_set("auric", "gold"))
 
 --[+Penances+]--
 table.insert(options.options.widgets, create_option_set("talents_penances", "forest_green"))

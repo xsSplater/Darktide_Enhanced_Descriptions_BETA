@@ -118,7 +118,7 @@ local Arrow_down_red = "{#color(255, 35, 5)}{#reset()}"
 local Arrow_up_green = "{#color(35, 255, 5)}{#reset()}"
 local Arrow_right_ = ""
 
---[+ Define localization templates +]--
+-- [+ Define localization templates +]--
 local localization_templates = {
 -- Duplicate the line and translate. For example:
 		-- create_template("weap_bb0_ext_en",
@@ -413,7 +413,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_006_desc_en",
 		{"loc_talent_crit_chance_low_desc"}, {"en"},
 			loc_text("{crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_CritChncBst_rgb)), -- crit_chance:+5%
+				..TALENTS_Enh_desc_nodes.ED_CritChncBst_rgb)),
+				-- crit_chance:+5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_006_desc_fr",
 		{"loc_talent_crit_chance_low_desc"}, {"fr"},
@@ -436,7 +437,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_005_l_desc_en",
 		{"loc_talent_health_low_desc"}, {"en"},
 			loc_text("{health:%s} "..COLORS_KWords.Health_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_HeathBst_L_rgb)), -- health:+5%
+				..TALENTS_Enh_desc_nodes.ED_HeathBst_L_rgb)),
+				-- health:+5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_005_l_desc_fr",
 		{"loc_talent_health_low_desc"}, {"fr"},
@@ -459,7 +461,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_005_m_desc_en",
 		{"loc_talent_health_medium_desc"}, {"en"},
 			loc_text("{health:%s} "..COLORS_KWords.Health_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_HeathBst_M_rgb)), -- health:+10%
+				..TALENTS_Enh_desc_nodes.ED_HeathBst_M_rgb)),
+				-- health:+10%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_005_m_desc_fr",
 		{"loc_talent_health_medium_desc"}, {"fr"},
@@ -483,7 +486,8 @@ local localization_templates = {
 	-- create_template("talent_tree_oper_mod_014_l_desc_en",
 		-- {"loc_talent_melee_heavy_damage_low_desc"}, {"en"},
 			-- loc_text("{melee_heavy_damage:%s} Heavy Melee "..COLORS_KWords.Damage_rgb.."."
-				-- ..TALENTS_Enh_desc_nodes.ED_HMeleeDmgBst_LM_rgb)), -- melee_heavy_damage:+5% -- Ogryn
+				-- ..TALENTS_Enh_desc_nodes.ED_HMeleeDmgBst_LM_rgb)),
+				-- melee_heavy_damage:+5% -- Ogryn
 	--[+ French +]--
 	-- create_template("talent_tree_oper_mod_014_l_desc_fr",
 		-- {"loc_talent_melee_heavy_damage_low_desc"}, {"fr"},
@@ -503,7 +507,8 @@ local localization_templates = {
 	-- create_template("talent_tree_oper_mod_014_m_desc_en",
 		-- {"loc_talent_melee_heavy_damage_medium_desc"}, {"en"},
 			-- loc_text("{melee_heavy_damage:%s} Heavy Melee "..COLORS_KWords.Damage_rgb.."."
-				-- ..TALENTS_Enh_desc_nodes.ED_HMeleeDmgBst_LM_rgb)), -- melee_heavy_damage:+10% -- Ogryn
+				-- ..TALENTS_Enh_desc_nodes.ED_HMeleeDmgBst_LM_rgb)),
+				-- melee_heavy_damage:+10% -- Ogryn
 	--[+ French +]--
 	-- create_template("talent_tree_oper_mod_014_m_desc_fr",
 		-- {"loc_talent_melee_heavy_damage_medium_desc"}, {"fr"},
@@ -523,7 +528,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_003_desc_en",
 		{"loc_talent_coherency_regen_low_desc"}, {"en"},
 			loc_text("{coherency_regen:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_InspiringP_rgb)), -- coherency_regen:+10%
+				..TALENTS_Enh_desc_nodes.ED_InspiringP_rgb)),
+				-- coherency_regen:+10%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_003_desc_fr",
 		{"loc_talent_coherency_regen_low_desc"}, {"fr"},
@@ -546,7 +552,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_008_desc_en",
 		{"loc_talent_melee_damage_boost_low_desc"}, {"en"},
 			loc_text("{melee_damage:%s} Melee "..COLORS_KWords.Damage_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_MeleeDmgBst_L_M_rgb)), -- melee_damage:+5%
+				..TALENTS_Enh_desc_nodes.ED_MeleeDmgBst_L_M_rgb)),
+				-- melee_damage:+5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_008_desc_fr",
 		{"loc_talent_melee_damage_boost_low_desc"}, {"fr"},
@@ -569,7 +576,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_008_desc_en",
 		{"loc_talent_melee_damage_boost_medium_desc"}, {"en"},
 			loc_text("{melee_damage:%s} Melee "..COLORS_KWords.Damage_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_MeleeDmgBst_L_M_rgb)), -- melee_damage:+10%
+				..TALENTS_Enh_desc_nodes.ED_MeleeDmgBst_L_M_rgb)),
+				-- melee_damage:+10%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_008_desc_fr",
 		{"loc_talent_melee_damage_boost_medium_desc"}, {"fr"},
@@ -592,7 +600,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_007_desc_en",
 		{"loc_talent_movement_speed_low_desc"}, {"en"},
 			loc_text("{movement_speed:%s} Movement Speed."
-				..TALENTS_Enh_desc_nodes.ED_MoveSpdBst_rgb)), -- movement_speed:+5%
+				..TALENTS_Enh_desc_nodes.ED_MoveSpdBst_rgb)),
+				-- movement_speed:+5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_007_desc_fr",
 		{"loc_talent_movement_speed_low_desc"}, {"fr"},
@@ -615,7 +624,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_001_desc_en",
 		{"loc_talent_warp_charge_low_desc"}, {"en"},
 			loc_text("{warp_charge:%s} "..COLORS_KWords.Peril_rgb.." Generation."
-				..TALENTS_Enh_desc_nodes.ED_PerilRes_rgb)), -- warp_charge:-5%
+				..TALENTS_Enh_desc_nodes.ED_PerilRes_rgb)),
+				-- warp_charge:-5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_001_desc_fr",
 		{"loc_talent_warp_charge_low_desc"}, {"fr"},
@@ -638,7 +648,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_004l_desc_en",
 		{"loc_talent_ranged_damage_low_desc"}, {"en"},
 			loc_text("{ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_RangDmgBst_rgb)), -- ranged_damage:+5%
+				..TALENTS_Enh_desc_nodes.ED_RangDmgBst_rgb)),
+				-- ranged_damage:+5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_004l_desc_fr",
 		{"loc_talent_ranged_damage_low_desc"}, {"fr"},
@@ -661,7 +672,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_004m_desc_en",
 		{"loc_talent_ranged_damage_medium_desc"}, {"en"},
 			loc_text("{ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_RangDmgBst_rgb)), -- ranged_damage:+5%
+				..TALENTS_Enh_desc_nodes.ED_RangDmgBst_rgb)),
+				-- ranged_damage:+5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_004m_desc_fr",
 		{"loc_talent_ranged_damage_medium_desc"}, {"fr"},
@@ -684,7 +696,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_011_desc_en",
 		{"loc_talent_reload_speed_low_desc"}, {"en"},
 			loc_text("{reload_speed:%s} Reload Speed."
-				..TALENTS_Enh_desc_nodes.ED_ReloadBst_rgb)), -- reload_speed: +5%
+				..TALENTS_Enh_desc_nodes.ED_ReloadBst_rgb)),
+				-- reload_speed: +5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_011_desc_fr",
 		{"loc_talent_reload_speed_low_desc"}, {"fr"},
@@ -707,7 +720,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_013_desc_en",
 		{"loc_talent_armor_pen_low_desc"}, {"en"},
 			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_RendingBst_rgb)), -- rending: +5%
+				..TALENTS_Enh_desc_nodes.ED_RendingBst_rgb)),
+				-- rending: +5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_013_desc_fr",
 		{"loc_talent_armor_pen_low_desc"}, {"fr"},
@@ -730,7 +744,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_009_desc_en",
 		{"loc_talent_stamina_low_desc"}, {"en"},
 			loc_text("{stamina:%s} "..COLORS_KWords.Stamina_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_StaminaBst_rgb)), -- stamina: +1
+				..TALENTS_Enh_desc_nodes.ED_StaminaBst_rgb)),
+				-- stamina: +1
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_009_desc_fr",
 		{"loc_talent_stamina_low_desc"}, {"fr"},
@@ -753,7 +768,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_012_desc_en",
 		{"loc_talent_stamina_regen_delay_desc"}, {"en"},
 			loc_text("{duration:%s} seconds "..COLORS_KWords.Stamina_rgb.." Regeneration Delay Reduction."
-				..TALENTS_Enh_desc_nodes.ED_StamRegenBst_rgb)), -- duration: 0.25
+				..TALENTS_Enh_desc_nodes.ED_StamRegenBst_rgb)),
+				-- duration: 0.25
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_012_desc_fr",
 		{"loc_talent_stamina_regen_delay_desc"}, {"fr"},
@@ -776,7 +792,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_010_desc_en",
 		{"loc_talent_suppression_low_desc"}, {"en"},
 			loc_text("{suppression:%s} Suppression Dealt to enemies."
-				..TALENTS_Enh_desc_nodes.ED_SuppressionBst_rgb)), -- suppression: +25%
+				..TALENTS_Enh_desc_nodes.ED_SuppressionBst_rgb)),
+				-- suppression: +25%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_010_desc_fr",
 		{"loc_talent_suppression_low_desc"}, {"fr"},
@@ -799,7 +816,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_000_l_desc_en",
 		{"loc_talent_toughness_boost_low_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_TghnsBst_L_rgb)), -- toughness: +15%
+				..TALENTS_Enh_desc_nodes.ED_TghnsBst_L_rgb)),
+				-- toughness: +15%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_000_l_desc_fr",
 		{"loc_talent_toughness_boost_low_desc"}, {"fr"},
@@ -822,7 +840,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_000_m_desc_en",
 		{"loc_talent_toughness_boost_medium_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_TghnsBst_M_rgb)), -- toughness:+25%
+				..TALENTS_Enh_desc_nodes.ED_TghnsBst_M_rgb)),
+				-- toughness:+25%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_000_m_desc_fr",
 		{"loc_talent_toughness_boost_medium_desc"}, {"fr"},
@@ -845,7 +864,8 @@ local localization_templates = {
 	create_template("talent_tree_oper_mod_002_l_desc_en",
 		{"loc_talent_toughness_damage_reduction_low_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_TghnsDmgRed_LM_rgb)), -- toughness:+5%
+				..TALENTS_Enh_desc_nodes.ED_TghnsDmgRed_LM_rgb)),
+				-- toughness:+5%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_002_l_desc_fr",
 		{"loc_talent_toughness_damage_reduction_low_desc"}, {"fr"},
@@ -867,7 +887,8 @@ local localization_templates = {
 	--[+ Toughness Damage Reduction Medium +]-- Ogryn 1, Veteran 1	checked 27.05.2025
 	create_template("talent_tree_oper_mod_002_m_desc_en",{"loc_talent_toughness_damage_reduction_medium_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.."."
-				..TALENTS_Enh_desc_nodes.ED_TghnsDmgRed_LM_rgb)), -- toughness:+10%
+				..TALENTS_Enh_desc_nodes.ED_TghnsDmgRed_LM_rgb)),
+				-- toughness:+10%
 	--[+ French +]--
 	create_template("talent_tree_oper_mod_002_m_desc_fr",{"loc_talent_toughness_damage_reduction_medium_desc"}, {"fr"},
 			loc_text("{toughness:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.."."..TALENTS_Enh_desc_nodes_fr.ED_TghnsDmgRed_LM_rgb_fr)),
@@ -895,7 +916,7 @@ local localization_templates = {
 				..Arrow_up_green.." Always scores a "..COLORS_KWords.Weakspothit_rgb..".\n"
 				..Arrow_down_red.." Cannot "..COLORS_KWords.Crit0_rgb..".\n"
 				..TALENTS_Enh_desc.ED_PSY_Blitz_0_rgb)),
-				-- & -> and -- colors
+				-- &->and, colors
 	--[+ French +]-- Explosion cérébrale
 	create_template("talent_tree_psy_blitz0_000_desc_fr",
 		{"loc_ability_psyker_smite_description_new"}, {"fr"},
@@ -930,7 +951,7 @@ local localization_templates = {
 				..Arrow_up_green.." On "..COLORS_KWords.Impact_rgb.." "..COLORS_KWords.Staggers_rgb.." all enemies except Mutants, Monstrosities and enemies with active void shield.\n"
 				..Arrow_down_red.." Cannot "..COLORS_KWords.Crit0_rgb..".\n"
 				..TALENTS_Enh_desc.ED_PSY_Blitz_1_rgb)),
-				-- talent_old: Brain Burst, damage: +50% -- & -> and -- colors
+				-- talent_old: Brain Burst, damage: +50%, &->and, colors
 	--[+ French +]-- Éclatement cérébrale
 	create_template("talent_tree_psy_blitz1_000_desc_fr",
 		{"loc_talent_psyker_brain_burst_improved_description"}, {"fr"},
@@ -966,7 +987,7 @@ local localization_templates = {
 			loc_text("{smite_attack_speed:%s} faster charging of your {talent_name:%s} after using your "..COLORS_KWords.Combat_ability_rgb..", generating {warp_charge_cost:%s} less "..COLORS_KWords.Peril_rgb.." for {duration:%s} seconds.\n"
 				..Arrow_up_green.." Reduces Brain Rupture's charge time for both Primary and Secondary attacks.\n"
 				..TALENTS_Enh_desc.ED_PSY_Blitz_1_1_rgb)),
-				-- talent_name: Brain Rupture, smite_attack_speed: +75%, warp_charge_cost: 50%, duration:10 -- s -> seconds -- colors
+				-- talent_name: Brain Rupture, smite_attack_speed: +75%, warp_charge_cost: 50%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz1_001_desc_fr",
 		{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"fr"},
@@ -992,7 +1013,7 @@ local localization_templates = {
 			loc_text("While below "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb..", all Attacks against Specials, Elites and Monstrosities, have {smite_chance:%s} chance to {talent_name:%s} the target on any of Psyker's damaging attacks.\n"
 				.."Cooldown {time:%s} seconds.\n"
 				..TALENTS_Enh_desc.ED_PSY_Blitz_1_2_rgb)),
-				-- smite_chance: 10%, talent_name: Brain Rupture, time: 15 -- s -> seconds -- colors -- rewrite
+				-- smite_chance: 10%, talent_name: Brain Rupture, time: 15, s->seconds, colors, rewrite
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz1_002_desc_fr",
 		{"loc_talent_psyker_smite_on_hit_special_elite_desc"}, {"fr"},
@@ -1020,7 +1041,7 @@ local localization_templates = {
 				..Arrow_down_red.." Cannot "..COLORS_KWords.Stagger_rgb.." Monstrosities and enemies with active Void shield.\n"
 				..Arrow_down_red.." Cannot "..COLORS_KWords.Crit0_rgb..".\n"
 				..TALENTS_Enh_desc.ED_PSY_Blitz_2_rgb)),
-				-- total rewrite -- colors
+				-- total rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz2_000_desc_fr",
 		{"loc_ability_psyker_chain_lightning_description"}, {"fr"},
@@ -1050,7 +1071,7 @@ local localization_templates = {
 				..Arrow_up_green.." Also increases the targeting range by "..COLORS_Numbers.n_1_rgb.." meter, up to "..COLORS_Numbers.n_16_rgb.." meters.\n"
 				..Arrow_right_.." Applies both to Smite's Primary and Secondary actions.\n")),
 				-- ..TALENTS_Enh_desc.ED_PSY_Blitz_2_1_rgb)),
-				-- talent_name: Smite, max_jumps: +1 -- rewrite "by {max_jumps:%s}"
+				-- talent_name: Smite, max_jumps: +1, rewrite "by {max_jumps:%s}"
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz2_001_desc_fr",
 		{"loc_talent_psyker_increased_chain_lightning_size_description"}, {"fr"},
@@ -1069,10 +1090,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz2_002_desc_en",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"en"},
 			loc_text("{damage:%s} increased Base "..COLORS_KWords.Damage_rgb.." from all sources is taken by enemies affected by the "..COLORS_KWords.Electrocute_rgb.." effect of your {talent_name:%s}.\n"
-					-- ..Arrow_right_.." The debuff is being applied as long as the enemy is actively affected by {talent_name:%s}.\n"
+				-- ..Arrow_right_.." The debuff is being applied as long as the enemy is actively affected by {talent_name:%s}.\n"
 				..Arrow_down_red.." Doesn't Stack with the same debuff applied by another Psyker.\n"
 				..TALENTS_Enh_desc.ED_PSY_Blitz_2_2_rgb)),
-				-- damage: +10% -- colors
+				-- damage: +10%, colors
 	--[+ French +]--Dégénérescence
 	create_template("talent_tree_psy_blitz2_002_desc_fr",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"fr"},
@@ -1128,7 +1149,7 @@ local localization_templates = {
 				..Arrow_right_.." Costs "..COLORS_Numbers.n_1_rgb.." ammo and recharges it every "..COLORS_Numbers.n_3_rgb.." seconds.\n"
 				..Arrow_down_red.." Very low "..COLORS_KWords.Damage_rgb.." against Carapace and low against Unyielding.\n"
 				..TALENTS_Enh_desc.ED_PSY_Blitz_3_rgb)),
-				-- total rewrite -- colors
+				-- total rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz3_000_desc_fr",
 		{"loc_ability_psyker_blitz_throwing_knives_description"}, {"fr"},
@@ -1155,7 +1176,7 @@ local localization_templates = {
 			loc_text("Projectiles from {talent_name:%s} now pierce additional targets.\n"
 				..Arrow_down_red.." Carapace cannot be "..COLORS_KWords.Cleaved_rgb.." by default.\n"
 				..TALENTS_Enh_desc.ED_PSY_Blitz_3_1_rgb)),
-				-- talent_name: Assail -- colors
+				-- talent_name: Assail, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz3_001_desc_fr",
 		{"loc_talent_psyker_throwing_knives_pierce_description"}, {"fr"},
@@ -1197,7 +1218,7 @@ local localization_templates = {
 			loc_text("{cooldown_reduction:%s} "..COLORS_KWords.Ability_cd_rgb.." Reduction for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
 				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.\n"
 				..TALENTS_Enh_desc.ED_PSY_Aura_0_rgb)),
-				-- cooldown_reduction: +7.5% -- colors
+				-- cooldown_reduction: +7.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_aura0_000_desc_fr",
 		{"loc_talent_psyker_aura_reduced_ability_cooldown_description"}, {"fr"},
@@ -1218,7 +1239,7 @@ local localization_templates = {
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." against Elite Enemies for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
 				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.\n"
 				..TALENTS_Enh_desc.ED_PSY_Aura_1_rgb)),
-				-- damage: +7.5% -- colors
+				-- damage: +7.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_aura1_000_desc_fr",
 		{"loc_talent_psyker_base_3_description"}, {"fr"},
@@ -1240,7 +1261,7 @@ local localization_templates = {
 				..Arrow_right_.." This is an augmented version of {talent_name:%s}.\n"
 				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.\n"
 				..TALENTS_Enh_desc.ED_PSY_Aura_2_rgb)),
-				-- cooldown_reduction: +10%, talent_name: The Quickening -- colors
+				-- cooldown_reduction: +10%, talent_name: The Quickening, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_aura2_000_desc_fr",
 		{"loc_talent_psyker_cooldown_aura_improved_description"}, {"fr"},
@@ -1262,7 +1283,7 @@ local localization_templates = {
 				..Arrow_right_.." Applies to all attacks that can "..COLORS_KWords.Crit0_rgb..".\n"
 				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.\n"
 				..TALENTS_Enh_desc.ED_PSY_Aura_3_rgb)),
-				-- critical_strike_chance: +5% -- colors -- rewrite
+				-- critical_strike_chance: +5%, colors, rewrite
 	--[+ French +]--!!!
 	create_template("talent_tree_psy_aura3_000_desc_fr",
 		{"loc_ability_psyker_gunslinger_aura_description"}, {"fr"},
@@ -1287,7 +1308,7 @@ local localization_templates = {
 				..Arrow_up_green.." The Warp wave passes through objects and spreads up to "..COLORS_Numbers.n_30_rgb.." meters. So you can drop the Pox Hound from an Ally through the wall.\n"
 				..Arrow_up_green.." "..COLORS_KWords.Stuns_rgb.." enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius in front of Psyker.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_0_rgb)),
-				-- warpcharge_vent: 10%, cooldown: 30 -- s->seconds -- colors -- rewrite
+				-- warpcharge_vent: 10%, cooldown: 30, s->seconds, colors, rewrite
 	--[+ French +]--
 	create_template("talent_tree_psy_abil0_000_desc_fr",
 		{"loc_talent_psyker_shout_ability_description"}, {"fr"},
@@ -1321,7 +1342,7 @@ local localization_templates = {
 				..Arrow_up_green.." "..COLORS_KWords.Stuns_rgb.." enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius in front of Psyker.\n"
 				..Arrow_right_.." Always targets Torso hitzone.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_1_rgb)),
-				-- warpcharge_vent: 50%, cooldown: 30, talent_name: Psykinetic's Wrath -- s->seconds -- colors -- rewrite
+				-- warpcharge_vent: 50%, cooldown: 30, talent_name: Psykinetic's Wrath, s->seconds, colors, rewrite
 	--[+ French +]--
 	create_template("talent_tree_psy_abil1_000_desc_fr",
 		{"loc_talent_psyker_shout_vent_warp_charge_description"}, {"fr"},
@@ -1349,7 +1370,7 @@ local localization_templates = {
 		{"loc_talent_psyker_shout_reduces_warp_charge_generation_description"}, {"en"},
 			loc_text("{talent_name:%s} now decreases "..COLORS_KWords.Peril_rgb.." Generation by {warp_generation:%s} for each Enemy hit. Up to {max_stacks:%s}"..COLORS_Numbers.pc_rgb..". Lasts {duration:%s} seconds.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_1_1_rgb)),
-				-- talent_name: Venting Shriek, warp_generation: 1%, max_stacks: 25 -> 25%, duration: 5 -- s->seconds -- colors
+				-- talent_name: Venting Shriek, warp_generation: 1%, max_stacks: 25 -> 25%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil1_001_desc_fr",
 		{"loc_talent_psyker_shout_reduces_warp_charge_generation_description"}, {"fr"},
@@ -1369,7 +1390,7 @@ local localization_templates = {
 		{"loc_talent_psyker_shout_damage_per_warp_charge_description"}, {"en"},
 			loc_text("Your {talent_name:%s} now also deals {base_damage:%s}-{max_damage:%s} "..COLORS_KWords.Damage_rgb..", based off of your current "..COLORS_KWords.Peril_rgb.." percentage.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_1_2_rgb)),
-				-- talent_name: Venting Shriek, base_damage: 100, max_damage: 200 -- colors
+				-- talent_name: Venting Shriek, base_damage: 100, max_damage: 200, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil1_002_desc_fr",
 		{"loc_talent_psyker_shout_damage_per_warp_charge_description"}, {"fr"},
@@ -1391,7 +1412,7 @@ local localization_templates = {
 				..Arrow_up_green.." Refreshes duration on Stack application.\n"
 				..Arrow_right_.." Lasts "..COLORS_Numbers.n_8_rgb.." seconds. Ticks every "..COLORS_Numbers.n_075_rgb.." seconds.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_1_3_rgb)),
-				-- talent_name: Venting Shriek, min_stacks: 1, warpfire_stacks: - 6 -- Stack(s)->Stacks -- colors
+				-- talent_name: Venting Shriek, min_stacks: 1, warpfire_stacks: - 6 -- Stack(s)->Stacks, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil1_003_desc_fr",
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"fr"},
@@ -1405,14 +1426,15 @@ local localization_templates = {
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 依據當前的"..COLORS_KWords_tw.Peril_rgb_tw.."，\n對命中的目標施加 "..COLORS_Numbers.n_1_rgb.." 至 {warpfire_stacks:%s} 層"..COLORS_KWords_tw.Soulblaze_rgb_tw.."。"..TALENTS_Enh_desc_tw.ED_PSY_Ability_1_3_rgb_tw)),
 
-	--[+ ABILITY 2 - Telekine Shield +]--
+	--[+ ABILITY 2 - Telekine Shield +]--	checked 27.05.2025
 	create_template("talent_tree_psy_abil2_000_desc_en",
 		{"loc_talent_psyker_combat_ability_shield_description"}, {"en"},
-			loc_text("Spawns a psychic shield in front of you for {duration:%s} seconds. The shield blocks Enemy Ranged Attacks, while you and Allies can still shoot through.\nBase Cooldown: {cooldown:%s} seconds.\n"
+			loc_text("Spawns a psychic shield in front of you for {duration:%s} seconds. The shield blocks Enemy Ranged Attacks, while you and Allies can still shoot through.\n"
+				.."Base Cooldown: {cooldown:%s} seconds.\n"
 				..Arrow_right_.." Shield Health: 20.\n"
 				..Arrow_right_.." You can hold Ability button to preview location and you can cancel it by blocking.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_2_rgb)),
-				-- duration: 17.5, cooldown: 40 -- s->seconds
+				-- duration: 17.5, cooldown: 40, s->seconds
 	--[+ French +]--
 	create_template("talent_tree_psy_abil2_000_desc_fr",
 		{"loc_talent_psyker_combat_ability_shield_description"}, {"fr"},
@@ -1463,7 +1485,7 @@ local localization_templates = {
 				..Arrow_right_.." "..COLORS_KWords.Electrocution_rgb.." effect lasts for "..COLORS_Numbers.n_3_rgb.." seconds.\n"
 				..Arrow_right_.." Always applies the effect to Specials when they get in contact with the shield.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_2_2_rgb)),
-				-- ability: Telekine Shield, proc_chance: 10%, special_proc_chance: 100% -- colors
+				-- ability: Telekine Shield, proc_chance: 10%, special_proc_chance: 100%, colors
 	--[+ French +]--Seuil Débilitant
 	create_template("talent_tree_psy_abil2_002_desc_fr",
 		{"loc_talent_psyker_force_field_stun_increased_new_description"}, {"fr"},
@@ -1492,7 +1514,8 @@ local localization_templates = {
 				..Arrow_right_.." Sphere has a radius of "..COLORS_Numbers.n_6_rgb.." meters.\n"
 				..Arrow_right_.." Protects from enemy attacks at all degrees.\n"
 				..Arrow_right_.." Has the same properties as the flat shield.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_2_3_rgb)), -- talent_name: Telekine Shield, duration: 25 -- s->seconds
+				..TALENTS_Enh_desc.ED_PSY_Ability_2_3_rgb)),
+				-- talent_name: Telekine Shield, duration: 25, s->seconds
 	--[+ French +]--
 	create_template("talent_tree_psy_abil2_003_desc_fr",
 		{"loc_talent_psyker_force_field_dome_new_desc"}, {"fr"},
@@ -1513,9 +1536,11 @@ local localization_templates = {
 	--[+ ABILITY 2-4 - Sanctuary +]--
 	create_template("talent_tree_psy_abil2_004_desc_en",
 		{"loc_talent_psyker_force_field_grants_toughness_desc"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second replenishes for Allies inside your {talent_name:%s}.\n{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds for all Allies inside your {talent_name:%s} when it dissipates.\n"
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second replenishes for Allies inside your {talent_name:%s}.\n"
+				.."{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds for all Allies inside your {talent_name:%s} when it dissipates.\n"
 				..Arrow_up_green.." This replenishment effect can Stack if multiple spheres overlap.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_2_4_rgb)), -- talent_name: Telekine Shield, toughness: 10%, toughness_damage_reduction: +50%, duration: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Ability_2_4_rgb)),
+				-- talent_name: Telekine Shield, toughness: 10%, toughness_damage_reduction: +50%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil2_004_desc_fr",
 		{"loc_talent_psyker_force_field_grants_toughness_desc"}, {"fr"},
@@ -1540,8 +1565,13 @@ local localization_templates = {
 	--[+ ABILITY 3 - Scrier's Gaze +]--
 	create_template("talent_tree_psy_abil3_000_desc_en",
 		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"en"},
-			loc_text("You enter "..COLORS_KWords.Scriers_gaze_rgb.." and Quell {vent:%s} "..COLORS_KWords.Peril_rgb.." as well as gain {base_damage:%s} "..COLORS_KWords.Damage_rgb..", {crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." and Suppression Immunity.\nFor every second in "..COLORS_KWords.Scriers_gaze_rgb.." you gain {damage_per_stack:%s} "..COLORS_KWords.Damage_rgb..", up to a maximum of {max_damage:%s}. This effect lingers for {duration:%s} seconds after leaving "..COLORS_KWords.Scriers_gaze_rgb..".\nWhile in "..COLORS_KWords.Scriers_gaze_rgb.." you build up "..COLORS_KWords.Peril_rgb..". Killing enemies while overcharging slows down the auto "..COLORS_KWords.Peril_rgb.." generation by reducing the effective timer by "..COLORS_Numbers.n_033_rgb.." seconds per Kill.\nAt {max_peril:%s} "..COLORS_KWords.Peril_rgb.." Ability ends.\nBase Cooldown: {cooldown:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_rgb)), -- base_damage: +10%, crit_chance: +20%, damage_per_stack: +1%, max_damage: +30%, duration: 10, max_peril: 100%, cooldown: 25 -- rewrite -- s->seconds -- colors
+			loc_text("You enter "..COLORS_KWords.Scriers_gaze_rgb.." and Quell {vent:%s} "..COLORS_KWords.Peril_rgb.." as well as gain {base_damage:%s} "..COLORS_KWords.Damage_rgb..", {crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." and Suppression Immunity.\n"
+				.."For every second in "..COLORS_KWords.Scriers_gaze_rgb.." you gain {damage_per_stack:%s} "..COLORS_KWords.Damage_rgb..", up to a maximum of {max_damage:%s}. This effect lingers for {duration:%s} seconds after leaving "..COLORS_KWords.Scriers_gaze_rgb..".\n"
+				.."While in "..COLORS_KWords.Scriers_gaze_rgb.." you build up "..COLORS_KWords.Peril_rgb..". Killing enemies while overcharging slows down the auto "..COLORS_KWords.Peril_rgb.." generation by reducing the effective timer by "..COLORS_Numbers.n_033_rgb.." seconds per Kill.\n"
+				.."At {max_peril:%s} "..COLORS_KWords.Peril_rgb.." Ability ends.\n"
+				.."Base Cooldown: {cooldown:%s} seconds.\n"
+				..TALENTS_Enh_desc.ED_PSY_Ability_3_rgb)),
+				-- base_damage: +10%, crit_chance: +20%, damage_per_stack: +1%, max_damage: +30%, duration: 10, max_peril: 100%, cooldown: 25, rewrite, s->seconds, colors
 	--[+ French +]-- Regard de divination !!! texte trop long
 	create_template("talent_tree_psy_abil3_000_desc_fr",
 		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"fr"},
@@ -1549,7 +1579,11 @@ local localization_templates = {
 	--[+ Russian +]-- Взор провидца -- руоф Взор Скрира!!!
 	create_template("talent_tree_psy_abil3_000_desc_ru",
 		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"ru"},
-			loc_text("Вы получаете "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." и сбрасываете {vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..", а также получаете {base_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." и иммунитет к подавлению.\nПока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." каждую секунду вы получаете {damage_per_stack:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", вплоть до максимума в {max_damage:%s}. Этот эффект сохраняется в течение {duration:%s} секунд после того как "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." перестаёт действовать.\nПока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." растёт. Убийство врагов замедляет автогенерацию "..COLORS_KWords_ru.Peril_rgb_ru.." за счёт уменьшения таймера эффекта на "..COLORS_Numbers.n_033_rgb.." секунды за убийство.\nПри {max_peril:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." способность заканчивает своё действие.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_rgb_ru)),
+			loc_text("Вы получаете "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." и сбрасываете {vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..", а также получаете {base_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." и иммунитет к подавлению.\n"
+				.."Пока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." каждую секунду вы получаете {damage_per_stack:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", вплоть до максимума в {max_damage:%s}. Этот эффект сохраняется в течение {duration:%s} секунд после того как "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." перестаёт действовать.\n"
+				.."Пока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." растёт. Убийство врагов замедляет автогенерацию "..COLORS_KWords_ru.Peril_rgb_ru.." за счёт уменьшения таймера эффекта на "..COLORS_Numbers.n_033_rgb.." секунды за убийство.\n"
+				.."При {max_peril:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." способность заканчивает своё действие.\n"
+				.."Время восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_rgb_ru)),
 	--[+ Traditional Chinese - 占卜者的注視 +]--
 	-- 觸發占卜師的注視。進入占卜師的注視後，平息{vent:%s}反噬，並獲得{base_damage:%s}傷害、{crit_chance:%s}暴擊機率，以及壓制免疫。在注視中每秒獲得疊加傷害{damage_per_stack:%s}，最高至{max_damage}。離開注視後該效果保留{duration:%s}秒。\n\n在占卜師的注視中，你的反噬會累積。擊殺敵人會暫時減緩累積速度。反噬達到{max_peril:%s}後，占卜師的注視結束。\n\n基礎冷卻時間：{cooldown:%s}秒
 	create_template("talent_tree_psy_abil3_000_desc_tw",
@@ -1576,7 +1610,8 @@ local localization_templates = {
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"en"},
 			loc_text("While overcharging, {talent_name:%s} grants {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".\n"
 				..Arrow_down_red.." Doesn't linger after overcharging phase.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_1_rgb)), -- talent_name: Scrier's Gaze, tdr: +20% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Ability_3_1_rgb)),
+				-- talent_name: Scrier's Gaze, tdr: +20%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_001_desc_fr",
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"fr"},
@@ -1594,9 +1629,11 @@ local localization_templates = {
 	--[+ ABILITY 3-2 - Precognition +]--
 	create_template("talent_tree_psy_abil3_002_desc_en",
 		{"loc_ability_psyker_overcharge_weakspot_description"}, {"en"},
-			loc_text("While overcharging, makes "..COLORS_KWords.Weak_spot_rgb.." kills generate {second:%s} additional Stack.\nFor each second spent in {talent_name:%s}, you now also gain {finesse_damage_per_stack:%s} "..COLORS_KWords.Finesse_dmg_rgb..", up to {max_finesse_damage:%s} Max, which lingers for {duration:%s} seconds after leaving {talent_name:%s}.\n"
+			loc_text("While overcharging, makes "..COLORS_KWords.Weak_spot_rgb.." kills generate {second:%s} additional Stack.\n"
+				.."For each second spent in {talent_name:%s}, you now also gain {finesse_damage_per_stack:%s} "..COLORS_KWords.Finesse_dmg_rgb..", up to {max_finesse_damage:%s} Max, which lingers for {duration:%s} seconds after leaving {talent_name:%s}.\n"
 				..Arrow_up_green.." Can proc multiple times per attack when "..COLORS_KWords.Cleaving_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_2_rgb)), -- second: 1, talent_name: Scrier's Gaze, finesse_damage_per_stack: +1%, max_finesse_damage: +30%, duration: 10 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Ability_3_2_rgb)),
+				-- second: 1, talent_name: Scrier's Gaze, finesse_damage_per_stack: +1%, max_finesse_damage: +30%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_002_desc_fr",
 		{"loc_ability_psyker_overcharge_weakspot_description"}, {"fr"},
@@ -1621,7 +1658,8 @@ local localization_templates = {
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"en"},
 			loc_text("While overcharging, {talent_name:%s} increases your Movement Speed by {movement_speed:%s}.\n"
 				..Arrow_down_red.." Doesn't linger after overcharging phase.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_3_rgb)), -- talent_name: Scrier's Gaze, movement_speed: +20%
+				..TALENTS_Enh_desc.ED_PSY_Ability_3_3_rgb)),
+				-- talent_name: Scrier's Gaze, movement_speed: +20%
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_003_desc_fr",
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"fr"},
@@ -1641,7 +1679,8 @@ local localization_templates = {
 		{"loc_ability_psyker_overcharge_reduced_warp_charge_description"}, {"en"},
 			loc_text("While overcharging, {talent_name:%s} also reduces your "..COLORS_KWords.Peril_rgb.." Generated by {warp_charge:%s}.\n"
 				..Arrow_down_red.." Doesn't linger after overcharging phase.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_4_rgb)), -- talent_name: Scrier's Gaze, warp_charge: -20% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Ability_3_4_rgb)),
+				-- talent_name: Scrier's Gaze, warp_charge: -20%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_004_desc_fr",
 		{"loc_ability_psyker_overcharge_reduced_warp_charge_description"}, {"fr"},
@@ -1662,7 +1701,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_005_desc_en",
 		{"loc_talent_psyker_overcharge_infinite_casting_desc"}, {"en"},
 			loc_text("{talent_name:%s} now also prevents overloading from "..COLORS_KWords.Perils_rgb.." of the Warp, during its lingering effect.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_5_rgb)), -- talent_name: Scrier's Gaze
+				..TALENTS_Enh_desc.ED_PSY_Ability_3_5_rgb)),
+				-- talent_name: Scrier's Gaze
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_005_desc_fr",
 		{"loc_talent_psyker_overcharge_infinite_casting_desc"}, {"fr"},
@@ -1687,9 +1727,11 @@ local localization_templates = {
 	--[+ KEYSTONE 1 - Warp Siphon +]--
 	create_template("talent_tree_psy_keys1_000_desc_en",
 		{"loc_talent_psyker_souls_desc"}, {"en"},
-			loc_text("Killing an Elite or Specialist Enemy gains you a Warp Charge for {duration:%s} seconds, Stacking {stack:%s} times.\nYour next "..COLORS_KWords.Combat_ability_rgb.." spends all available Warp Charges to reduce the "..COLORS_KWords.Cd_rgb.." of that "..COLORS_KWords.Combat_ability_rgb.." by {cooldown_reduction:%s} per Warp Charge.\n"
+			loc_text("Killing an Elite or Specialist Enemy gains you a Warp Charge for {duration:%s} seconds, Stacking {stack:%s} times.\n"
+				.."Your next "..COLORS_KWords.Combat_ability_rgb.." spends all available Warp Charges to reduce the "..COLORS_KWords.Cd_rgb.." of that "..COLORS_KWords.Combat_ability_rgb.." by {cooldown_reduction:%s} per Warp Charge.\n"
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_1_rgb)), -- duration: 25, stack: 4, cooldown_reduction: 7.5% -- time(s)->times -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_1_rgb)),
+				-- duration: 25, stack: 4, cooldown_reduction: 7.5% -- time(s)->times, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_000_desc_fr",
 		{"loc_talent_psyker_souls_desc"}, {"fr"},
@@ -1715,7 +1757,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_001_desc_en",
 		{"loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"}, {"en"},
 			loc_text("{warp_charge_amount:%s} "..COLORS_KWords.Peril_rgb.." Generation Reduction for each Warp Charge.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_1_1_rgb)), -- warp_charge_amount: -6% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_1_1_rgb)),
+			-- warp_charge_amount: -6%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_001_desc_fr",
 		{"loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"}, {"fr"},
@@ -1735,7 +1778,8 @@ local localization_templates = {
 		{"loc_talent_psyker_toughness_regen_on_soul_desc"}, {"en"},
 			loc_text(COLORS_Numbers.pc_6_rgb.." "..COLORS_KWords.Toughness_rgb.." is replenished per second for {time:%s} seconds after gaining Warp Charge, up to a Maximum of {toughness:%s}. Gaining a new Warp Charge during this time resets the timer.\n"
 				..Arrow_right_.." Doesn't increase the amount of "..COLORS_KWords.Toughness_rgb.." replenished.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_1_2_rgb)), -- toughness: 30%, time: 5 --  s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_1_2_rgb)),
+				-- toughness: 30%, time: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_002_desc_fr",
 		{"loc_talent_psyker_toughness_regen_on_soul_desc"}, {"fr"},
@@ -1759,7 +1803,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_003_desc_en",
 		{"loc_talent_psyker_souls_increase_damage_desc"}, {"en"},
 			loc_text("{damage:%s} increase to all Base "..COLORS_KWords.Damage_rgb.." for each Warp Charge.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_1_3_rgb)), -- damage: +4% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_1_3_rgb)),
+				-- damage: +4%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_003_desc_fr",
 		{"loc_talent_psyker_souls_increase_damage_desc"}, {"fr"},
@@ -1782,7 +1827,8 @@ local localization_templates = {
 		{"loc_talent_psyker_warpfire_generates_souls_desc"}, {"en"},
 			loc_text("{chance:%s} chance to gain a Warp Charge when you or an Ally kill an enemy who is currently affected by "..COLORS_KWords.Soulblaze_rgb..".\n"
 				..Arrow_up_green.." You gain a Warp charge when an enemy who is currently affected by "..COLORS_KWords.Soulblaze_rgb.." is killed either by "..COLORS_KWords.Soulblaze_rgb..", by Psyker, or by an ally.\n"
-				..Arrow_up_green.." This effect has No Range limit and benefits all Psykers who have this Talent equipped.\n")), -- chance: 10% -- colors -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_4_rgb
+				..Arrow_up_green.." This effect has No Range limit and benefits all Psykers who have this Talent equipped.\n")),
+				-- chance: 10%, colors -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_4_rgb
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_004_desc_fr",
 		{"loc_talent_psyker_warpfire_generates_souls_desc"}, {"fr"},
@@ -1805,7 +1851,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_006_desc_en",
 		{"loc_talent_psyker_souls_on_kill_coop_desc"}, {"en"},
 			loc_text("{soul_chance:%s} chance to gain a Warp Charge whenever you or an Ally in "..COLORS_KWords.Coherency_rgb.." kills an enemy.\n"
-				..Arrow_up_green.." If multiple Psykers are in Coherency with each other, all of them get a Warp charge when the Talent procs for one of them.\n")), -- soul_chance: 4% -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_5_rgb
+				..Arrow_up_green.." If multiple Psykers are in Coherency with each other, all of them get a Warp charge when the Talent procs for one of them.\n")),
+				-- soul_chance: 4% -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_5_rgb
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_006_desc_fr",
 		{"loc_talent_psyker_souls_on_kill_coop_desc"}, {"fr"},
@@ -1826,7 +1873,8 @@ local localization_templates = {
 	--[+ KEYSTONE 1-6 - Warp Battery +]--
 	create_template("talent_tree_psy_keys1_005_desc_en",
 		{"loc_talent_psyker_increased_souls_desc"}, {"en"},
-			loc_text("You can store up to {soul_amount:%s} Warp Charges.\n")), -- soul_amount: 6 -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_6_rgb
+			loc_text("You can store up to {soul_amount:%s} Warp Charges.\n")),
+			-- soul_amount: 6 -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_6_rgb
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_005_desc_fr",
 		{"loc_talent_psyker_increased_souls_desc"}, {"fr"},
@@ -1844,12 +1892,24 @@ local localization_templates = {
 	--[+ KEYSTONE 2 - Empowered Psionics +]--
 	create_template("talent_tree_psy_keys2_000_desc_en",
 		{"loc_talent_psyker_empowered_ability_description"}, {"en"},
-			loc_text("Kills have a {chance:%s} chance to Empower your next Blitz.\nEmpowered {blitz_one:%s}:\n{smite_damage:%s} "..COLORS_KWords.Damage_rgb..",\n{smite_cost:%s} "..COLORS_KWords.Peril_rgb.." Cost Reduction,\n{smite_attack_speed:%s} Cast time Reduction.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_1_rgb.."\nEmpowered {blitz_two:%s}:\n{chain_lightning_damage:%s} "..COLORS_KWords.Damage_rgb..",\n{chain_lightning_jump_time_multiplier:%s} faster spread between Enemies.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_2_rgb.."\nEmpowered {blitz_three:%s}:\n{throwing_knives_cost:%s} "..COLORS_KWords.Peril_rgb.." Cost Reduction,\nBase "..COLORS_KWords.Damage_rgb.." increase from {throwing_knives_old_damage:%s} to {throwing_knives_new_damage:%s}.\nDoes not consume any charges.\n"
+			loc_text("Kills have a {chance:%s} chance to Empower your next Blitz.\n"
+				.."Empowered {blitz_one:%s}:\n"
+				.."{smite_damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
+				.."{smite_cost:%s} "..COLORS_KWords.Peril_rgb.." Cost Reduction,\n"
+				.."{smite_attack_speed:%s} Cast time Reduction.\n"
+				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_1_rgb.."\n"
+				.."Empowered {blitz_two:%s}:\n"
+				.."{chain_lightning_damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
+				.."{chain_lightning_jump_time_multiplier:%s} faster spread between Enemies.\n"
+				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_2_rgb.."\n"
+				.."Empowered {blitz_three:%s}:\n"
+				.."{throwing_knives_cost:%s} "..COLORS_KWords.Peril_rgb.." Cost Reduction,\n"
+				.."Base "..COLORS_KWords.Damage_rgb.." increase from {throwing_knives_old_damage:%s} to {throwing_knives_new_damage:%s}.\n"
+				.."Does not consume any charges.\n"
 				..Arrow_up_green.." Allows casting at "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb..".\n"
 				..Arrow_up_green.." Double the number of targets.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_3_rgb)), -- chance: 7.5%, blitz_one: Brain Rupture, smite_cost: 100%, smite_attack_speed: 50%, smite_damage: +50%, blitz_two: Smite, chain_lightning_damage: +200%, chain_lightning_jump_time_multiplier: 50%, blitz_three: Assail, throwing_knives_cost: 100%, throwing_knives_old_damage: 100, throwing_knives_new_damage: 150 -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_3_rgb)),
+				-- chance: 7.5%, blitz_one: Brain Rupture, smite_cost: 100%, smite_attack_speed: 50%, smite_damage: +50%, blitz_two: Smite, chain_lightning_damage: +200%, chain_lightning_jump_time_multiplier: 50%, blitz_three: Assail, throwing_knives_cost: 100%, throwing_knives_old_damage: 100, throwing_knives_new_damage: 150, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_000_desc_fr",
 		{"loc_talent_psyker_empowered_ability_description"}, {"fr"},
@@ -1889,7 +1949,8 @@ local localization_templates = {
 	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--
 	create_template("talent_tree_psy_keys2_001_desc_en",
 		{"loc_talent_psyker_increase_empower_chain_lighting_chance_description"}, {"en"},
-			loc_text("Increases the chance to gain {talent_name:%s} on Kill from {proc_chance_before:%s} to {proc_chance_after:%s}.")), -- talent_name: Empowered Psionics, proc_chance_before: 7.5%, proc_chance_after: 12.5%
+			loc_text("Increases the chance to gain {talent_name:%s} on Kill from {proc_chance_before:%s} to {proc_chance_after:%s}.")),
+			-- talent_name: Empowered Psionics, proc_chance_before: 7.5%, proc_chance_after: 12.5%
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_001_desc_fr",
 		{"loc_talent_psyker_increase_empower_chain_lighting_chance_description"}, {"fr"},
@@ -1909,7 +1970,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys2_002_desc_en",
 		{"loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies_description"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for you and Allies in "..COLORS_KWords.Coherency_rgb.." when using your Blitz while {talent_name:%s} is active.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_2_2_rgb)), -- talent_name: Empowered Psionics, toughness: 15% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_2_2_rgb)),
+				-- talent_name: Empowered Psionics, toughness: 15%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_002_desc_fr",
 		{"loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies_description"}, {"fr"},
@@ -1930,7 +1992,8 @@ local localization_templates = {
 	--[+ KEYSTONE 2-3 - Overpowering Souls +]--
 	create_template("talent_tree_psy_keys2_003_desc_en",
 		{"loc_talent_psyker_empowered_ability_on_elite_kills_description"}, {"en"},
-			loc_text("Guaranteed chance to gain {talent_name:%s} on Elite Kills.")), -- talent_name: Empowered Psionics
+			loc_text("Guaranteed chance to gain {talent_name:%s} on Elite Kills.")),
+			-- talent_name: Empowered Psionics
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_003_desc_fr",
 		{"loc_talent_psyker_empowered_ability_on_elite_kills_description"}, {"fr"},
@@ -1948,7 +2011,8 @@ local localization_templates = {
 	--[+ KEYSTONE 2-4 - Charged Up +]--
 	create_template("talent_tree_psy_keys2_004_desc_en",
 		{"loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"}, {"en"},
-			loc_text("You can now hold up to {max_stacks:%s} Stacks of {talent_name:%s}.")), -- max_stacks: 3, talent_name: Empowered Psionics
+			loc_text("You can now hold up to {max_stacks:%s} Stacks of {talent_name:%s}.")),
+			-- max_stacks: 3, talent_name: Empowered Psionics
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_004_desc_fr",
 		{"loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"}, {"fr"},
@@ -1966,10 +2030,15 @@ local localization_templates = {
 	--[+ KEYSTONE 3 - Disrupt Destiny +]--
 	create_template("talent_tree_psy_keys3_000_desc_en",
 		{"loc_talent_psyker_marked_enemies_passive_updated_desc"}, {"en"},
-			loc_text("Every second, Enemies within "..COLORS_Numbers.n_40_rgb.." meters have a chance of being Marked. Killing a Marked Enemy Replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {move_speed_duration:%s} seconds, grants {move_speed:%s} Movement Speed for {move_speed_duration:%s} seconds, and adds a "..COLORS_KWords.Precision_rgb.." Bonus for {bonus_duration} seconds.\nEach "..COLORS_KWords.Precision_rgb.." Bonus grants:\n{base_damage:%s} "..COLORS_KWords.Damage_rgb..",\n{crit_damage:%s} "..COLORS_KWords.Crit_dmg_r_rgb.." and\n{weakspot_damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb..".\n"..COLORS_KWords.Precision_rgb.." Bonus Stacks {bonus_stacks:%s} times and when the duration ends, one Stack is removed and the duration is refreshed.\n"
+			loc_text("Every second, Enemies within "..COLORS_Numbers.n_40_rgb.." meters have a chance of being Marked. Killing a Marked Enemy Replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {move_speed_duration:%s} seconds, grants {move_speed:%s} Movement Speed for {move_speed_duration:%s} seconds, and adds a "..COLORS_KWords.Precision_rgb.." Bonus for {bonus_duration} seconds.\n"
+				.."Each "..COLORS_KWords.Precision_rgb.." Bonus grants:\n"
+				.."{base_damage:%s} "..COLORS_KWords.Damage_rgb..",\n{crit_damage:%s} "..COLORS_KWords.Crit_dmg_r_rgb.." and\n"
+				.."{weakspot_damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb..".\n"
+				..COLORS_KWords.Precision_rgb.." Bonus Stacks {bonus_stacks:%s} times and when the duration ends, one Stack is removed and the duration is refreshed.\n"
 				..Arrow_up_green.." Dealing "..COLORS_KWords.Damage_rgb.." to Marked enemies refreshes the Talent's duration.\n"
 				..Arrow_right_.." Valid targets are: Dreg/Scab Bruisers, Dreg/Scab Stalkers, Scab Shooters, Ragers, Gunners, Shotgunners and Maulers.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_3_rgb)), -- radius: 25->40!!!, toughness: 10%, move_speed: +20%, move_speed_duration: 2.5, bonus_duration 4, base_damage: +1%, crit_damage: +2%, weakspot_damage: +2.5%, bonus_stacks: 15 -- m->meters -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_3_rgb)),
+				-- radius: 25->40!!!, toughness: 10%, move_speed: +20%, move_speed_duration: 2.5, bonus_duration 4, base_damage: +1%, crit_damage: +2%, weakspot_damage: +2.5%, bonus_stacks: 15 -- m->meters, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys3_000_desc_fr",
 		{"loc_talent_psyker_marked_enemies_passive_new_desc"}, {"fr"},
@@ -2004,7 +2073,8 @@ local localization_templates = {
 	--[+ KEYSTONE 3-1 - Perfectionism +]--
 	create_template("talent_tree_psy_keys3_001_desc_en",
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"en"},
-			loc_text("Maximum "..COLORS_KWords.Precision_rgb.." Bonus Stacks are increased from {stacks_previous:%s} to {stacks_after:%s}.")), -- stacks_previous: 15, stacks_after: 25 -- colors
+			loc_text("Maximum "..COLORS_KWords.Precision_rgb.." Bonus Stacks are increased from {stacks_previous:%s} to {stacks_after:%s}.")),
+			-- stacks_previous: 15, stacks_after: 25, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys3_001_desc_fr",
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"fr"},
@@ -2023,7 +2093,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_002_desc_en",
 		{"loc_talent_psyker_mark_kills_can_vent_description"}, {"en"},
 			loc_text("{chance:%s} chance to instantly Quell {warp_charge_percentage:%s} of your "..COLORS_KWords.Peril_rgb.." when killing enemies marked by {talent_name:%s}.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_3_2_rgb)), -- talent_name: Disrupt Destiny, chance: 20%, warp_charge_percentage: 15% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_3_2_rgb)),
+				-- talent_name: Disrupt Destiny, chance: 20%, warp_charge_percentage: 15%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys3_002_desc_fr",
 		{"loc_talent_psyker_mark_kills_can_vent_description"}, {"fr"},
@@ -2045,7 +2116,8 @@ local localization_templates = {
 	--[+ KEYSTONE 3-3 - Lingering Influence +]--
 	create_template("talent_tree_psy_keys3_003_desc_en",
 		{"loc_talent_psyker_mark_increased_duration_description"}, {"en"},
-			loc_text("Increase the duration of {talent_name:%s} from {duration_previous:%s} to {duration_after:%s} seconds.")), -- talent_name: Disrupt Destiny, duration_previous: 15, duration_after: 10 -- s->seconds
+			loc_text("Increase the duration of {talent_name:%s} from {duration_previous:%s} to {duration_after:%s} seconds.")),
+			-- talent_name: Disrupt Destiny, duration_previous: 15, duration_after: 10, s->seconds
 	--[+ French +]--
 	create_template("talent_tree_psy_keys3_003_desc_fr",
 		{"loc_talent_psyker_mark_increased_duration_description"}, {"fr"},
@@ -2064,7 +2136,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_004_desc_en",
 		{"loc_talent_psyker_mark_weakspot_stacks_description"}, {"en"},
 			loc_text(COLORS_KWords.Weakspot_rgb.." Kills grant {stacks:%s} additional Stacks of {talent_name:%s}.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_3_4_rgb)), -- stacks: 2 talent_name: Disrupt Destiny -- colors
+				..TALENTS_Enh_desc.ED_PSY_Keystone_3_4_rgb)),
+				-- stacks: 2 talent_name: Disrupt Destiny, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys3_004_desc_fr",
 		{"loc_talent_psyker_mark_weakspot_stacks_description"}, {"fr"},
@@ -2084,7 +2157,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_001_desc_en",
 		{"loc_talent_psyker_toughness_on_warp_kill_desc"}, {"en"},
 			loc_text("{toughness:%s} of Maximum "..COLORS_KWords.Toughness_rgb.." replenishes on killing an enemy with a Warp attack.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_1_rgb)), -- toughness: 7.5%. -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_1_rgb)),
+				-- toughness: 7.5%., colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_001_desc_fr",
 		{"loc_talent_psyker_toughness_on_warp_kill_desc"}, {"fr"},
@@ -2097,10 +2171,12 @@ local localization_templates = {
 	--[+ Passive 2 - Mettle +]--
 	create_template("talent_tree_psy_pas_002_desc_en",
 		{"loc_talent_psyker_crits_regen_tougness_and_movement_speed_description"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes on "..COLORS_KWords.Crit_hits_rgb..".\nAlso grants {movement_speed:%s} increased Movement Speed for {seconds:%s} seconds. Stacks {stacks:%s} times.\n"
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes on "..COLORS_KWords.Crit_hits_rgb..".\n"
+				.."Also grants {movement_speed:%s} increased Movement Speed for {seconds:%s} seconds. Stacks {stacks:%s} times.\n"
 				..Arrow_right_.." Procs only once per "..COLORS_KWords.Crit_rgb.." attack regardless of how many enemies have been hit.\n"
 				..Arrow_right_.." Always generates "..COLORS_Numbers.n_1_rgb.." Stack per "..COLORS_KWords.Crit_rgb.." attack regardless of how many enemies have been hit.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_2_rgb)), -- toughness: 5%, movement_speed: +5%, seconds: 4, stacks: 3 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_2_rgb)),
+				-- toughness: 5%, movement_speed: +5%, seconds: 4, stacks: 3, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_002_desc_fr",
 		{"loc_talent_psyker_crits_regen_tougness_and_movement_speed_description"}, {"fr"},
@@ -2114,7 +2190,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_003_desc_en",
 		{"loc_talent_psyker_toughness_from_vent_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for each {warp_charge:%s} of "..COLORS_KWords.Peril_rgb.." Quelled.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_3_rgb)), -- toughness: 5%, warp_charge: 10% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_3_rgb)),
+				-- toughness: 5%, warp_charge: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_003_desc_fr",
 		{"loc_talent_psyker_toughness_from_vent_desc"}, {"fr"},
@@ -2128,7 +2205,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_004_desc_en",
 		{"loc_talent_psyker_warp_charge_generation_generates_toughness_description"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for every {warp_charge:%s} "..COLORS_KWords.Peril_rgb.." Generated.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_4_rgb)), -- toughness: 2.5%, warp_charge: 10% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_4_rgb)),
+				-- toughness: 2.5%, warp_charge: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_004_desc_fr",
 		{"loc_talent_psyker_warp_charge_generation_generates_toughness_description"}, {"fr"},
@@ -2145,12 +2223,13 @@ local localization_templates = {
 				..Arrow_up_green.." Does proc on "..COLORS_KWords.Burn_rgb.." or "..COLORS_KWords.Bleed_rgb.." tick kills.\n"
 				..Arrow_right_.." Stacks are applied at a distance of up to "..COLORS_Numbers.n_4_rgb.." meters from the killed enemy.\n"
 				..Arrow_down_red.." Does not proc on Elites or Specials killed by Psyker's "..COLORS_KWords.Soulblaze_rgb.." "..COLORS_KWords.Damage_rgb.." ticks.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_5_rgb)), -- stacks: 3 -- stack(s)->Stacks  -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_5_rgb)),
+				-- stacks: 3 -- stack(s)->Stacks , colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_005_desc_fr",
 		{"loc_talent_psyker_elite_and_special_kills_add_warpfire_desc"}, {"fr"},
 			loc_text("Tuer un ennemi d'élite ou un spécialiste applique {stacks:%s} Stacks d'"..COLORS_KWords_fr.Soulblaze_rgb_fr.." aux ennemis à proximité, infligeant des "..COLORS_KWords_fr.Damage_rgb_fr.." sur la durée."..TALENTS_Enh_desc_fr.ED_PSY_Passive_5_rgb_fr)),
-	--[+ Russian +]-- Опасное возгорание +]-- -- руоф Пагубное воспламенение
+	--[+ Russian - Опасное возгорание +]-- руоф Пагубное воспламенение
 	create_template("talent_tree_psy_pas_005_desc_ru",
 		{"loc_talent_psyker_elite_and_special_kills_add_warpfire_desc"}, {"ru"},
 			loc_text("{stacks:%s} заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." накладывается при убийстве элитных врагов или специалистов на ближайших к ним врагов, причиняя "..COLORS_KWords_ru.Dmg_rgb_ru.." с течением времени."..TALENTS_Enh_desc_ru.ED_PSY_Passive_5_rgb_ru)),
@@ -2162,7 +2241,8 @@ local localization_templates = {
 				..Arrow_up_green.." Generates multiple Stacks per attack when "..COLORS_KWords.Cleaving_rgb..".\n"
 				..Arrow_up_green.." Stacks can be refreshed during active duration.\n"
 				..Arrow_right_.." Hitting enemies with a "..COLORS_KWords.Crit_rgb.." Melee, Ranged, or Assail attack grants Stacks.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_6_rgb)), -- damage: +3%, duration: 10, stacks: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_6_rgb)),
+				-- damage: +3%, duration: 10, stacks: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_006_desc_fr",
 		{"loc_talent_psyker_crits_empower_warp_description"}, {"fr"},
@@ -2176,7 +2256,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_007_desc_en",
 		{"loc_talent_psyker_base_2_description"}, {"en"},
 			loc_text("{chance:%s} chance to Quell {warp_charge_percent:%s} "..COLORS_KWords.Peril_rgb.." on Kill.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_7_rgb)), -- chance: 10%, warp_charge_percent: 10% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_7_rgb)),
+				-- chance: 10%, warp_charge_percent: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_007_desc_fr",
 		{"loc_talent_psyker_base_2_description"}, {"fr"},
@@ -2192,7 +2273,8 @@ local localization_templates = {
 			loc_text("When an Enemy dies while affected by your "..COLORS_KWords.Soulblaze_rgb..", nearby Enemies each gain up to {stacks:%s} Stacks of "..COLORS_KWords.Soulblaze_rgb..". They cannot gain more Stacks than the dying Enemy had.\n"
 				..Arrow_right_.." Whenever an Enemy who is affected by at least "..COLORS_Numbers.n_2_rgb.." Stacks of "..COLORS_KWords.Soulblaze_rgb.." dies, it spreads to valid targets within a "..COLORS_Numbers.n_5_rgb.." meters radius.\n"
 				..Arrow_down_red.." Targets do not receive "..COLORS_KWords.Soulblaze_rgb.." Stacks caused by the Talent if they already have "..COLORS_Numbers.n_4_rgb.." Stacks or more on them.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_8_rgb)), -- stacks: 4 -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_8_rgb)),
+				-- stacks: 4, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_008_desc_fr",
 		{"loc_talent_psyker_warpfire_spread_desc"}, {"fr"},
@@ -2208,7 +2290,8 @@ local localization_templates = {
 			loc_text(COLORS_Numbers.n_minus_rgb.."{cooldown:%s} "..COLORS_KWords.Ability_cd_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.." on Elite or Specialist kill.\n"
 				..Arrow_down_red.." Does not Stack with the same Talent of another Psyker (each Psyker procs their own Talent spreading the Cooldown Reduction separately).\n"
 				..Arrow_down_red.." Does not interact with "..COLORS_KWords.Combat_ability_rgb.." Regeneration from Curios which only reduces the Maximum cooldown of a "..COLORS_KWords.Combat_ability_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_9_rgb)), -- cooldown: 5% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_9_rgb)),
+				-- cooldown: 5%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_009_desc_fr",
 		{"loc_talent_psyker_elite_kills_give_combat_ability_cd_coherency_desc"}, {"fr"},
@@ -2223,7 +2306,8 @@ local localization_templates = {
 		{"loc_talent_psyker_venting_doesnt_slow_desc"}, {"en"},
 			loc_text("Your Movement Speed is not reduced while Quelling "..COLORS_KWords.Peril_rgb..".\n"
 				..Arrow_down_red.." Does not interact with Movement Speed buffs.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_10_rgb)), -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_10_rgb)),
+				-- colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_010_desc_fr",
 		{"loc_talent_psyker_venting_doesnt_slow_desc"}, {"fr"},
@@ -2236,9 +2320,11 @@ local localization_templates = {
 	--[+ Passive 11 - Malefic Momentum +]--
 	create_template("talent_tree_psy_pas_011_desc_en",
 		{"loc_talent_psyker_kills_stack_other_weapon_damage_both_description"}, {"en"},
-			loc_text("{warp_damage:%s} "..COLORS_KWords.Damage_rgb.." to Warp Attacks for {duration:%s} seconds after a non-Warp based Kill. Stacks {stacks:%s} times.\n{non_warp_damage:%s} "..COLORS_KWords.Damage_rgb.." to non-Warp Attacks for {duration:%s} seconds after a Warp based Kill. Stacks {stacks:%s} times.\n"
+			loc_text("{warp_damage:%s} "..COLORS_KWords.Damage_rgb.." to Warp Attacks for {duration:%s} seconds after a non-Warp based Kill. Stacks {stacks:%s} times.\n"
+				.."{non_warp_damage:%s} "..COLORS_KWords.Damage_rgb.." to non-Warp Attacks for {duration:%s} seconds after a Warp based Kill. Stacks {stacks:%s} times.\n"
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_11_rgb)), -- warp_damage/non_warp_damage: +4%, duration: 8, stacks: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_11_rgb)),
+				-- warp_damage/non_warp_damage: +4%, duration: 8, stacks: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_011_desc_fr",
 		{"loc_talent_psyker_kills_stack_other_weapon_damage_both_description"}, {"fr"},
@@ -2253,7 +2339,8 @@ local localization_templates = {
 		{"loc_talent_psyker_force_staff_bonus_desc"}, {"en"},
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Force Staff's Primary Attacks after Fully Charged Force Staff Secondary Attacks. Lasts {time:%s} seconds.\n"
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_12_rgb)), -- damage: +30%, time: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_12_rgb)),
+				-- damage: +30%, time: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_012_desc_fr",
 		{"loc_talent_psyker_force_staff_bonus_desc"}, {"fr"},
@@ -2267,7 +2354,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_013_desc_en",
 		{"loc_talent_psyker_force_staff_wield_speed_desc"}, {"en"},
 			loc_text("Up to {wield_speed:%s} Weapon Wield Speed, based on your current "..COLORS_KWords.Peril_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_13_rgb)), -- wield_speed: 50% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_13_rgb)),
+				-- wield_speed: 50%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_013_desc_fr",
 		{"loc_talent_psyker_force_staff_wield_speed_desc"}, {"fr"},
@@ -2281,7 +2369,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_014_desc_en",
 		{"loc_talent_psyker_melee_attack_speed_desc"}, {"en"},
 			loc_text(COLORS_Numbers.n_plus_rgb.."{melee_attack_speed:%s} Melee Attack Speed.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_14_rgb)), -- melee_attack_speed: 10% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_14_rgb)),
+				-- melee_attack_speed: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_014_desc_fr",
 		{"loc_talent_psyker_melee_attack_speed_desc"}, {"fr"},
@@ -2296,7 +2385,8 @@ local localization_templates = {
 		{"loc_talent_psyker_killing_enemy_with_warpfire_boosts_desc"}, {"en"},
 			loc_text("Killing an Enemy with "..COLORS_KWords.Soulblaze_rgb.." restores {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and grants {crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.." for {duration:%s} seconds.\n"
 				..Arrow_down_red.." "..COLORS_KWords.Crit_hit_chance_rgb.." cannot be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_15_rgb)), -- toughness: 5%, crit_chance: 5%, duration: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_15_rgb)),
+				-- toughness: 5%, crit_chance: 5%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_015_desc_fr",
 		{"loc_talent_psyker_killing_enemy_with_warpfire_boosts_desc"}, {"fr"},
@@ -2312,7 +2402,8 @@ local localization_templates = {
 			loc_text("{damage_taken:%s} more "..COLORS_KWords.Damagewrp_rgb.." per stack you deal to your enemies after hitting them with your Force Staff Primary Attacks. Max Stacks {max_stacks:%s}. Lasts {duration:%s} seconds.\n"
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
 				..Arrow_up_green.." Can be applied through shields.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_16_rgb)), -- damage_taken: 6%, max_stacks: 5, duration: 10 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_16_rgb)),
+				-- damage_taken: 6%, max_stacks: 5, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_016_desc_fr",
 		{"loc_talent_psyker_force_staff_quick_attack_bonus_desc"}, {"fr"},
@@ -2325,8 +2416,10 @@ local localization_templates = {
 	--[+ Passive 17 - By Crack of Bone +]--
 	create_template("talent_tree_psy_pas_017_desc_en",
 		{"loc_talent_psyker_melee_weaving_desc"}, {"en"},
-			loc_text("{vent:%s} "..COLORS_KWords.Peril_rgb.." Quelling from Melee "..COLORS_KWords.Weak_spot_rgb.." kills.\n{warp_generation:%s} Reduction in further "..COLORS_KWords.Peril_rgb.." Generation for {duration:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_17_rgb)), -- vent: 5%, warp_generation: 20%, duration: 4 -- s->seconds -- colors
+			loc_text("{vent:%s} "..COLORS_KWords.Peril_rgb.." Quelling from Melee "..COLORS_KWords.Weak_spot_rgb.." kills.\n"
+				.."{warp_generation:%s} Reduction in further "..COLORS_KWords.Peril_rgb.." Generation for {duration:%s} seconds.\n"
+				..TALENTS_Enh_desc.ED_PSY_Passive_17_rgb)),
+				-- vent: 5%, warp_generation: 20%, duration: 4, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_017_desc_fr",
 		{"loc_talent_psyker_melee_weaving_desc"}, {"fr"},
@@ -2341,7 +2434,8 @@ local localization_templates = {
 		{"loc_talent_psyker_cleave_from_peril_desc"}, {"en"},
 			loc_text("Up to {max_cleave:%s} "..COLORS_KWords.Cleave_rgb..", based on "..COLORS_KWords.Peril_rgb..".\n"
 				..Arrow_down_red.." Carapace cannot be "..COLORS_KWords.Cleaved_rgb.." by default.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_18_rgb)), -- max_cleave: +100% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_18_rgb)),
+				-- max_cleave: +100%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_018_desc_fr",
 		{"loc_talent_psyker_cleave_from_peril_desc"}, {"fr"},
@@ -2357,12 +2451,13 @@ local localization_templates = {
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenished to all other Allies in "..COLORS_KWords.Coherency_rgb.." when an Ally in "..COLORS_KWords.Coherency_rgb.." gets Knocked Down.\n"
 				..Arrow_right_.." When Psyker goes down, replenishes "..COLORS_KWords.Toughness_rgb.." to Allies in "..COLORS_KWords.Coherency_rgb..".\n"
 				..Arrow_down_red.." Does not proc when the Ally or Psyker dies.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_19_rgb)), -- toughness: 100% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_19_rgb)),
+				-- toughness: 100%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_019_desc_fr",
 		{"loc_talent_psyker_restore_toughness_to_allies_when_ally_down_description"}, {"fr"},
 			loc_text("{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." pour tout les autres alliés en syntonie lorsqu'un allié en syntonie est mis à terre."..TALENTS_Enh_desc_fr.ED_PSY_Passive_19_rgb_fr)),
-	--[+ Russian +]-- Не везёт некоторым +]-- -- руоф Некоторым не повезло
+	--[+ Russian - Не везёт некоторым +]-- руоф Некоторым не повезло
 	create_template("talent_tree_psy_pas_019_desc_ru",
 		{"loc_talent_psyker_restore_toughness_to_allies_when_ally_down_description"}, {"ru"},
 			loc_text("Когда одного из союзников сбивают с ног, {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается всем игрокам, которые находились в этот момент с ним в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_19_rgb_ru)),
@@ -2371,7 +2466,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_020_desc_en",
 		{"loc_talent_psyker_toughness_damage_reduction_from_warp_charge_desc"}, {"en"},
 			loc_text("{min_damage:%s} to {max_damage:%s} gain "..COLORS_KWords.Toughness_dmg_red_rgb.." based on your current "..COLORS_KWords.Peril_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_20_rgb)), -- min_damage: +10.00%, max_damage: +33.00% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_20_rgb)),
+				-- min_damage: +10.00%, max_damage: +33.00%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_020_desc_fr",
 		{"loc_talent_psyker_toughness_damage_reduction_from_warp_charge_desc"}, {"fr"},
@@ -2386,7 +2482,8 @@ local localization_templates = {
 		{"loc_talent_psyker_dodge_after_crits_description"}, {"en"},
 			loc_text("A "..COLORS_KWords.Crit_hit_rgb.." makes you count as Dodging against Ranged Attacks for {duration:%s} second.\n"
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_21_rgb)), -- duration: 1 -- s->second -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_21_rgb)),
+				-- duration: 1 -- s->second, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_021_desc_fr",
 		{"loc_talent_psyker_dodge_after_crits_description"}, {"fr"},
@@ -2400,7 +2497,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_022_desc_en",
 		{"loc_talent_psyker_improved_dodge_description"}, {"en"},
 			loc_text("{dodge_linger_time:%s} Dodge duration. Increases the number of Dodges before Dodges starts becoming ineffective by {extra_consecutive_dodges:%s}.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_22_rgb)), -- dodge_linger_time: +50%, extra_consecutive_dodges: 1
+				..TALENTS_Enh_desc.ED_PSY_Passive_22_rgb)),
+				-- dodge_linger_time: +50%, extra_consecutive_dodges: 1
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_022_desc_fr",
 		{"loc_talent_psyker_improved_dodge_description"}, {"fr"},
@@ -2415,7 +2513,8 @@ local localization_templates = {
 		{"loc_talent_psyker_increased_vent_speed_description"}, {"en"},
 			loc_text(COLORS_Numbers.n_plus_rgb.."{vent_speed:%s} Quell Speed.\n"
 				..Arrow_right_.." Applies only to Active Quelling, Passive Quelling is unaffected.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_23_rgb)), -- vent_speed: 30%
+				..TALENTS_Enh_desc.ED_PSY_Passive_23_rgb)),
+				-- vent_speed: 30%
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_023_desc_fr",
 		{"loc_talent_psyker_increased_vent_speed_description"}, {"fr"},
@@ -2428,7 +2527,8 @@ local localization_templates = {
 	--[+ Passive 24 - Puppet Master +]--
 	create_template("talent_tree_psy_pas_024_desc_en",
 		{"loc_talent_psyker_coherency_size_increase_description"}, {"en"},
-			loc_text(COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} Radius for your "..COLORS_KWords.Coherency_rgb.." Aura, from "..COLORS_Numbers.n_8_rgb.." to "..COLORS_Numbers.n_12_rgb.." meters.")), -- radius_modifier: 50% -- + -- colors -- ..TALENTS_Enh_desc.ED_PSY_Passive_24_rgb
+			loc_text(COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} Radius for your "..COLORS_KWords.Coherency_rgb.." Aura, from "..COLORS_Numbers.n_8_rgb.." to "..COLORS_Numbers.n_12_rgb.." meters.")),
+			-- radius_modifier: 50%, +, colors -- ..TALENTS_Enh_desc.ED_PSY_Passive_24_rgb
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_024_desc_fr",
 		{"loc_talent_psyker_coherency_size_increase_description"}, {"fr"},
@@ -2442,7 +2542,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_025_desc_en",
 		{"loc_talent_psyker_damage_based_on_warp_charge_desc"}, {"en"},
 			loc_text("Up to {max_damage:%s} "..COLORS_KWords.Damage_rgb.." from all sources, based on your current "..COLORS_KWords.Peril_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_25_rgb)), -- max_damage: +20% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_25_rgb)),
+				-- max_damage: +20%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_025_desc_fr",
 		{"loc_talent_psyker_damage_based_on_warp_charge_desc"}, {"fr"},
@@ -2458,7 +2559,8 @@ local localization_templates = {
 			-- loc_text("Overloading through "..COLORS_KWords.Perils_rgb.." of the Warp no longer knocks you down, but you still take the appropriate "..COLORS_KWords.Corruptdmg_rgb..".\n"
 			loc_text("Instead of knocking down Psyker on self-explosion, converts "..COLORS_Numbers.n_1_rgb.." "..COLORS_KWords.Health_rgb.." Segment to full "..COLORS_KWords.Corruption_rgb..".\n"
 				..Arrow_right_.." Always converts "..COLORS_Numbers.n_1_rgb.." Segment regardless whether the Segment in question is already partially "..COLORS_KWords.Corrupted_rgb.." or not.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_26_rgb)), -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_26_rgb)),
+				-- rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_027_desc_fr",
 		{"loc_talent_psyker_alternative_peril_explosion_desc"}, {"fr"},
@@ -2471,8 +2573,10 @@ local localization_templates = {
 	--[+ Passive 27 - Kinetic Deflection +]--
 	create_template("talent_tree_psy_pas_027_desc_en",
 		{"loc_talent_psyker_block_costs_warp_charge_desc"}, {"en"},
-			loc_text("While below 97% "..COLORS_KWords.Peril_rgb..", Blocking an attack causes you to gain "..COLORS_KWords.Peril_rgb.." instead of losing "..COLORS_KWords.Stamina_rgb..".\nGained "..COLORS_KWords.Peril_rgb.." is {warp_charge_block_cost:%s} of the blocked attack's "..COLORS_KWords.Stamina_rgb.." cost.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_27_rgb)), -- warp_charge_block_cost: 25% -- colors
+			loc_text("While below 97% "..COLORS_KWords.Peril_rgb..", Blocking an attack causes you to gain "..COLORS_KWords.Peril_rgb.." instead of losing "..COLORS_KWords.Stamina_rgb..".\n"
+				.."Gained "..COLORS_KWords.Peril_rgb.." is {warp_charge_block_cost:%s} of the blocked attack's "..COLORS_KWords.Stamina_rgb.." cost.\n"
+				..TALENTS_Enh_desc.ED_PSY_Passive_27_rgb)),
+				-- warp_charge_block_cost: 25%, colors
 		--[+ French +]--
 	create_template("talent_tree_psy_pas_027_desc_fr",
 		{"loc_talent_psyker_block_costs_warp_charge_desc"}, {"fr"},
@@ -2489,7 +2593,8 @@ local localization_templates = {
 				..Arrow_up_green.." Procs additionally to \"Battle Meditation\" and \"Purloin Providence\".\n"
 				..Arrow_right_.." Procs when hitting shields.\n"
 				..Arrow_right_.." Procs only Once per shot regardless of how many enemies have been hit.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_28_rgb)), -- percent: 4% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_28_rgb)),
+				-- percent: 4%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_028_desc_fr",
 		{"loc_talent_psyker_ranged_crits_vent_desc"}, {"fr"},
@@ -2503,7 +2608,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_029_desc_en",
 		{"loc_talent_psyker_warp_glass_cannon_desc"}, {"en"},
 			loc_text("{peril_reduction:%s} "..COLORS_KWords.Peril_rgb.." Generation.\n{toughness_reduction:%s} "..COLORS_KWords.Toughness_rgb.." Replenished.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_29_rgb)), -- peril_reduction: -40%, toughness_reduction: -30% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_29_rgb)),
+				-- peril_reduction: -40%, toughness_reduction: -30%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_029_desc_fr",
 		{"loc_talent_psyker_warp_glass_cannon_desc"}, {"fr"},
@@ -2518,7 +2624,8 @@ local localization_templates = {
 		{"loc_talent_psyker_warp_attacks_rending_new_desc"}, {"en"},
 			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.." on Warp-Attacks when above {threshold:%s} "..COLORS_KWords.Peril_rgb..".\n"
 				..Arrow_down_red.." Only affects Psyker's own "..COLORS_KWords.Damage_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_30_rgb)), -- rending: +10%, threshold: 75% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_30_rgb)),
+				-- rending: +10%, threshold: 75%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_030_desc_fr",
 		{"loc_talent_psyker_warp_attacks_rending_new_desc"}, {"fr"},
@@ -2534,7 +2641,8 @@ local localization_templates = {
 			loc_text("Landing {weakspot_hits:%s} "..COLORS_KWords.Weakspothits_rgb.." grants your next Ranged Attack a guaranteed "..COLORS_KWords.Crit_rgb..".\n"
 				..Arrow_right_.." "..COLORS_KWords.Cleaving_rgb.." attacks (e.g. Voidstrike Staff charged shots into density) can accumulate up to "..COLORS_Numbers.n_5_rgb.." "..COLORS_KWords.Weakspot_rgb.." Stacks at once but do not consume the guaranteed "..COLORS_KWords.Crit0_rgb.." right away.\n"
 				..Arrow_right_.." Generates "..COLORS_Numbers.n_1_rgb.." "..COLORS_KWords.Weakspot_rgb.." Stack per "..COLORS_KWords.Weakspothit_rgb.." with Melee, Ranged, \"Assail\" and \"Brain Rupture\"/\"Brain Burst\" attacks.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_31_rgb)), -- weakspot_hits: 5 -- del "Can only trigger once per Attack." -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_31_rgb)),
+			-- weakspot_hits: 5 -- del "Can only trigger once per Attack.", colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_031_desc_fr",
 		{"loc_talent_psyker_weakspot_grants_crit_once_description"}, {"fr"},
@@ -2548,7 +2656,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_032_desc_en",
 		{"loc_talent_psyker_reload_speed_warp_desc"}, {"en"},
 			loc_text("{reload_speed:%s} Reload Speed while below {threshold:%s} "..COLORS_KWords.Peril_rgb..". On Reload, generate up to {warp_charge:%s} "..COLORS_KWords.Peril_rgb.." based on the Percentage of the Clip Restored.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_32_rgb)), --  reload_speed: 25%, threshold: 75%, warp_charge: 25% -- colors
+				..TALENTS_Enh_desc.ED_PSY_Passive_32_rgb)),
+				-- reload_speed: 25%, threshold: 75%, warp_charge: 25%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_032_desc_fr",
 		{"loc_talent_psyker_reload_speed_warp_desc"}, {"fr"},
@@ -2568,7 +2677,8 @@ local localization_templates = {
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
 				..Arrow_right_.." Fuse time: "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
 				..Arrow_right_.." Explosion radius: "..COLORS_Numbers.n_8_rgb.." meters.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Blitz_0_rgb)), -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Blitz_0_rgb)),
+				-- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_blitz0_000_desc_fr",
 		{"loc_ability_shock_grenade_description"}, {"fr"},
@@ -2595,7 +2705,8 @@ local localization_templates = {
 				..Arrow_up_green.." "..COLORS_KWords.Staggers_rgb.." all enemies in range except Mutants, Scab Captains and Monstrosities.\n"
 				..Arrow_right_.." Fuse time: "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
 				..Arrow_right_.." Explosion radius: "..COLORS_Numbers.n_8_rgb.." meters.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Blitz_0_rgb)), -- talent_name: Stun Grenade, radius: +50% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Blitz_0_rgb)),
+				-- talent_name: Stun Grenade, radius: +50%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_blitz1_000_desc_fr",
 		{"loc_zealot_improved_stun_grenade_desc"}, {"fr"},
@@ -2619,7 +2730,8 @@ local localization_templates = {
 		{"loc_talent_ability_fire_grenade_desc"}, {"en"},
 			loc_text("Throw a grenade that leaves a layer of flaming liquid, "..COLORS_KWords.Burning_rgb.." and "..COLORS_KWords.Staggering_rgb.." enemies, and barring their path. Most effective against Unarmoured Enemies.\n"
 				..Arrow_right_.." Fuse time: "..COLORS_Numbers.n_1_7_rgb.." seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Blitz_2_rgb)), -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Blitz_2_rgb)),
+				-- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_blitz2_000_desc_fr",
 		{"loc_talent_ability_fire_grenade_desc"}, {"fr"},
@@ -2647,13 +2759,14 @@ local localization_templates = {
 				..Arrow_up_green.." High armor "..COLORS_KWords.Damage_rgb.." modifiers against Maniac and Infested.\n"
 				..Arrow_up_green.." Extra "..COLORS_KWords.Finesse_rgb.." boosts against Unarmoured and Flak.\n"
 				..Arrow_up_green.." Deals No "..COLORS_KWords.Damage_rgb.." against Carapace unless "..COLORS_KWords.Weakspot_rgb.." like Mauler head.\n"
-				..Arrow_up_green.." Can Cleave "..COLORS_Numbers.n_1_rgb.." Groaner, Poxwalker, Scab/Dreg Stalker or Scab Shooter.\n"
+				..Arrow_up_green.." Can "..COLORS_KWords.Cleave_rgb.." "..COLORS_Numbers.n_1_rgb.." Groaner, Poxwalker, Scab/Dreg Stalker or Scab Shooter.\n"
 				..Arrow_up_green.." Headshot kills all enemies except Ogryns, Ragers, Maulers and Monstrosities.\n"
 				..Arrow_right_.." Quick Throw.\n"
 				..Arrow_right_.." No "..COLORS_KWords.Damage_rgb.." falloff.\n"
 				..Arrow_right_.." Ammo: Replenishes "..COLORS_Numbers.n_1_rgb.." knife per melee Elite or Special kill. "..COLORS_Numbers.n_2_rgb.." knives per small ammo pickup. "..COLORS_Numbers.n_6_rgb.." knives per big ammo pickup. All knives per ammo crate.\n"
 				..Arrow_right_.." The knife flies along a curving trajectory.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Blitz_3_rgb)), -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Blitz_3_rgb)),
+				-- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_blitz3_000_desc_fr",
 		{"loc_ability_zealot_throwing_knifes_desc"}, {"fr"},
@@ -2682,7 +2795,8 @@ local localization_templates = {
 		{"loc_talent_zealot_aura_toughness_damage_coherency_desc"}, {"en"},
 			loc_text("{damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
 				..Arrow_down_red.." Does not Stack with the same Aura from another Zealot.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb)), -- damage_reduction: +7.5% - colors
+				..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb)),
+				-- damage_reduction: +7.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_aura0_000_desc_fr",
 		{"loc_talent_zealot_aura_toughness_damage_coherency_desc"}, {"fr"},
@@ -2702,7 +2816,8 @@ local localization_templates = {
 		{"loc_talent_zealot_toughness_aura_efficiency_desc"}, {"en"},
 			loc_text("{damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
 				..Arrow_right_.." This is an augmented version of the base Aura - {talent_name:%s}.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb)), -- damage_reduction: +15%. talent_name: The Emperor's Will -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb)),
+				-- damage_reduction: +15%, talent_name: The Emperor's Will, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_aura_001_desc_fr",
 		{"loc_talent_zealot_toughness_aura_efficiency_desc"}, {"fr"},
@@ -2722,7 +2837,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_aura_002_desc_en",
 		{"loc_talent_zealot_corruption_healing_coherency_improved_desc"}, {"en"},
 			loc_text("{corruption:%s} "..COLORS_KWords.Corruption_rgb.." heals from the current "..COLORS_KWords.Wound_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.." every {interval:%s} second.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Aura_2_rgb)), -- corruption: 1.5, interval: 1 -- s->second -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Aura_2_rgb)),
+				-- corruption: 1.5, interval: 1, s->second, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_aura_002_desc_fr",
 		{"loc_talent_zealot_corruption_healing_coherency_improved_desc"}, {"fr"},
@@ -2743,7 +2859,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_aura_003_desc_en",
 		{"loc_talent_zealot_always_in_coherency_description"}, {"en"},
 			loc_text("Makes Zealot count as being in "..COLORS_KWords.Coherency_rgb.." with one Ally which enables the lowest rate of "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb.." Regeneration of "..COLORS_Numbers.n_3_75_rgb.." "..COLORS_KWords.Toughness_rgb.." per second.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Aura_3_rgb)), -- coherency_min_stack:2.
+				..TALENTS_Enh_desc.ED_ZEA_Aura_3_rgb)),
+				-- coherency_min_stack: 2, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_aura_003_desc_fr",
 		{"loc_talent_zealot_always_in_coherency_description"}, {"fr"},
@@ -2766,13 +2883,15 @@ local localization_templates = {
 	--[+ ABILITY 0 - Chastise the Wicked +]--
 	create_template("talent_tree_zea_abil0_000_desc_en",
 		{"loc_talent_zealot_2_combat_description_new"}, {"en"},
-			loc_text("Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb..". Your next Melee Hit gains for "..COLORS_Numbers.n_3_rgb.." seconds {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\nBase Cooldown: {cooldown:%s} seconds.\n"
+			loc_text("Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb..". Your next Melee Hit gains for "..COLORS_Numbers.n_3_rgb.." seconds {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\n"
+				.."Base Cooldown: {cooldown:%s} seconds.\n"
 				..Arrow_up_green.." Grants immunity to "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." and you Dodge all attacks while dashing.\n"
 				..Arrow_up_green.." Applies a light "..COLORS_KWords.Stagger_rgb.." on impact in a "..COLORS_Numbers.n_3_rgb.." meters radius.\n"
 				..Arrow_right_.." Dash Range:\n"
 				..Arrow_right_..Arrow_right_.." Base: "..COLORS_Numbers.n_7_rgb.." meters.\n"
 				..Arrow_right_..Arrow_right_.." Aimed: up to "..COLORS_Numbers.n_21_rgb.." meters.\n")),
-					-- ..TALENTS_Enh_desc.ED_ZEA_Ability_0_rgb)), -- toughness: 50%, damage: 25%, cooldown: 30 -- s->seconds -- colors
+					-- ..TALENTS_Enh_desc.ED_ZEA_Ability_0_rgb)),
+					-- toughness: 50%, damage: 25%, cooldown: 30, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil0_000_desc_fr",
 		{"loc_talent_zealot_2_combat_description_new"}, {"fr"},
@@ -2795,7 +2914,8 @@ local localization_templates = {
 	--[+ ABILITY 1 - Fury of the Faithful +]--
 	create_template("talent_tree_zea_abil1_000_desc_en",
 		{"loc_talent_zealot_attack_speed_after_dash_desc"}, {"en"},
-			loc_text("Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and gaining {attack_speed:%s} Attack Speed for {time:%s} seconds. Your next Melee Hit gains {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\nBase Cooldown: {cooldown:%s} seconds.\n"
+			loc_text("Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and gaining {attack_speed:%s} Attack Speed for {time:%s} seconds. Your next Melee Hit gains {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\n"
+				.."Base Cooldown: {cooldown:%s} seconds.\n"
 				..Arrow_right_.." This is an augmented version of {talent_name:%s}.\n"
 				..Arrow_up_green.." Melee armor penetration buff:\n"
 				..Arrow_right_..Arrow_right_.." Adds a "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Rending_rgb.." against Carapace, Flak, Maniac, Unyielding armor types to the next Melee Attack within "..COLORS_Numbers.n_3_rgb.." seconds after activation.\n"
@@ -2808,7 +2928,8 @@ local localization_templates = {
 				..Arrow_right_.." You can't change direction, but you can cancel the dash with Block or Back buttons.\n"
 				..Arrow_right_.." Cannot be activated while jumping or falling.\n"
 				..Arrow_right_.." You can be stopped by Unyielding, Carapace, Monstrosities, as well as the Void shields.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_1_rgb)), -- toughness: 50%, attack_speed: +20%, time: 10, damage: +25%, cooldown: 30, talent_name: Chastise the Wicked -- &->and -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_1_rgb)),
+				-- toughness: 50%, attack_speed: +20%, time: 10, damage: +25%, cooldown: 30, talent_name: Chastise the Wicked, &->and, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil1_000_desc_fr",
 		{"loc_talent_zealot_attack_speed_after_dash_desc"}, {"fr"},
@@ -2835,7 +2956,8 @@ local localization_templates = {
 		{"loc_talent_zealot_dash_has_more_charges_desc"}, {"en"},
 			loc_text("{talent_name:%s} now has {charges:%s} charges.\n"
 				..Arrow_down_red.." The Cooldown of the Second charge only starts after the First charge finished its Cooldown.\n")),
-					-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_1_rgb)), -- talent_name: Fury of the Faithful, charges: 2.
+					-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_1_rgb)),
+					-- talent_name: Fury of the Faithful, charges: 2.
 	--[+ French +]--
 	create_template("talent_tree_zea_abil1_001_desc_fr",
 		{"loc_talent_zealot_dash_has_more_charges_desc"}, {"fr"},
@@ -2856,7 +2978,8 @@ local localization_templates = {
 			loc_text("{cooldown_regen:%s} "..COLORS_KWords.Ability_cd_rgb.." Regeneration for {duration:%s} seconds on Melee "..COLORS_KWords.Crit_hits_rgb..".\n"
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
 				..Arrow_down_red.." Does not interact with "..COLORS_KWords.Combat_ability_rgb.." Regeneration from Curios which only reduces the Maximum cooldown of a "..COLORS_KWords.Combat_ability_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_1_2_rgb)), -- cooldown_regen: +200%, duration: 4 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_1_2_rgb)),
+				-- cooldown_regen: +200%, duration: 4, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil1_002_desc_fr",
 		{"loc_talent_maniac_cooldown_on_melee_crits_buff_desc"}, {"fr"},
@@ -2878,7 +3001,8 @@ local localization_templates = {
 	--[+ ABILITY 2 - Chorus of Spiritual Fortitude +]--
 	create_template("talent_tree_zea_abil2_000_desc_en",
 		{"loc_talent_zealot_bolstering_prayer_variant_two_description"}, {"en"},
-			loc_text("Wield a Holy relic that releases pulses of energy "..COLORS_Numbers.n_7_rgb.." times every {interval:%s} seconds.\nBase Cooldown: {cooldown:%s} seconds.\n"
+			loc_text("Wield a Holy relic that releases pulses of energy "..COLORS_Numbers.n_7_rgb.." times every {interval:%s} seconds.\n"
+				.."Base Cooldown: {cooldown:%s} seconds.\n"
 				..Arrow_up_green.." Each pulse grants Zealot and Allies in "..COLORS_KWords.Coherency_rgb.." immunity to "..COLORS_KWords.Stuns_rgb.." from both Melee and Ranged attacks and Invulnerability for "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
 				..Arrow_up_green.." Each pulse Replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." to Allies in "..COLORS_KWords.Coherency_rgb..". If the Ally is at full "..COLORS_KWords.Toughness_rgb.." they instead gain {flat_toughness:%s} Max (yellow) "..COLORS_KWords.Toughness_rgb.." up to a total of {max_toughness:%s}.\n"
 				..Arrow_up_green.." Immunity to "..COLORS_KWords.Stuns_rgb.." and Invulnerability can be refreshed during active duration.\n"
@@ -2886,7 +3010,8 @@ local localization_templates = {
 				..Arrow_right_.." Bonus "..COLORS_KWords.Toughness_rgb.." acts as a 'second' "..COLORS_KWords.Toughness_rgb.." bar and can be replenished by Melee kills, respective Talents, and Weapon Blessings.\n"
 				..Arrow_right_.." Yellow "..COLORS_KWords.Toughness_rgb.." bonus lasts "..COLORS_Numbers.n_10_rgb.." seconds and does not Stack with bonus "..COLORS_KWords.Toughness_rgb.." from the same Talent of another Zealot. But does Stack additively with Veteran's bonus "..COLORS_KWords.Toughness_rgb.." from \"Duty and Honour\".\n"
 				..Arrow_right_.." \"Invulnerability\" means that player "..COLORS_KWords.Health_rgb.." can't fall below "..COLORS_Numbers.n_1_rgb..". Players can still lose any "..COLORS_KWords.Health_rgb.." above "..COLORS_Numbers.n_1_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_2_rgb)), -- interval: 0.8, toughness: 45%, flat_toughness: +20, max_toughness: +100, cooldown: 60 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_2_rgb)),
+				-- interval: 0.8, toughness: 45%, flat_toughness: +20, max_toughness: +100, cooldown: 60, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil2_000_desc_fr",
 		{"loc_talent_zealot_bolstering_prayer_variant_two_description"}, {"fr"},
@@ -2918,7 +3043,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_001_desc_en",
 		{"loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"}, {"en"},
 			loc_text("After channeling {stacks:%s} pulses, grants {toughness:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." to you and Allies in "..COLORS_KWords.Coherency_rgb..". Lasts {duration:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_2_1_rgb)), -- stacks: 5, toughness: +30%, duration: 10 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_2_1_rgb)),
+				-- stacks: 5, toughness: +30%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil2_001_desc_fr",
 		{"loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"}, {"fr"},
@@ -2942,7 +3068,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_002_desc_en",
 		{"loc_talent_zealot_channel_staggers_desc"}, {"en"},
 			loc_text("Each pulse from {talent_name:%s} also "..COLORS_KWords.Staggers_rgb.." and Suppresses Enemies. Range increases with every pulse.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_2_2_rgb)), -- talent_name: Chorus of Spiritual Fortitude -- &->and -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_2_2_rgb)),
+				-- talent_name: Chorus of Spiritual Fortitude, &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil2_002_desc_fr",
 		{"loc_talent_zealot_channel_staggers_desc"}, {"fr"},
@@ -2961,7 +3088,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_003_desc_en",
 		{"loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"}, {"en"},
 			loc_text("After channeling {stacks:%s} pulses, grants {damage:%s} "..COLORS_KWords.Damage_rgb.." to you and Allies in "..COLORS_KWords.Coherency_rgb..". Lasts {duration:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_2_3_rgb)), -- stacks: 5, damage: +20%, duration: 10 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_2_3_rgb)),
+				-- stacks: 5, damage: +20%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil2_003_desc_fr",
 		{"loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"}, {"fr"},
@@ -2985,7 +3113,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil2_004_desc_en",
 		{"loc_talent_zealot_damage_taken_restores_cd_description"}, {"en"},
 			loc_text("{cooldown_restore:%s} of "..COLORS_KWords.Health_rgb.." "..COLORS_KWords.Damage_rgb.." taken is converted to "..COLORS_KWords.Ability_cd_rgb.." Reduction.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_2_4_rgb)), -- stacks: 5, damage: +20%, duration: 10 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_2_4_rgb)),
+				-- stacks: 5, damage: +20%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil2_004_desc_fr",
 		{"loc_talent_zealot_damage_taken_restores_cd_description"}, {"fr"},
@@ -3008,8 +3137,14 @@ local localization_templates = {
 	--[+ ABILITY 3 - Shroudfield +]--
 	create_template("talent_tree_zea_abil3_000_desc_en",
 		{"loc_ability_zealot_stealth_description"}, {"en"},
-			loc_text("You enter "..COLORS_KWords.Stealth_rgb.." for {duration:%s} seconds and gain {movement_speed:%s} Movement Speed.\nYour next Melee Attack gain:\n{backstab_damage:%s} Backstab "..COLORS_KWords.Damage_rgb..",\n{finesse_damage:%s} "..COLORS_KWords.Finesse_dmg_rgb.." and\n{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb..".\nBase Cooldown: {cooldown:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_3_rgb)), -- duration: 3, movement_speed: +20%, backstab_damage: +100%, finesse_damage: +100%, crit_chance: +100%, cooldown: 30 -- s->seconds -- &->and -- colors
+			loc_text("You enter "..COLORS_KWords.Stealth_rgb.." for {duration:%s} seconds and gain {movement_speed:%s} Movement Speed.\n"
+				.."Your next Melee Attack gain:\n"
+				.."{backstab_damage:%s} Backstab "..COLORS_KWords.Damage_rgb..",\n"
+				.."{finesse_damage:%s} "..COLORS_KWords.Finesse_dmg_rgb.." and\n"
+				.."{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb..".\n"
+				.."Base Cooldown: {cooldown:%s} seconds.\n"
+				..TALENTS_Enh_desc.ED_ZEA_Ability_3_rgb)),
+				-- duration: 3, movement_speed: +20%, backstab_damage: +100%, finesse_damage: +100%, crit_chance: +100%, cooldown: 30, s->seconds, &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil3_000_desc_fr",
 		{"loc_ability_zealot_stealth_description"}, {"fr"},
@@ -3036,7 +3171,8 @@ local localization_templates = {
 	--[+ ABILITY 3-1 - Master-Crafted Shroudfield +]--
 	create_template("talent_tree_zea_abil3_001_desc_en",
 		{"loc_talent_zealot_increased_stealth_duration_description"}, {"en"},
-			loc_text(COLORS_KWords.Stealth_rgb.." Duration is increased from "..COLORS_Numbers.n_3_rgb.." to {duration_2:%s} seconds.")), -- duration_2: 5 -- s->seconds -- colors
+			loc_text(COLORS_KWords.Stealth_rgb.." Duration is increased from "..COLORS_Numbers.n_3_rgb.." to {duration_2:%s} seconds.")),
+			-- duration_2: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil3_001_desc_fr",
 		{"loc_talent_zealot_increased_stealth_duration_description"}, {"fr"},
@@ -3054,8 +3190,11 @@ local localization_templates = {
 	--[+ ABILITY 3-2 - Perfectionist +]--
 	create_template("talent_tree_zea_abil3_002_desc_en",
 		{"loc_talent_zealot_stealth_increased_damage_description"}, {"en"},
-			loc_text("{talent_name:%s} grants an additional:\n{damage_2:%s} Backstab "..COLORS_KWords.Damage_rgb.." and\n{damage:%s} "..COLORS_KWords.Finesse_dmg_rgb..", but increases "..COLORS_KWords.Ability_cd_rgb.." by {cooldown:%s}.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_3_2_rgb)), -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25% -- &->and -- colors
+			loc_text("{talent_name:%s} grants an additional:\n"
+				.."{damage_2:%s} Backstab "..COLORS_KWords.Damage_rgb.." and\n"
+				.."{damage:%s} "..COLORS_KWords.Finesse_dmg_rgb..", but increases "..COLORS_KWords.Ability_cd_rgb.." by {cooldown:%s}.\n"
+				..TALENTS_Enh_desc.ED_ZEA_Ability_3_2_rgb)),
+				-- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil3_002_desc_fr",
 		{"loc_talent_zealot_stealth_increased_damage_description"}, {"fr"},
@@ -3079,7 +3218,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil3_003_desc_en",
 		{"loc_talent_zealot_leaving_stealth_restores_toughness_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes over {time:%s} seconds on leaving "..COLORS_KWords.Stealth_rgb..". Also gain {damage:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {time:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_3_3_rgb)), -- toughness: 40%, time: 5, damage: +20%, time: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_3_3_rgb)),
+				-- toughness: 40%, time: 5, damage: +20%, time: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil3_003_desc_fr",
 		{"loc_talent_zealot_leaving_stealth_restores_toughness_desc"}, {"fr"},
@@ -3101,7 +3241,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_abil3_004_desc_en",
 		{"loc_talent_zealot_backstab_kills_restore_cd_description"}, {"en"},
 			loc_text(COLORS_Numbers.n_minus_rgb.."{ability_cooldown:%s} "..COLORS_KWords.Ability_cd_rgb.." on Backstab kills.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Ability_3_4_rgb)), -- ability_cooldown: 20% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Ability_3_4_rgb)),
+				-- ability_cooldown: 20%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_abil3_004_desc_fr",
 		{"loc_talent_zealot_backstab_kills_restore_cd_description"}, {"fr"},
@@ -3123,7 +3264,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys1_000_desc_en",
 		{"loc_talent_zealot_fanatic_rage_desc"}, {"en"},
 			loc_text("When {max_stacks:%s} Enemies have died within {radius:%s} meters of you, you enter "..COLORS_KWords.Fury_rgb.." and get {crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.." for {duration:%s} seconds. The active "..COLORS_KWords.Fury_rgb.." duration can be refreshed by killing enemies.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_rgb)), -- crit_chance: +15%, duration: 8, max_stacks: 25, radius: 25 -- rewrite -- m->meters -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_rgb)),
+				-- crit_chance: +15%, duration: 8, max_stacks: 25, radius: 25, rewrite, m->meters, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys1_000_desc_fr",
 		{"loc_talent_zealot_fanatic_rage_desc"}, {"fr"},
@@ -3147,7 +3289,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys1_001_desc_en",
 		{"loc_talent_zealot_fanatic_rage_toughness_reduction_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is restored by triggering "..COLORS_KWords.Fury_rgb..". In addition, while "..COLORS_KWords.Fury_rgb.." is Active, you have {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_1_rgb)), -- toughness: 50%, toughness_damage_reduction: +25% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_1_rgb)),
+				-- toughness: 50%, toughness_damage_reduction: +25%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys1_001_desc_fr",
 		{"loc_talent_zealot_fanatic_rage_toughness_reduction_desc"}, {"fr"},
@@ -3170,7 +3313,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys1_002_desc_en",
 		{"loc_talent_zealot_fanatic_rage_crits_desc"}, {"en"},
 			loc_text("You gain one Stack of "..COLORS_KWords.Fury_rgb.." per Melee or Ranged "..COLORS_KWords.Crit_hit_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_2_rgb)), -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_2_rgb)),
+				-- colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys1_002_desc_fr",
 		{"loc_talent_zealot_fanatic_rage_crits_desc"}, {"fr"},
@@ -3188,8 +3332,9 @@ local localization_templates = {
 	--[+ KEYSTONE 1-3 - Infectious Zeal +]--
 	create_template("talent_tree_zea_keys1_003_desc_en",
 		{"loc_talent_zealot_shared_fanatic_rage_desc"}, {"en"},
-			loc_text(""..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Crit_chance_rgb.." is spread to Allies in "..COLORS_KWords.Coherency_rgb.." when you reach "..COLORS_Numbers.n_25_rgb.." Stacks of "..COLORS_KWords.Fury_rgb..". \n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_3_rgb)), -- crit_chance: +66%, talent_name: Blazing Piety -- colors {crit_chance:%s}
+			loc_text(COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Crit_chance_rgb.." is spread to Allies in "..COLORS_KWords.Coherency_rgb.." when you reach "..COLORS_Numbers.n_25_rgb.." Stacks of "..COLORS_KWords.Fury_rgb..". \n"
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_3_rgb)),
+				-- crit_chance: +66%, talent_name: Blazing Piety, colors {crit_chance:%s}
 	--[+ French +]--
 	create_template("talent_tree_zea_keys1_003_desc_fr",
 		{"loc_talent_zealot_shared_fanatic_rage_desc"}, {"fr"},
@@ -3210,7 +3355,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys1_004_desc_en",
 		{"loc_talent_zealot_fanatic_rage_improved_desc"}, {"en"},
 			loc_text("{crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.." from {talent_name:%s}.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_4_rgb)), -- crit_chance: +10%, talent_name: Blazing Piety -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_1_4_rgb)),
+				-- crit_chance: +10%, talent_name: Blazing Piety, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys1_004_desc_fr",
 		{"loc_talent_zealot_fanatic_rage_improved_desc"}, {"fr"},
@@ -3229,7 +3375,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys2_000_desc_en",
 		{"loc_talent_zealot_martyrdom_desc"}, {"en"},
 			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for each missing "..COLORS_KWords.Wound_rgb..", up to a Maximum {max_wounds:%s} missing "..COLORS_KWords.Wounds_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_2_rgb)), -- damage: +8%, max_wounds: 7 -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_2_rgb)),
+				-- damage: +8%, max_wounds: 7, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys2_000_desc_fr",
 		{"loc_talent_zealot_martyrdom_desc"}, {"fr"},
@@ -3251,7 +3398,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys2_001_desc_en",
 		{"loc_talent_zealot_martyrdom_grants_toughness_desc"}, {"en"},
 			loc_text("{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." is granted by {talent_name:%s} for each missing "..COLORS_KWords.Wound_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_2_1_rgb)), -- talent_name: Martyrdom, toughness_damage_reduction: +6.5% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_2_1_rgb)),
+				-- talent_name: Martyrdom, toughness_damage_reduction: +6.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys2_001_desc_fr",
 		{"loc_talent_zealot_martyrdom_grants_toughness_desc"}, {"fr"},
@@ -3272,7 +3420,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys2_002_desc_en",
 		{"loc_talent_zealot_attack_speed_per_martyrdom_desc"}, {"en"},
 			loc_text("{attack_speed:%s} Attack Speed is granted by {talent_name:%s} for each missing "..COLORS_KWords.Wound_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_2_2_rgb)), -- talent_name: Martyrdom, attack_speed: +4% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_2_2_rgb)),
+				-- talent_name: Martyrdom, attack_speed: +4%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys2_002_desc_fr",
 		{"loc_talent_zealot_attack_speed_per_martyrdom_desc"}, {"fr"},
@@ -3291,8 +3440,13 @@ local localization_templates = {
 	--[+ KEYSTONE 3 - Inexorable Judgement +]--
 	create_template("talent_tree_zea_keys3_000_desc_en",
 		{"loc_talent_zealot_quickness_desc"}, {"en"},
-			loc_text("Moving grants you "..COLORS_KWords.Momentum_rgb..". Stacks {max_stacks:%s} times.\nWhen you Hit an Enemy, spend all "..COLORS_KWords.Momentum_rgb.." and gain per Stack for {duration:%s} seconds:\n{damage_modifier:%s} "..COLORS_KWords.Damage_rgb..",\n{melee_attack_speed:%s} Melee Attack Speed,\n{ranged_attack_speed:%s} Ranged Attack Speed.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_3_rgb)), -- max_stacks: 15, melee_attack_speed: +1%, ranged_attack_speed: +1%, damage_modifier: +1%, duration: 6 -- rewrite colors Notice!
+			loc_text("Moving grants you "..COLORS_KWords.Momentum_rgb..". Stacks {max_stacks:%s} times.\n"
+				.."When you Hit an Enemy, spend all "..COLORS_KWords.Momentum_rgb.." and gain per Stack for {duration:%s} seconds:\n"
+				.."{damage_modifier:%s} "..COLORS_KWords.Damage_rgb..",\n"
+				.."{melee_attack_speed:%s} Melee Attack Speed,\n"
+				.."{ranged_attack_speed:%s} Ranged Attack Speed.\n"
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_3_rgb)),
+				-- max_stacks: 15, melee_attack_speed: +1%, ranged_attack_speed: +1%, damage_modifier: +1%, duration: 6, rewrite, colors, note
 	--[+ French +]--
 	create_template("talent_tree_zea_keys3_000_desc_fr",
 		{"loc_talent_zealot_quickness_desc"}, {"fr"},
@@ -3318,7 +3472,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys3_001_desc_en",
 		{"loc_talent_zealot_quickness_toughness_per_stack_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished for each spent Stack of "..COLORS_KWords.Momentum_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_3_1_rgb)), -- toughness: 2% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_3_1_rgb)),
+				-- toughness: 2%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys3_001_desc_fr",
 		{"loc_talent_zealot_quickness_toughness_per_stack_desc"}, {"fr"},
@@ -3337,7 +3492,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_keys3_002_desc_en",
 		{"loc_talent_zealot_quickness_dodge_stacks_desc"}, {"en"},
 			loc_text("Gain {stacks:%s} Stacks of "..COLORS_KWords.Momentum_rgb.." on a successful Dodge.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Keystone_3_2_rgb)), -- stacks: 3 -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Keystone_3_2_rgb)),
+				-- stacks: 3, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_keys3_002_desc_fr",
 		{"loc_talent_zealot_quickness_dodge_stacks_desc"}, {"fr"},
@@ -3357,7 +3513,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_001_desc_en",
 		{"loc_talent_zealot_3_tier_2_ability_1_description"}, {"en"},
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." for every Second Melee Attack you make for each enemy Hit by your previous Melee Attack. Stacks {max_stacks:%s} times.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_1_rgb)), -- damage: +5%, max_stacks: 5 -- rewrite -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_1_rgb)),
+				-- damage: +5%, max_stacks: 5, rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_001_desc_fr",
 		{"loc_talent_zealot_3_tier_2_ability_1_description"}, {"fr"},
@@ -3371,7 +3528,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_002_desc_en",
 		{"loc_talent_zealot_increased_backstab_damage_description"}, {"en"},
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." on Melee Backstab Hits.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_2_rgb)), -- damage: +20% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_2_rgb)),
+				-- damage: +20%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_002_desc_fr",
 		{"loc_talent_zealot_increased_backstab_damage_description"}, {"fr"},
@@ -3385,7 +3543,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_003_desc_en",
 		{"loc_talent_zealot_ranged_damage_increased_to_close_desc"}, {"en"},
 			loc_text("Up to {damage:%s} Base Ranged "..COLORS_KWords.Damage_rgb..", reduced the further you are from the target.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_3_rgb)), -- damage: +25% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_3_rgb)),
+				-- damage: +25%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_003_desc_fr",
 		{"loc_talent_zealot_ranged_damage_increased_to_close_desc"}, {"fr"},
@@ -3398,8 +3557,10 @@ local localization_templates = {
 	--[+ Passive 4 - Scourge +]--
 	create_template("talent_tree_zea_pas_004_desc_en",
 		{"loc_talent_zealot_bleed_melee_crit_chance_desc"}, {"en"},
-			loc_text("Melee "..COLORS_KWords.Crit_hits_rgb.." apply "..COLORS_KWords.Bleed_rgb..", causing "..COLORS_KWords.Damage_rgb.." over time.\nMelee Hits on "..COLORS_KWords.Bleeding_rgb.." Enemies grant {crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." for {duration:%s} seconds. Stacks {max_stacks:%s} times. Up to "..COLORS_Numbers.n_16_rgb.." Max Bleed Stacks on a target.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_4_rgb)), -- crit_chance: +10%, duration: 3, max_stacks: 3 -- s->seconds -- colors
+			loc_text("Melee "..COLORS_KWords.Crit_hits_rgb.." apply "..COLORS_KWords.Bleed_rgb..", causing "..COLORS_KWords.Damage_rgb.." over time.\n"
+				.."Melee Hits on "..COLORS_KWords.Bleeding_rgb.." Enemies grant {crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." for {duration:%s} seconds. Stacks {max_stacks:%s} times. Up to "..COLORS_Numbers.n_16_rgb.." Max Bleed Stacks on a target.\n"
+				..TALENTS_Enh_desc.ED_ZEA_Passive_4_rgb)),
+				-- crit_chance: +10%, duration: 3, max_stacks: 3, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_004_desc_fr",
 		{"loc_talent_zealot_bleed_melee_crit_chance_desc"}, {"fr"},
@@ -3413,7 +3574,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_005_desc_en",
 		{"loc_talent_zealot_toughness_regen_in_melee_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishment per second while within {range:%s} meters of at least {num_enemies:%s} enemies.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_5_rgb)), -- toughness: 2.5%, range: 5, num_enemies: 3 - colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_5_rgb)),
+				-- toughness: 2.5%, range: 5, num_enemies: 3 - colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_005_desc_fr",
 		{"loc_talent_zealot_toughness_regen_in_melee_desc"}, {"fr"},
@@ -3427,7 +3589,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_006_desc_en",
 		{"loc_talent_zealot_increased_coherency_regen_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb.." Regeneration.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_6_rgb)), -- toughness: +50% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_6_rgb)),
+				-- toughness: +50%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_006_desc_fr",
 		{"loc_talent_zealot_increased_coherency_regen_desc"}, {"fr"},
@@ -3441,7 +3604,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_007_desc_en",
 		{"loc_talent_zealot_3_passive_2_description"}, {"en"},
 			loc_text("{damage:%s} Increased "..COLORS_KWords.Damage_rgb.." against Infested and Unyielding Enemies.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_7_rgb)), -- damage: +20% -- &->and -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_7_rgb)),
+				-- damage: +20% -- &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_007_desc_fr",
 		{"loc_talent_zealot_3_passive_2_description"}, {"fr"},
@@ -3455,7 +3619,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_008_desc_en",
 		{"loc_talent_zealot_toughness_on_melee_kill_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment on Melee Kill.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_8_rgb)), -- toughness:+50%. -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_8_rgb)),
+				-- toughness:+50%., colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_008_desc_fr",
 		{"loc_talent_zealot_toughness_on_melee_kill_desc"}, {"fr"},
@@ -3469,7 +3634,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_009_desc_en",
 		{"loc_talent_zealot_3_tier_3_ability_2_description"}, {"en"},
 			loc_text(COLORS_KWords.Damage_rgb.." that would take your "..COLORS_KWords.Health_rgb.." to the next "..COLORS_KWords.Wound_rgb.." is reduced by {damage_reduction:%s}.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_9_rgb)), -- damage_reduction: 40% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_9_rgb)),
+				-- damage_reduction: 40%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_009_desc_fr",
 		{"loc_talent_zealot_3_tier_3_ability_2_description"}, {"fr"},
@@ -3483,7 +3649,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_010_desc_en",
 		{"loc_talent_zealot_toughness_on_heavy_kills_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishment on Heavy Attack Kill.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_10_rgb)), -- toughness: 7.5% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_10_rgb)),
+				-- toughness: 7.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_010_desc_fr",
 		{"loc_talent_zealot_toughness_on_heavy_kills_desc"}, {"fr"},
@@ -3497,7 +3664,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_011_desc_en",
 		{"loc_talent_zealot_toughness_on_ranged_kill_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishment on Ranged Kill.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_11_rgb)), -- toughness: 2.5% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_11_rgb)),
+				-- toughness: 2.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_011_desc_fr",
 		{"loc_talent_zealot_toughness_on_ranged_kill_desc"}, {"fr"},
@@ -3511,7 +3679,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_012_desc_en",
 		{"loc_talent_zealot_heal_damage_taken_desc"}, {"en"},
 			loc_text("On taking "..COLORS_KWords.Damage_rgb..", heal {damage_reduction:%s} of that "..COLORS_KWords.Damage_rgb..". Occurs over {time:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_12_rgb)), -- damage_reduction: 25%, time: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_12_rgb)),
+				-- damage_reduction: 25%, time: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_012_desc_fr",
 		{"loc_talent_zealot_heal_damage_taken_desc"}, {"fr"},
@@ -3525,7 +3694,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_013_desc_en",
 		{"loc_talent_zealot_toughness_on_dodge_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishment on a Successful Dodge.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_13_rgb)), -- toughness: 15% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_13_rgb)),
+				-- toughness: 15%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_013_desc_fr",
 		{"loc_talent_zealot_toughness_on_dodge_desc"}, {"fr"},
@@ -3539,7 +3709,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_014_desc_en",
 		{"loc_talent_zealot_toughness_melee_effectiveness_desc"}, {"en"},
 			loc_text("{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." on "..COLORS_KWords.Crit_hit_rgb.." for {time:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_14_rgb)), -- toughness_damage_reduction: +50%, time: 4 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_14_rgb)),
+				-- toughness_damage_reduction: +50%, time: 4, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_014_desc_fr",
 		{"loc_talent_zealot_toughness_melee_effectiveness_desc"}, {"fr"},
@@ -3553,7 +3724,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_015_desc_en",
 		{"loc_talent_zealot_improved_melee_after_no_ammo_desc"}, {"en"},
 			loc_text("{impact:%s} "..COLORS_KWords.Impact_rgb.." strength and {attack_speed:%s} Attack speed for Melee attacks for {duration:%s} seconds after emptying your Ranged weapon.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_15_rgb)), -- impact: +30%, attack_speed: +10%, duration: 5 -- s->seconds -- &->and -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_15_rgb)),
+				-- impact: +30%, attack_speed: +10%, duration: 5, s->seconds -- &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_015_desc_fr",
 		{"loc_talent_zealot_improved_melee_after_no_ammo_desc"}, {"fr"},
@@ -3567,7 +3739,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_016_desc_en",
 		{"loc_talent_zealot_improved_spread_post_dodge_desc"}, {"en"},
 			loc_text("{spread:%s} Spread and {recoil:%s} Recoil for {duration:%s} seconds on successful Dodge.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_16_rgb)), -- spread: -75%, recoil: -50%, duration: 3 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_16_rgb)),
+				-- spread: -75%, recoil: -50%, duration: 3, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_016_desc_fr",
 		{"loc_talent_zealot_improved_spread_post_dodge_desc"}, {"fr"},
@@ -3581,7 +3754,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_017_desc_en",
 		{"loc_talent_zealot_increased_finesse_post_dodge_description"}, {"en"},
 			loc_text("{damage:%s} "..COLORS_KWords.Weak_spot_rgb.." and "..COLORS_KWords.Crit_hit_rgb.." "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on successful Dodge.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_17_rgb)), -- damage: +50%, duration: 3 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_17_rgb)),
+				-- damage: +50%, duration: 3, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_017_desc_fr",
 		{"loc_talent_zealot_increased_finesse_post_dodge_description"}, {"fr"},
@@ -3595,7 +3769,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_018_desc_en",
 		{"loc_talent_zealot_resist_death_desc"}, {"en"},
 			loc_text("Fatal "..COLORS_KWords.Damage_rgb.." instead grants you Invulnerability for {active_duration:%s} seconds. Occurs every {cooldown_duration:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_18_rgb)), -- active_duration: 5, cooldown_duration: 120 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_18_rgb)),
+				-- active_duration: 5, cooldown_duration: 120, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_018_desc_fr",
 		{"loc_talent_zealot_resist_death_desc"}, {"fr"},
@@ -3609,7 +3784,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_019_desc_en",
 		{"loc_talent_zealot_reduced_sprint_cost_description"}, {"en"},
 			loc_text("{cost:%s} Sprint "..COLORS_KWords.Stamina_rgb.." cost.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_19_rgb)), -- cost: -20%
+				..TALENTS_Enh_desc.ED_ZEA_Passive_19_rgb)),
+				-- cost: -20%
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_019_desc_fr",
 		{"loc_talent_zealot_reduced_sprint_cost_description"}, {"fr"},
@@ -3623,7 +3799,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_020_desc_en",
 		{"loc_talent_zealot_3_tier_4_ability_3_description"}, {"en"},
 			loc_text("{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {duration:%s} seconds when you or an Ally in "..COLORS_KWords.Coherency_rgb.." takes "..COLORS_KWords.Health_rgb.." "..COLORS_KWords.Damage_rgb..". Triggers every {cooldown:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_20_rgb)), -- damage_reduction: +60%, duration: 4, cooldown: 10 -- rewrite -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_20_rgb)),
+				-- damage_reduction: +60%, duration: 4, cooldown: 10, rewrite, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_020_desc_fr",
 		{"loc_talent_zealot_3_tier_4_ability_3_description"}, {"fr"},
@@ -3637,7 +3814,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_021_desc_en",
 		{"loc_talent_zealot_movement_speed_on_damaged_desc"}, {"en"},
 			loc_text("{movement_speed:%s} Movement Speed for {time:%s} seconds on taking "..COLORS_KWords.Damage_rgb..". Enemy Melee Attacks cannot "..COLORS_KWords.Stun_rgb.." you.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_21_rgb)), -- movement_speed: +15%, time: 2 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_21_rgb)),
+				-- movement_speed: +15%, time: 2, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_021_desc_fr",
 		{"loc_talent_zealot_movement_speed_on_damaged_desc"}, {"fr"},
@@ -3651,7 +3829,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_022_desc_en",
 		{"loc_talent_reduced_damage_after_dodge_description"}, {"en"},
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {duration:%s} seconds after a successful Dodge.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_22_rgb)), -- damage: +25%, duration: 2.5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_22_rgb)),
+				-- damage: +25%, duration: 2.5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_022_desc_fr",
 		{"loc_talent_reduced_damage_after_dodge_description"}, {"fr"},
@@ -3665,7 +3844,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_023_desc_en",
 		{"loc_talent_zealot_increased_damage_on_low_stamina_description"}, {"en"},
 			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds when "..COLORS_KWords.Stamina_rgb.." is depleted.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_23_rgb)), -- damage: +20%, duration: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_23_rgb)),
+				-- damage: +20%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_023_desc_fr",
 		{"loc_talent_zealot_increased_damage_on_low_stamina_description"}, {"fr"},
@@ -3679,7 +3859,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_024_desc_en",
 		{"loc_talent_zealot_heal_during_resist_death_clamped_desc"}, {"en"},
 			loc_text("When {talent_name:%s} ends, you regain "..COLORS_KWords.Health_rgb.." based on the "..COLORS_KWords.Damage_rgb.." you dealt during {talent_name:%s}, to a Maximum of {max_health:%s} Max "..COLORS_KWords.Health_rgb..". Melee "..COLORS_KWords.Damage_rgb.." dealt Heals for {melee_multiplier:%s} times that amount.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_24_rgb)), -- talent_name: Until Death, max_health: 25%, melee_multiplier: 3 -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_24_rgb)),
+				-- talent_name: Until Death, max_health: 25%, melee_multiplier: 3, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_024_desc_fr",
 		{"loc_talent_zealot_heal_during_resist_death_clamped_desc"}, {"fr"},
@@ -3693,7 +3874,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_025_desc_en",
 		{"loc_talent_zealot_increased_reload_speed_on_melee_kills_desc"}, {"en"},
 			loc_text("{reload_speed:%s} Reload Speed on Melee Kill. Stacks {max_stacks:%s} times.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_25_rgb)), -- reload_speed: +3%, max_stacks: 10
+				..TALENTS_Enh_desc.ED_ZEA_Passive_25_rgb)),
+				-- reload_speed: +3%, max_stacks: 10
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_025_desc_fr",
 		{"loc_talent_zealot_increased_reload_speed_on_melee_kills_desc"}, {"fr"},
@@ -3707,7 +3889,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_026_desc_en",
 		{"loc_talent_zealot_3_tier_1_ability_1_description"}, {"en"},
 			loc_text("{stagger:%s} "..COLORS_KWords.Impact_rgb.." strength.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_26_rgb)), -- stagger: +30% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_26_rgb)),
+				-- stagger: +30%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_026_desc_fr",
 		{"loc_talent_zealot_3_tier_1_ability_1_description"}, {"fr"},
@@ -3721,7 +3904,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_027_desc_en",
 		{"loc_talent_zealot_increased_stagger_on_weakspot_melee_description"}, {"en"},
 			loc_text("{impact_modifier:%s} "..COLORS_KWords.Stagger_rgb.." on Melee "..COLORS_KWords.Weakspothits_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_27_rgb)), -- impact_modifier: +50% -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_27_rgb)),
+				-- impact_modifier: +50%, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_027_desc_fr",
 		{"loc_talent_zealot_increased_stagger_on_weakspot_melee_description"}, {"fr"},
@@ -3735,7 +3919,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_028_desc_en",
 		{"loc_talent_zealot_increased_flanking_damage_description"}, {"en"},
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ranged Backstab Attacks.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_28_rgb)), -- damage:+20%. -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_28_rgb)),
+				-- damage:+20%., colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_028_desc_fr",
 		{"loc_talent_zealot_increased_flanking_damage_description"}, {"fr"},
@@ -3749,7 +3934,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_029_desc_en",
 		{"loc_talent_zealot_multi_hits_increase_impact_desc"}, {"en"},
 			loc_text("Melee Attacks that Hit at least {min_hits:%s} Enemies grant {impact_modifier:%s} "..COLORS_KWords.Impact_rgb.." strength for {time:%s} seconds. Stacks {max_stacks:%s} times. At max Stacks gain Uninterruptible.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_29_rgb)), -- min_hits: 3, impact_modifier: +30%, time: 5, max_stacks: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_29_rgb)),
+				-- min_hits: 3, impact_modifier: +30%, time: 5, max_stacks: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_029_desc_fr",
 		{"loc_talent_zealot_multi_hits_increase_impact_desc"}, {"fr"},
@@ -3763,7 +3949,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_030_desc_en",
 		{"loc_talent_zealot_attack_speed_desc"}, {"en"},
 			loc_text("{attack_speed:%s} Melee Attack Speed.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_30_rgb)), -- attack_speed: +10%
+				..TALENTS_Enh_desc.ED_ZEA_Passive_30_rgb)),
+				-- attack_speed: +10%
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_030_desc_fr",
 		{"loc_talent_zealot_attack_speed_desc"}, {"fr"},
@@ -3777,7 +3964,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_031_desc_en",
 		{"loc_talent_zealot_increased_damage_stacks_on_hit_desc"}, {"en"},
 			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for {time:%s} seconds on Hitting an Enemy with a Melee Attack. Stacks {amount:%s} times.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_31_rgb)), -- damage: +4%, time: 5, amount: 5 -- s->seconds -- colors
+				..TALENTS_Enh_desc.ED_ZEA_Passive_31_rgb)),
+				-- damage: +4%, time: 5, amount: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_031_desc_fr",
 		{"loc_talent_zealot_increased_damage_stacks_on_hit_desc"}, {"fr"},
@@ -3791,7 +3979,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_032_desc_en",
 		{"loc_talent_zealot_3_tier_3_ability_1_description"}, {"en"},
 			loc_text("Knock back the Attacker on taking a Melee Hit. Cooldown: {cooldown:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_32_rgb)), -- cooldown: 10 -- s->seconds
+				..TALENTS_Enh_desc.ED_ZEA_Passive_32_rgb)),
+				-- cooldown: 10, s->seconds
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_032_desc_fr",
 		{"loc_talent_zealot_3_tier_3_ability_1_description"}, {"fr"},
@@ -3805,7 +3994,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_033_desc_en",
 		{"loc_talent_zealot_3_tier_1_ability_3_description"}, {"en"},
 			loc_text("{health_segment:%s} "..COLORS_KWords.Wounds_rgb..".\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_33_rgb)), -- health_segment:+2
+				..TALENTS_Enh_desc.ED_ZEA_Passive_33_rgb)),
+				-- health_segment: +2
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_033_desc_fr",
 		{"loc_talent_zealot_3_tier_1_ability_3_description"}, {"fr"},
@@ -3819,7 +4009,8 @@ local localization_templates = {
 	create_template("talent_tree_zea_pas_034_desc_en",
 		{"loc_talent_zealot_improved_sprint_description"}, {"en"},
 			loc_text("{speed:%s} increase to Sprint speed. In addition, always counts as Dodging while Sprinting, even if "..COLORS_KWords.Stamina_rgb.." is depleted.\n"
-				..TALENTS_Enh_desc.ED_ZEA_Passive_34_rgb)), -- speed: +5%
+				..TALENTS_Enh_desc.ED_ZEA_Passive_34_rgb)),
+				-- speed: +5%
 	--[+ French +]--
 	create_template("talent_tree_zea_pas_034_desc_fr",
 		{"loc_talent_zealot_improved_sprint_description"}, {"fr"},
@@ -3835,7 +4026,9 @@ local localization_templates = {
 	--[+ BLITZ 0 - Frag Grenade +]--
 	create_template("talent_tree_vet_blitz_000_desc_en",
 		{"loc_ability_frag_grenade_description"}, {"en"},
-			loc_text(COLORS_KWords.Fragmentation_gren_rgb.." that explodes after "..COLORS_Numbers.n_1_7_rgb.." seconds."..TALENTS_Enh_desc2.ED_VET_Blitz_0_rgb)), -- colors
+			loc_text(COLORS_KWords.Fragmentation_gren_rgb.." that explodes after "..COLORS_Numbers.n_1_7_rgb.." seconds."
+				..TALENTS_Enh_desc2.ED_VET_Blitz_0_rgb)),
+			-- colors
 	--[+ French +]--
 	create_template("talent_tree_vet_blitz_000_desc_fr",
 		{"loc_ability_frag_grenade_description"}, {"fr"},
@@ -3853,7 +4046,10 @@ local localization_templates = {
 	--[+ BLITZ 1 - Shredder Frag Grenade +]--
 	create_template("talent_tree_vet_blitz1_000_desc_en",
 		{"loc_talent_veteran_grenade_apply_bleed_desc"}, {"en"},
-			loc_text("Throw a "..COLORS_KWords.Frag_gren_rgb.." that explodes after "..COLORS_Numbers.n_1_7_rgb.." seconds. Applies {stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." to all Enemies Hit, causing "..COLORS_KWords.Damage_rgb.." over time. Up to "..COLORS_Numbers.n_16_rgb.." Max Stacks.\nThis is an augmented version of {talent_name:%s}."..TALENTS_Enh_desc2.ED_VET_Blitz_1_rgb)), -- stacks: 6, talent_name: Frag Grenade -- colors
+			loc_text("Throw a "..COLORS_KWords.Frag_gren_rgb.." that explodes after "..COLORS_Numbers.n_1_7_rgb.." seconds. Applies {stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." to all Enemies Hit, causing "..COLORS_KWords.Damage_rgb.." over time. Up to "..COLORS_Numbers.n_16_rgb.." Max Stacks.\n"
+				.."This is an augmented version of {talent_name:%s}."
+				..TALENTS_Enh_desc2.ED_VET_Blitz_1_rgb)),
+			-- stacks: 6, talent_name: Frag Grenade, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_blitz1_000_desc_fr",
 		{"loc_talent_veteran_grenade_apply_bleed_desc"}, {"fr"},
@@ -3876,7 +4072,9 @@ local localization_templates = {
 	--[+ BLITZ 2 - Krak Grenade +]--
 	create_template("talent_tree_vet_blitz2_000_desc_en",
 		{"loc_talent_ability_krak_grenade_desc"}, {"en"},
-			loc_text("Throw a Grenade that explodes after "..COLORS_Numbers.n_2_rgb.." seconds and deals devastating "..COLORS_KWords.Damage_rgb..". Sticks to Flak Armoured, Carapace Armoured and Unyielding Enemies."..TALENTS_Enh_desc2.ED_VET_Blitz_2_rgb)), -- colors
+			loc_text("Throw a Grenade that explodes after "..COLORS_Numbers.n_2_rgb.." seconds and deals devastating "..COLORS_KWords.Damage_rgb..". Sticks to Flak Armoured, Carapace Armoured and Unyielding Enemies."
+				..TALENTS_Enh_desc2.ED_VET_Blitz_2_rgb)),
+				-- colors
 	--[+ French +]--
 	create_template("talent_tree_vet_blitz2_000_desc_fr",
 		{"loc_talent_ability_krak_grenade_desc"}, {"fr"},
@@ -3896,7 +4094,9 @@ local localization_templates = {
 	--[+ BLITZ 3 - Smoke Grenade +]--
 	create_template("talent_tree_vet_blitz3_000_desc_en",
 		{"loc_ability_smoke_grenade_description"}, {"en"},
-			loc_text("Throw a Grenade that explodes after "..COLORS_Numbers.n_1_5_rgb.." seconds and creates a lingering Smoke cloud for {duration:%s} seconds. The cloud blocks line of sight for most enemies and reduces the sight range of enemies inside it."..TALENTS_Enh_desc2.ED_VET_Blitz_3_rgb)), -- duration: 15 -- colors
+			loc_text("Throw a Grenade that explodes after "..COLORS_Numbers.n_1_5_rgb.." seconds and creates a lingering Smoke cloud for {duration:%s} seconds. The cloud blocks line of sight for most enemies and reduces the sight range of enemies inside it."
+				..TALENTS_Enh_desc2.ED_VET_Blitz_3_rgb)),
+				-- duration: 15, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_blitz3_000_desc_fr",
 		{"loc_ability_smoke_grenade_description"}, {"fr"},
@@ -3919,7 +4119,9 @@ local localization_templates = {
 	--[+ AURA 0 - Scavenger +]--
 	create_template("talent_tree_vet_aura_000_desc_en",
 		{"loc_talent_veteran_elite_kills_grant_ammo_coop_cd_desc"}, {"en"},
-			loc_text("Replenish {ammo:%s} Ammo for you and Allies in "..COLORS_KWords.Coherency_rgb.." whenever any of you Kill an Elite or Specialist Enemy. This can occur once every {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Aura_0_rgb)), -- ammo: 0.75%, cooldown: 5
+			loc_text("Replenish {ammo:%s} Ammo for you and Allies in "..COLORS_KWords.Coherency_rgb.." whenever any of you Kill an Elite or Specialist Enemy. This can occur once every {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Aura_0_rgb)),
+				-- ammo: 0.75%, cooldown: 5
 	--[+ French +]--
 	create_template("talent_tree_vet_aura_000_desc_fr",
 		{"loc_talent_veteran_elite_kills_grant_ammo_coop_cd_desc"}, {"fr"},
@@ -3939,7 +4141,10 @@ local localization_templates = {
 	--[+ AURA 1 - Survivalist +]--
 	create_template("talent_tree_vet_aura_001_desc_en",
 		{"loc_talent_veteran_elite_kills_grant_ammo_coop_improved_cd_desc"}, {"en"},
-			loc_text("Replenish {ammo_2:%s} Ammo for you and Allies in "..COLORS_KWords.Coherency_rgb.." whenever any of you Kill an Elite or Specialist Enemy. This can occur once every {cooldown:%s} seconds.\n\nThis is an augmented version of {talent_name:%s}."..TALENTS_Enh_desc2.ED_VET_Aura_1_rgb)), -- ammo_2: 1%, cooldown: 5, talent_name: Scavenger
+			loc_text("Replenish {ammo_2:%s} Ammo for you and Allies in "..COLORS_KWords.Coherency_rgb.." whenever any of you Kill an Elite or Specialist Enemy. This can occur once every {cooldown:%s} seconds.\n"
+				.."This is an augmented version of {talent_name:%s}."
+				..TALENTS_Enh_desc2.ED_VET_Aura_1_rgb)),
+				-- ammo_2: 1%, cooldown: 5, talent_name: Scavenger
 	--[+ French +]--
 	create_template("talent_tree_vet_aura_001_desc_fr",
 		{"loc_talent_veteran_elite_kills_grant_ammo_coop_improved_cd_desc"}, {"fr"},
@@ -3961,7 +4166,9 @@ local localization_templates = {
 	--[+ AURA 2 - Fire Team +]--
 	create_template("talent_tree_vet_aura_002_desc_en",
 		{"loc_talent_veteran_damage_coherency_desc"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.."."..TALENTS_Enh_desc2.ED_VET_Aura_2_rgb)), -- damage: +5% -- colors
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Aura_2_rgb)),
+				-- damage: +5%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_aura_002_desc_fr",
 		{"loc_talent_veteran_damage_coherency_desc"}, {"fr"},
@@ -3979,7 +4186,9 @@ local localization_templates = {
 	--[+ AURA 3 - Close and Kill +]--
 	create_template("talent_tree_vet_aura_003_desc_en",
 		{"loc_talent_veteran_movement_speed_coherency_desc"}, {"en"},
-			loc_text("{movement_speed:%s} Movement Speed for your and Allies in "..COLORS_KWords.Coherency_rgb.."."..TALENTS_Enh_desc2.ED_VET_Aura_3_rgb)), -- movement_speed: +5%
+			loc_text("{movement_speed:%s} Movement Speed for your and Allies in "..COLORS_KWords.Coherency_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Aura_3_rgb)),
+				-- movement_speed: +5%
 	--[+ French +]--
 	create_template("talent_tree_vet_aura_003_desc_fr",
 		{"loc_talent_veteran_movement_speed_coherency_desc"}, {"fr"},
@@ -3999,7 +4208,12 @@ local localization_templates = {
 	--[+ ABILITY 0 - Volley Fire +]--
 	create_template("talent_tree_vet_abil_000_desc_en",
 		{"loc_ability_veteran_base_ability_desc"}, {"en"},
-			loc_text("Enter Ranged Stance for {duration:%s} seconds. When in Ranged Stance you instantly equip your Ranged weapon and deal:\n{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." and\n{weakspot_damage:%s} Ranged "..COLORS_KWords.Weakspot_dmg_rgb..". Your Spread and Recoil are also greatly reduced.\nBase Cooldown: {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Ability_0_rgb)), -- duration: 5, damage: +25%, weakspot_damage: +25%, cooldown: 30 -- &->and -- s->seconds -- colors
+			loc_text("Enter Ranged Stance for {duration:%s} seconds. When in Ranged Stance you instantly equip your Ranged weapon and deal:\n"
+				.."{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." and\n"
+				.."{weakspot_damage:%s} Ranged "..COLORS_KWords.Weakspot_dmg_rgb..". Your Spread and Recoil are also greatly reduced.\n"
+				.."Base Cooldown: {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Ability_0_rgb)),
+				-- duration: 5, damage: +25%, weakspot_damage: +25%, cooldown: 30 -- &->and, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil_000_desc_fr",
 		{"loc_ability_veteran_base_ability_desc"}, {"fr"},
@@ -4022,7 +4236,15 @@ local localization_templates = {
 	--[+ ABILITY 1 - Executioner's Stance +]--
 	create_template("talent_tree_vet_abil1_000_desc_en",
 		{"loc_talent_veteran_combat_ability_elite_and_special_outlines_refresh_description"}, {"en"},
-			loc_text("Enter Ranged Stance for {duration:%s} seconds. You instantly equip your Ranged weapon and deal:\n{damage:%s} Ranged "..COLORS_KWords.Damage_rgb..",\n{weakspot_damage:%s} Ranged "..COLORS_KWords.Weakspot_dmg_rgb..".\nHuman-sized Elite and Specialist Enemies within "..COLORS_Numbers.n_50_rgb.." meters of the Veteran are highlighted for {duration:%s} seconds.\nKilling an highlighted enemy refreshes the active duration by {refresh_duration:%s} seconds. This also refreshes the duration of outlines on enemies for Veteran.\nBase Cooldown: {cooldown:%s} seconds.\nThis is an augmented version of {old_talent_name:%s}."..TALENTS_Enh_desc2.ED_VET_Ability_1_rgb)), -- duration: 5, damage: +25%, weakspot_damage: +25%, duration: 5, cooldown: 30, old_talent_name: Volley Fire -- rewrite -- s->seconds -- colors
+			loc_text("Enter Ranged Stance for {duration:%s} seconds. You instantly equip your Ranged weapon and deal:\n"
+				.."{damage:%s} Ranged "..COLORS_KWords.Damage_rgb..",\n"
+				.."{weakspot_damage:%s} Ranged "..COLORS_KWords.Weakspot_dmg_rgb..".\n"
+				.."Human-sized Elite and Specialist Enemies within "..COLORS_Numbers.n_50_rgb.." meters of the Veteran are highlighted for {duration:%s} seconds.\n"
+				.."Killing an highlighted enemy refreshes the active duration by {refresh_duration:%s} seconds. This also refreshes the duration of outlines on enemies for Veteran.\n"
+				.."Base Cooldown: {cooldown:%s} seconds.\n"
+				.."This is an augmented version of {old_talent_name:%s}."
+				..TALENTS_Enh_desc2.ED_VET_Ability_1_rgb)),
+				-- duration: 5, damage: +25%, weakspot_damage: +25%, duration: 5, cooldown: 30, old_talent_name: Volley Fire, rewrite, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil1_000_desc_fr",
 		{"loc_talent_veteran_combat_ability_elite_and_special_outlines_refresh_description"}, {"fr"},
@@ -4053,7 +4275,9 @@ local localization_templates = {
 	--[+ ABILITY 1-1 - Enhanced Target Priority +]--
 	create_template("talent_tree_vet_abil1_001_desc_en",
 		{"loc_talent_veteran_combat_ability_coherency_outlines_description"}, {"en"},
-			loc_text("{talent_name:%s} now outlines all human-sized Elite and Specialist Enemies for Allies in "..COLORS_KWords.Coherency_rgb.." for {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Ability_1_1_rgb)), -- talent_name: Executioner's Stance, duration: 5 -- rewrite -- &->and -- s->seconds
+			loc_text("{talent_name:%s} now outlines all human-sized Elite and Specialist Enemies for Allies in "..COLORS_KWords.Coherency_rgb.." for {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Ability_1_1_rgb)),
+				-- talent_name: Executioner's Stance, duration: 5, rewrite, &->and, s->seconds
 	--[+ French +]--
 	create_template("talent_tree_vet_abil1_001_desc_fr",
 		{"loc_talent_veteran_combat_ability_coherency_outlines_description"}, {"fr"},
@@ -4073,7 +4297,8 @@ local localization_templates = {
 	--[+ ABILITY 1-2 - Counter-Fire +]--
 	create_template("talent_tree_vet_abil1_002_desc_en",
 		{"loc_talent_veteran_combat_ability_ranged_enemies_outlines_description"}, {"en"},
-			loc_text("{talent_name:%s} now outlines Scab/Dreg Stalkers and Scab Shooters, additionally to all human-sized Elites and Specials.")), -- talent_name: Executioner's Stance -- rewrite
+			loc_text("{talent_name:%s} now outlines Scab/Dreg Stalkers and Scab Shooters, additionally to all human-sized Elites and Specials.")),
+				-- talent_name: Executioner's Stance, rewrite
 	--[+ French +]--
 	create_template("talent_tree_vet_abil1_002_desc_fr",
 		{"loc_talent_veteran_combat_ability_ranged_enemies_outlines_description"}, {"fr"},
@@ -4094,7 +4319,8 @@ local localization_templates = {
 	--[+ ABILITY 1-3 - The Bigger they Are... +]--
 	create_template("talent_tree_vet_abil1_003_desc_en",
 		{"loc_talent_veteran_combat_ability_ogryn_outlines_description"}, {"en"},
-			loc_text("{talent_name:%s} now outlines Bulwarks, Crushers and Reapers, additionally to all human-sized Elites and Specials.")), -- talent_name: Executioner's Stance -- rewrite
+			loc_text("{talent_name:%s} now outlines Bulwarks, Crushers and Reapers, additionally to all human-sized Elites and Specials.")),
+				-- talent_name: Executioner's Stance, rewrite
 	--[+ French +]--
 	create_template("talent_tree_vet_abil1_003_desc_fr",
 		{"loc_talent_veteran_combat_ability_ogryn_outlines_description"}, {"fr"},
@@ -4113,7 +4339,10 @@ local localization_templates = {
 	--[+ ABILITY 1-4 - Marksman +]--
 	create_template("talent_tree_vet_abil1_004_desc_en",
 		{"loc_talent_veteran_ability_marksman_desc"}, {"en"},
-			loc_text("{power:%s} "..COLORS_KWords.Strength_rgb.." for any "..COLORS_KWords.Weakspothits_rgb.." for {duration:%s} seconds after "..COLORS_KWords.Combat_ability_rgb.." use.\n\nWhen using {talent_name:%s}, this is applied after leaving "..COLORS_KWords.Stealth_rgb.."."..TALENTS_Enh_desc2.ED_VET_Ability_1_4_rgb)), -- duration: 10, power: +20%, talent_name: Infiltrate -- s->seconds -- colors
+			loc_text("{power:%s} "..COLORS_KWords.Strength_rgb.." for any "..COLORS_KWords.Weakspothits_rgb.." for {duration:%s} seconds after "..COLORS_KWords.Combat_ability_rgb.." use.\n"
+				.."When using {talent_name:%s}, this is applied after leaving "..COLORS_KWords.Stealth_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Ability_1_4_rgb)),
+				-- duration: 10, power: +20%, talent_name: Infiltrate, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil1_004_desc_fr",
 		{"loc_talent_veteran_ability_marksman_desc"}, {"fr"},
@@ -4134,7 +4363,10 @@ local localization_templates = {
 	--[+ ABILITY 2 - Voice of Command +]--
 	create_template("talent_tree_vet_abil2_000_desc_en",
 		{"loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"}, {"en"},
-			loc_text("Replenishes your "..COLORS_KWords.Toughness_rgb.." and "..COLORS_KWords.Staggers_rgb.." all Enemies within {range:%s} meters.\n\nBase Cooldown {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Ability_2_rgb)), -- range: 9, cooldown: 30 -- &->and -- m->meters -- s->seconds -- colors
+			loc_text("Replenishes your "..COLORS_KWords.Toughness_rgb.." and "..COLORS_KWords.Staggers_rgb.." all Enemies within {range:%s} meters.\n"
+				.."Base Cooldown {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Ability_2_rgb)),
+				-- range: 9, cooldown: 30, &->and, m->meters, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil2_000_desc_fr",
 		{"loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"}, {"fr"},
@@ -4155,7 +4387,9 @@ local localization_templates = {
 	--[+ ABILITY 2-1 - Duty and Honour +]--
 	create_template("talent_tree_vet_abil2_001_desc_en",
 		{"loc_talent_veteran_combat_ability_increase_and_restore_toughness_to_coherency_description"}, {"en"},
-			loc_text("{talent_name:%s} now also provides you and Allies in "..COLORS_KWords.Coherency_rgb.." with {toughness:%s} "..COLORS_KWords.Toughness_rgb.." for {duration:%s} seconds. This can exceed your Maximum "..COLORS_KWords.Toughness_rgb.."."..TALENTS_Enh_desc2.ED_VET_Ability_2_1_rgb)), -- talent_name: Voice of Command, toughness: +50, duration: 15 -- s->seconds -- colors
+			loc_text("{talent_name:%s} now also provides you and Allies in "..COLORS_KWords.Coherency_rgb.." with {toughness:%s} "..COLORS_KWords.Toughness_rgb.." for {duration:%s} seconds. This can exceed your Maximum "..COLORS_KWords.Toughness_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Ability_2_1_rgb)),
+				-- talent_name: Voice of Command, toughness: +50, duration: 15, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil2_001_desc_fr",
 		{"loc_talent_veteran_combat_ability_increase_and_restore_toughness_to_coherency_description"}, {"fr"},
@@ -4177,7 +4411,9 @@ local localization_templates = {
 	--[+ ABILITY 2-2 - Only In Death Does Duty End +]--
 	create_template("talent_tree_vet_abil2_002_desc_en",
 		{"loc_talent_veteran_combat_ability_revives_description"}, {"en"},
-			loc_text("{talent_name:%s} revives Knocked Down Allies within Radius, but also reduces that Radius by {range:%s} and increases your "..COLORS_KWords.Ability_cd_rgb.." by {ability_cooldown:%s}."..TALENTS_Enh_desc2.ED_VET_Ability_2_2_rgb)), -- talent_name: Voice of Command, range: 33%, ability_cooldown: 50% -- &->and -- colors
+			loc_text("{talent_name:%s} revives Knocked Down Allies within Radius, but also reduces that Radius by {range:%s} and increases your "..COLORS_KWords.Ability_cd_rgb.." by {ability_cooldown:%s}."
+				..TALENTS_Enh_desc2.ED_VET_Ability_2_2_rgb)),
+				-- talent_name: Voice of Command, range: 33%, ability_cooldown: 50% -- &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil2_002_desc_fr",
 		{"loc_talent_veteran_combat_ability_revives_description"}, {"fr"},
@@ -4199,7 +4435,11 @@ local localization_templates = {
 	--[+ ABILITY 2-3 - For the Emperor! +]--
 	create_template("talent_tree_vet_abil2_003_desc_en",
 		{"loc_talent_veteran_combat_ability_melee_and_ranged_damage_to_coherency_description"}, {"en"},
-			loc_text("Your "..COLORS_KWords.Combat_ability_rgb.." gives for {duration:%s} seconds you and Allies in "..COLORS_KWords.Coherency_rgb..":\n{melee_damage:%s} Melee Base "..COLORS_KWords.Damage_rgb.." and\n{ranged_damage:%s} Ranged Base "..COLORS_KWords.Damage_rgb.."."..TALENTS_Enh_desc2.ED_VET_Ability_2_3_rgb)), --  duration: 5, melee_damage: +10%, ranged_damage: +10% -- rewrite -- &->and -- s->seconds -- colors
+			loc_text("Your "..COLORS_KWords.Combat_ability_rgb.." gives for {duration:%s} seconds you and Allies in "..COLORS_KWords.Coherency_rgb..":\n"
+				.."{melee_damage:%s} Melee Base "..COLORS_KWords.Damage_rgb.." and\n"
+				.."{ranged_damage:%s} Ranged Base "..COLORS_KWords.Damage_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Ability_2_3_rgb)),
+				-- duration: 5, melee_damage: +10%, ranged_damage: +10%, rewrite, &->and, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil2_003_desc_fr",
 		{"loc_talent_veteran_combat_ability_melee_and_ranged_damage_to_coherency_description"}, {"fr"},
@@ -4221,7 +4461,10 @@ local localization_templates = {
 	--[+ ABILITY 3 - Infiltrate +]--
 	create_template("talent_tree_vet_abil3_000_desc_en",
 		{"loc_talent_veteran_invisibility_on_combat_ability_desc"}, {"en"},
-			loc_text("Replenish all "..COLORS_KWords.Toughness_rgb.." and enter "..COLORS_KWords.Stealth_rgb.." for {duration:%s} seconds, gaining {movement_speed:%s} Movement Speed. Leaving "..COLORS_KWords.Stealth_rgb.." Suppresses nearby Enemies. Attacking makes you leave "..COLORS_KWords.Stealth_rgb..".\nBase Cooldown: {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Ability_3_rgb)), -- duration: 8, movement_speed: +25%, cooldown: 45 -- rewrite -- s->seconds -- colors
+			loc_text("Replenish all "..COLORS_KWords.Toughness_rgb.." and enter "..COLORS_KWords.Stealth_rgb.." for {duration:%s} seconds, gaining {movement_speed:%s} Movement Speed. Leaving "..COLORS_KWords.Stealth_rgb.." Suppresses nearby Enemies. Attacking makes you leave "..COLORS_KWords.Stealth_rgb..".\n"
+				.."Base Cooldown: {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Ability_3_rgb)),
+				-- duration: 8, movement_speed: +25%, cooldown: 45, rewrite, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil3_000_desc_fr",
 		{"loc_talent_veteran_invisibility_on_combat_ability_desc"}, {"fr"},
@@ -4246,7 +4489,9 @@ local localization_templates = {
 	--[+ ABILITY 3-1 - Low Profile +]--
 	create_template("talent_tree_vet_abil3_001_desc_en",
 		{"loc_talent_veteran_reduced_threat_after_stealth_desc"}, {"en"},
-			loc_text("{threat_multiplier:%s} Threat for {duration:%s} seconds on leaving "..COLORS_KWords.Stealth_rgb.."."..TALENTS_Enh_desc2.ED_VET_Ability_3_1_rgb)), -- threat_multiplier: -90%, duration: 10 -- s->seconds -- colors
+			loc_text("{threat_multiplier:%s} Threat for {duration:%s} seconds on leaving "..COLORS_KWords.Stealth_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Ability_3_1_rgb)),
+				-- threat_multiplier: -90%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil3_001_desc_fr",
 		{"loc_talent_veteran_reduced_threat_after_stealth_desc"}, {"fr"},
@@ -4266,7 +4511,9 @@ local localization_templates = {
 	--[+ ABILITY 3-2 - Overwatch +]--
 	create_template("talent_tree_vet_abil3_002_desc_en",
 		{"loc_talent_veteran_combat_ability_extra_charge_description"}, {"en"},
-			loc_text("Your "..COLORS_KWords.Combat_ability_rgb.." gains {charges:%s} charge, but {ability_cooldown:%s} "..COLORS_KWords.Cd_rgb.."."..TALENTS_Enh_desc2.ED_VET_Ability_3_2_rgb)), -- charges: +1, ability_cooldown: +33%
+			loc_text("Your "..COLORS_KWords.Combat_ability_rgb.." gains {charges:%s} charge, but {ability_cooldown:%s} "..COLORS_KWords.Cd_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Ability_3_2_rgb)),
+				-- charges: +1, ability_cooldown: +33%
 	--[+ French +]--
 	create_template("talent_tree_vet_abil3_002_desc_fr",
 		{"loc_talent_veteran_combat_ability_extra_charge_description"}, {"fr"},
@@ -4286,7 +4533,9 @@ local localization_templates = {
 	--[+ ABILITY 3-3 - Hunter's Resolve +]--
 	create_template("talent_tree_vet_abil3_003_desc_en",
 		{"loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"}, {"en"},
-			loc_text("{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." is provided by {talent_name:%s} for {duration:%s} seconds upon leaving "..COLORS_KWords.Stealth_rgb.."."..TALENTS_Enh_desc2.ED_VET_Ability_3_3_rgb)), -- talent_name: Infiltrate, tdr: +50%, duration: 10 -- s->seconds -- colors
+			loc_text("{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." is provided by {talent_name:%s} for {duration:%s} seconds upon leaving "..COLORS_KWords.Stealth_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Ability_3_3_rgb)),
+				-- talent_name: Infiltrate, tdr: +50%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil3_003_desc_fr",
 		{"loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"}, {"fr"},
@@ -4306,7 +4555,9 @@ local localization_templates = {
 	--[+ ABILITY 3-4 - Surprise Attack +]--
 	create_template("talent_tree_vet_abil3_004_desc_en",
 		{"loc_talent_veteran_damage_bonus_leaving_invisibility_desc"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." is granted by {talent_name:%s} for {duration:%s} seconds upon leaving "..COLORS_KWords.Stealth_rgb.."."..TALENTS_Enh_desc2.ED_VET_Ability_3_4_rgb)), -- talent_name: Infiltrate, damage: +30%, duration: 5 -- s->seconds -- colors
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." is granted by {talent_name:%s} for {duration:%s} seconds upon leaving "..COLORS_KWords.Stealth_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Ability_3_4_rgb)),
+				-- talent_name: Infiltrate, damage: +30%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil3_004_desc_fr",
 		{"loc_talent_veteran_damage_bonus_leaving_invisibility_desc"}, {"fr"},
@@ -4326,7 +4577,9 @@ local localization_templates = {
 	--[+ ABILITY 3-5 - Close Quarters Killzone +]--
 	create_template("talent_tree_vet_abil3_005_desc_en",
 		{"loc_talent_veteran_ability_assault_desc"}, {"en"},
-			loc_text("{power:%s} Close "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on "..COLORS_KWords.Combat_ability_rgb.." use.\n\nWhen using {talent_name:%s}, this begins on leaving "..COLORS_KWords.Stealth_rgb.."."..TALENTS_Enh_desc2.ED_VET_Ability_3_5_rgb)), -- power: +15%, duration: 10, talent_name: Infiltrate -- rewrite -- s->seconds -- colors
+			loc_text("{power:%s} Close "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on "..COLORS_KWords.Combat_ability_rgb.." use.\n\nWhen using {talent_name:%s}, this begins on leaving "..COLORS_KWords.Stealth_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Ability_3_5_rgb)),
+				-- power: +15%, duration: 10, talent_name: Infiltrate, rewrite, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_abil3_005_desc_fr",
 		{"loc_talent_veteran_ability_assault_desc"}, {"fr"},
@@ -4349,7 +4602,9 @@ local localization_templates = {
 	--[+ KEYSTONE 1 - Marksman's Focus +]--
 	create_template("talent_tree_vet_keys1_000_desc_en",
 		{"loc_talent_veteran_snipers_focus_alt_description"}, {"en"},
-			loc_text("Ranged "..COLORS_KWords.Weak_spot_rgb.." kills grant {stacks:%s} Stacks of "..COLORS_KWords.Focus_rgb..". Up to {max_stacks} Max Stacks. Sprinting, Sliding and Walking removes Stacks.\nEach Stack of "..COLORS_KWords.Focus_rgb.." grants:\n{power:%s} Ranged "..COLORS_KWords.Finesse_rgb.." strength and\n{reload_speed:%s} Reload Speed.\nRanged "..COLORS_KWords.Weak_spot_rgb.." kills let you move without losing Stacks for {grace_time:%s} seconds. Ranged "..COLORS_KWords.Weakspothits_rgb.." lets you move without losing Stacks for {grace_time_hit:%s} second."..TALENTS_Enh_desc2.ED_VET_Keystone_1_rgb)), -- stacks: 3, max_stacks: 10, power: +7.5%, reload_speed: +1%, grace_time: 6, grace_time_hit: 3 -- stack(s)->stacks -- s->second/seconds -- colors
+			loc_text("Ranged "..COLORS_KWords.Weak_spot_rgb.." kills grant {stacks:%s} Stacks of "..COLORS_KWords.Focus_rgb..". Up to {max_stacks} Max Stacks. Sprinting, Sliding and Walking removes Stacks.\nEach Stack of "..COLORS_KWords.Focus_rgb.." grants:\n{power:%s} Ranged "..COLORS_KWords.Finesse_rgb.." strength and\n{reload_speed:%s} Reload Speed.\nRanged "..COLORS_KWords.Weak_spot_rgb.." kills let you move without losing Stacks for {grace_time:%s} seconds. Ranged "..COLORS_KWords.Weakspothits_rgb.." lets you move without losing Stacks for {grace_time_hit:%s} second."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_1_rgb)),
+				-- stacks: 3, max_stacks: 10, power: +7.5%, reload_speed: +1%, grace_time: 6, grace_time_hit: 3 -- stack(s)->stacks -- s->second/seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys1_000_desc_fr",
 		{"loc_talent_veteran_snipers_focus_alt_description"}, {"fr"},
@@ -4378,7 +4633,9 @@ local localization_templates = {
 	--[+ KEYSTONE 1-1 - Chink in their Armour +]--
 	create_template("talent_tree_vet_keys1_001_desc_en",
 		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"en"},
-			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.." when at, or over, {stacks:%s} Stacks of "..COLORS_KWords.Focus_rgb.."."..TALENTS_Enh_desc2.ED_VET_Keystone_1_1_rgb)), -- rending: +10%, stacks: 10 -- colors
+			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.." when at, or over, {stacks:%s} Stacks of "..COLORS_KWords.Focus_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_1_1_rgb)),
+				-- rending: +10%, stacks: 10, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys1_001_desc_fr",
 		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"fr"},
@@ -4399,7 +4656,9 @@ local localization_templates = {
 	--[+ KEYSTONE 1-2 - Tunnel Vision +]--
 	create_template("talent_tree_vet_keys1_002_desc_en",
 		{"loc_talent_veteran_snipers_focus_stamina_bonus_desc"}, {"en"},
-			loc_text("{toughness_replenish_multiplier:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for each Stack of "..COLORS_KWords.Focus_rgb..". In addition, "..COLORS_KWords.Weak_spot_rgb.." kills restore {stamina:%s} "..COLORS_KWords.Stamina_rgb.."."..TALENTS_Enh_desc2.ED_VET_Keystone_1_2_rgb)), -- toughness_replenish_multiplier: +5%, stamina: 10% -- colors
+			loc_text("{toughness_replenish_multiplier:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for each Stack of "..COLORS_KWords.Focus_rgb..". In addition, "..COLORS_KWords.Weak_spot_rgb.." kills restore {stamina:%s} "..COLORS_KWords.Stamina_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_1_2_rgb)),
+				-- toughness_replenish_multiplier: +5%, stamina: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys1_002_desc_fr",
 		{"loc_talent_veteran_snipers_focus_stamina_bonus_desc"}, {"fr"},
@@ -4420,7 +4679,7 @@ local localization_templates = {
 	--[+ KEYSTONE 1-3 - Long Range Assassin +]--
 	create_template("talent_tree_vet_keys1_003_desc_en",
 		{"loc_talent_veteran_snipers_focus_increased_stacks_description"}, {"en"},
-			loc_text("Increase Maximum Stacks of "..COLORS_KWords.Focus_rgb.." from {stacks:%s} to {new_stacks:%s}.")), -- stacks: 10, new_stacks: 15 -- colors
+			loc_text("Increase Maximum Stacks of "..COLORS_KWords.Focus_rgb.." from {stacks:%s} to {new_stacks:%s}.")), -- stacks: 10, new_stacks: 15, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys1_003_desc_fr",
 		{"loc_talent_veteran_snipers_focus_increased_stacks_description"}, {"fr"},
@@ -4439,7 +4698,7 @@ local localization_templates = {
 	--[+ KEYSTONE 1-4 - Camouflage +]--
 	create_template("talent_tree_vet_keys1_004_desc_en",
 		{"loc_talent_veteran_snipers_focus_stacks_on_still_description"}, {"en"},
-			loc_text("Gain {stack:%s} Stack of "..COLORS_KWords.Focus_rgb.." every {time:%s} seconds when Standing Still or Walking when Crouched.")), -- stack: 1, time: 0.75 -- stack(s)->stacks -- s->seconds -- colors
+			loc_text("Gain {stack:%s} Stack of "..COLORS_KWords.Focus_rgb.." every {time:%s} seconds when Standing Still or Walking when Crouched.")), -- stack: 1, time: 0.75 -- stack(s)->stacks, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys1_004_desc_fr",
 		{"loc_talent_veteran_snipers_focus_stacks_on_still_description"}, {"fr"},
@@ -4459,7 +4718,9 @@ local localization_templates = {
 	--[+ KEYSTONE 2 - Focus Target! +]--
 	create_template("talent_tree_vet_keys2_000_desc_en",
 		{"loc_talent_veteran_improved_tag_description"}, {"en"},
-			loc_text("Gain "..COLORS_KWords.Focus_Target_rgb.." every {time:%s} seconds. Stacks {max_stacks:%s} times.\nTagging an Enemy applies the "..COLORS_KWords.Focus_Target_rgb.." Stacks to them, causing them to take {damage:%s} additional "..COLORS_KWords.Damage_rgb.." for each Stack, and resets your "..COLORS_KWords.Focus_Target_rgb.." Stacks to "..COLORS_Numbers.n_1_rgb.."."..TALENTS_Enh_desc2.ED_VET_Keystone_2_rgb)), -- time: 2, max_stacks: 5, damage: +4% -- -() -- s->seconds -- colors
+			loc_text("Gain "..COLORS_KWords.Focus_Target_rgb.." every {time:%s} seconds. Stacks {max_stacks:%s} times.\nTagging an Enemy applies the "..COLORS_KWords.Focus_Target_rgb.." Stacks to them, causing them to take {damage:%s} additional "..COLORS_KWords.Damage_rgb.." for each Stack, and resets your "..COLORS_KWords.Focus_Target_rgb.." Stacks to "..COLORS_Numbers.n_1_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_2_rgb)),
+				-- time: 2, max_stacks: 5, damage: +4% -- -(), s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys2_000_desc_fr",
 		{"loc_talent_veteran_improved_tag_description"}, {"fr"},
@@ -4482,7 +4743,9 @@ local localization_templates = {
 	--[+ KEYSTONE 2-1 - Target Down! +]--
 	create_template("talent_tree_vet_keys2_001_desc_en",
 		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina:%s} "..COLORS_KWords.Stamina_rgb.." are replenished for each stack of "..COLORS_KWords.Focus_Target_rgb.." applied when an enemy you have Tagged dies, for you and Allies in "..COLORS_KWords.Coherency_rgb.."."..TALENTS_Enh_desc2.ED_VET_Keystone_2_1_rgb)), -- toughness: 5%, stamina: 5% -- colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina:%s} "..COLORS_KWords.Stamina_rgb.." are replenished for each stack of "..COLORS_KWords.Focus_Target_rgb.." applied when an enemy you have Tagged dies, for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_2_1_rgb)),
+				-- toughness: 5%, stamina: 5%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys2_001_desc_fr",
 		{"loc_talent_veteran_improved_tag_dead_bonus_description"}, {"fr"},
@@ -4505,7 +4768,9 @@ local localization_templates = {
 	--[+ KEYSTONE 2-2 - Redirect Fire! +]--
 	create_template("talent_tree_vet_keys2_002_desc_en",
 		{"loc_talent_veteran_improved_tag_dead_coherency_bonus_description"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." is granted for each Stack of "..COLORS_KWords.Focus_Target_rgb.." applied when an enemy you have Tagged dies, to you and Allies in "..COLORS_KWords.Coherency_rgb..". Lasts {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Keystone_2_2_rgb)), -- damage: +1.5%, duration: 10 -- s->seconds -- colors
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." is granted for each Stack of "..COLORS_KWords.Focus_Target_rgb.." applied when an enemy you have Tagged dies, to you and Allies in "..COLORS_KWords.Coherency_rgb..". Lasts {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_2_2_rgb)),
+				-- damage: +1.5%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys2_002_desc_fr",
 		{"loc_talent_veteran_improved_tag_dead_coherency_bonus_description"}, {"fr"},
@@ -4529,7 +4794,8 @@ local localization_templates = {
 	--[+ KEYSTONE 2-3 - Focused Fire +]--
 	create_template("talent_tree_vet_keys2_003_desc_en",
 		{"loc_talent_veteran_improved_tag_more_damage_description"}, {"en"},
-			loc_text(COLORS_KWords.Focus_Target_rgb.." Max Stacks increased from "..COLORS_Numbers.n_5_rgb.." to {max_stacks:%s}.")), -- max_stacks: 8 -- colors
+			loc_text(COLORS_KWords.Focus_Target_rgb.." Max Stacks increased from "..COLORS_Numbers.n_5_rgb.." to {max_stacks:%s}.")),
+				-- max_stacks: 8, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys2_003_desc_fr",
 		{"loc_talent_veteran_improved_tag_more_damage_description"}, {"fr"},
@@ -4549,7 +4815,16 @@ local localization_templates = {
 	--[+ KEYSTONE 3 - Weapons Specialist +]--
 	create_template("talent_tree_vet_keys3_000_desc_en",
 		{"loc_talent_veteran_weapon_switch_description"}, {"en"},
-			loc_text("Gain "..COLORS_KWords.Rangedspec_rgb.." on Melee kills. Stacks {ranged_stacks:%s} times.\nGain "..COLORS_KWords.Meleespec_rgb.." on Ranged kill. Stacks {melee_stacks:%s} times.\n\nWhen you wield your Ranged weapon, you activate your "..COLORS_KWords.Rangedspec_rgb.." effect, to gain:\n{ranged_attack_speed:%s} Ranged Attack Speed and\n{ranged_crit_chance:%s} Ranged "..COLORS_KWords.Crit_hit_rgb.." Chance on your next shot, per Stack. Lasts {ranged_duration:%s} seconds.\n\nWhen you wield your Melee weapon, you activate your "..COLORS_KWords.Meleespec_rgb.." effect, to gain:\n{melee_attack_speed:%s} Melee Attack Speed,\n"..COLORS_Numbers.n_plus_rgb.."{dodge_modifier:%s} Dodge Speed and Dodge Distance. Lasts {melee_duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Keystone_3_rgb)), -- ranged_stacks: 10, melee_stacks: 1, ranged_attack_speed: +2%, ranged_crit_chance: +33%, ranged_duration: 5, melee_attack_speed: +15%, dodge_modifier: 10%, melee_duration: 10 -- -() --  s->seconds -- colors
+			loc_text("Gain "..COLORS_KWords.Rangedspec_rgb.." on Melee kills. Stacks {ranged_stacks:%s} times.\n"
+				.."Gain "..COLORS_KWords.Meleespec_rgb.." on Ranged kill. Stacks {melee_stacks:%s} times.\n\n"
+				.."When you wield your Ranged weapon, you activate your "..COLORS_KWords.Rangedspec_rgb.." effect, to gain:\n"
+				.."{ranged_attack_speed:%s} Ranged Attack Speed and\n"
+				.."{ranged_crit_chance:%s} Ranged "..COLORS_KWords.Crit_hit_rgb.." Chance on your next shot, per Stack. Lasts {ranged_duration:%s} seconds.\n\n"
+				.."When you wield your Melee weapon, you activate your "..COLORS_KWords.Meleespec_rgb.." effect, to gain:\n"
+				.."{melee_attack_speed:%s} Melee Attack Speed,\n"
+				..COLORS_Numbers.n_plus_rgb.."{dodge_modifier:%s} Dodge Speed and Dodge Distance. Lasts {melee_duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_3_rgb)),
+				-- ranged_stacks: 10, melee_stacks: 1, ranged_attack_speed: +2%, ranged_crit_chance: +33%, ranged_duration: 5, melee_attack_speed: +15%, dodge_modifier: 10%, melee_duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys3_000_desc_fr",
 		{"loc_talent_veteran_weapon_switch_description"}, {"fr"},
@@ -4585,7 +4860,9 @@ local localization_templates = {
 	--[+ KEYSTONE 3-1 - Always Prepared +]--
 	create_template("talent_tree_vet_keys3_001_desc_en",
 		{"loc_talent_veteran_weapon_switch_replenish_ammo_description"}, {"en"},
-			loc_text("Activating "..COLORS_KWords.Rangedspec_rgb.." replenishes up to {ammo:%s} of your missing ammo in your Clip from your Reserve, rounded up, for each Stack."..TALENTS_Enh_desc2.ED_VET_Keystone_3_1_rgb)), -- ammo: 3.3% -- colors
+			loc_text("Activating "..COLORS_KWords.Rangedspec_rgb.." replenishes up to {ammo:%s} of your missing ammo in your Clip from your Reserve, rounded up, for each Stack."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_3_1_rgb)),
+				-- ammo: 3.3%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys3_001_desc_fr",
 		{"loc_talent_veteran_weapon_switch_replenish_ammo_description"}, {"fr"},
@@ -4610,7 +4887,9 @@ local localization_templates = {
 	--[+ KEYSTONE 3-2 - Invigorated +]--
 	create_template("talent_tree_vet_keys3_002_desc_en",
 		{"loc_talent_veteran_weapon_switch_replenish_stamina_description"}, {"en"},
-			loc_text("Activating "..COLORS_KWords.Meleespec_rgb.." restores {stamina:%s} "..COLORS_KWords.Stamina_rgb.."."..TALENTS_Enh_desc2.ED_VET_Keystone_3_2_rgb)), -- stamina: 20% -- colors
+			loc_text("Activating "..COLORS_KWords.Meleespec_rgb.." restores {stamina:%s} "..COLORS_KWords.Stamina_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_3_2_rgb)),
+				-- stamina: 20%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys3_002_desc_fr",
 		{"loc_talent_veteran_weapon_switch_replenish_stamina_description"}, {"fr"},
@@ -4631,7 +4910,9 @@ local localization_templates = {
 	--[+ KEYSTONE 3-3 - On Your Toes +]--
 	create_template("talent_tree_vet_keys3_003_desc_en",
 		{"loc_talent_veteran_weapon_switch_replenish_toughness_description"}, {"en"},
-			loc_text("Activating "..COLORS_KWords.Meleespec_rgb.." and "..COLORS_KWords.Rangedspec_rgb.." replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb..". {cooldown:%s} seconds Cooldown for each."..TALENTS_Enh_desc2.ED_VET_Keystone_3_3_rgb)), -- toughness: 20%, cooldown: 3 -- s->seconds -- colors
+			loc_text("Activating "..COLORS_KWords.Meleespec_rgb.." and "..COLORS_KWords.Rangedspec_rgb.." replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb..". {cooldown:%s} seconds Cooldown for each."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_3_3_rgb)),
+				-- toughness: 20%, cooldown: 3, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys3_003_desc_fr",
 		{"loc_talent_veteran_weapon_switch_replenish_toughness_description"}, {"fr"},
@@ -4653,7 +4934,9 @@ local localization_templates = {
 	--[+ KEYSTONE 3-4 - Fleeting Fire +]--
 	create_template("talent_tree_vet_keys3_004_desc_en",
 		{"loc_talent_veteran_weapon_switch_reload_speed_description"}, {"en"},
-			loc_text("Activating "..COLORS_KWords.Rangedspec_rgb.." grants {reload_speed:%s} Reload Speed for {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Keystone_3_4_rgb)), -- reload_speed: 20%, duration: 5 -- s->seconds -- colors
+			loc_text("Activating "..COLORS_KWords.Rangedspec_rgb.." grants {reload_speed:%s} Reload Speed for {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_3_4_rgb)),
+				-- reload_speed: 20%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys3_004_desc_fr",
 		{"loc_talent_veteran_weapon_switch_reload_speed_description"}, {"fr"},
@@ -4675,7 +4958,9 @@ local localization_templates = {
 	--[+ KEYSTONE 3-5 - Conditioning +]--
 	create_template("talent_tree_vet_keys3_005_desc_en",
 		{"loc_talent_veteran_weapon_switch_stamina_reduction_description"}, {"en"},
-			loc_text("Activating "..COLORS_KWords.Meleespec_rgb.." grants {stamina_reduction:%s} "..COLORS_KWords.Stamina_rgb.." Cost Reduction for {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Keystone_3_5_rgb)), -- stamina_reduction: 25%, duration: 3 -- s->seconds -- colors
+			loc_text("Activating "..COLORS_KWords.Meleespec_rgb.." grants {stamina_reduction:%s} "..COLORS_KWords.Stamina_rgb.." Cost Reduction for {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Keystone_3_5_rgb)),
+				-- stamina_reduction: 25%, duration: 3, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_keys3_005_desc_fr",
 		{"loc_talent_veteran_weapon_switch_stamina_reduction_description"}, {"fr"},
@@ -4698,7 +4983,9 @@ local localization_templates = {
 	--[+ Passive 1 - Longshot +]--
 	create_template("talent_tree_vet_pas_001_desc_en",
 		{"loc_talent_veteran_increased_damage_based_on_range_desc"}, {"en"},
-			loc_text("Deal up to {max_damage:%s} Ranged Base "..COLORS_KWords.Damage_rgb..". Bonus is reduced the nearer the target."..TALENTS_Enh_desc2.ED_VET_Passive_1_rgb)), -- max_damage: +20% -- colors
+			loc_text("Deal up to {max_damage:%s} Ranged Base "..COLORS_KWords.Damage_rgb..". Bonus is reduced the nearer the target."
+				..TALENTS_Enh_desc2.ED_VET_Passive_1_rgb)),
+				-- max_damage: +20%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_001_desc_fr",
 		{"loc_talent_veteran_increased_damage_based_on_range_desc"}, {"fr"},
@@ -4711,7 +4998,9 @@ local localization_templates = {
 	--[+ Passive 2 - Close Order Drill +]--
 	create_template("talent_tree_vet_pas_002_desc_en",
 		{"loc_talent_veteran_toughness_damage_reduction_per_ally_description"}, {"en"},
-			loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_11_rgb.." "..COLORS_KWords.Toughness_dmg_red_rgb.." per Ally in "..COLORS_KWords.Coherency_rgb..". Up to {toughness:%s}."..TALENTS_Enh_desc2.ED_VET_Passive_2_rgb)), -- toughness: +33% -- colors
+			loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_11_rgb.." "..COLORS_KWords.Toughness_dmg_red_rgb.." per Ally in "..COLORS_KWords.Coherency_rgb..". Up to {toughness:%s}."
+				..TALENTS_Enh_desc2.ED_VET_Passive_2_rgb)),
+				-- toughness: +33%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_002_desc_fr",
 		{"loc_talent_veteran_toughness_damage_reduction_per_ally_description"}, {"fr"},
@@ -4724,7 +5013,9 @@ local localization_templates = {
 	--[+ Passive 3 - One Motion +]--
 	create_template("talent_tree_vet_pas_003_desc_en",
 		{"loc_talent_veteran_reduce_swap_time_desc"}, {"en"},
-			loc_text("{swap_speed} Weapon Swap Speed."..TALENTS_Enh_desc2.ED_VET_Passive_3_rgb)), -- swap_speed: +25%
+			loc_text("{swap_speed} Weapon Swap Speed."
+				..TALENTS_Enh_desc2.ED_VET_Passive_3_rgb)),
+				-- swap_speed: +25%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_003_desc_fr",
 		{"loc_talent_veteran_reduce_swap_time_desc"}, {"fr"},
@@ -4737,7 +5028,9 @@ local localization_templates = {
 	--[+ Passive 4 - Exhilarating Takedown +]--
 	create_template("talent_tree_vet_pas_004_desc_en",
 		{"loc_talent_veteran_toughness_on_weakspot_kill_desc"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished and "..COLORS_Numbers.n_1_rgb.." Stack of {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." is gained for {duration:%s} seconds on a Ranged "..COLORS_KWords.Weak_spot_rgb.." kill. Stacks {stacks:%s} times."..TALENTS_Enh_desc2.ED_VET_Passive_4_rgb)), -- toughness: 15%, toughness_damage_reduction: +10%, duration: 8, stacks: 3 -- rewrite -- s->seconds -- colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished and "..COLORS_Numbers.n_1_rgb.." Stack of {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." is gained for {duration:%s} seconds on a Ranged "..COLORS_KWords.Weak_spot_rgb.." kill. Stacks {stacks:%s} times."
+				..TALENTS_Enh_desc2.ED_VET_Passive_4_rgb)),
+				-- toughness: 15%, toughness_damage_reduction: +10%, duration: 8, stacks: 3, rewrite, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_004_desc_fr",
 		{"loc_talent_veteran_toughness_on_weakspot_kill_desc"}, {"fr"},
@@ -4750,7 +5043,9 @@ local localization_templates = {
 	--[+ Passive 5 - Volley Adept +]--
 	create_template("talent_tree_vet_pas_005_desc_en",
 		{"loc_talent_veteran_reload_speed_on_elite_kill_desc"}, {"en"},
-			loc_text("{reload_speed:%s} Reload Speed on Elite and Specialist Enemy Kill."..TALENTS_Enh_desc2.ED_VET_Passive_5_rgb)), -- reload_speed: +30% -- &->and
+			loc_text("{reload_speed:%s} Reload Speed on Elite and Specialist Enemy Kill."
+				..TALENTS_Enh_desc2.ED_VET_Passive_5_rgb)),
+				-- reload_speed: +30%, &->and
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_005_desc_fr",
 		{"loc_talent_veteran_reload_speed_on_elite_kill_desc"}, {"fr"},
@@ -4763,7 +5058,9 @@ local localization_templates = {
 	--[+ Passive 6 - Charismatic +]--
 	create_template("talent_tree_vet_pas_006_desc_en",
 		{"loc_talent_veteran_increased_aura_radius_description"}, {"en"},
-			loc_text("{radius:%s} Aura radius."..TALENTS_Enh_desc2.ED_VET_Passive_6_rgb)), -- radius: +50%
+			loc_text("{radius:%s} Aura radius."
+				..TALENTS_Enh_desc2.ED_VET_Passive_6_rgb)),
+				-- radius: +50%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_006_desc_fr",
 		{"loc_talent_veteran_increased_aura_radius_description"}, {"fr"},
@@ -4776,7 +5073,9 @@ local localization_templates = {
 	--[+ Passive 7 - Confirmed Kill +]--
 	create_template("talent_tree_vet_pas_007_desc_en",
 		{"loc_talent_veteran_toughness_on_elite_kill_desc"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished on killing an Elite or Specialist Enemy, and a further {toughness_over_time:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Passive_7_rgb)), -- toughness: 10%, toughness_over_time: 20%, duration: 10 -- s->seconds -- colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished on killing an Elite or Specialist Enemy, and a further {toughness_over_time:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_7_rgb)),
+				-- toughness: 10%, toughness_over_time: 20%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_007_desc_fr",
 		{"loc_talent_veteran_toughness_on_elite_kill_desc"}, {"fr"},
@@ -4789,7 +5088,9 @@ local localization_templates = {
 	--[+ Passive 8 - Tactical Reload +]--
 	create_template("talent_tree_vet_pas_008_desc_en",
 		{"loc_talent_veteran_reload_speed_non_empty_mag_desc"}, {"en"},
-			loc_text("{reload_speed:%s} Reload Speed if your weapon contains Ammo."..TALENTS_Enh_desc2.ED_VET_Passive_8_rgb)), -- reload_speed: +25%
+			loc_text("{reload_speed:%s} Reload Speed if your weapon contains Ammo."
+				..TALENTS_Enh_desc2.ED_VET_Passive_8_rgb)),
+				-- reload_speed: +25%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_008_desc_fr",
 		{"loc_talent_veteran_reload_speed_non_empty_mag_desc"}, {"fr"},
@@ -4802,7 +5103,9 @@ local localization_templates = {
 	--[+ Passive 9 - Out for Blood +]--
 	create_template("talent_tree_vet_pas_009_desc_en",
 		{"loc_talent_veteran_all_kills_replenish_toughness_description"}, {"en"},
-			loc_text("{toughness:%s} additional "..COLORS_KWords.Toughness_rgb.." is replenished with each kill."..TALENTS_Enh_desc2.ED_VET_Passive_9_rgb)), -- toughness: 5% -- colors
+			loc_text("{toughness:%s} additional "..COLORS_KWords.Toughness_rgb.." is replenished with each kill."
+				..TALENTS_Enh_desc2.ED_VET_Passive_9_rgb)),
+				-- toughness: 5%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_009_desc_fr",
 		{"loc_talent_veteran_all_kills_replenish_toughness_description"}, {"fr"},
@@ -4815,7 +5118,10 @@ local localization_templates = {
 	--[+ Passive 10 - Get Back in the Fight! +]--
 	create_template("talent_tree_vet_pas_010_desc_en",
 		{"loc_talent_veteran_movement_bonus_on_toughness_broken_desc"}, {"en"},
-			loc_text("{stamina_percent:%s} "..COLORS_KWords.Stamina_rgb.." restored, along with "..COLORS_KWords.Stun_rgb.." and Slow Immunity, for {duration:%s} seconds when "..COLORS_KWords.Toughness_rgb.." is broken.\n\n{cooldown:%s} seconds Cooldown."..TALENTS_Enh_desc2.ED_VET_Passive_10_rgb)), -- duration: 6, stamina_percent: +50%, cooldown: 30 -- rewrite -- &->and -- s->seconds -- colors
+			loc_text("{stamina_percent:%s} "..COLORS_KWords.Stamina_rgb.." restored, along with "..COLORS_KWords.Stun_rgb.." and Slow Immunity, for {duration:%s} seconds when "..COLORS_KWords.Toughness_rgb.." is broken.\n\n"
+				.."Cooldown {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_10_rgb)),
+				-- duration: 6, stamina_percent: +50%, cooldown: 30, rewrite, &->and, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_010_desc_fr",
 		{"loc_talent_veteran_movement_bonus_on_toughness_broken_desc"}, {"fr"},
@@ -4828,7 +5134,9 @@ local localization_templates = {
 	--[+ Passive 11 - Catch a Breath +]--
 	create_template("talent_tree_vet_pas_011_desc_en",
 		{"loc_talent_veteran_replenish_toughness_outside_melee_hit_desc"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second is replenished after not being targeted by a Melee Attack for {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Passive_11_rgb)), -- toughness: 5%, range: 8 -- m->meters -- colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second is replenished after not being targeted by a Melee Attack for {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_11_rgb)),
+				-- toughness: 5%, range: 8, m->meters, colors
 	--[+ French +]--Reprendre son souffle !!! ligne géo /!\
 	create_template("talent_tree_vet_pas_011_desc_fr",
 		{"loc_talent_veteran_replenish_toughness_outside_melee_hit_desc"}, {"fr"},
@@ -4841,7 +5149,12 @@ local localization_templates = {
 	--[+ Passive 12 - Grenade Tinkerer +]--
 	create_template("talent_tree_vet_pas_012_desc_en",
 		{"loc_talent_veteran_improved_grenades_desc"}, {"en"},
-			loc_text("Improve your chosen Grenade:\n{krak_grenade:%s}: {krak:%s} "..COLORS_KWords.Damage_rgb..".\n{frag_grenade:%s}: {frag_damage:%s} "..COLORS_KWords.Damage_rgb.." and Radius.\n{smoke_grenade:%s}: {smoke:%s} Duration."..TALENTS_Enh_desc2.ED_VET_Passive_12_rgb)), -- krak_grenade: Krak Grenade, krak: +50%, frag_grenade: Frag Grenade, frag_damage: +25%, smoke_grenade: Smoke Grenade, smoke: +100% -- &->and -- colors
+			loc_text("Improve your chosen Grenade:\n"
+				.."{krak_grenade:%s}: {krak:%s} "..COLORS_KWords.Damage_rgb..".\n"
+				.."{frag_grenade:%s}: {frag_damage:%s} "..COLORS_KWords.Damage_rgb.." and Radius.\n"
+				.."{smoke_grenade:%s}: {smoke:%s} Duration."
+				..TALENTS_Enh_desc2.ED_VET_Passive_12_rgb)),
+				-- krak_grenade: Krak Grenade, krak: +50%, frag_grenade: Frag Grenade, frag_damage: +25%, smoke_grenade: Smoke Grenade, smoke: +100%, &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_012_desc_fr",
 		{"loc_talent_veteran_improved_grenades_desc"}, {"fr"},
@@ -4854,7 +5167,9 @@ local localization_templates = {
 	--[+ Passive 13 - Covering Fire +]--
 	create_template("talent_tree_vet_pas_013_desc_en",
 		{"loc_talent_veteran_replenish_toughness_and_boost_allies_desc"}, {"en"},
-			loc_text("When you kill an enemy with a Ranged Attack, Allies within {radius:%s} meters of the target Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and receive {base_damage:%s} to all Base "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Passive_13_rgb)), -- radius: 5, toughness: 15%, base_damage: +10%, duration: 3 -- &->and s->seconds -- colors
+			loc_text("When you kill an enemy with a Ranged Attack, Allies within {radius:%s} meters of the target Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and receive {base_damage:%s} to all Base "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_13_rgb)),
+				-- radius: 5, toughness: 15%, base_damage: +10%, duration: 3, &->and s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_013_desc_fr",
 		{"loc_talent_veteran_replenish_toughness_and_boost_allies_desc"}, {"fr"},
@@ -4867,7 +5182,9 @@ local localization_templates = {
 	--[+ Passive 14 - Serrated Blade +]--
 	create_template("talent_tree_vet_pas_014_desc_en",
 		{"loc_talent_veteran_hits_cause_bleed_desc"}, {"en"},
-			loc_text(COLORS_Numbers.n_plus_rgb.."{stacks:%s} Stack of "..COLORS_KWords.Bleed_rgb.." to the target on Melee Hit. Up to "..COLORS_Numbers.n_16_rgb.."."..TALENTS_Enh_desc2.ED_VET_Passive_14_rgb)), -- stacks: 1 -- Stack(s)->Stacks -- colors
+			loc_text(COLORS_Numbers.n_plus_rgb.."{stacks:%s} Stack of "..COLORS_KWords.Bleed_rgb.." to the target on Melee Hit. Up to "..COLORS_Numbers.n_16_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Passive_14_rgb)),
+				-- stacks: 1 -- Stack(s)->Stacks, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_014_desc_fr",
 		{"loc_talent_veteran_hits_cause_bleed_desc"}, {"fr"},
@@ -4880,7 +5197,11 @@ local localization_templates = {
 	--[+ Passive 15 - Agile Engagement +]--
 	create_template("talent_tree_vet_pas_015_desc_en",
 		{"loc_talent_veteran_kill_grants_damage_to_other_slot_desc"}, {"en"},
-			loc_text("{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on killing an enemy with a Melee attack.\n{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." on killing an enemy with a Ranged attack.\nLasts {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Passive_15_rgb)), -- damage: +25%, duration: 5 -- s->seconds -- colors
+			loc_text("{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on killing an enemy with a Melee attack.\n"
+				.."{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." on killing an enemy with a Ranged attack.\n"
+				.."Lasts {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_15_rgb)),
+				-- damage: +25%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_015_desc_fr",
 		{"loc_talent_veteran_kill_grants_damage_to_other_slot_desc"}, {"fr"},
@@ -4893,7 +5214,9 @@ local localization_templates = {
 	--[+ Passive 16 - Kill Zone +]--
 	create_template("talent_tree_vet_pas_016_desc_en",
 		{"loc_talent_veteran_ranged_power_out_of_melee_new_desc"}, {"en"},
-			loc_text("{ranged_damage:%s} Base Ranged "..COLORS_KWords.Damage_rgb.." when you have avoided Melee Attacks for {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Passive_16_rgb)), -- ranged_damage: +20%, radius: 8 -- m->meters -- colors
+			loc_text("{ranged_damage:%s} Base Ranged "..COLORS_KWords.Damage_rgb.." when you have avoided Melee Attacks for {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_16_rgb)),
+				-- ranged_damage: +20%, radius: 8, m->meters, colors
 	--[+ French +]--Zone délimination !!! ligne géo
 	create_template("talent_tree_vet_pas_016_desc_fr",
 		{"loc_talent_veteran_ranged_power_out_of_melee_new_desc"}, {"fr"},
@@ -4906,7 +5229,9 @@ local localization_templates = {
 	--[+ Passive 17 - Opening Salvo +]--
 	create_template("talent_tree_vet_pas_017_desc_en",
 		{"loc_talent_veteran_bonus_crit_chance_on_ammo_desc"}, {"en"},
-			loc_text("The first {ammo:%s} Ammo after a Reload has {crit_chance:%s} Ranged "..COLORS_KWords.Crit_hit_rgb.." Chance."..TALENTS_Enh_desc2.ED_VET_Passive_17_rgb)), -- ammo: 20%, crit_chance: +10% -- colors
+			loc_text("The first {ammo:%s} Ammo after a Reload has {crit_chance:%s} Ranged "..COLORS_KWords.Crit_hit_rgb.." Chance."
+				..TALENTS_Enh_desc2.ED_VET_Passive_17_rgb)),
+				-- ammo: 20%, crit_chance: +10%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_017_desc_fr",
 		{"loc_talent_veteran_bonus_crit_chance_on_ammo_desc"}, {"fr"},
@@ -4919,7 +5244,13 @@ local localization_templates = {
 	--[+ Passive 18 - Field Improvisation +]--
 	create_template("talent_tree_vet_pas_018_desc_en",
 		{"loc_talent_veteran_better_deployables_description"}, {"en"},
-			loc_text("Medi-Packs:\nHeal {damage_heal:%s} faster,\nReplenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second,\nCleanse "..COLORS_KWords.Corruption_rgb.." up to the next "..COLORS_KWords.Wound_rgb..".\n\nAmmo Crates also restore Grenades."..TALENTS_Enh_desc2.ED_VET_Passive_18_rgb)), -- damage_heal: +100%, toughness: 1% -- rewrite -- &->and -- colors
+			loc_text("Medi-Packs:\n"
+				.."Heal {damage_heal:%s} faster,\n"
+				.."Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second,\n"
+				.."Cleanse "..COLORS_KWords.Corruption_rgb.." up to the next "..COLORS_KWords.Wound_rgb..".\n\n"
+				.."Ammo Crates also restore Grenades."
+				..TALENTS_Enh_desc2.ED_VET_Passive_18_rgb)),
+				-- damage_heal: +100%, toughness: 1%, rewrite, &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_018_desc_fr",
 		{"loc_talent_veteran_better_deployables_description"}, {"fr"},
@@ -4927,12 +5258,17 @@ local localization_templates = {
 	--[+ Russian +]-- Полевая импровизация 
 	create_template("talent_tree_vet_pas_018_desc_ru",
 		{"loc_talent_veteran_better_deployables_description"}, {"ru"},
-			loc_text("Медпаки:\n{damage_heal:%s} к скорости лечения,\n{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду и очищается "..COLORS_KWords_ru.Corruption_a_rgb_ru.." вплоть до следующей "..COLORS_KWords_ru.Wound_y_rgb_ru..".\nЯщики с боеприпасами также восстанавливают гранаты."..TALENTS_Enh_desc2_ru.ED_VET_Passive_18_rgb_ru)),
+			loc_text("Медпаки:\n"
+				.."{damage_heal:%s} к скорости лечения,\n"
+				.."{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду и очищается "..COLORS_KWords_ru.Corruption_a_rgb_ru.." вплоть до следующей "..COLORS_KWords_ru.Wound_y_rgb_ru..".\n"
+				.."Ящики с боеприпасами также восстанавливают гранаты."..TALENTS_Enh_desc2_ru.ED_VET_Passive_18_rgb_ru)),
 
 	--[+ Passive 19 - Twinned Blast +]--
 	create_template("talent_tree_vet_pas_019_desc_en",
 		{"loc_talent_veteran_extra_grenade_throw_chance_desc"}, {"en"},
-			loc_text("{chance:%s} chance to throw an additional Grenade but this still only consumes a single Grenade."..TALENTS_Enh_desc2.ED_VET_Passive_19_rgb)), -- chance: 20% -- -()
+			loc_text("{chance:%s} chance to throw an additional Grenade but this still only consumes a single Grenade."
+				..TALENTS_Enh_desc2.ED_VET_Passive_19_rgb)),
+				-- chance: 20%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_019_desc_fr",
 		{"loc_talent_veteran_extra_grenade_throw_chance_desc"}, {"fr"},
@@ -4945,7 +5281,9 @@ local localization_templates = {
 	--[+ Passive 20 - Demolition Stockpile +]--
 	create_template("talent_tree_vet_pas_020_desc_en",
 		{"loc_talent_veteran_replenish_grenade_desc"}, {"en"},
-			loc_text("Replenish {amount:%s} Grenade every {time:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Passive_20_rgb)), -- amount: 1, time: 60 -- Grenade(s)->Grenade -- s->seconds
+			loc_text("Replenish {amount:%s} Grenade every {time:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_20_rgb)),
+				-- amount: 1, time: 60, Grenade(s)->Grenade, s->seconds
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_020_desc_fr",
 		{"loc_talent_veteran_replenish_grenade_desc"}, {"fr"},
@@ -4958,7 +5296,9 @@ local localization_templates = {
 	--[+ Passive 21 - Grenadier +]--
 	create_template("talent_tree_vet_pas_021_desc_en",
 		{"loc_talent_veteran_extra_grenade_description"}, {"en"},
-			loc_text("You can carry {ammo:%s} extra Grenade."..TALENTS_Enh_desc2.ED_VET_Passive_21_rgb)), -- ammo: 1 -- Grenade(s)->Grenade
+			loc_text("You can carry {ammo:%s} extra Grenade."
+				..TALENTS_Enh_desc2.ED_VET_Passive_21_rgb)),
+				-- ammo: 1, Grenade(s)->Grenade
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_021_desc_fr",
 		{"loc_talent_veteran_extra_grenade_description"}, {"fr"},
@@ -4971,7 +5311,9 @@ local localization_templates = {
 	--[+ Passive 22 - Leave No One Behind +]--
 	create_template("talent_tree_vet_pas_022_desc_en",
 		{"loc_talent_veteran_movement_speed_towards_downed_description"}, {"en"},
-			loc_text("{revive_speed:%s} Assist Speed and Revive Speed. {movement_speed:%s} Movement Speed and "..COLORS_KWords.Stun_rgb.." Immunity when moving towards a Knocked Down or Incapacitated Ally. Whenever you Revive a Knocked Down Ally, they receive {damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Passive_22_rgb)), -- revive_speed: +20%, movement_speed: +20%, damage_reduction: +33%, duration: 5 -- &->and -- s->seconds -- colors
+			loc_text("{revive_speed:%s} Assist Speed and Revive Speed. {movement_speed:%s} Movement Speed and "..COLORS_KWords.Stun_rgb.." Immunity when moving towards a Knocked Down or Incapacitated Ally. Whenever you Revive a Knocked Down Ally, they receive {damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_22_rgb)),
+				-- revive_speed: +20%, movement_speed: +20%, damage_reduction: +33%, duration: 5, &->and, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_022_desc_fr",
 		{"loc_talent_veteran_movement_speed_towards_downed_description"}, {"fr"},
@@ -4984,7 +5326,9 @@ local localization_templates = {
 	--[+ Passive 23 - Precision Strikes +]--
 	create_template("talent_tree_vet_pas_023_desc_en",
 		{"loc_talent_veteran_increased_weakspot_damage_desc"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb.." from Melee and Ranged attacks."..TALENTS_Enh_desc2.ED_VET_Passive_23_rgb)), -- damage: +30% -- colors
+			loc_text("{damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb.." from Melee and Ranged attacks."
+				..TALENTS_Enh_desc2.ED_VET_Passive_23_rgb)),
+				-- damage: +30%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_023_desc_fr",
 		{"loc_talent_veteran_increased_weakspot_damage_desc"}, {"fr"},
@@ -5010,7 +5354,16 @@ local localization_templates = {
 	--[+ Passive 25 - Deadshot +]--
 	create_template("talent_tree_vet_pas_025_desc_en",
 		{"loc_talent_veteran_ads_drains_stamina_boost_desc"}, {"en"},
-			loc_text("While aiming and being above 0 "..COLORS_KWords.Stamina_rgb.." you Gain:\n{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb..",\n{sway_reduction:%s} Sway Reduction,\n"..COLORS_Numbers.pc_p19_rgb.." Spread Reduction and\n"..COLORS_Numbers.pc_p12_rgb.." Recoil Reduction,\nbut Drains:\n{stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second and\n{stamina_per_shot:%s} an additional "..COLORS_KWords.Stamina_rgb.." per shot."..TALENTS_Enh_desc2.ED_VET_Passive_25_rgb)), -- crit_chance: +25%, sway_reduction: +60%, stamina: 0.75, stamina_per_shot: 0.25 -- rewrite on_Aim! -- &->and -- colors
+			loc_text("While aiming and being above 0 "..COLORS_KWords.Stamina_rgb.." you Gain:\n"
+				.."{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb..",\n"
+				.."{sway_reduction:%s} Sway Reduction,\n"
+				..COLORS_Numbers.pc_p19_rgb.." Spread Reduction and\n"
+				..COLORS_Numbers.pc_p12_rgb.." Recoil Reduction,\n"
+				.."but Drains:\n"
+				.."{stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second and\n"
+				.."{stamina_per_shot:%s} an additional "..COLORS_KWords.Stamina_rgb.." per shot."
+				..TALENTS_Enh_desc2.ED_VET_Passive_25_rgb)),
+				-- crit_chance: +25%, sway_reduction: +60%, stamina: 0.75, stamina_per_shot: 0.25, rewrite on_Aim!, &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_025_desc_fr",
 		{"loc_talent_veteran_ads_drains_stamina_boost_desc"}, {"fr"},
@@ -5023,7 +5376,9 @@ local localization_templates = {
 	--[+ Passive 26 - Born Leader +]--
 	create_template("talent_tree_vet_pas_026_desc_en",
 		{"loc_talent_veteran_allies_share_toughness_description"}, {"en"},
-			loc_text("{toughness:%s} of any "..COLORS_KWords.Toughness_rgb.." you replenish is restored to Allies in "..COLORS_KWords.Coherency_rgb.."."..TALENTS_Enh_desc2.ED_VET_Passive_26_rgb)), -- toughness: 15% -- rewrite -- colors
+			loc_text("{toughness:%s} of any "..COLORS_KWords.Toughness_rgb.." you replenish is restored to Allies in "..COLORS_KWords.Coherency_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Passive_26_rgb)),
+				-- toughness: 15%, rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_026_desc_fr",
 		{"loc_talent_veteran_allies_share_toughness_description"}, {"fr"},
@@ -5036,7 +5391,9 @@ local localization_templates = {
 	--[+ Passive 27 - Keep Their Heads Down! +]--
 	create_template("talent_tree_vet_pas_027_desc_en",
 		{"loc_talent_veteran_increase_suppression_desc"}, {"en"},
-			loc_text("{suppression:%s} Ranged Attack Suppression."..TALENTS_Enh_desc2.ED_VET_Passive_27_rgb)), -- suppression: +50%
+			loc_text("{suppression:%s} Ranged Attack Suppression."
+				..TALENTS_Enh_desc2.ED_VET_Passive_27_rgb)),
+				-- suppression: +50%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_027_desc_fr",
 		{"loc_talent_veteran_increase_suppression_desc"}, {"fr"},
@@ -5049,7 +5406,9 @@ local localization_templates = {
 	--[+ Passive 28 - Reciprocity +]--
 	create_template("talent_tree_vet_pas_028_desc_en",
 		{"loc_talent_veteran_dodging_grants_crit_description"}, {"en"},
-			loc_text("{crit_chance:%s} "..COLORS_KWords.Crit_hit_rgb.." Chance for {duration:%s} seconds on successful Dodge. Stacks {stacks:%s} times."..TALENTS_Enh_desc2.ED_VET_Passive_28_rgb)), -- crit_chance: +5%, duration: 8, stacks: 5 -- s->seconds -- colors
+			loc_text("{crit_chance:%s} "..COLORS_KWords.Crit_hit_rgb.." Chance for {duration:%s} seconds on successful Dodge. Stacks {stacks:%s} times."
+				..TALENTS_Enh_desc2.ED_VET_Passive_28_rgb)),
+				-- crit_chance: +5%, duration: 8, stacks: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_028_desc_fr",
 		{"loc_talent_veteran_dodging_grants_crit_description"}, {"fr"},
@@ -5062,7 +5421,9 @@ local localization_templates = {
 	--[+ Passive 29 - Duck and Dive +]--
 	create_template("talent_tree_vet_pas_029_desc_en",
 		{"loc_talent_veteran_stamina_on_ranged_dodge_desc"}, {"en"},
-			loc_text("{stamina:%s} of Max "..COLORS_KWords.Stamina_rgb.." on avoiding Ranged Attacks by Dodging, Sprinting or Sliding."..TALENTS_Enh_desc2.ED_VET_Passive_29_rgb)), -- stamina: +30%
+			loc_text("{stamina:%s} of Max "..COLORS_KWords.Stamina_rgb.." on avoiding Ranged Attacks by Dodging, Sprinting or Sliding."
+				..TALENTS_Enh_desc2.ED_VET_Passive_29_rgb)),
+				-- stamina: +30%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_029_desc_fr",
 		{"loc_talent_veteran_stamina_on_ranged_dodge_desc"}, {"fr"},
@@ -5075,7 +5436,9 @@ local localization_templates = {
 	--[+ Passive 30 - Fully Loaded +]--
 	create_template("talent_tree_vet_pas_030_desc_en",
 		{"loc_talent_veteran_ammo_increase_desc"}, {"en"},
-			loc_text("{ammo:%s} Ammo."..TALENTS_Enh_desc2.ED_VET_Passive_30_rgb)), -- ammo: +25%
+			loc_text("{ammo:%s} Ammo."
+				..TALENTS_Enh_desc2.ED_VET_Passive_30_rgb)),
+				-- ammo: +25%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_030_desc_fr",
 		{"loc_talent_veteran_ammo_increase_desc"}, {"fr"},
@@ -5088,7 +5451,9 @@ local localization_templates = {
 	--[+ Passive 31 - Tactical Awareness +]--
 	create_template("talent_tree_vet_pas_031_desc_en",
 		{"loc_talent_veteran_elite_kills_reduce_cooldown_desc"}, {"en"},
-			loc_text(COLORS_Numbers.n_minus_rgb.."{duration:%s} seconds to "..COLORS_KWords.Combat_ability_cd_rgb.." on killing a Specialist enemy."..TALENTS_Enh_desc2.ED_VET_Passive_31_rgb)), -- duration: 6 -- rewrite -- s->seconds -- colors
+			loc_text(COLORS_Numbers.n_minus_rgb.."{duration:%s} seconds to "..COLORS_KWords.Combat_ability_cd_rgb.." on killing a Specialist enemy."
+				..TALENTS_Enh_desc2.ED_VET_Passive_31_rgb)),
+				-- duration: 6, rewrite, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_031_desc_fr",
 		{"loc_talent_veteran_elite_kills_reduce_cooldown_desc"}, {"fr"},
@@ -5101,7 +5466,10 @@ local localization_templates = {
 	--[+ Passive 32 - Desperado +]--
 	create_template("talent_tree_vet_pas_032_desc_en",
 		{"loc_talent_veteran_increased_melee_crit_chance_and_melee_finesse_desc"}, {"en"},
-			loc_text("{crit_chance:%s} Melee "..COLORS_KWords.Crit_hit_chance_rgb.." and\n{finesse:%s} Melee "..COLORS_KWords.Finesse_rgb.." Bonus."..TALENTS_Enh_desc2.ED_VET_Passive_32_rgb)), -- crit_chance: +10%, finesse: +25%, -- &->and -- colors
+			loc_text("{crit_chance:%s} Melee "..COLORS_KWords.Crit_hit_chance_rgb.." and\n"
+				.."{finesse:%s} Melee "..COLORS_KWords.Finesse_rgb.." Bonus."
+				..TALENTS_Enh_desc2.ED_VET_Passive_32_rgb)),
+				-- crit_chance: +10%, finesse: +25%, -- &->and, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_032_desc_fr",
 		{"loc_talent_veteran_increased_melee_crit_chance_and_melee_finesse_desc"}, {"fr"},
@@ -5114,7 +5482,9 @@ local localization_templates = {
 	--[+ Passive 33 - Shock Trooper +]--
 	create_template("talent_tree_vet_pas_033_desc_en",
 		{"loc_talent_veteran_no_ammo_consumption_on_lasweapon_crit_desc"}, {"en"},
-			loc_text(COLORS_KWords.Crit_hits_rgb.." with Las-weapons consume no Ammo."..TALENTS_Enh_desc2.ED_VET_Passive_33_rgb)), -- colors
+			loc_text(COLORS_KWords.Crit_hits_rgb.." with Las-weapons consume no Ammo."
+				..TALENTS_Enh_desc2.ED_VET_Passive_33_rgb)),
+				-- colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_033_desc_fr",
 		{"loc_talent_veteran_no_ammo_consumption_on_lasweapon_crit_desc"}, {"fr"},
@@ -5127,7 +5497,9 @@ local localization_templates = {
 	--[+ Passive 34 - Superiority Complex +]--
 	create_template("talent_tree_vet_pas_034_desc_en",
 		{"loc_talent_veteran_increase_damage_vs_elites_desc"}, {"en"},
-			loc_text("{damage:%s} Base "..COLORS_KWords.Damage_rgb.." to Elite Enemies."..TALENTS_Enh_desc2.ED_VET_Passive_34_rgb)), -- damage: +15% -- -() -- colors
+			loc_text("{damage:%s} Base "..COLORS_KWords.Damage_rgb.." to Elite Enemies."
+				..TALENTS_Enh_desc2.ED_VET_Passive_34_rgb)),
+				-- damage: +15%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_034_desc_fr",
 		{"loc_talent_veteran_increase_damage_vs_elites_desc"}, {"fr"},
@@ -5140,7 +5512,9 @@ local localization_templates = {
 	--[+ Passive 35 - Iron Will +]--
 	create_template("talent_tree_vet_pas_035_desc_en",
 		{"loc_talent_veteran_tdr_on_high_toughness_desc"}, {"en"},
-			loc_text("{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." if above {toughness_percent:%s} "..COLORS_KWords.Toughness_rgb.."."..TALENTS_Enh_desc2.ED_VET_Passive_35_rgb)), -- toughness_damage_reduction: +50%, toughness_percent: 75% -- colors
+			loc_text("{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." if above {toughness_percent:%s} "..COLORS_KWords.Toughness_rgb.."."
+				..TALENTS_Enh_desc2.ED_VET_Passive_35_rgb)),
+				-- toughness_damage_reduction: +50%, toughness_percent: 75%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_035_desc_fr",
 		{"loc_talent_veteran_tdr_on_high_toughness_desc"}, {"fr"},
@@ -5153,7 +5527,9 @@ local localization_templates = {
 	--[+ Passive 36 - Demolition Team +]--
 	create_template("talent_tree_vet_pas_036_desc_en",
 		{"loc_talent_veteran_grenade_on_elite_kills_coop_desc"}, {"en"},
-			loc_text("{chance:%s} chance to replenish a Grenade when you or an Ally in "..COLORS_KWords.Coherency_rgb.." kills an Elite or Specialist Enemy."..TALENTS_Enh_desc2.ED_VET_Passive_36_rgb)), -- chance: 5%
+			loc_text("{chance:%s} chance to replenish a Grenade when you or an Ally in "..COLORS_KWords.Coherency_rgb.." kills an Elite or Specialist Enemy."
+				..TALENTS_Enh_desc2.ED_VET_Passive_36_rgb)),
+				-- chance: 5%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_036_desc_fr",
 		{"loc_talent_veteran_grenade_on_elite_kills_coop_desc"}, {"fr"},
@@ -5166,7 +5542,9 @@ local localization_templates = {
 	--[+ Passive 37 - Exploit Weakness +]--
 	create_template("talent_tree_vet_pas_037_desc_en",
 		{"loc_talent_veteran_crits_rend_description"}, {"en"},
-			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." is applied to the target by Melee "..COLORS_KWords.Crit_hits_rgb..". Stacks {max_stacks:%s} times and lasts {duration:%s} seconds."..TALENTS_Enh_desc2.ED_VET_Passive_37_rgb)), -- rending_multiplier: 10%, max_stacks: 2, duration: 5 -- s->seconds -- colors
+			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." is applied to the target by Melee "..COLORS_KWords.Crit_hits_rgb..". Stacks {max_stacks:%s} times and lasts {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_VET_Passive_37_rgb)),
+				-- rending_multiplier: 10%, max_stacks: 2, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_037_desc_fr",
 		{"loc_talent_veteran_crits_rend_description"}, {"fr"},
@@ -5179,7 +5557,9 @@ local localization_templates = {
 	--[+ Passive 38 - Onslaught +]--
 	create_template("talent_tree_vet_pas_038_desc_en",
 		{"loc_talent_veteran_continous_hits_apply_rending_description"}, {"en"},
-			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." is applied to the target for {duration:%s} seconds by Continuous hits to a Single target. Stacks {max_stacks:%s} times."..TALENTS_Enh_desc2.ED_VET_Passive_38_rgb)), -- rending_multiplier: 2.5%, duration: 5, max_stacks: 16 -- rewrite -- colors
+			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." is applied to the target for {duration:%s} seconds by Continuous hits to a Single target. Stacks {max_stacks:%s} times."
+				..TALENTS_Enh_desc2.ED_VET_Passive_38_rgb)),
+				-- rending_multiplier: 2.5%, duration: 5, max_stacks: 16, rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_038_desc_fr",
 		{"loc_talent_veteran_continous_hits_apply_rending_description"}, {"fr"},
@@ -5192,7 +5572,9 @@ local localization_templates = {
 	--[+ Passive 39 - Trench Fighter Drill +]--
 	create_template("talent_tree_vet_pas_039_desc_en",
 		{"loc_talent_veteran_attack_speed_description"}, {"en"},
-			loc_text("{melee_attack_speed:%s} Melee Attack Speed."..TALENTS_Enh_desc2.ED_VET_Passive_39_rgb)), -- melee_attack_speed: +10%
+			loc_text("{melee_attack_speed:%s} Melee Attack Speed."
+				..TALENTS_Enh_desc2.ED_VET_Passive_39_rgb)),
+				-- melee_attack_speed: +10%
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_039_desc_fr",
 		{"loc_talent_veteran_attack_speed_description"}, {"fr"},
@@ -5205,7 +5587,9 @@ local localization_templates = {
 	--[+ Passive 40 - Skirmisher +]--
 	create_template("talent_tree_vet_pas_040_desc_en",
 		{"loc_talent_veteran_damage_damage_after_sprinting_desc"}, {"en"},
-			loc_text("{base_damage:%s} to all Base "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Sprinting. Stacks {stacks:%s} times."..TALENTS_Enh_desc2.ED_VET_Passive_40_rgb)), -- base_damage: +5%, duration: 8, stacks: 5 -- s->seconds -- colors
+			loc_text("{base_damage:%s} to all Base "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Sprinting. Stacks {stacks:%s} times."
+				..TALENTS_Enh_desc2.ED_VET_Passive_40_rgb)),
+				-- base_damage: +5%, duration: 8, stacks: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_040_desc_fr",
 		{"loc_talent_veteran_damage_damage_after_sprinting_desc"}, {"fr"},
@@ -5218,7 +5602,12 @@ local localization_templates = {
 	--[+ Passive 41 - Competitive Urge +]--
 	create_template("talent_tree_vet_pas_041_desc_en",
 		{"loc_talent_veteran_ally_kills_increase_damage_description"}, {"en"},
-			loc_text("Whenever an Ally kills an Enemy you have a {proc_chance:%s} chance to gain for {duration:%s} seconds:\n{damage:%s} Base "..COLORS_KWords.Damage_rgb..",\n{melee_impact:%s} Melee "..COLORS_KWords.Impact_rgb.." and\n{suppression:%s} Suppression dealt."..TALENTS_Enh_desc2.ED_VET_Passive_41_rgb)), -- proc_chance: 2.5%, damage: +20%, melee_impact: +20%, suppression: +20%, duration: 8 -- rewrite -- &->and -- s->seconds -- colors
+			loc_text("Whenever an Ally kills an Enemy you have a {proc_chance:%s} chance to gain for {duration:%s} seconds:\n"
+				.."{damage:%s} Base "..COLORS_KWords.Damage_rgb..",\n"
+				.."{melee_impact:%s} Melee "..COLORS_KWords.Impact_rgb.." and\n"
+				.."{suppression:%s} Suppression dealt."
+				..TALENTS_Enh_desc2.ED_VET_Passive_41_rgb)),
+				-- proc_chance: 2.5%, damage: +20%, melee_impact: +20%, suppression: +20%, duration: 8, rewrite, &->and, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_041_desc_fr",
 		{"loc_talent_veteran_ally_kills_increase_damage_description"}, {"fr"},
@@ -5231,7 +5620,9 @@ local localization_templates = {
 	--[+ Passive 42 - Rending Strikes +]--
 	create_template("talent_tree_vet_pas_042_desc_en",
 		{"loc_talent_veteran_rending_bonus_desc"}, {"en"},
-			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Rending_rgb.." to all weapons."..TALENTS_Enh_desc2.ED_VET_Passive_42_rgb)), -- rending_multiplier: +10% -- colors
+			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Rending_rgb.." to all weapons."
+				..TALENTS_Enh_desc2.ED_VET_Passive_42_rgb)),
+				-- rending_multiplier: +10%, colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_042_desc_fr",
 		{"loc_talent_veteran_rending_bonus_desc"}, {"fr"},
@@ -5244,7 +5635,9 @@ local localization_templates = {
 	--[+ Passive 43 - Bring it Down! +]--
 	create_template("talent_tree_vet_pas_043_desc_en",
 		{"loc_talent_veteran_big_game_hunter_description"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ogryns and Monstrosities."..TALENTS_Enh_desc2.ED_VET_Passive_43_rgb)), -- damage: +20% -- &->and -- () -- colors
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ogryns and Monstrosities."
+				..TALENTS_Enh_desc2.ED_VET_Passive_43_rgb)),
+				-- damage: +20% -- &->and -- (), colors
 	--[+ French +]--
 	create_template("talent_tree_vet_pas_043_desc_fr",
 		{"loc_talent_veteran_big_game_hunter_description"}, {"fr"},
@@ -5259,7 +5652,11 @@ local localization_templates = {
 	--[+ BLITZ 0 - Big Box of Hurt +]--
 	create_template("talent_tree_ogr_blitz0_000_desc_en",
 		{"loc_ability_ogryn_grenade_box_description"}, {"en"},
-			loc_text("Throw a box of Grenades with great strength and enthusiasm for High "..COLORS_KWords.Damage_rgb.." against a Single Enemy.\nSlightly increased "..COLORS_KWords.Damage_rgb.." vs Unyielding and very low "..COLORS_KWords.Damage_rgb.." vs Carapace armor.\nReplenishes all boxes per Grenade pickup."..TALENTS_Enh_desc2.ED_OGR_Blitz_0_rgb)), -- colors
+			loc_text("Throw a box of Grenades with great strength and enthusiasm for High "..COLORS_KWords.Damage_rgb.." against a Single Enemy.\n"
+				.."Slightly increased "..COLORS_KWords.Damage_rgb.." vs Unyielding and very low "..COLORS_KWords.Damage_rgb.." vs Carapace armor.\n"
+				.."Replenishes all boxes per Grenade pickup."
+				..TALENTS_Enh_desc2.ED_OGR_Blitz_0_rgb)),
+				-- colors
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_blitz0_000_desc_fr",
 		{"loc_ability_ogryn_grenade_box_description"}, {"fr"},
@@ -5272,7 +5669,11 @@ local localization_templates = {
 	--[+ BLITZ 1 - Big Friendly Rock +]--
 	create_template("talent_tree_ogr_blitz1_000_desc_en",
 		{"loc_ability_ogryn_friend_rock_desc"}, {"en"},
-			loc_text("Toss a Big rock or hunk of junk at a Single Enemy. You pick up a new rock every {recharge:%s} seconds and can hold up to {max_charges:%s} rocks at a time.\nSlightly increased "..COLORS_KWords.Damage_rgb.." vs Maniac and very low "..COLORS_KWords.Damage_rgb.." vs Carapace. Extra "..COLORS_KWords.Finesse_rgb.." boost against Unyielding.\nOgryn cannot pick up Grenade ammo."..TALENTS_Enh_desc2.ED_OGR_Blitz_1_rgb)), -- recharge: 45, max_charges: 4 -- rewrite -- s->seconds
+			loc_text("Toss a Big rock or hunk of junk at a Single Enemy. You pick up a new rock every {recharge:%s} seconds and can hold up to {max_charges:%s} rocks at a time.\n"
+				.."Slightly increased "..COLORS_KWords.Damage_rgb.." vs Maniac and very low "..COLORS_KWords.Damage_rgb.." vs Carapace. Extra "..COLORS_KWords.Finesse_rgb.." boost against Unyielding.\n"
+				.."Ogryn cannot pick up Grenade ammo."
+				..TALENTS_Enh_desc2.ED_OGR_Blitz_1_rgb)),
+				-- recharge: 45, max_charges: 4, rewrite, s->seconds
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_blitz1_000_desc_fr",
 		{"loc_ability_ogryn_friend_rock_desc"}, {"fr"},
@@ -5285,8 +5686,9 @@ local localization_templates = {
 	--[+ BLITZ 1-1 - That One Didn't Count +]--
 	create_template("talent_tree_ogr_blitz1_001_desc_en",
 		{"loc_talent_ogryn_replenish_rock_on_miss_desc"}, {"en"},
-			loc_text("{talent_name:%s} Replenishes a Charge if you hit a "..COLORS_KWords.Weak_spot_rgb.." or hit no enemies. Cooldown "..COLORS_Numbers.cd_dur_var_rgb.." seconds.")), -- colors
-	--[+ French +]--Ca ne comtpe pas
+			loc_text("{talent_name:%s} Replenishes a Charge if you hit a "..COLORS_KWords.Weak_spot_rgb.." or hit no enemies. Cooldown "..COLORS_Numbers.cd_dur_var_rgb.." seconds.")),
+				-- colors
+	--[+ French +]-- Ca ne comtpe pas
 	create_template("talent_tree_ogr_blitz1_001_desc_fr",
 		{"loc_talent_ogryn_replenish_rock_on_miss_desc"}, {"fr"},
 			loc_text("{talent_name:%s} rend un caillou si vous touchez un "..COLORS_KWords_fr.Weakspot_rgb_fr.." ou si vous ne touchez aucun ennemi. Temps de rechargement "..COLORS_Numbers.cd_dur_var_rgb.." secondes")),
@@ -5298,7 +5700,13 @@ local localization_templates = {
 	--[+ BLITZ 2 - Frag Bomb +]--
 	create_template("talent_tree_ogr_blitz2_000_desc_en",
 		{"loc_ability_ogryn_grenade_demolition_desc"}, {"en"},
-			loc_text("Throw an Ogryn-sized (the only proper kind!) "..COLORS_KWords.Frag_gren_rgb.." with a {radius:%s} meters blast radius, dealing increased "..COLORS_KWords.Damage_rgb.." at the center.\nFuse time: 2 seconds.\nVery high armor "..COLORS_KWords.Damage_rgb.." vs Flak, Maniac, Unyielding.\nDeals high "..COLORS_KWords.Stagger_rgb.." against all enemies including Monstrosities, Captains/Twins (only without void shield).\nInstakill all enemies with an explosion except: Maulers, Crushers, Bulwarks and Monstrosities."..TALENTS_Enh_desc2.ED_OGR_Blitz_2_rgb)), -- radius: 16 -- m->meters -- colors
+			loc_text("Throw an Ogryn-sized (the only proper kind!) "..COLORS_KWords.Frag_gren_rgb.." with a {radius:%s} meters blast radius, dealing increased "..COLORS_KWords.Damage_rgb.." at the center.\n"
+				.."Fuse time: 2 seconds.\n"
+				.."Very high armor "..COLORS_KWords.Damage_rgb.." vs Flak, Maniac, Unyielding.\n"
+				.."Deals high "..COLORS_KWords.Stagger_rgb.." against all enemies including Monstrosities, Captains/Twins (only without void shield).\n"
+				.."Instakill all enemies with an explosion except: Maulers, Crushers, Bulwarks and Monstrosities."
+				..TALENTS_Enh_desc2.ED_OGR_Blitz_2_rgb)),
+				-- radius: 16, m->meters, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_blitz2_000_desc_fr",
 		{"loc_ability_ogryn_grenade_demolition_desc"}, {"fr"},
@@ -5311,7 +5719,11 @@ local localization_templates = {
 	--[+ BLITZ 3 - Bombs Away! +]--
 	create_template("talent_tree_ogr_blitz3_000_desc_en",
 		{"loc_talent_bonebreaker_grenade_super_armor_explosion_desc"}, {"en"},
-			loc_text("Throw a box of Grenades with great strength and enthusiasm to deal High "..COLORS_KWords.Damage_rgb.." to a Single Enemy.\nHitting an Enemy causes the box to break open, releasing {num_grenades:%s} grenades around the target.\nThis is an augmented version of {talent_name:%s}."..TALENTS_Enh_desc2.ED_OGR_Blitz_3_rgb)), -- num_grenades: 6, talent_name: Big Box of Hurt -- colors
+			loc_text("Throw a box of Grenades with great strength and enthusiasm to deal High "..COLORS_KWords.Damage_rgb.." to a Single Enemy.\n"
+				.."Hitting an Enemy causes the box to break open, releasing {num_grenades:%s} grenades around the target.\n"
+				.."This is an augmented version of {talent_name:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Blitz_3_rgb)),
+				-- num_grenades: 6, talent_name: Big Box of Hurt, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_blitz3_000_desc_fr",
 		{"loc_talent_bonebreaker_grenade_super_armor_explosion_desc"}, {"fr"},
@@ -5325,7 +5737,9 @@ local localization_templates = {
 	--[+ AURA 0 - Intimidating Presence +]--
 	create_template("talent_tree_ogr_aura0_000_desc_en",
 		{"loc_talent_ogryn_2_base_4_description_new"}, {"en"},
-			loc_text("{damage:%s} Heavy Melee Attack "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.."."..TALENTS_Enh_desc2.ED_OGR_Aura_0_rgb)), -- damage: +7.5% -- colors
+			loc_text("{damage:%s} Heavy Melee Attack "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
+				..TALENTS_Enh_desc2.ED_OGR_Aura_0_rgb)),
+				-- damage: +7.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_aura0_000_desc_fr",
 		{"loc_talent_ogryn_2_base_4_description_new"}, {"fr"},
@@ -5338,7 +5752,10 @@ local localization_templates = {
 	--[+ AURA 1 - Bonebreaker's Aura +]--
 	create_template("talent_tree_ogr_aura1_000_desc_en",
 		{"loc_talent_damage_aura_improved_new"}, {"en"},
-			loc_text("{damage:%s} Melee Attack "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n\nThis is an augmented version of {talent_name:%s}."..TALENTS_Enh_desc2.ED_OGR_Aura_1_rgb)), -- damage: +10%, talent_name: Intimidating Presence -- colors
+			loc_text("{damage:%s} Melee Attack "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n\n"
+				.."This is an augmented version of {talent_name:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Aura_1_rgb)),
+				-- damage: +10%, talent_name: Intimidating Presence, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_aura1_000_desc_fr",
 		{"loc_talent_damage_aura_improved_new"}, {"fr"},
@@ -5351,7 +5768,9 @@ local localization_templates = {
 	--[+ AURA 2 - Stay Close! +]--
 	create_template("talent_tree_ogr_aura2_000_desc_en",
 		{"loc_talent_ogryn_toughness_regen_aura_desc"}, {"en"},
-			loc_text("{toughness_regen_rate_modifier:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for you and Allies in "..COLORS_KWords.Coherency_rgb.."."..TALENTS_Enh_desc2.ED_OGR_Aura_2_rgb)), -- toughness_regen_rate_modifier: +25% -- colors
+			loc_text("{toughness_regen_rate_modifier:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
+				..TALENTS_Enh_desc2.ED_OGR_Aura_2_rgb)),
+				-- toughness_regen_rate_modifier: +25%, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_aura2_000_desc_fr",
 		{"loc_talent_ogryn_toughness_regen_aura_desc"}, {"fr"},
@@ -5364,7 +5783,10 @@ local localization_templates = {
 	--[+ AURA 3 - Coward Culling +]--
 	create_template("talent_tree_ogr_aura3_000_desc_en",
 		{"loc_talent_ogryn_damage_vs_suppressed_new_desc"}, {"en"},
-			loc_text("{suppression:%s} Suppression dealt.\n{damage:%s} "..COLORS_KWords.Damage_rgb.." against Suppressed Enemies for you and Allies in "..COLORS_KWords.Coherency_rgb.."."..TALENTS_Enh_desc2.ED_OGR_Aura_3_rgb)), -- damage:+20%. -- colors
+			loc_text("{suppression:%s} Suppression dealt.\n"
+				.."{damage:%s} "..COLORS_KWords.Damage_rgb.." against Suppressed Enemies for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
+				..TALENTS_Enh_desc2.ED_OGR_Aura_3_rgb)),
+				-- damage:+20%, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_aura3_000_desc_fr",
 		{"loc_talent_ogryn_damage_vs_suppressed_new_desc"}, {"fr"},
@@ -5378,7 +5800,10 @@ local localization_templates = {
 	--[+ ABILITY 0 - Bull Rush +]--
 	create_template("talent_tree_ogr_abil0_000_desc_en",
 		{"loc_ability_ogryn_charge_description_new"}, {"en"},
-			loc_text("Charge forward with great force, knocking back enemies and "..COLORS_KWords.Staggering_rgb.." them. Gain {attack_speed:%s} Attack Speed and {move_speed:%s} Movement Speed for {duration:%s} seconds. Charge is stopped on collision with Carapace Armoured Enemies, Unyielding Enemies and Monstrosities.\n\nBase Cooldown: {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_OGR_Ability_0_rgb)), -- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30 -- s->seconds -- colors
+			loc_text("Charge forward with great force, knocking back enemies and "..COLORS_KWords.Staggering_rgb.." them. Gain {attack_speed:%s} Attack Speed and {move_speed:%s} Movement Speed for {duration:%s} seconds. Charge is stopped on collision with Carapace Armoured Enemies, Unyielding Enemies and Monstrosities.\n\n"
+				.."Base Cooldown: {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_0_rgb)),
+				-- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_abil0_000_desc_fr",
 		{"loc_ability_ogryn_charge_description_new"}, {"fr"},
@@ -5391,7 +5816,11 @@ local localization_templates = {
 	--[+ ABILITY 1 - Indomitable +]--
 	create_template("talent_tree_ogr_abil1_000_desc_en",
 		{"loc_talent_ogryn_bull_rush_distance_desc"}, {"en"},
-			loc_text("Charge forward with great force, knocking back Enemies and "..COLORS_KWords.Staggering_rgb.." them. Gain {attack_speed:%s} Attack Speed and {move_speed:%s} Movement Speed for {duration:%s} seconds. Charge is stopped only on collision with Monstrosities.\nBase Cooldown: {cooldown:%s} seconds.\nThis is an augmented version of {talent_name:%s} with an increased charge distance of {distance:%s}."..TALENTS_Enh_desc2.ED_OGR_Ability_1_rgb)), -- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, talent_name: Bull Rush, distance: 100% -- s->seconds -- colors
+			loc_text("Charge forward with great force, knocking back Enemies and "..COLORS_KWords.Staggering_rgb.." them. Gain {attack_speed:%s} Attack Speed and {move_speed:%s} Movement Speed for {duration:%s} seconds. Charge is stopped only on collision with Monstrosities.\n"
+				.."Base Cooldown: {cooldown:%s} seconds.\n"
+				.."This is an augmented version of {talent_name:%s} with an increased charge distance of {distance:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_1_rgb)),
+				-- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, talent_name: Bull Rush, distance: 100%, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_abil1_000_desc_fr",
 		{"loc_talent_ogryn_bull_rush_distance_desc"}, {"fr"},
@@ -5404,7 +5833,9 @@ local localization_templates = {
 	--[+ ABILITY 1-1 - Stomping Boots +]--
 	create_template("talent_tree_ogr_abil1_001_desc_en",
 		{"loc_talent_ogryn_toughness_on_bull_rush_desc"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes per Enemy Hit with {ability:%s}."..TALENTS_Enh_desc2.ED_OGR_Ability_1_1_rgb)), -- toughness: +10%, ability: Indomitable -- rewrite -- colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes per Enemy Hit with {ability:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_1_1_rgb)),
+				-- toughness: +10%, ability: Indomitable, rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_abil1_001_desc_fr",
 		{"loc_talent_ogryn_toughness_on_bull_rush_desc"}, {"fr"},
@@ -5417,7 +5848,9 @@ local localization_templates = {
 	--[+ ABILITY 1-2 - Trample +]--
 	create_template("talent_tree_ogr_abil1_002_desc_en",
 		{"loc_talent_ogryn_ability_charge_trample_desc"}, {"en"},
-			loc_text("For each Enemy hit by {talent_name:%s} you gain a Stack of "..COLORS_KWords.Trample_rgb.." which increases Base "..COLORS_KWords.Damage_rgb.." by {damage:%s} for {duration:%s} seconds. Max Stacks {stack:%s}."..TALENTS_Enh_desc2.ED_OGR_Ability_1_2_rgb)), -- talent_name: Bull Rush, damage: +2%, duration: 8, stack: 25 -- rewrite -- s->seconds -- colors
+			loc_text("For each Enemy hit by {talent_name:%s} you gain a Stack of "..COLORS_KWords.Trample_rgb.." which increases Base "..COLORS_KWords.Damage_rgb.." by {damage:%s} for {duration:%s} seconds. Max Stacks {stack:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_1_2_rgb)),
+				-- talent_name: Bull Rush, damage: +2%, duration: 8, stack: 25, rewrite, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_abil1_002_desc_fr",
 		{"loc_talent_ogryn_ability_charge_trample_desc"}, {"fr"},
@@ -5430,7 +5863,9 @@ local localization_templates = {
 	--[+ ABILITY 1-3 - Pulverise +]--
 	create_template("talent_tree_ogr_abil1_003_desc_en",
 		{"loc_talent_ogryn_bleed_on_bull_rush_desc"}, {"en"},
-			loc_text("{stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." are applied to enemies hit by {ability:%s}."..TALENTS_Enh_desc2.ED_OGR_Ability_1_3_rgb)), -- stacks: 5, ability: Indomitable -- rewrite -- colors
+			loc_text("{stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." are applied to enemies hit by {ability:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_1_3_rgb)),
+				-- stacks: 5, ability: Indomitable, rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_abil1_003_desc_fr",
 		{"loc_talent_ogryn_bleed_on_bull_rush_desc"}, {"fr"},
@@ -5443,7 +5878,10 @@ local localization_templates = {
 	--[+ ABILITY 2 - Loyal Protector +]--
 	create_template("talent_tree_ogr_abil2_000_desc_en",
 		{"loc_ability_ogryn_taunt_shout_new_desc"}, {"en"},
-			loc_text("Taunt Enemies within {radius:%s} meters, making them Attack only you for {duration:%s} seconds. The effect repeats after {first_pulse:%s} seconds, and after {second_pulse:%s} seconds.\n\nBase Cooldown: {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_OGR_Ability_2_rgb)), -- radius: 12, duration: 15, first_pulse: 3, second_pulse: 6, cooldown: 45 -- m->meters -- s->seconds
+			loc_text("Taunt Enemies within {radius:%s} meters, making them Attack only you for {duration:%s} seconds. The effect repeats after {first_pulse:%s} seconds, and after {second_pulse:%s} seconds.\n\n"
+				.."Base Cooldown: {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_2_rgb)),
+				-- radius: 12, duration: 15, first_pulse: 3, second_pulse: 6, cooldown: 45, m->meters, s->seconds
 	--[+ French +]--Protecteur Loyal
 	create_template("talent_tree_ogr_abil2_000_desc_fr",
 		{"loc_ability_ogryn_taunt_shout_new_desc"}, {"fr"},
@@ -5451,12 +5889,15 @@ local localization_templates = {
 	--[+ Russian +]-- Верный защитник 
 	create_template("talent_tree_ogr_abil2_000_desc_ru",
 		{"loc_ability_ogryn_taunt_shout_new_desc"}, {"ru"},
-			loc_text("Вы кричите, провоцируя врагов в радиусе {radius:%s} метров и заставляя их атаковать только вас в течение {duration:%s} секунд. Эффект повторяется через {first_pulse:%s} секунды и через {second_pulse:%s} секунд.\n\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_rgb_ru)),
+			loc_text("Вы кричите, провоцируя врагов в радиусе {radius:%s} метров и заставляя их атаковать только вас в течение {duration:%s} секунд. Эффект повторяется через {first_pulse:%s} секунды и через {second_pulse:%s} секунд.\n\n"
+				.."Время восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_rgb_ru)),
 
 	--[+ ABILITY 2-1 - Valuable Distraction +]--
 	create_template("talent_tree_ogr_abil2_001_desc_en",
 		{"loc_talent_ogryn_taunt_damage_taken_increase_description"}, {"en"},
-			loc_text("{base_damage:%s} Base "..COLORS_KWords.Damage_rgb.." taken from all sources by enemies affected by {talent_name:%s} for "..COLORS_Numbers.n_15_rgb.." seconds."..TALENTS_Enh_desc2.ED_OGR_Ability_2_1_rgb)), -- talent_name: Loyal Protector, base_damage: +25% -- rewrite -- colors
+			loc_text("{base_damage:%s} Base "..COLORS_KWords.Damage_rgb.." taken from all sources by enemies affected by {talent_name:%s} for "..COLORS_Numbers.n_15_rgb.." seconds."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_2_1_rgb)),
+				-- talent_name: Loyal Protector, base_damage: +25%, rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_abil2_001_desc_fr",
 		{"loc_talent_ogryn_taunt_damage_taken_increase_description"}, {"fr"},
@@ -5469,7 +5910,9 @@ local localization_templates = {
 	--[+ ABILITY 2-2 - No Pain! +]--
 	create_template("talent_tree_ogr_abil2_002_desc_en",
 		{"loc_talent_ogryn_taunt_restore_toughness_new_desc"}, {"en"},
-			loc_text("{tougness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished by {talent_name:%s} and its repeat effects. Plus an additional {toughness_per_hit:%s} "..COLORS_KWords.Toughness_rgb.." every "..COLORS_Numbers.n_1_rgb.." second per enemy for {duration:%s} seconds, up to {max:%s}."..TALENTS_Enh_desc2.ED_OGR_Ability_2_2_rgb)), -- tougness: 2.5%, talent_name: Loyal Protector -- rewrite -- colors
+			loc_text("{tougness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished by {talent_name:%s} and its repeat effects. Plus an additional {toughness_per_hit:%s} "..COLORS_KWords.Toughness_rgb.." every "..COLORS_Numbers.n_1_rgb.." second per enemy for {duration:%s} seconds, up to {max:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_2_2_rgb)),
+				-- tougness: 2.5%, talent_name: Loyal Protector, rewrite, colors
 	--[+ French +]-- Sans douleur!
 	create_template("talent_tree_ogr_abil2_002_desc_fr",
 		{"loc_talent_ogryn_taunt_restore_toughness_new_desc"}, {"fr"},
@@ -5482,7 +5925,9 @@ local localization_templates = {
 	--[+ ABILITY 2-3 - Go again! +]--
 	create_template("talent_tree_ogr_abil2_003_desc_en",
 		{"loc_talent_ogryn_taunt_stagger_cd_description"}, {"en"},
-			loc_text(COLORS_KWords.Staggering_rgb.." an Enemy replenishes {cooldown_reduction:%s} "..COLORS_KWords.Cd_rgb.." of your {talent_name:%s}."..TALENTS_Enh_desc2.ED_OGR_Ability_2_3_rgb)), -- talent_name: Loyal Protector, radius: 50% -- colors
+			loc_text(COLORS_KWords.Staggering_rgb.." an Enemy replenishes {cooldown_reduction:%s} "..COLORS_KWords.Cd_rgb.." of your {talent_name:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_2_3_rgb)),
+				-- talent_name: Loyal Protector, radius: 50%, colors
 	--[+ French +]--Encore une fois!
 	create_template("talent_tree_ogr_abil2_003_desc_fr",
 		{"loc_talent_ogryn_taunt_stagger_cd_description"}, {"fr"},
@@ -5495,7 +5940,15 @@ local localization_templates = {
 	--[+ ABILITY 3 - Point-Blank Barrage +]--
 	create_template("talent_tree_ogr_abil3_000_desc_en",
 		{"loc_talent_ogryn_combat_ability_special_ammo_new_desc"}, {"en"},
-			loc_text("Swaps to and reloads your Ranged Weapon.\nFor the next {duration:%s} seconds you have:\n{damage:%s} Close Range "..COLORS_KWords.Damage_rgb..",\n{ranged_attack_speed:%s} Rate of Fire,\n{reload_speed:%s} Reload Speed and\n"..COLORS_Numbers.n_minus_rgb.."{reduced_move_penalty:%s} to Braced Movement Speed penalties.\n\nBase Cooldown {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_OGR_Ability_3_rgb)), -- ranged_attack_speed: +25%, reload_speed: +70%, duration: 10, cooldown: 80 -- s->seconds
+			loc_text("Swaps to and reloads your Ranged Weapon.\n"
+				.."For the next {duration:%s} seconds you have:\n"
+				.."{damage:%s} Close Range "..COLORS_KWords.Damage_rgb..",\n"
+				.."{ranged_attack_speed:%s} Rate of Fire,\n"
+				.."{reload_speed:%s} Reload Speed and\n"
+				..COLORS_Numbers.n_minus_rgb.."{reduced_move_penalty:%s} to Braced Movement Speed penalties.\n\n"
+				.."Base Cooldown {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_3_rgb)),
+				-- ranged_attack_speed: +25%, reload_speed: +70%, duration: 10, cooldown: 80, s->seconds
 	--[+ French +]--Barrage à bout portant
 	create_template("talent_tree_ogr_abil3_000_desc_fr",
 		{"loc_talent_ogryn_combat_ability_special_ammo_new_desc"}, {"fr"},
@@ -5508,7 +5961,9 @@ local localization_templates = {
 	--[+ ABILITY 3-1 - Bullet Bravado +]--
 	create_template("talent_tree_ogr_abil3_001_desc_en",
 		{"loc_talent_ogryn_special_ammo_toughness_on_shot_and_reload_desc"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for every Shot Fired and {toughness_reload:%s} "..COLORS_KWords.Toughness_rgb.." on each Reload while {ability:%s} is active."..TALENTS_Enh_desc2.ED_OGR_Ability_3_1_rgb)), -- ability: Point-Blank Barrage, toughness: +2%, toughness_reload: +10% -- rewrite -- colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for every Shot Fired and {toughness_reload:%s} "..COLORS_KWords.Toughness_rgb.." on each Reload while {ability:%s} is active."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_3_1_rgb)),
+				-- ability: Point-Blank Barrage, toughness: +2%, toughness_reload: +10%, rewrite, colors
 	--[+ French +]-- Bravade de la balle
 	create_template("talent_tree_ogr_abil3_001_desc_fr",
 		{"loc_talent_ogryn_special_ammo_toughness_on_shot_and_reload_desc"}, {"fr"},
@@ -5521,7 +5976,9 @@ local localization_templates = {
 	--[+ ABILITY 3-2 - Hail of Fire +]--
 	create_template("talent_tree_ogr_abil3_002_desc_en",
 		{"loc_talent_ogryn_special_ammo_armor_pen_new_desc"}, {"en"},
-			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Rending_rgb.." and {damage:%s} "..COLORS_KWords.Damage_rgb.." to your Ranged Attacks while {ability:%s} is active."..TALENTS_Enh_desc2.ED_OGR_Ability_3_2_rgb)), -- rending_multiplier: +30%, ability: Point-Blank Barrage -- colors
+			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Rending_rgb.." and {damage:%s} "..COLORS_KWords.Damage_rgb.." to your Ranged Attacks while {ability:%s} is active."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_3_2_rgb)),
+				-- rending_multiplier: +30%, ability: Point-Blank Barrage, colors
 	--[+ French +]-- Grêle de feu
 	create_template("talent_tree_ogr_abil3_002_desc_fr",
 		{"loc_talent_ogryn_special_ammo_armor_pen_new_desc"}, {"fr"},
@@ -5534,7 +5991,9 @@ local localization_templates = {
 	--[+ ABILITY 3-3 - Light 'em Up +]--
 	create_template("talent_tree_ogr_abil3_003_desc_en",
 		{"loc_talent_ogryn_special_ammo_fire_shots_new_desc"}, {"en"},
-			loc_text(COLORS_Numbers.n_plus_rgb.."{stacks:%s} Stacks of "..COLORS_KWords.Burn_rgb.." are applied on Ranged Attacks while {ability:%s} is active. Max Stacks {max_stacks:%s}."..TALENTS_Enh_desc2.ED_OGR_Ability_3_3_rgb)), -- stacks: 2, ability: Point-Blank Barrage -- colors
+			loc_text(COLORS_Numbers.n_plus_rgb.."{stacks:%s} Stacks of "..COLORS_KWords.Burn_rgb.." are applied on Ranged Attacks while {ability:%s} is active. Max Stacks {max_stacks:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Ability_3_3_rgb)),
+				-- stacks: 2, ability: Point-Blank Barrage, colors
 	--[+ French +]-- Allumez-les!
 	create_template("talent_tree_ogr_abil3_003_desc_fr",
 		{"loc_talent_ogryn_special_ammo_fire_shots_new_desc"}, {"fr"},
@@ -5548,7 +6007,9 @@ local localization_templates = {
 	--[+ KEYSTONE 1 - Heavy Hitter +]--
 	create_template("talent_tree_ogr_keys1_000_desc_en",
 		{"loc_talent_ogryn_passive_heavy_hitter_new_desc"}, {"en"},
-			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on Melee Attack Hit. Stacks {stacks:%s} times. Gain {heavy_stacks:%s} Stacks on Heavy Attack Hit."..TALENTS_Enh_desc2.ED_OGR_Keystone_1_rgb)), -- damage: +5%, duration: 7.5, stacks: 5 -- s->seconds -- colors
+			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on Melee Attack Hit. Stacks {stacks:%s} times. Gain {heavy_stacks:%s} Stacks on Heavy Attack Hit."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_1_rgb)),
+				-- damage: +5%, duration: 7.5, stacks: 5, s->seconds, colors
 	--[+ French +]--Frappe lourde
 	create_template("talent_tree_ogr_keys1_000_desc_fr",
 		{"loc_talent_ogryn_passive_heavy_hitter_new_desc"}, {"fr"},
@@ -5561,7 +6022,8 @@ local localization_templates = {
 	--[+ KEYSTONE 1-1 - Don't Feel a Thing +]--
 	create_template("talent_tree_ogr_keys1_001_desc_en",
 		{"loc_talent_ogryn_passive_heavy_hitter_tdr_desc"}, {"en"},
-			loc_text("{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for each Stack, also granted by {talent_name:%s}.")), -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10% -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_1_rgb
+			loc_text("{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for each Stack, also granted by {talent_name:%s}.")),
+				-- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10% -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_1_rgb
 	--[+ French +]--Rien senti
 	create_template("talent_tree_ogr_keys1_001_desc_fr",
 		{"loc_talent_ogryn_passive_heavy_hitter_tdr_desc"}, {"fr"},
@@ -5574,7 +6036,9 @@ local localization_templates = {
 	--[+ KEYSTONE 1-2 - Just Getting Started +]--
 	create_template("talent_tree_ogr_keys1_002_desc_en",
 		{"loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed_description"}, {"en"},
-			loc_text("{attack_speed:%s} Attack Speed while {talent_name:%s} is at {stacks:%s} Stacks."..TALENTS_Enh_desc2.ED_OGR_Keystone_1_2_rgb)), -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
+			loc_text("{attack_speed:%s} Attack Speed while {talent_name:%s} is at {stacks:%s} Stacks."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_1_2_rgb)),
+				-- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
 	--[+ French +]-- Rien que le début
 	create_template("talent_tree_ogr_keys1_002_desc_fr",
 		{"loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed_description"}, {"fr"},
@@ -5587,7 +6051,9 @@ local localization_templates = {
 	--[+ KEYSTONE 1-3 - Unstoppable +]--
 	create_template("talent_tree_ogr_keys1_003_desc_en",
 		{"loc_talent_ogryn_heavy_hitter_max_stacks_improves_toughness_new_description"}, {"en"},
-			loc_text("{melee_toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenished from Melee Kills for each Stack, also granted by {talent_name:%s}."..TALENTS_Enh_desc2.ED_OGR_Keystone_1_3_rgb)), -- talent_name: Heavy Hitter, stacks: 5, toughness_melee_replenish: +100% -- colors
+			loc_text("{melee_toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenished from Melee Kills for each Stack, also granted by {talent_name:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_1_3_rgb)),
+				-- talent_name: Heavy Hitter, stacks: 5, toughness_melee_replenish: +100%, colors
 	--[+ French +]-- Instoppable
 	create_template("talent_tree_ogr_keys1_003_desc_fr",
 		{"loc_talent_ogryn_heavy_hitter_max_stacks_improves_toughness_new_description"}, {"fr"},
@@ -5600,7 +6066,8 @@ local localization_templates = {
 	--[+ KEYSTONE 1-4 - Great Cleaver +]--
 	create_template("talent_tree_ogr_keys1_004_desc_en",
 		{"loc_talent_ogryn_passive_heavy_hitter_cleave_desc"}, {"en"},
-			loc_text("{cleave:%s} "..COLORS_KWords.Cleave_rgb.." for each Stack, also granted by {talent_name:%s}.")), -- talent_name: Heavy Hitter -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_4_rgb
+			loc_text("{cleave:%s} "..COLORS_KWords.Cleave_rgb.." for each Stack, also granted by {talent_name:%s}.")),
+				-- talent_name: Heavy Hitter -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_4_rgb
 	--[+ French +]-- Fouet de guerre
 	create_template("talent_tree_ogr_keys1_004_desc_fr",
 		{"loc_talent_ogryn_passive_heavy_hitter_cleave_desc"}, {"fr"},
@@ -5613,7 +6080,8 @@ local localization_templates = {
 	--[+ KEYSTONE 1-5 - Impactful +]--
 	create_template("talent_tree_ogr_keys1_005_desc_en",
 		{"loc_talent_ogryn_passive_heavy_hitter_stagger_desc"}, {"en"},
-			loc_text("{impact:%s} "..COLORS_KWords.Impact_rgb.." for each Stack, also granted by {talent_name:%s}.")), -- talent_name: Heavy Hitter -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_5_rgb
+			loc_text("{impact:%s} "..COLORS_KWords.Impact_rgb.." for each Stack, also granted by {talent_name:%s}.")),
+				-- talent_name: Heavy Hitter -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_5_rgb
 	--[+ French +]-- Impactant
 	create_template("talent_tree_ogr_keys1_005_desc_fr",
 		{"loc_talent_ogryn_passive_heavy_hitter_stagger_desc"}, {"fr"},
@@ -5626,7 +6094,12 @@ local localization_templates = {
 	--[+ KEYSTONE 2 - Feel No Pain +]--
 	create_template("talent_tree_ogr_keys2_000_desc_en",
 		{"loc_talent_ogryn_carapace_armor_any_damage_desc"}, {"en"},
-			loc_text("You are blessed with {stacks:%s} Stacks of "..COLORS_KWords.Feel_no_pain_rgb..". Each Stack grants:\n{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment and\n{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction.\nTaking "..COLORS_KWords.Damage_rgb.." removes one Stack. Stacks are restored every {duration:%s} seconds."..TALENTS_Enh_desc2.ED_OGR_Keystone_2_rgb)), -- stacks: 10, toughness_regen: +2.5%, damage_reduction: +2.5%, duration: 3 -- s->seconds -- colors
+			loc_text("You are blessed with {stacks:%s} Stacks of "..COLORS_KWords.Feel_no_pain_rgb..". Each Stack grants:\n"
+				.."{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment and\n"
+				.."{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction.\n"
+				.."Taking "..COLORS_KWords.Damage_rgb.." removes one Stack. Stacks are restored every {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_2_rgb)),
+				-- stacks: 10, toughness_regen: +2.5%, damage_reduction: +2.5%, duration: 3, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_keys2_000_desc_fr",
 		{"loc_talent_ogryn_carapace_armor_any_damage_desc"}, {"fr"},
@@ -5639,7 +6112,10 @@ local localization_templates = {
 	--[+ KEYSTONE 2-1 - Pained Outburst +]--
 	create_template("talent_tree_ogr_keys2_001_desc_en",
 		{"loc_talent_ogryn_carapace_armor_trigger_on_zero_stacks_new_desc"}, {"en"},
-			loc_text("{toughness_replenish:%s} "..COLORS_KWords.Toughness_rgb.." replenished when {talent_name:%s} reaches {stacks:%s} Stacks or below. It also creates an explosion that deals No "..COLORS_KWords.Damage_rgb.." but "..COLORS_KWords.Staggers_rgb.." surrounding enemies.\n\nThis effect can occur once every {cooldown:%s} seconds."..TALENTS_Enh_desc2.ED_OGR_Keystone_2_1_rgb)), -- talent_name: Feel No Pain, toughness_replenish: +20%, cooldown: 30 -- s->seconds -- colors
+			loc_text("{toughness_replenish:%s} "..COLORS_KWords.Toughness_rgb.." replenished when {talent_name:%s} reaches {stacks:%s} Stacks or below. It also creates an explosion that deals No "..COLORS_KWords.Damage_rgb.." but "..COLORS_KWords.Staggers_rgb.." surrounding enemies.\n\n"
+				.."This effect can occur once every {cooldown:%s} seconds."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_2_1_rgb)),
+				-- talent_name: Feel No Pain, toughness_replenish: +20%, cooldown: 30, s->seconds, colors
 	--[+ French +]-- Éclat de douleur
 	create_template("talent_tree_ogr_keys2_001_desc_fr",
 		{"loc_talent_ogryn_carapace_armor_trigger_on_zero_stacks_new_desc"}, {"fr"},
@@ -5652,7 +6128,9 @@ local localization_templates = {
 	--[+ KEYSTONE 2-2 - Strongest! +]--
 	create_template("talent_tree_ogr_keys2_002_desc_en",
 		{"loc_talent_ogryn_carapace_armor_add_stack_on_push_desc"}, {"en"},
-			loc_text(COLORS_Numbers.n_1_rgb.." Stack of {talent_name:%s} is restored by Pushing enemies."..TALENTS_Enh_desc2.ED_OGR_Keystone_2_2_rgb)), -- talent_name: Feel No Pain
+			loc_text(COLORS_Numbers.n_1_rgb.." Stack of {talent_name:%s} is restored by Pushing enemies."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_2_2_rgb)),
+				-- talent_name: Feel No Pain
 	--[+ French +]-- Le plus fort!
 	create_template("talent_tree_ogr_keys2_002_desc_fr",
 		{"loc_talent_ogryn_carapace_armor_add_stack_on_push_desc"}, {"fr"},
@@ -5665,7 +6143,9 @@ local localization_templates = {
 	--[+ KEYSTONE 2-3 - Toughest! +]--
 	create_template("talent_tree_ogr_keys2_003_desc_en",
 		{"loc_talent_ogryn_carapace_armor_more_toughness_desc"}, {"en"},
-			loc_text("{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." replenishment per stack is granted by {talent_name:%s}."..TALENTS_Enh_desc2.ED_OGR_Keystone_2_3_rgb)), -- talent_name: Feel No Pain, toughness_regen: +2.5% -- colors
+			loc_text("{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." replenishment per stack is granted by {talent_name:%s}."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_2_3_rgb)),
+				-- talent_name: Feel No Pain, toughness_regen: +2.5%, colors
 	--[+ French +]-- Le plus résistant!
 	create_template("talent_tree_ogr_keys2_003_desc_fr",
 		{"loc_talent_ogryn_carapace_armor_more_toughness_desc"}, {"fr"},
@@ -5678,7 +6158,10 @@ local localization_templates = {
 	--[+ KEYSTONE 3 - Burst Limiter Override +]--
 	create_template("talent_tree_ogr_keys3_000_desc_en",
 		{"loc_talent_ogryn_blo_new_alt_desc"}, {"en"},
-			loc_text("{proc_chance:%s} chance of triggering "..COLORS_KWords.Lucky_bullet_rgb.." and not consuming Ammo when making Ranged Attacks.\n\nIn addition, gain {ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on Ranged Kills. Max Stacks {stacks:%s}. Lasts {duration:%s} seconds."..TALENTS_Enh_desc2.ED_OGR_Keystone_3_rgb)), -- proc_chance: 8% -- colors
+			loc_text("{proc_chance:%s} chance of triggering "..COLORS_KWords.Lucky_bullet_rgb.." and not consuming Ammo when making Ranged Attacks.\n\n"
+				.."In addition, gain {ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on Ranged Kills. Max Stacks {stacks:%s}. Lasts {duration:%s} seconds."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_3_rgb)),
+				-- proc_chance: 8%, colors
 	--[+ French +]-- Obstruction du limiteur de tir
 	create_template("talent_tree_ogr_keys3_000_desc_fr",
 		{"loc_talent_ogryn_blo_new_alt_desc"}, {"fr"},
@@ -5691,7 +6174,8 @@ local localization_templates = {
 	--[+ KEYSTONE 3-1 - Back Off! +]--
 	create_template("talent_tree_ogr_keys3_001_desc_en",
 		{"loc_talent_ogryn_blo_melee_desc"}, {"en"},
-			loc_text("{chance:%s} chance to trigger "..COLORS_KWords.Lucky_bullet_rgb.." on next Shot when killing an enemy with a Melee Attack. Stacks {stacks:%s} times.")), -- cooldown_reduction: +200%, duration: 2 -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_1_rgb
+			loc_text("{chance:%s} chance to trigger "..COLORS_KWords.Lucky_bullet_rgb.." on next Shot when killing an enemy with a Melee Attack. Stacks {stacks:%s} times.")),
+				-- cooldown_reduction: +200%, duration: 2, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_1_rgb
 	--[+ French +]-- Reculez!
 	create_template("talent_tree_ogr_keys3_001_desc_fr",
 		{"loc_talent_ogryn_blo_melee_desc"}, {"fr"},
@@ -5699,12 +6183,15 @@ local localization_templates = {
 	--[+ Russian +]-- Максимальная огневая мощь 
 	create_template("talent_tree_ogr_keys3_001_desc_ru",
 		{"loc_talent_ogryn_blo_melee_desc"}, {"ru"},
-			loc_text("{chance:%s} шанс активировать "..COLORS_KWords_ru.Lucky_bullet_rgb_ru.." для вашего следующего выстрела после убийства врага в ближнем бою. Суммируется {stacks:%s} раз.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_3_1_rgb_ru
+			loc_text("{chance:%s} шанс активировать "..COLORS_KWords_ru.Lucky_bullet_rgb_ru.." для вашего следующего выстрела после убийства врага в ближнем бою. Суммируется {stacks:%s} раз.")),
+				-- ..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_3_1_rgb_ru
 
 	--[+ KEYSTONE 3-2 - Maximum Firepower +]--
 	create_template("talent_tree_ogr_keys3_002_desc_en",
 		{"loc_talent_ogryn_leadbelcher_grant_cooldown_reduction_desc"}, {"en"},
-			loc_text("{cooldown_reduction:%s} "..COLORS_KWords.Ability_cd_rgb.." Reduction for {duration:%s} seconds when "..COLORS_KWords.Lucky_bullet_rgb.." triggers."..TALENTS_Enh_desc2.ED_OGR_Keystone_3_2_rgb)), -- cooldown_reduction: +200%, duration: 2 -- s->seconds -- colors
+			loc_text("{cooldown_reduction:%s} "..COLORS_KWords.Ability_cd_rgb.." Reduction for {duration:%s} seconds when "..COLORS_KWords.Lucky_bullet_rgb.." triggers."
+				..TALENTS_Enh_desc2.ED_OGR_Keystone_3_2_rgb)),
+				-- cooldown_reduction: +200%, duration: 2, s->seconds, colors
 	--[+ French +]-- Maximale puissance de feu
 	create_template("talent_tree_ogr_keys3_002_desc_fr",
 		{"loc_talent_ogryn_leadbelcher_grant_cooldown_reduction_desc"}, {"fr"},
@@ -5717,7 +6204,8 @@ local localization_templates = {
 	--[+ KEYSTONE 3-3 - Good Shootin' +]--
 	create_template("talent_tree_ogr_keys3_003_desc_en",
 		{"loc_talent_ogryn_critical_leadbelcher_desc"}, {"en"},
-			loc_text("The shot that triggers "..COLORS_KWords.Lucky_bullet_rgb.." is a guaranteed "..COLORS_KWords.Crit_rgb.." (if it Hits).")), -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_3_rgb
+			loc_text("The shot that triggers "..COLORS_KWords.Lucky_bullet_rgb.." is a guaranteed "..COLORS_KWords.Crit_rgb.." (if it Hits).")),
+				-- colors -- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_3_rgb
 	--[+ French +]-- Bonne visée
 	create_template("talent_tree_ogr_keys3_003_desc_fr",
 		{"loc_talent_ogryn_critical_leadbelcher_desc"}, {"fr"},
@@ -5730,7 +6218,8 @@ local localization_templates = {
 	--[+ KEYSTONE 3-4 - Heat of Battle +]--
 	create_template("talent_tree_ogr_keys3_004_desc_en",
 		{"loc_talent_ogryn_blo_fire_rate_desc"}, {"en"},
-			loc_text("{fire_rate:%s} Fire Rate per Stack, also granted by {talent_name:%s}.")), -- proc_chance: 12% -- rewrite -- colors
+			loc_text("{fire_rate:%s} Fire Rate per Stack, also granted by {talent_name:%s}.")),
+				-- proc_chance: 12%, rewrite, colors
 	--[+ French +]-- Chaleur de la bataille
 	create_template("talent_tree_ogr_keys3_004_desc_fr",
 		{"loc_talent_ogryn_blo_fire_rate_desc"}, {"fr"},
@@ -5743,7 +6232,8 @@ local localization_templates = {
 	--[+ KEYSTONE 3-5 - More Burst Limiter Overrides! +]--
 	create_template("talent_tree_ogr_keys3_005_desc_en",
 		{"loc_talent_ogryn_blo_ally_ranged_buffs_desc"}, {"en"},
-			loc_text("{ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." to you and Allies in "..COLORS_KWords.Coherency_rgb.." on "..COLORS_KWords.Lucky_bullet_rgb..". Lasts {duration:%s} seconds.")), -- proc_chance: 12% -- rewrite -- colors
+			loc_text("{ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." to you and Allies in "..COLORS_KWords.Coherency_rgb.." on "..COLORS_KWords.Lucky_bullet_rgb..". Lasts {duration:%s} seconds.")),
+				-- proc_chance: 12%, rewrite, colors
 	--[+ French +]-- Encore plus de contournement du limiteur de tir!
 	create_template("talent_tree_ogr_keys3_005_desc_fr",
 		{"loc_talent_ogryn_blo_ally_ranged_buffs_desc"}, {"fr"},
@@ -5757,7 +6247,8 @@ local localization_templates = {
 	--[+ Passive 1 - Lynchpin +]--
 	create_template("talent_tree_ogr_pas_001_desc_en",
 		{"loc_talent_ogryn_coherency_toughness_increase_desc"}, {"en"},
-			loc_text("{toughness_multiplier:%s} "..COLORS_KWords.Toughness_rgb.." replenish while in "..COLORS_KWords.Coherency_rgb..".")), -- toughness_multiplier: +50% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_1_rgb
+			loc_text("{toughness_multiplier:%s} "..COLORS_KWords.Toughness_rgb.." replenish while in "..COLORS_KWords.Coherency_rgb..".")),
+				-- toughness_multiplier: +50%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_1_rgb
 	--[+ French +]-- Opérateur
 	create_template("talent_tree_ogr_pas_001_desc_fr",
 		{"loc_talent_ogryn_coherency_toughness_increase_desc"}, {"fr"},
@@ -5770,7 +6261,8 @@ local localization_templates = {
 	--[+ Passive 2 - Heavyweight +]--
 	create_template("talent_tree_ogr_pas_002_desc_en",
 		{"loc_talent_ogryn_ogryn_fighter_desc"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." against Bulwarks, Crushers, Plague Ogryns and Reapers. Also receive {damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction against the same.")), -- damage: +30%, damage_reduction: +30% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_2_rgb
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." against Bulwarks, Crushers, Plague Ogryns and Reapers. Also receive {damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction against the same.")),
+				-- damage: +30%, damage_reduction: +30%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_2_rgb
 	--[+ French +]-- Poid Lourd
 	create_template("talent_tree_ogr_pas_002_desc_fr",
 		{"loc_talent_ogryn_ogryn_fighter_desc"}, {"fr"},
@@ -5783,7 +6275,8 @@ local localization_templates = {
 	--[+ Passive 3 - Steady Grip +]--
 	create_template("talent_tree_ogr_pas_003_desc_en",
 		{"loc_talent_ogryn_toughness_regen_while_bracing_desc"}, {"en"},
-			loc_text("{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." Regeneration while bracing your Ranged weapon.")), -- toughness_regen: +3% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_3_rgb
+			loc_text("{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." Regeneration while bracing your Ranged weapon.")),
+				-- toughness_regen: +3%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_3_rgb
 	--[+ French +]-- Poigne ferme
 	create_template("talent_tree_ogr_pas_003_desc_fr",
 		{"loc_talent_ogryn_toughness_regen_while_bracing_desc"}, {"fr"},
@@ -5796,7 +6289,8 @@ local localization_templates = {
 	--[+ Passive 4 - Smash 'Em! +]--
 	create_template("talent_tree_ogr_pas_004_desc_en",
 		{"loc_talent_ogryn_toughness_on_single_heavy_new_desc"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes after hitting a single Enemy with a Melee Attack. Increased to {heavy_toughness:%s} "..COLORS_KWords.Toughness_rgb.." if it is a Heavy Attack.")), -- toughness: 20% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_4_rgb
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes after hitting a single Enemy with a Melee Attack. Increased to {heavy_toughness:%s} "..COLORS_KWords.Toughness_rgb.." if it is a Heavy Attack.")),
+				-- toughness: 20%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_4_rgb
 	--[+ French +]-- Ecrabouille les 
 	create_template("talent_tree_ogr_pas_004_desc_fr",
 		{"loc_talent_ogryn_toughness_on_single_heavy_new_desc"}, {"fr"},
@@ -5809,7 +6303,8 @@ local localization_templates = {
 	--[+ Passive 5 - The Best Defence +]--
 	create_template("talent_tree_ogr_pas_005_desc_en",
 		{"loc_talent_ogryn_toughness_on_multiple_new_desc"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes after hitting multiple Enemies with a single Melee Attack. Increased to {heavy_toughness:%s} "..COLORS_KWords.Toughness_rgb.." if it is a Heavy Attack.")), -- toughness: 20% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_5_rgb
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes after hitting multiple Enemies with a single Melee Attack. Increased to {heavy_toughness:%s} "..COLORS_KWords.Toughness_rgb.." if it is a Heavy Attack.")),
+				-- toughness: 20%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_5_rgb
 	--[+ French +]-- La meilleure défense
 	create_template("talent_tree_ogr_pas_005_desc_fr",
 		{"loc_talent_ogryn_toughness_on_multiple_new_desc"}, {"fr"},
@@ -5822,7 +6317,8 @@ local localization_templates = {
 	--[+ Passive 6 - Furious +]--
 	create_template("talent_tree_ogr_pas_006_desc_en",
 		{"loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"}, {"en"},
-			loc_text("You gain "..COLORS_Numbers.n_1_rgb.." Stack of {damage:%s} "..COLORS_KWords.Damage_rgb.." for each enemy Hit during a Single Melee Attack. Up to "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_25_rgb.." "..COLORS_KWords.Damage_rgb.." at "..COLORS_Numbers.n_10_rgb.." Stacks. Calculated separately for each Attack.")), -- damage: +2.5% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_6_rgb
+			loc_text("You gain "..COLORS_Numbers.n_1_rgb.." Stack of {damage:%s} "..COLORS_KWords.Damage_rgb.." for each enemy Hit during a Single Melee Attack. Up to "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_25_rgb.." "..COLORS_KWords.Damage_rgb.." at "..COLORS_Numbers.n_10_rgb.." Stacks. Calculated separately for each Attack.")),
+				-- damage: +2.5%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_6_rgb
 	--[+ French +]--Furieux
 	create_template("talent_tree_ogr_pas_006_desc_fr",
 		{"loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"}, {"fr"},
@@ -5835,7 +6331,8 @@ local localization_templates = {
 	--[+ Passive 7 - Towering Presence +]--
 	create_template("talent_tree_ogr_pas_007_desc_en",
 		{"loc_talent_ogryn_bigger_coherency_radius_desc"}, {"en"},
-			loc_text("{radius:%s} "..COLORS_KWords.Coherency_rgb.." radius.")), -- radius: +50% -- ..TALENTS_Enh_desc2.ED_OGR_Passive_7_rgb
+			loc_text("{radius:%s} "..COLORS_KWords.Coherency_rgb.." radius.")),
+				-- radius: +50% -- ..TALENTS_Enh_desc2.ED_OGR_Passive_7_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_007_desc_fr",
 		{"loc_talent_ogryn_bigger_coherency_radius_desc"}, {"fr"},
@@ -5848,7 +6345,8 @@ local localization_templates = {
 	--[+ Passive 8 - Soften Them Up +]--
 	create_template("talent_tree_ogr_pas_008_desc_en",
 		{"loc_talent_ogryn_targets_recieve_damage_increase_debuff_new_desc"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." taken by Enemies for {duration:%s} seconds after receiving "..COLORS_KWords.Damage_rgb.." from your Melee Attacks.")), -- damage: +15%, duration: 5 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_8_rgb
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." taken by Enemies for {duration:%s} seconds after receiving "..COLORS_KWords.Damage_rgb.." from your Melee Attacks.")),
+				-- damage: +15%, duration: 5, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_8_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_008_desc_fr",
 		{"loc_talent_ogryn_targets_recieve_damage_increase_debuff_new_desc"}, {"fr"},
@@ -5861,7 +6359,8 @@ local localization_templates = {
 	--[+ Passive 9 - Payback Time +]--
 	create_template("talent_tree_ogr_pas_009_desc_en",
 		{"loc_talent_ogryn_revenge_damage_new_desc"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on taking or blocking a Melee hit, and on successfully Dodging enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper), and Disabler attacks (Pox Hound jump, Trapper net, Mutant grab).")), -- damage: +20%, duration: 5 -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_9_rgb
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on taking or blocking a Melee hit, and on successfully Dodging enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper), and Disabler attacks (Pox Hound jump, Trapper net, Mutant grab).")),
+				-- damage: +20%, duration: 5, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_9_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_009_desc_fr",
 		{"loc_talent_ogryn_revenge_damage_new_desc"}, {"fr"},
@@ -5874,7 +6373,8 @@ local localization_templates = {
 	--[+ Passive 10 - Pumped Up +]--
 	create_template("talent_tree_ogr_pas_010_desc_en",
 		{"loc_talent_ogryn_damage_reduction_on_high_stamina_desc"}, {"en"},
-			loc_text("{damage_taken:%s} "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance while above {stamina:%s} max "..COLORS_KWords.Stamina_rgb..".")), -- damage_taken: +15%, stamina: 75% -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_10_rgb
+			loc_text("{damage_taken:%s} "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance while above {stamina:%s} max "..COLORS_KWords.Stamina_rgb..".")),
+				-- damage_taken: +15%, stamina: 75%, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_10_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_010_desc_fr",
 		{"loc_talent_ogryn_damage_reduction_on_high_stamina_desc"}, {"fr"},
@@ -5887,7 +6387,8 @@ local localization_templates = {
 	--[+ Passive 11 - Focused Fighter +]--
 	create_template("talent_tree_ogr_pas_011_desc_en",
 		{"loc_talent_ogryn_melee_attacks_give_mtdr_desc"}, {"en"},
-			loc_text("{reduction:%s} "..COLORS_KWords.Damage_rgb.." Resistance from Melee Attacks after your Successful Melee Attack. You gain "..COLORS_Numbers.n_1_rgb.." Stack per swing, Up to {stacks:%s}. Stacks are removed upon taking "..COLORS_KWords.Damage_rgb.." from a Melee Attack.")), -- : +4%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_11_rgb
+			loc_text("{reduction:%s} "..COLORS_KWords.Damage_rgb.." Resistance from Melee Attacks after your Successful Melee Attack. You gain "..COLORS_Numbers.n_1_rgb.." Stack per swing, Up to {stacks:%s}. Stacks are removed upon taking "..COLORS_KWords.Damage_rgb.." from a Melee Attack.")),
+				-- : +4%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_11_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_011_desc_fr",
 		{"loc_talent_ogryn_melee_attacks_give_mtdr_desc"}, {"fr"},
@@ -5900,7 +6401,8 @@ local localization_templates = {
 	--[+ Passive 12 - Strongman +]--
 	create_template("talent_tree_ogr_pas_012_desc_en",
 		{"loc_talent_ogryn_damage_reduction_after_elite_kill_desc"}, {"en"},
-			loc_text("{damage_reduction:%s} "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance on Elite or Special Kill. Lasts {duration:%s} seconds.")), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_12_rgb
+			loc_text("{damage_reduction:%s} "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance on Elite or Special Kill. Lasts {duration:%s} seconds.")),
+				-- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_12_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_012_desc_fr",
 		{"loc_talent_ogryn_damage_reduction_after_elite_kill_desc"}, {"fr"},
@@ -5908,29 +6410,33 @@ local localization_templates = {
 	--[+ Russian +]-- Силач
 	create_template("talent_tree_ogr_pas_012_desc_ru",
 		{"loc_talent_ogryn_damage_reduction_after_elite_kill_desc"}, {"ru"},
-			loc_text("{damage_reduction:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." после убийства элитного врага или специалиста. Длится {duration:%s} секунд.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_12_rgb_ru
+			loc_text("{damage_reduction:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." после убийства элитного врага или специалиста. Длится {duration:%s} секунд.")),
+				-- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_12_rgb_ru
 
 	--[+ Passive 13 - Can't Hit Me...Again - Can't Hit Me... Again +]--
 	create_template("talent_tree_ogr_pas_013_desc_en",
 		{"loc_talent_ogryn_ranged_damage_immunity_desc"}, {"en"},
-			loc_text("{resistance:%s} "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Ranged for {duration:%s} seconds after getting hit by a Ranged Attack (including hits by Beast of Nurgle vomit, Flamers' direct fire, and Bombers' grenade direct impact). Cooldown {cooldown:%s} seconds.")), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_13_rgb
+			loc_text("{resistance:%s} "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Ranged for {duration:%s} seconds after getting hit by a Ranged Attack (including hits by Beast of Nurgle vomit, Flamers' direct fire, and Bombers' grenade direct impact). Cooldown {cooldown:%s} seconds.")),
+				-- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_13_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_013_desc_fr",
 		{"loc_talent_ogryn_ranged_damage_immunity_desc"}, {"fr"},
-		loc_text("{resistance:%s} de Résistance au "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Health_rgb_fr.." et de "..COLORS_KWords_fr.Toughness_rgb_fr.." à distance pendant {duration:%s} secondes après avoir été touchez par une attaque à distance (incluant le vomit de la bête de Nurgle, le feu direct des incendiaires, et l'impact directe des grenades des grenadiers). Temps de recharge {cooldown:%s} secondes.")), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_13_rgb_fr
+		loc_text("{resistance:%s} de Résistance au "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Health_rgb_fr.." et de "..COLORS_KWords_fr.Toughness_rgb_fr.." à distance pendant {duration:%s} secondes après avoir été touchez par une attaque à distance (incluant le vomit de la bête de Nurgle, le feu direct des incendiaires, et l'impact directe des grenades des grenadiers). Temps de recharge {cooldown:%s} secondes.")), -- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_13_rgb_fr
 	--[+ Russian +]-- Попробуй попади... снова
 	create_template("talent_tree_ogr_pas_013_desc_ru",
 		{"loc_talent_ogryn_ranged_damage_immunity_desc"}, {"ru"},
-			loc_text("{resistance:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." против атак дальнего боя в течение {duration:%s} секунд после попадания вражеского снаряда в вас (включая попадание рвоты Зверя Нургла, а также прямые попадания огнём Огнемётчика и гранатой Гренадёра). Восстановление {cooldown:%s} секунды.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_13_rgb_ru
+			loc_text("{resistance:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." против атак дальнего боя в течение {duration:%s} секунд после попадания вражеского снаряда в вас (включая попадание рвоты Зверя Нургла, а также прямые попадания огнём Огнемётчика и гранатой Гренадёра). Восстановление {cooldown:%s} секунды.")),
+				-- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_13_rgb_ru
 
 	--[+ Passive 14 - Keep Shooting +]--
 	-- create_template("talent_tree_ogr_pas_014_desc_en",
 		-- {"loc_talent_ogryn_reload_speed_on_empty_desc"}, {"en"},
-			-- loc_text("{reload_speed:%s} Reload Speed when reloading an Empty Clip.")), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_14_rgb
+			-- loc_text("{reload_speed:%s} Reload Speed when reloading an Empty Clip.")),
+				-- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_14_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_014_desc_fr",
 		{"loc_talent_ogryn_reload_speed_on_empty_desc"}, {"fr"},
-			loc_text("{reload_speed:%s} de vitesse de rechargement si le chargeur est vide.")), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_14_rgb_fr
+			loc_text("{reload_speed:%s} de vitesse de rechargement si le chargeur est vide.")), -- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_14_rgb_fr
 	--[+ Russian +]-- Продолжай стрелять
 	create_template("talent_tree_ogr_pas_014_desc_ru",
 		{"loc_talent_ogryn_reload_speed_on_empty_desc"}, {"ru"},
@@ -5939,11 +6445,12 @@ local localization_templates = {
 	--[+ Passive 15 - Beat Them Back +]--
 	create_template("talent_tree_ogr_pas_015_desc_en",
 		{"loc_talent_ogryn_melee_damage_after_heavy_desc"}, {"en"},
-			loc_text("{melee_damage:%s} Melee "..COLORS_KWords.Damage_rgb.." on Successful Heavy Melee Attack. Lasts {duration:%s} seconds.")), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_15_rgb
+			loc_text("{melee_damage:%s} Melee "..COLORS_KWords.Damage_rgb.." on Successful Heavy Melee Attack. Lasts {duration:%s} seconds.")),
+				-- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_15_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_015_desc_fr",
 		{"loc_talent_ogryn_melee_damage_after_heavy_desc"}, {"fr"},
-		loc_text("{melee_damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée lors d'une attaque puissante de mélée réussie. Dure pendant {duration:%s} secondes.")), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_15_rgb
+		loc_text("{melee_damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée lors d'une attaque puissante de mélée réussie. Dure pendant {duration:%s} secondes.")), -- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_15_rgb
 	--[+ Russian +]-- Дай им отпор -- руоф Дай сдачи
 	create_template("talent_tree_ogr_pas_015_desc_ru",
 		{"loc_talent_ogryn_melee_damage_after_heavy_desc"}, {"ru"},
@@ -5952,11 +6459,12 @@ local localization_templates = {
 	--[+ Passive 16 - Strike True +]--
 	create_template("talent_tree_ogr_pas_016_desc_en",
 		{"loc_talent_ogryn_weakspot_damage_desc"}, {"en"},
-			loc_text("{damage:%s} Melee "..COLORS_KWords.Weak_spot_rgb.." "..COLORS_KWords.Strength_rgb.."."..COLORS_KWords.Pwr_note_rgb)), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_16_rgb
+			loc_text("{damage:%s} Melee "..COLORS_KWords.Weak_spot_rgb.." "..COLORS_KWords.Strength_rgb.."."..COLORS_KWords.Pwr_note_rgb)),
+				-- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_16_rgb
 	--[+ French +]--coup au but
 	create_template("talent_tree_ogr_pas_016_desc_fr",
 		{"loc_talent_ogryn_weakspot_damage_desc"}, {"fr"},
-		loc_text("{damage:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." de mélée lors d'un coup en mélée sur un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."."..COLORS_KWords_fr.Pwr_note_rgb_fr)), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_16_rgb_fr
+		loc_text("{damage:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." de mélée lors d'un coup en mélée sur un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."."..COLORS_KWords_fr.Pwr_note_rgb_fr)), -- : +10%, : 5, colors ..TALENTS_Enh_desc2.ED_OGR_Passive_16_rgb_fr
 	--[+ Russian +]-- Меткий удар
 	create_template("talent_tree_ogr_pas_016_desc_ru",
 		{"loc_talent_ogryn_weakspot_damage_desc"}, {"ru"},
@@ -5965,7 +6473,8 @@ local localization_templates = {
 	--[+ Passive 17 - Slam +]--!!!
 	create_template("talent_tree_ogr_pas_017_desc_en",
 		{"loc_talent_ogryn_melee_stagger_new_desc"}, {"en"},
-			loc_text("{stagger:%s} "..COLORS_KWords.Impact_rgb.." bonus on Melee Attacks. {stamina:%s} "..COLORS_KWords.Stamina_rgb.." replenished when "..COLORS_KWords.Staggering_rgb.." an enemy with a Melee Attack. Cooldown {cooldown:%s} second.")), -- stagger: +25% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_17_rgb
+			loc_text("{stagger:%s} "..COLORS_KWords.Impact_rgb.." bonus on Melee Attacks. {stamina:%s} "..COLORS_KWords.Stamina_rgb.." replenished when "..COLORS_KWords.Staggering_rgb.." an enemy with a Melee Attack. Cooldown {cooldown:%s} second.")),
+				-- stagger: +25%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_17_rgb
 	--[+ French +]--collision
 	create_template("talent_tree_ogr_pas_017_desc_fr",
 		{"loc_talent_ogryn_melee_stagger_new_desc"}, {"fr"},
@@ -5978,7 +6487,8 @@ local localization_templates = {
 	--[+ Passive 18 - Ammo Stash +]--
 	create_template("talent_tree_ogr_pas_018_desc_en",
 		{"loc_talent_ogryn_increased_ammo_desc"}, {"en"},
-			loc_text("{max_ammo:%s} to your Maximum Ammo reserve, rounds down.")), -- max_ammo: +25% -- rewrite
+			loc_text("{max_ammo:%s} to your Maximum Ammo reserve, rounds down.")),
+				-- max_ammo: +25%, rewrite
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_018_desc_fr",
 		{"loc_talent_ogryn_increased_ammo_desc"}, {"fr"},
@@ -5991,7 +6501,8 @@ local localization_templates = {
 	--[+ Passive 19 - Big Boom +]--
 	create_template("talent_tree_ogr_pas_019_desc_en",
 		{"loc_talent_ogryn_increase_explosion_radius_desc"}, {"en"},
-			loc_text("{explosion_radius:%s} to the radius of any explosions you cause.")), -- explosion_radius: +27.5% -- ..TALENTS_Enh_desc2.ED_OGR_Passive_19_rgb
+			loc_text("{explosion_radius:%s} to the radius of any explosions you cause.")),
+				-- explosion_radius: +27.5% -- ..TALENTS_Enh_desc2.ED_OGR_Passive_19_rgb
 	--[+ French +]--Baboom
 	create_template("tale nt_tree_ogr_pas_019_desc_fr",
 		{"loc_talent_ogryn_increase_explosion_radius_desc"}, {"fr"},
@@ -6004,7 +6515,10 @@ local localization_templates = {
 	--[+ Passive 20 - Crunch! +]--
 	create_template("talent_tree_ogr_pas_020_desc_en",
 		{"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_new_desc"}, {"en"},
-			loc_text("Based on charge time, your charged Melee Attack gains:\n{damage:%s} "..COLORS_KWords.Damage_rgb.." and\n{stagger:%s} "..COLORS_KWords.Impact_rgb..".")), -- damage: +40%, stagger: +40% -- &->and -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_20_rgb
+			loc_text("Based on charge time, your charged Melee Attack gains:\n"
+				.."{damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+				.."{stagger:%s} "..COLORS_KWords.Impact_rgb..".")),
+				-- damage: +40%, stagger: +40% -- &->and, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_20_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_020_desc_fr",
 		{"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_new_desc"}, {"fr"},
@@ -6017,7 +6531,8 @@ local localization_templates = {
 	--[+ Passive 21 - Batter +]--
 	create_template("talent_tree_ogr_pas_021_desc_en",
 		{"loc_talent_ogryn_heavy_bleeds_new_desc"}, {"en"},
-			loc_text("Inflict {stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." on Melee Hit. Increased to {heavy_stacks:%s} on Heavy Melee Hit. Up to "..COLORS_Numbers.n_16_rgb.." Max "..COLORS_KWords.Bleed_rgb.." Stacks on a target.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_21_rgb
+			loc_text("Inflict {stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." on Melee Hit. Increased to {heavy_stacks:%s} on Heavy Melee Hit. Up to "..COLORS_Numbers.n_16_rgb.." Max "..COLORS_KWords.Bleed_rgb.." Stacks on a target.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_21_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_021_desc_fr",
 		{"loc_talent_ogryn_heavy_bleeds_new_desc"}, {"fr"},
@@ -6030,11 +6545,12 @@ local localization_templates = {
 	--[+ Passive 22 - Brutish Strength +]--
 	create_template("talent_tree_ogr_pas_022_desc_en",
 		{"loc_talent_ogryn_pushing_applies_brittlenes_desc"}, {"en"},
-			loc_text("{stacks:%s} Stacks of "..COLORS_Numbers.pc_2_5_rgb.." "..COLORS_KWords.Brittleness_rgb.." applied to enemies on Push. Up to "..COLORS_Numbers.pc_40_rgb.." Max at "..COLORS_Numbers.n_16_rgb.." Stacks.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_22_rgb
+			loc_text("{stacks:%s} Stacks of "..COLORS_Numbers.pc_2_5_rgb.." "..COLORS_KWords.Brittleness_rgb.." applied to enemies on Push. Up to "..COLORS_Numbers.pc_40_rgb.." Max at "..COLORS_Numbers.n_16_rgb.." Stacks.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_22_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_022_desc_fr",
 		{"loc_talent_ogryn_pushing_applies_brittlenes_desc"}, {"fr"},
-		loc_text("{stacks:%s} cumuls de "..COLORS_Numbers.pc_2_5_rgb.." de "..COLORS_KWords_fr.Brittleness_rgb_fr.." appliqués lors d'une poussée. Jusqu'à "..COLORS_Numbers.pc_40_rgb.." Max à "..COLORS_Numbers.n_16_rgb.." cumuls.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_22_rgb
+		loc_text("{stacks:%s} cumuls de "..COLORS_Numbers.pc_2_5_rgb.." de "..COLORS_KWords_fr.Brittleness_rgb_fr.." appliqués lors d'une poussée. Jusqu'à "..COLORS_Numbers.pc_40_rgb.." Max à "..COLORS_Numbers.n_16_rgb.." cumuls.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_22_rgb
 	--[+ Russian +]-- Грубая сила
 	create_template("talent_tree_ogr_pas_022_desc_ru",
 		{"loc_talent_ogryn_pushing_applies_brittlenes_desc"}, {"ru"},
@@ -6043,11 +6559,13 @@ local localization_templates = {
 	--[+ Passive 23 - For the Lil'Uns +]--
 	create_template("talent_tree_ogr_pas_023_desc_en",
 		{"loc_talent_ogryn_protect_allies_desc"}, {"en"},
-			loc_text("{power:%s} "..COLORS_KWords.Strength_rgb.." and {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds when an Ally's "..COLORS_KWords.Toughness_rgb.." breaks. Cooldown {cooldown:%s} seconds.\n\n{revive_speed:%s} Revive Speed and "..COLORS_KWords.Stun_rgb.." Immunity for{duration:%s} seconds when an Ally is Knocked Down.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_23_rgb
+			loc_text("{power:%s} "..COLORS_KWords.Strength_rgb.." and {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds when an Ally's "..COLORS_KWords.Toughness_rgb.." breaks. Cooldown {cooldown:%s} seconds.\n\n"
+				.."{revive_speed:%s} Revive Speed and "..COLORS_KWords.Stun_rgb.." Immunity for {duration:%s} seconds when an Ally is Knocked Down.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_23_rgb
 	--[+ French +]--Pour les microbes
 	create_template("talent_tree_ogr_pas_023_desc_fr",
 		{"loc_talent_ogryn_protect_allies_desc"}, {"fr"},
-		loc_text("{power:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." et {toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." pendant {duration:%s} secondes quand la "..COLORS_KWords_fr.Toughness_rgb_fr.." d'un allié se brise. Temps de recharge : {cooldown:%s} secondes.\n\n{revive_speed:%s} de vitesse de réanimation et l'immunité à l'"..COLORS_KWords_fr.Stuns_rgb_fr.." pendant {duration:%s} secondes quand un allié tombe à terre.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_23_rgb
+		loc_text("{power:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." et {toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." pendant {duration:%s} secondes quand la "..COLORS_KWords_fr.Toughness_rgb_fr.." d'un allié se brise. Temps de recharge : {cooldown:%s} secondes.\n\n{revive_speed:%s} de vitesse de réanimation et l'immunité à l'"..COLORS_KWords_fr.Stuns_rgb_fr.." pendant {duration:%s} secondes quand un allié tombe à terre.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_23_rgb
 	--[+ Russian +]-- За малых
 	create_template("talent_tree_ogr_pas_023_desc_ru",
 		{"loc_talent_ogryn_protect_allies_desc"}, {"ru"},
@@ -6056,11 +6574,16 @@ local localization_templates = {
 	--[+ Passive 24 - Concentrate +]--
 	create_template("talent_tree_ogr_pas_024_desc_en",
 		{"loc_talent_ogryn_drain_stamina_for_handling_desc"}, {"en"},
-			loc_text("While bracing your Ranged Weapon you gain:\n{sway_reduction:%s} Sway Reduction,\n{spread_reduction:%s} Spread Reduction and\n{recoil_reduction:%s} Recoil Reduction,\nbut lose {stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_24_rgb
+			loc_text("While bracing your Ranged Weapon you gain:\n"
+				.."{sway_reduction:%s} Sway Reduction,\n"
+				.."{spread_reduction:%s} Spread Reduction and\n"
+				.."{recoil_reduction:%s} Recoil Reduction,\n"
+				.."but lose {stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_24_rgb
 	--[+ French +]--concentration
 	create_template("talent_tree_ogr_pas_024_desc_fr",
 		{"loc_talent_ogryn_drain_stamina_for_handling_desc"}, {"fr"},
-		loc_text("Lors de la mis en joue de votre arme à distance vous gagnez:\n{sway_reduction:%s} de réduction du balancement ,\n{spread_reduction:%s} de réduction du dispercement et\n{recoil_reduction:%s} de réduction du recul,\nMaisvous perdez {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." par seconde.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_24_rgb
+		loc_text("Lors de la mis en joue de votre arme à distance vous gagnez:\n{sway_reduction:%s} de réduction du balancement ,\n{spread_reduction:%s} de réduction du dispercement et\n{recoil_reduction:%s} de réduction du recul,\nMaisvous perdez {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." par seconde.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_24_rgb
 	--[+ Russian +]-- Сосредоточься
 	create_template("talent_tree_ogr_pas_024_desc_ru",
 		{"loc_talent_ogryn_drain_stamina_for_handling_desc"}, {"ru"},
@@ -6069,11 +6592,14 @@ local localization_templates = {
 	--[+ Passive 25 - Fire Away +]--
 	create_template("talent_tree_ogr_pas_025_desc_en",
 		{"loc_talent_ogryn_explosions_burn_close_desc"}, {"en"},
-			loc_text("{stacks:%s} Stack of "..COLORS_KWords.Burn_rgb.." applied by your explosions.\n{more_stacks:%s} Stacks if targets are inside the explosion epicenter.\nUp to {max_stacks:%s} Max "..COLORS_KWords.Burn_rgb.." Stacks on a target.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_25_rgb
+			loc_text("{stacks:%s} Stack of "..COLORS_KWords.Burn_rgb.." applied by your explosions.\n"
+				.."{more_stacks:%s} Stacks if targets are inside the explosion epicenter.\n"
+				.."Up to {max_stacks:%s} Max "..COLORS_KWords.Burn_rgb.." Stacks on a target.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_25_rgb
 	--[+ French +]--flamboiment
 	create_template("talent_tree_ogr_pas_025_desc_fr",
 		{"loc_talent_ogryn_explosions_burn_close_desc"}, {"fr"},
-			loc_text("{stacks:%s} cumul de "..COLORS_KWords_fr.Burn_rgb_fr.." est appliqué à vos explosions.\n{more_stacks:%s} cumuls ci la cible est dans l'épicentre de l'explosion.\nJusqu'à {max_stacks:%s} cumuls de "..COLORS_KWords_fr.Burn_rgb_fr.." maximum sur une cible.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_25_rgb
+			loc_text("{stacks:%s} cumul de "..COLORS_KWords_fr.Burn_rgb_fr.." est appliqué à vos explosions.\n{more_stacks:%s} cumuls ci la cible est dans l'épicentre de l'explosion.\nJusqu'à {max_stacks:%s} cumuls de "..COLORS_KWords_fr.Burn_rgb_fr.." maximum sur une cible.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_25_rgb
 	--[+ Russian +]-- Поджиг
 	create_template("talent_tree_ogr_pas_025_desc_ru",
 		{"loc_talent_ogryn_explosions_burn_close_desc"}, {"ru"},
@@ -6082,11 +6608,13 @@ local localization_templates = {
 	--[+ Passive 26 - Simple Minded +]--
 	create_template("talent_tree_ogr_pas_026_desc_en",
 		{"loc_talent_ogryn_corruption_resistance_desc"}, {"en"},
-			loc_text("{resistance:%s} "..COLORS_KWords.Corruption_rgb.." Resistance.\nReduces "..COLORS_KWords.Corruptdmg_rgb.." taken by any enemy source, including Poxburster explosion, toxic gas, Poxwalker Melee attacks, Pox Hound pounce, Beast of Nurgle vomit/slime/consumed, Daemonhost, grimoires, etc.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_26_rgb
+			loc_text("{resistance:%s} "..COLORS_KWords.Corruption_rgb.." Resistance.\n"
+				.."Reduces "..COLORS_KWords.Corruptdmg_rgb.." taken by any enemy source, including Poxburster explosion, toxic gas, Poxwalker Melee attacks, Pox Hound pounce, Beast of Nurgle vomit/slime/consumed, Daemonhost, grimoires, etc.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_26_rgb
 	--[+ French +]--Simple d'esprit
 	create_template("talent_tree_ogr_pas_026_desc_fr",
 		{"loc_talent_ogryn_corruption_resistance_desc"}, {"fr"},
-		loc_text("{resistance:%s} de résistance à la "..COLORS_KWords_fr.Corruption_rgb_fr..".\nréduit les "..COLORS_KWords_fr.Corruptdmg_rgb_fr.." subit de toute les sources:  explosion des crache-peste, gaz toxique, attaque de mélée des scrofuleux, morsures des cerbère, le vomit/résidu/avalement de la bête de Nurgle, Hôte Daemoniaque, grimoires, etc.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_26_rgb
+		loc_text("{resistance:%s} de résistance à la "..COLORS_KWords_fr.Corruption_rgb_fr..".\nréduit les "..COLORS_KWords_fr.Corruptdmg_rgb_fr.." subit de toute les sources:  explosion des crache-peste, gaz toxique, attaque de mélée des scrofuleux, morsures des cerbère, le vomit/résidu/avalement de la bête de Nurgle, Hôte Daemoniaque, grimoires, etc.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_26_rgb
 	--[+ Russian +]-- Простота ума
 	create_template("talent_tree_ogr_pas_026_desc_ru",
 		{"loc_talent_ogryn_corruption_resistance_desc"}, {"ru"},
@@ -6095,11 +6623,12 @@ local localization_templates = {
 	--[+ Passive 27 - Unbreakable +]--
 	create_template("talent_tree_ogr_pas_027_desc_en",
 		{"loc_talent_ogryn_block_all_attacks_variant_desc"}, {"en"},
-			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for "..COLORS_Numbers.n_5_rgb.." seconds on Perfect Block. Your Perfect Blocks can block all Melee Attacks.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_27_rgb
+			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for "..COLORS_Numbers.n_5_rgb.." seconds on Perfect Block. Your Perfect Blocks can block all Melee Attacks.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_27_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_027_desc_fr",
 		{"loc_talent_ogryn_block_all_attacks_variant_desc"}, {"fr"},
-		loc_text("{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée pendant "..COLORS_Numbers.n_5_rgb.." secondes lors d'un blocage parfait. Vos blocage parfait peuvent bloquer toute les attaques de mélées.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_27_rgb
+		loc_text("{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée pendant "..COLORS_Numbers.n_5_rgb.." secondes lors d'un blocage parfait. Vos blocage parfait peuvent bloquer toute les attaques de mélées.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_27_rgb
 	--[+ Russian +]-- Непробиваемый
 	create_template("talent_tree_ogr_pas_027_desc_ru",
 		{"loc_talent_ogryn_block_all_attacks_variant_desc"}, {"ru"},
@@ -6108,7 +6637,8 @@ local localization_templates = {
 	--[+ Passive 28 - Too Stubborn to Die +]--
 	create_template("talent_tree_ogr_pas_028_desc_en",
 		{"loc_talent_ogryn_toughness_gain_increase_on_low_health_desc"}, {"en"},
-			loc_text("{toughness_multiplier:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment while below {health:%s} "..COLORS_KWords.Health_rgb..".")), -- toughness_multiplier: +100%, health: 33% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_28_rgb
+			loc_text("{toughness_multiplier:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment while below {health:%s} "..COLORS_KWords.Health_rgb..".")),
+				-- toughness_multiplier: +100%, health: 33%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_28_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_028_desc_fr",
 		{"loc_talent_ogryn_toughness_gain_increase_on_low_health_desc"}, {"fr"},
@@ -6121,11 +6651,12 @@ local localization_templates = {
 	--[+ Passive 29 - Frenzied Blows +]--
 	create_template("talent_tree_ogr_pas_029_desc_en",
 		{"loc_talent_ogryn_stacking_attack_speed_desc"}, {"en"},
-			loc_text("{attack_speed:%s} Melee Attack Speed on Chained Hit for {duration:%s} seconds. Stacks {stacks:%s} times. Generates "..COLORS_Numbers.n_1_rgb.." Stack per swing. Can be refreshed during active duration.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_29_rgb
+			loc_text("{attack_speed:%s} Melee Attack Speed on Chained Hit for {duration:%s} seconds. Stacks {stacks:%s} times. Generates "..COLORS_Numbers.n_1_rgb.." Stack per swing. Can be refreshed during active duration.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_29_rgb
 	--[+ French +]-- coups frénétique
 	create_template("talent_tree_ogr_pas_029_desc_fr",
 		{"loc_talent_ogryn_stacking_attack_speed_desc"}, {"fr"},
-		loc_text("{attack_speed:%s} de vitesse d'attaque de mélée lors de coup en chaîne pendant {duration:%s} secondes. Se cumuls {stacks:%s} fois. Génère "..COLORS_Numbers.n_1_rgb.." cumul par coup. La durée est rafraichie une fois le mumuls maximal atteint.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_29_rgb
+		loc_text("{attack_speed:%s} de vitesse d'attaque de mélée lors de coup en chaîne pendant {duration:%s} secondes. Se cumuls {stacks:%s} fois. Génère "..COLORS_Numbers.n_1_rgb.." cumul par coup. La durée est rafraichie une fois le mumuls maximal atteint.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_29_rgb
 	--[+ Russian +]-- Яростные удары
 	create_template("talent_tree_ogr_pas_029_desc_ru",
 		{"loc_talent_ogryn_stacking_attack_speed_desc"}, {"ru"},
@@ -6134,11 +6665,12 @@ local localization_templates = {
 	--[+ Passive 30 - Attention Seeker +]--
 	create_template("talent_tree_ogr_pas_030_desc_en",
 		{"loc_talent_ranged_enemies_taunt_description"}, {"en"},
-			loc_text("Blocking or Pushing Enemies Taunts them for {duration:%s} seconds.")), -- duration: 8 -- s->seconds -- ..TALENTS_Enh_desc2.ED_OGR_Passive_30_rgb
+			loc_text("Blocking or Pushing Enemies Taunts them for {duration:%s} seconds.")),
+				-- duration: 8, s->seconds -- ..TALENTS_Enh_desc2.ED_OGR_Passive_30_rgb
 	--[+ French +]--chercher l'attention
 	create_template("talent_tree_ogr_pas_030_desc_fr",
 		{"loc_talent_ranged_enemies_taunt_description"}, {"fr"},
-		loc_text("Bloquer ou Pousser les ennemies les provoquent pendant {duration:%s} secondes.")), -- duration: 8 -- s->seconds -- ..TALENTS_Enh_desc2.ED_OGR_Passive_30_rgb
+		loc_text("Bloquer ou Pousser les ennemies les provoquent pendant {duration:%s} secondes.")), -- duration: 8, s->seconds -- ..TALENTS_Enh_desc2.ED_OGR_Passive_30_rgb
 	--[+ Russian +]-- Провокатор -- руоф Внимание искателя
 	create_template("talent_tree_ogr_pas_030_desc_ru",
 		{"loc_talent_ranged_enemies_taunt_description"}, {"ru"},
@@ -6147,7 +6679,8 @@ local localization_templates = {
 	--[+ Passive 31 - Bruiser +]--
 	create_template("talent_tree_ogr_pas_031_desc_en",
 		{"loc_talent_ogryn_cooldown_on_elite_kills_new_desc"}, {"en"},
-			loc_text("{cooldown_regen:%s} "..COLORS_KWords.Ability_cd_rgb.." Regeneration for {duration:%s} seconds after you or an Ally in "..COLORS_KWords.Coherency_rgb.." kill an Elite Enemy.")), -- cooldown: 4% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_31_rgb
+			loc_text("{cooldown_regen:%s} "..COLORS_KWords.Ability_cd_rgb.." Regeneration for {duration:%s} seconds after you or an Ally in "..COLORS_KWords.Coherency_rgb.." kill an Elite Enemy.")),
+				-- cooldown: 4%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_31_rgb
 	--[+ French +]--Cogneure
 	create_template("talent_tree_ogr_pas_031_desc_fr",
 		{"loc_talent_ogryn_cooldown_on_elite_kills_new_desc"}, {"fr"},
@@ -6160,7 +6693,8 @@ local localization_templates = {
 	--[+ Passive 32 - Pacemaker +]--
 	create_template("talent_tree_ogr_pas_032_desc_en",
 		{"loc_talent_ogryn_reload_speed_on_multiple_hits_new_desc"}, {"en"},
-			loc_text("{reload_speed:%s} Reload Speed on your next Reload when hitting {multi_hit:%s} or more Enemies with a single Attack.")), -- multi_hit: 5, reload_speed: +25%, duration: 5 -- s->seconds -- ..TALENTS_Enh_desc2.ED_OGR_Passive_32_rgb
+			loc_text("{reload_speed:%s} Reload Speed on your next Reload when hitting {multi_hit:%s} or more Enemies with a single Attack.")),
+				-- multi_hit: 5, reload_speed: +25%, duration: 5, s->seconds -- ..TALENTS_Enh_desc2.ED_OGR_Passive_32_rgb
 	--[+ French +]--Stimulateur
 	create_template("talent_tree_ogr_pas_032_desc_fr",
 		{"loc_talent_ogryn_reload_speed_on_multiple_hits_new_desc"}, {"fr"},
@@ -6173,7 +6707,8 @@ local localization_templates = {
 	--[+ Passive 33 - Unstoppable Momentum +]--
 	create_template("talent_tree_ogr_pas_033_desc_en",
 		{"loc_talent_ogryn_ranged_kill_grant_movement_speed_desc"}, {"en"},
-			loc_text("{movement_speed:%s} Movement Speed for {duration:%s} seconds on Ranged Kill.")), -- movement_speed: +20%, duration: 2 -- s->seconds -- ..TALENTS_Enh_desc2.ED_OGR_Passive_33_rgb
+			loc_text("{movement_speed:%s} Movement Speed for {duration:%s} seconds on Ranged Kill.")),
+				-- movement_speed: +20%, duration: 2, s->seconds -- ..TALENTS_Enh_desc2.ED_OGR_Passive_33_rgb
 	--[+ French +]--Élan inarétable
 	create_template("talent_tree_ogr_pas_033_desc_fr",
 		{"loc_talent_ogryn_ranged_kill_grant_movement_speed_desc"}, {"fr"},
@@ -6186,7 +6721,8 @@ local localization_templates = {
 	--[+ Passive 34 - Delight in Destruction +]--
 	create_template("talent_tree_ogr_pas_034_desc_en",
 		{"loc_talent_ogryn_damage_reduction_per_bleed_desc"}, {"en"},
-			loc_text("{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Resistance per "..COLORS_KWords.Bleeding_rgb.." Enemy in Melee range. Stacks {max_stacks:%s} times. Up to "..COLORS_Numbers.pc_32_rgb..".")), -- damage_reduction: +8%, max_stacks: 6 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_34_rgb
+			loc_text("{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Resistance per "..COLORS_KWords.Bleeding_rgb.." Enemy in Melee range. Stacks {max_stacks:%s} times. Up to "..COLORS_Numbers.pc_32_rgb..".")),
+				-- damage_reduction: +8%, max_stacks: 6, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_34_rgb
 	--[+ French +]-- Joie dans la destruction
 	create_template("talent_tree_ogr_pas_034_desc_fr",
 		{"loc_talent_ogryn_damage_reduction_per_bleed_desc"}, {"fr"},
@@ -6199,7 +6735,8 @@ local localization_templates = {
 	--[+ Passive 35 - Dedicated Practice +]--
 	-- create_template("talent_tree_ogr_pas_035_desc_en",
 		-- {"loc_talent_ogryn_wield_speed_increase_desc"}, {"en"},
-			-- loc_text("{wield_speed:%s} Weapon Swap Speed.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_35_rgb
+			-- loc_text("{wield_speed:%s} Weapon Swap Speed.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_35_rgb
 	--[+ French +]--!!!
 	-- create_template("talent_tree_ogr_pas_035_desc_fr",
 		-- {"loc_talent_ogryn_wield_speed_increase_desc"}, {"fr"},
@@ -6212,7 +6749,8 @@ local localization_templates = {
 	--[+ Passive 36 - Mobile Emplacement +]--
 	create_template("talent_tree_ogr_pas_036_desc_en",
 		{"loc_talent_ogryn_bracing_reduces_damage_taken_desc"}, {"en"},
-			loc_text("You take {damage_taken_multiplier:%s} reduced "..COLORS_KWords.Damage_rgb.." while bracing a Ranged Weapon.")), -- damage_taken_multiplier:-20.00%. -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_36_rgb
+			loc_text("You take {damage_taken_multiplier:%s} reduced "..COLORS_KWords.Damage_rgb.." while bracing a Ranged Weapon.")),
+				-- damage_taken_multiplier:-20.00%., colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_36_rgb
 	--[+ French +]--
 	create_template("talent_tree_ogr_pas_036_desc_fr",
 		{"loc_talent_ogryn_bracing_reduces_damage_taken_desc"}, {"fr"},
@@ -6225,7 +6763,8 @@ local localization_templates = {
 	--[+ Passive 37 - Implacable +]--
 	create_template("talent_tree_ogr_pas_037_desc_en",
 		{"loc_talent_ogryn_windup_reduces_damage_taken_desc"}, {"en"},
-			loc_text("{damage_taken_multiplier:%s} "..COLORS_KWords.Damage_rgb.." Reduction while charging Melee Attacks.")), -- damage_taken_multiplier: +15% -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_37_rgb
+			loc_text("{damage_taken_multiplier:%s} "..COLORS_KWords.Damage_rgb.." Reduction while charging Melee Attacks.")),
+				-- damage_taken_multiplier: +15%, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_37_rgb
 	--[+ French +]--
 	create_template("talent_tree_ogr_pas_037_desc_fr",
 		{"loc_talent_ogryn_windup_reduces_damage_taken_desc"}, {"fr"},
@@ -6238,7 +6777,8 @@ local localization_templates = {
 	--[+ Passive 38 - Dominate +]--
 	create_template("talent_tree_ogr_pas_038_desc_en",
 		{"loc_talent_ogryn_rending_on_elite_kills_desc"}, {"en"},
-			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Rending_rgb.." for {duration:%s} seconds on Elite kill.")), -- rending_multiplier: +10%, duration: 10 -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_38_rgb
+			loc_text("{rending_multiplier:%s} "..COLORS_KWords.Rending_rgb.." for {duration:%s} seconds on Elite kill.")),
+				-- rending_multiplier: +10%, duration: 10, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_38_rgb
 	--[+ French +]--
 	create_template("talent_tree_ogr_pas_038_desc_fr",
 		{"loc_talent_ogryn_rending_on_elite_kills_desc"}, {"fr"},
@@ -6251,7 +6791,8 @@ local localization_templates = {
 	--[+ Passive 39 - No Pushover +]--
 	create_template("talent_tree_ogr_pas_039_desc_en",
 		{"loc_talent_ogryn_empowered_pushes_desc"}, {"en"},
-			loc_text("{push_impact_modifier:%s} "..COLORS_KWords.Stagger_rgb.." for your pushes. Can only trigger once every {cooldown:%s} seconds.")), -- push_impact_modifier: 250%, cooldown: 8 -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_39_rgb
+			loc_text("{push_impact_modifier:%s} "..COLORS_KWords.Stagger_rgb.." for your pushes. Can only trigger once every {cooldown:%s} seconds.")),
+				-- push_impact_modifier: 250%, cooldown: 8, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_39_rgb
 	--[+ French +]--
 	create_template("talent_tree_ogr_pas_039_desc_fr",
 		{"loc_talent_ogryn_empowered_pushes_desc"}, {"fr"},
@@ -6264,7 +6805,10 @@ local localization_templates = {
 	--[+ Passive 40 - Get Stuck In +]--
 	create_template("talent_tree_ogr_pas_040_desc_en",
 		{"loc_talent_ogryn_ability_movement_speed_desc"}, {"en"},
-			loc_text("Activating your "..COLORS_KWords.Combat_ability_rgb.." grants you and Allies in "..COLORS_KWords.Coherency_rgb.." for {time:%s} seconds:\n{movement_speed:%s} Movement Speed,\n"..COLORS_KWords.Stuns_rgb.." and Suppression Immunity.")), -- movement_speed: +20%, time: 4 -- &->and -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_40_rgb
+			loc_text("Activating your "..COLORS_KWords.Combat_ability_rgb.." grants you and Allies in "..COLORS_KWords.Coherency_rgb.." for {time:%s} seconds:\n"
+				.."{movement_speed:%s} Movement Speed,\n"
+				..COLORS_KWords.Stuns_rgb.." and Suppression Immunity.")),
+				-- movement_speed: +20%, time: 4 -- &->and, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_40_rgb
 	--[+ French +]--!!!
 	create_template("talent_tree_ogr_pas_040_desc_fr",
 		{"loc_talent_ogryn_ability_movement_speed_desc"}, {"fr"},
@@ -6277,7 +6821,8 @@ local localization_templates = {
 	--[+ Passive 41 - Reloaded and Ready +]--
 	create_template("talent_tree_ogr_pas_041_desc_en",
 		{"loc_talent_ogryn_ranged_damage_on_reload_desc"}, {"en"},
-			loc_text("{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on Reload.")), -- damage :+15%, duration: 8 -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_41_rgb
+			loc_text("{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on Reload.")),
+				-- damage :+15%, duration: 8, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_41_rgb
 	--[+ French +]--
 	create_template("talent_tree_ogr_pas_041_desc_fr",
 		{"loc_talent_ogryn_ranged_damage_on_reload_desc"}, {"fr"},
@@ -6290,7 +6835,8 @@ local localization_templates = {
 	--[+ Passive 42 - Massacre +]--
 	create_template("talent_tree_ogr_pas_042_desc_en",
 		{"loc_talent_ogryn_crit_chance_on_kill_desc"}, {"en"},
-			loc_text("{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." for {duration:%s} seconds is granted by killing an enemy. Stacks {max_stacks:%s} times.")), -- crit_chance: +1%, duration: 6, max_stacks: 8 -- rewrite -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_42_rgb
+			loc_text("{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." for {duration:%s} seconds is granted by killing an enemy. Stacks {max_stacks:%s} times.")),
+				-- crit_chance: +1%, duration: 6, max_stacks: 8, rewrite, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_42_rgb
 	--[+ French +]--
 	create_template("talent_tree_ogr_pas_042_desc_fr",
 		{"loc_talent_ogryn_crit_chance_on_kill_desc"}, {"fr"},
@@ -6303,7 +6849,8 @@ local localization_templates = {
 	--[+ Passive 43 - No Stopping Me! +]--
 	create_template("talent_tree_ogr_pas_043_desc_en",
 		{"loc_talent_ogryn_windup_is_uninterruptible_unslowed_desc"}, {"en"},
-			loc_text("Become Uninterruptible while charging Heavy Melee Attacks. Remove {reduced_move_penalty:%s} of Heavy Melee Attack Movement Speed penalties.")), -- ..TALENTS_Enh_desc2.ED_OGR_Passive_43_rgb
+			loc_text("Become Uninterruptible while charging Heavy Melee Attacks. Remove {reduced_move_penalty:%s} of Heavy Melee Attack Movement Speed penalties.")),
+				-- ..TALENTS_Enh_desc2.ED_OGR_Passive_43_rgb
 	--[+ French +]--Rien peut m'arreter
 	create_template("talent_tree_ogr_pas_043_desc_fr",
 		{"loc_talent_ogryn_windup_is_uninterruptible_unslowed_desc"}, {"fr"},
@@ -6316,11 +6863,12 @@ local localization_templates = {
 	--[+ Passive 44 - Bash and Blast +]--
 	create_template("talent_tree_ogr_pas_044_desc_en",
 		{"loc_talent_ogryn_melee_improves_ranged_desc"}, {"en"},
-			loc_text("{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on Melee Kill. Lasts {duration:%s} seconds. Max Stacks {max_stacks:%s}.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_44_rgb
+			loc_text("{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on Melee Kill. Lasts {duration:%s} seconds. Max Stacks {max_stacks:%s}.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_44_rgb
 	--[+ French +]--Pluie de coups
 	create_template("talent_tree_ogr_pas_044_desc_fr",
 		{"loc_talent_ogryn_melee_improves_ranged_desc"}, {"fr"},
-		loc_text("{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance lors d'une élimination en mélée. Pendant {duration:%s} secondes. Cumuls maximuml : {max_stacks:%s}.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_44_rgb
+		loc_text("{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance lors d'une élimination en mélée. Pendant {duration:%s} secondes. Cumuls maximuml : {max_stacks:%s}.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_44_rgb
 	--[+ Russian +]-- Удар-выстрел
 	create_template("talent_tree_ogr_pas_044_desc_ru",
 		{"loc_talent_ogryn_melee_improves_ranged_desc"}, {"ru"},
@@ -6329,11 +6877,12 @@ local localization_templates = {
 	--[+ Passive 45 - Hard Knocks +]--
 	create_template("talent_tree_ogr_pas_045_desc_en",
 		{"loc_talent_ogryn_big_bully_heavy_hits_new_desc"}, {"en"},
-			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." taken for {duration:%s} seconds by enemies "..COLORS_KWords.Staggered_rgb.." by your Melee Attacks.")), -- damage: +1%, stacks: 25, duration: 10 -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_45_rgb
+			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." taken for {duration:%s} seconds by enemies "..COLORS_KWords.Staggered_rgb.." by your Melee Attacks.")),
+				-- damage: +1%, stacks: 25, duration: 10, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_45_rgb
 	--[+ French +]--Coup dur
 	create_template("talent_tree_ogr_pas_045_desc_fr",
 		{"loc_talent_ogryn_big_bully_heavy_hits_new_desc"}, {"fr"},
-		loc_text("{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." subit pendant {duration:%s} secondes par les ennemies qui "..COLORS_KWords_fr.Staggered_rgb_fr.." à cause de vos attaques de mélées.")), -- damage: +1%, stacks: 25, duration: 10 -- s->seconds -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_45_rgb
+		loc_text("{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." subit pendant {duration:%s} secondes par les ennemies qui "..COLORS_KWords_fr.Staggered_rgb_fr.." à cause de vos attaques de mélées.")), -- damage: +1%, stacks: 25, duration: 10, s->seconds, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_45_rgb
 	--[+ Russian +]-- Тяжёлые удары -- руоф Мощные удары
 	create_template("talent_tree_ogr_pas_045_desc_ru",
 		{"loc_talent_ogryn_big_bully_heavy_hits_new_desc"}, {"ru"},
@@ -6342,11 +6891,12 @@ local localization_templates = {
 	--[+ Passive 46 - No Hurting Friends! +]--
 	create_template("talent_tree_ogr_pas_046_desc_en",
 		{"loc_talent_ogryn_damage_taken_by_all_increases_strength_tdr_desc"}, {"en"},
-			loc_text("{strength:%s} "..COLORS_KWords.Strength_rgb.." on "..COLORS_KWords.Damage_rgb.." Taken by you or Allies in "..COLORS_KWords.Coherency_rgb..". {stacks:%s} Max Stacks. Lasts {duration:%s} seconds. {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." on Max Stacks.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_46_rgb
+			loc_text("{strength:%s} "..COLORS_KWords.Strength_rgb.." on "..COLORS_KWords.Damage_rgb.." Taken by you or Allies in "..COLORS_KWords.Coherency_rgb..". {stacks:%s} Max Stacks. Lasts {duration:%s} seconds. {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." on Max Stacks.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_46_rgb
 	--[+ French +]--Pas touche au copains
 	create_template("talent_tree_ogr_pas_046_desc_fr",
 		{"loc_talent_ogryn_damage_taken_by_all_increases_strength_tdr_desc"}, {"fr"},
-		loc_text("{strength:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." lors de "..COLORS_KWords_fr.Damage_rgb_fr.." subit par vous ou des alliés en syntonie. {stacks:%s} cumuls maximum. Pendant {duration:%s} secondes. {tdr:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." en étant au cumul maximal.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_46_rgb
+		loc_text("{strength:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." lors de "..COLORS_KWords_fr.Damage_rgb_fr.." subit par vous ou des alliés en syntonie. {stacks:%s} cumuls maximum. Pendant {duration:%s} secondes. {tdr:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." en étant au cumul maximal.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_46_rgb
 	--[+ Russian +]-- За друзей порву!
 	create_template("talent_tree_ogr_pas_046_desc_ru",
 		{"loc_talent_ogryn_damage_taken_by_all_increases_strength_tdr_desc"}, {"ru"},
@@ -6355,7 +6905,8 @@ local localization_templates = {
 	--[+ Passive 47 - Won't Give In +]--
 	create_template("talent_tree_ogr_pas_047_desc_en",
 		{"loc_talent_ogryn_tanky_with_downed_allies_desc"}, {"en"},
-			loc_text("{damage_taken:%s} "..COLORS_KWords.Damage_rgb.." Reduction for each Knocked Down or Incapacitated Ally within {range:%s} meters.")), -- damage_taken: +20%, range: 20 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_47_rgb
+			loc_text("{damage_taken:%s} "..COLORS_KWords.Damage_rgb.." Reduction for each Knocked Down or Incapacitated Ally within {range:%s} meters.")),
+				-- damage_taken: +20%, range: 20, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_47_rgb
 	--[+ French +]--
 	create_template("talent_tree_ogr_pas_047_desc_fr",
 		{"loc_talent_ogryn_tanky_with_downed_allies_desc"}, {"fr"},
@@ -6368,11 +6919,12 @@ local localization_templates = {
 	--[+ Passive 48 - Spray and Slay +]--
 	create_template("talent_tree_ogr_pas_048_desc_en",
 		{"loc_talent_ogryn_ranged_improves_melee_desc"}, {"en"},
-			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." and {attack_speed:%s} Melee Attack Speed for {duration:%s} seconds after emptying your Clip.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_48_rgb
+			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." and {attack_speed:%s} Melee Attack Speed for {duration:%s} seconds after emptying your Clip.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_48_rgb
 	--[+ French +]--Canardage
 	create_template("talent_tree_ogr_pas_048_desc_fr",
 		{"loc_talent_ogryn_ranged_improves_melee_desc"}, {"fr"},
-		loc_text("{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée et {attack_speed:%s} de vitesse d'attaque de mélée pendant {duration:%s} secondes après avoir vidé votre chargeur.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_48_rgb
+		loc_text("{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée et {attack_speed:%s} de vitesse d'attaque de mélée pendant {duration:%s} secondes après avoir vidé votre chargeur.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_48_rgb
 	--[+ Russian +]-- Отстрелял - добил -- Отстрелял - порубил -- 
 	create_template("talent_tree_ogr_pas_048_desc_ru",
 		{"loc_talent_ogryn_ranged_improves_melee_desc"}, {"ru"},
@@ -6381,19 +6933,829 @@ local localization_templates = {
 	--[+ Passive 49 - Lucky Streak +]--
 	create_template("talent_tree_ogr_pas_049_desc_en",
 		{"loc_talent_ogryn_crit_damage_increase_desc"}, {"en"},
-			loc_text("{crit_damage:%s} "..COLORS_KWords.Crit_hit_color_rgb.." of both Melee and Ranged attacks.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_49_rgb
+			loc_text("{crit_damage:%s} "..COLORS_KWords.Crit_hit_color_rgb.." of both Melee and Ranged attacks.")),
+				-- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_49_rgb
 			--[+ French +]--Coup chanceux
 	create_template("talent_tree_ogr_pas_049_desc_fr",
 		{"loc_talent_ogryn_crit_damage_increase_desc"}, {"fr"},
-		loc_text("{crit_damage:%s} de "..COLORS_KWords_fr.Crit_dmg_r_rgb_fr.." sur vos attaques de mélées et de distances.")), -- stacks: +4 -- colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_49_rgb
+		loc_text("{crit_damage:%s} de "..COLORS_KWords_fr.Crit_dmg_r_rgb_fr.." sur vos attaques de mélées et de distances.")), -- stacks: +4, colors -- ..TALENTS_Enh_desc2.ED_OGR_Passive_49_rgb
 	--[+ Russian +]-- Месиво 
 	create_template("talent_tree_ogr_pas_049_desc_ru",
 		{"loc_talent_ogryn_crit_damage_increase_desc"}, {"ru"},
-			loc_text("{crit_damage:%s} к "..COLORS_KWords_ru.Crit_hit_color_rgb_ru.." для атак ближнего и дальнего боя.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_49_rgb_ru
+			loc_text("{crit_damage:%s} к "..COLORS_KWords_ru.Crit_hit_color_rgb_ru.." для атак ближнего и дальнего боя.")),
+				-- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_49_rgb_ru
+
+
+
+--[+ ++ARBITES - АРБИТЕС++ +]--
+--[+ +BLITZ - БЛИЦ+ +]--
+	--[+ BLITZ 0 - Arbites Grenade +]--
+	create_template("talent_tree_arb_blitz0_000_desc_en",
+		{"loc_talent_ability_adamant_grenade_description"}, {"en"},
+			loc_text("Throw an "..COLORS_KWords.Arbites_gren_rgb.." that explodes after a short delay.\n"
+				..Arrow_right_.." {charges:%s} Max Grenades.")),
+			-- charges: 4, colors
+	--[+ French +]--
+	--[+ Russian +]--!!!
+	create_template("talent_tree_arb_blitz0_000_desc_en",
+		{"loc_talent_ability_adamant_grenade_description"}, {"ru"},
+			loc_text("Вы бросаете "..COLORS_KWords.Arbites_gren_rgb..", которая взрывается после короткой задержки.\n"
+				..Arrow_right_.." Максимум {charges:%s} гранаты.")),
+
+	--[+ BLITZ 1 - Remote Detonation +]--
+	create_template("talent_tree_arb_blitz1_000_desc_en",
+		{"loc_talent_ability_detonate_description"}, {"en"},
+			loc_text("Cause an Explosion at your Cyber-Mastiff's Location. "..COLORS_KWords.Staggering_rgb.." and "..COLORS_KWords.Electrcuting_rgb.." nearby Enemies.\n"
+				..Arrow_right_.." {max_charges:%s} Charges.\n"
+				..Arrow_right_.." Cooldown {cooldown:%s} seconds.")),
+			-- max_charges: 3, cooldown: 60, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ BLITZ 2 - Voltaic Shock Mine +]--
+	create_template("talent_tree_arb_blitz2_000_desc_en",
+		{"loc_talent_ability_shock_mine_description"}, {"en"},
+			loc_text("Throw a {talent_name:%s} that activates as it lands.\n"
+				..Arrow_right_.." For {duration:%s} seconds it will "..COLORS_KWords.Electrocute_rgb.." all enemies within {range:%s} meters.")),
+			-- talent_name: Voltaic Shock Min, duration: 15, !range!: 5, s->seconds, m->meters, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ BLITZ 3 - Arbites Grenade +]--
+	create_template("talent_tree_arb_blitz3_000_desc_en",
+		{"loc_talent_ability_adamant_grenade_improved_description"}, {"en"},
+			loc_text("Throw an {talent_name:%s} that explodes after a short delay.\n"
+				..Arrow_right_.." {charges:%s} Max Grenades.\n"
+				..Arrow_right_.." This is an augmented version of {talent_name:%s}.")),
+			-- talent_name: Arbites Grenade, charges: 4
+	--[+ French +]--
+	--[+ Russian +]--
+
+--[+ +AURA - АУРА+ +]--
+	--[+ AURA 0 - Part of the Squad +]--
+	create_template("talent_tree_arb_aura0_000_desc_en",
+		{"loc_talent_adamant_companion_coherency_desc"}, {"en"},
+			loc_text("Your Cyber-Mastiff counts towards unit "..COLORS_KWords.Coherency_rgb..".")),
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ AURA 1 - Part of the Squad +]--
+	create_template("talent_tree_arb_aura1_000_desc_en",
+		{"loc_talent_adamant_companion_coherency_alt_desc"}, {"en"},
+			loc_text("{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n\n"
+				.."Your Cyber-Mastiff counts towards unit "..COLORS_KWords.Coherency_rgb..".")),
+			-- tdr: +7.5%, rewrite, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ AURA 2 - Ruthless Efficiency +]--
+	create_template("talent_tree_arb_aura2_000_desc_en",
+		{"loc_talent_adamant_reload_speed_aura_desc"}, {"en"},
+			loc_text("{reload_speed:%s} Reload Speed for you and Allies in "..COLORS_KWords.Coherency_rgb..".")),
+			-- reload_speed: +7.5%, rewrite, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ AURA 3 - Breaking Dissent +]--
+	create_template("talent_tree_arb_aura3_000_desc_en",
+		{"loc_talent_adamant_damage_vs_staggered_aura_alt_desc"}, {"en"},
+			loc_text("{damage_vs_stagger:%s} "..COLORS_KWords.Damage_rgb.." vs "..COLORS_KWords.Staggered_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".")),
+			-- damage_vs_stagger: +10%, rewrite, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+--[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
+	--[+ ABILITY 0 - Nuncio-Aquila +]--
+	create_template("talent_tree_arb_abil0_000_desc_en",
+		{"loc_talent_adamant_ability_nuncio_base_desc"}, {"en"},
+			loc_text("Deploy a {talent_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n\n"
+				.."Allies gain:\n"
+				..Arrow_up_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenish per second.\n\n"
+				.."Enemies gain:\n"
+				..Arrow_up_green.." {damage_taken:%s} "..COLORS_KWords.Damage_rgb.." Taken.\n\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.\n"
+				..Arrow_right_.." Cooldown {cooldown:%s} seconds.")),
+			-- range: 7.5, toughness: 5%, damage_taken: +15%, duration: 20, cooldown: 60, m->meters, s->seconds, rewrite, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 1 - Castigator's Stance +]--
+	create_template("talent_tree_arb_abil1_000_desc_en",
+		{"loc_talent_adamant_stance_ability_alt_description"}, {"en"},
+			loc_text("Enter the {talent_name:%s} for {duration:%s} seconds, during which you have:\n"
+				..Arrow_up_green.." {movement_speed:%s} Movement Speed,\n"
+				..Arrow_up_green.." {damage_taken:%s} Reduced "..COLORS_KWords.Damage_rgb.." Taken,\n"
+				..Arrow_up_green.." {movement_reduction:%s} Reduced Movement Speed Penalty from Actions, but you cannot Sprint.\n"
+				..Arrow_up_green.." All your "..COLORS_KWords.Toughness_rgb.." replenishes on activation.\n"
+				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.")),
+				-- talent_name: Castigator's Stance, duration: 10, movement_speed: +25%, damage_taken: +80%, movement_reduction: 100%, cooldown: 45, s->seconds, rewrite, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 1-1 - Blessed Armament +]--
+	create_template("talent_tree_arb_abil1_001_desc_en",
+		{"loc_talent_adamant_stance_ranged_kills_transfer_ammo_desc"}, {"en"},
+			loc_text("{ammo:%s} of the total Ammo in your Clip is replenished from Reserve on Ranged kills during {stance_name:%s}. Rounded Up.\n"
+				..Arrow_right_.." Cooldown {cooldown:%s} seconds.")),
+			-- stance_name: Castigator's Stance, ammo: 10%, cooldown: 1.5, s->seconds, rewrite
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 1-2 - Writ of Execution +]--
+	create_template("talent_tree_arb_abil1_002_desc_en",
+		{"loc_talent_adamant_stance_elite_kills_stack_damage_desc"}, {"en"},
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." for each Elite or Specialist Kill during {stance_name:%s}.\n"
+				..Arrow_right_.." {stacks:%s} Max Stacks.\n"
+				..Arrow_right_.." Lasting {duration:%s} seconds.")),
+			-- stance_name: Castigator's Stance, damage: +5%, duration: 10, stacks: 10, s->seconds, rewrite, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 1-3 - Bloodlust +]--
+	create_template("talent_tree_arb_abil1_003_desc_en",
+		{"loc_talent_adamant_stance_bloodlust_desc"}, {"en"},
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to your Cyber-Mastiff during {stance_name:%s}.")),
+			-- stance_name: Castigator's Stance, damage: +75%, rewrite, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 2 - Nuncio-Aquila +]--
+	create_template("talent_tree_arb_abil2_000_desc_en",
+		{"loc_talent_ability_area_buff_drone_ct_description"}, {"en"},
+			-- loc_text("Deploy a {nuncio_name:%s} in the target direction. Allies within {range:%s} meters gain:\n"
+			loc_text("Deploy a {nuncio_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n\n"
+				.."Allies gain buffs:\n"
+				..Arrow_up_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenish per second,\n"
+				..Arrow_up_green.." {suppression:%s} Suppression Dealt,\n"
+				..Arrow_up_green.." {impact:%s} "..COLORS_KWords.Impact_rgb..",\n"
+				..Arrow_up_green.." {recoil:%s} Recoil,\n"
+				..Arrow_up_green.." Slowdown and Suppression Immune,\n"
+				..Arrow_up_green.." Immune to interruption during Alternate Fire.\n\n"
+				.."Enemies gain debuffs:\n"
+				..Arrow_up_green.." {damage_taken:%s} "..COLORS_KWords.Damage_rgb.." Taken.\n\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.\n"
+				..Arrow_right_.." Cooldown: {cooldown:%s} seconds.\n"
+				..Arrow_right_.." This is an augmented version of {nuncio_name:%s}.")),
+			-- range: 7.5, toughness: 7.5%, suppression: +30%, impact: +30%, recoil: -25%, damage_taken: +15%, duration: 20, cooldown: 60, nuncio_name: Nuncio-Aquila, m->meters, s->seconds, rewrite, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 2-1 - Inspiring Recitation +]--
+	create_template("talent_tree_arb_abil2_001_desc_en",
+		{"loc_talent_adamant_drone_buff_talent_alt_desc"}, {"en"},
+			loc_text("Affected Allies also gain buffs:\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..",\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{revive_speed:%s} Revive Speed, and\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed:%s} Attack Speed.")),
+			-- tdr: 30%, revive_speed: 30%, attack_speed: 10%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 2-2 - Fear of Justice +]--
+	create_template("talent_tree_arb_abil2_002_desc_en",
+		{"loc_talent_adamant_drone_debuff_talent_desc"}, {"en"},
+			loc_text("Affected enemies also gain debuffs to their Melee Attacks:\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_minus_rgb.."{damage_reduction:%s} "..COLORS_KWords.Damage_rgb..",\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed_reduction:%s} time between attacks.")),
+			-- attack_speed_reduction: 50%, damage_reduction: 25%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 3 - Break the Line +]--
+	create_template("talent_tree_arb_abil3_000_desc_en",
+		{"loc_talent_adamant_bash_ability_description"}, {"en"},
+			loc_text("Charge forward and Bash, causing high "..COLORS_KWords.Stagger_rgb.." to enemies in front of you, and gain for {duration:%s} seconds:\n"
+				..Arrow_up_green.." {damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
+				..Arrow_up_green.." {stagger:%s} "..COLORS_KWords.Impact_rgb..".\n"
+				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.")),
+			-- damage: +25%, stagger: +50%, duration: 6, cooldown: 20, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 3-1 - Commendation from Condemnation +]--
+	create_template("talent_tree_arb_abil3_001_desc_en",
+		{"loc_talent_adamant_charge_toughness_alt_description"}, {"en"},
+			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina:%s} "..COLORS_KWords.Stamina_rgb.." for each Elite, Specialist, or Monstrosity hit, up to {toughness_max:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina_max:%s} "..COLORS_KWords.Stamina_rgb..".")),
+			-- toughness: 20%, stamina: 15%, toughness_max: 100%, stamina_max: 75%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 3-2 - Targeted Brutality +]--
+	create_template("talent_tree_arb_abil3_002_desc_en",
+		{"loc_talent_adamant_charge_cooldown_alt_description"}, {"en"},
+			loc_text("Restore {cooldown:%s} seconds "..COLORS_KWords.Ability_cd_rgb.." for each hit, increased to {cooldown_elite:%s} on Elite, Specialist, or Monstrosity.\n"
+				..Arrow_right_.." {max_cooldown:%s} Max Cooldown restored.")),
+			-- cooldown: 0.5, cooldown_elite: 5, max_cooldown: , s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 3-3 - Kill Order +]--
+	create_template("talent_tree_arb_abil3_003_desc_en",
+		{"loc_talent_adamant_dog_damage_after_ability_desc"}, {"en"},
+			loc_text("{companion_damage:%s} "..COLORS_KWords.Damage_rgb.." for your Cyber Mastiff, for {duration:%s} seconds after using your "..COLORS_KWords.Combat_ability_rgb..".")),
+			-- companion_damage: +50%, duration: 12, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ ABILITY 3-4 - Engage +]--
+	create_template("talent_tree_arb_abil3_004_desc_en",
+		{"loc_talent_adamant_charge_longer_distance_desc"}, {"en"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{distance:%s} meters to the distance of {charge_ability_name:%s}.")),
+			-- charge_ability_name: Break the Line, distance: 7.5, m->meters
+	--[+ French +]--
+	--[+ Russian +]--
+
+--[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
+	--[+ KEYSTONE 1 - Unleashed Brutality +]--
+	create_template("talent_tree_arb_keys1_000_desc_en",
+		{"loc_talent_adamant_cyber_mastiff_elites_desc"}, {"en"},
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Elite and Specialist Enemies dealt by your Cyber-Mastiff.\n"
+				.."Elite and Specialist Enemies become its Primary targets.")),
+			-- damage: +25%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 2 - Lone Wolf +]--
+	create_template("talent_tree_arb_keys2_000_desc_en",
+		{"loc_talent_adamant_disable_companion_replenish_desc"}, {"en"},
+			loc_text("You are no longer accompanied by your Cyber-Mastiff, but gain:\n"
+				..Arrow_up_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..",\n"
+				..Arrow_up_green.." {attack_speed:%s} Attack Speed,\n"
+				..Arrow_up_green.." {damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
+				..Arrow_up_green.." {charges:%s} increased Charges on your Blitz Abilities, and you replenish a charge of your Blitz Ability every {time:%s} seconds.")),
+			-- tdr: +15%, attack_speed: +10%, damage: +10%, time: 60, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 3 - Go Get 'Em! +]--
+	create_template("talent_tree_arb_keys3_000_desc_en",
+		{"loc_talent_adamant_cyber_mastiff_ranged_desc"}, {"en"},
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ranged Enemies dealt by your Cyber-Mastiff.\n"
+				.."Ranged Enemies become its Primary targets.")),
+			-- !damage!: +50%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 4 - Execution Order +]--
+	create_template("talent_tree_arb_keys4_000_desc_en",
+		{"loc_talent_execution_order_description"}, {"en"},
+			loc_text("Periodically mark Elites, Specialists and Bosses for Mercy Sanction. Killing a "..COLORS_KWords.Markedenemy_rgb.." replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb..".\n\n"
+			.."Your Cyber-Mastiff gains for {time:%s} seconds after attacking a "..COLORS_KWords.Markedenemy_rgb..":\n"
+				..Arrow_up_green.." {dog_damage:%s} Cyber-Mastiff "..COLORS_KWords.Damage_rgb..".\n\n"
+			.."You gain for {time:%s} seconds after killing a "..COLORS_KWords.Markedenemy_rgb..":\n"
+				..Arrow_up_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+				..Arrow_up_green.." {attack_speed:%s} Attack Speed.")),
+			-- toughness: 15%, dog_damage: +150%, time: 8, damage: +15%, attack_speed: +10%, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 4-1 - Efficient Killer +]--
+	create_template("talent_tree_arb_keys4_001_desc_en",
+		{"loc_talent_execution_order_crit_description"}, {"en"},
+			loc_text("On killing a "..COLORS_KWords.Markedenemy_rgb..", you gain:\n"
+				..Arrow_up_green.." {crit_chance:%s} "..COLORS_KWords.Crt_chance_rgb.." and\n"
+				..Arrow_up_green.." {crit_damage:%s} "..COLORS_KWords.Crt_dmg_r_rgb..".\n"
+				..Arrow_right_.." Lasts {time:%s} seconds.")),
+			-- crit_chance: +10%, crit_damage: +25%, time: 8, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 4-2 - Malocator +]--
+	create_template("talent_tree_arb_keys4_002_desc_en",
+		{"loc_talent_execution_order_cdr_on_kill_description"}, {"en"},
+			loc_text("{regen:%s} "..COLORS_KWords.Cd_rgb.." Regeneration for {time:%s} seconds after killing a "..COLORS_KWords.Markedenemy_rgb..".")),
+			-- regen: +50%, time: 8, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 4-3 - No Lenience +]--
+	create_template("talent_tree_arb_keys4_003_desc_en",
+		{"loc_talent_execution_order_command_applies_brittleness_description"}, {"en"},
+			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.." for {time:%s} seconds after killing a "..COLORS_KWords.Markedenemy_rgb..".")),
+			-- rending: +10%, time: 8, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 4-4 - Keeping Protocol +]--
+	create_template("talent_tree_arb_keys4_004_desc_en",
+		{"loc_talent_execution_order_perma_buff_new_description"}, {"en"},
+			loc_text("Killing a "..COLORS_KWords.Markedenemy_rgb.." grants:\n"
+				..Arrow_up_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." vs Monstrosities and\n"
+				..Arrow_up_green.." {damage_red:%s} "..COLORS_KWords.Damage_rgb.." Resistance vs Monstrosities.\n"
+				..Arrow_right_.." {max_stacks:%s} Max Stacks.\n"
+				..Arrow_right_.." Lasts until the end of the Mission.")),
+			-- damage: +1%, damage_red: +1%, max_stacks: 30, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 4-5 - Not Far Behind +]--
+	create_template("talent_tree_arb_keys4_005_desc_en",
+		{"loc_talent_adamant_pinning_dog_bonus_moving_towards_description"}, {"en"},
+			loc_text("After Pounce you gain for {time:%s} seconds:\n"
+				..Arrow_up_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+				..Arrow_up_green.." {movement_speed:%s} Movement Speed.")),
+			-- movement_speed: +10%, damage: +10%, time: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 5 - Terminus Warrant +]--
+	create_template("talent_tree_arb_keys5_000_desc_en",
+		{"loc_talent_adamant_terminus_warrant_shortened_alt_desc"}, {"en"},
+			loc_text("Ranged Attacks grant Stacks of "..COLORS_KWords.Meleejust_rgb.." for each Enemy Hit, up to {max_stacks:%s}. Melee Hits remove {melee_remove:%s} Stack.\n"
+				.."While you have Stacks of "..COLORS_KWords.Meleejust_rgb..", gain:\n"
+				..Arrow_up_green.." {melee_damage:%s} Melee "..COLORS_KWords.Damage_rgb.." and\n"
+				..Arrow_up_green.." {melee_impact:%s} Melee "..COLORS_KWords.Impact_rgb..".\n\n"
+				.."Melee Hits grant Stacks of "..COLORS_KWords.Rangedjust_rgb..", up to {max_stacks:%s}. Ranged Attacks remove {ranged_remove:%s} Stack for each Enemy Hit.\n"
+				.."While you have Stacks of "..COLORS_KWords.Rangedjust_rgb..", gain:\n"
+				..Arrow_up_green.." {ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb..",\n"
+				..Arrow_up_green.." {ranged_cleave:%s} Ranged "..COLORS_KWords.Cleave_rgb.." and\n"
+				..Arrow_up_green.." {suppression:%s} Suppression.")),
+				-- max_stacks: 30, melee_remove: 1, melee_damage: +15%, melee_impact: +25%, ranged_remove: 1, ranged_damage: +15%, ranged_cleave: +50%, suppression: +50%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 5-1 - Dispense Justice +]--
+	create_template("talent_tree_arb_keys5_001_desc_en",
+		{"loc_talent_adamant_terminus_warrant_ranged_alt_desc"}, {"en"},
+			loc_text("{reload_speed:%s} Reload Speed while you have Stacks of "..COLORS_KWords.Rangedjust_rgb..".")),
+			-- reload_speed: +20%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+			-- loc_text("While you have Stacks of "..COLORS_KWords.Rangedjust_rgb..", you have {reload_speed:%s} Reload Speed.")),
+
+	--[+ KEYSTONE 5-2 - Obstinate +]--
+	create_template("talent_tree_arb_keys5_002_desc_en",
+		{"loc_talent_adamant_terminus_warrant_upgrade_alt_desc"}, {"en"},
+			loc_text("Swapping to your Melee Weapon while you have {swap_stacks:%s} "..COLORS_KWords.Meleejust_rgb.." Stacks or more, grants you:\n"
+				..Arrow_up_green.." {melee_attack_speed:%s} Melee Attack Speed until you run out of Stacks, or swap to your Ranged Weapon.\n\n"
+				.."Swapping to your Ranged Weapon while you have {swap_stacks:%s} "..COLORS_KWords.Rangedjust_rgb.." Stacks or more, grants you:\n"
+				..Arrow_up_green.." {fire_rate:%s} Fire Rate until you run out of Stacks, or swap to your Melee Weapon.")),
+				-- swap_stacks: 15, melee_attack_speed: +15%, fire_rate: +15%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 5-3 - Terminal Decree +]--
+	create_template("talent_tree_arb_keys5_003_desc_en",
+		{"loc_talent_adamant_terminus_warrant_toughness_desc"}, {"en"},
+			loc_text("While you have stacks of "..COLORS_KWords.Meleejust_rgb..", you gain additional {melee_toughness:%s} Melee "..COLORS_KWords.Toughness_rgb.." Regeneration, and Allies in "..COLORS_KWords.Coherency_rgb.." Replenish {toughness:%s} of any "..COLORS_KWords.Toughness_rgb.." that you Replenish.")),
+			-- melee_toughness: +100%, toughness: 25%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 5-4 - Writ of Judgement +]--
+	create_template("talent_tree_arb_keys5_004_desc_en",
+		{"loc_talent_adamant_terminus_warrant_improved_alt_desc"}, {"en"},
+			loc_text("Swapping to your Melee Weapon while at {talent_max_stacks:%s} "..COLORS_KWords.Meleejust_rgb.." Stacks grants you:\n"
+				..Arrow_up_green.." {melee_rending:%s} Melee "..COLORS_KWords.Rending_rgb.." until you run out of Stacks, or swap to your Ranged Weapon.\n\n"
+				.."Swapping to your Ranged Weapon while at {talent_max_stacks:%s} "..COLORS_KWords.Rangedjust_rgb.." Stacks grants you:\n"
+				..Arrow_up_green.." {crit_damage:%s} "..COLORS_KWords.Crit_strike_dmg_rgb.." and\n"
+				..Arrow_up_green.." {weakspot_damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb.." until you run out of Stacks, or swap to your Melee Weapon.")),
+			-- talent_max_stacks: 30, melee_rending: +15%, crit_damage: +25%, weakspot_damage: +25%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 6 - Forceful +]--
+	create_template("talent_tree_arb_keys6_000_desc_en",
+		{"loc_talent_adamant_forceful_base_alt_desc"}, {"en"},
+			loc_text(COLORS_KWords.Staggering_rgb.." Hits and Blocked Attacks grant Stacks of {forceful_name:%s}. Lasting {duration:%s} seconds and Stacking {stacks:%s} times. Each Stack gives:\n"
+				..Arrow_up_green.." {impact:%s} "..COLORS_KWords.Impact_rgb.." and\n"
+				..Arrow_up_green.." {dr:%s} "..COLORS_KWords.Damage_rgb.." Resistance.\n"
+				.."Remove Stack on "..COLORS_KWords.Damage_rgb.." taken.")),
+			-- forceful_name: Forceful, duration: 5, stacks: 10, impact: +5%, dr: +2.5%, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 6-1 - Adamant Will +]--
+	create_template("talent_tree_arb_keys6_001_desc_en",
+		{"loc_talent_adamant_forceful_stun_immune_and_block_all_linger_desc"}, {"en"},
+			loc_text("While at Max Stacks, and for {duration:%s} seconds afterwards, Gain "..COLORS_KWords.Stun_rgb.." Immunity, additionally, your Perfect blocks can block All Attacks.")),
+			-- duration: 3, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 6-2 - Will of the Lex +]--
+	create_template("talent_tree_arb_keys6_002_desc_en",
+		{"loc_talent_adamant_forceful_toughness_regen_per_stack_desc"}, {"en"},
+			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." each second per Stack.")),
+			-- !toughness!: +0.5%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 6-3 - Targets Acquired +]--
+	create_template("talent_tree_arb_keys6_003_desc_en",
+		{"loc_talent_adamant_forceful_melee_alt_desc"}, {"en"},
+			loc_text("While at Max Stacks, and for {duration:%s} seconds afterwards, gain:\n"
+				..Arrow_up_green.." {attack_speed:%s} Attack Speed and\n"
+				..Arrow_up_green.." {cleave:%s} "..COLORS_KWords.Cleave_rgb..".")),
+			-- duration: , attack_speed: +10%, cleave: +50%, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 6-4 - Arbites Vigilant +]--
+	create_template("talent_tree_arb_keys6_004_desc_en",
+		{"loc_talent_adamant_forceful_ability_damage"}, {"en"},
+			loc_text("On "..COLORS_KWords.Combat_ability_rgb..", gain:\n"
+				..Arrow_up_green.." {strength:%s} "..COLORS_KWords.Strength_rgb.." for each Stack.\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.\n"
+				..Arrow_down_red.." Removes all Stacks.")),
+			-- strength: +2.5%, duration: 10, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ KEYSTONE 6-5 - Judicial Force +]--
+	create_template("talent_tree_arb_keys6_005_desc_en",
+		{"loc_talent_adamant_forceful_stagger_on_low_high_desc"}, {"en"},
+			loc_text(COLORS_KWords.Stagger_rgb.." nearby Enemies upon reaching {low_stacks:%s} Stacks or {high_stacks:%s} Stacks.\n"
+				..Arrow_right_.." Cooldown {cooldown:%s} seconds.\n"
+				..Arrow_right_.." Separate for each.")),
+			-- low_stacks: , high_stacks: , cooldown: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
+	--[+ Passive 1 - No Escape +]--
+	create_template("talent_tree_arb_pas_001_desc_en",
+		{"loc_talent_adamant_elite_special_kills_offensive_boost_alt_desc"}, {"en"},
+			loc_text("On Elite or Specialist Kill, gain:\n"
+				..Arrow_up_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+				..Arrow_up_green.." {movement_speed:%s} Movement Speed.\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.")),
+			-- damage: +10%, movement_speed: +10%, duration: 4, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 2 - Withering Fire +]--
+	create_template("talent_tree_arb_pas_002_desc_en",
+		{"loc_talent_adamant_damage_after_reloading_desc"}, {"en"},
+			loc_text("{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Reloading.")),
+			-- damage: +15%, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 3 - Hammer of Judgement +]--
+	create_template("talent_tree_arb_pas_003_desc_en",
+		{"loc_talent_adamant_multiple_hits_attack_speed_desc"}, {"en"},
+			loc_text("{melee_attack_speed:%s} Melee Attack Speed for {duration:%s} seconds on hitting {hits:%s} or more enemies with a Melee Attack.")),
+			-- melee_attack_speed: +10%, duration: 3, hits: 3, s->seconds
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 4 - Razor-Jaw Augment +]--
+	create_template("talent_tree_arb_pas_004_desc_en",
+		{"loc_talent_adamant_dog_pounces_bleed_nearby_desc"}, {"en"},
+			loc_text("Enemies knocked away by your Cyber Mastiff's Pounce have {stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." applied to them.")),
+			-- stacks: 8, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 5 - Target Neutralised +]--
+	create_template("talent_tree_arb_pas_005_desc_en",
+		{"loc_talent_adamant_elite_special_kills_replenish_toughness_desc"}, {"en"},
+			loc_text("Replenish {instant_toughness:%s} "..COLORS_KWords.Toughness_rgb.." instantly, and {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds, on Elite or Specialist Kill.")),
+			-- instant_toughness: 10%, toughness: 10%, duration: 4, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 6 - Up Close +]--
+	create_template("talent_tree_arb_pas_006_desc_en",
+		{"loc_talent_adamant_close_kills_restore_toughness_desc"}, {"en"},
+			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." on Close Kill.")),
+			-- toughness: 5%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 7 - Force of Will +]--
+	create_template("talent_tree_arb_pas_007_desc_en",
+		{"loc_talent_adamant_staggers_replenish_toughness_melee_desc"}, {"en"},
+			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." on "..COLORS_KWords.Staggering_rgb.." Melee Attack.")),
+			-- toughness: 10%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 8 - Retaliatory Force +]--
+	create_template("talent_tree_arb_pas_008_desc_en",
+		{"loc_talent_adamant_perfect_block_damage_boost_alt_desc"}, {"en"},
+			loc_text("Gain {block_cost:%s} Reduced Block Cost.\n"
+				.."On Perfect Block gain for {duration:%s} seconds:\n"
+				..Arrow_up_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+				..Arrow_up_green.." {attack_speed:%s} Attack Speed.")),
+			-- block_cost: 15%, damage: +15%, attack_speed: +10%, duration: 8, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 9 - Man and Cyber-Mastiff +]--
+	create_template("talent_tree_arb_pas_009_desc_en",
+		{"loc_talent_adamant_toughness_regen_near_companion_desc"}, {"en"},
+			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second while within {range:%s} meters of your Cyber-Mastiff.")),
+			-- toughness: 5%, range: 8, m->meters, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 10 - Walk It Off +]--
+	create_template("talent_tree_arb_pas_010_desc_en",
+		{"loc_talent_adamant_stamina_spent_replenish_toughness_desc"}, {"en"},
+			loc_text("Spending {stamina:%s} "..COLORS_KWords.Stamina_rgb.." replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds.")),
+			-- stamina: 1, toughness: 15%, duration: 3, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 11 - Shield Plates +]--
+	create_template("talent_tree_arb_pas_011_desc_en",
+		{"loc_talent_adamant_shield_plates_alt_desc"}, {"en"},
+			loc_text("On Block, replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds.\n"
+				.."On Perfect Block, instantly replenish {perfect_toughness:%s} "..COLORS_KWords.Toughness_rgb..".\n"
+				..Arrow_right_.." Cooldown {cooldown:%s} second.")),
+			-- toughness: 15%, duration: 3, perfect_toughness: 10%, cooldown: 1, s->second, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 12 - Arbitrator Armour +]--
+	create_template("talent_tree_arb_pas_012_desc_en",
+		{"loc_talent_adamant_armor_desc"}, {"en"},
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb..".")),
+			-- toughness: +25, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 13 - Voltaic Mandibles Augment +]--
+	create_template("talent_tree_arb_pas_013_desc_en",
+		{"loc_talent_adamant_dog_attacks_electrocute_desc"}, {"en"},
+			loc_text("Your Cyber-Mastiff "..COLORS_KWords.Electrocutes_rgb.." Enemies it attacks for {duration:%s} seconds.")),
+			-- duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 14 - Ammo Belt +]--
+	-- create_template("talent_tree_arb_pas_014_desc_en",
+		-- {"loc_talent_adamant_ammo_belt_desc"}, {"en"},
+			-- loc_text("{ammo:%s} Ammo Capacity.")),
+			-- ammo: +25%
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 15 - Concussive +]--
+	create_template("talent_tree_arb_pas_015_desc_en",
+		{"loc_talent_adamant_melee_weakspot_hits_count_as_stagger_desc"}, {"en"},
+			loc_text("Melee "..COLORS_KWords.Weakspothits_rgb.." make the Enemy count as "..COLORS_KWords.Staggered_rgb.." for {duration:%s} seconds.")),
+			-- duration: 4, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 16 - Canine Morale +]--
+	create_template("talent_tree_arb_pas_016_desc_en",
+		{"loc_talent_adamant_pinning_dog_kills_buff_allies_description"}, {"en"},
+			loc_text("Killing Pounced Targets grants Allies in "..COLORS_KWords.Coherency_rgb.." over {duration:%s} seconds:\n"
+				..Arrow_up_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and\n"
+				..Arrow_up_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".")),
+			-- tdr: +20%, toughness: +10%, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 17 - Imposing Force +]--
+	create_template("talent_tree_arb_pas_017_desc_en",
+		{"loc_talent_adamant_damage_reduction_after_elite_kill_desc"}, {"en"},
+			loc_text("{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Resistance for {duration:%s} seconds after Elite or Specialist Kill.")),
+			-- damage_reduction: +25%, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 18 - Suppression Force +]--
+	create_template("talent_tree_arb_pas_018_desc_en",
+		{"loc_talent_adamant_staggered_enemies_deal_less_damage_desc"}, {"en"},
+			loc_text(COLORS_KWords.Staggering_rgb.." an Enemy makes them deal {damage:%s} "..COLORS_KWords.Damage_rgb..".\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.")),
+			-- damage: -20%, !duration!: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 19 - Suppression Protocols +]--
+	create_template("talent_tree_arb_pas_019_desc_en",
+		{"loc_talent_adamant_hitting_multiple_gives_tdr_desc"}, {"en"},
+			loc_text("{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds after hitting {hits:%s} or more Enemies with an Attack.")),
+			-- hits: 3, tdr: +20%, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 20 - Plasteel Plates +]--
+	create_template("talent_tree_arb_pas_020_desc_en",
+		{"loc_talent_adamant_plasteel_plates_desc"}, {"en"},
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb..".")),
+			-- toughness: +25, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 21 - Arbites Revelatum +]--
+	create_template("talent_tree_arb_pas_021_desc_en",
+		{"loc_talent_adamant_dodge_grants_damage_desc"}, {"en"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{damage:%s} "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Successful Dodge.")),
+			-- damage: 15%, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 22 - Justified Measures +]--
+	create_template("talent_tree_arb_pas_022_desc_en",
+		{"loc_talent_adamant_stacking_damage_desc"}, {"en"},
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." on Successful Attack.\n"
+				..Arrow_right_.." {stacks:%s} Max Stacks.\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.")),
+			-- damage: +3%, stacks: 5, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 23 - Hold the Line +]--
+	create_template("talent_tree_arb_pas_023_desc_en",
+		{"loc_talent_adamant_staggers_reduce_damage_taken_alt_desc"}, {"en"},
+			loc_text(COLORS_KWords.Staggering_rgb.." an Enemy grants {normal_stacks:%s} Stack of {damage_taken_multiplier:%s} "..COLORS_KWords.Damage_rgb.." Resistance, on the next Melee hit taken.\n"
+				..Arrow_right_.." Stacking {max_stacks:%s} times.\n\n"
+				..COLORS_KWords.Staggering_rgb.." Non-Human Sized Enemies grants {ogryn_stacks:%s} Stacks.")),
+			-- normal_stacks: 1, damage_taken_multiplier: +3%, max_stacks: 5, ogryn_stacks: , colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 24 - Judicious Efficiency +]--
+	create_template("talent_tree_arb_pas_024_desc_en",
+		{"loc_talent_adamant_elite_special_kills_reload_speed_desc"}, {"en"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{reload_speed:%s} Reload Speed on next reload after Elite or Specialist Kill.")),
+			-- reload_speed: 20%
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 25 - Rapid Movement +]--
+	create_template("talent_tree_arb_pas_025_desc_en",
+		{"loc_talent_adamant_sprinting_sliding_description"}, {"en"},
+			loc_text("{speed:%s} Sprint Speed for {duration:%s} seconds after Sliding.\n"
+				.."{stamina:%s} "..COLORS_KWords.Stamina_rgb.." after killing Enemies.\n"
+				..Arrow_right_.." Cooldown {cd:%s} seconds.")),
+			-- speed: +5%, duration: 5, stamina: +5%, cd: 0.75, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 26 - Rebreather +]--
+	create_template("talent_tree_arb_pas_026_desc_en",
+		{"loc_talent_adamant_rebreather_desc"}, {"en"},
+			loc_text("{corruption:%s} "..COLORS_KWords.Corruption_rgb.." Resistance and\n"
+				.."{toxic_reduction:%s} Reduced "..COLORS_KWords.Damage_rgb.." taken from Toxic Gas.")),
+			-- corruption: +20%, toxic_reduction: +75%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 27 - Cower, Miscreants! +]--
+	create_template("talent_tree_arb_pas_027_desc_en",
+		{"loc_talent_adamant_damage_vs_suppressed_desc"}, {"en"},
+			loc_text("{damage_vs_suppressed:%s} "..COLORS_KWords.Damage_rgb.." vs Suppressed Enemies.")),
+			-- damage_vs_suppressed: +25%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 28 - Target the Weak +]-- DOUBLE!
+	-- create_template("talent_tree_arb_pas_028_desc_en",
+		-- {"loc_talent__desc"}, {"en"},
+			-- loc_text("Enemies "..COLORS_KWords.Staggered_rgb.." by your Melee Attacks take {damage:%s} more Melee "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds.")),
+			-- !damage!: +15%, !duration!: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 29 - The Emperor's Fist +]--
+	create_template("talent_tree_arb_pas_029_desc_en",
+		{"loc_talent_adamant_first_melee_hit_increased_damage_desc"}, {"en"},
+			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." and\n"
+				.."{impact:%s} "..COLORS_KWords.Impact_rgb.." on first Enemy hit with each attack.")),
+			-- !damage!: +15%, !impact!: +30%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 30 - Zealous Dedication +]--
+	create_template("talent_tree_arb_pas_030_desc_en",
+		{"loc_talent_adamant_crit_chance_on_kill_desc"}, {"en"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{crit_chance:%s} "..COLORS_KWords.Crit_chance_r_rgb.." on Kill.\n"
+				..Arrow_right_.." {max_stacks:%s} Stacks.\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.")),
+			-- crit_chance: 2%, max_stacks: 8, duration: 10, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 31 - Street Smarts +]--
+	create_template("talent_tree_arb_pas_031_desc_en",
+		{"loc_talent_adamant_dodge_improvement_desc"}, {"en"},
+			loc_text("{dodge:%s} Effective Dodges and\n"
+				.."{dodge_duration:%s} Dodge Duration.")),
+			-- dodge: +1, dodge_duration: +25%
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 32 - Drive them Back +]--
+	create_template("talent_tree_arb_pas_032_desc_en",
+		{"loc_talent_adamant_cleave_after_push_desc"}, {"en"},
+			loc_text("Pushing grants {cleave:%s} "..COLORS_KWords.Cleave_rgb.." for {duration:%s} seconds.")),
+			-- cleave: 75%, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 33 - Target Selection +]--
+	create_template("talent_tree_arb_pas_033_desc_en",
+		{"loc_talent_adamant_pinning_dog_elite_damage_description"}, {"en"},
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." vs Elites and Specialists after killing a Pounced Elite or Specialist.\n"
+				..Arrow_right_.." Lasts {time:%s} seconds.")),
+			-- damage: +15%, time: 8, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 34 - Soulguilt Scan +]--
+	create_template("talent_tree_arb_pas_034_desc_en",
+		{"loc_talent_adamant_stacking_weakspot_strength_duration_desc"}, {"en"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{strength:%s} "..COLORS_KWords.Weakspot_rgb.." Strength after "..COLORS_KWords.Weakspothits_rgb..".\n"
+				..Arrow_right_.." {max_stacks:%s} Max Stacks.\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.")),
+			-- strength: 2%, max_stacks: 8, duration: 10, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 35 - Priority Endowment +]--
+	create_template("talent_tree_arb_pas_035_desc_en",
+		{"loc_talent_adamant_clip_size_alt_desc"}, {"en"},
+			loc_text("{clip_size:%s} Clip Size. Rounded Up.")),
+			-- clip_size: +15%
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 36 - Target Priority +]--
+	create_template("talent_tree_arb_pas_036_desc_en",
+		{"loc_talent_adamant_increased_damage_to_high_health_desc"}, {"en"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{damage:%s} "..COLORS_KWords.Damage_rgb.." to Enemies above {health:%s} "..COLORS_KWords.Health_rgb..".")),
+			-- damage: 15%, health: 75%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 37 - Final Warning +]--
+	create_template("talent_tree_arb_pas_037_desc_en",
+		{"loc_talent_adamant_ranged_damage_on_melee_stagger_desc"}, {"en"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on Melee "..COLORS_KWords.Staggering_rgb.." Hits.\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.")),
+			-- damage: 15%, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 38 - Weight of the Lex +]--
+	create_template("talent_tree_arb_pas_038_desc_en",
+		{"loc_talent_adamant_heavy_attacks_increase_damage_desc"}, {"en"},
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Heavy Melee Attack.")),
+			-- damage: +15%, duration: 5, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 39 - Serrated Maw +]--
+	create_template("talent_tree_arb_pas_039_desc_en",
+		{"loc_talent_adamant_dog_applies_brittleness_desc"}, {"en"},
+			loc_text("Your Cyber-Mastiff applies {stacks:%s} Stacks of "..COLORS_KWords.Brittleness_rgb.." on attack.")),
+			-- stacks: 6, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 40 - Prosecution Blow +]--
+	create_template("talent_tree_arb_pas_040_desc_en",
+		{"loc_talent_adamant_crits_rend_alt_desc"}, {"en"},
+			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.." on Ranged "..COLORS_KWords.Crit_strike_rgb..".")),
+			-- rending: +20%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 41 - March +]--
+	create_template("talent_tree_arb_pas_041_desc_en",
+		{"loc_talent_adamant_movement_speed_on_block_alt_desc"}, {"en"},
+			loc_text("{movement_speed:%s} Movement Speed on Ranged Hit.\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.")),
+			-- movement_speed: +15%, duration: 3, s->seconds, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 42 - Monstrosity Hunter +]--
+	create_template("talent_tree_arb_pas_042_desc_en",
+		{"loc_talent_adamant_monster_hunter_desc"}, {"en"},
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ogryns and Monstrosities.")),
+			-- damage: +20%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 43 - Strike Down +]--
+	create_template("talent_tree_arb_pas_043_desc_en",
+		{"loc_talent_adamant_melee_attacks_on_staggered_rend_alt_desc"}, {"en"},
+			loc_text("{rending:%s} Melee "..COLORS_KWords.Rending_rgb.." on "..COLORS_KWords.Staggered_rgb.." Enemies.")),
+			-- rending: +15%, colors
+	--[+ French +]--
+	--[+ Russian +]--
+
+	--[+ Passive 44 - True Grit +]--
+	create_template("talent_tree_arb_pas_044_desc_en",
+		{"loc_talent_adamant_limit_dmg_taken_from_hits_desc"}, {"en"},
+			loc_text("Limit the maximum "..COLORS_KWords.Health_rgb.." "..COLORS_KWords.Damage_rgb.." Taken from an Attack to {limit:%s}.")),
+			-- limit: 50, colors
+	--[+ French +]--
+	--[+ Russian +]--
 
 
 -- FOR TESTS ONLY!!!
--- create_template("weap_testum00", {"loc_talent_psyker_marked_enemies_passive_updated_desc"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
+-- create_template("weap_testum00", {"loc_talent_adamant_limit_dmg_taken_from_hits_desc"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
+-- create_template("weap_testum01", {"loc_talent_adamant_pinning_dog_elite_damage_description"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
 -- FOR TESTS ONLY!!!
 }
 

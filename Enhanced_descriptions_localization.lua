@@ -365,7 +365,7 @@ local localizations = {
 		["zh-cn"] = " 踉跄",
 	},
 
---[+Psyker+]--
+--[+PSYKER+]--
 	class_psyker_colour = {
 		en = " Psyker",
 		-- fr = "",
@@ -374,14 +374,14 @@ local localizations = {
 		["zh-cn"] = " 灵能者",
 	},
 	precision_colour = {
-		en = " Precision",
+		en = "     Precision",
 		fr = " Precision",
-		ru = " Точность",
+		ru = "     Точность",
 		["zh-tw"] = " 精準",
 		["zh-cn"] = " 精准",
 	},
 
---[+Ogryn+]--
+--[+OGRYN+]--
 	class_ogryn_colour = {
 		en = " Ogryn",
 		-- fr = "",
@@ -390,28 +390,28 @@ local localizations = {
 		["zh-cn"] = " 欧格林",
 	},
 	fnp_colour = {
-		en = " Feel No Pain",
+		en = "     Feel No Pain",
 		fr = " Adieu la douleur",
 		ru = "     Неболит",
 		["zh-tw"] = " 麻木",
 		["zh-cn"] = " 不痛不痒",
 	},
 	luckyb_colour = {
-		en = " Lucky bullet",
+		en = "     Lucky bullet",
 		fr = " Balles chanceuses",
 		ru = "     Счастливая пуля",
 		["zh-tw"] = " 幸運子彈",
 		["zh-cn"] = " 幸运子弹",
 	},
 	trample_colour = {
-		en = " Trample",
+		en = "     Trample",
 		fr = " Piétinement",
 		ru = "     Топот",
 		["zh-tw"] = " 衝鋒",
 		["zh-cn"] = " 践踏",
 	},
 
---[+Zealot+]--
+--[+ZEALOT+]--
 	class_zealot_colour = {
 		en = " Zealot",
 		-- fr = "",
@@ -420,28 +420,28 @@ local localizations = {
 		["zh-cn"] = " 狂信徒",
 	},
 	fury_colour = {
-		en = " Fury",
+		en = "     Fury",
 		fr = " Piété embrasée",
 		ru = "     Ярость",
 		["zh-tw"] = " 狂怒",
 		["zh-cn"] = " 怒火",
 	},
 	momentum_colour = {
-		en = " Momentum",
+		en = "     Momentum",
 		fr = " Jugement inexorable",
 		ru = "     Моментум",
 		["zh-tw"] = " 勢能",
 		["zh-cn"] = " 动量",
 	},
 	stealth_colour = {
-		en = " Stealth",
+		en = "     Stealth",
 		fr = " Furtivité",
 		ru = "     Скрытность",
 		["zh-tw"] = " 隱形",
 		["zh-cn"] = " 潜行",
 	},
 
---[+Veteran+]--
+--[+VETERAN+]--
 	class_veteran_colour = {
 		en = " Veteran",
 		-- fr = "",
@@ -450,32 +450,55 @@ local localizations = {
 		["zh-cn"] = " 老兵",
 	},
 	focus_colour = {
-		en = " Focus",
+		en = "     Focus",
 		fr = " Focalisation",
 		ru = "     Концентрация",
 		["zh-tw"] = " 專注",
 		["zh-cn"] = " 专注",
 	},
 	focust_colour = {
-		en = " Focus Target",
+		en = "     Focus Target",
 		fr = " Ciblage",
 		ru = "     Важная цель",
 		["zh-tw"] = " 專注目標",
 		["zh-cn"] = " 聚焦目标",
 	},
 	meleespec_colour = {
-		en = " Melee Specialist",
+		en = "     Melee Specialist",
 		fr = " Spcécialiste en mêlée",
 		ru = "     Специалист-рукопашник",
 		["zh-tw"] = " 近戰專家",
 		["zh-cn"] = " 近战专家",
 	},
 	rangedspec_colour = {
-		en = " Ranged Specialist",
+		en = "     Ranged Specialist",
 		fr = " Spcécialiste à distance",
 		ru = "     Специалист-стрелок",
 		["zh-tw"] = " 遠程專家",
 		["zh-cn"] = " 远程专家",
+	},
+
+--[+ARBITRATOR+]--
+	class_arbites_colour = {
+		en = " Arbitrator",
+		-- fr = "",
+		ru = " Арбитратор",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+	},
+	meleejust_colour = {
+		en = "    Melee Justice",
+		-- fr = "",
+		ru = "    Кара вблизи", --???
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+	},
+	rangedjust_colour = {
+		en = "    Ranged Justice",
+		-- fr = "",
+		ru = "    Кара издали", --???
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
 	},
 
 --[+Misc+]--
@@ -508,10 +531,10 @@ local localizations = {
 		["zh-cn"] = " 警告",
 	},
 
-	--[+Difficulty+]--
+	--[+Difficulties+]--
 	sedition_colour = {
 		en = "Sedition",
-		-- fr = "",
+		fr = "",
 		ru = "Мятеж",
 		["zh-tw"] = "暴動",
 		["zh-cn"] = "煽动",
@@ -544,6 +567,13 @@ local localizations = {
 		["zh-tw"] = "詛咒",
 		["zh-cn"] = "诅咒",
 	},
+	auric_colour = {
+		en = "Auric",
+		-- fr = "",
+		ru = "Золото",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+	},
 
 	talents_colour = {
 		en = " Talents",
@@ -563,9 +593,9 @@ local localizations = {
 
 local function addLocalisation(localisations, typeName)
 	localisations[typeName .. "_text_colour"] = {
-		en = "Color",
+		en = "Pick color",
 		fr = "Couleur",
-		ru = "Цвет",
+		ru = "Выберите цвет",
 		["zh-tw"] = "顏色",
 		["zh-cn"] = "颜色",
 	}
@@ -626,24 +656,28 @@ addLocalisation(localizations, "electrocuted")
 addLocalisation(localizations, "soulblaze")
 addLocalisation(localizations, "stagger")
 
---[+Psyker+]--
+--[+PSYKER+]--
 addLocalisation(localizations, "precision")
 
---[+Ogryn+]--
+--[+OGRYN+]--
 addLocalisation(localizations, "fnp")
 addLocalisation(localizations, "luckyb")
 addLocalisation(localizations, "trample")
 
---[+Zealot+]--
+--[+ZEALOT+]--
 addLocalisation(localizations, "fury")
 addLocalisation(localizations, "momentum")
 addLocalisation(localizations, "stealth")
 
---[+Veteran+]--
+--[+VETERAN+]--
 addLocalisation(localizations, "focus")
 addLocalisation(localizations, "focust")
 addLocalisation(localizations, "meleespec")
 addLocalisation(localizations, "rangedspec")
+
+--[+ARBITES+]--
+addLocalisation(localizations, "meleejust")
+addLocalisation(localizations, "rangedjust")
 
 --[+Misc+]--
 addLocalisation(localizations, "note")
@@ -658,6 +692,7 @@ addLocalisation(localizations, "uprising")
 addLocalisation(localizations, "malice")
 addLocalisation(localizations, "heresy")
 addLocalisation(localizations, "damnation")
+addLocalisation(localizations, "auric")
 
 --[+Penances+]--
 addLocalisation(localizations, "talents_penances")
@@ -667,6 +702,7 @@ addLocalisation(localizations, "class_veteran")
 addLocalisation(localizations, "class_zealot")
 addLocalisation(localizations, "class_psyker")
 addLocalisation(localizations, "class_ogryn")
+addLocalisation(localizations, "class_arbites")
 
 
 return localizations

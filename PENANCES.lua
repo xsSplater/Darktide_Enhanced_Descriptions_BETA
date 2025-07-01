@@ -2786,7 +2786,7 @@ local localization_templates = {
 	create_template("ach_class_ogr_4_1_ext_desc_ru",
 		{"loc_missions_ogryn_2_easy_difficulty_1_description"}, {"ru"},
 			loc_text(complete_1_mission_on_sedition_threat_ru)),
-	----[+ Traditional Chinese +]--
+	--[+ Traditional Chinese +]--
 	-- 在騷亂威脅度或更高難度下完成1個任務
 	create_template("ach_class_ogr_4_1_ext_desc_tw",
 		{"loc_missions_ogryn_2_easy_difficulty_1_description"}, {"zh-tw"},
