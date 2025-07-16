@@ -964,7 +964,7 @@ local localization_templates = {
 				..Arrow_up_green.." Эффективно против врагов в противоосколочной и панцирной броне.\n"
 				..Arrow_up_green.." Высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." против маньяков и несгибаемых.\n"
 				..Arrow_up_green.." Всегда бьёт в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".\n"
-				..Arrow_up_green.." Основная атака применяет к выбранному врагу лёгкий эффект "..COLORS_KWords_ru.Staggering_rgb_ru.." на уровне заряда "..COLORS_Numbers.pc_50_rgb..". Не "..COLORS_KWords_ru.Staggers_e_rgb_ru..": гренадёров, cкабов-разрубателей, мутантов, огринов, чумных взрывников, берсерков, скабов-штурмовиков или монстров.\n"
+				-- ..Arrow_up_green.." Основная атака применяет к выбранному врагу лёгкий эффект "..COLORS_KWords_ru.Staggering_rgb_ru.." на уровне заряда "..COLORS_Numbers.pc_50_rgb..". Не "..COLORS_KWords_ru.Staggers_e_rgb_ru..": гренадёров, cкабов-разрубателей, мутантов, огринов, чумных взрывников, берсерков, скабов-штурмовиков или монстров.\n"
 				..Arrow_up_green.." При атаке "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов, кроме мутантов, монстров и врагов с активным пустотным щитом.\n"
 				..Arrow_down_red.." Не наносит "..COLORS_KWords_ru.Crit0_rgb_ru..".\n"
 				..TALENTS_Enh_desc_ru.ED_PSY_Blitz_1_rgb_ru)),
@@ -996,6 +996,7 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz1_001_desc_ru",
 		{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"ru"},
 			loc_text("{smite_attack_speed:%s} к ускорению заряжания вашего блица {talent_name:%s} после использования вашей "..COLORS_KWords_ru.Combat_ability_rgb_ru..", также генерируется на {warp_charge_cost:%s} меньше "..COLORS_KWords_ru.Peril_rgb_ru.." в течение {duration:%s} секунд.\n"
+				..Arrow_up_green.." Сокращает время зарядки способности {talent_name:%s} как для основных, так и для дополнительных атак.\n"
 				..TALENTS_Enh_desc_ru.ED_PSY_Blitz_1_1_rgb_ru)),
 	--[+ Traditional Chinese - 動能共鳴+]--
 	-- 使用戰鬥技能會加快{talent_name:%s}充能{smite_attack_speed:%s}且降低反噬生成{warp_charge_cost:%s}，持續{duration:%s}秒。
@@ -1021,8 +1022,9 @@ local localization_templates = {
 	--[+ Russian - Кинетический живодёр +]-- руоф Кинетический истребитель
 	create_template("talent_tree_psy_blitz1_002_desc_ru",
 		{"loc_talent_psyker_smite_on_hit_special_elite_desc"}, {"ru"},
-			loc_text("Пока ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..", все атаки против специалистов, элитных врагов и монстров имеют {smite_chance:%s} шанс вызвать {talent_name:%s}, нанеся "..COLORS_KWords_ru.Dmg_rgb_ru.." по ним.\nВремя восстановления: {time:%s} секунд."
-				..TALENTS_Enh_desc_ru.ED_PSY_Blitz_1_2_rgb_ru)),
+			loc_text("Пока ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..", все атаки против специалистов, элитных врагов и монстров имеют {smite_chance:%s} шанс вызвать {talent_name:%s}, нанеся "..COLORS_KWords_ru.Dmg_rgb_ru.." по ним.\n"
+					..Arrow_right_.." Восстанавливается {time:%s} секунд.\n"
+					..TALENTS_Enh_desc_ru.ED_PSY_Blitz_1_2_rgb_ru)),
 	--[+ Traditional Chinese - 動能釋放 +]--
 	-- 對專家、精英與巨獸進行攻擊時，所有攻擊都有{smite_chance:%s}機率使目標{talent_name:%s}。反噬處於危險線以上時無法觸發，此外，觸發後有{time:%s}秒冷卻時間。
 	create_template("talent_tree_psy_blitz1_002_desc_tw",
@@ -1050,8 +1052,8 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz2_000_desc_ru",
 		{"loc_ability_psyker_chain_lightning_description"}, {"ru"},
 			loc_text("Вы выпускаете поток цепной биомолнии, которая медленно распространяется между врагами, нанося им низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." "..COLORS_KWords_ru.Electrocuted_rgb_ru.." с течением времени и очень высокое "..COLORS_KWords_ru.Stagger_rgb_ru..".\nВторичная заряженная атака наносит больше "..COLORS_KWords_ru.Dmg_a_rgb_ru.." при высвобождении, а также быстрее распространяется.\n"
-				..Arrow_right_.." Средний урон по всем видам брони, низкий урон по панцирной броне.\n"
-				..Arrow_down_red.." Не может ошеломить монстров и врагов с активным пустотным щитом.\n"
+				..Arrow_right_.." Средний "..COLORS_KWords_ru.Dmg_rgb_ru.." по всем видам брони, низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.\n"
+				..Arrow_down_red.." Не может "..COLORS_KWords_ru.Staggernt_rgb_ru.." монстров и врагов с активным пустотным щитом.\n"
 				..TALENTS_Enh_desc_ru.ED_PSY_Blitz_2_rgb_ru)),
 	--[+ Traditional Chinese - 懲戒 +]--
 	-- 釋放一道生物閃電。這是一種快速定向攻擊，可在造成傷害時鎖定並擊暈敵人。技能效果可擴散到附近的敵人，充能增加擴散速度和傷害。
@@ -1316,7 +1318,7 @@ local localization_templates = {
 	--[+ Russian - Гнев психокинетика +]-- руоф Психокинетический гнев
 	create_template("talent_tree_psy_abil0_000_desc_ru",
 		{"loc_talent_psyker_shout_ability_description"}, {"ru"},
-			loc_text("Вы высвобождаете конусообразную волну варп-энергии на расстояние до "..COLORS_Numbers.n_30_rgb.." метров, которая накладывает "..COLORS_KWords_ru.Stagger_rgb_ru.." на врагов перед вами и подавляет {warpcharge_vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..".\nПрименение этой способности предотвращает самоподрыв.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_0_rgb_ru)),
+			loc_text("Вы высвобождаете конусообразную волну варп-энергии на расстояние до "..COLORS_Numbers.n_30_rgb.." метров, которая накладывает "..COLORS_KWords_ru.Stagger_rgb_ru.." на врагов перед вами и подавляет {warpcharge_vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..".\nПрименение этой способности предотвращает самоподрыв.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_0_rgb_ru)),
 	--[+ Traditional Chinese - 靈能學者之怒 +]--
 	-- 釋放一波亞空間能量，造成前方敵人暈眩。\n平息{warpcharge_vent:%s}反噬。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_psy_abiㄕl0_000_desc_tw",
@@ -1350,7 +1352,7 @@ local localization_templates = {
 	--[+ Russian - Сбрасывающий вопль +]-- руоф Вырвавшийся вопль
 	create_template("talent_tree_psy_abil1_000_desc_ru",
 		{"loc_talent_psyker_shout_vent_warp_charge_description"}, {"ru"},
-			loc_text("Вы высвобождаете конусообразную волну варп-энергии на расстояние до "..COLORS_Numbers.n_30_rgb.." метров, которая накладывает "..COLORS_KWords_ru.Stagger_rgb_ru.." на врагов перед вами и подавляет {warpcharge_vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..".\nПрименение этой способности предотвращает самоподрыв.\n\nВремя восстановления: {cooldown:%s} секунд.\n\nЭто улучшенная версия способности {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Ability_1_rgb_ru)),
+			loc_text("Вы высвобождаете конусообразную волну варп-энергии на расстояние до "..COLORS_Numbers.n_30_rgb.." метров, которая накладывает "..COLORS_KWords_ru.Stagger_rgb_ru.." на врагов перед вами и подавляет {warpcharge_vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru..".\nПрименение этой способности предотвращает самоподрыв.\n\nВосстанавливается {cooldown:%s} секунд.\n\nЭто улучшенная версия способности {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Ability_1_rgb_ru)),
 	--[+ Traditional Chinese - 靈能尖嘯 +]--
 	-- 釋放一波亞空間能量，造成前方敵人暈眩，並平息{warpcharge_vent:%s}反噬。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{talent_name:%s}的增強版。
 	create_template("talent_tree_psy_abil1_000_desc_tw",
@@ -1442,7 +1444,7 @@ local localization_templates = {
 	--[+ Russian - Телекинетический щит +]--
 	create_template("talent_tree_psy_abil2_000_desc_ru",
 		{"loc_talent_psyker_combat_ability_shield_description"}, {"ru"},
-			loc_text("Создаёт перед вами психический щит на {duration:%s} секунды. Щит блокирует вражеские выстрелы, в то время как вы и союзники все ещё можете стрелять сквозь него.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_2_rgb_ru)),
+			loc_text("Создаёт перед вами психический щит на {duration:%s} секунды. Щит блокирует вражеские выстрелы, в то время как вы и союзники все ещё можете стрелять сквозь него.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_2_rgb_ru)),
 	--[+ Traditional Chinese - 念力護盾 +]--
 	-- 在身前展開一道持續{duration:%s}秒的靈能護盾。護盾能阻擋敵人的遠程攻擊，但你和盟友的射擊不受影響。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_psy_abil2_000_desc_tw",
@@ -1455,7 +1457,7 @@ local localization_templates = {
 			.."- 冷卻時間：{cooldown:%s} 秒。" 
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_rgb_tw)),
 
-	--[+ ABILITY 2-1 - Bolstered Shield +]--
+	--[+ ABILITY 2-1 - Bolstered Shield +]--	checked 27.05.2025
 	create_template("talent_tree_psy_abil2_001_desc_en",
 		{"loc_talent_psyker_force_field_charges_description"}, {"en"},
 			loc_text("{talent_name:%s} now holds up to {max_charges:%s} charges.\n"
@@ -1475,7 +1477,7 @@ local localization_templates = {
 		{"loc_talent_psyker_force_field_charges_description"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 現在擁有 {max_charges:%s} 次充能。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_1_rgb_tw)),
 
-	--[+ ABILITY 2-2 - Enervating Threshold +]--
+	--[+ ABILITY 2-2 - Enervating Threshold +]--	checked 27.05.2025
 	create_template("talent_tree_psy_abil2_002_desc_en",
 		{"loc_talent_psyker_force_field_stun_increased_new_description"}, {"en"},
 			loc_text("{ability:%s} has a {proc_chance:%s} chance to "..COLORS_KWords.Electrocute_rgb.." enemies that pass through it. Specialist enemies have a {special_proc_chance:%s} chance to get "..COLORS_KWords.Electrocuted_rgb.." but also damage the {ability:%s}.\n"
@@ -1507,7 +1509,7 @@ local localization_templates = {
 			.."--菁英與專家會對 {ability:%s} 造成傷害。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_2_rgb_tw)),
 
-	--[+ ABILITY 2-3 - Telekine Dome +]--
+	--[+ ABILITY 2-3 - Telekine Dome +]--	checked 27.05.2025
 	create_template("talent_tree_psy_abil2_003_desc_en",
 		{"loc_talent_psyker_force_field_dome_new_desc"}, {"en"},
 			loc_text("{talent_name:%s} now forms a spherical shield which lasts {duration:%s} seconds.\n"
@@ -1533,7 +1535,7 @@ local localization_templates = {
 			.."- 球體半徑為"..COLORS_Numbers.n_6_rgb.."公尺。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_3_rgb_tw)),
 
-	--[+ ABILITY 2-4 - Sanctuary +]--
+	--[+ ABILITY 2-4 - Sanctuary +]--	checked 27.05.2025
 	create_template("talent_tree_psy_abil2_004_desc_en",
 		{"loc_talent_psyker_force_field_grants_toughness_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second replenishes for Allies inside your {talent_name:%s}.\n"
@@ -1562,14 +1564,18 @@ local localization_templates = {
 			.."- 持續 {duration:%s} 秒。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_4_rgb_tw)),
 			
-	--[+ ABILITY 3 - Scrier's Gaze +]--
+	--[+ ABILITY 3 - Scrier's Gaze +]--	checked 03.07.2025
 	create_template("talent_tree_psy_abil3_000_desc_en",
 		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"en"},
-			loc_text("You enter "..COLORS_KWords.Scriers_gaze_rgb.." and Quell {vent:%s} "..COLORS_KWords.Peril_rgb.." as well as gain {base_damage:%s} "..COLORS_KWords.Damage_rgb..", {crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." and Suppression Immunity.\n"
-				.."For every second in "..COLORS_KWords.Scriers_gaze_rgb.." you gain {damage_per_stack:%s} "..COLORS_KWords.Damage_rgb..", up to a maximum of {max_damage:%s}. This effect lingers for {duration:%s} seconds after leaving "..COLORS_KWords.Scriers_gaze_rgb..".\n"
+			loc_text("You enter "..COLORS_KWords.Scriers_gaze_rgb..", Quell {vent:%s} "..COLORS_KWords.Peril_rgb.." and gain:\n"
+				..Arrow_up_green.." {base_damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
+				..Arrow_up_green.." {crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." and\n"
+				..Arrow_up_green.." Suppression Immunity.\n"
+				.."For every second in "..COLORS_KWords.Scriers_gaze_rgb.." you gain:\n"
+				..Arrow_up_green.." {damage_per_stack:%s} "..COLORS_KWords.Damage_rgb..", up to a maximum of {max_damage:%s}. This effect lingers for {duration:%s} seconds after leaving "..COLORS_KWords.Scriers_gaze_rgb..".\n"
 				.."While in "..COLORS_KWords.Scriers_gaze_rgb.." you build up "..COLORS_KWords.Peril_rgb..". Killing enemies while overcharging slows down the auto "..COLORS_KWords.Peril_rgb.." generation by reducing the effective timer by "..COLORS_Numbers.n_033_rgb.." seconds per Kill.\n"
 				.."At {max_peril:%s} "..COLORS_KWords.Peril_rgb.." Ability ends.\n"
-				.."Base Cooldown: {cooldown:%s} seconds.\n"
+				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_3_rgb)),
 				-- base_damage: +10%, crit_chance: +20%, damage_per_stack: +1%, max_damage: +30%, duration: 10, max_peril: 100%, cooldown: 25, rewrite, s->seconds, colors
 	--[+ French +]-- Regard de divination !!! texte trop long
@@ -1583,7 +1589,7 @@ local localization_templates = {
 				.."Пока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." каждую секунду вы получаете {damage_per_stack:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", вплоть до максимума в {max_damage:%s}. Этот эффект сохраняется в течение {duration:%s} секунд после того как "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." перестаёт действовать.\n"
 				.."Пока действует "..COLORS_KWords_ru.Scriers_gaze_rgb_ru.." ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." растёт. Убийство врагов замедляет автогенерацию "..COLORS_KWords_ru.Peril_rgb_ru.." за счёт уменьшения таймера эффекта на "..COLORS_Numbers.n_033_rgb.." секунды за убийство.\n"
 				.."При {max_peril:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." способность заканчивает своё действие.\n"
-				.."Время восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_rgb_ru)),
+				.."Восстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Ability_3_rgb_ru)),
 	--[+ Traditional Chinese - 占卜者的注視 +]--
 	-- 觸發占卜師的注視。進入占卜師的注視後，平息{vent:%s}反噬，並獲得{base_damage:%s}傷害、{crit_chance:%s}暴擊機率，以及壓制免疫。在注視中每秒獲得疊加傷害{damage_per_stack:%s}，最高至{max_damage}。離開注視後該效果保留{duration:%s}秒。\n\n在占卜師的注視中，你的反噬會累積。擊殺敵人會暫時減緩累積速度。反噬達到{max_peril:%s}後，占卜師的注視結束。\n\n基礎冷卻時間：{cooldown:%s}秒
 	create_template("talent_tree_psy_abil3_000_desc_tw",
@@ -1605,7 +1611,7 @@ local localization_templates = {
 			.."- 冷卻時間：{cooldown:%s} 秒。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_rgb_tw)),
 
-	--[+ ABILITY 3-1 - Endurance +]--
+	--[+ ABILITY 3-1 - Endurance +]--	checked 03.07.2025
 	create_template("talent_tree_psy_abil3_001_desc_en",
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"en"},
 			loc_text("While overcharging, {talent_name:%s} grants {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".\n"
@@ -1626,11 +1632,12 @@ local localization_templates = {
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"zh-tw"},
 			loc_text("當"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."啟動時，\n獲得 {tdr:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_1_rgb_tw)),
 
-	--[+ ABILITY 3-2 - Precognition +]--
+	--[+ ABILITY 3-2 - Precognition +]--	checked 03.07.2025
 	create_template("talent_tree_psy_abil3_002_desc_en",
 		{"loc_ability_psyker_overcharge_weakspot_description"}, {"en"},
 			loc_text("While overcharging, makes "..COLORS_KWords.Weak_spot_rgb.." kills generate {second:%s} additional Stack.\n"
-				.."For each second spent in {talent_name:%s}, you now also gain {finesse_damage_per_stack:%s} "..COLORS_KWords.Finesse_dmg_rgb..", up to {max_finesse_damage:%s} Max, which lingers for {duration:%s} seconds after leaving {talent_name:%s}.\n"
+				.."For each second spent in {talent_name:%s}, you now also gain:\n"
+				..Arrow_up_green.." {finesse_damage_per_stack:%s} "..COLORS_KWords.Finesse_dmg_rgb..", up to {max_finesse_damage:%s} Max, which lingers for {duration:%s} seconds after leaving {talent_name:%s}.\n"
 				..Arrow_up_green.." Can proc multiple times per attack when "..COLORS_KWords.Cleaving_rgb..".\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_3_2_rgb)),
 				-- second: 1, talent_name: Scrier's Gaze, finesse_damage_per_stack: +1%, max_finesse_damage: +30%, duration: 10, s->seconds, colors
@@ -1653,7 +1660,7 @@ local localization_templates = {
 			.."- {talent_name:%s} 技能結束後可持續 {duration:%s} 秒。"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_2_rgb_tw)),
 
-	--[+ ABILITY 3-3 - Warp Speed +]--
+	--[+ ABILITY 3-3 - Warp Speed +]--	checked 03.07.2025
 	create_template("talent_tree_psy_abil3_003_desc_en",
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"en"},
 			loc_text("While overcharging, {talent_name:%s} increases your Movement Speed by {movement_speed:%s}.\n"
@@ -1674,7 +1681,7 @@ local localization_templates = {
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"zh-tw"},
 		loc_text("當"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."啟動時，移動速度提高 {movement_speed:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_3_rgb_tw)),
 
-	--[+ ABILITY 3-4 - Reality Anchor +]--
+	--[+ ABILITY 3-4 - Reality Anchor +]--	checked 03.07.2025
 	create_template("talent_tree_psy_abil3_004_desc_en",
 		{"loc_ability_psyker_overcharge_reduced_warp_charge_description"}, {"en"},
 			loc_text("While overcharging, {talent_name:%s} also reduces your "..COLORS_KWords.Peril_rgb.." Generated by {warp_charge:%s}.\n"
@@ -1697,10 +1704,11 @@ local localization_templates = {
 			.."立即降低 {warp_charge:%s}"..COLORS_KWords_tw.Peril_rgb_tw.."。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_4_rgb_tw)),
 
-	--[+ ABILITY 3-5 - Warp Unbound +]--
+	--[+ ABILITY 3-5 - Warp Unbound +]--	checked 03.07.2025
 	create_template("talent_tree_psy_abil3_005_desc_en",
 		{"loc_talent_psyker_overcharge_infinite_casting_desc"}, {"en"},
 			loc_text("{talent_name:%s} now also prevents overloading from "..COLORS_KWords.Perils_rgb.." of the Warp, during its lingering effect.\n"
+				..Arrow_right_.." After overcharging has ended, allows Psyker to execute "..COLORS_KWords.Peril_rgb.."-generating actions while at "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb.." for "..COLORS_Numbers.n_10_rgb.." seconds without triggering the self-explosion.\n"
 				..TALENTS_Enh_desc.ED_PSY_Ability_3_5_rgb)),
 				-- talent_name: Scrier's Gaze
 	--[+ French +]--
@@ -1723,7 +1731,7 @@ local localization_templates = {
 		.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_5_rgb_tw
 	)),
 
---[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
+--[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--	checked 03.07.2025
 	--[+ KEYSTONE 1 - Warp Siphon +]--
 	create_template("talent_tree_psy_keys1_000_desc_en",
 		{"loc_talent_psyker_souls_desc"}, {"en"},
@@ -1753,7 +1761,7 @@ local localization_templates = {
 			.."- 每層可降低 {cooldown_reduction:%s} "..COLORS_KWords_tw.Cd_rgb_tw.."時間。"
 			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_rgb_tw)),
 
-	--[+ KEYSTONE 1-1 - Inner Tranquility +]--
+	--[+ KEYSTONE 1-1 - Inner Tranquility +]--	checked 03.07.2025
 	create_template("talent_tree_psy_keys1_001_desc_en",
 		{"loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"}, {"en"},
 			loc_text("{warp_charge_amount:%s} "..COLORS_KWords.Peril_rgb.." Generation Reduction for each Warp Charge.\n"
@@ -1766,7 +1774,8 @@ local localization_templates = {
 	--[+ Russian +]-- Внутреннее спокойствие
 	create_template("talent_tree_psy_keys1_001_desc_ru",
 		{"loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"}, {"ru"},
-			loc_text("{warp_charge_amount:%s} генерации "..COLORS_KWords_ru.Peril_rgb_ru.." за каждый варп-заряд."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_1_rgb_ru)),
+			loc_text("{warp_charge_amount:%s} генерации "..COLORS_KWords_ru.Peril_rgb_ru.." за каждый варп-заряд.\n"
+			..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_1_rgb_ru)),
 	--[+ Traditional Chinese - 平心靜氣 +]--
 	-- 每層亞空間充能減少反噬生成{warp_charge_amount:%s}。
 	create_template("talent_tree_psy_keys1_001_desc_tw",
@@ -1787,7 +1796,9 @@ local localization_templates = {
 	--[+ Russian +]-- Сбор сущностей -- руоф Сбор сущности
 	create_template("talent_tree_psy_keys1_002_desc_ru",
 		{"loc_talent_psyker_toughness_regen_on_soul_desc"}, {"ru"},
-			loc_text(COLORS_Numbers.pc_6_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." в секунду восстанавливается в течение {time:%s} секунд после получения варп-заряда, вплоть до максимальных {toughness:%s}. Получение нового варп-заряда обновляет таймер."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_2_rgb_ru)),
+			loc_text(COLORS_Numbers.pc_6_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." в секунду восстанавливается в течение {time:%s} секунд после получения варп-заряда, вплоть до максимальных {toughness:%s}. Получение нового варп-заряда обновляет таймер.\n"
+				..Arrow_right_.." Не увеличивает количество восстанавливаемой "..COLORS_KWords_ru.Toughness_rgb_ru..".\n"
+				..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_2_rgb_ru)),
 	--[+ Traditional Chinese - 吸精奪萃 +]--
 	--獲得亞空間充能後，在{time:%s}秒內恢復{toughness:%s}韌性。在效果持續期間獲得新的亞空間充能會刷新此效果。
 	create_template("talent_tree_psy_keys1_002_desc_tw",
@@ -2899,7 +2910,9 @@ local localization_templates = {
 	--[+ Russian +]-- Кара для нечестивых
 	create_template("talent_tree_zea_abil0_000_desc_ru",
 		{"loc_talent_zealot_2_combat_description_new"}, {"ru"},
-			loc_text("Вы совершаете рывок вперёд, восстанавливая {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..". Ваш следующий удар ближнего боя получает на "..COLORS_Numbers.n_3_rgb.." секунды "..COLORS_Numbers.n_plus_rgb.."{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и будет гарантированно "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..".\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_0_rgb_ru)),
+			loc_text("Вы совершаете рывок вперёд, восстанавливая {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..". Ваш следующий удар ближнего боя получает на "..COLORS_Numbers.n_3_rgb.." секунды "..COLORS_Numbers.n_plus_rgb.."{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и будет гарантированно "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..".\n"
+					..Arrow_right_.." Восстанавливается {cooldown:%s} секунд."
+					..TALENTS_Enh_desc_ru.ED_ZEA_Ability_0_rgb_ru)),
 	--[+ Traditional Chinese - 懲奸除惡 +]--
 	-- 向前猛衝，恢復{toughness%s}韌性。你的下一次近戰攻擊命中時造成的傷害{damage%s}且必定暴擊。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_zea_abil0_000_desc_tw",
@@ -2937,7 +2950,7 @@ local localization_templates = {
 	--[+ Russian +]-- Ярость верующего -- руоф Ударный страх
 	create_template("talent_tree_zea_abil1_000_desc_ru",
 		{"loc_talent_zealot_attack_speed_after_dash_desc"}, {"ru"},
-			loc_text("Вы совершаете рывок вперёд, восстанавливая {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и получая {attack_speed:%s} к скорости атаки на {time:%s} секунд. Ваш следующий удар ближнего боя получает на "..COLORS_Numbers.n_3_rgb.." секунды {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и будет гарантированно "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..".\nВремя восстановления: {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_rgb_ru)),
+			loc_text("Вы совершаете рывок вперёд, восстанавливая {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и получая {attack_speed:%s} к скорости атаки на {time:%s} секунд. Ваш следующий удар ближнего боя получает на "..COLORS_Numbers.n_3_rgb.." секунды {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и будет гарантированно "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..".\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_rgb_ru)),
 	--[+ Traditional Chinese - 有信者之怒 +]--
 	--向前猛衝，恢復{toughness:%s}韌性，同時獲得{attack_speed:%s}攻擊速度，持續{time:%s}秒。下一次近戰攻擊命中時，附加{damage:%s}傷害，且必定暴擊。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{talent_name:%s}的增強版。
 	create_template("talent_tree_zea_abil1_000_desc_tw",
@@ -3019,7 +3032,7 @@ local localization_templates = {
 	--[+ Russian +]-- Хор духовной стойкости
 	create_template("talent_tree_zea_abil2_000_desc_ru",
 		{"loc_talent_zealot_bolstering_prayer_variant_two_description"}, {"ru"},
-			loc_text("Вы берёте в руки Святую реликвию, которая испускает до "..COLORS_Numbers.n_7_rgb.." импульсов энергии, раз в {interval:%s} секунды.\nКаждый импульс даёт изуверу и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." от атак ближнего и дальнего боя, а также в течение "..COLORS_Numbers.n_1_5_rgb.." секунд вас нельзя убить.\nКаждый импульс восполняет {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru..". Если у союзника полный запас "..COLORS_KWords_ru.Toughness_rgb_ru..", он вместо этого получает {flat_toughness:%s} максимальной жёлтой "..COLORS_KWords_ru.Toughness_rgb_ru.." за импульс, вплоть до {max_toughness:%s}.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_rgb_ru)),
+			loc_text("Вы берёте в руки Святую реликвию, которая испускает до "..COLORS_Numbers.n_7_rgb.." импульсов энергии, раз в {interval:%s} секунды.\nКаждый импульс даёт изуверу и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." от атак ближнего и дальнего боя, а также в течение "..COLORS_Numbers.n_1_5_rgb.." секунд вас нельзя убить.\nКаждый импульс восполняет {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru..". Если у союзника полный запас "..COLORS_KWords_ru.Toughness_rgb_ru..", он вместо этого получает {flat_toughness:%s} максимальной жёлтой "..COLORS_KWords_ru.Toughness_rgb_ru.." за импульс, вплоть до {max_toughness:%s}.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_rgb_ru)),
 	--[+ Traditional Chinese - 不屈靈魂合唱 +]--
 	--運用一件每{interval:%s}秒釋放一次能量脈衝的聖物。引導時，協同中的盟友獲得眩暈免疫和無敵。\n\n每次脈衝為協同中的盟友恢復{toughness:%s}韌性。若盟友韌性值已滿，則會提高{flat_toughness:%s}最大韌性值，最多提高{max_toughness}。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_zea_abil2_000_desc_tw",
@@ -3152,7 +3165,9 @@ local localization_templates = {
 	--[+ Russian +]-- Покров 
 	create_template("talent_tree_zea_abil3_000_desc_ru",
 		{"loc_ability_zealot_stealth_description"}, {"ru"},
-			loc_text("Вы входите в режим "..COLORS_KWords_ru.Stealth_rgb_ru.." на {duration:%s} секунды и получаете {movement_speed:%s} к скорости движения.\nВаша следующая атака ближнего боя получает:\n{backstab_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударе в спину,\n{finesse_damage:%s} к "..COLORS_KWords_ru.Finesse_dmg_rgb_ru.." и\n{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru..".\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_rgb_ru)),
+			loc_text("Вы входите в режим "..COLORS_KWords_ru.Stealth_rgb_ru.." на {duration:%s} секунды и получаете {movement_speed:%s} к скорости движения.\nВаша следующая атака ближнего боя получает:\n{backstab_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударе в спину,\n{finesse_damage:%s} к "..COLORS_KWords_ru.Finesse_dmg_rgb_ru.." и\n{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru..".\n"
+					..Arrow_right_.." Восстанавливается {cooldown:%s} секунд."
+					..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_rgb_ru)),
 	--[+ Traditional Chinese - 隱秘領域 +]--
 	--進入潛行狀態{duration:%s}秒。潛行期間獲得{movement_speed:%s}移動速度，{backstab_damage:%s}背刺傷害，{finesse_damage:%s}靈巧傷害和{crit_chance:%s}暴擊幾率。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_zea_abil3_000_desc_tw",
@@ -4221,7 +4236,7 @@ local localization_templates = {
 	--[+ Russian +]-- Залповый огонь 
 	create_template("talent_tree_vet_abil_000_desc_ru",
 		{"loc_ability_veteran_base_ability_desc"}, {"ru"},
-			loc_text("Вы входите в стойку дальнего боя на {duration:%s} секунд. Входя в эту стойку, вы мгновенно экипируете своё оружие дальнего боя и получаете:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою и\n{weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою. Ваш разброс и отдача также значительно уменьшаются.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_0_rgb_ru)),
+			loc_text("Вы входите в стойку дальнего боя на {duration:%s} секунд. Входя в эту стойку, вы мгновенно экипируете своё оружие дальнего боя и получаете:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою и\n{weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою. Ваш разброс и отдача также значительно уменьшаются.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_0_rgb_ru)),
 	--[+ Traditional Chinese - 火力齊射 +]--
 	--進入遠端姿態{duration:%d}秒後，立即裝備你的遠端武器並將附近的精英和專家敵人認定為優先目標。在此姿態下，你造成的遠程傷害{damage:%d}。
 	create_template("talent_tree_vet_abil_000_desc_tw",
@@ -4252,7 +4267,7 @@ local localization_templates = {
 	--[+ Russian +]-- Стойка палача 
 	create_template("talent_tree_vet_abil1_000_desc_ru",
 		{"loc_talent_veteran_combat_ability_elite_and_special_outlines_refresh_description"}, {"ru"},
-			loc_text("Вы входите в стойку дальнего боя на {duration:%s} секунд. Входя в эту стойку, вы мгновенно экипируете своё оружие дальнего боя и получаете:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою и\n{weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою. Ваш разброс и отдача также значительно уменьшаются.\nЭлитные враги и специалисты размером с человека в пределах "..COLORS_Numbers.n_50_rgb.." метров от ветерана подсвечиваются на {duration:%s} секунд.\nУбийство подсвеченного врага обновляет активную длительность на {refresh_duration:%s} секунд. Это также обновляет длительность подсветки врагов для ветерана.\nВремя восстановления: {cooldown:%s} секунд.\nЭто улучшенная версия способности {old_talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Ability_1_rgb_ru)),
+			loc_text("Вы входите в стойку дальнего боя на {duration:%s} секунд. Входя в эту стойку, вы мгновенно экипируете своё оружие дальнего боя и получаете:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою и\n{weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою. Ваш разброс и отдача также значительно уменьшаются.\nЭлитные враги и специалисты размером с человека в пределах "..COLORS_Numbers.n_50_rgb.." метров от ветерана подсвечиваются на {duration:%s} секунд.\nУбийство подсвеченного врага обновляет активную длительность на {refresh_duration:%s} секунд. Это также обновляет длительность подсветки врагов для ветерана.\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {old_talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Ability_1_rgb_ru)),
 	--[+ Traditional Chinese - 處決者姿態 +]--
 	--進入遠程狀態，持續{duration:%s}秒。在遠程狀態下，你會立即裝備遠程武器，造成{damage:%s}遠程傷害和{weakspot_damage:%s}遠程弱點傷害，並大幅減少武器散射和後座力。\n\n還可在{duration:%s}秒內追蹤識別人類大小的精英和專家敵人。\n\n擊殺追蹤中的敵人將使技能效果延長{refresh_duration:%s}秒。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{old_talent_name:%s}的強化版。
 	create_template("talent_tree_vet_abil1_000_desc_tw",
@@ -4374,7 +4389,7 @@ local localization_templates = {
 	--[+ Russian +]-- Командный голос 
 	create_template("talent_tree_vet_abil2_000_desc_ru",
 		{"loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"}, {"ru"},
-			loc_text("Восполняет всю вашу "..COLORS_KWords_ru.Tghnss_rgb_ru.." и "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов в радиусе {range:%s} метров.\n\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_rgb_ru)),
+			loc_text("Восполняет всю вашу "..COLORS_KWords_ru.Tghnss_rgb_ru.." и "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов в радиусе {range:%s} метров.\n\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_rgb_ru)),
 	--[+ Traditional Chinese - 發號施令 +]--
 	-- 恢復你的韌性並使{range:%s}公尺內敵人暈眩。\n\n基礎冷卻時間{cooldown:%s}秒。
 	create_template("talent_tree_vet_abil2_000_desc_tw",
@@ -4472,7 +4487,7 @@ local localization_templates = {
 	--[+ Russian +]-- Проникновение 
 	create_template("talent_tree_vet_abil3_000_desc_ru",
 		{"loc_talent_veteran_invisibility_on_combat_ability_desc"}, {"ru"},
-			loc_text("Вы входите в режим "..COLORS_KWords_ru.Stealth_rgb_ru.." на {duration:%s} секунд, восполняя всю "..COLORS_KWords_ru.Tghnss_rgb_ru.." и получая {movement_speed:%s} к скорости движения. Выход из "..COLORS_KWords_ru.Stealth_rgb_ru.." подавляет ближайших врагов. Любые атаки выведут вас из режима "..COLORS_KWords_ru.Stealth_rgb_ru..".\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_rgb_ru)),
+			loc_text("Вы входите в режим "..COLORS_KWords_ru.Stealth_rgb_ru.." на {duration:%s} секунд, восполняя всю "..COLORS_KWords_ru.Tghnss_rgb_ru.." и получая {movement_speed:%s} к скорости движения. Выход из "..COLORS_KWords_ru.Stealth_rgb_ru.." подавляет ближайших врагов. Любые атаки выведут вас из режима "..COLORS_KWords_ru.Stealth_rgb_ru..".\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_rgb_ru)),
 	--[+ Traditional Chinese - 滲透 +]--
 	-- 恢復所有韌性，進入潛行狀態{duration:%s}秒，獲得{movement_speed:%s}移動速度。脫離潛行時會壓制附近敵人。採取攻擊將使你脫離潛行狀態。\n\n脫離潛行後{after_duration%s}秒內會獲得{threat_multiplier:%s}威脅和{tdr%s}韌性減傷。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	create_template("talent_tree_vet_abil3_000_desc_tw",
@@ -5811,7 +5826,7 @@ local localization_templates = {
 	--[+ Russian +]-- Рывок быка -- руоф Бычий натиск
 	create_template("talent_tree_ogr_abil0_000_desc_ru",
 		{"loc_ability_ogryn_charge_description_new"}, {"ru"},
-			loc_text("Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..COLORS_KWords_ru.Stagger_rgb_ru..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается при столкновении с врагами в панцирной броне, несгибаемыми врагами или монстрами.\n\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_0_rgb_ru)),
+			loc_text("Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..COLORS_KWords_ru.Stagger_rgb_ru..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается при столкновении с врагами в панцирной броне, несгибаемыми врагами или монстрами.\n\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_0_rgb_ru)),
 
 	--[+ ABILITY 1 - Indomitable +]--
 	create_template("talent_tree_ogr_abil1_000_desc_en",
@@ -5828,7 +5843,7 @@ local localization_templates = {
 	--[+ Russian +]-- Неукротимый -- руоф Неукротимость
 	create_template("talent_tree_ogr_abil1_000_desc_ru",
 		{"loc_talent_ogryn_bull_rush_distance_desc"}, {"ru"},
-			loc_text("Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..COLORS_KWords_ru.Stagger_rgb_ru..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается только при столкновении с монстрами.\n\nВремя восстановления: {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s} с увеличенным на {distance:%s} расстоянием рывка."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_rgb_ru)),
+			loc_text("Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..COLORS_KWords_ru.Stagger_rgb_ru..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается только при столкновении с монстрами.\n\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s} с увеличенным на {distance:%s} расстоянием рывка."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_rgb_ru)),
 
 	--[+ ABILITY 1-1 - Stomping Boots +]--
 	create_template("talent_tree_ogr_abil1_001_desc_en",
@@ -5890,7 +5905,7 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil2_000_desc_ru",
 		{"loc_ability_ogryn_taunt_shout_new_desc"}, {"ru"},
 			loc_text("Вы кричите, провоцируя врагов в радиусе {radius:%s} метров и заставляя их атаковать только вас в течение {duration:%s} секунд. Эффект повторяется через {first_pulse:%s} секунды и через {second_pulse:%s} секунд.\n\n"
-				.."Время восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_rgb_ru)),
+				.."Восстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_rgb_ru)),
 
 	--[+ ABILITY 2-1 - Valuable Distraction +]--
 	create_template("talent_tree_ogr_abil2_001_desc_en",
@@ -5956,7 +5971,7 @@ local localization_templates = {
 	--[+ Russian +]-- Беспощадный обстрел в упор -- руоф Решительный натиск
 	create_template("talent_tree_ogr_abil3_000_desc_ru",
 		{"loc_talent_ogryn_combat_ability_special_ammo_new_desc"}, {"ru"},
-			loc_text("Вы переключаетесь на оружие дальнего боя и перезаряжаете его. Вы получаете на {duration:%s} секунд:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции,\n{ranged_attack_speed:%s} к скорострельности,\n{reload_speed:%s} к скорости перезарядки и\n"..COLORS_Numbers.n_minus_rgb.."{reduced_move_penalty:%s} к штрафу скорости движения при прицеливании.\nВремя восстановления: {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_rgb_ru)),
+			loc_text("Вы переключаетесь на оружие дальнего боя и перезаряжаете его. Вы получаете на {duration:%s} секунд:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции,\n{ranged_attack_speed:%s} к скорострельности,\n{reload_speed:%s} к скорости перезарядки и\n"..COLORS_Numbers.n_minus_rgb.."{reduced_move_penalty:%s} к штрафу скорости движения при прицеливании.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_rgb_ru)),
 
 	--[+ ABILITY 3-1 - Bullet Bravado +]--
 	create_template("talent_tree_ogr_abil3_001_desc_en",
@@ -6646,7 +6661,7 @@ local localization_templates = {
 	--[+ Russian +]-- Слишком упёртый, чтобы умереть -- руоф Слишком упрям, чтобы умереть
 	create_template("talent_tree_ogr_pas_028_desc_ru",
 		{"loc_talent_ogryn_toughness_gain_increase_on_low_health_desc"}, {"ru"},
-			loc_text("{toughness_multiplier:%s} к восстанавлению "..COLORS_KWords_ru.Toughness_rgb_ru..", если ваш уровень "..COLORS_KWords_ru.Wound_rgb_ru.." опустился ниже {health:%s}.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_28_rgb_ru
+			loc_text("{toughness_multiplier:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru..", если ваш уровень "..COLORS_KWords_ru.Wound_rgb_ru.." опустился ниже {health:%s}.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_28_rgb_ru
 
 	--[+ Passive 29 - Frenzied Blows +]--
 	create_template("talent_tree_ogr_pas_029_desc_en",
@@ -6956,10 +6971,10 @@ local localization_templates = {
 				..Arrow_right_.." {charges:%s} Max Grenades.")),
 			-- charges: 4, colors
 	--[+ French +]--
-	--[+ Russian +]--!!!
-	create_template("talent_tree_arb_blitz0_000_desc_en",
+	--[+ Russian - Граната арбитрес +]-- руоф Граната Арбитрес
+	create_template("talent_tree_arb_blitz0_000_desc_ru",
 		{"loc_talent_ability_adamant_grenade_description"}, {"ru"},
-			loc_text("Вы бросаете "..COLORS_KWords.Arbites_gren_rgb..", которая взрывается после короткой задержки.\n"
+			loc_text("Вы бросаете "..COLORS_KWords_ru.Arbites_gren_rgb_ru..", которая взрывается после короткой задержки.\n"
 				..Arrow_right_.." Максимум {charges:%s} гранаты.")),
 
 	--[+ BLITZ 1 - Remote Detonation +]--
@@ -6970,7 +6985,12 @@ local localization_templates = {
 				..Arrow_right_.." Cooldown {cooldown:%s} seconds.")),
 			-- max_charges: 3, cooldown: 60, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Дистанционный подрыв +]--
+	create_template("talent_tree_arb_blitz1_000_desc_ru",
+		{"loc_talent_ability_detonate_description"}, {"ru"},
+			loc_text("Ваш кибермастиф взрывается в месте своего нахождения, "..COLORS_KWords_ru.Staggern_rgb_ru.." и поражая "..COLORS_KWords_ru.Electrocuted_rgb_ru.." ближайших врагов.\n"
+				..Arrow_right_.." {max_charges:%s} заряда.\n"
+				..Arrow_right_.." Восстанавливается {cooldown:%s} секунд.")),
 
 	--[+ BLITZ 2 - Voltaic Shock Mine +]--
 	create_template("talent_tree_arb_blitz2_000_desc_en",
@@ -6979,7 +6999,11 @@ local localization_templates = {
 				..Arrow_right_.." For {duration:%s} seconds it will "..COLORS_KWords.Electrocute_rgb.." all enemies within {range:%s} meters.")),
 			-- talent_name: Voltaic Shock Min, duration: 15, !range!: 5, s->seconds, m->meters, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Вольтаическая шоковая мина +]--
+	create_template("talent_tree_arb_blitz2_000_desc_ru",
+		{"loc_talent_ability_shock_mine_description"}, {"ru"},
+			loc_text("Вы бросаете "..COLORS_KWords_ru.Electro_mine_rgb_ru..", которая активируется при приземлении.\n"
+				..Arrow_right_.." В течение {duration:%s} секунд она будет поражать "..COLORS_KWords_ru.Electrocuted_rgb_ru.." всех врагов в радиусе {range:%s} метров.")),
 
 	--[+ BLITZ 3 - Arbites Grenade +]--
 	create_template("talent_tree_arb_blitz3_000_desc_en",
@@ -6989,7 +7013,12 @@ local localization_templates = {
 				..Arrow_right_.." This is an augmented version of {talent_name:%s}.")),
 			-- talent_name: Arbites Grenade, charges: 4
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Граната арбитрес +]-- руоф Граната Арбитрес
+	create_template("talent_tree_arb_blitz3_000_desc_ru",
+		{"loc_talent_ability_adamant_grenade_improved_description"}, {"ru"},
+			loc_text("Вы бросаете "..COLORS_KWords_ru.Arbites_gren_rgb_ru..", которая взрывается после короткой задержки.\n"
+				..Arrow_right_.." Максимум {charges:%s} гранаты.\n"
+				..Arrow_right_.." Это улучшенная версия таланта {talent_name:%s}.")),
 
 --[+ +AURA - АУРА+ +]--
 	--[+ AURA 0 - Part of the Squad +]--
@@ -6997,7 +7026,10 @@ local localization_templates = {
 		{"loc_talent_adamant_companion_coherency_desc"}, {"en"},
 			loc_text("Your Cyber-Mastiff counts towards unit "..COLORS_KWords.Coherency_rgb..".")),
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Часть отряда +]--
+	create_template("talent_tree_arb_aura0_000_desc_ru",
+		{"loc_talent_adamant_companion_coherency_desc"}, {"ru"},
+			loc_text("Ваш кибермастиф учитывается как союзник под действием "..COLORS_KWords_ru.Coherency_rgb_ru..".")),
 
 	--[+ AURA 1 - Part of the Squad +]--
 	create_template("talent_tree_arb_aura1_000_desc_en",
@@ -7006,7 +7038,11 @@ local localization_templates = {
 				.."Your Cyber-Mastiff counts towards unit "..COLORS_KWords.Coherency_rgb..".")),
 			-- tdr: +7.5%, rewrite, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Часть отряда +]--
+	create_template("talent_tree_arb_aura1_000_desc_ru",
+		{"loc_talent_adamant_companion_coherency_alt_desc"}, {"ru"},
+			loc_text("{tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".\n\n"
+				.."Ваш кибермастиф учитывается как союзник под действием "..COLORS_KWords_ru.Coherency_rgb_ru..".")),
 
 	--[+ AURA 2 - Ruthless Efficiency +]--
 	create_template("talent_tree_arb_aura2_000_desc_en",
@@ -7014,7 +7050,10 @@ local localization_templates = {
 			loc_text("{reload_speed:%s} Reload Speed for you and Allies in "..COLORS_KWords.Coherency_rgb..".")),
 			-- reload_speed: +7.5%, rewrite, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Беспощадная эффективность +]-- руоф Беспощадная сила???
+	create_template("talent_tree_arb_aura2_000_desc_ru",
+		{"loc_talent_adamant_reload_speed_aura_desc"}, {"ru"},
+			loc_text("{reload_speed:%s} к скорости перезарядки оружия для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".")),
 
 	--[+ AURA 3 - Breaking Dissent +]--
 	create_template("talent_tree_arb_aura3_000_desc_en",
@@ -7022,7 +7061,10 @@ local localization_templates = {
 			loc_text("{damage_vs_stagger:%s} "..COLORS_KWords.Damage_rgb.." vs "..COLORS_KWords.Staggered_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".")),
 			-- damage_vs_stagger: +10%, rewrite, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Подавление инакомыслия +]-- руоф Преодоление разногласий
+	create_template("talent_tree_arb_aura3_000_desc_ru",
+		{"loc_talent_adamant_damage_vs_staggered_aura_alt_desc"}, {"ru"},
+			loc_text("{damage_vs_stagger:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Stuns_rgb_ru.." врагам для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".")),
 
 --[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 	--[+ ABILITY 0 - Nuncio-Aquila +]--
@@ -7037,7 +7079,16 @@ local localization_templates = {
 				..Arrow_right_.." Cooldown {cooldown:%s} seconds.")),
 			-- range: 7.5, toughness: 5%, damage_taken: +15%, duration: 20, cooldown: 60, m->meters, s->seconds, rewrite, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Нунцио-аквила +]--
+	create_template("talent_tree_arb_abil0_000_desc_ru",
+		{"loc_talent_adamant_ability_nuncio_base_desc"}, {"ru"},
+			loc_text("{talent_name:%s}, которую вы развёртываете в выбранном направлении, усиливает союзников и ослабляет врагов в радиусе {range:%s} метров.\n\n"
+				.."Союзники получают:\n"
+				..Arrow_up_green.." {toughness:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru.." в секунду.\n\n"
+				.."Враги получают:\n"
+				..Arrow_up_green.." {damage_taken:%s} к получаемому "..COLORS_KWords_ru.Damage_rgb_ru..".\n\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.\n"
+				..Arrow_right_.." Восстанавливается {cooldown:%s} секунд.")),
 
 	--[+ ABILITY 1 - Castigator's Stance +]--
 	create_template("talent_tree_arb_abil1_000_desc_en",
@@ -7050,7 +7101,15 @@ local localization_templates = {
 				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.")),
 				-- talent_name: Castigator's Stance, duration: 10, movement_speed: +25%, damage_taken: +80%, movement_reduction: 100%, cooldown: 45, s->seconds, rewrite, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Стойка карателя +]-- руоф Стойка бичевателя
+	create_template("talent_tree_arb_abil1_000_desc_ru",
+		{"loc_talent_adamant_stance_ability_alt_description"}, {"ru"},
+			loc_text("Вы входите в стойку на {duration:%s} секунд и получаете:\n"
+				..Arrow_up_green.." {movement_speed:%s} к скорости движения,\n"
+				..Arrow_up_green.." {damage_taken:%s} к снижению получаемого "..COLORS_KWords_ru.Dmg_a_rgb_ru..",\n"
+				..Arrow_up_green.." на {movement_reduction:%s} снижается штраф скорости движения от действий, но вы не сможете бегать.\n"
+				..Arrow_up_green.." Вся ваша "..COLORS_KWords_ru.Tghnss_rgb_ru.." восстанавливается при активации.\n"
+				..Arrow_right_.." Восстанавливается {cooldown:%s} секунд.")),
 
 	--[+ ABILITY 1-1 - Blessed Armament +]--
 	create_template("talent_tree_arb_abil1_001_desc_en",
@@ -7059,7 +7118,12 @@ local localization_templates = {
 				..Arrow_right_.." Cooldown {cooldown:%s} seconds.")),
 			-- stance_name: Castigator's Stance, ammo: 10%, cooldown: 1.5, s->seconds, rewrite
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Благословенное вооружение +]-- руоф Благословенное орудие
+	create_template("talent_tree_arb_abil1_001_desc_ru",
+		{"loc_talent_adamant_stance_ranged_kills_transfer_ammo_desc"}, {"ru"},
+			loc_text("{ammo:%s} от общего количества боеприпасов в вашей обойме пополняется из резерва при убийствах в дальнем бою во время действия способности {stance_name:%s}.\n"
+				..Arrow_right_.." Округляется в большую сторону.\n"
+				..Arrow_right_.." Восстанавливается {cooldown:%s} секунды.")),
 
 	--[+ ABILITY 1-2 - Writ of Execution +]--
 	create_template("talent_tree_arb_abil1_002_desc_en",
@@ -7069,7 +7133,12 @@ local localization_templates = {
 				..Arrow_right_.." Lasting {duration:%s} seconds.")),
 			-- stance_name: Castigator's Stance, damage: +5%, duration: 10, stacks: 10, s->seconds, rewrite, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Ордер на казнь +]--
+	create_template("talent_tree_arb_abil1_002_desc_ru",
+		{"loc_talent_adamant_stance_elite_kills_stack_damage_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." за каждого убитого специалиста или элитного врага во время действия способности {stance_name:%s}.\n"
+				..Arrow_right_.." Максимум {stacks:%s} зарядов.\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
 	--[+ ABILITY 1-3 - Bloodlust +]--
 	create_template("talent_tree_arb_abil1_003_desc_en",
@@ -7077,7 +7146,10 @@ local localization_templates = {
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to your Cyber-Mastiff during {stance_name:%s}.")),
 			-- stance_name: Castigator's Stance, damage: +75%, rewrite, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Жажда крови +]--
+	create_template("talent_tree_arb_abil1_003_desc_ru",
+		{"loc_talent_adamant_stance_bloodlust_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." вашего кибермастифа во время действия способности {stance_name:%s}.")),
 
 	--[+ ABILITY 2 - Nuncio-Aquila +]--
 	create_template("talent_tree_arb_abil2_000_desc_en",
@@ -7098,7 +7170,22 @@ local localization_templates = {
 				..Arrow_right_.." This is an augmented version of {nuncio_name:%s}.")),
 			-- range: 7.5, toughness: 7.5%, suppression: +30%, impact: +30%, recoil: -25%, damage_taken: +15%, duration: 20, cooldown: 60, nuncio_name: Nuncio-Aquila, m->meters, s->seconds, rewrite, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Нунцио-аквила +]--
+	create_template("talent_tree_arb_abil2_000_desc_ru",
+		{"loc_talent_ability_area_buff_drone_ct_description"}, {"ru"},
+			loc_text("{nuncio_name:%s}, которую вы развёртываете в выбранном направлении, усиливает союзников и ослабляет врагов в радиусе {range:%s} метров.\n\n"
+				.."Усиления союзников:\n"
+				..Arrow_up_green.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду,\n"
+				..Arrow_up_green.." {suppression:%s} к подавлению врагов,\n"
+				..Arrow_up_green.." {impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..",\n"
+				..Arrow_up_green.." {recoil:%s} к отдаче,\n"
+				..Arrow_up_green.." Иммунитет к замедлению и подавлению,\n"
+				..Arrow_up_green.." Иммунитет к прерыванию во время режима прицельного огня.\n\n"
+				.."Ослабления врагов:\n"
+				..Arrow_up_green.." {damage_taken:%s} к получаемому "..COLORS_KWords_ru.Damage_rgb_ru..".\n\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.\n"
+				..Arrow_right_.." Восстанавливается {cooldown:%s} секунд.\n"
+				..Arrow_right_.." Это улучшенная версия способности {nuncio_name:%s}.")),
 
 	--[+ ABILITY 2-1 - Inspiring Recitation +]--
 	create_template("talent_tree_arb_abil2_001_desc_en",
@@ -7109,7 +7196,13 @@ local localization_templates = {
 				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed:%s} Attack Speed.")),
 			-- tdr: 30%, revive_speed: 30%, attack_speed: 10%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Воодушевляющая проповедь +]-- руоф Вдохновляющая декламация
+	create_template("talent_tree_arb_abil2_001_desc_ru",
+		{"loc_talent_adamant_drone_buff_talent_alt_desc"}, {"ru"},
+			loc_text("Союзники, попавшие под эффект способности, получают дополнительные усиления:\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_rgb_ru..",\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed:%s} к скорости атак и\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{revive_speed:%s} к скорости поднятия союзников.")),
 
 	--[+ ABILITY 2-2 - Fear of Justice +]--
 	create_template("talent_tree_arb_abil2_002_desc_en",
@@ -7119,7 +7212,12 @@ local localization_templates = {
 				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed_reduction:%s} time between attacks.")),
 			-- attack_speed_reduction: 50%, damage_reduction: 25%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Страх перед Правосудием +]-- руоф Страх правосудия
+	create_template("talent_tree_arb_abil2_002_desc_ru",
+		{"loc_talent_adamant_drone_debuff_talent_desc"}, {"ru"},
+			loc_text("Враги, попавшие под эффект способности, получают дополнительные ослабления для их атак ближнего боя:\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_minus_rgb.."{damage_reduction:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed_reduction:%s} к увеличению времени между атаками.")),
 
 	--[+ ABILITY 3 - Break the Line +]--
 	create_template("talent_tree_arb_abil3_000_desc_en",
@@ -7130,24 +7228,41 @@ local localization_templates = {
 				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.")),
 			-- damage: +25%, stagger: +50%, duration: 6, cooldown: 20, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Прорыв строя +]-- руоф Прорыв фронта
+	create_template("talent_tree_arb_abil3_000_desc_ru",
+		{"loc_talent_adamant_bash_ability_description"}, {"ru"},
+			loc_text("Вы делаете рывок вперёд и наносите удар, который "..COLORS_KWords_ru.Staggers_e_rgb_ru.." врагов перед вами, и получаете на {duration:%s} секунд усиления:\n"
+				..Arrow_up_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+				..Arrow_up_green.." {stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..".\n"
+				..Arrow_right_.." Восстанавливается {cooldown:%s} секунд.")),
 
 	--[+ ABILITY 3-1 - Commendation from Condemnation +]--
 	create_template("talent_tree_arb_abil3_001_desc_en",
 		{"loc_talent_adamant_charge_toughness_alt_description"}, {"en"},
-			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina:%s} "..COLORS_KWords.Stamina_rgb.." for each Elite, Specialist, or Monstrosity hit, up to {toughness_max:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina_max:%s} "..COLORS_KWords.Stamina_rgb..".")),
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina:%s} "..COLORS_KWords.Stamina_rgb.." replenishes for each Elite, Specialist, or Monstrosity hit, up to {toughness_max:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina_max:%s} "..COLORS_KWords.Stamina_rgb..".")),
 			-- toughness: 20%, stamina: 15%, toughness_max: 100%, stamina_max: 75%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Похвала за осуждение +]-- руоф Не наказали - значит, похвалили???
+	create_template("talent_tree_arb_abil3_001_desc_ru",
+		{"loc_talent_adamant_charge_toughness_alt_description"}, {"ru"},
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." восстанавливается за каждый удар по элитному врагу, специалисту или монстру, вплоть до {toughness_max:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и {stamina_max:%s} "..COLORS_KWords_ru.Stamina_rgb_ru..".")),
 
 	--[+ ABILITY 3-2 - Targeted Brutality +]--
 	create_template("talent_tree_arb_abil3_002_desc_en",
 		{"loc_talent_adamant_charge_cooldown_alt_description"}, {"en"},
-			loc_text("Restore {cooldown:%s} seconds "..COLORS_KWords.Ability_cd_rgb.." for each hit, increased to {cooldown_elite:%s} on Elite, Specialist, or Monstrosity.\n"
-				..Arrow_right_.." {max_cooldown:%s} Max Cooldown restored.")),
-			-- cooldown: 0.5, cooldown_elite: 5, max_cooldown: , s->seconds, colors
+			loc_text("On charge end, reduces the remaining "..COLORS_KWords.Ability_cd_rgb.." of "..COLORS_KWords.BreakZLine_rgb.." by:\n"
+				..Arrow_up_green.." {cooldown_elite:%s} seconds for each Elite, Special, or Monstrosity hit while charging,\n"
+				..Arrow_up_green.." {cooldown:%s} seconds for any other enemy hit while charging.\n"
+				..Arrow_right_.." Max {max_cooldown:%s} seconds per charge.")),
+			-- cooldown: 0.5, cooldown_elite: 5, max_cooldown: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Направленная жестокость +]--
+	create_template("talent_tree_arb_abil3_002_desc_ru",
+		{"loc_talent_adamant_charge_cooldown_alt_description"}, {"ru"},
+			loc_text("После рывка, сокращается время "..COLORS_KWords_ru.Ability_cd_rgb_ru.." вашего "..COLORS_KWords_ru.BreakZLine_rgb_ru.." на:\n"
+				..Arrow_up_green.." {cooldown_elite:%s} секунду за каждого, поражённого рывком, элитного врага, специалиста или монстра,\n"
+				..Arrow_up_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"
+				..Arrow_right_.." Максимум {max_cooldown:%s} секунд за рывок.")),
 
 	--[+ ABILITY 3-3 - Kill Order +]--
 	create_template("talent_tree_arb_abil3_003_desc_en",
@@ -7155,7 +7270,10 @@ local localization_templates = {
 			loc_text("{companion_damage:%s} "..COLORS_KWords.Damage_rgb.." for your Cyber Mastiff, for {duration:%s} seconds after using your "..COLORS_KWords.Combat_ability_rgb..".")),
 			-- companion_damage: +50%, duration: 12, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Фас! +]-- руоф Приказ убивать
+	create_template("talent_tree_arb_abil3_003_desc_ru",
+		{"loc_talent_adamant_dog_damage_after_ability_desc"}, {"ru"},
+			loc_text("{companion_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." вашего кибермастифа на {duration:%s} секунд после активации вашей "..COLORS_KWords_ru.Combat_ability_rgb_ru..".")),
 
 	--[+ ABILITY 3-4 - Engage +]--
 	create_template("talent_tree_arb_abil3_004_desc_en",
@@ -7163,7 +7281,10 @@ local localization_templates = {
 			loc_text(COLORS_Numbers.n_plus_rgb.."{distance:%s} meters to the distance of {charge_ability_name:%s}.")),
 			-- charge_ability_name: Break the Line, distance: 7.5, m->meters
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Дальний прорыв +]-- руоф К бою
+	create_template("talent_tree_arb_abil3_004_desc_ru",
+		{"loc_talent_adamant_charge_longer_distance_desc"}, {"ru"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{distance:%s} метров к расстоянию способности {charge_ability_name:%s}.")),
 
 --[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 	--[+ KEYSTONE 1 - Unleashed Brutality +]--
@@ -7173,19 +7294,30 @@ local localization_templates = {
 				.."Elite and Specialist Enemies become its Primary targets.")),
 			-- damage: +25%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Высвобожденнная жестокость +]--
+	create_template("talent_tree_arb_keys1_000_desc_ru",
+		{"loc_talent_adamant_cyber_mastiff_elites_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." элитным врагам и специалистам для вашего кибермастифа.\n"
+				.."Элитные враги и специалисты становятся приоритетными целями для него.")),
 
 	--[+ KEYSTONE 2 - Lone Wolf +]--
 	create_template("talent_tree_arb_keys2_000_desc_en",
 		{"loc_talent_adamant_disable_companion_replenish_desc"}, {"en"},
 			loc_text("You are no longer accompanied by your Cyber-Mastiff, but gain:\n"
-				..Arrow_up_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..",\n"
-				..Arrow_up_green.." {attack_speed:%s} Attack Speed,\n"
 				..Arrow_up_green.." {damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
+				..Arrow_up_green.." {attack_speed:%s} Attack Speed,\n"
+				..Arrow_up_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..",\n"
 				..Arrow_up_green.." {charges:%s} increased Charges on your Blitz Abilities, and you replenish a charge of your Blitz Ability every {time:%s} seconds.")),
 			-- tdr: +15%, attack_speed: +10%, damage: +10%, time: 60, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Одинокий волк +]--
+	create_template("talent_tree_arb_keys2_000_desc_ru",
+		{"loc_talent_adamant_disable_companion_replenish_desc"}, {"ru"},
+			loc_text("Вам больше не помогает кибермастиф, но вы получаете усиления:\n"
+				..Arrow_up_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+				..Arrow_up_green.." {attack_speed:%s} к скорости атаки,\n"
+				..Arrow_up_green.." {tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..",\n"
+				..Arrow_up_green.." {charges:%s} заряд блица, а также ваш блиц теперь восстанавливает заряд раз в {time:%s} секунд.")),
 
 	--[+ KEYSTONE 3 - Go Get 'Em! +]--
 	create_template("talent_tree_arb_keys3_000_desc_en",
@@ -7194,7 +7326,11 @@ local localization_templates = {
 				.."Ranged Enemies become its Primary targets.")),
 			-- !damage!: +50%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Взять их! +]--
+	create_template("talent_tree_arb_keys3_000_desc_ru",
+		{"loc_talent_adamant_cyber_mastiff_ranged_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." дальнобойным врагам для вашего кибермастифа.\n"
+				.."Дальнобойные враги становятся приоритетными целями для него.")),
 
 	--[+ KEYSTONE 4 - Execution Order +]--
 	create_template("talent_tree_arb_keys4_000_desc_en",
@@ -7207,7 +7343,15 @@ local localization_templates = {
 				..Arrow_up_green.." {attack_speed:%s} Attack Speed.")),
 			-- toughness: 15%, dog_damage: +150%, time: 8, damage: +15%, attack_speed: +10%, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Метка возмездия +]-- Приказ казнить
+	create_template("talent_tree_arb_keys4_000_desc_ru",
+		{"loc_talent_execution_order_description"}, {"ru"},
+			loc_text("Элитные враги, специалисты и боссы периодически помечаются для Санкции милосердия. Убийство "..COLORS_KWords_ru.Markedenemy_rgb_ru.." восстанавливает {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..".\n\n"
+			.."Ваш кибермастиф получает на {time:%s} секунд после атаки "..COLORS_KWords_ru.Markedenemy_rgb_ru..":\n"
+				..Arrow_up_green.." {dog_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..".\n\n"
+			.."Вы получаете на {time:%s} секунд после убийства "..COLORS_KWords_ru.Markedenemy_rgb_ru..":\n"
+				..Arrow_up_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+				..Arrow_up_green.." {attack_speed:%s} к скорости атаки.")),
 
 	--[+ KEYSTONE 4-1 - Efficient Killer +]--
 	create_template("talent_tree_arb_keys4_001_desc_en",
@@ -7218,7 +7362,13 @@ local localization_templates = {
 				..Arrow_right_.." Lasts {time:%s} seconds.")),
 			-- crit_chance: +10%, crit_damage: +25%, time: 8, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Эффективный убийца +]--
+	create_template("talent_tree_arb_keys4_001_desc_ru",
+		{"loc_talent_execution_order_crit_description"}, {"ru"},
+			loc_text("При убийстве "..COLORS_KWords_ru.Markedenemy_rgb_ru.." вы получаете:\n"
+				..Arrow_up_green.." {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." и\n"
+				..Arrow_up_green.." {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru..".\n"
+				..Arrow_right_.." Длится {time:%s} секунд.")),
 
 	--[+ KEYSTONE 4-2 - Malocator +]--
 	create_template("talent_tree_arb_keys4_002_desc_en",
@@ -7226,7 +7376,10 @@ local localization_templates = {
 			loc_text("{regen:%s} "..COLORS_KWords.Cd_rgb.." Regeneration for {time:%s} seconds after killing a "..COLORS_KWords.Markedenemy_rgb..".")),
 			-- regen: +50%, time: 8, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Малокатор +]--
+	create_template("talent_tree_arb_keys4_002_desc_ru",
+		{"loc_talent_execution_order_cdr_on_kill_description"}, {"ru"},
+			loc_text("{regen:%s} к "..COLORS_KWords_ru.Ability_cd_rgb_ru.." на {time:%s} секунд после убийства "..COLORS_KWords_ru.Markedenemy_rgb_ru..".")),
 
 	--[+ KEYSTONE 4-3 - No Lenience +]--
 	create_template("talent_tree_arb_keys4_003_desc_en",
@@ -7234,7 +7387,10 @@ local localization_templates = {
 			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.." for {time:%s} seconds after killing a "..COLORS_KWords.Markedenemy_rgb..".")),
 			-- rending: +10%, time: 8, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Нетерпимость +]--
+	create_template("talent_tree_arb_keys4_003_desc_ru",
+		{"loc_talent_execution_order_command_applies_brittleness_description"}, {"ru"},
+			loc_text("{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." на {time:%s} секунд после убийства "..COLORS_KWords_ru.Markedenemy_rgb_ru..".")),
 
 	--[+ KEYSTONE 4-4 - Keeping Protocol +]--
 	create_template("talent_tree_arb_keys4_004_desc_en",
@@ -7246,7 +7402,14 @@ local localization_templates = {
 				..Arrow_right_.." Lasts until the end of the Mission.")),
 			-- damage: +1%, damage_red: +1%, max_stacks: 30, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Соблюдение протокола +]-- руоф Поддердание протокола
+	create_template("talent_tree_arb_keys4_004_desc_ru",
+		{"loc_talent_execution_order_perma_buff_new_description"}, {"ru"},
+			loc_text("Убийство "..COLORS_KWords_ru.Markedenemy_rgb_ru.." даёт:\n"
+				..Arrow_up_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." монстрам и\n"
+				..Arrow_up_green.." {damage_red:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." от монстров.\n"
+				..Arrow_right_.." Максимум {max_stacks:%s} зарядов.\n"
+				..Arrow_right_.." Длится до конца миссии.")),
 
 	--[+ KEYSTONE 4-5 - Not Far Behind +]--
 	create_template("talent_tree_arb_keys4_005_desc_en",
@@ -7256,7 +7419,12 @@ local localization_templates = {
 				..Arrow_up_green.." {movement_speed:%s} Movement Speed.")),
 			-- movement_speed: +10%, damage: +10%, time: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - В зоне досягаемости +]-- руоф Не так далеко позади
+	create_template("talent_tree_arb_keys4_005_desc_ru",
+		{"loc_talent_adamant_pinning_dog_bonus_moving_towards_description"}, {"ru"},
+			loc_text("После нападения на врага вашего кибермастифа вы получаете на {time:%s} секунд:\n"
+				..Arrow_up_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+				..Arrow_up_green.." {movement_speed:%s} к скорости движения.")),
 
 	--[+ KEYSTONE 5 - Terminus Warrant +]--
 	create_template("talent_tree_arb_keys5_000_desc_en",
@@ -7272,7 +7440,18 @@ local localization_templates = {
 				..Arrow_up_green.." {suppression:%s} Suppression.")),
 				-- max_stacks: 30, melee_remove: 1, melee_damage: +15%, melee_impact: +25%, ranged_remove: 1, ranged_damage: +15%, ranged_cleave: +50%, suppression: +50%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Ордер Терминус +]-- руоф Распоряжение «Терминус»
+	create_template("talent_tree_arb_keys5_000_desc_ru",
+		{"loc_talent_adamant_terminus_warrant_shortened_alt_desc"}, {"ru"},
+			loc_text("Дальнобойные атаки дают заряды "..COLORS_KWords_ru.Meleejust_rgb_ru.." за каждый удар по врагу, до {max_stacks:%s} зарядов. Удар в ближнем бою снимает {melee_remove:%s} заряд.\n"
+				.."Пока у вас есть заряды "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы получаете усиления для ближнего боя:\n"
+				..Arrow_up_green.." {melee_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+				..Arrow_up_green.." {melee_impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..".\n\n"
+				.."Атаки ближнего боя дают заряды  "..COLORS_KWords_ru.Rangedjust_rgb_ru.." за каждое попадание по врагу, до {max_stacks:%s} зарядов. Дальнобойная атака снимает {ranged_remove:%s} заряд.\n"
+				.."Пока у вас есть заряды "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете усиления для дальнобойных атак:\n"
+				..Arrow_up_green.." {ranged_damage:%s} к дальнобойному "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+				..Arrow_up_green.." {suppression:%s} к подавлению и\n"
+				..Arrow_up_green.." {ranged_cleave:%s} к "..COLORS_KWords_ru.Cleaving_u_rgb_ru.." в дальнем бою.")),
 
 	--[+ KEYSTONE 5-1 - Dispense Justice +]--
 	create_template("talent_tree_arb_keys5_001_desc_en",
@@ -7280,8 +7459,10 @@ local localization_templates = {
 			loc_text("{reload_speed:%s} Reload Speed while you have Stacks of "..COLORS_KWords.Rangedjust_rgb..".")),
 			-- reload_speed: +20%, colors
 	--[+ French +]--
-	--[+ Russian +]--
-			-- loc_text("While you have Stacks of "..COLORS_KWords.Rangedjust_rgb..", you have {reload_speed:%s} Reload Speed.")),
+	--[+ Russian - Исполнение приговора +]-- руоф Охват правосудия
+	create_template("talent_tree_arb_keys5_001_desc_ru",
+		{"loc_talent_adamant_terminus_warrant_ranged_alt_desc"}, {"ru"},
+			loc_text("{reload_speed:%s} к скорости перезарядки пока у вас есть заряды "..COLORS_KWords_ru.Rangedjust_rgb_ru..".")),
 
 	--[+ KEYSTONE 5-2 - Obstinate +]--
 	create_template("talent_tree_arb_keys5_002_desc_en",
@@ -7292,15 +7473,28 @@ local localization_templates = {
 				..Arrow_up_green.." {fire_rate:%s} Fire Rate until you run out of Stacks, or swap to your Melee Weapon.")),
 				-- swap_stacks: 15, melee_attack_speed: +15%, fire_rate: +15%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Непреклонный +]-- руоф Упрямый
+	create_template("talent_tree_arb_keys5_002_desc_ru",
+		{"loc_talent_adamant_terminus_warrant_upgrade_alt_desc"}, {"ru"},
+			loc_text("Переключение на оружие ближнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы получаете:\n"
+				..Arrow_up_green.." {melee_attack_speed:%s} к скорости атак ближнего боя пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n\n"
+				.."Переключение на оружие дальнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете:\n"
+				..Arrow_up_green.." {fire_rate:%s} к скорострельности пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.")),
 
 	--[+ KEYSTONE 5-3 - Terminal Decree +]--
 	create_template("talent_tree_arb_keys5_003_desc_en",
 		{"loc_talent_adamant_terminus_warrant_toughness_desc"}, {"en"},
-			loc_text("While you have stacks of "..COLORS_KWords.Meleejust_rgb..", you gain additional {melee_toughness:%s} Melee "..COLORS_KWords.Toughness_rgb.." Regeneration, and Allies in "..COLORS_KWords.Coherency_rgb.." Replenish {toughness:%s} of any "..COLORS_KWords.Toughness_rgb.." that you Replenish.")),
+			loc_text("While you have stacks of "..COLORS_KWords.Meleejust_rgb..", you gain additional:\n"
+				..Arrow_up_green.." {melee_toughness:%s} Melee "..COLORS_KWords.Toughness_rgb.." Regeneration, and Allies in "..COLORS_KWords.Coherency_rgb.." Replenish:\n"
+				..Arrow_up_green.." {toughness:%s} of any "..COLORS_KWords.Toughness_rgb.." that you Replenish.")),
 			-- melee_toughness: +100%, toughness: 25%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Последний приговор +]-- руоф Окончательное постановление
+	create_template("talent_tree_arb_keys5_003_desc_ru",
+		{"loc_talent_adamant_terminus_warrant_toughness_desc"}, {"ru"},
+			loc_text("Пока у вас есть заряды "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы дополнительно получаете:\n"
+				..Arrow_up_green.." {melee_toughness:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru.." в ближнем бою, а союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." восстанавливают:\n"
+				..Arrow_up_green.." {toughness:%s} любой "..COLORS_KWords_ru.Toughness_rgb_ru..", восстановленной вами.")),
 
 	--[+ KEYSTONE 5-4 - Writ of Judgement +]--
 	create_template("talent_tree_arb_keys5_004_desc_en",
@@ -7312,34 +7506,55 @@ local localization_templates = {
 				..Arrow_up_green.." {weakspot_damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb.." until you run out of Stacks, or swap to your Melee Weapon.")),
 			-- talent_max_stacks: 30, melee_rending: +15%, crit_damage: +25%, weakspot_damage: +25%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Судебный ордер +]-- руоф Судебное предписание
+	create_template("talent_tree_arb_keys5_004_desc_ru",
+		{"loc_talent_adamant_terminus_warrant_improved_alt_desc"}, {"ru"},
+			loc_text("Переключение на оружие ближнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы получаете:\n"
+				..Arrow_up_green.." {melee_rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." в ближнем бою пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n\n"
+				.."Переключение на оружие дальнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете:\n"
+				..Arrow_up_green.." {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru.." и\n"
+				..Arrow_up_green.." {weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.")),
 
 	--[+ KEYSTONE 6 - Forceful +]--
 	create_template("talent_tree_arb_keys6_000_desc_en",
 		{"loc_talent_adamant_forceful_base_alt_desc"}, {"en"},
-			loc_text(COLORS_KWords.Staggering_rgb.." Hits and Blocked Attacks grant Stacks of {forceful_name:%s}. Lasting {duration:%s} seconds and Stacking {stacks:%s} times. Each Stack gives:\n"
+			loc_text(COLORS_KWords.Staggering_rgb.." Hits and Blocked Attacks grant Stacks of "..COLORS_KWords.Forceful_rgb..". Lasting {duration:%s} seconds and Stacking {stacks:%s} times. Each Stack gives:\n"
 				..Arrow_up_green.." {impact:%s} "..COLORS_KWords.Impact_rgb.." and\n"
 				..Arrow_up_green.." {dr:%s} "..COLORS_KWords.Damage_rgb.." Resistance.\n"
 				.."Remove Stack on "..COLORS_KWords.Damage_rgb.." taken.")),
 			-- forceful_name: Forceful, duration: 5, stacks: 10, impact: +5%, dr: +2.5%, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Неудержимый +]-- руоф Напористый
+	create_template("talent_tree_arb_keys6_000_desc_ru",
+		{"loc_talent_adamant_forceful_base_alt_desc"}, {"ru"},
+			loc_text(COLORS_KWords_ru.Stunss_rgb_ru.." удары и заблокированные атаки дают заряды "..COLORS_KWords_ru.Forceful_rgb_ru..". Длится {duration:%s} секунд и суммируется до {stacks:%s} раз. Каждый заряд даёт:\n"
+				..Arrow_up_green.." {impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." и\n"
+				..Arrow_up_green.." {dr:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
+				..Arrow_right_.." Заряд снимается при получении "..COLORS_KWords_ru.Dmg_a_rgb_ru..".")),
 
 	--[+ KEYSTONE 6-1 - Adamant Will +]--
 	create_template("talent_tree_arb_keys6_001_desc_en",
 		{"loc_talent_adamant_forceful_stun_immune_and_block_all_linger_desc"}, {"en"},
-			loc_text("While at Max Stacks, and for {duration:%s} seconds afterwards, Gain "..COLORS_KWords.Stun_rgb.." Immunity, additionally, your Perfect blocks can block All Attacks.")),
+			loc_text(COLORS_KWords.Stun_rgb.." Immunity while having "..COLORS_Numbers.n_10_rgb.." Stacks of "..COLORS_KWords.Forceful_rgb.." and for {duration:%s} seconds after dropping below "..COLORS_Numbers.n_10_rgb.." Stacks.\n"
+				.."Your Perfect blocks can block All Attacks.")),
 			-- duration: 3, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Адамантовая воля +]--
+	create_template("talent_tree_arb_keys6_001_desc_ru",
+		{"loc_talent_adamant_forceful_stun_immune_and_block_all_linger_desc"}, {"ru"},
+			loc_text("Пока у вас "..COLORS_Numbers.n_10_rgb.." зарядов "..COLORS_KWords_ru.Forceful_rgb_ru.." и на {duration:%s} секунды после того, как количество зарядов падает ниже "..COLORS_Numbers.n_10_rgb..", вы получаете иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru..".\n"
+				.."Ваши идеальные блоки могут блокировать любые атаки.")),
 
 	--[+ KEYSTONE 6-2 - Will of the Lex +]--
 	create_template("talent_tree_arb_keys6_002_desc_en",
 		{"loc_talent_adamant_forceful_toughness_regen_per_stack_desc"}, {"en"},
 			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." each second per Stack.")),
-			-- !toughness!: +0.5%, colors
+			-- toughness: +0.5%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Воля Закона +]--
+	create_template("talent_tree_arb_keys6_002_desc_ru",
+		{"loc_talent_adamant_forceful_toughness_regen_per_stack_desc"}, {"ru"},
+			loc_text("Восстанавливается {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." каждую секунду за заряд "..COLORS_KWords_ru.Forceful_rgb_ru..".")),
 
 	--[+ KEYSTONE 6-3 - Targets Acquired +]--
 	create_template("talent_tree_arb_keys6_003_desc_en",
@@ -7347,30 +7562,42 @@ local localization_templates = {
 			loc_text("While at Max Stacks, and for {duration:%s} seconds afterwards, gain:\n"
 				..Arrow_up_green.." {attack_speed:%s} Attack Speed and\n"
 				..Arrow_up_green.." {cleave:%s} "..COLORS_KWords.Cleave_rgb..".")),
-			-- duration: , attack_speed: +10%, cleave: +50%, s->seconds, colors
+			-- duration: 3, attack_speed: +10%, cleave: +50%, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Цели обнаружены +]--
+	create_template("talent_tree_arb_keys6_003_desc_ru",
+		{"loc_talent_adamant_forceful_melee_alt_desc"}, {"ru"},
+			loc_text("Пока у вас "..COLORS_Numbers.n_10_rgb.." зарядов "..COLORS_KWords_ru.Forceful_rgb_ru.." и на {duration:%s} секунды после того, как количество зарядов падает ниже "..COLORS_Numbers.n_10_rgb..", вы получаете:\n"
+				..Arrow_up_green.." {cleave:%s} к "..COLORS_KWords_ru.Cleave_rgb_ru.." и\n"
+				..Arrow_up_green.." {attack_speed:%s} к скорости атаки.")),
 
 	--[+ KEYSTONE 6-4 - Arbites Vigilant +]--
 	create_template("talent_tree_arb_keys6_004_desc_en",
 		{"loc_talent_adamant_forceful_ability_damage"}, {"en"},
-			loc_text("On "..COLORS_KWords.Combat_ability_rgb..", gain:\n"
-				..Arrow_up_green.." {strength:%s} "..COLORS_KWords.Strength_rgb.." for each Stack.\n"
-				..Arrow_right_.." Lasts {duration:%s} seconds.\n"
-				..Arrow_down_red.." Removes all Stacks.")),
+			loc_text("On "..COLORS_KWords.Combat_ability_rgb.." use, you spend all Stacks and gain for each Stack:\n"
+				..Arrow_up_green.." {strength:%s} "..COLORS_KWords.Strength_rgb..".\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.")),
 			-- strength: +2.5%, duration: 10, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Бдительный Арбитрес +]-- руоф Бдительность Арбитрес
+	create_template("talent_tree_arb_keys6_004_desc_ru",
+		{"loc_talent_adamant_forceful_ability_damage"}, {"ru"},
+			loc_text("При использовании "..COLORS_KWords_ru.Combat_ability_rgb_ru..", вы тратите все заряды и получаете за каждый заряд:\n"
+				..Arrow_up_green.." {strength:%s} к "..COLORS_KWords_ru.Strength_rgb_ru..".\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
 	--[+ KEYSTONE 6-5 - Judicial Force +]--
 	create_template("talent_tree_arb_keys6_005_desc_en",
 		{"loc_talent_adamant_forceful_stagger_on_low_high_desc"}, {"en"},
-			loc_text(COLORS_KWords.Stagger_rgb.." nearby Enemies upon reaching {low_stacks:%s} Stacks or {high_stacks:%s} Stacks.\n"
-				..Arrow_right_.." Cooldown {cooldown:%s} seconds.\n"
-				..Arrow_right_.." Separate for each.")),
-			-- low_stacks: , high_stacks: , cooldown: 5, s->seconds, colors
+			loc_text(COLORS_KWords.Stagger_rgb.." nearby Enemies upon reaching {low_stacks:%s} Stacks or {high_stacks:%s} Stacks of "..COLORS_KWords.Forceful_rgb..".\n"
+				..Arrow_right_.." Cooldown {cooldown:%s} seconds. Cooldown is separate for {low_stacks:%s} Stacks and for {high_stacks:%s} Stacks.")),
+			-- low_stacks: 0, high_stacks: 10, cooldown: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Сила правосудия +]-- руоф Судебная сила
+	create_template("talent_tree_arb_keys6_005_desc_ru",
+		{"loc_talent_adamant_forceful_stagger_on_low_high_desc"}, {"ru"},
+			loc_text("Ближайшие враги получают "..COLORS_KWords_ru.Stagger_rgb_ru.." при достижении вами {low_stacks:%s} или {high_stacks:%s} зарядов "..COLORS_KWords_ru.Forceful_rgb_ru..".\n"
+				..Arrow_right_.." Восстанавливается {cooldown:%s} секунд. Восстановление раздельное для {low_stacks:%s} зарядов и для {high_stacks:%s} зарядов.")),
 
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - No Escape +]--
@@ -7382,7 +7609,13 @@ local localization_templates = {
 				..Arrow_right_.." Lasts {duration:%s} seconds.")),
 			-- damage: +10%, movement_speed: +10%, duration: 4, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Не уйдёшь +]-- руоф Не сбежишь
+	create_template("talent_tree_arb_pas_001_desc_ru",
+		{"loc_talent_adamant_elite_special_kills_offensive_boost_alt_desc"}, {"ru"},
+			loc_text("После убийства элитного врага или специалиста, вы получаете:\n"
+				..Arrow_up_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+				..Arrow_up_green.." {movement_speed:%s} к скорости движения.\n"
+				..Arrow_right_.." Длится {duration:%s} секунды.")),
 
 	--[+ Passive 2 - Withering Fire +]--
 	create_template("talent_tree_arb_pas_002_desc_en",
@@ -7390,7 +7623,10 @@ local localization_templates = {
 			loc_text("{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Reloading.")),
 			-- damage: +15%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Истребляющий огонь +]-- Изнуряющий огонь
+	create_template("talent_tree_arb_pas_002_desc_ru",
+		{"loc_talent_adamant_damage_after_reloading_desc"}, {"ru"},
+			loc_text("{damage:%s} к дальнобойному "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд после перезарядки.")),
 
 	--[+ Passive 3 - Hammer of Judgement +]--
 	create_template("talent_tree_arb_pas_003_desc_en",
@@ -7398,39 +7634,54 @@ local localization_templates = {
 			loc_text("{melee_attack_speed:%s} Melee Attack Speed for {duration:%s} seconds on hitting {hits:%s} or more enemies with a Melee Attack.")),
 			-- melee_attack_speed: +10%, duration: 3, hits: 3, s->seconds
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Молот Правосудия +]-- руоф Молот правосудия
+	create_template("talent_tree_arb_pas_003_desc_ru",
+		{"loc_talent_adamant_multiple_hits_attack_speed_desc"}, {"ru"},
+			loc_text("{melee_attack_speed:%s} к скорости атак ближнего боя на {duration:%s} секунды при попадании по {hits:%s} или более врагам атакой ближнего боя.")),
 
 	--[+ Passive 4 - Razor-Jaw Augment +]--
 	create_template("talent_tree_arb_pas_004_desc_en",
 		{"loc_talent_adamant_dog_pounces_bleed_nearby_desc"}, {"en"},
-			loc_text("Enemies knocked away by your Cyber Mastiff's Pounce have {stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." applied to them.")),
+			loc_text("{stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." applies to Enemies knocked away by your Cyber Mastiff's Pounce.")),
 			-- stacks: 8, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Аугментация челюсти-бритвы +]-- руоф Аугментация челюстей: бритва
+	create_template("talent_tree_arb_pas_004_desc_ru",
+		{"loc_talent_adamant_dog_pounces_bleed_nearby_desc"}, {"ru"},
+			loc_text("{stacks:%s} зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." применяется к врагам, опрокинутым вашим кибермастифом.")),
 
 	--[+ Passive 5 - Target Neutralised +]--
 	create_template("talent_tree_arb_pas_005_desc_en",
 		{"loc_talent_adamant_elite_special_kills_replenish_toughness_desc"}, {"en"},
-			loc_text("Replenish {instant_toughness:%s} "..COLORS_KWords.Toughness_rgb.." instantly, and {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds, on Elite or Specialist Kill.")),
+			loc_text("{instant_toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes instantly, and {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds, on Elite or Specialist Kill.")),
 			-- instant_toughness: 10%, toughness: 10%, duration: 4, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Цель уничтожена +]-- руоф Цель нейтрализована
+	create_template("talent_tree_arb_pas_005_desc_ru",
+		{"loc_talent_adamant_elite_special_kills_replenish_toughness_desc"}, {"ru"},
+			loc_text("{instant_toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается сразу и ещё {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." за {duration:%s} секунды после убийства элитных врагов или специалистов.")),
 
 	--[+ Passive 6 - Up Close +]--
 	create_template("talent_tree_arb_pas_006_desc_en",
 		{"loc_talent_adamant_close_kills_restore_toughness_desc"}, {"en"},
-			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." on Close Kill.")),
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes on Close Kill.")),
 			-- toughness: 5%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - В упор +]-- руоф Лицом к лицу
+	create_template("talent_tree_arb_pas_006_desc_ru",
+		{"loc_talent_adamant_close_kills_restore_toughness_desc"}, {"ru"},
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при убийстве на ближней ддистанции.")),
 
 	--[+ Passive 7 - Force of Will +]--
 	create_template("talent_tree_arb_pas_007_desc_en",
 		{"loc_talent_adamant_staggers_replenish_toughness_melee_desc"}, {"en"},
-			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." on "..COLORS_KWords.Staggering_rgb.." Melee Attack.")),
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes on "..COLORS_KWords.Staggering_rgb.." Melee Attack.")),
 			-- toughness: 10%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Сила воли +]--
+	create_template("talent_tree_arb_pas_007_desc_ru",
+		{"loc_talent_adamant_staggers_replenish_toughness_melee_desc"}, {"ru"},
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при "..COLORS_KWords_ru.Stagger_i_rgb_ru.." врага атакой ближнего боя.")),
 
 	--[+ Passive 8 - Retaliatory Force +]--
 	create_template("talent_tree_arb_pas_008_desc_en",
@@ -7441,33 +7692,50 @@ local localization_templates = {
 				..Arrow_up_green.." {attack_speed:%s} Attack Speed.")),
 			-- block_cost: 15%, damage: +15%, attack_speed: +10%, duration: 8, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Сила возмездия +]--
+	create_template("talent_tree_arb_pas_008_desc_ru",
+		{"loc_talent_adamant_perfect_block_damage_boost_alt_desc"}, {"ru"},
+			loc_text("На {block_cost:%s} снижены затраты выносливости на блокирование.\n"
+				.."При идеальном блокировании вы получаете на {duration:%s} секунд:\n"
+				..Arrow_up_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+				..Arrow_up_green.." {attack_speed:%s} к скорости атаки.")),
 
 	--[+ Passive 9 - Man and Cyber-Mastiff +]--
 	create_template("talent_tree_arb_pas_009_desc_en",
 		{"loc_talent_adamant_toughness_regen_near_companion_desc"}, {"en"},
-			loc_text("Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second while within {range:%s} meters of your Cyber-Mastiff.")),
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes per second while Cyber-Mastiff is within {range:%s} meters of you.")),
 			-- toughness: 5%, range: 8, m->meters, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Человек и кибермастиф +]--
+	create_template("talent_tree_arb_pas_009_desc_ru",
+		{"loc_talent_adamant_toughness_regen_near_companion_desc"}, {"ru"},
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду пока ваш кибермастиф в пределах {range:%s} метров от вас.")),
 
 	--[+ Passive 10 - Walk It Off +]--
 	create_template("talent_tree_arb_pas_010_desc_en",
 		{"loc_talent_adamant_stamina_spent_replenish_toughness_desc"}, {"en"},
-			loc_text("Spending {stamina:%s} "..COLORS_KWords.Stamina_rgb.." replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds.")),
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes over {duration:%s} seconds per {stamina:%s} "..COLORS_KWords.Stamina_rgb.." spent.")),
 			-- stamina: 1, toughness: 15%, duration: 3, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Заживёт на ходу +]-- руоф Остынь
+	create_template("talent_tree_arb_pas_010_desc_ru",
+		{"loc_talent_adamant_stamina_spent_replenish_toughness_desc"}, {"ru"},
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за {duration:%s} секунды за каждую единицу потраченной "..COLORS_KWords_ru.Stamina_rgb_ru..".")), --{stamina:%s}
 
 	--[+ Passive 11 - Shield Plates +]--
 	create_template("talent_tree_arb_pas_011_desc_en",
 		{"loc_talent_adamant_shield_plates_alt_desc"}, {"en"},
-			loc_text("On Block, replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds.\n"
-				.."On Perfect Block, instantly replenish {perfect_toughness:%s} "..COLORS_KWords.Toughness_rgb..".\n"
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes over {duration:%s} seconds on successful Block.\n"
+				.."{perfect_toughness:%s} "..COLORS_KWords.Toughness_rgb.." instantly replenishes on Perfect Block.\n"
 				..Arrow_right_.." Cooldown {cooldown:%s} second.")),
 			-- toughness: 15%, duration: 3, perfect_toughness: 10%, cooldown: 1, s->second, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Щитовые пластины +]-- руоф Пластинчатые щиты
+	create_template("talent_tree_arb_pas_011_desc_ru",
+		{"loc_talent_adamant_shield_plates_alt_desc"}, {"ru"},
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за {duration:%s} секунды при успешном блоке.\n"
+				.."{perfect_toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." мгновенно восполняетсяпри идеальном блоке.\n"
+				..Arrow_right_.." Восстанавливается {cooldown:%s} секунду.")),
 
 	--[+ Passive 12 - Arbitrator Armour +]--
 	create_template("talent_tree_arb_pas_012_desc_en",
@@ -7475,7 +7743,10 @@ local localization_templates = {
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb..".")),
 			-- toughness: +25, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Броня арбитратора +]-- руоф Броня Арбитратора
+	create_template("talent_tree_arb_pas_012_desc_ru",
+		{"loc_talent_adamant_armor_desc"}, {"ru"},
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..".")),
 
 	--[+ Passive 13 - Voltaic Mandibles Augment +]--
 	create_template("talent_tree_arb_pas_013_desc_en",
@@ -7483,7 +7754,10 @@ local localization_templates = {
 			loc_text("Your Cyber-Mastiff "..COLORS_KWords.Electrocutes_rgb.." Enemies it attacks for {duration:%s} seconds.")),
 			-- duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Аугментация Вольтаические жвала +]-- руоф Аугментация челюстей: электрошок
+	create_template("talent_tree_arb_pas_013_desc_ru",
+		{"loc_talent_adamant_dog_attacks_electrocute_desc"}, {"ru"},
+			loc_text("Ваш кибермастиф поражает "..COLORS_KWords_ru.Electrocuted_rgb_ru.." врагов на {duration:%s} секунд при атаке.")),
 
 	--[+ Passive 14 - Ammo Belt +]--
 	-- create_template("talent_tree_arb_pas_014_desc_en",
@@ -7491,7 +7765,10 @@ local localization_templates = {
 			-- loc_text("{ammo:%s} Ammo Capacity.")),
 			-- ammo: +25%
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Патронтаж +]-- руоф Поясная разгрузка
+	create_template("talent_tree_arb_pas_014_desc_ru",
+		{"loc_talent_adamant_ammo_belt_desc"}, {"ru"},
+			loc_text("{ammo:%s} к боезапасу.")),
 
 	--[+ Passive 15 - Concussive +]--
 	create_template("talent_tree_arb_pas_015_desc_en",
@@ -7499,17 +7776,25 @@ local localization_templates = {
 			loc_text("Melee "..COLORS_KWords.Weakspothits_rgb.." make the Enemy count as "..COLORS_KWords.Staggered_rgb.." for {duration:%s} seconds.")),
 			-- duration: 4, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Ошеломление +]-- руоф Сотрясение
+	create_template("talent_tree_arb_pas_015_desc_ru",
+		{"loc_talent_adamant_melee_weakspot_hits_count_as_stagger_desc"}, {"ru"},
+			loc_text("Попадания в "..COLORS_KWords_ru.Weakspothits_rgb_ru.." в ближнем бою "..COLORS_KWords_ru.Staggers_rgb_ru.." врагов на {duration:%s} секунды.")),
 
 	--[+ Passive 16 - Canine Morale +]--
 	create_template("talent_tree_arb_pas_016_desc_en",
 		{"loc_talent_adamant_pinning_dog_kills_buff_allies_description"}, {"en"},
-			loc_text("Killing Pounced Targets grants Allies in "..COLORS_KWords.Coherency_rgb.." over {duration:%s} seconds:\n"
+			loc_text("Killing Pounced Targets grants for you and Allies in "..COLORS_KWords.Coherency_rgb.." over {duration:%s} seconds:\n"
 				..Arrow_up_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and\n"
 				..Arrow_up_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".")),
 			-- tdr: +20%, toughness: +10%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Боевой настрой пса +]-- руоф Собачий настрой
+	create_template("talent_tree_arb_pas_016_desc_ru",
+		{"loc_talent_adamant_pinning_dog_kills_buff_allies_description"}, {"ru"},
+			loc_text("Убийство врага, прижатого кибермастифом к земле, даёт вам и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." на {duration:%s} секунд:\n"
+				..Arrow_up_green.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и\n"
+				..Arrow_up_green.." {tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..".")),
 
 	--[+ Passive 17 - Imposing Force +]--
 	create_template("talent_tree_arb_pas_017_desc_en",
@@ -7517,16 +7802,23 @@ local localization_templates = {
 			loc_text("{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Resistance for {duration:%s} seconds after Elite or Specialist Kill.")),
 			-- damage_reduction: +25%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Давящая мощь +]-- руоф Впечатляющая сила
+	create_template("talent_tree_arb_pas_017_desc_ru",
+		{"loc_talent_adamant_damage_reduction_after_elite_kill_desc"}, {"ru"},
+			loc_text("{damage_reduction:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд после убийства элитного врага или специалиста.")),
 
 	--[+ Passive 18 - Suppression Force +]--
 	create_template("talent_tree_arb_pas_018_desc_en",
 		{"loc_talent_adamant_staggered_enemies_deal_less_damage_desc"}, {"en"},
-			loc_text(COLORS_KWords.Staggering_rgb.." an Enemy makes them deal {damage:%s} "..COLORS_KWords.Damage_rgb..".\n"
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." dealt by Enemies successfully "..COLORS_KWords.Staggered_rgb.." by Melee Attacks, Pushes, and direct impacts of "..COLORS_KWords.BreakZLine_rgb..".\n"
 				..Arrow_right_.." Lasts {duration:%s} seconds.")),
-			-- damage: -20%, !duration!: 5, s->seconds, colors
+			-- damage: -20%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Сила подавления +]--
+	create_template("talent_tree_arb_pas_018_desc_ru",
+		{"loc_talent_adamant_staggered_enemies_deal_less_damage_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." от врагов, "..COLORS_KWords_ru.Staggered_rgb_ru.." вами с помощью атак ближнего боя, толчков или прямых столкновений способности "..COLORS_KWords_ru.BreakZLined_rgb_ru..".\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
 	--[+ Passive 19 - Suppression Protocols +]--
 	create_template("talent_tree_arb_pas_019_desc_en",
@@ -7534,7 +7826,10 @@ local localization_templates = {
 			loc_text("{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds after hitting {hits:%s} or more Enemies with an Attack.")),
 			-- hits: 3, tdr: +20%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Протоколы подавления +]--
+	create_template("talent_tree_arb_pas_019_desc_ru",
+		{"loc_talent_adamant_hitting_multiple_gives_tdr_desc"}, {"ru"},
+			loc_text("{tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." на {duration:%s} секунд после попадания атакой по {hits:%s} или более врагам.")),
 
 	--[+ Passive 20 - Plasteel Plates +]--
 	create_template("talent_tree_arb_pas_020_desc_en",
@@ -7542,7 +7837,10 @@ local localization_templates = {
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb..".")),
 			-- toughness: +25, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Пласталевые пластины +]-- руоф Пластины из пластали
+	create_template("talent_tree_arb_pas_020_desc_ru",
+		{"loc_talent_adamant_plasteel_plates_desc"}, {"ru"},
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..".")),
 
 	--[+ Passive 21 - Arbites Revelatum +]--
 	create_template("talent_tree_arb_pas_021_desc_en",
@@ -7550,7 +7848,10 @@ local localization_templates = {
 			loc_text(COLORS_Numbers.n_plus_rgb.."{damage:%s} "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Successful Dodge.")),
 			-- damage: 15%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Арбитрес Ревелатум +]--
+	create_template("talent_tree_arb_pas_021_desc_ru",
+		{"loc_talent_adamant_dodge_grants_damage_desc"}, {"ru"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд при успешном уклонении.")),
 
 	--[+ Passive 22 - Justified Measures +]--
 	create_template("talent_tree_arb_pas_022_desc_en",
@@ -7560,7 +7861,12 @@ local localization_templates = {
 				..Arrow_right_.." Lasts {duration:%s} seconds.")),
 			-- damage: +3%, stacks: 5, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Оправданные меры +]--
+	create_template("talent_tree_arb_pas_022_desc_ru",
+		{"loc_talent_adamant_stacking_damage_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при успешной атаке.\n"
+				..Arrow_right_.." Максимум {stacks:%s} зарядов.\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
 	--[+ Passive 23 - Hold the Line +]--
 	create_template("talent_tree_arb_pas_023_desc_en",
@@ -7568,9 +7874,15 @@ local localization_templates = {
 			loc_text(COLORS_KWords.Staggering_rgb.." an Enemy grants {normal_stacks:%s} Stack of {damage_taken_multiplier:%s} "..COLORS_KWords.Damage_rgb.." Resistance, on the next Melee hit taken.\n"
 				..Arrow_right_.." Stacking {max_stacks:%s} times.\n\n"
 				..COLORS_KWords.Staggering_rgb.." Non-Human Sized Enemies grants {ogryn_stacks:%s} Stacks.")),
-			-- normal_stacks: 1, damage_taken_multiplier: +3%, max_stacks: 5, ogryn_stacks: , colors
+			-- normal_stacks: 1, damage_taken_multiplier: +3%, max_stacks: 5, ogryn_stacks: 5, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Держи строй +]-- руоф Держать строй
+	create_template("talent_tree_arb_pas_023_desc_ru",
+		{"loc_talent_adamant_staggers_reduce_damage_taken_alt_desc"}, {"ru"},
+			loc_text(COLORS_KWords_ru.Staggerr_rgb_ru.." врага даёт {normal_stacks:%s} заряд {damage_taken_multiplier:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." для следующего полученного удара в ближнем бою.\n"
+				..COLORS_KWords_ru.Staggerr_rgb_ru.." врагов больше человеческого роста даёт {ogryn_stacks:%s} зарядов.\n"
+				..Arrow_right_.." Суммируется максимум {max_stacks:%s} раз.\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
 	--[+ Passive 24 - Judicious Efficiency +]--
 	create_template("talent_tree_arb_pas_024_desc_en",
@@ -7578,7 +7890,10 @@ local localization_templates = {
 			loc_text(COLORS_Numbers.n_plus_rgb.."{reload_speed:%s} Reload Speed on next reload after Elite or Specialist Kill.")),
 			-- reload_speed: 20%
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Судейская эффективность +]-- руоф Разумная эффективность
+	create_template("talent_tree_arb_pas_024_desc_ru",
+		{"loc_talent_adamant_elite_special_kills_reload_speed_desc"}, {"ru"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{reload_speed:%s} к скорости следующей перезарядки после убийства элитного врага или специалиста.")),
 
 	--[+ Passive 25 - Rapid Movement +]--
 	create_template("talent_tree_arb_pas_025_desc_en",
@@ -7588,7 +7903,12 @@ local localization_templates = {
 				..Arrow_right_.." Cooldown {cd:%s} seconds.")),
 			-- speed: +5%, duration: 5, stamina: +5%, cd: 0.75, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Быстрые движения +]-- руоф Быстрое перемещение
+	create_template("talent_tree_arb_pas_025_desc_ru",
+		{"loc_talent_adamant_sprinting_sliding_description"}, {"ru"},
+			loc_text("{speed:%s} к скорости бега на {duration:%s} секунд после подката.\n"
+				.."{stamina:%s} к "..COLORS_KWords_ru.Stamina_rgb_ru.." после убийства врага.\n"
+				..Arrow_right_.." Восстанавливается {cd:%s} секунды.")),
 
 	--[+ Passive 26 - Rebreather +]--
 	create_template("talent_tree_arb_pas_026_desc_en",
@@ -7597,7 +7917,11 @@ local localization_templates = {
 				.."{toxic_reduction:%s} Reduced "..COLORS_KWords.Damage_rgb.." taken from Toxic Gas.")),
 			-- corruption: +20%, toxic_reduction: +75%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Ребризер +]-- руоф Противогаз
+	create_template("talent_tree_arb_pas_026_desc_ru",
+		{"loc_talent_adamant_rebreather_desc"}, {"ru"},
+			loc_text("{corruption:%s} к сопротивлению "..COLORS_KWords_ru.Corruption_rgb_ru.." и\n"
+				.."{toxic_reduction:%s} к снижению "..COLORS_KWords_ru.Dmg_a_rgb_ru..", получаемого от токсичного газа.")),
 
 	--[+ Passive 27 - Cower, Miscreants! +]--
 	create_template("talent_tree_arb_pas_027_desc_en",
@@ -7605,24 +7929,30 @@ local localization_templates = {
 			loc_text("{damage_vs_suppressed:%s} "..COLORS_KWords.Damage_rgb.." vs Suppressed Enemies.")),
 			-- damage_vs_suppressed: +25%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Трепещите, негодяи! +]--
+	create_template("talent_tree_arb_pas_027_desc_ru",
+		{"loc_talent_adamant_damage_vs_suppressed_desc"}, {"ru"},
+			loc_text("{damage_vs_suppressed:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." подавленным врагам.")),
 
 	--[+ Passive 28 - Target the Weak +]-- DOUBLE!
 	-- create_template("talent_tree_arb_pas_028_desc_en",
-		-- {"loc_talent__desc"}, {"en"},
-			-- loc_text("Enemies "..COLORS_KWords.Staggered_rgb.." by your Melee Attacks take {damage:%s} more Melee "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds.")),
-			-- !damage!: +15%, !duration!: 5, s->seconds, colors
+		-- {"loc_talent_ogryn_big_bully_heavy_hits_new_desc"}, {"en"},
+			-- loc_text("")),
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Цель - слабаки +]--
 
 	--[+ Passive 29 - The Emperor's Fist +]--
 	create_template("talent_tree_arb_pas_029_desc_en",
 		{"loc_talent_adamant_first_melee_hit_increased_damage_desc"}, {"en"},
 			loc_text("{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." and\n"
 				.."{impact:%s} "..COLORS_KWords.Impact_rgb.." on first Enemy hit with each attack.")),
-			-- !damage!: +15%, !impact!: +30%, colors
+			-- damage: +15%, impact: +30%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Кулак Императора +]--
+	create_template("talent_tree_arb_pas_029_desc_ru",
+		{"loc_talent_adamant_first_melee_hit_increased_damage_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя и\n"
+				.."{impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." первого врага в каждой атаке.")),
 
 	--[+ Passive 30 - Zealous Dedication +]--
 	create_template("talent_tree_arb_pas_030_desc_en",
@@ -7632,7 +7962,12 @@ local localization_templates = {
 				..Arrow_right_.." Lasts {duration:%s} seconds.")),
 			-- crit_chance: 2%, max_stacks: 8, duration: 10, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Фанатичная преданность +]--
+	create_template("talent_tree_arb_pas_030_desc_ru",
+		{"loc_talent_adamant_crit_chance_on_kill_desc"}, {"ru"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." при убийстве.\n"
+				..Arrow_right_.." До {max_stacks:%s} зарядов.\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
 	--[+ Passive 31 - Street Smarts +]--
 	create_template("talent_tree_arb_pas_031_desc_en",
@@ -7641,15 +7976,22 @@ local localization_templates = {
 				.."{dodge_duration:%s} Dodge Duration.")),
 			-- dodge: +1, dodge_duration: +25%
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Уличная хватка +]-- руоф Законы улицы
+	create_template("talent_tree_arb_pas_031_desc_ru",
+		{"loc_talent_adamant_dodge_improvement_desc"}, {"ru"},
+			loc_text("{dodge:%s} эффективное уклонение и\n"
+				.."{dodge_duration:%s} к длительности уклонения.")),
 
 	--[+ Passive 32 - Drive them Back +]--
 	create_template("talent_tree_arb_pas_032_desc_en",
 		{"loc_talent_adamant_cleave_after_push_desc"}, {"en"},
-			loc_text("Pushing grants {cleave:%s} "..COLORS_KWords.Cleave_rgb.." for {duration:%s} seconds.")),
+			loc_text("{cleave:%s} "..COLORS_KWords.Cleave_rgb.." for {duration:%s} seconds on Push.")),
 			-- cleave: 75%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Натиск +]-- руоф Отбрось их
+	create_template("talent_tree_arb_pas_032_desc_ru",
+		{"loc_talent_adamant_cleave_after_push_desc"}, {"ru"},
+			loc_text("{cleave:%s} к "..COLORS_KWords_ru.Cleave_rgb_ru.." на {duration:%s} секунд после толчка.")),
 
 	--[+ Passive 33 - Target Selection +]--
 	create_template("talent_tree_arb_pas_033_desc_en",
@@ -7658,17 +8000,26 @@ local localization_templates = {
 				..Arrow_right_.." Lasts {time:%s} seconds.")),
 			-- damage: +15%, time: 8, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Выбор целей +]-- руоф Выбор цели
+	create_template("talent_tree_arb_pas_033_desc_ru",
+		{"loc_talent_adamant_pinning_dog_elite_damage_description"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." элитным врагам и специалистам после убийства такого врага, прижатого вашим кибермастифом.\n"
+				..Arrow_right_.." Длится {time:%s} секунд.")),
 
 	--[+ Passive 34 - Soulguilt Scan +]--
 	create_template("talent_tree_arb_pas_034_desc_en",
 		{"loc_talent_adamant_stacking_weakspot_strength_duration_desc"}, {"en"},
-			loc_text(COLORS_Numbers.n_plus_rgb.."{strength:%s} "..COLORS_KWords.Weakspot_rgb.." Strength after "..COLORS_KWords.Weakspothits_rgb..".\n"
+			loc_text(COLORS_Numbers.n_plus_rgb.."{strength:%s} "..COLORS_KWords.Weakspot_rgb.." strength after "..COLORS_KWords.Weakspothits_rgb..".\n"
 				..Arrow_right_.." {max_stacks:%s} Max Stacks.\n"
 				..Arrow_right_.." Lasts {duration:%s} seconds.")),
 			-- strength: 2%, max_stacks: 8, duration: 10, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Поиск виновных душ +]--
+	create_template("talent_tree_arb_pas_034_desc_ru",
+		{"loc_talent_adamant_stacking_weakspot_strength_duration_desc"}, {"ru"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{strength:%s} к силе атак в "..COLORS_KWords_ru.Weakspot_rgb_ru.." после попадания в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".\n"
+				..Arrow_right_.." Максимум {max_stacks:%s} зарядов.\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
 	--[+ Passive 35 - Priority Endowment +]--
 	create_template("talent_tree_arb_pas_035_desc_en",
@@ -7676,7 +8027,10 @@ local localization_templates = {
 			loc_text("{clip_size:%s} Clip Size. Rounded Up.")),
 			-- clip_size: +15%
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Приоритетное снабжение +]--
+	create_template("talent_tree_arb_pas_035_desc_ru",
+		{"loc_talent_adamant_clip_size_alt_desc"}, {"ru"},
+			loc_text("{clip_size:%s} к размеру магазина. Округляется в большую сторону.")),
 
 	--[+ Passive 36 - Target Priority +]--
 	create_template("talent_tree_arb_pas_036_desc_en",
@@ -7684,7 +8038,10 @@ local localization_templates = {
 			loc_text(COLORS_Numbers.n_plus_rgb.."{damage:%s} "..COLORS_KWords.Damage_rgb.." to Enemies above {health:%s} "..COLORS_KWords.Health_rgb..".")),
 			-- damage: 15%, health: 75%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Приоритет целей +]--
+	create_template("talent_tree_arb_pas_036_desc_ru",
+		{"loc_talent_adamant_increased_damage_to_high_health_desc"}, {"ru"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." врагам со "..COLORS_KWords_ru.Healthx_rgb_ru.." выше {health:%s}.")),
 
 	--[+ Passive 37 - Final Warning +]--
 	create_template("talent_tree_arb_pas_037_desc_en",
@@ -7693,7 +8050,11 @@ local localization_templates = {
 				..Arrow_right_.." Lasts {duration:%s} seconds.")),
 			-- damage: 15%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Последнее предупреждение +]--
+	create_template("talent_tree_arb_pas_037_desc_ru",
+		{"loc_talent_adamant_ranged_damage_on_melee_stagger_desc"}, {"ru"},
+			loc_text(COLORS_Numbers.n_plus_rgb.."{damage:%s} к дальнобойному "..COLORS_KWords_ru.Damage_rgb_ru.." при "..COLORS_KWords_ru.Stagger_i_rgb_ru.." врагов ударами в ближнем бою.\n"
+				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
 	--[+ Passive 38 - Weight of the Lex +]--
 	create_template("talent_tree_arb_pas_038_desc_en",
@@ -7701,15 +8062,21 @@ local localization_templates = {
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Heavy Melee Attack.")),
 			-- damage: +15%, duration: 5, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Вес Закона +]--
+	create_template("talent_tree_arb_pas_038_desc_ru",
+		{"loc_talent_adamant_heavy_attacks_increase_damage_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд после заряженной атаки ближнего боя.")),
 
 	--[+ Passive 39 - Serrated Maw +]--
 	create_template("talent_tree_arb_pas_039_desc_en",
 		{"loc_talent_adamant_dog_applies_brittleness_desc"}, {"en"},
-			loc_text("Your Cyber-Mastiff applies {stacks:%s} Stacks of "..COLORS_KWords.Brittleness_rgb.." on attack.")),
+			loc_text("{stacks:%s} Stacks of "..COLORS_KWords.Brittleness_rgb.." on attack applies by your Cyber-Mastiff.")),
 			-- stacks: 6, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Зазубренная пасть +]--
+	create_template("talent_tree_arb_pas_039_desc_ru",
+		{"loc_talent_adamant_dog_applies_brittleness_desc"}, {"ru"},
+			loc_text("{stacks:%s} зарядов "..COLORS_KWords_ru.Brittleness_rgb_ru.." при атаке накладывает ваш кибермастиф.")),
 
 	--[+ Passive 40 - Prosecution Blow +]--
 	create_template("talent_tree_arb_pas_040_desc_en",
@@ -7717,7 +8084,10 @@ local localization_templates = {
 			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.." on Ranged "..COLORS_KWords.Crit_strike_rgb..".")),
 			-- rending: +20%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Карающий удар +]-- руоф Обвиняющий удар
+	create_template("talent_tree_arb_pas_040_desc_ru",
+		{"loc_talent_adamant_crits_rend_alt_desc"}, {"ru"},
+			loc_text("{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." при "..COLORS_KWords_ru.Crit_chance_r_rgb_ru..".")),
 
 	--[+ Passive 41 - March +]--
 	create_template("talent_tree_arb_pas_041_desc_en",
@@ -7726,7 +8096,11 @@ local localization_templates = {
 				..Arrow_right_.." Lasts {duration:%s} seconds.")),
 			-- movement_speed: +15%, duration: 3, s->seconds, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Марш +]--
+	create_template("talent_tree_arb_pas_041_desc_ru",
+		{"loc_talent_adamant_movement_speed_on_block_alt_desc"}, {"ru"},
+			loc_text("{movement_speed:%s} к скорости движения после любой дальнобойной атаки.\n"
+				..Arrow_right_.." Длится {duration:%s} секунды.")),
 
 	--[+ Passive 42 - Monstrosity Hunter +]--
 	create_template("talent_tree_arb_pas_042_desc_en",
@@ -7734,7 +8108,10 @@ local localization_templates = {
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ogryns and Monstrosities.")),
 			-- damage: +20%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Охотник на монстров +]-- руоф Охота на чудовищ
+	create_template("talent_tree_arb_pas_042_desc_ru",
+		{"loc_talent_adamant_monster_hunter_desc"}, {"ru"},
+			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." огринам и монстрам.")),
 
 	--[+ Passive 43 - Strike Down +]--
 	create_template("talent_tree_arb_pas_043_desc_en",
@@ -7742,7 +8119,10 @@ local localization_templates = {
 			loc_text("{rending:%s} Melee "..COLORS_KWords.Rending_rgb.." on "..COLORS_KWords.Staggered_rgb.." Enemies.")),
 			-- rending: +15%, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Сокрушительный удар +]-- руоф Сбивающий удар
+	create_template("talent_tree_arb_pas_043_desc_ru",
+		{"loc_talent_adamant_melee_attacks_on_staggered_rend_alt_desc"}, {"ru"},
+			loc_text("{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." в ближнем бою "..COLORS_KWords_ru.Stuns_rgb_ru.." врагам.")),
 
 	--[+ Passive 44 - True Grit +]--
 	create_template("talent_tree_arb_pas_044_desc_en",
@@ -7750,7 +8130,10 @@ local localization_templates = {
 			loc_text("Limit the maximum "..COLORS_KWords.Health_rgb.." "..COLORS_KWords.Damage_rgb.." Taken from an Attack to {limit:%s}.")),
 			-- limit: 50, colors
 	--[+ French +]--
-	--[+ Russian +]--
+	--[+ Russian - Настоящая закалка +]-- руоф Истинная выдержка
+	create_template("talent_tree_arb_pas_044_desc_ru",
+		{"loc_talent_adamant_limit_dmg_taken_from_hits_desc"}, {"ru"},
+			loc_text("Максимальный получаемый "..COLORS_KWords_ru.Dmg_rgb_ru.." "..COLORS_KWords_ru.Health_rgb_ru.." от атак снижается до {limit:%s}.")),
 
 
 -- FOR TESTS ONLY!!!

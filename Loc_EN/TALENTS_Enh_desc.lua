@@ -340,7 +340,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Ability 3-5 - Warp Unbound +]--
 	local ED_PSY_Ability_3_5_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." After overcharging has ended, allows Psyker to execute Peril-generating actions while at 100% Peril for 10 seconds without triggering the self-explosion.",
+		-- Arrow_right_.." After overcharging has ended, allows Psyker to execute Peril-generating actions while at 100% Peril for 10 seconds without triggering the self-explosion.",
 		Arrow_right_.." Note that when this 10 seconds duration ends, Scrier's Gaze's base grace period still applies, providing another 1.5 seconds of the same effect.",
 	}, "\n"), enhdesc_col)
 

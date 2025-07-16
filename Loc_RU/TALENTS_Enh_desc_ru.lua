@@ -37,7 +37,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 --[+ ++PSYKER++ +]--
 --[+ +BLITZ+ +]--
-	--[+ Blitz 0 - Brain Burst - Взрыв мозга +]-- -- руоф Взрыв разума
+	--[+ Blitz 0 - Brain Burst - Взрыв мозга +]-- -- руоф Взрыв разума	checked 12.07.2025
 	local ED_PSY_Blitz_0_rgb_ru = iu_actit(table.concat({
 		-- ppp______ppp,
 		-- Arrow_right_.." Не наносит критические удары.",
@@ -47,7 +47,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"{#color(255, 35, 5)} Вы можете взорваться! Не используйте, если уровень опасности 97% или выше!{#reset()}",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 1 - Brain Rupture - Разрыв мозга +]--
+	--[+ Blitz 1 - Brain Rupture - Разрыв мозга +]--	checked 12.07.2025
 	local ED_PSY_Blitz_1_rgb_ru = iu_actit(table.concat({
 		-- ppp______ppp,
 		-- Arrow_right_.." Не наносит критические удары.",
@@ -60,10 +60,10 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"{#color(255, 35, 5)} Вы можете взорваться! Не используйте при опасности 97% или выше!{#reset()}",
 	}, "\n"), enhdesc_col)
 
-	--[+ Blitz 1-1 - Kinetic Resonance +]--
+	--[+ Blitz 1-1 - Kinetic Resonance +]--	checked 12.07.2025
 	local ED_PSY_Blitz_1_1_rgb_ru = iu_actit(table.concat({
 		-- ppp______ppp,
-		Arrow_right_.." Сокращает время зарядки Разрыва мозга как для основных, так и для дополнительных атак.",
+		-- Arrow_right_.." Сокращает время зарядки Разрыва мозга как для основных, так и для дополнительных атак.",
 		Arrow_right_.." Сокращение времени зарядки складывается с усилениями от таланта «Усиленная псионика» и стимулятора стремительности.",
 		Arrow_right_.." Перемножается с соответствующими усилениями от талантов «Треск костей», «Успокаивающее извержение», «Эмпирическая решимость», «Внутреннее спокойствие», «Якорь реальности», небольшими узлами сопротивления опасностям, боевым стимулятором и мутатором «Улучшенный блиц».",
 	}, "\n"), enhdesc_col)

@@ -2487,7 +2487,8 @@ local localization_templates = {
 		-- Battle Maul and Shield -- 18s & 15% | 15s & 20% | 12s & 25% | 9s & 30%
 			create_template("weap_wbm073_desc_ext_en",
 				{"loc_trait_block_break_pushes_new_desc"}, {"en"},
-					loc_text(COLORS_Numbers.block_var_rgb.." Block Cost. Pushes back enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius when Ogryn's "..COLORS_KWords.Stamina_rgb.." reaches "..COLORS_Numbers.n_0_rgb.." from Blocking an attack. Cooldown "..COLORS_Numbers.cd_var_rgb.." seconds.")), -- block_cost: -30%, cooldown: 15 -- colors
+					loc_text(COLORS_Numbers.block_var_rgb.." Block Cost. Pushes back enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius when "..COLORS_KWords.Stamina_rgb.." reaches "..COLORS_Numbers.n_0_rgb.." from Blocking an attack. Cooldown "..COLORS_Numbers.cd_var_rgb.." seconds.")),
+					-- block_cost: -30%, cooldown: 15 -- colors
 			--[+ French +]--
 			create_template("weap_wbm073_desc_ext_fr",
 				{"loc_trait_block_break_pushes_new_desc"}, {"fr"},
@@ -2495,7 +2496,7 @@ local localization_templates = {
 			--[+ Russian +]-- Последний страж
 			create_template("weap_wbm073_desc_ext_ru",
 				{"loc_trait_block_break_pushes_new_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.block_var_rgb.." от затрат на блок. Вы отталкиваете врагов в радиусе "..COLORS_Numbers.n_5_rgb.." метров, когда уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." огрина достигает "..COLORS_Numbers.n_0_rgb.." при блокировании атак. Восстановление "..COLORS_Numbers.cd_var_rgb.." секунд.")),
+					loc_text(COLORS_Numbers.block_var_rgb.." от затрат на блок. Вы отталкиваете врагов в радиусе "..COLORS_Numbers.n_5_rgb.." метров, когда уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." достигает "..COLORS_Numbers.n_0_rgb.." при блокировании атак. Восстановление "..COLORS_Numbers.cd_var_rgb.." секунд.")),
 			--[+ Traditional Chinese - 最後防線 +]--
 			-- 作戰大槌&板盾 -- 18s & 15% | 15s & 20% | 12s & 25% | 9s & 30%
 			create_template("weap_wbm073_desc_ext_tw",

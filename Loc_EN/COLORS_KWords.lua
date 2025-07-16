@@ -176,6 +176,8 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Rangedjust_rgb = iu_actit("Ranged Justice", rangedspec_col)
 	--[++Marked Enemy++]--
 			local Markedenemy_rgb = iu_actit("Marked Enemy", focust_col)
+	--[++Forceful++]--
+			local Forceful_rgb = iu_actit("Forceful", focus_col)
 
 --[+++MISC+++]--
 	--[++Note++]--
@@ -193,6 +195,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Fragmentation_gren_rgb = iu_actit("Fragmentation Grenade", tal_col)
 			local Scriers_gaze_rgb = iu_actit("Scrier's Gaze", tal_col)
 			local Stun_gren_rgb = iu_actit("Stun Grenade", tal_col)
+			local BreakZLine_rgb = iu_actit("Break the Line", tal_col)
 
 --[+ ++TREAT - СЛОЖНОСТЬ++ +]--
 	--[+ SEDITION - МЯТЕЖ +]--
@@ -243,6 +246,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 -- In the list below, you also need to add a new entry or change an old one.
 return {
 	Arbites_gren_rgb = Arbites_gren_rgb,
+	BreakZLine_rgb = BreakZLine_rgb,
 	Frag_gren_rgb = Frag_gren_rgb,
 	Fragmentation_gren_rgb = Fragmentation_gren_rgb,
 	Scriers_gaze_rgb = Scriers_gaze_rgb,
@@ -298,6 +302,7 @@ return {
 	Impact_rgb = Impact_rgb,
 	Lucky_bullet_rgb = Lucky_bullet_rgb,
 	Markedenemy_rgb = Markedenemy_rgb,
+	Forceful_rgb = Forceful_rgb,
 	Meleejust_rgb = Meleejust_rgb,
 	Meleespec_rgb = Meleespec_rgb,
 	Momentum_rgb = Momentum_rgb,

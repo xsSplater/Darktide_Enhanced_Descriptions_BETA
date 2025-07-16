@@ -15,6 +15,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++Здоровье++]--
 		local hlth_col = Color[mod:get("health_text_colour")](255, true)
 			local Health_rgb_ru = iu_actit("здоровью", hlth_col)
+			local Healthx_rgb_ru = iu_actit("здоровьем", hlth_col)
 			local Wound_rgb_ru = iu_actit("здоровья", hlth_col)
 			local Wounds_rgb_ru = iu_actit("ране", hlth_col)
 			local Wound_u_rgb_ru = iu_actit("рану", hlth_col)
@@ -69,6 +70,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Cleave_rgb_ru = iu_actit("рассечению врагов", clv_col)
 			local Cleaving_rgb_ru = iu_actit("рассечение врагов", clv_col)
 			local Cleaving_r_rgb_ru = iu_actit("пробивание врагов", clv_col)
+			local Cleaving_u_rgb_ru = iu_actit("пробиванию врагов", clv_col)
 	--[++Сила++]--
 		local pwr_col = Color[mod:get("power_text_colour")](255, true)
 			local Power_rgb_ru = iu_actit("сила", pwr_col)
@@ -113,16 +115,20 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++Ошеломление++]--
 		local stgr_col = Color[mod:get("stagger_text_colour")](255, true)
 			local Stagger_rgb_ru = iu_actit("ошеломление", stgr_col)
-			local Stagger2_rgb_ru = iu_actit("ошеломлению", stgr_col)
-			local Staggering_rgb_ru = iu_actit("ошеломления", stgr_col)
 			local Stagger_i_rgb_ru = iu_actit("ошеломлении", stgr_col)
+			local Stagger2_rgb_ru = iu_actit("ошеломлению", stgr_col)
+			local Staggered_rgb_ru = iu_actit("ошеломлённых", stgr_col)
+			local Staggering_rgb_ru = iu_actit("ошеломления", stgr_col)
+			local Staggern_rgb_ru = iu_actit("ошеломляя", stgr_col)
+			local Staggernt_rgb_ru = iu_actit("ошеломить", stgr_col)
+			local Staggerr_rgb_ru = iu_actit("Ошеломление", stgr_col)
 			local Staggers_rgb_ru = iu_actit("ошеломляют", stgr_col)
 			local Staggers_e_rgb_ru = iu_actit("ошеломляет", stgr_col)
 			local Stun_rgb_ru = iu_actit("ошеломлённого", stgr_col)
-			local Stuns_rgb_ru = iu_actit("ошеломлённым", stgr_col)
 			local Stunned_rgb_ru = iu_actit("ошеломлена", stgr_col)
-			local Staggered_rgb_ru = iu_actit("ошеломлённых", stgr_col)
-			local Staggerr_rgb_ru = iu_actit("Ошеломление", stgr_col)
+			local Stuns_rgb_ru = iu_actit("ошеломлённым", stgr_col)
+			local Stunss_rgb_ru = iu_actit("Ошеломляющие", stgr_col)
+			local Stunssx_rgb_ru = iu_actit("Ошеломлённые", stgr_col)
 	--[++Порча++]--
 		local crpt_col = Color[mod:get("corruption_text_colour")](255, true)
 			local Corruption_rgb_ru = iu_actit("порче", crpt_col)
@@ -185,10 +191,14 @@ local iu_actit = InputUtils.apply_color_to_input_text
 --[+++АРБИТРАТОР+++]--
 	--[++Melee Justice++]--
 		local meleejust_col = Color[mod:get("meleejust_text_colour")](255, true) -- Do not translate this line!
-			local Meleejust_rgb_ru = iu_actit("Melee Justice", meleejust_col)
+			local Meleejust_rgb_ru = iu_actit("Правосудия ближнего боя", meleejust_col)
 	--[++Ranged Justice++]--
 		local rangedjust_col = Color[mod:get("rangedjust_text_colour")](255, true) -- Do not translate this line!
-			local Rangedjust_rgb_ru = iu_actit("Ranged Justice", rangedjust_col)
+			local Rangedjust_rgb_ru = iu_actit("Правосудия дальнего боя", rangedjust_col)
+	--[++Marked Enemy++]--
+			local Markedenemy_rgb_ru = iu_actit("Отмеченного врага", focust_col)
+	--[++Forceful++]--
+			local Forceful_rgb_ru = iu_actit("Неудержимости", focus_col)
 
 --[+++РАЗНОЕ+++]--
 	--[++Примечания++]--
@@ -202,10 +212,14 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Fire_n_trap_note_rgb_ru = iu_actit("", note_col)
 	--[+ Talents - Таланты+]--
 		local tal_col = Color[mod:get("talents_text_colour")](255, true)
+			local Arbites_gren_rgb_ru = iu_actit("Гранату арбитрес", tal_col)
 			local Scriers_gaze_rgb_ru = iu_actit("Взор провидца", tal_col)
 			local Stun_gren_rgb_ru = iu_actit("Оглушающая граната", tal_col)
 			local Frag_gren_rgb_ru = iu_actit("Фраг-гранату", tal_col)
 			local Fragmentation_gren_rgb_ru = iu_actit("Осколочная граната", tal_col)
+			local Electro_mine_rgb_ru = iu_actit("Вольтаическую шоковую мину", tal_col)
+			local BreakZLined_rgb_ru = iu_actit("Прорыв вражеского строя", tal_col)
+			local BreakZLine_rgb_ru = iu_actit("Прорыва вражеского строя", tal_col)
 
 --[+ ++TREAT - СЛОЖНОСТЬ++ +]--
 	--[+ SEDITION - МЯТЕЖ +]--
@@ -249,10 +263,15 @@ local iu_actit = InputUtils.apply_color_to_input_text
 
 
 return {
-	Scriers_gaze_rgb_ru = Scriers_gaze_rgb_ru,
-	Stun_gren_rgb_ru = Stun_gren_rgb_ru,
+	Arbites_gren_rgb_ru = Arbites_gren_rgb_ru,
+	BreakZLine_rgb_ru = BreakZLine_rgb_ru,
+	BreakZLined_rgb_ru = BreakZLined_rgb_ru,
+	Electro_mine_rgb_ru = Electro_mine_rgb_ru,
+	Forceful_rgb_ru = Forceful_rgb_ru,
 	Frag_gren_rgb_ru = Frag_gren_rgb_ru,
 	Fragmentation_gren_rgb_ru = Fragmentation_gren_rgb_ru,
+	Scriers_gaze_rgb_ru = Scriers_gaze_rgb_ru,
+	Stun_gren_rgb_ru = Stun_gren_rgb_ru,
 
 	Bleed_rgb_ru = Bleed_rgb_ru,
 	Bleeding_rgb_ru = Bleeding_rgb_ru,
@@ -274,6 +293,7 @@ return {
 	Cleave_rgb_ru = Cleave_rgb_ru,
 	Cleaving_rgb_ru = Cleaving_rgb_ru,
 	Cleaving_r_rgb_ru = Cleaving_r_rgb_ru,
+	Cleaving_u_rgb_ru = Cleaving_u_rgb_ru,
 	Crt_chance_rgb_ru = Crt_chance_rgb_ru,
 	Crt_u_chance_rgb_ru = Crt_u_chance_rgb_ru,
 	Crit_chance_rgb_ru = Crit_chance_rgb_ru,
@@ -309,6 +329,7 @@ return {
 	Fury_rgb_ru = Fury_rgb_ru,
 	Fury_i_rgb_ru = Fury_i_rgb_ru,
 	Health_rgb_ru = Health_rgb_ru,
+	Healthx_rgb_ru = Healthx_rgb_ru,
 	Wound_rgb_ru = Wound_rgb_ru,
 	Wounds_rgb_ru = Wounds_rgb_ru,
 	Wound_u_rgb_ru = Wound_u_rgb_ru,
@@ -317,6 +338,9 @@ return {
 	Hit_masss_rgb_ru = Hit_masss_rgb_ru,
 	Impact_rgb_ru = Impact_rgb_ru,
 	Lucky_bullet_rgb_ru = Lucky_bullet_rgb_ru,
+	Markedenemy_rgb_ru = Markedenemy_rgb_ru,
+	Meleejust_rgb_ru = Meleejust_rgb_ru,
+	Rangedjust_rgb_ru = Rangedjust_rgb_ru,
 	Meleespec_rgb_ru = Meleespec_rgb_ru,
 	Momentum_rgb_ru = Momentum_rgb_ru,
 	Perl_rgb_ru = Perl_rgb_ru,
@@ -335,9 +359,13 @@ return {
 	Staggers_e_rgb_ru = Staggers_e_rgb_ru,
 	Stun_rgb_ru = Stun_rgb_ru,
 	Stuns_rgb_ru = Stuns_rgb_ru,
+	Stunss_rgb_ru = Stunss_rgb_ru,
+	Stunssx_rgb_ru = Stunssx_rgb_ru,
 	Stunned_rgb_ru = Stunned_rgb_ru,
 	Staggered_rgb_ru = Staggered_rgb_ru,
 	Staggerr_rgb_ru = Staggerr_rgb_ru,
+	Staggern_rgb_ru = Staggern_rgb_ru,
+	Staggernt_rgb_ru = Staggernt_rgb_ru,
 	Stamina_rgb_ru = Stamina_rgb_ru,
 	Stamina_c_r_rgb_ru = Stamina_c_r_rgb_ru,
 	Stealth_rgb_ru = Stealth_rgb_ru,

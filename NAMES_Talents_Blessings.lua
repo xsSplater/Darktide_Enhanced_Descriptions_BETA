@@ -1,4 +1,4 @@
----@diagnostic disable: undefined-global
+-- @diagnostic disable: undefined-global
 
 -- local mod = get_mod("Enhanced_descriptions")
 
@@ -1814,6 +1814,9 @@ local localization_templates = {
 		{"loc_talent_toughness_damage_reduction_medium"}, {"zh-tw"},
 			loc_text("韌性減傷(中)")),
 
+
+
+
 --[+ ++PSYKER - ПСАЙКЕР - 靈能者 ++ +]--
 --[+ +BLITZ - БЛИЦ - 閃擊 + +]--
 	--[+ Blitz 0 - Brain Burst +]--
@@ -2201,24 +2204,6 @@ local localization_templates = {
 			-- loc_text("亞空間突破")),
 
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ ТАЛАНТЫ - 鑰石 + +]--
-
--- - Warp Siphon - 亞空間虹吸
--- - Inner Tranquility - 平心靜氣
--- - Essence Harvest - 吸精奪萃
--- - Empyrean Empowerment - 至天高之力
--- - In Fire Reborn - 涅槃
--- - Psychic Vampire - 靈能吸血鬼
--- - Warp Battery - 亞空間電池
--- - Empowered Psionics - 靈能強化
--- - Bio-Lodestone - 生物磁石
--- - Psychic Leeching - 吸血閃電
--- - Overpowering Souls - 吞靈強擊
--- - Charged Up - 充能完畢
--- - Disrupt Destiny - 擾動命運
--- - Perfectionism - 完美主義
--- - Purloin Providence - 盜竊天命
--- - Lingering Influence - 持久影響
--- - Cruel Fortune - 殘忍命運
 	--[+ Keystone 1 - Warp Siphon +]--
 	-- create_template("talent_tree_psy_keys1_000_en",
 		-- {"loc_talent_psyker_souls"}, {"en"},
@@ -2880,6 +2865,10 @@ local localization_templates = {
 		-- {"loc_talent_psyker_reload_speed_warp"}, {"zh-tw"},
 			-- loc_text("武器在手，信心我有。")),
 
+
+
+--[+ ++ZEALOT - ИЗУВЕР++ +]--
+--[+ +BLITZ - БЛИЦ+ +]--
 	--[+ Blitz 0 - Stun Grenade +]--
 	-- create_template("talent_tree_zea_blitz0_000_en",
 		-- {"loc_ability_shock_grenade"}, {"en"},
@@ -3751,6 +3740,9 @@ local localization_templates = {
 	-- create_template("talent_tree_zea_pas_034_tw",
 		-- {"loc_talent_zealot_improved_sprint"}, {"zh-tw"},
 			-- loc_text("堅定迅捷")),
+
+
+
 
 --[+ ++VETERAN - ВЕТЕРАН - 老兵 ++ +]--
 --[+ +BLITZ - БЛИЦ - 閃擊 + +]--
@@ -4823,6 +4815,9 @@ local localization_templates = {
 		-- {"loc_talent_veteran_big_game_hunter"}, {"zh-tw"},
 			-- loc_text("幹掉它!")),
 
+
+
+
 --[+ ++OGRYN - ОГРИН - 歐格林 ++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
 	--[+ Blitz 0 - Big Box of Hurt +]--
@@ -5647,6 +5642,762 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_030_tw",
 		-- {"loc_talent_ogryn_bracing_reduces_damage_taken"}, {"zh-tw"},
 			-- loc_text("機動部屬")),
+
+
+
+
+--[+ ++ARBITES - АРБИТЕС++ +]--
+--[+ +BLITZ - БЛИЦ+ +]--
+	--[+ BLITZ 0 - Arbites Grenade +]--
+	-- create_template("talent_tree_arb_blitz0_000_en",
+		-- {"loc_talent_ability_adamant_grenade"}, {"en"},
+			-- loc_text("Arbites Grenade")),
+	--[+ Russian - Граната арбитрес +]-- руоф Граната Арбитрес
+	create_template("talent_tree_arb_blitz0_000_ru",
+		{"loc_talent_ability_adamant_grenade"}, {"ru"},
+			loc_text("Граната арбитрес")),
+
+	--[+ BLITZ 1 - Remote Detonation +]--
+	-- create_template("talent_tree_arb_blitz1_000_en",
+		-- {"loc_talent_ability_detonate"}, {"en"},
+			-- loc_text("Remote Detonation")),
+	--[+ Russian - Дистанционный подрыв +]--
+	-- create_template("talent_tree_arb_blitz1_000_ru",
+		-- {"loc_talent_ability_detonate"}, {"ru"},
+			-- loc_text("Дистанционный подрыв")),
+
+	--[+ BLITZ 2 - Voltaic Shock Mine +]--
+	-- create_template("talent_tree_arb_blitz2_000_en",
+		-- {"loc_talent_ability_shock_mine"}, {"en"},
+			-- loc_text("Voltaic Shock Mine")),
+	--[+ Russian - Вольтаическая шоковая мина +]-- руоф Электрошоковая мина
+	create_template("talent_tree_arb_blitz2_000_ru",
+		{"loc_talent_ability_shock_mine"}, {"ru"},
+			loc_text("Вольтаическая шоковая мина")),
+
+	--[+ BLITZ 3 - Arbites Grenade +]--
+	-- create_template("talent_tree_arb_blitz3_000_en",
+		-- {"loc_talent_ability_adamant_grenade_improved"}, {"en"},
+			-- loc_text("Arbites Grenade")),
+	--[+ Russian - Граната арбитрес +]-- руоф Граната Арбитрес
+	create_template("talent_tree_arb_blitz3_000_ru",
+		{"loc_talent_ability_adamant_grenade_improved"}, {"ru"},
+			loc_text("Граната арбитрес")),
+
+--[+ +AURA - АУРА+ +]--
+	--[+ AURA 0-1 - Part of the Squad +]--
+	-- create_template("talent_tree_arb_aura0-1_000_en",
+		-- {"loc_talent_adamant_companion_coherency"}, {"en"},
+			-- loc_text("Part of the Squad")),
+	--[+ Russian - Часть отряда +]--
+	-- create_template("talent_tree_arb_aura0-1_000_ru",
+		-- {"loc_talent_adamant_companion_coherency"}, {"ru"},
+			-- loc_text("Часть отряда")),
+
+	--[+ AURA 2 - Ruthless Efficiency +]--
+	-- create_template("talent_tree_arb_aura2_000_en",
+		-- {"loc_talent_adamant_wield_speed_aura"}, {"en"},
+			-- loc_text("Ruthless Efficiency")),
+	--[+ Russian - Беспощадная эффективность +]-- руоф Беспощадная сила???
+	create_template("talent_tree_arb_aura2_000_ru",
+		{"loc_talent_adamant_wield_speed_aura"}, {"ru"},
+			loc_text("Беспощадная эффективность")),
+
+	--[+ AURA 3 - Breaking Dissent +]--
+	-- create_template("talent_tree_arb_aura3_000_en",
+		-- {"loc_talent_adamant_damage_vs_staggered_aura"}, {"en"},
+			-- loc_text("Breaking Dissent")),
+	--[+ Russian - Подавление инакомыслия +]-- руоф Преодоление разногласий
+	create_template("talent_tree_arb_aura3_000_ru",
+		{"loc_talent_adamant_damage_vs_staggered_aura"}, {"ru"},
+			loc_text("Подавление инакомыслия")),
+
+--[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
+	--[+ ABILITY 0, 2 - Nuncio-Aquila +]--
+	-- create_template("talent_tree_arb_abil0_abil2_000_en",
+		-- {"loc_talent_ability_area_buff_drone"}, {"en"},
+			-- loc_text("Nuncio-Aquila")),
+	--[+ Russian - Нунцио-аквила +]--
+	-- create_template("talent_tree_arb_abil0_abil2_000_ru",
+		-- {"loc_talent_ability_area_buff_drone"}, {"ru"},
+			-- loc_text("Нунцио-аквила")),
+
+	--[+ ABILITY 1 - Castigator's Stance +]--
+	-- create_template("talent_tree_arb_abil1_000_en",
+		-- {"loc_talent_adamant_stance_ability_name"}, {"en"},
+			-- loc_text("Castigator's Stance")),
+	--[+ Russian - Стойка карателя +]-- руоф Стойка бичевателя
+	create_template("talent_tree_arb_abil1_000_ru",
+		{"loc_talent_adamant_stance_ability_name"}, {"ru"},
+			loc_text("Стойка карателя")),
+
+	--[+ ABILITY 1-1 - Blessed Armament +]--
+	-- create_template("talent_tree_arb_abil1_001_en",
+		-- {"loc_talent_adamant_stance_ranged_kills_transfer_ammo"}, {"en"},
+			-- loc_text("Blessed Armament")),
+	--[+ Russian - Благословенное вооружение +]-- руоф Благословенное орудие
+	-- create_template("talent_tree_arb_abil1_001_ru",
+		-- {"loc_talent_adamant_stance_ranged_kills_transfer_ammo"}, {"ru"},
+			-- loc_text("Благословенное вооружение")),
+
+	--[+ ABILITY 1-2 - Writ of Execution +]--
+	-- create_template("talent_tree_arb_abil1_002_en",
+		-- {"loc_talent_adamant_stance_elite_kills_stack_damage"}, {"en"},
+			-- loc_text("Writ of Execution")),
+	--[+ Russian - Ордер на казнь +]--
+	-- create_template("talent_tree_arb_abil1_002_ru",
+		-- {"loc_talent_adamant_stance_elite_kills_stack_damage"}, {"ru"},
+			-- loc_text("Ордер на казнь")),
+
+	--[+ ABILITY 1-3 - Bloodlust +]--
+	-- create_template("talent_tree_arb_abil1_003_en",
+		-- {"loc_talent_adamant_stance_bloodlust"}, {"en"},
+			-- loc_text("Bloodlust")),
+	--[+ Russian - Жажда крови +]--
+	-- create_template("talent_tree_arb_abil1_003_ru",
+		-- {"loc_talent_adamant_stance_bloodlust"}, {"ru"},
+			-- loc_text("Жажда крови")),
+
+	--[+ ABILITY 2-1 - Inspiring Recitation +]--
+	-- create_template("talent_tree_arb_abil2_001_en",
+		-- {"loc_talent_adamant_drone_buff_talent"}, {"en"},
+			-- loc_text("Inspiring Recitation")),
+	--[+ Russian - Воодушевляющая проповедь +]-- руоф Вдохновляющая декламация
+	create_template("talent_tree_arb_abil2_001_ru",
+		{"loc_talent_adamant_drone_buff_talent"}, {"ru"},
+			loc_text("Воодушевляющая проповедь")),
+
+	--[+ ABILITY 2-2 - Fear of Justice +]--
+	-- create_template("talent_tree_arb_abil2_002_en",
+		-- {"loc_talent_adamant_drone_debuff_talent"}, {"en"},
+			-- loc_text("Fear of Justice")),
+	--[+ Russian - Страх перед Правосудием +]-- руоф Страх правосудия
+	create_template("talent_tree_arb_abil2_002_ru",
+		{"loc_talent_adamant_drone_debuff_talent"}, {"ru"},
+			loc_text("Страх перед Правосудием")),
+
+	--[+ ABILITY 3 - Break the Line +]--
+	-- create_template("talent_tree_arb_abil3_000_en",
+		-- {"loc_talent_adamant_charge_ability_name"}, {"en"},
+			-- loc_text("Break the Line")),
+	--[+ Russian - Прорыв строя +]-- руоф Прорыв фронта
+	create_template("talent_tree_arb_abil3_000_ru",
+		{"loc_talent_adamant_charge_ability_name"}, {"ru"},
+			loc_text("Прорыв строя")),
+
+	--[+ ABILITY 3-1 - Commendation from Condemnation +]--
+	-- create_template("talent_tree_arb_abil3_001_en",
+		-- {"loc_talent_adamant_charge_toughness_name"}, {"en"},
+			-- loc_text("Commendation from Condemnation")),
+	--[+ Russian - Похвала за осуждение +]-- руоф Не наказали - значит, похвалили???
+	create_template("talent_tree_arb_abil3_001_ru",
+		{"loc_talent_adamant_charge_toughness_name"}, {"ru"},
+			loc_text("Похвала за осуждение")),
+
+	--[+ ABILITY 3-2 - Targeted Brutality +]--
+	-- create_template("talent_tree_arb_abil3_002_en",
+		-- {"loc_talent_adamant_charge_cooldown_name"}, {"en"},
+			-- loc_text("Targeted Brutality")),
+	--[+ Russian - Направленная жестокость +]--
+	-- create_template("talent_tree_arb_abil3_002_ru",
+		-- {"loc_talent_adamant_charge_cooldown_name"}, {"ru"},
+			-- loc_text("Направленная жестокость")),
+
+	--[+ ABILITY 3-3 - Kill Order +]--
+	-- create_template("talent_tree_arb_abil3_003_en",
+		-- {"loc_talent_adamant_dog_damage_after_ability"}, {"en"},
+			-- loc_text("Kill Order")),
+	--[+ Russian - Фас! +]-- руоф Приказ убивать
+	create_template("talent_tree_arb_abil3_003_ru",
+		{"loc_talent_adamant_dog_damage_after_ability"}, {"ru"},
+			loc_text("Фас!")),
+
+	--[+ ABILITY 3-4 - Engage +]--
+	-- create_template("talent_tree_arb_abil3_004_en",
+		-- {"loc_talent_adamant_charge_longer_distance"}, {"en"},
+			-- loc_text("Engage")),
+	--[+ Russian - Дальний прорыв +]-- руоф К бою
+	create_template("talent_tree_arb_abil3_004_ru",
+		{"loc_talent_adamant_charge_longer_distance"}, {"ru"},
+			loc_text("Дальний прорыв")),
+
+--[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
+	--[+ KEYSTONE 1 - Unleashed Brutality +]--
+	-- create_template("talent_tree_arb_keys1_000_en",
+		-- {"loc_talent_adamant_cyber_mastiff_elites"}, {"en"},
+			-- loc_text("Unleashed Brutality")),
+	--[+ Russian - Высвобожденнная жестокость +]--
+	-- create_template("talent_tree_arb_keys1_000_ru",
+		-- {"loc_talent_adamant_cyber_mastiff_elites"}, {"ru"},
+			-- loc_text("Высвобожденнная жестокость")),
+
+	--[+ KEYSTONE 2 - Lone Wolf +]--
+	-- create_template("talent_tree_arb_keys2_000_en",
+		-- {"loc_talent_adamant_disable_companion"}, {"en"},
+			-- loc_text("Lone Wolf")),
+	--[+ Russian - Одинокий волк +]--
+	-- create_template("talent_tree_arb_keys2_000_ru",
+		-- {"loc_talent_adamant_disable_companion"}, {"ru"},
+			-- loc_text("Одинокий волк")),
+
+	--[+ KEYSTONE 3 - Go Get 'Em! +]--
+	-- create_template("talent_tree_arb_keys3_000_en",
+		-- {"loc_talent_adamant_cyber_mastiff_ranged"}, {"en"},
+			-- loc_text("Go Get 'Em!")),
+	--[+ Russian - Взять их! +]--
+	-- create_template("talent_tree_arb_keys3_000_ru",
+		-- {"loc_talent_adamant_cyber_mastiff_ranged"}, {"ru"},
+			-- loc_text("Взять их!")),
+
+	--[+ KEYSTONE 4 - Execution Order +]--
+	-- create_template("talent_tree_arb_keys4_000_en",
+		-- {"loc_talent_adamant_exterminator"}, {"en"},
+			-- loc_text("Execution Order")),
+	--[+ Russian - Метка возмездия +]-- Приказ казнить
+	create_template("talent_tree_arb_keys4_000_ru",
+		{"loc_talent_adamant_exterminator"}, {"ru"},
+			loc_text("Метка возмездия")),
+
+	--[+ KEYSTONE 4-1 - Efficient Killer +]--
+	-- create_template("talent_tree_arb_keys4_001_en",
+		-- {"loc_talent_adamant_exterminator_toughness"}, {"en"},
+			-- loc_text("Efficient Killer")),
+	--[+ Russian - Эффективный убийца +]--
+	-- create_template("talent_tree_arb_keys4_001_ru",
+		-- {"loc_talent_adamant_exterminator_toughness"}, {"ru"},
+			-- loc_text("Эффективный убийца")),
+
+	--[+ KEYSTONE 4-2 - Malocator +]--
+	-- create_template("talent_tree_arb_keys4_002_en",
+		-- {"loc_talent_adamant_exterminator_ability_cooldown"}, {"en"},
+			-- loc_text("Malocator")),
+	--[+ Russian - Малокатор +]--
+	-- create_template("talent_tree_arb_keys4_002_ru",
+		-- {"loc_talent_adamant_exterminator_ability_cooldown"}, {"ru"},
+			-- loc_text("Малокатор")),
+
+	--[+ KEYSTONE 4-3 - No Lenience +]--
+	-- create_template("talent_tree_arb_keys4_003_en",
+		-- {"loc_talent_adamant_exterminator_stack_during_activation"}, {"en"},
+			-- loc_text("No Lenience")),
+	--[+ Russian - Нетерпимость +]--
+	-- create_template("talent_tree_arb_keys4_003_ru",
+		-- {"loc_talent_adamant_exterminator_stack_during_activation"}, {"ru"},
+			-- loc_text("Нетерпимость")),
+
+	--[+ KEYSTONE 4-4 - Keeping Protocol +]--
+	-- create_template("talent_tree_arb_keys4_004_en",
+		-- {"loc_talent_execution_order_perma_buff"}, {"en"},
+			-- loc_text("Keeping Protocol")),
+	--[+ Russian - Соблюдение протокола +]-- руоф Поддердание протокола
+	create_template("talent_tree_arb_keys4_004_ru",
+		{"loc_talent_execution_order_perma_buff"}, {"ru"},
+			loc_text("Соблюдение протокола")),
+
+	--[+ KEYSTONE 4-5 - Not Far Behind +]--
+	-- create_template("talent_tree_arb_keys4_005_en",
+		-- {"loc_talent_adamant_pinning_dog_bonus_moving_towards"}, {"en"},
+			-- loc_text("Not Far Behind")),
+	--[+ Russian - В зоне досягаемости +]-- руоф Не так далеко позади
+	create_template("talent_tree_arb_keys4_005_ru",
+		{"loc_talent_adamant_pinning_dog_bonus_moving_towards"}, {"ru"},
+			loc_text("В зоне досягаемости")),
+
+	--[+ KEYSTONE 5 - Terminus Warrant +]--
+	-- create_template("talent_tree_arb_keys5_000_en",
+		-- {"loc_talent_adamant_bullet_rain"}, {"en"},
+			-- loc_text("Terminus Warrant")),
+	--[+ Russian - Ордер Терминус +]-- руоф Распоряжение «Терминус»
+	create_template("talent_tree_arb_keys5_000_ru",
+		{"loc_talent_adamant_bullet_rain"}, {"ru"},
+			loc_text("Ордер Терминус")),
+
+	--[+ KEYSTONE 5-1 - Dispense Justice +]--
+	-- create_template("talent_tree_arb_keys5_001_en",
+		-- {"loc_talent_adamant_bullet_rain_fire_rate"}, {"en"},
+			-- loc_text("Dispense Justice")),
+	--[+ Russian - Исполнение приговора +]-- руоф Охват правосудия
+	create_template("talent_tree_arb_keys5_001_ru",
+		{"loc_talent_adamant_bullet_rain_fire_rate"}, {"ru"},
+			loc_text("Исполнение приговора")),
+
+	--[+ KEYSTONE 5-2 - Obstinate +]--
+	-- create_template("talent_tree_arb_keys5_002_en",
+		-- {"loc_talent_adamant_bullet_rain_tdr"}, {"en"},
+			-- loc_text("Obstinate")),
+	--[+ Russian - Непреклонный +]-- руоф Упрямый
+	create_template("talent_tree_arb_keys5_002_ru",
+		{"loc_talent_adamant_bullet_rain_tdr"}, {"ru"},
+			loc_text("Непреклонный")),
+
+	--[+ KEYSTONE 5-3 - Terminal Decree +]--
+	-- create_template("talent_tree_arb_keys5_003_en",
+		-- {"loc_talent_adamant_bullet_rain_toughness"}, {"en"},
+			-- loc_text("Terminal Decree")),
+	--[+ Russian - Последний приговор +]-- руоф Окончательное постановление
+	create_template("talent_tree_arb_keys5_003_ru",
+		{"loc_talent_adamant_bullet_rain_toughness"}, {"ru"},
+			loc_text("Последний приговор")),
+
+	--[+ KEYSTONE 5-4 - Writ of Judgement +]--
+	-- create_template("talent_tree_arb_keys5_004_en",
+		-- {"loc_talent_adamant_bullet_rain_ability"}, {"en"},
+			-- loc_text("Writ of Judgement")),
+	--[+ Russian - Судебный ордер +]-- руоф Судебное предписание
+	create_template("talent_tree_arb_keys5_004_ru",
+		{"loc_talent_adamant_bullet_rain_ability"}, {"ru"},
+			loc_text("Судебный ордер")),
+
+	--[+ KEYSTONE 6 - Forceful +]--
+	-- create_template("talent_tree_arb_keys6_000_en",
+		-- {"loc_talent_adamant_forceful"}, {"en"},
+			-- loc_text("Forceful")),
+	--[+ Russian - Неудержимый +]-- руоф Напористый
+	create_template("talent_tree_arb_keys6_000_ru",
+		{"loc_talent_adamant_forceful"}, {"ru"},
+			loc_text("Неудержимый")),
+
+	--[+ KEYSTONE 6-1 - Adamant Will +]--
+	-- create_template("talent_tree_arb_keys6_001_en",
+		-- {"loc_talent_adamant_forceful_stamina_block_and_push_alt"}, {"en"},
+			-- loc_text("Adamant Will")),
+	--[+ Russian - Адамантовая воля +]--
+	-- create_template("talent_tree_arb_keys6_001_ru",
+		-- {"loc_talent_adamant_forceful_stamina_block_and_push_alt"}, {"ru"},
+			-- loc_text("Адамантовая воля")),
+
+	--[+ KEYSTONE 6-2 - Will of the Lex +]--
+	-- create_template("talent_tree_arb_keys6_002_en",
+		-- {"loc_talent_adamant_forceful_toughness_regen_per_stack_desc"}, {"en"},
+			-- loc_text("Will of the Lex")),
+	--[+ Russian - Воля Закона +]--
+	-- create_template("talent_tree_arb_keys6_002_ru",
+		-- {"loc_talent_adamant_forceful_toughness_regen_per_stack_desc"}, {"ru"},
+			-- loc_text("Воля Закона")),
+
+	--[+ KEYSTONE 6-3 - Targets Acquired +]--
+	-- create_template("talent_tree_arb_keys6_003_en",
+		-- {"loc_talent_adamant_forceful_ranged"}, {"en"},
+			-- loc_text("Targets Acquired")),
+	--[+ Russian - Цели обнаружены +]--
+	-- create_template("talent_tree_arb_keys6_003_ru",
+		-- {"loc_talent_adamant_forceful_ranged"}, {"ru"},
+			-- loc_text("Цели обнаружены")),
+
+	--[+ KEYSTONE 6-4 - Arbites Vigilant +]--
+	-- create_template("talent_tree_arb_keys6_004_en",
+		-- {"loc_talent_adamant_forceful_refresh_on_ability"}, {"en"},
+			-- loc_text("Arbites Vigilant")),
+	--[+ Russian - Бдительный арбитрес +]-- руоф Бдительность Арбитрес
+	create_template("talent_tree_arb_keys6_004_ru",
+		{"loc_talent_adamant_forceful_refresh_on_ability"}, {"ru"},
+			loc_text("Бдительный арбитрес")),
+
+	--[+ KEYSTONE 6-5 - Judicial Force +]--
+	-- create_template("talent_tree_arb_keys6_005_en",
+		-- {"loc_talent_adamant_forceful_melee"}, {"en"},
+			-- loc_text("Judicial Force")),
+	--[+ Russian - Сила правосудия +]-- руоф Судебная сила
+	create_template("talent_tree_arb_keys6_005_ru",
+		{"loc_talent_adamant_forceful_melee"}, {"ru"},
+			loc_text("Сила правосудия")),
+
+--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
+	--[+ Passive 1 - No Escape +]--
+	-- create_template("talent_tree_arb_pas_001_en",
+		-- {"loc_talent_adamant_elite_special_kills_offensive_boost"}, {"en"},
+			-- loc_text("No Escape")),
+	--[+ Russian - Не уйдёшь +]-- руоф Не сбежишь
+	create_template("talent_tree_arb_pas_001_ru",
+		{"loc_talent_adamant_elite_special_kills_offensive_boost"}, {"ru"},
+			loc_text("Не уйдёшь")),
+
+	--[+ Passive 2 - Withering Fire +]--
+	-- create_template("talent_tree_arb_pas_002_en",
+		-- {"loc_talent_adamant_damage_after_reloading"}, {"en"},
+			-- loc_text("Withering Fire")),
+	--[+ Russian - Истребляющий огонь +]-- Изнуряющий огонь
+	create_template("talent_tree_arb_pas_002_ru",
+		{"loc_talent_adamant_damage_after_reloading"}, {"ru"},
+			loc_text("Истребляющий огонь")),
+
+	--[+ Passive 3 - Hammer of Judgement +]--
+	-- create_template("talent_tree_arb_pas_003_en",
+		-- {"loc_talent_adamant_multiple_hits_attack_speed"}, {"en"},
+			-- loc_text("Hammer of Judgement")),
+	--[+ Russian - Молот Правосудия +]-- руоф Молот правосудия
+	create_template("talent_tree_arb_pas_003_ru",
+		{"loc_talent_adamant_multiple_hits_attack_speed"}, {"ru"},
+			loc_text("Молот Правосудия")),
+
+	--[+ Passive 4 - Razor-Jaw Augment +]--
+	-- create_template("talent_tree_arb_pas_004_en",
+		-- {"loc_talent_adamant_dog_pounces_bleed_nearby"}, {"en"},
+			-- loc_text("Razor-Jaw Augment")),
+	--[+ Russian - Аугментация челюсти-бритвы +]-- руоф Аугментация челюстей: бритва
+	create_template("talent_tree_arb_pas_004_ru",
+		{"loc_talent_adamant_dog_pounces_bleed_nearby"}, {"ru"},
+			loc_text("Аугментация челюсти-бритвы")),
+
+	--[+ Passive 5 - Target Neutralised +]--
+	-- create_template("talent_tree_arb_pas_005_en",
+		-- {"loc_talent_adamant_elite_special_kills_replenish_toughness"}, {"en"},
+			-- loc_text("Target Neutralised")),
+	--[+ Russian - Цель уничтожена +]-- руоф Цель нейтрализована
+	create_template("talent_tree_arb_pas_005_ru",
+		{"loc_talent_adamant_elite_special_kills_replenish_toughness"}, {"ru"},
+			loc_text("Цель уничтожена")),
+
+	--[+ Passive 6 - Up Close +]--
+	-- create_template("talent_tree_arb_pas_006_en",
+		-- {"loc_talent_adamant_close_kills_restore_toughness"}, {"en"},
+			-- loc_text("Up Close")),
+	--[+ Russian - В упор +]-- руоф Лицом к лицу
+	create_template("talent_tree_arb_pas_006_ru",
+		{"loc_talent_adamant_close_kills_restore_toughness"}, {"ru"},
+			loc_text("В упор")),
+
+	--[+ Passive 7 - Force of Will +]--
+	-- create_template("talent_tree_arb_pas_007_en",
+		-- {"loc_talent_adamant_staggers_replenish_toughness"}, {"en"},
+			-- loc_text("Force of Will")),
+	--[+ Russian - Сила воли +]--
+	-- create_template("talent_tree_arb_pas_007_ru",
+		-- {"loc_talent_adamant_staggers_replenish_toughness"}, {"ru"},
+			-- loc_text("Сила воли")),
+
+	--[+ Passive 8 - Retaliatory Force +]--
+	-- create_template("talent_tree_arb_pas_008_en",
+		-- {"loc_talent_adamant_perfect_block_damage_boost"}, {"en"},
+			-- loc_text("Retaliatory Force")),
+	--[+ Russian - Сила возмездия +]--
+	-- create_template("talent_tree_arb_pas_008_ru",
+		-- {"loc_talent_adamant_perfect_block_damage_boost"}, {"ru"},
+			-- loc_text("Сила возмездия")),
+
+	--[+ Passive 9 - Man and Cyber-Mastiff +]--
+	-- create_template("talent_tree_arb_pas_009_en",
+		-- {"loc_talent_adamant_toughness_regen_near_companion"}, {"en"},
+			-- loc_text("Man and Cyber-Mastiff")),
+	--[+ Russian - Человек и кибермастиф +]--
+	-- create_template("talent_tree_arb_pas_009_ru",
+		-- {"loc_talent_adamant_toughness_regen_near_companion"}, {"ru"},
+			-- loc_text("еловек и кибермастиф")),
+
+	--[+ Passive 10 - Walk It Off +]--
+	-- create_template("talent_tree_arb_pas_010_en",
+		-- {"loc_talent_adamant_stamina_regens_toughness"}, {"en"},
+			-- loc_text("Walk It Off")),
+	--[+ Russian - Заживёт на ходу +]-- руоф Остынь
+	create_template("talent_tree_arb_pas_010_ru",
+		{"loc_talent_adamant_stamina_regens_toughness"}, {"ru"},
+			loc_text("Заживёт на ходу")),
+
+	--[+ Passive 11 - Shield Plates +]--
+	-- create_template("talent_tree_arb_pas_011_en",
+		-- {"loc_talent_adamant_shield_plates"}, {"en"},
+			-- loc_text("Shield Plates")),
+	--[+ Russian - Щитовые пластины +]-- руоф Пластинчатые щиты
+	create_template("talent_tree_arb_pas_011_ru",
+		{"loc_talent_adamant_shield_plates"}, {"ru"},
+			loc_text("Щитовые пластины")),
+
+	--[+ Passive 12 - Arbitrator Armour +]--
+	-- create_template("talent_tree_arb_pas_012_en",
+		-- {"loc_talent_adamant_armor"}, {"en"},
+			-- loc_text("Arbitrator Armour")),
+	--[+ Russian - Броня арбитратора +]-- руоф Броня Арбитратора
+	create_template("talent_tree_arb_pas_012_ru",
+		{"loc_talent_adamant_armor"}, {"ru"},
+			loc_text("Броня арбитратора")),
+
+	--[+ Passive 13 - Voltaic Mandibles Augment +]--
+	-- create_template("talent_tree_arb_pas_013_en",
+		-- {"loc_talent_adamant_dog_attacks_electrocute"}, {"en"},
+			-- loc_text("Voltaic Mandibles Augment")),
+	--[+ Russian - Аугментация Вольтаические жвала +]-- руоф Аугментация челюстей: электрошок
+	create_template("talent_tree_arb_pas_013_ru",
+		{"loc_talent_adamant_dog_attacks_electrocute"}, {"ru"},
+			loc_text("Аугментация Вольтаические жвала")),
+
+	--[+ Passive 14 - Ammo Belt +]--
+	-- create_template("talent_tree_arb_pas_014_en",
+		-- {"loc_talent_adamant_ammo_belt"}, {"en"},
+			-- loc_text("Ammo Belt")),
+	--[+ Russian - Патронтаж +]-- руоф Поясная разгрузка
+	create_template("talent_tree_arb_pas_014_ru",
+		{"loc_talent_adamant_ammo_belt"}, {"ru"},
+			loc_text("Патронтаж")),
+
+	--[+ Passive 15 - Concussive +]--
+	-- create_template("talent_tree_arb_pas_015_en",
+		-- {"loc_talent_adamant_melee_weakspot_hits_count_as_stagger"}, {"en"},
+			-- loc_text("Concussive")),
+	--[+ Russian - Ошеломление +]-- руоф Сотрясение
+	create_template("talent_tree_arb_pas_015_ru",
+		{"loc_talent_adamant_melee_weakspot_hits_count_as_stagger"}, {"ru"},
+			loc_text("Ошеломление")),
+
+	--[+ Passive 16 - Canine Morale +]--
+	-- create_template("talent_tree_arb_pas_016_en",
+		-- {"loc_talent_adamant_pinning_dog_kills_buff_allies"}, {"en"},
+			-- loc_text("Canine Morale")),
+	--[+ Russian - Боевой настрой пса +]-- руоф Собачий настрой
+	create_template("talent_tree_arb_pas_016_ru",
+		{"loc_talent_adamant_pinning_dog_kills_buff_allies"}, {"ru"},
+			loc_text("Боевой настрой пса")),
+
+	--[+ Passive 17 - Imposing Force +]--
+	-- create_template("talent_tree_arb_pas_017_en",
+		-- {"loc_talent_adamant_damage_reduction_after_elite_kill"}, {"en"},
+			-- loc_text("Imposing Force")),
+	--[+ Russian - Давящая мощь +]-- руоф Впечатляющая сила
+	create_template("talent_tree_arb_pas_017_ru",
+		{"loc_talent_adamant_damage_reduction_after_elite_kill"}, {"ru"},
+			loc_text("Давящая мощь")),
+
+	--[+ Passive 18 - Suppression Force +]--
+	-- create_template("talent_tree_arb_pas_018_en",
+		-- {"loc_talent_adamant_staggered_enemies_deal_less_damage"}, {"en"},
+			-- loc_text("Suppression Force")),
+	--[+ Russian - Сила подавления +]--
+	-- create_template("talent_tree_arb_pas_018_ru",
+		-- {"loc_talent_adamant_staggered_enemies_deal_less_damage"}, {"ru"},
+			-- loc_text("Сила подавления")),
+
+	--[+ Passive 19 - Suppression Protocols +]--
+	-- create_template("talent_tree_arb_pas_019_en",
+		-- {"loc_talent_adamant_hitting_multiple_gives_tdr"}, {"en"},
+			-- loc_text("Suppression Protocols")),
+	--[+ Russian - Протоколы подавления +]--
+	-- create_template("talent_tree_arb_pas_019_ru",
+		-- {"loc_talent_adamant_hitting_multiple_gives_tdr"}, {"ru"},
+			-- loc_text("Протоколы подавления")),
+
+	--[+ Passive 20 - Plasteel Plates +]--
+	-- create_template("talent_tree_arb_pas_020_en",
+		-- {"loc_talent_adamant_plasteel_plates"}, {"en"},
+			-- loc_text("Plasteel Plates")),
+	--[+ Russian - Пласталевые пластины +]-- руоф Пластины из пластали
+	create_template("talent_tree_arb_pas_020_ru",
+		{"loc_talent_adamant_plasteel_plates"}, {"ru"},
+			loc_text("Пласталевые пластины")),
+
+	--[+ Passive 21 - Arbites Revelatum +]--
+	-- create_template("talent_tree_arb_pas_021_en",
+		-- {"loc_talent_adamant_dodge_grants_damage"}, {"en"},
+			-- loc_text("Arbites Revelatum")),
+	--[+ Russian - Арбитрес Ревелатум +]--
+	-- create_template("talent_tree_arb_pas_021_ru",
+		-- {"loc_talent_adamant_dodge_grants_damage"}, {"ru"},
+			-- loc_text("Арбитрес Ревелатум")),
+
+	--[+ Passive 22 - Justified Measures +]--
+	-- create_template("talent_tree_arb_pas_022_en",
+		-- {"loc_talent_adamant_stacking_damage"}, {"en"},
+			-- loc_text("Justified Measures")),
+	--[+ Russian - Оправданные меры +]--
+	-- create_template("talent_tree_arb_pas_022_ru",
+		-- {"loc_talent_adamant_stacking_damage"}, {"ru"},
+			-- loc_text("Оправданные меры")),
+
+	--[+ Passive 23 - Hold the Line +]--
+	-- create_template("talent_tree_arb_pas_023_en",
+		-- {"loc_talent_adamant_staggers_reduce_damage_taken"}, {"en"},
+			-- loc_text("Hold the Line")),
+	--[+ Russian - Держи строй +]-- руоф Держать строй
+	create_template("talent_tree_arb_pas_023_ru",
+		{"loc_talent_adamant_staggers_reduce_damage_taken"}, {"ru"},
+			loc_text("Держи строй")),
+
+	--[+ Passive 24 - Judicious Efficiency +]--
+	-- create_template("talent_tree_arb_pas_024_en",
+		-- {"loc_talent_adamant_elite_special_kills_reload_speed"}, {"en"},
+			-- loc_text("Judicious Efficiency")),
+	--[+ Russian - Судейская эффективность +]-- руоф Разумная эффективность
+	create_template("talent_tree_arb_pas_024_ru",
+		{"loc_talent_adamant_elite_special_kills_reload_speed"}, {"ru"},
+			loc_text("Судейская эффективность")),
+
+	--[+ Passive 25 - Rapid Movement +]--
+	-- create_template("talent_tree_arb_pas_025_en",
+		-- {"loc_talent_adamant_sprinting_sliding"}, {"en"},
+			-- loc_text("Rapid Movement")),
+	--[+ Russian - Быстрые движения +]-- руоф Быстрое перемещение
+	-- create_template("talent_tree_arb_pas_025_ru",
+		-- {"loc_talent_adamant_sprinting_sliding"}, {"ru"},
+			-- loc_text("Быстрые движения")),
+
+	--[+ Passive 26 - Rebreather +]--
+	-- create_template("talent_tree_arb_pas_026_en",
+		-- {"loc_talent_adamant_rebreather"}, {"en"},
+			-- loc_text("Rebreather")),
+	--[+ Russian - Ребризер +]-- руоф Противогаз
+	create_template("talent_tree_arb_pas_026_ru",
+		{"loc_talent_adamant_rebreather"}, {"ru"},
+			loc_text("Ребризер")),
+
+	--[+ Passive 27 - Cower, Miscreants! +]--
+	-- create_template("talent_tree_arb_pas_027_en",
+		-- {"loc_talent_adamant_damage_vs_suppressed"}, {"en"},
+			-- loc_text("Cower, Miscreants!")),
+	--[+ Russian - Трепещите, негодяи! +]--
+	-- create_template("talent_tree_arb_pas_027_ru",
+		-- {"loc_talent_adamant_damage_vs_suppressed"}, {"ru"},
+			-- loc_text("Трепещите, негодяи!")),
+
+	--[+ Passive 28 - Target the Weak +]-- DOUBLE!
+	-- create_template("talent_tree_arb_pas_028_en",
+		-- {"loc_talent_adamant_staggered_enemies_take_more_damage"}, {"en"},
+			-- loc_text("Target the Weak")),
+	--[+ Russian - Цель - слабаки +]--
+	-- create_template("talent_tree_arb_pas_028_ru",
+		-- {"loc_talent_adamant_staggered_enemies_take_more_damage"}, {"ru"},
+			-- loc_text("Цель - слабаки")),
+
+	--[+ Passive 29 - The Emperor's Fist +]--
+	-- create_template("talent_tree_arb_pas_029_en",
+		-- {"loc_talent_adamant_first_melee_hit_increased_damage"}, {"en"},
+			-- loc_text("The Emperor's Fist")),
+	--[+ Russian - Кулак Императора +]--
+	-- create_template("talent_tree_arb_pas_029_ru",
+		-- {"loc_talent_adamant_first_melee_hit_increased_damage"}, {"ru"},
+			-- loc_text("Кулак Императора")),
+
+	--[+ Passive 30 - Zealous Dedication +]--
+	-- create_template("talent_tree_arb_pas_030_en",
+		-- {"loc_talent_adamant_crit_chance_on_kill"}, {"en"},
+			-- loc_text("Zealous Dedication")),
+	--[+ Russian - Фанатичная преданность +]--
+	-- create_template("talent_tree_arb_pas_030_ru",
+		-- {"loc_talent_adamant_crit_chance_on_kill"}, {"ru"},
+			-- loc_text("Фанатичная преданность")),
+
+	--[+ Passive 31 - Street Smarts +]--
+	-- create_template("talent_tree_arb_pas_031_en",
+		-- {"loc_talent_adamant_dodge_improvement"}, {"en"},
+			-- loc_text("Street Smarts")),
+	--[+ Russian - Уличная хватка +]-- руоф Законы улицы
+	-- create_template("talent_tree_arb_pas_031_ru",
+		-- {"loc_talent_adamant_dodge_improvement"}, {"ru"},
+			-- loc_text("Уличная хватка")),
+
+	--[+ Passive 32 - Drive them Back +]--
+	-- create_template("talent_tree_arb_pas_032_en",
+		-- {"loc_talent_adamant_cleave_after_push"}, {"en"},
+			-- loc_text("Drive them Back")),
+	--[+ Russian - Натиск +]-- руоф Отбрось их
+	create_template("talent_tree_arb_pas_032_ru",
+		{"loc_talent_adamant_cleave_after_push"}, {"ru"},
+			loc_text("Натиск")),
+
+	--[+ Passive 33 - Target Selection +]--
+	-- create_template("talent_tree_arb_pas_033_en",
+		-- {"loc_talent_adamant_pinning_dog_elite_damage"}, {"en"},
+			-- loc_text("Target Selection")),
+	--[+ Russian - Выбор целей +]-- руоф Выбор цели
+	-- create_template("talent_tree_arb_pas_033_ru",
+		-- {"loc_talent_adamant_pinning_dog_elite_damage"}, {"ru"},
+			-- loc_text("Выбор целей")),
+
+	--[+ Passive 34 - Soulguilt Scan +]--
+	-- create_template("talent_tree_arb_pas_034_en",
+		-- {"loc_talent_adamant_stacking_weakspot_strength"}, {"en"},
+			-- loc_text("Soulguilt Scan")),
+	--[+ Russian - Поиск виновных душ +]--
+	-- create_template("talent_tree_arb_pas_034_ru",
+		-- {"loc_talent_adamant_stacking_weakspot_strength"}, {"ru"},
+			-- loc_text("Поиск виновных душ")),
+
+	--[+ Passive 35 - Priority Endowment +]--
+	-- create_template("talent_tree_arb_pas_035_en",
+		-- {"loc_talent_adamant_clip_size"}, {"en"},
+			-- loc_text("Priority Endowment")),
+	--[+ Russian - Приоритетное снабжение +]--
+	-- create_template("talent_tree_arb_pas_035_ru",
+		-- {"loc_talent_adamant_clip_size"}, {"ru"},
+			-- loc_text("Приоритетное снабжение")),
+
+	--[+ Passive 36 - Target Priority +]--
+	-- create_template("talent_tree_arb_pas_036_en",
+		-- {"loc_talent_adamant_increased_damage_to_high_health"}, {"en"},
+			-- loc_text("Target Priority")),
+	--[+ Russian - Приоритет целей +]--
+	-- create_template("talent_tree_arb_pas_036_ru",
+		-- {"loc_talent_adamant_increased_damage_to_high_health"}, {"ru"},
+			-- loc_text("Приоритет целей")),
+
+	--[+ Passive 37 - Final Warning +]--
+	-- create_template("talent_tree_arb_pas_037_en",
+		-- {"loc_talent_adamant_ranged_damage_on_melee_stagger"}, {"en"},
+			-- loc_text("Final Warning")),
+	--[+ Russian - Последнее предупреждение +]--
+	-- create_template("talent_tree_arb_pas_037_ru",
+		-- {"loc_talent_adamant_ranged_damage_on_melee_stagger"}, {"ru"},
+			-- loc_text("Последнее предупреждение")),
+
+	--[+ Passive 38 - Weight of the Lex +]--
+	-- create_template("talent_tree_arb_pas_038_en",
+		-- {"loc_talent_adamant_heavy_attacks_increase_damage"}, {"en"},
+			-- loc_text("Weight of the Lex")),
+	--[+ Russian - Вес Закона +]--
+	-- create_template("talent_tree_arb_pas_038_ru",
+		-- {"loc_talent_adamant_heavy_attacks_increase_damage"}, {"ru"},
+			-- loc_text("Вес Закона")),
+
+	--[+ Passive 39 - Serrated Maw +]--
+	-- create_template("talent_tree_arb_pas_039_en",
+		-- {"loc_talent_adamant_dog_applies_brittleness"}, {"en"},
+			-- loc_text("Serrated Maw")),
+	--[+ Russian - Зазубренная пасть +]--
+	-- create_template("talent_tree_arb_pas_039_ru",
+		-- {"loc_talent_adamant_dog_applies_brittleness"}, {"ru"},
+			-- loc_text("Зазубренная пасть")),
+
+	--[+ Passive 40 - Prosecution Blow +]--
+	-- create_template("talent_tree_arb_pas_040_en",
+		-- {"loc_talent_adamant_crits_rend"}, {"en"},
+			-- loc_text("Prosecution Blow")),
+	--[+ Russian - Карающий удар +]-- руоф Обвиняющий удар
+	create_template("talent_tree_arb_pas_040_ru",
+		{"loc_talent_adamant_crits_rend"}, {"ru"},
+			loc_text("Карающий удар")),
+
+	--[+ Passive 41 - March +]--
+	-- create_template("talent_tree_arb_pas_041_en",
+		-- {"loc_talent_adamant_movement_speed_on_block"}, {"en"},
+			-- loc_text("March")),
+	--[+ Russian - Марш +]--
+	-- create_template("talent_tree_arb_pas_041_ru",
+		-- {"loc_talent_adamant_movement_speed_on_block"}, {"ru"},
+			-- loc_text("Марш")),
+
+	--[+ Passive 42 - Monstrosity Hunter +]--
+	-- create_template("talent_tree_arb_pas_042_en",
+		-- {"loc_talent_adamant_monster_hunter"}, {"en"},
+			-- loc_text("Monstrosity Hunter")),
+	--[+ Russian - Охотник на монстров +]-- руоф Охота на чудовищ
+	create_template("talent_tree_arb_pas_042_ru",
+		{"loc_talent_adamant_monster_hunter"}, {"ru"},
+			loc_text("Охотник на монстров")),
+
+	--[+ Passive 43 - Strike Down +]--
+	-- create_template("talent_tree_arb_pas_043_en",
+		-- {"loc_talent_adamant_melee_attacks_on_staggered_rend"}, {"en"},
+			-- loc_text("Strike Down")),
+	--[+ Russian - Сокрушительный удар +]-- руоф Сбивающий удар
+	create_template("talent_tree_arb_pas_043_ru",
+		{"loc_talent_adamant_melee_attacks_on_staggered_rend"}, {"ru"},
+			loc_text("Сокрушительный удар")),
+
+	--[+ Passive 44 - True Grit +]--
+	-- create_template("talent_tree_arb_pas_044_en",
+		-- {"loc_talent_adamant_limit_dmg_taken_from_hits"}, {"en"},
+			-- loc_text("True Grit")),
+	--[+ Russian - Настоящая закалка +]-- руоф Истинная выдержка
+	create_template("talent_tree_arb_pas_044_ru",
+		{"loc_talent_adamant_limit_dmg_taken_from_hits"}, {"ru"},
+			loc_text("Настоящая закалка")),
 }
 
 --[+ Return the localization templates +]--
