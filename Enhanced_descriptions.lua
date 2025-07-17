@@ -6,7 +6,6 @@
 local mod = get_mod("Enhanced_descriptions")
 local WTL = get_mod("WhatTheLocalization")
 
-
 --[+ Elements offset +]--
 	--[+ Buttons offset +]--
 		--[+ Equip button in the inventory +]--
