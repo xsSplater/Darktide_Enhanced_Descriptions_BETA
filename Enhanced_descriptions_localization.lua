@@ -489,14 +489,14 @@ local localizations = {
 	meleejust_colour = {
 		en = "    Melee Justice",
 		-- fr = "",
-		ru = "    Кара вблизи", --???
+		ru = "    Судья-рукопашник", --???
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
 	},
 	rangedjust_colour = {
 		en = "    Ranged Justice",
 		-- fr = "",
-		ru = "    Кара издали", --???
+		ru = "    Судья-стрелок", --???
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
 	},

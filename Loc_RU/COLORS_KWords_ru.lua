@@ -191,10 +191,10 @@ local iu_actit = InputUtils.apply_color_to_input_text
 --[+++АРБИТРАТОР+++]--
 	--[++Melee Justice++]--
 		local meleejust_col = Color[mod:get("meleejust_text_colour")](255, true) -- Do not translate this line!
-			local Meleejust_rgb_ru = iu_actit("Правосудия ближнего боя", meleejust_col)
+			local Meleejust_rgb_ru = iu_actit("Судьи-рукопашника", meleejust_col)
 	--[++Ranged Justice++]--
 		local rangedjust_col = Color[mod:get("rangedjust_text_colour")](255, true) -- Do not translate this line!
-			local Rangedjust_rgb_ru = iu_actit("Правосудия дальнего боя", rangedjust_col)
+			local Rangedjust_rgb_ru = iu_actit("Судьи-стрелка", rangedjust_col)
 	--[++Marked Enemy++]--
 			local Markedenemy_rgb_ru = iu_actit("Отмеченного врага", focust_col)
 	--[++Forceful++]--
