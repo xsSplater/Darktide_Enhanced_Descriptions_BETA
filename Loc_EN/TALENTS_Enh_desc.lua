@@ -32,7 +32,7 @@ local stacks_mult_w_other_dmg_red_buffs = Arrow_right_.." Stacks multiplicativel
 local succss_dodge_means = Arrow_right_.." \"Successful dodge\" means Dodging an enemy attack that is locked on the player with an accordingly timed Dodge or Sliding action."
 local warp_attc_refers_to = Arrow_right_.." \"Warp attack\" refers to a list of attacks that have their Damage types denoted as \"Warp Damage types\": Force Swords' activated attacks, Force Staves' primary attacks, Force Staves' secondary attacks, Electrocution (\"Smite\", Electrokinetic Staff secondary, Shock Maul special action), \"Soulblaze\", \"Brain Rupture\"/\"Brain Burst\", \"Assail\", and \"Warp Rupture\"."
 local z_eff_of_this_tougn_rep = Arrow_right_.." The effectiveness of this Toughness Replenishment is affected by certain player debuffs like toxic gas."
-local z_ghost_hitnrun_n_stripp = Arrow_right_.." \"The Ghost\", \"Hit and Run\" and \"Stripped Down\" Weapon Blessings can proc this Talent (only against Ranged attacks)."
+local z_ghost_hitnrun_n_stripp = Arrow_right_.." The \"Ghost\", \"Hit and Run\" and \"Stripped Down\" Weapon Blessings can proc this Talent (only against Ranged attacks)."
 
 --[+ ++ENHANCED DESCRIPTIONS++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not translate this line!
