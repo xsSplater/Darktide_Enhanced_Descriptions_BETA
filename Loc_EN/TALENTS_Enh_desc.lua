@@ -781,7 +781,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		Arrow_right_..Arrow_right_.." Stacks once.",
 		Arrow_right_..Arrow_right_.." Deals low Damage across the board.",
 		Arrow_right_..Arrow_right_.." Deals Damage and Stagger every 0.55 seconds.",
-		-- Arrow_right_.."- Staggers all enemies in range except Mutants, monstrosities and Captains/Twins.",
+		-- Arrow_right_..Arrow_right_.." Staggers all enemies in range except Mutants, monstrosities and Captains/Twins.",
 		-- Arrow_right_.." Ignores Bulwark shields.",
 		-- Arrow_right_.." Can be refreshed during active duration.",
 	}, "\n"), enhdesc_col)
@@ -789,7 +789,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Blitz 1 - Stunstorm Grenade +]--
 	-- local ED_ZEA_Blitz_1_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		-- Arrow_right_.."- Explosion radius is increased to 12 meters.",
+		-- Arrow_right_..Arrow_right_.." Explosion radius is increased to 12 meters.",
 		-- Arrow_right_.." Fuse time: 1.5 seconds.",
 		-- Arrow_right_.." Electrocution:",
 		-- Arrow_right_..Arrow_right_.." Lasts 8 seconds.",
@@ -797,8 +797,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		-- Arrow_right_..Arrow_right_.." Deals low Damage across the board.",
 		-- Arrow_right_..Arrow_right_.." Deals Damage and Stagger every 0.55 seconds.",
 		-- Arrow_right_.." Staggers all enemies in range except Mutants, Scab Captain/Twins and Monstrosities.",
-		-- Arrow_right_.."- Ignores Bulwark shields.",
-		-- Arrow_right_.."- Can be refreshed during active duration.",
+		-- Arrow_right_..Arrow_right_.." Ignores Bulwark shields.",
+		-- Arrow_right_..Arrow_right_.." Can be refreshed during active duration.",
 	-- }, "\n"), enhdesc_col)
 	
 	--[+ Blitz 2 - Immolation Grenade +]--
@@ -864,8 +864,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	-- local ED_ZEA_Ability_0_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Dash Range:",
-		-- Arrow_right_.."- Base: 7 meters.",
-		-- Arrow_right_.."- Aimed: up to 21 meters.",
+		-- Arrow_right_..Arrow_right_.." Base: 7 meters.",
+		-- Arrow_right_..Arrow_right_.." Aimed: up to 21 meters.",
 		-- Arrow_right_.." Grants immunity to Toughness Damage and you Dodge all attacks while dashing.",
 		-- Arrow_right_.." Applies a light Stagger on impact in a 3 meters radius.",
 	-- }, "\n"), enhdesc_col)
@@ -874,7 +874,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	local ED_ZEA_Ability_1_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Dash:",
-		-- Arrow_right_.."- Range: Base: 7 meters. Aimed(hold button): up to 21 meters.",
+		-- Arrow_right_..Arrow_right_.." Range: Base: 7 meters. Aimed(hold button): up to 21 meters.",
 		-- Arrow_right_..Arrow_right_.." Cannot be activated while jumping or falling.",
 		-- Arrow_right_..Arrow_right_.." You can't change direction, but you can Cancel the dash with Block or Back buttons.",
 		-- Arrow_right_..Arrow_right_.." You Dodge all Attacks and grants Immunity to Toughness Damage.",
@@ -926,10 +926,10 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	local ED_ZEA_Ability_2_2_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		Arrow_right_.." This talent does three things:",
-		Arrow_right_.."- 1. It enables pulses to Stagger non-suppressible enemies within 10 meters. Against Monstrosities and Captains/Twins within 4 meters, a forced Stagger is applied on the 1st, 3rd, 5th, and 7th pulse. Against all other non-Suppressible enemies within 4 meters, a forced Stagger is applied every pulse. Forced Stagger lasts 2 seconds.",
-		Arrow_right_.."- 2. It enables each pulse to Suppress all suppressible enemies within 10 meters. Each pulse applies very high Suppression with an increased, randomly chosen Suppression decay delay.",
-		Arrow_right_.."-- Breeds that can be suppressed: Groaner, Dreg Gunner, Dreg Stalker, Poxwalker (only in this Talent's case), Reaper, Scab Gunner, Scab Shooter, Scab Stalker",
-		Arrow_right_.."- 3. It increases the pulse radius of 10 meters by 0.1 meters per second while channeling, up to 10.5 meters. This affects the radius in which enemies get Suppressed or Staggered (does not increase Forced Stagger radius).",
+		Arrow_right_..Arrow_right_.." 1. It enables pulses to Stagger non-suppressible enemies within 10 meters. Against Monstrosities and Captains/Twins within 4 meters, a forced Stagger is applied on the 1st, 3rd, 5th, and 7th pulse. Against all other non-Suppressible enemies within 4 meters, a forced Stagger is applied every pulse. Forced Stagger lasts 2 seconds.",
+		Arrow_right_..Arrow_right_.." 2. It enables each pulse to Suppress all suppressible enemies within 10 meters. Each pulse applies very high Suppression with an increased, randomly chosen Suppression decay delay.",
+		Arrow_right_..Arrow_right_..Arrow_right_.." Breeds that can be suppressed: Groaner, Dreg Gunner, Dreg Stalker, Poxwalker (only in this Talent's case), Reaper, Scab Gunner, Scab Shooter, Scab Stalker",
+		Arrow_right_..Arrow_right_.." 3. It increases the pulse radius of 10 meters by 0.1 meters per second while channeling, up to 10.5 meters. This affects the radius in which enemies get Suppressed or Staggered (does not increase Forced Stagger radius).",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-3 - Ecclesiarch's Call +]--
@@ -1006,11 +1006,11 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	local ED_ZEA_Keystone_1_1_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		Arrow_right_.." When reaching 25 Stacks of Fury, does two things:",
-		Arrow_right_.."- 1. Replenishes 50% of Maximum Toughness immediately. Then, while maintaining 25 Stacks of Fury, also replenishes 2% of Max Toughness per kill.",
-		Arrow_right_.."-- Stacks additively with Zealot's base 5% Max Toughness gained on melee kill.",
-		Arrow_right_.."-"..z_eff_of_this_tougn_rep,
-		Arrow_right_.."- 2. Grants 25% Toughness Damage Reduction for as long as 25 Stacks of Fury are maintained.",
-		Arrow_right_.."-"..stacks_mult_w_other_dmg_red_buffs,
+		Arrow_right_..Arrow_right_.." 1. Replenishes 50% of Maximum Toughness immediately. Then, while maintaining 25 Stacks of Fury, also replenishes 2% of Max Toughness per kill.",
+		Arrow_right_..Arrow_right_..Arrow_right_.." Stacks additively with Zealot's base 5% Max Toughness gained on melee kill.",
+		Arrow_right_..Arrow_right_..z_eff_of_this_tougn_rep,
+		Arrow_right_..Arrow_right_.." 2. Grants 25% Toughness Damage Reduction for as long as 25 Stacks of Fury are maintained.",
+		Arrow_right_..Arrow_right_..stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-2 - Fury Rising +]--
@@ -1123,11 +1123,11 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		Arrow_right_.." Critical hits with Melee attacks (including Melee special actions of Ranged weapons) apply 2 Stacks of Bleed to enemies.",
 		Arrow_right_.." Can't apply Bleed through shields.",
 		Arrow_right_.." Bleed:",
-		Arrow_right_.."- Lasts 1.5 seconds.",
-		Arrow_right_.."- Ticks every 0.5 seconds.",
-		Arrow_right_.."- Refreshes duration on Stack application.",
-		Arrow_right_.."- Same as other sources of Bleed.",
-		Arrow_right_.."- Above average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
+		Arrow_right_..Arrow_right_.." Lasts 1.5 seconds.",
+		Arrow_right_..Arrow_right_.." Ticks every 0.5 seconds.",
+		Arrow_right_..Arrow_right_.." Refreshes duration on Stack application.",
+		Arrow_right_..Arrow_right_.." Same as other sources of Bleed.",
+		Arrow_right_..Arrow_right_.." Above average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
 		can_be_refr_dur_active_dur,
 	}, "\n"), enhdesc_col)
 
