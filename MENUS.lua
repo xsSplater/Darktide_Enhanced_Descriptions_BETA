@@ -44,9 +44,9 @@ local localization_templates = {
 
 -- Make changes to this file only if you need them!
 
-	create_template("settings_light_quality_ext_ru",
-		{"loc_setting_light_quality_mouseover"}, {"en"},
-		loc_text("Предустановка для настроек качества света и теней. Повышают нагрузку на ОЗУ и на графический процессор.{#color(255, 54, 54)}\n\nНастройка ниже «Средней» даёт МЕРЦАНИЕ ТЕКСТУР!{#reset()}")),
+	-- create_template("settings_light_quality_ext_ru",
+		-- {"loc_setting_light_quality_mouseover"}, {"ru"},
+		-- loc_text("Предустановка для настроек качества света и теней. Повышают нагрузку на ОЗУ и на графический процессор.{#color(255, 54, 54)}\n\nНастройка ниже «Средней» даёт МЕРЦАНИЕ ТЕКСТУР!{#reset()}")),
 
 --[+ MELK - 梅爾克 - 梅尔克大人的采购店 +]--
 	-- HERE IS THE NUMBER HIGHLIGHT IN THE CONTRACTS MENU!

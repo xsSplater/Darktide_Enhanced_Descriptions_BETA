@@ -37,737 +37,291 @@ local z_ghost_hitnrun_n_stripp = Arrow_right_.." The \"Ghost\", \"Hit and Run\" 
 --[+ ++ENHANCED DESCRIPTIONS++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not translate this line!
 
---[+ ++PSYKER++ +]--
---[+ +BLITZ+ +]--
-	--[+ Blitz 0 - Brain Burst +]--													checked 27.05.2025
-	local ED_PSY_Blitz_0_rgb = iu_actit(table.concat({
+	--[+ Passive 3 - Quietude +]--
+	-- local ED_PSY_Passive_3_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		-- Arrow_right_.." Cannot Crit.",
-		Arrow_right_.." Base Damage: 900.",
-		-- Arrow_right_.." Always scores a Weakspot hit.",
-		-- Arrow_right_.." Higher Damage against Maniac and Unyielding.",
-		"{#color(255, 35, 5)} You may Explode! Don't use if Peril level is 97% or above!{#reset()}",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 1 - Brain Rupture +]--												checked 27.05.2025
-	local ED_PSY_Blitz_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Cannot Crit.",
-		Arrow_right_.." Base Damage: 1350.",
-		-- Arrow_right_.." Always scores a Weakspot hit.",
-		-- Arrow_right_.." Higher Damage against Maniac and Unyielding.",
-		-- Arrow_right_.." Main attack applies a light Charge Stagger at 50% charge level to the targeted enemy. Cannot Stagger: Bombers, Maulers, Mutants, Ogryns, Poxbursters, Ragers, Scab Shotgunners or Monstrosities.",
-		-- Arrow_right_.." On Impact Staggers all enemies except Mutants, Monstrosities and enemies with active void shield.",
-		Arrow_right_..dmg_is_incr_by,
-		"{#color(255, 35, 5)} You may Explode! Don't use if Peril level is 97% or above!{#reset()}",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 1-1 - Kinetic Resonance +]--											checked 27.05.2025
-	local ED_PSY_Blitz_1_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Reduces Brain Rupture's charge time for both primary and secondary attacks.",
-		Arrow_right_.." Charge Time Reduction stacks additively with itself (if procced twice in succession with \"Bolstered Shield\") and \"Empowered Psionics\", and multiplicatively/additively with Celerity Stimm's two charge time reductions.",
-		Arrow_right_.." Peril Cost Reduction stacks multiplicatively with related buffs from \"By Crack of Bone\", \"Becalming Eruption\", \"Empyric Resolve\", \"Inner Tranquility\", \"Reality Anchor\", small Peril Resistance nodes, Combat Stimm, and the \"Enhanced Blitz\" difficulty mutator.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 1-2 - Kinetic Flayer +]--											checked 27.05.2025
-	local ED_PSY_Blitz_1_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." \"Brain Rupture\" attacks triggered by the Talent benefit from \"Empowered Psionics'\" Damage buff without consuming a Stack.",
-		"{#color(255, 35, 5)} BUG: If Peril is above 97%, the Talent triggers and a 15 seconds Cooldown begins, but the enemy does NOT receive Damage at all.{#reset()}",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 2 - Smite +]--														checked 27.05.2025
-	local ED_PSY_Blitz_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Cannot crit.",
-		-- " Max range: 15 meters.",
-		-- Arrow_right_.." Targets only torso hitzone.",
-		-- Arrow_right_.." Cannot Stagger Monstrosities and enemies with active void shield.",
-		-- Arrow_right_.." Average armor Damage modifiers, low armor Damage modifier against Carapace.",
-		Arrow_right_..dmg_is_incr_by,
-		-- Arrow_right_.." Forces a short Quelling action when reaching 100% Peril removing ~8.5% Peril. If released below 100% Peril, pushes enemies back (if possible).",
-		"{#color(255, 35, 5)} You can only Explode if you raise your Peril level to 100% with a charged attack and at same time use a normal attack!{#reset()}",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 2-1 - Lightning Storm +]--											checked 27.05.2025
-	-- local ED_PSY_Blitz_2_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Increases max jumps from 1 to 2.",
-		-- Arrow_right_.." Applies both to Smite's primary and secondary actions.",
-		-- Arrow_right_.." Increases the Max radius within which \"Smite\" can chain to another target from 5 to 6 meters.",
-		-- Arrow_right_.." This also increases the targeting range by 1 meter, up to 16 meters.",
+		-- Arrow_right_.." Replenishes 0.5% of Maximum Toughness per 1% Peril Quelled.",
+		-- Arrow_right_.." Procs on both active or passive quelling.",
+		-- Arrow_right_.." For example, a Psyker with 109 Maximum Toughness Quelling down from 59% true Peril to 0% Peril, replenishes 59x(109x0.005)=32.15 Toughness (HUD rounds up: 33).",
+		-- z_eff_of_this_tougn_rep,
 	-- }, "\n"), enhdesc_col)
 
-	--[+ Blitz 2-2 - Enfeeble +]--													checked 27.05.2025
-	local ED_PSY_Blitz_2_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." The debuff is being applied as long as the enemy is actively affected by \"Smite\".",
-		Arrow_right_.." Stacks multiplicatively with other Damage taken debuffs like \"Empyric Shock\" or Ogryn's \"Soften Them Up\", \"Valuable Destraction\" or Veteran's \"Focus Target!\", with Damage buffs, and with Power level buffs from Weapon Blessings.",
-		-- Arrow_right_.." Doesn't Stack with the same debuff applied by another Psyker.",
-		Arrow_right_.." Any source that may apply an Electrocution effect to enemies but is not \"Smite\" or \"Charged Strike\" will NOT proc \"Enfeeble\".",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 2-3 - Charged Strike +]--											checked 27.05.2025
-	local ED_PSY_Blitz_2_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Up to 64 base Damage per tick when reaching Max charge level.",
-		-- Arrow_right_.." The Damage window lasts up to 2 seconds.",
-		-- Arrow_right_.." The Electrocuted state lasts until 2 seconds after the last Damage tick.",
-		Arrow_right_.." Note that the time before the first Damage tick can happen depends on enemy Hit mass (just like with \"Smite\" itself), so the more Hit mass an enemy has the longer it will take before this Talent's Electrocution effect deals Damage. As a result, against Monstrosities (20 Hit mass), only 1 Damage tick can be executed before the Damage window of 2 seconds ends.",
-		Arrow_right_.." If Enfeeble is selected, the Electrocution effect receives a more favorable Hit mass cost, which effectively doubles its tick rate against most enemies, and is also able to reach Max charge level sooner. With \"Enfeeble\", this Talent's Electrocution effect benefits from the 10% increased Damage taken debuff, and attacking players also benefit from it while the Electrocution effect is actively damaging and applying the debuff (just like with \"Smite\" itself).",
-		Arrow_right_.." Note that enemies dying to Charged Strike's Electrocution effect don't pass certain Talents' and Blessings' kill based proc conditions. Charged Strike's Electrocution effect also does NOT benefit from Warp Damage buffs.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 3 - Assail +]--														checked 27.05.2025
-	local ED_PSY_Blitz_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Can Crit. Cleave up to 2 enemies.",
-		-- Arrow_right_.." Costs 1 ammo and recharges it every 3 seconds.",
-		-- Arrow_right_.." Very low Damage against Carapace and low against Unyielding.",
-		Arrow_right_.." Affected by Peril Cost Reduction buffs from respective Talents, Combat Stimm, and the \"Enhanced Blitz\" difficulty mutator.",
-		Arrow_right_..dmg_is_incr_by,
-		"{#color(255, 35, 5)} You may Explode! Don't use if Peril level is 100%!{#reset()}",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 3-1 - Ethereal Shards +]--											checked 27.05.2025
-	local ED_PSY_Blitz_3_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." If \"Empowered Psionics\" is active, this is doubled, up to 6 targets.",
-		Arrow_right_.." Stacks additively with Empowered Psionics and Warp Splitting.",
-		-- Arrow_right_.." Carapace cannot be Cleaved by default.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Blitz 3-2 - Quick Shards +]--												checked 27.05.2025
-	local ED_PSY_Blitz_3_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Reduces projectile recharge time from 3 to 2.1 seconds per projectile.",
-		Arrow_right_.." Does not interact with the \"Enhanced Blitz\" mutator.",
-	}, "\n"), enhdesc_col)
-
---[+ +AURA+ +]--
-	--[+ Aura 0 - The Quickening +]--												checked 27.05.2025
-	local ED_PSY_Aura_0_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Stacks additively with Max Cooldown Reductions (Combat Ability Regeneration from Curios and the difficulty mutators that reduce Ability Cooldowns by 20%).",
-		Arrow_right_.." Stacks additively with the Max Cooldown increase from Zealot's \"Perfectionist\", and multiplicatively with the Max Cooldown increases from Veteran's \"Only in Death Does Duty End\" and \"Overwatch\".",
-		-- Arrow_right_.." This Reduces the Max Cooldown of \"Venting Shriek\"/\"Psykinetic's Wrath\" to 27.75 seconds, for \"Scrier's Gaze\" to 23.125 seconds, and for \"Telekine Shield\" to 37 seconds.",
-		-- doesnt_stack_aura_psy,
-	}, "\n"), enhdesc_col)
-
-	--[+ Aura 1 - Kinetic Presence +]--												checked 27.05.2025
-	local ED_PSY_Aura_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		stacks_add_w_oth_dmg,
-		-- doesnt_stack_aura_psy,
-	}, "\n"), enhdesc_col)
-
-	--[+ Aura 2 - Seer's Presence +]--												checked 27.05.2025
-	local ED_PSY_Aura_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Stacks additively with Max Cooldown Reductions (Combat Ability Regeneration from Curios and the difficulty mutators that reduce Ability Cooldowns by 20%).",
-		Arrow_right_.." Stacks additively with the Max Cooldown increase from Zealot's \"Perfectionist\", and multiplicatively with the Max Cooldown increases from Veteran's \"Only in Death Does Duty End\" and \"Overwatch\".",
-		Arrow_right_.." This Reduces the Cooldowns of \"Venting Shriek\"/\"Psykinetic's Wrath\" to 27 seconds, for \"Scrier's Gaze\" to 22.5 seconds, and for \"Telekine Shield\" to 36 seconds.",
-		Arrow_right_.." Does not interact with Concentration Stimm's remaining Cooldown Reduction effect which increases a character's Base Ability Cooldown rate of 1 second per second by additional 3 seconds per second.",
-		-- doesnt_stack_aura_psy,
-	}, "\n"), enhdesc_col)
-
-	--[+ Aura 3 - Prescience +]--													checked 27.05.2025
-	local ED_PSY_Aura_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Applies to all attacks that can Crit.",
-		Arrow_right_.." Stacks additively with other sources of Crit Chance.",
-		-- doesnt_stack_aura_psy,
-	}, "\n"), enhdesc_col)
-
---[+ +ABILITIES+ +]--
-	--[+ Ability 0 - Psykinetic's Wrath +]--										checked 27.05.2025
-	local ED_PSY_Ability_0_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Max range: 30 meters.",
-		Arrow_right_.." Angle: ~52° in front of Psyker.",
-		-- Arrow_right_.." Can be used to prevent Psyker's self-explode.",
-		-- Arrow_right_.." The Warp wave passes through objects and spreads up to 30 meters. So you can drop the Pox Hound from an Ally through the wall.",
-		-- Arrow_right_.." Stuns enemies within a 5 meter radius in front of Psyker.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 1 - Venting Shriek +]--											checked 27.05.2025
-	local ED_PSY_Ability_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Max range: 30 meters.",
-		Arrow_right_.." Angle: ~52° in front of Psyker.",
-		-- Arrow_right_.." Always targets torso hitzone.",
-		-- Arrow_right_.." Can be used while exploding thereby preventing Psyker's self-explode.",
-		-- Arrow_right_.." The Warp wave passes through objects and spreads up to 30 meters.",
-		-- Arrow_right_.." Stuns enemies within a 5 meter radius in front of Psyker.",
-		Arrow_right_.." Stagger strength scales with Peril reaching its Maximum strength at 100% Peril. Up to light Staggers against Crushers. Cannot Stagger Mutants, Monstrosities and enemies with active void shield.",
-		Arrow_right_.." Stagger strength decreases with range losing its efficiency almost entirely at 30 meters.",
-		Arrow_right_.." Stagger strength is additionally affected by some Weapon Blessings that provide a power_level_modifier (e.g. \"Executor\", \"Slaughterer\", \"Superiority\", \"Unstable Power\"). Applies only when the respective weapon is equipped when shouting.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 1-1 - Becalming Eruption +]--										checked 27.05.2025
-	local ED_PSY_Ability_1_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Stacks multiplicatively with related Peril Cost Reduction buffs from \"By Crack of Bone\", \"Empyric Resolve\", \"Inner Tranquility\", \"Kinetic Resonance\", small Peril Resistance nodes, and Combat Stimm.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 1-2 - Warp Rupture +]--											checked 27.05.2025
-	local ED_PSY_Ability_1_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Has same armor Damage modifier against all armor types, loses Damage with range.",
-		Arrow_right_.." Base Damage dealt scales with Peril:",
-		"_______________________________",
-		"Peril:           0%|  25%|  50%|  75%|  100%",
-		"Damage:   100|   125|    150|   175|   200",
-		"_______________________________",
-		Arrow_right_.." Damage is increased by Rending/Brittleness, by Perks of currently wielded Weapons, by Combat Stimm, and by the following buffs from:",
-		Arrow_right_..Arrow_right_.." Talents: \"Disrupt Destiny\", \"Empyrean Empowerment\", \"Empyric Shock\" (while debuffed), \"Malefic Momentum\", \"Kinetic Presence\" (vs Elites), \"Perfect Timing\", and \"\".Warp Rider\".",
-		Arrow_right_..Arrow_right_.." Blessings (if procced with weapon before Warp Rupture's activation):",
-		Arrow_right_..Arrow_right_..Arrow_right_.." Melee: \"Executor\", \"High Voltage\" (vs Electrocuted), \"Skullcrusher\" (vs Staggered), \"Slaughterer\", \"Superiority\", and \"Unstable Power\".",
-		Arrow_right_..Arrow_right_..Arrow_right_.." Ranged: \"Blaze Away\", \"Ceaseless Barrage\", \"Deathspitter\", \"Dumdum\", \"Execution\" (vs Staggered), \"Fire Frenzy\", \"Full Bore\", \"No Respite\" (vs Staggered), \"Pinning Fire\", \"Powderburn\", and \"Run 'n' Gun\" (while Sprinting).",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 1-3 - Warp Creeping Flames +]--									checked 27.05.2025
-	local ED_PSY_Ability_1_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." The amount of Soulblaze Stacks that are applied to enemies scales with Peril:",
-		"_______________________________",
-		"Stacks: 1|      2|        3|       4|       5|       6",
-		"Peril: 0%|~17%|~34%|~50%|~67%|~84%",
-		"_______________________________",
-		-- Arrow_right_.." Lasts 8 seconds. Ticks every 0.75 seconds.",
-		-- Arrow_right_.." Refreshes duration on Stack application.",
-		Arrow_right_.." Stacks additively with other sources of Soulblaze.",
-		Arrow_right_.." Soulblaze damage is increased by Rending/Brittleness, by Perks of currently wielded Weapons, by Combat Stimm, and by Buffs from:",
-		Arrow_right_.."Talents: \"Disrupt Destiny\", \"Empyrean Empowerment\" (only for warp charges gained during Soulblaze's active duration), \"Empyric Shock\" (while debuffed), \"Malefic Momentum\", \"Kinetic Presence\" (vs Elites), \"Perfect Timing\", and \"Warp Rider\".",
-		Arrow_right_..Arrow_right_.." Blessings (if procced with weapon before Warp Rupture's activation):",
-		-- Arrow_right_..Arrow_right_.." Blessings:",
-		Arrow_right_..Arrow_right_..Arrow_right_.." Melee: \"Executor\", \"High Voltage\" (vs Electrocuted), \"Skullcrusher\" (vs Staggered), \"Slaughterer\", \"Superiority\", and \"Unstable Power\".",
-		Arrow_right_..Arrow_right_..Arrow_right_.." Ranged: \"Blaze Away\", \"Ceaseless Barrage\", \"Deathspitter\", \"Dumdum\", \"Execution\" (vs Staggered), \"Fire Frenzy\", \"No Respite\" (vs Staggered), \"Pinning Fire\", and \"Run 'n' Gun\" (while Sprinting).",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 2 - Telekine Shield +]--
-	local ED_PSY_Ability_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Shield Health: 20.",
-		Arrow_right_.." Dimensions: 6 meters wide, 3.5 meters high.",
-		Arrow_right_.." Max placement range: 10 meters.",
-		Arrow_right_.." Total placement time: 0.6 seconds.",
-		-- Arrow_right_.." You can hold Ability button to preview location and you can cancel it by blocking.",
-		Arrow_right_.." Blocks: Ranged hit scan Attacks, projectiles (Bomber grenades), nets (Trappers), and flamethrower direct hits (Flamers).",
-		Arrow_right_.." Ground fire patches and toxic gas clouds expand through the shield.",
-		Arrow_right_.." Doesn't block Poxburster explosion.",
-		Arrow_right_.." How shield health works:",
-		Arrow_right_..Arrow_right_.." Every incoming Ranged attack counts as dealing 1 Damage. After taking Damage, the shield doesn't take any more Damage for the next 0.33 seconds.",
-		Arrow_right_..Arrow_right_..Arrow_right_.." For example, placed in front of a Dreg Gunner, the shield will eventually disappear during the Gunner's second salvo, after it has taken 20 valid hits total.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 2-1 - Bolstered Shield +]--
-	local ED_PSY_Ability_2_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." The Cooldown of the second charge only starts after the first charge finished Cooldown.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 2-2 - Enervating Threshold +]--
-	local ED_PSY_Ability_2_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Deals no Damage.",
-		-- Arrow_right_.." Applies Stagger every 0.55 seconds.",
-		-- Arrow_right_.." Electrocution effect lasts for 3 seconds.",
-		-- Arrow_right_.." Can Stun all enemies except Monstrosities.",
-		-- Arrow_right_.." Always applies the effect to Specials when they get in contact with the shield.",
-		Arrow_right_.." The shield takes 8 Damage per direct body hit from Specials, disappearing after 3 \"blocked\" Specials. Respects the 0.33 seconds Damage Cooldown window which means that any amount of direct body hits from Specials that happen within 0.33 seconds of each other count as just 1 direct body hit taken.",
-		"",
-		"{#color(255, 35, 5)}BUG: Specials that touch the shield only deal 1 Damage to it instead of 8.{#reset()}",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 2-3 - Telekine Dome +]--
-	local ED_PSY_Ability_2_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Sphere has a radius of 6 meters.",
-		-- Arrow_right_.." Protects from enemy attacks at all degrees.",
-		-- Arrow_right_.." Has the same properties as the flat shield.",
-		Arrow_right_.." Also takes Ranged Damage in the same way.",
-		"{#color(255, 35, 5)}BUG: Mutants that are successfully Dodged inside the dome always get Staggered.{#reset()}",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 2-4 - Sanctuary +]--
-	local ED_PSY_Ability_2_4_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." This replenishment effect can Stack if multiple spheres overlap.",
-		z_eff_of_this_tougn_rep,
-		stacks_mult_w_other_dmg_red_buffs,
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 3 - Scrier's Gaze +]--
-	local ED_PSY_Ability_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." While Ability is in overcharging phase Cooldown is paused. However, its remaining cooldown can still be actively reduced by proccing \"Psykinetic's Aura\" or using a Concentration Stimm.",
-		Arrow_right_.." Its Maximum Cooldown can be Reduced by \"Seer's Presence\", \"Warp Siphon\", Combat Ability Regeneration from Curios, and by the mission mutators that reduce Ability Cooldowns by 20%.",
-		Arrow_right_.." After overcharging has ended, grants a 1.5 seconds grace period in which Peril-generating actions can be executed without triggering Psyker's self-explosion.",
-	}, "\n"), enhdesc_col)
-
-	-- [+ Ability 3-1 - Endurance +]--
-	local ED_PSY_Ability_3_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Does not linger after overcharging phase.",
-		stacks_mult_w_other_dmg_red_buffs,
-	}, "\n"), enhdesc_col)
-
-	-- [+ Ability 3-2 - Precognition +]--
-	local ED_PSY_Ability_3_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Stacks additively with other Weakspot and Finesse Damage buffs.",
-		-- Arrow_right_.." Can proc multiple times per attack when Cleaving.",
-		Arrow_right_.." These stacking Damage buffs are active immediately during the overcharging phase.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 3-3 - Warp Speed +]--
-	local ED_PSY_Ability_3_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Does not linger after overcharging phase.",
-		Arrow_right_.." Stacks additively with movement speed buffs from \"Disrupt Destiny\", \"Mettle\", the small Movement speed node, and Weapon Blessings like \"Rev it Up\".",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 3-4 - Reality Anchor +]--
-	local ED_PSY_Ability_3_4_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Does not linger after overcharging phase.",
-		Arrow_right_.." Stacks multiplicatively with Peril cost reduction buffs from \"By Crack of Bone\", \"Empyric Resolve\", \"Kinetic Resonance\", small Peril Resistance nodes, and Combat Stimm.",
-		Arrow_right_.." Can stack with \"Inner Tranquility\" only if Psyker regains Warp charges while overcharging.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Ability 3-5 - Warp Unbound +]--
-	local ED_PSY_Ability_3_5_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." After overcharging has ended, allows Psyker to execute Peril-generating actions while at 100% Peril for 10 seconds without triggering the self-explosion.",
-		Arrow_right_.." Note that when this 10 seconds duration ends, Scrier's Gaze's base grace period still applies, providing another 1.5 seconds of the same effect.",
-	}, "\n"), enhdesc_col)
-
---[+ +KEYSTONES+ +]--
-	--[+ Keystone 1 - Warp Siphon +]--
-	local ED_PSY_Keystone_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- can_be_refr_dur_active_dur,
-		Arrow_right_.." Interacts with Combat Ability Regeneration from Curios and other Maximum Cooldown Reductions from \"Seer's Presence\" or the mission mutators that reduce Ability cooldowns by 20%.",
-		Arrow_right_.." For example, when Psyker with \"Seer's Presence\" aura (-0.1), 4 Warp charges and 12% Combat Ability Regeneration (-0.12) from Curios uses \"Telekine Shield\", its Maximum cooldown of 40 seconds is first reduced by Curio stat and aura to 40+40x(-0.1-0.12)=31.2 seconds. This Max Cooldown is then considered by Warp Siphon and further reduced by the Warp charge-based reduction to 31.2-31.2x(0.075x4)=21.84 seconds (HUD rounds: 22 seconds).",
-		-- Arrow_right_.." Does not interact with Concentration Stimm's remaining Cooldown Reduction effect which increases a character's base Ability Cooldown rate of 1 second per second by additional 3 seconds per second.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 1-1 - Inner Tranquility +]--
-	local ED_PSY_Keystone_1_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Stacks linearly with itself (1 Warp charge = 6% Peril Cost Reduction, 2 = 12%, 3 = 18%, etc) and multiplicatively with other Peril Cost Reduction buffs from \"By Crack of Bone\", \"Empyric Resolve\", \"Kinetic Resonance\", small Peril Resistance nodes, and Combat Stimm.",
-		Arrow_right_.." Because all Warp charges are dropped when using a Combat Ability, the Talent cannot immediately Stack with \"Becalming Eruption\" and \"Reality Anchor\" (unless Psyker regains Warp charges during their active duration).",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 1-2 - Essence Harvest +]--
-	local ED_PSY_Keystone_1_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Does not increase the amount of Toughness replenished.",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 1-3 - Empyrean Empowerment +]--
-	local ED_PSY_Keystone_1_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		stacks_add_w_oth_dmg,
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 1-4 - In Fire Reborn +]--
-	local ED_PSY_Keystone_1_4_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." You gain a Warp charge when an enemy who is currently affected by Soulblaze is killed either by Soulblaze, by Psyker, or by an ally.",
-		-- Arrow_right_.." This effect has no range limit and benefits all Psykers who have this talent equipped.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 1-5 - Psychic Vampire +]--
-	local ED_PSY_Keystone_1_5_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." If multiple Psykers are in Coherency with each other, all of them get a Warp charge when the Talent procs for one of them.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 1-6 - Warp Battery +]--
-	local ED_PSY_Keystone_1_6_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Increases the Max amount of Warp charges Psyker can hold from 4 to 6.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 2 - Empowered Psionics - Empowered Brain Rupture +]--
-	local ED_PSY_Keystone_2_0_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Consumes Stacks when attack connects with an enemy.",
-		Arrow_right_.." Stacks additively with other applicable Damage buffs.",
-		Arrow_right_.." Stacking additively with \"Kinetic Resonance\", and multiplicatively/additively with Celerity Stimm's two charge time reductions.",
-		"_______________________________",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 2 - Empowered Psionics - Empowered Smite +]--
-	local ED_PSY_Keystone_2_0_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Consumes Stacks when releasing.",
-		Arrow_right_.." Stacks additively with other applicable Damage buffs.",
-		Arrow_right_.." Stacks multiplicatively with related buff from Celerity Stimm.",
-		"_______________________________",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 2 - Empowered Psionics - Empowered Assail +]--
-	local ED_PSY_Keystone_2_0_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Consumes Stacks per thrown projectile.",
-		-- Arrow_right_.." Allows casting at 100% Peril.",
-		-- Arrow_right_.." Double the number of targets.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 2-1 - Bio-Lodestone +]--
-	-- local ED_PSY_Keystone_2_1_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
-
-	--[+ Keystone 2-2 - Psychic Leeching +]--
-	local ED_PSY_Keystone_2_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Procs when \"Brain Rupture\" hits, when \"Smite\" starts casting or after charging, and when \"Assail\" spawns a projectile.",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 2-3 - Overpowering Souls +]--
-	-- local ED_PSY_Keystone_2_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
-
-	--[+ Keystone 2-4 - Charged Up +]--
-	-- local ED_PSY_Keystone_2_4_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
-
-	--[+ Keystone 3 - Disrupt Destiny +]--
-	local ED_PSY_Keystone_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Dealing damage to Marked enemies refreshes the Talent's duration.",
-		-- Arrow_right_.." Valid targets are: Dreg/Scab Bruisers, Dreg/Scab Stalkers, Scab Shooters, Ragers, Gunners, Shotgunners and Maulers.",
-		Arrow_right_.." Stacks additively with Movement Speed buffs from \"Mettle\", \"Warp Speed\", Movement Speed node and Weapon Blessings like \"Rev it Up\".",
-		Arrow_right_.." Precision bonuses Stacks additively with other related Damage buffs.",
-		Arrow_right_.." Can be refreshed during active duration either by killing or successfully Staggering the Marked enemy or by Damage ticks from Soulblaze, Burn and Bleed on the Marked target.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 3-1 - Perfectionism +]--
-	-- local ED_PSY_Keystone_3_1_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
-
-	--[+ Keystone 3-2 - Purloin Providence +]--
-	local ED_PSY_Keystone_3_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." There is a 2% chance that the Talent procs on the same kill alongside \"Battle Meditation\" removing 25% Peril total.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Keystone 3-3 - Lingering Influence +]--
-	-- local ED_PSY_Keystone_3_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
-
-	--[+ Keystone 3-4 - Cruel Fortune +]--
-	local ED_PSY_Keystone_3_4_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Procs on Melee, Ranged, \"Brain Rupture\" or \"Assail\" attacks.",
-	}, "\n"), enhdesc_col)
-
---[+ +PASSIVES+ +]--
-	--[+ Passive 1 - Soulstealer +]--
-	local ED_PSY_Passive_1_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." If the warp attack is a Melee attack, the Talent's amount of 7.5% is added to Psyker's base 5% of Maximum Toughness gained on Melee kill.",
-		Arrow_right_..Arrow_right_.." For example, a Psyker with 96 Max Toughness killing two enemies with an activated Force sword attack replenishes 96x(0.1+0.15)=24 Toughness.",
-		z_eff_of_this_tougn_rep,
-		warp_attc_refers_to,
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 2 - Mettle +]--
-	local ED_PSY_Passive_2_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		-- Arrow_right_.." Procs only once per Critical attack regardless of how many enemies have been hit.",
-		z_eff_of_this_tougn_rep,
-		-- Arrow_right_.." Always generates 1 Stack per Critical attack regardless of how many enemies have been hit.",
-		Arrow_right_.." Stacks last for 4 seconds and Can be refreshed during active duration.",
-		Arrow_right_.." Stacks additively with Movement Speed buffs from \"Disrupt Destiny\", \"Warp Speed\", the small Movement Speed node, and Weapon Blessings like \"Rev it Up\".",
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 3 - Quietude +]--
-	local ED_PSY_Passive_3_rgb = iu_actit(table.concat({
-		-- ppp___ppp,
-		Arrow_right_.." Replenishes 0.5% of Maximum Toughness per 1% Peril Quelled.",
-		Arrow_right_.." Procs on both active or passive quelling.",
-		Arrow_right_.." For example, a Psyker with 109 Maximum Toughness Quelling down from 59% true Peril to 0% Peril, replenishes 59x(109x0.005)=32.15 Toughness (HUD rounds up: 33).",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
-
 	--[+ Passive 4 - Warp Expenditure +]--
-	local ED_PSY_Passive_4_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_4_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Replenishes 0.25% of maximum Toughness per 1% Peril generated.",
-		Arrow_right_.." Peril Cost Reduction buffs from \"Becalming Eruption\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\" and Peril Resistance nodes Reduce this Talent's efficiency!",
-		Arrow_right_.." For example, a Psyker with 90 Max Toughness who generates 44% Peril, replenishes 44x(90x0.0025)=9.9 Toughness. However, the same Psyker generating 44% Peril with 15% Peril Cost Reduction from 3 small Peril Resistance nodes, replenishes only 44x(90x0.0025x0.95^3)=8.488 Toughness instead.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Replenishes 0.25% of maximum Toughness per 1% Peril generated.",
+		-- Arrow_right_.." Peril Cost Reduction buffs from \"Becalming Eruption\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\" and Peril Resistance nodes Reduce this Talent's efficiency!",
+		-- Arrow_right_.." For example, a Psyker with 90 Max Toughness who generates 44% Peril, replenishes 44x(90x0.0025)=9.9 Toughness. However, the same Psyker generating 44% Peril with 15% Peril Cost Reduction from 3 small Peril Resistance nodes, replenishes only 44x(90x0.0025x0.95^3)=8.488 Toughness instead.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 5 - Perilous Combustion +]--
-	local ED_PSY_Passive_5_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_5_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Stacks are applied at a distance of up to 4 meters from the killed enemy.",
 		-- Arrow_right_.." Does not proc on Elites or Specials killed by Psyker's Soulblaze Damage ticks.",
 		-- Arrow_right_.." Does proc on Burn or Bleed tick kills.",
-		Arrow_right_.." Soulblaze:",
-		Arrow_right_..Arrow_right_.." Lasts 8s.",
-		Arrow_right_..Arrow_right_.." Same as other sources of Soulblaze.",
-		Arrow_right_..Arrow_right_.." Ticks every 0.75 seconds.",
-		Arrow_right_..Arrow_right_.." Refreshes duration on stack application.",
-		Arrow_right_..Arrow_right_.." Very high armor Damage modifiers across the board, very low armor Damage modifier against Carapace.",
-		"{#color(255, 35, 5)} Stacks apply to Daemonhosts!{#reset()}",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Soulblaze:",
+		-- Arrow_right_..Arrow_right_.." Lasts 8s.",
+		-- Arrow_right_..Arrow_right_.." Same as other sources of Soulblaze.",
+		-- Arrow_right_..Arrow_right_.." Ticks every 0.75 seconds.",
+		-- Arrow_right_..Arrow_right_.." Refreshes duration on stack application.",
+		-- Arrow_right_..Arrow_right_.." Very high armor Damage modifiers across the board, very low armor Damage modifier against Carapace.",
+		-- "{#color(255, 35, 5)} Stacks apply to Daemonhosts!{#reset()}",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 6 - Perfect Timing +]--
-	local ED_PSY_Passive_6_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_6_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Hitting enemies with a Critical Melee, Ranged, or Assail attack grants Stacks.",
 		-- Arrow_right_.." Generates multiple Stacks per attack when Cleaving.",
 		-- Arrow_right_.." Stacks can be refreshed during active duration.",
-		stacks_add_w_oth_dmg,
-		warp_attc_refers_to,
-	}, "\n"), enhdesc_col)
+		-- stacks_add_w_oth_dmg,
+		-- warp_attc_refers_to,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 7 - Battle Meditation +]--
-	local ED_PSY_Passive_7_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_7_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Removes 10% Peril from the current Peril amount.",
-		Arrow_right_.." Has a 10% chance to proc when enemies die to Psyker's Melee and Ranged attacks, Damaging abilities, DoTs, and when pushed over ledges into map kill boxes by Psyker.",
-		Arrow_right_.." Procs additionally to \"By Crack of Bone\" and \"Tranquility Through Slaughter\".",
-		Arrow_right_.." There is a 2% chance that the Talent procs on the same kill alongside \"Purloin Providence\" removing 25% Peril total.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Has a 10% chance to proc when enemies die to Psyker's Melee and Ranged attacks, Damaging abilities, DoTs, and when pushed over ledges into map kill boxes by Psyker.",
+		-- Arrow_right_.." Procs additionally to \"By Crack of Bone\" and \"Tranquility Through Slaughter\".",
+		-- Arrow_right_.." There is a 2% chance that the Talent procs on the same kill alongside \"Purloin Providence\" removing 25% Peril total.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 8 - Wildfire +]--
-	local ED_PSY_Passive_8_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_8_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Whenever an Enemy who is affected by at least 2 Stacks of Soulblaze dies, it spreads to valid targets within a 5 meters radius.",
 		-- Arrow_right_.." Targets do not receive Soulblaze Stacks caused by the Talent if they already have 4 Stacks or more on them.",
 		-- Arrow_right_.." Valid targets can receive Soulblaze Stacks up to a Maximum of 4 that are caused by the Talent.",
-		Arrow_right_.." The amount of Soulblaze Stacks that spread depends on the amount of Soulblaze stacks on the dying enemy:",
-		"_______________________________",
-		"Stacks:       1|        2|       3|       4|      >4",
-		"Spreads:    0|       2|       3|        4|       4",
-		"_______________________________",
-		Arrow_right_.." The maximum amount of valid targets to spread is 4:",
-		Arrow_right_..Arrow_right_.." if 4 Stacks and 4 targets - each target receives 1 Stack;",
-		Arrow_right_..Arrow_right_.." if 4 Stacks and 3 targets - 1 target receives 2 Stacks while the other 2 targets receive 1 Stack each, etc.",
-		"Daemonhosts are No valid targets!",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." The amount of Soulblaze Stacks that spread depends on the amount of Soulblaze stacks on the dying enemy:",
+		-- "_______________________________",
+		-- "Stacks:       1|        2|       3|       4|      >4",
+		-- "Spreads:    0|       2|       3|        4|       4",
+		-- "_______________________________",
+		-- Arrow_right_.." The maximum amount of valid targets to spread is 4:",
+		-- Arrow_right_..Arrow_right_.." if 4 Stacks and 4 targets - each target receives 1 Stack;",
+		-- Arrow_right_..Arrow_right_.." if 4 Stacks and 3 targets - 1 target receives 2 Stacks while the other 2 targets receive 1 Stack each, etc.",
+		-- "Daemonhosts are No valid targets!",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 9 - Psykinetic's Aura +]--
-	local ED_PSY_Passive_9_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_9_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." This is 1.5 seconds for \"Venting Shriek\"/\"Psykinetic's Wrath\", 1.25 seconds for \"Scrier's Gaze\", and 2 seconds for \"Telekine Shield\".",
+		-- Arrow_right_.." This is 1.5 seconds for \"Venting Shriek\"/\"Psykinetic's Wrath\", 1.25 seconds for \"Scrier's Gaze\", and 2 seconds for \"Telekine Shield\".",
 		-- Arrow_right_.." Does not Stack with the same Talent of another Psyker (each Psyker procs their own Talent spreading the cooldown reduction separately).",
-		Arrow_right_.." Procs additionally to Concentration Stimm's remaining cooldown reduction effect of 3 seconds per second.",
+		-- Arrow_right_.." Procs additionally to Concentration Stimm's remaining cooldown reduction effect of 3 seconds per second.",
 		-- doesnt_interact_w_c_a_r_from_curio,
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 10 - Mind in Motion +]--
-	local ED_PSY_Passive_10_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_10_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Does not interact with Movement Speed buffs.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 11 - Malefic Momentum +]--
-	local ED_PSY_Passive_11_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_11_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		stacks_add_w_oth_dmg,
-		Arrow_right_.." The 8 seconds duration of each buff starts on respective kills.",
-		warp_attc_refers_to,
-	}, "\n"), enhdesc_col)
+		-- stacks_add_w_oth_dmg,
+		-- Arrow_right_.." The 8 seconds duration of each buff starts on respective kills.",
+		-- warp_attc_refers_to,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 12 - Channeled Force +]--
-	local ED_PSY_Passive_12_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_12_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Increases the Damage of staff Primary attacks after executing a charged secondary attack (at least 95% charged) with any Force Staff.",
 		-- can_be_refr_dur_active_dur,
-		Arrow_right_.." Stacks additively with other Damage buffs.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Stacks additively with other Damage buffs.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 13 - Perilous Assault +]--
-	local ED_PSY_Passive_13_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_13_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." This reduces the time of Wielding actions when swapping item slots (weapons, Blitz abilities, stimms, med packs, ammo crates, books, etc):",
-		"_______________________________",
-		"Peril:     0|  20|  40|  50|  60|  80|  100",
-		"WS(%):  0|   10|  20|  25|  30|  40|   50",
-		"_______________________________",
-		"(*WS = Wield Speed)",
-		"{#color(255, 35, 5)} Objectively speaking, Psyker's current Weapon arsenal does not include a single Weapon for which this Talent would provide a significant wield time reduction. Autoguns and Lasguns have the 'longest' wield times with 0.65 seconds when switching to them and starting to fire from hip. The Talent, at 100% Peril, would reduce these times to 0.43 seconds. For all other Weapons, the time reductions are even less significant.{#reset()}",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." This reduces the time of Wielding actions when swapping item slots (weapons, Blitz abilities, stimms, med packs, ammo crates, books, etc):",
+		-- "_______________________________",
+		-- "Peril:     0|  20|  40|  50|  60|  80|  100",
+		-- "WS(%):  0|   10|  20|  25|  30|  40|   50",
+		-- "_______________________________",
+		-- "(*WS = Wield Speed)",
+		-- "{#color(255, 35, 5)} Objectively speaking, Psyker's current Weapon arsenal does not include a single Weapon for which this Talent would provide a significant wield time reduction. Autoguns and Lasguns have the 'longest' wield times with 0.65 seconds when switching to them and starting to fire from hip. The Talent, at 100% Peril, would reduce these times to 0.43 seconds. For all other Weapons, the time reductions are even less significant.{#reset()}",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 14 - Lightning Speed +]--
-	local ED_PSY_Passive_14_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_14_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Stacks additively with related Attack Speed buff from Celerity Stimm.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Stacks additively with related Attack Speed buff from Celerity Stimm.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 15 - Souldrinker +]--
-	local ED_PSY_Passive_15_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_15_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Critical hit chance cannot be refreshed during active duration.",
 		-- Arrow_right_.." Maximum Toughness is replenished with each actual enemy death.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 16 - Empyric Shock +]--
-	local ED_PSY_Passive_16_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_16_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Applies a debuff to enemies that increases the Damage they take from Warp attacks.",
+		-- Arrow_right_.." Applies a debuff to enemies that increases the Damage they take from Warp attacks.",
 		-- can_be_refr_dur_active_dur,
 		-- Arrow_right_.." Can be applied through shields.",
-		Arrow_right_.." The debuff stacks multiplicatively with itself, up to 33.8% (1.06⁵=1.338), with other Damage taken debuffs on enemies from \"Enfeeble\", Ogryn's \"Soften Them Up\", \"Valuable Destruction\", Veteran's \"Focus Target!\", and multiplicatively with Damage buffs and with Power level buffs from Weapon Blessings.",
-		warp_attc_refers_to,
+		-- Arrow_right_.." The debuff stacks multiplicatively with itself, up to 33.8% (1.06⁵=1.338), with other Damage taken debuffs on enemies from \"Enfeeble\", Ogryn's \"Soften Them Up\", \"Valuable Destruction\", Veteran's \"Focus Target!\", and multiplicatively with Damage buffs and with Power level buffs from Weapon Blessings.",
+		-- warp_attc_refers_to,
 		-- "{#color(255, 35, 5)}BUG: Inferno Staff left-clicks do not apply the debuff.{#reset()}",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 17 - By Crack of Bone +]--
-	local ED_PSY_Passive_17_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_17_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Removing Peril can proc multiple times per swing when Cleaving. Procs additionally to \"Battle Meditation\" and \"Purloin Providence\".",
-		Arrow_right_.." Reducing Peril Stacks multiplicatively with Peril Cost Reduction buffs from \"Becalming Eruption\", \"Empyric Resolve\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\", small Peril Resistance nodes, and Combat Stimm.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Removing Peril can proc multiple times per swing when Cleaving. Procs additionally to \"Battle Meditation\" and \"Purloin Providence\".",
+		-- Arrow_right_.." Reducing Peril Stacks multiplicatively with Peril Cost Reduction buffs from \"Becalming Eruption\", \"Empyric Resolve\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\", small Peril Resistance nodes, and Combat Stimm.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 18 - Warp Splitting +]--
-	local ED_PSY_Passive_18_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_18_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Scaling proportionally with Peril.",
-		Arrow_right_.." Increases the Maximum hit mass limit of attacks (Melee, Ranged, \"Assail\") by up to 100%, thereby allowing attacks to Cleave more enemies.",
-		Arrow_right_.." Stacks additively with \"Ethereal Shards\" and \"Empowered Psionics\", and with related buffs from Weapon Blessings \"Devastating Strike\", \"Savage Sweep\", and \"Wrath\".",
-		Arrow_right_.." Stacks multiplicatively with Power level buffs from Weapon Blessings.",
+		-- Arrow_right_.." Increases the Maximum hit mass limit of attacks (Melee, Ranged, \"Assail\") by up to 100%, thereby allowing attacks to Cleave more enemies.",
+		-- Arrow_right_.." Stacks additively with \"Ethereal Shards\" and \"Empowered Psionics\", and with related buffs from Weapon Blessings \"Devastating Strike\", \"Savage Sweep\", and \"Wrath\".",
+		-- Arrow_right_.." Stacks multiplicatively with Power level buffs from Weapon Blessings.",
 		-- Arrow_right_.." Note that Carapace armor cannot be Cleaved by default.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 19 - Unlucky for Some +]--
-	local ED_PSY_Passive_19_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_19_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." When Psyker goes down, replenishes Toughness to Allies in Coherency.",
 		-- Arrow_right_.." Does not proc when the Ally or Psyker dies.",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
+		-- z_eff_of_this_tougn_rep,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 20 - One with the Warp +]--
-	local ED_PSY_Passive_20_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_20_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		stacks_mult_w_other_dmg_red_buffs,
-		Arrow_right_.." Always grants a minimum of 10% Toughness Damage Reduction regardless of current Peril amount:",
-		"_______________________________",
-		"Peril:       0|  20|  40|  50|  60|  80|  100",
-		"TDR(%): 10|  14|   19|   21|  23|  28|    33",
-		"_______________________________",
-		"(*TDR = Toughness Damage Reduction)",
-	}, "\n"), enhdesc_col)
+		-- stacks_mult_w_other_dmg_red_buffs,
+		-- Arrow_right_.." Always grants a minimum of 10% Toughness Damage Reduction regardless of current Peril amount:",
+		-- "_______________________________",
+		-- "Peril:       0|  20|  40|  50|  60|  80|  100",
+		-- "TDR(%): 10|  14|   19|   21|  23|  28|    33",
+		-- "_______________________________",
+		-- "(*TDR = Toughness Damage Reduction)",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 21 - Empathic Evasion +]--
-	local ED_PSY_Passive_21_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_21_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Hitting enemies with a Critical Melee, Ranged, or \"Assail\" attack puts Psyker into \"Dodging state\" against Ranged attacks for 1 second.",
+		-- Arrow_right_.." Hitting enemies with a Critical Melee, Ranged, or \"Assail\" attack puts Psyker into \"Dodging state\" against Ranged attacks for 1 second.",
 		-- can_be_refr_dur_active_dur,
-		Arrow_right_.." This effect is mechanically the same as the one provided by Weapon Blessings \"Ghost\", \"Hit and Run\", and \"Stripped Down\".",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." This effect is mechanically the same as the one provided by Weapon Blessings \"Ghost\", \"Hit and Run\", and \"Stripped Down\".",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 22 - Anticipation +]--
-	local ED_PSY_Passive_22_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_22_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Increases Psyker's base Dodge linger time from 0.2 seconds to 0.3 seconds.",
-		Arrow_right_.." \"Dodge linger time\" refers to the time window in which a character is still considered to be in \"Dodging state\" against a Melee attack after a Dodge has technically ended. This makes the Dodge window more forgiving in regard to player input timing.",
+		-- Arrow_right_.." Increases Psyker's base Dodge linger time from 0.2 seconds to 0.3 seconds.",
+		-- Arrow_right_.." \"Dodge linger time\" refers to the time window in which a character is still considered to be in \"Dodging state\" against a Melee attack after a Dodge has technically ended. This makes the Dodge window more forgiving in regard to player input timing.",
 		-- Arrow_right_.." Also adds one effective Dodge at all times.",
-		Arrow_right_.." The overall amount of effective Dodges a character can perform varies depending on the Dodge template of the currently equipped Weapon or Iitem.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." The overall amount of effective Dodges a character can perform varies depending on the Dodge template of the currently equipped Weapon or Iitem.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 23 - Solidity +]--
-	local ED_PSY_Passive_23_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_23_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Applies only to active quelling, passive quelling is unaffected.",
-		Arrow_right_.." Stacks multiplicatively during calculation with the Quelling buff from Celerity Stimm.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Stacks multiplicatively during calculation with the Quelling buff from Celerity Stimm.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 24 - Puppet Master +]--
-	local ED_PSY_Passive_24_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_24_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Increases base Coherency radius from 8 to 12 meters.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 25 - Warp Rider +]--
-	local ED_PSY_Passive_25_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_25_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		stacks_add_w_oth_dmg,
-		"_______________________________",
-		"Peril:       0|  20|  40|  50|  60|  80|  100",
-		"Dmg(%): 0|     4|    8|   10|   12|   16|   20",
-		"_______________________________",
-		"(*Dmg = Damage Increase)",
-	}, "\n"), enhdesc_col)
+		-- stacks_add_w_oth_dmg,
+		-- "_______________________________",
+		-- "Peril:       0|  20|  40|  50|  60|  80|  100",
+		-- "Dmg(%): 0|     4|    8|   10|   12|   16|   20",
+		-- "_______________________________",
+		-- "(*Dmg = Damage Increase)",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 26 - Crystalline Will +]--
-	local ED_PSY_Passive_26_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_26_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Instead of knocking down Psyker on self-explosion, converts one Health Segment to full Corruption.",
 		-- Arrow_right_.." Always converts one Segment regardless whether the Segment in question is already partially Corrupted or not.",
-		Arrow_right_.." Also reduces the overall time of the self-explosion from 3 to 1.13 seconds.",
-		Arrow_right_.." Psyker's self-explosion:",
-		Arrow_right_..Arrow_right_.." Max radius: 10 meters.",
-		Arrow_right_..Arrow_right_.." Staggers all enemies except for Crusher, Mutants, Monstrosities, Twins (Captains only without void shield).",
-		Arrow_right_..Arrow_right_.." Deals 600 base Damage against all enemies.",
-		Arrow_right_..Arrow_right_.." Explosion Damage decreases from center to Max range and can be increased by Damage buffs from \"Disrupt Destiny\", \"Empyrean Empowerment\", \"Malefic Momentum\" (regular Damage buff), \"Scrier's Gaze\", and \"Warp Rider\".",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Also reduces the overall time of the self-explosion from 3 to 1.13 seconds.",
+		-- Arrow_right_.." Psyker's self-explosion:",
+		-- Arrow_right_..Arrow_right_.." Max radius: 10 meters.",
+		-- Arrow_right_..Arrow_right_.." Staggers all enemies except for Crusher, Mutants, Monstrosities, Twins (Captains only without void shield).",
+		-- Arrow_right_..Arrow_right_.." Deals 600 base Damage against all enemies.",
+		-- Arrow_right_..Arrow_right_.." Explosion Damage decreases from center to Max range and can be increased by Damage buffs from \"Disrupt Destiny\", \"Empyrean Empowerment\", \"Malefic Momentum\" (regular Damage buff), \"Scrier's Gaze\", and \"Warp Rider\".",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 27 - Kinetic Deflection +]--
-	local ED_PSY_Passive_27_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_27_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." The efficiency of the Stamina Cost-to-Peril conversion is increased by Peril Cost Reduction buffs from \"Becalming Eruption\", \"By Crack of Bone\", \"Empyric Resolve\", \"Inner Tranquility\", \"Reality Anchor\" and small Peril Resistance nodes.",
-		Arrow_right_.." Also increased by Block Cost Reduction buffs from Block Efficiency from Curios, Melee weapon perks, and \"Deflector\" Weapon Blessing (also against Ranged attacks), and by Stamina Cost Reduction buff from Celerity Stimm.",
-		Arrow_right_.." All sources of Peril Cost Reduction, Block Cost Reduction, and Stamina Cost Reduction Stack multiplicatively with themselves and each other.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." The efficiency of the Stamina Cost-to-Peril conversion is increased by Peril Cost Reduction buffs from \"Becalming Eruption\", \"By Crack of Bone\", \"Empyric Resolve\", \"Inner Tranquility\", \"Reality Anchor\" and small Peril Resistance nodes.",
+		-- Arrow_right_.." Also increased by Block Cost Reduction buffs from Block Efficiency from Curios, Melee weapon perks, and \"Deflector\" Weapon Blessing (also against Ranged attacks), and by Stamina Cost Reduction buff from Celerity Stimm.",
+		-- Arrow_right_.." All sources of Peril Cost Reduction, Block Cost Reduction, and Stamina Cost Reduction Stack multiplicatively with themselves and each other.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 28 - Tranquility Through Slaughter +]--
-	local ED_PSY_Passive_28_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_28_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Critical hits with regular ranged attacks remove 4% Peril from the current Peril amount.",
 		-- Arrow_right_.." Procs when hitting shields.",
 		-- Arrow_right_.." Procs only once per shot regardless of how many enemies have been hit.",
 		-- Arrow_right_.." Procs additionally to \"Battle Meditation\" and \"Purloin Providence\".",
-		warp_attc_refers_to,
-	}, "\n"), enhdesc_col)
+		-- warp_attc_refers_to,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 29 - Empyric Resolve +]--
-	local ED_PSY_Passive_29_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_29_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Reduces the amount of peril generated by 40%.",
-		Arrow_right_.." Stacks multiplicatively with Peril Cost Reduction buffs from \"Becalming Eruption\", \"By Crack of Bone\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\", small Peril Resistance nodes, and Combat Stimm.",
+		-- Arrow_right_.." Stacks multiplicatively with Peril Cost Reduction buffs from \"Becalming Eruption\", \"By Crack of Bone\", \"Inner Tranquility\", \"Kinetic Resonance\", \"Reality Anchor\", small Peril Resistance nodes, and Combat Stimm.",
 		-- Arrow_right_.." Also reduces the amount of any Toughness replenished from Melee kills and Talents by 30%.",
-		Arrow_right_.." Does not affect Toughness replenishments from Coherency Toughness Regeneration and Weapon Blessings \"Gloryhunter\", \"Inspiring Barrage\", and \"Reassuringly Accurate\".",
-		Arrow_right_.." This Replenishment debuff Stacks multiplicatively with other player debuffs like toxic gas.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Does not affect Toughness replenishments from Coherency Toughness Regeneration and Weapon Blessings \"Gloryhunter\", \"Inspiring Barrage\", and \"Reassuringly Accurate\".",
+		-- Arrow_right_.." This Replenishment debuff Stacks multiplicatively with other player debuffs like toxic gas.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 30 - Penetration of the Soul +]--
-	local ED_PSY_Passive_30_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_30_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." While at or above 75% true Peril, grants 10% Rending to Warp attacks boosting Damage against armor types Carapace, Flak, Maniac, Unyielding.",
+		-- Arrow_right_.." While at or above 75% true Peril, grants 10% Rending to Warp attacks boosting Damage against armor types Carapace, Flak, Maniac, Unyielding.",
 		-- Arrow_right_.." Only affects Psyker's own Damage.",
-		Arrow_right_.." Stacks additively with other Rending buffs and with Brittleness debuffs that are applied to enemies.",
-		warp_attc_refers_to,
+		-- Arrow_right_.." Stacks additively with other Rending buffs and with Brittleness debuffs that are applied to enemies.",
+		-- warp_attc_refers_to,
 		-- "{#color(255, 35, 5)}There is currently a bug: The Rending multiplier fails to be applied correctly during Damage calculation.\nTHIS TALENT DOES NOTHING!!!{#reset()}",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 31 - True Aim +]--
-	local ED_PSY_Passive_31_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_31_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Generates 1 Weakspot Stack per Weakspot hit with Melee, Ranged, \"Assail\" and \"Brain Rupture\"/\"Brain Burst\" attacks.",
 		-- Arrow_right_.." Cleaving attacks (e.g. Voidstrike Staff charged shots into density) can accumulate up to 5 Weakspot Stacks at once but do not consume the guaranteed Crit right away.",
 		-- Arrow_right_.." Weakspot Stacks last until consumed.",
-		Arrow_right_.." \"Brain Rupture\"/\"Brain Burst\" and \"Smite\" do not consume the guaranteed Crit.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." \"Brain Rupture\"/\"Brain Burst\" and \"Smite\" do not consume the guaranteed Crit.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 32 - Surety of Arms +]--
 	-- 
-	local ED_PSY_Passive_32_rgb = iu_actit(table.concat({
+	-- local ED_PSY_Passive_32_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		-- Arrow_right_.." Increases Reload animation speed by 25%.",
-		Arrow_right_.." Stacks additively with Reload speed buffs from Weapon Blessings.",
+		-- Arrow_right_.." Stacks additively with Reload speed buffs from Weapon Blessings.",
 		-- Arrow_right_.." Upon Reload, generates up to 15% Peril based on the percentage of reloaded ammo in clip. ",
-		Arrow_right_.." For example, when reloading 34 rounds of a clip that has a size of 59 rounds, Psyker would generate 14.4% true peril; 0.25x(34/59)=0.144.",
+		-- Arrow_right_.." For example, when reloading 34 rounds of a clip that has a size of 59 rounds, Psyker would generate 14.4% true peril; 0.25x(34/59)=0.144.",
 		-- Arrow_right_.." Reloading an empty clip generates the Max amount of 25% Peril. ",
-		Arrow_right_.." Peril cost reduction buffs reduce the efficiency of this Reloaded-ammo-to-Peril conversion. For example, reloading the same amount of ammo in a clip of the same size, but with three Peril Resistance nodes (i.e. a warp_charge_amount of 0.95³), Psyker would only generate 12.3% true peril; 0.25x(34/59)x0.95³=0.123.",
-		Arrow_right_.." Note that the Talent always generates Peril on Reload regardless of current Peril amount but only grants the increased Reload speed when below or at 75% true Peril.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Peril cost reduction buffs reduce the efficiency of this Reloaded-ammo-to-Peril conversion. For example, reloading the same amount of ammo in a clip of the same size, but with three Peril Resistance nodes (i.e. a warp_charge_amount of 0.95³), Psyker would only generate 12.3% true peril; 0.25x(34/59)x0.95³=0.123.",
+		-- Arrow_right_.." Note that the Talent always generates Peril on Reload regardless of current Peril amount but only grants the increased Reload speed when below or at 75% true Peril.",
+	-- }, "\n"), enhdesc_col)
 
 --[+ ++ZEALOT++ +]--
 --[+ +BLITZ+ +]--

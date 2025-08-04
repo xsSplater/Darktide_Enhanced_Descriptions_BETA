@@ -108,11 +108,11 @@ local localization_templates = {
 			{"loc_breed_display_name_renegade_grenadier"}, {"zh-tw"},
 				loc_text("血痂轟炸者")),
 
-		--[+ Scab Trapper - Скаб-ловец +]--
+		--[+ Scab Trapper - Скаб-сеточник +]--
 		--[+ Russian +]	--
 		create_template("enemies_renegade_netgunner_ext_ru",
 			{"loc_breed_display_name_renegade_netgunner"}, {"ru"},
-				loc_text("Скаб-ловец")),
+				loc_text("Скаб-сеточник")),
 		--[+ Traditional Chinese 血痂陷阱兵 +]--
 		create_template("enemies_renegade_netgunner_ext_zh",
 			{"loc_breed_display_name_renegade_netgunner"}, {"zh-tw"},

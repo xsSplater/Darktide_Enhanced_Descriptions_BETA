@@ -36,6 +36,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 		local tghn_col = Color[mod:get("toughness_text_colour")](255, true) -- Don't translate this!
 			local Toughness_rgb = iu_actit("Toughness", tghn_col)
 			local Toughness_dmg_red_rgb = iu_actit("Toughness Damage Reduction", tghn_col)
+			local TDR_rgb = iu_actit("TDR", tghn_col)
 	--[++Coherency++]--
 		local coher_col = Color[mod:get("coherency_text_colour")](255, true)
 			local Coherency_rgb = iu_actit("Coherency", coher_col)
@@ -191,11 +192,15 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[+ Talents +]--
 		local tal_col = Color[mod:get("talents_text_colour")](255, true) -- Don't translate this!
 			local Arbites_gren_rgb = iu_actit("Arbites Grenade", tal_col)
+			local Assail_rgb = iu_actit("Assail", tal_col)
+			local Brain_burst_rgb = iu_actit("Brain Burst", tal_col)
+			local Brain_rupture_rgb = iu_actit("Brain Rupture", tal_col)
+			local BreakZLine_rgb = iu_actit("Break the Line", tal_col)
 			local Frag_gren_rgb = iu_actit("Frag Grenade", tal_col)
 			local Fragmentation_gren_rgb = iu_actit("Fragmentation Grenade", tal_col)
 			local Scriers_gaze_rgb = iu_actit("Scrier's Gaze", tal_col)
+			local Smite_rgb = iu_actit("Smite", tal_col)
 			local Stun_gren_rgb = iu_actit("Stun Grenade", tal_col)
-			local BreakZLine_rgb = iu_actit("Break the Line", tal_col)
 
 --[+ ++TREAT - СЛОЖНОСТЬ++ +]--
 	--[+ SEDITION - МЯТЕЖ +]--
@@ -246,10 +251,14 @@ local iu_actit = InputUtils.apply_color_to_input_text
 -- In the list below, you also need to add a new entry or change an old one.
 return {
 	Arbites_gren_rgb = Arbites_gren_rgb,
+	Assail_rgb = Assail_rgb,
+	Brain_burst_rgb = Brain_burst_rgb,
+	Brain_rupture_rgb = Brain_rupture_rgb,
 	BreakZLine_rgb = BreakZLine_rgb,
 	Frag_gren_rgb = Frag_gren_rgb,
 	Fragmentation_gren_rgb = Fragmentation_gren_rgb,
 	Scriers_gaze_rgb = Scriers_gaze_rgb,
+	Smite_rgb = Smite_rgb,
 	Stun_gren_rgb = Stun_gren_rgb,
 
 	Bleed_rgb = Bleed_rgb,
@@ -327,6 +336,7 @@ return {
 	Strength_rgb = Strength_rgb,
 	Toughness_rgb = Toughness_rgb,
 	Toughness_dmg_red_rgb = Toughness_dmg_red_rgb,
+	TDR_rgb = TDR_rgb,
 	Trample_rgb = Trample_rgb,
 	Weakspot_rgb = Weakspot_rgb,
 	Weak_spot_rgb = Weak_spot_rgb,

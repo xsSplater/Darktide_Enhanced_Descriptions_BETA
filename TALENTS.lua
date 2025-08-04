@@ -1,10 +1,22 @@
 ---@diagnostic disable: undefined-global
 -- Thanks to kuli and his Steam guides. Talents:
 -- Psyker	02.04.25, https://steamcommunity.com/sharedfiles/filedetails/?id=3094028505
-
 -- Zealot	31.10.24, https://steamcommunity.com/sharedfiles/filedetails/?id=3088553235
 -- Ogryn	31.10.24, https://steamcommunity.com/sharedfiles/filedetails/?id=3094034467
 -- Veteran	31.10.24, https://steamcommunity.com/sharedfiles/filedetails/?id=3094038976
+
+--[+ Chinese Traditional +]-- ["zh-tw"]
+--[+ Chinese Simplified +]-- ["zh-cn"]
+--[+ English +]-- en
+--[+ French +]-- fr
+--[+ German +]-- de
+--[+ Italian +]-- it
+--[+ Japanese +]-- ja
+--[+ Korean +]-- ko
+--[+ Polish +]-- pl
+--[+ Portuguese +]-- pt-BR
+--[+ Russian +]-- ru
+--[+ Spanish +]-- es
 
 local mod = get_mod("Enhanced_descriptions")
 
@@ -135,7 +147,7 @@ local localization_templates = {
 	-- create_template("talent_tree_main_000_en",
 		-- {"loc_glossary_talent_default"}, {"en"},
 			-- loc_text("Passive")),
-	--[+ Russian - Пассивный +]-- -- руоф Пассив.	checked 27.05.2025
+	--[+ Russian - Пассивный +]-- руоф Пассив.	checked 27.05.2025
 	create_template("talent_tree_main_000_ru",
 		{"loc_glossary_talent_default"}, {"ru"},
 			loc_text("Пассивный")),
@@ -409,120 +421,109 @@ local localization_templates = {
 
 
 --[+ +NODES - УЗЛЫ+ +]--
+	--[+ Cleave Boost +]-- Arbites 1
+	create_template("talent_tree_oper_mod_001_desc_en",
+		{"loc_talent_cleave_boost_medium_desc"}, {"en"},
+			loc_text("{cleave:%s} "..COLORS_KWords.Cleave_rgb..".")),
+				-- cleave: +25%
+	--[+ French +]--
+	create_template("talent_tree_oper_mod_001_desc_fr",
+		{"loc_talent_cleave_boost_medium_desc"}, {"fr"},
+			loc_text("{cleave:%s} "..COLORS_KWords_fr.Cleave_rgb_fr..".")),
+	--[+ Russian +]--
+	create_template("talent_tree_oper_mod_001_desc_ru",
+		{"loc_talent_cleave_boost_medium_desc"}, {"ru"},
+			loc_text("{cleave:%s} "..COLORS_KWords_ru.Cleave_rgb_ru..".")),
+
 	--[+ Critical Chance Boost +]-- Psyker 1, Veteran 1	checked 27.05.2025
-	create_template("talent_tree_oper_mod_006_desc_en",
+	create_template("talent_tree_oper_mod_002_desc_en",
 		{"loc_talent_crit_chance_low_desc"}, {"en"},
 			loc_text("{crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.."."
 				..TALENTS_Enh_desc_nodes.ED_CritChncBst_rgb)),
 				-- crit_chance:+5%
 	--[+ French +]--
-	create_template("talent_tree_oper_mod_006_desc_fr",
+	create_template("talent_tree_oper_mod_002_desc_fr",
 		{"loc_talent_crit_chance_low_desc"}, {"fr"},
 			loc_text("{crit_chance:%s} de "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.."."..TALENTS_Enh_desc_nodes_fr.ED_CritChncBst_rgb_fr)),
 	--[+ Russian +]--	checked 27.05.2025
-	create_template("talent_tree_oper_mod_006_desc_ru",
+	create_template("talent_tree_oper_mod_002_desc_ru",
 		{"loc_talent_crit_chance_low_desc"}, {"ru"},
 			loc_text("{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.."."
 				..TALENTS_Enh_desc_nodes_ru.ED_CritChncBst_rgb_ru)),
 	--[+ Traditional Chinese 暴擊機率增幅 +]--
-	create_template("talent_tree_oper_mod_006_desc_tw",
+	create_template("talent_tree_oper_mod_002_desc_tw",
 		{"loc_talent_crit_chance_low_desc"}, {"zh-tw"},
 			loc_text("{crit_chance:%s} "..COLORS_KWords_tw.Crit_hit_chance_rgb_tw.."。"..TALENTS_Enh_desc_nodes_tw.ED_CritChncBst_rgb_tw)),
 	--[+ Simplified Chinese 暴击几率强化 +]--
-	create_template("talent_tree_oper_mod_006_desc_zh_cn",
+	create_template("talent_tree_oper_mod_002_desc_zh_cn",
 		{"loc_talent_crit_chance_low_desc"}, {"zh-cn"},
 			loc_text("{crit_chance:%s} "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_CritChncBst_rgb_zh_cn)),
 
 	--[+ Health Boost Low +]-- Veteran 2	checked 27.05.2025
-	create_template("talent_tree_oper_mod_005_l_desc_en",
+	create_template("talent_tree_oper_mod_003_l_desc_en",
 		{"loc_talent_health_low_desc"}, {"en"},
 			loc_text("{health:%s} "..COLORS_KWords.Health_rgb.."."
 				..TALENTS_Enh_desc_nodes.ED_HeathBst_L_rgb)),
 				-- health:+5%
 	--[+ French +]--
-	create_template("talent_tree_oper_mod_005_l_desc_fr",
+	create_template("talent_tree_oper_mod_003_l_desc_fr",
 		{"loc_talent_health_low_desc"}, {"fr"},
 			loc_text("{health:%s} de "..COLORS_KWords_fr.Health_rgb_fr.."."..TALENTS_Enh_desc_nodes_fr.ED_HeathBst_L_rgb_fr)),
 	--[+ Russian +]--	checked 27.05.2025
-	create_template("talent_tree_oper_mod_005_l_desc_ru",
+	create_template("talent_tree_oper_mod_003_l_desc_ru",
 		{"loc_talent_health_low_desc"}, {"ru"},
 			loc_text("{health:%s} к "..COLORS_KWords_ru.Health_rgb_ru.."."
 				..TALENTS_Enh_desc_nodes_ru.ED_HeathBst_L_rgb_ru)),
 	--[+ Traditional Chinese 生命增幅 +]--
-	create_template("talent_tree_oper_mod_005_l_desc_tw",
+	create_template("talent_tree_oper_mod_003_l_desc_tw",
 		{"loc_talent_health_low_desc"}, {"zh-tw"},
 			loc_text("{health:%s} "..COLORS_KWords_tw.Health_rgb_tw.."。"..TALENTS_Enh_desc_nodes_tw.ED_HeathBst_L_rgb_tw)),
 	--[+ Simplified Chinese 生命强化 低 +]--
-	create_template("talent_tree_oper_mod_005_l_desc_zh_cn",
+	create_template("talent_tree_oper_mod_003_l_desc_zh_cn",
 		{"loc_talent_health_low_desc"}, {"zh-cn"},
 			loc_text("{health:%s} "..COLORS_KWords_zh_cn.Health_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_HeathBst_L_rgb_zh_cn)),
 
 	--[+ Health Boost Medium +]-- Psyker 1, Zealot 1	checked 27.05.2025
-	create_template("talent_tree_oper_mod_005_m_desc_en",
+	create_template("talent_tree_oper_mod_003_m_desc_en",
 		{"loc_talent_health_medium_desc"}, {"en"},
 			loc_text("{health:%s} "..COLORS_KWords.Health_rgb.."."
 				..TALENTS_Enh_desc_nodes.ED_HeathBst_M_rgb)),
 				-- health:+10%
 	--[+ French +]--
-	create_template("talent_tree_oper_mod_005_m_desc_fr",
+	create_template("talent_tree_oper_mod_003_m_desc_fr",
 		{"loc_talent_health_medium_desc"}, {"fr"},
 			loc_text("{health:%s} de "..COLORS_KWords_fr.Health_rgb_fr.."."..TALENTS_Enh_desc_nodes_fr.ED_HeathBst_M_rgb_fr)),
 	--[+ Russian +]--	checked 27.05.2025
-	create_template("talent_tree_oper_mod_005_m_desc_ru",
+	create_template("talent_tree_oper_mod_003_m_desc_ru",
 		{"loc_talent_health_medium_desc"}, {"ru"},
 			loc_text("{health:%s} к "..COLORS_KWords_ru.Health_rgb_ru.."."
 				..TALENTS_Enh_desc_nodes_ru.ED_HeathBst_M_rgb_ru)),
 	--[+ Traditional Chinese 生命增幅 +]--
-	create_template("talent_tree_oper_mod_005_m_desc_tw",
+	create_template("talent_tree_oper_mod_003_m_desc_tw",
 		{"loc_talent_health_medium_desc"}, {"zh-tw"},
 			loc_text("{health:%s} "..COLORS_KWords_tw.Health_rgb_tw.."。"..TALENTS_Enh_desc_nodes_tw.ED_HeathBst_M_rgb_tw)),
 	--[+ Simplified Chinese 生命强化 中 +]--
-	create_template("talent_tree_oper_mod_005_m_desc_zh_cn",
+	create_template("talent_tree_oper_mod_003_m_desc_zh_cn",
 		{"loc_talent_health_medium_desc"}, {"zh-cn"},
 			loc_text("{health:%s} "..COLORS_KWords_zh_cn.Health_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_HeathBst_M_rgb_zh_cn)),
 
--- NO LONGER USED!!!	checked 27.05.2025
-	--[+ Heavy Melee Damage Boost Low +]--
-	-- create_template("talent_tree_oper_mod_014_l_desc_en",
-		-- {"loc_talent_melee_heavy_damage_low_desc"}, {"en"},
-			-- loc_text("{melee_heavy_damage:%s} Heavy Melee "..COLORS_KWords.Damage_rgb.."."
-				-- ..TALENTS_Enh_desc_nodes.ED_HMeleeDmgBst_LM_rgb)),
-				-- melee_heavy_damage:+5% -- Ogryn
+	--[+ Impact Boost +]--
+	create_template("talent_tree_oper_mod_004_desc_en",
+		{"loc_talent_impact_boost_medium_desc"}, {"en"},
+			loc_text("{impact:%s} "..COLORS_KWords.Impact_rgb..".")),
+				-- impact: +5% -- Arbites 1
 	--[+ French +]--
-	-- create_template("talent_tree_oper_mod_014_l_desc_fr",
-		-- {"loc_talent_melee_heavy_damage_low_desc"}, {"fr"},
-			-- loc_text("{melee_heavy_damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." d'Attaque Puissante."..TALENTS_Enh_desc_nodes_fr.ED_HMeleeDmgBst_LM_rgb_fr)),
+	create_template("talent_tree_oper_mod_004_desc_fr",
+		{"loc_talent_impact_boost_medium_desc"}, {"fr"},
+			loc_text("{impact:%s} "..COLORS_KWords_fr.Impact_rgb_fr..".")),
 	--[+ Russian +]--
-	-- create_template("talent_tree_oper_mod_014_l_desc_ru",
-		-- {"loc_talent_melee_heavy_damage_low_desc"}, {"ru"},
-			-- loc_text("{melee_heavy_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." тяжёлых атак ближнего боя."
-				-- ..TALENTS_Enh_desc_nodes_ru.ED_HMeleeDmgBst_LM_rgb_ru)),
-	--[+ Traditional Chinese 重擊傷害增幅(小) +]--
-	-- It seems like it is no longer in use?
-	-- create_template("talent_tree_oper_mod_014_l_desc_tw",
-		-- {"loc_talent_melee_heavy_damage_low_desc"}, {"zh-tw"},
-			-- loc_text("{melee_heavy_damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。"..TALENTS_Enh_desc_nodes_tw.ED_HMeleeDmgBst_LM_rgb_tw)),
-
-	--[+ Heavy Melee Damage Boost Medium +]--
-	-- create_template("talent_tree_oper_mod_014_m_desc_en",
-		-- {"loc_talent_melee_heavy_damage_medium_desc"}, {"en"},
-			-- loc_text("{melee_heavy_damage:%s} Heavy Melee "..COLORS_KWords.Damage_rgb.."."
-				-- ..TALENTS_Enh_desc_nodes.ED_HMeleeDmgBst_LM_rgb)),
-				-- melee_heavy_damage:+10% -- Ogryn
-	--[+ French +]--
-	-- create_template("talent_tree_oper_mod_014_m_desc_fr",
-		-- {"loc_talent_melee_heavy_damage_medium_desc"}, {"fr"},
-			-- loc_text("{melee_heavy_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." d'Attaque Puissante."..TALENTS_Enh_desc_nodes_fr.ED_HMeleeDmgBst_LM_rgb_fr)),
-	--[+ Russian +]--
-	-- create_template("talent_tree_oper_mod_014_m_desc_ru",
-		-- {"loc_talent_melee_heavy_damage_medium_desc"}, {"ru"},
-			-- loc_text("{melee_heavy_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." тяжёлых атак ближнего боя."
-				-- ..TALENTS_Enh_desc_nodes_ru.ED_HMeleeDmgBst_LM_rgb_ru)),
-	--[+ Traditional Chinese 重擊傷害增幅(中) +]--
-	-- create_template("talent_tree_oper_mod_014_m_desc_tw",
-		-- {"loc_talent_melee_heavy_damage_medium_desc"}, {"zh-tw"},
-			-- loc_text("{melee_heavy_damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。"..TALENTS_Enh_desc_nodes_tw.ED_HMeleeDmgBst_LM_rgb_tw)),
--- /NO LONGER USED!!!
+	create_template("talent_tree_oper_mod_004_desc_ru",
+		{"loc_talent_impact_boost_medium_desc"}, {"ru"},
+			loc_text("{impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..".")),
+	--[+ Traditional Chinese +]--
+	-- create_template("talent_tree_oper_mod_004_desc_tw",
+		-- {"loc_talent_impact_boost_medium_desc"}, {"zh-tw"},
+			-- loc_text("{impact:%s} "..COLORS_KWords_tw.Impact_rgb_tw.."。")),
 
 	--[+ Inspiring Presence +]-- Veteran 1	checked 27.05.2025
 	create_template("talent_tree_oper_mod_003_desc_en",
@@ -905,9 +906,10 @@ local localization_templates = {
 			loc_text("{toughness:%s} "..COLORS_KWords_zh_cn.Toughness_dmg_red_u_rgb_zh_cn.."。"..TALENTS_Enh_desc_nodes_zh_cn.ED_TghnsDmgRed_LM_rgb_zh_cn)),
 
 
+
 --[+ ++PSYKER - ПСАЙКЕР++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
-	--[+ BLITZ 0 - Brain Burst +]--	checked 27.05.2025
+	--[+ BLITZ 0 - Brain Burst +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz0_000_desc_en",
 		{"loc_ability_psyker_smite_description_new"}, {"en"},
 			loc_text("Charge up your Psychic Power and release it to deal high "..COLORS_KWords.Damage_rgb.." to a Single Enemy.\n"
@@ -915,8 +917,8 @@ local localization_templates = {
 				..Arrow_up_green.." Higher armor "..COLORS_KWords.Damage_rgb.." against Maniac and Unyielding.\n"
 				..Arrow_up_green.." Always scores a "..COLORS_KWords.Weakspothit_rgb..".\n"
 				..Arrow_down_red.." Cannot "..COLORS_KWords.Crit0_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_0_rgb)),
-				-- &->and, colors
+				..Arrow_down_red.." {#color(255, 35, 5)}You may Explode! Don't use if Peril level is 97% or above!{#reset()}")),
+			-- &->and, colors
 	--[+ French +]-- Explosion cérébrale
 	create_template("talent_tree_psy_blitz0_000_desc_fr",
 		{"loc_ability_psyker_smite_description_new"}, {"fr"},
@@ -939,7 +941,7 @@ local localization_templates = {
 			.."- 對狂熱者與不屈有 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。\n"
 			..TALENTS_Enh_desc_tw.ED_PSY_Blitz_0_rgb_tw.."。")),
 
-	--[+ BLITZ 1 - Brain Rupture +]--	checked 27.05.2025
+	--[+ BLITZ 1 - Brain Rupture +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz1_000_desc_en",
 		{"loc_talent_psyker_brain_burst_improved_description"}, {"en"},
 			loc_text("Charge up your Psychic Power and release it to deal immense "..COLORS_KWords.Damage_rgb.." to a Single Enemy.\n"
@@ -950,8 +952,8 @@ local localization_templates = {
 				..Arrow_up_green.." Main attack at "..COLORS_Numbers.pc_50_rgb.." charge level applies a light Charge "..COLORS_KWords.Stagger_rgb.." to the targeted enemy. Cannot "..COLORS_KWords.Stagger_rgb..": Bombers, Maulers, Mutants, Ogryns, Poxbursters, Ragers, Scab Shotgunners or Monstrosities.\n"
 				..Arrow_up_green.." On "..COLORS_KWords.Impact_rgb.." "..COLORS_KWords.Staggers_rgb.." all enemies except Mutants, Monstrosities and enemies with active void shield.\n"
 				..Arrow_down_red.." Cannot "..COLORS_KWords.Crit0_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_1_rgb)),
-				-- talent_old: Brain Burst, damage: +50%, &->and, colors
+				..Arrow_down_red.." {#color(255, 35, 5)}You may Explode! Don't use if Peril level is 97% or above!{#reset()}")),
+			-- talent_old: Brain Burst, damage: +50%, &->and, colors
 	--[+ French +]-- Éclatement cérébrale
 	create_template("talent_tree_psy_blitz1_000_desc_fr",
 		{"loc_talent_psyker_brain_burst_improved_description"}, {"fr"},
@@ -981,13 +983,14 @@ local localization_templates = {
 			.."這是 {talent_old:%s} 的強化版本\n"
 			..TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_rgb_tw)),
 
-	--[+ BLITZ 1-1 - Kinetic Resonance +]--	checked 27.05.2025
+	--[+ BLITZ 1-1 - Kinetic Resonance +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz1_001_desc_en",
 		{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"en"},
-			loc_text("{smite_attack_speed:%s} faster charging of your {talent_name:%s} after using your "..COLORS_KWords.Combat_ability_rgb..", generating {warp_charge_cost:%s} less "..COLORS_KWords.Peril_rgb.." for {duration:%s} seconds.\n"
-				..Arrow_up_green.." Reduces Brain Rupture's charge time for both Primary and Secondary attacks.\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_1_1_rgb)),
-				-- talent_name: Brain Rupture, smite_attack_speed: +75%, warp_charge_cost: 50%, duration: 10, s->seconds, colors
+			loc_text("Using your "..COLORS_KWords.Combat_ability_rgb.." makes your {talent_name:%s} charge for {duration:%s} seconds:\n"
+				..Arrow_up_green.." {smite_attack_speed:%s} charge speed and\n"
+				..Arrow_up_green.." "..COLORS_Numbers.n_minus_rgb.."{warp_charge_cost:%s} "..COLORS_KWords.Peril_rgb.." generated.\n"
+				..Arrow_up_green.." Reduces Brain Rupture's charge time for both Primary and Secondary attacks.")),
+			-- talent_name: Brain Rupture, smite_attack_speed: +75%, warp_charge_cost: 50%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz1_001_desc_fr",
 		{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"fr"},
@@ -1008,13 +1011,13 @@ local localization_templates = {
 		.."- 縮短顱腦崩裂的蓄力時間。\n"
 		.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_1_rgb_tw)),
 
-	--[+ BLITZ 1-2 - Kinetic Flayer +]--	checked 27.05.2025
+	--[+ BLITZ 1-2 - Kinetic Flayer +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz1_002_desc_en",
 		{"loc_talent_psyker_smite_on_hit_special_elite_desc"}, {"en"},
-			loc_text("While below "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb..", all Attacks against Specials, Elites and Monstrosities, have {smite_chance:%s} chance to {talent_name:%s} the target on any of Psyker's damaging attacks.\n"
-				.."Cooldown {time:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_1_2_rgb)),
-				-- smite_chance: 10%, talent_name: Brain Rupture, time: 15, s->seconds, colors, rewrite
+			loc_text("While below "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb..", All damaging Attacks against Specials, Elites and Monstrosities, have {smite_chance:%s} chance on Hit to {talent_name:%s} the target.\n"
+				..Arrow_right_.." Cooldown {time:%s} seconds.\n"
+				..Arrow_down_red.." {#color(255, 35, 5)}BUG: If Peril is above 97%, the Talent triggers and a 15 seconds Cooldown begins, but the enemy does NOT receive Damage at all.{#reset()}")),
+			-- smite_chance: 10%, talent_name: Brain Rupture, time: 15, s->seconds, colors, rewrite
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz1_002_desc_fr",
 		{"loc_talent_psyker_smite_on_hit_special_elite_desc"}, {"fr"},
@@ -1031,19 +1034,20 @@ local localization_templates = {
 		{"loc_talent_psyker_smite_on_hit_special_elite_desc"}, {"zh-tw"},
 			loc_text("當 "..COLORS_KWords_tw.Peril_rgb_tw.." 低於 "..COLORS_Numbers.pc_97_rgb.. " 時，\n有 {smite_chance:%s} 機率觸發 {talent_name:%s}，\n冷卻 {time:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_1_2_rgb_tw)),
 
-	--[+ BLITZ 2 - Smite +]--	checked 27.05.2025
+	--[+ BLITZ 2 - Smite +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz2_000_desc_en",
 		{"loc_ability_psyker_chain_lightning_description"}, {"en"},
 			loc_text("You unleash a torrent of chain Bio-Lightning that slowly jumps between enemies, dealing low "..COLORS_KWords.Electrcuting_rgb.." "..COLORS_KWords.Damage_rgb.." over time and very High "..COLORS_KWords.Stagger_rgb.." to them.\n"
 				.."Secondary charged attack deals more "..COLORS_KWords.Damage_rgb.." when released and also jumps faster from enemy to enemy.\n"
 				..Arrow_up_green.." Forces a short Quelling action when reaching "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb.." removing ~"..COLORS_Numbers.pc_8_5_rgb.." "..COLORS_KWords.Peril_rgb..". If released below "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb..", pushes enemies back (if possible).\n"
-				..Arrow_right_.." Max range: "..COLORS_Numbers.n_15_rgb.." meters.\n"
-				..Arrow_right_.." Average armor "..COLORS_KWords.Damage_rgb..", low "..COLORS_KWords.Damage_rgb.." to Carapace armor.\n"
+				..Arrow_right_.." Targeting max range: "..COLORS_Numbers.n_15_rgb.." meters.\n"
 				..Arrow_right_.." Targets only Torso hitzone.\n"
+				..Arrow_right_.." Average armor "..COLORS_KWords.Damage_rgb..".\n"
+				..Arrow_down_red.." Low "..COLORS_KWords.Damage_rgb.." to Carapace armor.\n"
 				..Arrow_down_red.." Cannot "..COLORS_KWords.Stagger_rgb.." Monstrosities and enemies with active Void shield.\n"
 				..Arrow_down_red.." Cannot "..COLORS_KWords.Crit0_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_2_rgb)),
-				-- total rewrite, colors
+				..Arrow_down_red.." {#color(255, 35, 5)}You can only Explode if you raise your Peril level to 100% with a charged attack and at same time use a normal attack!{#reset()}")),
+			-- total rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz2_000_desc_fr",
 		{"loc_ability_psyker_chain_lightning_description"}, {"fr"},
@@ -1065,15 +1069,14 @@ local localization_templates = {
 			.."- 所有護甲中等穿透，甲殼護甲低穿透。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_rgb_tw)),
 
-	--[+ BLITZ 2-1 - Lightning Storm +]--	checked 27.05.2025
+	--[+ BLITZ 2-1 - Lightning Storm +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz2_001_desc_en",
 		{"loc_talent_psyker_increased_chain_lightning_size_description"}, {"en"},
 			loc_text("Increases the number of jumps of your {talent_name:%s} from "..COLORS_Numbers.n_1_rgb.." to "..COLORS_Numbers.n_2_rgb..".\n"
-				..Arrow_up_green.." Increases the Max radius within which {talent_name:%s} can chain to another target from "..COLORS_Numbers.n_5_rgb.." to "..COLORS_Numbers.n_6_rgb.." meters.\n"
+				..Arrow_up_green.." Increases the max radius within which {talent_name:%s} can chain to another target from "..COLORS_Numbers.n_5_rgb.." to "..COLORS_Numbers.n_6_rgb.." meters.\n"
 				..Arrow_up_green.." Also increases the targeting range by "..COLORS_Numbers.n_1_rgb.." meter, up to "..COLORS_Numbers.n_16_rgb.." meters.\n"
 				..Arrow_right_.." Applies both to Smite's Primary and Secondary actions.\n")),
-				-- ..TALENTS_Enh_desc.ED_PSY_Blitz_2_1_rgb)),
-				-- talent_name: Smite, max_jumps: +1, rewrite "by {max_jumps:%s}"
+			-- talent_name: Smite, max_jumps: +1, rewrite
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz2_001_desc_fr",
 		{"loc_talent_psyker_increased_chain_lightning_size_description"}, {"fr"},
@@ -1086,16 +1089,15 @@ local localization_templates = {
 	-- {talent_name:%s}的彈跳次數增加{max_jumps:%s}。
 	create_template("talent_tree_psy_blitz2_001_desc_tw",
 		{"loc_talent_psyker_increased_chain_lightning_size_description"}, {"zh-tw"},
-			loc_text("{talent_name:%s} 的閃電跳躍次數從 "..COLORS_Numbers.n_1_rgb.." 提升至 "..COLORS_Numbers.n_2_rgb.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_1_rgb_tw)),
+			loc_text("{talent_name:%s} 的閃電跳躍次數從 "..COLORS_Numbers.n_1_rgb.." 提升至 "..COLORS_Numbers.n_2_rgb.."。" ..TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_1_rgb_tw)),
 
-	--[+ BLITZ 2-2 - Enfeeble +]--	checked 27.05.2025
+	--[+ BLITZ 2-2 - Enfeeble +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz2_002_desc_en",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"en"},
 			loc_text("{damage:%s} increased Base "..COLORS_KWords.Damage_rgb.." from all sources is taken by enemies affected by the "..COLORS_KWords.Electrocute_rgb.." effect of your {talent_name:%s}.\n"
-				-- ..Arrow_right_.." The debuff is being applied as long as the enemy is actively affected by {talent_name:%s}.\n"
-				..Arrow_down_red.." Doesn't Stack with the same debuff applied by another Psyker.\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_2_2_rgb)),
-				-- damage: +10%, colors
+				..Arrow_right_.." The debuff is being applied as long as the enemy is actively affected by {talent_name:%s}.\n"
+				..Arrow_down_red.." Doesn't Stack with the same debuff applied by another Psyker.")),
+			-- damage: +10%, colors
 	--[+ French +]--Dégénérescence
 	create_template("talent_tree_psy_blitz2_002_desc_fr",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"fr"},
@@ -1114,14 +1116,13 @@ local localization_templates = {
 			.."-不會與其他靈能者[衰弱詛咒]疊加。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_2_rgb_tw)),
 
-	--[+ BLITZ 2-3 - Charged Strike +]--	checked 27.05.2025
+	--[+ BLITZ 2-3 - Charged Strike +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz2_002_desc_en",
 		{"loc_talent_psyker_chain_lightning_damage_heavy_attacks_desc"}, {"en"},
 			loc_text("Your Heavy Melee Attacks "..COLORS_KWords.Electrocute_rgb.." enemies hit, damaging them.\n"
 				..Arrow_right_.." Up to "..COLORS_Numbers.n_64_rgb.." base "..COLORS_KWords.Damage_rgb.." per tick when reaching Max charge level.\n"
-				..Arrow_right_.." The "..COLORS_KWords.Damage_rgb.." window lasts up to "..COLORS_Numbers.n_2_rgb.." seconds. The "..COLORS_KWords.Electrocuted_rgb.." state lasts until "..COLORS_Numbers.n_2_rgb.." seconds after the last "..COLORS_KWords.Damage_rgb.." tick.\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_2_3_rgb)),
-				-- colors
+				..Arrow_right_.." The "..COLORS_KWords.Damage_rgb.." window lasts up to "..COLORS_Numbers.n_2_rgb.." seconds. The "..COLORS_KWords.Electrocuted_rgb.." state lasts until "..COLORS_Numbers.n_2_rgb.." seconds after the last "..COLORS_KWords.Damage_rgb.." tick.")),
+			-- colors
 	--[+ French +]--Coup chargé !!! 
 	create_template("talent_tree_psy_blitz2_002_desc_fr",
 		{"loc_talent_psyker_chain_lightning_damage_heavy_attacks_desc"}, {"fr"},
@@ -1141,17 +1142,19 @@ local localization_templates = {
 			.."- "..COLORS_KWords_tw.Electrocution_rgb_tw.." 效果在最後一次Dot傷害後持續 "..COLORS_Numbers.n_2_rgb.."s 。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_2_3_rgb_tw)),
 
-	--[+ BLITZ 3 - Assail +]--	checked 27.05.2025
+	--[+ BLITZ 3 - Assail +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz3_000_desc_en",
 		{"loc_ability_psyker_blitz_throwing_knives_description"}, {"en"},
 			loc_text("You throw swift, homing projectiles formed of psychic energy that follows the player's crosshair for "..COLORS_Numbers.n_2_5_rgb.." seconds to the nearest Enemy. Deals "..COLORS_Numbers.n_225_rgb.." Base "..COLORS_KWords.Damage_rgb.." to the first target and cost "..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Peril_rgb..".\n"
 				.."Secondary attack throws a homing projectile that flies for "..COLORS_Numbers.n_3_rgb.." seconds and hitting enemies within a "..COLORS_Numbers.n_50_rgb.." meter radius with a guaranteed hit. Deals "..COLORS_Numbers.n_380_rgb.." Base "..COLORS_KWords.Damage_rgb.." and cost "..COLORS_Numbers.pc_25_rgb.." "..COLORS_KWords.Peril_rgb..".\n"
 				..Arrow_up_green.." Can "..COLORS_KWords.Crit0_rgb..".\n"
 				..Arrow_up_green.." "..COLORS_KWords.Cleave_rgb.." up to "..COLORS_Numbers.n_2_rgb.." enemies.\n"
-				..Arrow_right_.." Costs "..COLORS_Numbers.n_1_rgb.." ammo and recharges it every "..COLORS_Numbers.n_3_rgb.." seconds.\n"
+				..Arrow_right_.." Costs "..COLORS_Numbers.n_1_rgb.." ammo.\n"
+				..Arrow_right_.." Recharges "..COLORS_Numbers.n_1_rgb.." ammo every "..COLORS_Numbers.n_3_rgb.." seconds.\n"
 				..Arrow_down_red.." Very low "..COLORS_KWords.Damage_rgb.." against Carapace and low against Unyielding.\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_3_rgb)),
-				-- total rewrite, colors
+				..Arrow_down_red.." Carapace cannot be "..COLORS_KWords.Cleaved_rgb.." by default.\n"
+				..Arrow_down_red.." {#color(255, 35, 5)}You may Explode! Don't use if Peril level is 100%!{#reset()}")),
+			-- total rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz3_000_desc_fr",
 		{"loc_ability_psyker_blitz_throwing_knives_description"}, {"fr"},
@@ -1172,13 +1175,12 @@ local localization_templates = {
 			.."--造成"..COLORS_Numbers.n_340_rgb.."點"..COLORS_KWords_tw.Dmg_a_rgb_tw.."，並產生"..COLORS_Numbers.pc_25_rgb.." "..COLORS_KWords_tw.Peril_rgb_tw.."。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_rgb_tw)),
 
-	--[+ BLITZ 3-1 - Ethereal Shards +]--	checked 27.05.2025
+	--[+ BLITZ 3-1 - Ethereal Shards +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz3_001_desc_en",
 		{"loc_talent_psyker_throwing_knives_pierce_description"}, {"en"},
 			loc_text("Projectiles from {talent_name:%s} now pierce additional targets.\n"
-				..Arrow_down_red.." Carapace cannot be "..COLORS_KWords.Cleaved_rgb.." by default.\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_3_1_rgb)),
-				-- talent_name: Assail, colors
+				..Arrow_down_red.." Carapace cannot be "..COLORS_KWords.Cleaved_rgb.." by default.")),
+			-- talent_name: Assail, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz3_001_desc_fr",
 		{"loc_talent_psyker_throwing_knives_pierce_description"}, {"fr"},
@@ -1193,12 +1195,12 @@ local localization_templates = {
 		{"loc_talent_psyker_throwing_knives_pierce_description"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 的穿透數量從 "..COLORS_Numbers.n_2_rgb.." 提升至 "..COLORS_Numbers.n_3_rgb.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_1_rgb_tw)),
 
-	--[+ BLITZ 3-2 - Quick Shards +]--	checked 27.05.2025
+	--[+ BLITZ 3-2 - Quick Shards +]--	checked 02.08.2025
 	create_template("talent_tree_psy_blitz3_002_desc_en",
 		{"loc_talent_psyker_throwing_knives_cast_speed_description"}, {"en"},
-			loc_text("{talent_name:%s} charges Replenish {recharge:%s} faster.\n"
-				..TALENTS_Enh_desc.ED_PSY_Blitz_3_2_rgb)),
-				-- talent_name: Assail, recharge: 30%
+			loc_text(COLORS_Numbers.n_plus_rgb.."{recharge:%s} {talent_name:%s} charge replenish speed.\n"
+				..Arrow_right_.." Reduces projectile recharge time from "..COLORS_Numbers.n_3_rgb.." to "..COLORS_Numbers.n_2_1_rgb.." seconds per projectile.")),
+			-- talent_name: Assail, recharge: 30%
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz3_002_desc_fr",
 		{"loc_talent_psyker_throwing_knives_cast_speed_description"}, {"fr"},
@@ -1214,13 +1216,12 @@ local localization_templates = {
 			loc_text("{talent_name:%s} 的恢復速度提高 {recharge:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_2_rgb_tw)),
 
 --[+ +AURA - АУРЫ+ +]--
-	--[+ AURA 0 - The Quickening +]--	checked 27.05.2025
+	--[+ AURA 0 - The Quickening +]--	checked 02.08.2025
 	create_template("talent_tree_psy_aura0_000_desc_en",
 		{"loc_talent_psyker_aura_reduced_ability_cooldown_description"}, {"en"},
 			loc_text("{cooldown_reduction:%s} "..COLORS_KWords.Ability_cd_rgb.." Reduction for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
-				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.\n"
-				..TALENTS_Enh_desc.ED_PSY_Aura_0_rgb)),
-				-- cooldown_reduction: +7.5%, colors
+				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.")),
+			-- cooldown_reduction: +7.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_aura0_000_desc_fr",
 		{"loc_talent_psyker_aura_reduced_ability_cooldown_description"}, {"fr"},
@@ -1235,13 +1236,12 @@ local localization_templates = {
 		{"loc_talent_psyker_aura_reduced_ability_cooldown_description"}, {"zh-tw"},
 			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友，\n"..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.."縮短 {cooldown_reduction:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Aura_0_rgb_tw)),
 
-	--[+ AURA 1 - Kinetic Presence +]--	checked 27.05.2025
+	--[+ AURA 1 - Kinetic Presence +]--	checked 02.08.2025
 	create_template("talent_tree_psy_aura1_000_desc_en",
 		{"loc_talent_psyker_base_3_description"}, {"en"},
 			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." against Elite Enemies for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
-				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.\n"
-				..TALENTS_Enh_desc.ED_PSY_Aura_1_rgb)),
-				-- damage: +7.5%, colors
+				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.")),
+			-- damage: +7.5%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_aura1_000_desc_fr",
 		{"loc_talent_psyker_base_3_description"}, {"fr"},
@@ -1256,14 +1256,13 @@ local localization_templates = {
 		{"loc_talent_psyker_base_3_description"}, {"zh-tw"},
 			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友，\n對精英敵人造成的"..COLORS_KWords_tw.Damage_rgb_tw.."提高 {damage:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Aura_1_rgb_tw)),
 
-	--[+ AURA 2 - Seer's Presence +]--	checked 27.05.2025
+	--[+ AURA 2 - Seer's Presence +]--	checked 02.08.2025
 	create_template("talent_tree_psy_aura2_000_desc_en",
 		{"loc_talent_psyker_cooldown_aura_improved_description"}, {"en"},
 			loc_text("{cooldown_reduction:%s} "..COLORS_KWords.Ability_cd_rgb.." Reduction for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
 				..Arrow_right_.." This is an augmented version of {talent_name:%s}.\n"
-				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.\n"
-				..TALENTS_Enh_desc.ED_PSY_Aura_2_rgb)),
-				-- cooldown_reduction: +10%, talent_name: The Quickening, colors
+				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.")),
+			-- cooldown_reduction: +10%, talent_name: The Quickening, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_aura2_000_desc_fr",
 		{"loc_talent_psyker_cooldown_aura_improved_description"}, {"fr"},
@@ -1278,14 +1277,13 @@ local localization_templates = {
 		{"loc_talent_psyker_cooldown_aura_improved_description"}, {"zh-tw"},
 			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友，"..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.."縮短 {cooldown_reduction:%s}。\n\n這是強化版的光環 {talent_name:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Aura_2_rgb_tw)),
 
-	--[+ AURA 3 - Prescience +]--	checked 27.05.2025
+	--[+ AURA 3 - Prescience +]--	checked 02.08.2025
 	create_template("talent_tree_psy_aura3_000_desc_en",
 		{"loc_ability_psyker_gunslinger_aura_description"}, {"en"},
 			loc_text("{critical_strike_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
 				..Arrow_right_.." Applies to all attacks that can "..COLORS_KWords.Crit0_rgb..".\n"
-				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.\n"
-				..TALENTS_Enh_desc.ED_PSY_Aura_3_rgb)),
-				-- critical_strike_chance: +5%, colors, rewrite
+				..Arrow_down_red.." Doesn't Stack with the same Aura from another Psyker.")),
+			-- critical_strike_chance: +5%, colors, rewrite
 	--[+ French +]--!!!
 	create_template("talent_tree_psy_aura3_000_desc_fr",
 		{"loc_ability_psyker_gunslinger_aura_description"}, {"fr"},
@@ -1301,16 +1299,15 @@ local localization_templates = {
 			loc_text("你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."中的隊友，\n"..COLORS_KWords_tw.Crit_chance_rgb_tw.."提高 {critical_strike_chance:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Aura_3_rgb_tw)),
 
 --[+ +ABILITIES - СПОСОБНОСТИ+ +]--
-	--[+ ABILITY 0 - Psykinetic's Wrath +]--	checked 27.05.2025
+	--[+ ABILITY 0 - Psykinetic's Wrath +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil0_000_desc_en",
 		{"loc_talent_psyker_shout_ability_description"}, {"en"},
 			loc_text("Quells {warpcharge_vent:%s} "..COLORS_KWords.Peril_rgb.." and releases a cone-shaped shout in front of Psyker that "..COLORS_KWords.Staggers_rgb.." Enemies in front of you.\n"
-				.."Base Cooldown: {cooldown:%s} seconds.\n"
-				..Arrow_up_green.." Can be used to prevent Psyker's self-explode.\n"
-				..Arrow_up_green.." The Warp wave passes through objects and spreads up to "..COLORS_Numbers.n_30_rgb.." meters. So you can drop the Pox Hound from an Ally through the wall.\n"
-				..Arrow_up_green.." "..COLORS_KWords.Stuns_rgb.." enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius in front of Psyker.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_0_rgb)),
-				-- warpcharge_vent: 10%, cooldown: 30, s->seconds, colors, rewrite
+				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.\n"
+				..Arrow_right_.." Can be used to prevent Psyker's self-explode.\n"
+				..Arrow_right_.." The Warp wave passes through objects and spreads up to "..COLORS_Numbers.n_30_rgb.." meters. So you can drop the Pox Hound from an Ally through the wall.\n"
+				..Arrow_right_.." "..COLORS_KWords.Stuns_rgb.." enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius in front of Psyker.")),
+			-- warpcharge_vent: 10%, cooldown: 30, s->seconds, colors, rewrite
 	--[+ French +]--
 	create_template("talent_tree_psy_abil0_000_desc_fr",
 		{"loc_talent_psyker_shout_ability_description"}, {"fr"},
@@ -1333,18 +1330,17 @@ local localization_templates = {
 			.."- 攻擊範圍最遠可達"..COLORS_Numbers.n_30_rgb.."m\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_0_rgb_tw)),
 
-	--[+ ABILITY 1 - Venting Shriek +]--	checked 27.05.2025
+	--[+ ABILITY 1 - Venting Shriek +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil1_000_desc_en",
 		{"loc_talent_psyker_shout_vent_warp_charge_description"}, {"en"},
 			loc_text("Quells {warpcharge_vent:%s} "..COLORS_KWords.Peril_rgb.." and releases a cone-shaped shout in front of Psyker that "..COLORS_KWords.Staggers_rgb.." Enemies in front of you.\n"
-				.."Base Cooldown: {cooldown:%s} seconds.\n"
+				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.\n"
 				..Arrow_right_.." This is augmented version of {talent_name:%s}.\n"
-				..Arrow_up_green.." Can be used to prevent Psyker's self-explode.\n"
-				..Arrow_up_green.." The Warp wave passes through objects and spreads up to "..COLORS_Numbers.n_30_rgb.." meters. So you can drop the Pox Hound from an Ally through the wall.\n"
-				..Arrow_up_green.." "..COLORS_KWords.Stuns_rgb.." enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius in front of Psyker.\n"
-				..Arrow_right_.." Always targets Torso hitzone.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_1_rgb)),
-				-- warpcharge_vent: 50%, cooldown: 30, talent_name: Psykinetic's Wrath, s->seconds, colors, rewrite
+				..Arrow_right_.." Can be used to prevent Psyker's self-explode.\n"
+				..Arrow_right_.." The Warp wave passes through objects and spreads up to "..COLORS_Numbers.n_30_rgb.." meters. So you can drop the Pox Hound from an Ally through the wall.\n"
+				..Arrow_right_.." "..COLORS_KWords.Stuns_rgb.." enemies within a "..COLORS_Numbers.n_5_rgb.." meter radius in front of Psyker.\n"
+				..Arrow_right_.." Always targets Torso hitzone.")),
+			-- warpcharge_vent: 50%, cooldown: 30, talent_name: Psykinetic's Wrath, s->seconds, colors, rewrite
 	--[+ French +]--
 	create_template("talent_tree_psy_abil1_000_desc_fr",
 		{"loc_talent_psyker_shout_vent_warp_charge_description"}, {"fr"},
@@ -1367,12 +1363,12 @@ local localization_templates = {
 			.."- 可穿牆將瘟疫獵犬從隊友身上推開。\n"
 			.."\n這是強化版的技能 {talent_name:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_rgb_tw)),
 
-	--[+ ABILITY 1-1 - Becalming Eruption +]--	checked 27.05.2025
+	--[+ ABILITY 1-1 - Becalming Eruption +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil1_001_desc_en",
 		{"loc_talent_psyker_shout_reduces_warp_charge_generation_description"}, {"en"},
-			loc_text("{talent_name:%s} now decreases "..COLORS_KWords.Peril_rgb.." Generation by {warp_generation:%s} for each Enemy hit. Up to {max_stacks:%s}"..COLORS_Numbers.pc_rgb..". Lasts {duration:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_1_1_rgb)),
-				-- talent_name: Venting Shriek, warp_generation: 1%, max_stacks: 25 -> 25%, duration: 5, s->seconds, colors
+			loc_text(COLORS_Numbers.n_minus_rgb.."{warp_generation:%s} "..COLORS_KWords.Peril_rgb.." Generation for each Enemy hit by {talent_name:%s}. Up to "..COLORS_Numbers.n_minus_rgb.."{max_stacks:%s}"..COLORS_Numbers.pc_rgb..".\n"
+					..Arrow_right_.." Lasts {duration:%s} seconds.")),
+			-- talent_name: Venting Shriek, warp_generation: 1%, max_stacks: 25->25%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil1_001_desc_fr",
 		{"loc_talent_psyker_shout_reduces_warp_charge_generation_description"}, {"fr"},
@@ -1387,12 +1383,17 @@ local localization_templates = {
 		{"loc_talent_psyker_shout_reduces_warp_charge_generation_description"}, {"zh-tw"},
 			loc_text("{talent_name:%s}每命中一名敵人，\n降低 {warp_generation:%s} "..COLORS_KWords_tw.Peril_rgb_tw.."，最多 {max_stacks:%s}"..COLORS_Numbers.pc_rgb.."，持續 {duration:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_1_rgb_tw)),
 
-	--[+ ABILITY 1-2 - Warp Rupture +]--	checked 27.05.2025
+	--[+ ABILITY 1-2 - Warp Rupture +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil1_002_desc_en",
 		{"loc_talent_psyker_shout_damage_per_warp_charge_description"}, {"en"},
 			loc_text("Your {talent_name:%s} now also deals {base_damage:%s}-{max_damage:%s} "..COLORS_KWords.Damage_rgb..", based off of your current "..COLORS_KWords.Peril_rgb.." percentage.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_1_2_rgb)),
-				-- talent_name: Venting Shriek, base_damage: 100, max_damage: 200, colors
+				-- ..Arrow_right_.." Base "..COLORS_KWords.Damage_rgb.." dealt scales with "..COLORS_KWords.Peril_rgb..":\n"
+				.."_______________________________\n"
+				..""..COLORS_KWords.Peril_rgb..":          0%|  25%|  50%|  75%|  100%\n"
+				..""..COLORS_KWords.Damage_rgb..":  100|   125|    150|   175|    200\n"
+				.."_______________________________\n"
+				..Arrow_right_.." Has same armor "..COLORS_KWords.Damage_rgb.." modifier against all armor types, loses "..COLORS_KWords.Damage_rgb.." with range.")),
+			-- talent_name: Venting Shriek, base_damage: 100, max_damage: 200, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil1_002_desc_fr",
 		{"loc_talent_psyker_shout_damage_per_warp_charge_description"}, {"fr"},
@@ -1406,15 +1407,15 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_002_desc_tw",
 		{"loc_talent_psyker_shout_damage_per_warp_charge_description"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 會依據當前的"..COLORS_KWords_tw.Peril_rgb_tw.."，\n造成 {base_damage:%s} 至 {max_damage:%s} 點"..COLORS_KWords_tw.Dmg_a_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_2_rgb_tw)),
-	
-	--[+ ABILITY 1-3 - Warp Creeping Flames +]--	checked 27.05.2025
+
+	--[+ ABILITY 1-3 - Warp Creeping Flames +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil1_003_desc_en",
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"en"},
 			loc_text("{talent_name:%s} applies {min_stacks:%s}{warpfire_stacks:%s} Stacks of "..COLORS_KWords.Soulblaze_rgb.." to targets Hit based on your current "..COLORS_KWords.Peril_rgb..".\n"
 				..Arrow_up_green.." Refreshes duration on Stack application.\n"
-				..Arrow_right_.." Lasts "..COLORS_Numbers.n_8_rgb.." seconds. Ticks every "..COLORS_Numbers.n_075_rgb.." seconds.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_1_3_rgb)),
-				-- talent_name: Venting Shriek, min_stacks: 1, warpfire_stacks: - 6 -- Stack(s)->Stacks, colors
+				..Arrow_right_.." Lasts "..COLORS_Numbers.n_8_rgb.." seconds.\n"
+				..Arrow_right_.." Ticks every "..COLORS_Numbers.n_075_rgb.." seconds.")),
+			-- talent_name: Venting Shriek, min_stacks: 1, warpfire_stacks: - 6, Stack(s)->Stacks, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil1_003_desc_fr",
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"fr"},
@@ -1428,15 +1429,17 @@ local localization_templates = {
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 依據當前的"..COLORS_KWords_tw.Peril_rgb_tw.."，\n對命中的目標施加 "..COLORS_Numbers.n_1_rgb.." 至 {warpfire_stacks:%s} 層"..COLORS_KWords_tw.Soulblaze_rgb_tw.."。"..TALENTS_Enh_desc_tw.ED_PSY_Ability_1_3_rgb_tw)),
 
-	--[+ ABILITY 2 - Telekine Shield +]--	checked 27.05.2025
+	--[+ ABILITY 2 - Telekine Shield +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil2_000_desc_en",
 		{"loc_talent_psyker_combat_ability_shield_description"}, {"en"},
 			loc_text("Spawns a psychic shield in front of you for {duration:%s} seconds. The shield blocks Enemy Ranged Attacks, while you and Allies can still shoot through.\n"
-				.."Base Cooldown: {cooldown:%s} seconds.\n"
+				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.\n"
 				..Arrow_right_.." Shield Health: 20.\n"
 				..Arrow_right_.." You can hold Ability button to preview location and you can cancel it by blocking.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_2_rgb)),
-				-- duration: 17.5, cooldown: 40, s->seconds
+				..Arrow_right_.." Blocks: Ranged hit scan attacks, projectiles (Bomber grenades), nets (Trappers), and flamethrower direct hits (Flamers).\n"
+				..Arrow_right_.." Ground fire patches and toxic gas clouds expand through the shield.\n"
+				..Arrow_right_.." Doesn't block Poxburster explosion.")),
+			-- duration: 17.5, cooldown: 40, s->seconds
 	--[+ French +]--
 	create_template("talent_tree_psy_abil2_000_desc_fr",
 		{"loc_talent_psyker_combat_ability_shield_description"}, {"fr"},
@@ -1457,12 +1460,12 @@ local localization_templates = {
 			.."- 冷卻時間：{cooldown:%s} 秒。" 
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_rgb_tw)),
 
-	--[+ ABILITY 2-1 - Bolstered Shield +]--	checked 27.05.2025
+	--[+ ABILITY 2-1 - Bolstered Shield +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil2_001_desc_en",
 		{"loc_talent_psyker_force_field_charges_description"}, {"en"},
 			loc_text("{talent_name:%s} now holds up to {max_charges:%s} charges.\n"
-				..Arrow_right_.." The Cooldown of the second charge only starts after the first charge finished Cooldown.\n")),
-				-- talent_name: Telekine Shield, max_charges: 2 -- ..TALENTS_Enh_desc.ED_PSY_Ability_2_1_rgb
+				..Arrow_right_.." The "..COLORS_KWords.Cd_rgb.." of the second charge only starts after the first charge finished "..COLORS_KWords.Cd_rgb..".")),
+			-- talent_name: Telekine Shield, max_charges: 2
 	--[+ French +]--
 	create_template("talent_tree_psy_abil2_001_desc_fr",
 		{"loc_talent_psyker_force_field_charges_description"}, {"fr"},
@@ -1477,17 +1480,18 @@ local localization_templates = {
 		{"loc_talent_psyker_force_field_charges_description"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 現在擁有 {max_charges:%s} 次充能。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_1_rgb_tw)),
 
-	--[+ ABILITY 2-2 - Enervating Threshold +]--	checked 27.05.2025
+	--[+ ABILITY 2-2 - Enervating Threshold +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil2_002_desc_en",
 		{"loc_talent_psyker_force_field_stun_increased_new_description"}, {"en"},
 			loc_text("{ability:%s} has a {proc_chance:%s} chance to "..COLORS_KWords.Electrocute_rgb.." enemies that pass through it. Specialist enemies have a {special_proc_chance:%s} chance to get "..COLORS_KWords.Electrocuted_rgb.." but also damage the {ability:%s}.\n"
+				..Arrow_up_green.." Deals "..COLORS_Numbers.n_250_rgb.." Base "..COLORS_KWords.Damage_rgb..".\n"
 				..Arrow_up_green.." Applies "..COLORS_KWords.Stagger_rgb.." every "..COLORS_Numbers.n_055_rgb.." seconds.\n"
 				..Arrow_up_green.." Can "..COLORS_KWords.Stun_rgb.." all enemies except Monstrosities.\n"
-				..Arrow_right_.." Deals no "..COLORS_KWords.Damage_rgb..".\n"
 				..Arrow_right_.." "..COLORS_KWords.Electrocution_rgb.." effect lasts for "..COLORS_Numbers.n_3_rgb.." seconds.\n"
 				..Arrow_right_.." Always applies the effect to Specials when they get in contact with the shield.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_2_2_rgb)),
-				-- ability: Telekine Shield, proc_chance: 10%, special_proc_chance: 100%, colors
+				..Arrow_down_red.." Very low armor "..COLORS_KWords.Damage_rgb.." modifiers.\n"
+				..Arrow_down_red.." {#color(255, 35, 5)}BUG: Deal 1 Damage to Specials instead of 8.{#reset()}")),
+			-- ability: Telekine Shield, proc_chance: 10%, special_proc_chance: 100%, colors
 	--[+ French +]--Seuil Débilitant
 	create_template("talent_tree_psy_abil2_002_desc_fr",
 		{"loc_talent_psyker_force_field_stun_increased_new_description"}, {"fr"},
@@ -1509,15 +1513,15 @@ local localization_templates = {
 			.."--菁英與專家會對 {ability:%s} 造成傷害。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_2_rgb_tw)),
 
-	--[+ ABILITY 2-3 - Telekine Dome +]--	checked 27.05.2025
+	--[+ ABILITY 2-3 - Telekine Dome +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil2_003_desc_en",
 		{"loc_talent_psyker_force_field_dome_new_desc"}, {"en"},
 			loc_text("{talent_name:%s} now forms a spherical shield which lasts {duration:%s} seconds.\n"
 				..Arrow_right_.." Sphere has a radius of "..COLORS_Numbers.n_6_rgb.." meters.\n"
-				..Arrow_right_.." Protects from enemy attacks at all degrees.\n"
+				..Arrow_right_.." Protects from Enemy Attacks at all degrees.\n"
 				..Arrow_right_.." Has the same properties as the flat shield.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_2_3_rgb)),
-				-- talent_name: Telekine Shield, duration: 25, s->seconds
+				..Arrow_down_red.." {#color(255, 35, 5)}BUG: Mutants that are successfully Dodged inside the dome always get Staggered.{#reset()}")),
+			-- talent_name: Telekine Shield, duration: 25, s->seconds
 	--[+ French +]--
 	create_template("talent_tree_psy_abil2_003_desc_fr",
 		{"loc_talent_psyker_force_field_dome_new_desc"}, {"fr"},
@@ -1535,14 +1539,13 @@ local localization_templates = {
 			.."- 球體半徑為"..COLORS_Numbers.n_6_rgb.."公尺。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_3_rgb_tw)),
 
-	--[+ ABILITY 2-4 - Sanctuary +]--	checked 27.05.2025
+	--[+ ABILITY 2-4 - Sanctuary +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil2_004_desc_en",
 		{"loc_talent_psyker_force_field_grants_toughness_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second replenishes for Allies inside your {talent_name:%s}.\n"
 				.."{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds for all Allies inside your {talent_name:%s} when it dissipates.\n"
-				..Arrow_up_green.." This replenishment effect can Stack if multiple spheres overlap.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_2_4_rgb)),
-				-- talent_name: Telekine Shield, toughness: 10%, toughness_damage_reduction: +50%, duration: 5, s->seconds, colors
+				..Arrow_up_green.." This replenishment effect can Stack if multiple spheres overlap.")),
+			-- talent_name: Telekine Shield, toughness: 10%, toughness_damage_reduction: +50%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil2_004_desc_fr",
 		{"loc_talent_psyker_force_field_grants_toughness_desc"}, {"fr"},
@@ -1564,7 +1567,7 @@ local localization_templates = {
 			.."- 持續 {duration:%s} 秒。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_2_4_rgb_tw)),
 			
-	--[+ ABILITY 3 - Scrier's Gaze +]--	checked 03.07.2025
+	--[+ ABILITY 3 - Scrier's Gaze +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil3_000_desc_en",
 		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"en"},
 			loc_text("You enter "..COLORS_KWords.Scriers_gaze_rgb..", Quell {vent:%s} "..COLORS_KWords.Peril_rgb.." and gain:\n"
@@ -1576,8 +1579,8 @@ local localization_templates = {
 				.."While in "..COLORS_KWords.Scriers_gaze_rgb.." you build up "..COLORS_KWords.Peril_rgb..". Killing enemies while overcharging slows down the auto "..COLORS_KWords.Peril_rgb.." generation by reducing the effective timer by "..COLORS_Numbers.n_033_rgb.." seconds per Kill.\n"
 				.."At {max_peril:%s} "..COLORS_KWords.Peril_rgb.." Ability ends.\n"
 				..Arrow_right_.." Base Cooldown: {cooldown:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_rgb)),
-				-- base_damage: +10%, crit_chance: +20%, damage_per_stack: +1%, max_damage: +30%, duration: 10, max_peril: 100%, cooldown: 25, rewrite, s->seconds, colors
+				..Arrow_right_.." After overcharging has ended, grants a "..COLORS_Numbers.n_1_5_rgb.." seconds grace period in which "..COLORS_KWords.Peril_rgb.."-generating actions can be executed without triggering Psyker's self-explosion.")),
+			-- base_damage: +10%, crit_chance: +20%, damage_per_stack: +1%, max_damage: +30%, duration: 10, max_peril: 100%, cooldown: 25, rewrite, s->seconds, colors
 	--[+ French +]-- Regard de divination !!! texte trop long
 	create_template("talent_tree_psy_abil3_000_desc_fr",
 		{"loc_talent_psyker_combat_ability_overcharge_stance_new_venting_description"}, {"fr"},
@@ -1611,13 +1614,12 @@ local localization_templates = {
 			.."- 冷卻時間：{cooldown:%s} 秒。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_rgb_tw)),
 
-	--[+ ABILITY 3-1 - Endurance +]--	checked 03.07.2025
+	--[+ ABILITY 3-1 - Endurance +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil3_001_desc_en",
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"en"},
-			loc_text("While overcharging, {talent_name:%s} grants {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".\n"
-				..Arrow_down_red.." Doesn't linger after overcharging phase.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_1_rgb)),
-				-- talent_name: Scrier's Gaze, tdr: +20%, colors
+			loc_text("{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." while {talent_name:%s} overcharging.\n"
+				..Arrow_down_red.." Doesn't linger after overcharging phase.")),
+			-- talent_name: Scrier's Gaze, tdr: +20%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_001_desc_fr",
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"fr"},
@@ -1632,15 +1634,14 @@ local localization_templates = {
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"zh-tw"},
 			loc_text("當"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."啟動時，\n獲得 {tdr:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_1_rgb_tw)),
 
-	--[+ ABILITY 3-2 - Precognition +]--	checked 03.07.2025
+	--[+ ABILITY 3-2 - Precognition +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil3_002_desc_en",
 		{"loc_ability_psyker_overcharge_weakspot_description"}, {"en"},
-			loc_text("While overcharging, makes "..COLORS_KWords.Weak_spot_rgb.." kills generate {second:%s} additional Stack.\n"
+			loc_text(COLORS_KWords.Weak_spot_rgb.." kills generate {second:%s} additional Stack while {talent_name:%s} overcharging.\n"
 				.."For each second spent in {talent_name:%s}, you now also gain:\n"
 				..Arrow_up_green.." {finesse_damage_per_stack:%s} "..COLORS_KWords.Finesse_dmg_rgb..", up to {max_finesse_damage:%s} Max, which lingers for {duration:%s} seconds after leaving {talent_name:%s}.\n"
-				..Arrow_up_green.." Can proc multiple times per attack when "..COLORS_KWords.Cleaving_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_2_rgb)),
-				-- second: 1, talent_name: Scrier's Gaze, finesse_damage_per_stack: +1%, max_finesse_damage: +30%, duration: 10, s->seconds, colors
+				..Arrow_up_green.." Can proc multiple times per attack when "..COLORS_KWords.Cleaving_rgb..".")),
+			-- second: 1, talent_name: Scrier's Gaze, finesse_damage_per_stack: +1%, max_finesse_damage: +30%, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_002_desc_fr",
 		{"loc_ability_psyker_overcharge_weakspot_description"}, {"fr"},
@@ -1660,13 +1661,12 @@ local localization_templates = {
 			.."- {talent_name:%s} 技能結束後可持續 {duration:%s} 秒。"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_2_rgb_tw)),
 
-	--[+ ABILITY 3-3 - Warp Speed +]--	checked 03.07.2025
+	--[+ ABILITY 3-3 - Warp Speed +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil3_003_desc_en",
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"en"},
-			loc_text("While overcharging, {talent_name:%s} increases your Movement Speed by {movement_speed:%s}.\n"
-				..Arrow_down_red.." Doesn't linger after overcharging phase.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_3_rgb)),
-				-- talent_name: Scrier's Gaze, movement_speed: +20%
+			loc_text("{movement_speed:%s} Movement Speed while {talent_name:%s} overcharging.\n"
+				..Arrow_down_red.." Doesn't linger after overcharging phase.")),
+			-- talent_name: Scrier's Gaze, movement_speed: +20%
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_003_desc_fr",
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"fr"},
@@ -1681,13 +1681,12 @@ local localization_templates = {
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"zh-tw"},
 		loc_text("當"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."啟動時，移動速度提高 {movement_speed:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_3_rgb_tw)),
 
-	--[+ ABILITY 3-4 - Reality Anchor +]--	checked 03.07.2025
+	--[+ ABILITY 3-4 - Reality Anchor +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil3_004_desc_en",
 		{"loc_ability_psyker_overcharge_reduced_warp_charge_description"}, {"en"},
-			loc_text("While overcharging, {talent_name:%s} also reduces your "..COLORS_KWords.Peril_rgb.." Generated by {warp_charge:%s}.\n"
-				..Arrow_down_red.." Doesn't linger after overcharging phase.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_4_rgb)),
-				-- talent_name: Scrier's Gaze, warp_charge: -20%, colors
+			loc_text("{warp_charge:%s} "..COLORS_KWords.Peril_rgb.." Generated while {talent_name:%s} overcharging.\n"
+				..Arrow_down_red.." Doesn't linger after overcharging phase.")),
+			-- talent_name: Scrier's Gaze, warp_charge: -20%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_004_desc_fr",
 		{"loc_ability_psyker_overcharge_reduced_warp_charge_description"}, {"fr"},
@@ -1704,13 +1703,13 @@ local localization_templates = {
 			.."立即降低 {warp_charge:%s}"..COLORS_KWords_tw.Peril_rgb_tw.."。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_4_rgb_tw)),
 
-	--[+ ABILITY 3-5 - Warp Unbound +]--	checked 03.07.2025
+	--[+ ABILITY 3-5 - Warp Unbound +]--	checked 02.08.2025
 	create_template("talent_tree_psy_abil3_005_desc_en",
 		{"loc_talent_psyker_overcharge_infinite_casting_desc"}, {"en"},
 			loc_text("{talent_name:%s} now also prevents overloading from "..COLORS_KWords.Perils_rgb.." of the Warp, during its lingering effect.\n"
 				..Arrow_right_.." After overcharging has ended, allows Psyker to execute "..COLORS_KWords.Peril_rgb.."-generating actions while at "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb.." for "..COLORS_Numbers.n_10_rgb.." seconds without triggering the self-explosion.\n"
-				..TALENTS_Enh_desc.ED_PSY_Ability_3_5_rgb)),
-				-- talent_name: Scrier's Gaze
+				..Arrow_right_.." When "..COLORS_Numbers.n_10_rgb.." seconds duration ends, Scrier's Gaze's base grace period still applies, providing another "..COLORS_Numbers.n_1_5_rgb.." seconds of the same effect.")),
+			-- talent_name: Scrier's Gaze
 	--[+ French +]--
 	create_template("talent_tree_psy_abil3_005_desc_fr",
 		{"loc_talent_psyker_overcharge_infinite_casting_desc"}, {"fr"},
@@ -1731,15 +1730,14 @@ local localization_templates = {
 		.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_5_rgb_tw
 	)),
 
---[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--	checked 03.07.2025
+--[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--	checked 02.08.2025
 	--[+ KEYSTONE 1 - Warp Siphon +]--
 	create_template("talent_tree_psy_keys1_000_desc_en",
 		{"loc_talent_psyker_souls_desc"}, {"en"},
-			loc_text("Killing an Elite or Specialist Enemy gains you a Warp Charge for {duration:%s} seconds, Stacking {stack:%s} times.\n"
+			loc_text("Killing an Elite or Specialist Enemy gains you a Warp Charge for {duration:%s} seconds. Stacking {stack:%s} times.\n"
 				.."Your next "..COLORS_KWords.Combat_ability_rgb.." spends all available Warp Charges to reduce the "..COLORS_KWords.Cd_rgb.." of that "..COLORS_KWords.Combat_ability_rgb.." by {cooldown_reduction:%s} per Warp Charge.\n"
-				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_1_rgb)),
-				-- duration: 25, stack: 4, cooldown_reduction: 7.5% -- time(s)->times, colors
+				..Arrow_up_green.." Can be refreshed during active duration.")),
+			-- duration: 25, stack: 4, cooldown_reduction: 7.5% -- time(s)->times, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_000_desc_fr",
 		{"loc_talent_psyker_souls_desc"}, {"fr"},
@@ -1761,11 +1759,10 @@ local localization_templates = {
 			.."- 每層可降低 {cooldown_reduction:%s} "..COLORS_KWords_tw.Cd_rgb_tw.."時間。"
 			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_rgb_tw)),
 
-	--[+ KEYSTONE 1-1 - Inner Tranquility +]--	checked 03.07.2025
+	--[+ KEYSTONE 1-1 - Inner Tranquility +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys1_001_desc_en",
 		{"loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"}, {"en"},
-			loc_text("{warp_charge_amount:%s} "..COLORS_KWords.Peril_rgb.." Generation Reduction for each Warp Charge.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_1_1_rgb)),
+			loc_text("{warp_charge_amount:%s} "..COLORS_KWords.Peril_rgb.." Generation Reduction for each Warp Charge.")),
 			-- warp_charge_amount: -6%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_001_desc_fr",
@@ -1782,13 +1779,13 @@ local localization_templates = {
 			{"loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"}, {"zh-tw"},
 				loc_text("每層亞空間充能會 {warp_charge_amount:%s} "..COLORS_KWords_tw.Peril_rgb_tw.." 生成。" ..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_1_rgb_tw)),
 
-	--[+ KEYSTONE 1-2 - Essence Harvest +]--
+	--[+ KEYSTONE 1-2 - Essence Harvest +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys1_002_desc_en",
 		{"loc_talent_psyker_toughness_regen_on_soul_desc"}, {"en"},
-			loc_text(COLORS_Numbers.pc_6_rgb.." "..COLORS_KWords.Toughness_rgb.." is replenished per second for {time:%s} seconds after gaining Warp Charge, up to a Maximum of {toughness:%s}. Gaining a new Warp Charge during this time resets the timer.\n"
-				..Arrow_right_.." Doesn't increase the amount of "..COLORS_KWords.Toughness_rgb.." replenished.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_1_2_rgb)),
-				-- toughness: 30%, time: 5, s->seconds, colors
+			loc_text(COLORS_Numbers.pc_6_rgb.." "..COLORS_KWords.Toughness_rgb.." is replenished per second for {time:%s} seconds after gaining Warp Charge, up to a Maximum of {toughness:%s}.\n"
+				..Arrow_up_green.." Can be refreshed during active duration.\n"
+				..Arrow_right_.." Doesn't increase the amount of "..COLORS_KWords.Toughness_rgb.." replenished.")),
+			-- toughness: 30%, time: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_002_desc_fr",
 		{"loc_talent_psyker_toughness_regen_on_soul_desc"}, {"fr"},
@@ -1810,12 +1807,11 @@ local localization_templates = {
 			.."- 獲得新的亞空間充能會刷新此效果。"	
 			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_2_rgb_tw)),
 
-	--[+ KEYSTONE 1-3 - Empyrean Empowerment +]--
+	--[+ KEYSTONE 1-3 - Empyrean Empowerment +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys1_003_desc_en",
 		{"loc_talent_psyker_souls_increase_damage_desc"}, {"en"},
-			loc_text("{damage:%s} increase to all Base "..COLORS_KWords.Damage_rgb.." for each Warp Charge.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_1_3_rgb)),
-				-- damage: +4%, colors
+			loc_text("{damage:%s} Base "..COLORS_KWords.Damage_rgb.." for each Warp Charge.")),
+			-- damage: +4%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_003_desc_fr",
 		{"loc_talent_psyker_souls_increase_damage_desc"}, {"fr"},
@@ -1833,13 +1829,12 @@ local localization_templates = {
 			.."- 每層亞空間充能 {damage:%s} "..COLORS_KWords_tw.Dmg_b_rgb_tw.."。"
 			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_3_rgb_tw)),
 
-	--[+ KEYSTONE 1-4 - In Fire Reborn +]--
+	--[+ KEYSTONE 1-4 - In Fire Reborn +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys1_004_desc_en",
 		{"loc_talent_psyker_warpfire_generates_souls_desc"}, {"en"},
 			loc_text("{chance:%s} chance to gain a Warp Charge when you or an Ally kill an enemy who is currently affected by "..COLORS_KWords.Soulblaze_rgb..".\n"
-				..Arrow_up_green.." You gain a Warp charge when an enemy who is currently affected by "..COLORS_KWords.Soulblaze_rgb.." is killed either by "..COLORS_KWords.Soulblaze_rgb..", by Psyker, or by an ally.\n"
-				..Arrow_up_green.." This effect has No Range limit and benefits all Psykers who have this Talent equipped.\n")),
-				-- chance: 10%, colors -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_4_rgb
+				..Arrow_right_.." This effect has no range limit and benefits all Psykers who have this Talent equipped.")),
+			-- chance: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_004_desc_fr",
 		{"loc_talent_psyker_warpfire_generates_souls_desc"}, {"fr"},
@@ -1858,12 +1853,12 @@ local localization_templates = {
 				.."- 你與隊友的"..COLORS_KWords_tw.Soulblaze_k_rgb_tw.."都有機率觸發。"
 				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_4_rgb_tw)),
 
-	--[+ KEYSTONE 1-5 - Psychic Vampire +]--
+	--[+ KEYSTONE 1-5 - Psychic Vampire +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys1_006_desc_en",
 		{"loc_talent_psyker_souls_on_kill_coop_desc"}, {"en"},
 			loc_text("{soul_chance:%s} chance to gain a Warp Charge whenever you or an Ally in "..COLORS_KWords.Coherency_rgb.." kills an enemy.\n"
-				..Arrow_up_green.." If multiple Psykers are in Coherency with each other, all of them get a Warp charge when the Talent procs for one of them.\n")),
-				-- soul_chance: 4% -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_5_rgb
+				..Arrow_right_.." If multiple Psykers, that have this Talent, are in Coherency with each other, all of them get a Warp charge when the Talent procs for one of them.")),
+			-- soul_chance: 4%
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_006_desc_fr",
 		{"loc_talent_psyker_souls_on_kill_coop_desc"}, {"fr"},
@@ -1881,11 +1876,11 @@ local localization_templates = {
 				.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友擊殺也有相同機率。"
 				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_5_rgb_tw)),
 
-	--[+ KEYSTONE 1-6 - Warp Battery +]--
+	--[+ KEYSTONE 1-6 - Warp Battery +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys1_005_desc_en",
 		{"loc_talent_psyker_increased_souls_desc"}, {"en"},
-			loc_text("You can store up to {soul_amount:%s} Warp Charges.\n")),
-			-- soul_amount: 6 -- ..TALENTS_Enh_desc.ED_PSY_Keystone_1_6_rgb
+			loc_text("You can store up to {soul_amount:%s} Warp Charges.")),
+			-- soul_amount: 6
 	--[+ French +]--
 	create_template("talent_tree_psy_keys1_005_desc_fr",
 		{"loc_talent_psyker_increased_souls_desc"}, {"fr"},
@@ -1900,7 +1895,7 @@ local localization_templates = {
 		{"loc_talent_psyker_increased_souls_desc"}, {"zh-tw"},
 			loc_text("最多可以儲存 {soul_amount:%s} 個亞空間充能。" .. TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_6_rgb_tw)),
 
-	--[+ KEYSTONE 2 - Empowered Psionics +]--
+	--[+ KEYSTONE 2 - Empowered Psionics +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys2_000_desc_en",
 		{"loc_talent_psyker_empowered_ability_description"}, {"en"},
 			loc_text("Kills have a {chance:%s} chance to Empower your next Blitz.\n"
@@ -1908,19 +1903,18 @@ local localization_templates = {
 				.."{smite_damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
 				.."{smite_cost:%s} "..COLORS_KWords.Peril_rgb.." Cost Reduction,\n"
 				.."{smite_attack_speed:%s} Cast time Reduction.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_1_rgb.."\n"
+				.."\n"
 				.."Empowered {blitz_two:%s}:\n"
 				.."{chain_lightning_damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
 				.."{chain_lightning_jump_time_multiplier:%s} faster spread between Enemies.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_2_rgb.."\n"
+				.."\n"
 				.."Empowered {blitz_three:%s}:\n"
 				.."{throwing_knives_cost:%s} "..COLORS_KWords.Peril_rgb.." Cost Reduction,\n"
 				.."Base "..COLORS_KWords.Damage_rgb.." increase from {throwing_knives_old_damage:%s} to {throwing_knives_new_damage:%s}.\n"
 				.."Does not consume any charges.\n"
 				..Arrow_up_green.." Allows casting at "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb..".\n"
-				..Arrow_up_green.." Double the number of targets.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_2_0_3_rgb)),
-				-- chance: 7.5%, blitz_one: Brain Rupture, smite_cost: 100%, smite_attack_speed: 50%, smite_damage: +50%, blitz_two: Smite, chain_lightning_damage: +200%, chain_lightning_jump_time_multiplier: 50%, blitz_three: Assail, throwing_knives_cost: 100%, throwing_knives_old_damage: 100, throwing_knives_new_damage: 150, colors
+				..Arrow_up_green.." Double the number of targets.")),
+			-- chance: 7.5%, blitz_one: Brain Rupture, smite_cost: 100%, smite_attack_speed: 50%, smite_damage: +50%, blitz_two: Smite, chain_lightning_damage: +200%, chain_lightning_jump_time_multiplier: 50%, blitz_three: Assail, throwing_knives_cost: 100%, throwing_knives_old_damage: 100, throwing_knives_new_damage: 150, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_000_desc_fr",
 		{"loc_talent_psyker_empowered_ability_description"}, {"fr"},
@@ -1957,10 +1951,10 @@ local localization_templates = {
 				.."- 基礎"..COLORS_KWords_tw.Dmg_rgb_tw.."從 {throwing_knives_old_damage:%s} 提升至 {throwing_knives_new_damage:%s}。"
 		   		.. TALENTS_Enh_desc_tw.ED_PSY_Keystone_2_0_3_rgb_tw )),
 
-	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--
-	create_template("talent_tree_psy_keys2_001_desc_en",
-		{"loc_talent_psyker_increase_empower_chain_lighting_chance_description"}, {"en"},
-			loc_text("Increases the chance to gain {talent_name:%s} on Kill from {proc_chance_before:%s} to {proc_chance_after:%s}.")),
+	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--	checked 02.08.2025
+	-- create_template("talent_tree_psy_keys2_001_desc_en",
+		-- {"loc_talent_psyker_increase_empower_chain_lighting_chance_description"}, {"en"},
+			-- loc_text("Increases the chance to gain {talent_name:%s} on Kill from {proc_chance_before:%s} to {proc_chance_after:%s}.")),
 			-- talent_name: Empowered Psionics, proc_chance_before: 7.5%, proc_chance_after: 12.5%
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_001_desc_fr",
@@ -1977,12 +1971,11 @@ local localization_templates = {
 				loc_text("擊殺獲得 {talent_name:%s} 的機率提升。\n"
 				.."- 機率由 {proc_chance_before:%s} 提升至 {proc_chance_after:%s}。")),
 
-	--[+ KEYSTONE 2-2 - Psychic Leeching +]--
+	--[+ KEYSTONE 2-2 - Psychic Leeching +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys2_002_desc_en",
 		{"loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies_description"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for you and Allies in "..COLORS_KWords.Coherency_rgb.." when using your Blitz while {talent_name:%s} is active.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_2_2_rgb)),
-				-- talent_name: Empowered Psionics, toughness: 15%, colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for you and Allies in "..COLORS_KWords.Coherency_rgb.." on using your Blitz while {talent_name:%s} is active.")),
+			-- talent_name: Empowered Psionics, toughness: 15%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_002_desc_fr",
 		{"loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies_description"}, {"fr"},
@@ -2000,11 +1993,11 @@ local localization_templates = {
 			.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友也會獲得相同效果。"
 			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_2_2_rgb_tw)),
 
-	--[+ KEYSTONE 2-3 - Overpowering Souls +]--
-	create_template("talent_tree_psy_keys2_003_desc_en",
-		{"loc_talent_psyker_empowered_ability_on_elite_kills_description"}, {"en"},
-			loc_text("Guaranteed chance to gain {talent_name:%s} on Elite Kills.")),
-			-- talent_name: Empowered Psionics
+	--[+ KEYSTONE 2-3 - Overpowering Souls +]--	checked 02.08.2025
+	-- create_template("talent_tree_psy_keys2_003_desc_en",
+		-- {"loc_talent_psyker_empowered_ability_on_elite_kills_description"}, {"en"},
+			-- loc_text("Guaranteed chance to gain {talent_name:%s} on Elite Kills.")),
+		-- talent_name: Empowered Psionics
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_003_desc_fr",
 		{"loc_talent_psyker_empowered_ability_on_elite_kills_description"}, {"fr"},
@@ -2019,11 +2012,11 @@ local localization_templates = {
 		{"loc_talent_psyker_empowered_ability_on_elite_kills_description"}, {"zh-tw"},
 			loc_text("擊殺精英敵人時，獲得 {talent_name:%s} 。")),
 
-	--[+ KEYSTONE 2-4 - Charged Up +]--
-	create_template("talent_tree_psy_keys2_004_desc_en",
-		{"loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"}, {"en"},
-			loc_text("You can now hold up to {max_stacks:%s} Stacks of {talent_name:%s}.")),
-			-- max_stacks: 3, talent_name: Empowered Psionics
+	--[+ KEYSTONE 2-4 - Charged Up +]--	checked 02.08.2025
+	-- create_template("talent_tree_psy_keys2_004_desc_en",
+		-- {"loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"}, {"en"},
+			-- loc_text("You can now hold up to {max_stacks:%s} Stacks of {talent_name:%s}.")),
+		-- max_stacks: 3, talent_name: Empowered Psionics
 	--[+ French +]--
 	create_template("talent_tree_psy_keys2_004_desc_fr",
 		{"loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"}, {"fr"},
@@ -2038,23 +2031,23 @@ local localization_templates = {
 		{"loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"}, {"zh-tw"},
 			loc_text("最多可以持有 {max_stacks:%s} 層 {talent_name:%s}。")),
 
-	--[+ KEYSTONE 3 - Disrupt Destiny +]--
+	--[+ KEYSTONE 3 - Disrupt Destiny +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys3_000_desc_en",
 		{"loc_talent_psyker_marked_enemies_passive_updated_desc"}, {"en"},
 			loc_text("Every second, Enemies within "..COLORS_Numbers.n_40_rgb.." meters have a chance of being Marked. Killing a Marked Enemy Replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {move_speed_duration:%s} seconds, grants {move_speed:%s} Movement Speed for {move_speed_duration:%s} seconds, and adds a "..COLORS_KWords.Precision_rgb.." Bonus for {bonus_duration} seconds.\n"
+				.."\n"
 				.."Each "..COLORS_KWords.Precision_rgb.." Bonus grants:\n"
 				.."{base_damage:%s} "..COLORS_KWords.Damage_rgb..",\n{crit_damage:%s} "..COLORS_KWords.Crit_dmg_r_rgb.." and\n"
 				.."{weakspot_damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb..".\n"
 				..COLORS_KWords.Precision_rgb.." Bonus Stacks {bonus_stacks:%s} times and when the duration ends, one Stack is removed and the duration is refreshed.\n"
 				..Arrow_up_green.." Dealing "..COLORS_KWords.Damage_rgb.." to Marked enemies refreshes the Talent's duration.\n"
-				..Arrow_right_.." Valid targets are: Dreg/Scab Bruisers, Dreg/Scab Stalkers, Scab Shooters, Ragers, Gunners, Shotgunners and Maulers.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_3_rgb)),
-				-- radius: 25->40!!!, toughness: 10%, move_speed: +20%, move_speed_duration: 2.5, bonus_duration 4, base_damage: +1%, crit_damage: +2%, weakspot_damage: +2.5%, bonus_stacks: 15 -- m->meters, s->seconds, colors
+				..Arrow_right_.." Valid targets are: Dreg/Scab Bruisers, Dreg/Scab Stalkers, Scab Shooters, Ragers, Gunners, Shotgunners and Maulers.")),
+			-- radius: 25->40!!!, toughness: 10%, move_speed: +20%, move_speed_duration: 2.5, bonus_duration 4, base_damage: +1%, crit_damage: +2%, weakspot_damage: +2.5%, bonus_stacks: 15 -- m->meters, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys3_000_desc_fr",
 		{"loc_talent_psyker_marked_enemies_passive_new_desc"}, {"fr"},
 			loc_text("Chaque seconde, les ennemis dans un rayon de "..COLORS_Numbers.n_40_rgb.." mètres ont une chance d'être marqués. Éliminer un ennemi marqué régénère {toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr..", augmente la vitesse de déplacement de {move_speed:%s} pendant {move_speed_duration:%s} secondes et ajoute un cumule de "..COLORS_KWords_fr.Precision_rgb_fr.." pendant {bonus_duration} secondes.\nChaque cumule de "..COLORS_KWords_fr.Precision_rgb_fr.." octroie : {base_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr..", {crit_damage:%s} de "..COLORS_KWords_fr.Crit_dmg_r_rgb_fr.." et {weakspot_damage:%s} de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr..". Le bonus de "..COLORS_KWords_fr.Precision_rgb_fr.." se cumule jusqu'à {bonus_stacks:%s} fois et lorsque la durée expire, une charge est retirée et la durée est rafraîchie."..TALENTS_Enh_desc_fr.ED_PSY_Keystone_3_rgb_fr)),
-	--[+ Russian +]-- Прерывание судьбы -- руоф Разрушенная судьба
+	--[+ Russian - Прерывание судьбы +]-- руоф Разрушенная судьба
 	create_template("talent_tree_psy_keys3_000_desc_ru",
 		{"loc_talent_psyker_marked_enemies_passive_new_desc"}, {"ru"},
 			loc_text("Каждую секунду враги в радиусе "..COLORS_Numbers.n_40_rgb.." метров могут быть отмечены. Убийство отмеченного врага восстанавливает {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..", даёт {move_speed:%s} к скорости передвижения на {move_speed_duration:%s} секунды, а также добавляет заряд "..COLORS_KWords_ru.Precision_rgb_ru.." на {bonus_duration} секунды.\nКаждый заряд "..COLORS_KWords_ru.Precision_rgb_ru.." даёт: {base_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru.." и {weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru..".\nЗаряды "..COLORS_KWords_ru.Precision_rgb_ru.." накапливаются до {bonus_stacks:%s} раз и, когда срок действия заканчивается, снимается "..COLORS_Numbers.n_1_rgb.." заряд, а длительность оставшихся зарядов обновляется."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_3_rgb_ru)),
@@ -2081,7 +2074,7 @@ local localization_templates = {
 				.."--同時刷新其餘層數的持續時間。\n"
 				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_3_rgb_tw)),
 				
-	--[+ KEYSTONE 3-1 - Perfectionism +]--
+	--[+ KEYSTONE 3-1 - Perfectionism +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys3_001_desc_en",
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"en"},
 			loc_text("Maximum "..COLORS_KWords.Precision_rgb.." Bonus Stacks are increased from {stacks_previous:%s} to {stacks_after:%s}.")),
@@ -2090,7 +2083,7 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_001_desc_fr",
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"fr"},
 			loc_text("Le nombre maximum de charges de cumuls de "..COLORS_KWords_fr.Precision_rgb_fr.." est augmenté de {stacks_previous:%s} à {stacks_after:%s}.")),
-	--[+ Russian +]-- Перфекционизм +]--
+	--[+ Russian - Перфекционизм +]--
 	create_template("talent_tree_psy_keys3_001_desc_ru",
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"ru"},
 			loc_text("Максимальное количество зарядов "..COLORS_KWords_ru.Precision_rgb_ru.." увеличено с {stacks_previous:%s} до {stacks_after:%s}.")),
@@ -2100,20 +2093,21 @@ local localization_templates = {
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"zh-tw"},
 			loc_text(""..COLORS_KWords2_tw.Precision_rgb_tw.."的上限層數由 {stacks_previous:%s} 提升至 {stacks_after:%s}。")),
 
-	--[+ KEYSTONE 3-2 - Purloin Providence +]--
+	--[+ KEYSTONE 3-2 - Purloin Providence +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys3_002_desc_en",
 		{"loc_talent_psyker_mark_kills_can_vent_description"}, {"en"},
-			loc_text("{chance:%s} chance to instantly Quell {warp_charge_percentage:%s} of your "..COLORS_KWords.Peril_rgb.." when killing enemies marked by {talent_name:%s}.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_3_2_rgb)),
-				-- talent_name: Disrupt Destiny, chance: 20%, warp_charge_percentage: 15%, colors
+			loc_text("{chance:%s} chance to instantly Quell {warp_charge_percentage:%s} of your "..COLORS_KWords.Peril_rgb.." when killing enemies marked by {talent_name:%s}.")),
+			-- talent_name: Disrupt Destiny, chance: 20%, warp_charge_percentage: 15%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys3_002_desc_fr",
 		{"loc_talent_psyker_mark_kills_can_vent_description"}, {"fr"},
-			loc_text("{chance:%s} chance de réduire instantanément {warp_charge_percentage:%s} de votre "..COLORS_KWords_fr.Peril_rgb_fr.." en tuant des ennemis marqués par {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_PSY_Keystone_3_2_rgb_fr)),
-	--[+ Russian +]-- Похищение провидения -- руоф Похищенное провидение
+			loc_text("{chance:%s} chance de réduire instantanément {warp_charge_percentage:%s} de votre "..COLORS_KWords_fr.Peril_rgb_fr.." en tuant des ennemis marqués par {talent_name:%s}.")),
+				-- ..TALENTS_Enh_desc_fr.ED_PSY_Keystone_3_2_rgb_fr)),
+	--[+ Russian - Похищение провидения +]-- руоф Похищенное провидение
 	create_template("talent_tree_psy_keys3_002_desc_ru",
 		{"loc_talent_psyker_mark_kills_can_vent_description"}, {"ru"},
-			loc_text("{chance:%s} шанс, что вы моментально подавите {warp_charge_percentage:%s} вашей "..COLORS_KWords_ru.Peril_rgb_ru.." при убийстве врага, отмеченного талантом {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_3_2_rgb_ru)),
+			loc_text("{chance:%s} шанс, что вы моментально подавите {warp_charge_percentage:%s} вашей "..COLORS_KWords_ru.Peril_rgb_ru.." при убийстве врага, отмеченного талантом {talent_name:%s}.")),
+				-- ..TALENTS_Enh_desc_ru.ED_PSY_Keystone_3_2_rgb_ru)),
 	--[+ Traditional Chinese - 盜竊天命 +]--
 	--擊殺被{talent_name:%s}標記的敵人有{chance:%s}幾率立刻平息反噬{warp_charge_percentage:%s}。
 	create_template("talent_tree_psy_keys3_002_desc_tw",
@@ -2121,10 +2115,10 @@ local localization_templates = {
 				loc_text("擊殺 {talent_name:%s} 標記的敵人減少 "..COLORS_KWords_tw.Peril_rgb_tw.." 。\n"
 				.."\n"
 				.."- {chance:%s} 機率必定觸發。\n"
-				.."- 觸發時平息 {warp_charge_percentage:%s} 的 "..COLORS_KWords_tw.Peril_rgb_tw.."。"
-				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_3_2_rgb_tw)),
+				.."- 觸發時平息 {warp_charge_percentage:%s} 的 "..COLORS_KWords_tw.Peril_rgb_tw.."。")),
+				-- ..TALENTS_Enh_desc_tw.ED_PSY_Keystone_3_2_rgb_tw)),
 
-	--[+ KEYSTONE 3-3 - Lingering Influence +]--
+	--[+ KEYSTONE 3-3 - Lingering Influence +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys3_003_desc_en",
 		{"loc_talent_psyker_mark_increased_duration_description"}, {"en"},
 			loc_text("Increase the duration of {talent_name:%s} from {duration_previous:%s} to {duration_after:%s} seconds.")),
@@ -2142,13 +2136,13 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_003_desc_tw",
 			{"loc_talent_psyker_mark_increased_duration_description"}, {"zh-tw"},
 				loc_text("{talent_name:%s} 持續時間從 {duration_previous:%s} 秒增加至 {duration_after:%s} 秒。")),
-				
-	--[+ KEYSTONE 3-4 - Cruel Fortune +]--
+
+	--[+ KEYSTONE 3-4 - Cruel Fortune +]--	checked 02.08.2025
 	create_template("talent_tree_psy_keys3_004_desc_en",
 		{"loc_talent_psyker_mark_weakspot_stacks_description"}, {"en"},
 			loc_text(COLORS_KWords.Weakspot_rgb.." Kills grant {stacks:%s} additional Stacks of {talent_name:%s}.\n"
-				..TALENTS_Enh_desc.ED_PSY_Keystone_3_4_rgb)),
-				-- stacks: 2 talent_name: Disrupt Destiny, colors
+				..Arrow_right_.." Procs on Melee, Ranged, "..COLORS_KWords.Assail_rgb.." or "..COLORS_KWords.Brain_rupture_rgb.." attacks.")),
+			-- stacks: 2 talent_name: Disrupt Destiny, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_keys3_004_desc_fr",
 		{"loc_talent_psyker_mark_weakspot_stacks_description"}, {"fr"},
@@ -2164,12 +2158,11 @@ local localization_templates = {
 				loc_text(""..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 敵人時，\n額外獲得 {stacks:%s} 層 {talent_name:%s}。" ..TALENTS_Enh_desc_tw.ED_PSY_Keystone_3_4_rgb_tw)),
 
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
-	--[+ Passive 1 - Soulstealer +]--
+	--[+ Passive 1 - Soulstealer +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_001_desc_en",
 		{"loc_talent_psyker_toughness_on_warp_kill_desc"}, {"en"},
-			loc_text("{toughness:%s} of Maximum "..COLORS_KWords.Toughness_rgb.." replenishes on killing an enemy with a Warp attack.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_1_rgb)),
-				-- toughness: 7.5%., colors
+			loc_text("{toughness:%s} of Maximum "..COLORS_KWords.Toughness_rgb.." replenishes on killing an enemy with a Warp attack.")),
+			-- toughness: 7.5%., colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_001_desc_fr",
 		{"loc_talent_psyker_toughness_on_warp_kill_desc"}, {"fr"},
@@ -2179,15 +2172,16 @@ local localization_templates = {
 		{"loc_talent_psyker_toughness_on_warp_kill_desc"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при убийстве врага варп-атакой."..TALENTS_Enh_desc_ru.ED_PSY_Passive_1_rgb_ru)),
 
-	--[+ Passive 2 - Mettle +]--
+	--[+ Passive 2 - Mettle +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_002_desc_en",
 		{"loc_talent_psyker_crits_regen_tougness_and_movement_speed_description"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes on "..COLORS_KWords.Crit_hits_rgb..".\n"
-				.."Also grants {movement_speed:%s} increased Movement Speed for {seconds:%s} seconds. Stacks {stacks:%s} times.\n"
+			loc_text("On "..COLORS_KWords.Crit_hits_rgb.." you gain for {seconds:%s} seconds:\n"
+				.."{toughness:%s} "..COLORS_KWords.Toughness_rgb.." and\n"
+				.."{movement_speed:%s} Movement Speed.\n"
+				..Arrow_right_.." Stacks {stacks:%s} times.\n"
 				..Arrow_right_.." Procs only once per "..COLORS_KWords.Crit_rgb.." attack regardless of how many enemies have been hit.\n"
-				..Arrow_right_.." Always generates "..COLORS_Numbers.n_1_rgb.." Stack per "..COLORS_KWords.Crit_rgb.." attack regardless of how many enemies have been hit.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_2_rgb)),
-				-- toughness: 5%, movement_speed: +5%, seconds: 4, stacks: 3, s->seconds, colors
+				..Arrow_right_.." Always generates "..COLORS_Numbers.n_1_rgb.." Stack per "..COLORS_KWords.Crit_rgb.." attack regardless of how many enemies have been hit.")),
+			-- toughness: 5%, movement_speed: +5%, seconds: 4, stacks: 3, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_002_desc_fr",
 		{"loc_talent_psyker_crits_regen_tougness_and_movement_speed_description"}, {"fr"},
@@ -2197,12 +2191,12 @@ local localization_templates = {
 		{"loc_talent_psyker_crits_regen_tougness_and_movement_speed_description"}, {"ru"},
 			loc_text("При "..COLORS_KWords_ru.Crit_hit_e_rgb_ru.." вы восстанавливаете {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..", а также получаете {movement_speed:%s} к скорости передвижения на {seconds:%s} секунды. Суммируется до {stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_PSY_Passive_2_rgb_ru)),
 
-	--[+ Passive 3 - Quietude +]--
+	--[+ Passive 3 - Quietude +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_003_desc_en",
 		{"loc_talent_psyker_toughness_from_vent_desc"}, {"en"},
 			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for each {warp_charge:%s} of "..COLORS_KWords.Peril_rgb.." Quelled.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_3_rgb)),
-				-- toughness: 5%, warp_charge: 10%, colors
+				..Arrow_right_.." Procs on both active or passive Quelling.")),
+			-- toughness: 5%, warp_charge: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_003_desc_fr",
 		{"loc_talent_psyker_toughness_from_vent_desc"}, {"fr"},
@@ -2212,12 +2206,11 @@ local localization_templates = {
 		{"loc_talent_psyker_toughness_from_vent_desc"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждые {warp_charge:%s} подавленной "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_3_rgb_ru)),
 
-	--[+ Passive 4 - Warp Expenditure +]--
+	--[+ Passive 4 - Warp Expenditure +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_004_desc_en",
 		{"loc_talent_psyker_warp_charge_generation_generates_toughness_description"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for every {warp_charge:%s} "..COLORS_KWords.Peril_rgb.." Generated.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_4_rgb)),
-				-- toughness: 2.5%, warp_charge: 10%, colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for every {warp_charge:%s} "..COLORS_KWords.Peril_rgb.." Generated.")),
+			-- toughness: 2.5%, warp_charge: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_004_desc_fr",
 		{"loc_talent_psyker_warp_charge_generation_generates_toughness_description"}, {"fr"},
@@ -2227,15 +2220,15 @@ local localization_templates = {
 		{"loc_talent_psyker_warp_charge_generation_generates_toughness_description"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждые {warp_charge:%s} "..COLORS_KWords_ru.Peril_rgb_ru..", набранных вами."..TALENTS_Enh_desc_ru.ED_PSY_Passive_4_rgb_ru)),
 
-	--[+ Passive 5 - Perilous Combustion +]--
+	--[+ Passive 5 - Perilous Combustion +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_005_desc_en",
 		{"loc_talent_psyker_elite_and_special_kills_add_warpfire_desc"}, {"en"},
 			loc_text("Killing an Elite or a Speacialist Enemy applies {stacks:%s} Stacks of "..COLORS_KWords.Soulblaze_rgb.." to nearby Enemies, causing "..COLORS_KWords.Damage_rgb.." over time.\n"
 				..Arrow_up_green.." Does proc on "..COLORS_KWords.Burn_rgb.." or "..COLORS_KWords.Bleed_rgb.." tick kills.\n"
 				..Arrow_right_.." Stacks are applied at a distance of up to "..COLORS_Numbers.n_4_rgb.." meters from the killed enemy.\n"
 				..Arrow_down_red.." Does not proc on Elites or Specials killed by Psyker's "..COLORS_KWords.Soulblaze_rgb.." "..COLORS_KWords.Damage_rgb.." ticks.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_5_rgb)),
-				-- stacks: 3 -- stack(s)->Stacks , colors
+				..Arrow_down_red.." {#color(255, 35, 5)}Stacks apply to Daemonhosts!{#reset()}")),
+			-- stacks: 3, stack(s)->Stacks , colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_005_desc_fr",
 		{"loc_talent_psyker_elite_and_special_kills_add_warpfire_desc"}, {"fr"},
@@ -2245,15 +2238,14 @@ local localization_templates = {
 		{"loc_talent_psyker_elite_and_special_kills_add_warpfire_desc"}, {"ru"},
 			loc_text("{stacks:%s} заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." накладывается при убийстве элитных врагов или специалистов на ближайших к ним врагов, причиняя "..COLORS_KWords_ru.Dmg_rgb_ru.." с течением времени."..TALENTS_Enh_desc_ru.ED_PSY_Passive_5_rgb_ru)),
 
-	--[+ Passive 6 - Perfect Timing +]--
+	--[+ Passive 6 - Perfect Timing +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_006_desc_en",
 		{"loc_talent_psyker_crits_empower_warp_description"}, {"en"},
-			loc_text("{damage:%s} Warp "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on "..COLORS_KWords.Crit_hits_rgb..". Stacks {stacks:%s} times.\n"
+			loc_text("{damage:%s} "..COLORS_KWords.Damagewrp_rgb.." for {duration:%s} seconds on "..COLORS_KWords.Crit_hits_rgb..". Stacks {stacks:%s} times.\n"
 				..Arrow_up_green.." Generates multiple Stacks per attack when "..COLORS_KWords.Cleaving_rgb..".\n"
 				..Arrow_up_green.." Stacks can be refreshed during active duration.\n"
-				..Arrow_right_.." Hitting enemies with a "..COLORS_KWords.Crit_rgb.." Melee, Ranged, or Assail attack grants Stacks.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_6_rgb)),
-				-- damage: +3%, duration: 10, stacks: 5, s->seconds, colors
+				..Arrow_right_.." Hitting enemies with a "..COLORS_KWords.Crit_rgb.." Melee, Ranged, or "..COLORS_KWords.Assail_rgb.." attack grants Stacks.")),
+			-- damage: +3%, duration: 10, stacks: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_006_desc_fr",
 		{"loc_talent_psyker_crits_empower_warp_description"}, {"fr"},
@@ -2263,12 +2255,11 @@ local localization_templates = {
 		{"loc_talent_psyker_crits_empower_warp_description"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damagewrp_rgb_ru.." на {duration:%s} секунд при "..COLORS_KWords_ru.Crit_hit_e_rgb_ru..". Суммируется {stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_PSY_Passive_6_rgb_ru)),
 
-	--[+ Passive 7 - Battle Meditation +]--
+	--[+ Passive 7 - Battle Meditation +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_007_desc_en",
 		{"loc_talent_psyker_base_2_description"}, {"en"},
-			loc_text("{chance:%s} chance to Quell {warp_charge_percent:%s} "..COLORS_KWords.Peril_rgb.." on Kill.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_7_rgb)),
-				-- chance: 10%, warp_charge_percent: 10%, colors
+			loc_text("{chance:%s} chance to Quell {warp_charge_percent:%s} "..COLORS_KWords.Peril_rgb.." on Kill.")),
+			-- chance: 10%, warp_charge_percent: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_007_desc_fr",
 		{"loc_talent_psyker_base_2_description"}, {"fr"},
@@ -2278,14 +2269,18 @@ local localization_templates = {
 		{"loc_talent_psyker_base_2_description"}, {"ru"},
 			loc_text("{chance:%s} шанс подавить {warp_charge_percent:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." при убийстве."..TALENTS_Enh_desc_ru.ED_PSY_Passive_7_rgb_ru)),
 
-	--[+ Passive 8 - Wildfire +]--
+	--[+ Passive 8 - Wildfire +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_008_desc_en",
 		{"loc_talent_psyker_warpfire_spread_desc"}, {"en"},
 			loc_text("When an Enemy dies while affected by your "..COLORS_KWords.Soulblaze_rgb..", nearby Enemies each gain up to {stacks:%s} Stacks of "..COLORS_KWords.Soulblaze_rgb..". They cannot gain more Stacks than the dying Enemy had.\n"
 				..Arrow_right_.." Whenever an Enemy who is affected by at least "..COLORS_Numbers.n_2_rgb.." Stacks of "..COLORS_KWords.Soulblaze_rgb.." dies, it spreads to valid targets within a "..COLORS_Numbers.n_5_rgb.." meters radius.\n"
-				..Arrow_down_red.." Targets do not receive "..COLORS_KWords.Soulblaze_rgb.." Stacks caused by the Talent if they already have "..COLORS_Numbers.n_4_rgb.." Stacks or more on them.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_8_rgb)),
-				-- stacks: 4, colors
+				..Arrow_right_.." The amount of "..COLORS_KWords.Soulblaze_rgb.." Stacks that spread depends on the amount of "..COLORS_KWords.Soulblaze_rgb.." Stacks on the dying enemy:\n"
+				.."_______________________________\n"
+				.."Stacks:      1|         2|        3|        4|       >4\n"
+				.."Spreads:   0|        2|        3|        4|         4\n"
+				.."_______________________________\n"
+				..Arrow_down_red.." Targets do not receive "..COLORS_KWords.Soulblaze_rgb.." Stacks caused by the Talent if they already have "..COLORS_Numbers.n_4_rgb.." Stacks or more on them.")),
+			-- stacks: 4, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_008_desc_fr",
 		{"loc_talent_psyker_warpfire_spread_desc"}, {"fr"},
@@ -2295,14 +2290,13 @@ local localization_templates = {
 		{"loc_talent_psyker_warpfire_spread_desc"}, {"ru"},
 			loc_text("Когда умирает враг, находящийся под воздействием вашего эффекта "..COLORS_KWords_ru.Soulblaze_rgb_ru..", каждый враг рядом с ним получает до {stacks:%s} зарядов "..COLORS_KWords_ru.Soulblaze_rgb_ru..". Они не могут получить больше зарядов, чем было у погибшего врага."..TALENTS_Enh_desc_ru.ED_PSY_Passive_8_rgb_ru)),
 
-	--[+ Passive 9 - Psykinetic's Aura +]--
+	--[+ Passive 9 - Psykinetic's Aura +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_009_desc_en",
 		{"loc_talent_psyker_elite_kills_give_combat_ability_cd_coherency_desc"}, {"en"},
 			loc_text(COLORS_Numbers.n_minus_rgb.."{cooldown:%s} "..COLORS_KWords.Ability_cd_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.." on Elite or Specialist kill.\n"
 				..Arrow_down_red.." Does not Stack with the same Talent of another Psyker (each Psyker procs their own Talent spreading the Cooldown Reduction separately).\n"
-				..Arrow_down_red.." Does not interact with "..COLORS_KWords.Combat_ability_rgb.." Regeneration from Curios which only reduces the Maximum cooldown of a "..COLORS_KWords.Combat_ability_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_9_rgb)),
-				-- cooldown: 5%, colors
+				..Arrow_down_red.." Does not interact with "..COLORS_KWords.Combat_ability_rgb.." Regeneration from Curios which only reduces the Maximum cooldown of a "..COLORS_KWords.Combat_ability_rgb..".")),
+			-- cooldown: 5%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_009_desc_fr",
 		{"loc_talent_psyker_elite_kills_give_combat_ability_cd_coherency_desc"}, {"fr"},
@@ -2312,13 +2306,12 @@ local localization_templates = {
 		{"loc_talent_psyker_elite_kills_give_combat_ability_cd_coherency_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.n_minus_rgb.."{cooldown:%s} времени "..COLORS_KWords_ru.Ability_cd_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." при убийстве элитного врага или специалиста."..TALENTS_Enh_desc_ru.ED_PSY_Passive_9_rgb_ru)),
 
-	--[+ Passive 10 - Mind in Motion +]--
+	--[+ Passive 10 - Mind in Motion +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_010_desc_en",
 		{"loc_talent_psyker_venting_doesnt_slow_desc"}, {"en"},
 			loc_text("Your Movement Speed is not reduced while Quelling "..COLORS_KWords.Peril_rgb..".\n"
-				..Arrow_down_red.." Does not interact with Movement Speed buffs.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_10_rgb)),
-				-- colors
+				..Arrow_down_red.." Does not interact with Movement Speed buffs.")),
+			-- colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_010_desc_fr",
 		{"loc_talent_psyker_venting_doesnt_slow_desc"}, {"fr"},
@@ -2328,14 +2321,18 @@ local localization_templates = {
 		{"loc_talent_psyker_venting_doesnt_slow_desc"}, {"ru"},
 			loc_text("Ваша скорость движения не снижается во время подавления "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_10_rgb_ru)),
 
-	--[+ Passive 11 - Malefic Momentum +]--
+	--[+ Passive 11 - Malefic Momentum +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_011_desc_en",
 		{"loc_talent_psyker_kills_stack_other_weapon_damage_both_description"}, {"en"},
-			loc_text("{warp_damage:%s} "..COLORS_KWords.Damage_rgb.." to Warp Attacks for {duration:%s} seconds after a non-Warp based Kill. Stacks {stacks:%s} times.\n"
-				.."{non_warp_damage:%s} "..COLORS_KWords.Damage_rgb.." to non-Warp Attacks for {duration:%s} seconds after a Warp based Kill. Stacks {stacks:%s} times.\n"
+			loc_text("{warp_damage:%s} "..COLORS_KWords.Damage_rgb.." to Warp Attacks for {duration:%s} seconds after a non-Warp based Kill.\n"
+				..Arrow_right_.." Stacks {stacks:%s} times.\n"
+				.."\n"
+				.."{non_warp_damage:%s} "..COLORS_KWords.Damage_rgb.." to non-Warp Attacks for {duration:%s} seconds after a Warp based Kill.\n"
+				..Arrow_right_.." Stacks {stacks:%s} times.\n"
+				.."\n"
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_11_rgb)),
-				-- warp_damage/non_warp_damage: +4%, duration: 8, stacks: 5, s->seconds, colors
+				..Arrow_right_.." The "..COLORS_Numbers.n_8_rgb.." seconds duration of each buff starts on respective kills.")),
+			-- warp_damage/non_warp_damage: +4%, duration: 8, stacks: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_011_desc_fr",
 		{"loc_talent_psyker_kills_stack_other_weapon_damage_both_description"}, {"fr"},
@@ -2345,13 +2342,13 @@ local localization_templates = {
 		{"loc_talent_psyker_kills_stack_other_weapon_damage_both_description"}, {"ru"},
 			loc_text("{warp_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." от варп-атак на {duration:%s} секунд после убийства не варп-атакой. Суммируется {stacks:%s} раз.\n{non_warp_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." от не варп-атак на {duration:%s} секунд после убийства варп-атакой. Суммируется {stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_PSY_Passive_11_rgb_ru)),
 
-	--[+ Passive 12 - Channeled Force +]--
+	--[+ Passive 12 - Channeled Force +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_012_desc_en",
 		{"loc_talent_psyker_force_staff_bonus_desc"}, {"en"},
-			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Force Staff's Primary Attacks after Fully Charged Force Staff Secondary Attacks. Lasts {time:%s} seconds.\n"
-				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_12_rgb)),
-				-- damage: +30%, time: 5, s->seconds, colors
+			loc_text("{damage:%s} "..COLORS_KWords.Damage_rgb.." to Force Staff's Primary Attacks after Fully Charged Force Staff Secondary Attacks.\n"
+				..Arrow_right_.." Lasts {time:%s} seconds.\n"
+				..Arrow_up_green.." Can be refreshed during active duration.")),
+			-- damage: +30%, time: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_012_desc_fr",
 		{"loc_talent_psyker_force_staff_bonus_desc"}, {"fr"},
@@ -2361,12 +2358,11 @@ local localization_templates = {
 		{"loc_talent_psyker_force_staff_bonus_desc"}, {"ru"},
 			loc_text("{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." от основных атак психосилового посоха после полностью заряженной вторичной атаки. Длится {time:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Passive_12_rgb_ru)),
 
-	--[+ Passive 13 - Perilous Assault +]--
+	--[+ Passive 13 - Perilous Assault +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_013_desc_en",
 		{"loc_talent_psyker_force_staff_wield_speed_desc"}, {"en"},
-			loc_text("Up to {wield_speed:%s} Weapon Wield Speed, based on your current "..COLORS_KWords.Peril_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_13_rgb)),
-				-- wield_speed: 50%, colors
+			loc_text("Up to {wield_speed:%s} Weapon Wield Speed, based on your current "..COLORS_KWords.Peril_rgb..".")),
+			-- wield_speed: 50%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_013_desc_fr",
 		{"loc_talent_psyker_force_staff_wield_speed_desc"}, {"fr"},
@@ -2376,12 +2372,11 @@ local localization_templates = {
 		{"loc_talent_psyker_force_staff_wield_speed_desc"}, {"ru"},
 			loc_text("До "..COLORS_Numbers.n_plus_rgb.."{wield_speed:%s} к скорости смены оружия в зависимости от текущего уровня "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_13_rgb_ru)),
 
-	--[+ Passive 14 - Lightning Speed +]--
+	--[+ Passive 14 - Lightning Speed +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_014_desc_en",
 		{"loc_talent_psyker_melee_attack_speed_desc"}, {"en"},
-			loc_text(COLORS_Numbers.n_plus_rgb.."{melee_attack_speed:%s} Melee Attack Speed.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_14_rgb)),
-				-- melee_attack_speed: 10%, colors
+			loc_text(COLORS_Numbers.n_plus_rgb.."{melee_attack_speed:%s} Melee Attack Speed.")),
+			-- melee_attack_speed: 10%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_014_desc_fr",
 		{"loc_talent_psyker_melee_attack_speed_desc"}, {"fr"},
@@ -2391,13 +2386,12 @@ local localization_templates = {
 		{"loc_talent_psyker_melee_attack_speed_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.n_plus_rgb.."{melee_attack_speed:%s} к скорости атак ближнего боя."..TALENTS_Enh_desc_ru.ED_PSY_Passive_14_rgb_ru)),
 
-	--[+ Passive 15 - Souldrinker +]--
+	--[+ Passive 15 - Souldrinker +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_015_desc_en",
 		{"loc_talent_psyker_killing_enemy_with_warpfire_boosts_desc"}, {"en"},
 			loc_text("Killing an Enemy with "..COLORS_KWords.Soulblaze_rgb.." restores {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and grants {crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.." for {duration:%s} seconds.\n"
-				..Arrow_down_red.." "..COLORS_KWords.Crit_hit_chance_rgb.." cannot be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_15_rgb)),
-				-- toughness: 5%, crit_chance: 5%, duration: 5, s->seconds, colors
+				..Arrow_down_red.." "..COLORS_KWords.Crit_hit_chance_rgb.." cannot be refreshed during active duration.")),
+			-- toughness: 5%, crit_chance: 5%, duration: 5, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_015_desc_fr",
 		{"loc_talent_psyker_killing_enemy_with_warpfire_boosts_desc"}, {"fr"},
@@ -2407,14 +2401,15 @@ local localization_templates = {
 		{"loc_talent_psyker_killing_enemy_with_warpfire_boosts_desc"}, {"ru"},
 			loc_text("Убийство врага с помощью эффекта "..COLORS_KWords_ru.Soulblaze_rgb_ru.." восстанавливает {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и даёт "..COLORS_Numbers.n_plus_rgb.."{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Passive_15_rgb_ru)),
 
-	--[+ Passive 16 - Empyric Shock +]--
+	--[+ Passive 16 - Empyric Shock +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_016_desc_en",
 		{"loc_talent_psyker_force_staff_quick_attack_bonus_desc"}, {"en"},
-			loc_text("{damage_taken:%s} more "..COLORS_KWords.Damagewrp_rgb.." per stack you deal to your enemies after hitting them with your Force Staff Primary Attacks. Max Stacks {max_stacks:%s}. Lasts {duration:%s} seconds.\n"
+			loc_text(COLORS_Numbers.n_plus_rgb.."{damage_taken:%s} "..COLORS_KWords.Damagewrp_rgb.." per stack you deal to your enemies after hitting them with your Force Staff's Primary Attack.\n"
+				..Arrow_right_.." Max Stacks {max_stacks:%s}.\n"
+				..Arrow_right_.." Lasts {duration:%s} seconds.\n"
 				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..Arrow_up_green.." Can be applied through shields.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_16_rgb)),
-				-- damage_taken: 6%, max_stacks: 5, duration: 10, s->seconds, colors
+				..Arrow_up_green.." Can be applied through shields.")),
+			-- damage_taken: 6%, max_stacks: 5, duration: 10, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_016_desc_fr",
 		{"loc_talent_psyker_force_staff_quick_attack_bonus_desc"}, {"fr"},
@@ -2424,13 +2419,12 @@ local localization_templates = {
 		{"loc_talent_psyker_force_staff_quick_attack_bonus_desc"}, {"ru"},
 			loc_text("На {damage_taken:%s} больше "..COLORS_KWords_ru.Damagewrp_a_rgb_ru.." за заряд вы будете наносить вашим врагам после попадания по ним вашими основными атаками психосиловых посохов. Максимум {max_stacks:%s} зарядов. Длится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_PSY_Passive_16_rgb_ru)),
 
-	--[+ Passive 17 - By Crack of Bone +]--
+	--[+ Passive 17 - By Crack of Bone +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_017_desc_en",
 		{"loc_talent_psyker_melee_weaving_desc"}, {"en"},
 			loc_text("{vent:%s} "..COLORS_KWords.Peril_rgb.." Quelling from Melee "..COLORS_KWords.Weak_spot_rgb.." kills.\n"
-				.."{warp_generation:%s} Reduction in further "..COLORS_KWords.Peril_rgb.." Generation for {duration:%s} seconds.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_17_rgb)),
-				-- vent: 5%, warp_generation: 20%, duration: 4, s->seconds, colors
+				.."{warp_generation:%s} Reduction in further "..COLORS_KWords.Peril_rgb.." Generation for {duration:%s} seconds.")),
+			-- vent: 5%, warp_generation: 20%, duration: 4, s->seconds, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_017_desc_fr",
 		{"loc_talent_psyker_melee_weaving_desc"}, {"fr"},
@@ -2440,13 +2434,12 @@ local localization_templates = {
 		{"loc_talent_psyker_melee_weaving_desc"}, {"ru"},
 			loc_text("{vent:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." подавляется при убийствах в "..COLORS_KWords_ru.Weakspot_rgb_ru.." оружием ближнего боя.\nНа {warp_generation:%s} снижается дальнейшая генерация "..COLORS_KWords_ru.Peril_rgb_ru.." на {duration:%s} секунды."..TALENTS_Enh_desc_ru.ED_PSY_Passive_17_rgb_ru)),
 
-	--[+ Passive 18 - Warp Splitting +]--
+	--[+ Passive 18 - Warp Splitting +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_018_desc_en",
 		{"loc_talent_psyker_cleave_from_peril_desc"}, {"en"},
 			loc_text("Up to {max_cleave:%s} "..COLORS_KWords.Cleave_rgb..", based on "..COLORS_KWords.Peril_rgb..".\n"
-				..Arrow_down_red.." Carapace cannot be "..COLORS_KWords.Cleaved_rgb.." by default.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_18_rgb)),
-				-- max_cleave: +100%, colors
+				..Arrow_down_red.." Carapace cannot be "..COLORS_KWords.Cleaved_rgb.." by default.")),
+			-- max_cleave: +100%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_018_desc_fr",
 		{"loc_talent_psyker_cleave_from_peril_desc"}, {"fr"},
@@ -2456,14 +2449,13 @@ local localization_templates = {
 		{"loc_talent_psyker_cleave_from_peril_desc"}, {"ru"},
 			loc_text("До {max_cleave:%s} к "..COLORS_KWords_ru.Cleave_rgb_ru..", в зависимости от уровня "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_18_rgb_ru)),
 
-	--[+ Passive 19 - Unlucky for Some +]--
+	--[+ Passive 19 - Unlucky for Some +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_019_desc_en",
 		{"loc_talent_psyker_restore_toughness_to_allies_when_ally_down_description"}, {"en"},
-			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenished to all other Allies in "..COLORS_KWords.Coherency_rgb.." when an Ally in "..COLORS_KWords.Coherency_rgb.." gets Knocked Down.\n"
-				..Arrow_right_.." When Psyker goes down, replenishes "..COLORS_KWords.Toughness_rgb.." to Allies in "..COLORS_KWords.Coherency_rgb..".\n"
-				..Arrow_down_red.." Does not proc when the Ally or Psyker dies.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_19_rgb)),
-				-- toughness: 100%, colors
+			loc_text("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenished for you and Allies in "..COLORS_KWords.Coherency_rgb.." when an Ally in "..COLORS_KWords.Coherency_rgb.." gets Knocked Down.\n"
+				..Arrow_right_.." When Psyker is knocked down, also replenishes "..COLORS_KWords.Toughness_rgb.." to Allies in "..COLORS_KWords.Coherency_rgb..".\n"
+				..Arrow_down_red.." Does not proc when the Ally or Psyker gets disabled or dies.")),
+			-- toughness: 100%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_019_desc_fr",
 		{"loc_talent_psyker_restore_toughness_to_allies_when_ally_down_description"}, {"fr"},
@@ -2473,12 +2465,16 @@ local localization_templates = {
 		{"loc_talent_psyker_restore_toughness_to_allies_when_ally_down_description"}, {"ru"},
 			loc_text("Когда одного из союзников сбивают с ног, {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается всем игрокам, которые находились в этот момент с ним в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_19_rgb_ru)),
 
-	--[+ Passive 20 - One with the Warp +]--
+	--[+ Passive 20 - One with the Warp +]--	checked 02.08.2025
 	create_template("talent_tree_psy_pas_020_desc_en",
 		{"loc_talent_psyker_toughness_damage_reduction_from_warp_charge_desc"}, {"en"},
-			loc_text("{min_damage:%s} to {max_damage:%s} gain "..COLORS_KWords.Toughness_dmg_red_rgb.." based on your current "..COLORS_KWords.Peril_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_20_rgb)),
-				-- min_damage: +10.00%, max_damage: +33.00%, colors
+			loc_text("You gain from "..COLORS_Numbers.pc_10_rgb.." to "..COLORS_Numbers.pc_33_rgb.." "..COLORS_KWords.Toughness_dmg_red_rgb.." based on your current "..COLORS_KWords.Peril_rgb..".\n"
+				-- ..Arrow_right_.." Always grants a minimum of "..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Toughness_dmg_red_rgb.." regardless of current "..COLORS_KWords.Peril_rgb.." amount.\n"
+				.."_______________________________\n"
+				..COLORS_KWords.Peril_rgb..":        0|  20|  40|  50|  60|  80|  100\n"
+				..COLORS_KWords.TDR_rgb.."(%): 10|   14|   19|   21|  23|  28|    33\n"
+				.."_______________________________")),
+			-- min_damage: +10.00%, max_damage: +33.00%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_020_desc_fr",
 		{"loc_talent_psyker_toughness_damage_reduction_from_warp_charge_desc"}, {"fr"},
@@ -2488,13 +2484,12 @@ local localization_templates = {
 		{"loc_talent_psyker_toughness_damage_reduction_from_warp_charge_desc"}, {"ru"},
 			loc_text("От "..COLORS_Numbers.pc_10_rgb.." до "..COLORS_Numbers.pc_33_rgb.." к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." в зависимости от вашего текущего уровня "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_20_rgb_ru)),
 
-	--[+ Passive 21 - Empathic Evasion +]--
+	--[+ Passive 21 - Empathic Evasion +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_021_desc_en",
 		{"loc_talent_psyker_dodge_after_crits_description"}, {"en"},
 			loc_text("A "..COLORS_KWords.Crit_hit_rgb.." makes you count as Dodging against Ranged Attacks for {duration:%s} second.\n"
-				..Arrow_up_green.." Can be refreshed during active duration.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_21_rgb)),
-				-- duration: 1 -- s->second, colors
+				..Arrow_up_green.." Can be refreshed during active duration.")),
+			-- duration: 1 -- s->second, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_021_desc_fr",
 		{"loc_talent_psyker_dodge_after_crits_description"}, {"fr"},
@@ -2504,12 +2499,12 @@ local localization_templates = {
 		{"loc_talent_psyker_dodge_after_crits_description"}, {"ru"},
 			loc_text("При "..COLORS_KWords_ru.Crit_hit_rgb_ru.." вы переходите в режим уклонения от дальнобойных атак на {duration:%s} секунду."..TALENTS_Enh_desc_ru.ED_PSY_Passive_21_rgb_ru)),
 
-	--[+ Passive 22 - Anticipation +]--
+	--[+ Passive 22 - Anticipation +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_022_desc_en",
 		{"loc_talent_psyker_improved_dodge_description"}, {"en"},
-			loc_text("{dodge_linger_time:%s} Dodge duration. Increases the number of Dodges before Dodges starts becoming ineffective by {extra_consecutive_dodges:%s}.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_22_rgb)),
-				-- dodge_linger_time: +50%, extra_consecutive_dodges: 1
+			loc_text(COLORS_Numbers.n_plus_rgb.."{extra_consecutive_dodges:%s} Effective Dodges and\n"
+				.."{dodge_linger_time:%s} Dodge duration, increases from "..COLORS_Numbers.n_02_rgb.." to "..COLORS_Numbers.n_03_rgb.." seconds.")),
+			-- dodge_linger_time: +50%, extra_consecutive_dodges: 1
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_022_desc_fr",
 		{"loc_talent_psyker_improved_dodge_description"}, {"fr"},
@@ -2519,13 +2514,12 @@ local localization_templates = {
 		{"loc_talent_psyker_improved_dodge_description"}, {"ru"},
 			loc_text("Вы получаете {extra_consecutive_dodges:%s} дополнительное уклонение и {dodge_linger_time:%s} к длительности уклонений."..TALENTS_Enh_desc_ru.ED_PSY_Passive_22_rgb_ru)),
 
-	--[+ Passive 23 - Solidity +]--
+	--[+ Passive 23 - Solidity +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_023_desc_en",
 		{"loc_talent_psyker_increased_vent_speed_description"}, {"en"},
 			loc_text(COLORS_Numbers.n_plus_rgb.."{vent_speed:%s} Quell Speed.\n"
-				..Arrow_right_.." Applies only to Active Quelling, Passive Quelling is unaffected.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_23_rgb)),
-				-- vent_speed: 30%
+				..Arrow_right_.." Applies only to Active Quelling, Passive Quelling is unaffected.")),
+			-- vent_speed: 30%
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_023_desc_fr",
 		{"loc_talent_psyker_increased_vent_speed_description"}, {"fr"},
@@ -2535,7 +2529,7 @@ local localization_templates = {
 		{"loc_talent_psyker_increased_vent_speed_description"}, {"ru"},
 			loc_text(COLORS_Numbers.n_plus_rgb.."{vent_speed:%s} к скорости подавления "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_23_rgb_ru)),
 
-	--[+ Passive 24 - Puppet Master +]--
+	--[+ Passive 24 - Puppet Master +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_024_desc_en",
 		{"loc_talent_psyker_coherency_size_increase_description"}, {"en"},
 			loc_text(COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} Radius for your "..COLORS_KWords.Coherency_rgb.." Aura, from "..COLORS_Numbers.n_8_rgb.." to "..COLORS_Numbers.n_12_rgb.." meters.")),
@@ -2549,12 +2543,15 @@ local localization_templates = {
 		{"loc_talent_psyker_coherency_size_increase_description"}, {"ru"},
 			loc_text(COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} к радиусу вашей ауры "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_24_rgb_ru)),
 
-	--[+ Passive 25 - Warp Rider +]--
+	--[+ Passive 25 - Warp Rider +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_025_desc_en",
 		{"loc_talent_psyker_damage_based_on_warp_charge_desc"}, {"en"},
 			loc_text("Up to {max_damage:%s} "..COLORS_KWords.Damage_rgb.." from all sources, based on your current "..COLORS_KWords.Peril_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_25_rgb)),
-				-- max_damage: +20%, colors
+				.."_______________________________\n"
+				..""..COLORS_KWords.Peril_rgb.."(%):        0| 20| 40| 50| 60| 80| 100\n"
+				..""..COLORS_KWords.Damage_rgb.."(%): 0|    4|   8|  10|  12|  16|  20\n"
+				.."_______________________________")),
+			-- max_damage: +20%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_025_desc_fr",
 		{"loc_talent_psyker_damage_based_on_warp_charge_desc"}, {"fr"},
@@ -2564,14 +2561,17 @@ local localization_templates = {
 		{"loc_talent_psyker_damage_based_on_warp_charge_desc"}, {"ru"},
 			loc_text("До {max_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." из всех источников в зависимости от уровня вашей текущей "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_25_rgb_ru)),
 
-	--[+ Passive 26 - Crystalline Will +]--
+	--[+ Passive 26 - Crystalline Will +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_027_desc_en",
 		{"loc_talent_psyker_alternative_peril_explosion_desc"}, {"en"},
-			-- loc_text("Overloading through "..COLORS_KWords.Perils_rgb.." of the Warp no longer knocks you down, but you still take the appropriate "..COLORS_KWords.Corruptdmg_rgb..".\n"
 			loc_text("Instead of knocking down Psyker on self-explosion, converts "..COLORS_Numbers.n_1_rgb.." "..COLORS_KWords.Health_rgb.." Segment to full "..COLORS_KWords.Corruption_rgb..".\n"
 				..Arrow_right_.." Always converts "..COLORS_Numbers.n_1_rgb.." Segment regardless whether the Segment in question is already partially "..COLORS_KWords.Corrupted_rgb.." or not.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_26_rgb)),
-				-- rewrite, colors
+				..Arrow_right_.." Psyker's self-explosion:\n"
+				..Arrow_right_..Arrow_right_.." Reduces the overall time from "..COLORS_Numbers.n_3_rgb.." to "..COLORS_Numbers.n_1_13_rgb.." seconds.\n"
+				..Arrow_right_..Arrow_right_.." Max radius: "..COLORS_Numbers.n_10_rgb.." meters.\n"
+				..Arrow_right_..Arrow_right_.." Staggers all enemies except for Crusher, Mutants, Monstrosities, Twins (Captains only without void shield).\n"
+				..Arrow_right_..Arrow_right_.." Deals "..COLORS_Numbers.n_600_rgb.." base Damage against all enemies.")),
+			-- rewrite, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_027_desc_fr",
 		{"loc_talent_psyker_alternative_peril_explosion_desc"}, {"fr"},
@@ -2581,13 +2581,12 @@ local localization_templates = {
 		{"loc_talent_psyker_alternative_peril_explosion_desc"}, {"ru"},
 			loc_text("Взрыв от перегрузки "..COLORS_KWords_ru.Perils_rgb_ru.." варпа больше не выводит вас из строя, но все ещё применяет к вам соответствующий "..COLORS_KWords_ru.Corruptdmg_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_26_rgb_ru)),
 
-	--[+ Passive 27 - Kinetic Deflection +]--
+	--[+ Passive 27 - Kinetic Deflection +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_027_desc_en",
 		{"loc_talent_psyker_block_costs_warp_charge_desc"}, {"en"},
 			loc_text("While below 97% "..COLORS_KWords.Peril_rgb..", Blocking an attack causes you to gain "..COLORS_KWords.Peril_rgb.." instead of losing "..COLORS_KWords.Stamina_rgb..".\n"
-				.."Gained "..COLORS_KWords.Peril_rgb.." is {warp_charge_block_cost:%s} of the blocked attack's "..COLORS_KWords.Stamina_rgb.." cost.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_27_rgb)),
-				-- warp_charge_block_cost: 25%, colors
+				.."Gained "..COLORS_KWords.Peril_rgb.." is {warp_charge_block_cost:%s} of the blocked attack's "..COLORS_KWords.Stamina_rgb.." cost.")),
+			-- warp_charge_block_cost: 25%, colors
 		--[+ French +]--
 	create_template("talent_tree_psy_pas_027_desc_fr",
 		{"loc_talent_psyker_block_costs_warp_charge_desc"}, {"fr"},
@@ -2597,15 +2596,14 @@ local localization_templates = {
 		{"loc_talent_psyker_block_costs_warp_charge_desc"}, {"ru"},
 			loc_text("Пока уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..", блокирование атак приводит к повышению уровня "..COLORS_KWords_ru.Peril_rgb_ru.." вместо потери "..COLORS_KWords_ru.Stamina_rgb_ru..".\n\nПолучаемый уровень "..COLORS_KWords_ru.Peril_rgb_ru.." составляет {warp_charge_block_cost:%s} от стоимости "..COLORS_KWords_ru.Stamina_rgb_ru..", затрачиваемой на такое же блокирование."..TALENTS_Enh_desc_ru.ED_PSY_Passive_27_rgb_ru)),
 
-	--[+ Passive 28 - Tranquility Through Slaughter +]--
+	--[+ Passive 28 - Tranquility Through Slaughter +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_028_desc_en",
 		{"loc_talent_psyker_ranged_crits_vent_desc"}, {"en"},
 			loc_text("{percent:%s} "..COLORS_KWords.Peril_rgb.." is quelled on Non-Warp Ranged "..COLORS_KWords.Crit_hits_rgb..".\n"
 				..Arrow_up_green.." Procs additionally to \"Battle Meditation\" and \"Purloin Providence\".\n"
-				..Arrow_right_.." Procs when hitting shields.\n"
-				..Arrow_right_.." Procs only Once per shot regardless of how many enemies have been hit.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_28_rgb)),
-				-- percent: 4%, colors
+				..Arrow_right_.." Procs when hitting Shields.\n"
+				..Arrow_right_.." Procs only Once per shot regardless of how many enemies have been hit.")),
+			-- percent: 4%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_028_desc_fr",
 		{"loc_talent_psyker_ranged_crits_vent_desc"}, {"fr"},
@@ -2615,12 +2613,12 @@ local localization_templates = {
 		{"loc_talent_psyker_ranged_crits_vent_desc"}, {"ru"},
 			loc_text("{percent:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." подавляется при "..COLORS_KWords_ru.Crit_chance_r_rgb_ru.." не из варп источника."..TALENTS_Enh_desc_ru.ED_PSY_Passive_28_rgb_ru)),
 
-	--[+ Passive 29 - Empyric Resolve +]--
+	--[+ Passive 29 - Empyric Resolve +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_029_desc_en",
 		{"loc_talent_psyker_warp_glass_cannon_desc"}, {"en"},
-			loc_text("{peril_reduction:%s} "..COLORS_KWords.Peril_rgb.." Generation.\n{toughness_reduction:%s} "..COLORS_KWords.Toughness_rgb.." Replenished.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_29_rgb)),
-				-- peril_reduction: -40%, toughness_reduction: -30%, colors
+			loc_text("{peril_reduction:%s} "..COLORS_KWords.Peril_rgb.." Generation.\n"
+				.."{toughness_reduction:%s} "..COLORS_KWords.Toughness_rgb.." Replenished.")),
+			-- peril_reduction: -40%, toughness_reduction: -30%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_029_desc_fr",
 		{"loc_talent_psyker_warp_glass_cannon_desc"}, {"fr"},
@@ -2630,13 +2628,12 @@ local localization_templates = {
 		{"loc_talent_psyker_warp_glass_cannon_desc"}, {"ru"},
 			loc_text("{peril_reduction:%s} генерации "..COLORS_KWords_ru.Peril_rgb_ru..".\n{toughness_reduction:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_29_rgb_ru)),
 
-	--[+ Passive 30 - Penetration of the Soul +]--
+	--[+ Passive 30 - Penetration of the Soul +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_030_desc_en",
 		{"loc_talent_psyker_warp_attacks_rending_new_desc"}, {"en"},
 			loc_text("{rending:%s} "..COLORS_KWords.Rending_rgb.." on Warp-Attacks when above {threshold:%s} "..COLORS_KWords.Peril_rgb..".\n"
-				..Arrow_down_red.." Only affects Psyker's own "..COLORS_KWords.Damage_rgb..".\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_30_rgb)),
-				-- rending: +10%, threshold: 75%, colors
+				..Arrow_right_.." Only affects Psyker's own "..COLORS_KWords.Damage_rgb..".")),
+			-- rending: +10%, threshold: 75%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_030_desc_fr",
 		{"loc_talent_psyker_warp_attacks_rending_new_desc"}, {"fr"},
@@ -2646,13 +2643,13 @@ local localization_templates = {
 		{"loc_talent_psyker_warp_attacks_rending_new_desc"}, {"ru"},
 			loc_text("{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." для варп-атак, если ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." выше {threshold:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Passive_30_rgb_ru)),
 
-	--[+ Passive 31 - True Aim +]--
+	--[+ Passive 31 - True Aim +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_031_desc_en",
 		{"loc_talent_psyker_weakspot_grants_crit_once_description"}, {"en"},
 			loc_text("Landing {weakspot_hits:%s} "..COLORS_KWords.Weakspothits_rgb.." grants your next Ranged Attack a guaranteed "..COLORS_KWords.Crit_rgb..".\n"
 				..Arrow_right_.." "..COLORS_KWords.Cleaving_rgb.." attacks (e.g. Voidstrike Staff charged shots into density) can accumulate up to "..COLORS_Numbers.n_5_rgb.." "..COLORS_KWords.Weakspot_rgb.." Stacks at once but do not consume the guaranteed "..COLORS_KWords.Crit0_rgb.." right away.\n"
-				..Arrow_right_.." Generates "..COLORS_Numbers.n_1_rgb.." "..COLORS_KWords.Weakspot_rgb.." Stack per "..COLORS_KWords.Weakspothit_rgb.." with Melee, Ranged, \"Assail\" and \"Brain Rupture\"/\"Brain Burst\" attacks.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_31_rgb)),
+				..Arrow_right_.." Generates "..COLORS_Numbers.n_1_rgb.." "..COLORS_KWords.Weakspot_rgb.." Stack per "..COLORS_KWords.Weakspothit_rgb.." with Melee, Ranged, "..COLORS_KWords.Assail_rgb.." and "..COLORS_KWords.Brain_rupture_rgb.."/"..COLORS_KWords.Brain_burst_rgb.." attacks.\n"
+				..Arrow_right_.." "..COLORS_KWords.Brain_rupture_rgb.."/"..COLORS_KWords.Brain_burst_rgb.." and "..COLORS_KWords.Smite_rgb.." do not consume the guaranteed "..COLORS_KWords.Crit0_rgb..".")),
 			-- weakspot_hits: 5 -- del "Can only trigger once per Attack.", colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_031_desc_fr",
@@ -2663,12 +2660,13 @@ local localization_templates = {
 		{"loc_talent_psyker_weakspot_grants_crit_once_description"}, {"ru"},
 			loc_text("Попадания {weakspot_hits:%s} раз в "..COLORS_KWords_ru.Weakspot_rgb_ru.." делают вашу следующую дальнобойную атаку гарантированным "..COLORS_KWords_ru.Crit_hit_om_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_31_rgb_ru)),
 
-	--[+ Passive 32 - Surety of Arms +]--
+	--[+ Passive 32 - Surety of Arms +]--	checked 03.08.2025
 	create_template("talent_tree_psy_pas_032_desc_en",
 		{"loc_talent_psyker_reload_speed_warp_desc"}, {"en"},
 			loc_text("{reload_speed:%s} Reload Speed while below {threshold:%s} "..COLORS_KWords.Peril_rgb..". On Reload, generate up to {warp_charge:%s} "..COLORS_KWords.Peril_rgb.." based on the Percentage of the Clip Restored.\n"
-				..TALENTS_Enh_desc.ED_PSY_Passive_32_rgb)),
-				-- reload_speed: 25%, threshold: 75%, warp_charge: 25%, colors
+				..Arrow_right_.." Reloading an Empty clip generates the Max amount of "..COLORS_Numbers.pc_25_rgb.." "..COLORS_KWords.Peril_rgb..".\n"
+				..Arrow_right_.." Talent always generates "..COLORS_KWords.Peril_rgb.." on Reload regardless of current "..COLORS_KWords.Peril_rgb.." amount but only grants the increased Reload speed when below or at {threshold:%s} true "..COLORS_KWords.Peril_rgb..".")),
+			-- reload_speed: 25%, threshold: 75%, warp_charge: 25%, colors
 	--[+ French +]--
 	create_template("talent_tree_psy_pas_032_desc_fr",
 		{"loc_talent_psyker_reload_speed_warp_desc"}, {"fr"},
@@ -7670,7 +7668,7 @@ local localization_templates = {
 	--[+ Russian - В упор +]-- руоф Лицом к лицу
 	create_template("talent_tree_arb_pas_006_desc_ru",
 		{"loc_talent_adamant_close_kills_restore_toughness_desc"}, {"ru"},
-			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при убийстве на ближней ддистанции.")),
+			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при убийстве на ближней дистанции.")),
 
 	--[+ Passive 7 - Force of Will +]--
 	create_template("talent_tree_arb_pas_007_desc_en",
@@ -7969,11 +7967,11 @@ local localization_templates = {
 				..Arrow_right_.." До {max_stacks:%s} зарядов.\n"
 				..Arrow_right_.." Длится {duration:%s} секунд.")),
 
-	--[+ Passive 31 - Street Smarts +]--
+	--[+ Passive 31 - Street Smarts +]--	checked 03.08.2025
 	create_template("talent_tree_arb_pas_031_desc_en",
 		{"loc_talent_adamant_dodge_improvement_desc"}, {"en"},
 			loc_text("{dodge:%s} Effective Dodges and\n"
-				.."{dodge_duration:%s} Dodge Duration.")),
+				.."{dodge_duration:%s} Dodge Duration, increases from "..COLORS_Numbers.n_02_rgb.." to "..COLORS_Numbers.n_025_rgb.." seconds.")),
 			-- dodge: +1, dodge_duration: +25%
 	--[+ French +]--
 	--[+ Russian - Уличная хватка +]-- руоф Законы улицы
@@ -8137,7 +8135,7 @@ local localization_templates = {
 
 
 -- FOR TESTS ONLY!!!
--- create_template("weap_testum00", {"loc_talent_adamant_limit_dmg_taken_from_hits_desc"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
+-- create_template("weap_testum00", {"loc_talent_cleave_boost_medium_desc"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
 -- create_template("weap_testum01", {"loc_talent_adamant_pinning_dog_elite_damage_description"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
 -- FOR TESTS ONLY!!!
 }

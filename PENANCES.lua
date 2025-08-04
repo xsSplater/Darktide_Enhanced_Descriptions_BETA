@@ -1,6 +1,7 @@
 ---@diagnostic disable: undefined-global
 
 local mod = get_mod("Enhanced_descriptions")
+
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 

@@ -111,21 +111,27 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local xp_rgb = iu_actit("{mission_reward_xp_modifier:%s}", var_col)
 	local bcm_rgb = iu_actit("{sprinting_cost_multiplier:%s}", var_col)
 
-		--[+ Numbers +]--
 	local n_minus_rgb = iu_actit("-", var_col)
 	local n_plus_rgb = iu_actit("+", var_col)
 	local n_meter_rgb = iu_actit("m", var_col) -- meter
 	local n_second_rgb = iu_actit("s", var_col) -- second
+
+		--[+ Numbers +]--
 	local n_0_rgb = iu_actit("0", var_col)
 	local n_01_rgb = iu_actit("0.1", var_col)
+	local n_02_rgb = iu_actit("0.2", var_col)
+	local n_025_rgb = iu_actit("0.25", var_col)
+	local n_03_rgb = iu_actit("0.3", var_col)
 	local n_033_rgb = iu_actit("0.33", var_col)
 	local n_055_rgb = iu_actit("0.55", var_col)
 	local n_0875_rgb = iu_actit("0.55", var_col)
 	local n_075_rgb = iu_actit("0.75", var_col)
 	local n_1_rgb = iu_actit("1", var_col)
+	local n_1_13_rgb = iu_actit("1.13", var_col)
 	local n_1_5_rgb = iu_actit("1.5", var_col)
 	local n_1_7_rgb = iu_actit("1.7", var_col)
 	local n_2_rgb = iu_actit("2", var_col)
+	local n_2_1_rgb = iu_actit("2.1", var_col)
 	local n_2e_rgb = iu_actit("2e", var_col)
 	local n_2_5_rgb = iu_actit("2.5", var_col)
 	local n_3_rgb = iu_actit("3", var_col)
@@ -158,9 +164,12 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local n_64_rgb = iu_actit("64", var_col)
 	local n_200_rgb = iu_actit("200", var_col)
 	local n_225_rgb = iu_actit("225", var_col)
+	local n_250_rgb = iu_actit("250", var_col)
 	local n_340_rgb = iu_actit("340", var_col)
 	local n_380_rgb = iu_actit("380", var_col)
 	local n_585_rgb = iu_actit("585", var_col)
+	local n_600_rgb = iu_actit("600", var_col)
+
 		--[+ Percentages +]--
 	local pc_rgb = iu_actit("%", var_col)
 	local pc_2_rgb = iu_actit("2%", var_col)
@@ -188,7 +197,6 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local pc_p12_rgb = iu_actit("+12%", var_col)
 	local pc_p19_rgb = iu_actit("+19%", var_col)
 
-	-- m_tghn_reg_del_rgb = m_tghn_reg_del_rgb,
 
 return {
 	abil_cd_rgb = abil_cd_rgb,
@@ -295,14 +303,19 @@ return {
 	n_minus_rgb = n_minus_rgb,
 	n_0_rgb = n_0_rgb,
 	n_01_rgb = n_01_rgb,
+	n_02_rgb = n_02_rgb,
+	n_025_rgb = n_025_rgb,
+	n_03_rgb = n_03_rgb,
 	n_033_rgb = n_033_rgb,
 	n_055_rgb = n_055_rgb,
 	n_0875_rgb = n_0875_rgb,
 	n_075_rgb = n_075_rgb,
 	n_1_rgb = n_1_rgb,
+	n_1_13_rgb = n_1_13_rgb,
 	n_1_5_rgb = n_1_5_rgb,
 	n_1_7_rgb = n_1_7_rgb,
 	n_2_rgb = n_2_rgb,
+	n_2_1_rgb = n_2_1_rgb,
 	n_2e_rgb = n_2e_rgb,
 	n_2_5_rgb = n_2_5_rgb,
 	n_3_rgb = n_3_rgb,
@@ -335,9 +348,11 @@ return {
 	n_64_rgb = n_64_rgb,
 	n_200_rgb = n_200_rgb,
 	n_225_rgb = n_225_rgb,
+	n_250_rgb = n_250_rgb,
 	n_340_rgb = n_340_rgb,
 	n_380_rgb = n_380_rgb,
 	n_585_rgb = n_585_rgb,
+	n_600_rgb = n_600_rgb,
 
 	pc_rgb = pc_rgb,
 	pc_1_rgb = pc_1_rgb,

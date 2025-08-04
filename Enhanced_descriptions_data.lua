@@ -1,5 +1,18 @@
 ---@diagnostic disable: undefined-global, undefined-field
 
+--[+ Chinese Traditional +]-- ["zh-tw"]
+--[+ Chinese Simplified +]-- ["zh-cn"]
+--[+ English +]-- en
+--[+ French +]-- fr
+--[+ German +]-- de
+--[+ Italian +]-- it
+--[+ Japanese +]-- ja
+--[+ Korean +]-- ko
+--[+ Polish +]-- pl
+--[+ Portuguese +]-- pt-BR
+--[+ Russian +]-- ru
+--[+ Spanish +]-- es
+
 			-- ============ DO NOT DO ANYTHING BELOW! ============ --
 
 local mod = get_mod("Enhanced_descriptions")
@@ -16,7 +29,7 @@ local options = {
 				default_value = true,
 				type = "checkbox",
 				description = mod:localize("enable_menus_file_description"),
-				
+
 				change = function(new_value)
 					mod:set("enable_menus_file", new_value)
 				end,
@@ -30,7 +43,7 @@ local options = {
 				default_value = true,
 				type = "checkbox",
 				description = mod:localize("enable_curious_file_description"),
-				
+
 				change = function(new_value)
 					mod:set("enable_curious_file", new_value)
 				end,
@@ -44,7 +57,7 @@ local options = {
 				default_value = true,
 				type = "checkbox",
 				description = mod:localize("enable_penances_file_description"),
-				
+
 				change = function(new_value)
 					mod:set("enable_penances_file", new_value)
 				end,

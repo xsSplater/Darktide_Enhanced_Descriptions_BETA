@@ -1,6 +1,19 @@
 ---@diagnostic disable: undefined-global
 -- Thanks to deluxghost, Ovenproof, Fracticality, Wobin and others!
 
+--[+ Chinese Traditional +]-- ["zh-tw"]
+--[+ Chinese Simplified +]-- ["zh-cn"]
+--[+ English +]-- en
+--[+ French +]-- fr
+--[+ German +]-- de
+--[+ Italian +]-- it
+--[+ Japanese +]-- ja
+--[+ Korean +]-- ko
+--[+ Polish +]-- pl
+--[+ Portuguese +]-- pt-BR
+--[+ Russian +]-- ru
+--[+ Spanish +]-- es
+
 
 			-- ============ DO NOT DO ANYTHING BELOW! ============ --
 local mod = get_mod("Enhanced_descriptions")
