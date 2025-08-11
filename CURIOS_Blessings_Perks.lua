@@ -410,7 +410,7 @@ local localization_templates = {
 	--[+ 傷害抗性(火焰噴射者) - Traditional Chinese +]--
 	create_template("curio_traits13_ext_tw",
 		{"loc_trait_gadget_dr_vs_flamer_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (毒焰噴射者)")),
+			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (毒焰噴射者)")),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits13_ext_zh_cn",
 		{"loc_trait_gadget_dr_vs_flamer_desc"}, {"zh-cn"},
@@ -431,7 +431,7 @@ local localization_templates = {
 	--[+ 傷害抗性(轟炸者) - Traditional Chinese +]--
 	create_template("curio_traits14_ext_tw",
 		{"loc_trait_gadget_dr_vs_grenadiers_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (轟炸者)")),
+			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (轟炸者)")),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits14_ext_zh_cn",
 		{"loc_trait_gadget_dr_vs_grenadiers_desc"}, {"zh-cn"},
@@ -452,7 +452,7 @@ local localization_templates = {
 	--[+ 傷害抗性(砲手) - Traditional Chinese +]--
 	create_template("curio_traits15_ext_tw",
 		{"loc_trait_gadget_dr_vs_gunners_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (砲手)")),
+			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (砲手)")),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits15_ext_zh_cn",
 		{"loc_trait_gadget_dr_vs_gunners_desc"}, {"zh-cn"},
@@ -473,7 +473,7 @@ local localization_templates = {
 	--[+ 傷害抗性(瘟疫獵犬) - Traditional Chinese +]--
 	create_template("curio_traits16_ext_tw",
 		{"loc_trait_gadget_dr_vs_hounds_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (瘟疫獵犬)")),
+			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (瘟疫獵犬)")),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits16_ext_zh_cn",
 		{"loc_trait_gadget_dr_vs_hounds_desc"}, {"zh-cn"},
@@ -494,7 +494,7 @@ local localization_templates = {
 	--[+ 傷害抗性(變種人) - Traditional Chinese +]--
 	create_template("curio_traits17_ext_tw",
 		{"loc_trait_gadget_dr_vs_mutants_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (變種人)")),
+			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (變種人)")),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits17_ext_zh_cn",
 		{"loc_trait_gadget_dr_vs_mutants_desc"}, {"zh-cn"},
@@ -515,7 +515,7 @@ local localization_templates = {
 	--[+ 傷害抗性(狙擊手) - Traditional Chinese +]--
 	create_template("curio_traits18_ext_tw",
 		{"loc_trait_gadget_dr_vs_snipers_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (狙擊手)")),
+			loc_text(COLORS_Numbers.dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (狙擊手)")),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits18_ext_zh_cn",
 		{"loc_trait_gadget_dr_vs_snipers_desc"}, {"zh-cn"},
@@ -536,7 +536,7 @@ local localization_templates = {
 	--[+ 傷害抗性(瘟疫爆者) - Traditional Chinese +]--
 	--create_template("curio_traits19_ext_tw",
 		-- {"loc_trait_gadget_dr_vs_bursters_desc"}, {"zh-tw"},
-			-- loc_text(COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." (瘟疫爆裂者)")), -- Missing --
+			-- loc_text(COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_tw.Damage_res_rgb_tw.." (瘟疫爆裂者)")), -- Missing --
 	--[+ Simplified Chinese +]--
 	--create_template("curio_traits19_ext_zh_cn",
 		-- {"loc_trait_gadget_dr_vs_bursters_desc"}, {"zh-cn"},
