@@ -685,23 +685,23 @@ local localization_templates = {
 						..Rend_note_rgb)),
 						-- rending: +25%, +colors, +note
 			--[+ French +]--
-			create_template("weap_wbm000_desc_ext_fr",
-				{"loc_trait_bespoke_armor_penetration_against_staggered_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_fr.Rending_rgb_fr.." vs les Enemies qui "..COLORS_KWords_fr.Staggered_rgb_fr.." "..COLORS_KWords_fr.Rend_note_rgb_fr)),
+			-- create_template("weap_wbm000_desc_ext_fr",
+				-- {"loc_trait_bespoke_armor_penetration_against_staggered_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_fr.Rending_rgb_fr.." vs les Enemies qui "..COLORS_KWords_fr.Staggered_rgb_fr.." "..COLORS_KWords_fr.Rend_note_rgb_fr)),
 			--[+ Russian - Оппортунист +]-- руоф Приспособленец	30.09.2025
-			create_template("weap_wbm000_desc_ext_ru",
-				{"loc_trait_bespoke_armor_penetration_against_staggered_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." к "..COLORS_KWords_ru.Rending_rgb_ru.." брони "..COLORS_KWords_ru.Staggered_rgb_ru.." врагов."
-						..Rend_note_rgb_ru)),
+			-- create_template("weap_wbm000_desc_ext_ru",
+				-- {"loc_trait_bespoke_armor_penetration_against_staggered_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." к "..COLORS_KWords_ru.Rending_rgb_ru.." брони "..COLORS_KWords_ru.Staggered_rgb_ru.." врагов."
+						-- ..Rend_note_rgb_ru)),
 			--[+ Traditional Chinese - 機會主義者 +]--
 			-- 作戰大槌&板盾, 突擊鏈斧, 輾壓者, 重型開膛劍, 廁所鏟, 動力錘, 電擊錘 -- 10% | 15% | 20% | 25%
-			create_template("weap_wbm000_desc_ext_tw",
-				{"loc_trait_bespoke_armor_penetration_against_staggered_desc"}, {"zh-tw"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.." vs "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人")),
+			-- create_template("weap_wbm000_desc_ext_tw",
+				-- {"loc_trait_bespoke_armor_penetration_against_staggered_desc"}, {"zh-tw"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.." vs "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人")),
 			--[+ Simplified Chinese -机会主义者 +]--
-			create_template("weap_wbm000_desc_ext_zh_cn",
-				{"loc_trait_bespoke_armor_penetration_against_staggered_desc"}, {"zh-cn"},
-					loc_text("对抗"..COLORS_KWords_zh_cn.Staggered_rgb_zh_cn.."敌人时 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Rend_note_rgb_zh_cn)),
+			-- create_template("weap_wbm000_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_armor_penetration_against_staggered_desc"}, {"zh-cn"},
+					-- loc_text("对抗"..COLORS_KWords_zh_cn.Staggered_rgb_zh_cn.."敌人时 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Rend_note_rgb_zh_cn)),
 
 		--[+ BLOODLETTER +]--	30.09.2025
 		-- Bleed Stacks (per tier)
@@ -714,24 +714,24 @@ local localization_templates = {
 						.."Lasts "..COLORS_Numbers.n_1_5_rgb.." seconds. Ticks every "..COLORS_Numbers.n_05_rgb.." seconds. "..Dot_green.." Refreshes duration on Stack application. "..Dot_red.." Can't apply "..COLORS_KWords.Bleed_rgb.." through shields.")),
 					-- stacks: +14, +colors, +added info
 			--[+ French +]--
-			create_template("weap_wbm001_desc_ext_fr",
-				{"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.p_stacks_var_rgb.." Cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." lors des attaques spéciales. Jusqu'à "..COLORS_Numbers.n_16_rgb.." Cumuls.")),
+			-- create_template("weap_wbm001_desc_ext_fr",
+				-- {"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.p_stacks_var_rgb.." Cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." lors des attaques spéciales. Jusqu'à "..COLORS_Numbers.n_16_rgb.." Cumuls.")),
 			--[+ Russian - Кровопускатель +]-- руоф Кровопускание	30.05.2025
-			create_template("weap_wbm001_desc_ext_ru",
-				{"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.p_stacks_var_rgb.." зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." от специальных атак. "..Dot_red.." Не накладывает "..COLORS_KWords_ru.Bleeding_rgb_ru.." через щиты.")),
+			-- create_template("weap_wbm001_desc_ext_ru",
+				-- {"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.p_stacks_var_rgb.." зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." от специальных атак. "..Dot_red.." Не накладывает "..COLORS_KWords_ru.Bleeding_rgb_ru.." через щиты.")),
 			--[+ Traditional Chinese - 放血者 +]--
 			-- 突擊鏈斧 -- 10 | 12 | 14 | 16
 			-- 突擊鏈鋸劍 -- 11 | 12 | 13 | 14
 			-- 重型開膛劍 -- 3 | 4 | 5 | 6
-			create_template("weap_wbm001_desc_ext_tw",
-				{"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"zh-tw"},
-					loc_text("特殊攻擊時，使其獲得 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.."。\n上限 "..COLORS_Numbers.n_16_rgb.." 層。")),
+			-- create_template("weap_wbm001_desc_ext_tw",
+				-- {"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"zh-tw"},
+					-- loc_text("特殊攻擊時，使其獲得 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.."。\n上限 "..COLORS_Numbers.n_16_rgb.." 層。")),
 			--[+ Simplified Chinese - 放血者 +]--
-			create_template("weap_wbm001_desc_ext_zh_cn",
-				{"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"zh-cn"},
-					loc_text("特殊攻击 "..COLORS_Numbers.p_stacks_var_rgb.." 层"..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_16_rgb.." 层。")),
+			-- create_template("weap_wbm001_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_bleed_on_activated_hit_desc"}, {"zh-cn"},
+					-- loc_text("特殊攻击 "..COLORS_Numbers.p_stacks_var_rgb.." 层"..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_16_rgb.." 层。")),
 
 		--[+ BLOODTHIRSTY +]--	30.09.2025
 		-- Melee Crit Chance (per tier)
@@ -741,22 +741,22 @@ local localization_templates = {
 					loc_text(COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." on your next Melee Attack after Special Attack Kill.")),
 					-- crit_chance: +100%, +colors
 			--[+ French +]--
-			create_template("weap_wbm002_desc_ext_fr",
-				{"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." sur votre prochaine attaque de mêlée après une élimination avec une attaque spéciale.")),
+			-- create_template("weap_wbm002_desc_ext_fr",
+				-- {"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." sur votre prochaine attaque de mêlée après une élimination avec une attaque spéciale.")),
 			--[+ Russian - Кровожадный +]-- руоф Жажда крови	27.04.2025
-			create_template("weap_wbm002_desc_ext_ru",
-				{"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." для вашей следующей атаки ближнего боя после убийства врага специальной атакой.")),
+			-- create_template("weap_wbm002_desc_ext_ru",
+				-- {"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." для вашей следующей атаки ближнего боя после убийства врага специальной атакой.")),
 		--[+ Traditional Chinese - 嗜血 +]--
 			-- 突擊鏈斧, 突擊鏈鋸劍, 重型開膛劍, 烈焰力場劍 -- 40% | 60% | 80% | 100%
-			create_template("trait_bespoke_002_desc_ext_zh",
-				{"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"}, {"zh-tw"},
-					loc_text("在特殊攻擊擊殺敵人後，\n下一次近戰攻擊 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。")),
+			-- create_template("trait_bespoke_002_desc_ext_zh",
+				-- {"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"}, {"zh-tw"},
+					-- loc_text("在特殊攻擊擊殺敵人後，\n下一次近戰攻擊 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。")),
 			--[+ Simplified Chinese - 嗜血 +]--	
-			create_template("weap_wbm002_desc_ext_zh_cn",
-				{"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"}, {"zh-cn"},
-					loc_text("特殊攻击击杀敌人时，\n使下次近战攻击 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."。")),
+			-- create_template("weap_wbm002_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"}, {"zh-cn"},
+					-- loc_text("特殊攻击击杀敌人时，\n使下次近战攻击 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."。")),
 
 		--[+ HEADTAKER +]--	30.09.2025
 		-- Melee Power per stack (per tier)
@@ -768,23 +768,23 @@ local localization_templates = {
 						..Dot_green.." Can generate multiple Stacks per swing and refresh during active duration. "..Pwr_note_rgb)),
 						-- power_level: +5%, time: 3.5, stacks: 5, s->seconds, +colors, +added info, +note
 			--[+ French +]--
-			create_template("weap_wbm003_desc_ext_fr",
-				{"loc_trait_bespoke_increase_power_on_hit_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_fr.Strength_rgb_fr.." pour "..COLORS_Numbers.time_var_rgb.." secondes lors d'un coup. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm003_desc_ext_fr",
+				-- {"loc_trait_bespoke_increase_power_on_hit_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_fr.Strength_rgb_fr.." pour "..COLORS_Numbers.time_var_rgb.." secondes lors d'un coup. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian - Головорез +]--
-			create_template("weap_wbm003_desc_ext_ru",
-				{"loc_trait_bespoke_increase_power_on_hit_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при ударе. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm003_desc_ext_ru",
+				-- {"loc_trait_bespoke_increase_power_on_hit_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при ударе. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 奪顱者 +]--
 			-- 突擊鏈斧, 戰鬥斧, 十字鎬, 戰術斧, 雷鎚 -- 3.5% 4% 4.5% 5% (up to +25%)
 			-- 重劍 -- 6.5% 7% 7.5% 8% (up to +40%)
-			create_template("weap_wbm003_desc_ext_tw",
-				{"loc_trait_bespoke_increase_power_on_hit_desc"}, {"zh-tw"},
-					loc_text("每層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，可持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm003_desc_ext_tw",
+				-- {"loc_trait_bespoke_increase_power_on_hit_desc"}, {"zh-tw"},
+					-- loc_text("每層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，可持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 夺颅者 +]--
-			create_template("weap_wbm003_desc_ext_zh_cn",
-				{"loc_trait_bespoke_increase_power_on_hit_desc"}, {"zh-cn"},
-					loc_text("命中时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。\n攻击每命中一个目标叠加 "..COLORS_Numbers.n_1_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm003_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_increase_power_on_hit_desc"}, {"zh-cn"},
+					-- loc_text("命中时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。\n攻击每命中一个目标叠加 "..COLORS_Numbers.n_1_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ SLAUGHTERER +]--	30.09.2025
 		-- Power per stack (per tier)
@@ -795,25 +795,25 @@ local localization_templates = {
 						..Dot_green.." Can generate multiple Stacks per swing and refresh during active duration. "..Pwr_note_rgb)),
 						-- power_level: +5%, time: 4.5, stacks: 5, s->seconds, +colors, +added info, +note
 			--[+ French +]--
-			create_template("weap_wbm004_desc_ext_fr",
-				{"loc_trait_bespoke_increase_power_on_kill_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_fr.Strength_rgb_fr.." pour "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm004_desc_ext_fr",
+				-- {"loc_trait_bespoke_increase_power_on_kill_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_fr.Strength_rgb_fr.." pour "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian - Мясник +]-- руоф Душегуб
-			create_template("weap_wbm004_desc_ext_ru",
-				{"loc_trait_bespoke_increase_power_on_kill_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийстве. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm004_desc_ext_ru",
+				-- {"loc_trait_bespoke_increase_power_on_kill_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийстве. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 殺戮者 +]--
 			-- 突擊鏈斧, 砍刀, 輾壓者, 烈焰力場劍, 十字鎬, 動力劍, 雷鎚 -- 5% | 6% | 7% | 8% (up to +40%)
-			create_template("weap_wbm004_desc_ext_tw",
-				{"loc_trait_bespoke_increase_power_on_kill_desc"}, {"zh-tw"},
-					loc_text("擊殺敵人時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，可持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次擊殺可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm004_desc_ext_tw",
+				-- {"loc_trait_bespoke_increase_power_on_kill_desc"}, {"zh-tw"},
+					-- loc_text("擊殺敵人時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，可持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次擊殺可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			-- create_template("weap_wbm004_desc_ext_tw",
 				-- {"loc_trait_bespoke_increase_power_on_kill_desc"}, {"zh-tw"},
 					-- loc_text("每層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，可持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次擊殺可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 屠宰者 +]--
-			create_template("weap_wbm004_desc_ext_zh_cn",
-				{"loc_trait_bespoke_increase_power_on_kill_desc"}, {"zh-cn"},
-					loc_text("击杀敌人时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm004_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_increase_power_on_kill_desc"}, {"zh-cn"},
+					-- loc_text("击杀敌人时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ REV IT UP +]--	30.09.2025
 		-- Movement Speed (per tier)
@@ -823,22 +823,22 @@ local localization_templates = {
 					loc_text(COLORS_Numbers.movspd_var_rgb.." Movement Speed for "..COLORS_Numbers.time_var_rgb.." seconds on Weapon Special Activation.")),
 					-- movement_speed: +20%, time: 2, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm005_desc_ext_fr",
-				{"loc_trait_bespoke_movement_speed_on_activation_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.movspd_var_rgb.." de vitesse déplacement pendant "..COLORS_Numbers.time_var_rgb.." secondes lors de l'activation spéciale d'une arme.")),
+			-- create_template("weap_wbm005_desc_ext_fr",
+				-- {"loc_trait_bespoke_movement_speed_on_activation_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.movspd_var_rgb.." de vitesse déplacement pendant "..COLORS_Numbers.time_var_rgb.." secondes lors de l'activation spéciale d'une arme.")),
 			--[+ Russian - Ускорься +]-- руоф Бодрость
-			create_template("weap_wbm005_desc_ext_ru",
-				{"loc_trait_bespoke_movement_speed_on_activation_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.movspd_var_rgb.." к скорости передвижения на "..COLORS_Numbers.time_var_rgb.." секунды при активации специальной атаки.")),
+			-- create_template("weap_wbm005_desc_ext_ru",
+				-- {"loc_trait_bespoke_movement_speed_on_activation_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.movspd_var_rgb.." к скорости передвижения на "..COLORS_Numbers.time_var_rgb.." секунды при активации специальной атаки.")),
 			--[+ Traditional Chinese - 提速 +]--
 			-- 突擊鏈斧, 突擊鏈鋸劍, 重型開膛劍 -- 17% | 18% | 19% | 20%
-			create_template("weap_wbm005_desc_ext_tw",
-				{"loc_trait_bespoke_movement_speed_on_activation_desc"}, {"zh-tw"},
-					loc_text("在武器特殊技能啟動時 "..COLORS_Numbers.movspd_var_rgb.." 移動速度。\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm005_desc_ext_tw",
+				-- {"loc_trait_bespoke_movement_speed_on_activation_desc"}, {"zh-tw"},
+					-- loc_text("在武器特殊技能啟動時 "..COLORS_Numbers.movspd_var_rgb.." 移動速度。\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 			--[+ Simplified Chinese - 加速 +]--
-			create_template("weap_wbm005_desc_ext_zh_cn",
-				{"loc_trait_bespoke_movement_speed_on_activation_desc"}, {"zh-cn"},
-					loc_text("激活武器特殊动作时\n"..COLORS_Numbers.movspd_var_rgb.." 移动速度，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm005_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_movement_speed_on_activation_desc"}, {"zh-cn"},
+					-- loc_text("激活武器特殊动作时\n"..COLORS_Numbers.movspd_var_rgb.." 移动速度，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 
 		--[+ THRUST +]--	30.09.2025
 		-- Melee Power per stack (per tier)
@@ -849,22 +849,22 @@ local localization_templates = {
 						..Pwr_note_rgb)),
 						-- power_level: +5%, stacks: 3, +colors, +note
 			--[+ French +]--
-			create_template("weap_wbm006_desc_ext_fr",
-				{"loc_trait_bespoke_power_bonus_based_on_charge_time_desc"}, {"fr"},
-					loc_text("Jusqu'à "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_fr.Strength_rgb_fr.." selon le temps de charge de vos attaques puissantes. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm006_desc_ext_fr",
+				-- {"loc_trait_bespoke_power_bonus_based_on_charge_time_desc"}, {"fr"},
+					-- loc_text("Jusqu'à "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_fr.Strength_rgb_fr.." selon le temps de charge de vos attaques puissantes. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian - Выпад +]--
-			create_template("weap_wbm006_desc_ext_ru",
-				{"loc_trait_bespoke_power_bonus_based_on_charge_time_desc"}, {"ru"},
-					loc_text("До "..COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." в зависимости от времени заряжания ваших тяжёлых атак. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm006_desc_ext_ru",
+				-- {"loc_trait_bespoke_power_bonus_based_on_charge_time_desc"}, {"ru"},
+					-- loc_text("До "..COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." в зависимости от времени заряжания ваших тяжёлых атак. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 推進 +]--
 			-- 惡棍棒, 突擊鏈斧, 砍刀, 戰鬥斧, 輾壓者, 決鬥劍, 重劍, 廁所鏟, 十字鎬, 動力劍, 工兵鏟, 電擊錘, 雷鎚 -- 5% | 10% | 15% | 20% (up to +60%)
-			create_template("trait_bespoke_006_desc_ext_zh",
-				{"loc_trait_bespoke_power_bonus_based_on_charge_time_desc"}, {"zh-tw"},
-					loc_text("根據重攻擊的續力時間增加 "..COLORS_KWords_tw.Strength_rgb_tw.." ，\n每層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，最多可疊加 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("trait_bespoke_006_desc_ext_zh",
+				-- {"loc_trait_bespoke_power_bonus_based_on_charge_time_desc"}, {"zh-tw"},
+					-- loc_text("根據重攻擊的續力時間增加 "..COLORS_KWords_tw.Strength_rgb_tw.." ，\n每層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，最多可疊加 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 助推 +]--
-			create_template("weap_wbm006_desc_ext_zh_cn",
-				{"loc_trait_bespoke_power_bonus_based_on_charge_time_desc"}, {"zh-cn"},
-					loc_text("随重攻击蓄力时间增加叠加层数，\n每层 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm006_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_power_bonus_based_on_charge_time_desc"}, {"zh-cn"},
+					-- loc_text("随重攻击蓄力时间增加叠加层数，\n每层 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ THUNDEROUS +]--	30.09.2025
 		-- Brittleness Stacks (per tier)
@@ -876,22 +876,22 @@ local localization_templates = {
 						..Brtl_note_rgb)),
 						-- stacks: 4, rending: 2.5%, time: 5, max_stacks: 16, rewrited, +colors, +added info, +note
 			--[+ French +]--
-			create_template("weap_wbm007_desc_ext_fr",
-				{"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.stacks_var_rgb.." Cumuls de "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_fr.Brittleness_rgb_fr.." sont appliqué lors d'un coup sur un ennemie. Pendant "..COLORS_Numbers.time_var_rgb.." secondes. Jusqu'à "..COLORS_Numbers.maxstks_var_rgb.." cumuls, pour un total de "..COLORS_Numbers.pc_40_rgb.."."..COLORS_KWords_fr.Brtl_note_rgb_fr)),
+			-- create_template("weap_wbm007_desc_ext_fr",
+				-- {"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.stacks_var_rgb.." Cumuls de "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_fr.Brittleness_rgb_fr.." sont appliqué lors d'un coup sur un ennemie. Pendant "..COLORS_Numbers.time_var_rgb.." secondes. Jusqu'à "..COLORS_Numbers.maxstks_var_rgb.." cumuls, pour un total de "..COLORS_Numbers.pc_40_rgb.."."..COLORS_KWords_fr.Brtl_note_rgb_fr)),
 			--[+ Russian - Громовой удар +]-- руоф Словно раскаты грома
-			create_template("weap_wbm007_desc_ext_ru",
-				{"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.stacks_var_rgb.." заряда по "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." применяется к врагу при ударе. Длится до "..COLORS_Numbers.time_var_rgb.." секунд. Максимум "..COLORS_Numbers.maxstks_var_rgb.." зарядов, вплоть до "..COLORS_Numbers.pc_40_rgb.."."..Brtl_note_rgb_ru)),
+			-- create_template("weap_wbm007_desc_ext_ru",
+				-- {"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.stacks_var_rgb.." заряда по "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." применяется к врагу при ударе. Длится до "..COLORS_Numbers.time_var_rgb.." секунд. Максимум "..COLORS_Numbers.maxstks_var_rgb.." зарядов, вплоть до "..COLORS_Numbers.pc_40_rgb.."."..Brtl_note_rgb_ru)),
 			--[+ Traditional Chinese - 雷鳴 +]--
 			-- 惡棍棒, 突擊鏈斧, 戰鬥斧, 輾壓者, 廁所鏟, 十字鎬, 雷鎚 -- 1 | 2 | 3 | 4
-			create_template("weap_wbm007_desc_ext_tw",
-				{"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"zh-tw"},
-					loc_text("擊中敵人時，使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Brittleness_rgb_tw.."。\n可持續 "..COLORS_Numbers.time_var_rgb.." 秒，"..COLORS_Numbers.time_var_rgb.." 秒後清除，上限 "..COLORS_Numbers.maxstks_var_rgb.." 層。"..COLORS_KWords2_tw.Brtl_note_rgb_tw)),
+			-- create_template("weap_wbm007_desc_ext_tw",
+				-- {"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"zh-tw"},
+					-- loc_text("擊中敵人時，使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Brittleness_rgb_tw.."。\n可持續 "..COLORS_Numbers.time_var_rgb.." 秒，"..COLORS_Numbers.time_var_rgb.." 秒後清除，上限 "..COLORS_Numbers.maxstks_var_rgb.." 層。"..COLORS_KWords2_tw.Brtl_note_rgb_tw)),
 			--[+ Simplified Chinese - 雷鸣 +]--
-			create_template("weap_wbm007_desc_ext_zh_cn",
-				{"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"zh-cn"},
-					loc_text("命中时，对目标施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 层，最高 "..COLORS_Numbers.pc_40_rgb.." 。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),
+			-- create_template("weap_wbm007_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"zh-cn"},
+					-- loc_text("命中时，对目标施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 层，最高 "..COLORS_Numbers.pc_40_rgb.." 。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),
 
 -- ASSAULT CHAINSWORD
 		--[+ WRATH +]--	30.09.2025
@@ -904,23 +904,23 @@ local localization_templates = {
 						..Dot_nc.." Generates "..COLORS_Numbers.n_1_rgb.." Stack per swing. "..Dot_green.." Can be refreshed during active duration. "..Dot_red.." Carapace armor cannot be cleaved by default.")),
 					-- cleave: +40%, stacks: 5, +colors, +added info
 			--[+ French +]--
-			create_template("weap_wbm008_desc_ext_fr",
-				{"loc_trait_bespoke_chained_hits_increases_cleave_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_fr.Cleave_rgb_fr.." lors d'un coup pendant "..COLORS_Numbers.n_3_5_rgb.." secondes. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois.")),
+			-- create_template("weap_wbm008_desc_ext_fr",
+				-- {"loc_trait_bespoke_chained_hits_increases_cleave_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_fr.Cleave_rgb_fr.." lors d'un coup pendant "..COLORS_Numbers.n_3_5_rgb.." secondes. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois.")),
 			--[+ Russian - Гнев +]--
-			create_template("weap_wbm008_desc_ext_ru",
-				{"loc_trait_bespoke_chained_hits_increases_cleave_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.cleave_var_rgb.." к "..COLORS_KWords_ru.Cleave_rgb_ru.." при ударе на "..COLORS_Numbers.n_3_5_rgb.." секунды. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз.")),
+			-- create_template("weap_wbm008_desc_ext_ru",
+				-- {"loc_trait_bespoke_chained_hits_increases_cleave_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.cleave_var_rgb.." к "..COLORS_KWords_ru.Cleave_rgb_ru.." при ударе на "..COLORS_Numbers.n_3_5_rgb.." секунды. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз.")),
 			--[+ Traditional Chinese - 憤怒 +]--
 			-- 突擊鏈鋸劍, 『惡魔之爪』劍, 重型開膛劍, 重劍, 十字鎬, 烈焰力場巨劍, 上古神刃 -- 25% | 30% | 35% | 40% (up to +200%)
 			-- 動力劍 -- 35% | 40% | 45% | 50% (up to +250%)
-			create_template("weap_wbm008_desc_ext_tw",
-				{"loc_trait_bespoke_chained_hits_increases_cleave_desc"}, {"zh-tw"},
-					loc_text("擊中敵人時 "..COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_tw.Cleave_rgb_tw.."，持續 "..COLORS_Numbers.n_3_5_rgb.." 秒。\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。")),
+			-- create_template("weap_wbm008_desc_ext_tw",
+				-- {"loc_trait_bespoke_chained_hits_increases_cleave_desc"}, {"zh-tw"},
+					-- loc_text("擊中敵人時 "..COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_tw.Cleave_rgb_tw.."，持續 "..COLORS_Numbers.n_3_5_rgb.." 秒。\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。")),
 			--[+ Simplified Chinese - 怒火 +]--
-			create_template("weap_wbm008_desc_ext_zh_cn",
-				{"loc_trait_bespoke_chained_hits_increases_cleave_desc"}, {"zh-cn"},
-					loc_text("连锁攻击命中时 "..COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_zh_cn.Cleave_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.n_3_5_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
+			-- create_template("weap_wbm008_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_chained_hits_increases_cleave_desc"}, {"zh-cn"},
+					-- loc_text("连锁攻击命中时 "..COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_zh_cn.Cleave_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.n_3_5_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
 
 		--[+ SHRED +]--	30.09.2025
 		-- Crit Chance per stack (per tier)
@@ -932,22 +932,22 @@ local localization_templates = {
 						..Dot_red.." Doesn't benefit Ranged weapons.")),
 					-- crit_chance: +4%, stacks: 5, +colors, +added info
 			--[+ French +]--
-			create_template("weap_wbm009_desc_ext_fr",
-				{"loc_trait_bespoke_chained_hits_increases_crit_chance_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." lors d'un coup en chaîne pendant "..COLORS_Numbers.n_3_5_rgb.." secondes. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois.")),
+			-- create_template("weap_wbm009_desc_ext_fr",
+				-- {"loc_trait_bespoke_chained_hits_increases_crit_chance_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." lors d'un coup en chaîne pendant "..COLORS_Numbers.n_3_5_rgb.." secondes. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois.")),
 			--[+ Russian - Кромсание +]-- руоф Расстрел
-			create_template("weap_wbm009_desc_ext_ru",
-				{"loc_trait_bespoke_chained_hits_increases_crit_chance_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.n_3_5_rgb.." секунды при серии ударов. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз.")),
+			-- create_template("weap_wbm009_desc_ext_ru",
+				-- {"loc_trait_bespoke_chained_hits_increases_crit_chance_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.n_3_5_rgb.." секунды при серии ударов. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз.")),
 			--[+ Traditional Chinese - 粉碎 +]--
 			-- 突擊鏈鋸劍, 戰鬥斧, 『惡魔之爪』劍, 決鬥劍, 重型開膛劍, 烈焰力場劍, 烈焰力場巨劍, 戰術斧 -- 2.5% | 3% | 3.5% | 4% (up to +20%)
-			create_template("weap_wbm009_desc_ext_tw",
-				{"loc_trait_bespoke_chained_hits_increases_crit_chance_desc"}, {"zh-tw"},
-					loc_text("每次攻擊 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，持續 "..COLORS_Numbers.n_3_5_rgb.." 秒。\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n需連續命中不得揮空。")),
+			-- create_template("weap_wbm009_desc_ext_tw",
+				-- {"loc_trait_bespoke_chained_hits_increases_crit_chance_desc"}, {"zh-tw"},
+					-- loc_text("每次攻擊 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，持續 "..COLORS_Numbers.n_3_5_rgb.." 秒。\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n需連續命中不得揮空。")),
 			--[+ Simplified Chinese - 撕碎 +]--
-			create_template("weap_wbm009_desc_ext_zh_cn",
-				{"loc_trait_bespoke_chained_hits_increases_crit_chance_desc"}, {"zh-cn"},
-					loc_text("连锁攻击命中时\n"..COLORS_Numbers.crit_var_rgb.." 近战"..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.n_3_5_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
+			-- create_template("weap_wbm009_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_chained_hits_increases_crit_chance_desc"}, {"zh-cn"},
+					-- loc_text("连锁攻击命中时\n"..COLORS_Numbers.crit_var_rgb.." 近战"..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.n_3_5_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
 
 		--[+ SAVAGE SWEEP +]--	30.09.2025
 		-- Max Hit Mass Increase (per tier)
@@ -958,22 +958,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration. "..Dot_red.." Carapace armor cannot be cleaved by default.")),
 					-- multiple_hit: 3, cleave: +200%, time: 2, +colors, +added info, rewrited
 			--[+ French +]--
-			create_template("weap_wbm010_desc_ext_fr",
-				{"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.cleave_var_rgb.." de "..COLORS_KWords_fr.Cleave_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes en touchant au moins "..COLORS_Numbers.mult_hit_var_rgb.." ennemies avec une attaque.")),
+			-- create_template("weap_wbm010_desc_ext_fr",
+				-- {"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.cleave_var_rgb.." de "..COLORS_KWords_fr.Cleave_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes en touchant au moins "..COLORS_Numbers.mult_hit_var_rgb.." ennemies avec une attaque.")),
 			--[+ Russian - Дикий взмах +]-- руоф Дикость
-			create_template("weap_wbm010_desc_ext_ru",
-				{"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.cleave_var_rgb.." к "..COLORS_KWords_ru.Cleave_rgb_ru.." для ваших атак на "..COLORS_Numbers.time_var_rgb.." секунды при попадании как минимум по "..COLORS_Numbers.mult_hit_var_rgb.." врагам.")),
+			-- create_template("weap_wbm010_desc_ext_ru",
+				-- {"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.cleave_var_rgb.." к "..COLORS_KWords_ru.Cleave_rgb_ru.." для ваших атак на "..COLORS_Numbers.time_var_rgb.." секунды при попадании как минимум по "..COLORS_Numbers.mult_hit_var_rgb.." врагам.")),
 			--[+ Traditional Chinese - 野蠻橫掃 +]--
 			-- 突擊鏈鋸劍, 砍刀, 『惡魔之爪』劍, 重型開膛劍, 重劍 -- 140% | 160% | 180% | 200%
-			create_template("weap_wbm010_desc_ext_tw",
-				{"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"}, {"zh-tw"},
-					loc_text("當一次攻擊命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 敵人時，\n"..COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_tw.Cleave_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm010_desc_ext_tw",
+				-- {"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"}, {"zh-tw"},
+					-- loc_text("當一次攻擊命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 敵人時，\n"..COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_tw.Cleave_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 			--[+ Simplified Chinese - 野蛮扫荡 +]--
-			create_template("weap_wbm010_desc_ext_zh_cn",
-				{"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"}, {"zh-cn"},
-					loc_text("命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 名敌人时 \n"..COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_zh_cn.Cleave_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm010_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"}, {"zh-cn"},
+					-- loc_text("命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 名敌人时 \n"..COLORS_Numbers.cleave_var_rgb.." "..COLORS_KWords_zh_cn.Cleave_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 
 		--[+ RAMPAGE +]--	30.09.2025
 		-- Melee Power (per tier)
@@ -984,22 +984,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration. "..Pwr_note_rgb)),
 						-- multiple_hit: 3, damage: 36%, time: 3, Damage -> Strength, +colors, +added info, +note
 			--[+ French +]--
-			create_template("weap_wbm011_desc_ext_fr",
-				{"loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.dmg_var_rgb.." de bonus à votre "..COLORS_KWords_fr.Strength_rgb_fr.." pour vos attaques de mélées pendant "..COLORS_Numbers.time_var_rgb.." secondes en touchant au moins "..COLORS_Numbers.mult_hit_var_rgb.." ennemies avec une attaque."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm011_desc_ext_fr",
+				-- {"loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.dmg_var_rgb.." de bonus à votre "..COLORS_KWords_fr.Strength_rgb_fr.." pour vos attaques de mélées pendant "..COLORS_Numbers.time_var_rgb.." secondes en touchant au moins "..COLORS_Numbers.mult_hit_var_rgb.." ennemies avec une attaque."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian - Буйство +]--
-			create_template("weap_wbm011_desc_ext_ru",
-				{"loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." вашей атаки ближнего боя на "..COLORS_Numbers.time_var_rgb.." секунды при попадании как минимум по "..COLORS_Numbers.mult_hit_var_rgb.." врагам."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm011_desc_ext_ru",
+				-- {"loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." вашей атаки ближнего боя на "..COLORS_Numbers.time_var_rgb.." секунды при попадании как минимум по "..COLORS_Numbers.mult_hit_var_rgb.." врагам."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 暴走 +]--
 			-- 突擊鏈鋸劍, 『惡魔之爪』劍, 決鬥劍, 重型開膛劍, 重劍, 動力劍, 上古神刃 -- 24% | 28% | 32% | 36%
-			create_template("weap_wbm011_desc_ext_tw",
-				{"loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"}, {"zh-tw"},
-					loc_text("當一次攻擊命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 敵人時，\n"..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm011_desc_ext_tw",
+				-- {"loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"}, {"zh-tw"},
+					-- loc_text("當一次攻擊命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 敵人時，\n"..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 			--[+ Simplified Chinese - 狂暴 +]--
-			create_template("weap_wbm011_desc_ex_zh_cn",
-				{"loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"}, {"zh-cn"},
-					loc_text("命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 名敌人 \n"..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm011_desc_ex_zh_cn",
+				-- {"loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"}, {"zh-cn"},
+					-- loc_text("命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 名敌人 \n"..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ DEVASTATING STRIKE +]--	30.09.2025
 		-- Max Hit Mass Increase (per tier)
@@ -1010,22 +1010,22 @@ local localization_templates = {
 						..""..Dot_green.." Can be refreshed during active duration. "..Dot_red.." Carapace armor cannot be cleaved by default.")),
 					-- hit_mass: +80%, time: 5, +colors, +added info
 			--[+ French +]--
-			create_template("weap_wbm012_desc_ext_fr",
-				{"loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.hitmass_var_rgb.." de "..COLORS_KWords_fr.Cleave_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr..".")),
+			-- create_template("weap_wbm012_desc_ext_fr",
+				-- {"loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.hitmass_var_rgb.." de "..COLORS_KWords_fr.Cleave_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr..".")),
 			--[+ Russian - Разрушительный удар +]-- руоф Сокрушительный удар
-			create_template("weap_wbm012_desc_ext_ru",
-				{"loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.hitmass_var_rgb.." к "..COLORS_KWords_ru.Cleave_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд при "..COLORS_KWords_ru.Crit_hit_rgb_ru..".")),
+			-- create_template("weap_wbm012_desc_ext_ru",
+				-- {"loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.hitmass_var_rgb.." к "..COLORS_KWords_ru.Cleave_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд при "..COLORS_KWords_ru.Crit_hit_rgb_ru..".")),
 			--[+ Traditional Chinese - 毀滅打擊 +]--
 			-- 突擊鏈鋸劍, 砍刀, 『惡魔之爪』劍, 上古神刃 -- 65% | 70% | 75% | 80%
-			create_template("weap_wbm012_desc_ext_tw",
-				{"loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"}, {"zh-tw"},
-					loc_text(COLORS_KWords_tw.Crit_hit_rgb_tw.." 時，"..COLORS_Numbers.hitmass_var_rgb.." "..COLORS_KWords_tw.Cleave_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm012_desc_ext_tw",
+				-- {"loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"}, {"zh-tw"},
+					-- loc_text(COLORS_KWords_tw.Crit_hit_rgb_tw.." 時，"..COLORS_Numbers.hitmass_var_rgb.." "..COLORS_KWords_tw.Cleave_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 			--[+ Simplified Chinese - 毁灭打击 +]--
-			create_template("weap_wbm012_desc_ext_zh_cn",
-				{"loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时 "..COLORS_Numbers.hitmass_var_rgb.." "..COLORS_KWords_zh_cn.Cleave_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm012_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时 "..COLORS_Numbers.hitmass_var_rgb.." "..COLORS_KWords_zh_cn.Cleave_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 
 -- COMBAT AXE
 		--[+ DECIMATOR +]--	30.09.2025
@@ -1037,22 +1037,22 @@ local localization_templates = {
 						..Dot_nc.." Generates "..COLORS_Numbers.n_1_rgb.." Stack per swing. "..Dot_green.." Can be refreshed during active duration. "..Pwr_note_rgb)),
 						-- power_level: +5%, stacks: 10, Power -> Strength, +colors, +added info, +note
 			--[+ French +]--
-			create_template("weap_wbm013_desc_ext_fr",
-				{"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." en enchaînant continuellement plus de "..COLORS_Numbers.n_2_rgb.." attaques. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm013_desc_ext_fr",
+				-- {"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." en enchaînant continuellement plus de "..COLORS_Numbers.n_2_rgb.." attaques. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian - Дециматор +]--
-			create_template("weap_wbm013_desc_ext_ru",
-				{"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." при непрерывной серии из более чем "..COLORS_Numbers.n_2_rgb.." атак. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm013_desc_ext_ru",
+				-- {"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." при непрерывной серии из более чем "..COLORS_Numbers.n_2_rgb.." атак. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 屠戮者 +]--
 			-- 戰鬥斧, 工兵鏟, 戰術斧 -- 2% | 3% | 4% | 5% (up to +50%)
-			create_template("weap_wbm013_desc_ext_tw",
-				{"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"zh-tw"},
-					loc_text("攻擊任意目標超過 "..COLORS_Numbers.n_2_rgb.." 次時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n需連續命中不得揮空。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm013_desc_ext_tw",
+				-- {"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"zh-tw"},
+					-- loc_text("攻擊任意目標超過 "..COLORS_Numbers.n_2_rgb.." 次時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n需連續命中不得揮空。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 屠戮者 +]--
-			create_template("weap_wbm013_desc_ext_zh_cn",
-				{"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"zh-cn"},
-					loc_text("连锁攻击命中 "..COLORS_Numbers.n_2_rgb.." 次时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm013_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_chained_hits_increases_power_desc"}, {"zh-cn"},
+					-- loc_text("连锁攻击命中 "..COLORS_Numbers.n_2_rgb.." 次时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ BRUTAL MOMENTUM / DEATHBLOW +]--	30.09.2025
 		-- Melee Weakspot Damage (per tier)
@@ -1063,22 +1063,22 @@ local localization_templates = {
 						..Dot_red.." Carapace armor cannot be cleaved by default.")),
 					-- weakspot_damage: 15%, +colors, +added info
 			--[+ French +]--
-			create_template("weap_wbm014_desc_ext_fr",
-				{"loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc", "loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.wkspdmg_var_rgb.." "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr..". Les élimination sur "..COLORS_KWords_fr.Weakspot_rgb_fr.." ignore le "..COLORS_KWords_fr.Hit_mass_rgb_fr.." de "..COLORS_Numbers.n_3_rgb.." ennemies.")),
+			-- create_template("weap_wbm014_desc_ext_fr",
+				-- {"loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc", "loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.wkspdmg_var_rgb.." "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr..". Les élimination sur "..COLORS_KWords_fr.Weakspot_rgb_fr.." ignore le "..COLORS_KWords_fr.Hit_mass_rgb_fr.." de "..COLORS_Numbers.n_3_rgb.." ennemies.")),
 			--[+ Russian - Жестокий моментум / Смертельный удар +]--
-			create_template("weap_wbm014_desc_ext_ru",
-				{"loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc", "loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.wkspdmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru..". Убийства в "..COLORS_KWords_ru.Weakspot_rgb_ru.." также игнорируют "..COLORS_KWords_ru.Hit_mass_rgb_ru.." до "..COLORS_Numbers.n_3_rgb.." врагов."..Hit_Mass_note_rgb_ru)),
+			-- create_template("weap_wbm014_desc_ext_ru",
+				-- {"loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc", "loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.wkspdmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru..". Убийства в "..COLORS_KWords_ru.Weakspot_rgb_ru.." также игнорируют "..COLORS_KWords_ru.Hit_mass_rgb_ru.." до "..COLORS_Numbers.n_3_rgb.." врагов."..Hit_Mass_note_rgb_ru)),
 			--[+ Traditional Chinese - 野蠻攻勢 +]--
 			-- 作戰大槌&板盾, 戰鬥斧, 重劍, 廁所鏟, 動力錘, 動力劍, 戰術斧 -- 7.5% | 10% | 12.5% | 15%
-			create_template("weap_wbm014_desc_ext_tw",
-				{"loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc", "loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"}, {"zh-tw"},
-					loc_text(COLORS_Numbers.wkspdmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.."。\n"..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 無視 "..COLORS_Numbers.n_3_rgb.." 個敵人的 "..COLORS_KWords_tw.Hit_mass_rgb_tw.." 。"..COLORS_KWords2_tw.Hit_Mass_note_rgb_tw)),
+			-- create_template("weap_wbm014_desc_ext_tw",
+				-- {"loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc", "loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"}, {"zh-tw"},
+					-- loc_text(COLORS_Numbers.wkspdmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.."。\n"..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 無視 "..COLORS_Numbers.n_3_rgb.." 個敵人的 "..COLORS_KWords_tw.Hit_mass_rgb_tw.." 。"..COLORS_KWords2_tw.Hit_Mass_note_rgb_tw)),
 			--[+ Simplified Chinese - 野蛮势头 +]--
-			create_template("weap_wbm014_desc_ext_zh_cn",
-				{"loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc", "loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"}, {"zh-cn"},
-					loc_text(COLORS_Numbers.wkspdmg_var_rgb.." "..COLORS_KWords_zh_cn.Weakspot_dmg_rgb_zh_cn.."。\n"..COLORS_KWords_zh_cn.Weakspothits_k_rgb_zh_cn.."无视 "..COLORS_Numbers.n_3_rgb.." 名敌人的"..COLORS_KWords_zh_cn.Hit_mass_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Hit_Mass_note_rgb_zh_cn)),
+			-- create_template("weap_wbm014_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc", "loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_Numbers.wkspdmg_var_rgb.." "..COLORS_KWords_zh_cn.Weakspot_dmg_rgb_zh_cn.."。\n"..COLORS_KWords_zh_cn.Weakspothits_k_rgb_zh_cn.."无视 "..COLORS_Numbers.n_3_rgb.." 名敌人的"..COLORS_KWords_zh_cn.Hit_mass_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Hit_Mass_note_rgb_zh_cn)),
 
 		--[+ LIMBSPLITTER +]--	30.09.2025
 		-- Cooldown (per tier)
@@ -1089,22 +1089,22 @@ local localization_templates = {
 						..Dot_green.." While on cooldown, any Melee hit resets the active cooldown. "..Pwr_note_rgb)),
 						-- power_level: +60%, cooldown: 3.5, +colors, +note 
 			--[+ French +]--
-			create_template("weap_wbm015_desc_ext_fr",
-				{"loc_trait_bespoke_power_bonus_on_first_attack_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." sur votre première attaque toute les "..COLORS_Numbers.cd_var_rgb.." secondes."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm015_desc_ext_fr",
+				-- {"loc_trait_bespoke_power_bonus_on_first_attack_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." sur votre première attaque toute les "..COLORS_Numbers.cd_var_rgb.." secondes."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian +]-- Расчленитель -- руоф Расщепитель
-			create_template("weap_wbm015_desc_ext_ru",
-				{"loc_trait_bespoke_power_bonus_on_first_attack_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." для вашей первой атаки каждые "..COLORS_Numbers.cd_var_rgb.." секунды."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm015_desc_ext_ru",
+				-- {"loc_trait_bespoke_power_bonus_on_first_attack_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." для вашей первой атаки каждые "..COLORS_Numbers.cd_var_rgb.." секунды."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 斷肢者 +]--
 			-- 戰鬥斧, 十字鎬, 工兵鏟, 戰術斧 -- 5 | 4.5 | 4 | 3.5
-			create_template("weap_wbm015_desc_ext_tw",
-				{"loc_trait_bespoke_power_bonus_on_first_attack_desc"}, {"zh-tw"},
-					loc_text("每 "..COLORS_Numbers.cd_var_rgb.." 秒，第一次攻擊增加 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."。")),
+			-- create_template("weap_wbm015_desc_ext_tw",
+				-- {"loc_trait_bespoke_power_bonus_on_first_attack_desc"}, {"zh-tw"},
+					-- loc_text("每 "..COLORS_Numbers.cd_var_rgb.." 秒，第一次攻擊增加 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."。")),
 			--[+ Simplified Chinese - 断肢者 +]--
-			create_template("weap_wbm015_desc_ext_zh_cn",
-				{"loc_trait_bespoke_power_bonus_on_first_attack_desc"}, {"zh-cn"},
-					loc_text("每 "..COLORS_Numbers.cd_var_rgb.." 秒，首次攻击 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm015_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_power_bonus_on_first_attack_desc"}, {"zh-cn"},
+					-- loc_text("每 "..COLORS_Numbers.cd_var_rgb.." 秒，首次攻击 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ ALL OR NOTHING +]--	30.09.2025
 		-- Melee Power per stack (per tier)
@@ -1115,23 +1115,23 @@ local localization_templates = {
 						..Dot_nc.." Every "..COLORS_Numbers.pc_20_rgb.." of depleted Max "..COLORS_KWords.Stamina_rgb.." grants "..COLORS_Numbers.n_1_rgb.." Stack. "..Dot_nc.." Stacks "..COLORS_Numbers.n_5_rgb.." times. "..Pwr_note_rgb)),
 						-- power_level: +8%, rewrited, +colors, +note
 			--[+ French +]--
-			create_template("weap_wbm016_desc_ext_fr",
-				{"loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"}, {"fr"},
-					loc_text("Jusqu'à "..COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr..", en fonction "..COLORS_KWords_fr.Stamina_rgb_fr.." épuisée. Chaque "..COLORS_Numbers.pc_20_rgb.." de la barre d'"..COLORS_KWords_fr.Stamina_rgb_fr.." épuisée donne "..COLORS_Numbers.n_1_rgb.." cumule. Jusqu'à "..COLORS_Numbers.n_5_rgb.." cumuls. {#color(255, 35, 5)}(bug: Les pelles et haches tactiques donnent +10% peu importe le tier de la bénédiction){#reset()}"..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm016_desc_ext_fr",
+				-- {"loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"}, {"fr"},
+					-- loc_text("Jusqu'à "..COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr..", en fonction "..COLORS_KWords_fr.Stamina_rgb_fr.." épuisée. Chaque "..COLORS_Numbers.pc_20_rgb.." de la barre d'"..COLORS_KWords_fr.Stamina_rgb_fr.." épuisée donne "..COLORS_Numbers.n_1_rgb.." cumule. Jusqu'à "..COLORS_Numbers.n_5_rgb.." cumuls. {#color(255, 35, 5)}(bug: Les pelles et haches tactiques donnent +10% peu importe le tier de la bénédiction){#reset()}"..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian - Всё или ничего +]-- руоф Все или ничего
-			create_template("weap_wbm016_desc_ext_ru",
-				{"loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"}, {"ru"},
-					loc_text("До "..COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru..", когда уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." на нуле. Каждые "..COLORS_Numbers.pc_20_rgb.." потраченной "..COLORS_KWords_ru.Stamina_rgb_ru.." даёт "..COLORS_Numbers.n_1_rgb.." заряд. До "..COLORS_Numbers.pc_50_rgb.." при "..COLORS_Numbers.n_5_rgb.." зарядах. {#color(255, 35, 5)}(Баг: Лопаты и Тактические топоры: +10% на всех уровнях){#reset()}"..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm016_desc_ext_ru",
+				-- {"loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"}, {"ru"},
+					-- loc_text("До "..COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru..", когда уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." на нуле. Каждые "..COLORS_Numbers.pc_20_rgb.." потраченной "..COLORS_KWords_ru.Stamina_rgb_ru.." даёт "..COLORS_Numbers.n_1_rgb.." заряд. До "..COLORS_Numbers.pc_50_rgb.." при "..COLORS_Numbers.n_5_rgb.." зарядах. {#color(255, 35, 5)}(Баг: Лопаты и Тактические топоры: +10% на всех уровнях){#reset()}"..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 孤注一擲 +]--
 			-- 戰鬥斧, 十字鎬 -- 5% | 6% | 7% | 8% (up to +40%)
 			-- 工兵鏟, 戰術斧 -- 一般力量: 10% | 10% | 10% | 10% (up to +50%) (bugged)
-			create_template("weap_wbm016_desc_ext_tw",
-				{"loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"}, {"zh-tw"},
-					loc_text("每消耗最大 "..COLORS_KWords_tw.Stamina_rgb_tw.." 的 "..COLORS_Numbers.pc_20_rgb.." 獲得一層。\n每一層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.." ，上限 "..COLORS_Numbers.n_5_rgb.." 層。\n{#color(255, 35, 5)}(bug: 鏟子和戰術斧 +10% 所有等級){#reset()}"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm016_desc_ext_tw",
+				-- {"loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"}, {"zh-tw"},
+					-- loc_text("每消耗最大 "..COLORS_KWords_tw.Stamina_rgb_tw.." 的 "..COLORS_Numbers.pc_20_rgb.." 獲得一層。\n每一層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.." ，上限 "..COLORS_Numbers.n_5_rgb.." 層。\n{#color(255, 35, 5)}(bug: 鏟子和戰術斧 +10% 所有等級){#reset()}"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 孤注一掷 +]--
-			create_template("weap_wbm016_desc_ext_zh_cn",
-				{"loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"}, {"zh-cn"},
-					loc_text("随"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."消耗叠加层数，\n每消耗 "..COLORS_Numbers.pc_20_rgb.."，"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。{#color(255, 35, 5)}\n（BUG：无论祝福级别如何，战术斧与工兵铲数值始终为 +10% 强度。）{#reset()}"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm016_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"}, {"zh-cn"},
+					-- loc_text("随"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."消耗叠加层数，\n每消耗 "..COLORS_Numbers.pc_20_rgb.."，"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。{#color(255, 35, 5)}\n（BUG：无论祝福级别如何，战术斧与工兵铲数值始终为 +10% 强度。）{#reset()}"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 
 		--[+ DECAPITATOR +]--	30.09.2025
@@ -1143,22 +1143,22 @@ local localization_templates = {
 						..Dot_nc.." Stacks last for "..COLORS_Numbers.n_8_rgb.." seconds. "..Dot_green.." Can be refreshed during active duration. "..Fns_note_rgb)),
 						-- finesse: +24%, time: 5, stacks: 5, s->seconds, +colors, +note
 			--[+ French +]--
-			create_template("weap_wbm017_desc_ext_fr",
-				{"loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.fin_var_rgb.." de "..COLORS_KWords_fr.Finesse_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lorsque l'ennemie est tué en un coup. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Fns_note_rgb_fr)),
+			-- create_template("weap_wbm017_desc_ext_fr",
+				-- {"loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.fin_var_rgb.." de "..COLORS_KWords_fr.Finesse_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lorsque l'ennemie est tué en un coup. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Fns_note_rgb_fr)),
 			--[+ Russian - Обезглавливатель +]-- руоф Палач
-			create_template("weap_wbm017_desc_ext_ru",
-				{"loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.fin_var_rgb.." к "..COLORS_KWords_ru.Finesse_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд при убийстве врага одним ударом. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Fns_note_rgb_ru)),
+			-- create_template("weap_wbm017_desc_ext_ru",
+				-- {"loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.fin_var_rgb.." к "..COLORS_KWords_ru.Finesse_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд при убийстве врага одним ударом. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Fns_note_rgb_ru)),
 			--[+ Traditional Chinese - 斬首者 +]--
 			-- 戰鬥斧 -- 18% | 20% | 22% | 24% (up to +120%)
-			create_template("weap_wbm017_desc_ext_tw",
-				{"loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"}, {"zh-tw"},
-					loc_text("一擊斃命時 "..COLORS_Numbers.fin_var_rgb.." "..COLORS_KWords_tw.Finesse_rgb_tw.." ，持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次擊殺可疊加一層，上限 "..COLORS_Numbers.n_5_rgb.." 層。"..COLORS_KWords2_tw.Fns_note_rgb_tw)),
+			-- create_template("weap_wbm017_desc_ext_tw",
+				-- {"loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"}, {"zh-tw"},
+					-- loc_text("一擊斃命時 "..COLORS_Numbers.fin_var_rgb.." "..COLORS_KWords_tw.Finesse_rgb_tw.." ，持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次擊殺可疊加一層，上限 "..COLORS_Numbers.n_5_rgb.." 層。"..COLORS_KWords2_tw.Fns_note_rgb_tw)),
 			--[+ Simplified Chinese - 斩首者 +]--
-			create_template("weap_wbm017_desc_ext_zh_cn",
-				{"loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"}, {"zh-cn"},
-					loc_text("一击毙敌时 "..COLORS_Numbers.fin_var_rgb.." "..COLORS_KWords_zh_cn.Finesse_dmg_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Fns_note_rgb_zh_cn)),
+			-- create_template("weap_wbm017_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"}, {"zh-cn"},
+					-- loc_text("一击毙敌时 "..COLORS_Numbers.fin_var_rgb.." "..COLORS_KWords_zh_cn.Finesse_dmg_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Fns_note_rgb_zh_cn)),
 
 -- TACTICAL AXE
 		--[+ AGILE +]--	30.09.2025
@@ -1169,22 +1169,22 @@ local localization_templates = {
 					loc_text(COLORS_Numbers.mel_weapsp_dmg_var_rgb.." Melee "..COLORS_KWords.Weakspot_dmg_rgb..". Refreshed Dodge Efficiency on "..COLORS_KWords.Weakspothit_rgb..".")),
 					-- melee_weakspot_damage: +10%, +colors
 			--[+ French +]--
-			create_template("weap_wbm018_desc_ext_fr",
-				{"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.mel_weapsp_dmg_var_rgb.." de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." de mélée. Actualise l'efficacité de l'esquive lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr..".")),
+			-- create_template("weap_wbm018_desc_ext_fr",
+				-- {"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.mel_weapsp_dmg_var_rgb.." de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." de mélée. Actualise l'efficacité de l'esquive lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr..".")),
 			--[+ Russian - Проворный +]-- руоф Ловкий
-			create_template("weap_wbm018_desc_ext_ru",
-				{"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.mel_weapsp_dmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." для атак ближнего боя. Эффективность уклонения обновляется при ударе в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".")),
+			-- create_template("weap_wbm018_desc_ext_ru",
+				-- {"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.mel_weapsp_dmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." для атак ближнего боя. Эффективность уклонения обновляется при ударе в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".")),
 			--[+ Traditional Chinese - 敏捷 +]--
 			-- 決鬥劍, 戰術斧 -- 2.5% | 5% | 7.5% | 10%
-			create_template("weap_wbm018_desc_ext_tw",
-				{"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"}, {"zh-tw"},
-					loc_text("近戰武器 "..COLORS_Numbers.mel_weapsp_dmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." 。\n在 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 時，重置閃躲次數。")),
+			-- create_template("weap_wbm018_desc_ext_tw",
+				-- {"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"}, {"zh-tw"},
+					-- loc_text("近戰武器 "..COLORS_Numbers.mel_weapsp_dmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." 。\n在 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 時，重置閃躲次數。")),
 			--[+ Simplified Chinese - 敏捷 +]--
-			create_template("weap_wbm018_desc_ext_zh_cn",
-				{"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"}, {"zh-cn"},
-					loc_text(COLORS_Numbers.mel_weapsp_dmg_var_rgb.." "..COLORS_KWords_zh_cn.Weakspot_dmg_rgb_zh_cn.."。\n"..COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时，刷新有效闪避。")),
+			-- create_template("weap_wbm018_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_Numbers.mel_weapsp_dmg_var_rgb.." "..COLORS_KWords_zh_cn.Weakspot_dmg_rgb_zh_cn.."。\n"..COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时，刷新有效闪避。")),
 
 		--[+ SLAUGHTER SPREE +]--	30.09.2025
 		-- Crit Chance (per tier)
@@ -1194,22 +1194,22 @@ local localization_templates = {
 					loc_text(COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." to the next Melee attack within "..COLORS_Numbers.n_5_rgb.." seconds on "..COLORS_KWords.Weak_spot_rgb.." "..COLORS_KWords.Crit_hit_rgb.." Kill.")),
 					-- crit_chance: +100%, +colors
 			--[+ French +]--
-			create_template("weap_wbm019_desc_ext_fr",
-				{"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour la prochaine attaque de mélée dans les "..COLORS_Numbers.n_5_rgb.." secondes suivant une élimination sur "..COLORS_KWords_fr.Weakspot_rgb_fr.." et "..COLORS_KWords_fr.Crit_rgb_fr..".")),
+			-- create_template("weap_wbm019_desc_ext_fr",
+				-- {"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour la prochaine attaque de mélée dans les "..COLORS_Numbers.n_5_rgb.." secondes suivant une élimination sur "..COLORS_KWords_fr.Weakspot_rgb_fr.." et "..COLORS_KWords_fr.Crit_rgb_fr..".")),
 			--[+ Russian - Резня +]-- руоф Убойная сила
-			create_template("weap_wbm019_desc_ext_ru",
-				{"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." для следующей атаки ближнего боя на "..COLORS_Numbers.n_5_rgb.." секунд при убийствах "..COLORS_KWords_ru.Crit_hits_rgb_ru.." в "..COLORS_KWords_ru.Weakspot_rgb_ru..".")),
+			-- create_template("weap_wbm019_desc_ext_ru",
+				-- {"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." для следующей атаки ближнего боя на "..COLORS_Numbers.n_5_rgb.." секунд при убийствах "..COLORS_KWords_ru.Crit_hits_rgb_ru.." в "..COLORS_KWords_ru.Weakspot_rgb_ru..".")),
 			--[+ Traditional Chinese - 殺戮狂潮 +]--
 			-- 戰術斧 -- 40% | 60% | 80% | 100%
-			create_template("weap_wbm019_desc_ext_tw",
-				{"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"}, {"zh-tw"},
-					loc_text("在 "..COLORS_KWords_tw.Weakspot_rgb_tw.." "..COLORS_KWords_tw.Crit_k_rgb_tw.." 後的 "..COLORS_Numbers.n_5_rgb.." 秒內，\n下一次近戰攻擊必定 "..COLORS_KWords_tw.Crit_rgb_tw.." 。")),
+			-- create_template("weap_wbm019_desc_ext_tw",
+				-- {"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"}, {"zh-tw"},
+					-- loc_text("在 "..COLORS_KWords_tw.Weakspot_rgb_tw.." "..COLORS_KWords_tw.Crit_k_rgb_tw.." 後的 "..COLORS_Numbers.n_5_rgb.." 秒內，\n下一次近戰攻擊必定 "..COLORS_KWords_tw.Crit_rgb_tw.." 。")),
 			--[+ Simplified Chinese - 屠杀狂欢 +]--
-			create_template("weap_wbm019_desc_ext_zh_cn",
-				{"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Weakspot_rgb_zh_cn..""..COLORS_KWords_zh_cn.Crit_hits_k_rgb_zh_cn.."时，下次近战攻击 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.n_5_rgb.." 秒。")),
+			-- create_template("weap_wbm019_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Weakspot_rgb_zh_cn..""..COLORS_KWords_zh_cn.Crit_hits_k_rgb_zh_cn.."时，下次近战攻击 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.n_5_rgb.." 秒。")),
 
 		--[+ RELENTLESS STRIKES +]--	30.09.2025
 		-- Melee Power per stack (per tier)
@@ -1220,22 +1220,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration. "..Pwr_note_rgb)),
 						-- power_level: +10%, time: 2, stacks: 5, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm020_desc_ext_fr",
-				{"loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes en attaquant le même ennemie. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm020_desc_ext_fr",
+				-- {"loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes en attaquant le même ennemie. Se Cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian - Безжалостные удары +]-- руоф Безжалостность
-			create_template("weap_wbm020_desc_ext_ru",
-				{"loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при повторном попадании по врагу. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm020_desc_ext_ru",
+				-- {"loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при повторном попадании по врагу. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 持續打擊 +]--
 			-- 決鬥劍, 戰術斧 -- 4% | 6% | 8% | 10% (up to +50%)
-			create_template("weap_wbm020_desc_ext_tw",
-				{"loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"}, {"zh-tw"},
-					loc_text("命中同一敵人 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，持續"..COLORS_Numbers.time_var_rgb.." 秒。\n最多可疊加 "..COLORS_Numbers.stacks_var_rgb.." 次。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm020_desc_ext_tw",
+				-- {"loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"}, {"zh-tw"},
+					-- loc_text("命中同一敵人 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，持續"..COLORS_Numbers.time_var_rgb.." 秒。\n最多可疊加 "..COLORS_Numbers.stacks_var_rgb.." 次。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 无情打击 +]--
-			create_template("weap_wbm020_desc_ext_zh_cn",
-				{"loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"}, {"zh-cn"},
-					loc_text("再次命中同一敌人时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm020_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"}, {"zh-cn"},
+					-- loc_text("再次命中同一敌人时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 -- COMBAT BLADE
 		--[+ FLESH TEARER +]--	30.09.2025
@@ -1247,22 +1247,22 @@ local localization_templates = {
 						..Dot_nc.." Up to "..COLORS_Numbers.n_16_rgb.." Stacks. "..Dot_nc.." Lasts "..COLORS_Numbers.n_1_5_rgb.." seconds. "..Dot_green.." Refreshes duration on Stack application. "..Dot_red.." Can't apply "..COLORS_KWords.Bleed_rgb.." through shields.")),
 					-- stacks: +8, +colors
 			--[+ French +]--
-			create_template("weap_wbm021_desc_ext_fr",
-				{"loc_trait_bespoke_bleed_on_crit_melee_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.p_stacks_var_rgb.." Cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." en cas de "..COLORS_KWords_fr.Crit_hit_rgb_fr..". Jusqu'à "..COLORS_Numbers.n_16_rgb.." Cumuls.")),
+			-- create_template("weap_wbm021_desc_ext_fr",
+				-- {"loc_trait_bespoke_bleed_on_crit_melee_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.p_stacks_var_rgb.." Cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." en cas de "..COLORS_KWords_fr.Crit_hit_rgb_fr..". Jusqu'à "..COLORS_Numbers.n_16_rgb.." Cumuls.")),
 			--[+ Russian - Раздиратель плоти +]--
-			create_template("weap_wbm021_desc_ext_ru",
-				{"loc_trait_bespoke_bleed_on_crit_melee_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.p_stacks_var_rgb.." зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." при "..COLORS_KWords_ru.Crit_hit_rgb_ru..". До "..COLORS_Numbers.n_16_rgb.." зарядов.")),
+			-- create_template("weap_wbm021_desc_ext_ru",
+				-- {"loc_trait_bespoke_bleed_on_crit_melee_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.p_stacks_var_rgb.." зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." при "..COLORS_KWords_ru.Crit_hit_rgb_ru..". До "..COLORS_Numbers.n_16_rgb.." зарядов.")),
 			--[+ Traditional Chinese - 血肉撕裂者 +]--
 			-- 戰刃 -- 5 | 6 | 7 | 8
-			create_template("weap_wbm021_desc_ext_tw",
-				{"loc_trait_bespoke_bleed_on_crit_melee_desc"}, {"zh-tw"},
-					loc_text("在暴擊時，使其獲得 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.." 。\n上限 "..COLORS_Numbers.n_16_rgb.." 層。")),
+			-- create_template("weap_wbm021_desc_ext_tw",
+				-- {"loc_trait_bespoke_bleed_on_crit_melee_desc"}, {"zh-tw"},
+					-- loc_text("在暴擊時，使其獲得 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.." 。\n上限 "..COLORS_Numbers.n_16_rgb.." 層。")),
 			--[+ Simplified Chinese - 撕裂者 +]--
-			create_template("weap_wbm021_desc_ext_zh_cn",
-				{"loc_trait_bespoke_bleed_on_crit_melee_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时 ".. COLORS_Numbers.p_stacks_var_rgb.." 层"..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_16_rgb.." 层。")),
+			-- create_template("weap_wbm021_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_bleed_on_crit_melee_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时 ".. COLORS_Numbers.p_stacks_var_rgb.." 层"..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_16_rgb.." 层。")),
 
 		--[+ LACERATE +]--	30.09.2025
 		-- Combat Blades -- 1 | 2 | 3 | 4
@@ -1272,22 +1272,22 @@ local localization_templates = {
 						..Dot_nc.." Up to "..COLORS_Numbers.n_16_rgb.." Stacks. "..Dot_nc.." Lasts "..COLORS_Numbers.n_1_5_rgb.." seconds. "..Dot_green.." Refreshes duration on Stack application. "..Dot_red.." Can't apply "..COLORS_KWords.Bleed_rgb.." through shields.")),
 					-- stacks: +8, +colors
 			--[+ French +]--
-			create_template("weap_wbm022_desc_ext_fr",
-				{"loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.p_stacks_var_rgb.." Cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." sur les attaque hors "..COLORS_KWords_fr.Weakspothits_rgb_fr..". Jusqu'à "..COLORS_Numbers.n_16_rgb.." Cumuls.")),
+			-- create_template("weap_wbm022_desc_ext_fr",
+				-- {"loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.p_stacks_var_rgb.." Cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." sur les attaque hors "..COLORS_KWords_fr.Weakspothits_rgb_fr..". Jusqu'à "..COLORS_Numbers.n_16_rgb.." Cumuls.")),
 			--[+ Russian - Терзание +]--
-			create_template("weap_wbm022_desc_ext_ru",
-				{"loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.p_stacks_var_rgb.." заряда "..COLORS_KWords_ru.Bleed_rgb_ru.." при попаданиях не в "..COLORS_KWords_ru.Weakspot_rgb_ru..". До "..COLORS_Numbers.n_16_rgb.." зарядов.")),
+			-- create_template("weap_wbm022_desc_ext_ru",
+				-- {"loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.p_stacks_var_rgb.." заряда "..COLORS_KWords_ru.Bleed_rgb_ru.." при попаданиях не в "..COLORS_KWords_ru.Weakspot_rgb_ru..". До "..COLORS_Numbers.n_16_rgb.." зарядов.")),
 			--[+ Traditional Chinese - 撕碎 +]--
 			-- 戰刃 -- 1 | 2 | 3 | 4
-			create_template("weap_wbm022_desc_ext_tw",
-				{"loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"}, {"zh-tw"},
-					loc_text("非 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." 時，使其獲得 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.." 。\n上限 "..COLORS_Numbers.n_16_rgb.." 層。")),
+			-- create_template("weap_wbm022_desc_ext_tw",
+				-- {"loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"}, {"zh-tw"},
+					-- loc_text("非 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." 時，使其獲得 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.." 。\n上限 "..COLORS_Numbers.n_16_rgb.." 層。")),
 			--[+ Simplified Chinese - 割裂 +]--
-			create_template("weap_wbm022_desc_ext_zh_cn",
-				{"loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"}, {"zh-cn"},
-					loc_text("非"..COLORS_KWords_zh_cn.Weakspothits_rgb_zh_cn.."时 ".. COLORS_Numbers.p_stacks_var_rgb.." 层"..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_16_rgb.." 层。")),
+			-- create_template("weap_wbm022_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"}, {"zh-cn"},
+					-- loc_text("非"..COLORS_KWords_zh_cn.Weakspothits_rgb_zh_cn.."时 ".. COLORS_Numbers.p_stacks_var_rgb.." 层"..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_16_rgb.." 层。")),
 
 		--[+ EXECUTOR +]--	30.09.2025
 		-- Power per stack (per tier)
@@ -1298,25 +1298,25 @@ local localization_templates = {
 						..Dot_nc.." Stacks last "..COLORS_Numbers.n_2_5_rgb.." seconds. "..Dot_green.." Can be refreshed during active duration. "..Pwr_note_rgb)),
 					-- power_level: +6%, stacks: 5, +colors
 			--[+ French +]--
-			create_template("weap_wbm023_desc_ext_fr",
-				{"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." lors d'un coup sur "..COLORS_KWords_fr.Weakspothit_rgb_fr.." répété. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. {#color(255, 35, 5)}(bug:+5% sur tout les niveaux de bénédiction){#reset()}"..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm023_desc_ext_fr",
+				-- {"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." lors d'un coup sur "..COLORS_KWords_fr.Weakspothit_rgb_fr.." répété. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. {#color(255, 35, 5)}(bug:+5% sur tout les niveaux de bénédiction){#reset()}"..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian - Каратель +]-- руоф Экзекутор
-			create_template("weap_wbm023_desc_ext_ru",
-				{"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." при повторном ударе в "..COLORS_KWords_ru.Weakspothit_rgb_ru..". Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. {#color(255, 35, 5)}(Баг: +5% на всех уровнях){#reset()}"..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm023_desc_ext_ru",
+				-- {"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." при повторном ударе в "..COLORS_KWords_ru.Weakspothit_rgb_ru..". Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. {#color(255, 35, 5)}(Баг: +5% на всех уровнях){#reset()}"..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 行刑者 +]--
 			-- 戰刃, 烈焰力場劍 -- 5% | 5% | 5% | 5% (up to +25%) (bugged)
-			create_template("weap_wbm023_desc_ext_tw",
-				{"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"zh-tw"},
-					loc_text("命中 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.."  秒。\n持續命中時每次疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm023_desc_ext_tw",
+				-- {"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"zh-tw"},
+					-- loc_text("命中 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.."  秒。\n持續命中時每次疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			-- create_template("weap_wbm023_desc_ext_tw",
 				-- {"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"zh-tw"},
 					-- loc_text("命中 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 時，\n每次攻擊可疊加一層 "..COLORS_KWords_tw.Strength_rgb_tw.." ，\n共可疊加 "..COLORS_Numbers.stacks_var_rgb.." 次。\n{#color(255, 35, 5)}(bug: 所有等級 +5%){#reset()}"..COLORS_KWords_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 处刑者 +]--
-			create_template("weap_wbm023_desc_ext_zh_cn",
-				{"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"zh-cn"},
-					loc_text("连续"..COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。{#color(255, 35, 5)}\n（BUG：无论祝福级别如何，数值始终为 +5% 强度。）{#reset()}"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm023_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"}, {"zh-cn"},
+					-- loc_text("连续"..COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。{#color(255, 35, 5)}\n（BUG：无论祝福级别如何，数值始终为 +5% 强度。）{#reset()}"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ RIPOSTE +]--	30.09.2025
 		-- Crit Chance (per tier)
@@ -1327,22 +1327,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration. "..Dot_nc.." Procs on dodging Melee/Ranged (non Gunners/Reapers/Snipers) or disabler attacks.")),
 					-- crit_chance: +20%, time: 6, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm024_desc_ext_fr",
-				{"loc_trait_bespoke_dodge_grants_crit_chance_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une esquive réussie.")),
+			-- create_template("weap_wbm024_desc_ext_fr",
+				-- {"loc_trait_bespoke_dodge_grants_crit_chance_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une esquive réussie.")),
 			--[+ Russian - Ответный удар +]--
-			create_template("weap_wbm024_desc_ext_ru",
-				{"loc_trait_bespoke_dodge_grants_crit_chance_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд при успешном уклонении.")),
+			-- create_template("weap_wbm024_desc_ext_ru",
+				-- {"loc_trait_bespoke_dodge_grants_crit_chance_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд при успешном уклонении.")),
 			--[+ Traditional Chinese - 還擊 +]--
 			-- 戰刃, 決鬥劍, 烈焰力場劍, 烈焰力場巨劍 -- 12.5% | 15% | 17.5% | 20%
-			create_template("weap_wbm024_desc_ext_tw",
-				{"loc_trait_bespoke_dodge_grants_crit_chance_desc"}, {"zh-tw"},
-					loc_text("成功閃避時 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm024_desc_ext_tw",
+				-- {"loc_trait_bespoke_dodge_grants_crit_chance_desc"}, {"zh-tw"},
+					-- loc_text("成功閃避時 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 			--[+ Simplified Chinese - 还击 +]--
-			create_template("weap_wbm024_desc_ext_zh_cn",
-				{"loc_trait_bespoke_dodge_grants_crit_chance_desc"}, {"zh-cn"},
-					loc_text("成功闪避时 "..COLORS_Numbers.crit_var_rgb.." 近战"..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm024_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_dodge_grants_crit_chance_desc"}, {"zh-cn"},
+					-- loc_text("成功闪避时 "..COLORS_Numbers.crit_var_rgb.." 近战"..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 
 		--[+ PRECOGNITION +]--	30.09.2025
 		-- Finesse Bonus (per tier)
@@ -1350,26 +1350,25 @@ local localization_templates = {
 			create_template("weap_wbm025_desc_ext_en",
 				{"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"en"},
 					loc_text(COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Finesse_rgb.." "..COLORS_KWords.Damage_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on successful Dodge. "
-					-- ..Dot_nc.." Procs on dodging Melee/Ranged (non Gunners/Reapers/Snipers) or disabler attacks. "
 					..Fns_note_rgb)),
 					-- damage: +60%, time: 2, s->seconds, +colors, +note
 			--[+ French +]--
-			create_template("weap_wbm025_desc_ext_fr",
-				{"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Finesse_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une esquive réussie."..COLORS_KWords_fr.Fns_note_rgb_fr)),
+			-- create_template("weap_wbm025_desc_ext_fr",
+				-- {"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Finesse_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une esquive réussie."..COLORS_KWords_fr.Fns_note_rgb_fr)),
 			--[+ Russian - Предвидение +]-- руоф Познание
-			create_template("weap_wbm025_desc_ext_ru",
-				{"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." от "..COLORS_KWords_ru.Finesse_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при успешном уклонении."..Fns_note_rgb_ru)),
+			-- create_template("weap_wbm025_desc_ext_ru",
+				-- {"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." от "..COLORS_KWords_ru.Finesse_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при успешном уклонении."..Fns_note_rgb_ru)),
 			--[+ Traditional Chinese - 未卜先知 +]--
 			-- 戰刃, 決鬥劍, 烈焰力場劍, 烈焰力場巨劍 -- 45% | 50% | 55% | 60%
-			create_template("weap_wbm025_desc_ext_tw",
-				{"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"zh-tw"},
-					loc_text("成功閃躲時 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒，"..COLORS_KWords2_tw.Fns_note_rgb_tw)),
+			-- create_template("weap_wbm025_desc_ext_tw",
+				-- {"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"zh-tw"},
+					-- loc_text("成功閃躲時 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒，"..COLORS_KWords2_tw.Fns_note_rgb_tw)),
 			--[+ Simplified Chinese - 预知 +]--
-			create_template("weap_wbm025_desc_ext_zh_cn",
-				{"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"zh-cn"},
-					loc_text("成功闪避时 "..COLORS_Numbers.dmg_var_rgb.." 近战"..COLORS_KWords_zh_cn.Finesse_dmg_rgb_zh_cn.."".."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Fns_note_rgb_zh_cn)),
+			-- create_template("weap_wbm025_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_dodge_grants_finesse_bonus_desc"}, {"zh-cn"},
+					-- loc_text("成功闪避时 "..COLORS_Numbers.dmg_var_rgb.." 近战"..COLORS_KWords_zh_cn.Finesse_dmg_rgb_zh_cn.."".."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Fns_note_rgb_zh_cn)),
 
 		--[+ HAYMAKER +]--	30.09.2025
 		-- Instakill Chance per stack (per tier)
@@ -1380,25 +1379,25 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration, and are dropped one by one.")),
 					-- proc_chance: +4%, stacks: 5, +colors
 			--[+ French +]--
-			create_template("weap_wbm026_desc_ext_fr",
-				{"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.procch_var_rgb.." de chance de tuer instantanément les ennemies de taille humaines sur les attaques puissantes répétées. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. A noter que d'autres déclencheurs potentiels ne seront pas activés lors d'une élimination instantanée.")),
+			-- create_template("weap_wbm026_desc_ext_fr",
+				-- {"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.procch_var_rgb.." de chance de tuer instantanément les ennemies de taille humaines sur les attaques puissantes répétées. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. A noter que d'autres déclencheurs potentiels ne seront pas activés lors d'une élimination instantanée.")),
 			--[+ Russian - Жнец +]-- руоф Коса
-			create_template("weap_wbm026_desc_ext_ru",
-				{"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.procch_var_rgb.." к шансу убить одним ударом врага человеческого размера при серии тяжёлых ударов. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Другие потенциальные триггеры не будут активированы при таком убийстве.")),
+			-- create_template("weap_wbm026_desc_ext_ru",
+				-- {"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.procch_var_rgb.." к шансу убить одним ударом врага человеческого размера при серии тяжёлых ударов. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Другие потенциальные триггеры не будут активированы при таком убийстве.")),
 			--[+ Traditional Chinese - 強力一擊 +]--
 			-- 惡棍棒, 戰刃 -- 1% | 2% | 3% | 4% (up to +20%)
-			create_template("weap_wbm026_desc_ext_tw",
-				{"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"zh-tw"},
-					loc_text("連續重擊時 \n"..COLORS_Numbers.procch_var_rgb.." 對人類大小的敵人即死機會，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n注意\n - 潛在Buff觸發即死時不會啟動。\n - Boss類無效。")),
+			-- create_template("weap_wbm026_desc_ext_tw",
+				-- {"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"zh-tw"},
+					-- loc_text("連續重擊時 \n"..COLORS_Numbers.procch_var_rgb.." 對人類大小的敵人即死機會，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n注意\n - 潛在Buff觸發即死時不會啟動。\n - Boss類無效。")),
 			-- create_template("weap_wbm026_desc_ext_tw",
 				-- {"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"zh-tw"},
 					-- loc_text("連續重擊時 \n"..COLORS_Numbers.procch_var_rgb.."對人類大小的敵人即死機會。持續"..COLORS_Numbers.time_var_rgb.." 秒，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。\n注意\n -其他Buff觸發即死時不會啟動。\n -Boss類無效。")),
 			--[+ Simplified Chinese - 干草机 +]--
-			create_template("weap_wbm026_desc_ext_zh_cn",
-				{"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"zh-cn"},
-					loc_text("连锁重攻击命中时 \n"..COLORS_Numbers.procch_var_rgb.." 直接击杀人形敌人的几率。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。\n攻击每命中一个目标叠加 "..COLORS_Numbers.n_1_rgb.." 层。\n注意，通过这种方式直接击杀敌人不会触发其他效果。")),
+			-- create_template("weap_wbm026_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"}, {"zh-cn"},
+					-- loc_text("连锁重攻击命中时 \n"..COLORS_Numbers.procch_var_rgb.." 直接击杀人形敌人的几率。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。\n攻击每命中一个目标叠加 "..COLORS_Numbers.n_1_rgb.." 层。\n注意，通过这种方式直接击杀敌人不会触发其他效果。")),
 
 		--[+ SMACKDOWN +]--	30.09.2025
 		-- Crit Chance (per tier)
@@ -1409,22 +1408,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration. "..Dot_red.." Does not benefit Ranged weapons.")),
 					-- crit_chance: +20%, time: 2, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm027_desc_ext_fr",
-				{"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes pendant qu'un ennemie "..COLORS_KWords_fr.Staggered_rgb_fr.." grâce à un coup d'action spéciale.")),
+			-- create_template("weap_wbm027_desc_ext_fr",
+				-- {"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes pendant qu'un ennemie "..COLORS_KWords_fr.Staggered_rgb_fr.." grâce à un coup d'action spéciale.")),
 			--[+ Russian - Сокрушение +]-- руоф Смятение
-			create_template("weap_wbm027_desc_ext_ru",
-				{"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при атаке "..COLORS_KWords_ru.Staggered_rgb_ru.." врагов специальными атаками.")),
+			-- create_template("weap_wbm027_desc_ext_ru",
+				-- {"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при атаке "..COLORS_KWords_ru.Staggered_rgb_ru.." врагов специальными атаками.")),
 			--[+ Traditional Chinese - 擊倒 +]--
 			-- 惡棍棒, 戰刃 -- 12.5% | 15% | 17.5% | 20%
-			create_template("weap_wbm027_desc_ext_tw",
-				{"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"zh-tw"},
-					loc_text("特殊攻擊擊中 "..COLORS_KWords_tw.Staggered_rgb_tw.." 敵人時 \n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm027_desc_ext_tw",
+				-- {"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"zh-tw"},
+					-- loc_text("特殊攻擊擊中 "..COLORS_KWords_tw.Staggered_rgb_tw.." 敵人時 \n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 			--[+ Simplified Chinese - 攻击波 +]--
-			create_template("weap_wbm027_desc_ext_zh_cn",
-				{"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"zh-cn"},
-					loc_text("特殊攻击命中"..COLORS_KWords_zh_cn.Staggered_rgb_zh_cn.."敌人时 \n"..COLORS_Numbers.crit_var_rgb.." 近战"..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			-- create_template("weap_wbm027_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"}, {"zh-cn"},
+					-- loc_text("特殊攻击命中"..COLORS_KWords_zh_cn.Staggered_rgb_zh_cn.."敌人时 \n"..COLORS_Numbers.crit_var_rgb.." 近战"..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 
 		--[+ MERCY KILLER +]--	30.09.2025
 		-- Melee Weakspot Damage (per tier)
@@ -1434,22 +1433,22 @@ local localization_templates = {
 					loc_text(COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Weakspot_dmg_rgb.." to Enemies with "..COLORS_KWords.Bleed_rgb.." Stacks.")),
 					-- damage: +60%, +colors
 			--[+ French +]--
-			create_template("weap_wbm028_desc_ext_fr",
-				{"loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." au ennemies avec des cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr..".")),
+			-- create_template("weap_wbm028_desc_ext_fr",
+				-- {"loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." au ennemies avec des cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr..".")),
 			--[+ Russian - Милосердный убийца +]-- руоф Милосердие
-			create_template("weap_wbm028_desc_ext_ru",
-				{"loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." врагам с зарядами "..COLORS_KWords_ru.Bleed_rgb_ru..".")),
+			-- create_template("weap_wbm028_desc_ext_ru",
+				-- {"loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." врагам с зарядами "..COLORS_KWords_ru.Bleed_rgb_ru..".")),
 			--[+ Traditional Chinese - 仁慈殺手 +]--
 			-- 戰刃 -- 52.5% | 55% | 57.5% | 60%
-			create_template("weap_wbm028_desc_ext_tw",
-				{"loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"}, {"zh-tw"},
-					loc_text("攻擊有 "..COLORS_KWords_tw.Bleed_rgb_tw.." 的敵人，\n增加 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." 。")),
+			-- create_template("weap_wbm028_desc_ext_tw",
+				-- {"loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"}, {"zh-tw"},
+					-- loc_text("攻擊有 "..COLORS_KWords_tw.Bleed_rgb_tw.." 的敵人，\n增加 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." 。")),
 			--[+ Simplified Chinese - 仁慈杀手 +]--
-			create_template("weap_wbm028_desc_ext_zh_cn",
-				{"loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"}, {"zh-cn"},
-					loc_text("对"..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."敌人 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Weakspot_dmg_rgb_zh_cn.."。")),
+			-- create_template("weap_wbm028_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"}, {"zh-cn"},
+					-- loc_text("对"..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."敌人 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Weakspot_dmg_rgb_zh_cn.."。")),
 
 		--[+ RUTHLESS BACKSTAB +]--	30.09.2025
 		-- Backstab Rending (per tier)
@@ -1460,22 +1459,22 @@ local localization_templates = {
 						..Dot_nc.." Enables backstabbing. "..Rend_note_rgb)),
 					-- rending: +100%, +colors
 			--[+ French +]--
-			create_template("weap_wbm029_desc_ext_fr",
-				{"loc_trait_bespoke_rending_on_backstabs_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." de "..COLORS_KWords_fr.Rending_rgb_fr.." lors d'un coup dans le dos."..COLORS_KWords_fr.Rend_note_rgb_fr)),
+			-- create_template("weap_wbm029_desc_ext_fr",
+				-- {"loc_trait_bespoke_rending_on_backstabs_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." de "..COLORS_KWords_fr.Rending_rgb_fr.." lors d'un coup dans le dos."..COLORS_KWords_fr.Rend_note_rgb_fr)),
 			--[+ Russian - Беспощадный удар в спину +]--
-			create_template("weap_wbm029_desc_ext_ru",
-				{"loc_trait_bespoke_rending_on_backstabs_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." к "..COLORS_KWords_ru.Rending_rgb_ru.." при ударе в спину."..Rend_note_rgb_ru)),
+			-- create_template("weap_wbm029_desc_ext_ru",
+				-- {"loc_trait_bespoke_rending_on_backstabs_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." к "..COLORS_KWords_ru.Rending_rgb_ru.." при ударе в спину."..Rend_note_rgb_ru)),
 			--[+ Traditional Chinese - 無情背刺 +]--
 			-- 戰刃 -- 70% | 80% | 90% | 100%
-			create_template("weap_wbm029_desc_ext_tw",
-				{"loc_trait_bespoke_rending_on_backstabs_desc"}, {"zh-tw"},
-					loc_text("背刺時，增加 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.." 。")),
+			-- create_template("weap_wbm029_desc_ext_tw",
+				-- {"loc_trait_bespoke_rending_on_backstabs_desc"}, {"zh-tw"},
+					-- loc_text("背刺時，增加 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.." 。")),
 			--[+ Simplified Chinese - 无情背刺 +]--
-			create_template("weap_wbm029_desc_ext_zh_cn",
-				{"loc_trait_bespoke_rending_on_backstabs_desc"}, {"zh-cn"},
-					loc_text("背刺时 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Rend_note_rgb_zh_cn)),
+			-- create_template("weap_wbm029_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_rending_on_backstabs_desc"}, {"zh-cn"},
+					-- loc_text("背刺时 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Rend_note_rgb_zh_cn)),
 
 		--[+ UNCANNY STRIKE +]--	30.09.2025
 		-- Rending per stack (per tier)
@@ -1486,22 +1485,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration.\n"..Rend_note_rgb)),
 					-- rending: +24%, time: 3.5, stacks: 5, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm030_desc_ext_fr",
-				{"loc_trait_bespoke_stacking_rending_on_weakspot_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." de "..COLORS_KWords_fr.Rending_rgb_fr.." sur un coup sur "..COLORS_KWords_fr.Weakspothit_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Rend_note_rgb_fr)),
+			-- create_template("weap_wbm030_desc_ext_fr",
+				-- {"loc_trait_bespoke_stacking_rending_on_weakspot_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." de "..COLORS_KWords_fr.Rending_rgb_fr.." sur un coup sur "..COLORS_KWords_fr.Weakspothit_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Rend_note_rgb_fr)),
 			--[+ Russian - Жуткий удар +]--
-			create_template("weap_wbm030_desc_ext_ru",
-				{"loc_trait_bespoke_stacking_rending_on_weakspot_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." к "..COLORS_KWords_ru.Rending_rgb_ru.." врагов при ударе в "..COLORS_KWords_ru.Weakspothit_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Rend_note_rgb_ru)),
+			-- create_template("weap_wbm030_desc_ext_ru",
+				-- {"loc_trait_bespoke_stacking_rending_on_weakspot_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." к "..COLORS_KWords_ru.Rending_rgb_ru.." врагов при ударе в "..COLORS_KWords_ru.Weakspothit_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..Rend_note_rgb_ru)),
 			--[+ Traditional Chinese - 詭異打擊 +]--
 			-- 戰刃, 決鬥劍, 烈焰力場劍, 工兵鏟 -- 12% | 16% | 20% | 24% (up to +120%)
-			create_template("weap_wbm030_desc_ext_tw",
-				{"loc_trait_bespoke_stacking_rending_on_weakspot_desc"}, {"zh-tw"},
-					loc_text(COLORS_KWords_tw.Weakspothit_rgb_tw.." 時 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.." ，持續 "..COLORS_Numbers.time_var_rgb.." 秒，\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Rend_note_rgb_tw)),
+			-- create_template("weap_wbm030_desc_ext_tw",
+				-- {"loc_trait_bespoke_stacking_rending_on_weakspot_desc"}, {"zh-tw"},
+					-- loc_text(COLORS_KWords_tw.Weakspothit_rgb_tw.." 時 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.." ，持續 "..COLORS_Numbers.time_var_rgb.." 秒，\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Rend_note_rgb_tw)),
 			--[+ Simplified Chinese - 神秘打击 +]--
-			create_template("weap_wbm030_desc_ext_zh_cn",
-				{"loc_trait_bespoke_stacking_rending_on_weakspot_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加"..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Rend_note_rgb_zh_cn)),
+			-- create_template("weap_wbm030_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_stacking_rending_on_weakspot_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加"..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Rend_note_rgb_zh_cn)),
 
 -- DEVIL'S CLAW SWORD
 		--[+ TRAUMA +]--	30.09.2025
@@ -1513,22 +1512,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration.")),
 					-- impact: +20%, time: 2, stacks: 5, +colors
 			--[+ French +]--
-			create_template("weap_wbm031_desc_ext_fr",
-				{"loc_trait_bespoke_consecutive_hits_increases_stagger_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.impact_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un coup répété. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois.")),
+			-- create_template("weap_wbm031_desc_ext_fr",
+				-- {"loc_trait_bespoke_consecutive_hits_increases_stagger_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.impact_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un coup répété. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois.")),
 			--[+ Russian - Травма +]--
-			create_template("weap_wbm031_desc_ext_ru",
-				{"loc_trait_bespoke_consecutive_hits_increases_stagger_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.impact_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при повторных попаданиях. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз.")),
+			-- create_template("weap_wbm031_desc_ext_ru",
+				-- {"loc_trait_bespoke_consecutive_hits_increases_stagger_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.impact_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при повторных попаданиях. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз.")),
 			--[+ Traditional Chinese - 創傷 +]--
 			-- 輾壓者, 『惡魔之爪』劍, 工兵鏟, 雷鎚 -- 14% | 16% | 18% | 20% (up to +100%)
-			create_template("weap_wbm031_desc_ext_tw",
-				{"loc_trait_bespoke_consecutive_hits_increases_stagger_desc"}, {"zh-tw"},
-					loc_text("連續攻擊時 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.." ，持續"..COLORS_Numbers.time_var_rgb.." 秒。\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.n_5_rgb.." 層。")),
+			-- create_template("weap_wbm031_desc_ext_tw",
+				-- {"loc_trait_bespoke_consecutive_hits_increases_stagger_desc"}, {"zh-tw"},
+					-- loc_text("連續攻擊時 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.." ，持續"..COLORS_Numbers.time_var_rgb.." 秒。\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.n_5_rgb.." 層。")),
 			--[+ Simplified Chinese - 创伤 +]--
-			create_template("weap_wbm031_desc_ext_zh_cn",
-				{"loc_trait_bespoke_consecutive_hits_increases_stagger_desc"}, {"zh-cn"},
-					loc_text("再次命中同一敌人时 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
+			-- create_template("weap_wbm031_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_consecutive_hits_increases_stagger_desc"}, {"zh-cn"},
+					-- loc_text("再次命中同一敌人时 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
 
 		--[+ VICIOUS SLICE +]--	30.09.2025
 		-- Melee Stagger Strength per stack (per tier)
@@ -1539,22 +1538,22 @@ local localization_templates = {
 						..Dot_nc.." Up to "..COLORS_Numbers.n_5_rgb.." Stacks.")),
 					-- impact: +20%, +colors
 			--[+ French +]--
-			create_template("weap_wbm032_desc_ext_fr",
-				{"loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.impact_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." à la cible pour chaque ennemie déjà touché par la même attaque. Jusqu'à "..COLORS_Numbers.n_5_rgb.." cumuls.")),
+			-- create_template("weap_wbm032_desc_ext_fr",
+				-- {"loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.impact_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." à la cible pour chaque ennemie déjà touché par la même attaque. Jusqu'à "..COLORS_Numbers.n_5_rgb.." cumuls.")),
 			--[+ Russian - Жестокий разрез +]-- руоф Жестокая нарезка
-			create_template("weap_wbm032_desc_ext_ru",
-				{"loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.impact_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru.." по цели за каждого врага, уже поражённого этой же атакой. До "..COLORS_Numbers.n_5_rgb.." зарядов.")),
+			-- create_template("weap_wbm032_desc_ext_ru",
+				-- {"loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.impact_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru.." по цели за каждого врага, уже поражённого этой же атакой. До "..COLORS_Numbers.n_5_rgb.." зарядов.")),
 			--[+ Traditional Chinese - 凶狠切割 +]--
 			-- 『惡魔之爪』劍 -- 14% | 16% | 18% | 20% (up to +100%)
-			create_template("weap_wbm032_desc_ext_tw",
-				{"loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"}, {"zh-tw"},
-					loc_text("命中同一敵人 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.." ，\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.n_5_rgb.."層。")), -- UI沒顯示
+			-- create_template("weap_wbm032_desc_ext_tw",
+				-- {"loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"}, {"zh-tw"},
+					-- loc_text("命中同一敵人 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.." ，\n每次攻擊可疊加一層，上限 "..COLORS_Numbers.n_5_rgb.."層。")), -- UI沒顯示
 			--[+ Simplified Chinese - 邪恶斩切 +]--
-			create_template("weap_wbm032_desc_ext_zh_cn",
-				{"loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"}, {"zh-cn"},
-					loc_text("每有一个已被同一攻击命中的敌人，\n"..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."。最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。")),
+			-- create_template("weap_wbm032_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"}, {"zh-cn"},
+					-- loc_text("每有一个已被同一攻击命中的敌人，\n"..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."。最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。")),
 
 		--[+ HAMMERBLOW +]--	30.09.2025
 		-- Melee Stagger Strength per stack (per tier)
@@ -1565,22 +1564,22 @@ local localization_templates = {
 						..Dot_green.." Can generate multiple stacks per swing or push action. "..Dot_green.." Can be refreshed during active duration.")),
 					-- impact: +25%, time: 1.5, stacks: 5, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm033_desc_ext_fr",
-				{"loc_trait_bespoke_stacking_increase_impact_on_hit_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.impact_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un coup. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. Jusqu'à "..COLORS_Numbers.n_5_rgb.." cumuls par coup.")),
+			-- create_template("weap_wbm033_desc_ext_fr",
+				-- {"loc_trait_bespoke_stacking_increase_impact_on_hit_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.impact_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un coup. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. Jusqu'à "..COLORS_Numbers.n_5_rgb.." cumuls par coup.")),
 			--[+ Russian - Молотобой +]-- руоф Удар молотом
-			create_template("weap_wbm033_desc_ext_ru",
-				{"loc_trait_bespoke_stacking_increase_impact_on_hit_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.impact_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при ударе. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Вплоть до "..COLORS_Numbers.n_5_rgb.." зарядов за удар.")),
+			-- create_template("weap_wbm033_desc_ext_ru",
+				-- {"loc_trait_bespoke_stacking_increase_impact_on_hit_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.impact_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при ударе. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Вплоть до "..COLORS_Numbers.n_5_rgb.." зарядов за удар.")),
 			--[+ Traditional Chinese - 錘擊 +]--
 			-- 輾壓者, 『惡魔之爪』劍, 工兵鏟, 電擊錘, 雷鎚 -- 19% | 21% | 23% | 25% (up to +125%)
-			create_template("trait_bespoke_033_desc_ext_zh",
-				{"loc_trait_bespoke_stacking_increase_impact_on_hit_desc"}, {"zh-tw"},
-					loc_text("每次攻擊 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n上限 "..COLORS_Numbers.n_5_rgb.." 層。")),
+			-- create_template("trait_bespoke_033_desc_ext_zh",
+				-- {"loc_trait_bespoke_stacking_increase_impact_on_hit_desc"}, {"zh-tw"},
+					-- loc_text("每次攻擊 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n上限 "..COLORS_Numbers.n_5_rgb.." 層。")),
 			--[+ Simplified Chinese - 锤击 +]--
-			create_template("weap_wbm033_desc_ext_zh_cn",
-				{"loc_trait_bespoke_stacking_increase_impact_on_hit_desc"}, {"zh-cn"},
-					loc_text("命中时 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。\n攻击每命中一个目标叠加 "..COLORS_Numbers.n_1_rgb.." 层。")),
+			-- create_template("weap_wbm033_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_stacking_increase_impact_on_hit_desc"}, {"zh-cn"},
+					-- loc_text("命中时 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。\n攻击每命中一个目标叠加 "..COLORS_Numbers.n_1_rgb.." 层。")),
 
 		--[+ SKULLCRUSHER +]--	30.09.2025
 		-- Debuff Stacks Applied (per tier)
@@ -1591,22 +1590,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration.")),
 					-- stacks: 4, damage: +10%, time: 5, Stack(s)->Stacks, +colors
 			--[+ French +]--
-			create_template("weap_wbm034_desc_ext_fr",
-				{"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"fr"},
-					loc_text("La cible subit "..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." si elle "..COLORS_KWords_fr.Staggered_rgb_fr.." déjà, jusqu'à un maximum de "..COLORS_Numbers.n_8_rgb.." cumuls. Dure "..COLORS_Numbers.time_var_rgb.." secondes.")),
+			-- create_template("weap_wbm034_desc_ext_fr",
+				-- {"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"fr"},
+					-- loc_text("La cible subit "..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." si elle "..COLORS_KWords_fr.Staggered_rgb_fr.." déjà, jusqu'à un maximum de "..COLORS_Numbers.n_8_rgb.." cumuls. Dure "..COLORS_Numbers.time_var_rgb.." secondes.")),
 			--[+ Russian - Череподробитель +]--
-			create_template("weap_wbm034_desc_ext_ru",
-				{"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"ru"},
-					loc_text("Цель получает "..COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru..", если уже "..COLORS_KWords_ru.Stunned_rgb_ru..", вплоть до "..COLORS_Numbers.n_8_rgb.." зарядов. Длится "..COLORS_Numbers.time_var_rgb.." секунд.")),
+			-- create_template("weap_wbm034_desc_ext_ru",
+				-- {"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"ru"},
+					-- loc_text("Цель получает "..COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru..", если уже "..COLORS_KWords_ru.Stunned_rgb_ru..", вплоть до "..COLORS_Numbers.n_8_rgb.." зарядов. Длится "..COLORS_Numbers.time_var_rgb.." секунд.")),
 			--[+ Traditional Chinese - 粉碎者 +]--
 			-- 作戰大槌&板盾, 惡棍棒, 輾壓者, 『惡魔之爪』劍, 工兵鏟, 電擊錘, 雷鎚 -- 1 | 2 | 3 | 4
-			create_template("weap_wbm034_desc_ext_tw",
-				{"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"zh-tw"},
-					loc_text("對 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人，\n使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw)),
+			-- create_template("weap_wbm034_desc_ext_tw",
+				-- {"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"zh-tw"},
+					-- loc_text("對 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人，\n使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw)),
 			--[+ Simplified Chinese - 碎颅者 +]--
-			create_template("weap_wbm034_desc_ext_zh_cn",
-				{"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"zh-cn"},
-					loc_text("对"..COLORS_KWords_zh_cn.Staggered_rgb_zh_cn.."敌人施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."效果，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.n_8_rgb.." 层。")),
+			-- create_template("weap_wbm034_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"zh-cn"},
+					-- loc_text("对"..COLORS_KWords_zh_cn.Staggered_rgb_zh_cn.."敌人施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."效果，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.n_8_rgb.." 层。")),
 
 		--[+ THUNDERSTRIKE +]--	30.09.2025
 		-- Debuff Stacks Applied (per tier)
@@ -1617,22 +1616,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration.")),
 					-- stacks: 4, impact: +10%, time: 5, Stack(s)->Stacks, +colors
 			--[+ French +]--
-			create_template("weap_wbm035_desc_ext_fr",
-				{"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"}, {"fr"},
-					loc_text("La cible subit "..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_Numbers.impact_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." si elle "..COLORS_KWords_fr.Staggered_rgb_fr.." déjà, jusqu'à un maximum de "..COLORS_Numbers.n_8_rgb.." cumuls. Dure "..COLORS_Numbers.time_var_rgb.." secondes.")),
+			-- create_template("weap_wbm035_desc_ext_fr",
+				-- {"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"}, {"fr"},
+					-- loc_text("La cible subit "..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_Numbers.impact_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr.." si elle "..COLORS_KWords_fr.Staggered_rgb_fr.." déjà, jusqu'à un maximum de "..COLORS_Numbers.n_8_rgb.." cumuls. Dure "..COLORS_Numbers.time_var_rgb.." secondes.")),
 			--[+ Russian - Громобой +]-- руоф Гроза
-			create_template("weap_wbm035_desc_ext_ru",
-				{"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"}, {"ru"},
-					loc_text("Цель получает "..COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_Numbers.impact_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru..", если уже "..COLORS_KWords_ru.Stunned_rgb_ru..", вплоть до "..COLORS_Numbers.n_8_rgb.." зарядов. Длится "..COLORS_Numbers.time_var_rgb.." секунд.")),
+			-- create_template("weap_wbm035_desc_ext_ru",
+				-- {"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"}, {"ru"},
+					-- loc_text("Цель получает "..COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_Numbers.impact_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru..", если уже "..COLORS_KWords_ru.Stunned_rgb_ru..", вплоть до "..COLORS_Numbers.n_8_rgb.." зарядов. Длится "..COLORS_Numbers.time_var_rgb.." секунд.")),
 			--[+ Traditional Chinese - 雷霆打擊 +]--
 			-- 作戰大槌&板盾, 輾壓者, 『惡魔之爪』劍, 動力錘, 工兵鏟, 雷鎚 -- 1 | 2 | 3 | 4
-			create_template("weap_wbm035_desc_ext_tw",
-				{"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"}, {"zh-tw"},
-					loc_text("對 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人，\n使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.."，持續"..COLORS_Numbers.time_var_rgb.." 秒。\n上限 "..COLORS_Numbers.n_8_rgb.." 層。")),
+			-- create_template("weap_wbm035_desc_ext_tw",
+				-- {"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"}, {"zh-tw"},
+					-- loc_text("對 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人，\n使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.."，持續"..COLORS_Numbers.time_var_rgb.." 秒。\n上限 "..COLORS_Numbers.n_8_rgb.." 層。")),
 			--[+ Simplified Chinese - 雷击 +]--
-			create_template("weap_wbm035_desc_ext_zh_cn",
-				{"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"}, {"zh-cn"},
-					loc_text("对"..COLORS_KWords_zh_cn.Staggered_rgb_zh_cn.."敌人施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."效果，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.n_8_rgb.." 层。")),
+			-- create_template("weap_wbm035_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"}, {"zh-cn"},
+					-- loc_text("对"..COLORS_KWords_zh_cn.Staggered_rgb_zh_cn.."敌人施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.impact_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."效果，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.n_8_rgb.." 层。")),
 
 -- HEAVY SWORD
 		--[+ CHAINED DEATHBLOW +]--	30.09.2025
@@ -1644,22 +1643,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration.")),
 					-- crit_chance: +20%, time: 3, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm036_desc_ext_fr",
-				{"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination sur "..COLORS_KWords_fr.Weakspot_rgb_fr..". {#color(255, 35, 5)}(bug:+10% de taux de coup critique peu importe le niveau de la bénédiction){#reset()}")),
+			-- create_template("weap_wbm036_desc_ext_fr",
+				-- {"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination sur "..COLORS_KWords_fr.Weakspot_rgb_fr..". {#color(255, 35, 5)}(bug:+10% de taux de coup critique peu importe le niveau de la bénédiction){#reset()}")),
 			--[+ Russian - Цепочка смертельных ударов +]--	 checked 08.06.2025
-			create_template("weap_wbm036_desc_ext_ru",
-				{"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийствах в "..COLORS_KWords_ru.Weakspot_rgb_ru..". Может быть обновлено во время действия. {#color(255, 35, 5)}(Баг: +10% на всех уровнях){#reset()}")),
+			-- create_template("weap_wbm036_desc_ext_ru",
+				-- {"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийствах в "..COLORS_KWords_ru.Weakspot_rgb_ru..". Может быть обновлено во время действия. {#color(255, 35, 5)}(Баг: +10% на всех уровнях){#reset()}")),
 			--[+ Traditional Chinese - 致命連擊 +]--
 			-- 重劍 -- 10% | 10% | 10% | 10% (bugged)
-			create_template("weap_wbm036_desc_ext_tw",
-				{"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"}, {"zh-tw"},
-					loc_text(COLORS_KWords_tw.Weakspot_rgb_tw.." 擊殺時 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。{#color(255, 35, 5)}\n(bug: 所有等級 +10%){#reset()}")),
+			-- create_template("weap_wbm036_desc_ext_tw",
+				-- {"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"}, {"zh-tw"},
+					-- loc_text(COLORS_KWords_tw.Weakspot_rgb_tw.." 擊殺時 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。{#color(255, 35, 5)}\n(bug: 所有等級 +10%){#reset()}")),
 			--[+ Simplified Chinese - 连锁死亡打击 +]--
-			create_template("weap_wbm036_desc_ext_zh_cn",
-				{"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Weakspothits_k_rgb_zh_cn.."时 \n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。{#color(255, 35, 5)}\n（存在BUG：无论祝福级别如何，数值始终为 +10% 暴击几率。）{#reset()}")),
+			-- create_template("weap_wbm036_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Weakspothits_k_rgb_zh_cn.."时 \n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。{#color(255, 35, 5)}\n（存在BUG：无论祝福级别如何，数值始终为 +10% 暴击几率。）{#reset()}")),
 
 		--[+ PERFECT STRIKE +]--	30.09.2025
 		-- Melee Crit Damage (per tier)
@@ -1670,22 +1669,22 @@ local localization_templates = {
 						..Dot_green.." Carapace armor can be cleaved.")),
 					-- crit_damage: +10%, +colors
 			--[+ French +]--
-			create_template("weap_wbm038_desc_ext_fr",
-				{"loc_trait_bespoke_pass_past_armor_on_crit_new_desc"}, {"fr"},
-					loc_text( COLORS_Numbers.critdmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Crit_hit_rgb_fr.." en mélée. Les "..COLORS_KWords_fr.Crit_hits_rgb_fr.." ignore le "..COLORS_KWords_fr.Hit_mass_rgb_fr.." de l'armure.")),
+			-- create_template("weap_wbm038_desc_ext_fr",
+				-- {"loc_trait_bespoke_pass_past_armor_on_crit_new_desc"}, {"fr"},
+					-- loc_text( COLORS_Numbers.critdmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Crit_hit_rgb_fr.." en mélée. Les "..COLORS_KWords_fr.Crit_hits_rgb_fr.." ignore le "..COLORS_KWords_fr.Hit_mass_rgb_fr.." de l'armure.")),
 			--[+ Russian - Безупречный удар +]--
-			create_template("weap_wbm038_desc_ext_ru",
-				{"loc_trait_bespoke_pass_past_armor_on_crit_new_desc"}, {"ru"},
-					loc_text( COLORS_Numbers.critdmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя при "..COLORS_KWords_ru.Crit_hit_rgb_ru..". "..COLORS_KWords_ru.Crit0_rgb_ru.." игнорируют "..COLORS_KWords_ru.Hit_mass_rgb_ru.." от брони, позволяя пробивать Панцирную броню.")),
+			-- create_template("weap_wbm038_desc_ext_ru",
+				-- {"loc_trait_bespoke_pass_past_armor_on_crit_new_desc"}, {"ru"},
+					-- loc_text( COLORS_Numbers.critdmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя при "..COLORS_KWords_ru.Crit_hit_rgb_ru..". "..COLORS_KWords_ru.Crit0_rgb_ru.." игнорируют "..COLORS_KWords_ru.Hit_mass_rgb_ru.." от брони, позволяя пробивать Панцирную броню.")),
 			--[+ Traditional Chinese - 完美一擊 +]--
 			-- 作戰大槌&板盾, 惡棍棒, 重型開膛劍, 重劍, 廁所鏟, 動力錘 -- 2.5% | 5% | 7.5% | 10%
-			create_template("weap_wbm038_desc_ext_tw",
-				{"loc_trait_bespoke_pass_past_armor_on_crit_new_desc"}, {"zh-tw"},
-					loc_text("近戰 "..COLORS_KWords_tw.Crit_rgb_tw.." 時 "..COLORS_Numbers.critdmg_var_rgb.." "..COLORS_KWords_tw.Crit_dmg_r_rgb_tw.."。\n無視 "..COLORS_KWords_tw.Hit_mass_rgb_tw.." 護甲加成。")),
+			-- create_template("weap_wbm038_desc_ext_tw",
+				-- {"loc_trait_bespoke_pass_past_armor_on_crit_new_desc"}, {"zh-tw"},
+					-- loc_text("近戰 "..COLORS_KWords_tw.Crit_rgb_tw.." 時 "..COLORS_Numbers.critdmg_var_rgb.." "..COLORS_KWords_tw.Crit_dmg_r_rgb_tw.."。\n無視 "..COLORS_KWords_tw.Hit_mass_rgb_tw.." 護甲加成。")),
 			--[+ Simplified Chinese - 完美打击 +]--
-			create_template("weap_wbm038_desc_ext_zh_cn",
-				{"loc_trait_bespoke_pass_past_armor_on_crit_new_desc"}, {"zh-cn"},
-					loc_text("近战"..COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时 "..COLORS_Numbers.critdmg_var_rgb..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。\n"..COLORS_KWords_zh_cn.Crit0_rgb_zh_cn.."同时无视装甲赋予的"..COLORS_KWords_zh_cn.Hit_mass_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Hit_Mass_note_rgb_zh_cn)),
+			-- create_template("weap_wbm038_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_pass_past_armor_on_crit_new_desc"}, {"zh-cn"},
+					-- loc_text("近战"..COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时 "..COLORS_Numbers.critdmg_var_rgb..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。\n"..COLORS_KWords_zh_cn.Crit0_rgb_zh_cn.."同时无视装甲赋予的"..COLORS_KWords_zh_cn.Hit_mass_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Hit_Mass_note_rgb_zh_cn)),
 
 		--[+ BLADED MOMENTUM +]--	30.09.2025
 		-- Rending per stack (per tier)
@@ -1696,22 +1695,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration.\n"..Rend_note_rgb)),
 					-- rending: +10%, time: 2.5, stacks: 5, +colors, +note
 			--[+ French +]--
-			create_template("weap_wbm039_desc_ext_fr",
-				{"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." de "..COLORS_KWords_fr.Rending_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un coup en mélée multiple . Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Rend_note_rgb_fr)),
+			-- create_template("weap_wbm039_desc_ext_fr",
+				-- {"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." de "..COLORS_KWords_fr.Rending_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un coup en mélée multiple . Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Rend_note_rgb_fr)),
 			--[+ Russian - Импульс лезвия -- +]-- руоф Моментум лезвия	27.04.2025
-			create_template("weap_wbm039_desc_ext_ru",
-				{"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.rending_var_rgb.." к "..COLORS_KWords_ru.Rending_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды, когда вы попадаете по как минимум "..COLORS_Numbers.n_2_rgb.." врагам за один удар. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Может быть обновлено во время действия."..Rend_note_rgb_ru)),
+			-- create_template("weap_wbm039_desc_ext_ru",
+				-- {"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.rending_var_rgb.." к "..COLORS_KWords_ru.Rending_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды, когда вы попадаете по как минимум "..COLORS_Numbers.n_2_rgb.." врагам за один удар. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Может быть обновлено во время действия."..Rend_note_rgb_ru)),
 			--[+ Traditional Chinese - 利刃攻勢 +]--
 			-- 重劍 -- 4% | 6% | 8% | 10% (up to +50%)
-			create_template("weap_wbm039_desc_ext_tw",
-				{"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"zh-tw"},
-					loc_text("在一次攻擊命中多名敵人 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.." ，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" .. COLORS_KWords2_tw.Rend_note_rgb_tw)),
+			-- create_template("weap_wbm039_desc_ext_tw",
+				-- {"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"zh-tw"},
+					-- loc_text("在一次攻擊命中多名敵人 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Rending_rgb_tw.." ，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" .. COLORS_KWords2_tw.Rend_note_rgb_tw)),
 			--[+ Simplified Chinese - 刀刃势头 +]--
-			create_template("weap_wbm039_desc_ext_zh_cn",
-				{"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"zh-cn"},
-					loc_text("命中多名敌人时"..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Rend_note_rgb_zh_cn)),
+			-- create_template("weap_wbm039_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"zh-cn"},
+					-- loc_text("命中多名敌人时"..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Rend_note_rgb_zh_cn)),
 
 -- FORCE GREATSWORD
 		--[+ DEFLECTOR +]--	30.09.2025
@@ -1723,22 +1722,22 @@ local localization_templates = {
 						..Dot_red.." Blocking a sniper shot still inflicts its Full spillover "..COLORS_KWords.Damage_rgb..".")),
 					-- block_cost: 30%, +colors
 			--[+ French +]--
-			create_template("weap_wbm040_desc_ext_fr",
-				{"loc_trait_bespoke_can_block_ranged_desc"}, {"fr"},
-					loc_text("Cette arme bloque les attaques à distance et en mélée. De plus, le coût du blocage est réduit de "..COLORS_Numbers.block_var_rgb..".")),
+			-- create_template("weap_wbm040_desc_ext_fr",
+				-- {"loc_trait_bespoke_can_block_ranged_desc"}, {"fr"},
+					-- loc_text("Cette arme bloque les attaques à distance et en mélée. De plus, le coût du blocage est réduit de "..COLORS_Numbers.block_var_rgb..".")),
 			--[+ Russian - Отражатель +]--
-			create_template("weap_wbm040_desc_ext_ru",
-				{"loc_trait_bespoke_can_block_ranged_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.block_var_rgb.." стоимости блока. Кроме того, это оружие блокирует атаки как ближнего, так и дальнего боя.")),
+			-- create_template("weap_wbm040_desc_ext_ru",
+				-- {"loc_trait_bespoke_can_block_ranged_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.block_var_rgb.." стоимости блока. Кроме того, это оружие блокирует атаки как ближнего, так и дальнего боя.")),
 			--[+ Traditional Chinese - 偏轉 +]--
 			-- 烈焰力場劍, 烈焰力場巨劍 -- 22.5% | 25% | 27.5% | 30%
-			create_template("weap_wbm040_desc_ext_tw",
-				{"loc_trait_bespoke_can_block_ranged_desc"}, {"zh-tw"},
-					loc_text("此武器可以格擋近戰和遠程攻擊。\n此外，格擋消耗 "..COLORS_Numbers.block_var_rgb)),
+			-- create_template("weap_wbm040_desc_ext_tw",
+				-- {"loc_trait_bespoke_can_block_ranged_desc"}, {"zh-tw"},
+					-- loc_text("此武器可以格擋近戰和遠程攻擊。\n此外，格擋消耗 "..COLORS_Numbers.block_var_rgb)),
 			--[+ Simplified Chinese - 偏转器 +]--
-			create_template("weap_wbm040_desc_ext_zh_cn",
-				{"loc_trait_bespoke_can_block_ranged_desc"}, {"zh-cn"},
-					loc_text(COLORS_Numbers.block_var_rgb.." 格挡消耗。\n此武器可格挡近战与远程攻击。")),
+			-- create_template("weap_wbm040_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_can_block_ranged_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_Numbers.block_var_rgb.." 格挡消耗。\n此武器可格挡近战与远程攻击。")),
 
 		--[+ MOMENTUM +]--	30.09.2025
 		-- Max Toughness Percentage (per tier)
@@ -1750,22 +1749,22 @@ local localization_templates = {
 						..Dot_red.." Does not interact with "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb..".")),
 					-- toughness: 15%, +colors
 			--[+ French +]--
-			create_template("weap_wbm041_desc_ext_fr",
-				{"loc_trait_bespoke_toughness_recovery_on_multiple_hits_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.tghns_var_rgb.." de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." en touchant au moins "..COLORS_Numbers.mult_hit_var_rgb.." ennemies avec une attaque.")),
+			-- create_template("weap_wbm041_desc_ext_fr",
+				-- {"loc_trait_bespoke_toughness_recovery_on_multiple_hits_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.tghns_var_rgb.." de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." en touchant au moins "..COLORS_Numbers.mult_hit_var_rgb.." ennemies avec une attaque.")),
 			--[+ Russian - Моментум +]--
-			create_template("weap_wbm041_desc_ext_ru",
-				{"loc_trait_bespoke_toughness_recovery_on_multiple_hits_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается, если вы ударили атакой как минимум "..COLORS_Numbers.mult_hit_var_rgb.." врагов.")),
+			-- create_template("weap_wbm041_desc_ext_ru",
+				-- {"loc_trait_bespoke_toughness_recovery_on_multiple_hits_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается, если вы ударили атакой как минимум "..COLORS_Numbers.mult_hit_var_rgb.." врагов.")),
 			--[+ Traditional Chinese - 勢頭 +]--
 			-- 烈焰力場巨劍, 惡棍棒, 砍刀, 重型開膛劍, 雷鎚 -- 12% | 13% | 14% | 15%
-			create_template("weap_wbm041_desc_ext_tw",
-				{"loc_trait_bespoke_toughness_recovery_on_multiple_hits_desc"}, {"zh-tw"},
-					loc_text("在一次攻擊命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 個敵人時，\n恢復 "..COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw.." 。")),
+			-- create_template("weap_wbm041_desc_ext_tw",
+				-- {"loc_trait_bespoke_toughness_recovery_on_multiple_hits_desc"}, {"zh-tw"},
+					-- loc_text("在一次攻擊命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 個敵人時，\n恢復 "..COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw.." 。")),
 			--[+ Simplified Chinese - 动量 +]--
-			create_template("weap_wbm041_desc_ext_zh_cn",
-				{"loc_trait_bespoke_toughness_recovery_on_multiple_hits_desc"}, {"zh-cn"},
-					loc_text("命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 名敌人时，\n"..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.." "..COLORS_Numbers.tghns_var_rgb.."。")),
+			-- create_template("weap_wbm041_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_toughness_recovery_on_multiple_hits_desc"}, {"zh-cn"},
+					-- loc_text("命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 名敌人时，\n"..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.." "..COLORS_Numbers.tghns_var_rgb.."。")),
 
 		--[+ MURDEROUS TRANQUILITY +]--	30.09.2025
 		-- Peril Amount Removed (per tier)
@@ -1776,22 +1775,22 @@ local localization_templates = {
 						..Dot_nc.." Procs once per attack. "..Dot_red.." Cannot be triggered by a Special Attack.")),
 					-- multiple_hit: 3, warp_charge: 2%, +colors
 			--[+ French +]--
-			create_template("weap_wbm042_desc_ext_fr",
-				{"loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"}, {"fr"},
-					loc_text("Toucher au moins "..COLORS_Numbers.mult_hit_var_rgb.." ennemies avec une attaque, réduit de "..COLORS_Numbers.warpchrg_var_rgb.." le "..COLORS_KWords_fr.Peril_rgb_fr..".")),
+			-- create_template("weap_wbm042_desc_ext_fr",
+				-- {"loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"}, {"fr"},
+					-- loc_text("Toucher au moins "..COLORS_Numbers.mult_hit_var_rgb.." ennemies avec une attaque, réduit de "..COLORS_Numbers.warpchrg_var_rgb.." le "..COLORS_KWords_fr.Peril_rgb_fr..".")),
 			--[+ Russian +]-- Убийственное спокойствие
-			create_template("weap_wbm042_desc_ext_ru",
-				{"loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." подавляется при попадании атакой как минимум по "..COLORS_Numbers.mult_hit_var_rgb.." врагам.")),
+			-- create_template("weap_wbm042_desc_ext_ru",
+				-- {"loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." подавляется при попадании атакой как минимум по "..COLORS_Numbers.mult_hit_var_rgb.." врагам.")),
 			--[+ Traditional Chinese - 兇殘之寧 +]--
 			-- 烈焰力場巨劍 -- 2% | 3% | 4% | 5% ???
-			create_template("weap_wbm042_desc_ext_tw",
-				{"loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"}, {"zh-tw"},
-					loc_text("在一次攻擊命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 個敵人時，\n消除 "..COLORS_Numbers.warpchrg_var_rgb.." 點的 "..COLORS_KWords_tw.Peril_rgb_tw.." 。")),
+			-- create_template("weap_wbm042_desc_ext_tw",
+				-- {"loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"}, {"zh-tw"},
+					-- loc_text("在一次攻擊命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 個敵人時，\n消除 "..COLORS_Numbers.warpchrg_var_rgb.." 點的 "..COLORS_KWords_tw.Peril_rgb_tw.." 。")),
 			--[+ Simplified Chinese - 杀意如水 +]--
-			create_template("weap_wbm042_desc_ext_zh_cn",
-				{"loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"}, {"zh-cn"},
-					loc_text("命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 名敌人时，\n平息 " ..COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."。")),
+			-- create_template("weap_wbm042_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"}, {"zh-cn"},
+					-- loc_text("命中至少 "..COLORS_Numbers.mult_hit_var_rgb.." 名敌人时，\n平息 " ..COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."。")),
 
 		--[+ BLAZING SPIRIT +]-- !!! MELEE !!!	30.09.2025
 		-- Soulblaze Stacks and Max Stacks (per tier)
@@ -1804,23 +1803,23 @@ local localization_templates = {
 						..Dot_nc.." Lasts "..COLORS_Numbers.n_8_rgb.." seconds. "..Dot_green.." Refreshes duration on stack application. "..Dot_red.." Can't apply "..COLORS_KWords.Soulblaze_rgb.." through shields.")),
 					-- stacks: +4, max_stacks: 12, Stack(s)->Stacks, +colors
 			--[+ French +]--
-			create_template("weap_wbm043_desc_ext_fr",
-				{"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"fr"},
-					loc_text("L'ennemi gagne "..COLORS_Numbers.n_plus_rgb..""..COLORS_Numbers.stacks_var_rgb.." cumuls d'"..COLORS_KWords_fr.Soulblaze_rgb_fr.." lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr..", Jusqu'à "..COLORS_Numbers.maxstks_var_rgb.." cumuls.")),
+			-- create_template("weap_wbm043_desc_ext_fr",
+				-- {"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"fr"},
+					-- loc_text("L'ennemi gagne "..COLORS_Numbers.n_plus_rgb..""..COLORS_Numbers.stacks_var_rgb.." cumuls d'"..COLORS_KWords_fr.Soulblaze_rgb_fr.." lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr..", Jusqu'à "..COLORS_Numbers.maxstks_var_rgb.." cumuls.")),
 			--[+ Russian - Пылающий дух +]-- checked 27.04.2025
-			create_template("weap_wbm043_desc_ext_ru",
-				{"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." получает враг при "..COLORS_KWords_ru.Crit_hit_rgb_ru..", вплоть до "..COLORS_Numbers.maxstks_var_rgb.." зарядов. Заряды"..COLORS_KWords_ru.Soulblaze_rgb_ru.." не накладываются через через щиты.")),
+			-- create_template("weap_wbm043_desc_ext_ru",
+				-- {"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." получает враг при "..COLORS_KWords_ru.Crit_hit_rgb_ru..", вплоть до "..COLORS_Numbers.maxstks_var_rgb.." зарядов. Заряды"..COLORS_KWords_ru.Soulblaze_rgb_ru.." не накладываются через через щиты.")),
 			--[+ Traditional Chinese - 燃燒靈魂 +]--
 			-- 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
 			-- The staff is currently using this description in zh-tw, 
-			create_template("weap_wbm043_desc_ext_tw",
-				{"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"},
-					loc_text(COLORS_KWords_tw.Crit_hit_rgb_tw.." 敵人時，\n使其獲得 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." 層的 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."。\n上限 "..COLORS_Numbers.n_6_rgb.." 層，烈焰力場巨劍 "..COLORS_Numbers.n_12_rgb.." 層。")),
+			-- create_template("weap_wbm043_desc_ext_tw",
+				-- {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"},
+					-- loc_text(COLORS_KWords_tw.Crit_hit_rgb_tw.." 敵人時，\n使其獲得 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." 層的 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."。\n上限 "..COLORS_Numbers.n_6_rgb.." 層，烈焰力場巨劍 "..COLORS_Numbers.n_12_rgb.." 層。")),
 			--[+ Simplified Chinese - 烈焰之魂 +]--
-			create_template("weap_wbm043_desc_ext_zh_cn",
-				{"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时, 对敌人施加 "..COLORS_Numbers.stacks_var_rgb.." 层"..COLORS_KWords_zh_cn.Soulblaze_rgb_zh_cn.."。最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 次。")),
+			-- create_template("weap_wbm043_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时, 对敌人施加 "..COLORS_Numbers.stacks_var_rgb.." 层"..COLORS_KWords_zh_cn.Soulblaze_rgb_zh_cn.."。最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 次。")),
 
 		--[+ UNSTABLE POWER +]--	30.09.2025
 		-- Power per stack (per tier)
@@ -1831,22 +1830,22 @@ local localization_templates = {
 						..Dot_nc.." Stacks "..COLORS_Numbers.n_4_rgb.." times. "..Pwr_note_rgb)),
 					-- power_level: +20%, +colors
 			--[+ French +]--
-			create_template("weap_wbm044_desc_ext_fr",
-				{"loc_trait_bespoke_warp_charge_power_bonus_desc"}, {"fr"},
-					loc_text("Jusqu'à "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_fr.Strength_rgb_fr..", en fonction du "..COLORS_KWords_fr.Peril_rgb_fr..". Se cumule "..COLORS_Numbers.n_4_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm044_desc_ext_fr",
+				-- {"loc_trait_bespoke_warp_charge_power_bonus_desc"}, {"fr"},
+					-- loc_text("Jusqu'à "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_fr.Strength_rgb_fr..", en fonction du "..COLORS_KWords_fr.Peril_rgb_fr..". Se cumule "..COLORS_Numbers.n_4_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian +]-- Нестабильная мощь
-			create_template("weap_wbm044_desc_ext_ru",
-				{"loc_trait_bespoke_warp_charge_power_bonus_desc"}, {"ru"},
-					loc_text("До "..COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." вы получаете, с увеличением уровня "..COLORS_KWords_ru.Peril_rgb_ru..". Суммируется до "..COLORS_Numbers.n_4_rgb.." раз."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm044_desc_ext_ru",
+				-- {"loc_trait_bespoke_warp_charge_power_bonus_desc"}, {"ru"},
+					-- loc_text("До "..COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." вы получаете, с увеличением уровня "..COLORS_KWords_ru.Peril_rgb_ru..". Суммируется до "..COLORS_Numbers.n_4_rgb.." раз."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 不穩定能量 +]--
 			-- 烈焰力場巨劍, 烈焰力場劍 -- 3.5% | 4% | 4.5% | 5% (up to +20%)
-			create_template("weap_wbm044_desc_ext_tw",
-				{"loc_trait_bespoke_warp_charge_power_bonus_desc"}, {"zh-tw"},
-					loc_text(COLORS_KWords_tw.Peril_rgb_tw.." 每增加"..COLORS_Numbers.pc_20_rgb.."， 獲得一層，\n每一層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.." ，上限 "..COLORS_Numbers.n_4_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm044_desc_ext_tw",
+				-- {"loc_trait_bespoke_warp_charge_power_bonus_desc"}, {"zh-tw"},
+					-- loc_text(COLORS_KWords_tw.Peril_rgb_tw.." 每增加"..COLORS_Numbers.pc_20_rgb.."， 獲得一層，\n每一層 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.." ，上限 "..COLORS_Numbers.n_4_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 无常之力 +]--
-			create_template("weap_wbm044_desc_ext_zh_cn",
-				{"loc_trait_bespoke_warp_charge_power_bonus_desc"}, {"zh-cn"},
-					loc_text("随"..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."增长叠加层数，\n每增长 "..COLORS_Numbers.pc_20_rgb.."，"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_4_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm044_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_warp_charge_power_bonus_desc"}, {"zh-cn"},
+					-- loc_text("随"..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."增长叠加层数，\n每增长 "..COLORS_Numbers.pc_20_rgb.."，"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_4_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ WARP SLICE +]--	30.09.2025
 		-- Cooldown (per tier)
@@ -1856,22 +1855,22 @@ local localization_templates = {
 					loc_text("Guaranteed Activated "..COLORS_KWords.Crit_strike_rgb..". Cooldown "..COLORS_Numbers.cd_var_rgb.." seconds.")),
 					-- cooldown: 50, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm045_desc_ext_fr",
-				{"loc_trait_bespoke_wind_slash_crits_desc"}, {"fr"},
-					loc_text(COLORS_KWords_fr.Crit_hit_rgb_fr.." garranti activé. Temps de recharge : "..COLORS_Numbers.cd_var_rgb.." secondes.")),
+			-- create_template("weap_wbm045_desc_ext_fr",
+				-- {"loc_trait_bespoke_wind_slash_crits_desc"}, {"fr"},
+					-- loc_text(COLORS_KWords_fr.Crit_hit_rgb_fr.." garranti activé. Temps de recharge : "..COLORS_Numbers.cd_var_rgb.." secondes.")),
 			--[+ Russian +]-- Варп нарезка
-			create_template("weap_wbm045_desc_ext_ru",
-				{"loc_trait_bespoke_wind_slash_crits_desc"}, {"ru"},
-					loc_text("Следующая специальная атака будет гарантированным "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..". Восстанавливается "..COLORS_Numbers.cd_var_rgb.." секунд.")),
+			-- create_template("weap_wbm045_desc_ext_ru",
+				-- {"loc_trait_bespoke_wind_slash_crits_desc"}, {"ru"},
+					-- loc_text("Следующая специальная атака будет гарантированным "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..". Восстанавливается "..COLORS_Numbers.cd_var_rgb.." секунд.")),
 			--[+ Traditional Chinese - 亞空間斬擊 +]--
 			-- 烈焰力場巨劍 --
-			create_template("weap_wbm045_desc_ext_tw",
-				{"loc_trait_bespoke_wind_slash_crits_desc"}, {"zh-tw"},
-					loc_text("攻擊必定 "..COLORS_KWords_tw.Crit_rgb_tw.."，冷卻時間 "..COLORS_Numbers.cd_var_rgb.." 秒")),
+			-- create_template("weap_wbm045_desc_ext_tw",
+				-- {"loc_trait_bespoke_wind_slash_crits_desc"}, {"zh-tw"},
+					-- loc_text("攻擊必定 "..COLORS_KWords_tw.Crit_rgb_tw.."，冷卻時間 "..COLORS_Numbers.cd_var_rgb.." 秒")),
 			--[+ Simplified Chinese - 亚空间切割 +]--
-			create_template("weap_wbm045_desc_ext_zh_cn",
-				{"loc_trait_bespoke_wind_slash_crits_desc"}, {"zh-cn"},
-					loc_text("使下次充能攻击必定"..COLORS_KWords_zh_cn.Crit_rgb_zh_cn.."，\n冷却时间 "..COLORS_Numbers.cd_var_rgb.." 秒。")),
+			-- create_template("weap_wbm045_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_wind_slash_crits_desc"}, {"zh-cn"},
+					-- loc_text("使下次充能攻击必定"..COLORS_KWords_zh_cn.Crit_rgb_zh_cn.."，\n冷却时间 "..COLORS_Numbers.cd_var_rgb.." 秒。")),
 
 -- FORCE SWORD
 		--[+ EXORCIST +]--	30.09.2025
@@ -1883,22 +1882,22 @@ local localization_templates = {
 						..Dot_nc.." Procs only once per swing regardless of how many enemy weakspots are hit.")),
 					-- warp_charge: 5%, +colors
 			--[+ French +]--
-			create_template("weap_wbm046_desc_ext_fr",
-				{"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.warpchrg_var_rgb.." du "..COLORS_KWords_fr.Peril_rgb_fr.." est dissipé sur les "..COLORS_KWords_fr.Weakspothit_rgb_fr.." répété.")),
+			-- create_template("weap_wbm046_desc_ext_fr",
+				-- {"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.warpchrg_var_rgb.." du "..COLORS_KWords_fr.Peril_rgb_fr.." est dissipé sur les "..COLORS_KWords_fr.Weakspothit_rgb_fr.." répété.")),
 			--[+ Russian +]-- Экзорцист
-			create_template("weap_wbm046_desc_ext_ru",
-				{"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." подавляется при повторном попадании в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".")),
+			-- create_template("weap_wbm046_desc_ext_ru",
+				-- {"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." подавляется при повторном попадании в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".")),
 			--[+ Traditional Chinese - 驅魔者 +]--
 			-- 烈焰力場劍 -- 2% | 3% | 4% | 5%
-			create_template("weap_wbm046_desc_ext_tw",
-				{"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge_desc"}, {"zh-tw"},
-					loc_text("連續 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 時，消除 "..COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_tw.Peril_rgb_tw.." 。")),
+			-- create_template("weap_wbm046_desc_ext_tw",
+				-- {"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge_desc"}, {"zh-tw"},
+					-- loc_text("連續 "..COLORS_KWords_tw.Weakspothit_rgb_tw.." 時，消除 "..COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_tw.Peril_rgb_tw.." 。")),
 			--[+ Simplified Chinese - 驱魔者 +]--
-			create_template("weap_wbm046_desc_ext_zh_cn",
-				{"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge_desc"}, {"zh-cn"},
-					loc_text("连锁攻击"..COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时，\n平息 "..COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."。")),
+			-- create_template("weap_wbm046_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_chained_weakspot_hits_vents_warpcharge_desc"}, {"zh-cn"},
+					-- loc_text("连锁攻击"..COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时，\n平息 "..COLORS_Numbers.warpchrg_var_rgb.." "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."。")),
 
 		--[+ SUPERIORITY +]--	30.09.2025
 		-- Power per stack (per tier)
@@ -1909,22 +1908,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration, and are dropped one by one. "..Pwr_note_rgb)),
 					-- stacks: 5, power_level: +12.5%, time: 7, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm047_desc_ext_fr",
-				{"loc_trait_bespoke_elite_kills_grants_stackable_power_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination d'élite. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. Les cumuls se détériorent un à un."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm047_desc_ext_fr",
+				-- {"loc_trait_bespoke_elite_kills_grants_stackable_power_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination d'élite. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. Les cumuls se détériorent un à un."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian +]-- Превосходство
-			create_template("weap_wbm047_desc_ext_ru",
-				{"loc_trait_bespoke_elite_kills_grants_stackable_power_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд при убийстве Элитного врага. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Заряды сбрасываются по одному за раз."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm047_desc_ext_ru",
+				-- {"loc_trait_bespoke_elite_kills_grants_stackable_power_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд при убийстве Элитного врага. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Заряды сбрасываются по одному за раз."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 優勢 +]--
 			-- 烈焰力場劍 -- 5% | 7.5% | 10% | 12.5% (up to +37.5%)
-			create_template("weap_wbm047_desc_ext_tw",
-				{"loc_trait_bespoke_elite_kills_grants_stackable_power_desc"}, {"zh-tw"},
-					loc_text("擊殺精英時，增加 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次擊殺可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm047_desc_ext_tw",
+				-- {"loc_trait_bespoke_elite_kills_grants_stackable_power_desc"}, {"zh-tw"},
+					-- loc_text("擊殺精英時，增加 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n每次擊殺可疊加一層，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。"..COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 优势 +]--
-			create_template("weap_wbm047_desc_ext_zh_cn",
-				{"loc_trait_bespoke_elite_kills_grants_stackable_power_desc"}, {"zh-cn"},
-					loc_text("击杀精英敌人时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层，该效果逐层衰减。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm047_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_elite_kills_grants_stackable_power_desc"}, {"zh-cn"},
+					-- loc_text("击杀精英敌人时 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层，该效果逐层衰减。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 -- SHOCK MAUL
 		--[+ LIGHTNING REFLEXES +]--	30.09.2025
@@ -1936,22 +1935,22 @@ local localization_templates = {
 						..Pwr_note_rgb)),
 					-- power_level: 25%, duration: 3, cooldown_duration: 3, +colors
 			--[+ French +]--
-			create_template("weap_wbm048_desc_ext_fr",
-				{"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"fr"},
-					loc_text("Les blocages opportuns "..COLORS_KWords_fr.Stun_s_rgb_fr.." l'attaquant et vous octroient "..COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." de mélée pendant "..COLORS_Numbers.dur_var_rgb.." secondes. Temps de recharge : "..COLORS_Numbers.cd_dur_var_rgb.." secondes."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm048_desc_ext_fr",
+				-- {"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"fr"},
+					-- loc_text("Les blocages opportuns "..COLORS_KWords_fr.Stun_s_rgb_fr.." l'attaquant et vous octroient "..COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." de mélée pendant "..COLORS_Numbers.dur_var_rgb.." secondes. Temps de recharge : "..COLORS_Numbers.cd_dur_var_rgb.." secondes."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian +]-- Молниеносные рефлексы
-			create_template("weap_wbm048_desc_ext_ru",
-				{"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"ru"},
-					loc_text("Своевременные блоки "..COLORS_KWords_ru.Staggers_rgb_ru.." атакующего врага и дают вам "..COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." ближнего боя на "..COLORS_Numbers.dur_var_rgb.." секунды. Восстанавливается "..COLORS_Numbers.cd_dur_var_rgb.." секунды."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm048_desc_ext_ru",
+				-- {"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"ru"},
+					-- loc_text("Своевременные блоки "..COLORS_KWords_ru.Staggers_rgb_ru.." атакующего врага и дают вам "..COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." ближнего боя на "..COLORS_Numbers.dur_var_rgb.." секунды. Восстанавливается "..COLORS_Numbers.cd_dur_var_rgb.." секунды."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 閃電反射 +]--
 			-- 電擊錘
-			create_template("weap_wbm048_desc_ext_tw",
-				{"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"zh-tw"},
-					loc_text("完美格擋會使攻擊者 "..COLORS_KWords_tw.Staggers_rgb_tw.." ，\n並 "..COLORS_Numbers.pwrlvl_var_rgb.." 近戰 "..COLORS_KWords_tw.Strength_rgb_tw.."，持續 "..COLORS_Numbers.dur_var_rgb.." 秒。\n冷卻時間為 "..COLORS_Numbers.cd_dur_var_rgb.." 秒。" .. COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm048_desc_ext_tw",
+				-- {"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"zh-tw"},
+					-- loc_text("完美格擋會使攻擊者 "..COLORS_KWords_tw.Staggers_rgb_tw.." ，\n並 "..COLORS_Numbers.pwrlvl_var_rgb.." 近戰 "..COLORS_KWords_tw.Strength_rgb_tw.."，持續 "..COLORS_Numbers.dur_var_rgb.." 秒。\n冷卻時間為 "..COLORS_Numbers.cd_dur_var_rgb.." 秒。" .. COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 闪电反应 +]--
-			create_template("weap_wbm048_desc_ext_zh_cn",
-				{"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"zh-cn"},
-					loc_text("完美格挡会使目标"..COLORS_KWords_zh_cn.Electrocute_rgb_zh_cn.."，\n同时 "..COLORS_Numbers.pwrlvl_var_rgb.." 近战"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n冷却时间 "..COLORS_Numbers.cd_dur_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm048_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"zh-cn"},
+					-- loc_text("完美格挡会使目标"..COLORS_KWords_zh_cn.Electrocute_rgb_zh_cn.."，\n同时 "..COLORS_Numbers.pwrlvl_var_rgb.." 近战"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n冷却时间 "..COLORS_Numbers.cd_dur_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ HIGH VOLTAGE +]--	30.09.2025
 		-- Damage vs Electrocuted (per tier)
@@ -1961,22 +1960,22 @@ local localization_templates = {
 					loc_text(COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs "..COLORS_KWords.Electrocuted_rgb.." enemies.")),
 					-- damage: +25%, +colors
 			--[+ French +]--
-			create_template("weap_wbm049_desc_ext_fr",
-				{"loc_trait_bespoke_damage_bonus_vs_electrocuded_desc"}, {"fr"},
-					loc_text(COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemies "..COLORS_KWords_fr.Electrocuted_rgb_fr.." .")),
+			-- create_template("weap_wbm049_desc_ext_fr",
+				-- {"loc_trait_bespoke_damage_bonus_vs_electrocuded_desc"}, {"fr"},
+					-- loc_text(COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemies "..COLORS_KWords_fr.Electrocuted_rgb_fr.." .")),
 			--[+ Russian +]-- Высокое напряжение
-			create_template("weap_wbm049_desc_ext_ru",
-				{"loc_trait_bespoke_damage_bonus_vs_electrocuded_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." против врагов поражённых "..COLORS_KWords_ru.Electrocuted_rgb_ru..".")),
+			-- create_template("weap_wbm049_desc_ext_ru",
+				-- {"loc_trait_bespoke_damage_bonus_vs_electrocuded_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." против врагов поражённых "..COLORS_KWords_ru.Electrocuted_rgb_ru..".")),
 			--[+ Traditional Chinese - 高壓電 +]--
 			-- 電擊錘 -- 10% | 15% | 20% | 25%
-			create_template("trait_bespoke_046_desc_ext_zh",
-				{"loc_trait_bespoke_damage_bonus_vs_electrocuded_desc"}, {"zh-tw"},
-					loc_text("對 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 的敵人 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." 。")),
+			-- create_template("trait_bespoke_046_desc_ext_zh",
+				-- {"loc_trait_bespoke_damage_bonus_vs_electrocuded_desc"}, {"zh-tw"},
+					-- loc_text("對 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 的敵人 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.." 。")),
 			--[+ Simplified Chinese - 高压电 +]--
-			create_template("weap_wbm049_desc_ext_zh_cn",
-				{"loc_trait_bespoke_damage_bonus_vs_electrocuded_desc"}, {"zh-cn"},
-					loc_text("对"..COLORS_KWords_zh_cn.Electrocuted_rgb_zh_cn.."敌人 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。")),
+			-- create_template("weap_wbm049_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_damage_bonus_vs_electrocuded_desc"}, {"zh-cn"},
+					-- loc_text("对"..COLORS_KWords_zh_cn.Electrocuted_rgb_zh_cn.."敌人 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。")),
 
 		--[+ FALTER +]--	30.09.2025
 		-- Weakspot Stagger Reduction Modifier (per tier)
@@ -1987,22 +1986,22 @@ local localization_templates = {
 						..COLORS_Numbers.stgrrang_var_rgb.." Ranged "..COLORS_KWords.Stagger_rgb.." strength.")),
 					-- stagger: 90%, ranged_stagger: 30%, +colors
 			--[+ French +]--
-			create_template("weap_wbm050_desc_ext_fr",
-				{"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"fr"},
-					loc_text("Le "..COLORS_KWords_fr.Stagger_rgb_fr.." des ennemis augmente de "..COLORS_Numbers.stgr_var_rgb..", lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr..". De plus augmente la puissance du "..COLORS_KWords_fr.Stagger_rgb_fr.." à distance de "..COLORS_Numbers.stgrrang_var_rgb..".")),
+			-- create_template("weap_wbm050_desc_ext_fr",
+				-- {"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"fr"},
+					-- loc_text("Le "..COLORS_KWords_fr.Stagger_rgb_fr.." des ennemis augmente de "..COLORS_Numbers.stgr_var_rgb..", lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr..". De plus augmente la puissance du "..COLORS_KWords_fr.Stagger_rgb_fr.." à distance de "..COLORS_Numbers.stgrrang_var_rgb..".")),
 			--[+ Russian +]-- Дрожь
-			create_template("weap_wbm050_desc_ext_ru",
-				{"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.stgr_var_rgb.." к "..COLORS_KWords_ru.Stagger2_rgb_ru.." врага при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru..". На "..COLORS_Numbers.stgrrang_var_rgb.." увеличивается сила "..COLORS_KWords_ru.Staggering_rgb_ru.." для дальнобойного оружия.")),
+			-- create_template("weap_wbm050_desc_ext_ru",
+				-- {"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.stgr_var_rgb.." к "..COLORS_KWords_ru.Stagger2_rgb_ru.." врага при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru..". На "..COLORS_Numbers.stgrrang_var_rgb.." увеличивается сила "..COLORS_KWords_ru.Staggering_rgb_ru.." для дальнобойного оружия.")),
 			--[+ Traditional Chinese - 踉蹌 +]--
 			-- 電擊錘 -- 60% | 70% | 80% | 90%
-			create_template("weap_wbm050_desc_ext_tw",
-				{"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"zh-tw"},
-					loc_text(COLORS_KWords_tw.Weakspothit_rgb_tw.." 時，增加 "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords_tw.Stagger2_rgb_tw.." ，\n與 "..COLORS_Numbers.stgrrang_var_rgb.." 的遠程 "..COLORS_KWords_tw.Stagger2_rgb_tw.." 。")),
+			-- create_template("weap_wbm050_desc_ext_tw",
+				-- {"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"zh-tw"},
+					-- loc_text(COLORS_KWords_tw.Weakspothit_rgb_tw.." 時，增加 "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords_tw.Stagger2_rgb_tw.." ，\n與 "..COLORS_Numbers.stgrrang_var_rgb.." 的遠程 "..COLORS_KWords_tw.Stagger2_rgb_tw.." 。")),
 			--[+ Simplified Chinese - 摇摇欲坠 +]--
-			create_template("weap_wbm050_desc_ext_zh_cn",
-				{"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时，\n对敌人施加的"..COLORS_KWords_zh_cn.Stagger2_rgb_zh_cn.."效果 "..COLORS_Numbers.stgr_var_rgb.."。\n远程武器带有该祝福时，\n额外 "..COLORS_Numbers.stgrrang_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."。")),
+			-- create_template("weap_wbm050_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时，\n对敌人施加的"..COLORS_KWords_zh_cn.Stagger2_rgb_zh_cn.."效果 "..COLORS_Numbers.stgr_var_rgb.."。\n远程武器带有该祝福时，\n额外 "..COLORS_Numbers.stgrrang_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."。")),
 
 		--[+ OVERWHELMING FORCE +]--	30.09.2025
 		-- Cooldown & Proc Chance (per tier)
@@ -2013,22 +2012,22 @@ local localization_templates = {
 						..Dot_red.." Does not proc on pushes.")),
 					-- chance: 25%, cooldown: 3.5, +colors
 			--[+ French +]--
-			create_template("weap_wbm051_desc_ext_fr",
-				{"loc_trait_bespoke_staggering_hits_has_chance_to_stun_desc"}, {"fr"},
-					loc_text("Faire "..COLORS_KWords_fr.Staggering_rgb_fr.." un ennemie à "..COLORS_Numbers.chnc_var_rgb.." de chance de l'"..COLORS_KWords_fr.Stun_rgb_fr..". Temps de recharge : "..COLORS_Numbers.cd_var_rgb.." secondes.")),
+			-- create_template("weap_wbm051_desc_ext_fr",
+				-- {"loc_trait_bespoke_staggering_hits_has_chance_to_stun_desc"}, {"fr"},
+					-- loc_text("Faire "..COLORS_KWords_fr.Staggering_rgb_fr.." un ennemie à "..COLORS_Numbers.chnc_var_rgb.." de chance de l'"..COLORS_KWords_fr.Stun_rgb_fr..". Temps de recharge : "..COLORS_Numbers.cd_var_rgb.." secondes.")),
 			--[+ Russian +]-- Подавляющая сила
-			create_template("weap_wbm051_desc_ext_ru",
-				{"loc_trait_bespoke_staggering_hits_has_chance_to_stun_desc"}, {"ru"},
-					loc_text(COLORS_KWords_ru.Stagger_rgb_ru.." врага имеет "..COLORS_Numbers.chnc_var_rgb.." шанс вывести врага из равновесия. Восстановление "..COLORS_Numbers.cd_var_rgb.." секунды.")),
+			-- create_template("weap_wbm051_desc_ext_ru",
+				-- {"loc_trait_bespoke_staggering_hits_has_chance_to_stun_desc"}, {"ru"},
+					-- loc_text(COLORS_KWords_ru.Stagger_rgb_ru.." врага имеет "..COLORS_Numbers.chnc_var_rgb.." шанс вывести врага из равновесия. Восстановление "..COLORS_Numbers.cd_var_rgb.." секунды.")),
 			--[+ Traditional Chinese - 壓倒性的武力 +]--
 			-- 電擊錘 -- 5s & 10% | 4.5s & 15% | 4s & 20% | 3.5s & 25%
-			create_template("weap_wbm051_desc_ext_tw",
-				{"loc_trait_bespoke_staggering_hits_has_chance_to_stun_desc"}, {"zh-tw"},
-					loc_text("使敵人 "..COLORS_KWords_tw.Stagger_rgb_tw.." 時，\n有 "..COLORS_Numbers.chnc_var_rgb.." 的機率使敵人 "..COLORS_KWords_tw.Staggering_rgb_tw .." 。\n冷卻時間 "..COLORS_Numbers.cd_var_rgb.." 秒。")),
+			-- create_template("weap_wbm051_desc_ext_tw",
+				-- {"loc_trait_bespoke_staggering_hits_has_chance_to_stun_desc"}, {"zh-tw"},
+					-- loc_text("使敵人 "..COLORS_KWords_tw.Stagger_rgb_tw.." 時，\n有 "..COLORS_Numbers.chnc_var_rgb.." 的機率使敵人 "..COLORS_KWords_tw.Staggering_rgb_tw .." 。\n冷卻時間 "..COLORS_Numbers.cd_var_rgb.." 秒。")),
 			--[+ Simplified Chinese - 迅猛之力 +]--
-			create_template("weap_wbm051_desc_ext_zh_cn",
-				{"loc_trait_bespoke_staggering_hits_has_chance_to_stun_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Stagger_rgb_zh_cn.."敌人时 "..COLORS_Numbers.chnc_var_rgb.." 几率使目标"..COLORS_KWords_zh_cn.Electrocute_rgb_zh_cn.."。\n冷却时间 "..COLORS_Numbers.cd_var_rgb.." 秒。")),
+			-- create_template("weap_wbm051_desc_ext_zh_cn",
+				-- {"loc_trait_bespoke_staggering_hits_has_chance_to_stun_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Stagger_rgb_zh_cn.."敌人时 "..COLORS_Numbers.chnc_var_rgb.." 几率使目标"..COLORS_KWords_zh_cn.Electrocute_rgb_zh_cn.."。\n冷却时间 "..COLORS_Numbers.cd_var_rgb.." 秒。")),
 
 		--[+ COUNTERATTACK +]--	30.09.2025
 		-- Melee Attack Speed (per tier)
@@ -2039,22 +2038,22 @@ local localization_templates = {
 						..Dot_red.." Сannot be refreshed during active duration.")),
 					-- attack_speed: 10%, duration: 3, interval: 8, +colors
 			--[+ French +]--
-			create_template("weap_wbm052_desc_ext_fr",
-				{"loc_attack_speed_on_perfect_block_desc"}, {"fr"},
-					loc_text("Gagnez "..COLORS_Numbers.attack_spd_var_rgb.." de Vitesse d'attaque pendant "..COLORS_Numbers.dur_var_rgb.." secondes lors d'un blocage parfait. Ne peux se produire que toute les "..COLORS_Numbers.interval_var_rgb.." secondes.")),
+			-- create_template("weap_wbm052_desc_ext_fr",
+				-- {"loc_attack_speed_on_perfect_block_desc"}, {"fr"},
+					-- loc_text("Gagnez "..COLORS_Numbers.attack_spd_var_rgb.." de Vitesse d'attaque pendant "..COLORS_Numbers.dur_var_rgb.." secondes lors d'un blocage parfait. Ne peux se produire que toute les "..COLORS_Numbers.interval_var_rgb.." secondes.")),
 			--[+ Russian +]-- Контратака
-			create_template("weap_wbm052_desc_ext_ru",
-				{"loc_attack_speed_on_perfect_block_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.attack_spd_var_rgb.." к скорости атаки на "..COLORS_Numbers.dur_var_rgb.." секунды после идеального блока. Сбрасывает раз в "..COLORS_Numbers.interval_var_rgb.." секунд.")),
+			-- create_template("weap_wbm052_desc_ext_ru",
+				-- {"loc_attack_speed_on_perfect_block_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.attack_spd_var_rgb.." к скорости атаки на "..COLORS_Numbers.dur_var_rgb.." секунды после идеального блока. Сбрасывает раз в "..COLORS_Numbers.interval_var_rgb.." секунд.")),
 			--[+ Traditional Chinese - 反擊 +]--
 			-- 上古神刃 -- 4% | 6% | 8% | 10%
-			create_template("weap_wbm052_desc_ext_tw",
-				{"loc_attack_speed_on_perfect_block_desc"}, {"zh-tw"},
-					loc_text("完美格擋時，\n獲得 "..COLORS_Numbers.attack_spd_var_rgb.." 的攻擊速度，持續 "..COLORS_Numbers.dur_var_rgb.." 秒。\n每 "..COLORS_Numbers.interval_var_rgb.." 秒觸發一次")),
+			-- create_template("weap_wbm052_desc_ext_tw",
+				-- {"loc_attack_speed_on_perfect_block_desc"}, {"zh-tw"},
+					-- loc_text("完美格擋時，\n獲得 "..COLORS_Numbers.attack_spd_var_rgb.." 的攻擊速度，持續 "..COLORS_Numbers.dur_var_rgb.." 秒。\n每 "..COLORS_Numbers.interval_var_rgb.." 秒觸發一次")),
 			--[+ Simplified Chinese - 反击 +]--
-			create_template("weap_wbm052_desc_ext_zh_cn",
-				{"loc_attack_speed_on_perfect_block_desc"}, {"zh-cn"},
-					loc_text("完美格挡时 "..COLORS_Numbers.attack_spd_var_rgb.." 攻击速度，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n每 "..COLORS_Numbers.interval_var_rgb.." 秒只能触发一次。")),
+			-- create_template("weap_wbm052_desc_ext_zh_cn",
+				-- {"loc_attack_speed_on_perfect_block_desc"}, {"zh-cn"},
+					-- loc_text("完美格挡时 "..COLORS_Numbers.attack_spd_var_rgb.." 攻击速度，持续 "..COLORS_Numbers.dur_var_rgb.." 秒。\n每 "..COLORS_Numbers.interval_var_rgb.." 秒只能触发一次。")),
 
 		--[+ CRANIAL GROUNDING +]--	30.09.2025
 		-- Overheat Cost Reduction & Finesse Bonus per stack (per tier)
@@ -2065,22 +2064,22 @@ local localization_templates = {
 						..Dot_green.." Can be refreshed during active duration.")),
 					-- buildup_amount: 6%, damage: 4%, duration: 3 , stacks: 5, s->seconds, +colors
 			--[+ French +]--
-			create_template("weap_wbm053_desc_ext_fr",
-				{"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"fr"},
-					loc_text("Réduit la génération de "..COLORS_KWords_fr.Heat_rgb_fr.." de "..COLORS_Numbers.buildup_var_rgb.." et augmente les "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." de "..COLORS_Numbers.dmg_var_rgb.." pendant "..COLORS_Numbers.dur_var_rgb.." secondes lors de "..COLORS_KWords_fr.Weakspothit_rgb_fr.." répétés. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois.")),
+			-- create_template("weap_wbm053_desc_ext_fr",
+				-- {"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"fr"},
+					-- loc_text("Réduit la génération de "..COLORS_KWords_fr.Heat_rgb_fr.." de "..COLORS_Numbers.buildup_var_rgb.." et augmente les "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." de "..COLORS_Numbers.dmg_var_rgb.." pendant "..COLORS_Numbers.dur_var_rgb.." secondes lors de "..COLORS_KWords_fr.Weakspothit_rgb_fr.." répétés. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois.")),
 			--[+ Russian +]-- Черепное заземление
-			create_template("weap_wbm053_desc_ext_ru",
-				{"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"ru"},
-					loc_text(COLORS_Numbers.buildup_var_rgb.."  к набору "..COLORS_KWords_ru.Heat_rgb_ru.." и "..COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." на "..COLORS_Numbers.dur_var_rgb.." секунды при серии ударов в "..COLORS_KWords_ru.Weakspothits_rgb_ru..". Суммируется "..COLORS_Numbers.stacks_var_rgb.." раз.")),
+			-- create_template("weap_wbm053_desc_ext_ru",
+				-- {"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"ru"},
+					-- loc_text(COLORS_Numbers.buildup_var_rgb.."  к набору "..COLORS_KWords_ru.Heat_rgb_ru.." и "..COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." на "..COLORS_Numbers.dur_var_rgb.." секунды при серии ударов в "..COLORS_KWords_ru.Weakspothits_rgb_ru..". Суммируется "..COLORS_Numbers.stacks_var_rgb.." раз.")),
 			--[+ Traditional Chinese - 顱骨落地 +]--
 			-- 上古神刃 -- 3% & 1% | 4% & 2% | 5%& 3% | 6% & 4% (up to ~26.6% & +20%)
-			create_template("weap_wbm053_desc_ext_ru",
-				{"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"zh-tw"},
-					loc_text("連續 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." 時 "..COLORS_Numbers.buildup_var_rgb.." "..COLORS_KWords_tw.Heat_rgb_tw.." ，\n且 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。")),
+			-- create_template("weap_wbm053_desc_ext_ru",
+				-- {"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"zh-tw"},
+					-- loc_text("連續 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." 時 "..COLORS_Numbers.buildup_var_rgb.." "..COLORS_KWords_tw.Heat_rgb_tw.." ，\n且 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.."，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。")),
 			--[+ Simplified Chinese- 人头落地 +]--
-			create_template("weap_wbm053_desc_ext_zh_cn",
-				{"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时 \n"..COLORS_Numbers.buildup_var_rgb.." "..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."积累，同时 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Finesse_dmg_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.dur_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Fns_note_rgb_zh_cn)),
+			-- create_template("weap_wbm053_desc_ext_zh_cn",
+				-- {"loc_chained_weakspot_hits_increase_finesse_and_reduce_overheat_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时 \n"..COLORS_Numbers.buildup_var_rgb.." "..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."积累，同时 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Finesse_dmg_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.dur_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Fns_note_rgb_zh_cn)),
 
 		--[+ OVERLOAD +]--	30.09.2025
 		-- Overheat Amount Removed (per tier)
@@ -2089,22 +2088,22 @@ local localization_templates = {
 				{"loc_explosion_on_overheat_lockout_desc"}, {"en"},
 					loc_text("Upon reaching the Lockout state, you cause an Explosion around you and immediately reduce "..COLORS_KWords.Heat_rgb.." by "..COLORS_Numbers.overheat_red_var_rgb..".")), -- overheat_reduction: 25% -- colors
 			--[+ French +]--
-			create_template("weap_wbm054_desc_ext_fr",
-				{"loc_explosion_on_overheat_lockout_desc"}, {"fr"},
-					loc_text("Lorsque vous entrez en état de Verouillage, vous produisez une Explosion autour de vous et réduisez immédiatement la "..COLORS_KWords_fr.Heat_rgb_fr.." de "..COLORS_Numbers.overheat_red_var_rgb..".")),
+			-- create_template("weap_wbm054_desc_ext_fr",
+				-- {"loc_explosion_on_overheat_lockout_desc"}, {"fr"},
+					-- loc_text("Lorsque vous entrez en état de Verouillage, vous produisez une Explosion autour de vous et réduisez immédiatement la "..COLORS_KWords_fr.Heat_rgb_fr.." de "..COLORS_Numbers.overheat_red_var_rgb..".")),
 			--[+ Russian +]-- Перегрузка
-			create_template("weap_wbm054_desc_ext_ru",
-				{"loc_explosion_on_overheat_lockout_desc"}, {"ru"},
-					loc_text("Достигнув состояния блокировки, вы вызываете взрыв вокруг себя и немедленно уменьшаете количество "..COLORS_KWords_ru.Heat_rgb_ru.." на "..COLORS_Numbers.overheat_red_var_rgb..".")),
+			-- create_template("weap_wbm054_desc_ext_ru",
+				-- {"loc_explosion_on_overheat_lockout_desc"}, {"ru"},
+					-- loc_text("Достигнув состояния блокировки, вы вызываете взрыв вокруг себя и немедленно уменьшаете количество "..COLORS_KWords_ru.Heat_rgb_ru.." на "..COLORS_Numbers.overheat_red_var_rgb..".")),
 			--[+ Traditional Chinese - 超載 +]--
 			-- 上古神刃 -- 10% | 15% | 20% | 25%
-			create_template("weap_wbm054_desc_ext_tw",
-				{"loc_explosion_on_overheat_lockout_desc"}, {"zh-tw"},
-					loc_text("進入鎖定狀態時，產生爆炸，\n並立即降低 "..COLORS_KWords_tw.Heat_rgb_tw.." "..COLORS_Numbers.overheat_red_var_rgb.." 。")),
+			-- create_template("weap_wbm054_desc_ext_tw",
+				-- {"loc_explosion_on_overheat_lockout_desc"}, {"zh-tw"},
+					-- loc_text("進入鎖定狀態時，產生爆炸，\n並立即降低 "..COLORS_KWords_tw.Heat_rgb_tw.." "..COLORS_Numbers.overheat_red_var_rgb.." 。")),
 			--[+ Simplified Chinese - 过载 +]--
-			create_template("weap_wbm054_desc_ext_zh_cn",
-				{"loc_explosion_on_overheat_lockout_desc"}, {"zh-cn"},
-					loc_text(COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."达到 "..COLORS_Numbers.pc_100_rgb.." 并进入锁定状态时，\n在周身范围引发一次爆炸，\n并立刻减少 "..COLORS_Numbers.overheat_red_var_rgb.." "..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."。")),
+			-- create_template("weap_wbm054_desc_ext_zh_cn",
+				-- {"loc_explosion_on_overheat_lockout_desc"}, {"zh-cn"},
+					-- loc_text(COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."达到 "..COLORS_Numbers.pc_100_rgb.." 并进入锁定状态时，\n在周身范围引发一次爆炸，\n并立刻减少 "..COLORS_Numbers.overheat_red_var_rgb.." "..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."。")),
 
 		--[+ ENERGY LEAKAGE +]--
 		-- Relic Blade -- 1.5% | 2% | 3% | 4% (up to +20%)
@@ -2112,22 +2111,22 @@ local localization_templates = {
 				{"loc_power_bonus_scaled_on_heat_desc"}, {"en"},
 					loc_text("Up to "..COLORS_Numbers.amount_var_rgb.." "..COLORS_KWords.Strength_rgb..", scaled on "..COLORS_KWords.Heat_rgb.."."..Pwr_note_rgb)), -- amount: 4% -- colors
 			--[+ French +]--
-			create_template("weap_wbm055_desc_ext_fr",
-				{"loc_power_bonus_scaled_on_heat_desc"}, {"fr"},
-					loc_text("Augmente la "..COLORS_KWords_fr.Strength_rgb_fr.." jusqu'à "..COLORS_Numbers.amount_var_rgb..", en fonction de la "..COLORS_KWords_fr.Heat_rgb_fr.."."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
+			-- create_template("weap_wbm055_desc_ext_fr",
+				-- {"loc_power_bonus_scaled_on_heat_desc"}, {"fr"},
+					-- loc_text("Augmente la "..COLORS_KWords_fr.Strength_rgb_fr.." jusqu'à "..COLORS_Numbers.amount_var_rgb..", en fonction de la "..COLORS_KWords_fr.Heat_rgb_fr.."."..COLORS_KWords_fr.Pwr_note_rgb_fr)),
 			--[+ Russian +]-- Утечка энергии
-			create_template("weap_wbm055_desc_ext_ru",
-				{"loc_power_bonus_scaled_on_heat_desc"}, {"ru"},
-					loc_text("До "..COLORS_Numbers.amount_var_rgb.." увеличивается "..COLORS_KWords_ru.Power_rgb_ru..", в зависимости от "..COLORS_KWords_ru.Heat_rgb_ru.."."..Pwr_note_rgb_ru)),
+			-- create_template("weap_wbm055_desc_ext_ru",
+				-- {"loc_power_bonus_scaled_on_heat_desc"}, {"ru"},
+					-- loc_text("До "..COLORS_Numbers.amount_var_rgb.." увеличивается "..COLORS_KWords_ru.Power_rgb_ru..", в зависимости от "..COLORS_KWords_ru.Heat_rgb_ru.."."..Pwr_note_rgb_ru)),
 			--[+ Traditional Chinese - 能量洩漏 +]--
 			-- 上古神刃 -- 1.5% | 2% | 3% | 4% (up to +20%)
-			create_template("weap_wbm055_desc_ext_tw",
-				{"loc_power_bonus_scaled_on_heat_desc"}, {"zh-tw"},
-					loc_text("依據當前 "..COLORS_KWords_tw.Heat_rgb_tw.." ，最多獲得 "..COLORS_Numbers.amount_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."。" .. COLORS_KWords2_tw.Pwr_note_rgb_tw)),
+			-- create_template("weap_wbm055_desc_ext_tw",
+				-- {"loc_power_bonus_scaled_on_heat_desc"}, {"zh-tw"},
+					-- loc_text("依據當前 "..COLORS_KWords_tw.Heat_rgb_tw.." ，最多獲得 "..COLORS_Numbers.amount_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."。" .. COLORS_KWords2_tw.Pwr_note_rgb_tw)),
 			--[+ Simplified Chinese - 能量泄露 +]--
-			create_template("weap_wbm055_desc_ext_zh_cn",
-				{"loc_power_bonus_scaled_on_heat_desc"}, {"zh-cn"},
-					loc_text("随"..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."增长叠加层数，\n每增长 "..COLORS_Numbers.pc_20_rgb.."，"..COLORS_Numbers.amount_var_rgb.." "..COLORS_KWords_zh_cn.Power_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
+			-- create_template("weap_wbm055_desc_ext_zh_cn",
+				-- {"loc_power_bonus_scaled_on_heat_desc"}, {"zh-cn"},
+					-- loc_text("随"..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."增长叠加层数，\n每增长 "..COLORS_Numbers.pc_20_rgb.."，"..COLORS_Numbers.amount_var_rgb.." "..COLORS_KWords_zh_cn.Power_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
 		--[+ HEATSINK +]--
 		-- Relic Blade -- 4% | 6% | 8% | 10%
