@@ -3487,7 +3487,7 @@ local localization_templates = {
 			create_template("weap_wbr032_desc_ext_en",
 				{"loc_trait_bespoke_increased_crit_chance_scaled_on_peril_desc"}, {"en"},
 					-- loc_text("Gain between "..COLORS_Numbers.crit_var_rgb.." and "..COLORS_Numbers.critchmax_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." based on current level of "..COLORS_KWords.Peril_rgb..".")),
-					loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." per "..COLORS_Numbers.pc_20_rgb.." "..COLORS_KWords.Peril_rgb..".\n"..Dot_nc.." Stacks up to "..COLORS_Numbers.n_4_rgb.." times. Maximum of "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmax_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." at "..COLORS_Numbers.pc_80_rgb.." "..COLORS_KWords.Peril_rgb..".")),
+					loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." per "..COLORS_Numbers.pc_20_rgb.." "..COLORS_KWords.Peril_rgb..".\n"..Dot_nc.." Stacks up to "..COLORS_Numbers.n_4_rgb.." times. Maximum of\n"..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmax_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." at "..COLORS_Numbers.pc_80_rgb.." "..COLORS_KWords.Peril_rgb..".")),
 					-- crit_chance: 5%, crit_chance_max: 20%, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr032_desc_ext_fr",
@@ -3617,7 +3617,7 @@ local localization_templates = {
 		-- Flamer, Inferno Staff -- 1 | 2 | 3 | 4
 			create_template("weap_wbr037_desc_ext_en",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"en"},
-					loc_text("Direct hits apply "..COLORS_Numbers.stacks_num_var_rgb.." Stacks of "..COLORS_Numbers.pc_1_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Up to "..COLORS_Numbers.pc_20_rgb..". "..Can_be_refr..Brtl_note_rgb)),
+					loc_text("Direct hits apply "..COLORS_Numbers.stacks_num_var_rgb.." Stacks of "..COLORS_Numbers.pc_1_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Up to "..COLORS_Numbers.pc_20_rgb..". "..Can_be_refr.."\n"..Brtl_note_rgb)),
 					-- num_stacks: 4, rending_percentage: 1%, duration: 5, max_stacks: 10, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr037_desc_ext_fr",
