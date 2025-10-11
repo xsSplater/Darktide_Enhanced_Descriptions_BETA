@@ -880,7 +880,7 @@ local localization_templates = {
 		-- Arbites Shock Maul, Bully Clubs, Chainaxes, Combat Axes, Crusher, Latrine Shovels, Pickaxes, Thunder Hammers -- 1 | 2 | 3 | 4
 			create_template("weap_wbm007_desc_ext_en",
 				{"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"en"},
-					loc_text(COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." are applied on hitting to enemy. Lasts "..COLORS_Numbers.time_var_rgb.." seconds. Max "..COLORS_Numbers.maxstks_var_rgb.." Stacks, up to "..COLORS_Numbers.pc_40_rgb..".\n"
+					loc_text(COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." are applied on hitting to enemy. Lasts "..COLORS_Numbers.time_var_rgb.." seconds. Max "..COLORS_Numbers.maxstks_var_rgb.." Stacks, up to "..COLORS_Numbers.pc_40_rgb..". "
 						..Brtl_note_rgb)),
 					-- stacks: 4, rending: 2.5%, time: 5, max_stacks: 16, rewrited, +colors, +added info, +note
 			--[+ French +]--
@@ -1699,7 +1699,7 @@ local localization_templates = {
 			create_template("weap_wbm039_desc_ext_en",
 				{"loc_trait_bespoke_stacking_rending_on_cleave_desc"}, {"en"},
 					loc_text(COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords.Rending_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds when hitting "..COLORS_Numbers.n_2_rgb.." or more enemies with a melee attack. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. "
-						..Can_be_refr.."\n"..Rend_note_rgb)),
+						..Can_be_refr..Rend_note_rgb)),
 					-- rending: +10%, time: 2.5, stacks: 5, +colors, +note
 			--[+ French +]--
 			-- create_template("weap_wbm039_desc_ext_fr",
@@ -1725,7 +1725,7 @@ local localization_templates = {
 		-- Force Greatswords, Force Swords -- 22.5% | 25% | 27.5% | 30%
 			create_template("weap_wbm040_desc_ext_en",
 				{"loc_trait_bespoke_can_block_ranged_desc"}, {"en"},
-					loc_text(COLORS_Numbers.block_var_rgb.." Block Cost. This weapon Blocks both Melee and Ranged attacks.\n"
+					loc_text(COLORS_Numbers.block_var_rgb.." Block Cost. This weapon Blocks both Melee and Ranged attacks. "
 						..Dot_red.." Blocking a sniper shot still inflicts its Full spillover "..COLORS_KWords.Damage_rgb..".")),
 					-- block_cost: 30%, +colors
 			--[+ French +]--
@@ -1938,7 +1938,7 @@ local localization_templates = {
 		-- Arbites Shock Maul, Shock Mauls, Shock Mauls and Shield -- 10% | 15% | 20% | 25%
 			create_template("weap_wbm048_desc_ext_en",
 				{"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"en"},
-					loc_text("Timed Blocks "..COLORS_KWords.Stun_rgb.." the attacker, and grant you "..COLORS_Numbers.pwrlvl_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Cooldown "..COLORS_Numbers.cd_dur_var_rgb.." seconds.\n"
+					loc_text("Timed Blocks "..COLORS_KWords.Stun_rgb.." the attacker, and grant you "..COLORS_Numbers.pwrlvl_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Cooldown "..COLORS_Numbers.cd_dur_var_rgb.." seconds. "
 						..Pwr_note_rgb)),
 					-- power_level: 25%, duration: 3, cooldown_duration: 3, +colors
 			--[+ French +]--
@@ -1989,8 +1989,8 @@ local localization_templates = {
 		-- Arbites Shock Maul, Shock Mauls -- 60% | 70% | 80% | 90%
 			create_template("weap_wbm050_desc_ext_en",
 				{"loc_trait_bespoke_negate_stagger_reduction_on_weakspot_desc"}, {"en"},
-					loc_text(COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords.Stagger_rgb.." on enemies on "..COLORS_KWords.Weakspothit_rgb..".\n"
-						..COLORS_Numbers.stgrrang_var_rgb.." Ranged "..COLORS_KWords.Stagger_rgb.." strength.")),
+					loc_text(COLORS_Numbers.stgrrang_var_rgb.." Ranged "..COLORS_KWords.Stagger_rgb.." strength.\n"
+						..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords.Stagger_rgb.." on enemies on "..COLORS_KWords.Weakspothit_rgb..".")),
 					-- stagger: 90%, ranged_stagger: 30%, +colors
 			--[+ French +]--
 			-- create_template("weap_wbm050_desc_ext_fr",
@@ -2248,7 +2248,7 @@ local localization_templates = {
 			create_template("weap_wbm060_desc_ext_en",
 				{"loc_trait_bespoke_weakspot_damage_bonus_on_pushed_enemies_desc"}, {"en"},
 					loc_text(COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Weakspot_dmg_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Pushing Enemies. "
-						..Can_be_refr.."\n"..Dot_red.." Does not benefit Ranged attacks.")),
+						..Can_be_refr..Dot_red.." Does not benefit Ranged attacks.")),
 					-- toughness: +60%, time: 3, +colors
 			--[+ French +]--
 			-- create_template("weap_wbm060_desc_ext_fr",
@@ -2506,7 +2506,7 @@ local localization_templates = {
 			create_template("weap_wbm070_desc_ext_en",
 				{"loc_trait_bespoke_increase_power_on_weapon_special_hit_desc"}, {"en"},
 					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Weapon Special Hit. "
-						..Can_be_refr.."\n"..Pwr_note_rgb)),
+						..Can_be_refr.." "..Pwr_note_rgb)),
 					-- power_level: +24%,  time: 3.5, +colors
 			--[+ French +]--
 			-- create_template("weap_wbm070_desc_ext_fr",
@@ -4219,11 +4219,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_crit_chance_scaled_on_heat_desc"}, {"zh-cn"},
 					-- loc_text("随"..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."增长叠加层数，\n每层 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crt_chance_rgb_zh_cn.."，\n同时 "..COLORS_Numbers.rangcrtdmg_var_rgb.." 远程"..COLORS_KWords_zh_cn.Crit_dmg_r_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。")),
 
-		--[+ VOLATILE +]--	08.10.2025
+		--[+ VOLATILE +]--	11.10.2025
+		-- Charge Time Reduction per stack (per tier)
 		-- Plasma Gun -- 2.5% | 3% | 3.5% | 4% (up to 20%)
 			create_template("weap_wbr061_desc_ext_en",
 				{"loc_trait_bespoke_lower_overheat_gives_faster_charge_desc"}, {"en"},
-					loc_text(COLORS_Numbers.p_chrgspd_var_rgb.." Charge Speed on low Overheat. Stacks up to "..COLORS_Numbers.stacks_var_rgb.." times.")),
+					loc_text(COLORS_Numbers.p_chrgspd_var_rgb.." Charge Speed on low "..COLORS_KWords.Overheat_rgb..". Stacks up to "..COLORS_Numbers.stacks_var_rgb.." times.")),
 					-- charge_speed: +4%, stacks: 5, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr061_desc_ext_fr",
@@ -4243,8 +4244,9 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_lower_overheat_gives_faster_charge_desc"}, {"zh-cn"},
 					-- loc_text("随"..COLORS_KWords_zh_cn.Heat2_rgb_zh_cn.."增长减少层数，\n每层 "..COLORS_Numbers.p_chrgspd_var_rgb.." 充能速度，最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
 
-		--[+ BLAZE AWAY +]-- ALT
-		-- Autopistol, Heavy Stubbers, Grenadier Gauntlet, Plasma Gun -- 5% | 6% | 7% | 8% (up to +40%)
+		--[+ BLAZE AWAY +]-- ALT	11.10.2025
+		-- Power per stack (per tier)
+		-- Grenadier Gauntlet, Inferno Staff, Plasma Gun -- 5% | 6% | 7% | 8% (up to +40%)
 		-- Kickback, Rumbler -- 6% | 7% | 8% | 9% (up to +45%)
 			create_template("weap_wbr062_desc_ext_en",
 				{"loc_trait_bespoke_power_bonus_on_continuous_fire_alternative_desc"}, {"en"},
@@ -4269,11 +4271,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_power_bonus_on_continuous_fire_alternative_desc"}, {"zh-cn"},
 					-- loc_text("连续射击期间，每次射击 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
-		--[+ RISING HEAT +]--
+		--[+ RISING HEAT +]--	11.10.2025
+		-- Power per stack (per tier)
 		-- Plasma Gun -- 1.5% | 2% | 3% | 4% (up to +20%)
 			create_template("weap_wbr063_desc_ext_en",
 				{"loc_trait_bespoke_power_bonus_scaled_on_heat_desc"}, {"en"},
-					loc_text("Up to "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Strength_rgb.." scaling with "..COLORS_KWords.Heat_rgb.." Level."..Pwr_note_rgb)),
+					loc_text("Up to "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Strength_rgb.." scaling with "..COLORS_KWords.Heat_rgb.." Level. "..Pwr_note_rgb)),
 					-- power_level: +8%, stacks: 5, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr063_desc_ext_fr",
@@ -4293,11 +4296,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_power_bonus_scaled_on_heat_desc"}, {"zh-cn"},
 					-- loc_text("随"..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."增长提升效果\n，最高 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
-		--[+ OPTIMISED COOLING +]--
+		--[+ OPTIMISED COOLING +]--	11.10.2025
+		-- Overheat Cost Reduction per stack (per tier)
 		-- Plasma Gun -- 4% | 6% | 8% | 10% (up to ~41%)
 			create_template("weap_wbr064_desc_ext_en",
 				{"loc_trait_bespoke_reduced_heat_on_continuous_desc"}, {"en"},
-					loc_text("Increased Charge Speed scaling inversely with "..COLORS_KWords.Heat_rgb.." Level.")),
+					loc_text(COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Heat_rgb.." generation per Stack for consecutive shots or charged shots. "..Dot_nc.." Stacks up to "..COLORS_Numbers.n_5_rgb.." times for a ~"..COLORS_Numbers.pc_41_rgb.." total reduction. "..Dot_red.." Description for T4!\n"..Dot_nc.." T1: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_4_rgb.." | T2: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_6_rgb.." | T3: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_8_rgb..".")),
 					-- +colors
 			--[+ French +]--
 			-- create_template("weap_wbr064_desc_ext_fr",
@@ -4317,7 +4321,8 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_reduced_heat_on_continuous_desc"}, {"zh-cn"},
 					-- loc_text("连续射击期间，每次射击减少"..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."积累。最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。")),
 
-		--[+ FOCUSED COOLING +]--
+		--[+ FOCUSED COOLING +]--	11.10.2025
+		-- Overheat Cost Reduction (per tier)
 		-- Plasma Gun -- 30% | 40% | 50% | 60%
 			create_template("weap_wbr065_desc_ext_en",
 				{"loc_trait_bespoke_reduced_overheat_on_crits_desc"}, {"en"},
@@ -4343,11 +4348,12 @@ local localization_templates = {
 
 
 -- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		--[+ GAUNTLET MOMENTUM +]--
+		--[+ GAUNTLET MOMENTUM +]--	11.10.2025
+		-- Melee Power per stack (per tier)
 		-- Grenadier Gauntlet -- 5% | 5% | 5% | 5% (up to +50%) (bugged)
 			create_template("weap_wbr066_desc_ext_en",
 				{"loc_trait_bespoke_power_bonus_on_chained_melee_desc"}, {"en"},
-					loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_1_rgb.." Stack of "..COLORS_Numbers.pwr_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." is added for each chained Melee hit with the Gauntlet. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. Stack lasts for "..COLORS_Numbers.time_var_rgb.." seconds. {#color(255, 35, 5)}(BUG:5% all tiers){#reset()}"..Pwr_note_rgb)),
+					loc_text(COLORS_Numbers.pwr_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." per Stack. Stacks on chained Melee hits, up to "..COLORS_Numbers.stacks_var_rgb.." times. Each Stack lasts "..COLORS_Numbers.time_var_rgb.." seconds. "..Pwr_note_rgb.." "..Dot_red.." {#color(255, 35, 5)}BUG:{#reset()} "..COLORS_Numbers.pc_5_rgb.." all tiers.")),
 					-- power: 5%, stacks: 10, time: 1.5, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr066_desc_ext_fr",
@@ -4369,35 +4375,37 @@ local localization_templates = {
 -- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! BUGGED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-		--[+ PULVERISE +]--
+		--[+ PULVERISE +]--	11.10.2025
+		-- Crit Chance (per tier)
 		-- Grenadier Gauntlet -- 10% | 15% | 20% | 25%
 			create_template("weap_wbr067_desc_ext_en",
 				{"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"en"},
 					loc_text(COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Melee Kill.")),
 					-- crit_chance: +25%, time: 3, +colors
 			--[+ French +]--
-			-- create_template("weap_wbr067_desc_ext_fr",
-				-- {"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"fr"},
-					-- loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un élimination en mélée.")),
+			create_template("weap_wbr067_desc_ext_fr",
+				{"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"fr"},
+					loc_text(COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un élimination en mélée.")),
 			--[+ Russian +]-- Измельчение -- руоф Пульверизация
-			-- create_template("weap_wbr067_desc_ext_ru",
-				-- {"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"ru"},
-					-- loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийстве в ближнем бою.")),
+			create_template("weap_wbr067_desc_ext_ru",
+				{"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"ru"},
+					loc_text(COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийстве в ближнем бою.")),
 			--[+ Traditional Chinese - 粉碎 +]--
 			-- 擲彈兵臂鎧 -- 10% | 15% | 20% | 25%
-			-- create_template("weap_wbr067_desc_ext_tw",
-				-- {"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"zh-tw"},
-					-- loc_text("近戰擊殺時 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			create_template("weap_wbr067_desc_ext_tw",
+				{"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"zh-tw"},
+					loc_text("近戰擊殺時 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 			--[+ Simplified Chinese - 粉碎 +]--
-			-- create_template("weap_wbr067_desc_ext_zh_cn",
-				-- {"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"zh-cn"},
-					-- loc_text("臂铠近战攻击击杀敌人时\n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
+			create_template("weap_wbr067_desc_ext_zh_cn",
+				{"loc_trait_bespoke_crit_chance_on_melee_kill_desc"}, {"zh-cn"},
+					loc_text("臂铠近战攻击击杀敌人时\n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。")),
 
-		--[+ DISRUPTIVE +]--
+		--[+ DISRUPTIVE +]--	11.10.2025
+		-- Melee Power (per tier)
 		-- Grenadier Gauntlet -- 15% | 20% | 25% | 30%
 			create_template("weap_wbr068_desc_ext_en",
 				{"loc_trait_bespoke_melee_power_bonus_after_explosion_desc"}, {"en"},
-					loc_text("Hitting at least "..COLORS_Numbers.n_3_rgb.." enemies with your secondary attack grants "..COLORS_Numbers.pwrlvl_var_rgb.." bonus to "..COLORS_KWords.Strength_rgb.." on Melee attacks for "..COLORS_Numbers.time_var_rgb.." seconds."..Pwr_note_rgb)),
+					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds after hitting at least "..COLORS_Numbers.n_3_rgb.." enemies with a Secondary Attack. "..Can_be_refr..Pwr_note_rgb)),
 					-- power_level: 30%, time: 3.5, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr068_desc_ext_fr",
@@ -4417,11 +4425,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_melee_power_bonus_after_explosion_desc"}, {"zh-cn"},
 					-- loc_text("次要攻击命中至少 "..COLORS_Numbers.n_3_rgb.." 名敌人时，\n"..COLORS_Numbers.pwrlvl_var_rgb.." 近战"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续"..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
-		--[+ EXPLOSIVE OFFENSIVE +]--
+		--[+ EXPLOSIVE OFFENSIVE +]--	11.10.2025
+		-- Power (per tier)
 		-- Grenadier Gauntlet -- 6% | 9% | 12% | 15%
 			create_template("weap_wbr069_desc_ext_en",
 				{"loc_trait_bespoke_power_bonus_after_weapon_special_multiple_desc"}, {"en"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." bonus for "..COLORS_Numbers.time_var_rgb.." seconds after hitting multiple enemies with your weapon special explosion."..Pwr_note_rgb)),
+					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds after hitting multiple enemies with your Weapon Special explosion. "..Can_be_refr)),
 					-- power_level: 15%, time: 5, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr069_desc_ext_fr",
@@ -4441,11 +4450,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_power_bonus_after_weapon_special_multiple_desc"}, {"zh-cn"},
 					-- loc_text("特殊攻击爆炸命中至少 "..COLORS_Numbers.n_3_rgb.." 名敌人时，\n"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。持续"..COLORS_Numbers.time_var_rgb.."秒。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
-		--[+ PINPOINTING TARGET +]--
-		-- Grenadier Gauntlet -- 5% | 6% | 7% | 8% (up to +40%)
+		--[+ PINPOINTING TARGET +]--	11.10.2025
+		-- Power per stack (per tier)
+		-- Grenadier Gauntlet, Shotpistol and Shield -- 5% | 6% | 7% | 8% (up to +40%)
 			create_template("weap_wbr070_desc_ext_en",
 				{"loc_trait_bespoke_power_bonus_based_on_charge_time_ranged_desc"}, {"en"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." every "..COLORS_Numbers.time_var_rgb.." seconds while aiming. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. Discharges All Stacks upon firing."..Pwr_note_rgb)),
+					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." every "..COLORS_Numbers.time_var_rgb.." seconds while aiming. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. Removes all Stacks on shot, on push, or when leaving alt fire mode. "..Pwr_note_rgb)),
 					-- power_level: 15%, time: 5, stacks: 5, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr070_desc_ext_fr",
@@ -4465,8 +4475,9 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_power_bonus_based_on_charge_time_ranged_desc"}, {"zh-cn"},
 					-- loc_text("瞄准期间，每 "..COLORS_Numbers.time_var_rgb.." 秒 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层，射击后清空所有层数。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
-		--[+ CHARMED RELOAD +]--
-		-- Heavy Stubbers -- 2 | 3 | 4 | 5
+		--[+ CHARMED RELOAD +]--	11.10.2025
+		-- Bullets Transferred (per tier)
+		-- Twin-Linked Stubbers -- 2 | 3 | 4 | 5
 			create_template("weap_wbr071_desc_ext_en",
 				{"loc_trait_bespoke_ammo_refill_from_reserve_on_crit_desc"}, {"en"},
 					loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.blltam_var_rgb.." bullets loaded from Reserve on "..COLORS_KWords.Crit_hit_rgb..".")),
@@ -4489,11 +4500,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_ammo_refill_from_reserve_on_crit_desc"}, {"zh-cn"},
 					-- loc_text(COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时，从弹药储备填装 "..COLORS_Numbers.blltam_var_rgb.." 枚弹药。")),
 
-		--[+ OVERWHELMING FIRE +]--
-		-- Heavy Stubbers -- 7% | 8% | 9% | 10% (up to +50%)
+		--[+ OVERWHELMING FIRE +]--	11.10.2025
+		-- Ranged Power per stack (per tier)
+		-- Heavy Stubbers, Twin-Linked Stubbers -- 7% | 8% | 9% | 10% (up to +50%)
 			create_template("weap_wbr072_desc_ext_en",
 				{"loc_trait_bespoke_power_bonus_on_chained_hits_on_single_target_desc"}, {"en"},
-					loc_text(COLORS_Numbers.pwr_var_rgb.." "..COLORS_KWords.Strength_rgb.." for every "..COLORS_Numbers.hit_var_rgb.." Single Target Hits. Lasts "..COLORS_Numbers.time_var_rgb.." seconds and Stacks "..COLORS_Numbers.stacks_var_rgb.." times."..Pwr_note_rgb)),
+					loc_text(COLORS_Numbers.pwr_var_rgb.." "..COLORS_KWords.Strength_rgb.." for every "..COLORS_Numbers.hit_var_rgb.." Single Target Hits. Lasts "..COLORS_Numbers.time_var_rgb.." seconds. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. "..Can_be_refr..Pwr_note_rgb)),
 					-- power: +10%, hit: 4, time: 2, stacks: 5, s->seconds, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr072_desc_ext_fr",
@@ -4513,7 +4525,8 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_power_bonus_on_chained_hits_on_single_target_desc"}, {"zh-cn"},
 				-- loc_text("每命中同一敌人 "..COLORS_Numbers.hit_var_rgb.." 次 "..COLORS_Numbers.pwr_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
-		--[+ CAN OPENER +]--
+		--[+ CAN OPENER +]--	11.10.2025
+		-- Brittleness Stacks (per tier)
 		-- Ripper Guns -- 10 | 12 | 14 | 16
 			create_template("weap_wbr073_desc_ext_en",
 				{"loc_trait_bespoke_armor_rending_bayonette_desc"}, {"en"},
@@ -4537,11 +4550,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_armor_rending_bayonette_desc"}, {"zh-cn"},
 					-- loc_text("特殊攻击命中时，对目标施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 层，最高 "..COLORS_Numbers.pc_40_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn)),
 
-		--[+ BORN IN BLOOD +]--
-		-- Ripper Guns -- 4.5% | 5% | 5.5% | 6%
+		--[+ BORN IN BLOOD +]--	11.10.2025
+		-- Max Toughness Percentage (per tier)
+		-- Exterminator Shotguns, Ripper Guns -- 4.5% | 5% | 5.5% | 6%
 			create_template("weap_wbr074_desc_ext_en",
 				{"loc_trait_bespoke_toughness_on_close_range_kills_desc"}, {"en"},
-					loc_text(COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords.Toughness_rgb.." on Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters.")),
+					loc_text(COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords.Toughness_rgb.." on Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters. "..Dot_green.." Can proc multiple times per shot.")),
 					-- toughness: +6%, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr074_desc_ext_fr",
@@ -4561,11 +4575,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_toughness_on_close_range_kills_desc"}, {"zh-cn"},
 					-- loc_text("击杀 "..COLORS_Numbers.n_12_5_rgb.." 米内的敌人时，"..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.." "..COLORS_Numbers.tghns_var_rgb.."。")),
 
-		--[+ PIERCE +]--
+		--[+ PIERCE +]--	11.10.2025
+		-- Melee Stagger Strength (per tier)
 		-- Kickback, Rumbler -- 10% | 15% | 20% | 25%
 			create_template("weap_wbr075_desc_ext_en",
 				{"loc_trait_bespoke_pass_trough_armor_on_weapon_special_and_stagger_desc"}, {"en"},
-					loc_text("Special Attacks gain "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords.Stagger_rgb.." and ignore "..COLORS_KWords.Hit_mass_rgb.." Bonus from Armour.")),
+					loc_text("Special Attacks gain "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords.Stagger_rgb.." and ignore "..COLORS_KWords.Hit_mass_rgb.." Bonus from Armour. "..Dot_green.." Carapace armor can be "..COLORS_KWords.Cleaved_rgb..".")),
 					-- stagger: +25%, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr075_desc_ext_fr",
@@ -4585,11 +4600,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_pass_trough_armor_on_weapon_special_and_stagger_desc"}, {"zh-cn"},
 					-- loc_text("特殊攻击 "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."，\n同时无视装甲赋予的"..COLORS_KWords_zh_cn.Hit_mass_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Hit_Mass_note_rgb_zh_cn)),
 
-		--[+ PUNISHING FIRE +]--
+		--[+ PUNISHING FIRE +]--	11.10.2025
+		-- Ranged Power (per tier)
 		-- Kickback -- 6% | 9% | 12% | 15%
 			create_template("weap_wbr076_desc_ext_en",
 				{"loc_trait_bespoke_shot_power_bonus_after_weapon_special_cleave_desc"}, {"en"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." Bonus on your Ranged attack for "..COLORS_Numbers.time_var_rgb.." seconds after "..COLORS_KWords.Cleaving_rgb.." through several enemies with your weapon's Special attack."..Pwr_note_rgb)),
+					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." on your Ranged attack for "..COLORS_Numbers.time_var_rgb.." seconds after "..COLORS_KWords.Cleaving_rgb.." through several enemies with your weapon's Special attack. "..Can_be_refr)),
 					-- power_level: +15%, time: 3, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr076_desc_ext_fr",
@@ -4609,7 +4625,7 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_shot_power_bonus_after_weapon_special_cleave_desc"}, {"zh-cn"},
 					-- loc_text("特殊攻击命中至少 "..COLORS_Numbers.n_3_rgb.." 名敌人时\n"..COLORS_Numbers.pwrlvl_var_rgb.." 远程"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
-		--[+ INSPIRING BARRAGE +]-- ALT
+		--[+ INSPIRING BARRAGE +]-- ALT	11.10.2025
 		-- Max Toughness Percentage per stack (per tier)
 		-- Kickback -- 1% | 2% | 3% | 4% (up to 20%)
 			create_template("weap_wbr077_desc_ext_en",
@@ -4634,11 +4650,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_toughness_on_continuous_fire_alternative_desc"}, {"zh-cn"},
 					-- loc_text("连续射击期间，每次射击回复"..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn..",\n每叠加 "..COLORS_Numbers.n_1_rgb.." 层，"..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.."回复效果 "..COLORS_Numbers.tghns_var_rgb.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
 
-		--[+ EXPANSIVE +]--
+		--[+ EXPANSIVE +]--	11.10.2025
+		-- Melee Power (per tier)
 		-- Kickback -- 30% | 34% | 38% | 42%
 			create_template("weap_wbr078_desc_ext_en",
 				{"loc_trait_bespoke_weapon_special_power_bonus_after_one_shots_desc"}, {"en"},
-					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Hitting "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_plus_rgb.." Enemies with a Ranged Attack."..Pwr_note_rgb)),
+					loc_text(COLORS_Numbers.pwrlvl_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Hitting "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_plus_rgb.." Enemies with a Ranged Attack. "..Can_be_refr..Pwr_note_rgb)),
 					-- power_level: +42%, time: 3.5, s->seconds, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr078_desc_ext_fr",
@@ -4658,11 +4675,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_weapon_special_power_bonus_after_one_shots_desc"}, {"zh-cn"},
 					-- loc_text("命中至少 "..COLORS_Numbers.n_3_rgb.." 名敌人时\n"..COLORS_Numbers.pwrlvl_var_rgb.." 近战"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.Pwr_note_rgb_zh_cn)),
 
-		--[+ SHRAPNEL +]--
+		--[+ SHRAPNEL +]--	11.10.2025
+		-- Bleed Stacks (per tier)
 		-- Rumbler -- 1 | 2 | 3 | 4
 			create_template("weap_wbr079_desc_ext_en",
 				{"loc_trait_bespoke_close_explosion_applies_bleed_desc"}, {"en"},
-					loc_text(COLORS_Numbers.p_stacks_var_rgb.." "..COLORS_KWords.Bleed_rgb.." Stacks from Close Range explosions.")),
+					loc_text(COLORS_Numbers.p_stacks_var_rgb.." "..COLORS_KWords.Bleed_rgb.." Stacks from Close Range explosions. "..Dot_nc.." Up to "..COLORS_Numbers.n_16_rgb.." Stacks. "..Dot_green.." Can apply through shields. "..Refr_dur_stappl)),
 					-- stacks: 5, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr079_desc_ext_fr",
@@ -4682,7 +4700,8 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_close_explosion_applies_bleed_desc"}, {"zh-cn"},
 					-- loc_text("低吼者的榴弹爆炸中心范围 "..COLORS_Numbers.p_stacks_var_rgb.." 层 "..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."。")),
 
-		--[+ BLAST ZONE +]--
+		--[+ BLAST ZONE +]--	11.10.2025
+		-- Explosion Radius Increase per stack (per tier)
 		-- Rumbler -- 3% | 4% | 5% | 6% (up to +30%)
 			create_template("weap_wbr080_desc_ext_en",
 				{"loc_trait_bespoke_explosion_radius_bonus_on_continuous_fire_desc"}, {"en"},
@@ -4705,11 +4724,9 @@ local localization_templates = {
 			-- create_template("weap_wbr080_desc_ext_zh_cn",
 				-- {"loc_trait_bespoke_explosion_radius_bonus_on_continuous_fire_desc"}, {"zh-cn"},
 					-- loc_text("连续射击期间，每次射击"..COLORS_Numbers.radius_var_rgb.."爆炸范围。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。")),
--- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑			Wrong description!			↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
--- Proofreading is needed!
--- Close Range is not 12.5m for this bless.
 
-		--[+ ADHESIVE CHARGE +]--
+		--[+ ADHESIVE CHARGE +]--	11.10.2025
+		-- Damage vs Ogryns & Monstrosities (per tier)
 		-- Rumbler -- 6% | 9% | 12% | 15%
 			create_template("weap_wbr081_desc_ext_en",
 				{"loc_trait_bespoke_grenades_stick_to_monsters_and_damage_desc"}, {"en"},
@@ -4733,11 +4750,12 @@ local localization_templates = {
 				-- {"loc_trait_bespoke_grenades_stick_to_monsters_and_damage_desc"}, {"zh-cn"},
 					-- loc_text(COLORS_Numbers.dmgvogrmon_var_rgb.." 对欧格林和怪物"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。\n低吼者的榴弹会粘在欧格林和怪物身上。")),
 
-		--[+ MARKSMAN'S REFLEX +]--
+		--[+ MARKSMAN'S REFLEX +]--	11.10.2025
+		-- Reload Speed (per tier)
 		-- Rumbler -- 15% | 20% | 25% | 30%
 			create_template("weap_wbr082_desc_ext_en",
 				{"loc_trait_bespoke_weakspot_projectile_hit_increases_reload_speed_desc"}, {"en"},
-					loc_text(COLORS_Numbers.reload_var_rgb.." Reload Speed for "..COLORS_Numbers.dur_var_rgb.." seconds on Projectile "..COLORS_KWords.Weakspothit_rgb..".")),
+					loc_text(COLORS_Numbers.reload_var_rgb.." Reload Speed for "..COLORS_Numbers.dur_var_rgb.." seconds on Projectile "..COLORS_KWords.Weakspothit_rgb..". "..Dot_red.." Cannot be refreshed during active duration.")),
 					-- reload_speed: +30%, duration: 3, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr082_desc_ext_fr",

@@ -108,6 +108,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Burn_rgb = iu_actit("Burn", brn_col)
 			local Burning_rgb = iu_actit("Burning", brn_col)
 			local Heat_rgb = iu_actit("Heat", brn_col)
+			local Overheat_rgb = iu_actit("Overheat", brn_col)
 	--[++Corruption++]--
 		local crpt_col = Color[mod:get("corruption_text_colour")](255, true) -- Don't translate this!
 			local Corrupted_rgb = iu_actit("Corrupted", crpt_col)
@@ -268,6 +269,7 @@ return {
 	Burn_rgb = Burn_rgb,
 	Burning_rgb = Burning_rgb,
 	Heat_rgb = Heat_rgb,
+	Overheat_rgb = Overheat_rgb,
 	Ability_cd_rgb = Ability_cd_rgb,
 	Cd_rgb = Cd_rgb,
 	Coherency_rgb = Coherency_rgb,
