@@ -1,116 +1,283 @@
 ---@diagnostic disable: undefined-global
 -- Thanks to deluxghost, Ovenproof, Fracticality, Wobin and others!
 
---[+ Chinese Traditional +]-- ["zh-tw"]
---[+ Chinese Simplified +]-- ["zh-cn"]
---[+ English +]-- en
---[+ French +]-- fr
---[+ German +]-- de
---[+ Italian +]-- it
---[+ Japanese +]-- ja
---[+ Korean +]-- ko
---[+ Polish +]-- pl
---[+ Portuguese +]-- pt-BR
---[+ Russian +]-- ru
---[+ Spanish +]-- es
-
-
-			-- ============ DO NOT DO ANYTHING BELOW! ============ --
 local mod = get_mod("Enhanced_descriptions")
-local WTL = get_mod("WhatTheLocalization")
 
---[+ Elements offset +]--
-	--[+ Buttons offset +]--
-		--[+ Equip button in the inventory +]--
-		mod:hook_safe(CLASS.InventoryWeaponsView, "on_enter", function (self)
-			self._widgets_by_name.equip_button.offset = {-622,20,0} end)
-		--[+ Discard items button in the inventory +]--
-		-- mod:hook_safe(CLASS.DiscardItemsView, "on_enter", function (self)
-			-- self._widgets_by_name.discard_button.offset = {-622,20,0} end)
-
-		-- mod:hook_safe(CLASS.BaseView, "on_enter", function (self)
-		-- 	self._widgets_by_name.discard_button.offset = {-622,20,0} end)
-		--[+ Buy button in the Melk menu +]--
-		mod:hook_safe(CLASS.MarksVendorView, "on_enter", function (self)
-			self._widgets_by_name.purchase_button.offset = {-622,20,0} end)
-		--[+ Equip button in the Weapon Model selection menu +]--
-		mod:hook_safe(CLASS.InventoryWeaponMarksView, "on_enter", function (self)
-			self._widgets_by_name.equip_button.offset = {-622,20,0} end)
-	--[+ Window offset +]--
-		--[+ Shifting the stat details window in the weapon inspection menu +]--
-		mod:hook_safe("ViewElementWeaponInfo", "_create_bar_breakdown_widgets", function (self, bar_data) -- ty Ashe!
-			local OFFSET = 200
-			self._ui_scenegraph.bar_breakdown_slate.world_position[2] = self._ui_scenegraph.bar_breakdown_slate.world_position[2] - OFFSET
-			self._ui_scenegraph.entry.world_position[2] = self._ui_scenegraph.entry.world_position[2] - OFFSET
-		end)
-
-
---[+ Load localization templates from the specified files +]--
-	--[+ MENUS +]--
-local MENUS_File = mod:get("enable_menus_file") and mod:io_dofile("Enhanced_descriptions/MENUS") or {}
-	--[+ CURIOS +]--
-local CURIOS_File = mod:get("enable_curious_file") and mod:io_dofile("Enhanced_descriptions/CURIOS_Blessings_Perks") or {}
-	--[+ WEAPONS +]--
-local WEAPONS_File = mod:get("enable_weapons_file") and mod:io_dofile("Enhanced_descriptions/WEAPONS_Blessings_Perks") or {}
-	--[+ TALENTS +]--
-local TALENTS_File = mod:get("enable_talents_file") and mod:io_dofile("Enhanced_descriptions/TALENTS") or {}
-	--[+ PENANCES +]--
-local PENANCES_File = mod:get("enable_penances_file") and mod:io_dofile("Enhanced_descriptions/PENANCES") or {}
-	--[+ NAMES +]--
-local NAMES_File = mod:get("enable_names_file") and mod:io_dofile("Enhanced_descriptions/NAMES_Enemies_Weapons") or {}
-	--[+ NAMES Talents and Blessings +]--
-local NAMES_Talents_Blessings_File = mod:get("enable_names_tal_bless_file") and mod:io_dofile("Enhanced_descriptions/NAMES_Talents_Blessings") or {}
-
-
---[+ Custom unpack function +]--
-	local function custom_unpack(...)
-		local result = {}
-		for _, t in ipairs({...}) do
-			for i = 1, #t do
-				table.insert(result, t[i])  -- Add each entry to the overall result
-			end
-		end
----@diagnostic disable-next-line: deprecated
-		return unpack(result)  -- Return all records
-	end
-
--- FOR TESTS ONLY!!!
---[+ Function to create a localization template +]--
--- local function create_template(id, loc_keys, locales, handle_func)
-	-- return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
--- end
--- FOR TESTS ONLY!!!
-
-mod.localization_templates = {
-	--[+ Add templates loaded from the files... +]--
-	custom_unpack(MENUS_File, CURIOS_File, TALENTS_File, WEAPONS_File, PENANCES_File, NAMES_File, NAMES_Talents_Blessings_File),
-
--- FOR TESTS ONLY!!!
--- create_template("weap_testum00", {"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
--- FOR TESTS ONLY!!!
+--[=[[ CONSTANTS ]]=]--
+local LOCALIZATION_FILES = {
+    MENUS = "enable_menus_file",
+    CURIOS_Blessings_Perks = "enable_curious_file", 
+    WEAPONS_Blessings_Perks = "enable_weapons_file",
+    TALENTS = "enable_talents_file",
+    PENANCES = "enable_penances_file",
+    NAMES_Enemies_Weapons = "enable_names_file",
+    NAMES_Talents_Blessings = "enable_names_tal_bless_file"
 }
 
---[+ ++DEBUG++ +]--
--- mod.debugging = true
--- mod:command("debug_scenegraph", "", function()
-	-- mod.debugging = not mod.debugging
--- end)
--- local UIRenderer = mod:original_require("scripts/managers/ui/ui_renderer")
--- mod:hook_safe(UIRenderer, "begin_pass", function(self, ui_scenegraph, input_service, dt, render_settings)
-	-- if mod.debugging then
-		-- UIRenderer.debug_render_scenegraph(self, ui_scenegraph)
-	-- end
--- end)
+local BUTTON_OFFSETS = {
+    InventoryWeaponsView = "equip_button",
+    MarksVendorView = "purchase_button", 
+    InventoryWeaponMarksView = "equip_button"
+}
 
---[+ Reload localization templates when the mod is enabled or disabled +]--
+local RELOAD_DELAY = 0.1 -- seconds
+
+--[=[[ LOCALIZATION SYSTEM ]]=]--
+local LocalizationManager = require("scripts/managers/localization/localization_manager")
+local registered_fixes = {}
+local is_initialized = false
+
+--[=[[ SETTINGS CHANGE HANDLER ]]=]--
+local settings_change_timer = 0
+local pending_settings_reload = false
+
+-- Более точная проверка настроек, требующих перезагрузки
+local function should_reload_for_setting(setting_id)
+    return string.find(setting_id, "enable_") or 
+           string.find(setting_id, "enhanced_descriptions")
+end
+
+local function on_setting_changed(setting_id)
+    mod:info("Setting changed: " .. setting_id)
+    
+    if should_reload_for_setting(setting_id) then
+        mod:info("Reloading localization templates due to setting change...")
+        pending_settings_reload = true
+        settings_change_timer = 0
+    end
+end
+
+--[=[[ MODULE LOADING ]]=]--
+local function load_localization_file(file_name, setting_name)
+    if not mod:get(setting_name) then
+        return {}
+    end
+    
+    local success, file_templates = pcall(function()
+        return mod:io_dofile("Enhanced_descriptions/" .. file_name)
+    end)
+    
+    if success and file_templates then
+        mod:info("Loaded localization file: " .. file_name)
+        return file_templates
+    else
+        mod:error("Failed to load localization file: " .. file_name .. ": " .. tostring(file_templates))
+        return {}
+    end
+end
+
+local function load_all_templates()
+    local templates = {}
+    local loaded_files = 0
+    
+    for file_name, setting_name in pairs(LOCALIZATION_FILES) do
+        local file_templates = load_localization_file(file_name, setting_name)
+        for _, template in ipairs(file_templates) do
+            templates[#templates + 1] = template
+        end
+        if #file_templates > 0 then
+            loaded_files = loaded_files + 1
+        end
+    end
+    
+    mod:info(string.format("Successfully loaded %d localization files with %d total templates", 
+        loaded_files, #templates))
+    return templates
+end
+
+--[=[[ TEMPLATE REGISTRATION ]]=]--
+local function should_load_template(template, current_lang)
+    if not template.locales then
+        return true
+    end
+    
+    for _, locale in ipairs(template.locales) do
+        if locale == current_lang then
+            return true
+        end
+    end
+    
+    return false
+end
+
+local function register_template_fixes(templates, current_lang)
+    table.clear(registered_fixes)
+    
+    for _, template in ipairs(templates) do
+        if should_load_template(template, current_lang) and template.loc_keys and template.handle_func then
+            for _, loc_key in ipairs(template.loc_keys) do
+                if loc_key then
+                    registered_fixes[loc_key] = registered_fixes[loc_key] or {}
+                    registered_fixes[loc_key][#registered_fixes[loc_key] + 1] = template.handle_func
+                end
+            end
+        end
+    end
+end
+
+--[=[[ MAIN RELOAD FUNCTION ]]=]--
+function mod.reload_templates()
+    if not Managers or not Managers.localization then
+        mod:info("Managers not available, cannot reload templates")
+        return false
+    end
+    
+    -- Clear cache for fresh reload
+    if Managers.localization._string_cache then
+        table.clear(Managers.localization._string_cache)
+    end
+    
+    -- Load and register templates
+    local current_lang = Managers.localization._language
+    local all_templates = load_all_templates()
+    register_template_fixes(all_templates, current_lang)
+    
+    -- Count statistics
+    local total_keys = 0
+    for _ in pairs(registered_fixes) do
+        total_keys = total_keys + 1
+    end
+    
+    is_initialized = true
+    mod:info(string.format("Localization templates reloaded for %s: %d keys, %d templates", 
+        current_lang, total_keys, #all_templates))
+    return true
+end
+
+--[=[[ UI OFFSETS SYSTEM ]]=]--
+local function setup_button_offsets()
+    for class_name, widget_name in pairs(BUTTON_OFFSETS) do
+        if CLASS[class_name] then
+            mod:hook_safe(CLASS[class_name], "on_enter", function(self)
+                if self._widgets_by_name and self._widgets_by_name[widget_name] then
+                    self._widgets_by_name[widget_name].offset = {-622, 20, 0}
+                end
+            end)
+        else
+            mod:warning("Class not found for button offset: " .. class_name)
+        end
+    end
+end
+
+local function setup_window_offsets()
+    mod:hook_safe("ViewElementWeaponInfo", "_create_bar_breakdown_widgets", function(self)
+        local OFFSET = 200
+        local scenegraph = self._ui_scenegraph
+        
+        if scenegraph.bar_breakdown_slate then
+            scenegraph.bar_breakdown_slate.world_position[2] = scenegraph.bar_breakdown_slate.world_position[2] - OFFSET
+        end
+        
+        if scenegraph.entry then
+            scenegraph.entry.world_position[2] = scenegraph.entry.world_position[2] - OFFSET
+        end
+    end)
+end
+
+--[=[[ HOOKS AND CALLBACKS ]]=]--
+-- Localization hook with better error handling
+mod:hook(LocalizationManager, "_process_string", function(func, self, key, raw_str, context)
+    local fixes = registered_fixes[key]
+    
+    if not fixes then
+        return func(self, key, raw_str, context or {})
+    end
+    
+    local modified_str = raw_str
+    for i = 1, #fixes do
+        local success, result = pcall(fixes[i], Managers.localization._language, modified_str, context or {})
+        
+        if success and type(result) == "string" then
+            modified_str = result
+        elseif not success then
+            mod:error("Localization handler failed for key '%s': %s", key, result)
+            -- Continue with previous string if handler fails
+        end
+    end
+    
+    return func(self, key, modified_str, context or {})
+end)
+
+--[=[[ MOD LIFECYCLE ]]=]--
+function mod.on_all_mods_loaded()
+    setup_button_offsets()
+    setup_window_offsets()
+    mod.reload_templates()
+end
+
 function mod.on_enabled()
-	if WTL then
-		WTL.reload_templates()
-	end
+    mod.reload_templates()
 end
 
 function mod.on_disabled()
-	if WTL then
-		WTL.reload_templates()
-	end
+    if Managers and Managers.localization and Managers.localization._string_cache then
+        table.clear(Managers.localization._string_cache)
+    end
+    table.clear(registered_fixes)
+    is_initialized = false
+    pending_settings_reload = false
 end
+
+-- Update function for delayed reload
+mod.update = function(dt)
+    if pending_settings_reload then
+        settings_change_timer = settings_change_timer + dt
+        if settings_change_timer >= RELOAD_DELAY then
+            if mod.reload_templates() then
+                mod:notify("Enhanced Descriptions updated")
+            end
+            pending_settings_reload = false
+            settings_change_timer = 0
+        end
+    end
+end
+
+-- Register setting change handler
+mod.on_setting_changed = on_setting_changed
+
+--[=[[ COMMANDS AND UTILITIES ]]=]--
+mod:command("reload_descriptions", "Reload Enhanced Descriptions", function()
+    if mod.reload_templates() then
+        mod:notify("Enhanced Descriptions reloaded successfully")
+    else
+        mod:notify("Failed to reload Enhanced Descriptions")
+    end
+end)
+
+function mod.get_localization_stats()
+    local total_keys = 0
+    for _ in pairs(registered_fixes) do
+        total_keys = total_keys + 1
+    end
+    
+    local loaded_files = 0
+    for _, setting_name in pairs(LOCALIZATION_FILES) do
+        if mod:get(setting_name) then
+            loaded_files = loaded_files + 1
+        end
+    end
+    
+    return {
+        initialized = is_initialized,
+        total_localization_keys = total_keys,
+        current_language = Managers and Managers.localization and Managers.localization._language or "unknown",
+        loaded_files = loaded_files,
+        total_files = table.size(LOCALIZATION_FILES)
+    }
+end
+
+mod:command("desc_stats", "Show Enhanced Descriptions statistics", function()
+    local stats = mod.get_localization_stats()
+    local message = string.format(
+        "Enhanced Descriptions Stats:\nInitialized: %s\nLanguage: %s\nKeys: %d\nFiles: %d/%d",
+        tostring(stats.initialized),
+        stats.current_language,
+        stats.total_localization_keys,
+        stats.loaded_files,
+        stats.total_files
+    )
+    mod:echo(message)
+end)
+
+--[=[[ INITIALIZATION ]]=]--
+mod:info("Enhanced Descriptions mod loaded with improved architecture")

@@ -1,6 +1,6 @@
 -- @diagnostic disable: undefined-global
 
--- local mod = get_mod("Enhanced_descriptions")
+local mod = get_mod("Enhanced_descriptions")
 
 --[+ Function to create a localization template +]--
 local function create_template(id, loc_keys, locales, handle_func)

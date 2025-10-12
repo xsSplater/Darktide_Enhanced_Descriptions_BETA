@@ -4822,22 +4822,5 @@ local localization_templates = {
 					-- loc_text(COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时 "..COLORS_Numbers.reload_var_rgb.." 装弹速度，持续"..COLORS_Numbers.dur_var_rgb.."秒。")),
 }
 
-
-
-		-- ============ DO NOT DO ANYTHING BELOW! ============ --
-
---[+ Reload localization templates when the mod is enabled or disabled +]--
-function mod.on_enabled()
-	if WTL then
-		WTL.reload_templates()
-	end
-end
-
-function mod.on_disabled()
-	if WTL then
-		WTL.reload_templates()
-	end
-end
-
 --[+ Return the localization templates +]--
 return localization_templates

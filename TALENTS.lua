@@ -1,22 +1,18 @@
 ---@diagnostic disable: undefined-global
--- Thanks to kuli and his Steam guides. Talents:
--- Psyker	02.04.25, https://steamcommunity.com/sharedfiles/filedetails/?id=3094028505
--- Zealot	31.10.24, https://steamcommunity.com/sharedfiles/filedetails/?id=3088553235
--- Ogryn	31.10.24, https://steamcommunity.com/sharedfiles/filedetails/?id=3094034467
--- Veteran	31.10.24, https://steamcommunity.com/sharedfiles/filedetails/?id=3094038976
+-- Thanks to kuli and his Steam guides.
 
---[+ Chinese Traditional +]-- ["zh-tw"]
---[+ Chinese Simplified +]-- ["zh-cn"]
---[+ English +]-- en
---[+ French +]-- fr
---[+ German +]-- de
---[+ Italian +]-- it
---[+ Japanese +]-- ja
---[+ Korean +]-- ko
---[+ Polish +]-- pl
---[+ Portuguese +]-- pt-BR
---[+ Russian +]-- ru
---[+ Spanish +]-- es
+-- Chinese Traditional	["zh-tw"]
+-- Chinese Simplified	["zh-cn"]
+-- English				en
+-- French				fr
+-- German				de
+-- Italian				it
+-- Japanese				ja
+-- Korean				ko
+-- Polish				pl
+-- Portuguese			pt-BR
+-- Russian				ru
+-- Spanish				es
 
 local mod = get_mod("Enhanced_descriptions")
 
@@ -8314,23 +8310,6 @@ local localization_templates = {
 -- create_template("weap_testum01", {"loc_talent_adamant_pinning_dog_elite_damage_description"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
 -- FOR TESTS ONLY!!!
 }
-
-
-
-			-- ============ DO NOT DO ANYTHING BELOW! ============ --
-
---[+ Reload localization templates when the mod is enabled or disabled +]--
-function mod.on_enabled()
-	if WTL then
-		WTL.reload_templates()
-	end
-end
-
-function mod.on_disabled()
-	if WTL then
-		WTL.reload_templates()
-	end
-end
 
 --[+ Return the localization templates +]--
 return localization_templates

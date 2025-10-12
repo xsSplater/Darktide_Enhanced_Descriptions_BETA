@@ -543,22 +543,5 @@ local localization_templates = {
 			-- loc_text(COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.." 抗性（爆破手）")), -- Missing --
 }
 
-
-
-			-- ============ DO NOT DO ANYTHING BELOW! ============ --
-
---[+ Reload localization templates when the mod is enabled or disabled +]--
-function mod.on_enabled()
-	if WTL then
-		WTL.reload_templates()
-	end
-end
-
-function mod.on_disabled()
-	if WTL then
-		WTL.reload_templates()
-	end
-end
-
 --[+ Return the localization templates +]--
 return localization_templates

@@ -1,29 +1,138 @@
 ---@diagnostic disable: undefined-global, undefined-field
 
---[+ Chinese Traditional +]-- ["zh-tw"]
---[+ Chinese Simplified +]-- ["zh-cn"]
---[+ English +]-- en
---[+ French +]-- fr
---[+ German +]-- de
---[+ Italian +]-- it
---[+ Japanese +]-- ja
---[+ Korean +]-- ko
---[+ Polish +]-- pl
---[+ Portuguese +]-- pt-BR
---[+ Russian +]-- ru
---[+ Spanish +]-- es
+-- Chinese Traditional	["zh-tw"]
+-- Chinese Simplified	["zh-cn"]
+-- English				en
+-- French				fr
+-- German				de
+-- Italian				it
+-- Japanese				ja
+-- Korean				ko
+-- Polish				pl
+-- Portuguese			pt-BR
+-- Russian				ru
+-- Spanish				es
 
--- local mod = get_mod("Enhanced_descriptions")
+local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 
--- Duplicate the line and translate. For example:
---		en = "Enhanced Descriptions",
---		ru = "Улучшенные описания", <- Don't forget the comma at the end!
+--[=[ LOCALIZATION CONFIGURATION ]=]--
+local LOCALIZATION_GROUPS = {
+	-- Main modules
+	"enable_menus_file",
+	"enable_curious_file", 
+	"enable_penances_file",
+	"enable_weapons_file",
+	"enable_talents_file",
+	"enable_names_file",
+	"enable_names_tal_bless_file",
 
+	-- Enhanced descriptions
+	"enhanced_descriptions_enabled",
+	"enhanced_descriptions_enabled2", 
+	"enhanced_descriptions_nodes_enabled",
+	"enhanced_descriptions_penances_enabled",
+
+	"enhdesc",
+
+	-- Main attributes
+	"combat_ability",
+	"health",
+	"peril", 
+	"stamina",
+	"toughness",
+	"coherency",
+
+	-- Buffs
+	"cleave",
+	"crit",
+	"damage",
+	"finesse",
+	"hit_mass", 
+	"impact",
+	"power",
+	"rending",
+	"weakspot",
+
+	-- Debuffs
+	"bleed",
+	"brittleness",
+	"burn",
+	"corruption",
+	"electrocuted",
+	"soulblaze", 
+	"stagger",
+
+	-- Classes and abilities
+	"class_psyker",
+	"precision",
+	"class_ogryn", 
+	"fnp",
+	"luckyb",
+	"trample",
+	"class_zealot",
+	"fury",
+	"momentum",
+	"stealth",
+	"class_veteran",
+	"focus",
+	"focust",
+	"meleespec", 
+	"rangedspec",
+	"class_arbites",
+	"meleejust",
+	"rangedjust",
+
+	-- Misc
+	"note",
+	"numbers",
+	"variables",
+	"warning",
+	"talents",
+
+	-- Difficulty
+	"sedition",
+	"uprising",
+	"malice",
+	"heresy",
+	"damnation", 
+	"auric",
+
+	-- Penances
+	"talents_penances"
+}
+
+--[=[ UTILITY FUNCTIONS ]=]--
+local function readable(text)
+	local tokens = string.split(text, "_")
+	for i, token in ipairs(tokens) do
+		tokens[i] = string.upper(string.sub(token, 1, 1)) .. string.sub(token, 2)
+	end
+	return table.concat(tokens, " ")
+end
+
+local function add_color_localizations(localizations)
+	for _, color_name in ipairs(Color.list) do
+		local color_values = Color[color_name](255, true)
+		local text = InputUtils.apply_color_to_input_text(readable(color_name), color_values)
+		localizations[color_name] = { en = text }
+	end
+end
+
+local function add_localisation_entry(localizations, type_name)
+	localizations[type_name .. "_text_colour"] = {
+		en = "Pick color",
+		fr = "Couleur", 
+		ru = "Выберите цвет",
+		["zh-tw"] = "顏色",
+		["zh-cn"] = "颜色",
+	}
+end
+
+--[=[ MAIN LOCALIZATIONS ]=]--
 local localizations = {
 	mod_name = {
 		en = "Enhanced Descriptions",
-		-- fr = "Descriptions avancées", -- ???
 		ru = "Улучшенные описания",
 		["zh-tw"] = "描述改善",
 		["zh-cn"] = "描述增强",
@@ -36,6 +145,7 @@ local localizations = {
 		["zh-cn"] = "描述增强 - 修正并增加游戏内文本的描述的一体式模组。包含天赋，珍品，武器专长及武器祝福。",
 	},
 
+	-- Main modules
 	enable_weapons_file = {
 		en = "Toggle \"Weapons\" module",
 		fr = "Activer le module des armes",
@@ -44,14 +154,11 @@ local localizations = {
 		["zh-cn"] = "启用「武器」模块",
 	},
 	enable_weapons_file_description = {
-		en = "This module highlights the Words and Numbers of Weapon Blessings and Perks. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		fr = "Ce module met en évidence les mots et les chiffres des bénédictions et avantages des armes. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль выделяет слова и числа Благословений и Улучшений Оружия. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "突顯 {#color(255, 223,135)}武器祝福{#reset()} 和 {#color(255, 223,135)}附加屬性{#reset()} 的文字和數字。\n\n"
-		.."如果您不需要此模組，可以將其禁用。\n"
-		.."{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n"
-		.."{#color(100, 100, 100)}  \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "此模块将高亮显示武器的祝福和专长的关键词及数字，并重写了效果描述。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+		en = "This module highlights the Words and Numbers of Weapon Blessings and Perks. You can disable this module if you don't need it.",
+		fr = "Ce module met en évidence les mots et les chiffres des bénédictions et avantages des armes. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
+		ru = "Этот модуль выделяет слова и числа Благословений и Улучшений Оружия. Вы можете отключить этот модуль, если он вам не нужен.",
+		["zh-tw"] = "突顯 {#color(255, 223,135)}武器祝福{#reset()} 和 {#color(255, 223,135)}附加屬性{#reset()} 的文字和數字。\n\n如果您不需要此模組，可以將其禁用。",
+		["zh-cn"] = "此模块将高亮显示武器的祝福和专长的关键词及数字，并重写了效果描述。\n可以按需开关此模块。",
 	},
 
 	enable_curious_file = {
@@ -109,7 +216,7 @@ local localizations = {
 		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль выделяет слова Искуплений и немного переписывает некоторые из них. Названия талантов берутся из модуля с исправленными названиями талантов! Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
 		["zh-tw"] = "突顯 {#color(255, 223,135)}苦修{#reset()} 的文字。\n可以按需求開關此模組。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-    ["zh-cn"] = "{#color(255, 35, 5)}测试版！仅供俄语版本使用！{#reset()} 此模块将高亮苦修中的数字。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+	["zh-cn"] = "{#color(255, 35, 5)}测试版！仅供俄语版本使用！{#reset()} 此模块将高亮苦修中的数字。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
 	},
 
 	-- FOR RUSSIAN VERSION ONLY!
@@ -387,9 +494,9 @@ local localizations = {
 		["zh-cn"] = " 灵能者",
 	},
 	precision_colour = {
-		en = "     Precision",
+		en = "	 Precision",
 		fr = " Precision",
-		ru = "     Точность",
+		ru = "	 Точность",
 		["zh-tw"] = " 精準",
 		["zh-cn"] = " 精准",
 	},
@@ -403,23 +510,23 @@ local localizations = {
 		["zh-cn"] = " 欧格林",
 	},
 	fnp_colour = {
-		en = "     Feel No Pain",
+		en = "	 Feel No Pain",
 		fr = " Adieu la douleur",
-		ru = "     Неболит",
+		ru = "	 Неболит",
 		["zh-tw"] = " 麻木",
 		["zh-cn"] = " 不痛不痒",
 	},
 	luckyb_colour = {
-		en = "     Lucky bullet",
+		en = "	 Lucky bullet",
 		fr = " Balles chanceuses",
-		ru = "     Счастливая пуля",
+		ru = "	 Счастливая пуля",
 		["zh-tw"] = " 幸運子彈",
 		["zh-cn"] = " 幸运子弹",
 	},
 	trample_colour = {
-		en = "     Trample",
+		en = "	 Trample",
 		fr = " Piétinement",
-		ru = "     Топот",
+		ru = "	 Топот",
 		["zh-tw"] = " 衝鋒",
 		["zh-cn"] = " 践踏",
 	},
@@ -433,23 +540,23 @@ local localizations = {
 		["zh-cn"] = " 狂信徒",
 	},
 	fury_colour = {
-		en = "     Fury",
+		en = "	 Fury",
 		fr = " Piété embrasée",
-		ru = "     Ярость",
+		ru = "	 Ярость",
 		["zh-tw"] = " 狂怒",
 		["zh-cn"] = " 怒火",
 	},
 	momentum_colour = {
-		en = "     Momentum",
+		en = "	 Momentum",
 		fr = " Jugement inexorable",
-		ru = "     Моментум",
+		ru = "	 Моментум",
 		["zh-tw"] = " 勢能",
 		["zh-cn"] = " 动量",
 	},
 	stealth_colour = {
-		en = "     Stealth",
+		en = "	 Stealth",
 		fr = " Furtivité",
-		ru = "     Скрытность",
+		ru = "	 Скрытность",
 		["zh-tw"] = " 隱形",
 		["zh-cn"] = " 潜行",
 	},
@@ -463,30 +570,30 @@ local localizations = {
 		["zh-cn"] = " 老兵",
 	},
 	focus_colour = {
-		en = "     Focus",
+		en = "	 Focus",
 		fr = " Focalisation",
-		ru = "     Концентрация",
+		ru = "	 Концентрация",
 		["zh-tw"] = " 專注",
 		["zh-cn"] = " 专注",
 	},
 	focust_colour = {
-		en = "     Focus Target",
+		en = "	 Focus Target",
 		fr = " Ciblage",
-		ru = "     Важная цель",
+		ru = "	 Важная цель",
 		["zh-tw"] = " 專注目標",
 		["zh-cn"] = " 聚焦目标",
 	},
 	meleespec_colour = {
-		en = "     Melee Specialist",
+		en = "	 Melee Specialist",
 		fr = " Spcécialiste en mêlée",
-		ru = "     Специалист-рукопашник",
+		ru = "	 Специалист-рукопашник",
 		["zh-tw"] = " 近戰專家",
 		["zh-cn"] = " 近战专家",
 	},
 	rangedspec_colour = {
-		en = "     Ranged Specialist",
+		en = "	 Ranged Specialist",
 		fr = " Spcécialiste à distance",
-		ru = "     Специалист-стрелок",
+		ru = "	 Специалист-стрелок",
 		["zh-tw"] = " 遠程專家",
 		["zh-cn"] = " 远程专家",
 	},
@@ -500,16 +607,16 @@ local localizations = {
 		-- ["zh-cn"] = "",
 	},
 	meleejust_colour = {
-		en = "    Melee Justice",
+		en = "	Melee Justice",
 		-- fr = "",
-		ru = "    Судья-рукопашник", --???
+		ru = "	Судья-рукопашник", --???
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
 	},
 	rangedjust_colour = {
-		en = "    Ranged Justice",
+		en = "	Ranged Justice",
 		-- fr = "",
-		ru = "    Судья-стрелок", --???
+		ru = "	Судья-стрелок", --???
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
 	},
@@ -604,118 +711,13 @@ local localizations = {
 	},
 }
 
-local function addLocalisation(localisations, typeName)
-	localisations[typeName .. "_text_colour"] = {
-		en = "Pick color",
-		fr = "Couleur",
-		ru = "Выберите цвет",
-		["zh-tw"] = "顏色",
-		["zh-cn"] = "颜色",
-	}
+--[=[ INITIALIZATION ]=]--
+-- Add color picker localizations for all groups
+for _, group_name in ipairs(LOCALIZATION_GROUPS) do
+	add_localisation_entry(localizations, group_name)
 end
 
-			-- ============ DO NOT DO ANYTHING BELOW! ============ --
-
-
-
-local function readable(text)
-	local readable_string = ""
-	local tokens = string.split(text, "_")
-		for i, token in ipairs(tokens) do
-	local first_letter = string.sub(token, 1, 1)
-		token = string.format("%s%s", string.upper(first_letter), string.sub(token, 2))
-		readable_string = string.trim(string.format("%s %s", readable_string, token))
-end
-	return readable_string
-end
-
-local color_names = Color.list
-for i, color_name in ipairs(color_names) do
-	local color_values = Color[color_name](255, true)
-	local text = InputUtils.apply_color_to_input_text(readable(color_name), color_values)
-		localizations[color_name] = {
-			en = text
-		}
-end
-
---[+Enhanced Descriptions+]--
-addLocalisation(localizations, "enhdesc")
-
---[+Main+]--
-addLocalisation(localizations, "combat_ability")
-addLocalisation(localizations, "health")
-addLocalisation(localizations, "peril")
-addLocalisation(localizations, "stamina")
-addLocalisation(localizations, "toughness")
-addLocalisation(localizations, "coherency")
-
---[+Buffs+]--
-addLocalisation(localizations, "cleave")
-addLocalisation(localizations, "crit")
-addLocalisation(localizations, "damage")
-addLocalisation(localizations, "finesse")
-addLocalisation(localizations, "hit_mass")
-addLocalisation(localizations, "impact")
-addLocalisation(localizations, "power")
-addLocalisation(localizations, "rending")
-addLocalisation(localizations, "weakspot")
-
---[+Debuffs+]--
-addLocalisation(localizations, "bleed")
-addLocalisation(localizations, "brittleness")
-addLocalisation(localizations, "burn")
-addLocalisation(localizations, "corruption")
-addLocalisation(localizations, "electrocuted")
-addLocalisation(localizations, "soulblaze")
-addLocalisation(localizations, "stagger")
-
---[+PSYKER+]--
-addLocalisation(localizations, "precision")
-
---[+OGRYN+]--
-addLocalisation(localizations, "fnp")
-addLocalisation(localizations, "luckyb")
-addLocalisation(localizations, "trample")
-
---[+ZEALOT+]--
-addLocalisation(localizations, "fury")
-addLocalisation(localizations, "momentum")
-addLocalisation(localizations, "stealth")
-
---[+VETERAN+]--
-addLocalisation(localizations, "focus")
-addLocalisation(localizations, "focust")
-addLocalisation(localizations, "meleespec")
-addLocalisation(localizations, "rangedspec")
-
---[+ARBITES+]--
-addLocalisation(localizations, "meleejust")
-addLocalisation(localizations, "rangedjust")
-
---[+Misc+]--
-addLocalisation(localizations, "note")
-addLocalisation(localizations, "variables")
-addLocalisation(localizations, "numbers")
-addLocalisation(localizations, "warning")
-addLocalisation(localizations, "talents")
-
---[+Difficulty+]--
-addLocalisation(localizations, "sedition")
-addLocalisation(localizations, "uprising")
-addLocalisation(localizations, "malice")
-addLocalisation(localizations, "heresy")
-addLocalisation(localizations, "damnation")
-addLocalisation(localizations, "auric")
-
---[+Penances+]--
-addLocalisation(localizations, "talents_penances")
-
---[+Classes+]--
-addLocalisation(localizations, "class_veteran")
-addLocalisation(localizations, "class_zealot")
-addLocalisation(localizations, "class_psyker")
-addLocalisation(localizations, "class_ogryn")
-addLocalisation(localizations, "class_arbites")
-
+-- Add color names localizations
+add_color_localizations(localizations)
 
 return localizations
