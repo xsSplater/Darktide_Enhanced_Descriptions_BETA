@@ -261,9 +261,9 @@ local localization_templates = {
 		-- {"loc_alias_talent_builder_view_hotkey_summary"}, {"en"},
 			-- loc_text("View full build")),
 	--[+ Russian - Посмотреть весь билд +]-- руоф Осмотреть полную сборку	27.05.2025
-	-- create_template("talent_tree_main_008_ru",
-		-- {"loc_alias_talent_builder_view_hotkey_summary"}, {"ru"},
-			-- loc_text("Посмотреть весь билд")), -- НЕ МЕНЯЕТСЯ!!!
+	create_template("talent_tree_main_008_ru",
+		{"loc_alias_talent_builder_view_hotkey_summary"}, {"ru"},
+			loc_text("Посмотреть весь билд")),
 	--[+ Traditional Chinese 查看全部天賦 +]--
 	create_template("talent_tree_main_008_tw",
 		{"loc_alias_talent_builder_view_hotkey_summary"}, {"zh-tw"},
@@ -278,9 +278,9 @@ local localization_templates = {
 		-- {"loc_alias_talent_builder_view_popup_title_summary"}, {"en"},
 			-- loc_text("Full build")),
 	--[+ Russian - Весь билд +]-- руоф Полная сборка	27.05.2025
-	-- create_template("talent_tree_main_009_ru",
-		-- {"loc_alias_talent_builder_view_popup_title_summary"}, {"en"},
-			-- loc_text("Весь билд")), -- НЕ МЕНЯЕТСЯ!!!
+	create_template("talent_tree_main_009_ru",
+		{"loc_alias_talent_builder_view_popup_title_summary"}, {"ru"},
+			loc_text("Весь билд")),
 	--[+ Traditional Chinese 全部天賦 +]--
 	create_template("talent_tree_main_009_tw",
 		{"loc_alias_talent_builder_view_popup_title_summary"}, {"zh-tw"},
@@ -515,7 +515,8 @@ local localization_templates = {
 		{"loc_talent_movement_speed_low_desc"}, {"zh-cn"},
 			loc_text("{movement_speed:%s} 移动速度。"..TALENTS_Enh_desc_nodes_zh_cn.ED_MoveSpdBst_rgb_zh_cn)),
 
-	--[+ Peril Resistance Medium +]-- Psyker 1	25.09.2025
+-- !!! REMOVED ".00. FIX IN THE ENHANCED_DESCRIPTIONS.LUA FILE.
+	--[+ Peril Resistance Medium +]-- Psyker 1	19.10.2025
 	create_template("talent_tree_oper_mod_001_desc_en",
 		{"loc_talent_warp_charge_low_desc"}, {"en"},
 			loc_text(Dot_green.." {warp_charge:%s} "..COLORS_KWords.Peril_rgb.." Generation.")),
@@ -1158,7 +1159,7 @@ local localization_templates = {
 	--[+ AURA 2 - Seer's Presence +]--	27.09.2025
 	create_template("talent_tree_psy_aura2_000_desc_en",
 		{"loc_talent_psyker_cooldown_aura_improved_description"}, {"en"},
-			loc_text(Dot_green.." {cooldown_reduction:%s} "..COLORS_KWords.Ability_cd_rgb.." Reduction for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
+			loc_text(Dot_green.." {cooldown_reduction:%s} "..COLORS_KWords.Cd_rgb.." Reduction on Abilities for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
 				..Dot_green.." An augmented version of {talent_name:%s}.\n"
 				.."\n"
 				..Dot_red.." This effect does not stack with the same aura from another Psyker.")),
@@ -1334,10 +1335,11 @@ local localization_templates = {
 		-- {"loc_talent_psyker_shout_reduces_warp_charge_generation_description"}, {"zh-tw"},
 			-- loc_text("{talent_name:%s}每命中一名敵人，\n降低 {warp_generation:%s} "..COLORS_KWords_tw.Peril_rgb_tw.."，最多 {max_stacks:%s}"..COLORS_Numbers.pc_rgb.."，持續 {duration:%s} 秒。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_1_1_rgb_tw)),
 
-	--[+ ABILITY 1-3 - Creeping Flames +]--	27.09.2025
+-- !!! REMOVED " -". FIX IN THE ENHANCED_DESCRIPTIONS.LUA FILE.
+	--[+ ABILITY 1-3 - Creeping Flames +]--	19.10.2025
 	create_template("talent_tree_psy_abil1_003_desc_en",
 		{"loc_talent_psyker_warpfire_on_shout_desc"}, {"en"},
-			loc_text("{talent_name:%s} applies {min_stacks:%s}{warpfire_stacks:%s} Stacks of "..COLORS_KWords.Soulblaze_rgb.." to targets Hit based on your current "..COLORS_KWords.Peril_rgb..".\n"
+			loc_text("{talent_name:%s} applies {min_stacks:%s} - {warpfire_stacks:%s} Stacks of "..COLORS_KWords.Soulblaze_rgb.." to targets Hit based on your current "..COLORS_KWords.Peril_rgb..".\n"
 				.."_______________________________\n"
 				..COLORS_KWords.Soulblaze_rgb.."      1|     2|     3|      4|     5|     6\n"
 				..COLORS_KWords.Peril_rgb.." (%):       0|  ~17| ~33| ~50| ~67| ~83\n"
@@ -1452,7 +1454,7 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil2_002_desc_en",
 		{"loc_talent_psyker_force_field_stun_increased_new_description"}, {"en"},
 			loc_text("Enemies passing through the {ability:%s} have a {proc_chance:%s} chance to be "..COLORS_KWords.Electrocuted_rgb..".\n"
-				.."Specialists are always "..COLORS_KWords.Electrocuted_rgb.." but "..COLORS_KWords.Damage_rgb.." the shield upon contact.\n"
+				.."Specialists are always "..COLORS_KWords.Electrocuted_rgb.." but damage the shield upon contact.\n"
 				.."\n"
 				..Dot_green.." Deals "..COLORS_Numbers.n_250_rgb.." Base "..COLORS_KWords.Damage_rgb..".\n"
 				..Dot_green.." Can "..COLORS_KWords.Stagger_rgb.." all enemies except Monstrosities and enemies with active Void shield.\n"
@@ -2354,7 +2356,7 @@ local localization_templates = {
 	--[+ Passive 13 - Empyric Shock +]--	27.09.2025
 	create_template("talent_tree_psy_pas_013_desc_en",
 		{"loc_talent_psyker_force_staff_quick_attack_bonus_desc"}, {"en"},
-			loc_text(Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{damage_taken:%s} "..COLORS_KWords.Damagewrp_rgb.." Taken by victims of your Force Staff’s Primary Attack.\n"
+			loc_text(Dot_green.." {damage_taken:%s} "..COLORS_KWords.Damagewrp_rgb.." Taken by victims of your Force Staff’s Primary Attack.\n"
 				..Dot_nc.." Max Stacks {max_stacks:%s}.\n"
 				..Dot_nc.." Lasts {duration:%s} seconds.\n"
 				.."\n"
@@ -2412,10 +2414,10 @@ local localization_templates = {
 	--[+ Passive 16 - By Crack of Bone +]--	27.09.2025
 	create_template("talent_tree_psy_pas_016_desc_en",
 		{"loc_talent_psyker_melee_weaving_desc"}, {"en"},
-			loc_text(Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{vent:%s} "..COLORS_KWords.Peril_rgb.." Quelled on Melee "..COLORS_KWords.Weak_spot_rgb.." kills.\n"
+			loc_text(Dot_green.." {vent:%s} "..COLORS_KWords.Peril_rgb.." Quelled on Melee "..COLORS_KWords.Weak_spot_rgb.." kills.\n"
 				..Dot_green.." Can proc multiple times per swing when "..COLORS_KWords.Cleaving_rgb..".\n"
 				.."\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{warp_generation:%s} "..COLORS_KWords.Peril_rgb.." Generation Reduction for {duration:%s} seconds on Melee "..COLORS_KWords.Weak_spot_rgb.." kills.\n"
+				..Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{warp_generation:%s} "..COLORS_KWords.Peril_rgb.." Generation for {duration:%s} seconds on Melee "..COLORS_KWords.Weak_spot_rgb.." kills.\n"
 				..Dot_green.." Can be refreshed during active duration.")),
 			-- vent: 5%, warp_generation: 20%, duration: 4, s->seconds, colors
 	--[+ French +]--
@@ -2448,7 +2450,7 @@ local localization_templates = {
 	--[+ Passive 18 - Psykinetic's Aura +]--	27.09.2025
 	create_template("talent_tree_psy_pas_018_desc_en",
 		{"loc_talent_psyker_cooldown_on_allied_elite_kills_desc"}, {"en"},
-			loc_text(Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{cooldown:%s} "..COLORS_KWords.Ability_cd_rgb.." Regeneration for {time:%s} seconds when you or an ally in "..COLORS_KWords.Coherency_rgb.." kills an Elite or Specialist enemy.\n"
+			loc_text(Dot_green.." {cooldown:%s} "..COLORS_KWords.Cd_rgb.." Regeneration for {time:%s} seconds when you or an Ally in "..COLORS_KWords.Coherency_rgb.." kills an Elite or Specialist enemy.\n"
 				.."\n"
 				..Dot_green.." Сan be refreshed during active duration.")),
 			-- cooldown: 100%, time: 3, colors
@@ -2663,11 +2665,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_031_desc_en",
 		{"loc_talent_psyker_alternative_peril_explosion_new_desc"}, {"en"},
 			loc_text(Dot_green.." {overload_damage:%s} Overload Explosion "..COLORS_KWords.Damage_rgb..",\n"
-				..Dot_green.." {overload_damage:%s} Overload Explosion Radius.\n"
+				..Dot_green.." {overload_radius:%s} Overload Explosion Radius.\n"
 				.."\n"
 				..Dot_nc.." Overloading through "..COLORS_KWords.Perils_rgb.." of the Warp no longer knocks you down, but you still take the appropriate "..COLORS_KWords.Corruption_rgb.." "..COLORS_KWords.Damage_rgb..".\n"
 				..Dot_green.." If the explosion kills an Elite enemy, you don't take any "..COLORS_KWords.Corruption_rgb.." "..COLORS_KWords.Damage_rgb..".")),
-			-- rewrite, colors
+			-- overload_damage: +100%, overload_radius: +25%, colors
 	--[+ French +]--
 	-- create_template("talent_tree_psy_pas_031_desc_fr",
 		-- {"loc_talent_psyker_alternative_peril_explosion_new_desc"}, {"fr"},
@@ -2681,9 +2683,7 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_032_desc_en",
 		{"loc_talent_psyker_stat_mix_desc"}, {"en"},
 			loc_text(Dot_green.." {peril_reduction:%s} Passive quelling.\n"
-				.."\n"
 				..Dot_green.." {stamina:%s} "..COLORS_KWords.Stamina_rgb..".\n"
-				.."\n"
 				..Dot_green.." {toughness_replenish:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment.\n"
 				..Dot_red.." Does not apply to "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb.." Regeneration.")),
 			-- peril_reduction: -80%, stamina: +2, toughness_replenish: +25%, colors
@@ -2716,7 +2716,7 @@ local localization_templates = {
 	--[+ Passive 34 - Surety of Arms +]--	27.09.2025
 	create_template("talent_tree_psy_pas_034_desc_en",
 		{"loc_talent_psyker_reload_speed_warp_desc"}, {"en"},
-			loc_text(Dot_green.." {reload_speed:%s} Reload Speed while below {threshold:%s} "..COLORS_KWords.Peril_rgb..".\n"
+			loc_text(Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{reload_speed:%s} Reload Speed while below {threshold:%s} "..COLORS_KWords.Peril_rgb..".\n"
 				..Dot_red.." On Reload, generate up to {warp_charge:%s} "..COLORS_KWords.Peril_rgb.." based on the Percentage of the Clip Restored.\n"
 				.."\n"
 				..Dot_red.." Reloading an Empty clip generates the max amount of {warp_charge:%s} "..COLORS_KWords.Peril_rgb..".")),
@@ -8306,7 +8306,7 @@ local localization_templates = {
 
 
 -- FOR TESTS ONLY!!!
--- create_template("weap_testum00", {"loc_talent_psyker_stat_mix_desc"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
+-- create_template("weap_testum00", {"loc_talent_psyker_alternative_peril_explosion_new_desc"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
 -- create_template("weap_testum01", {"loc_talent_adamant_pinning_dog_elite_damage_description"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
 -- FOR TESTS ONLY!!!
 }

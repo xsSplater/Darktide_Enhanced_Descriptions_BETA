@@ -88,7 +88,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local weapsprd_var_rgb = iu_actit("{weapon_spread:%s}", var_col)
 		--[+ Plus +]--
 	local p_chrgspd_var_rgb = iu_actit("+{charge_speed:%s}", var_col)
-	local p_xtrahits_var_rgb = iu_actit("+{extra_hits:%s}", var_col)
+	local p_xtrahits_var_rgb = iu_actit("{extra_hits:%s}", var_col)
 	local p_stacks_var_rgb = iu_actit("+{stacks:%s}", var_col)
 
 	--[+ Curios +]--

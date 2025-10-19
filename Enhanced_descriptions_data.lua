@@ -112,7 +112,7 @@ local function create_checkbox_widget(setting_id, default_value)
 		default_value = default_value,
 		type = "checkbox",
 		description = mod:localize(setting_id .. "_description"),
-		
+
 		change = function(new_value)
 			mod:set(setting_id, new_value)
 			-- The on_setting_changed handler in main file will handle the reload
