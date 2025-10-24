@@ -519,6 +519,22 @@ local localization_templates = {
 		{"loc_trait_bespoke_staggering_hits_has_chance_to_stun"}, {"zh-tw"},
 			loc_text("壓倒性的武力")),
 
+	--[+ Counterattack - Контратака +]--
+
+	--[+ Cranial grounding - Черепное заземление +]--
+
+	--[+ Overload - Перегрузка +]--
+
+	--[+ Energy leakage - Утечка энергии +]--
+
+	--[+ Heatsink - Теплоотвод +]--
+
+	--[+ Syphon - Выкачивание +]--
+	--[+ Russian +]--
+	create_template("weap_wbm057_ext_ru",
+		{"loc_trait_bespoke_regain_toughness_on_multiple_hits_by_weapon_special"}, {"ru"},
+			loc_text("Выкачивание")),
+
 	--[+ Momentum - Моментум +]--
 	--[+ Russian +]--
 	-- create_template("trait_bespoke_049_ext_ru",
@@ -542,11 +558,11 @@ local localization_templates = {
 		{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"zh-tw"},
 			loc_text("震懾")),
 
-	--[+ Take a Swing - Замах +]--
+	--[+ Take a Swing - Размахнись +]-- руоф Замах
 	--[+ Russian +]--
-	-- create_template("trait_bespoke_050_ext_ru",
-		-- {"loc_trait_bespoke_weakspot_damage_bonus_on_pushed_enemies"}, {"ru"},
-			-- loc_text("Замах")),
+	create_template("trait_bespoke_050_ext_ru",
+		{"loc_trait_bespoke_weakspot_damage_bonus_on_pushed_enemies"}, {"ru"},
+			loc_text("Размахнись")),
 	--[+ Traditional Chinese - 揮拳出擊 +]--
 	create_template("trait_bespoke_050_ext_tw",
 		{"loc_trait_bespoke_weakspot_damage_bonus_on_pushed_enemies"}, {"zh-tw"},
@@ -562,11 +578,11 @@ local localization_templates = {
 		{"loc_trait_bespoke_armor_rend_on_activated_attacks"}, {"zh-tw"},
 			loc_text("超級充能")),
 
-	--[+ Power Cycler - Циклер мощности +]-- -- руоф Цикл силы
+	--[+ Power Cycler - Цикл мощности +]-- руоф Цикл силы
 	--[+ Russian +]--
-	-- create_template("trait_bespoke_052_ext_ru",
-		-- {"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks"}, {"ru"},
-			-- loc_text("Циклер мощности")),
+	create_template("trait_bespoke_052_ext_ru",
+		{"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks"}, {"ru"},
+			loc_text("Цикл мощности")),
 	--[+ Traditional Chinese - 能量循環 +]--
 	create_template("trait_bespoke_052_ext_tw",
 		{"loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks"}, {"zh-tw"},
@@ -683,11 +699,11 @@ local localization_templates = {
 		{"loc_trait_block_break_pushes"}, {"zh-tw"},
 			loc_text("最後防線")),
 
-	--[+ Offensive Defence - Атакующая защита +]-- -- руоф Активная оборона
+	--[+ Offensive Defence - Контратака +]-- -- руоф Активная оборона
 	--[+ Russian +]--
-	-- create_template("trait_bespoke_064_ext_ru",
-		-- {"loc_trait_damage_bonus_on_block"}, {"ru"},
-			-- loc_text("Атакующая защита")),
+	create_template("trait_bespoke_064_ext_ru",
+		{"loc_trait_damage_bonus_on_block"}, {"ru"},
+			loc_text("Контратака")),
 	--[+ Traditional Chinese - 反守為攻 +]--
 	create_template("trait_bespoke_064_ext_tw",
 		{"loc_trait_damage_bonus_on_block"}, {"zh-tw"},
@@ -715,16 +731,16 @@ local localization_templates = {
 
 	--[+ Ranged - Дальний бой +]--
 	--[+ Russian +]--
-	--[+ Raking Fire - Огонь по тылам +]-- -- руоф Обстрел
-	-- create_template("trait_bespoke_065_ext_ru",
-		-- {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking"}, {"ru"},
-			-- loc_text("Огонь по тылам")),
+	--[+ Raking Fire - Стрельба в тыл +]-- руоф Обстрел
+	create_template("trait_bespoke_065_ext_ru",
+		{"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking"}, {"ru"},
+			loc_text("Стрельба в тыл")),
 	--[+ Traditional Chinese - 掃射 +]--
 	create_template("trait_bespoke_065_ext_tw",
 		{"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking"}, {"zh-tw"},
 			loc_text("掃射")),
 
-	--[+ Dumdum - Дум-дум +]-- -- руоф Дамдам
+	--[+ Dumdum - Дум-дум +]-- руоф Дамдам
 	--[+ Russian +]--
 	create_template("trait_bespoke_066_ext_ru",
 		{"loc_trait_bespoke_consecutive_hits_increases_close_damage"}, {"ru"},
@@ -734,7 +750,7 @@ local localization_templates = {
 		{"loc_trait_bespoke_consecutive_hits_increases_close_damage"}, {"zh-tw"},
 			loc_text("達姆彈")),
 
-	--[+ Hit & Run /  Hit and Run - Бей и беги +]--
+	--[+ Hit & Run / Hit and Run - Бей и беги +]--
 	create_template("weap_wbr002_ext_en",
 		{"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill"}, {"en"},
 			loc_text("Hit and Run")), -- &->and
@@ -746,7 +762,7 @@ local localization_templates = {
 		{"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill"}, {"zh-tw"},
 			loc_text("游擊")),
 
-	--[+ Sustained Fire - Непрерывная стрельба +]-- -- руоф Непрерывный огонь
+	--[+ Sustained Fire - Непрерывная стрельба +]-- руоф Непрерывный огонь
 	--[+ Russian +]--
 	create_template("trait_bespoke_068_ext_ru",
 		{"loc_trait_bespoke_followup_shots_ranged_damage"}, {"ru"},
@@ -805,11 +821,11 @@ local localization_templates = {
 		{"loc_trait_bespoke_reload_speed_on_slide"}, {"zh-tw"},
 			loc_text("快速裝彈")),
 
-	--[+ Terrifying Barrage - Устрашающий обстрел +]-- -- руоф Устрашающий натиск
+	--[+ Terrifying Barrage - Устрашающий обстрел +]-- руоф Устрашающий натиск
 	--[+ Russian +]--
 	create_template("trait_bespoke_074_ext_ru",
 		{"loc_trait_bespoke_suppression_on_close_kill"}, {"ru"},
-			loc_text("Устрашающий огонь")),
+			loc_text("Устрашающий обстрел")),
 	--[+ Traditional Chinese - 恐怖阻擊 +]--
 	create_template("trait_bespoke_074_ext_tw",
 		{"loc_trait_bespoke_suppression_on_close_kill"}, {"zh-tw"},
@@ -829,7 +845,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("trait_bespoke_076_ext_ru",
 		{"loc_trait_bespoke_suppression_on_continuous_fire"}, {"ru"},
-			loc_text("Непрерывный огонь")),
+			loc_text("Непрерывный обстрел")),
 	--[+ Traditional Chinese - 持續阻擊 +]--
 	create_template("trait_bespoke_076_ext_tw",
 		{"loc_trait_bespoke_suppression_on_continuous_fire"}, {"zh-tw"},

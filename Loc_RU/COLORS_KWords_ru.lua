@@ -16,6 +16,20 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Combat_abil_rgb_ru = iu_actit("боевая способность", cmbtab_col)
 			local Combat_ability_rgb_ru = iu_actit("боевой способности", cmbtab_col)
 			-- local Combat_ability_cd_rgb_ru = iu_actit("восстановления боевой способности", cmbtab_col)
+	--[++Выносливость++]--
+		local stam_col = Color[mod:get("stamina_text_colour")](255, true)
+			local Stamina_rgb_ru = iu_actit("выносливости", stam_col)
+			-- local Stamina_c_r_rgb_ru = iu_actit("выносливость", stam_col)
+	--[++Горение++]--
+		local brn_col = Color[mod:get("burn_text_colour")](255, true)
+			local Burn_rgb_ru = iu_actit("горения", brn_col)
+			local Burning_rgb_ru = iu_actit("горящих", brn_col)
+			local Burnd_rgb_ru = iu_actit("поджигает", brn_col)
+			local Heat_rgb_ru = iu_actit("перегрева", brn_col)
+			local Heat2_rgb_ru = iu_actit("перегреве", brn_col)
+	--[++Горение души++]--
+		local slblz_col = Color[mod:get("soulblaze_text_colour")](255, true)
+			local Soulblaze_rgb_ru = iu_actit("горения души", slblz_col)
 	--[++Здоровье++]--
 		local hlth_col = Color[mod:get("health_text_colour")](255, true)
 			local Health_rgb_ru = iu_actit("здоровью", hlth_col)
@@ -24,27 +38,6 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			-- local Wounds_rgb_ru = iu_actit("ране", hlth_col)
 			local Wound_u_rgb_ru = iu_actit("рану", hlth_col)
 			local Wound_y_rgb_ru = iu_actit("раны", hlth_col)
-	--[++Опасность++]--
-		local prl_col = Color[mod:get("peril_text_colour")](255, true)
-			local Peril_rgb_ru = iu_actit("опасности", prl_col)
-			local Perils_rgb_ru = iu_actit("опасностей", prl_col)
-			local Perl_rgb_ru = iu_actit("опасность", prl_col)
-			local Perl0_rgb_ru = iu_actit("Опасность", prl_col)
-	--[++Ошеломление++]--
-		local stam_col = Color[mod:get("stamina_text_colour")](255, true)
-			local Stamina_rgb_ru = iu_actit("выносливости", stam_col)
-			-- local Stamina_c_r_rgb_ru = iu_actit("выносливость", stam_col)
-	--[++Стойкость++]--
-		local tghn_col = Color[mod:get("toughness_text_colour")](255, true)
-			local Toughness_rgb_ru = iu_actit("стойкости", tghn_col)
-			local Tghnss_rgb_ru = iu_actit("стойкость", tghn_col)
-			local Toughness_dmg_red_rgb_ru = iu_actit("снижение урона стойкости", tghn_col)
-			local Toughness_dmg_red_u_rgb_ru = iu_actit("снижению урона стойкости", tghn_col)
-			local Toughness_dmg_rgb_ru = iu_actit("урона стойкости", tghn_col)
-	--[++Сплочённость++]--
-		local coher_col = Color[mod:get("coherency_text_colour")](255, true)
-			local Coherency_rgb_ru = iu_actit("сплочённости", coher_col)
---[+++БАФФЫ+++]--
 	--[++Критический удар++]--
 		local crt_col = Color[mod:get("crit_text_colour")](255, true)
 			local Crt_chance_rgb_ru = iu_actit("шанс критического выстрела", crt_col)
@@ -65,65 +58,16 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Crit_shot_color_rgb_ru = iu_actit("урону критического выстрела", crt_col)
 			local Crit_hit_om_rgb_ru = iu_actit("критическим выстрелом", crt_col)
 			local Crit_hit_udom_rgb_ru = iu_actit("критическим ударом", crt_col)
-	--[++Пробивание++]--
-		local rend_col = Color[mod:get("rending_text_colour")](255, true)
-			local Rndg_rgb_ru = iu_actit("Пробивание", rend_col)
-			local Rending_rgb_ru = iu_actit("пробиванию", rend_col)
-	--[++Равновесие++]--
-		local imp_col = Color[mod:get("impact_text_colour")](255, true)
-			Impact_rgb_ru = iu_actit("выведению из равновесия", imp_col) -- Силе Удара?
-	--[++Рассечение++]--
-		local clv_col = Color[mod:get("cleave_text_colour")](255, true)
-			local Cleave_rgb_ru = iu_actit("рассечению", clv_col)
-			local Cleaving_rgb_ru = iu_actit("рассечение", clv_col)
-			local Cleavat_rgb_ru = iu_actit("рассекать", clv_col)
-			local Cleavaet_rgb_ru = iu_actit("рассекается", clv_col)
-			local Cleaving_r_rgb_ru = iu_actit("прострел", clv_col)
-			local Cleaving_u_rgb_ru = iu_actit("прострелу", clv_col)
-			local Cleaving_et_rgb_ru = iu_actit("простреливает", clv_col)
-	--[++Сила++]--
-		local pwr_col = Color[mod:get("power_text_colour")](255, true)
-			local Pwr_rgb_ru = iu_actit("Сила", pwr_col)
-			local Power_rgb_ru = iu_actit("сила", pwr_col)
-			local Strength_rgb_ru = iu_actit("силе", pwr_col)
-	--[++Точность++]--
-		local fns_col = Color[mod:get("finesse_text_colour")](255, true)
-			local Fnss_rgb_ru = iu_actit("Ловкость", fns_col)
-			local Finesse_rgb_ru = iu_actit("ловкости", fns_col)
-			local Finesse_dmg_rgb_ru = iu_actit("урону от ловкости", fns_col)
-	--[++Ударная масса++]--
-		local htms_col = Color[mod:get("hit_mass_text_colour")](255, true)
-			local Hit_mass_rgb_ru = iu_actit("ударную массу", htms_col)
-			local Hit_masss_rgb_ru = iu_actit("ударной массы", htms_col)
-	--[++Урон++]--
-		local dmg_col = Color[mod:get("damage_text_colour")](255, true)
-			local Dmg_rgb_ru = iu_actit("урон", dmg_col)
-			local Dmg_a_rgb_ru = iu_actit("урона", dmg_col)
-			local Damage_rgb_ru = iu_actit("урону", dmg_col)
-			local Damagewrp_rgb_ru = iu_actit("варп-урону", dmg_col)
-			local Damagewrp_a_rgb_ru = iu_actit("варп-урона", dmg_col)
-	--[++Уязвимое место++]--
-		local wksp_col = Color[mod:get("weakspot_text_colour")](255, true)
-			local Weakspot_rgb_ru = iu_actit("уязвимые места", wksp_col)
-			local Weakspothit_rgb_ru = iu_actit("уязвимое место", wksp_col)
-			-- local Weakspothits_rgb_ru = iu_actit("уязвимые места", wksp_col)
-			local Weakspot_dmg_rgb_ru = iu_actit("урону по уязвимым местам", wksp_col)
-			local Weakspotv_dmg_rgb_ru = iu_actit("урон по уязвимым местам", wksp_col)
---[+++ДЕБАФФЫ+++]--
-	--[++Горение++]--
-		local brn_col = Color[mod:get("burn_text_colour")](255, true)
-			local Burn_rgb_ru = iu_actit("горения", brn_col)
-			local Burning_rgb_ru = iu_actit("горящих", brn_col)
-			local Burnd_rgb_ru = iu_actit("поджигает", brn_col)
-			local Heat_rgb_ru = iu_actit("перегрева", brn_col)
-			local Heat2_rgb_ru = iu_actit("перегреве", brn_col)
-	--[++Горение души++]--
-		local slblz_col = Color[mod:get("soulblaze_text_colour")](255, true)
-			local Soulblaze_rgb_ru = iu_actit("горения души", slblz_col)
 	--[++Кровотечение++]--
 		local bld_col = Color[mod:get("bleed_text_colour")](255, true)
 			local Bleed_rgb_ru = iu_actit("кровотечения", bld_col)
 			local Bleeding_rgb_ru = iu_actit("кровотечение", bld_col)
+	--[++Опасность++]--
+		local prl_col = Color[mod:get("peril_text_colour")](255, true)
+			local Peril_rgb_ru = iu_actit("опасности", prl_col)
+			local Perils_rgb_ru = iu_actit("опасностей", prl_col)
+			local Perl_rgb_ru = iu_actit("опасность", prl_col)
+			local Perl0_rgb_ru = iu_actit("Опасность", prl_col)
 	--[++Ошеломление++]--
 		local stgr_col = Color[mod:get("stagger_text_colour")](255, true)
 			local Stagger_rgb_ru = iu_actit("ошеломление", stgr_col)
@@ -156,17 +100,78 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Electrocuted_rgb_ru = iu_actit("электрошоком", electr_col)
 			-- local Electrocutes_rgb_ru = iu_actit("Electrocutes", electr_col)
 			-- local Electrcuting_rgb_ru = iu_actit("Electrocuting", electr_col)
+	--[++Пробивание++]--
+		local rend_col = Color[mod:get("rending_text_colour")](255, true)
+			local Rndg_rgb_ru = iu_actit("Пробивание", rend_col)
+			local Rending_rgb_ru = iu_actit("пробиванию", rend_col)
+	--[++Равновесие++]--
+		local imp_col = Color[mod:get("impact_text_colour")](255, true)
+			Impact_rgb_ru = iu_actit("выведению из равновесия", imp_col) -- Силе Удара?
+	--[++Рассечение++]--
+		local clv_col = Color[mod:get("cleave_text_colour")](255, true)
+			local Cleave_rgb_ru = iu_actit("рассечению", clv_col)
+			local Cleaving_rgb_ru = iu_actit("рассечение", clv_col)
+			local Cleavat_rgb_ru = iu_actit("рассекать", clv_col)
+			local Cleavaet_rgb_ru = iu_actit("рассекается", clv_col)
+			local Cleaving_r_rgb_ru = iu_actit("прострел", clv_col)
+			local Cleaving_e_rgb_ru = iu_actit("простреле", clv_col)
+			local Cleaving_u_rgb_ru = iu_actit("прострелу", clv_col)
+			local Cleaving_et_rgb_ru = iu_actit("простреливает", clv_col)
+	--[++Сила++]--
+		local pwr_col = Color[mod:get("power_text_colour")](255, true)
+			local Pwr_rgb_ru = iu_actit("Сила", pwr_col)
+			local Power_rgb_ru = iu_actit("сила", pwr_col)
+			local Strength_rgb_ru = iu_actit("силе", pwr_col)
+	--[++Сплочённость++]--
+		local coher_col = Color[mod:get("coherency_text_colour")](255, true)
+			local Coherency_rgb_ru = iu_actit("сплочённости", coher_col)
+	--[++Стойкость++]--
+		local tghn_col = Color[mod:get("toughness_text_colour")](255, true)
+			local Toughness_rgb_ru = iu_actit("стойкости", tghn_col)
+			local Tghnss_rgb_ru = iu_actit("стойкость", tghn_col)
+			local Toughness_dmg_red_rgb_ru = iu_actit("снижение урона стойкости", tghn_col)
+			local Toughness_dmg_red_u_rgb_ru = iu_actit("снижению урона стойкости", tghn_col)
+			local Toughness_dmg_rgb_ru = iu_actit("урона стойкости", tghn_col)
+	--[++Точность++]--
+		local fns_col = Color[mod:get("finesse_text_colour")](255, true)
+			local Fnss_rgb_ru = iu_actit("Ловкость", fns_col)
+			local Finesse_rgb_ru = iu_actit("ловкости", fns_col)
+			local Finesse_dmg_rgb_ru = iu_actit("урону от ловкости", fns_col)
+	--[++Ударная масса++]--
+		local htms_col = Color[mod:get("hit_mass_text_colour")](255, true)
+			local Hit_mass_rgb_ru = iu_actit("ударную массу", htms_col)
+			local Hit_masss_rgb_ru = iu_actit("ударной массы", htms_col)
+	--[++Урон++]--
+		local dmg_col = Color[mod:get("damage_text_colour")](255, true)
+			local Dmg_rgb_ru = iu_actit("урон", dmg_col)
+			local Dmg_a_rgb_ru = iu_actit("урона", dmg_col)
+			local Damage_rgb_ru = iu_actit("урону", dmg_col)
+			local Damagewrp_rgb_ru = iu_actit("варп-урону", dmg_col)
+			local Damagewrp_a_rgb_ru = iu_actit("варп-урона", dmg_col)
+	--[++Уязвимое место++]--
+		local wksp_col = Color[mod:get("weakspot_text_colour")](255, true)
+			local Weakspot_rgb_ru = iu_actit("уязвимые места", wksp_col)
+			local Weakspothit_rgb_ru = iu_actit("уязвимое место", wksp_col)
+			-- local Weakspothits_rgb_ru = iu_actit("уязвимые места", wksp_col)
+			local Weakspot_dmg_rgb_ru = iu_actit("урону по уязвимым местам", wksp_col)
+			local Weakspotv_dmg_rgb_ru = iu_actit("урон по уязвимым местам", wksp_col)
 	--[++Хрупкость++]--
 		local brtl_col = Color[mod:get("brittleness_text_colour")](255, true)
 			local Brttlns_rgb_ru = iu_actit("Хрупкость", brtl_col)
 			local Brittleness_rgb_ru = iu_actit("хрупкости", brtl_col)
 
 --[+++ПСАЙКЕР+++]--
+		local cls_psy_col = Color[mod:get("class_psyker_text_colour")](255, true)
+			local cls_psy_rgb_ru = iu_actit("Псайкер", cls_psy_col)
+			local cls_psy2_rgb_ru = iu_actit("Псайкером", cls_psy_col)
 	--[++Точность++]--
 		local prcsn_col = Color[mod:get("precision_text_colour")](255, true)
 			local Precision_rgb_ru = iu_actit("меткости", prcsn_col)
 
 --[+++ОГРИН+++]--
+		local cls_ogr_col = Color[mod:get("class_ogryn_text_colour")](255, true)
+			local cls_ogr_rgb_ru = iu_actit("Огрин", cls_ogr_col)
+			local cls_ogr2_rgb_ru = iu_actit("Огрином", cls_ogr_col)
 	--[++Неболит++]--
 		local fnp_col = Color[mod:get("fnp_text_colour")](255, true)
 			local Feel_no_pain_rgb_ru = iu_actit("Неболита", fnp_col)
@@ -178,6 +183,9 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Trample_rgb_ru = iu_actit("Топота", trample_col)
 
 --[+++ИЗУВЕР+++]--
+		local cls_zea_col = Color[mod:get("class_zealot_text_colour")](255, true)
+			local cls_zea_rgb_ru = iu_actit("Изувер", cls_zea_col)
+			local cls_zea2_rgb_ru = iu_actit("Изувером", cls_zea_col)
 	--[++Моментум++]--
 		local moment_col = Color[mod:get("momentum_text_colour")](255, true)
 			local Momentum_rgb_ru = iu_actit("Моментума", moment_col)
@@ -190,6 +198,9 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Fury_i_rgb_ru = iu_actit("Ярости", fury_col)
 
 --[+++ВЕТЕРАН+++]--
+		local cls_vet_col = Color[mod:get("class_veteran_text_colour")](255, true)
+			local cls_vet_rgb_ru = iu_actit("Ветеран", cls_vet_col)
+			local cls_vet2_rgb_ru = iu_actit("Ветераном", cls_vet_col)
 	--[++Важная цель++]--
 		local focust_col = Color[mod:get("focust_text_colour")](255, true)
 			local Focus_Target_rgb_ru = iu_actit("Важной цели", focust_col)
@@ -204,6 +215,9 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Rangedspec_rgb_ru = iu_actit("Специалиста-стрелка", rangedspec_col)
 
 --[+++АРБИТРАТОР+++]--
+		-- local cls_arb_col = Color[mod:get("class_arbites_text_colour")](255, true)		!!!!!!!!!!!!
+			-- local cls_arb_rgb_ru = iu_actit("Арбитратор", cls_arb_col)
+			-- local cls_arb2_rgb_ru = iu_actit("Арбитратором", cls_arb_col)
 	--[++Melee Justice++]--
 		local meleejust_col = Color[mod:get("meleejust_text_colour")](255, true) -- Do not translate this line!
 			local Meleejust_rgb_ru = iu_actit("Судьи-рукопашника", meleejust_col)
@@ -250,26 +264,6 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 		local auric_col = Color[mod:get("auric_text_colour")](255, true) -- Do not translate this line!
 			local auric_rgb = iu_actit("Золото", auric_col)
 
---[+ ++VETERAN - ВЕТЕРАН++ +]--
-		local cls_vet_col = Color[mod:get("class_veteran_text_colour")](255, true)
-			local cls_vet_rgb_ru = iu_actit("Ветеран", cls_vet_col)
-			local cls_vet2_rgb_ru = iu_actit("Ветераном", cls_vet_col)
-
---[+ ++ZEALOT - Изувер++ +]--
-		local cls_zea_col = Color[mod:get("class_zealot_text_colour")](255, true)
-			local cls_zea_rgb_ru = iu_actit("Изувер", cls_zea_col)
-			local cls_zea2_rgb_ru = iu_actit("Изувером", cls_zea_col)
-
---[+ ++PSYKER - ПСАЙКЕР++ +]--
-		local cls_psy_col = Color[mod:get("class_psyker_text_colour")](255, true)
-			local cls_psy_rgb_ru = iu_actit("Псайкер", cls_psy_col)
-			local cls_psy2_rgb_ru = iu_actit("Псайкером", cls_psy_col)
-
---[+ ++OGRYN - ОГРИН++ +]--
-		local cls_ogr_col = Color[mod:get("class_ogryn_text_colour")](255, true)
-			local cls_ogr_rgb_ru = iu_actit("Огрин", cls_ogr_col)
-			local cls_ogr2_rgb_ru = iu_actit("Огрином", cls_ogr_col)
-
 
 return {
 	Arbites_gren_rgb_ru = Arbites_gren_rgb_ru,
@@ -306,6 +300,7 @@ return {
 	Cleavaet_rgb_ru = Cleavaet_rgb_ru,
 	Cleaving_rgb_ru = Cleaving_rgb_ru,
 	Cleaving_r_rgb_ru = Cleaving_r_rgb_ru,
+	Cleaving_e_rgb_ru = Cleaving_e_rgb_ru,
 	Cleaving_u_rgb_ru = Cleaving_u_rgb_ru,
 	Cleaving_et_rgb_ru = Cleaving_et_rgb_ru,
 	Crt_chance_rgb_ru = Crt_chance_rgb_ru,
