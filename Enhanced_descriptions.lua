@@ -32,8 +32,9 @@ local settings_change_timer = 0
 local pending_settings_reload = false
 
 local function should_reload_for_setting(setting_id)
-	return string.find(setting_id, "enable_") or 
-		   string.find(setting_id, "enhanced_descriptions")
+    return string.find(setting_id, "enable_") or 
+           string.find(setting_id, "enhanced_descriptions") or
+           string.find(setting_id, "_text_colour") -- Включаем изменения цветов
 end
 
 local function on_setting_changed(setting_id)
@@ -278,8 +279,6 @@ mod:command("desc_stats", "Show Enhanced Descriptions statistics", function()
 	mod:echo(message)
 end)
 
-
-
 --[+ ++FIXES FOR DESCRIPTIONS - ФИКСЫ ДЛЯ ОПИСАНИЙ++ +]--
 	-- loc_key = {
 		-- value
@@ -365,8 +364,6 @@ mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache
 	
 	return result
 end)
-
-
 
 --[+ ++INITIALIZATION++ +]--
 mod:info("Enhanced Descriptions mod loaded with improved architecture")
