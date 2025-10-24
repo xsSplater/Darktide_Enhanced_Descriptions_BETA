@@ -31,7 +31,6 @@ local is_initialized = false
 local settings_change_timer = 0
 local pending_settings_reload = false
 
--- Более точная проверка настроек, требующих перезагрузки
 local function should_reload_for_setting(setting_id)
 	return string.find(setting_id, "enable_") or 
 		   string.find(setting_id, "enhanced_descriptions")
@@ -191,7 +190,7 @@ mod:hook(LocalizationManager, "_process_string", function(func, self, key, raw_s
 			modified_str = result
 		elseif not success then
 			mod:error("Localization handler failed for key '%s': %s", key, result)
-			--[+ +Continue with previous string if handler fails+ +]--
+			-- Continue with previous string if handler fails
 		end
 	end
 
@@ -316,6 +315,13 @@ local FIXES = {
 			return tostring(value):gsub("^+", "")
 		end
 	},
+	--[+ FOCUSED COOLING +]--
+	-- "+60% Heat generation..." -- Removed "+".
+	loc_trait_bespoke_reduced_overheat_on_crits_desc = {
+		heat_percentage = function(value)
+			return tostring(value):gsub("^+", "")
+		end
+	},
 
 --[+ +TALENTS - ТАЛАНТЫ+ +]--
 	--[+ NODES - УЗЛЫ +]--
@@ -337,7 +343,7 @@ local FIXES = {
 
 }
 
---[+ +Хук для фиксов+ +]--
+--[+ +hook for fixes+ +]--
 mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)
 	local result = func(self, loc_key, no_cache, context)
 	

@@ -54,6 +54,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Crit_dmg_r_rgb_ru = iu_actit("критический урон", crt_col)
 			local Crit_dmg_u_rgb_ru = iu_actit("критическому урону", crt_col)
 			local Crit_chance_r_rgb_ru = iu_actit("критическом выстреле", crt_col)
+			local Crit_chance_l_rgb_ru = iu_actit("критический выстрел", crt_col)
 			local Crit_hit_color_rgb_ru = iu_actit("урону критического удара", crt_col)
 			local Crit_shot_color_rgb_ru = iu_actit("урону критического выстрела", crt_col)
 			local Crit_hit_om_rgb_ru = iu_actit("критическим выстрелом", crt_col)
@@ -117,6 +118,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Cleaving_e_rgb_ru = iu_actit("простреле", clv_col)
 			local Cleaving_u_rgb_ru = iu_actit("прострелу", clv_col)
 			local Cleaving_et_rgb_ru = iu_actit("простреливает", clv_col)
+			local Cleaving_etsa_rgb_ru = iu_actit("простреливается", clv_col)
 	--[++Сила++]--
 		local pwr_col = Color[mod:get("power_text_colour")](255, true)
 			local Pwr_rgb_ru = iu_actit("Сила", pwr_col)
@@ -303,6 +305,7 @@ return {
 	Cleaving_e_rgb_ru = Cleaving_e_rgb_ru,
 	Cleaving_u_rgb_ru = Cleaving_u_rgb_ru,
 	Cleaving_et_rgb_ru = Cleaving_et_rgb_ru,
+	Cleaving_etsa_rgb_ru = Cleaving_etsa_rgb_ru,
 	Crt_chance_rgb_ru = Crt_chance_rgb_ru,
 	Crt_u_chance_rgb_ru = Crt_u_chance_rgb_ru,
 	Crit_chance_rgb_ru = Crit_chance_rgb_ru,
@@ -317,6 +320,7 @@ return {
 	Crit_dmg_r_rgb_ru = Crit_dmg_r_rgb_ru,
 	Crit_dmg_u_rgb_ru = Crit_dmg_u_rgb_ru,
 	Crit_chance_r_rgb_ru = Crit_chance_r_rgb_ru,
+	Crit_chance_l_rgb_ru = Crit_chance_l_rgb_ru,
 	Crit_hit_color_rgb_ru = Crit_hit_color_rgb_ru,
 	Crit_shot_color_rgb_ru = Crit_shot_color_rgb_ru,
 	Crit_hit_om_rgb_ru = Crit_hit_om_rgb_ru,
