@@ -1,44 +1,120 @@
 ---@diagnostic disable: undefined-global
+-- Version 4.0
+
 local mod = get_mod("Enhanced_descriptions")
 
---[+ Loading colors of Keywords and Numbers +]--
-COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
--- All numbers are taken from this file by adding to the value "COLORS_Numbers."
--- For example, in the game the Damage value is taken from the variable {damage:%s}, which in the file "COLORS_Numbers.lua" is replaced by dmg_var_rgb and to add the highlighted number to the text, we write the damage number to the text as "..COLORS_Numbers.dmg_var_rgb.."
+--[+ LOAD CORE FILES +]--
+local COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
+local COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
 
-COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
--- All Keywords are taken from this file by adding to the value "COLORS_KWords.".
--- For example, in the file "COLORS_KWords.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords.Damage_rgb.".
+--[+ LOAD LOCALIZED FILES BASED ON SETTINGS +]--
+local function load_file_safe(file_path)
+	local success, result = pcall(function()
+		return mod:io_dofile(file_path)
+	end)
+	
+	if success and result then
+		mod:info("Successfully loaded: " .. file_path)
+		return result
+	else
+		mod:warning("Failed to load: " .. file_path)
+		return {}
+	end
+end
 
---[+ Translations +]-- Add a line with a file of Keywords translated into your language.
-	--[+ French +]--
-COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr")
-	--[+ Russian +]--
-COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
-	--[+ Traditional Chinese +]--
-COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
-	--[+ Simplified Chinese +]--
-COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
+--[+ LOAD CURIO FILES +]--
+local function load_curio_files()
+	local curio_data = {}
+	local current_lang = "en"
+	
+	-- Get current language safely
+	if Managers and Managers.localization then
+		current_lang = Managers.localization._language or "en"
+	end
+	
+	mod:info("Loading curio files for language: " .. current_lang)
 
---[+ Function to create a localization template +]--
+-- LANGUAGE CODES:
+-- Chinese Traditional	["zh-tw"]	_tw
+-- Chinese Simplified	["zh-cn"]	_zh_cn
+-- English				en
+-- French				fr			_fr
+-- German				de			_de
+-- Italian				it			_it
+-- Japanese				ja			_ja
+-- Korean				ko			_ko
+-- Polish				pl			_pl
+-- Portuguese			pt-BR		_pt_br
+-- Russian				ru			_ru
+-- Spanish				es			_es
+
+	-- Load color files based on language
+	local localized_colors = COLORS_KWords
+	
+	if current_lang == "fr" then
+		localized_colors = load_file_safe("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr") or COLORS_KWords
+	elseif current_lang == "ru" then
+		localized_colors = load_file_safe("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru") or COLORS_KWords
+	elseif current_lang == "zh-tw" then
+		localized_colors = load_file_safe("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw") or COLORS_KWords
+	elseif current_lang == "zh-cn" then
+		localized_colors = load_file_safe("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn") or COLORS_KWords
+-- FOR TRANSLATORS
+	-- You need to copy the part of the code below and replace YOURLANGUAGECODE with your language code.
+	-- elseif current_lang == "YOURLANGUAGECODE" then
+		-- localized_colors = load_file_safe("Enhanced_descriptions/Loc_YOURLANGUAGECODE/COLORS_KWords_YOURLANGUAGECODE") or COLORS_KWords
+	end
+	
+	return curio_data, localized_colors
+end
+
+--[+ INITIALIZE DATA +]--
+local curio_data, localized_colors = load_curio_files()
+
+--[+ HELPER FUNCTIONS +]--
 local function create_template(id, loc_keys, locales, handle_func)
 	return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
 end
 
---[+ Getting rid of repeating parts: function(locale, value) return ... end +]--
 local function loc_text(text)
-	return function(locale, value) return text end
+	return function(locale, value) 
+		return text 
+	end
 end
 
---[+ Define localization templates +]--
+--[+ SAFE COLOR ACCESS +]--
+local function get_color(color_table, key, fallback)
+	if color_table and color_table[key] then
+		return color_table[key]
+	end
+	return fallback or ""
+end
+
+-- LANGUAGE CODES:
+-- Chinese Traditional	["zh-tw"]	_tw
+-- Chinese Simplified	["zh-cn"]	_zh_cn
+-- English				en
+-- French				fr			_fr
+-- German				de			_de
+-- Italian				it			_it
+-- Japanese				ja			_ja
+-- Korean				ko			_ko
+-- Polish				pl			_pl
+-- Portuguese			pt-BR		_pt_br
+-- Russian				ru			_ru
+-- Spanish				es			_es
+
+--[+ DEFINE LOCALIZATION TEMPLATES +]--
 local localization_templates = {
+-- FOR TRANSLATORS
 -- Duplicate the line and translate. For example:
-		-- create_template("weap_bb0_ext_en",
-			-- {"loc_trait_melee_common_wield_increased_armored_damage_desc"}, {"en"},
-				-- loc_text(COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Flak Armoured Enemies")),
-		-- create_template("weap_bb0_ext_YOURLANGUAGE",
-			-- {"loc_trait_melee_common_wield_increased_armored_damage_desc"}, {"YOURLANGUAGE"},
-				-- loc_text(COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords.Damage_rgb_YOURLANGUAGE.." против врагов в противоосколочной броне.")), <- Don't forget the comma at the end!
+-- create_template("curio_bless0_ext_en",
+	-- {"loc_inate_gadget_health_desc"}, {"en"},
+		-- loc_text(COLORS_Numbers.maxhlth_rgb.." Maximum "..COLORS_KWords.Health_rgb)),
+
+-- create_template("curio_bless0_ext_YOURLANGUAGECODE",
+	-- {"loc_inate_gadget_health_desc"}, {"YOURLANGUAGECODE"},
+		-- loc_text(COLORS_Numbers.maxhlth_rgb.." к максимальному "..COLORS_KWords_YOURLANGUAGECODE.Health_rgb_YOURLANGUAGECODE)), <- Don't forget the comma at the end!
 
 --[+ +CURIOS - РЕЛИКВИИ - 珍品+ +]--
 	--[+ BLESSINGS - БЛАГОСЛОВЕНИЯ - 祝福 +]--
@@ -51,13 +127,13 @@ local localization_templates = {
 		{"loc_inate_gadget_health_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.maxhlth_rgb.." de "..COLORS_KWords_fr.Health_rgb_fr.." Maximum")),
 	--[+ Russian +]--
-	create_template("curio_bless0_ext_en",
+	create_template("curio_bless0_ext_ru",
 		{"loc_inate_gadget_health_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.maxhlth_rgb.." к максимальному "..COLORS_KWords_ru.Health_rgb_ru)),
 	--[+ 生命 - Traditional Chinese +]--
 	create_template("curio_bless0_ext_tw",
 		{"loc_inate_gadget_health_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.maxhlth_rgb.." "..COLORS_KWords_tw.Health_rgb_m_tw)),
+			loc_text(COLORS_Numbers.maxhlth_rgb.." "..COLORS_KWords_tw.Health_m_rgb_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_bless0_ext_zh_cn",
 		{"loc_inate_gadget_health_desc"}, {"zh-cn"},
@@ -72,7 +148,7 @@ local localization_templates = {
 		{"loc_inate_gadget_health_segment_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.maxwnds_rgb.."  "..COLORS_KWords_fr.Wound_rgb_fr)),
 	--[+ Russian +]--
-	create_template("curio_bless1_ext_en",
+	create_template("curio_bless1_ext_ru",
 		{"loc_inate_gadget_health_segment_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.maxwnds_rgb.." сегмент полоски "..COLORS_KWords_ru.Wound_rgb_ru)),
 	--[+ 傷口 - Traditional Chinese +]--
@@ -93,13 +169,13 @@ local localization_templates = {
 		{"loc_inate_gadget_stamina_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.maxstam_rgb.." d'"..COLORS_KWords_fr.Stamina_rgb_fr.." Maximum")),
 	--[+ Russian +]--
-	create_template("curio_bless2_ext_en",
+	create_template("curio_bless2_ext_ru",
 		{"loc_inate_gadget_stamina_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.maxstam_rgb.." к максимальной "..COLORS_KWords_ru.Stamina_rgb_ru)),
 	--[+ 耐力 - Traditional Chinese +]--
 	create_template("curio_bless2_ext_tw",
 		{"loc_inate_gadget_stamina_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.maxstam_rgb.." "..COLORS_KWords_tw.Stamina_rgb_m_tw)),
+			loc_text(COLORS_Numbers.maxstam_rgb.." "..COLORS_KWords_tw.Stamina_m_rgb_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_bless2_ext_zh_cn",
 		{"loc_inate_gadget_stamina_desc"}, {"zh-cn"},
@@ -114,7 +190,7 @@ local localization_templates = {
 		{"loc_inate_gadget_toughness_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.maxtghns_rgb.." de "..COLORS_KWords_fr.Toughness_rgb_fr)),
 	--[+ Russian +]--
-	create_template("curio_bless3_ext_en",
+	create_template("curio_bless3_ext_ru",
 		{"loc_inate_gadget_toughness_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.maxtghns_rgb.." к максимальной "..COLORS_KWords_ru.Toughness_rgb_ru)),
 	--[+ 韌性 - Traditional Chinese +]--
@@ -136,7 +212,7 @@ local localization_templates = {
 		{"loc_gadget_cooldown_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.abil_cd_rgb.." de régénération du "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr)),
 	--[+ Russian +]--
-	create_template("curio_traits0_ext_en",
+	create_template("curio_traits0_ext_ru",
 		{"loc_gadget_cooldown_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.abil_cd_rgb.." к восстановлению "..COLORS_KWords_ru.Combat_ability_rgb_ru)),
 	--[+ 戰鬥技能冷卻 - Traditional Chinese +]--
@@ -157,7 +233,7 @@ local localization_templates = {
 		{"loc_gadget_corruption_resistance_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.corr_rgb.." de résistance à la "..COLORS_KWords_fr.Corruption_rgb_fr)),
 	--[+ Russian +]--
-	create_template("curio_traits1_ext_en",
+	create_template("curio_traits1_ext_ru",
 		{"loc_gadget_corruption_resistance_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.corr_rgb.." к сопротивлению "..COLORS_KWords_ru.Corruption_rgb_ru)),
 	--[+ 腐敗抗性 - Traditional Chinese +]--
@@ -178,7 +254,7 @@ local localization_templates = {
 		{"loc_gadget_grim_corruption_resistance_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.corrgrm_rgb.." de résistance à la "..COLORS_KWords_fr.Corruption_rgb_fr.." (Grimoires)")),
 	--[+ Russian +]--
-	create_template("curio_traits2_ext_en",
+	create_template("curio_traits2_ext_ru",
 		{"loc_gadget_grim_corruption_resistance_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.corrgrm_rgb.." к сопротивлению "..COLORS_KWords_ru.Corruption_rgb_ru.." от гримуаров")),
 	--[+ 腐敗抗性(法術書) - Traditional Chinese +]--
@@ -199,13 +275,13 @@ local localization_templates = {
 		{"loc_trait_gadget_health_increase_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.maxhlth_rgb.." de "..COLORS_KWords_fr.Health_rgb_fr.." maximum")),
 	--[+ Russian +]--
-	create_template("curio_traits3_ext_en",
+	create_template("curio_traits3_ext_ru",
 		{"loc_trait_gadget_health_increase_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.maxhlth_rgb.." к максимальному "..COLORS_KWords_ru.Health_rgb_ru)),
 	--[+ 生命 - Traditional Chinese +]--
 	create_template("curio_traits3_ext_tw",
 		{"loc_trait_gadget_health_increase_desc"}, {"zh-tw"},
-			loc_text(COLORS_Numbers.maxhlth_rgb.." "..COLORS_KWords_tw.Health_rgb_m_tw)),
+			loc_text(COLORS_Numbers.maxhlth_rgb.." "..COLORS_KWords_tw.Health_m_rgb_tw)),
 	--[+ Simplified Chinese +]--
 	create_template("curio_traits3_ext_zh_cn",
 		{"loc_trait_gadget_health_increase_desc"}, {"zh-cn"},
@@ -220,7 +296,7 @@ local localization_templates = {
 		{"loc_gadget_block_cost_reduction_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.blckcst_rgb.." d'éfficacité de blocage")),
 	--[+ Russian +]--
-	create_template("curio_traits4_ext_en",
+	create_template("curio_traits4_ext_ru",
 		{"loc_gadget_block_cost_reduction_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.blckcst_rgb.." к снижение стоимости блока")),
 	--[+ 格擋消耗 - Traditional Chinese +]--
@@ -243,7 +319,7 @@ local localization_templates = {
 	-- 	{"loc_gadget_sprint_cost_reduction_desc"}, {"fr"},
 	-- 		loc_text(COLORS_Numbers.bcm_rgb.." de coût d'"..COLORS_KWords_fr.Stamina_rgb_fr.." de la course")),
 	--[+ Russian +]--
-	-- create_template("curio_traits5_ext_en",
+	-- create_template("curio_traits5_ext_ru",
 	-- 	{"loc_gadget_sprint_cost_reduction_desc"}, {"ru"},
 			-- loc_text(COLORS_Numbers.bcm_rgb.." к затратам "..COLORS_KWords_ru.Stamina_rgb_ru.." на бег")),
 
@@ -257,7 +333,7 @@ local localization_templates = {
 		{"loc_gadget_revive_speed_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.revive_rgb.." de vitesse de réanimation des alliés")),
 	--[+ Russian +]--
-	create_template("curio_traits6_ext_en",
+	create_template("curio_traits6_ext_ru",
 		{"loc_gadget_revive_speed_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.revive_rgb.." к скорости возрождения союзника")),
 	--[+ 復活速度 - Traditional Chinese +]--
@@ -278,7 +354,7 @@ local localization_templates = {
 		{"loc_gadget_stamina_regeneration_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.stamreg_rgb.." de régénération d'"..COLORS_KWords_fr.Stamina_rgb_fr)),
 	--[+ Russian +]--
-	create_template("curio_traits7_ext_en",
+	create_template("curio_traits7_ext_ru",
 		{"loc_gadget_stamina_regeneration_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.stamreg_rgb.." к восстановлению "..COLORS_KWords_ru.Stamina_rgb_ru)),
 	--[+ 精力回復 - Traditional Chinese +]--
@@ -299,7 +375,7 @@ local localization_templates = {
 		{"loc_trait_gadget_toughness_increase_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.maxtghns_rgb.." de "..COLORS_KWords_fr.Toughness_rgb_fr.."")),
 	--[+ Russian +]--
-	create_template("curio_traits8_ext_en",
+	create_template("curio_traits8_ext_ru",
 		{"loc_trait_gadget_toughness_increase_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.maxtghns_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru)),
 	--[+ 韌性 - Traditional Chinese +]--
@@ -320,7 +396,7 @@ local localization_templates = {
 		{"loc_gadget_toughness_regen_delay_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.tghn_reg_del_rgb.." de vitesse de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." de syntonie")),
 	--[+ Russian +]--
-	create_template("curio_traits9_ext_en",
+	create_template("curio_traits9_ext_ru",
 		{"loc_gadget_toughness_regen_delay_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.tghn_reg_del_rgb.." к скорости восстановления "..COLORS_KWords_ru.Toughness_rgb_ru)),
 	--[+ 韌性恢復 - Traditional Chinese +]--
@@ -341,7 +417,7 @@ local localization_templates = {
 		{"loc_trait_gadget_mission_xp_increase_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.xp_rgb.." d'expérience")),
 	--[+ Russian +]--
-	create_template("curio_traits10_ext_en",
+	create_template("curio_traits10_ext_ru",
 		{"loc_trait_gadget_mission_xp_increase_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.xp_rgb.." к опыту")),
 	--[+ 經驗 - Traditional Chinese +]--
@@ -362,7 +438,7 @@ local localization_templates = {
 		{"loc_trait_gadget_mission_credits_increase_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.credits_rgb.." bordereaux de l'Ordo (récompenses de mission)")),
 	--[+ Russian +]--
-	create_template("curio_traits11_ext_en",
+	create_template("curio_traits11_ext_ru",
 		{"loc_trait_gadget_mission_credits_increase_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.credits_rgb.." купонов ордо")),
 	--[+ 教團標籤 - Traditional Chinese +]--
@@ -383,7 +459,7 @@ local localization_templates = {
 		{"loc_trait_gadget_mission_reward_gear_instead_of_weapon_increase_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.gears_rgb.." de chance d'obtenir une curiosité comme récompense à la place d'une arme")),
 	--[+ Russian +]--
-	create_template("curio_traits12_ext_en",
+	create_template("curio_traits12_ext_ru",
 		{"loc_trait_gadget_mission_reward_gear_instead_of_weapon_increase_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.gears_rgb.." шанс получить редкость вместо оружия в награду")),
 	--[+ 獎勵中獲得珍品 - Traditional Chinese +]--
@@ -404,7 +480,7 @@ local localization_templates = {
 		{"loc_trait_gadget_dr_vs_flamer_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." de resistance aux "..COLORS_KWords_fr.Damage_rgb_fr.." (Incendiaires, Incendiaires toxiques) ")),
 	--[+ Russian +]--
-	create_template("curio_traits13_ext_en",
+	create_template("curio_traits13_ext_ru",
 		{"loc_trait_gadget_dr_vs_flamer_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Огнемётчиков")),
 	--[+ 傷害抗性(火焰噴射者) - Traditional Chinese +]--
@@ -425,7 +501,7 @@ local localization_templates = {
 		{"loc_trait_gadget_dr_vs_grenadiers_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." de resistance aux "..COLORS_KWords_fr.Damage_rgb_fr.." (Bombardiers)")),
 	--[+ Russian +]--
-	create_template("curio_traits14_ext_en",
+	create_template("curio_traits14_ext_ru",
 		{"loc_trait_gadget_dr_vs_grenadiers_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Гренадёров")),
 	--[+ 傷害抗性(轟炸者) - Traditional Chinese +]--
@@ -446,7 +522,7 @@ local localization_templates = {
 		{"loc_trait_gadget_dr_vs_gunners_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." de resistance aux "..COLORS_KWords_fr.Damage_rgb_fr.." (Mitrailleurs)")),
 	--[+ Russian +]--
-	create_template("curio_traits15_ext_en",
+	create_template("curio_traits15_ext_ru",
 		{"loc_trait_gadget_dr_vs_gunners_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Пулемётчиков")),
 	--[+ 傷害抗性(砲手) - Traditional Chinese +]--
@@ -467,7 +543,7 @@ local localization_templates = {
 		{"loc_trait_gadget_dr_vs_hounds_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." de resistance aux "..COLORS_KWords_fr.Damage_rgb_fr.." (Cerdères vérolés)")),
 	--[+ Russian +]--
-	create_template("curio_traits16_ext_en",
+	create_template("curio_traits16_ext_ru",
 		{"loc_trait_gadget_dr_vs_hounds_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Чумных гончих")),
 	--[+ 傷害抗性(瘟疫獵犬) - Traditional Chinese +]--
@@ -488,7 +564,7 @@ local localization_templates = {
 		{"loc_trait_gadget_dr_vs_mutants_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." de resistance aux "..COLORS_KWords_fr.Damage_rgb_fr.." (Mutants)")),
 	--[+ Russian +]--
-	create_template("curio_traits17_ext_en",
+	create_template("curio_traits17_ext_ru",
 		{"loc_trait_gadget_dr_vs_mutants_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Мутантов")),
 	--[+ 傷害抗性(變種人) - Traditional Chinese +]--
@@ -509,7 +585,7 @@ local localization_templates = {
 		{"loc_trait_gadget_dr_vs_snipers_desc"}, {"fr"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." de resistance aux "..COLORS_KWords_fr.Damage_rgb_fr.." (Snipers)")),
 	--[+ Russian +]--
-	create_template("curio_traits18_ext_en",
+	create_template("curio_traits18_ext_ru",
 		{"loc_trait_gadget_dr_vs_snipers_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Снайперов")),
 	--[+ 傷害抗性(狙擊手) - Traditional Chinese +]--
@@ -530,7 +606,7 @@ local localization_templates = {
 		-- {"loc_trait_gadget_dr_vs_bursters_desc"}, {"fr"},
 			-- loc_text(COLORS_Numbers.dmg_red_rgb.." de resistance aux "..COLORS_KWords_fr.Damage_rgb_fr.." (Poxbursters)")),
 	--[+ Russian +]--
-	-- create_template("curio_traits19_ext_en",
+	-- create_template("curio_traits19_ext_ru",
 		-- {"loc_trait_gadget_dr_vs_bursters_desc"}, {"ru"},
 			-- loc_text(COLORS_Numbers.dmg_red_rgb.." сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." от Чумных взрывников")), -- Вырезано!
 	--[+ 傷害抗性(瘟疫爆者) - Traditional Chinese +]--
@@ -543,5 +619,6 @@ local localization_templates = {
 			-- loc_text(COLORS_Numbers.p_dmg_red_rgb.." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.." 抗性（爆破手）")), -- Missing --
 }
 
---[+ Return the localization templates +]--
+mod:info("CURIOS_Blessings_Perks.lua loaded successfully")
+
 return localization_templates

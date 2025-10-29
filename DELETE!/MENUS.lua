@@ -1,38 +1,78 @@
 ---@diagnostic disable: undefined-global
+-- Version 4.0
 
 local mod = get_mod("Enhanced_descriptions")
 
---[+ Loading colors of Keywords and Numbers +]--
-COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
--- All numbers are taken from this file by adding to the value "COLORS_Numbers."
--- For example, in the game the Damage value is taken from the variable {damage:%s}, which in the file "COLORS_Numbers.lua" is replaced by dmg_var_rgb and to add the highlighted number to the text, we write the damage number to the text as "..COLORS_Numbers.dmg_var_rgb.."
+--[+ LOAD CORE FILES +]--
+local COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
+local COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
 
-COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
--- All Keywords are taken from this file by adding to the value "COLORS_KWords.".
--- For example, in the file "COLORS_KWords.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords.Damage_rgb.".
+--[+ LOAD ALL COLOR FILES +]--
+-- Russian
+local COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru") or {}
+-- Traditional Chinese
+local COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw") or {}
+-- Simplified Chinese
+local COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn") or {}
 
---[+ Translations +]-- Add a line with a file of Keywords translated into your language.
-	--[+ French +]--
--- COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr")
-	--[+ Russian +]--
-COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
-	--[+ Traditional Chinese +]--
-COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
-COLORS_KWords2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords2_tw")
-	--[+ Simplified Chinese +]--
-COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
+--[+ LOAD MENU FILES +]--
+local function load_menu_files()
+	local menu_data = {}
+	local current_lang = "en"
 
---[+ Function to create a localization template +]--
+	-- Get current language safely
+	if Managers and Managers.localization then
+		current_lang = Managers.localization._language or "en"
+	end
+
+	mod:info("Loading menu files for language: " .. current_lang)
+
+-- LANGUAGE CODES:
+-- English				en			
+-- French				fr			_fr
+-- Russian				ru			_ru
+-- Chinese Traditional	["zh-tw"]	_tw
+-- Chinese Simplified	["zh-cn"]	_zh_cn
+-- German				de			_de
+-- Italian				it			_it
+-- Japanese				ja			_ja
+-- Korean				ko			_ko
+-- Polish				pl			_pl
+-- Portuguese			pt-BR		_pt_br
+-- Spanish				es			_es
+
+	-- Load color files based on language
+	local localized_colors = COLORS_KWords
+
+	if current_lang == "ru" then
+		localized_colors = COLORS_KWords_ru
+	elseif current_lang == "zh-tw" then
+		localized_colors = COLORS_KWords_tw
+	elseif current_lang == "zh-cn" then
+		localized_colors = COLORS_KWords_zh_cn
+	-- You need to copy the part of the code below and replace YOURLANGUAGECODE with your language code.
+	-- elseif current_lang == "YOURLANGUAGECODE" then
+		-- localized_colors = mod:io_dofile("Enhanced_descriptions/Loc_YOURLANGUAGECODE/COLORS_KWords_YOURLANGUAGECODE") or COLORS_KWords
+	end
+
+	return menu_data, localized_colors
+end
+
+--[+ INITIALIZE DATA +]--
+local menu_data, localized_colors = load_menu_files()
+
+--[+ HELPER FUNCTIONS +]--
 local function create_template(id, loc_keys, locales, handle_func)
 	return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
 end
 
---[+ Getting rid of repeating parts: function(locale, value) return ... end +]--
 local function loc_text(text)
-	return function(locale, value) return text end
+	return function(locale, value) 
+		return text 
+	end
 end
 
---[+ Define localization templates +]--
+--[+ DEFINE LOCALIZATION TEMPLATES +]--
 local localization_templates = {
 -- Duplicate the line and translate. For example:
 		-- create_template("weap_bb0_ext_en",
@@ -468,7 +508,7 @@ local localization_templates = {
 	--[+ Traditional Chinese - 暴動 +]--
 	create_template("mission_board_danger_1_ext_tw",
 		{"loc_mission_board_danger_lowest"}, {"zh-tw"},
-			loc_text(COLORS_KWords2_tw.sedition_rgb_tw)),
+			loc_text(COLORS_KWords_tw.sedition_rgb_tw)),
 	--[+ Simplified Chinese - 煽动 +]--
 	create_template("mission_board_danger_1_ext_zh_cn",
 		{"loc_mission_board_danger_lowest"}, {"zh-cn"},
@@ -485,7 +525,7 @@ local localization_templates = {
 	--[+ Traditional Chinese - 起義 +]--
 	create_template("mission_board_danger_2_ext_tw",
 		{"loc_mission_board_danger_low"}, {"zh-tw"},
-			loc_text(COLORS_KWords2_tw.uprising_rgb_tw)),
+			loc_text(COLORS_KWords_tw.uprising_rgb_tw)),
 	--[+ Simplified Chinese - 起义 +]--
 	create_template("mission_board_danger_2_ext_zh_cn",
 		{"loc_mission_board_danger_low"}, {"zh-cn"},
@@ -502,7 +542,7 @@ local localization_templates = {
 	--[+ Traditional Chinese - 惡毒 +]--
 	create_template("mission_board_danger_3_ext_tw",
 		{"loc_mission_board_danger_medium"}, {"zh-tw"},
-			loc_text(COLORS_KWords2_tw.malice_rgb_tw)),
+			loc_text(COLORS_KWords_tw.malice_rgb_tw)),
 	--[+ Simplified Chinese - 憎恶 +]--
 	create_template("mission_board_danger_3_ext_zh_cn",
 		{"loc_mission_board_danger_medium"}, {"zh-cn"},
@@ -519,7 +559,7 @@ local localization_templates = {
 	--[+ Traditional Chinese - 異端 +]--
 	create_template("mission_board_danger_4_ext_tw",
 		{"loc_mission_board_danger_high"}, {"zh-tw"},
-			loc_text(COLORS_KWords2_tw.heresy_rgb_tw)),
+			loc_text(COLORS_KWords_tw.heresy_rgb_tw)),
 	--[+ Simplified Chinese - 异端 +]--
 	create_template("mission_board_danger_4_ext_zh_cn",
 		{"loc_mission_board_danger_high"}, {"zh-cn"},
@@ -536,7 +576,7 @@ local localization_templates = {
 	--[+ Traditional Chinese - 詛咒 +]--
 	create_template("mission_board_danger_5_ext_tw",
 		{"loc_mission_board_danger_highest"}, {"zh-tw"},
-			loc_text(COLORS_KWords2_tw.damnation_rgb_tw)),
+			loc_text(COLORS_KWords_tw.damnation_rgb_tw)),
 	--[+ Simplified Chinese - 诅咒 +]--
 	create_template("mission_board_danger_5_ext_zh_cn",
 		{"loc_mission_board_danger_highest"}, {"zh-cn"},
@@ -553,7 +593,7 @@ local localization_templates = {
 	--[+  詛咒 - Traditional Chinese +]--
 	-- create_template("mission_board_danger_6_ext_tw",
 		-- {"loc_group_finder_difficulty_auric"}, {"zh-tw"},
-			-- loc_text(COLORS_KWords2_tw.auric_rgb_tw)),
+			-- loc_text(COLORS_KWords_tw.auric_rgb_tw)),
 	--[+ Simplified Chinese - 诅咒 +]--
 	-- create_template("mission_board_danger_6_ext_zh_cn",
 		-- {"loc_group_finder_difficulty_auric"}, {"zh-cn"},
@@ -879,7 +919,7 @@ local localization_templates = {
 			-- loc_text("Получение инквизиционных данных")),
 	create_template("reading_data_ext_ru",
 		{"loc_wait_reason_read_from_disk"}, {"ru"},
-			loc_text("Попытка исправить ошибки 3001, 3013, 2014...")),
+			loc_text("Попытка исправить ошибки 3001, 3013, 2014... Неудачно!")),
 	--[+ Traditional Chinese +]--
 	create_template("reading_data_ext_tw",
 		{"loc_wait_reason_read_from_disk"}, {"zh-tw"},
@@ -915,7 +955,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("dedicated_server_ext_ru",
 		{"loc_wait_reason_backend"}, {"ru"},
-			loc_text("Мы сшиваем связь, потому что она порвалась...")),
+			loc_text("Пытаемся сшить связь, потому что она порвалась...")),
 	--[+ Traditional Chinese +]--
 	create_template("dedicated_server_ext_tw",
 		{"loc_wait_reason_backend"}, {"zh-tw"},
@@ -925,7 +965,7 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("store_ext_ru",
 		{"loc_wait_reason_store"}, {"ru"},
-			loc_text("Попытка обновить магазин чаще, чем раз в две недели... Неудачно!")),
+			loc_text("Попытка установить обновленние магазина чаще, чем раз в две недели... Неудачно!")),
 	--[+ Traditional Chinese +]--
 	create_template("store_ext_tw",
 		{"loc_wait_reason_store"}, {"zh-tw"},
@@ -933,9 +973,9 @@ local localization_templates = {
 
 	--[+ Platform Steam - Платформа Steam +]--
 	--[+ Russian +]--
-	create_template("steam_ext_ru",
-		{"loc_wait_reason_platform_steam"}, {"ru"},
-			loc_text("Подключение к Steam")),
+	-- create_template("steam_ext_ru",
+		-- {"loc_wait_reason_platform_steam"}, {"ru"},
+			-- loc_text("Подключение к Steam")),
 	--[+ Traditional Chinese +]--
 	create_template("steam_ext_tw",
 		{"loc_wait_reason_platform_steam"}, {"zh-tw"},
@@ -943,9 +983,9 @@ local localization_templates = {
 
 	--[+ Platform Xbox - Платформа Xbox +]--
 	--[+ Russian +]--
-	create_template("xbox_ext_ru",
-		{"loc_wait_reason_platform_xbox_live"}, {"ru"},
-			loc_text("Подключение к Коробокс")),
+	-- create_template("xbox_ext_ru",
+		-- {"loc_wait_reason_platform_xbox_live"}, {"ru"},
+			-- loc_text("Подключение к Коробокс")),
 	--[+ Traditional Chinese +]--
 	create_template("xbox_ext_tw",
 		{"loc_wait_reason_platform_xbox_live"}, {"zh-tw"},
@@ -953,9 +993,9 @@ local localization_templates = {
 
 	--[+ Platform PSN - Платформа PSN +]--
 	--[+ Russian +]--
-	create_template("psn_ext_ru",
-		{"loc_wait_reason_platform_psn"}, {"ru"},
-			loc_text("Подключение к ПэЭсЭн")),
+	-- create_template("psn_ext_ru",
+		-- {"loc_wait_reason_platform_psn"}, {"ru"},
+			-- loc_text("Подключение к ПэЭсЭн")),
 	--[+ Traditional Chinese +]--
 	create_template("psn_ext_tw",
 		{"loc_wait_reason_platform_psn"}, {"zh-tw"},
@@ -963,5 +1003,6 @@ local localization_templates = {
 
 }
 
---[+ Return the localization templates +]--
+mod:info("MENUS.lua loaded successfully")
+
 return localization_templates

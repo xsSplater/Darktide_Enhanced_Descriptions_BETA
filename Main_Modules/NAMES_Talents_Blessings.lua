@@ -1,4 +1,5 @@
--- @diagnostic disable: undefined-global
+---@diagnostic disable: undefined-global
+-- Version 4.0
 
 local mod = get_mod("Enhanced_descriptions")
 
@@ -9,7 +10,9 @@ end
 
 --[+ Getting rid of repeating parts: function(locale, value) return ... end +]--
 local function loc_text(text)
-	return function(locale, value) return text end
+	return function(locale, value) 
+		return text 
+	end
 end
 
 --[+ Define localization templates +]--
@@ -1567,191 +1570,140 @@ local localization_templates = {
 
 --[+ ++TALENTS - ТАЛАНТЫ ++ +]--
 --[+ +NODES - УЗЛЫ+ +]--
-	--[+ Critical Chance Boost - Повышение шанса Критического удара +]-- Усиление вероятности крит. удара
-	-- create_template("talent_tree_oper_mod_006_en",
+	--[+ Cleave Boost Medium +]-- Arbites 1	28.10.2025
+	create_template("talent_tree_oper_mod_001_en",
+		{"loc_talent_cleave_boost_medium"}, {"en"},
+			loc_text("Cleave Boost")),
+				-- cleave: +25%
+	--[+ Russian - Повышение рассечения среднее +]-- руоф Усиление «Раскола»	28.10.2025
+	create_template("talent_tree_oper_mod_001_ru",
+		{"loc_talent_cleave_boost_medium"}, {"ru"},
+			loc_text("Повышение рассечения")),
+
+	--[+ Critical Chance Boost Low +]-- Psyker 1	28.10.2025
+	-- create_template("talent_tree_oper_mod_002_en",
 		-- {"loc_talent_crit_chance_low"}, {"en"},
-			-- loc_text("Critical Chance Boost")), -- crit_chance:+5% -- Psyker, Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_006_ru",
+			-- loc_text("Critical Chance Boost")),
+				-- crit_chance: +5%
+	--[+ Russian - Повышение шанса критического удара малое +]-- руоф Усиление вероятности крит. удара
+	create_template("talent_tree_oper_mod_002_ru",	-- 28.10.2025
 		{"loc_talent_crit_chance_low"}, {"ru"},
-			loc_text("Повышение шанса Критического удара")),
+			loc_text("Повышение шанса критического удара")),
 	--[+ Traditional Chinese - 暴擊機率增幅 +]-- +5%暴擊機率 -- 靈能者, 老兵
-	create_template("talent_tree_oper_mod_006_tw",
+	create_template("talent_tree_oper_mod_002_tw",
 		{"loc_talent_crit_chance_low"}, {"zh-tw"},
 			loc_text("暴擊機率增幅")),
 
-	--[+ Health Boost Low - Повышение Здоровья малое +]--
-	create_template("talent_tree_oper_mod_005_l_en",
-		{"loc_talent_health_low"}, {"en"},
-			loc_text("Health Boost Low")), -- health:+5% -- Ogryn, Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_005_l_ru",
-		{"loc_talent_health_low"}, {"ru"},
-			loc_text("Повышение Здоровья малое")),
-	--[+ Traditional Chinese - 生命增幅(小) +]-- +5%生命 -- 歐格林, 老兵
-	create_template("talent_tree_oper_mod_005_l_tw",
-		{"loc_talent_health_low"}, {"zh-tw"},
-			loc_text("生命增幅(小)")),
-
-	--[+ Health Boost Medium - Повышение Здоровья среднее +]--
-	create_template("talent_tree_oper_mod_005_m_en",
-		{"loc_talent_health_medium"}, {"en"},
-			loc_text("Health Boost Medium")), -- health:+10% -- Psyker, Ogryn, Zealot
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_005_m_ru",
-		{"loc_talent_health_medium"}, {"ru"},
-			loc_text("Повышение Здоровья среднее")),
-	--[+ Traditional Chinese - 生命增幅(中) +]-- +10%生命 -- 靈能者, 歐格林, 狂信徒
-	create_template("talent_tree_oper_mod_005_m_tw",
-		{"loc_talent_health_medium"}, {"zh-tw"},
-			loc_text("生命增幅(中)")),
-
-	--[+ Heavy Melee Damage Boost Low - Повышение урона тяжёлых атак ближнего боя малое +]--
-	create_template("talent_tree_oper_mod_014_l_en",
-		{"loc_talent_melee_heavy_damage_low"}, {"en"},
-			loc_text("Heavy Melee Damage Boost Low")), -- melee_heavy_damage:+5% -- Ogryn
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_014_l_ru",
-		{"loc_talent_melee_heavy_damage_low"}, {"ru"},
-			loc_text("Повышение урона тяжёлых атак ближнего боя малое")),
-	--[+ Traditional Chinese - 重擊傷害增幅(小) +]-- +5%重擊傷害 -- 歐格林
-	create_template("talent_tree_oper_mod_014_l_tw",
-		{"loc_talent_melee_heavy_damage_low"}, {"zh-tw"},
-			loc_text("重擊傷害增幅(小)")),
-
-	--[+ Heavy Melee Damage Boost Medium - Повышение урона тяжёлых атак ближнего боя среднее +]--
-	create_template("talent_tree_oper_mod_014_m_en",
-		{"loc_talent_melee_heavy_damage_medium"}, {"en"},
-			loc_text("Heavy Melee Damage Boost Medium")), -- melee_heavy_damage:+10% -- Ogryn
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_014_m_ru",
-		{"loc_talent_melee_heavy_damage_medium"}, {"ru"},
-			loc_text("Повышение урона тяжёлых атак ближнего боя среднее")),
-	--[+ Traditional Chinese - 重擊傷害增幅(中) +]-- +10%重擊傷害 -- 歐格林
-	create_template("talent_tree_oper_mod_014_m_tw",
-		{"loc_talent_melee_heavy_damage_medium"}, {"zh-tw"},
-			loc_text("重擊傷害增幅(中)")),
-
-	--[+ Inspiring Presence - Вдохновляющее присутствие +]--
+	--[+ Impact Boost Medium +]-- Arbites 1	28.10.2025
 	-- create_template("talent_tree_oper_mod_003_en",
-		-- {"loc_talent_coherency_regen_low"}, {"en"},
-			-- loc_text("Inspiring Presence")), -- coherency_regen:+10% -- Veteran
-	--[+ Russian +]--
-	-- create_template("talent_tree_oper_mod_003_ru",
-		-- {"loc_talent_coherency_regen_low"}, {"ru"},
-			-- loc_text("Вдохновляющее присутствие")),
-	--[+ Traditional Chinese - 鼓舞人心 +]-- -- +10%協同中的韌性恢復再生 -- 老兵
-	create_template("talent_tree_oper_mod_003_tw",
-		{"loc_talent_coherency_regen_low"}, {"zh-tw"},
-			loc_text("鼓舞人心")),
+		-- {"loc_talent_impact_boost_medium"}, {"en"},
+			-- loc_text("Impact Boost")),
+				-- impact: +5%
+	--[+ Russian - Повышение выведения из равновесия среднее +]-- руоф Усиление подчинения	28.10.2025
+	create_template("talent_tree_oper_mod_003_ru",
+		{"loc_talent_impact_boost_medium"}, {"ru"},
+			loc_text("Повышение выведения из равновесия")),
 
-	--[+ Melee Damage Boost Low - Повышение урона атак ближнего боя малое +]--
-	create_template("talent_tree_oper_mod_008_en",
-		{"loc_talent_melee_damage_boost_low"}, {"en"},
-			loc_text("Melee Damage Boost Low")), -- melee_damage:+5% -- Ogryn, Veteran, Zealot
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_008_ru",
-		{"loc_talent_melee_damage_boost_low"}, {"ru"},
-			loc_text("Повышение урона атак ближнего боя малое")),
-	--[+ Traditional Chinese - 近戰傷害增幅(小) +]-- +5%近戰傷害 -- 歐格林, 老兵, 狂信徒
-	create_template("talent_tree_oper_mod_008_tw",
-		{"loc_talent_melee_damage_boost_low"}, {"zh-tw"},
-			loc_text("近戰傷害增幅(小)")),
-
-	--[+ Melee Damage Boost Medium - Повышение урона атак ближнего боя среднее +]--
-	create_template("talent_tree_oper_mod_008_1_en",
-		{"loc_talent_melee_damage_boost_medium"}, {"en"},
-			loc_text("Melee Damage Boost Medium")), -- melee_damage:+10% -- Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_008_1_ru",
+	--[+ Melee Damage Boost Medium +]-- Psyker 1, Zealot 2, Ogryn 1, Arbites 1, Veteran 1	28.10.2025
+	-- create_template("talent_tree_oper_mod_004_en",
+		-- {"loc_talent_melee_damage_boost_medium"}, {"en"},
+			-- loc_text("Melee Damage Boost")),
+				-- melee_damage: +10%
+	--[+ Russian - Повышение урона ближнего боя +]-- руоф Усиление урона в ближнем бою	28.10.2025
+	create_template("talent_tree_oper_mod_004_ru",
 		{"loc_talent_melee_damage_boost_medium"}, {"ru"},
-			loc_text("Повышение урона атак ближнего боя среднее")),
+			loc_text("Повышение урона ближнего боя")),
 	--[+ Traditional Chinese - 近戰傷害增幅(中) +]-- +10%近戰傷害 -- 老兵
-	create_template("talent_tree_oper_mod_008_1_tw",
+	create_template("talent_tree_oper_mod_004_tw",
 		{"loc_talent_melee_damage_boost_medium"}, {"zh-tw"},
 			loc_text("近戰傷害增幅(中)")),
 
-	--[+ Movement Speed Boost - Повышение скорости движения +]--
-	-- create_template("talent_tree_oper_mod_007_en",
+	--[+ Movement Speed Boost +]-- Psyker 1, Zealot 1, Veteran 1	28.10.2025
+	-- create_template("talent_tree_oper_mod_005_en",
 		-- {"loc_talent_movement_speed_low"}, {"en"},
-			-- loc_text("Movement Speed Boost")), -- movement_speed:+5%. -- Psyker, Veteran, Zealot
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_007_en",{"loc_talent_movement_speed_low"}, {"ru"},
+			-- loc_text("Movement Speed Boost")),
+				-- movement_speed: +5%
+	--[+ Russian - Повышение скорости движения +]-- руоф Усиление скорости передвижения	28.10.2025
+	create_template("talent_tree_oper_mod_005_ru",
+		{"loc_talent_movement_speed_low"}, {"ru"},
 			loc_text("Повышение скорости движения")),
 	--[+ Traditional Chinese - 移動速度增幅 +]-- -- +5%移動速度 -- 靈能者, 老兵, 狂信徒
-	create_template("talent_tree_oper_mod_007_tw",
+	create_template("talent_tree_oper_mod_005_tw",
 		{"loc_talent_movement_speed_low"}, {"zh-tw"},
 			loc_text("移動速度增幅")),
 
-	--[+ Peril Resistance - Сопротивление опасности +]--
-	-- create_template("talent_tree_oper_mod_001_en",
+	--[+ Peril Resistance Low +]-- Psyker 1	28.10.2025
+	-- create_template("talent_tree_oper_mod_006_en",
 		-- {"loc_talent_warp_charge_low"}, {"en"},
-			-- loc_text("Peril Resistance")), -- warp_charge:-5% -- Psyker
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_001_en",{"loc_talent_warp_charge_low"}, {"ru"},
+			-- loc_text("Peril Resistance")),
+				-- warp_charge: -5%
+	--[+ Russian - Сопротивление опасности малое +]-- руоф Сопротивление угрозе	28.10.2025
+	create_template("talent_tree_oper_mod_006_ru",
+		{"loc_talent_warp_charge_low"}, {"ru"},
 			loc_text("Сопротивление опасности")),
 	--[+ Traditional Chinese - 反噬抗性 +]-- -- -5%反噬 -- 靈能者
-	create_template("talent_tree_oper_mod_001_tw",
+	create_template("talent_tree_oper_mod_006_tw",
 		{"loc_talent_warp_charge_low"}, {"zh-tw"},
 			loc_text("反噬抗性")),
 
-	--[+ Ranged Damage Boost Low - Повышение урона дальнего боя малое +]--
-	create_template("talent_tree_oper_mod_004_en",
-		{"loc_talent_ranged_damage_low"}, {"en"},
-			loc_text("Ranged Damage Boost Low")), -- ranged_damage:+5% -- Psyker, Ogryn, Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_004_ru",
-		{"loc_talent_ranged_damage_low"}, {"ru"},
-			loc_text("Повышение урона дальнего боя малое")),
-	--[+ Traditional Chinese - 遠程傷害增幅(小) +]-- +5%遠程傷害 -- 靈能者, 歐格林, 老兵
-	create_template("talent_tree_oper_mod_004_tw",
-		{"loc_talent_ranged_damage_low"}, {"zh-tw"},
-			loc_text("遠程傷害增幅(小)")),
-
-	--[+ Ranged Damage Boost Medium - Повышение урона дальнего боя среднее +]--
-	create_template("talent_tree_oper_mod_004_en",
-		{"loc_talent_ranged_damage_medium"}, {"en"},
-			loc_text("Ranged Damage Boost Medium")), -- ranged_damage:+5% -- Psyker, Ogryn, Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_004_ru",
+	--[+ Ranged Damage Boost Medium +]-- Psyker 1, Ogryn 1, Arbites 1, Veteran 1	28.10.2025
+	-- create_template("talent_tree_oper_mod_007_en",
+		-- {"loc_talent_ranged_damage_medium"}, {"en"},
+			-- loc_text("Ranged Damage Boost")),
+				-- ranged_damage: +5%
+	--[+ Russian - Повышение урона дальнего боя среднее +]-- руоф Усиление урона в дальнем бою
+	create_template("talent_tree_oper_mod_007_ru",	-- 28.10.2025
 		{"loc_talent_ranged_damage_medium"}, {"ru"},
-			loc_text("Повышение урона дальнего боя среднее")),
+			loc_text("Повышение урона дальнего боя")),
 	--[+ Traditional Chinese - 遠程傷害增幅(中) +]-- -- +10%遠程傷害 -- 靈能者, 歐格林, 老兵
-	create_template("talent_tree_oper_mod_004_tw",
+	create_template("talent_tree_oper_mod_007_tw",
 		{"loc_talent_ranged_damage_medium"}, {"zh-tw"},
 			loc_text("遠程傷害增幅(中)")),
 
-	--[+ Reload Boost - Повышение скорости перезарядки +]--
-	-- create_template("talent_tree_oper_mod_011_en",
-		-- {"loc_talent_reload_speed_low"}, {"en"},
-			-- loc_text("Reload Boost")), -- reload_speed: +5% -- Ogryn, Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_011_ru",
+	--[+ Reload Boost Low +]-- Ogryn 1	28.10.2025
+	create_template("talent_tree_oper_mod_008_en",
+		{"loc_talent_reload_speed_low"}, {"en"},
+			loc_text("Reload Boost Low")),
+				-- reload_speed: +5%
+	--[+ Russian - Повышение скорости перезарядки малое +]-- руоф Усиление перезарядки	28.10.2025
+	create_template("talent_tree_oper_mod_008_ru",
 		{"loc_talent_reload_speed_low"}, {"ru"},
-			loc_text("Повышение скорости перезарядки")),
+			loc_text("Повышение скорости перезарядки малое")),
 	--[+ Traditional Chinese - 換彈速度增幅 +]-- -- +5%換彈速度提高 -- 歐格林, 老兵
-	create_template("talent_tree_oper_mod_011_tw",
+	create_template("talent_tree_oper_mod_008_tw",
 		{"loc_talent_reload_speed_low"}, {"zh-tw"},
 			loc_text("換彈速度增幅")),
 
-	--[+ Rending Boost - Повышение пробивания брони +]--
-	-- create_template("talent_tree_oper_mod_013_en",
+	--[+ Reload Boost Medium +]-- Veteran 1	28.10.2025
+	create_template("talent_tree_oper_mod_009_en",
+		{"loc_talent_reload_speed_medium"}, {"en"},
+			loc_text("Reload Boost Medium")),
+				-- reload_speed: +10%
+	--[+ Russian - Повышение скорости перезарядки среднее +]-- руоф Усиление перезарядки	28.10.2025
+	create_template("talent_tree_oper_mod_009_ru",
+		{"loc_talent_reload_speed_medium"}, {"ru"},
+			loc_text("Повышение скорости перезарядки среднее")),
+
+	--[+ Rending Boost Low +]-- Ogryn 1	28.10.2025
+	-- create_template("talent_tree_oper_mod_010_en",
 		-- {"loc_talent_armor_pen_low"}, {"en"},
-			-- loc_text("Rending Boost")), -- rending: +5% -- Ogryn
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_013_ru",
+			-- loc_text("Rending Boost")),
+				-- rending: +5%
+	--[+ Russian - Повышение пробивания брони малое +]-- руоф Усиление «Терзания»	28.10.2025
+	create_template("talent_tree_oper_mod_010_ru",
 		{"loc_talent_armor_pen_low"}, {"ru"},
 			loc_text("Повышение пробивания брони")),
 	--[+ Traditional Chinese - 撕裂增強 +]-- -- +5%撕裂 -- 歐格林
-	create_template("talent_tree_oper_mod_013_tw",
+	create_template("talent_tree_oper_mod_010_tw",
 		{"loc_talent_armor_pen_low"}, {"zh-tw"},
 			loc_text("撕裂增強")),
 
-	--[+ Stamina Boost - Повышение выносливости +]--
+	--[+ Stamina Boost Low +]-- Veteran 1	28.10.2025
 	-- create_template("talent_tree_oper_mod_009_en",
 		-- {"loc_talent_stamina_low"}, {"en"},
-			-- loc_text("Stamina Boost")), -- stamina: +1 -- Veteran, Zealot
-	--[+ Russian +]--
+			-- loc_text("Stamina Boost")),
+				-- stamina: +1
+	--[+ Russian - Повышение выносливости малое +]-- руоф Усиление выносливости	28.10.2025
 	create_template("talent_tree_oper_mod_009_ru",
 		{"loc_talent_stamina_low"}, {"ru"},
 			loc_text("Повышение выносливости")),
@@ -1760,12 +1712,13 @@ local localization_templates = {
 		{"loc_talent_stamina_low"}, {"zh-tw"},
 			loc_text("耐力增幅")),
 
-	--[+ Stamina Regeneration Boost - Повышение восстановления выносливости +]--
+	--[+ Stamina Regeneration Boost +]-- Veteran 1	28.10.2025
 	-- create_template("talent_tree_oper_mod_012_en",
 		-- {"loc_talent_stamina_regen_delay"}, {"en"},
-			-- loc_text("Stamina Regeneration Boost")), -- duration: 0.25 -- Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_012_ru",
+			-- loc_text("Stamina Regeneration Boost")),
+				-- duration: 0.25
+	--[+ Russian - Повышение восстановления выносливости +]-- руоф Усиление восстановления выносливости
+	create_template("talent_tree_oper_mod_012_ru",	-- 28.10.2025
 		{"loc_talent_stamina_regen_delay"}, {"ru"},
 			loc_text("Повышение восстановления выносливости")),
 	--[+ Traditional Chinese - 耐力恢復增幅 +]-- -- 0.25耐力恢復 -- 老兵
@@ -1773,76 +1726,67 @@ local localization_templates = {
 		{"loc_talent_stamina_regen_delay"}, {"zh-tw"},
 			loc_text("耐力恢復增幅")),
 
-	--[+ Suppression Boost - Повышение подавления врагов +]--
-	-- create_template("talent_tree_oper_mod_010_en",
-		-- {"loc_talent_suppression_low"}, {"en"},
-			-- loc_text("Suppression Boost")), -- suppression: +25% -- Ogryn, Veteran, Zealot
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_010_ru",
-		{"loc_talent_suppression_low"}, {"ru"},
-			loc_text("Повышение подавления")),
-	--[+ Traditional Chinese - 壓制增幅 +]-- -- +25%壓制 -- 歐格林, 老兵, 狂信徒
-	create_template("talent_tree_oper_mod_010_tw",
-		{"loc_talent_suppression_low"}, {"zh-tw"},
-			loc_text("壓制增幅")),
-
-	--[+ Toughness Boost Low - Повышение стойкости малое +]--
-	create_template("talent_tree_oper_mod_000_l_en",
+	--[+ Toughness Boost Low +]-- Ogryn 1, Veteran 1	28.10.2025
+	create_template("talent_tree_oper_mod_013_en",
 		{"loc_talent_toughness_boost_low"}, {"en"},
-			loc_text("Toughness Boost Low")), -- toughness: +15% -- Psyker, Ogryn, Veteran, Zealot
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_000_l_ru",
+			loc_text("Toughness Boost Low")),
+				-- toughness: +15%
+	--[+ Russian - Повышение стойкости малое +]-- руоф Усиление стойкости	28.10.2025
+	create_template("talent_tree_oper_mod_013_ru",
 		{"loc_talent_toughness_boost_low"}, {"ru"},
 			loc_text("Повышение стойкости малое")),
 	--[+ Traditional Chinese - 韌性增幅(小) +]-- -- +15%韌性 -- 靈能者, 歐格林, 老兵, 狂信徒
-	create_template("talent_tree_oper_mod_000_l_tw",
+	create_template("talent_tree_oper_mod_013_tw",
 		{"loc_talent_toughness_boost_low"}, {"zh-tw"},
 			loc_text("韌性增幅(小)")),
 
-	--[+ Toughness Boost Medium - Повышение стойкости среднее +]--
-	create_template("talent_tree_oper_mod_000_m_en",
+	--[+ Toughness Boost Medium +]-- Psyker 2, Zealot 1, Ogryn 2, Veteran 2	28.10.2025
+	create_template("talent_tree_oper_mod_014_en",
 		{"loc_talent_toughness_boost_medium"}, {"en"},
-			loc_text("Toughness Boost Medium")), -- toughness:+25% -- Ogryn, Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_000_m_ru",
+			loc_text("Toughness Boost Medium")),
+				-- toughness: +25%
+	--[+ Russian - Повышение стойкости среднее +]-- руоф Усиление стойкости	28.10.2025
+	create_template("talent_tree_oper_mod_014_ru",
 		{"loc_talent_toughness_boost_medium"}, {"ru"},
 			loc_text("Повышение стойкости среднее")),
 	--[+ Traditional Chinese - 韌性增幅(中) +]-- -- +25%韌性 -- 歐格林, 老兵
-	create_template("talent_tree_oper_mod_000_m_tw",
+	create_template("talent_tree_oper_mod_014_tw",
 		{"loc_talent_toughness_boost_medium"}, {"zh-tw"},
 			loc_text("韌性增幅(中)")),
 
-	--[+ Toughness Damage Reduction Low - Снижение урона стойкости малое +]--
-	create_template("talent_tree_oper_mod_002_l_en",
+	--[+ Toughness Damage Reduction Low +]-- Psyker 1, Ogryn 1	28.10.2025
+	create_template("talent_tree_oper_mod_015_en",
 		{"loc_talent_toughness_damage_reduction_low"}, {"en"},
-			loc_text("Toughness Damage Reduction Low")), -- toughness:+5% -- Psyker, Veteran, Zealot
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_002_l_ru",
+			loc_text("Toughness Damage Reduction Low")),
+				-- toughness: +5%
+	--[+ Russian - Снижение урона стойкости малое +]-- руоф Снижение урона стойкости	28.10.2025
+	create_template("talent_tree_oper_mod_015_ru",
 		{"loc_talent_toughness_damage_reduction_low"}, {"ru"},
 			loc_text("Снижение урона стойкости малое")),
 	--[+ Traditional Chinese - 韌性減傷(小) +]-- -- +5%韌性減傷 -- 靈能者, 老兵, 狂信徒
-	create_template("talent_tree_oper_mod_002_l_tw",
+	create_template("talent_tree_oper_mod_015_tw",
 		{"loc_talent_toughness_damage_reduction_low"}, {"zh-tw"},
 			loc_text("韌性減傷(小)")),
 
-	--[+ Toughness Damage Reduction Medium - Снижение урона стойкости среднее +]--
-	create_template("talent_tree_oper_mod_002_m_en",{"loc_talent_toughness_damage_reduction_medium"}, {"en"},
-			loc_text("Toughness Damage Reduction Medium")), -- toughness:+10% -- Ogryn, Veteran
-	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_002_m_en",{"loc_talent_toughness_damage_reduction_medium"}, {"ru"},
+	--[+ Toughness Damage Reduction Medium +]-- Psyker 1, Zealot 1, Ogryn 1, Arbites 1, Veteran 1
+	create_template("talent_tree_oper_mod_016_en",	-- 28.10.2025
+		{"loc_talent_toughness_damage_reduction_medium"}, {"en"},
+			loc_text("Toughness Damage Reduction Medium")),
+				-- toughness: +10%
+	--[+ Russian - Снижение урона стойкости среднее +]-- руоф Снижение урона стойкости	28.10.2025
+	create_template("talent_tree_oper_mod_016_ru",
+		{"loc_talent_toughness_damage_reduction_medium"}, {"ru"},
 			loc_text("Снижение урона стойкости среднее")),
 	--[+ Traditional Chinese - 韌性減傷(中) +]-- -- +10%韌性減傷 -- 歐格林, 老兵
-	create_template("talent_tree_oper_mod_002_m_tw",
+	create_template("talent_tree_oper_mod_016_tw",
 		{"loc_talent_toughness_damage_reduction_medium"}, {"zh-tw"},
 			loc_text("韌性減傷(中)")),
-
-
 
 
 --[+ ++PSYKER - ПСАЙКЕР - 靈能者 ++ +]--
 --[+ +BLITZ - БЛИЦ - 閃擊 + +]--
 	--[+ Blitz 0 - Brain Burst +]--
-	--[+ Russian +]-- Взрыв мозга -- руоф Взрыв разума
+	--[+ Russian - Взрыв мозга +] -- руоф Взрыв разума
 	create_template("talent_tree_psy_blitz0_000_ru",
 		{"loc_ability_psyker_smite"}, {"ru"},
 			loc_text("Взрыв мозга")),
@@ -1852,7 +1796,7 @@ local localization_templates = {
 			loc_text("顱腦爆裂")),
 
 	--[+ Blitz 1 - Brain Rupture +]--
-	--[+ Russian +]-- Разрыв мозга
+	--[+ Russian - Разрыв мозга +]--
 	-- create_template("talent_tree_psy_blitz1_000_ru",
 		-- {"loc_talent_psyker_brain_burst_improved"}, {"ru"},
 			-- loc_text("Разрыв мозга")),
@@ -1862,7 +1806,7 @@ local localization_templates = {
 			loc_text("顱腦崩裂")),
 
 	--[+ Blitz 1-1 - Kinetic Resonance +]--
-	--[+ Russian +]-- Кинетический резонанс
+	--[+ Russian - Кинетический резонанс +]--
 	-- create_template("talent_tree_psy_blitz1_001_ru",
 		-- {"loc_talent_psyker_ability_increase_brain_burst_speed"}, {"ru"},
 			-- loc_text("Кинетический резонанс")),
@@ -1872,7 +1816,7 @@ local localization_templates = {
 			loc_text("動能共鳴")),
 
 	--[+ Blitz 1-2 - Kinetic Flayer +]--
-	--[+ Russian +]-- Кинетический живодёр -- руоф Кинетический истребитель
+	--[+ Russian - Кинетический живодёр +]-- руоф Кинетический истребитель
 	create_template("talent_tree_psy_blitz1_002_ru",
 		{"loc_talent_psyker_smite_on_hit"}, {"ru"},
 			loc_text("Кинетический живодёр")),
@@ -1882,7 +1826,7 @@ local localization_templates = {
 			loc_text("動能剝皮者")),
 
 	--[+ Blitz 2 - Smite +]--
-	--[+ Russian +]-- Сокрушение
+	--[+ Russian - Сокрушение +]--
 	-- create_template("talent_tree_psy_blitz2_000_ru",
 		-- {"loc_ability_psyker_chain_lightning"}, {"ru"},
 			-- loc_text("Сокрушение")),
@@ -1892,17 +1836,17 @@ local localization_templates = {
 			loc_text("懲戒")),
 
 	--[+ Blitz 2-1 - Lightning Storm +]--
-	--[+ Russian - Молниевый шторм +]-- руоф Гроза
-	create_template("talent_tree_psy_blitz2_001_en",
-		{"loc_talent_psyker_increased_chain_lightning_size"}, {"ru"},
-			loc_text("Молниевый шторм")),
+	--[+ Russian - Гроза +]--
+	-- create_template("talent_tree_psy_blitz2_001_ru",
+		-- {"loc_talent_psyker_increased_chain_lightning_size"}, {"ru"},
+			-- loc_text("Гроза")),
 	--[+ Traditional Chinese - 閃電風暴 +]--
 	create_template("talent_tree_psy_blitz2_001_tw",
 		{"loc_talent_psyker_increased_chain_lightning_size"}, {"zh-tw"},
 			loc_text("閃電風暴")),
 
 	--[+ Blitz 2-2 - Enfeeble +]--
-	--[+ Russian +]-- Ослабление
+	--[+ Russian - Ослабление +]--
 	-- create_template("talent_tree_psy_blitz2_002_ru",
 		-- {"loc_talent_psyker_increased_chain_lightning_improved_target_buff"}, {"ru"},
 			-- loc_text("Ослабление")),
@@ -1915,7 +1859,7 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_blitz2_003_en",
 		-- {"loc_talent_psyker_chain_lightning_heavy_attacks"}, {"en"},
 			-- loc_text("Charged Strike")),
-	--[+ Russian +]-- Заряженный удар
+	--[+ Russian - Заряженный удар +]--
 	-- create_template("talent_tree_psy_blitz2_003_ru",
 		-- {"loc_talent_psyker_chain_lightning_heavy_attacks"}, {"ru"},
 			-- loc_text("Заряженный удар")),
@@ -1928,7 +1872,7 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_blitz3_000_en",
 		-- {"loc_ability_psyker_blitz_throwing_knives"}, {"en"},
 			-- loc_text("Assail")),
-	--[+ Russian +]-- Нападение
+	--[+ Russian - Нападение +]--
 	-- create_template("talent_tree_psy_blitz3_000_ru",
 		-- {"loc_ability_psyker_blitz_throwing_knives"}, {"ru"},
 			-- loc_text("Нападение")),
@@ -1941,7 +1885,7 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_blitz3_001_en",
 		-- {"loc_talent_psyker_throwing_knives_pierce"}, {"en"},
 			-- loc_text("Ethereal Shards")),
-	--[+ Russian +]-- Эфирные осколки -- руоф Эфирные частицы
+	--[+ Russian - Эфирные осколки +]-- руоф Эфирные частицы
 	create_template("talent_tree_psy_blitz3_001_ru",
 		{"loc_talent_psyker_throwing_knives_pierce"}, {"ru"},
 			loc_text("Эфирные осколки")),
@@ -1954,7 +1898,7 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_blitz3_002_en",
 		-- {"loc_talent_psyker_throwing_knives_reduced_cooldown"}, {"en"},
 			-- loc_text("Quick Shards")),
-	--[+ Russian +]-- Быстрые осколки -- руоф Быстрые частицы
+	--[+ Russian - Быстрые осколки +]-- руоф Быстрые частицы
 	create_template("talent_tree_psy_blitz3_002_ru",
 		{"loc_talent_psyker_throwing_knives_reduced_cooldown"}, {"ru"},
 			loc_text("Быстрые осколки")),
@@ -1963,12 +1907,14 @@ local localization_templates = {
 		{"loc_talent_psyker_throwing_knives_reduced_cooldown"}, {"zh-tw"},
 			loc_text("迅捷碎片")),
 
+-- Проверить ID, Перенести русские названия!!!
+
 --[+ +AURA - АУРА - 光環 + +]--
 	--[+ Aura 0 - The Quickening +]--
 	-- create_template("talent_tree_psy_aura0_000_en",
 		-- {"loc_talent_psyker_aura_reduced_ability_cooldown"}, {"en"},
 			-- loc_text("The Quickening")),
-	--[+ Russian +]-- Ускорение
+	--[+ Russian - Ускорение +]--
 	-- create_template("talent_tree_psy_aura0_000_ru",
 		-- {"loc_talent_psyker_aura_reduced_ability_cooldown"}, {"ru"},
 			-- loc_text("Ускорение")),

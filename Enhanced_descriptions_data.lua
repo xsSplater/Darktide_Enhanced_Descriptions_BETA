@@ -1,21 +1,10 @@
 ---@diagnostic disable: undefined-global, undefined-field
-
--- Chinese Traditional	["zh-tw"]
--- Chinese Simplified	["zh-cn"]
--- English				en
--- French				fr
--- German				de
--- Italian				it
--- Japanese				ja
--- Korean				ko
--- Polish				pl
--- Portuguese			pt-BR
--- Russian				ru
--- Spanish				es
+-- Version 4.0
+-- FOR TRANSLATORS: YOU DON'T NEED TO DO ANYTHING IN THIS FILE!
 
 local mod = get_mod("Enhanced_descriptions")
 
---[=[ CONSTANTS AND CONFIGURATION ]=]--
+-- CONSTANTS AND CONFIGURATION
 local DEFAULT_SETTINGS = {
 	-- Main modules
 	enable_menus_file = true,
@@ -24,46 +13,33 @@ local DEFAULT_SETTINGS = {
 	enable_weapons_file = true,
 	enable_talents_file = true,
 	enable_names_file = true,
-	enable_names_tal_bless_file = false,
-
-	-- Enhanced descriptions
-	enhanced_descriptions_enabled = true,
-	enhanced_descriptions_enabled2 = true,
-	enhanced_descriptions_nodes_enabled = true,
-	enhanced_descriptions_penances_enabled = true
+	enable_names_tal_bless_file = true,
 }
 
 local COLOR_SETTINGS = {
 	-- Enhanced Descriptions
-	{ id = "enhdesc", default = "terminal_text_body" },
-
-	-- Main attributes
-	{ id = "combat_ability", default = "olive_drab" },
-	{ id = "health", default = "red" },
-	{ id = "peril", default = "ui_orange_dark" },
-	{ id = "stamina", default = "light_salmon" },
-	{ id = "toughness", default = "ui_difficulty_1" },
-	{ id = "coherency", default = "citadel_kindleflame" },
-
-	-- Buffs
-	{ id = "cleave", default = "player_slot_2_bright" },
-	{ id = "crit", default = "citadel_yriel_yellow" },
-	{ id = "damage", default = "citadel_jokaero_orange" },
-	{ id = "finesse", default = "dodger_blue" },
-	{ id = "hit_mass", default = "item_rarity_dark_2" },
-	{ id = "impact", default = "sea_green" },
-	{ id = "power", default = "steel_blue" },
-	{ id = "rending", default = "violet" },
-	{ id = "weakspot", default = "green_yellow" },
-
-	-- Debuffs
 	{ id = "bleed", default = "ui_zealot" },
 	{ id = "brittleness", default = "medium_orchid" },
 	{ id = "burn", default = "sienna" },
+	{ id = "cleave", default = "player_slot_2_bright" },
+	{ id = "coherency", default = "citadel_kindleflame" },
+	{ id = "combat_ability", default = "olive_drab" },
 	{ id = "corruption", default = "ui_corruption_medium" },
+	{ id = "crit", default = "citadel_yriel_yellow" },
+	{ id = "damage", default = "citadel_jokaero_orange" },
 	{ id = "electrocuted", default = "citadel_stormfang" },
+	{ id = "finesse", default = "dodger_blue" },
+	{ id = "health", default = "red" },
+	{ id = "hit_mass", default = "item_rarity_dark_2" },
+	{ id = "impact", default = "sea_green" },
+	{ id = "peril", default = "ui_orange_dark" },
+	{ id = "power", default = "steel_blue" },
+	{ id = "rending", default = "violet" },
 	{ id = "soulblaze", default = "ui_toughness_default" },
 	{ id = "stagger", default = "terminal_background_selected" },
+	{ id = "stamina", default = "light_salmon" },
+	{ id = "toughness", default = "ui_difficulty_1" },
+	{ id = "weakspot", default = "green_yellow" },
 
 	-- Classes
 	{ id = "class_psyker", default = "player_slot_4" },
@@ -81,16 +57,17 @@ local COLOR_SETTINGS = {
 	{ id = "focust", default = "teal" },
 	{ id = "meleespec", default = "ui_hud_red_light" },
 	{ id = "rangedspec", default = "citadel_the_fang_grey" },
-	{ id = "class_arbites", default = "player_slot_4" },
-	{ id = "meleejust", default = "sandy_brown" },
-	{ id = "rangedjust", default = "royal_blue" },
+	{ id = "class_arbites", default = "plum" },
+	-- { id = "meleejust", default = "sandy_brown" },
+	-- { id = "rangedjust", default = "royal_blue" },
 
 	-- Misc
-	{ id = "note", default = "terminal_text_warning_dark" },
+	{ id = "talents", default = "ui_input_color" },
+	{ id = "talents_penances", default = "forest_green" },
 	{ id = "numbers", default = "ui_hud_yellow_super_light" },
 	{ id = "variables", default = "ui_hud_yellow_super_light" },
+	{ id = "note", default = "terminal_text_warning_dark" },
 	{ id = "warning", default = "item_rarity_6" },
-	{ id = "talents", default = "ui_input_color" },
 
 	-- Difficulty
 	{ id = "sedition", default = "ui_difficulty_1" },
@@ -99,12 +76,9 @@ local COLOR_SETTINGS = {
 	{ id = "heresy", default = "ui_difficulty_4" },
 	{ id = "damnation", default = "ui_difficulty_5" },
 	{ id = "auric", default = "gold" },
-
-	-- Penances
-	{ id = "talents_penances", default = "forest_green" }
 }
 
---[=[ UTILITY FUNCTIONS ]=]--
+-- UTILITY FUNCTIONS
 local function create_checkbox_widget(setting_id, default_value)
 	return {
 		name = mod:localize(setting_id),
@@ -137,7 +111,7 @@ local function get_color_options()
 	return color_options
 end
 
--- Кэшируем опции цветов, так как они не меняются
+-- Cache the color options since they don't change
 local color_options_cache = get_color_options()
 
 local function create_color_option_group(color_setting)
@@ -155,7 +129,7 @@ local function create_color_option_group(color_setting)
 	}
 end
 
---[=[ MAIN OPTIONS CONFIGURATION ]=]--
+-- MAIN OPTIONS CONFIGURATION
 local options = {
 	name = mod:localize("mod_name"),
 	description = mod:localize("mod_description"),
@@ -183,24 +157,12 @@ for _, module in ipairs(main_modules) do
 	))
 end
 
--- Add enhanced descriptions group
-table.insert(options.options.widgets, {
-	setting_id = "enhanced_descriptions_",
-	type = "group",
-	sub_widgets = {
-		create_checkbox_widget("enhanced_descriptions_enabled", true),
-		create_checkbox_widget("enhanced_descriptions_enabled2", true),
-		create_checkbox_widget("enhanced_descriptions_nodes_enabled", true),
-		create_checkbox_widget("enhanced_descriptions_penances_enabled", true)
-	}
-})
-
 -- Add color options
 for _, color_setting in ipairs(COLOR_SETTINGS) do
 	table.insert(options.options.widgets, create_color_option_group(color_setting))
 end
 
---[=[ INITIALIZATION ]=]--
+-- INITIALIZATION
 -- Ensure default settings are set
 for setting_id, default_value in pairs(DEFAULT_SETTINGS) do
 	if mod:get(setting_id) == nil then

@@ -526,7 +526,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"\n",
 		"- 攻擊標記敵人造會刷新持續時間。",
 		"--靈火、燃燒和流血的Dot傷害也會刷新",
-		"- "..COLORS_KWords2_tw.Precision_rgb_tw.."與其他增益做加法疊加。",
+		"- "..COLORS_KWords_tw.Precision_rgb_tw.."與其他增益做加法疊加。",
 		-- "- 有效目標包括：渣滓/血痂暴徒、渣滓/血痂潛行者、渣滓射手、狂怒者、砲手、霰彈槍手和重錘兵。",
 		"",
 		"-與以下天賦、祝福相加疊加：",
@@ -1114,7 +1114,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Ability 3-2 - Perfectionist(完美主義者) +]--
 	local ED_ZEA_Ability_3_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 由 "..COLORS_Numbers.n_30_rgb..COLORS_Numbers.n_second_rgb.." 提升至 "..COLORS_Numbers.n_37_5_rgb..COLORS_Numbers.n_second_rgb.."。",
+		"- "..COLORS_KWords_tw.Cd_m_rgb_tw.." 由 "..COLORS_Numbers.n_30_rgb..COLORS_Numbers.n_second_rgb.." 提升至 "..COLORS_Numbers.n_37_5_rgb..COLORS_Numbers.n_second_rgb.."。",
 		"- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." 與其他增益做加法疊加。",
 		"",
 		"- 與[背刺者]、[隱秘領域]加法疊加，",
@@ -1182,7 +1182,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Keystone 1-2 - Fury Rising(怒火升騰) +]--
 	local ED_ZEA_Keystone_1_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- "..COLORS_KWords_tw.Cleave_rgb_tw.." 且 "..COLORS_KWords_tw.Crit_rgb_tw.." 可生成多層 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 。",
+		"- "..COLORS_KWords_tw.Cleave_rgb_tw.." 且 "..COLORS_KWords_tw.Crit_rgb_tw.." 可生成多層 "..COLORS_KWords_tw.Fury_i_rgb_tw.." 。",
 		"- 攻擊護盾發生 "..COLORS_KWords_tw.Crit_rgb_tw.." ，也能觸發效果。",
 	}, "\n"), enhdesc_col)
 

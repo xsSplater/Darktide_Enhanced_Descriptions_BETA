@@ -1,9 +1,13 @@
 ---@diagnostic disable: undefined-global
--- Thanks to deluxghost, Ovenproof, Fracticality, Wobin and others!
+-- Version 4.0
+-- FOR TRANSLATORS: YOU DON'T NEED TO DO ANYTHING IN THIS FILE!
 
 local mod = get_mod("Enhanced_descriptions")
 
---[+ ++CONSTANTS++ +]--
+-- Main Modules Location
+local location = "Enhanced_descriptions/Main_Modules/"
+
+-- CONSTANTS
 local LOCALIZATION_FILES = {
 	MENUS = "enable_menus_file",
 	CURIOS_Blessings_Perks = "enable_curious_file", 
@@ -22,19 +26,104 @@ local BUTTON_OFFSETS = {
 
 local RELOAD_DELAY = 0.1 -- seconds
 
---[+ ++LOCALIZATION SYSTEM++ +]--
+-- FIXES FOR DESCRIPTIONS - ФИКСЫ ДЛЯ ОПИСАНИЙ
+	-- loc_key = {
+		-- value
+			-- fix }
+local FIXES = {
+-- BLESSINGS - БЛАГОСЛОВЕНИЯ
+	--[+ OVERLOAD +]--
+	-- "+25% Heat is reduced immediately..." -- Removed "+".
+	loc_explosion_on_overheat_lockout_desc = {
+		overheat_reduction = function(value)
+			return tostring(value):gsub("^+", "")
+		end
+	},
+	--[+ WRATH +]--
+	-- "+50% Cleave on Hit..." -- Removed "+".
+	loc_trait_bespoke_chained_hits_increases_cleave_desc = {
+		cleave = function(value)
+			return tostring(value):gsub("^+", "")
+		end
+	},
+	--[+ HEATSINK +]--
+	-- "+10% Heat..." -- Removed "+" and replaced with "-".
+	loc_reduce_fixed_overheat_amount_desc = {
+		amount = function(value)
+			return tostring(value):gsub("^+", "")
+		end
+	},
+	--[+ SLOW AND STEADY +]--
+	-- "Up to +8% Toughness recovered..." -- Removed "+".
+	loc_trait_bespoke_toughness_on_hit_based_on_charge_time_desc = {
+		toughness = function(value)
+			return tostring(value):gsub("^+", "")
+		end
+	},
+	--[+ FOCUSED COOLING +]--
+	-- "+60% Heat generation..." -- Removed "+".
+	loc_trait_bespoke_reduced_overheat_on_crits_desc = {
+		heat_percentage = function(value)
+			return tostring(value):gsub("^+", "")
+		end
+	},
+
+-- TALENTS - ТАЛАНТЫ
+	--[+ NODES - УЗЛЫ +]--
+		--[+ Peril Resistance Medium +]--
+		-- "+10.00% Peril Generation." -- Removed ".00".
+	loc_talent_warp_charge_low_desc = {
+		warp_charge = function(value)
+			return tostring(value):gsub("%.00%%", "%%")
+		end
+	},
+	--[+ PSYKER - ПСАЙКЕР +]--
+		--[+ ABILITY 1-3 - Creeping Flames +]--
+		-- "Venting Shriek applies 1 - 6 Stacks..." -- Removed " -" from number "1 -".
+	loc_talent_psyker_warpfire_on_shout_desc = {
+		min_stacks = function(value)
+			return tostring(value):gsub("%s*%-%s*", "")
+		end
+	}
+
+}
+
+-- hook for fixes
+mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)
+	local result = func(self, loc_key, no_cache, context)
+	
+	if context and FIXES[loc_key] then
+		local modified_context = table.shallow_copy(context)
+		local modified = false
+		
+		for field, fix_func in pairs(FIXES[loc_key]) do
+			if modified_context[field] then
+				modified_context[field] = fix_func(modified_context[field])
+				modified = true
+			end
+		end
+		
+		if modified then
+			result = func(self, loc_key, no_cache, modified_context)
+		end
+	end
+	
+	return result
+end)
+
+-- LOCALIZATION SYSTEM
 local LocalizationManager = require("scripts/managers/localization/localization_manager")
 local registered_fixes = {}
 local is_initialized = false
 
---[+ ++SETTINGS CHANGE HANDLER++ +]--
+-- SETTINGS CHANGE HANDLER
 local settings_change_timer = 0
 local pending_settings_reload = false
 
 local function should_reload_for_setting(setting_id)
-    return string.find(setting_id, "enable_") or 
-           string.find(setting_id, "enhanced_descriptions") or
-           string.find(setting_id, "_text_colour") -- Включаем изменения цветов
+	return  string.find(setting_id, "enable_") or 
+			string.find(setting_id, "enhanced_descriptions") or
+			string.find(setting_id, "_text_colour") -- Включаем изменения цветов
 end
 
 local function on_setting_changed(setting_id)
@@ -47,14 +136,14 @@ local function on_setting_changed(setting_id)
 	end
 end
 
---[+ ++MODULE LOADING++ +]--
+-- MODULE LOADING
 local function load_localization_file(file_name, setting_name)
 	if not mod:get(setting_name) then
 		return {}
 	end
 
 	local success, file_templates = pcall(function()
-		return mod:io_dofile("Enhanced_descriptions/" .. file_name)
+		return mod:io_dofile(location .. file_name)
 	end)
 
 	if success and file_templates then
@@ -85,7 +174,7 @@ local function load_all_templates()
 	return templates
 end
 
---[+ ++TEMPLATE REGISTRATION++ +]--
+-- TEMPLATE REGISTRATION
 local function should_load_template(template, current_lang)
 	if not template.locales then
 		return true
@@ -115,24 +204,24 @@ local function register_template_fixes(templates, current_lang)
 	end
 end
 
---[+ ++MAIN RELOAD FUNCTION++ +]--
+-- MAIN RELOAD FUNCTION
 function mod.reload_templates()
 	if not Managers or not Managers.localization then
 		mod:info("Managers not available, cannot reload templates")
 		return false
 	end
 
-	--[+ +Clear cache for fresh reload+ +]--
+	-- Clear cache for fresh reload
 	if Managers.localization._string_cache then
 		table.clear(Managers.localization._string_cache)
 	end
 
-	--[+ +Load and register templates+ +]--
+	-- Load and register templates
 	local current_lang = Managers.localization._language
 	local all_templates = load_all_templates()
 	register_template_fixes(all_templates, current_lang)
 
-	--[+ +Count statistics+ +]--
+	-- Count statistics
 	local total_keys = 0
 	for _ in pairs(registered_fixes) do
 		total_keys = total_keys + 1
@@ -144,7 +233,7 @@ function mod.reload_templates()
 	return true
 end
 
---[+ ++UI OFFSETS SYSTEM++ +]--
+-- UI OFFSETS SYSTEM
 local function setup_button_offsets()
 	for class_name, widget_name in pairs(BUTTON_OFFSETS) do
 		if CLASS[class_name] then
@@ -174,8 +263,8 @@ local function setup_window_offsets()
 	end)
 end
 
---[+ ++HOOKS AND CALLBACKS++ +]--
---[+ +Localization hook with better error handling+ +]--
+-- HOOKS AND CALLBACKS
+-- Localization hook with better error handling
 mod:hook(LocalizationManager, "_process_string", function(func, self, key, raw_str, context)
 	local fixes = registered_fixes[key]
 
@@ -198,7 +287,7 @@ mod:hook(LocalizationManager, "_process_string", function(func, self, key, raw_s
 	return func(self, key, modified_str, context or {})
 end)
 
---[+ ++MOD LIFECYCLE++ +]--
+-- MOD LIFECYCLE
 function mod.on_all_mods_loaded()
 	setup_button_offsets()
 	setup_window_offsets()
@@ -218,7 +307,7 @@ function mod.on_disabled()
 	pending_settings_reload = false
 end
 
---[+ +Update function for delayed reload+ +]--
+-- Update function for delayed reload
 mod.update = function(dt)
 	if pending_settings_reload then
 		settings_change_timer = settings_change_timer + dt
@@ -232,10 +321,10 @@ mod.update = function(dt)
 	end
 end
 
---[+ +Register setting change handler+ +]--
+-- Register setting change handler
 mod.on_setting_changed = on_setting_changed
 
---[+ ++COMMANDS AND UTILITIES++ +]--
+-- COMMANDS AND UTILITIES
 mod:command("reload_descriptions", "Reload Enhanced Descriptions", function()
 	if mod.reload_templates() then
 		mod:notify("Enhanced Descriptions reloaded successfully")
@@ -279,91 +368,6 @@ mod:command("desc_stats", "Show Enhanced Descriptions statistics", function()
 	mod:echo(message)
 end)
 
---[+ ++FIXES FOR DESCRIPTIONS - ФИКСЫ ДЛЯ ОПИСАНИЙ++ +]--
-	-- loc_key = {
-		-- value
-			-- fix }
 
-local FIXES = {
---[+ +BLESSINGS - БЛАГОСЛОВЕНИЯ+ +]--
-	--[+ OVERLOAD +]--
-	-- "+25% Heat is reduced immediately..." -- Removed "+".
-	loc_explosion_on_overheat_lockout_desc = {
-		overheat_reduction = function(value)
-			return tostring(value):gsub("^+", "")
-		end
-	},
-	--[+ WRATH +]--
-	-- "+50% Cleave on Hit..." -- Removed "+".
-	loc_trait_bespoke_chained_hits_increases_cleave_desc = {
-		cleave = function(value)
-			return tostring(value):gsub("^+", "")
-		end
-	},
-	--[+ HEATSINK +]--
-	-- "+10% Heat..." -- Removed "+" and replaced with "-".
-	loc_reduce_fixed_overheat_amount_desc = {
-		amount = function(value)
-			return tostring(value):gsub("^+", "")
-		end
-	},
-	--[+ SLOW AND STEADY +]--
-	-- "Up to +8% Toughness recovered..." -- Removed "+".
-	loc_trait_bespoke_toughness_on_hit_based_on_charge_time_desc = {
-		toughness = function(value)
-			return tostring(value):gsub("^+", "")
-		end
-	},
-	--[+ FOCUSED COOLING +]--
-	-- "+60% Heat generation..." -- Removed "+".
-	loc_trait_bespoke_reduced_overheat_on_crits_desc = {
-		heat_percentage = function(value)
-			return tostring(value):gsub("^+", "")
-		end
-	},
-
---[+ +TALENTS - ТАЛАНТЫ+ +]--
-	--[+ NODES - УЗЛЫ +]--
-		--[+ Peril Resistance Medium +]--
-		-- "+10.00% Peril Generation." -- Removed ".00".
-	loc_talent_warp_charge_low_desc = {
-		warp_charge = function(value)
-			return tostring(value):gsub("%.00%%", "%%")
-		end
-	},
-	--[+ PSYKER - ПСАЙКЕР +]--
-		--[+ ABILITY 1-3 - Creeping Flames +]--
-		-- "Venting Shriek applies 1 - 6 Stacks..." -- Removed " -" from number "1 -".
-	loc_talent_psyker_warpfire_on_shout_desc = {
-		min_stacks = function(value)
-			return tostring(value):gsub("%s*%-%s*", "")
-		end
-	}
-
-}
-
---[+ +hook for fixes+ +]--
-mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)
-	local result = func(self, loc_key, no_cache, context)
-	
-	if context and FIXES[loc_key] then
-		local modified_context = table.shallow_copy(context)
-		local modified = false
-		
-		for field, fix_func in pairs(FIXES[loc_key]) do
-			if modified_context[field] then
-				modified_context[field] = fix_func(modified_context[field])
-				modified = true
-			end
-		end
-		
-		if modified then
-			result = func(self, loc_key, no_cache, modified_context)
-		end
-	end
-	
-	return result
-end)
-
---[+ ++INITIALIZATION++ +]--
+-- INITIALIZATION
 mod:info("Enhanced Descriptions mod loaded with improved architecture")

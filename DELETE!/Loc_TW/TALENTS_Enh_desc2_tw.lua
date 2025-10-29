@@ -213,7 +213,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- 與武器威力採加法疊加。",
 		"- 與傷害增益採乘法疊加。",
 		-- "- 與其他武器祝福的威力(Power level)增益採加法疊加，並與傷害增益採乘法計算。",
-		"-"..COLORS_KWords2_tw.Pwr_note_rgb_tw,
+		"-"..COLORS_KWords_tw.Pwr_note_rgb_tw,
 		-- "- 「威力增益」表示提升攻擊基礎數值，可同時增進傷害、踉蹌與順劈。",
 		-- "- 對「滲透」而言，增益會立即生效，但計時會在隱形結束時才開始。",
 	}, "\n"), enhdesc_col)
@@ -258,9 +258,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- 復活效果不受地形阻隔。",
 		"- 有效半徑由"..COLORS_Numbers.n_9_rgb..COLORS_Numbers.n_meter_rgb.."降至"..COLORS_Numbers.n_6_03_rgb..COLORS_Numbers.n_meter_rgb.."。",
 		"- 無關協同狀態，範圍外無法被復活。",
-		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 由 "..COLORS_Numbers.n_30_rgb..COLORS_Numbers.n_second_rgb.." 增加到 "..COLORS_Numbers.n_45_rgb..COLORS_Numbers.n_second_rgb.." 。",
+		"- "..COLORS_KWords_tw.Cd_m_rgb_tw.." 由 "..COLORS_Numbers.n_30_rgb..COLORS_Numbers.n_second_rgb.." 增加到 "..COLORS_Numbers.n_45_rgb..COLORS_Numbers.n_second_rgb.." 。",
 		"",
-		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 可透過下面方式減少。",
+		"- "..COLORS_KWords_tw.Cd_m_rgb_tw.." 可透過下面方式減少。",
 		"- 靈能者光環「先知之眼」。",
 		"- 珍品的戰鬥技能冷卻。",
 		"- 任務「技能冷卻減少20%」。",
@@ -278,7 +278,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Ability 3 - Infiltrate(滲透) +]--
 	local ED_VET_Ability_3_rgb_tw = iu_actit(table.concat({
 		"",
-		"- "..COLORS_KWords2_tw.Stealth_rgb_tw.."： ",
+		"- "..COLORS_KWords_tw.Stealth_rgb_tw.."： ",
 		become_invis_drop_all_enemy_aggro,
 		"",
 		"- 進入隱形後仍可能受到傷害。",
@@ -311,8 +311,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_VET_Ability_3_2_rgb_tw = iu_actit(table.concat({
 		"",
 		"- 第二次充能僅在第一次結束後開始。",
-		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 由 "..COLORS_Numbers.n_45_rgb..COLORS_Numbers.n_second_rgb.." 增加到 "..COLORS_Numbers.n_59_85_rgb..COLORS_Numbers.n_second_rgb.." 。",
-		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 可透過下面方式減少。",
+		"- "..COLORS_KWords_tw.Cd_m_rgb_tw.." 由 "..COLORS_Numbers.n_45_rgb..COLORS_Numbers.n_second_rgb.." 增加到 "..COLORS_Numbers.n_59_85_rgb..COLORS_Numbers.n_second_rgb.." 。",
+		"- "..COLORS_KWords_tw.Cd_m_rgb_tw.." 可透過下面方式減少。",
 		"- 靈能者光環「先知之眼」。",
 		"- 珍品的戰鬥技能冷卻。",
 		"- 任務「技能冷卻減少20%」。",
@@ -353,12 +353,12 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 1 - Marksman's Focus(狙擊專注) +]--
 	local ED_VET_Keystone_1_rgb_tw = iu_actit(table.concat({
 		"",
-		"會因以下移動方式消耗"..COLORS_KWords2_tw.Focus_rgb_tw.."：",
+		"會因以下移動方式消耗"..COLORS_KWords_tw.Focus_rgb_tw.."：",
 		Arrow_down_red.." 行走每秒移除1層。",
 		Arrow_down_red.." 衝刺每0.5秒移除1層。",
 		Arrow_down_red.." 滑鏟時會依移動速度消耗。",
 		"",
-		COLORS_KWords2_tw.Focus_rgb_tw.." 提供 "..COLORS_KWords_tw.Finesse_rgb_tw.." 計算方式另行處理。",
+		COLORS_KWords_tw.Focus_rgb_tw.." 提供 "..COLORS_KWords_tw.Finesse_rgb_tw.." 計算方式另行處理。",
 		Arrow_right_.." "..COLORS_KWords_tw.Weakspot_rgb_tw.." 、 "..COLORS_KWords_tw.Finesse_rgb_tw.."加法疊加。",
 		Arrow_right_.." 與武器祝福提供 "..COLORS_KWords_tw.Power_rgb_tw.." 乘法疊加。",
 		"",
@@ -382,7 +382,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_VET_Keystone_1_2_rgb_tw = iu_actit(table.concat({
 		"\n",
 		-- "-- 1. 每層「專注」疊加，皆可提升近戰擊殺與天賦所回復的韌性量5%(最高可+50%，若搭配「遠程刺客」則可+75%)。",
-		Arrow_right_.." "..COLORS_KWords2_tw.Focus_rgb_tw.." 最高可提升：",
+		Arrow_right_.." "..COLORS_KWords_tw.Focus_rgb_tw.." 最高可提升：",
 		Arrow_up_green.." 近戰擊殺與天賦所恢復的韌性量5%。",
 		Arrow_up_green.." 最高 +50% 搭配「遠程刺客」+75%。",
 		"",
@@ -423,7 +423,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_VET_Keystone_2_1_rgb_tw = iu_actit(table.concat({
 		"",
 		"在 "..COLORS_Numbers.n_8_rgb.." 層疊加時：",
-		Arrow_up_green.." 恢復 "..COLORS_Numbers.pc_40_rgb.." "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 與 "..COLORS_KWords_tw.Stamina_rgb_m_tw.." 。",
+		Arrow_up_green.." 恢復 "..COLORS_Numbers.pc_40_rgb.." "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 與 "..COLORS_KWords_tw.Stamina_m_rgb_tw.." 。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2-2 - Redirect Fire!(轉移火力!) +]--
@@ -441,9 +441,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 3 - Weapons Specialist(武器專家) +]--
 	local ED_VET_Keystone_3_rgb_tw = iu_actit(table.concat({
 		"",
-		Arrow_right_.." "..COLORS_KWords2_tw.Rangedspec_rgb_tw.." 可與敏捷興奮劑加法疊加",
+		Arrow_right_.." "..COLORS_KWords_tw.Rangedspec_rgb_tw.." 可與敏捷興奮劑加法疊加",
 		Arrow_right_.." 在 "..COLORS_Numbers.n_3_rgb.." 層時，可達 "..COLORS_Numbers.pc_100_rgb.." 遠程暴擊。",
-		Arrow_right_.." "..COLORS_KWords2_tw.Meleespec_rgb_tw.." 可與敏捷興奮劑加法疊加。",
+		Arrow_right_.." "..COLORS_KWords_tw.Meleespec_rgb_tw.." 可與敏捷興奮劑加法疊加。",
 		Arrow_right_.." 與「戰壕兵訓練」加法疊加。",
 	}, "\n"), enhdesc_col)
 
@@ -456,11 +456,11 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"",
 		Arrow_right_.." 以偵查雷射槍6C為例子，",
 		Arrow_right_.." 彈匣共108發子彈，當全部打光時：",
-		Arrow_right_.." 當 "..COLORS_KWords2_tw.Rangedspec_rgb_tw.." 層數為 "..COLORS_Numbers.n_1_rgb.." 時，",
+		Arrow_right_.." 當 "..COLORS_KWords_tw.Rangedspec_rgb_tw.." 層數為 "..COLORS_Numbers.n_1_rgb.." 時，",
 		Arrow_right_.." 108x0.33x(1/10)=3.5，取整4發。",
-		Arrow_right_.." 當 "..COLORS_KWords2_tw.Rangedspec_rgb_tw.." 層數為 "..COLORS_Numbers.n_5_rgb.." 時，",
+		Arrow_right_.." 當 "..COLORS_KWords_tw.Rangedspec_rgb_tw.." 層數為 "..COLORS_Numbers.n_5_rgb.." 時，",
 		Arrow_right_.." 108x0.33x(5/10)=17.8，取整18發。",
-		Arrow_right_.." 當 "..COLORS_KWords2_tw.Rangedspec_rgb_tw.." 層數為 "..COLORS_Numbers.n_10_rgb.." 時，",
+		Arrow_right_.." 當 "..COLORS_KWords_tw.Rangedspec_rgb_tw.." 層數為 "..COLORS_Numbers.n_10_rgb.." 時，",
 		Arrow_right_.." 108x0.33x(10/10)=35.6，取整36發。",
 	}, "\n"), enhdesc_col)
 
