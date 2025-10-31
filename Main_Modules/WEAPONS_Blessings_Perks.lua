@@ -901,7 +901,7 @@ local localization_templates = {
 			create_template("weap_wbm007_desc_ext_en",
 				{"loc_trait_bespoke_targets_receive_rending_debuff_desc"}, {"en"},
 					loc_text(COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." are applied on hitting to enemy. Lasts "..COLORS_Numbers.time_var_rgb.." seconds. Max "..COLORS_Numbers.maxstks_var_rgb.." Stacks, up to "..COLORS_Numbers.pc_40_rgb..". "
-						..NTS.Brtl_note_rgb_ru)),
+						..NTS.Brtl_note_rgb)),
 					-- stacks: 4, rending: 2.5%, time: 5, max_stacks: 16, rewrited, +colors, +added info, +note
 			--[+ French +]--
 			-- create_template("weap_wbm007_desc_ext_fr",
@@ -3654,7 +3654,7 @@ local localization_templates = {
 			create_template("weap_wbr034_desc_ext_en",
 				{"loc_trait_bespoke_rend_armor_on_aoe_charge_desc"}, {"en"},
 					loc_text("Up to "..COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." based on Secondary Attack charge time. Lasts "..COLORS_Numbers.time_var_rgb.." seconds. Max "..COLORS_Numbers.maxstks_var_rgb.." Stacks, up to "..COLORS_Numbers.pc_40_rgb..".\n"
-						..NTS.Brtl_note_rgb_ru)),
+						..NTS.Brtl_note_rgb)),
 					-- stacks: 8, rending: 2.5%, time: 5, max_stacks: 16, s->seconds, +colors -- ..NTS.Brtl_note_rgb_ru
 			--[+ French +]--
 			-- create_template("weap_wbr034_desc_ext_fr",
@@ -3740,7 +3740,7 @@ local localization_templates = {
 			create_template("weap_wbr037_desc_ext_en",
 				{"loc_trait_bespoke_armor_rending_from_dot_burning_desc"}, {"en"},
 					loc_text("Direct hits apply "..COLORS_Numbers.stacks_num_var_rgb.." Stacks of "..COLORS_Numbers.pc_1_rgb.." "..COLORS_KWords.Brittleness_rgb.." for "..COLORS_Numbers.dur_var_rgb.." seconds. Up to "..COLORS_Numbers.pc_20_rgb..". "
-						..PHRS.Can_be_refr.."\n"..NTS.Brtl_note_rgb_ru)),
+						..PHRS.Can_be_refr.."\n"..NTS.Brtl_note_rgb)),
 					-- num_stacks: 4, rending_percentage: 1%, duration: 5, max_stacks: 10, +colors
 			--[+ French +]--
 			-- create_template("weap_wbr037_desc_ext_fr",
