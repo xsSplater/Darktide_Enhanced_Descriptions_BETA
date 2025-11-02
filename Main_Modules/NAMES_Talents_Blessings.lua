@@ -3931,7 +3931,7 @@ local localization_templates = {
 	--[+ Russian +]-- Только в смерти заканчивается долг -- руоф Лишь после смерти заканчивается служение долгу
 	create_template("talent_tree_vet_abil2_002_ru",
 		{"loc_talent_veteran_combat_ability_revives"}, {"ru"},
-			loc_text("Только в смерти заканчивается долг")),
+			loc_text("Лишь со смертью заканчивается долг")),
 	--[+ Traditional Chinese - 只有死亡，職責才會終結 +]--
 	-- create_template("talent_tree_vet_abil2_002_tw",
 		-- {"loc_talent_veteran_combat_ability_revives"}, {"zh-tw"},

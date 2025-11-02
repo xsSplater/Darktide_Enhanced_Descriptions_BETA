@@ -104,6 +104,7 @@ local CONFIG = {
 	peril_text_colour = {
 		Peril = "Peril",
 		Perils = "Perils",
+		PerilsozWarp = "Perils of the Warp",
 	},
 	power_text_colour = {
 		Power = "Power",
@@ -146,7 +147,8 @@ local CONFIG = {
 	-- Psyker
 	class_psyker_text_colour = {
 		cls_psy = "Psyker",
-		cls_psy2 = "Psyker",
+		cls_psys = "Psykers",
+		cls_psy2 = "Psyker's",
 	},
 	precision_text_colour = {
 		Precision = "Precision",
@@ -154,7 +156,7 @@ local CONFIG = {
 	-- Ogryn
 	class_ogryn_text_colour = {
 		cls_ogr = "Ogryn",
-		cls_ogr2 = "Ogryn",
+		cls_ogr2 = "Ogryn's",
 	},
 	fnp_text_colour = {
 		Feel_no_pain = "Feel No Pain",
@@ -168,7 +170,7 @@ local CONFIG = {
 	-- Zealot
 	class_zealot_text_colour = {
 		cls_zea = "Zealot",
-		cls_zea2 = "Zealot",
+		cls_zea2 = "Zealot's",
 	},
 	fury_text_colour = {
 		Fury = "Fury",
@@ -178,11 +180,13 @@ local CONFIG = {
 	},
 	stealth_text_colour = {
 		Stealth = "Stealth",
+		Psy_Mark = "Marked",
+		Psy_mark = "marked",
 	},
 	-- Veteran
 	class_veteran_text_colour = {
 		cls_vet = "Veteran",
-		cls_vet2 = "Veteran",
+		cls_vet2 = "Veteran's",
 	},
 	focus_text_colour = {
 		Focus = "Focus",
@@ -203,7 +207,7 @@ local CONFIG = {
 	-- Arbites
 	class_arbites_text_colour = {
 		cls_arb = "Arbitrator",
-		cls_arb2 = "Arbitrator",
+		cls_arb2 = "Arbitrator's",
 	},
 
 -- TALENTS
@@ -232,9 +236,9 @@ local CONFIG = {
 	talents_penances_text_colour = { -- green
 	-- Psyker
 		bburst = "Brain Burst",
-		bburst0 = "Brain Burst",
+		-- bburst0 = "Brain Burst",
 		bburst1 = "Brain Rupture",
-		bburst2 = "Brain Rupture",
+		-- bburst2 = "Brain Rupture",
 		smite = "Smite",
 		disrdest = "Disrupt Destiny",
 		psy_wrath = "Psykinetic's Wrath",
@@ -248,8 +252,8 @@ local CONFIG = {
 		seerspres = "Seer's Presence",
 	-- Ogryn
 		bull_rush = "Bull Rush",
-		bull_rush2 = "Bull Rush",
-		bull_rush3 = "Bull Rush",
+		-- bull_rush2 = "Bull Rush",
+		-- bull_rush3 = "Bull Rush",
 		bull_rush4 = "Indomitable",
 		big_box = "Big Box of Hurt",
 		big_box2 = "Bombs Away!",
@@ -279,13 +283,13 @@ local CONFIG = {
 		weapspec = "Weapons Specialist",
 		survivalist = "Survivalist",
 	-- Zealot
-		shock_gren0 = "Stunstorm Grenade",
+		-- shock_gren0 = "Stunstorm Grenade",
 		shock_gren = "Stunstorm Grenade",
 		fire_gren = "Immolation Grenade",
 		shock_gren1 = "Stun Grenade",
-		shock_gren2 = "Stun Grenade",
+		-- shock_gren2 = "Stun Grenade",
 		chast_wckd = "Chastise the Wicked",
-		chast_wckd2 = "Chastise the Wicked",
+		-- chast_wckd2 = "Chastise the Wicked",
 		fury_faithful = "Fury of the Faithful",
 		martydom = "Martyrdom",
 		holy_revenant = "Holy Revenant",
@@ -340,17 +344,17 @@ local function create_colored_keywords(config)
 end
 
 -- LANGUAGE CODES:
+-- English				en			-- _rgb
+-- Russian				ru			-- _rgb_ru
+-- French				fr			-- _rgb_fr
 -- Chinese Traditional	["zh-tw"]	-- _rgb_tw
 -- Chinese Simplified	["zh-cn"]	-- _rgb_zh_cn
--- English				en			-- _rgb
--- French				fr			-- _rgb_fr
 -- German				de			-- _rgb_de
 -- Italian				it			-- _rgb_it
 -- Japanese				ja			-- _rgb_ja
 -- Korean				ko			-- _rgb_ko
 -- Polish				pl			-- _rgb_pl
 -- Portuguese			pt-BR		-- _rgb_pt_br
--- Russian				ru			-- _rgb_ru
 -- Spanish				es			-- _rgb_es
 
 -- Validation: check that ALL variables have been created
