@@ -6,17 +6,17 @@ local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
 -- LANGUAGE CODES:
+-- English				en
+-- Russian				ru			_ru
+-- French				fr			_fr
 -- Chinese Traditional	["zh-tw"]	_tw
 -- Chinese Simplified	["zh-cn"]	_zh_cn
--- English				en
--- French				fr			_fr
 -- German				de			_de
 -- Italian				it			_it
 -- Japanese				ja			_ja
 -- Korean				ko			_ko
 -- Polish				pl			_pl
--- Portuguese			pt-BR		_pt_br
--- Russian				ru			_ru
+-- Portuguese			["pt-br"]	_rgb_pt_br
 -- Spanish				es			_es
 
 -- FOR TRANSLATORS
@@ -344,18 +344,18 @@ local function create_colored_keywords(config)
 end
 
 -- LANGUAGE CODES:
--- English				en			-- _rgb
--- Russian				ru			-- _rgb_ru
--- French				fr			-- _rgb_fr
--- Chinese Traditional	["zh-tw"]	-- _rgb_tw
--- Chinese Simplified	["zh-cn"]	-- _rgb_zh_cn
--- German				de			-- _rgb_de
--- Italian				it			-- _rgb_it
--- Japanese				ja			-- _rgb_ja
--- Korean				ko			-- _rgb_ko
--- Polish				pl			-- _rgb_pl
--- Portuguese			pt-BR		-- _rgb_pt_br
--- Spanish				es			-- _rgb_es
+-- English				en			_rgb
+-- Russian				ru			_rgb_ru
+-- French				fr			_rgb_fr
+-- Chinese Traditional	["zh-tw"]	_rgb_tw
+-- Chinese Simplified	["zh-cn"]	_rgb_zh_cn
+-- German				de			_rgb_de
+-- Italian				it			_rgb_it
+-- Japanese				ja			_rgb_ja
+-- Korean				ko			_rgb_ko
+-- Polish				pl			_rgb_pl
+-- Portuguese			["pt-br"]	_rgb_pt_br
+-- Spanish				es			_rgb_es
 
 -- Validation: check that ALL variables have been created
 local function validate_all()

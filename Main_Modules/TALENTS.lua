@@ -624,14 +624,14 @@ local talent_localizations = {
 	},
 }
 
--- Temporary division of Talents into 5 modules by classes: TALENTS_Psyker, TALENTS_Ogryn, TALENTS_Zealot, TALENTS_Veteran, TALENTS_Arbites
+-- Temporary division of Talents into 5 modules by classes
 local psyker_talents = mod:io_dofile("Enhanced_descriptions/Main_Modules/TALENTS_Psyker")
 local zealot_talents = mod:io_dofile("Enhanced_descriptions/Main_Modules/TALENTS_Zealot")
 local veteran_talents = mod:io_dofile("Enhanced_descriptions/Main_Modules/TALENTS_Veteran")
 local ogryn_talents = mod:io_dofile("Enhanced_descriptions/Main_Modules/TALENTS_Ogryn")
 local arbites_talents = mod:io_dofile("Enhanced_descriptions/Main_Modules/TALENTS_Arbites")
 
--- Объединяем все локализации
+-- Unification of all localizations
 for key, value in pairs(psyker_talents) do
 	talent_localizations[key] = value
 end
@@ -649,7 +649,7 @@ for key, value in pairs(arbites_talents) do
 end
 
 
---[+ Автоматическое создание templates из новой структуры +]--
+--[+ Automatically create templates from the new structure +]--
 local localization_templates = {}
 for loc_key, locales in pairs(talent_localizations) do
 	for locale, text in pairs(locales) do
@@ -661,6 +661,6 @@ for loc_key, locales in pairs(talent_localizations) do
 	end
 end
 
-mod:notify("All TALENTS modules loaded successfully")
+-- mod:notify("TALENTS.lua loaded successfully")
 
 return localization_templates

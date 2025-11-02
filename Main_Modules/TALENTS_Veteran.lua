@@ -104,7 +104,7 @@ local veteran_talent_localizations = {
 	--[+ BLITZ 0 - Frag Grenade +]--
 	-- ["loc_ability_frag_grenade_description"] = { -- +colors
 		-- en = COLORS_KWords.Fragm_gren_rgb.." that explodes after "..COLORS_Numbers.n_1_7_rgb.." seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Blitz_0_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Blitz_0_rgb,
 		-- ru = "Вы бросаете "..COLORS_KWords_ru.Fragm_gren_rgb_ru..", которая взрывается после "..COLORS_Numbers.n_1_7_rgb.." секунды."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_0_rgb_ru, -- Фраг-граната
 		-- fr = "Lancez une "..COLORS_KWords_fr.Fragm_gren_rgb_fr.." qui explose après "..COLORS_Numbers.n_1_7_rgb.." secondes."..TALENTS_Enh_desc2_fr.ED_VET_Blitz_0_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆 "..COLORS_KWords_tw.Fragm_gren_rgb_tw.." ，在 "..COLORS_Numbers.n_1_7_rgb..COLORS_Numbers.n_second_rgb.." 後爆炸。\n" ..TALENTS_Enh_desc2_tw.ED_VET_Blitz_0_rgb_tw, -- 破片手雷 --破片手雷，在引信短暫燃燒後爆炸。
@@ -120,8 +120,8 @@ local veteran_talent_localizations = {
 	--[+ BLITZ 1 - Shredder Frag Grenade +]--
 	-- ["loc_talent_veteran_grenade_apply_bleed_desc"] = { -- stacks: 6, talent_name: Frag Grenade, +colors
 		-- en = "Throw a "..COLORS_KWords.Frag_gren_rgb.." that explodes after "..COLORS_Numbers.n_1_7_rgb.." seconds. Applies {stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." to all Enemies Hit, causing "..COLORS_KWords.Damage_rgb.." over time. Up to "..COLORS_Numbers.n_16_rgb.." Max Stacks.\n"
-				-- .."This is an augmented version of {talent_name:%s}."
-				-- ..TALENTS_Enh_desc2.ED_VET_Blitz_1_rgb,
+			-- .."This is an augmented version of {talent_name:%s}."
+			-- ..TALENTS_Enh_desc2.ED_VET_Blitz_1_rgb,
 		-- ru = "Вы бросаете "..COLORS_KWords_ru.Frag_gren_rgb_ru..", которая взрывается после "..COLORS_Numbers.n_1_7_rgb.." секунды. Накладывает {stacks:%s} зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." на всех поражённых взрывом врагов, нанося "..COLORS_KWords_ru.Dmg_rgb_ru.." с течением времени. До "..COLORS_Numbers.n_16_rgb.." зарядов "..COLORS_KWords_ru.Bleed_rgb_ru..".\nЭто улучшенная версия таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_1_rgb_ru, -- Секущая фраг-граната -- руоф Фраг-граната крошителя
 		-- fr = "Lancez une "..COLORS_KWords_fr.Frag_gren_rgb_fr.." qui explose après "..COLORS_Numbers.n_1_7_rgb.." secondes. Applique {stacks:%s} cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." à tous les ennemis touchés, causant des "..COLORS_KWords_fr.Damage_rgb_fr.." au fil du temps. Jusqu'à "..COLORS_Numbers.n_16_rgb.." cumuls max.\nIl s'agit d'une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_VET_Blitz_1_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆 "..COLORS_KWords_tw.Frag_gren_rgb_tw.." ，在 "..COLORS_Numbers.n_1_7_rgb..COLORS_Numbers.n_second_rgb.." 後爆炸。\n"
@@ -142,7 +142,7 @@ local veteran_talent_localizations = {
 	--[+ BLITZ 2 - Krak Grenade +]--
 	-- ["loc_talent_ability_krak_grenade_desc"] = { -- +colors
 		-- en = "Throw a Grenade that explodes after "..COLORS_Numbers.n_2_rgb.." seconds and deals devastating "..COLORS_KWords.Damage_rgb..". Sticks to Flak Armoured, Carapace Armoured and Unyielding Enemies."
-				-- ..TALENTS_Enh_desc2.ED_VET_Blitz_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Blitz_2_rgb,
 		-- ru = "Вы бросаете гранату, которая взрывается после "..COLORS_Numbers.n_2_rgb.." секунд и наносит разрушительный "..COLORS_KWords_ru.Dmg_rgb_ru..". Граната прилипает к панцирной и противоосколочной броне, а также к несгибаемым врагам."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_2_rgb_ru, -- Крак-граната
 		-- fr = "Lancez une grenade qui explose après "..COLORS_Numbers.n_2_rgb.." secondes et inflige des "..COLORS_KWords_fr.Damage_rgb_fr.." dévastateurs. Adhère aux ennemis en armure légère, en armure Carapace et aux ennemis implacables."..TALENTS_Enh_desc2_fr.ED_VET_Blitz_2_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆 "..COLORS_KWords_tw.Krak_gren_rgb_tw.." ，在 "..COLORS_Numbers.n_2_rgb..COLORS_Numbers.n_second_rgb.." 後爆炸，\n"
@@ -160,7 +160,7 @@ local veteran_talent_localizations = {
 	--[+ BLITZ 3 - Smoke Grenade +]--
 	-- ["loc_ability_smoke_grenade_description"] = { -- duration: 15, +colors
 		-- en = "Throw a Grenade that explodes after "..COLORS_Numbers.n_1_5_rgb.." seconds and creates a lingering Smoke cloud for {duration:%s} seconds. The cloud blocks line of sight for most enemies and reduces the sight range of enemies inside it."
-				-- ..TALENTS_Enh_desc2.ED_VET_Blitz_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Blitz_3_rgb,
 		-- ru = "Вы бросаете гранату, которая взрывается после "..COLORS_Numbers.n_1_5_rgb.." секунды и создаёт облако дыма на {duration:%s} секунд. Дым блокирует линию обзора большинства врагов и снижает расстояние обзора врагов внутри него."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_3_rgb_ru, -- Дымовая граната
 		-- fr = "Lancez une grenade qui explose après "..COLORS_Numbers.n_1_5_rgb.." secondes et crée un nuage de fumée persistant pendant {duration:%s} secondes. Le nuage bloque la ligne de vue pour la plupart des ennemis et réduit la portée de vue des ennemis à l'intérieur."..TALENTS_Enh_desc2_fr.ED_VET_Blitz_3_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆手榴彈，將在 "..COLORS_Numbers.n_1_5_rgb.." 秒後爆炸，\n"
@@ -181,7 +181,7 @@ local veteran_talent_localizations = {
 	--[+ AURA 0 - Scavenger +]--
 	-- ["loc_talent_veteran_elite_kills_grant_ammo_coop_cd_desc"] = { -- ammo: 0.75%, cooldown: 5
 		-- en = "Replenish {ammo:%s} Ammo for you and Allies in "..COLORS_KWords.Coherency_rgb.." whenever any of you Kill an Elite or Specialist Enemy. This can occur once every {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Aura_0_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Aura_0_rgb,
 		-- ru = "{ammo:%s} боеприпасов пополняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..", когда кто-либо из вас убивает элитного врага или специалиста. Это может происходить раз в {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Aura_0_rgb_ru, -- Сборщик -- руоф Собиратель
 		-- fr = "Récuperez {ammo:%s} de munitions pour vous et les alliés en syntonie chaque fois que l'un de vous tue un ennemi élite ou spécialiste. Cela peut se produire une fois toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Aura_0_rgb_fr,
 		-- ["zh-tw"] = "當你或"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友擊殺菁英或專家時，\n"
@@ -199,8 +199,8 @@ local veteran_talent_localizations = {
 	--[+ AURA 1 - Survivalist +]--
 	-- ["loc_talent_veteran_elite_kills_grant_ammo_coop_improved_cd_desc"] = { -- ammo_2: 1%, cooldown: 5, talent_name: Scavenger
 		-- en = "Replenish {ammo_2:%s} Ammo for you and Allies in "..COLORS_KWords.Coherency_rgb.." whenever any of you Kill an Elite or Specialist Enemy. This can occur once every {cooldown:%s} seconds.\n"
-				-- .."This is an augmented version of {talent_name:%s}."
-				-- ..TALENTS_Enh_desc2.ED_VET_Aura_1_rgb,
+			-- .."This is an augmented version of {talent_name:%s}."
+			-- ..TALENTS_Enh_desc2.ED_VET_Aura_1_rgb,
 		-- ru = "{ammo_2:%s} боеприпасов пополняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..", когда кто-либо из вас убивает элитного врага или специалиста. Это может происходить раз в {cooldown:%s} секунд.\n\nЭто улучшенная версия ауры {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Aura_1_rgb_ru, -- Выживальщик -- руоф Специалист по выживанию
 		-- fr = "Récuperez {ammo_2:%s} de munitions pour vous et les alliés en syntonie chaque fois que l'un de vous tue un ennemi élite ou spécialiste. Cela peut se produire une fois toutes les {cooldown:%s} secondes.\n\nIl s'agit d'une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_VET_Aura_1_rgb_fr,
 		-- ["zh-tw"] = "當你或"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友擊殺菁英或專家時，\n"
@@ -220,7 +220,7 @@ local veteran_talent_localizations = {
 	--[+ AURA 2 - Fire Team +]--
 	-- ["loc_talent_veteran_damage_coherency_desc"] = { -- damage: +5%, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Aura_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Aura_2_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Aura_2_rgb_ru, -- Огневая группа
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_VET_Aura_2_rgb_fr,
 		-- ["zh-tw"] = "你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友獲得 {damage:%s} 的"..COLORS_KWords_tw.Damage_rgb_tw.."。" ..TALENTS_Enh_desc2_tw.ED_VET_Aura_2_rgb_tw, -- 火力小分隊 -- 你和協同中的盟友傷害增加{damage:%s}。
@@ -236,7 +236,7 @@ local veteran_talent_localizations = {
 	--[+ AURA 3 - Close and Kill +]--
 	-- ["loc_talent_veteran_movement_speed_coherency_desc"] = { -- movement_speed: +5%
 		-- en = "{movement_speed:%s} Movement Speed for your and Allies in "..COLORS_KWords.Coherency_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Aura_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Aura_3_rgb,
 		-- ru = "{movement_speed:%s} к скорости движения для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Aura_3_rgb_ru, -- Приблизиться и убить
 		-- fr = "{movement_speed:%s} de Vitesse de déplacement pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_VET_Aura_3_rgb_fr,
 		-- ["zh-tw"] = "你與"..COLORS_KWords_tw.Coherencing_rgb_tw.."的隊友獲得 {movement_speed:%s} 的移動速度加成。" ..TALENTS_Enh_desc2_tw.ED_VET_Aura_3_rgb_tw, -- 抵近殺敵 -- 接近並擊殺 -- 你和協同中的盟友移動速度增加{movement_speed:%s}。
@@ -253,10 +253,10 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 0 - Volley Fire +]--
 	-- ["loc_ability_veteran_base_ability_desc"] = { -- duration: 5, damage: +25%, weakspot_damage: +25%, cooldown: 30, &->and, s->seconds, +colors
 		-- en = "Enter Ranged Stance for {duration:%s} seconds. When in Ranged Stance you instantly equip your Ranged weapon and deal:\n"
-				-- .."{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." and\n"
-				-- .."{weakspot_damage:%s} Ranged "..COLORS_KWords.Weakspot_dmg_rgb..". Your Spread and Recoil are also greatly reduced.\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_0_rgb,
+			-- .."{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." and\n"
+			-- .."{weakspot_damage:%s} Ranged "..COLORS_KWords.Weakspot_dmg_rgb..". Your Spread and Recoil are also greatly reduced.\n"
+			-- .."Base Cooldown: {cooldown:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_0_rgb,
 		-- ru = "Вы входите в стойку дальнего боя на {duration:%s} секунд. Входя в эту стойку, вы мгновенно экипируете своё оружие дальнего боя и получаете:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою и\n{weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою. Ваш разброс и отдача также значительно уменьшаются.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_0_rgb_ru, -- Залповый огонь
 		-- fr = "Passez en posture à distance pendant {duration:%s} secondes. En posture à distance, vous équipez instantanément votre arme à distance et infligez :\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance et\n{weakspot_damage:%s} de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." à distance. Votre dispersion et votre recul sont également grandement réduits.\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Ability_0_rgb_fr,
 		-- ["zh-tw"] = "立即裝備遠程武器進入戰鬥姿態：\n"
@@ -277,13 +277,13 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 1 - Executioner's Stance +]--
 	-- ["loc_talent_veteran_combat_ability_elite_and_special_outlines_refresh_description"] = { -- duration: 5, damage: +25%, weakspot_damage: +25%, duration: 5, cooldown: 30, old_talent_name: Volley Fire, s->seconds, +colors
 		-- en = "Enter Ranged Stance for {duration:%s} seconds. You instantly equip your Ranged weapon and deal:\n"
-				-- .."{damage:%s} Ranged "..COLORS_KWords.Damage_rgb..",\n"
-				-- .."{weakspot_damage:%s} Ranged "..COLORS_KWords.Weakspot_dmg_rgb..".\n"
-				-- .."Human-sized Elite and Specialist Enemies within "..COLORS_Numbers.n_50_rgb.." meters of the Veteran are highlighted for {duration:%s} seconds.\n"
-				-- .."Killing an highlighted enemy refreshes the active duration by {refresh_duration:%s} seconds. This also refreshes the duration of outlines on enemies for Veteran.\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-				-- .."This is an augmented version of {old_talent_name:%s}."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_1_rgb,
+			-- .."{damage:%s} Ranged "..COLORS_KWords.Damage_rgb..",\n"
+			-- .."{weakspot_damage:%s} Ranged "..COLORS_KWords.Weakspot_dmg_rgb..".\n"
+			-- .."Human-sized Elite and Specialist Enemies within "..COLORS_Numbers.n_50_rgb.." meters of the Veteran are highlighted for {duration:%s} seconds.\n"
+			-- .."Killing an highlighted enemy refreshes the active duration by {refresh_duration:%s} seconds. This also refreshes the duration of outlines on enemies for Veteran.\n"
+			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
+			-- .."This is an augmented version of {old_talent_name:%s}."
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_1_rgb,
 		-- ru = "Вы входите в стойку дальнего боя на {duration:%s} секунд. Входя в эту стойку, вы мгновенно экипируете своё оружие дальнего боя и получаете:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою и\n{weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." в дальнем бою. Ваш разброс и отдача также значительно уменьшаются.\nЭлитные враги и специалисты размером с человека в пределах "..COLORS_Numbers.n_50_rgb.." метров от ветерана подсвечиваются на {duration:%s} секунд.\nУбийство подсвеченного врага обновляет активную длительность на {refresh_duration:%s} секунд. Это также обновляет длительность подсветки врагов для ветерана.\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {old_talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Ability_1_rgb_ru, -- Стойка палача
 		-- fr = "Passez en posture à distance pendant {duration:%s} secondes. Vous équipez instantanément votre arme à distance et infligez :\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance,\n{weakspot_damage:%s} de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." à distance.\nLes ennemis élites et spécialistes de taille humaine situés à moins de "..COLORS_Numbers.n_50_rgb.." mètres du vétéran sont mis en surbrillance pendant {duration:%s} secondes.\nTuer un ennemi mis en surbrillance rafraîchit la durée active de {refresh_duration:%s} secondes. Cela rafraîchit également la durée des contours sur les ennemis pour le vétéran.\nTemps de recharge de base : {cooldown:%s} secondes.\nIl s'agit d'une version augmentée de {old_talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_VET_Ability_1_rgb_fr,
 		-- ["zh-tw"] = "立即裝備遠程武器進入戰鬥姿態：\n"
@@ -312,7 +312,7 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 1-1 - Enhanced Target Priority +]--
 	-- ["loc_talent_veteran_combat_ability_coherency_outlines_description"] = { -- talent_name: Executioner's Stance, duration: 5, &->and, s->seconds
 		-- en = "{talent_name:%s} now outlines all human-sized Elite and Specialist Enemies for Allies in "..COLORS_KWords.Coherency_rgb.." for {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_1_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_1_1_rgb,
 		-- ru = "{talent_name:%s} теперь также подсвечивает всех элитных врагов и специалистов размером с человека и для ваших союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." на {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_1_1_rgb_ru, -- Повышенный приоритет целей -- руоф Повышенный приоритет цели
 		-- fr = "{talent_name:%s} met désormais en surbrillance tous les ennemis élites et spécialistes de taille humaine pour les alliés en syntonie pendant {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Ability_1_1_rgb_fr,
 		-- ["zh-tw"] = "為 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友標記敵人。\n"
@@ -364,8 +364,8 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 1-4 - Marksman +]--
 	-- ["loc_talent_veteran_ability_marksman_desc"] = { -- duration: 10, power: +20%, talent_name: Infiltrate, s->seconds, +colors
 		-- en = "{power:%s} "..COLORS_KWords.Strength_rgb.." for any "..COLORS_KWords.Weakspothits_rgb.." for {duration:%s} seconds after "..COLORS_KWords.Combat_ability_rgb.." use.\n"
-				-- .."When using {talent_name:%s}, this is applied after leaving "..COLORS_KWords.Stealth_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_1_4_rgb,
+			-- .."When using {talent_name:%s}, this is applied after leaving "..COLORS_KWords.Stealth_rgb.."."
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_1_4_rgb,
 		-- ru = "{power:%s} к "..COLORS_KWords_ru.Strength_rgb_ru.." получают все атаки в "..COLORS_KWords_ru.Weakspot_rgb_ru.." на {duration:%s} секунд после активации "..COLORS_KWords_ru.Combat_ability_rgb_ru..".\n\nПри использовании способности {talent_name:%s}, этот талант начинает действовать после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_1_4_rgb_ru, -- Меткий стрелок
 		-- fr = "{power:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." pour tous les "..COLORS_KWords_fr.Weakspothits_rgb_fr.." pendant {duration:%s} secondes après utilisation de la "..COLORS_KWords_fr.Combat_ability_rgb_fr..".\n\nLors de l'utilisation de {talent_name:%s}, cela s'applique après avoir quitté l'état de la "..COLORS_KWords_fr.Stealth_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Ability_1_4_rgb_fr,
 		-- ["zh-tw"] = "使用 "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 後獲得以下效果：\n"
@@ -384,8 +384,8 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 2 - Voice of Command +]--
 	-- ["loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"] = { -- range: 9, cooldown: 30, &->and, m->meters, s->seconds, +colors
 		-- en = "Replenishes your "..COLORS_KWords.Toughness_rgb.." and "..COLORS_KWords.Staggers_rgb.." all Enemies within {range:%s} meters.\n"
-				-- .."Base Cooldown {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_2_rgb,
+			-- .."Base Cooldown {cooldown:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_2_rgb,
 		-- ru = "Восполняет всю вашу "..COLORS_KWords_ru.Tghnss_rgb_ru.." и "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов в радиусе {range:%s} метров.\n\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_rgb_ru, -- Командный голос
 		-- fr = "Régénérez votre "..COLORS_KWords_fr.Toughness_rgb_fr.." et faites "..COLORS_KWords_fr.Staggering_rgb_fr.." tous les ennemis dans un rayon de {range:%s} mètres.\n\nTemps de recharge de base {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Ability_2_rgb_fr,
 		-- ["zh-tw"] = "- 瞬間恢復 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 。\n"
@@ -404,7 +404,7 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 2-1 - Duty and Honour +]--
 	-- ["loc_talent_veteran_combat_ability_increase_and_restore_toughness_to_coherency_description"] = { -- talent_name: Voice of Command, toughness: +50, duration: 15, s->seconds, +colors
 		-- en = "{talent_name:%s} now also provides you and Allies in "..COLORS_KWords.Coherency_rgb.." with {toughness:%s} "..COLORS_KWords.Toughness_rgb.." for {duration:%s} seconds. This can exceed your Maximum "..COLORS_KWords.Toughness_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_2_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_2_1_rgb,
 		-- ru = "{talent_name:%s} теперь также даёт вам и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." на {duration:%s} секунд. Это может повысить ваш максимальный уровень "..COLORS_KWords_ru.Toughness_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_1_rgb_ru, -- Долг и честь
 		-- fr = "{talent_name:%s} accorde également à vous et aux alliés en syntonie {toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." pendant {duration:%s} secondes. Cela peut dépasser votre maximum de "..COLORS_KWords_fr.Toughness_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Ability_2_1_rgb_fr,
 		-- ["zh-tw"] = "{talent_name:%s} 會賦予 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友以下狀態：\n"
@@ -424,7 +424,7 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 2-2 - Only In Death Does Duty End +]--
 	-- ["loc_talent_veteran_combat_ability_revives_description"] = { -- talent_name: Voice of Command, range: 33%, ability_cooldown: 50%, &->and, +colors
 		-- en = "{talent_name:%s} revives Knocked Down Allies within Radius, but also reduces that Radius by {range:%s} and increases your "..COLORS_KWords.Ability_cd_rgb.." by {ability_cooldown:%s}."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_2_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_2_2_rgb,
 		-- ru = "{talent_name:%s} поднимает сбитых с ног союзников в радиусе действия, но этот радиус уменьшается на {range:%s}, а также увеличивается время "..COLORS_KWords_ru.Ability_cd_rgb_ru.." на {ability_cooldown:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_2_rgb_ru, -- Лишь со смертью заканчивается долг -- руоф Лишь после смерти заканчивается служение долгу
 		-- fr = "{talent_name:%s} ressuscite les alliés mis à terre dans le rayon, mais réduit également ce rayon de {range:%s} et augmente votre "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.." de {ability_cooldown:%s}."..TALENTS_Enh_desc2_fr.ED_VET_Ability_2_2_rgb_fr,
 		-- ["zh-tw"] = "{talent_name:%s} 可使範圍內倒地的隊友立即復甦。\n"
@@ -444,9 +444,9 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 2-3 - For the Emperor! +]--
 	-- ["loc_talent_veteran_combat_ability_melee_and_ranged_damage_to_coherency_description"] = { -- duration: 5, melee_damage: +10%, ranged_damage: +10%, &->and, s->seconds, +colors
 		-- en = "Your "..COLORS_KWords.Combat_ability_rgb.." gives for {duration:%s} seconds you and Allies in "..COLORS_KWords.Coherency_rgb..":\n"
-				-- .."{melee_damage:%s} Melee Base "..COLORS_KWords.Damage_rgb.." and\n"
-				-- .."{ranged_damage:%s} Ranged Base "..COLORS_KWords.Damage_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_2_3_rgb,
+			-- .."{melee_damage:%s} Melee Base "..COLORS_KWords.Damage_rgb.." and\n"
+			-- .."{ranged_damage:%s} Ranged Base "..COLORS_KWords.Damage_rgb.."."
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_2_3_rgb,
 		-- ru = "Ваша "..COLORS_KWords_ru.Combat_abil_rgb_ru.." даёт на {duration:%s} секунд вам и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru..":\n{melee_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в ближнем бою и\n{ranged_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою."..TALENTS_Enh_desc2_ru.ED_VET_Ability_2_3_rgb_ru, -- За Императора!
 		-- fr = "Votre "..COLORS_KWords_fr.Combat_ability_rgb_fr.." donne pendant {duration:%s} secondes à vous et aux alliés en syntonie:\n{melee_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mêlée de base et\n{ranged_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance de base."..TALENTS_Enh_desc2_fr.ED_VET_Ability_2_3_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友獲得：\n"
@@ -466,8 +466,8 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 3 - Infiltrate +]--
 	-- ["loc_talent_veteran_invisibility_on_combat_ability_desc"] = { -- duration: 8, movement_speed: +25%, cooldown: 45, s->seconds, +colors
 		-- en = "Replenish all "..COLORS_KWords.Toughness_rgb.." and enter "..COLORS_KWords.Stealth_rgb.." for {duration:%s} seconds, gaining {movement_speed:%s} Movement Speed. Leaving "..COLORS_KWords.Stealth_rgb.." Suppresses nearby Enemies. Attacking makes you leave "..COLORS_KWords.Stealth_rgb..".\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_rgb,
+			-- .."Base Cooldown: {cooldown:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_rgb,
 		-- ru = "Вы входите в режим "..COLORS_KWords_ru.Stealth_rgb_ru.." на {duration:%s} секунд, восполняя всю "..COLORS_KWords_ru.Tghnss_rgb_ru.." и получая {movement_speed:%s} к скорости движения. Выход из "..COLORS_KWords_ru.Stealth_rgb_ru.." подавляет ближайших врагов. Любые атаки выведут вас из режима "..COLORS_KWords_ru.Stealth_rgb_ru..".\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_rgb_ru, -- Проникновение
 		-- fr = "Régénérez toute la "..COLORS_KWords_fr.Toughness_rgb_fr.." et entre en "..COLORS_KWords_fr.Stealth_rgb_fr.." pendant {duration:%s} secondes, gagnant {movement_speed:%s} de vitesse de déplacement. Quand vous quittez la "..COLORS_KWords_fr.Stealth_rgb_fr.." les ennemis à proximité subissent Suppresion. Attaquer vous fait quitter la "..COLORS_KWords_fr.Stealth_rgb_fr..".\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Ability_3_rgb_fr,
 		-- ["zh-tw"] = "進入 "..COLORS_KWords_tw.Stealth_rgb_tw.." 狀態，並獲得以下狀態：\n"
@@ -490,7 +490,7 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 3-1 - Low Profile +]--
 	-- ["loc_talent_veteran_reduced_threat_after_stealth_desc"] = { -- threat_multiplier: -90%, duration: 10, s->seconds, +colors
 		-- en = "{threat_multiplier:%s} Threat for {duration:%s} seconds on leaving "..COLORS_KWords.Stealth_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_1_rgb,
 		-- ru = "{threat_multiplier:%s} к вероятности выбора врагами вас своей целью на {duration:%s} секунд после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_1_rgb_ru, -- Незаметность -- руоф Сдержанность
 		-- fr = "{threat_multiplier:%s} Menace pour {duration:%s} secondes en quittant la "..COLORS_KWords_fr.Stealth_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Ability_3_1_rgb_fr,
 		-- ["zh-tw"] = "脫離 "..COLORS_KWords_tw.Stealth_rgb_tw.." 狀態後，\n"
@@ -508,7 +508,7 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 3-2 - Overwatch +]--
 	-- ["loc_talent_veteran_combat_ability_extra_charge_description"] = { -- charges: +1, ability_cooldown: +33%
 		-- en = "Your "..COLORS_KWords.Combat_ability_rgb.." gains {charges:%s} charge, but {ability_cooldown:%s} "..COLORS_KWords.Cd_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_2_rgb,
 		-- ru = "Вы получаете {charges:%s} заряд "..COLORS_KWords_ru.Combat_ability_rgb_ru..", но на {ability_cooldown:%s} повышается её время "..COLORS_KWords_ru.Cd_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_2_rgb_ru, -- Наблюдение -- руоф Прикрытие
 		-- fr = "Votre "..COLORS_KWords_fr.Combat_ability_rgb_fr.." gagne {charges:%s} charge, mais {ability_cooldown:%s} de "..COLORS_KWords_fr.Cd_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Ability_3_2_rgb_fr,
 		-- ["zh-tw"] = "獲得 {charges:%s} 次 "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 充能，\n"
@@ -526,7 +526,7 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 3-3 - Hunter's Resolve +]--
 	-- ["loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"] = { -- talent_name: Infiltrate, tdr: +50%, duration: 10, s->seconds, +colors
 		-- en = "{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." is provided by {talent_name:%s} for {duration:%s} seconds upon leaving "..COLORS_KWords.Stealth_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_3_rgb,
 		-- ru = "{tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." даётся на {duration:%s} секунд способностью {talent_name:%s} после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_3_rgb_ru, -- Упорство охотника
 		-- fr = "{tdr:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." est fourni par {talent_name:%s} pour {duration:%s} secondes en quittant la "..COLORS_KWords_fr.Stealth_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Ability_3_3_rgb_fr,
 		-- ["zh-tw"] = "離開 "..COLORS_KWords_tw.Stealth_rgb_tw.." 後，\n"
@@ -544,7 +544,7 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 3-4 - Surprise Attack +]--
 	-- ["loc_talent_veteran_damage_bonus_leaving_invisibility_desc"] = { -- talent_name: Infiltrate, damage: +30%, duration: 5, s->seconds, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." is granted by {talent_name:%s} for {duration:%s} seconds upon leaving "..COLORS_KWords.Stealth_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_4_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_4_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." даётся на {duration:%s} секунд способностью {talent_name:%s} после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_4_rgb_ru, -- Внезапная атака
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." est accordé par {talent_name:%s} pour {duration:%s} secondes en quittant la "..COLORS_KWords_fr.Stealth_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Ability_3_4_rgb_fr,
 		-- ["zh-tw"] = "離開"..COLORS_KWords_tw.Stealth_rgb_tw.."後，\n"
@@ -562,7 +562,7 @@ local veteran_talent_localizations = {
 	--[+ ABILITY 3-5 - Close Quarters Killzone +]--
 	-- ["loc_talent_veteran_ability_assault_desc"] = { -- power: +15%, duration: 10, talent_name: Infiltrate, s->seconds, +colors
 		-- en = "{power:%s} Close "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on "..COLORS_KWords.Combat_ability_rgb.." use.\n\nWhen using {talent_name:%s}, this begins on leaving "..COLORS_KWords.Stealth_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_5_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Ability_3_5_rgb,
 		-- ru = "{power:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров на {duration:%s} секунд после использования "..COLORS_KWords_ru.Combat_ability_rgb_ru..".\n\nПри использовании способности {talent_name:%s}, этот талант начинает действовать после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Ability_3_5_rgb_ru, -- Зона ближнего боя -- руоф Зона поражения на ближней дистанции
 		-- fr = "{power:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." rapprochés pour {duration:%s} secondes Lors de l'utilisation d'une "..COLORS_KWords_fr.Combat_ability_rgb_fr..".\n\nEn utilisant {talent_name:%s}, cela commence en quittant "..COLORS_KWords_fr.Stealth_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Ability_3_5_rgb_fr,
 		-- ["zh-tw"] = "使用"..COLORS_KWords_tw.Combat_ability_rgb_tw.."後："
@@ -583,7 +583,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 1 - Marksman's Focus +]--
 	-- ["loc_talent_veteran_snipers_focus_alt_description"] = { -- stacks: 3, max_stacks: 10, power: +7.5%, reload_speed: +1%, grace_time: 6, grace_time_hit: 3, stack(s)->stacks, s->second/seconds, +colors
 		-- en = "Ranged "..COLORS_KWords.Weak_spot_rgb.." kills grant {stacks:%s} Stacks of "..COLORS_KWords.Focus_rgb..". Up to {max_stacks} Max Stacks. Sprinting, Sliding and Walking removes Stacks.\nEach Stack of "..COLORS_KWords.Focus_rgb.." grants:\n{power:%s} Ranged "..COLORS_KWords.Finesse_rgb.." strength and\n{reload_speed:%s} Reload Speed.\nRanged "..COLORS_KWords.Weak_spot_rgb.." kills let you move without losing Stacks for {grace_time:%s} seconds. Ranged "..COLORS_KWords.Weakspothits_rgb.." lets you move without losing Stacks for {grace_time_hit:%s} second."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_1_rgb,
 		-- ru = "Убийства выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." дают {stacks:%s} заряда "..COLORS_KWords_ru.Focus_rgb_ru..". До максимума в {max_stacks} зарядов. Бег, подкаты и ходьба снимают заряды.\nКаждый заряд "..COLORS_KWords_ru.Focus_rgb_ru.." даёт:\n{reload_speed:%s} к скорости перезарядки и\n{power:%s} к усилению "..COLORS_KWords_ru.Finesse_rgb_ru.." для дальнобойных атак.\nУбийства выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." позволят вам передвигаться без потери зарядов в течение {grace_time:%s} секунд. Попадания выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." позволят вам передвигаться без потери зарядов в течение {grace_time_hit:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_rgb_ru, -- Концентрация снайпера
 		-- fr = "Les tirs à distance sur "..COLORS_KWords_fr.Weakspot_rgb_fr.." octroient {stacks:%s} cumuls de "..COLORS_KWords_fr.Focus_rgb_fr..". Jusqu'à {max_stacks} cumuls maximum. Courir, glisser et marcher supprime les cumuls.\nChaque cumul de "..COLORS_KWords_fr.Focus_rgb_fr.." octroie : {power:%s} de "..COLORS_KWords_fr.Finesse_dmg_rgb_fr.." à distance et {reload_speed:%s} vitesse de rechargement.\nLes élimination sur "..COLORS_KWords_fr.Weakspot_rgb_fr.." à distance permettent de se déplacer sans perdre de cumuls pendant {grace_time:%s} secondes. Les tirs "..COLORS_KWords_fr.Weakspothits_rgb_fr.." permettent de se déplacer sans perdre de cumuls pendant {grace_time_hit:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_1_rgb_fr,
 		-- ["zh-tw"] = COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 敵人後可獲得 {stacks:%s} 層 "..COLORS_KWords_tw.Focus_rgb_tw.." 。\n\n"
@@ -610,7 +610,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 1-1 - Chink in their Armour +]--
 	-- ["loc_talent_veteran_snipers_focus_rending_bonus_description"] = { -- rending: +10%, stacks: 10, +colors
 		-- en = "{rending:%s} "..COLORS_KWords.Rending_rgb.." when at, or over, {stacks:%s} Stacks of "..COLORS_KWords.Focus_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_1_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_1_1_rgb,
 		-- ru = "{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru..", когда у вас {stacks:%s} или более зарядов "..COLORS_KWords_ru.Focus_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_1_rgb_ru, -- Щель в их броне -- руоф Щель в броне
 		-- fr = "{rending:%s} de "..COLORS_KWords_fr.Rending_rgb_fr.." lorsque à, ou au-dessus de, {stacks:%s} cumuls de "..COLORS_KWords_fr.Focus_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_1_1_rgb_fr,
 		-- ["zh-tw"] = "當 "..COLORS_KWords_tw.Focus_rgb_tw.." 達到 {stacks:%s} 層以上時：\n"
@@ -628,7 +628,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 1-2 - Tunnel Vision +]--
 	-- ["loc_talent_veteran_snipers_focus_stamina_bonus_desc"] = { -- toughness_replenish_multiplier: +5%, stamina: 10%, +colors
 		-- en = "{toughness_replenish_multiplier:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for each Stack of "..COLORS_KWords.Focus_rgb..". In addition, "..COLORS_KWords.Weak_spot_rgb.." kills restore {stamina:%s} "..COLORS_KWords.Stamina_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_1_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_1_2_rgb,
 		-- ru = "{toughness_replenish_multiplier:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждый заряд "..COLORS_KWords_ru.Focus_rgb_ru..". Убийства в "..COLORS_KWords_ru.Weakspot_rgb_ru.." дополнительно восстанавливают {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_2_rgb_ru, -- Тоннельное зрение
 		-- fr = "{toughness_replenish_multiplier:%s} de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." pour chaque cumul de "..COLORS_KWords_fr.Focus_rgb_fr..". De plus, les éliminations sur "..COLORS_KWords_fr.Weakspot_rgb_fr.." restaurent {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_1_2_rgb_fr,
 		-- ["zh-tw"] = Dot_green.." 每層 "..COLORS_KWords_tw.Focus_rgb_tw.." 可恢復 {toughness_replenish_multiplier:%s} 的 "..COLORS_KWords_tw.Toughness_rgb_tw.." 。\n"
@@ -677,7 +677,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 2 - Focus Target! +]--
 	-- ["loc_talent_veteran_improved_tag_description"] = { -- time: 2, max_stacks: 5, damage: +4%, s->seconds, +colors
 		-- en = "Gain "..COLORS_KWords.Focus_Target_rgb.." every {time:%s} seconds. Stacks {max_stacks:%s} times.\nTagging an Enemy applies the "..COLORS_KWords.Focus_Target_rgb.." Stacks to them, causing them to take {damage:%s} additional "..COLORS_KWords.Damage_rgb.." for each Stack, and resets your "..COLORS_KWords.Focus_Target_rgb.." Stacks to "..COLORS_Numbers.n_1_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_2_rgb,
 		-- ru = "Вы получаете заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru.." каждые {time:%s} секунды. Суммируется {max_stacks:%s} раз.\nОтметка врага применяет все заряды "..COLORS_KWords_ru.Focus_Target_rgb_ru.." к нему. Враг получает дополнительно {damage:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru.." за каждый заряд. Количество зарядов "..COLORS_KWords_ru.Focus_Target_rgb_ru.." сбрасывается до "..COLORS_Numbers.n_1_rgb.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_rgb_ru, -- Важная цель!
 		-- fr = "Gagnez "..COLORS_KWords_fr.Focus_Target_rgb_fr.." toutes les {time:%s} secondes. Cumulable jusqu'à {max_stacks:%s} fois.\nMarquer un ennemi applique les cumuls de "..COLORS_KWords_fr.Focus_Target_rgb_fr.." sur lui, le faisant subir {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." supplémentaire par cumul, et réinitialise vos cumuls de "..COLORS_KWords_fr.Focus_Target_rgb_fr.." à "..COLORS_Numbers.n_1_rgb.."."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_2_rgb_fr,
 		-- ["zh-tw"] = "每 {time:%s} 秒獲得一層 "..COLORS_KWords_tw.Focus_Target_rgb_tw.." ，最多 {max_stacks:%s} 層。\n\n"
@@ -697,7 +697,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 2-1 - Target Down! +]--
 	-- ["loc_talent_veteran_improved_tag_dead_bonus_description"] = { -- toughness: 5%, stamina: 5%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." and {stamina:%s} "..COLORS_KWords.Stamina_rgb.." are replenished for each stack of "..COLORS_KWords.Focus_Target_rgb.." applied when an enemy you have Tagged dies, for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_2_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_2_1_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." восполняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." за каждый заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru..", когда вы убиваете отмеченного врага."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_1_rgb_ru, -- Цель поражена!
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." et {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." sont récuperés  pour chaque cumul de "..COLORS_KWords_fr.Focus_Target_rgb_fr.." appliqué lorsqu'un ennemi marqué meurt, pour vous et vos alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_2_1_rgb_fr,
 		-- ["zh-tw"] = "當擊殺 "..COLORS_KWords_tw.Focus_Target_s_rgb_tw.." 的敵人時，\n"
@@ -717,7 +717,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 2-2 - Redirect Fire! +]--
 	-- ["loc_talent_veteran_improved_tag_dead_coherency_bonus_description"] = { -- damage: +1.5%, duration: 10, s->seconds, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." is granted for each Stack of "..COLORS_KWords.Focus_Target_rgb.." applied when an enemy you have Tagged dies, to you and Allies in "..COLORS_KWords.Coherency_rgb..". Lasts {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_2_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_2_2_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." за каждый заряд "..COLORS_KWords_ru.Focus_Target_rgb_ru..", когда вы убиваете отмеченного врага. Длится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_2_2_rgb_ru, -- Перевести огонь!
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." est accordé pour chaque cumul de "..COLORS_KWords_fr.Focus_Target_rgb_fr.." appliqué lorsqu'un ennemi marqué meurt, pour vous et vos alliés en syntonie. Dure {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_2_2_rgb_fr,
 		-- ["zh-tw"] = "當擊殺 "..COLORS_KWords_tw.Focus_Target_s_rgb_tw.." 的敵人時，\n"
@@ -754,16 +754,16 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 3 - Weapons Specialist +]--
 	-- ["loc_talent_veteran_weapon_switch_description"] = { -- ranged_stacks: 10, melee_stacks: 1, ranged_attack_speed: +2%, ranged_crit_chance: +33%, ranged_duration: 5, melee_attack_speed: +15%, dodge_modifier: 10%, melee_duration: 10, s->seconds, +colors
 		-- en = "Gain "..COLORS_KWords.Rangedspec_rgb.." on Melee kills. Stacks {ranged_stacks:%s} times.\n"
-				-- .."Gain "..COLORS_KWords.Meleespec_rgb.." on Ranged kill. Stacks {melee_stacks:%s} times.\n"
-				-- .."\n"
-				-- .."When you wield your Ranged weapon, you activate your "..COLORS_KWords.Rangedspec_rgb.." effect, to gain:\n"
-				-- .."{ranged_attack_speed:%s} Ranged Attack Speed and\n"
-				-- .."{ranged_crit_chance:%s} Ranged "..COLORS_KWords.Crit_hit_rgb.." Chance on your next shot, per Stack. Lasts {ranged_duration:%s} seconds.\n"
-				-- .."\n"
-				-- .."When you wield your Melee weapon, you activate your "..COLORS_KWords.Meleespec_rgb.." effect, to gain:\n"
-				-- .."{melee_attack_speed:%s} Melee Attack Speed,\n"
-				-- ..COLORS_Numbers.n_plus_rgb.."{dodge_modifier:%s} Dodge Speed and Dodge Distance. Lasts {melee_duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_rgb,
+			-- .."Gain "..COLORS_KWords.Meleespec_rgb.." on Ranged kill. Stacks {melee_stacks:%s} times.\n"
+			-- .."\n"
+			-- .."When you wield your Ranged weapon, you activate your "..COLORS_KWords.Rangedspec_rgb.." effect, to gain:\n"
+			-- .."{ranged_attack_speed:%s} Ranged Attack Speed and\n"
+			-- .."{ranged_crit_chance:%s} Ranged "..COLORS_KWords.Crit_hit_rgb.." Chance on your next shot, per Stack. Lasts {ranged_duration:%s} seconds.\n"
+			-- .."\n"
+			-- .."When you wield your Melee weapon, you activate your "..COLORS_KWords.Meleespec_rgb.." effect, to gain:\n"
+			-- .."{melee_attack_speed:%s} Melee Attack Speed,\n"
+			-- ..COLORS_Numbers.n_plus_rgb.."{dodge_modifier:%s} Dodge Speed and Dodge Distance. Lasts {melee_duration:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_rgb,
 		-- ru = "Вы получаете заряд "..COLORS_KWords_ru.Rangedspec_rgb_ru.." при убийстве в ближнем бою. Суммируется до {ranged_stacks:%s} раз.\nВы получаете заряд "..COLORS_KWords_ru.Meleespec_rgb_ru.." при убийстве в дальнем бою. Суммируется {melee_stacks:%s} раз.\n\nКогда вы берёте в руки оружие дальнего боя, вы активируете эффект "..COLORS_KWords_ru.Rangedspec_rgb_ru.." и получаете за каждый заряд прибавку для следующего выстрела:\n{ranged_attack_speed:%s} к скорости атаки и\n{ranged_crit_chance:%s} к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru..". Длится {ranged_duration:%s} секунд.\n\nКогда вы берёте в руки оружие ближнего боя, вы активируете эффект "..COLORS_KWords_ru.Meleespec_rgb_ru.." и получаете:\n{melee_attack_speed:%s} к скорости атаки,\n"..COLORS_Numbers.n_plus_rgb.."{dodge_modifier:%s} к скорости и дистанции уклонений. Длится {melee_duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_rgb_ru, -- Специалист по оружию -- руоф Специалист по вооружениям
 		-- fr = "Obtenez "..COLORS_KWords_fr.Rangedspec_rgb_fr.." en éliminant des ennemis en mêlée. Cumule jusqu'à {ranged_stacks:%s} fois.\nObtenez "..COLORS_KWords_fr.Meleespec_rgb_fr.." en éliminant des ennemis à distance. Cumule jusqu'à {melee_stacks:%s} fois.\n\nLorsque vous maniez votre arme à distance, vous activez votre effet "..COLORS_KWords_fr.Rangedspec_rgb_fr..", pour obtenir :\n{ranged_attack_speed:%s} Vitesse d'attaque à distance et\n{ranged_crit_chance:%s} de "..COLORS_KWords_fr.Crit_chance_r_rgb_fr.." à distance lors de votre prochain tir, par cumul. Dure {ranged_duration:%s} secondes.\n\nLorsque vous maniez votre arme de mêlée, vous activez votre effet "..COLORS_KWords_fr.Meleespec_rgb_fr..", pour obtenir :\n{melee_attack_speed:%s} Vitesse d'attaque au corps à corps,\n"..COLORS_Numbers.n_plus_rgb.."{dodge_modifier:%s} Vitesse d'esquive et Distance d'esquive. Dure {melee_duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_3_rgb_fr,
 		-- ["zh-tw"] = "當你使用近戰武器擊殺敵人時，\n"
@@ -796,7 +796,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 3-1 - Always Prepared +]--
 	-- ["loc_talent_veteran_weapon_switch_replenish_ammo_description"] = { -- ammo: 3.3%, +colors
 		-- en = "Activating "..COLORS_KWords.Rangedspec_rgb.." replenishes up to {ammo:%s} of your missing ammo in your Clip from your Reserve, rounded up, for each Stack."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_1_rgb,
 		-- ru = "Активация "..COLORS_KWords_ru.Rangedspec_rgb_ru.." заряжает до {ammo:%s} недостающих патронов в вашем магазине из резерва за каждый заряд. Округляется в большую сторону."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_1_rgb_ru, -- Всегда готов
 		-- fr = "L'activation de "..COLORS_KWords_fr.Rangedspec_rgb_fr.." recharge jusqu'à {ammo:%s} de vos munitions manquantes dans votre chargeur à partir de votre réserve, arrondi au supérieur, par cumul."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_3_1_rgb_fr,
 		-- ["zh-tw"] = "啟動 "..COLORS_KWords_tw.Rangedspec_rgb_tw.." 時，\n"
@@ -817,7 +817,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 3-2 - Invigorated +]--
 	-- ["loc_talent_veteran_weapon_switch_replenish_stamina_description"] = { -- stamina: 20%, +colors
 		-- en = "Activating "..COLORS_KWords.Meleespec_rgb.." restores {stamina:%s} "..COLORS_KWords.Stamina_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_2_rgb,
 		-- ru = "Активация "..COLORS_KWords_ru.Meleespec_rgb_ru.." восстанавливает {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_2_rgb_ru, -- Ободрение
 		-- fr = "L'activation de "..COLORS_KWords_fr.Meleespec_rgb_fr.." restaure {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_3_2_rgb_fr,
 		-- ["zh-tw"] = "啟動 "..COLORS_KWords_tw.Meleespec_rgb_tw.." 時，\n"
@@ -835,7 +835,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 3-3 - On Your Toes +]--
 	-- ["loc_talent_veteran_weapon_switch_replenish_toughness_description"] = { -- toughness: 20%, cooldown: 3, s->seconds, +colors
 		-- en = "Activating "..COLORS_KWords.Meleespec_rgb.." and "..COLORS_KWords.Rangedspec_rgb.." replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb..". {cooldown:%s} seconds Cooldown for each."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_3_rgb,
 		-- ru = "Активация "..COLORS_KWords_ru.Meleespec_rgb_ru.." или "..COLORS_KWords_ru.Rangedspec_rgb_ru.." восстанавливает {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..". {cooldown:%s} секунды восстанавливается каждый."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_3_rgb_ru, -- Наготове
 		-- fr = "L'activation de "..COLORS_KWords_fr.Meleespec_rgb_fr.." et "..COLORS_KWords_fr.Rangedspec_rgb_fr.." restaure {toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr..". Temps de recharge de {cooldown:%s} secondes pour chacun."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_3_3_rgb_fr,
 		-- ["zh-tw"] = "啟動 "..COLORS_KWords_tw.Meleespec_rgb_tw.." 或 "..COLORS_KWords_tw.Rangedspec_rgb_tw.." 時，\n"
@@ -854,7 +854,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 3-4 - Fleeting Fire +]--
 	-- ["loc_talent_veteran_weapon_switch_reload_speed_description"] = { -- reload_speed: 20%, duration: 5, s->seconds, +colors
 		-- en = "Activating "..COLORS_KWords.Rangedspec_rgb.." grants {reload_speed:%s} Reload Speed for {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_4_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_4_rgb,
 		-- ru = "Активация "..COLORS_KWords_ru.Rangedspec_rgb_ru.." даёт {reload_speed:%s} к скорости перезарядки оружия на {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_4_rgb_ru, -- Беглый огонь
 		-- fr = "L'activation de "..COLORS_KWords_fr.Rangedspec_rgb_fr.." accorde {reload_speed:%s} vitesse de rechargement pendant {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_3_4_rgb_fr,
 		-- ["zh-tw"] = "啟動 "..COLORS_KWords_tw.Rangedspec_rgb_tw.." 時，\n"
@@ -873,7 +873,7 @@ local veteran_talent_localizations = {
 	--[+ KEYSTONE 3-5 - Conditioning +]--
 	-- ["loc_talent_veteran_weapon_switch_stamina_reduction_description"] = { -- stamina_reduction: 25%, duration: 3, s->seconds, +colors
 		-- en = "Activating "..COLORS_KWords.Meleespec_rgb.." grants {stamina_reduction:%s} "..COLORS_KWords.Stamina_rgb.." Cost Reduction for {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_5_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Keystone_3_5_rgb,
 		-- ru = "Активация "..COLORS_KWords_ru.Meleespec_rgb_ru.." даёт {stamina_reduction:%s} к сокращению затрат "..COLORS_KWords_ru.Stamina_rgb_ru.." на {duration:%s} секунды."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_3_5_rgb_ru, -- Подготовка
 		-- fr = "L'activation de "..COLORS_KWords_fr.Meleespec_rgb_fr.." accorde {stamina_reduction:%s} réduction du coût d'"..COLORS_KWords_fr.Stamina_rgb_fr.." pendant {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Keystone_3_5_rgb_fr,
 		-- ["zh-tw"] = "啟動 "..COLORS_KWords_tw.Meleespec_rgb_tw.." 時，\n"
@@ -893,7 +893,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 1 - Longshot +]--
 	-- ["loc_talent_veteran_increased_damage_based_on_range_desc"] = { -- max_damage: +20%, +colors
 		-- en = "Deal up to {max_damage:%s} Ranged Base "..COLORS_KWords.Damage_rgb..". Bonus is reduced the nearer the target."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_1_rgb,
 		-- ru = "До {max_damage:%s} к базовому "..COLORS_KWords_ru.Damage_rgb_ru.." для дальнобойных атак. Чем ближе цель, тем меньше прибавка."..TALENTS_Enh_desc2_ru.ED_VET_Passive_1_rgb_ru, -- Дальний выстрел -- руоф Далекая перспектива
 		-- fr = "Inflige jusqu'à {max_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de base à distance. Le bonus est réduit plus la cible est proche."..TALENTS_Enh_desc2_fr.ED_VET_Passive_1_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -909,7 +909,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 2 - Close Order Drill +]--
 	-- ["loc_talent_veteran_toughness_damage_reduction_per_ally_description"] = { -- toughness: +33%, +colors
 		-- en = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_11_rgb.." "..COLORS_KWords.Toughness_dmg_red_rgb.." per Ally in "..COLORS_KWords.Coherency_rgb..". Up to {toughness:%s}."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_2_rgb,
 		-- ru = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_11_rgb.." к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." за каждого союзника в "..COLORS_KWords_ru.Coherency_rgb_ru..". Вплоть до {toughness:%s}."..TALENTS_Enh_desc2_ru.ED_VET_Passive_2_rgb_ru, -- Строевая подготовка
 		-- fr = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_11_rgb.." de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." par allié en syntonie. Jusqu'à {toughness:%s}."..TALENTS_Enh_desc2_fr.ED_VET_Passive_2_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -925,7 +925,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 3 - One Motion +]--
 	-- ["loc_talent_veteran_reduce_swap_time_desc"] = { -- swap_speed: +25%
 		-- en = "{swap_speed} Weapon Swap Speed."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_3_rgb,
 		-- ru = "{swap_speed} к скорости смены оружия."..TALENTS_Enh_desc2_ru.ED_VET_Passive_3_rgb_ru, -- В одно движение -- руоф Одно движение
 		-- fr = "{swap_speed:%s} Vitesse de changement d'arme."..TALENTS_Enh_desc2_fr.ED_VET_Passive_3_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -941,7 +941,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 4 - Exhilarating Takedown +]--
 	-- ["loc_talent_veteran_toughness_on_weakspot_kill_desc"] = { -- toughness: 15%, toughness_damage_reduction: +10%, duration: 8, stacks: 3, s->seconds, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished and "..COLORS_Numbers.n_1_rgb.." Stack of {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." is gained for {duration:%s} seconds on a Ranged "..COLORS_KWords.Weak_spot_rgb.." kill. Stacks {stacks:%s} times."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_4_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_4_rgb,
 		-- ru = "Вы восстанавливаете {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и получаете "..COLORS_Numbers.n_1_rgb.." заряд {toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." на {duration:%s} секунд при убийстве врага в "..COLORS_KWords_ru.Weakspothit_rgb_ru..". Суммируется до {stacks:%s} раз."..TALENTS_Enh_desc2_ru.ED_VET_Passive_4_rgb_ru, -- Подбадривающее убийство -- руоф Бодрящее сокрушение
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." est récuperés et "..COLORS_Numbers.n_1_rgb.." cumul de {toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." est gagné pour {duration:%s} secondes lors d'une élimination à distance sur "..COLORS_KWords_fr.Weakspot_rgb_fr..". Cumule jusqu'à {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_VET_Passive_4_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -957,7 +957,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 5 - Volley Adept +]--
 	-- ["loc_talent_veteran_reload_speed_on_elite_kill_desc"] = { -- reload_speed: +30%, &->and
 		-- en = "{reload_speed:%s} Reload Speed on Elite and Specialist Enemy Kill."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_5_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_5_rgb,
 		-- ru = "{reload_speed:%s} к скорости перезарядки при убийстве элитных врагов или специалистов."..TALENTS_Enh_desc2_ru.ED_VET_Passive_5_rgb_ru, -- Умелый залп -- руоф Адепт залпа
 		-- fr = "{reload_speed:%s} vitesse de rechargement lors de l'élimination d'un ennemi d'élite ou spécialiste."..TALENTS_Enh_desc2_fr.ED_VET_Passive_5_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -973,7 +973,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 6 - Charismatic +]--
 	-- ["loc_talent_veteran_increased_aura_radius_description"] = { -- radius: +50%
 		-- en = "{radius:%s} Aura radius."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_6_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_6_rgb,
 		-- ru = "{radius:%s} к радиусу ауры "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Passive_6_rgb_ru, -- Харизматичный -- руоф Обаятельный
 		-- fr = "{radius:%s} rayon d'aura."..TALENTS_Enh_desc2_fr.ED_VET_Passive_6_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -989,7 +989,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 7 - Confirmed Kill +]--
 	-- ["loc_talent_veteran_toughness_on_elite_kill_desc"] = { -- toughness: 10%, toughness_over_time: 20%, duration: 10, s->seconds, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished on killing an Elite or Specialist Enemy, and a further {toughness_over_time:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_7_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_7_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при убийстве элитного врага или специалиста сразу, а также ещё дополнительно {toughness_over_time:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." в течение {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_7_rgb_ru, -- Подтверждённое убийство -- руоф Подтвержденное убийство
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." est restauré lors d'une éliminant d'élite ou de spécialiste, et {toughness_over_time:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." supplémentaire pendant {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Passive_7_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1005,7 +1005,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 8 - Tactical Reload +]--
 	-- ["loc_talent_veteran_reload_speed_non_empty_mag_desc"] = { -- reload_speed: +25%
 		-- en = "{reload_speed:%s} Reload Speed if your weapon contains Ammo."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_8_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_8_rgb,
 		-- ru = "{reload_speed:%s} к скорости перезарядки, если в оружии остались патроны."..TALENTS_Enh_desc2_ru.ED_VET_Passive_8_rgb_ru, -- Тактическая перезарядка
 		-- fr = "{reload_speed:%s} vitesse de rechargement si votre arme contient des munitions."..TALENTS_Enh_desc2_fr.ED_VET_Passive_8_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1021,7 +1021,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 9 - Out for Blood +]--
 	-- ["loc_talent_veteran_all_kills_replenish_toughness_description"] = { -- toughness: 5%, +colors
 		-- en = "{toughness:%s} additional "..COLORS_KWords.Toughness_rgb.." is replenished with each kill."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_9_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_9_rgb,
 		-- ru = "Вы восстанавливаете {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." дополнительно за каждое убийство."..TALENTS_Enh_desc2_ru.ED_VET_Passive_9_rgb_ru, -- На тропе войны -- руоф В поисках крови
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." supplémentaire est restauré avec chaque élimination."..TALENTS_Enh_desc2_fr.ED_VET_Passive_9_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1037,9 +1037,9 @@ local veteran_talent_localizations = {
 	--[+ Passive 10 - Get Back in the Fight! +]--
 	-- ["loc_talent_veteran_movement_bonus_on_toughness_broken_desc"] = { -- duration: 6, stamina_percent: +50%, cooldown: 30, &->and, s->seconds, +colors
 		-- en = "{stamina_percent:%s} "..COLORS_KWords.Stamina_rgb.." restored, along with "..COLORS_KWords.Stun_rgb.." and Slow Immunity, for {duration:%s} seconds when "..COLORS_KWords.Toughness_rgb.." is broken.\n"
-				-- .."\n"
-				-- .."Cooldown {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_10_rgb,
+			-- .."\n"
+			-- .."Cooldown {cooldown:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_10_rgb,
 		-- ru = "Если вашу "..COLORS_KWords_ru.Tghnss_rgb_ru.." пробили, вы восполняете {stamina_percent:%s} "..COLORS_KWords_ru.Stamina_rgb_ru..", а также получаете иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." и замедлению на {duration:%s} секунд.\n\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_10_rgb_ru, -- Возвращайся в бой! -- руоф Вернуться в бой!
 		-- fr = "{stamina_percent:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." est restauré, avec une immunité au "..COLORS_KWords_fr.Stuns_rgb_fr.." et au ralentissement, pendant {duration:%s} secondes lorsque la "..COLORS_KWords_fr.Toughness_rgb_fr.." tombe à "..COLORS_Numbers.n_0_rgb..".\n\n{cooldown:%s} secondes de recharge."..TALENTS_Enh_desc2_fr.ED_VET_Passive_10_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1055,7 +1055,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 11 - Catch a Breath +]--
 	-- ["loc_talent_veteran_replenish_toughness_outside_melee_hit_desc"] = { -- toughness: 5%, range: 8, m->meters, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second is replenished after not being targeted by a Melee Attack for {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_11_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_11_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду, если вы не были целью атаки ближнего боя в течение {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_11_rgb_ru, -- Переведи дух -- руоф Передышка
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérés par seconde si le Vétéran n'a pas subit ou bloqué d'attaque de Mélée pendant {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Passive_11_rgb_fr, -- Reprendre son souffle !!! ligne géo /!\
 		-- ["zh-tw"] = ,
@@ -1071,10 +1071,10 @@ local veteran_talent_localizations = {
 	--[+ Passive 12 - Grenade Tinkerer +]--
 	-- ["loc_talent_veteran_improved_grenades_desc"] = { -- krak_grenade: Krak Grenade, krak: +50%, frag_grenade: Frag Grenade, frag_damage: +25%, smoke_grenade: Smoke Grenade, smoke: +100%, &->and, +colors
 		-- en = "Improve your chosen Grenade:\n"
-				-- .."{krak_grenade:%s}: {krak:%s} "..COLORS_KWords.Damage_rgb..".\n"
-				-- .."{frag_grenade:%s}: {frag_damage:%s} "..COLORS_KWords.Damage_rgb.." and Radius.\n"
-				-- .."{smoke_grenade:%s}: {smoke:%s} Duration."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_12_rgb,
+			-- .."{krak_grenade:%s}: {krak:%s} "..COLORS_KWords.Damage_rgb..".\n"
+			-- .."{frag_grenade:%s}: {frag_damage:%s} "..COLORS_KWords.Damage_rgb.." and Radius.\n"
+			-- .."{smoke_grenade:%s}: {smoke:%s} Duration."
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_12_rgb,
 		-- ru = "Выбранная граната улучшается:\n{krak_grenade:%s}: {krak:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..".\n{frag_grenade:%s}: {frag_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и радиусу.\n{smoke_grenade:%s}: {smoke:%s} к длительности."..TALENTS_Enh_desc2_ru.ED_VET_Passive_12_rgb_ru, -- Гранатный мастер -- руоф Любитель гранат
 		-- fr = "Améliorez votre grenade choisie:\n{krak_grenade:%s}: {krak:%s} de "..COLORS_KWords_fr.Damage_rgb_fr..".\n{frag_grenade:%s}: {frag_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." et de rayon.\n{smoke_grenade:%s}: {smoke:%s} durée."..TALENTS_Enh_desc2_fr.ED_VET_Passive_12_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1090,7 +1090,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 13 - Covering Fire +]--
 	-- ["loc_talent_veteran_replenish_toughness_and_boost_allies_desc"] = { -- radius: 5, toughness: 15%, base_damage: +10%, duration: 3, &->and s->seconds, +colors
 		-- en = "When you kill an enemy with a Ranged Attack, Allies within {radius:%s} meters of the target Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and receive {base_damage:%s} to all Base "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_13_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_13_rgb,
 		-- ru = "Когда вы убиваете врага из оружия дальнего боя, союзники в радиусе {radius:%s} метров от цели восполняют {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и получают {base_damage:%s} ко всему базовому "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунды."..TALENTS_Enh_desc2_ru.ED_VET_Passive_13_rgb_ru, -- Прикрывающий огонь -- руоф Прикрытие огнем
 		-- fr = "Lorsque d'une élimination à distance, les alliés dans un rayon de {radius:%s} mètres de la cible régénèrent {toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." et reçoivent {base_damage:%s} à tous les "..COLORS_KWords_fr.Damage_rgb_fr.." de base pour {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Passive_13_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1106,7 +1106,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 14 - Serrated Blade +]--
 	-- ["loc_talent_veteran_hits_cause_bleed_desc"] = { -- stacks: 1 -- Stack(s)->Stacks, +colors
 		-- en = COLORS_Numbers.n_plus_rgb.."{stacks:%s} Stack of "..COLORS_KWords.Bleed_rgb.." to the target on Melee Hit. Up to "..COLORS_Numbers.n_16_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_14_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_14_rgb,
 		-- ru = "{stacks:%s} заряд "..COLORS_KWords_ru.Bleed_rgb_ru.." получает цель при ударе в ближнем бою. До "..COLORS_Numbers.n_16_rgb.." зарядов максимум."..TALENTS_Enh_desc2_ru.ED_VET_Passive_14_rgb_ru, -- Зазубренный клинок -- руоф Зазубренное лезвие
 		-- fr = COLORS_Numbers.n_plus_rgb.."{stacks:%s} cumul de "..COLORS_KWords_fr.Bleed_rgb_fr.." sur la cible lors des coups de mêlée. Jusqu'à "..COLORS_Numbers.n_16_rgb.." cumuls."..TALENTS_Enh_desc2_fr.ED_VET_Passive_14_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1122,9 +1122,9 @@ local veteran_talent_localizations = {
 	--[+ Passive 15 - Agile Engagement +]--
 	-- ["loc_talent_veteran_kill_grants_damage_to_other_slot_desc"] = { -- damage: +25%, duration: 5, s->seconds, +colors
 		-- en = "{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on killing an enemy with a Melee attack.\n"
-				-- .."{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." on killing an enemy with a Ranged attack.\n"
-				-- .."Lasts {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_15_rgb,
+			-- .."{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." on killing an enemy with a Ranged attack.\n"
+			-- .."Lasts {duration:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_15_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою при убийстве врага в ближнем бою.\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." в ближнем бою при убийстве врага в дальнем бою.\nДлится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_15_rgb_ru, -- Ловкое взаимодействие
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de distance en tuant un ennemi avec une attaque de mêlée.\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mêlée lors d'une éliminant à distance.\nDure {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Passive_15_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1140,7 +1140,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 16 - Kill Zone +]--
 	-- ["loc_talent_veteran_ranged_power_out_of_melee_new_desc"] = { -- ranged_damage: +20%, radius: 8, m->meters, +colors
 		-- en = "{ranged_damage:%s} Base Ranged "..COLORS_KWords.Damage_rgb.." when you have avoided Melee Attacks for {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_16_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_16_rgb,
 		-- ru = "{ranged_damage:%s} к базовому "..COLORS_KWords_ru.Damage_rgb_ru.." для дальнобойных атак, если вы избегали атак ближнего боя в течение {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_16_rgb_ru, -- Зона поражение
 		-- fr = "{ranged_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de base à Distance lorsqu'il n'a pas subit ou bloqué d'attaque de Mélée."..TALENTS_Enh_desc2_fr.ED_VET_Passive_16_rgb_fr, -- Zone délimination !!! ligne géo
 		-- ["zh-tw"] = ,
@@ -1156,7 +1156,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 17 - Opening Salvo +]--
 	-- ["loc_talent_veteran_bonus_crit_chance_on_ammo_desc"] = { -- ammo: 20%, crit_chance: +10%, +colors
 		-- en = "The first {ammo:%s} Ammo after a Reload has {crit_chance:%s} Ranged "..COLORS_KWords.Crit_hit_rgb.." Chance."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_17_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_17_rgb,
 		-- ru = "Первые {ammo:%s} патронов после перезарядки имеют {crit_chance:%s} к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Passive_17_rgb_ru, -- Открывающий залп
 		-- fr = "Les premières {ammo:%s} munitions après un rechargement ont {crit_chance:%s} de "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.." à distance."..TALENTS_Enh_desc2_fr.ED_VET_Passive_17_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1172,16 +1172,16 @@ local veteran_talent_localizations = {
 	--[+ Passive 18 - Field Improvisation +]--
 	-- ["loc_talent_veteran_better_deployables_description"] = { -- damage_heal: +100%, toughness: 1%, &->and, +colors
 		-- en = "Medi-Packs:\n"
-				-- .."Heal {damage_heal:%s} faster,\n"
-				-- .."Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second,\n"
-				-- .."Cleanse "..COLORS_KWords.Corruption_rgb.." up to the next "..COLORS_KWords.Wound_rgb..".\n"
-				-- .."\n"
-				-- .."Ammo Crates also restore Grenades."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_18_rgb,
+			-- .."Heal {damage_heal:%s} faster,\n"
+			-- .."Replenish {toughness:%s} "..COLORS_KWords.Toughness_rgb.." per second,\n"
+			-- .."Cleanse "..COLORS_KWords.Corruption_rgb.." up to the next "..COLORS_KWords.Wound_rgb..".\n"
+			-- .."\n"
+			-- .."Ammo Crates also restore Grenades."
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_18_rgb,
 		-- ru = "Медпаки:\n"
-				-- .."{damage_heal:%s} к скорости лечения,\n"
-				-- .."{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду и очищается "..COLORS_KWords_ru.Corruption_a_rgb_ru.." вплоть до следующей "..COLORS_KWords_ru.Wound_y_rgb_ru..".\n"
-				-- .."Ящики с боеприпасами также восстанавливают гранаты."..TALENTS_Enh_desc2_ru.ED_VET_Passive_18_rgb_ru, -- Полевая импровизация
+			-- .."{damage_heal:%s} к скорости лечения,\n"
+			-- .."{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду и очищается "..COLORS_KWords_ru.Corruption_a_rgb_ru.." вплоть до следующей "..COLORS_KWords_ru.Wound_y_rgb_ru..".\n"
+			-- .."Ящики с боеприпасами также восстанавливают гранаты."..TALENTS_Enh_desc2_ru.ED_VET_Passive_18_rgb_ru, -- Полевая импровизация
 		-- fr = "Caisse médical:\nSoignent {damage_heal:%s} plus rapidement,\nRégénèrent {toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." par seconde,\nPurifie "..COLORS_KWords_fr.Corruption_rgb_fr.." jusqu'à la prochaine "..COLORS_KWords_fr.Wound_rgb_fr..".\n\nLes caisses de munitions restaurent également les grenades."..TALENTS_Enh_desc2_fr.ED_VET_Passive_18_rgb_fr,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1196,7 +1196,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 19 - Twinned Blast +]--
 	-- ["loc_talent_veteran_extra_grenade_throw_chance_desc"] = { -- chance: 20%
 		-- en = "{chance:%s} chance to throw an additional Grenade but this still only consumes a single Grenade."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_19_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_19_rgb,
 		-- ru = "{chance:%s} шанс бросить дополнительную гранату, потратив по прежнему одну."..TALENTS_Enh_desc2_ru.ED_VET_Passive_19_rgb_ru, -- Двойной взрыв -- Спаренный взрыв
 		-- fr = "{chance:%s} de chance de lancer une grenade supplémentaire mais cela ne consomme qu'une seule grenade."..TALENTS_Enh_desc2_fr.ED_VET_Passive_19_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1212,7 +1212,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 20 - Demolition Stockpile +]--
 	-- ["loc_talent_veteran_replenish_grenade_desc"] = { -- amount: 1, time: 60, Grenade(s)->Grenade, s->seconds
 		-- en = "Replenish {amount:%s} Grenade every {time:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_20_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_20_rgb,
 		-- ru = "Вы получаете {amount:%s} гранату каждые {time:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_20_rgb_ru, -- Склад взрывчатки
 		-- fr = "Vous régénérez {amount:%s} Grenade toutes les {time:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Passive_20_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1228,7 +1228,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 21 - Grenadier +]--
 	-- ["loc_talent_veteran_extra_grenade_description"] = { -- ammo: 1, Grenade(s)->Grenade
 		-- en = "You can carry {ammo:%s} extra Grenade."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_21_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_21_rgb,
 		-- ru = "Вы можете нести {ammo:%s} дополнительную гранату."..TALENTS_Enh_desc2_ru.ED_VET_Passive_21_rgb_ru, -- Гренадёр -- руоф Гренадер
 		-- fr = "Vous pouvez porter {ammo:%s} grenade supplémentaire."..TALENTS_Enh_desc2_fr.ED_VET_Passive_21_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1244,7 +1244,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 22 - Leave No One Behind +]--
 	-- ["loc_talent_veteran_movement_speed_towards_downed_description"] = { -- revive_speed: +20%, movement_speed: +20%, damage_reduction: +33%, duration: 5, &->and, s->seconds, +colors
 		-- en = "{revive_speed:%s} Assist Speed and Revive Speed. {movement_speed:%s} Movement Speed and "..COLORS_KWords.Stun_rgb.." Immunity when moving towards a Knocked Down or Incapacitated Ally. Whenever you Revive a Knocked Down Ally, they receive {damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_22_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_22_rgb,
 		-- ru = "{revive_speed:%s} к скорости поднятия и возрождения союзников.\n{movement_speed:%s} к скорости движения и иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru..", если вы двигаетесь в сторону сбитого с ног или выведенного из строя союзника. Пока вы поднимаете сбитых с ног союзников, они получают {damage_reduction:%s} сопротивления "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_22_rgb_ru, -- Никого не оставляйте позади
 		-- fr = "{revive_speed:%s} Vitesse d'assistance et de réanimation. {movement_speed:%s} Vitesse de déplacement et une immunité aux "..COLORS_KWords_fr.Stuns_rgb_fr.." en se dirigeant vers un allié renversé ou incapacité. Chaque fois que vous réanimez un allié renversé, il reçoit {damage_reduction:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." pendant {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Passive_22_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1260,7 +1260,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 23 - Precision Strikes +]--
 	-- ["loc_talent_veteran_increased_weakspot_damage_desc"] = { -- damage: +30%, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb.." from Melee and Ranged attacks."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_23_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_23_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." для атак ближнего и дальнего боя."..TALENTS_Enh_desc2_ru.ED_VET_Passive_23_rgb_ru, -- Точные удары
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." des attaques de mêlée et à distance."..TALENTS_Enh_desc2_fr.ED_VET_Passive_23_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1291,14 +1291,14 @@ local veteran_talent_localizations = {
 	--[+ Passive 25 - Deadshot +]--
 	-- ["loc_talent_veteran_ads_drains_stamina_boost_desc"] = { -- crit_chance: +25%, sway_reduction: +60%, stamina: 0.75, stamina_per_shot: 0.25 on_Aim!, &->and, +colors
 		-- en = "While aiming and being above 0 "..COLORS_KWords.Stamina_rgb.." you Gain:\n"
-				-- .."{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb..",\n"
-				-- .."{sway_reduction:%s} Sway Reduction,\n"
-				-- ..COLORS_Numbers.pc_p19_rgb.." Spread Reduction and\n"
-				-- ..COLORS_Numbers.pc_p12_rgb.." Recoil Reduction,\n"
-				-- .."but Drains:\n"
-				-- .."{stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second and\n"
-				-- .."{stamina_per_shot:%s} an additional "..COLORS_KWords.Stamina_rgb.." per shot."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_25_rgb,
+			-- .."{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb..",\n"
+			-- .."{sway_reduction:%s} Sway Reduction,\n"
+			-- ..COLORS_Numbers.pc_p19_rgb.." Spread Reduction and\n"
+			-- ..COLORS_Numbers.pc_p12_rgb.." Recoil Reduction,\n"
+			-- .."but Drains:\n"
+			-- .."{stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second and\n"
+			-- .."{stamina_per_shot:%s} an additional "..COLORS_KWords.Stamina_rgb.." per shot."
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_25_rgb,
 		-- ru = "Пока вы целитесь и ваш уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." выше "..COLORS_Numbers.n_0_rgb..", вы получаете:\n{crit_chance:%s} к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru..",\n{sway_reduction:%s} к уменьшению раскачивания прицела,\n"..COLORS_Numbers.pc_p19_rgb.." к сокращению разброса\n"..COLORS_Numbers.pc_p12_rgb.." к уменьшению отдачи,\nно ваш уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." уменьшается на {stamina:%s} в секунду и ещё на {stamina_per_shot:%s} за каждый выстрел."..TALENTS_Enh_desc2_ru.ED_VET_Passive_25_rgb_ru, -- Смертельный выстрел
 		-- fr = "En visant et en étant au-dessus de 0 d'"..COLORS_KWords_fr.Stamina_rgb_fr.." vous gagnez:\n{crit_chance:%s} de "..COLORS_KWords_fr.Crit_chance_rgb_fr..",\n{sway_reduction:%s} Réduction du balancement,\n"..COLORS_Numbers.pc_p19_rgb.." Réduction de la dispersion et\n"..COLORS_Numbers.pc_p12_rgb.." Réduction du recul,\nmais consomme:\n{stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." par seconde et\n{stamina_per_shot:%s} supplémentaire d'"..COLORS_KWords_fr.Stamina_rgb_fr.." par tir."..TALENTS_Enh_desc2_fr.ED_VET_Passive_25_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1314,7 +1314,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 26 - Born Leader +]--
 	-- ["loc_talent_veteran_allies_share_toughness_description"] = { -- toughness: 15%, +colors
 		-- en = "{toughness:%s} of any "..COLORS_KWords.Toughness_rgb.." you replenish is restored to Allies in "..COLORS_KWords.Coherency_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_26_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_26_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..", восстановленой вами из любого источника, также восстанавливается и для ваших союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Passive_26_rgb_ru, -- Прирождённый лидер -- руоф Прирожденный лидер
 		-- fr = "{toughness:%s} de toute "..COLORS_KWords_fr.Toughness_rgb_fr.." que vous regagnez est restaurée aux Alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_VET_Passive_26_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1330,7 +1330,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 27 - Keep Their Heads Down! +]--
 	-- ["loc_talent_veteran_increase_suppression_desc"] = { -- suppression: +50%
 		-- en = "{suppression:%s} Ranged Attack Suppression."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_27_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_27_rgb,
 		-- ru = "{suppression:%s} к подавлению врагов выстрелами."..TALENTS_Enh_desc2_ru.ED_VET_Passive_27_rgb_ru, -- Не давай им поднять головы! -- руоф Пригнитесь!
 		-- fr = "{suppression:%s} Suppression des attaques à distance."..TALENTS_Enh_desc2_fr.ED_VET_Passive_27_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1346,7 +1346,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 28 - Reciprocity +]--
 	-- ["loc_talent_veteran_dodging_grants_crit_description"] = { -- crit_chance: +5%, duration: 8, stacks: 5, s->seconds, +colors
 		-- en = "{crit_chance:%s} "..COLORS_KWords.Crit_hit_rgb.." Chance for {duration:%s} seconds on successful Dodge. Stacks {stacks:%s} times."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_28_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_28_rgb,
 		-- ru = "{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на {duration:%s} секунд при успешном уклонении. Суммируется {stacks:%s} раз."..TALENTS_Enh_desc2_ru.ED_VET_Passive_28_rgb_ru, -- Взаимообмен -- руоф Взаимная выгода
 		-- fr = "{crit_chance:%s} de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour {duration:%s} secondes sur une esquive réussie. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_VET_Passive_28_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1362,7 +1362,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 29 - Duck and Dive +]--
 	-- ["loc_talent_veteran_stamina_on_ranged_dodge_desc"] = { -- stamina: +30%
 		-- en = "{stamina:%s} of Max "..COLORS_KWords.Stamina_rgb.." on avoiding Ranged Attacks by Dodging, Sprinting or Sliding."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_29_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_29_rgb,
 		-- ru = "{stamina:%s} к "..COLORS_KWords_ru.Stamina_rgb_ru.." при избегании дальнобойных атак с помощью уклонений, подкатов и бега."..TALENTS_Enh_desc2_ru.ED_VET_Passive_29_rgb_ru, -- Пригнись и увернись -- руоф Голову в песок
 		-- fr = "{stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." maximum en évitant les attaques à distance en esquivant, en courant ou en glissant."..TALENTS_Enh_desc2_fr.ED_VET_Passive_29_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1378,7 +1378,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 30 - Fully Loaded +]--
 	-- ["loc_talent_veteran_ammo_increase_desc"] = { -- ammo: +25%
 		-- en = "{ammo:%s} Ammo."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_30_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_30_rgb,
 		-- ru = "{ammo:%s} к боеприпасам в резерве."..TALENTS_Enh_desc2_ru.ED_VET_Passive_30_rgb_ru, -- Полный запас -- руоф Полный заряд
 		-- fr = "{ammo:%s} Munitions."..TALENTS_Enh_desc2_fr.ED_VET_Passive_30_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1394,7 +1394,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 31 - Tactical Awareness +]--
 	-- ["loc_talent_veteran_elite_kills_reduce_cooldown_desc"] = { -- duration: 6, s->seconds, +colors
 		-- en = COLORS_Numbers.n_minus_rgb.."{duration:%s} seconds to "..COLORS_KWords.Combat_ability_cd_rgb.." on killing a Specialist enemy."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_31_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_31_rgb,
 		-- ru = "На {duration:%s} секунд сокращается время "..COLORS_KWords_ru.Ability_cd_rgb_ru.." при убийстве врага специалиста."..TALENTS_Enh_desc2_ru.ED_VET_Passive_31_rgb_ru, -- Тактическая осведомлённость -- руоф Тактическая осведомленность
 		-- fr = COLORS_Numbers.n_minus_rgb.."{duration:%s} secondes au "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.." lors d'une élimination de spécialiste."..TALENTS_Enh_desc2_fr.ED_VET_Passive_31_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1410,8 +1410,8 @@ local veteran_talent_localizations = {
 	--[+ Passive 32 - Desperado +]--
 	-- ["loc_talent_veteran_increased_melee_crit_chance_and_melee_finesse_desc"] = { -- crit_chance: +10%, finesse: +25%, &->and, +colors
 		-- en = "{crit_chance:%s} Melee "..COLORS_KWords.Crit_hit_chance_rgb.." and\n"
-				-- .."{finesse:%s} Melee "..COLORS_KWords.Finesse_rgb.." Bonus."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_32_rgb,
+			-- .."{finesse:%s} Melee "..COLORS_KWords.Finesse_rgb.." Bonus."
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_32_rgb,
 		-- ru = "Атаки ближнего боя получают:\n{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." и\n{finesse:%s} к "..COLORS_KWords_ru.Finesse_dmg_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Passive_32_rgb_ru, -- Сорвиголова
 		-- fr = "{crit_chance:%s} "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.." de mêlée et\n{finesse:%s} bonus de "..COLORS_KWords_fr.Finesse_rgb_fr.." de mêlée."..TALENTS_Enh_desc2_fr.ED_VET_Passive_32_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1427,7 +1427,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 33 - Shock Trooper +]--
 	-- ["loc_talent_veteran_no_ammo_consumption_on_lasweapon_crit_desc"] = { -- +colors
 		-- en = COLORS_KWords.Crit_hits_rgb.." with Las-weapons consume no Ammo."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_33_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_33_rgb,
 		-- ru = "При "..COLORS_KWords_ru.Crit_chance_r_rgb_ru.." лазерное оружие не потребляет боеприпасы."..TALENTS_Enh_desc2_ru.ED_VET_Passive_33_rgb_ru, -- Штурмовик
 		-- fr = "Les "..COLORS_KWords_fr.Crit_hits_rgb_fr.." avec les armes à lasers ne consomment pas de munitions."..TALENTS_Enh_desc2_fr.ED_VET_Passive_33_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1443,7 +1443,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 34 - Superiority Complex +]--
 	-- ["loc_talent_veteran_increase_damage_vs_elites_desc"] = { -- damage: +15%, +colors
 		-- en = "{damage:%s} Base "..COLORS_KWords.Damage_rgb.." to Elite Enemies."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_34_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_34_rgb,
 		-- ru = "{damage:%s} к базовому "..COLORS_KWords_ru.Damage_rgb_ru.." по элитным врагам."..TALENTS_Enh_desc2_ru.ED_VET_Passive_34_rgb_ru, -- Мания величия
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." pour les ennemis d'élite."..TALENTS_Enh_desc2_fr.ED_VET_Passive_34_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1459,7 +1459,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 35 - Iron Will +]--
 	-- ["loc_talent_veteran_tdr_on_high_toughness_desc"] = { -- toughness_damage_reduction: +50%, toughness_percent: 75%, +colors
 		-- en = "{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." if above {toughness_percent:%s} "..COLORS_KWords.Toughness_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_35_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_35_rgb,
 		-- ru = "{toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..", если у вас выше {toughness_percent:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Passive_35_rgb_ru, -- Железная воля
 		-- fr = "{toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." si au-dessus de {toughness_percent:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.."."..TALENTS_Enh_desc2_fr.ED_VET_Passive_35_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1475,7 +1475,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 36 - Demolition Team +]--
 	-- [""loc_talent_veteran_grenade_on_elite_kills_coop_desc] = { -- chance: 5%
 		-- en = "{chance:%s} chance to replenish a Grenade when you or an Ally in "..COLORS_KWords.Coherency_rgb.." kills an Elite or Specialist Enemy."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_36_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_36_rgb,
 		-- ru = "{chance:%s} шанс восстановить гранату, когда вы или ваш союзник в "..COLORS_KWords_ru.Coherency_rgb_ru.." убивает элитного врага или специалиста."..TALENTS_Enh_desc2_ru.ED_VET_Passive_36_rgb_ru, -- Команда подрывников -- руоф Группа подрыва
 		-- fr = "{chance:%s} chance de régénérez une grenade lorsque vous ou un allié en syntonie éliminez un ennemi d'élite ou spécialiste."..TALENTS_Enh_desc2_fr.ED_VET_Passive_36_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1491,7 +1491,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 37 - Exploit Weakness +]--
 	-- ["loc_talent_veteran_crits_rend_description"] = { -- rending_multiplier: 10%, max_stacks: 2, duration: 5, s->seconds, +colors
 		-- en = "{rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." is applied to the target by Melee "..COLORS_KWords.Crit_hits_rgb..". Stacks {max_stacks:%s} times and lasts {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_37_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_37_rgb,
 		-- ru = "{rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." накладывается на цель при "..COLORS_KWords_ru.Crit_hit_rgb_ru.." в ближнем бою. Суммируется {max_stacks:%s} раза и длится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_37_rgb_ru, -- Использование слабостей
 		-- fr = "{rending_multiplier:%s} de "..COLORS_KWords_fr.Brittleness_rgb_fr.." est appliqué à la cible lors d'un "..COLORS_KWords_fr.Crit_hits_rgb_fr.." de mêlée. Se cumule {max_stacks:%s} fois et dure {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_VET_Passive_37_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1507,7 +1507,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 38 - Onslaught +]--
 	-- ["loc_talent_veteran_continous_hits_apply_rending_description"] = { -- rending_multiplier: 2.5%, duration: 5, max_stacks: 16, +colors
 		-- en = "{rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." is applied to the target for {duration:%s} seconds by Continuous hits to a Single target. Stacks {max_stacks:%s} times."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_38_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_38_rgb,
 		-- ru = "{rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." накладывается на цель на {duration:%s} секунд при повторных атаках по ней. Суммируется {max_stacks:%s} раз."..TALENTS_Enh_desc2_ru.ED_VET_Passive_38_rgb_ru, -- Натиск
 		-- fr = "{rending_multiplier:%s} de "..COLORS_KWords_fr.Brittleness_rgb_fr.." est appliqué à la cible pour {duration:%s} secondes par des coups continus à une seule cible. Se cumule {max_stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_VET_Passive_38_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1523,7 +1523,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 39 - Trench Fighter Drill +]--
 	-- ["loc_talent_veteran_attack_speed_description"] = { -- melee_attack_speed: +10%
 		-- en = "{melee_attack_speed:%s} Melee Attack Speed."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_39_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_39_rgb,
 		-- ru = "{melee_attack_speed:%s} к скорости атак ближнего боя."..TALENTS_Enh_desc2_ru.ED_VET_Passive_39_rgb_ru, -- Тренировки в окопах -- руоф Тренировка в окопах
 		-- fr = "{melee_attack_speed:%s} Vitesse d'attaque de mêlée."..TALENTS_Enh_desc2_fr.ED_VET_Passive_39_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1539,7 +1539,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 40 - Skirmisher +]--
 	-- ["loc_talent_veteran_damage_damage_after_sprinting_desc"] = { -- base_damage: +5%, duration: 8, stacks: 5, s->seconds, +colors
 		-- en = "{base_damage:%s} to all Base "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after Sprinting. Stacks {stacks:%s} times."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_40_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_40_rgb,
 		-- ru = "{base_damage:%s} ко всему базовому "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд после бега. Суммируется {stacks:%s} раз."..TALENTS_Enh_desc2_ru.ED_VET_Passive_40_rgb_ru, -- Застрельщик
 		-- fr = "{base_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." pendant {duration:%s} secondes après avoir sprinté. Se cumule {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_VET_Passive_40_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1555,10 +1555,10 @@ local veteran_talent_localizations = {
 	--[+ Passive 41 - Competitive Urge +]--
 	-- ["loc_talent_veteran_ally_kills_increase_damage_description"] = { -- proc_chance: 2.5%, damage: +20%, melee_impact: +20%, suppression: +20%, duration: 8, &->and, s->seconds, +colors
 		-- en = "Whenever an Ally kills an Enemy you have a {proc_chance:%s} chance to gain for {duration:%s} seconds:\n"
-				-- .."{damage:%s} Base "..COLORS_KWords.Damage_rgb..",\n"
-				-- .."{melee_impact:%s} Melee "..COLORS_KWords.Impact_rgb.." and\n"
-				-- .."{suppression:%s} Suppression dealt."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_41_rgb,
+			-- .."{damage:%s} Base "..COLORS_KWords.Damage_rgb..",\n"
+			-- .."{melee_impact:%s} Melee "..COLORS_KWords.Impact_rgb.." and\n"
+			-- .."{suppression:%s} Suppression dealt."
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_41_rgb,
 		-- ru = "Когда союзник убивает врага у вас есть {proc_chance:%s} шанс получить на {duration:%s} секунд:\n{damage:%s} к базовому "..COLORS_KWords_ru.Damage_rgb_ru..",\n{suppression:%s} к подавлению врагов и\n{melee_impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." врагов от атак ближнего боя."..TALENTS_Enh_desc2_ru.ED_VET_Passive_41_rgb_ru, -- Состязательный мотив
 		-- fr = "Chaque fois qu'un allié tue un ennemi, vous avez {proc_chance:%s} de chance de gagner pendant {duration:%s} secondes:\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr..",\n{melee_impact:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." de mêlée et\n{suppression:%s} de Suppression."..TALENTS_Enh_desc2_fr.ED_VET_Passive_41_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1574,7 +1574,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 42 - Rending Strikes +]--
 	-- ["loc_talent_veteran_rending_bonus_desc"] = { -- rending_multiplier: +10%, +colors
 		-- en = "{rending_multiplier:%s} "..COLORS_KWords.Rending_rgb.." to all weapons."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_42_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_42_rgb,
 		-- ru = "{rending_multiplier:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." для всего оружия."..TALENTS_Enh_desc2_ru.ED_VET_Passive_42_rgb_ru, --Пробивающие удары -- руоф Разрушительные удары
 		-- fr = "{rending_multiplier:%s} de "..COLORS_KWords_fr.Rending_rgb_fr.." pour toutes les armes."..TALENTS_Enh_desc2_fr.ED_VET_Passive_42_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1590,7 +1590,7 @@ local veteran_talent_localizations = {
 	--[+ Passive 43 - Bring it Down! +]--
 	-- ["loc_talent_veteran_big_game_hunter_description"] = { -- damage: +20%, &->and, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ogryns and Monstrosities."
-				-- ..TALENTS_Enh_desc2.ED_VET_Passive_43_rgb,
+			-- ..TALENTS_Enh_desc2.ED_VET_Passive_43_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." огринам и монстрам."..TALENTS_Enh_desc2_ru.ED_VET_Passive_43_rgb_ru, -- Убей их! -- руоф Убивай!
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." aux Ogryns et Monstruosités."..TALENTS_Enh_desc2_fr.ED_VET_Passive_43_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1605,6 +1605,6 @@ local veteran_talent_localizations = {
 	-- },
 }
 
-mod:notify("TALENTS_Veteran.lua loaded successfully")
+-- mod:notify("TALENTS_Veteran.lua loaded successfully")
 
 return veteran_talent_localizations

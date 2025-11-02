@@ -3120,7 +3120,7 @@ local talent_localizations = {
 }
 
 
---[+ Автоматическое создание templates из новой структуры +]--
+--[+ Automatically create templates from the new structure +]--
 local localization_templates = {}
 for loc_key, locales in pairs(talent_localizations) do
 	for locale, text in pairs(locales) do

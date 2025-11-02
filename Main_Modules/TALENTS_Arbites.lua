@@ -104,9 +104,9 @@ local arbites_talent_localizations = {
 	--[+ BLITZ 0 - Arbites Grenade +]--
 	["loc_talent_ability_adamant_grenade_description"] = { -- charges: 4, +colors
 		en = "Throw an "..COLORS_KWords.Arbites_gren_rgb.." that explodes after a short delay.\n"
-				..Dot_nc.." {charges:%s} Max Grenades.",
+			..Dot_nc.." {charges:%s} Max Grenades.",
 		ru = "Вы бросаете "..COLORS_KWords_ru.Arbites_gren_rgb_ru..", которая взрывается после короткой задержки.\n"
-				..Dot_nc.." Максимум {charges:%s} гранаты.", -- Граната арбитрес -- руоф Граната Арбитрес
+			..Dot_nc.." Максимум {charges:%s} гранаты.", -- Граната арбитрес -- руоф Граната Арбитрес
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -121,11 +121,11 @@ local arbites_talent_localizations = {
 	--[+ BLITZ 1 - Remote Detonation +]--
 	["loc_talent_ability_detonate_description"] = { -- max_charges: 3, cooldown: 60, s->seconds, +colors
 		en = "Cause an Explosion at your Cyber-Mastiff's Location. "..COLORS_KWords.Staggering_rgb.." and "..COLORS_KWords.Electrcuting_rgb.." nearby Enemies.\n"
-				..Dot_nc.." {max_charges:%s} Charges.\n"
-				..Dot_nc.." Cooldown {cooldown:%s} seconds.",
+			..Dot_nc.." {max_charges:%s} Charges.\n"
+			..Dot_nc.." Cooldown {cooldown:%s} seconds.",
 		ru = "Ваш кибермастиф взрывается в месте своего нахождения, "..COLORS_KWords_ru.Staggern_rgb_ru.." и поражая "..COLORS_KWords_ru.Electrocuted_rgb_ru.." ближайших врагов.\n"
-				..Dot_nc.." {max_charges:%s} заряда.\n"
-				..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Дистанционный подрыв
+			..Dot_nc.." {max_charges:%s} заряда.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Дистанционный подрыв
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -140,9 +140,9 @@ local arbites_talent_localizations = {
 	--[+ BLITZ 2 - Voltaic Shock Mine +]--
 	["loc_talent_ability_shock_mine_description"] = { -- talent_name: Voltaic Shock Min, duration: 15, !range!: 5, s->seconds, m->meters, +colors
 		en = "Throw a {talent_name:%s} that activates as it lands.\n"
-				..Dot_nc.." For {duration:%s} seconds it will "..COLORS_KWords.Electrocute_rgb.." all enemies within {range:%s} meters.",
+			..Dot_nc.." For {duration:%s} seconds it will "..COLORS_KWords.Electrocute_rgb.." all enemies within {range:%s} meters.",
 		ru = "Вы бросаете "..COLORS_KWords_ru.Electro_mine_rgb_ru..", которая активируется при приземлении.\n"
-				..Dot_nc.." В течение {duration:%s} секунд она будет поражать "..COLORS_KWords_ru.Electrocuted_rgb_ru.." всех врагов в радиусе {range:%s} метров.",  -- Вольтаическая шоковая мина
+			..Dot_nc.." В течение {duration:%s} секунд она будет поражать "..COLORS_KWords_ru.Electrocuted_rgb_ru.." всех врагов в радиусе {range:%s} метров.",  -- Вольтаическая шоковая мина
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -157,11 +157,11 @@ local arbites_talent_localizations = {
 	--[+ BLITZ 3 - Arbites Grenade +]--
 	["loc_talent_ability_adamant_grenade_improved_description"] = { -- talent_name: Arbites Grenade, charges: 4
 		en = "Throw an {talent_name:%s} that explodes after a short delay.\n"
-				..Dot_nc.." {charges:%s} Max Grenades.\n"
-				..Dot_nc.." This is an augmented version of {talent_name:%s}.",
+			..Dot_nc.." {charges:%s} Max Grenades.\n"
+			..Dot_nc.." This is an augmented version of {talent_name:%s}.",
 		ru = "Вы бросаете "..COLORS_KWords_ru.Arbites_gren_rgb_ru..", которая взрывается после короткой задержки.\n"
-				..Dot_nc.." Максимум {charges:%s} гранаты.\n"
-				..Dot_nc.." Это улучшенная версия таланта {talent_name:%s}.",  -- Граната арбитрес -- руоф Граната Арбитрес
+			..Dot_nc.." Максимум {charges:%s} гранаты.\n"
+			..Dot_nc.." Это улучшенная версия таланта {talent_name:%s}.",  -- Граната арбитрес -- руоф Граната Арбитрес
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -192,11 +192,11 @@ local arbites_talent_localizations = {
 	--[+ AURA 1 - Part of the Squad +]--
 	["loc_talent_adamant_companion_coherency_alt_desc"] = { -- tdr: +7.5%, +colors
 		en = "{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
-				.."\n"
-				.."Your Cyber-Mastiff counts towards unit "..COLORS_KWords.Coherency_rgb..".",
+			.."\n"
+			.."Your Cyber-Mastiff counts towards unit "..COLORS_KWords.Coherency_rgb..".",
 		ru = "{tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".\n"
-				.."\n"
-				.."Ваш кибермастиф учитывается как союзник под действием "..COLORS_KWords_ru.Coherency_rgb_ru..".",  -- Часть отряда
+			.."\n"
+			.."Ваш кибермастиф учитывается как союзник под действием "..COLORS_KWords_ru.Coherency_rgb_ru..".",  -- Часть отряда
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -242,25 +242,25 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 0 - Nuncio-Aquila +]--
 	["loc_talent_adamant_ability_nuncio_base_desc"] = { -- range: 7.5, toughness: 5%, damage_taken: +15%, duration: 20, cooldown: 60, m->meters, s->seconds, +colors
 		en = "Deploy a {talent_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n"
-				.."\n"
-				.."Allies gain:\n"
-				..Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenish per second.\n"
-				.."\n"
-				.."Enemies gain:\n"
-				..Dot_green.." {damage_taken:%s} "..COLORS_KWords.Damage_rgb.." Taken.\n"
-				.."\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.\n"
-				..Dot_nc.." Cooldown {cooldown:%s} seconds.",
+			.."\n"
+			.."Allies gain:\n"
+			..Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenish per second.\n"
+			.."\n"
+			.."Enemies gain:\n"
+			..Dot_green.." {damage_taken:%s} "..COLORS_KWords.Damage_rgb.." Taken.\n"
+			.."\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			..Dot_nc.." Cooldown {cooldown:%s} seconds.",
 		ru = "{talent_name:%s}, которую вы развёртываете в выбранном направлении, усиливает союзников и ослабляет врагов в радиусе {range:%s} метров.\n"
-				.."\n"
-				.."Союзники получают:\n"
-				..Dot_green.." {toughness:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru.." в секунду.\n"
-				.."\n"
-				.."Враги получают:\n"
-				..Dot_green.." {damage_taken:%s} к получаемому "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
-				.."\n"
-				..Dot_nc.." Длится {duration:%s} секунд.\n"
-				..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Нунцио-аквила
+			.."\n"
+			.."Союзники получают:\n"
+			..Dot_green.." {toughness:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru.." в секунду.\n"
+			.."\n"
+			.."Враги получают:\n"
+			..Dot_green.." {damage_taken:%s} к получаемому "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
+			.."\n"
+			..Dot_nc.." Длится {duration:%s} секунд.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Нунцио-аквила
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -275,17 +275,17 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 1 - Castigator's Stance +]--
 	["loc_talent_adamant_stance_ability_alt_description"] = { -- talent_name: Castigator's Stance, duration: 10, movement_speed: +25%, damage_taken: +80%, movement_reduction: 100%, cooldown: 45, s->seconds, +colors
 		en = "Enter the {talent_name:%s} for {duration:%s} seconds, during which you have:\n"
-				..Dot_green.." {movement_speed:%s} Movement Speed,\n"
-				..Dot_green.." {damage_taken:%s} Reduced "..COLORS_KWords.Damage_rgb.." Taken,\n"
-				..Dot_green.." {movement_reduction:%s} Reduced Movement Speed Penalty from Actions, but you cannot Sprint.\n"
-				..Dot_green.." All your "..COLORS_KWords.Toughness_rgb.." replenishes on activation.\n"
-				..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
+			..Dot_green.." {movement_speed:%s} Movement Speed,\n"
+			..Dot_green.." {damage_taken:%s} Reduced "..COLORS_KWords.Damage_rgb.." Taken,\n"
+			..Dot_green.." {movement_reduction:%s} Reduced Movement Speed Penalty from Actions, but you cannot Sprint.\n"
+			..Dot_green.." All your "..COLORS_KWords.Toughness_rgb.." replenishes on activation.\n"
+			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
 		ru = "Вы входите в стойку на {duration:%s} секунд и получаете:\n"
-				..Dot_green.." {movement_speed:%s} к скорости движения,\n"
-				..Dot_green.." {damage_taken:%s} к снижению получаемого "..COLORS_KWords_ru.Dmg_a_rgb_ru..",\n"
-				..Dot_green.." на {movement_reduction:%s} снижается штраф скорости движения от действий, но вы не сможете бегать.\n"
-				..Dot_green.." Вся ваша "..COLORS_KWords_ru.Tghnss_rgb_ru.." восстанавливается при активации.\n"
-				..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Стойка карателя -- руоф Стойка бичевателя
+			..Dot_green.." {movement_speed:%s} к скорости движения,\n"
+			..Dot_green.." {damage_taken:%s} к снижению получаемого "..COLORS_KWords_ru.Dmg_a_rgb_ru..",\n"
+			..Dot_green.." на {movement_reduction:%s} снижается штраф скорости движения от действий, но вы не сможете бегать.\n"
+			..Dot_green.." Вся ваша "..COLORS_KWords_ru.Tghnss_rgb_ru.." восстанавливается при активации.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Стойка карателя -- руоф Стойка бичевателя
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -300,10 +300,10 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 1-1 - Blessed Armament +]--
 	["loc_talent_adamant_stance_ranged_kills_transfer_ammo_desc"] = { -- stance_name: Castigator's Stance, ammo: 10%, cooldown: 1.5, s->seconds
 		en = "{ammo:%s} of the total Ammo in your Clip is replenished from Reserve on Ranged kills during {stance_name:%s}. Rounded Up.\n"
-				..Dot_nc.." Cooldown {cooldown:%s} seconds.",
+			..Dot_nc.." Cooldown {cooldown:%s} seconds.",
 		ru = "{ammo:%s} от общего количества боеприпасов в вашей обойме пополняется из резерва при убийствах в дальнем бою во время действия способности {stance_name:%s}.\n"
-				..Dot_nc.." Округляется в большую сторону.\n"
-				..Dot_nc.." Восстанавливается {cooldown:%s} секунды.", -- Благословенное вооружение -- руоф Благословенное орудие
+			..Dot_nc.." Округляется в большую сторону.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунды.", -- Благословенное вооружение -- руоф Благословенное орудие
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -318,11 +318,11 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 1-2 - Writ of Execution +]--
 	["loc_talent_adamant_stance_elite_kills_stack_damage_desc"] = { -- stance_name: Castigator's Stance, damage: +5%, duration: 10, stacks: 10, s->seconds, +colors
 		en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." for each Elite or Specialist Kill during {stance_name:%s}.\n"
-				..Dot_nc.." {stacks:%s} Max Stacks.\n"
-				..Dot_nc.." Lasting {duration:%s} seconds.",
+			..Dot_nc.." {stacks:%s} Max Stacks.\n"
+			..Dot_nc.." Lasting {duration:%s} seconds.",
 		ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." за каждого убитого специалиста или элитного врага во время действия способности {stance_name:%s}.\n"
-				..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
-				..Dot_nc.." Длится {duration:%s} секунд.", -- Ордер на казнь
+			..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Ордер на казнь
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -352,37 +352,37 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 2 - Nuncio-Aquila +]--
 	["loc_talent_ability_area_buff_drone_ct_description"] = { -- range: 7.5, toughness: 7.5%, suppression: +30%, impact: +30%, recoil: -25%, damage_taken: +15%, duration: 20, cooldown: 60, nuncio_name: Nuncio-Aquila, m->meters, s->seconds, +colors
 		en = "Deploy a {nuncio_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n"
-				.."\n"
-				.."Allies gain buffs:\n"
-				..Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenish per second,\n"
-				..Dot_green.." {suppression:%s} Suppression Dealt,\n"
-				..Dot_green.." {impact:%s} "..COLORS_KWords.Impact_rgb..",\n"
-				..Dot_green.." {recoil:%s} Recoil,\n"
-				..Dot_green.." Slowdown and Suppression Immune,\n"
-				..Dot_green.." Immune to interruption during Alternate Fire.\n"
-				.."\n"
-				.."Enemies gain debuffs:\n"
-				..Dot_green.." {damage_taken:%s} "..COLORS_KWords.Damage_rgb.." Taken.\n"
-				.."\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.\n"
-				..Dot_nc.." Cooldown: {cooldown:%s} seconds.\n"
-				..Dot_nc.." This is an augmented version of {nuncio_name:%s}.",
+			.."\n"
+			.."Allies gain buffs:\n"
+			..Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenish per second,\n"
+			..Dot_green.." {suppression:%s} Suppression Dealt,\n"
+			..Dot_green.." {impact:%s} "..COLORS_KWords.Impact_rgb..",\n"
+			..Dot_green.." {recoil:%s} Recoil,\n"
+			..Dot_green.." Slowdown and Suppression Immune,\n"
+			..Dot_green.." Immune to interruption during Alternate Fire.\n"
+			.."\n"
+			.."Enemies gain debuffs:\n"
+			..Dot_green.." {damage_taken:%s} "..COLORS_KWords.Damage_rgb.." Taken.\n"
+			.."\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} seconds.\n"
+			..Dot_nc.." This is an augmented version of {nuncio_name:%s}.",
 		ru = "{nuncio_name:%s}, которую вы развёртываете в выбранном направлении, усиливает союзников и ослабляет врагов в радиусе {range:%s} метров.\n"
-				.."\n"
-				.."Усиления союзников:\n"
-				..Dot_green.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду,\n"
-				..Dot_green.." {suppression:%s} к подавлению врагов,\n"
-				..Dot_green.." {impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..",\n"
-				..Dot_green.." {recoil:%s} к отдаче,\n"
-				..Dot_green.." Иммунитет к замедлению и подавлению,\n"
-				..Dot_green.." Иммунитет к прерыванию во время режима прицельного огня.\n"
-				.."\n"
-				.."Ослабления врагов:\n"
-				..Dot_green.." {damage_taken:%s} к получаемому "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
-				.."\n"
-				..Dot_nc.." Длится {duration:%s} секунд.\n"
-				..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
-				..Dot_nc.." Это улучшенная версия способности {nuncio_name:%s}.", -- Нунцио-аквила
+			.."\n"
+			.."Усиления союзников:\n"
+			..Dot_green.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду,\n"
+			..Dot_green.." {suppression:%s} к подавлению врагов,\n"
+			..Dot_green.." {impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..",\n"
+			..Dot_green.." {recoil:%s} к отдаче,\n"
+			..Dot_green.." Иммунитет к замедлению и подавлению,\n"
+			..Dot_green.." Иммунитет к прерыванию во время режима прицельного огня.\n"
+			.."\n"
+			.."Ослабления врагов:\n"
+			..Dot_green.." {damage_taken:%s} к получаемому "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
+			.."\n"
+			..Dot_nc.." Длится {duration:%s} секунд.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
+			..Dot_nc.." Это улучшенная версия способности {nuncio_name:%s}.", -- Нунцио-аквила
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -397,13 +397,13 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 2-1 - Inspiring Recitation +]--
 	["loc_talent_adamant_drone_buff_talent_alt_desc"] = { -- tdr: 30%, revive_speed: 30%, attack_speed: 10%, +colors
 		en ="Affected Allies also gain buffs:\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..",\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{revive_speed:%s} Revive Speed, and\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed:%s} Attack Speed." ,
+			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..",\n"
+			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{revive_speed:%s} Revive Speed, and\n"
+			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed:%s} Attack Speed." ,
 		ru = "Союзники, попавшие под эффект способности, получают дополнительные усиления:\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_rgb_ru..",\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed:%s} к скорости атак и\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{revive_speed:%s} к скорости поднятия союзников.", -- Воодушевляющая проповедь -- руоф Вдохновляющая декламация
+			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_rgb_ru..",\n"
+			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed:%s} к скорости атак и\n"
+			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{revive_speed:%s} к скорости поднятия союзников.", -- Воодушевляющая проповедь -- руоф Вдохновляющая декламация
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -418,11 +418,11 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 2-2 - Fear of Justice +]--
 	["loc_talent_adamant_drone_debuff_talent_desc"] = { -- attack_speed_reduction: 50%, damage_reduction: 25%, +colors
 		en = "Affected enemies also gain debuffs to their Melee Attacks:\n"
-				..Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{damage_reduction:%s} "..COLORS_KWords.Damage_rgb..",\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed_reduction:%s} time between attacks.",
+			..Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{damage_reduction:%s} "..COLORS_KWords.Damage_rgb..",\n"
+			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed_reduction:%s} time between attacks.",
 		ru = "Враги, попавшие под эффект способности, получают дополнительные ослабления для их атак ближнего боя:\n"
-				..Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{damage_reduction:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
-				..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed_reduction:%s} к увеличению времени между атаками.", -- Страх перед Правосудием -- руоф Страх правосудия
+			..Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{damage_reduction:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{attack_speed_reduction:%s} к увеличению времени между атаками.", -- Страх перед Правосудием -- руоф Страх правосудия
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -437,13 +437,13 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 3 - Break the Line +]--
 	["loc_talent_adamant_bash_ability_description"] = { -- damage: +25%, stagger: +50%, duration: 6, cooldown: 20, s->seconds, +colors
 		en = "Charge forward and Bash, causing high "..COLORS_KWords.Stagger_rgb.." to enemies in front of you, and gain for {duration:%s} seconds:\n"
-				..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
-				..Dot_green.." {stagger:%s} "..COLORS_KWords.Impact_rgb..".\n"
-				..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
+			..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
+			..Dot_green.." {stagger:%s} "..COLORS_KWords.Impact_rgb..".\n"
+			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
 		ru = "Вы делаете рывок вперёд и наносите удар, который "..COLORS_KWords_ru.Staggers_e_rgb_ru.." врагов перед вами, и получаете на {duration:%s} секунд усиления:\n"
-				..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
-				..Dot_green.." {stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..".\n"
-				..Dot_nc.." Восстанавливается {cooldown:%s} секунд.", -- Прорыв строя -- руоф Прорыв фронта
+			..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+			..Dot_green.." {stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..".\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.", -- Прорыв строя -- руоф Прорыв фронта
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -473,13 +473,13 @@ local arbites_talent_localizations = {
 	--[+ ABILITY 3-2 - Targeted Brutality +]--
 	["loc_talent_adamant_charge_cooldown_alt_description"] = { -- cooldown: 0.5, cooldown_elite: 5, max_cooldown: 5, s->seconds, +colors
 		en = "On charge end, reduces the remaining "..COLORS_KWords.Ability_cd_rgb.." of "..COLORS_KWords.BreakZLine_rgb.." by:\n"
-				..Dot_green.." {cooldown_elite:%s} seconds for each Elite, Special, or Monstrosity hit while charging,\n"
-				..Dot_green.." {cooldown:%s} seconds for any other enemy hit while charging.\n"
-				..Dot_nc.." Max {max_cooldown:%s} seconds per charge.",
+			..Dot_green.." {cooldown_elite:%s} seconds for each Elite, Special, or Monstrosity hit while charging,\n"
+			..Dot_green.." {cooldown:%s} seconds for any other enemy hit while charging.\n"
+			..Dot_nc.." Max {max_cooldown:%s} seconds per charge.",
 		ru = "После рывка, сокращается время "..COLORS_KWords_ru.Ability_cd_rgb_ru.." вашего "..COLORS_KWords_ru.BreakZLine_rgb_ru.." на:\n"
-				..Dot_green.." {cooldown_elite:%s} секунду за каждого, поражённого рывком, элитного врага, специалиста или монстра,\n"
-				..Dot_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"
-				..Dot_nc.." Максимум {max_cooldown:%s} секунд за рывок.", -- Направленная жестокость
+			..Dot_green.." {cooldown_elite:%s} секунду за каждого, поражённого рывком, элитного врага, специалиста или монстра,\n"
+			..Dot_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"
+			..Dot_nc.." Максимум {max_cooldown:%s} секунд за рывок.", -- Направленная жестокость
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -525,9 +525,9 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 1 - Unleashed Brutality +]--
 	["loc_talent_adamant_cyber_mastiff_elites_desc"] = { -- damage: +25%, +colors
 		en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." to Elite and Specialist Enemies dealt by your Cyber-Mastiff.\n"
-				.."Elite and Specialist Enemies become its Primary targets.",
+			.."Elite and Specialist Enemies become its Primary targets.",
 		ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." элитным врагам и специалистам для вашего кибермастифа.\n"
-				.."Элитные враги и специалисты становятся приоритетными целями для него.", -- Высвобожденнная жестокость
+			.."Элитные враги и специалисты становятся приоритетными целями для него.", -- Высвобожденнная жестокость
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -542,15 +542,15 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 2 - Lone Wolf +]--
 	["loc_talent_adamant_disable_companion_replenish_desc"] = { -- tdr: +15%, attack_speed: +10%, damage: +10%, time: 60, s->seconds, +colors
 		en = "You are no longer accompanied by your Cyber-Mastiff, but gain:\n"
-				..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
-				..Dot_green.." {attack_speed:%s} Attack Speed,\n"
-				..Dot_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..",\n"
-				..Dot_green.." {charges:%s} increased Charges on your Blitz Abilities, and you replenish a charge of your Blitz Ability every {time:%s} seconds.",
+			..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb..",\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed,\n"
+			..Dot_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..",\n"
+			..Dot_green.." {charges:%s} increased Charges on your Blitz Abilities, and you replenish a charge of your Blitz Ability every {time:%s} seconds.",
 		ru = "Вам больше не помогает кибермастиф, но вы получаете усиления:\n"
-				..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
-				..Dot_green.." {attack_speed:%s} к скорости атаки,\n"
-				..Dot_green.." {tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..",\n"
-				..Dot_green.." {charges:%s} заряд блица, а также ваш блиц теперь восстанавливает заряд раз в {time:%s} секунд.", -- Одинокий волк
+			..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки,\n"
+			..Dot_green.." {tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..",\n"
+			..Dot_green.." {charges:%s} заряд блица, а также ваш блиц теперь восстанавливает заряд раз в {time:%s} секунд.", -- Одинокий волк
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -565,9 +565,9 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 3 - Go Get 'Em! +]--
 	["loc_talent_adamant_cyber_mastiff_ranged_desc"] = { -- !damage!: +50%, +colors
 		en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ranged Enemies dealt by your Cyber-Mastiff.\n"
-				.."Ranged Enemies become its Primary targets.",
+			.."Ranged Enemies become its Primary targets.",
 		ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." дальнобойным врагам для вашего кибермастифа.\n"
-				.."Дальнобойные враги становятся приоритетными целями для него.", -- Взять их!
+			.."Дальнобойные враги становятся приоритетными целями для него.", -- Взять их!
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -582,21 +582,21 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 4 - Execution Order +]--
 	["loc_talent_execution_order_description"] = { -- toughness: 15%, dog_damage: +150%, time: 8, damage: +15%, attack_speed: +10%, s->seconds, +colors
 		en = "Periodically mark Elites, Specialists and Bosses for Mercy Sanction. Killing a "..COLORS_KWords.Markedenemy_rgb.." replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb..".\n"
-				.."\n"
+			.."\n"
 			.."Your Cyber-Mastiff gains for {time:%s} seconds after attacking a "..COLORS_KWords.Markedenemy_rgb..":\n"
-				..Dot_green.." {dog_damage:%s} Cyber-Mastiff "..COLORS_KWords.Damage_rgb..".\n"
-				.."\n"
+			..Dot_green.." {dog_damage:%s} Cyber-Mastiff "..COLORS_KWords.Damage_rgb..".\n"
+			.."\n"
 			.."You gain for {time:%s} seconds after killing a "..COLORS_KWords.Markedenemy_rgb..":\n"
-				..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
-				..Dot_green.." {attack_speed:%s} Attack Speed.",
+			..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed.",
 		ru = "Элитные враги, специалисты и боссы периодически помечаются для Санкции милосердия. Убийство "..COLORS_KWords_ru.Markedenemy_rgb_ru.." восстанавливает {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..".\n"
-				.."\n"
+			.."\n"
 			.."Ваш кибермастиф получает на {time:%s} секунд после атаки "..COLORS_KWords_ru.Markedenemy_rgb_ru..":\n"
-				..Dot_green.." {dog_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
-				.."\n"
+			..Dot_green.." {dog_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
+			.."\n"
 			.."Вы получаете на {time:%s} секунд после убийства "..COLORS_KWords_ru.Markedenemy_rgb_ru..":\n"
-				..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
-				..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Метка возмездия -- Приказ казнить
+			..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Метка возмездия -- Приказ казнить
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -611,13 +611,13 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 4-1 - Efficient Killer +]--
 	["loc_talent_execution_order_crit_description"] = { -- crit_chance: +10%, crit_damage: +25%, time: 8, s->seconds, +colors
 		en = "On killing a "..COLORS_KWords.Markedenemy_rgb..", you gain:\n"
-				..Dot_green.." {crit_chance:%s} "..COLORS_KWords.Crt_chance_rgb.." and\n"
-				..Dot_green.." {crit_damage:%s} "..COLORS_KWords.Crt_dmg_r_rgb..".\n"
-				..Dot_nc.." Lasts {time:%s} seconds.",
+			..Dot_green.." {crit_chance:%s} "..COLORS_KWords.Crt_chance_rgb.." and\n"
+			..Dot_green.." {crit_damage:%s} "..COLORS_KWords.Crt_dmg_r_rgb..".\n"
+			..Dot_nc.." Lasts {time:%s} seconds.",
 		ru = "При убийстве "..COLORS_KWords_ru.Markedenemy_rgb_ru.." вы получаете:\n"
-				..Dot_green.." {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." и\n"
-				..Dot_green.." {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru..".\n"
-				..Dot_nc.." Длится {time:%s} секунд.", -- Эффективный убийца
+			..Dot_green.." {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." и\n"
+			..Dot_green.." {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru..".\n"
+			..Dot_nc.." Длится {time:%s} секунд.", -- Эффективный убийца
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -662,15 +662,15 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 4-4 - Keeping Protocol +]--
 	["loc_talent_execution_order_perma_buff_new_description"] = { -- damage: +1%, damage_red: +1%, max_stacks: 30, +colors
 		en = "Killing a "..COLORS_KWords.Markedenemy_rgb.." grants:\n"
-				..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." vs Monstrosities and\n"
-				..Dot_green.." {damage_red:%s} "..COLORS_KWords.Damage_rgb.." Resistance vs Monstrosities.\n"
-				..Dot_nc.." {max_stacks:%s} Max Stacks.\n"
-				..Dot_nc.." Lasts until the end of the Mission.",
+			..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." vs Monstrosities and\n"
+			..Dot_green.." {damage_red:%s} "..COLORS_KWords.Damage_rgb.." Resistance vs Monstrosities.\n"
+			..Dot_nc.." {max_stacks:%s} Max Stacks.\n"
+			..Dot_nc.." Lasts until the end of the Mission.",
 		ru = "Убийство "..COLORS_KWords_ru.Markedenemy_rgb_ru.." даёт:\n"
-				..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." монстрам и\n"
-				..Dot_green.." {damage_red:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." от монстров.\n"
-				..Dot_nc.." Максимум {max_stacks:%s} зарядов.\n"
-				..Dot_nc.." Длится до конца миссии.", -- Соблюдение протокола -- руоф Поддердание протокола
+			..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." монстрам и\n"
+			..Dot_green.." {damage_red:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." от монстров.\n"
+			..Dot_nc.." Максимум {max_stacks:%s} зарядов.\n"
+			..Dot_nc.." Длится до конца миссии.", -- Соблюдение протокола -- руоф Поддердание протокола
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -685,11 +685,11 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 4-5 - Not Far Behind +]--
 	["loc_talent_adamant_pinning_dog_bonus_moving_towards_description"] = { -- movement_speed: +10%, damage: +10%, time: 5, s->seconds, +colors
 		en = "After Pounce you gain for {time:%s} seconds:\n"
-				..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
-				..Dot_green.." {movement_speed:%s} Movement Speed.",
+			..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed.",
 		ru = "После нападения на врага вашего кибермастифа вы получаете на {time:%s} секунд:\n"
-				..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
-				..Dot_green.." {movement_speed:%s} к скорости движения.", -- В зоне досягаемости -- руоф Не так далеко позади
+			..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+			..Dot_green.." {movement_speed:%s} к скорости движения.", -- В зоне досягаемости -- руоф Не так далеко позади
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -704,25 +704,25 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 5 - Terminus Warrant +]--
 	["loc_talent_adamant_terminus_warrant_shortened_alt_desc"] = { -- max_stacks: 30, melee_remove: 1, melee_damage: +15%, melee_impact: +25%, ranged_remove: 1, ranged_damage: +15%, ranged_cleave: +50%, suppression: +50%, +colors
 		en = "Ranged Attacks grant Stacks of "..COLORS_KWords.Meleejust_rgb.." for each Enemy Hit, up to {max_stacks:%s}. Melee Hits remove {melee_remove:%s} Stack.\n"
-				.."While you have Stacks of "..COLORS_KWords.Meleejust_rgb..", gain:\n"
-				..Dot_green.." {melee_damage:%s} Melee "..COLORS_KWords.Damage_rgb.." and\n"
-				..Dot_green.." {melee_impact:%s} Melee "..COLORS_KWords.Impact_rgb..".\n"
-				.."\n"
-				.."Melee Hits grant Stacks of "..COLORS_KWords.Rangedjust_rgb..", up to {max_stacks:%s}. Ranged Attacks remove {ranged_remove:%s} Stack for each Enemy Hit.\n"
-				.."While you have Stacks of "..COLORS_KWords.Rangedjust_rgb..", gain:\n"
-				..Dot_green.." {ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb..",\n"
-				..Dot_green.." {ranged_cleave:%s} Ranged "..COLORS_KWords.Cleave_rgb.." and\n"
-				..Dot_green.." {suppression:%s} Suppression.",
+			.."While you have Stacks of "..COLORS_KWords.Meleejust_rgb..", gain:\n"
+			..Dot_green.." {melee_damage:%s} Melee "..COLORS_KWords.Damage_rgb.." and\n"
+			..Dot_green.." {melee_impact:%s} Melee "..COLORS_KWords.Impact_rgb..".\n"
+			.."\n"
+			.."Melee Hits grant Stacks of "..COLORS_KWords.Rangedjust_rgb..", up to {max_stacks:%s}. Ranged Attacks remove {ranged_remove:%s} Stack for each Enemy Hit.\n"
+			.."While you have Stacks of "..COLORS_KWords.Rangedjust_rgb..", gain:\n"
+			..Dot_green.." {ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb..",\n"
+			..Dot_green.." {ranged_cleave:%s} Ranged "..COLORS_KWords.Cleave_rgb.." and\n"
+			..Dot_green.." {suppression:%s} Suppression.",
 		ru = "Дальнобойные атаки дают заряды "..COLORS_KWords_ru.Meleejust_rgb_ru.." за каждый удар по врагу, до {max_stacks:%s} зарядов. Удар в ближнем бою снимает {melee_remove:%s} заряд.\n"
-				.."Пока у вас есть заряды "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы получаете усиления для ближнего боя:\n"
-				..Dot_green.." {melee_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
-				..Dot_green.." {melee_impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..".\n"
-				.."\n"
-				.."Атаки ближнего боя дают заряды  "..COLORS_KWords_ru.Rangedjust_rgb_ru.." за каждое попадание по врагу, до {max_stacks:%s} зарядов. Дальнобойная атака снимает {ranged_remove:%s} заряд.\n"
-				.."Пока у вас есть заряды "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете усиления для дальнобойных атак:\n"
-				..Dot_green.." {ranged_damage:%s} к дальнобойному "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
-				..Dot_green.." {suppression:%s} к подавлению и\n"
-				..Dot_green.." {ranged_cleave:%s} к "..COLORS_KWords_ru.Cleaving_u_rgb_ru.." в дальнем бою.", -- Ордер Терминус -- руоф Распоряжение «Терминус»
+			.."Пока у вас есть заряды "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы получаете усиления для ближнего боя:\n"
+			..Dot_green.." {melee_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+			..Dot_green.." {melee_impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..".\n"
+			.."\n"
+			.."Атаки ближнего боя дают заряды  "..COLORS_KWords_ru.Rangedjust_rgb_ru.." за каждое попадание по врагу, до {max_stacks:%s} зарядов. Дальнобойная атака снимает {ranged_remove:%s} заряд.\n"
+			.."Пока у вас есть заряды "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете усиления для дальнобойных атак:\n"
+			..Dot_green.." {ranged_damage:%s} к дальнобойному "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+			..Dot_green.." {suppression:%s} к подавлению и\n"
+			..Dot_green.." {ranged_cleave:%s} к "..COLORS_KWords_ru.Cleaving_u_rgb_ru.." в дальнем бою.", -- Ордер Терминус -- руоф Распоряжение «Терминус»
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -752,15 +752,15 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 5-2 - Obstinate +]--
 	["loc_talent_adamant_terminus_warrant_upgrade_alt_desc"] = { -- swap_stacks: 15, melee_attack_speed: +15%, fire_rate: +15%, +colors
 		en = "Swapping to your Melee Weapon while you have {swap_stacks:%s} "..COLORS_KWords.Meleejust_rgb.." Stacks or more, grants you:\n"
-				..Dot_green.." {melee_attack_speed:%s} Melee Attack Speed until you run out of Stacks, or swap to your Ranged Weapon.\n"
-				.."\n"
-				.."Swapping to your Ranged Weapon while you have {swap_stacks:%s} "..COLORS_KWords.Rangedjust_rgb.." Stacks or more, grants you:\n"
-				..Dot_green.." {fire_rate:%s} Fire Rate until you run out of Stacks, or swap to your Melee Weapon.",
+			..Dot_green.." {melee_attack_speed:%s} Melee Attack Speed until you run out of Stacks, or swap to your Ranged Weapon.\n"
+			.."\n"
+			.."Swapping to your Ranged Weapon while you have {swap_stacks:%s} "..COLORS_KWords.Rangedjust_rgb.." Stacks or more, grants you:\n"
+			..Dot_green.." {fire_rate:%s} Fire Rate until you run out of Stacks, or swap to your Melee Weapon.",
 		ru = "Переключение на оружие ближнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы получаете:\n"
-				..Dot_green.." {melee_attack_speed:%s} к скорости атак ближнего боя пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n"
-				.."\n"
-				.."Переключение на оружие дальнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете:\n"
-				..Dot_green.." {fire_rate:%s} к скорострельности пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.", -- Непреклонный -- руоф Упрямый
+			..Dot_green.." {melee_attack_speed:%s} к скорости атак ближнего боя пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n"
+			.."\n"
+			.."Переключение на оружие дальнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете:\n"
+			..Dot_green.." {fire_rate:%s} к скорострельности пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.", -- Непреклонный -- руоф Упрямый
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -775,11 +775,11 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 5-3 - Terminal Decree +]--
 	["loc_talent_adamant_terminus_warrant_toughness_desc"] = { -- melee_toughness: +100%, toughness: 25%, +colors
 		en = "While you have stacks of "..COLORS_KWords.Meleejust_rgb..", you gain additional:\n"
-				..Dot_green.." {melee_toughness:%s} Melee "..COLORS_KWords.Toughness_rgb.." Regeneration, and Allies in "..COLORS_KWords.Coherency_rgb.." Replenish:\n"
-				..Dot_green.." {toughness:%s} of any "..COLORS_KWords.Toughness_rgb.." that you Replenish.",
+			..Dot_green.." {melee_toughness:%s} Melee "..COLORS_KWords.Toughness_rgb.." Regeneration, and Allies in "..COLORS_KWords.Coherency_rgb.." Replenish:\n"
+			..Dot_green.." {toughness:%s} of any "..COLORS_KWords.Toughness_rgb.." that you Replenish.",
 		ru = "Пока у вас есть заряды "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы дополнительно получаете:\n"
-				..Dot_green.." {melee_toughness:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru.." в ближнем бою, а союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." восстанавливают:\n"
-				..Dot_green.." {toughness:%s} любой "..COLORS_KWords_ru.Toughness_rgb_ru..", восстановленной вами.", -- Последний приговор -- руоф Окончательное постановление
+			..Dot_green.." {melee_toughness:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru.." в ближнем бою, а союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." восстанавливают:\n"
+			..Dot_green.." {toughness:%s} любой "..COLORS_KWords_ru.Toughness_rgb_ru..", восстановленной вами.", -- Последний приговор -- руоф Окончательное постановление
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -794,16 +794,16 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 5-4 - Writ of Judgement +]--
 	["loc_talent_adamant_terminus_warrant_improved_alt_desc"] = { -- talent_max_stacks: 30, melee_rending: +15%, crit_damage: +25%, weakspot_damage: +25%, +colors
 		en = "Swapping to your Melee Weapon while at {talent_max_stacks:%s} "..COLORS_KWords.Meleejust_rgb.." Stacks grants you:\n"
-				..Dot_green.." {melee_rending:%s} Melee "..COLORS_KWords.Rending_rgb.." until you run out of Stacks, or swap to your Ranged Weapon.\n"
-				.."\n"
-				.."Swapping to your Ranged Weapon while at {talent_max_stacks:%s} "..COLORS_KWords.Rangedjust_rgb.." Stacks grants you:\n"
-				..Dot_green.." {crit_damage:%s} "..COLORS_KWords.Crit_strike_dmg_rgb.." and\n"
-				..Dot_green.." {weakspot_damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb.." until you run out of Stacks, or swap to your Melee Weapon.",
+			..Dot_green.." {melee_rending:%s} Melee "..COLORS_KWords.Rending_rgb.." until you run out of Stacks, or swap to your Ranged Weapon.\n"
+			.."\n"
+			.."Swapping to your Ranged Weapon while at {talent_max_stacks:%s} "..COLORS_KWords.Rangedjust_rgb.." Stacks grants you:\n"
+			..Dot_green.." {crit_damage:%s} "..COLORS_KWords.Crit_strike_dmg_rgb.." and\n"
+			..Dot_green.." {weakspot_damage:%s} "..COLORS_KWords.Weakspot_dmg_rgb.." until you run out of Stacks, or swap to your Melee Weapon.",
 		ru = "Переключение на оружие ближнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..COLORS_KWords_ru.Meleejust_rgb_ru..", вы получаете:\n"
-				..Dot_green.." {melee_rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." в ближнем бою пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n\n"
-				.."Переключение на оружие дальнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете:\n"
-				..Dot_green.." {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru.." и\n"
-				..Dot_green.." {weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.", -- Судебный ордер -- руоф Судебное предписание
+			..Dot_green.." {melee_rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." в ближнем бою пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n\n"
+			.."Переключение на оружие дальнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..COLORS_KWords_ru.Rangedjust_rgb_ru..", вы получаете:\n"
+			..Dot_green.." {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru.." и\n"
+			..Dot_green.." {weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.", -- Судебный ордер -- руоф Судебное предписание
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -818,13 +818,13 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 6 - Forceful +]--
 	["loc_talent_adamant_forceful_base_alt_desc"] = { -- forceful_name: Forceful, duration: 5, stacks: 10, impact: +5%, dr: +2.5%, s->seconds, +colors
 		en = COLORS_KWords.Staggering_rgb.." Hits and Blocked Attacks grant Stacks of "..COLORS_KWords.Forceful_rgb..". Lasting {duration:%s} seconds and Stacking {stacks:%s} times. Each Stack gives:\n"
-				..Dot_green.." {impact:%s} "..COLORS_KWords.Impact_rgb.." and\n"
-				..Dot_green.." {dr:%s} "..COLORS_KWords.Damage_rgb.." Resistance.\n"
-				.."Remove Stack on "..COLORS_KWords.Damage_rgb.." taken.",
+			..Dot_green.." {impact:%s} "..COLORS_KWords.Impact_rgb.." and\n"
+			..Dot_green.." {dr:%s} "..COLORS_KWords.Damage_rgb.." Resistance.\n"
+			.."Remove Stack on "..COLORS_KWords.Damage_rgb.." taken.",
 		ru = COLORS_KWords_ru.Stunss_rgb_ru.." удары и заблокированные атаки дают заряды "..COLORS_KWords_ru.Forceful_rgb_ru..". Длится {duration:%s} секунд и суммируется до {stacks:%s} раз. Каждый заряд даёт:\n"
-				..Dot_green.." {impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." и\n"
-				..Dot_green.." {dr:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
-				..Dot_nc.." Заряд снимается при получении "..COLORS_KWords_ru.Dmg_a_rgb_ru..".", -- Неудержимый -- руоф Напористый
+			..Dot_green.." {impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." и\n"
+			..Dot_green.." {dr:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
+			..Dot_nc.." Заряд снимается при получении "..COLORS_KWords_ru.Dmg_a_rgb_ru..".", -- Неудержимый -- руоф Напористый
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -839,9 +839,9 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 6-1 - Adamant Will +]--
 	["loc_talent_adamant_forceful_stun_immune_and_block_all_linger_desc"] = { -- duration: 3, s->seconds, +colors
 		en = COLORS_KWords.Stun_rgb.." Immunity while having "..COLORS_Numbers.n_10_rgb.." Stacks of "..COLORS_KWords.Forceful_rgb.." and for {duration:%s} seconds after dropping below "..COLORS_Numbers.n_10_rgb.." Stacks.\n"
-				.."Your Perfect blocks can block All Attacks.",
+			.."Your Perfect blocks can block All Attacks.",
 		ru = "Пока у вас "..COLORS_Numbers.n_10_rgb.." зарядов "..COLORS_KWords_ru.Forceful_rgb_ru.." и на {duration:%s} секунды после того, как количество зарядов падает ниже "..COLORS_Numbers.n_10_rgb..", вы получаете иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru..".\n"
-				.."Ваши идеальные блоки могут блокировать любые атаки.", -- Адамантовая воля
+			.."Ваши идеальные блоки могут блокировать любые атаки.", -- Адамантовая воля
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -871,11 +871,11 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 6-3 - Targets Acquired +]--
 	["loc_talent_adamant_forceful_melee_alt_desc"] = { -- duration: 3, attack_speed: +10%, cleave: +50%, s->seconds, +colors
 		en = "While at Max Stacks, and for {duration:%s} seconds afterwards, gain:\n"
-				..Dot_green.." {attack_speed:%s} Attack Speed and\n"
-				..Dot_green.." {cleave:%s} "..COLORS_KWords.Cleave_rgb..".",
+			..Dot_green.." {attack_speed:%s} Attack Speed and\n"
+			..Dot_green.." {cleave:%s} "..COLORS_KWords.Cleave_rgb..".",
 		ru = "Пока у вас "..COLORS_Numbers.n_10_rgb.." зарядов "..COLORS_KWords_ru.Forceful_rgb_ru.." и на {duration:%s} секунды после того, как количество зарядов падает ниже "..COLORS_Numbers.n_10_rgb..", вы получаете:\n"
-				..Dot_green.." {cleave:%s} к "..COLORS_KWords_ru.Cleave_rgb_ru.." и\n"
-				..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Цели обнаружены
+			..Dot_green.." {cleave:%s} к "..COLORS_KWords_ru.Cleave_rgb_ru.." и\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Цели обнаружены
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -890,11 +890,11 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 6-4 - Arbites Vigilant +]--
 	["loc_talent_adamant_forceful_ability_damage"] = { -- strength: +2.5%, duration: 10, s->seconds, +colors
 		en = "On "..COLORS_KWords.Combat_ability_rgb.." use, you spend all Stacks and gain for each Stack:\n"
-				..Dot_green.." {strength:%s} "..COLORS_KWords.Strength_rgb..".\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.",
+			..Dot_green.." {strength:%s} "..COLORS_KWords.Strength_rgb..".\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = "При использовании "..COLORS_KWords_ru.Combat_ability_rgb_ru..", вы тратите все заряды и получаете за каждый заряд:\n"
-				..Dot_green.." {strength:%s} к "..COLORS_KWords_ru.Strength_rgb_ru..".\n"
-				..Dot_nc.." Длится {duration:%s} секунд.", -- Бдительный Арбитрес -- руоф Бдительность Арбитрес
+			..Dot_green.." {strength:%s} к "..COLORS_KWords_ru.Strength_rgb_ru..".\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Бдительный Арбитрес -- руоф Бдительность Арбитрес
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -909,9 +909,9 @@ local arbites_talent_localizations = {
 	--[+ KEYSTONE 6-5 - Judicial Force +]--
 	["loc_talent_adamant_forceful_stagger_on_low_high_desc"] = { -- low_stacks: 0, high_stacks: 10, cooldown: 5, s->seconds, +colors
 		en = COLORS_KWords.Stagger_rgb.." nearby Enemies upon reaching {low_stacks:%s} Stacks or {high_stacks:%s} Stacks of "..COLORS_KWords.Forceful_rgb..".\n"
-				..Dot_nc.." Cooldown {cooldown:%s} seconds. Cooldown is separate for {low_stacks:%s} Stacks and for {high_stacks:%s} Stacks.",
+			..Dot_nc.." Cooldown {cooldown:%s} seconds. Cooldown is separate for {low_stacks:%s} Stacks and for {high_stacks:%s} Stacks.",
 		ru = "Ближайшие враги получают "..COLORS_KWords_ru.Stagger_rgb_ru.." при достижении вами {low_stacks:%s} или {high_stacks:%s} зарядов "..COLORS_KWords_ru.Forceful_rgb_ru..".\n"
-				..Dot_nc.." Восстанавливается {cooldown:%s} секунд. Восстановление раздельное для {low_stacks:%s} зарядов и для {high_stacks:%s} зарядов.", -- Сила правосудия -- руоф Судебная сила
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд. Восстановление раздельное для {low_stacks:%s} зарядов и для {high_stacks:%s} зарядов.", -- Сила правосудия -- руоф Судебная сила
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -927,13 +927,13 @@ local arbites_talent_localizations = {
 	--[+ Passive 1 - No Escape +]--
 	["loc_talent_adamant_elite_special_kills_offensive_boost_alt_desc"] = { -- damage: +10%, movement_speed: +10%, duration: 4, s->seconds, +colors
 		en = "On Elite or Specialist Kill, gain:\n"
-				..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
-				..Dot_green.." {movement_speed:%s} Movement Speed.\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.",
+			..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = "После убийства элитного врага или специалиста, вы получаете:\n"
-				..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
-				..Dot_green.." {movement_speed:%s} к скорости движения.\n"
-				..Dot_nc.." Длится {duration:%s} секунды.", -- Не уйдёшь -- руоф Не сбежишь
+			..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+			..Dot_green.." {movement_speed:%s} к скорости движения.\n"
+			..Dot_nc.." Длится {duration:%s} секунды.", -- Не уйдёшь -- руоф Не сбежишь
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1038,13 +1038,13 @@ local arbites_talent_localizations = {
 	--[+ Passive 8 - Retaliatory Force +]--
 	["loc_talent_adamant_perfect_block_damage_boost_alt_desc"] = { -- block_cost: 15%, damage: +15%, attack_speed: +10%, duration: 8, s->seconds, +colors
 		en = "Gain {block_cost:%s} Reduced Block Cost.\n"
-				.."On Perfect Block gain for {duration:%s} seconds:\n"
-				..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
-				..Dot_green.." {attack_speed:%s} Attack Speed.",
+			.."On Perfect Block gain for {duration:%s} seconds:\n"
+			..Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed.",
 		ru = "На {block_cost:%s} снижены затраты выносливости на блокирование.\n"
-				.."При идеальном блокировании вы получаете на {duration:%s} секунд:\n"
-				..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
-				..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Сила возмездия
+			.."При идеальном блокировании вы получаете на {duration:%s} секунд:\n"
+			..Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Сила возмездия
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1089,11 +1089,11 @@ local arbites_talent_localizations = {
 	--[+ Passive 11 - Shield Plates +]--
 	["loc_talent_adamant_shield_plates_alt_desc"] = { -- toughness: 15%, duration: 3, perfect_toughness: 10%, cooldown: 1, s->second, +colors
 		en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes over {duration:%s} seconds on successful Block.\n"
-				.."{perfect_toughness:%s} "..COLORS_KWords.Toughness_rgb.." instantly replenishes on Perfect Block.\n"
-				..Dot_nc.." Cooldown {cooldown:%s} second.",
+			.."{perfect_toughness:%s} "..COLORS_KWords.Toughness_rgb.." instantly replenishes on Perfect Block.\n"
+			..Dot_nc.." Cooldown {cooldown:%s} second.",
 		ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за {duration:%s} секунды при успешном блоке.\n"
-				.."{perfect_toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." мгновенно восполняется при идеальном блоке.\n"
-				..Dot_nc.." Восстанавливается {cooldown:%s} секунду.", -- Щитовые пластины -- руоф Пластинчатые щиты
+			.."{perfect_toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." мгновенно восполняется при идеальном блоке.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунду.", -- Щитовые пластины -- руоф Пластинчатые щиты
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1168,11 +1168,11 @@ local arbites_talent_localizations = {
 	--[+ Passive 16 - Canine Morale +]--
 	["loc_talent_adamant_pinning_dog_kills_buff_allies_description"] = { -- tdr: +20%, toughness: +10%, duration: 5, s->seconds, +colors
 		en = "Killing Pounced Targets grants for you and Allies in "..COLORS_KWords.Coherency_rgb.." over {duration:%s} seconds:\n"
-				..Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and\n"
-				..Dot_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".",
+			..Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and\n"
+			..Dot_green.." {tdr:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".",
 		ru = "Убийство врага, прижатого кибермастифом к земле, даёт вам и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." на {duration:%s} секунд:\n"
-				..Dot_green.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и\n"
-				..Dot_green.." {tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..".", -- Боевой настрой пса -- руоф Собачий настрой
+			..Dot_green.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и\n"
+			..Dot_green.." {tdr:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..".", -- Боевой настрой пса -- руоф Собачий настрой
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1202,9 +1202,9 @@ local arbites_talent_localizations = {
 	--[+ Passive 18 - Suppression Force +]--
 	["loc_talent_adamant_staggered_enemies_deal_less_damage_desc"] = { -- damage: -20%, duration: 5, s->seconds, +colors
 		en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." dealt by Enemies successfully "..COLORS_KWords.Staggered_rgb.." by Melee Attacks, Pushes, and direct impacts of "..COLORS_KWords.BreakZLine_rgb..".\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.",
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." от врагов, "..COLORS_KWords_ru.Staggered_rgb_ru.." вами с помощью атак ближнего боя, толчков или прямых столкновений способности "..COLORS_KWords_ru.BreakZLined_rgb_ru..".\n"
-				..Dot_nc.." Длится {duration:%s} секунд.", -- Сила подавления
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Сила подавления
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1264,11 +1264,11 @@ local arbites_talent_localizations = {
 	--[+ Passive 22 - Justified Measures +]--
 	["loc_talent_adamant_stacking_damage_desc"] = { -- damage: +3%, stacks: 5, duration: 5, s->seconds, +colors
 		en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." on Successful Attack.\n"
-				..Dot_nc.." {stacks:%s} Max Stacks.\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.",
+			..Dot_nc.." {stacks:%s} Max Stacks.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при успешной атаке.\n"
-				..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
-				..Dot_nc.." Длится {duration:%s} секунд.", -- Оправданные меры
+			..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Оправданные меры
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1283,13 +1283,13 @@ local arbites_talent_localizations = {
 	--[+ Passive 23 - Hold the Line +]--
 	["loc_talent_adamant_staggers_reduce_damage_taken_alt_desc"] = { -- normal_stacks: 1, damage_taken_multiplier: +3%, max_stacks: 5, ogryn_stacks: 5, +colors
 		en = COLORS_KWords.Staggering_rgb.." an Enemy grants {normal_stacks:%s} Stack of {damage_taken_multiplier:%s} "..COLORS_KWords.Damage_rgb.." Resistance, on the next Melee hit taken.\n"
-				..Dot_nc.." Stacking {max_stacks:%s} times.\n"
-				.."\n"
-				..COLORS_KWords.Staggering_rgb.." Non-Human Sized Enemies grants {ogryn_stacks:%s} Stacks.",
+			..Dot_nc.." Stacking {max_stacks:%s} times.\n"
+			.."\n"
+			..COLORS_KWords.Staggering_rgb.." Non-Human Sized Enemies grants {ogryn_stacks:%s} Stacks.",
 		ru = COLORS_KWords_ru.Staggerr_rgb_ru.." врага даёт {normal_stacks:%s} заряд {damage_taken_multiplier:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." для следующего полученного удара в ближнем бою.\n"
-				..COLORS_KWords_ru.Staggerr_rgb_ru.." врагов больше человеческого роста даёт {ogryn_stacks:%s} зарядов.\n"
-				..Dot_nc.." Суммируется максимум {max_stacks:%s} раз.\n"
-				..Dot_nc.." Длится {duration:%s} секунд.", -- Держи строй -- руоф Держать строй
+			..COLORS_KWords_ru.Staggerr_rgb_ru.." врагов больше человеческого роста даёт {ogryn_stacks:%s} зарядов.\n"
+			..Dot_nc.." Суммируется максимум {max_stacks:%s} раз.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Держи строй -- руоф Держать строй
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1319,11 +1319,11 @@ local arbites_talent_localizations = {
 	--[+ Passive 25 - Rapid Movement +]--
 	["loc_talent_adamant_sprinting_sliding_description"] = { -- speed: +5%, duration: 5, stamina: +5%, cd: 0.75, s->seconds, +colors
 		en = "{speed:%s} Sprint Speed for {duration:%s} seconds after Sliding.\n"
-				.."{stamina:%s} "..COLORS_KWords.Stamina_rgb.." after killing Enemies.\n"
-				..Dot_nc.." Cooldown {cd:%s} seconds.",
+			.."{stamina:%s} "..COLORS_KWords.Stamina_rgb.." after killing Enemies.\n"
+			..Dot_nc.." Cooldown {cd:%s} seconds.",
 		ru = "{speed:%s} к скорости бега на {duration:%s} секунд после подката.\n"
-				.."{stamina:%s} к "..COLORS_KWords_ru.Stamina_rgb_ru.." после убийства врага.\n"
-				..Dot_nc.." Восстанавливается {cd:%s} секунды.", -- Быстрые движения -- руоф Быстрое перемещение
+			.."{stamina:%s} к "..COLORS_KWords_ru.Stamina_rgb_ru.." после убийства врага.\n"
+			..Dot_nc.." Восстанавливается {cd:%s} секунды.", -- Быстрые движения -- руоф Быстрое перемещение
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1338,9 +1338,9 @@ local arbites_talent_localizations = {
 	--[+ Passive 26 - Rebreather +]--
 	["loc_talent_adamant_rebreather_desc"] = { -- corruption: +20%, toxic_reduction: +75%, +colors
 		en = "{corruption:%s} "..COLORS_KWords.Corruption_rgb.." Resistance and\n"
-				.."{toxic_reduction:%s} Reduced "..COLORS_KWords.Damage_rgb.." taken from Toxic Gas.",
+			.."{toxic_reduction:%s} Reduced "..COLORS_KWords.Damage_rgb.." taken from Toxic Gas.",
 		ru = "{corruption:%s} к сопротивлению "..COLORS_KWords_ru.Corruption_rgb_ru.." и\n"
-				.."{toxic_reduction:%s} к снижению "..COLORS_KWords_ru.Dmg_a_rgb_ru..", получаемого от токсичного газа.", -- Ребризер -- руоф Противогаз
+			.."{toxic_reduction:%s} к снижению "..COLORS_KWords_ru.Dmg_a_rgb_ru..", получаемого от токсичного газа.", -- Ребризер -- руоф Противогаз
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1385,9 +1385,9 @@ local arbites_talent_localizations = {
 	--[+ Passive 29 - The Emperor's Fist +]--
 	["loc_talent_adamant_first_melee_hit_increased_damage_desc"] = { -- damage: +15%, impact: +30%, +colors
 		en = "{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." and\n"
-				.."{impact:%s} "..COLORS_KWords.Impact_rgb.." on first Enemy hit with each attack.",
+			.."{impact:%s} "..COLORS_KWords.Impact_rgb.." on first Enemy hit with each attack.",
 		ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя и\n"
-				.."{impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." первого врага в каждой атаке.", -- Кулак Императора
+			.."{impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." первого врага в каждой атаке.", -- Кулак Императора
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1402,11 +1402,11 @@ local arbites_talent_localizations = {
 	--[+ Passive 30 - Zealous Dedication +]--
 	["loc_talent_adamant_crit_chance_on_kill_desc"] = { -- crit_chance: 2%, max_stacks: 8, duration: 10, s->seconds, +colors
 		en = COLORS_Numbers.n_plus_rgb.."{crit_chance:%s} "..COLORS_KWords.Crit_chance_r_rgb.." on Kill.\n"
-				..Dot_nc.." {max_stacks:%s} Stacks.\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.",
+			..Dot_nc.." {max_stacks:%s} Stacks.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = COLORS_Numbers.n_plus_rgb.."{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." при убийстве.\n"
-				..Dot_nc.." До {max_stacks:%s} зарядов.\n"
-				..Dot_nc.." Длится {duration:%s} секунд.", -- Фанатичная преданность
+			..Dot_nc.." До {max_stacks:%s} зарядов.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Фанатичная преданность
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1421,9 +1421,9 @@ local arbites_talent_localizations = {
 	--[+ Passive 31 - Street Smarts +]--
 	["loc_talent_adamant_dodge_improvement_desc"] = { -- dodge: +1, dodge_duration: +25%
 		en = "{dodge:%s} Effective Dodges and\n"
-				.."{dodge_duration:%s} Dodge Duration, increases from "..COLORS_Numbers.n_02_rgb.." to "..COLORS_Numbers.n_025_rgb.." seconds.",
+			.."{dodge_duration:%s} Dodge Duration, increases from "..COLORS_Numbers.n_02_rgb.." to "..COLORS_Numbers.n_025_rgb.." seconds.",
 		ru = "{dodge:%s} эффективное уклонение и\n"
-				.."{dodge_duration:%s} к длительности уклонения.", -- Уличная хватка -- руоф Законы улицы
+			.."{dodge_duration:%s} к длительности уклонения.", -- Уличная хватка -- руоф Законы улицы
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1453,9 +1453,9 @@ local arbites_talent_localizations = {
 	--[+ Passive 33 - Target Selection +]--
 	["loc_talent_adamant_pinning_dog_elite_damage_description"] = { -- damage: +15%, time: 8, s->seconds, +colors
 		en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." vs Elites and Specialists after killing a Pounced Elite or Specialist.\n"
-				..Dot_nc.." Lasts {time:%s} seconds.",
+			..Dot_nc.." Lasts {time:%s} seconds.",
 		ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." элитным врагам и специалистам после убийства такого врага, прижатого вашим кибермастифом.\n"
-				..Dot_nc.." Длится {time:%s} секунд.", -- Выбор целей -- руоф Выбор цели
+			..Dot_nc.." Длится {time:%s} секунд.", -- Выбор целей -- руоф Выбор цели
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1470,11 +1470,11 @@ local arbites_talent_localizations = {
 	--[+ Passive 34 - Soulguilt Scan +]--
 	["loc_talent_adamant_stacking_weakspot_strength_duration_desc"] = { -- strength: 2%, max_stacks: 8, duration: 10, s->seconds, +colors
 		en = COLORS_Numbers.n_plus_rgb.."{strength:%s} "..COLORS_KWords.Weakspot_rgb.." strength after "..COLORS_KWords.Weakspothits_rgb..".\n"
-				..Dot_nc.." {max_stacks:%s} Max Stacks.\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.",
+			..Dot_nc.." {max_stacks:%s} Max Stacks.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = COLORS_Numbers.n_plus_rgb.."{strength:%s} к силе атак в "..COLORS_KWords_ru.Weakspot_rgb_ru.." после попадания в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".\n"
-				..Dot_nc.." Максимум {max_stacks:%s} зарядов.\n"
-				..Dot_nc.." Длится {duration:%s} секунд.", -- Поиск виновных душ
+			..Dot_nc.." Максимум {max_stacks:%s} зарядов.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Поиск виновных душ
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1519,9 +1519,9 @@ local arbites_talent_localizations = {
 	--[+ Passive 37 - Final Warning +]--
 	["loc_talent_adamant_ranged_damage_on_melee_stagger_desc"] = { -- damage: 15%, duration: 5, s->seconds, +colors
 		en = COLORS_Numbers.n_plus_rgb.."{damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on Melee "..COLORS_KWords.Staggering_rgb.." Hits.\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.",
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = COLORS_Numbers.n_plus_rgb.."{damage:%s} к дальнобойному "..COLORS_KWords_ru.Damage_rgb_ru.." при "..COLORS_KWords_ru.Stagger_i_rgb_ru.." врагов ударами в ближнем бою.\n"
-				..Dot_nc.." Длится {duration:%s} секунд.", -- Последнее предупреждение
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Последнее предупреждение
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1581,9 +1581,9 @@ local arbites_talent_localizations = {
 	--[+ Passive 41 - March +]--
 	["loc_talent_adamant_movement_speed_on_block_alt_desc"] = { -- movement_speed: +15%, duration: 3, s->seconds, +colors
 		en = "{movement_speed:%s} Movement Speed on Ranged Hit.\n"
-				..Dot_nc.." Lasts {duration:%s} seconds.",
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = "{movement_speed:%s} к скорости движения после любой дальнобойной атаки.\n"
-				..Dot_nc.." Длится {duration:%s} секунды.", -- Марш
+			..Dot_nc.." Длится {duration:%s} секунды.", -- Марш
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1642,6 +1642,6 @@ local arbites_talent_localizations = {
 	},
 }
 
-mod:notify("TALENTS_Arbites.lua loaded successfully")
+-- mod:notify("TALENTS_Arbites.lua loaded successfully")
 
 return arbites_talent_localizations

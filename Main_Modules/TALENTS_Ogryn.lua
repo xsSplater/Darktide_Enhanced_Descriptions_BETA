@@ -104,9 +104,9 @@ local ogryn_talent_localizations = {
 	--[+ BLITZ 0 - Big Box of Hurt +]--
 	-- ["loc_ability_ogryn_grenade_box_description"] = { -- +colors
 		-- en = "Throw a box of Grenades with great strength and enthusiasm for High "..COLORS_KWords.Damage_rgb.." against a Single Enemy.\n"
-				-- .."Slightly increased "..COLORS_KWords.Damage_rgb.." vs Unyielding and very low "..COLORS_KWords.Damage_rgb.." vs Carapace armor.\n"
-				-- .."Replenishes all boxes per Grenade pickup."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_0_rgb,
+			-- .."Slightly increased "..COLORS_KWords.Damage_rgb.." vs Unyielding and very low "..COLORS_KWords.Damage_rgb.." vs Carapace armor.\n"
+			-- .."Replenishes all boxes per Grenade pickup."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_0_rgb,
 		-- ru = "Вы бросаете коробку гранат с огромной силой и энтузиазмом, чтобы нанести высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\nНемного увеличен "..COLORS_KWords_ru.Dmg_rgb_ru.." против несгибаемых врагов и очень низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." против панцирной брони.\nПополняет все ящики при подборе гранат."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_0_rgb_ru, -- Большая коробка боли -- руоф Ящик, полный боли
 		-- fr = "Lancer une boîte de grenades avec une grande force et enthousiasme pour des "..COLORS_KWords_fr.Damage_rgb_fr.." élevés  contre un seul ennemi."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_0_rgb_fr,
 		-- ["zh-tw"] = "投擲一個手榴彈箱攻擊單一敵人。\n"
@@ -127,9 +127,9 @@ local ogryn_talent_localizations = {
 	--[+ BLITZ 1 - Big Friendly Rock +]--
 	-- ["loc_ability_ogryn_friend_rock_desc"] = { -- recharge: 45, max_charges: 4, s->seconds
 		-- en = "Toss a Big rock or hunk of junk at a Single Enemy. You pick up a new rock every {recharge:%s} seconds and can hold up to {max_charges:%s} rocks at a time.\n"
-				-- .."Slightly increased "..COLORS_KWords.Damage_rgb.." vs Maniac and very low "..COLORS_KWords.Damage_rgb.." vs Carapace. Extra "..COLORS_KWords.Finesse_rgb.." boost against Unyielding.\n"
-				-- .."Ogryn cannot pick up Grenade ammo."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_1_rgb,
+			-- .."Slightly increased "..COLORS_KWords.Damage_rgb.." vs Maniac and very low "..COLORS_KWords.Damage_rgb.." vs Carapace. Extra "..COLORS_KWords.Finesse_rgb.." boost against Unyielding.\n"
+			-- .."Ogryn cannot pick up Grenade ammo."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_1_rgb,
 		-- ru = "Вы бросаете большой камень или обломок бетона в одного врага. Вы подбираете новый камень каждые {recharge:%s} секунд и можете иметь при себе до {max_charges:%s} камней одновременно.\nСлегка увеличен "..COLORS_KWords_ru.Dmg_rgb_ru.." против маньяков и очень низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." против панцирной брони. Дополнительное усиление от "..COLORS_KWords_ru.Finesse_rgb_ru.." против несгибаемых.\nОгрин не может подбирать гранаты."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_1_rgb_ru, -- Большой дружелюбный валун
 		-- fr = "Lancer un gros caillou à un seul ennemi. Vous ramassez un nouveau caillou tous les {recharge:%s} secondes et pouvez en tenir jusqu'à {max_charges:%s} à la fois.\n"..COLORS_KWords_fr.Damage_rgb_fr.." légèrement augmenter contre les Maniaques et très faible "..COLORS_KWords_fr.Damage_rgb_fr.." contre ceux en armure Carapace. Bonus de "..COLORS_KWords_fr.Finesse_dmg_rgb_fr.." contre les Implacable\nL'Ogryn ne peux plus ramasser de caisse de grenade."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_1_rgb_fr,
 		-- ["zh-tw"] = "投擲巨石 攻擊單一敵人。\n"
@@ -169,11 +169,11 @@ local ogryn_talent_localizations = {
 	--[+ BLITZ 2 - Frag Bomb +]--
 	-- ["loc_ability_ogryn_grenade_demolition_desc"] = { -- radius: 16, m->meters, +colors
 		-- en = "Throw an Ogryn-sized (the only proper kind!) "..COLORS_KWords.Frag_gren_rgb.." with a {radius:%s} meters blast radius, dealing increased "..COLORS_KWords.Damage_rgb.." at the center.\n"
-				-- .."Fuse time: 2 seconds.\n"
-				-- .."Very high armor "..COLORS_KWords.Damage_rgb.." vs Flak, Maniac, Unyielding.\n"
-				-- .."Deals high "..COLORS_KWords.Stagger_rgb.." against all enemies including Monstrosities, Captains/Twins (only without void shield).\n"
-				-- .."Instakill all enemies with an explosion except: Maulers, Crushers, Bulwarks and Monstrosities."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_2_rgb,
+			-- .."Fuse time: 2 seconds.\n"
+			-- .."Very high armor "..COLORS_KWords.Damage_rgb.." vs Flak, Maniac, Unyielding.\n"
+			-- .."Deals high "..COLORS_KWords.Stagger_rgb.." against all enemies including Monstrosities, Captains/Twins (only without void shield).\n"
+			-- .."Instakill all enemies with an explosion except: Maulers, Crushers, Bulwarks and Monstrosities."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_2_rgb,
 		-- ru = "Вы бросаете огринского размера "..COLORS_KWords_ru.Frag_gren_rgb_ru.." с радиусом взрыва до {radius:%s} метров, наносящую увеличенный "..COLORS_KWords_ru.Dmg_rgb_ru.." в центре."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_2_rgb_ru, -- Фраг-бомба -- руоф Осколочная бомба
 		-- fr = "Lancer une "..COLORS_KWords_fr.Frag_gren_rgb_fr.." de taille Ogryn (la seule taille appropriée !) avec un rayon d'explosion de {radius:%s} mètres, infligeant des "..COLORS_KWords_fr.Damage_rgb_fr.." accrus au centre."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_2_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆歐格林專用 "..COLORS_KWords_tw.Frag_gren_rgb_tw.."。\n"
@@ -192,9 +192,9 @@ local ogryn_talent_localizations = {
 	--[+ BLITZ 3 - Bombs Away! +]--
 	-- ["loc_talent_bonebreaker_grenade_super_armor_explosion_desc"] = { -- num_grenades: 6, talent_name: Big Box of Hurt, +colors
 		-- en = "Throw a box of Grenades with great strength and enthusiasm to deal High "..COLORS_KWords.Damage_rgb.." to a Single Enemy.\n"
-				-- .."Hitting an Enemy causes the box to break open, releasing {num_grenades:%s} grenades around the target.\n"
-				-- .."This is an augmented version of {talent_name:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_3_rgb,
+			-- .."Hitting an Enemy causes the box to break open, releasing {num_grenades:%s} grenades around the target.\n"
+			-- .."This is an augmented version of {talent_name:%s}."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_3_rgb,
 		-- ru = "Вы бросаете коробку гранат с огромной силой и энтузиазмом, чтобы нанести высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\nПри попадании по врагу ящик разбивается, разбрасывая вокруг цели {num_grenades:%s} гранат.\nЭто улучшенная версия таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_3_rgb_ru, -- Бросай бомбы! -- руоф Кидаю бомбу!
 		-- fr = "Lancer une boîte de grenades avec une grande force et enthousiasme pour infliger des "..COLORS_KWords_fr.Damage_rgb_fr.." élevés à un seul ennemi.\nToucher un ennemi provoque l'ouverture de la boîte, libérant {num_grenades:%s} grenades autour de la cible.\nIl s'agit d'une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_3_rgb_fr,
 		-- ["zh-tw"] = "投擲一個手榴彈箱攻擊單一敵人。\n"
@@ -214,7 +214,7 @@ local ogryn_talent_localizations = {
 	--[+ AURA 0 - Intimidating Presence +]--
 	-- ["loc_talent_ogryn_2_base_4_description_new"] = { -- damage: +7.5%, +colors
 		-- en = "{damage:%s} Heavy Melee Attack "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Aura_0_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Aura_0_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." тяжёлых атак ближнего боя для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_0_rgb_ru, -- Устрашающее присутствие -- руоф Пугающее присутствие
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." des attaques de mêlée puissantes pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_0_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n\n"
@@ -232,9 +232,9 @@ local ogryn_talent_localizations = {
 	--[+ AURA 1 - Bonebreaker's Aura +]--
 	-- ["loc_talent_damage_aura_improved_new"] = { -- damage: +10%, talent_name: Intimidating Presence, +colors
 		-- en = "{damage:%s} Melee Attack "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
-				-- .."\n"
-				-- .."This is an augmented version of {talent_name:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Aura_1_rgb,
+			-- .."\n"
+			-- .."This is an augmented version of {talent_name:%s}."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Aura_1_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." тяжёлых атак ближнего боя для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".\n\nЭто улучшенная версия ауры {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_1_rgb_ru, -- Аура костолома
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." des attaques de mêlée pour vous et les alliés en syntonie.\n\nCeci est une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_1_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
@@ -253,7 +253,7 @@ local ogryn_talent_localizations = {
 	--[+ AURA 2 - Stay Close! +]--
 	-- ["loc_talent_ogryn_toughness_regen_aura_desc"] = { -- toughness_regen_rate_modifier: +25%, +colors
 		-- en = "{toughness_regen_rate_modifier:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Aura_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Aura_2_rgb,
 		-- ru = "{toughness_regen_rate_modifier:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восполняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_2_rgb_ru, -- Будь рядом! -- руоф Не расходимся!
 		-- fr = "{toughness_regen_rate_modifier:%s} de Régénération de la "..COLORS_KWords_fr.Toughness_rgb_fr.." pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_2_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
@@ -271,8 +271,8 @@ local ogryn_talent_localizations = {
 	--[+ AURA 3 - Coward Culling +]--
 	-- ["loc_talent_ogryn_damage_vs_suppressed_new_desc"] = { -- damage:+20%, +colors
 		-- en = "{suppression:%s} Suppression dealt.\n"
-				-- .."{damage:%s} "..COLORS_KWords.Damage_rgb.." against Suppressed Enemies for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Aura_3_rgb,
+			-- .."{damage:%s} "..COLORS_KWords.Damage_rgb.." against Suppressed Enemies for you and Allies in "..COLORS_KWords.Coherency_rgb.."."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Aura_3_rgb,
 		-- ru = "{suppression:%s} к подавлению врагов.\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." по подавленным врагам для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_3_rgb_ru, -- Отсев трусливых -- руоф Трусливые отбросы
 		-- fr = "{suppression:%s} de Suppression infligé.\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemis sous suppression pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_3_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
@@ -292,9 +292,9 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 0 - Bull Rush +]--
 	-- ["loc_ability_ogryn_charge_description_new"] = { -- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, s->seconds, +colors
 		-- en = "Charge forward with great force, knocking back enemies and "..COLORS_KWords.Staggering_rgb.." them. Gain {attack_speed:%s} Attack Speed and {move_speed:%s} Movement Speed for {duration:%s} seconds. Charge is stopped on collision with Carapace Armoured Enemies, Unyielding Enemies and Monstrosities.\n"
-				-- .."\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_0_rgb,
+			-- .."\n"
+			-- .."Base Cooldown: {cooldown:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_0_rgb,
 		-- ru = "Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..COLORS_KWords_ru.Stagger_rgb_ru..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается при столкновении с врагами в панцирной броне, несгибаемыми врагами или монстрами.\n\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_0_rgb_ru, -- Рывок быка -- руоф Бычий натиск
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée en cas de collision avec des ennemis en armure carapace, implacables et des monstruosités.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_0_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -310,9 +310,9 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 1 - Indomitable +]--
 	-- ["loc_talent_ogryn_bull_rush_distance_desc"] = { -- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, talent_name: Bull Rush, distance: 100%, s->seconds, +colors
 		-- en = "Charge forward with great force, knocking back Enemies and "..COLORS_KWords.Staggering_rgb.." them. Gain {attack_speed:%s} Attack Speed and {move_speed:%s} Movement Speed for {duration:%s} seconds. Charge is stopped only on collision with Monstrosities.\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-				-- .."This is an augmented version of {talent_name:%s} with an increased charge distance of {distance:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_rgb,
+			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
+			-- .."This is an augmented version of {talent_name:%s} with an increased charge distance of {distance:%s}."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_rgb,
 		-- ru = "Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..COLORS_KWords_ru.Stagger_rgb_ru..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается только при столкновении с монстрами.\n\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s} с увеличенным на {distance:%s} расстоянием рывка."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_rgb_ru, -- Неукротимый -- руоф Неукротимость
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée uniquement en cas de collision avec des monstruosités.\nTemps de recharge de base : {cooldown:%s} secondes.\nCeci est une version augmentée de {talent_name:%s} avec une distance de charge accrue de {distance:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -328,7 +328,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 1-1 - Stomping Boots +]--
 	-- ["loc_talent_ogryn_toughness_on_bull_rush_desc"] = { -- toughness: +10%, ability: Indomitable, +colors
 		-- en = ("{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes per Enemy Hit with {ability:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_1_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждого врага задетого способностью {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_1_rgb_ru, -- Топающие сапоги -- руоф Сокрушающий топот
 		-- fr = "{toughness:%s} de la "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère par ennemi touché avec {ability:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_1_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -344,7 +344,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 1-2 - Trample +]--
 	-- ["loc_talent_ogryn_ability_charge_trample_desc"] = { -- talent_name: Bull Rush, damage: +2%, duration: 8, stack: 25, s->seconds, +colors
 		-- en = "For each Enemy hit by {talent_name:%s} you gain a Stack of "..COLORS_KWords.Trample_rgb.." which increases Base "..COLORS_KWords.Damage_rgb.." by {damage:%s} for {duration:%s} seconds. Max Stacks {stack:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_2_rgb,
 		-- ru = "За каждого врага, задетого способностью {talent_name:%s}, вы получаете заряд "..COLORS_KWords_ru.Trample_rgb_ru..", который даёт {damage:%s} базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." на {duration:%s} секунд. Максимум {stack:%s} зарядов."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_2_rgb_ru, -- Топот -- руоф Топанье
 		-- fr = "Pour chaque ennemi touché par {talent_name:%s}, vous gagnez un cumul de "..COLORS_KWords_fr.Trample_rgb_fr.." qui augmente les "..COLORS_KWords_fr.Damage_rgb_fr.." de base de {damage:%s} pendant {duration:%s} secondes. Jusqu'à {stack:%s} cumuls."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_2_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -360,7 +360,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 1-3 - Pulverise +]--
 	-- ["loc_talent_ogryn_bleed_on_bull_rush_desc"] = { -- stacks: 5, ability: Indomitable, +colors
 		-- en = "{stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." are applied to enemies hit by {ability:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_3_rgb,
 		-- ru = "{stacks:%s} зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." накладывается на врагов, которых задела способность {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_3_rgb_ru, -- Разбрызгивание -- Крошилово
 		-- fr = "{stacks:%s} cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." sont appliqués aux ennemis touchés par {ability:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_3_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -376,12 +376,12 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 2 - Loyal Protector +]--
 	-- ["loc_ability_ogryn_taunt_shout_new_desc"] = { -- radius: 12, duration: 15, first_pulse: 3, second_pulse: 6, cooldown: 45, m->meters, s->seconds
 		-- en = "Taunt Enemies within {radius:%s} meters, making them Attack only you for {duration:%s} seconds. The effect repeats after {first_pulse:%s} seconds, and after {second_pulse:%s} seconds.\n"
-				-- .."\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_rgb,
+			-- .."\n"
+			-- .."Base Cooldown: {cooldown:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_rgb,
 		-- ru = "Вы кричите, провоцируя врагов в радиусе {radius:%s} метров и заставляя их атаковать только вас в течение {duration:%s} секунд. Эффект повторяется через {first_pulse:%s} секунды и через {second_pulse:%s} секунд.\n"
-				-- .."\n"
-				-- .."Восстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_rgb_ru, -- Верный защитник
+			-- .."\n"
+			-- .."Восстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_rgb_ru, -- Верный защитник
 		-- fr = "Provoque les ennemis dans un rayon de {radius:%s} mètres, les obligeant à ne s'attaquer qu'à vous pendant {duration:%s} secondes. L'effet se repète après {first_pulse:%s} secondes, et une seconde fois après {second_pulse:%s} secondes.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_rgb_fr, -- Protecteur Loyal
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -396,7 +396,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 2-1 - Valuable Distraction +]--
 	-- ["loc_talent_ogryn_taunt_damage_taken_increase_description"] = { -- talent_name: Loyal Protector, base_damage: +25%, +colors
 		-- en = "{base_damage:%s} Base "..COLORS_KWords.Damage_rgb.." taken from all sources by enemies affected by {talent_name:%s} for "..COLORS_Numbers.n_15_rgb.." seconds."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_1_rgb,
 		-- ru = "{base_damage:%s} к базовому "..COLORS_KWords_ru.Damage_rgb_ru.." из любого источника всем врагам, которых спровоцировала способность {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_1_rgb_ru, -- Отвлекающий манёвр -- руоф Ценное отвлечение
 		-- fr = "{base_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." provenant de toutes les sources pour les ennemis affectés par {talent_name:%s} pendant "..COLORS_Numbers.n_15_rgb.." secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_1_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -412,7 +412,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 2-2 - No Pain! +]--
 	-- ["loc_talent_ogryn_taunt_restore_toughness_new_desc"] = { -- tougness: 2.5%, talent_name: Loyal Protector, +colors
 		-- en = "{tougness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished by {talent_name:%s} and its repeat effects. Plus an additional {toughness_per_hit:%s} "..COLORS_KWords.Toughness_rgb.." every "..COLORS_Numbers.n_1_rgb.." second per enemy for {duration:%s} seconds, up to {max:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_2_rgb,
 		-- ru = "{tougness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восполняется способностью {talent_name:%s} и его повторяющимися эффектами. Плюс дополнительная {toughness_per_hit:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." каждую "..COLORS_Numbers.n_1_rgb.." секунду за врага в течение {duration:%s} секунд, до {max:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_2_rgb_ru, -- Боли нет!
 		-- fr = "Régénere {tougness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." par {talent_name:%s} et ses répétitions. Plus {toughness_per_hit:%s} "..COLORS_KWords_fr.Toughness_rgb_fr.." toute les "..COLORS_Numbers.n_1_rgb.." second par ennemi pendant {duration:%s} secondes, jusqu'à {max:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_2_rgb_fr, -- Sans douleur!
 		-- ["zh-tw"] = ,
@@ -428,7 +428,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 2-3 - Go again! +]--
 	-- ["loc_talent_ogryn_taunt_stagger_cd_description"] = { -- talent_name: Loyal Protector, radius: 50%, +colors
 		-- en = COLORS_KWords.Staggering_rgb.." an Enemy replenishes {cooldown_reduction:%s} "..COLORS_KWords.Cd_rgb.." of your {talent_name:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_3_rgb,
 		-- ru = COLORS_KWords_ru.Staggerr_rgb_ru.." врага восполняет {cooldown_reduction:%s} "..COLORS_KWords_ru.Ability_cd_rgb_ru.." {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_3_rgb_ru, -- Давай по новой!
 		-- fr = "Faire "..COLORS_KWords_fr.Staggering_rgb_fr.." un ennemi régénère {cooldown_reduction:%s} du "..COLORS_KWords_fr.Cd_rgb_fr.." de votre {talent_name:%s}.", -- Encore une fois! --..TALENTS_Enh_desc2.ED_OGR_Ability_2_3_rgb_fr
 		-- ["zh-tw"] = ,
@@ -444,14 +444,14 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 3 - Point-Blank Barrage +]--
 	-- ["loc_talent_ogryn_combat_ability_special_ammo_new_desc"] = { -- ranged_attack_speed: +25%, reload_speed: +70%, duration: 10, cooldown: 80, s->seconds
 		-- en = "Swaps to and reloads your Ranged Weapon.\n"
-				-- .."For the next {duration:%s} seconds you have:\n"
-				-- .."{damage:%s} Close Range "..COLORS_KWords.Damage_rgb..",\n"
-				-- .."{ranged_attack_speed:%s} Rate of Fire,\n"
-				-- .."{reload_speed:%s} Reload Speed and\n"
-				-- ..COLORS_Numbers.n_minus_rgb.."{reduced_move_penalty:%s} to Braced Movement Speed penalties.\n"
-				-- .."\n"
-				-- .."Base Cooldown {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_rgb,
+			-- .."For the next {duration:%s} seconds you have:\n"
+			-- .."{damage:%s} Close Range "..COLORS_KWords.Damage_rgb..",\n"
+			-- .."{ranged_attack_speed:%s} Rate of Fire,\n"
+			-- .."{reload_speed:%s} Reload Speed and\n"
+			-- ..COLORS_Numbers.n_minus_rgb.."{reduced_move_penalty:%s} to Braced Movement Speed penalties.\n"
+			-- .."\n"
+			-- .."Base Cooldown {cooldown:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_rgb,
 		-- ru = "Вы переключаетесь на оружие дальнего боя и перезаряжаете его. Вы получаете на {duration:%s} секунд:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции,\n{ranged_attack_speed:%s} к скорострельности,\n{reload_speed:%s} к скорости перезарядки и\n"..COLORS_Numbers.n_minus_rgb.."{reduced_move_penalty:%s} к штрафу скорости движения при прицеливании.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_rgb_ru, -- Беспощадный обстрел в упор -- руоф Решительный натиск
 		-- fr = "Échange et recharge votre arme à distance. Pendant les {duration:%s} secondes suivantes, vous avez une vitesse de tir de {ranged_attack_speed:%s}, une vitesse de recharge de {reload_speed:%s}, des pénalités de vitesse de déplacement réduites de {reduced_move_penalty:%s}, et vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à courte portée.\nTemps de recharge de base {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_rgb_fr, -- Barrage à bout portant
 		-- ["zh-tw"] = ,
@@ -467,7 +467,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 3-1 - Bullet Bravado +]--
 	-- ["loc_talent_ogryn_special_ammo_toughness_on_shot_and_reload_desc"] = { -- ability: Point-Blank Barrage, toughness: +2%, toughness_reload: +10%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes for every Shot Fired and {toughness_reload:%s} "..COLORS_KWords.Toughness_rgb.." on each Reload while {ability:%s} is active."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_1_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждый сделанный выстрел и ещё {toughness_reload:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." за каждую перезарядку во время действия способности {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_1_rgb_ru, -- Бравада стрелка -- руоф Лихая пуля
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère à chaque tir et {toughness_reload:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." à chaque rechargement pendant que {ability:%s} est actif."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_1_rgb_fr, -- Bravade de la balle
 		-- ["zh-tw"] = ,
@@ -483,7 +483,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 3-2 - Hail of Fire +]--
 	-- ["loc_talent_ogryn_special_ammo_armor_pen_new_desc"] = { 
 		-- en = "{rending_multiplier:%s} "..COLORS_KWords.Rending_rgb.." and {damage:%s} "..COLORS_KWords.Damage_rgb.." to your Ranged Attacks while {ability:%s} is active."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_2_rgb,
 		-- ru = "{rending_multiplier:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." и {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для ваших выстрелов во время действия способности {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_2_rgb_ru, -- Град огня -- руоф Слава пламени
 		-- fr = "{rending_multiplier:%s} de "..COLORS_KWords_fr.Rending_rgb_fr.." et {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à vos attaques à distance pendant que {ability:%s} est actif."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_2_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -499,7 +499,7 @@ local ogryn_talent_localizations = {
 	--[+ ABILITY 3-3 - Light 'em Up +]--
 	-- ["loc_talent_ogryn_special_ammo_fire_shots_new_desc"] = { -- stacks: 2, ability: Point-Blank Barrage, +colors
 		-- en = COLORS_Numbers.n_plus_rgb.."{stacks:%s} Stacks of "..COLORS_KWords.Burn_rgb.." are applied on Ranged Attacks while {ability:%s} is active. Max Stacks {max_stacks:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_3_rgb,
 		-- ru = COLORS_Numbers.n_plus_rgb.."{stacks:%s} заряда "..COLORS_KWords_ru.Burn_rgb_ru.." накладывают ваши выстрелы во время действия способности {ability:%s}. Максимум {max_stacks:%s} зарядов."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_3_rgb_ru, -- Задай жару -- руоф Зададим жару
 		-- fr = "Les attaques à distance appliquent {stacks:%s} cumuls de "..COLORS_KWords_fr.Burn_rgb_fr.." pendant que {ability:%s} est actif. Jusqu'à un maximum de {max_stacks:%s} cumuls."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_3_rgb_fr, -- Allumez-les!
 		-- ["zh-tw"] = ,
@@ -516,7 +516,7 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 1 - Heavy Hitter +]--
 	-- ["loc_talent_ogryn_passive_heavy_hitter_new_desc"] = { -- damage: +5%, duration: 7.5, stacks: 5, s->seconds, +colors
 		-- en = "{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on Melee Attack Hit. Stacks {stacks:%s} times. Gain {heavy_stacks:%s} Stacks on Heavy Attack Hit."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя на {duration:%s} секунды при нанесении ударов в ближнем бою. Суммируется {stacks:%s} раз. Даёт {heavy_stacks:%s} заряда при тяжёлых ударах."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_1_rgb_ru, -- Тяжёлый нападающий -- руоф Тяжеловес
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de Mélée pendant {duration:%s} secondes lors d'une attaque réussie. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_rgb_fr, -- Frappe lourde
 		-- ["zh-tw"] = ,
@@ -547,7 +547,7 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 1-2 - Just Getting Started +]--
 	-- ["loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed_description"] = { -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
 		-- en = "{attack_speed:%s} Attack Speed while {talent_name:%s} is at {stacks:%s} Stacks."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_2_rgb,
 		-- ru = "{attack_speed:%s} к скорости атаки пока у вас {stacks:%s} зарядов таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_1_2_rgb_ru, -- Я только начал -- руоф Лишь начало!
 		-- fr = "{attack_speed:%s} Vitesse d'attaque tant que {talent_name:%s} est à {stacks:%s} cumuls."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_2_rgb_fr, -- Rien que le début
 		-- ["zh-tw"] = ,
@@ -563,7 +563,7 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 1-3 - Unstoppable +]--
 	-- ["loc_talent_ogryn_heavy_hitter_max_stacks_improves_toughness_new_description"] = { -- talent_name: Heavy Hitter, stacks: 5, toughness_melee_replenish: +100%, +colors
 		-- en = "{melee_toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenished from Melee Kills for each Stack, also granted by {talent_name:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_3_rgb,
 		-- ru = "{melee_toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается от убийств в ближнем бою за каждый заряд даётся талантом {talent_name:%s}.", -- Неудержимый -- руоф Неудержимость
 		-- fr = "{melee_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée par les éliminations en mêlée par cumuls de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_3_rgb_fr, -- Instoppable
 		-- ["zh-tw"] = ,
@@ -609,10 +609,10 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 2 - Feel No Pain +]--
 	-- ["loc_talent_ogryn_carapace_armor_any_damage_desc"] = { -- stacks: 10, toughness_regen: +2.5%, damage_reduction: +2.5%, duration: 3, s->seconds, +colors
 		-- en = "You are blessed with {stacks:%s} Stacks of "..COLORS_KWords.Feel_no_pain_rgb..". Each Stack grants:\n"
-				-- .."{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment and\n"
-				-- .."{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction.\n"
-				-- .."Taking "..COLORS_KWords.Damage_rgb.." removes one Stack. Stacks are restored every {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_rgb,
+			-- .."{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment and\n"
+			-- .."{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction.\n"
+			-- .."Taking "..COLORS_KWords.Damage_rgb.." removes one Stack. Stacks are restored every {duration:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_rgb,
 		-- ru = "Вам даровано {stacks:%s} зарядов "..COLORS_KWords_ru.Feel_no_pain_rgb_ru..". Каждый заряд даёт:\n{toughness_regen:%s} восполнения "..COLORS_KWords_ru.Toughness_rgb_ru.." и\n{damage_reduction:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru..".\nПолучение "..COLORS_KWords_ru.Dmg_a_rgb_ru.." снимает один заряд. Заряды восстанавливаются каждые {duration:%s} секунды."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_2_rgb_ru, -- Неболит
 		-- fr = "Vous recevez {stacks:%s} cumuls de "..COLORS_KWords_fr.Feel_no_pain_rgb_fr..". Chaque cumul accorde :\n{toughness_regen:%s} de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." et\n{damage_reduction:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr..".\nPrendre des "..COLORS_KWords_fr.Damage_rgb_fr.." retire un cumul. Les cumuls sont restaurées toutes les {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -628,9 +628,9 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 2-1 - Pained Outburst +]--
 	-- ["loc_talent_ogryn_carapace_armor_trigger_on_zero_stacks_new_desc"] = { -- talent_name: Feel No Pain, toughness_replenish: +20%, cooldown: 30, s->seconds, +colors
 		-- en = "{toughness_replenish:%s} "..COLORS_KWords.Toughness_rgb.." replenished when {talent_name:%s} reaches {stacks:%s} Stacks or below. It also creates an explosion that deals No "..COLORS_KWords.Damage_rgb.." but "..COLORS_KWords.Staggers_rgb.." surrounding enemies.\n"
-				-- .."\n"
-				-- .."This effect can occur once every {cooldown:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_1_rgb,
+			-- .."\n"
+			-- .."This effect can occur once every {cooldown:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_1_rgb,
 		-- ru = "{toughness_replenish:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается, если заряды таланта {talent_name:%s} достигают {stacks:%s} зарядов или меньше. Обнуление зарядов также создаёт взрыв, который не наносит "..COLORS_KWords_ru.Dmg_a_rgb_ru..", но "..COLORS_KWords_ru.Staggers_e_rgb_ru.." врагов вокруг.\n\nЭтот эффект может срабатывать раз в {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_2_1_rgb_ru, -- Вспышка боли
 		-- fr = "{toughness_replenish:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée quand {talent_name:%s} atteint {stacks:%s} cumul ou moins. Cela crée aussi une explosion qui ne cause pas de dégâts mais fait "..COLORS_KWords_fr.Staggering_rgb_fr.." les ennemis environnants.\n\nCet effet peut se produire une fois toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_1_rgb_fr, -- Éclat de douleur
 		-- ["zh-tw"] = ,
@@ -646,7 +646,7 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 2-2 - Strongest! +]--
 	-- ["loc_talent_ogryn_carapace_armor_add_stack_on_push_desc"] = { -- talent_name: Feel No Pain
 		-- en = COLORS_Numbers.n_1_rgb.." Stack of {talent_name:%s} is restored by Pushing enemies."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_2_rgb,
 		-- ru = COLORS_Numbers.n_1_rgb.." заряд таланта {talent_name:%s} восстанавливается при отталкивании врагов."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_2_2_rgb_ru, -- Сильнейший!
 		-- fr = COLORS_Numbers.n_1_rgb.." cumul de {talent_name:%s} est restaurée en poussant les ennemis."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_2_rgb_fr, -- Le plus fort!
 		-- ["zh-tw"] = ,
@@ -662,7 +662,7 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 2-3 - Toughest! +]--
 	-- ["loc_talent_ogryn_carapace_armor_more_toughness_desc"] = { -- talent_name: Feel No Pain, toughness_regen: +2.5%, +colors
 		-- en = "{toughness_regen:%s} "..COLORS_KWords.Toughness_rgb.." replenishment per stack is granted by {talent_name:%s}."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_3_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_3_rgb,
 		-- ru = "{toughness_regen:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждый заряд таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_2_3_rgb_ru, -- Стойкий! -- руоф Самый выносливый!
 		-- fr = "{toughness_regen:%s} de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." par cumul est accordée par {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_3_rgb_fr, -- Le plus résistant!
 		-- ["zh-tw"] = ,
@@ -678,9 +678,9 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 3 - Burst Limiter Override +]--
 	-- ["loc_talent_ogryn_blo_new_alt_desc"] = { -- proc_chance: 8%, +colors
 		-- en = "{proc_chance:%s} chance of triggering "..COLORS_KWords.Lucky_bullet_rgb.." and not consuming Ammo when making Ranged Attacks.\n"
-				-- .."\n"
-				-- .."In addition, gain {ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on Ranged Kills. Max Stacks {stacks:%s}. Lasts {duration:%s} seconds."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_rgb,
+			-- .."\n"
+			-- .."In addition, gain {ranged_damage:%s} Ranged "..COLORS_KWords.Damage_rgb.." on Ranged Kills. Max Stacks {stacks:%s}. Lasts {duration:%s} seconds."
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_rgb,
 		-- ru = "{proc_chance:%s} шанс получить "..COLORS_KWords_ru.Lucky_bullet_rgb_ru.." и не потратить боеприпас при выстреле.\n\nТакже вы получаете {ranged_damage:%s} к дальнобойному "..COLORS_KWords_ru.Dmg_a_rgb_ru.." при дальнобойных убийствах. Максимум {stacks:%s} зарядов. Длится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_3_rgb_ru, -- Обход ограничителя очереди -- руоф Взлом ограничителя взрыва
 		-- fr = "{proc_chance:%s} de chance de déclencher "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." et de ne pas consommer de munitions lors des attaques à distance.\n\nDe plus, vous gagnez {ranged_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance lors d'une élimination à distance. Se cumuls {stacks:%s} fois. Dure {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_rgb_fr, -- Obstruction du limiteur de tir
 		-- ["zh-tw"] = ,
@@ -711,7 +711,7 @@ local ogryn_talent_localizations = {
 	--[+ KEYSTONE 3-2 - Maximum Firepower +]--
 	-- ["loc_talent_ogryn_leadbelcher_grant_cooldown_reduction_desc"] = { -- cooldown_reduction: +200%, duration: 2, s->seconds, +colors
 		-- en = "{cooldown_reduction:%s} "..COLORS_KWords.Ability_cd_rgb.." Reduction for {duration:%s} seconds when "..COLORS_KWords.Lucky_bullet_rgb.." triggers."
-				-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_2_rgb,
+			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_2_rgb,
 		-- ru = "{cooldown_reduction:%s} к сокращению времени "..COLORS_KWords_ru.Ability_cd_rgb_ru.." на  {duration:%s} секунды, когда вы получаете "..COLORS_KWords_ru.Lucky_bullet_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_3_2_rgb_ru, -- Максимальная огневая мощь
 		-- fr = "{cooldown_reduction:%s} de "..COLORS_KWords_fr.Ability_cd_rgb_fr.." pendant {duration:%s} secondes lorsque "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." est déclenché."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_2_rgb_fr, -- Maximale puissance de feu
 		-- ["zh-tw"] = ,
@@ -1058,8 +1058,8 @@ local ogryn_talent_localizations = {
 	--[+ Passive 20 - Crunch! +]--
 	-- ["loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_new_desc"] = { -- damage: +40%, stagger: +40%, &->and, +colors
 		-- en = "Based on charge time, your charged Melee Attack gains:\n"
-				-- .."{damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
-				-- .."{stagger:%s} "..COLORS_KWords.Impact_rgb..".",
+			-- .."{damage:%s} "..COLORS_KWords.Damage_rgb.." and\n"
+			-- .."{stagger:%s} "..COLORS_KWords.Impact_rgb..".",
 		-- ru = "В зависимости от времени заряжания, ваша заряженная атака ближнего боя получает прибавку:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n{stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru..".", -- Хрусь! -- руоф Хрясь!
 		-- fr = "En fonction du temps de charge de votre attaque vous gagnez :\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." bonus et\n{stagger:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." bonus."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_10_rgb_fr,
 		-- ["zh-tw"] = ,
@@ -1105,8 +1105,8 @@ local ogryn_talent_localizations = {
 	--[+ Passive 23 - For the Lil'Uns +]--
 	-- ["loc_talent_ogryn_protect_allies_desc"] = { -- stacks: +4, +colors
 		-- en = "{power:%s} "..COLORS_KWords.Strength_rgb.." and {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for {duration:%s} seconds when an Ally's "..COLORS_KWords.Toughness_rgb.." breaks. Cooldown {cooldown:%s} seconds.\n"
-				-- .."\n"
-				-- .."{revive_speed:%s} Revive Speed and "..COLORS_KWords.Stun_rgb.." Immunity for {duration:%s} seconds when an Ally is Knocked Down.",
+			-- .."\n"
+			-- .."{revive_speed:%s} Revive Speed and "..COLORS_KWords.Stun_rgb.." Immunity for {duration:%s} seconds when an Ally is Knocked Down.",
 		-- ru = , -- За малых
 		-- fr = "{power:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." et {toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." pendant {duration:%s} secondes quand la "..COLORS_KWords_fr.Toughness_rgb_fr.." d'un allié se brise. Temps de recharge : {cooldown:%s} secondes.\n\n{revive_speed:%s} de vitesse de réanimation et l'immunité à l'"..COLORS_KWords_fr.Stuns_rgb_fr.." pendant {duration:%s} secondes quand un allié tombe à terre.", -- Pour les microbes
 		-- ["zh-tw"] = ,
@@ -1122,10 +1122,10 @@ local ogryn_talent_localizations = {
 	--[+ Passive 24 - Concentrate +]--
 	-- ["loc_talent_ogryn_drain_stamina_for_handling_desc"] = { -- stacks: +4, +colors
 		-- en = "While bracing your Ranged Weapon you gain:\n"
-				-- .."{sway_reduction:%s} Sway Reduction,\n"
-				-- .."{spread_reduction:%s} Spread Reduction and\n"
-				-- .."{recoil_reduction:%s} Recoil Reduction,\n"
-				-- .."but lose {stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second.",
+			-- .."{sway_reduction:%s} Sway Reduction,\n"
+			-- .."{spread_reduction:%s} Spread Reduction and\n"
+			-- .."{recoil_reduction:%s} Recoil Reduction,\n"
+			-- .."but lose {stamina:%s} "..COLORS_KWords.Stamina_rgb.." per second.",
 		-- ru = "{sway_reduction:%s} к уменьшению раскачивания,\n{spread_reduction:%s} к уменьшению разброса и\n{recoil_reduction:%s} к уменьшению отдачи при прицеливании из оружия дальнего боя, но при этом теряется {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." в секунду.", -- Сосредоточься
 		-- fr = "Lors de la mis en joue de votre arme à distance vous gagnez:\n{sway_reduction:%s} de réduction du balancement ,\n{spread_reduction:%s} de réduction du dispercement et\n{recoil_reduction:%s} de réduction du recul,\nMaisvous perdez {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." par seconde.", -- Concentration
 		-- ["zh-tw"] = ,
@@ -1141,8 +1141,8 @@ local ogryn_talent_localizations = {
 	--[+ Passive 25 - Fire Away +]--
 	-- ["loc_talent_ogryn_explosions_burn_close_desc"] = { -- stacks: +4, +colors
 		-- en = "{stacks:%s} Stack of "..COLORS_KWords.Burn_rgb.." applied by your explosions.\n"
-				-- .."{more_stacks:%s} Stacks if targets are inside the explosion epicenter.\n"
-				-- .."Up to {max_stacks:%s} Max "..COLORS_KWords.Burn_rgb.." Stacks on a target.",
+			-- .."{more_stacks:%s} Stacks if targets are inside the explosion epicenter.\n"
+			-- .."Up to {max_stacks:%s} Max "..COLORS_KWords.Burn_rgb.." Stacks on a target.",
 		-- ru = "{stacks:%s} заряд "..COLORS_KWords_ru.Burn_rgb_ru.." накладывается вашими взрывами.\n{more_stacks:%s} заряда, если враг находится в эпицентре взрыва. Максимум {max_stacks:%s} зарядов "..COLORS_KWords_ru.Burn_rgb_ru..".", -- Поджиг
 		-- fr = "{stacks:%s} cumul de "..COLORS_KWords_fr.Burn_rgb_fr.." est appliqué à vos explosions.\n{more_stacks:%s} cumuls ci la cible est dans l'épicentre de l'explosion.\nJusqu'à {max_stacks:%s} cumuls de "..COLORS_KWords_fr.Burn_rgb_fr.." maximum sur une cible.", -- Flamboiment
 		-- ["zh-tw"] = ,
@@ -1158,7 +1158,7 @@ local ogryn_talent_localizations = {
 	--[+ Passive 26 - Simple Minded +]--
 	-- ["loc_talent_ogryn_corruption_resistance_desc"] = { -- stacks: +4, +colors
 		-- en = "{resistance:%s} "..COLORS_KWords.Corruption_rgb.." Resistance.\n"
-				-- .."Reduces "..COLORS_KWords.Corruptdmg_rgb.." taken by any enemy source, including Poxburster explosion, toxic gas, Poxwalker Melee attacks, Pox Hound pounce, Beast of Nurgle vomit/slime/consumed, Daemonhost, grimoires, etc.",
+			-- .."Reduces "..COLORS_KWords.Corruptdmg_rgb.." taken by any enemy source, including Poxburster explosion, toxic gas, Poxwalker Melee attacks, Pox Hound pounce, Beast of Nurgle vomit/slime/consumed, Daemonhost, grimoires, etc.",
 		-- ru = "{resistance:%s} сопротивления "..COLORS_KWords_ru.Corruption_rgb_ru..".\nУменьшает "..COLORS_KWords_ru.Corruptdmg_rgb_ru..", получаемый от любого вражеского источника, включая взрыв Чумного взрывника, токсичный газ, атаки Чумного ходока в ближнем бою, нападение Чумной гончей, рвоту/слизь/проглатывание Зверя Нургла, атаки Демонхоста, гримуары и т.д.", -- Простота ума
 		-- fr = "{resistance:%s} de résistance à la "..COLORS_KWords_fr.Corruption_rgb_fr..".\nréduit les "..COLORS_KWords_fr.Corruptdmg_rgb_fr.." subit de toute les sources:  explosion des crache-peste, gaz toxique, attaque de mélée des scrofuleux, morsures des cerbère, le vomit/résidu/avalement de la bête de Nurgle, Hôte Daemoniaque, grimoires, etc.",
 		-- ["zh-tw"] = ,
@@ -1369,8 +1369,8 @@ local ogryn_talent_localizations = {
 	--[+ Passive 40 - Get Stuck In +]--
 	-- ["loc_talent_ogryn_ability_movement_speed_desc"] = { -- movement_speed: +20%, time: 4 -- &->and, s->seconds, +colors
 		-- en = "Activating your "..COLORS_KWords.Combat_ability_rgb.." grants you and Allies in "..COLORS_KWords.Coherency_rgb.." for {time:%s} seconds:\n"
-				-- .."{movement_speed:%s} Movement Speed,\n"
-				-- ..COLORS_KWords.Stuns_rgb.." and Suppression Immunity.",
+			-- .."{movement_speed:%s} Movement Speed,\n"
+			-- ..COLORS_KWords.Stuns_rgb.." and Suppression Immunity.",
 		-- ru = "При активации вашей "..COLORS_KWords_ru.Combat_ability_rgb_ru.." вы и союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." получаете на {time:%s} секунды:\n{movement_speed:%s} к скорости движения и\nиммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." и подавлению.", -- Очертя голову
 		-- fr = "En activant votre "..COLORS_KWords_fr.Combat_ability_rgb_fr..", vous et vos alliés en syntonie gagnez {movement_speed:%s} de vitesse de déplacement et êtes également immunisés contre les "..COLORS_KWords_fr.Stuns_rgb_fr.." et la suppression pendant {time:%s} secondes.",
 		-- ["zh-tw"] = ,
@@ -1520,6 +1520,6 @@ local ogryn_talent_localizations = {
 	-- },
 }
 
-mod:notify("TALENTS_Ogryn.lua loaded successfully")
+-- mod:notify("TALENTS_Ogryn.lua loaded successfully")
 
 return ogryn_talent_localizations

@@ -104,15 +104,15 @@ local zealot_talent_localizations = {
 	--[+ BLITZ 0 - Stun Grenade +]--	04.09.2025
 	-- ["loc_ability_shock_grenade_description"] = { -- +colors
 		-- en = "Throw a "..COLORS_KWords.Stun_gren_rgb.." that "..COLORS_KWords.Electrocutes_rgb.." and "..COLORS_KWords.Stuns_rgb.." all Enemies within its blast radius.\n"
-				-- ..Dot_green.." Ignores Bulwark shields.\n"
-				-- ..Dot_green.." Can be refreshed during active duration.\n"
-				-- ..Dot_nc.." Fuse time: "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
-				-- ..Dot_nc.." Explosion radius: "..COLORS_Numbers.n_8_rgb.." meters.",
+			-- ..Dot_green.." Ignores Bulwark shields.\n"
+			-- ..Dot_green.." Can be refreshed during active duration.\n"
+			-- ..Dot_nc.." Fuse time: "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
+			-- ..Dot_nc.." Explosion radius: "..COLORS_Numbers.n_8_rgb.." meters.",
 		-- ru = "Вы бросаете "..COLORS_KWords_ru.Stun_gren_rgb_ru..", которая поражает "..COLORS_KWords_ru.Electrocuted_rgb_ru.." и "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов в радиусе поражения."..TALENTS_Enh_desc_ru.ED_ZEA_Blitz_0_rgb_ru, -- Оглушающая граната
 		-- fr = "Lancez une "..COLORS_KWords_fr.Stun_gren_rgb_fr.." qui vas "..COLORS_KWords_fr.Electrocute_rgb_fr.." et "..COLORS_KWords_fr.Stun_rgb_fr.." tous les ennemis dans son rayon d'explosion."..TALENTS_Enh_desc_fr.ED_ZEA_Blitz_0_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆 "..COLORS_KWords_tw.Stun_gren_rgb_tw.. "，\n"
 			-- .."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
-				-- ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_0_rgb_tw, -- 眩暈手雷 -- 投擲一枚眩暈手雷，電擊爆炸範圍內敵人並致眩。
+			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_0_rgb_tw, -- 眩暈手雷 -- 投擲一枚眩暈手雷，電擊爆炸範圍內敵人並致眩。
 		-- ["zh-cn"] = "",
 		-- de = "",
 		-- it = "",
@@ -125,13 +125,13 @@ local zealot_talent_localizations = {
 	--[+ BLITZ 1 - Stunstorm Grenade +]--	04.09.2025
 	-- ["loc_zealot_improved_stun_grenade_desc"] = { -- talent_name: Stun Grenade, radius: +50%, +colors
 		-- en = "Throw a "..COLORS_KWords.Stun_gren_rgb.." that explodes and applies a staggering "..COLORS_KWords.Electrocution_rgb.." effect to all enemies within its range.\n"
-				-- ..Dot_nc.." This is an augmented version of {talent_name:%s} with {radius:%s} blast radius. Up to "..COLORS_Numbers.n_12_rgb.." meters.\n"
-				-- ..Dot_green.." Ignores Bulwark shields.\n"
-				-- ..Dot_green.." Can be refreshed during active duration.\n"
-				-- ..Dot_green.." "..COLORS_KWords.Staggers_rgb.." all enemies in range except Mutants, Scab Captains and Monstrosities.\n"
-				-- ..Dot_nc.." Fuse time: "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
-				-- ..Dot_nc.." Explosion radius: "..COLORS_Numbers.n_8_rgb.." meters.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Blitz_0_rgb,
+			-- ..Dot_nc.." This is an augmented version of {talent_name:%s} with {radius:%s} blast radius. Up to "..COLORS_Numbers.n_12_rgb.." meters.\n"
+			-- ..Dot_green.." Ignores Bulwark shields.\n"
+			-- ..Dot_green.." Can be refreshed during active duration.\n"
+			-- ..Dot_green.." "..COLORS_KWords.Staggers_rgb.." all enemies in range except Mutants, Scab Captains and Monstrosities.\n"
+			-- ..Dot_nc.." Fuse time: "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
+			-- ..Dot_nc.." Explosion radius: "..COLORS_Numbers.n_8_rgb.." meters.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Blitz_0_rgb,
 		-- ru = "Вы бросаете "..COLORS_KWords_ru.Stun_gren_rgb_ru..", которая взрывается и применяет эффект оглушающего "..COLORS_KWords_ru.Electrocution_rgb_ru.." на всех врагов в радиусе взрыва.\n\nЭто улучшенная версия таланта {talent_name:%s} с увеличенным на {radius:%s} радиусом взрыва."..TALENTS_Enh_desc_ru.ED_ZEA_Blitz_1_rgb_ru, -- Оглушающе-штурмовая граната -- руоф Граната шквального оглушения
 		-- fr = "Lancez une "..COLORS_KWords_fr.Stun_gren_rgb_fr.." qui vas "..COLORS_KWords_fr.Electrocute_rgb_fr.." et "..COLORS_KWords_fr.Stun_rgb_fr.." tous les ennemis dans sa portée.\n\nCeci est une version augmentée de {talent_name:%s} avec un rayon d'explosion de {radius:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Blitz_1_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆 "..COLORS_KWords_tw.Stun_gren_rgb_tw.." ，\n"
@@ -151,8 +151,8 @@ local zealot_talent_localizations = {
 	--[+ BLITZ 2 - Immolation Grenade +]--
 	-- ["loc_talent_ability_fire_grenade_desc"] = { -- +colors
 		-- en = "Throw a grenade that leaves a layer of flaming liquid, "..COLORS_KWords.Burning_rgb.." and "..COLORS_KWords.Staggering_rgb.." enemies, and barring their path. Most effective against Unarmoured Enemies.\n"
-				-- ..Dot_nc.." Fuse time: "..COLORS_Numbers.n_1_7_rgb.." seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Blitz_2_rgb,
+			-- ..Dot_nc.." Fuse time: "..COLORS_Numbers.n_1_7_rgb.." seconds.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Blitz_2_rgb,
 		-- ru = "Вы бросаете гранату, которая оставляет слой горящей жидкости, "..COLORS_KWords_ru.Burnd_rgb_ru.." и "..COLORS_KWords_ru.Staggers_e_rgb_ru.." врагов, преграждая им путь. Наиболее эффективно против небронированных врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Blitz_2_rgb_ru, -- Огненная граната -- руоф Жертвенная граната
 		-- fr = "Lancez une grenade qui laisse une couche de liquide enflammé, "..COLORS_KWords_fr.Burning_rgb_fr.." et faisant "..COLORS_KWords_fr.Staggering_rgb_fr.." les ennemis, barrant la voie. Éfficacité maximale contre les ennemis sans armures."..TALENTS_Enh_desc_fr.ED_ZEA_Blitz_2_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆 {talent_name:%s}，\n"
@@ -174,16 +174,16 @@ local zealot_talent_localizations = {
 	--[+ BLITZ 3 - Blades of Faith +]--
 	-- ["loc_ability_zealot_throwing_knifes_desc"] = { -- +colors
 		-- en = "Throw a consecrated knife to deal High "..COLORS_KWords.Damage_rgb.." to a Single Enemy.\n"
-				-- ..Dot_green.." High armor "..COLORS_KWords.Damage_rgb.." modifiers against Maniac and Infested.\n"
-				-- ..Dot_green.." Extra "..COLORS_KWords.Finesse_rgb.." boosts against Unarmoured and Flak.\n"
-				-- ..Dot_green.." Deals No "..COLORS_KWords.Damage_rgb.." against Carapace unless "..COLORS_KWords.Weakspot_rgb.." like Mauler head.\n"
-				-- ..Dot_green.." Can "..COLORS_KWords.Cleave_rgb.." "..COLORS_Numbers.n_1_rgb.." Groaner, Poxwalker, Scab/Dreg Stalker or Scab Shooter.\n"
-				-- ..Dot_green.." Headshot kills all enemies except Ogryns, Ragers, Maulers and Monstrosities.\n"
-				-- ..Dot_nc.." Quick Throw.\n"
-				-- ..Dot_nc.." No "..COLORS_KWords.Damage_rgb.." falloff.\n"
-				-- ..Dot_nc.." Ammo: Replenishes "..COLORS_Numbers.n_1_rgb.." knife per melee Elite or Special kill. "..COLORS_Numbers.n_2_rgb.." knives per small ammo pickup. "..COLORS_Numbers.n_6_rgb.." knives per big ammo pickup. All knives per ammo crate.\n"
-				-- ..Dot_nc.." The knife flies along a curving trajectory.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Blitz_3_rgb,
+			-- ..Dot_green.." High armor "..COLORS_KWords.Damage_rgb.." modifiers against Maniac and Infested.\n"
+			-- ..Dot_green.." Extra "..COLORS_KWords.Finesse_rgb.." boosts against Unarmoured and Flak.\n"
+			-- ..Dot_green.." Deals No "..COLORS_KWords.Damage_rgb.." against Carapace unless "..COLORS_KWords.Weakspot_rgb.." like Mauler head.\n"
+			-- ..Dot_green.." Can "..COLORS_KWords.Cleave_rgb.." "..COLORS_Numbers.n_1_rgb.." Groaner, Poxwalker, Scab/Dreg Stalker or Scab Shooter.\n"
+			-- ..Dot_green.." Headshot kills all enemies except Ogryns, Ragers, Maulers and Monstrosities.\n"
+			-- ..Dot_nc.." Quick Throw.\n"
+			-- ..Dot_nc.." No "..COLORS_KWords.Damage_rgb.." falloff.\n"
+			-- ..Dot_nc.." Ammo: Replenishes "..COLORS_Numbers.n_1_rgb.." knife per melee Elite or Special kill. "..COLORS_Numbers.n_2_rgb.." knives per small ammo pickup. "..COLORS_Numbers.n_6_rgb.." knives per big ammo pickup. All knives per ammo crate.\n"
+			-- ..Dot_nc.." The knife flies along a curving trajectory.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Blitz_3_rgb,
 		-- ru = "Вы бросаете освящённый нож, нанося высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу. Они очень эффективны против большинства врагов, кроме врагов в панцирной броне.\n- Быстрый бросок.\n- "..COLORS_Numbers.n_1_rgb.." нож восполняется за убийство в ближнем бою элитного врага или специалиста, "..COLORS_Numbers.n_2_rgb.." ножа из маленькой сумки с боеприпасами, "..COLORS_Numbers.n_6_rgb.." ножей из большой сумки с боеприпасами, все ножи из ящика с боеприпасами."..TALENTS_Enh_desc_ru.ED_ZEA_Blitz_3_rgb_ru, -- Клинки веры
 		-- fr = "Lancez un couteau consacré pour infliger de gros "..COLORS_KWords_fr.Damage_rgb_fr.." à un seul ennemi."..TALENTS_Enh_desc_fr.ED_ZEA_Blitz_3_rgb_fr,
 		-- ["zh-tw"] = "投擲 {talent_name:%s}，對單一敵人 "..COLORS_KWords_tw.Dmg_h2_rgb_tw.." 。\n"
@@ -208,8 +208,8 @@ local zealot_talent_localizations = {
 	--[+ AURA 0 - The Emperors's Will +]--
 	-- ["loc_talent_zealot_aura_toughness_damage_coherency_desc"] = { -- damage_reduction: +7.5%, +colors
 		-- en = "{damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
-				-- ..Dot_red.." Does not Stack with the same Aura from another Zealot.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb,
+			-- ..Dot_red.." Does not Stack with the same Aura from another Zealot.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb,
 		-- ru = "{damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Aura_0_n_1_rgb_ru, -- Воля Императора
 		-- fr = "{damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." pour vous et les alliés en syntonie."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
 		-- ["zh-tw"] = "與"..COLORS_KWords_tw.Coherencing_rgb_tw.."盟友 {damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw, -- 帝皇之諭 -- 你和協同中的盟友{damage_reduction:%s}韌性減傷。
@@ -225,8 +225,8 @@ local zealot_talent_localizations = {
 	--[+ AURA 1 - Benediction +]--
 	-- ["loc_talent_zealot_toughness_aura_efficiency_desc"] = { -- damage_reduction: +15%, talent_name: The Emperor's Will, +colors
 		-- en = "{damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".\n"
-				-- ..Dot_nc.." This is an augmented version of the base Aura - {talent_name:%s}.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb,
+			-- ..Dot_nc.." This is an augmented version of the base Aura - {talent_name:%s}.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Aura_0_n_1_rgb,
 		-- ru = "{damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".\n\nЭто улучшенная версия базовой ауры - {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Aura_0_n_1_rgb_ru, -- Благословение
 		-- fr = "{damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." pour vous et les alliés en syntonie.\n\nCeci est une version augmentée de l'Aura de base - {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
 		-- ["zh-tw"] = "與"..COLORS_KWords_tw.Coherencing_rgb_tw.."盟友 {damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。\n\n"
@@ -243,7 +243,7 @@ local zealot_talent_localizations = {
 	--[+ AURA 2 - Beacon of Purity +]--
 	-- ["loc_talent_zealot_corruption_healing_coherency_improved_desc"] = { -- corruption: 1.5, interval: 1, s->second, +colors
 		-- en = "{corruption:%s} "..COLORS_KWords.Corruption_rgb.." heals from the current "..COLORS_KWords.Wound_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.." every {interval:%s} second.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Aura_2_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Aura_2_rgb,
 		-- ru = "{corruption:%s} единицы "..COLORS_KWords_ru.Corruption_i_rgb_ru.." очищается для текущей "..COLORS_KWords_ru.Wound_y_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." каждую секунду."..TALENTS_Enh_desc_ru.ED_ZEA_Aura_2_rgb_ru, -- Маяк очищения -- руоф Маяк непорочности
 		-- fr = "Soigne {corruption:%s} de "..COLORS_KWords_fr.Corruption_rgb_fr.." de la blessure actuelle pour vous et les alliés en syntonie toutes les {interval:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_2_rgb_fr,
 		-- ["zh-tw"] = "與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的盟友，\n"
@@ -261,7 +261,7 @@ local zealot_talent_localizations = {
 	--[+ AURA 3 - Loner +]--
 	-- ["loc_talent_zealot_always_in_coherency_description"] = { -- coherency_min_stack: 2, +colors
 		-- en = "Makes Zealot count as being in "..COLORS_KWords.Coherency_rgb.." with one Ally which enables the lowest rate of "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb.." Regeneration of "..COLORS_Numbers.n_3_75_rgb.." "..COLORS_KWords.Toughness_rgb.." per second.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Aura_3_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Aura_3_rgb,
 		-- ru = "Восстановление "..COLORS_KWords_ru.Toughness_rgb_ru.." в "..COLORS_KWords_ru.Coherency_rgb_ru.." всегда будет расчитываться так, будто рядом с вами как минимум ещё "..COLORS_Numbers.n_1_rgb.." игрок, что поднимает нижний порог восстановления "..COLORS_KWords_ru.Toughness_rgb_ru.." с "..COLORS_Numbers.n_0_rgb.." до "..COLORS_Numbers.n_3_75_rgb.." в секунду."..TALENTS_Enh_desc_ru.ED_ZEA_Aura_3_rgb_ru, -- Единоличник -- руоф Одиночка
 		-- fr = "Le Fanatique compte comme étant en syntonie avec un allié, ce qui permet le taux le plus bas de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." en syntonie de "..COLORS_Numbers.n_3_75_rgb.." de "..COLORS_KWords_fr.Toughness_rgb_fr.." par seconde."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_3_rgb_fr,
 		-- ["zh-tw"] = "系統默認身旁至少有"..COLORS_Numbers.n_1_rgb.."名玩家。\n"
@@ -281,16 +281,16 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 0 - Chastise the Wicked +]--
 	-- ["loc_talent_zealot_2_combat_description_new"] = { -- toughness: 50%, damage: 25%, cooldown: 30, s->seconds, +colors
 		-- en = "Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb..". Your next Melee Hit gains for "..COLORS_Numbers.n_3_rgb.." seconds {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-				-- ..Dot_green.." Grants immunity to "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." and you Dodge all attacks while dashing.\n"
-				-- ..Dot_green.." Applies a light "..COLORS_KWords.Stagger_rgb.." on impact in a "..COLORS_Numbers.n_3_rgb.." meters radius.\n"
-				-- ..Dot_nc.." Dash Range:\n"
-				-- ..Dot_nc..Dot_nc.." Base: "..COLORS_Numbers.n_7_rgb.." meters.\n"
-				-- ..Dot_nc..Dot_nc.." Aimed: up to "..COLORS_Numbers.n_21_rgb.." meters.\n")),
-					-- ..TALENTS_Enh_desc.ED_ZEA_Ability_0_rgb,
+			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
+			-- ..Dot_green.." Grants immunity to "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." and you Dodge all attacks while dashing.\n"
+			-- ..Dot_green.." Applies a light "..COLORS_KWords.Stagger_rgb.." on impact in a "..COLORS_Numbers.n_3_rgb.." meters radius.\n"
+			-- ..Dot_nc.." Dash Range:\n"
+			-- ..Dot_nc..Dot_nc.." Base: "..COLORS_Numbers.n_7_rgb.." meters.\n"
+			-- ..Dot_nc..Dot_nc.." Aimed: up to "..COLORS_Numbers.n_21_rgb.." meters.\n")),
+				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_0_rgb,
 		-- ru = "Вы совершаете рывок вперёд, восстанавливая {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..". Ваш следующий удар ближнего боя получает на "..COLORS_Numbers.n_3_rgb.." секунды "..COLORS_Numbers.n_plus_rgb.."{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и будет гарантированно "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..".\n"
-					-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд."
-					-- ..TALENTS_Enh_desc_ru.ED_ZEA_Ability_0_rgb_ru, -- Кара для нечестивых
+				-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд."
+				-- ..TALENTS_Enh_desc_ru.ED_ZEA_Ability_0_rgb_ru, -- Кара для нечестивых
 		-- fr = "Effectuez une ruée vers l'avant, régénérez {toughness:%s} "..COLORS_KWords_fr.Toughness_rgb_fr..". Votre prochaine attaque de mêlée gagne {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." et est un "..COLORS_KWords_fr.Crit_hit_rgb_fr.." garanti.\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_0_rgb_fr,
 		-- ["zh-tw"] = "向前方衝鋒並恢復 "..COLORS_Numbers.n_50_rgb.." 點 "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
 			-- .."\n"
@@ -310,20 +310,20 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 1 - Fury of the Faithful +]--
 	-- ["loc_talent_zealot_attack_speed_after_dash_desc"] = { -- toughness: 50%, attack_speed: +20%, time: 10, damage: +25%, cooldown: 30, talent_name: Chastise the Wicked, &->and, s->seconds, +colors
 		-- en = "Dash forward, Replenishing {toughness:%s} "..COLORS_KWords.Toughness_rgb.." and gaining {attack_speed:%s} Attack Speed for {time:%s} seconds. Your next Melee Hit gains {damage:%s} "..COLORS_KWords.Damage_rgb.." and is a guaranteed "..COLORS_KWords.Crit_hit_rgb..".\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-				-- ..Dot_nc.." This is an augmented version of {talent_name:%s}.\n"
-				-- ..Dot_green.." Melee armor penetration buff:\n"
-				-- ..Dot_nc..Dot_nc.." Adds a "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Rending_rgb.." against Carapace, Flak, Maniac, Unyielding armor types to the next Melee Attack within "..COLORS_Numbers.n_3_rgb.." seconds after activation.\n"
-				-- ..Dot_nc..Dot_nc.." The first Melee Attack within the duration consumes this buff.\n"
-				-- ..Dot_nc..Dot_nc.." Ranged attacks do NOT benefit from this buff.\n"
-				-- ..Dot_green.." Grants immunity to "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." and you Dodge all attacks while dashing.\n"
-				-- ..Dot_nc.." Dash Range:\n"
-				-- ..Dot_nc..Dot_nc.." Base: "..COLORS_Numbers.n_7_rgb.." meters.\n"
-				-- ..Dot_nc..Dot_nc.." Aimed: up to "..COLORS_Numbers.n_21_rgb.." meters.\n"
-				-- ..Dot_nc.." You can't change direction, but you can cancel the dash with Block or Back buttons.\n"
-				-- ..Dot_nc.." Cannot be activated while jumping or falling.\n"
-				-- ..Dot_nc.." You can be stopped by Unyielding, Carapace, Monstrosities, as well as the Void shields.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_rgb,
+			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
+			-- ..Dot_nc.." This is an augmented version of {talent_name:%s}.\n"
+			-- ..Dot_green.." Melee armor penetration buff:\n"
+			-- ..Dot_nc..Dot_nc.." Adds a "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Rending_rgb.." against Carapace, Flak, Maniac, Unyielding armor types to the next Melee Attack within "..COLORS_Numbers.n_3_rgb.." seconds after activation.\n"
+			-- ..Dot_nc..Dot_nc.." The first Melee Attack within the duration consumes this buff.\n"
+			-- ..Dot_nc..Dot_nc.." Ranged attacks do NOT benefit from this buff.\n"
+			-- ..Dot_green.." Grants immunity to "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." and you Dodge all attacks while dashing.\n"
+			-- ..Dot_nc.." Dash Range:\n"
+			-- ..Dot_nc..Dot_nc.." Base: "..COLORS_Numbers.n_7_rgb.." meters.\n"
+			-- ..Dot_nc..Dot_nc.." Aimed: up to "..COLORS_Numbers.n_21_rgb.." meters.\n"
+			-- ..Dot_nc.." You can't change direction, but you can cancel the dash with Block or Back buttons.\n"
+			-- ..Dot_nc.." Cannot be activated while jumping or falling.\n"
+			-- ..Dot_nc.." You can be stopped by Unyielding, Carapace, Monstrosities, as well as the Void shields.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_rgb,
 		-- ru = "Вы совершаете рывок вперёд, восстанавливая {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." и получая {attack_speed:%s} к скорости атаки на {time:%s} секунд. Ваш следующий удар ближнего боя получает на "..COLORS_Numbers.n_3_rgb.." секунды {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и будет гарантированно "..COLORS_KWords_ru.Crit_hit_udom_rgb_ru..".\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_rgb_ru, -- Ярость верующего -- руоф Ударный страх
 		-- fr = "Effectuez une ruée vers l'avant, régénérez {toughness:%s} "..COLORS_KWords_fr.Toughness_rgb_fr.." et gagne {attack_speed:%s} de vitesse d'attaque pendant {time:%s} secondes. Votre prochaine attaque de mêlée gagne {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." et est un "..COLORS_KWords_fr.Crit_hit_rgb_fr.." garanti.\nTemps de recharge de base : {cooldown:%s} secondes.\nCeci est une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_1_rgb_fr,
 		-- ["zh-tw"] = "向前方衝鋒並恢復 "..COLORS_Numbers.n_50_rgb.." 點"..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
@@ -346,8 +346,8 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 1-1 - Redoubled Zeal +]--
 	-- ["loc_talent_zealot_dash_has_more_charges_desc"] = { -- talent_name: Fury of the Faithful, charges: 2.
 		-- en = "{talent_name:%s} now has {charges:%s} charges.\n"
-				-- ..Dot_red.." The Cooldown of the Second charge only starts after the First charge finished its Cooldown.\n")),
-					-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_1_rgb,
+			-- ..Dot_red.." The Cooldown of the Second charge only starts after the First charge finished its Cooldown.\n")),
+				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_1_rgb,
 		-- ru = "Способность {talent_name:%s} теперь имеет {charges:%s} заряда."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_1_rgb_ru, -- Удвоенное рвение
 		-- fr = "{talent_name:%s} a maintenant {charges:%s} charges."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_1_1_rgb_fr,
 		-- ["zh-tw"] = "{talent_name:%s} 現在擁有 {charges:%s} 次使用次數。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_1_rgb_tw, -- 倍增狂熱 --{talent_name:%s}已有{charges:%s}層充能。
@@ -363,9 +363,9 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 1-2 - Invocation of Death +]--
 	-- ["loc_talent_maniac_cooldown_on_melee_crits_buff_desc"] = { -- cooldown_regen: +200%, duration: 4, s->seconds, +colors
 		-- en = "{cooldown_regen:%s} "..COLORS_KWords.Ability_cd_rgb.." Regeneration for {duration:%s} seconds on Melee "..COLORS_KWords.Crit_hits_rgb..".\n"
-				-- ..Dot_green.." Can be refreshed during active duration.\n"
-				-- ..Dot_red.." Does not interact with "..COLORS_KWords.Combat_ability_rgb.." Regeneration from Curios which only reduces the Maximum cooldown of a "..COLORS_KWords.Combat_ability_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_2_rgb,
+			-- ..Dot_green.." Can be refreshed during active duration.\n"
+			-- ..Dot_red.." Does not interact with "..COLORS_KWords.Combat_ability_rgb.." Regeneration from Curios which only reduces the Maximum cooldown of a "..COLORS_KWords.Combat_ability_rgb..".\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_1_2_rgb,
 		-- ru = "{cooldown_regen:%s} к скорости "..COLORS_KWords_ru.Ability_cd_rgb_ru.." на {duration:%s} секунды при "..COLORS_KWords_ru.Crit_hit_rgb_ru.." ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_2_rgb_ru, -- Призыв смерти
 		-- fr = "{cooldown_regen:%s} de régénération du "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.." pendant {duration:%s} secondes sur les "..COLORS_KWords_fr.Crit_hits_rgb_fr.." de mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_1_2_rgb_fr,
 		-- ["zh-tw"] = "當近戰 "..COLORS_KWords_tw.Crit_hit_e_rgb_tw.." 時，加速 "..COLORS_KWords_tw.Ability_cd_rgb_tw.." 速度。\n"
@@ -385,15 +385,15 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 2 - Chorus of Spiritual Fortitude +]--
 	-- ["loc_talent_zealot_bolstering_prayer_variant_two_description"] = { -- interval: 0.8, toughness: 45%, flat_toughness: +20, max_toughness: +100, cooldown: 60, s->seconds, +colors
 		-- en = "Wield a Holy relic that releases pulses of energy "..COLORS_Numbers.n_7_rgb.." times every {interval:%s} seconds.\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-				-- ..Dot_green.." Each pulse grants Zealot and Allies in "..COLORS_KWords.Coherency_rgb.." immunity to "..COLORS_KWords.Stuns_rgb.." from both Melee and Ranged attacks and Invulnerability for "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
-				-- ..Dot_green.." Each pulse Replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." to Allies in "..COLORS_KWords.Coherency_rgb..". If the Ally is at full "..COLORS_KWords.Toughness_rgb.." they instead gain {flat_toughness:%s} Max (yellow) "..COLORS_KWords.Toughness_rgb.." up to a total of {max_toughness:%s}.\n"
-				-- ..Dot_green.." Immunity to "..COLORS_KWords.Stuns_rgb.." and Invulnerability can be refreshed during active duration.\n"
-				-- ..Dot_nc.." Radius: "..COLORS_Numbers.n_10_rgb.." meters.\n"
-				-- ..Dot_nc.." Bonus "..COLORS_KWords.Toughness_rgb.." acts as a 'second' "..COLORS_KWords.Toughness_rgb.." bar and can be replenished by Melee kills, respective Talents, and Weapon Blessings.\n"
-				-- ..Dot_nc.." Yellow "..COLORS_KWords.Toughness_rgb.." bonus lasts "..COLORS_Numbers.n_10_rgb.." seconds and does not Stack with bonus "..COLORS_KWords.Toughness_rgb.." from the same Talent of another Zealot. But does Stack additively with Veteran's bonus "..COLORS_KWords.Toughness_rgb.." from \"Duty and Honour\".\n"
-				-- ..Dot_nc.." \"Invulnerability\" means that player "..COLORS_KWords.Health_rgb.." can't fall below "..COLORS_Numbers.n_1_rgb..". Players can still lose any "..COLORS_KWords.Health_rgb.." above "..COLORS_Numbers.n_1_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_rgb,
+			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
+			-- ..Dot_green.." Each pulse grants Zealot and Allies in "..COLORS_KWords.Coherency_rgb.." immunity to "..COLORS_KWords.Stuns_rgb.." from both Melee and Ranged attacks and Invulnerability for "..COLORS_Numbers.n_1_5_rgb.." seconds.\n"
+			-- ..Dot_green.." Each pulse Replenishes {toughness:%s} "..COLORS_KWords.Toughness_rgb.." to Allies in "..COLORS_KWords.Coherency_rgb..". If the Ally is at full "..COLORS_KWords.Toughness_rgb.." they instead gain {flat_toughness:%s} Max (yellow) "..COLORS_KWords.Toughness_rgb.." up to a total of {max_toughness:%s}.\n"
+			-- ..Dot_green.." Immunity to "..COLORS_KWords.Stuns_rgb.." and Invulnerability can be refreshed during active duration.\n"
+			-- ..Dot_nc.." Radius: "..COLORS_Numbers.n_10_rgb.." meters.\n"
+			-- ..Dot_nc.." Bonus "..COLORS_KWords.Toughness_rgb.." acts as a 'second' "..COLORS_KWords.Toughness_rgb.." bar and can be replenished by Melee kills, respective Talents, and Weapon Blessings.\n"
+			-- ..Dot_nc.." Yellow "..COLORS_KWords.Toughness_rgb.." bonus lasts "..COLORS_Numbers.n_10_rgb.." seconds and does not Stack with bonus "..COLORS_KWords.Toughness_rgb.." from the same Talent of another Zealot. But does Stack additively with Veteran's bonus "..COLORS_KWords.Toughness_rgb.." from \"Duty and Honour\".\n"
+			-- ..Dot_nc.." \"Invulnerability\" means that player "..COLORS_KWords.Health_rgb.." can't fall below "..COLORS_Numbers.n_1_rgb..". Players can still lose any "..COLORS_KWords.Health_rgb.." above "..COLORS_Numbers.n_1_rgb..".\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_rgb,
 		-- ru = "Вы берёте в руки Святую реликвию, которая испускает до "..COLORS_Numbers.n_7_rgb.." импульсов энергии, раз в {interval:%s} секунды.\nКаждый импульс даёт изуверу и союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." от атак ближнего и дальнего боя, а также в течение "..COLORS_Numbers.n_1_5_rgb.." секунд вас нельзя убить.\nКаждый импульс восполняет {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru..". Если у союзника полный запас "..COLORS_KWords_ru.Toughness_rgb_ru..", он вместо этого получает {flat_toughness:%s} максимальной жёлтой "..COLORS_KWords_ru.Toughness_rgb_ru.." за импульс, вплоть до {max_toughness:%s}.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_rgb_ru, -- Хор духовной стойкости
 		-- fr = "Utilisez une relique sacrée qui libère des pulsations énérgetiques "..COLORS_Numbers.n_7_rgb.." fois toutes les {interval:%s} secondes.\nChaque pulsation accorde au Fanatique et aux alliés en syntonie une immunité aux "..COLORS_KWords_fr.Stuns_rgb_fr.." des attaques de mêlée et de distance et une invulnérabilité de "..COLORS_Numbers.n_1_5_rgb.." secondes.\nChaque pulsation régénère {toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." pour les alliés en syntonie. Si l'allié est à toute ça "..COLORS_KWords_fr.Toughness_rgb_fr..", il gagne à la place {flat_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." maximale (jaune) jusqu'à un total de {max_toughness:%s}.\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_rgb_fr,
 		-- ["zh-tw"] = "揮舞聖物幫助 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友恢復 "..COLORS_KWords_tw.Toughness_rgb_tw.." ，\n"
@@ -421,7 +421,7 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 2-1 - Holy Cause +]--
 	-- ["loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"] = { -- stacks: 5, toughness: +30%, duration: 10, s->seconds, +colors
 		-- en = "After channeling {stacks:%s} pulses, grants {toughness:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." to you and Allies in "..COLORS_KWords.Coherency_rgb..". Lasts {duration:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_1_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_1_rgb,
 		-- ru = "После {stacks:%s} импульса, вы и союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." получаете {toughness:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru..". Длится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_1_rgb_ru, -- Святое дело
 		-- fr = "Après avoir canalisé {stacks:%s} pulsations, accorde {toughness:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." à vous et aux alliés en syntonie. Dure {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_1_rgb_fr,
 		-- ["zh-tw"] = "第 {stacks:%s} 次之後的脈衝，\n"
@@ -442,7 +442,7 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 2-2 - Banishing Light +]--
 	-- ["loc_talent_zealot_channel_staggers_desc"] = { -- talent_name: Chorus of Spiritual Fortitude, &->and, +colors
 		-- en = "Each pulse from {talent_name:%s} also "..COLORS_KWords.Staggers_rgb.." and Suppresses Enemies. Range increases with every pulse.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_2_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_2_rgb,
 		-- ru = "Каждый импульс способности {talent_name:%s} также "..COLORS_KWords_ru.Staggers_e_rgb_ru.." и подавляет врагов. Дальность распространения увеличивается с каждым импульсом."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_2_rgb_ru, -- Изгоняющий свет
 		-- fr = "À Chaque pulsation du {talent_name:%s} les ennemis "..COLORS_KWords_fr.Staggers_rgb_fr.." et sont sous Suppresion. La portée augmente à chaque impulsion."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_2_rgb_fr,
 		-- ["zh-tw"] = "{talent_name:%s} 脈衝會 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 並壓制敵人。\n".."- 脈衝的影響範圍會逐漸擴大。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_2_rgb_tw, -- 放逐之光 -- {talent_name:%s}的每次脈衝都會壓制敵人並導致暈眩，影響範圍隨脈衝次數增加。
@@ -458,7 +458,7 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 2-3 - Ecclesiarch's Call +]--
 	-- ["loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"] = { -- stacks: 5, damage: +20%, duration: 10, s->seconds, +colors
 		-- en = "After channeling {stacks:%s} pulses, grants {damage:%s} "..COLORS_KWords.Damage_rgb.." to you and Allies in "..COLORS_KWords.Coherency_rgb..". Lasts {duration:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_3_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_3_rgb,
 		-- ru = "После {stacks:%s} импульса, вы и союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." получаете {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..". Длится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_3_rgb_ru, -- Призыв экклезиарха -- руоф Вызов экклезиарха
 		-- fr = "Après avoir canalisé {stacks:%s} pulsations, accorde {damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." à vous et aux alliés en syntonie. Dure {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_3_rgb_fr,
 		-- ["zh-tw"] = "第 {stacks:%s} 次之後的脈衝， {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
@@ -478,7 +478,7 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 2-4 - Martyr's Purpose +]--
 	-- ["loc_talent_zealot_damage_taken_restores_cd_description"] = { -- stacks: 5, damage: +20%, duration: 10, s->seconds, +colors
 		-- en = "{cooldown_restore:%s} of "..COLORS_KWords.Health_rgb.." "..COLORS_KWords.Damage_rgb.." taken is converted to "..COLORS_KWords.Ability_cd_rgb.." Reduction.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_4_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_2_4_rgb,
 		-- ru = "Каждый полученный {cooldown_restore:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru.." "..COLORS_KWords_ru.Health_rgb_ru.." сокращает время "..COLORS_KWords_ru.Cd_rgb_ru..COLORS_KWords_ru.Combat_ability_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_4_rgb_ru, -- Предназначение мученика -- руоф Цель мученика
 		-- fr = "{cooldown_restore:%s} des "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Health_rgb_fr.." subits sont converti en réduction du "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_4_rgb_fr,
 		-- ["zh-tw"] = COLORS_KWords_tw.Health_rgb_tw.." 受到 "..COLORS_KWords_tw.Dmg_a_rgb_tw.." 時，縮短冷卻時間。\n"
@@ -499,25 +499,25 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 3 - Shroudfield +]--
 	-- ["loc_ability_zealot_stealth_description"] = { -- duration: 3, movement_speed: +20%, backstab_damage: +100%, finesse_damage: +100%, crit_chance: +100%, cooldown: 30, s->seconds, &->and, +colors
 		-- en = "You enter "..COLORS_KWords.Stealth_rgb.." for {duration:%s} seconds and gain {movement_speed:%s} Movement Speed.\n"
-				-- .."Your next Melee Attack gain:\n"
-				-- .."{backstab_damage:%s} Backstab "..COLORS_KWords.Damage_rgb..",\n"
-				-- .."{finesse_damage:%s} "..COLORS_KWords.Finesse_dmg_rgb.." and\n"
-				-- .."{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb..".\n"
-				-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_3_rgb,
+			-- .."Your next Melee Attack gain:\n"
+			-- .."{backstab_damage:%s} Backstab "..COLORS_KWords.Damage_rgb..",\n"
+			-- .."{finesse_damage:%s} "..COLORS_KWords.Finesse_dmg_rgb.." and\n"
+			-- .."{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb..".\n"
+			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_3_rgb,
 		-- ru = "Вы входите в режим "..COLORS_KWords_ru.Stealth_rgb_ru.." на {duration:%s} секунды и получаете {movement_speed:%s} к скорости движения.\nВаша следующая атака ближнего боя получает:\n{backstab_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударе в спину,\n{finesse_damage:%s} к "..COLORS_KWords_ru.Finesse_dmg_rgb_ru.." и\n{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru..".\n"
-					-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд."
-					-- ..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_rgb_ru, -- Покров
+				-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд."
+				-- ..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_rgb_ru, -- Покров
 		-- fr = "Vous passez en "..COLORS_KWords_fr.Stealth_rgb_fr.." pendant {duration:%s} secondes et gagnez {movement_speed:%s} de Vitesse de Déplacement.\nVotre prochaine attaque de Mélée gagne:\n{backstab_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." dans le dos,\n{finesse_damage:%s} de "..COLORS_KWords_fr.Finesse_dmg_rgb_fr.." et\n{crit_chance:%s} "..COLORS_KWords_fr.Crit_chance_rgb_fr..".\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_rgb_fr,
 		-- ["zh-tw"] = "進入"..COLORS_KWords_tw.Stealth_rgb_tw.."狀態，獲得以下增益：\n"
-				-- .."- {movement_speed:%s} 的移動速度加成。\n"
-				-- .."- "..COLORS_KWords_tw.Dmg_bs_rgb_tw.." {backstab_damage:%s} 。\n"
-				-- .."- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." {finesse_damage:%s} 。\n"
-				-- .."- "..COLORS_KWords_tw.Crt_chance_rgb_tw.." {crit_chance:%s} 。\n"
-				-- .."- 冷卻時間：{cooldown:%s} 秒。"
-				-- .."\n"
-				-- .."- 持續{duration:%s} 秒。"
-				-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_rgb_tw, -- 隱秘領域 --進入潛行狀態{duration:%s}秒。潛行期間獲得{movement_speed:%s}移動速度，{backstab_damage:%s}背刺傷害，{finesse_damage:%s}靈巧傷害和{crit_chance:%s}暴擊幾率。\n\n基礎冷卻時間：{cooldown:%s}秒。
+			-- .."- {movement_speed:%s} 的移動速度加成。\n"
+			-- .."- "..COLORS_KWords_tw.Dmg_bs_rgb_tw.." {backstab_damage:%s} 。\n"
+			-- .."- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." {finesse_damage:%s} 。\n"
+			-- .."- "..COLORS_KWords_tw.Crt_chance_rgb_tw.." {crit_chance:%s} 。\n"
+			-- .."- 冷卻時間：{cooldown:%s} 秒。"
+			-- .."\n"
+			-- .."- 持續{duration:%s} 秒。"
+			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_rgb_tw, -- 隱秘領域 --進入潛行狀態{duration:%s}秒。潛行期間獲得{movement_speed:%s}移動速度，{backstab_damage:%s}背刺傷害，{finesse_damage:%s}靈巧傷害和{crit_chance:%s}暴擊幾率。\n\n基礎冷卻時間：{cooldown:%s}秒。
 		-- ["zh-cn"] = "",
 		-- de = "",
 		-- it = "",
@@ -545,9 +545,9 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 3-2 - Perfectionist +]--
 	-- ["loc_talent_zealot_stealth_increased_damage_description"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
 		-- en = "{talent_name:%s} grants an additional:\n"
-				-- .."{damage_2:%s} Backstab "..COLORS_KWords.Damage_rgb.." and\n"
-				-- .."{damage:%s} "..COLORS_KWords.Finesse_dmg_rgb..", but increases "..COLORS_KWords.Ability_cd_rgb.." by {cooldown:%s}.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_3_2_rgb,
+			-- .."{damage_2:%s} Backstab "..COLORS_KWords.Damage_rgb.." and\n"
+			-- .."{damage:%s} "..COLORS_KWords.Finesse_dmg_rgb..", but increases "..COLORS_KWords.Ability_cd_rgb.." by {cooldown:%s}.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_3_2_rgb,
 		-- ru = "{talent_name:%s} даёт дополнительно:\n{damage_2:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударе в спину и\n{damage:%s} к "..COLORS_KWords_ru.Finesse_dmg_rgb_ru..", но\nна {cooldown:%s} увеличивается время "..COLORS_KWords_ru.Ability_cd_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_2_rgb_ru, -- Перфекционист 
 		-- fr = "{talent_name:%s} octroie:\n{damage_2:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." dans le dos et\n{damage:%s} de "..COLORS_KWords_fr.Finesse_dmg_rgb_fr..", mais augmente le "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.." de {cooldown:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_2_rgb_fr,
 		-- ["zh-tw"] = "{talent_name:%s} 額外提供：\n"
@@ -568,13 +568,13 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 3-3 - Invigorating Revelation +]--
 	-- ["loc_talent_zealot_leaving_stealth_restores_toughness_desc"] = { -- toughness: 40%, time: 5, damage: +20%, time: 5, s->seconds, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes over {time:%s} seconds on leaving "..COLORS_KWords.Stealth_rgb..". Also gain {damage:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {time:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_3_3_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_3_3_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за {time:%s} секунд после выхода из "..COLORS_KWords_ru.Stealth_rgb_ru..". Также вы получите {damage:%s} к снижению "..COLORS_KWords_ru.Dmg_a_rgb_ru.." на {time:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_3_rgb_ru, -- Оживляющее откровение -- руоф Подбадривающее откровение
 		-- fr = "Vous récuperez {toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." en {time:%s} secondes à la sortie de la "..COLORS_KWords_fr.Stealth_rgb_fr..". Vous gagnez aussi une réduction des "..COLORS_KWords_fr.Damage_rgb_fr.." de {damage:%s} pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_3_rgb_fr,
 		-- ["zh-tw"] = "脫離 "..COLORS_KWords_tw.Stealth_rgb_tw.." 後觸發以下效果：\n"
-				-- .."- 在 {time:%s} 秒內恢復 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 的 {toughness:%s} 。\n"
-				-- .."- {damage:%s} "..COLORS_KWords_tw.Toughness_dmg_red_rgb_tw.."，持續 {time:%s} 秒。"
-				-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_3_rgb_tw, -- 振奮啟示 --脫離潛行後，{talent_name:%s}提供{tdr%s}韌性減傷，持續{duration%s}秒。
+			-- .."- 在 {time:%s} 秒內恢復 "..COLORS_KWords_tw.Toughness_m_rgb_tw.." 的 {toughness:%s} 。\n"
+			-- .."- {damage:%s} "..COLORS_KWords_tw.Toughness_dmg_red_rgb_tw.."，持續 {time:%s} 秒。"
+			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_3_rgb_tw, -- 振奮啟示 --脫離潛行後，{talent_name:%s}提供{tdr%s}韌性減傷，持續{duration%s}秒。
 		-- ["zh-cn"] = "",
 		-- de = "",
 		-- it = "",
@@ -587,7 +587,7 @@ local zealot_talent_localizations = {
 	--[+ ABILITY 3-4 - Pious Cut-Throat +]--
 	-- ["loc_talent_zealot_backstab_kills_restore_cd_description"] = { -- ability_cooldown: 20%, +colors
 		-- en = COLORS_Numbers.n_minus_rgb.."{ability_cooldown:%s} "..COLORS_KWords.Ability_cd_rgb.." on Backstab kills.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Ability_3_4_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Ability_3_4_rgb,
 		-- ru = COLORS_Numbers.n_minus_rgb.."{ability_cooldown:%s} от времени "..COLORS_KWords_ru.Ability_cd_rgb_ru.." при убийстве врага в спину."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_4_rgb_ru, -- Благочестивый убийца -- руоф Добродетельный головорез
 		-- fr = COLORS_Numbers.n_minus_rgb.."{ability_cooldown:%s} de "..COLORS_KWords_fr.Ability_cd_rgb_fr.." lors d'un élimination dans le dos."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_4_rgb_fr,
 		-- ["zh-tw"] = COLORS_KWords_tw.Dmg_bs_K_rgb_tw.." 可減少 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 冷卻。\n"
@@ -606,7 +606,7 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 1 - Blazing Piety +]--
 	-- ["loc_talent_zealot_fanatic_rage_desc"] = { -- crit_chance: +15%, duration: 8, max_stacks: 25, radius: 25, m->meters, s->seconds, +colors
 		-- en = "When {max_stacks:%s} Enemies have died within {radius:%s} meters of you, you enter "..COLORS_KWords.Fury_rgb.." and get {crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.." for {duration:%s} seconds. The active "..COLORS_KWords.Fury_rgb.." duration can be refreshed by killing enemies.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_rgb,
 		-- ru = "Когда {max_stacks:%s} врагов погибает в радиусе {radius:%s} метров от вас, вы входите в режим "..COLORS_KWords_ru.Fury_i_rgb_ru.." и получаете {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на {duration:%s} секунд. Длительность действия "..COLORS_KWords_ru.Fury_i_rgb_ru.." можно обновить, убивая врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_rgb_ru, -- Пылающая благочестивость -- руоф Пламенное благочестие
 		-- fr = "Quand {max_stacks:%s} ennemis meurent dans un rayon de {radius:%s} mètres autour de vous, vous entrez en "..COLORS_KWords_fr.Fury_rgb_fr.." et obtenez {crit_chance:%s} "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.." pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_rgb_fr,
 		-- ["zh-tw"] = "{radius:%s} "..COLORS_Numbers.n_meter_rgb.." 內擊殺 {max_stacks:%s} 名敵人，\n"
@@ -627,7 +627,7 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 1-1 - Stalwart +]--
 	-- ["loc_talent_zealot_fanatic_rage_toughness_reduction_desc"] = { -- toughness: 50%, toughness_damage_reduction: +25%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is restored by triggering "..COLORS_KWords.Fury_rgb..". In addition, while "..COLORS_KWords.Fury_rgb.." is Active, you have {toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_1_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_1_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при входе в "..COLORS_KWords_ru.Fury_rgb_ru.." и пока она активна, вы получаете {toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_1_rgb_ru, -- Непоколебимый -- руоф Верный последователь
 		-- fr = "{toughness:%s} "..COLORS_KWords_fr.Toughness_rgb_fr.." est régénérée en déclenchant la "..COLORS_KWords_fr.Fury_rgb_fr..". De plus, pendant que la "..COLORS_KWords_fr.Fury_rgb_fr.." est active, vous avez gagnez {toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_1_rgb_fr,
 		-- ["zh-tw"] = "進入 "..COLORS_KWords_tw.Fury_rgb_tw.." 時獲得以下效果：\n"
@@ -647,7 +647,7 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 1-2 - Fury Rising +]--
 	-- ["loc_talent_zealot_fanatic_rage_crits_desc"] = { -- +colors
 		-- en = "You gain one Stack of "..COLORS_KWords.Fury_rgb.." per Melee or Ranged "..COLORS_KWords.Crit_hit_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_2_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_2_rgb,
 		-- ru = "Вы получаете один заряд "..COLORS_KWords_ru.Fury_i_rgb_ru.." при "..COLORS_KWords_ru.Crit_hit_rgb_ru.." ближнего или дальнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_2_rgb_ru, -- Возрастание ярости -- руоф Подъем ярости
 		-- fr = "Vous gagnez un cumul de "..COLORS_KWords_fr.Fury_rgb_fr.." par "..COLORS_KWords_fr.Crit_hit_rgb_fr.." de mélée et de distance."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_2_rgb_fr,
 		-- ["zh-tw"] = "造成 "..COLORS_KWords_tw.Crit_hit_chance_rgb_tw.." 時，獲得一層 "..COLORS_KWords_tw.Fury_i_rgb_tw.." 。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_2_rgb_tw, -- 怒火升騰 --積累暴擊次數也可觸發狂怒。
@@ -663,7 +663,7 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 1-3 - Infectious Zeal +]--
 	-- ["loc_talent_zealot_shared_fanatic_rage_desc"] = { -- crit_chance: +66%, talent_name: Blazing Piety, +colors, {crit_chance:%s}
 		-- en = COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Crit_chance_rgb.." is spread to Allies in "..COLORS_KWords.Coherency_rgb.." when you reach "..COLORS_Numbers.n_25_rgb.." Stacks of "..COLORS_KWords.Fury_rgb..". \n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_3_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_3_rgb,
 		-- ru = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." получают союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." в момент получения вами "..COLORS_Numbers.n_25_rgb.." зарядов "..COLORS_KWords_ru.Fury_i_rgb_ru..". "..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_3_rgb_ru, -- Заразительное рвение 
 		-- fr = COLORS_Numbers.pc_10_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." est conféré aux alliés en syntonie lorsque vous atteignez "..COLORS_Numbers.n_25_rgb.." cumuls de "..COLORS_KWords_fr.Fury_rgb_fr..". "..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_3_rgb_fr,
 		-- ["zh-tw"] = COLORS_Numbers.n_25_rgb.." 層 "..COLORS_KWords_tw.Fury_i_rgb_tw.." 時， "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友獲得：\n"
@@ -681,7 +681,7 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 1-4 - Righteous Warrior +]--
 	-- ["loc_talent_zealot_fanatic_rage_improved_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
 		-- en = "{crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb.." from {talent_name:%s}.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_4_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_4_rgb,
 		-- ru = "{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." дополнительно от таланта {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_4_rgb_ru, -- Праведный воин
 		-- fr = "{crit_chance:%s} de "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.." grâce à {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_4_rgb_fr,
 		-- ["zh-tw"] = "{talent_name:%s} 額外賦予 {crit_chance:%s} "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_4_rgb_tw, -- 正義勇士 -- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
@@ -697,12 +697,12 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 2 - Martyrdom +]--
 	-- ["loc_talent_zealot_martyrdom_desc"] = { -- damage: +8%, max_wounds: 7, +colors
 		-- en = "{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for each missing "..COLORS_KWords.Wound_rgb..", up to a Maximum {max_wounds:%s} missing "..COLORS_KWords.Wounds_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя за каждую потерянную "..COLORS_KWords_ru.Wound_u_rgb_ru..". Складывается вплоть до {max_wounds:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_rgb_ru, -- Мученичество
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mêlée pour chaque "..COLORS_KWords_fr.Wound_rgb_fr.." manquante, jusqu'à un maximum de {max_wounds:%s} "..COLORS_KWords_fr.Wounds_rgb_fr.." manquantes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_rgb_fr,
 		-- ["zh-tw"] = "每失去一格 "..COLORS_KWords_tw.Wound_u_rgb_tw.." 獲得：\n"
-				-- .."-  {damage:%s}  "..COLORS_KWords_tw.Damage_melee_rgb_tw.." ，上限 {max_wounds:%s} 層。"
-				-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_rgb_tw, -- 殉道 -- 每個缺損的傷口使你獲得{damage:%s}近戰傷害，最多計算{max_wounds:%s}個缺損傷口。
+			-- .."-  {damage:%s}  "..COLORS_KWords_tw.Damage_melee_rgb_tw.." ，上限 {max_wounds:%s} 層。"
+			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_rgb_tw, -- 殉道 -- 每個缺損的傷口使你獲得{damage:%s}近戰傷害，最多計算{max_wounds:%s}個缺損傷口。
 		-- ["zh-cn"] = "",
 		-- de = "",
 		-- it = "",
@@ -715,12 +715,12 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 2-1 - I Shall Not Fall +]--
 	-- ["loc_talent_zealot_martyrdom_grants_toughness_desc"] = { -- talent_name: Martyrdom, toughness_damage_reduction: +6.5%, +colors
 		-- en = "{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." is granted by {talent_name:%s} for each missing "..COLORS_KWords.Wound_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_1_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_1_rgb,
 		-- ru = "{toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." даётся талантом {talent_name:%s} за каждую потерянную "..COLORS_KWords_ru.Wound_u_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_1_rgb_ru, -- Я не паду -- руоф Я не отступлю
 		-- fr = "{toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." par "..COLORS_KWords_fr.Wound_rgb_fr.." manquante."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_1_rgb_fr,
 		-- ["zh-tw"] = "每失去一格 "..COLORS_KWords_tw.Wound_u_rgb_tw.." {talent_name:%s} 提供：\n"
-				-- .."- {toughness_damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。"
-				-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_1_rgb_tw, -- 不滅意志 --根據傷口治癒數量，{talent_name:%s}將提供{toughness_damage_reduction:%s}韌性減傷效果。
+			-- .."- {toughness_damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。"
+			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_1_rgb_tw, -- 不滅意志 --根據傷口治癒數量，{talent_name:%s}將提供{toughness_damage_reduction:%s}韌性減傷效果。
 		-- ["zh-cn"] = "",
 		-- de = "",
 		-- it = "",
@@ -733,7 +733,7 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 2-2 - Maniac +]--
 	-- ["loc_talent_zealot_attack_speed_per_martyrdom_desc"] = { -- talent_name: Martyrdom, attack_speed: +4%, +colors
 		-- en = "{attack_speed:%s} Attack Speed is granted by {talent_name:%s} for each missing "..COLORS_KWords.Wound_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_2_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_2_rgb,
 		-- ru = "{attack_speed:%s} к скорости атаки даётся талантом {talent_name:%s} за каждую потерянную "..COLORS_KWords_ru.Wound_u_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_2_rgb_ru, -- Маньяк
 		-- fr = "{attack_speed:%s} Vitesse d'attaque de mêlée par "..COLORS_KWords_fr.Wound_rgb_fr.." manquante."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_2_rgb_fr,
 		-- ["zh-tw"] = "每失去一格 "..COLORS_KWords_tw.Wound_u_rgb_tw.." {talent_name:%s} 提供：\n"
@@ -750,11 +750,11 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 3 - Inexorable Judgement +]--
 	-- ["loc_talent_zealot_quickness_desc"] = { -- max_stacks: 15, melee_attack_speed: +1%, ranged_attack_speed: +1%, damage_modifier: +1%, duration: 6, +colors, note
 		-- en = "Moving grants you "..COLORS_KWords.Momentum_rgb..". Stacks {max_stacks:%s} times.\n"
-				-- .."When you Hit an Enemy, spend all "..COLORS_KWords.Momentum_rgb.." and gain per Stack for {duration:%s} seconds:\n"
-				-- .."{damage_modifier:%s} "..COLORS_KWords.Damage_rgb..",\n"
-				-- .."{melee_attack_speed:%s} Melee Attack Speed,\n"
-				-- .."{ranged_attack_speed:%s} Ranged Attack Speed.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_rgb,
+			-- .."When you Hit an Enemy, spend all "..COLORS_KWords.Momentum_rgb.." and gain per Stack for {duration:%s} seconds:\n"
+			-- .."{damage_modifier:%s} "..COLORS_KWords.Damage_rgb..",\n"
+			-- .."{melee_attack_speed:%s} Melee Attack Speed,\n"
+			-- .."{ranged_attack_speed:%s} Ranged Attack Speed.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_rgb,
 		-- ru = "Движение даёт вам заряды "..COLORS_KWords_ru.Momentum_rgb_ru..". Суммируется {max_stacks:%s} раз.\nПри попадании по врагу, вы тратите все заряды "..COLORS_KWords_ru.Momentum_rgb_ru.." и за каждый заряд получаете на {duration:%s} секунд:\n{damage_modifier:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n{melee_attack_speed:%s} к скорости атаки в ближнем бою,\n{ranged_attack_speed:%s} к скорости атаки в дальнем бою."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_rgb_ru, -- Неумолимый приговор -- руоф Безжалостностный приговор
 		-- fr = "Vos déplacement vous octroient "..COLORS_KWords_fr.Momentum_rgb_fr..". Se cumule {max_stacks:%s} fois.\nLorsque vous touchez un ennemi, dépensez tout les cumuls de "..COLORS_KWords_fr.Momentum_rgb_fr.." et gagnez par cumul pendant {duration:%s} secondes:\n{damage_modifier:%s} de "..COLORS_KWords_fr.Damage_rgb_fr..",\n{melee_attack_speed:%s} Vitesse d'attaque de mêlée,\n{ranged_attack_speed:%s} Vitesse d'attaque à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_rgb_fr,
 		-- ["zh-tw"] = "移動時會獲得 "..COLORS_KWords_tw.Momentum_rgb_tw.."。\n"
@@ -777,7 +777,7 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 3-1 - Retributor's Stance +]--
 	-- ["loc_talent_zealot_quickness_toughness_per_stack_desc"] = { -- toughness: 2%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished for each spent Stack of "..COLORS_KWords.Momentum_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_1_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_1_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстановливается за каждый потраченный заряд "..COLORS_KWords_ru.Momentum_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_1_rgb_ru, -- Стойка карателя
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." est régénérée pour chaque cumul de "..COLORS_KWords_fr.Momentum_rgb_fr.." dépensé."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_1_rgb_fr,
 		-- ["zh-tw"] = "每消耗一層 "..COLORS_KWords_tw.Momentum_rgb_tw.." 恢復 {toughness:%s} "..COLORS_KWords_tw.Toughness_m_rgb_tw.."。"..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_1_rgb_tw, -- 懲戒者姿態 --每消耗一層勢能恢復{toughness:%s}韌性。
@@ -793,7 +793,7 @@ local zealot_talent_localizations = {
 	--[+ KEYSTONE 3-2 - Inebriate's Poise +]--
 	-- ["loc_talent_zealot_quickness_dodge_stacks_desc"] = { -- stacks: 3, +colors
 		-- en = "Gain {stacks:%s} Stacks of "..COLORS_KWords.Momentum_rgb.." on a successful Dodge.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_2_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_2_rgb,
 		-- ru = "{stacks:%s} заряда "..COLORS_KWords_ru.Momentum_rgb_ru.." вы получаете при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_2_rgb_ru, -- Грация пьяницы -- руоф Самообладание пьяницы
 		-- fr = "Gagnez {stacks:%s} cumuls de "..COLORS_KWords_fr.Momentum_rgb_fr.." après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_2_rgb_fr,
 		-- ["zh-tw"] = "成功閃避時，獲得 {stacks:%s} 層 "..COLORS_KWords_tw.Momentum_rgb_tw.." 。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_2_rgb_tw, -- 飄忽身形 -- 成功閃避積累{stacks:%s}層勢能。
@@ -810,7 +810,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 1 - Disdain +]--
 	-- ["loc_talent_zealot_3_tier_2_ability_1_description"] = { -- damage: +5%, max_stacks: 5, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." for every Second Melee Attack you make for each enemy Hit by your previous Melee Attack. Stacks {max_stacks:%s} times.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_1_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_1_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для каждой второй атаки ближнего боя за каждого врага, поражённого вашей предыдущей атакой ближнего боя. Суммируется {max_stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_1_rgb_ru, -- Презрение
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." pour chaque deuxième attaque de mêlée que vous effectuez pour chaque ennemi touché par votre précédente attaque de mêlée. Se cumule jusqu'à {max_stacks:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_1_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -826,7 +826,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 2 - Backstabber +]--
 	-- ["loc_talent_zealot_increased_backstab_damage_description"] = { -- damage: +20%, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." on Melee Backstab Hits.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_2_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_2_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударах в спину оружием ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_2_rgb_ru, -- Бьющий в спину
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." sur les coups dans le dos en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_2_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -842,7 +842,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 3 - Anoint in Blood +]--
 	-- ["loc_talent_zealot_ranged_damage_increased_to_close_desc"] = { -- damage: +25%, +colors
 		-- en = "Up to {damage:%s} Base Ranged "..COLORS_KWords.Damage_rgb..", reduced the further you are from the target.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_3_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_3_rgb,
 		-- ru = "До {damage:%s} к базовому "..COLORS_KWords_ru.Damage_rgb_ru.." дальнего боя, уменьшается по мере удаления от цели."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_3_rgb_ru, -- Помазанный кровью
 		-- fr = "Jusqu'à {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance , réduits plus vous êtes éloigné de la cible."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_3_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -858,8 +858,8 @@ local zealot_talent_localizations = {
 	--[+ Passive 4 - Scourge +]--
 	-- ["loc_talent_zealot_bleed_melee_crit_chance_desc"] = { -- crit_chance: +10%, duration: 3, max_stacks: 3, s->seconds, +colors
 		-- en = "Melee "..COLORS_KWords.Crit_hits_rgb.." apply "..COLORS_KWords.Bleed_rgb..", causing "..COLORS_KWords.Damage_rgb.." over time.\n"
-				-- .."Melee Hits on "..COLORS_KWords.Bleeding_rgb.." Enemies grant {crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." for {duration:%s} seconds. Stacks {max_stacks:%s} times. Up to "..COLORS_Numbers.n_16_rgb.." Max Bleed Stacks on a target.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_4_rgb,
+			-- .."Melee Hits on "..COLORS_KWords.Bleeding_rgb.." Enemies grant {crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." for {duration:%s} seconds. Stacks {max_stacks:%s} times. Up to "..COLORS_Numbers.n_16_rgb.." Max Bleed Stacks on a target.\n"
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_4_rgb,
 		-- ru = "К врагам применяется "..COLORS_KWords_ru.Bleeding_rgb_ru.." при "..COLORS_KWords_ru.Crit_hit_rgb_ru.." в ближнем бою, причиняя "..COLORS_KWords_ru.Dmg_rgb_ru.." с течением времени.\nУдары ближнего боя по врагам с зарядами "..COLORS_KWords_ru.Bleed_rgb_ru.." дают {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на {duration:%s} секунды. Суммируется {max_stacks:%s} раза. До "..COLORS_Numbers.n_16_rgb.." зарядов "..COLORS_KWords_ru.Bleed_rgb_ru.." максимум."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_4_rgb_ru, -- Бичевание -- руоф Бич
 		-- fr = "Les coups "..COLORS_KWords_fr.Crit_hits_rgb_fr.." en mêlée appliquent "..COLORS_KWords_fr.Bleed_rgb_fr..", causant des "..COLORS_KWords_fr.Damage_rgb_fr.." au fil du temps.\nLes coups en mêlée sur les ennemis qui "..COLORS_KWords_fr.Bleeding_rgb_fr.." octroient {crit_chance:%s} "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant {duration:%s} secondes. Se cumule jusqu'à {max_stacks:%s} fois. Jusqu'à "..COLORS_Numbers.n_16_rgb.." cumuls de saignement max sur une cible."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_4_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -875,7 +875,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 5 - Enemies Within, Enemies Without +]--
 	-- ["loc_talent_zealot_toughness_regen_in_melee_desc"] = { -- toughness: 2.5%, range: 5, num_enemies: 3, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishment per second while within {range:%s} meters of at least {num_enemies:%s} enemies.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_5_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_5_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду, если в пределах {range:%s} метров от вас находится не менее {num_enemies:%s} врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_5_rgb_ru, -- Враги внутри, враги снаружи -- руоф Не дай ему уйти
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." par seconde lorsque vous êtes à moins de {range:%s} mètres d'au moins {num_enemies:%s} ennemis."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_5_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -891,7 +891,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 6 - Fortitude in Fellowship +]--
 	-- ["loc_talent_zealot_increased_coherency_regen_desc"] = { -- toughness: +50%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb.." Regeneration.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_6_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_6_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливаемой от "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_6_rgb_ru, -- Стойкость в товариществе -- руоф Стойкость в общении
 		-- fr = "{toughness:%s} régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." en syntonie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_6_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -907,7 +907,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 7 - Purge the Unclean +]--
 	-- ["loc_talent_zealot_3_passive_2_description"] = { -- damage: +20%, &->and, +colors
 		-- en = "{damage:%s} Increased "..COLORS_KWords.Damage_rgb.." against Infested and Unyielding Enemies.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_7_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_7_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." против заражённых и несгибаемых врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_7_rgb_ru, -- Очищение нечестивых -- руоф Очищение нечистых
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemis infestés et implacable."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_7_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -923,7 +923,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 8 - Blood Redemption +]--
 	-- ["loc_talent_zealot_toughness_on_melee_kill_desc"] = { -- toughness: +50%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment on Melee Kill.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_8_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_8_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при убийствах в ближнем бою."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_8_rgb_ru, -- Искупление кровью -- руоф Кровавое искупление
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." lors d'une élimination en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_8_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -939,7 +939,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 9 - Bleed for the Emperor +]--
 	-- ["loc_talent_zealot_3_tier_3_ability_2_description"] = { -- damage_reduction: 40%, +colors
 		-- en = COLORS_KWords.Damage_rgb.." that would take your "..COLORS_KWords.Health_rgb.." to the next "..COLORS_KWords.Wound_rgb.." is reduced by {damage_reduction:%s}.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_9_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_9_rgb,
 		-- ru = "На {damage_reduction:%s} снижается "..COLORS_KWords_ru.Dmg_rgb_ru.." который должен был привести к потере "..COLORS_KWords_ru.Wound_rgb_ru.." до следующей "..COLORS_KWords_ru.Wound_y_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_9_rgb_ru, -- Кровь за Императора -- руоф Кровь во имя Императора
 		-- fr = "Les "..COLORS_KWords_fr.Damage_rgb_fr.." qui réduirait votre "..COLORS_KWords_fr.Health_rgb_fr.." à la prochaine "..COLORS_KWords_fr.Wound_rgb_fr.." sont réduit de {damage_reduction:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_9_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -955,7 +955,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 10 - Vicious Offering +]--
 	-- ["loc_talent_zealot_toughness_on_heavy_kills_desc"] = { -- toughness: 7.5%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishment on Heavy Attack Kill.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_10_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_10_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при убийствах тяжёлыми атаками."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_10_rgb_ru), -- Жертвоприношение -- руоф Порочное подношение
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." lors d'une élimination en mêlée avec une attaque puissante ."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_10_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -971,7 +971,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 11 - The Voice of Terra +]--
 	-- ["loc_talent_zealot_toughness_on_ranged_kill_desc"] = { -- toughness: 2.5%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishment on Ranged Kill.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_11_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_11_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при убийствах дальнобойными атаками."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_11_rgb_ru, -- Голос Терры
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée lors d'une élimination à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_11_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -987,7 +987,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 12 - Restoring Faith +]--
 	-- ["loc_talent_zealot_heal_damage_taken_desc"] = { -- damage_reduction: 25%, time: 5, s->seconds, +colors
 		-- en = "On taking "..COLORS_KWords.Damage_rgb..", heal {damage_reduction:%s} of that "..COLORS_KWords.Damage_rgb..". Occurs over {time:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_12_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_12_rgb,
 		-- ru = "При получении "..COLORS_KWords_ru.Dmg_a_rgb_ru.." "..COLORS_KWords_ru.Health_rgb_ru..", вы восполняете до {damage_reduction:%s} от потерянного "..COLORS_KWords_ru.Wound_rgb_ru..". Срабатывает раз в {time:%s} секунды."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_12_rgb_ru, -- Восстановление веры
 		-- fr = "Lorsque vous subissez des "..COLORS_KWords_fr.Damage_rgb_fr..", récuperez de la "..COLORS_KWords_fr.Health_rgb_fr.." à hauteur de {damage_reduction:%s} de ces "..COLORS_KWords_fr.Damage_rgb_fr..". Se produit sur {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_12_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1003,7 +1003,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 13 - Second Wind +]--
 	-- ["loc_talent_zealot_toughness_on_dodge_desc"] = { -- toughness: 15%, +colors
 		-- en = "{toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishment on a Successful Dodge.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_13_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_13_rgb,
 		-- ru = "{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_13_rgb_ru, -- Второе дыхание -- руоф Второй ветер
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." lors d'une Esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_13_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1019,7 +1019,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 14 - Enduring Faith +]--
 	-- ["loc_talent_zealot_toughness_melee_effectiveness_desc"] = { -- toughness_damage_reduction: +50%, time: 4, s->seconds, +colors
 		-- en = "{toughness_damage_reduction:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." on "..COLORS_KWords.Crit_hit_rgb.." for {time:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_14_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_14_rgb,
 		-- ru = "{toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." при "..COLORS_KWords_ru.Crit_hit_rgb_ru.." на {time:%s} секунды."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_14_rgb_ru, -- Непоколебимая вера
 		-- fr = "{toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr.." pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_14_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1035,7 +1035,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 15 - The Emperor's Bullet +]--
 	-- ["loc_talent_zealot_improved_melee_after_no_ammo_desc"] = { -- impact: +30%, attack_speed: +10%, duration: 5, s->seconds, &->and, +colors
 		-- en = "{impact:%s} "..COLORS_KWords.Impact_rgb.." strength and {attack_speed:%s} Attack speed for Melee attacks for {duration:%s} seconds after emptying your Ranged weapon.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_15_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_15_rgb,
 		-- ru = "{impact:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." и {attack_speed:%s} к скорости атак ближнего боя на {duration:%s} секунд, если вы выстрелили последний патрон из обоймы."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_15_rgb_ru, -- Пуля Императора
 		-- fr = "{impact:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." et {attack_speed:%s} de vitesse d'attaque pour les attaques de mêlée pendant {duration:%s} secondes après avoir vidé chargement votre arme à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_15_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1051,7 +1051,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 16 - Dance of Death +]--
 	-- ["loc_talent_zealot_improved_spread_post_dodge_desc"] = { -- spread: -75%, recoil: -50%, duration: 3, s->seconds, +colors
 		-- en = "{spread:%s} Spread and {recoil:%s} Recoil for {duration:%s} seconds on successful Dodge.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_16_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_16_rgb,
 		-- ru = "{spread:%s} к разбросу и {recoil:%s} к отдаче на {duration:%s} секунды при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_16_rgb_ru, -- Танец смерти
 		-- fr = "{spread:%s} de dispersion et {recoil:%s} de recul pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_16_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1067,7 +1067,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 17 - Duellist +]--
 	-- ["loc_talent_zealot_increased_finesse_post_dodge_description"] = { -- damage: +50%, duration: 3, s->seconds, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Weak_spot_rgb.." and "..COLORS_KWords.Crit_hit_rgb.." "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on successful Dodge.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_17_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_17_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." и "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru.." на {duration:%s} секунды при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_17_rgb_ru, -- Дуэлянт
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Weakspot_rgb_fr.." et de "..COLORS_KWords_fr.Crit_hit_rgb_fr.."  pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_17_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1083,7 +1083,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 18 - Until Death +]--
 	-- ["loc_talent_zealot_resist_death_desc"] = { -- active_duration: 5, cooldown_duration: 120, s->seconds, +colors
 		-- en = "Fatal "..COLORS_KWords.Damage_rgb.." instead grants you Invulnerability for {active_duration:%s} seconds. Occurs every {cooldown_duration:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_18_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_18_rgb,
 		-- ru = "Смертельный "..COLORS_KWords_ru.Dmg_rgb_ru.." теперь не приводит к смерти, но даёт неуязвимость на {active_duration:%s} секунд. Может сработать не чаще, чем раз в {cooldown_duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_18_rgb_ru, -- До самой смерти
 		-- fr = "Les "..COLORS_KWords_fr.Damage_rgb_fr.." mortels vous accordent à la place l'invulnérabilité pendant {active_duration:%s} secondes. Se produit toutes les {cooldown_duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_18_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1099,7 +1099,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 19 - Unremitting +]--
 	-- ["loc_talent_zealot_reduced_sprint_cost_description"] = { -- cost: -20%
 		-- en = "{cost:%s} Sprint "..COLORS_KWords.Stamina_rgb.." cost.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_19_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_19_rgb,
 		-- ru = "{cost:%s} от затрат "..COLORS_KWords_ru.Stamina_rgb_ru.." на бег."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_19_rgb_ru, -- Неустанный
 		-- fr = "{cost:%s} Réduction du coût en "..COLORS_KWords_fr.Stamina_rgb_fr.." de la course."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_19_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1115,7 +1115,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 20 - Shield of Contempt +]--
 	-- ["loc_talent_zealot_3_tier_4_ability_3_description"] = { -- damage_reduction: +60%, duration: 4, cooldown: 10, s->seconds, +colors
 		-- en = "{damage_reduction:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {duration:%s} seconds when you or an Ally in "..COLORS_KWords.Coherency_rgb.." takes "..COLORS_KWords.Health_rgb.." "..COLORS_KWords.Damage_rgb..". Triggers every {cooldown:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_20_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_20_rgb,
 		-- ru = "{damage_reduction:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." вам и вашим союзникам в "..COLORS_KWords_ru.Coherency_rgb_ru.." на {duration:%s} секунды, если кто-то из вас получил "..COLORS_KWords_ru.Dmg_rgb_ru.." "..COLORS_KWords_ru.Health_rgb_ru..". Срабатывает каждые {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_20_rgb_ru, -- Щит презрения
 		-- fr = "{damage_reduction:%s} Réduction des "..COLORS_KWords_fr.Damage_rgb_fr.." pendant {duration:%s} secondes pour vous ou un allié lorsque le joueur subit des "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Health_rgb_fr.." . Se déclenche toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_20_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1131,7 +1131,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 21 - Thy Wrath be Swift +]--
 	-- ["loc_talent_zealot_movement_speed_on_damaged_desc"] = { -- movement_speed: +15%, time: 2, s->seconds, +colors
 		-- en = "{movement_speed:%s} Movement Speed for {time:%s} seconds on taking "..COLORS_KWords.Damage_rgb..". Enemy Melee Attacks cannot "..COLORS_KWords.Stun_rgb.." you.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_21_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_21_rgb,
 		-- ru = "{movement_speed:%s} к скорости движения на {time:%s} секунды при получении "..COLORS_KWords_ru.Dmg_a_rgb_ru..". Вражеские атаки ближнего боя не "..COLORS_KWords_ru.Staggers_rgb_ru.." вас."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_21_rgb_ru, -- Да будет Твой гнев быстр -- руоф Скорое возмездие
 		-- fr = "{movement_speed:%s} Vitesse de déplacement pendant {time:%s} secondes après avoir subi des "..COLORS_KWords_fr.Damage_rgb_fr..". Les attaques de mêlée ennemies ne peuvent pas vous "..COLORS_KWords_fr.Stun_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_21_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1147,7 +1147,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 22 - Good Balance +]--
 	-- ["loc_talent_reduced_damage_after_dodge_description"] = { -- damage: +25%, duration: 2.5, s->seconds, +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." Reduction for {duration:%s} seconds after a successful Dodge.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_22_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_22_rgb,
 		-- ru = "{damage:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунды при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_22_rgb_ru, -- Хороший баланс -- руоф Разумный баланс
 		-- fr = "{damage:%s} Réduction des "..COLORS_KWords_fr.Damage_rgb_fr.." pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_22_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1163,7 +1163,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 23 - Desperation +]--
 	-- ["loc_talent_zealot_increased_damage_on_low_stamina_description"] = { -- damage: +20%, duration: 5, s->seconds, +colors
 		-- en = "{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds when "..COLORS_KWords.Stamina_rgb.." is depleted.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_23_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_23_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя на {duration:%s} секунд, когда уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." на нуле."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_23_rgb_ru, -- Отчаяние
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mêlée pendant {duration:%s} secondes lorsque "..COLORS_KWords_fr.Stamina_rgb_fr.." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_23_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1179,7 +1179,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 24 - Holy Revenant +]--
 	-- ["loc_talent_zealot_heal_during_resist_death_clamped_desc"] = { -- talent_name: Until Death, max_health: 25%, melee_multiplier: 3, +colors
 		-- en = "When {talent_name:%s} ends, you regain "..COLORS_KWords.Health_rgb.." based on the "..COLORS_KWords.Damage_rgb.." you dealt during {talent_name:%s}, to a Maximum of {max_health:%s} Max "..COLORS_KWords.Health_rgb..". Melee "..COLORS_KWords.Damage_rgb.." dealt Heals for {melee_multiplier:%s} times that amount.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_24_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_24_rgb,
 		-- ru = "Когда {talent_name:%s} заканчивает своё действие, вы восстанавливаете некоторое количество "..COLORS_KWords_ru.Wound_rgb_ru.." в зависимости от нанесённого вами "..COLORS_KWords_ru.Dmg_a_rgb_ru.." на протяжении действия таланта {talent_name:%s}, вплоть до {max_health:%s}. Атаки ближнего боя восстанавливают в {melee_multiplier:%s} раза больше "..COLORS_KWords_ru.Wound_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_24_rgb_ru, -- Святой призрак -- руоф Священный призрак
 		-- fr = "Lorsque {talent_name:%s} se termine, vous récupérez de la "..COLORS_KWords_fr.Health_rgb_fr.." en fonction des "..COLORS_KWords_fr.Damage_rgb_fr.." que vous avez infligés pendant {talent_name:%s}, jusqu'à {max_health:%s} de la "..COLORS_KWords_fr.Health_rgb_fr.." maximum. Les "..COLORS_KWords_fr.Damage_rgb_fr.." de mêlée guérissent pour {melee_multiplier:%s} fois ce montant."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_24_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1195,7 +1195,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 25 - Sainted Gunslinger +]--
 	-- ["loc_talent_zealot_increased_reload_speed_on_melee_kills_desc"] = { -- reload_speed: +3%, max_stacks: 10
 		-- en = "{reload_speed:%s} Reload Speed on Melee Kill. Stacks {max_stacks:%s} times.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_25_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_25_rgb,
 		-- ru = "talent_tree_zea_pas_025_desc_ru",
 		-- {"loc_talent_zealot_increased_reload_speed_on_melee_kills_desc"}, {"ru"},
 			-- loc_text("{reload_speed:%s} к скорости перезарядки при убийствах в ближнем бою. Суммируется {max_stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_25_rgb_ru, -- Святой стрелок -- руоф Святой быстрый стрелок
@@ -1213,7 +1213,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 26 - Hammer of Faith +]--
 	-- ["loc_talent_zealot_3_tier_1_ability_1_description"] = { -- stagger: +30%, +colors
 		-- en = "{stagger:%s} "..COLORS_KWords.Impact_rgb.." strength.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_26_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_26_rgb,
 		-- ru = "{stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." врагов при атаках."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_26_rgb_ru, -- Молот веры
 		-- fr = "{stagger:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_26_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1229,7 +1229,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 27 - Grievous Wounds +]--
 	-- ["loc_talent_zealot_increased_stagger_on_weakspot_melee_description"] = { -- impact_modifier: +50%, +colors
 		-- en = "{impact_modifier:%s} "..COLORS_KWords.Stagger_rgb.." on Melee "..COLORS_KWords.Weakspothits_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_27_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_27_rgb,
 		-- ru = "{impact_modifier:%s} к "..COLORS_KWords_ru.Stagger2_rgb_ru.." при попадании в "..COLORS_KWords_ru.Weakspot_rgb_ru.." оружием ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_27_rgb_ru, -- Тяжёлые раны -- руоф Опасные раны
 		-- fr = "{impact_modifier:%s} de "..COLORS_KWords_fr.Stagger_rgb_fr.." sur les attaques de mêlée sur "..COLORS_KWords_fr.Weakspothits_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_27_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1245,7 +1245,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 28 - Ambuscade +]--
 	-- ["loc_talent_zealot_increased_flanking_damage_description"] = { -- damage:+20%., +colors
 		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ranged Backstab Attacks.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_28_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_28_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для выстрелов в спину."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_28_rgb_ru, -- Засада
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." sur les attaques de dos à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_28_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1261,7 +1261,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 29 - Punishment +]--
 	-- ["loc_talent_zealot_multi_hits_increase_impact_desc"] = { -- min_hits: 3, impact_modifier: +30%, time: 5, max_stacks: 5, s->seconds, +colors
 		-- en = "Melee Attacks that Hit at least {min_hits:%s} Enemies grant {impact_modifier:%s} "..COLORS_KWords.Impact_rgb.." strength for {time:%s} seconds. Stacks {max_stacks:%s} times. At max Stacks gain Uninterruptible.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_29_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_29_rgb,
 		-- ru = "Атаки ближнего боя, попавшие хотя бы по {min_hits:%s} врагам, дают {impact_modifier:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." на {time:%s} секунд. Суммируется {max_stacks:%s} раз. При максимуме зарядов ваши атаки невозможно прервать."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_29_rgb_ru, -- Наказание
 		-- fr = "Les attaques de mêlée qui touchent au moins {min_hits:%s} ennemis augmentent l'"..COLORS_KWords_fr.Impact_rgb_fr.." de {impact_modifier:%s} pendant {time:%s} secondes. Cumulable jusqu'à {max_stacks:%s} fois. Au maximum de cumuls, gagnez Inarrêtable."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_29_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1277,7 +1277,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 30 - Faithful Frenzy +]--
 	-- ["loc_talent_zealot_attack_speed_desc"] = { -- attack_speed: +10%
 		-- en = "{attack_speed:%s} Melee Attack Speed.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_30_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_30_rgb,
 		-- ru = "{attack_speed:%s} к скорости атак ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_30_rgb_ru, -- Правоверное неистовство -- руоф Верное безумие
 		-- fr = "{attack_speed:%s} Vitesse d'attaque en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_30_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1293,7 +1293,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 31 - Sustained Assault +]--
 	-- ["loc_talent_zealot_increased_damage_stacks_on_hit_desc"] = { -- damage: +4%, time: 5, amount: 5, s->seconds, +colors
 		-- en = "{damage:%s} Melee "..COLORS_KWords.Damage_rgb.." for {time:%s} seconds on Hitting an Enemy with a Melee Attack. Stacks {amount:%s} times.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_31_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_31_rgb,
 		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя на {time:%s} секунд при попадании по врагу атакой ближнего боя. Суммируется {amount:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_31_rgb_ru, -- Непрерывное нападение -- руоф Непрерывный штурм
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mêlée pendant {time:%s} secondes après avoir touché un ennemi avec une attaque de mêlée. Cumulable jusqu'à {amount:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_31_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1309,7 +1309,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 32 - The Master's Retribution +]--
 	-- ["loc_talent_zealot_3_tier_3_ability_1_description"] = { -- cooldown: 10, s->seconds
 		-- en = "Knock back the Attacker on taking a Melee Hit. Cooldown: {cooldown:%s} seconds.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_32_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_32_rgb,
 		-- ru = "При нанесении вам удара в ближнем бою, враг отбрасывается. Восстановление: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_32_rgb_ru, -- Возмездие Владыки
 		-- fr = "Repousse l'attaquant après avoir reçu un coup de mêlée. Temps de recharge : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_32_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1325,7 +1325,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 33 - Faith's Fortitude +]--
 	-- ["loc_talent_zealot_3_tier_1_ability_3_description"] = { -- health_segment: +2
 		-- en = "{health_segment:%s} "..COLORS_KWords.Wounds_rgb..".\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_33_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_33_rgb,
 		-- ru = "{health_segment:%s} "..COLORS_KWords_ru.Wound_y_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_33_rgb_ru, -- Стойкость веры
 		-- fr = "{health_segment:%s} "..COLORS_KWords_fr.Wounds_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_33_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1341,7 +1341,7 @@ local zealot_talent_localizations = {
 	--[+ Passive 34 - Swift Certainty +]--
 	-- ["loc_talent_zealot_improved_sprint_description"] = { -- speed: +5%
 		-- en = "{speed:%s} increase to Sprint speed. In addition, always counts as Dodging while Sprinting, even if "..COLORS_KWords.Stamina_rgb.." is depleted.\n"
-				-- ..TALENTS_Enh_desc.ED_ZEA_Passive_34_rgb,
+			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_34_rgb,
 		-- ru = "{speed:%s} к скорости бега. Теперь бег считается уклонением, даже если уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." на нуле."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_34_rgb_ru, -- Быстрая уверенность -- руоф Скорая определенность
 		-- fr = "{speed:%s} augmentation de la vitesse de la course. De plus, la course compte toujours comme une esquive, même si l'"..COLORS_KWords_fr.Stamina_rgb_fr.." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_34_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1356,6 +1356,6 @@ local zealot_talent_localizations = {
 	-- },
 }
 
-mod:notify("TALENTS_Zealot.lua loaded successfully")
+-- mod:notify("TALENTS_Zealot.lua loaded successfully")
 
 return zealot_talent_localizations
