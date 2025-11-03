@@ -46,7 +46,7 @@ local PHRS = {
 	Refr_dur_stappl_ru = ""..Dot_green.." Длительность обновляется при наложении заряда. ",
 	Cant_appl_thr_shlds_ru = ""..Dot_red.." Не накладывается через щиты.",
 	Can_be_refr_ru = ""..Dot_green.." Обновляется во время действия. ",
-	Carap_cant_cleave_ru = ""..Dot_red.." Панцирная броня не "..COLORS_KWords_ru.Cleaving_etsa_rgb_ru..".",
+	Carap_cant_cleave_ru = ""..Dot_red.." Панцирная броня не "..COLORS_KWords_ru.Cleavaetsa_rgb_ru..".",
 	Can_be_refr_drop_1_ru = ""..Dot_green.." Заряды обновляются во время действия и сбрасываются по одному. ",
 	Dont_intw_coher_tghn_ru = ""..Dot_red.." Не влияет на "..COLORS_KWords_ru.Tghnss_rgb_ru.." от "..COLORS_KWords_ru.Coherency_rgb_ru..".",
 }
