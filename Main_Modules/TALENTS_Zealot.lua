@@ -18,18 +18,6 @@ local COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Colors_Keywords_Nu
 local COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Colors_Keywords_Numbers/COLORS_KWords_zh_cn")
 
 
---[+ Function to create a localization template +]--
-local function create_template(id, loc_keys, locales, handle_func)
-	return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
-end
-
---[+ Getting rid of repeating parts: function(locale, value) return ... end +]--
-local function loc_text(text)
-	return function(locale, value) 
-		return text 
-	end
-end
-
 local Dot_red = "{#color(255, 35, 5)}•{#reset()}"
 local Dot_nc = "•"
 local Dot_green = "{#color(35, 255, 5)}•{#reset()}"

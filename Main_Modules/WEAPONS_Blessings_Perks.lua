@@ -1342,10 +1342,8 @@ local talent_localizations = {
 		-- Block Cost Reduction (per tier)
 		-- Force Greatswords, Force Swords -- 22.5% | 25% | 27.5% | 30%
 		["loc_trait_bespoke_can_block_ranged_desc"] = { -- block_cost: 30%, +colors
-			en = COLORS_Numbers.block_var_rgb.." Block Cost. This weapon Blocks both Melee and Ranged attacks. "
-				..Dot_red.." Blocking a sniper shot still inflicts its Full spillover "..COLORS_KWords.Damage_rgb..".",
-			ru = COLORS_Numbers.block_var_rgb.." стоимости блока. Это оружие блокирует атаки и ближнего, и дальнего боя. "
-				..Dot_red.." При блокировании выстрела снайпера, вы всё равно получаете полный "..COLORS_KWords_ru.Dmg_rgb_ru..".", -- Отражатель
+			en = COLORS_Numbers.block_var_rgb.." Block Cost. This weapon Blocks both Melee and Ranged attacks.",
+			ru = COLORS_Numbers.block_var_rgb.." стоимости блока. Это оружие блокирует атаки и ближнего, и дальнего боя.", -- Отражатель
 			-- fr = "Cette arme bloque les attaques à distance et en mélée. De plus, le coût du blocage est réduit de "..COLORS_Numbers.block_var_rgb..".",
 			-- ["zh-tw"] = "此武器可以格擋近戰和遠程攻擊。\n此外，格擋消耗 "..COLORS_Numbers.block_var_rgb, -- 偏轉
 			-- 烈焰力場劍, 烈焰力場巨劍 -- 22.5% | 25% | 27.5% | 30%

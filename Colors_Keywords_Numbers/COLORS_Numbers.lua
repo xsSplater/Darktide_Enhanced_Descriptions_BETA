@@ -6,6 +6,7 @@ local InputUtils = require("scripts/managers/input/input_utils")
 
 --[+ ++NUMBERS++ +]--
 local var_col = Color[mod:get("variables_text_colour")](255, true)
+local var_col = Color[mod:get("variables_text_colour")](255, true)
 local iu_actit = InputUtils.apply_color_to_input_text
 
 -- Unified configuration of all keyword groups
@@ -157,14 +158,20 @@ local CONFIG = {
 		n_10_5 = "10.5",
 		n_12 = "12",
 		n_12_5 = "12.5",
+		n_14 = "14",
 		n_15 = "15",
+		n__15 = "~15",
 		n_16 = "16",
 		n__17 = "~17",
+		n__19 = "~19",
 		n_20 = "20",
-		n_21 = "21",
+		n__22 = "~22",
+		n__24 = "~24",
 		n_25 = "25",
+		n__28 = "~28",
 		n_30 = "30",
 		n_31 = "31",
+		n_33 = "33",
 		n__33 = "~33",
 		n_37_5 = "37.5",
 		n_40 = "40",
@@ -173,6 +180,9 @@ local CONFIG = {
 		n__50 = "~50",
 		n_59_85 = "59.85",
 		n_64 = "64",
+		n_60 = "60",
+		n_80 = "80",
+		n_100 = "100",
 		n__67 = "~67",
 		n__83 = "~83",
 		n_200 = "200",

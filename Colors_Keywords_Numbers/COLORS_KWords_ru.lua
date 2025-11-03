@@ -65,12 +65,14 @@ local CONFIG = {
 		Crit_dmg_u = "критическому урону",
 		Crit_chance_r = "критическом выстреле",
 		Crit_chance_l = "критический выстрел",
+		Crit_hit_om = "критическим выстрелом",
+		Crit_hit_ogo = "критического выстрела",
 		Crit_hit_color = "урону критического удара",
 		Crit_shot_color = "урону критического выстрела",
-		Crit_hit_om = "критическим выстрелом",
 	},
 	damage_text_colour = {
 		Dmg = "урон",
+		DMG = "Урон",
 		Dmg_a = "урона",
 		Damage = "урону",
 		Damagewrp = "варп-урону",
@@ -143,6 +145,7 @@ local CONFIG = {
 		Stamina = "выносливости",
 	},
 	toughness_text_colour = {
+		TDR = "СУС",
 		Toughness = "стойкости",
 		Tghnss = "стойкость",
 		Toughness_dmg_red = "снижение урона стойкости",

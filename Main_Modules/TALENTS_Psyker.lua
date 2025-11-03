@@ -18,18 +18,6 @@ local COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Colors_Keywords_Nu
 local COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Colors_Keywords_Numbers/COLORS_KWords_zh_cn")
 
 
---[+ Function to create a localization template +]--
-local function create_template(id, loc_keys, locales, handle_func)
-	return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
-end
-
---[+ Getting rid of repeating parts: function(locale, value) return ... end +]--
-local function loc_text(text)
-	return function(locale, value) 
-		return text 
-	end
-end
-
 local Dot_red = "{#color(255, 35, 5)}•{#reset()}"
 local Dot_nc = "•"
 local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
@@ -45,7 +33,7 @@ local PHRS = {
 	Cant_appl_thr_shlds = ""..Dot_red.." Can't apply through shields.",
 	Cant_Crit = ""..Dot_red.." Cannot "..COLORS_KWords.Crit_rgb..".\n",
 	Carap_cant_cleave = ""..Dot_red.." Carapace armor cannot be "..COLORS_KWords.Cleaved_rgb.." by default.",
-	-- Dont_intw_coher_toughn = ""..Dot_red.." Does not interact with "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb..".",
+	Dont_intw_coher_toughn = ""..Dot_nc.." Does not interact with "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb..".",
 	-- Gen_mult_stacks_n_refr = ""..Dot_green.." Can generate multiple Stacks per swing and refresh during active duration. ",
 	Refr_dur_stappl = ""..Dot_green.." Refreshes duration on Stack application. ",
 
@@ -60,7 +48,7 @@ local PHRS = {
 	Cant_Crit_ru = ""..Dot_red.." Не наносит "..COLORS_KWords_ru.Crit0_rgb_ru..".\n",
 	Carap_cant_clv_ru = ""..Dot_red.." Панцирная броня не "..COLORS_KWords_ru.Cleavaetsa_rgb_ru..".",
 	Carap_cant_cleave_ru = ""..Dot_red.." Панцирная броня не "..COLORS_KWords_ru.Cleaving_etsa_rgb_ru..".",
-	-- Dont_intw_coher_toughn_ru = ""..Dot_red.." Не влияет на "..COLORS_KWords_ru.Tghnss_rgb_ru.." от "..COLORS_KWords_ru.Coherency_rgb_ru..".",
+	Dont_intw_coher_toughn_ru = ""..Dot_nc.." Не влияет на "..COLORS_KWords_ru.Tghnss_rgb_ru.." от "..COLORS_KWords_ru.Coherency_rgb_ru..".",
 	-- Gen_mult_stacks_n_refr_ru = ""..Dot_green.." Может дать несколько зарядов за удар и обновиться во время действия. ",
 	Refr_dur_stappl_ru = ""..Dot_green.." Длительность обновляется при наложении заряда. ",
 }
@@ -77,7 +65,7 @@ local NTS = {
 	Fns_note_rgb_ru = ""..Dot_green.." "..COLORS_KWords_ru.Fnss_rgb_ru.." повышает "..COLORS_KWords_ru.Crit_dmg_r_rgb_ru.." и "..COLORS_KWords_ru.Weakspotv_dmg_rgb_ru..".",
 	Impact_note_rgb_ru = ""..Dot_green.." "..COLORS_KWords_ru.Impact0_rgb_ru.." увеличивает эффективность "..COLORS_KWords_ru.Staggering_rgb_ru.." врагов.",
 	-- Pwr_note_rgb_ru = ""..Dot_green.." "..COLORS_KWords_ru.Pwr_rgb_ru.." повышает "..COLORS_KWords_ru.Dmg_rgb_ru..", "..COLORS_KWords_ru.Stagger_rgb_ru.." и "..COLORS_KWords_ru.Cleaving_rgb_ru..".",
-	Rend_note_rgb_ru = ""..Dot_green.." "..COLORS_KWords_ru.Rndg_rgb_ru.." повышает ваш "..COLORS_KWords_ru.Dmg_rgb_ru..".",
+	Rend_note_rgb_ru = ""..Dot_green.." "..COLORS_KWords_ru.Rndg_rgb_ru.." брони повышает ваш личный "..COLORS_KWords_ru.Dmg_rgb_ru..".",
 }
 
 
@@ -251,7 +239,7 @@ local psyker_talent_localizations = {
 			.."\n"
 			..Dot_nc.." Дальность: "..COLORS_Numbers.n_16_rgb.." метров.\n"
 			..Dot_nc.." Бьёт только в зону туловища.\n"
-			..Dot_nc.." При "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." запускается автоматический сброс ~"..COLORS_Numbers.pc_8_5_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru..". Если отпустить атаку при уровне "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_100_rgb..", врагов отбросит назад.\n"
+			..Dot_nc.." При "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." запускается автоматическое подавление ~"..COLORS_Numbers.pc_8_5_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru..". Если отпустить атаку при уровне "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_100_rgb..", врагов отбросит назад.\n"
 			..PHRS.Cant_Crit_ru
 			..Dot_red.." Наносит средний "..COLORS_KWords_ru.Dmg_rgb_ru.." броне.\n"
 			..Dot_red.." Наносит низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." панцирной броне.\n"
@@ -309,9 +297,10 @@ local psyker_talent_localizations = {
 	["loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"] = { -- damage: +10%, talent_name: Smite, +colors
 		en = Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." Taken from all sources for enemies under your {talent_name:%s}'s "..COLORS_KWords.Electrocution_rgb..".\n"
 			.."\n"
-			..Dot_nc.." The debuff is applied as long as {talent_name:%s} is active on the target.\n"
 			..PHRS.Doesnt_Stack_Psy_eff,
-		-- ru = "", -- Ослабление
+		ru = Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." от всех источников, получаемому врагами, которые находятся по действием "..COLORS_KWords_ru.Electrocution_rgb_ru.." таланта {talent_name:%s}.\n"
+			.."\n"
+			..PHRS.Doesnt_Stack_Psy_eff_ru, -- Ослабление
 		-- fr = "Les ennemis qui sont "..COLORS_KWords_fr.Electrocuted_rgb_fr.." subissent {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." supplémentaires de toutes les sources.\nLe malus est appliqué tant que les ennemis subissent {talent_name:%s}.\nNe se cumul pas avec le même malus d'un autre Psyker."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_2_2_rgb_fr, -- Dégénérescence
 		-- ["zh-tw"] = "{talent_name:%s} "..COLORS_KWords_tw.Electrocution_rgb_tw.." 的敵人，受到的 "..COLORS_KWords_tw.Dmg_a_rgb_tw.." {damage:%s}。\n"
 			-- .."\n"
@@ -383,7 +372,7 @@ local psyker_talent_localizations = {
 		en = Dot_green.." {talent_name:%s} projectiles now pierce through additional targets.",
 		ru = Dot_green.." Снаряды теперь пробивают дополнительные цели.", -- Эфирные осколки -- руоф Эфирные частицы
 		-- fr = "Les projectiles d'{talent_name:%s} percent désormais des cibles supplémentaires, passant de "..COLORS_Numbers.n_2_rgb.." à "..COLORS_Numbers.n_3_rgb.."."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_3_1_rgb_fr,
-		-- ["zh-tw"] = "{talent_name:%s} 的穿透數量從 "..COLORS_Numbers.n_2_rgb.." 提升至 "..COLORS_Numbers.n_3_rgb.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_1_rgb_tw, -- 乙太碎片 -- {talent_name:%s}的投射物可擊穿額外目標。
+		-- ["zh-tw"] = "{talent_name:%s} 的穿透數量從 "..COLORS_Numbers.n_2_rgb.." 提升至 "..COLORS_Numbers.n_3_rgb.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_1_rgb_tw, -- 乙太碎片 -- {talent_name:%s}的投射物可擊穿額外目標。
 		-- ["zh-cn"] = "",
 		-- de = "",
 		-- it = "",
@@ -927,7 +916,7 @@ local psyker_talent_localizations = {
 			..Dot_red.." Doesn't linger after overcharging phase.",
 		ru = "Пока действует {talent_name:%s} вы получаете:\n"
 			..Dot_green.." {warp_charge:%s} к набору "..COLORS_KWords_ru.Peril_rgb_ru..",\n"
-			..Dot_green.." {venting:%s} к сбросу  "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
+			..Dot_green.." {venting:%s} к подавлению  "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
 			.."\n"
 			..Dot_red.." Не продлевается после окончания действия способности.", -- Якорь реальности
 		-- fr = "Pendant {talent_name:%s} votre génération de "..COLORS_KWords_fr.Peril_rgb_fr.." est réduite de {warp_charge:%s}."..TALENTS_Enh_desc_fr.ED_PSY_Ability_3_4_rgb_fr,
@@ -1488,7 +1477,7 @@ local psyker_talent_localizations = {
 			..Dot_green.." {chance:%s} chance to Quell {warp_charge_percent:%s} "..COLORS_KWords.Peril_rgb.." on Kill.",
 		ru = Dot_green.." {warp_charge_reduction:%s} к набору "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
 			.."\n"
-			..Dot_green.." {chance:%s} шанс сбросить {warp_charge_percent:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." при убийстве.", -- Боевая медитация
+			..Dot_green.." {chance:%s} шанс подавить {warp_charge_percent:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." при убийстве.", -- Боевая медитация
 		-- fr = "{chance:%s} de chance de dissiper {warp_charge_percent:%s} de "..COLORS_KWords_fr.Peril_rgb_fr.." lors d'une élimination."..TALENTS_Enh_desc_fr.ED_PSY_Passive_7_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1748,7 +1737,7 @@ local psyker_talent_localizations = {
 			..PHRS.Can_be_refr,
 		ru = Dot_green.." {dr:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru..".\n"
 			.."\n"
-			.."При "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." или более и на {duration:%s} секунды после сброса "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..", вы получаете иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." от атак ближнего и дальнего боя.\n"
+			.."При "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." или более и на {duration:%s} секунды после снижения уровня "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..", вы получаете иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru.." от атак ближнего и дальнего боя.\n"
 			..PHRS.Can_be_refr_ru, -- Нематериальная концентрация
 		-- fr = "",
 		-- ["zh-tw"] = "",
@@ -1761,12 +1750,14 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 18 - Psykinetic's Aura +]--	01.11.2025
+	--[+ Passive 18 - Psykinetic's Aura +]--	03.11.2025
 	["loc_talent_psyker_cooldown_on_allied_elite_kills_desc"] = { -- cooldown: 100%, time: 3, +colors
 		en = Dot_green.." {cooldown:%s} "..COLORS_KWords.Cd_rgb.." Regeneration for {time:%s} seconds when you or an Ally in "..COLORS_KWords.Coherency_rgb.." kills an Elite or Specialist enemy.\n"
 			.."\n"
 			..PHRS.Can_be_refr,
-		-- ru = "", -- Аура психокинетика
+		ru = Dot_green.." На {cooldown:%s} сокращается время "..COLORS_KWords_ru.Ability_cd_rgb_ru.." в течение {time:%s} секунд, если вы или ваш союзник в "..COLORS_KWords_ru.Coherency_rgb_ru.." убиваете элитного врага или специалиста.\n"
+			.."\n"
+			..PHRS.Can_be_refr_ru, -- Аура психокинетика
 		-- fr = "Réduit de "..COLORS_Numbers.n_minus_rgb.."{cooldown:%s} le "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.." pour vous et les alliés en syntonie à chaque élimination d'élite ou de spécialiste."..TALENTS_Enh_desc_fr.ED_PSY_Passive_9_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1778,12 +1769,14 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 19 - Empathic Evasion +]--	01.11.2025
+	--[+ Passive 19 - Empathic Evasion +]--	03.11.2025
 	["loc_talent_psyker_dodge_after_crits_description"] = { -- duration: 1, s->second, +colors
 		en = Dot_green.." A "..COLORS_KWords.Crit_hit_rgb.." makes you count as Dodging against Ranged Attacks for {duration:%s} second.\n"
 			.."\n"
-			..Dot_green.." Can be refreshed during active duration.",
-		-- ru = "При "..COLORS_KWords_ru.Crit_hit_rgb_ru.." вы переходите в режим уклонения от дальнобойных атак на {duration:%s} секунду."..TALENTS_Enh_desc_ru.ED_PSY_Passive_21_rgb_ru, -- Эмпатическое уклонение
+			..PHRS.Can_be_refr,
+		ru = "При "..COLORS_KWords_ru.Crit_hit_rgb_ru.." вы переходите в режим уклонения от дальнобойных атак на {duration:%s} секунду.\n"
+			.."\n"
+			..PHRS.Can_be_refr_ru, -- Эмпатическое уклонение
 		-- fr = "Les "..COLORS_KWords_fr.Crit_hit_rgb_fr.." déclenche une esquive contre les attaques à distance pendant {duration:%s} seconde."..TALENTS_Enh_desc_fr.ED_PSY_Passive_21_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1795,16 +1788,22 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 20 - One with the Warp +]--	01.11.2025
+	--[+ Passive 20 - One with the Warp +]--	03.11.2025
 	["loc_talent_psyker_toughness_damage_reduction_from_warp_charge_desc"] = { -- min_damage: +10%, max_damage: +33%, +colors
 		en = Dot_green.." {min_damage:%s} to {max_damage:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." based on your current "..COLORS_KWords.Peril_rgb..".\n"
 			.."\n"
-			..Dot_green.." Always grants a minimum of {min_damage:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." regardless of current "..COLORS_KWords.Peril_rgb.." amount:\n"
+			..Dot_green.." Always grants a minimum of {min_damage:%s} "..COLORS_KWords.Toughness_dmg_red_rgb.." regardless of current "..COLORS_KWords.Peril_rgb.." amount and scales linearly:\n"
 			.."_______________________________\n"
-			..COLORS_KWords.Peril_rgb..":        0|  20|  40|  50|  60|  80|  100\n"
-			..COLORS_KWords.TDR_rgb.."(%): 10|   14|   19|   21|  23|  28|    33\n"
+			..COLORS_KWords.Peril_rgb..":       "..COLORS_Numbers.n_0_rgb.."|   "..COLORS_Numbers.n_20_rgb.."|  "..COLORS_Numbers.n_40_rgb.."|   "..COLORS_Numbers.n_50_rgb.."|  "..COLORS_Numbers.n_60_rgb.."|    "..COLORS_Numbers.n_80_rgb.."| "..COLORS_Numbers.n_100_rgb.."\n"
+			..COLORS_KWords.TDR_rgb.."("..COLORS_Numbers.pc_rgb.."): "..COLORS_Numbers.n_10_rgb.."| "..COLORS_Numbers.n__15_rgb.."| "..COLORS_Numbers.n__19_rgb.."| "..COLORS_Numbers.n__22_rgb.."| "..COLORS_Numbers.n__24_rgb.."| "..COLORS_Numbers.n__28_rgb.."|   "..COLORS_Numbers.n_33_rgb.."\n"
 			.."_______________________________",
-		-- ru = "От {min_damage:%s} до {max_damage:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." в зависимости от вашего текущего уровня "..COLORS_KWords_ru.Peril_rgb_ru..".", -- Единство с варпом
+		ru = Dot_green.." От {min_damage:%s} до {max_damage:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." в зависимости от вашего текущего уровня "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
+			.."\n"
+			..Dot_green.." Всегда даёт минимум {min_damage:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.." независимо от текущего уровня "..COLORS_KWords_ru.Peril_rgb_ru.." и увеличивается линейно:\n"
+			.."_______________________________\n"
+			..COLORS_KWords_ru.Perl0_rgb_ru.."("..COLORS_Numbers.pc_rgb.."): "..COLORS_Numbers.n_0_rgb.."|  "..COLORS_Numbers.n_20_rgb.."|  "..COLORS_Numbers.n_40_rgb.."|   "..COLORS_Numbers.n_60_rgb.."|   "..COLORS_Numbers.n_80_rgb.."| "..COLORS_Numbers.n_100_rgb.."\n"
+			..COLORS_KWords_ru.TDR_rgb_ru.."("..COLORS_Numbers.pc_rgb.."):           "..COLORS_Numbers.n_10_rgb.."| "..COLORS_Numbers.n__15_rgb.."| "..COLORS_Numbers.n__19_rgb.."| "..COLORS_Numbers.n__24_rgb.."| "..COLORS_Numbers.n__28_rgb.."|  "..COLORS_Numbers.n_33_rgb.."\n"
+			.."_______________________________", -- Единство с варпом
 		-- fr = "{min_damage:%s} à {max_damage:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." en fonction de votre "..COLORS_KWords_fr.Peril_rgb_fr.." actuel."..TALENTS_Enh_desc_fr.ED_PSY_Passive_20_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1816,10 +1815,10 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 21 - Just a Dream +]--	01.11.2025
+	--[+ Passive 21 - Just a Dream +]--	03.11.2025
 	["loc_talent_psyker_damage_to_peril_conversion_desc"] = { -- percent: 25%, +colors
-		en = Dot_green.." While below "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb..", {percent:%s} of "..COLORS_KWords.Damage_rgb.." Taken is converted into "..COLORS_KWords.Peril_rgb..".",
-		-- ru = "", -- Единство с варпом
+		en = Dot_green.." {percent:%s} of "..COLORS_KWords.Damage_rgb.." Taken is converted into "..COLORS_KWords.Peril_rgb.." while below "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb..".",
+		ru = Dot_green.." {percent:%s} получаемого "..COLORS_KWords_ru.Dmg_a_rgb_ru.." преобразуется в "..COLORS_KWords_ru.Perl_rgb_ru..", пока ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..".", -- Лишь сон
 		-- fr = "{min_damage:%s} à {max_damage:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." en fonction de votre "..COLORS_KWords_fr.Peril_rgb_fr.." actuel."..TALENTS_Enh_desc_fr.ED_PSY_Passive_20_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1831,12 +1830,16 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 22 - Anticipation +]--	01.11.2025
+	--[+ Passive 22 - Anticipation +]--	03.11.2025
 	["loc_talent_psyker_improved_dodge_description"] = { -- dodge_linger_time: +50%, extra_consecutive_dodges: 1
 		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{extra_consecutive_dodges:%s} Effective Dodges.\n"
 			.."\n"
-			..Dot_green.." {dodge_linger_time:%s} Dodge duration. Increases from "..COLORS_Numbers.n_02_rgb.." to "..COLORS_Numbers.n_03_rgb.." seconds.",
-		-- ru = "Вы получаете {extra_consecutive_dodges:%s} дополнительное уклонение и {dodge_linger_time:%s} к длительности уклонений."..TALENTS_Enh_desc_ru.ED_PSY_Passive_22_rgb_ru, -- Предвкушение
+			..Dot_green.." {dodge_linger_time:%s} Dodge duration.\n"
+			..Dot_nc.." Increases from "..COLORS_Numbers.n_02_rgb.." to "..COLORS_Numbers.n_03_rgb.." seconds.",
+		ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{extra_consecutive_dodges:%s} к количеству эффективных уклонений.\n"
+			.."\n"
+			..Dot_green.." {dodge_linger_time:%s} к длительности уклонений.\n"
+			..Dot_nc.." Длительность увеличивается с "..COLORS_Numbers.n_02_rgb.." до "..COLORS_Numbers.n_03_rgb.." секунды.", -- Предвкушение
 		-- fr = "{dodge_linger_time:%s} de durée de l'esquive. Augmente le nombre d'esquives avant que les esquives ne commencent à devenir inefficaces de {extra_consecutive_dodges:%s}."..TALENTS_Enh_desc_fr.ED_PSY_Passive_22_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1848,12 +1851,14 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 23 - Solidity +]--	01.11.2025
+	--[+ Passive 23 - Solidity +]--	03.11.2025
 	["loc_talent_psyker_increased_vent_speed_description"] = { -- vent_speed: 30%
 		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{vent_speed:%s} Quell Speed.\n"
 			.."\n"
 			..Dot_nc.." Applies only to Active Quelling, Passive Quelling is unaffected.",
-		-- ru = COLORS_Numbers.n_plus_rgb.."{vent_speed:%s} к скорости подавления "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_23_rgb_ru, -- Устойчивость -- руоф Твердость
+		ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{vent_speed:%s} к скорости подавления "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
+			.."\n"
+			..Dot_nc.." Применяется только к активному подавлению, пассивное подавление не затрагивается.", -- Устойчивость -- руоф Твердость
 		-- fr = COLORS_Numbers.n_plus_rgb.."{vent_speed:%s} de vitesse d'atténuation."..TALENTS_Enh_desc_fr.ED_PSY_Passive_23_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1865,10 +1870,10 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 24 - Puppet Master +]--	01.11.2025
+	--[+ Passive 24 - Puppet Master +]--	03.11.2025
 	["loc_talent_psyker_coherency_size_increase_description"] = { -- radius_modifier: 50%, +colors
-		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} Radius for your "..COLORS_KWords.Coherency_rgb.." Aura, from "..COLORS_Numbers.n_8_rgb.." to "..COLORS_Numbers.n_12_rgb.." meters.",
-		-- ru = COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} к радиусу вашей ауры "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_24_rgb_ru, -- Кукловод
+		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} Radius for your "..COLORS_KWords.Coherency_rgb.." Aura.",
+		ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} к радиусу вашей ауры "..COLORS_KWords_ru.Coherency_rgb_ru..".", -- Кукловод
 		-- fr = COLORS_Numbers.n_plus_rgb.."{radius_modifier:%s} de rayon pour votre aura de syntonie."..TALENTS_Enh_desc_fr.ED_PSY_Passive_24_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1880,11 +1885,11 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 25 - Vulnerable Minds +]--	01.11.2025
+	--[+ Passive 25 - Vulnerable Minds +]--	03.11.2025
 	["loc_talent_psyker_damage_vs_ogryns_and_monsters_desc"] = { -- damage: +20%, +colors
 		en = Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." vs Ogryns and Monstrosities.",
-		-- ru = Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." vs Ogryns and Monstrosities.",
-		-- fr = Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." vs Ogryns and Monstrosities.",
+		ru = Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." огринам и монстрам.", -- Уязвимые разумы -- руоф Уязвимые сознания
+		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
 		-- de = "",
@@ -1895,14 +1900,18 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 26 - Warp Rider +]--	01.11.2025
+	--[+ Passive 26 - Warp Rider +]--	03.11.2025
 	["loc_talent_psyker_damage_based_on_warp_charge_desc"] = { -- max_damage: +20%, +colors
 		en = Dot_green.." Deal up to {max_damage:%s} "..COLORS_KWords.Damage_rgb..", based on your current "..COLORS_KWords.Peril_rgb..":\n"
 			.."_______________________________\n"
-			..COLORS_KWords.Peril_rgb.."(%):         0| 20| 40| 50| 60| 80| 100\n"
-			..COLORS_KWords.Damage_rgb.."(%):  0|    4|   8|  10|  12|  16|  20\n"
+			..COLORS_KWords.Peril_rgb.."("..COLORS_Numbers.pc_rgb.."):         "..COLORS_Numbers.n_0_rgb.."| "..COLORS_Numbers.n_20_rgb.."| "..COLORS_Numbers.n_40_rgb.."| "..COLORS_Numbers.n_50_rgb.."| "..COLORS_Numbers.n_60_rgb.."|  "..COLORS_Numbers.n_80_rgb.."| "..COLORS_Numbers.n_100_rgb.."\n"
+			..COLORS_KWords.Damage_rgb.."("..COLORS_Numbers.pc_rgb.."):  "..COLORS_Numbers.n_0_rgb.."|    "..COLORS_Numbers.n_4_rgb.."|   "..COLORS_Numbers.n_8_rgb.."|  "..COLORS_Numbers.n_10_rgb.."|  "..COLORS_Numbers.n_12_rgb.."|  "..COLORS_Numbers.n_16_rgb.."|   "..COLORS_Numbers.n_20_rgb.."\n"
 			.."_______________________________",
-		-- ru = "До {max_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." из всех источников в зависимости от уровня вашей текущей "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_25_rgb_ru, -- Всадник варпа -- руоф Наездник варпа
+		ru = Dot_green.." До {max_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", в зависимости от вашего уровня "..COLORS_KWords_ru.Peril_rgb_ru..":\n"
+			.."_______________________________\n"
+			..COLORS_KWords_ru.Perl0_rgb_ru.."("..COLORS_Numbers.pc_rgb.."):     "..COLORS_Numbers.n_0_rgb.."| "..COLORS_Numbers.n_20_rgb.."| "..COLORS_Numbers.n_40_rgb.."| "..COLORS_Numbers.n_60_rgb.."| "..COLORS_Numbers.n_80_rgb.."| "..COLORS_Numbers.n_100_rgb.."\n"
+			..COLORS_KWords_ru.DMG_rgb_ru.."("..COLORS_Numbers.pc_rgb.."):                "..COLORS_Numbers.n_0_rgb.."|   "..COLORS_Numbers.n_4_rgb.."|   "..COLORS_Numbers.n_8_rgb.."|  "..COLORS_Numbers.n_12_rgb.."|  "..COLORS_Numbers.n_16_rgb.."|   "..COLORS_Numbers.n_20_rgb.."\n"
+			.."_______________________________", -- Всадник варпа -- руоф Наездник варпа
 		-- fr = "Jusqu'à {max_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de toutes les sources, basé sur votre "..COLORS_KWords_fr.Peril_rgb_fr.." actuel."..TALENTS_Enh_desc_fr.ED_PSY_Passive_25_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1914,12 +1923,18 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 27 - True Aim +]--	01.11.2025
+	--[+ Passive 27 - True Aim +]--	03.11.2025
 	["loc_talent_psyker_weakspot_grants_crit_once_description"] = { -- weakspot_hits: 5, +colors
 		en = Dot_green.." Landing {weakspot_hits:%s} "..COLORS_KWords.Weakspothits_rgb.." grants your next Ranged Attack a guaranteed "..COLORS_KWords.Critical_rgb..".\n"
 			.."\n"
-			..Dot_nc.." Can only trigger once per Attack.",
-		-- ru = "Попадания {weakspot_hits:%s} раз в "..COLORS_KWords_ru.Weakspot_rgb_ru.." делают вашу следующую дальнобойную атаку гарантированным "..COLORS_KWords_ru.Crit_hit_om_rgb_ru..".", -- Верная цель
+			..Dot_nc.." "..COLORS_KWords.Weakspot_rgb.." Stacks last until consumed.\n"
+			..Dot_nc.." Can only trigger once per Attack.\n"
+			..Dot_red.." Shooting air consumes the guaranteed "..COLORS_KWords.Crit_rgb..".",
+		ru = Dot_green.." Попадания {weakspot_hits:%s} раз в "..COLORS_KWords_ru.Weakspot_rgb_ru.." гарантированно делают вашу следующую дальнобойную атаку "..COLORS_KWords_ru.Crit_hit_om_rgb_ru..".\n"
+			.."\n"
+			..Dot_nc.." Заряды попаданий в "..COLORS_KWords_ru.Weakspot_rgb_ru.." держатся до первого "..COLORS_KWords_ru.Crit_hit_ogo_rgb_ru..".\n"
+			..Dot_nc.." Срабатывает только раз за атаку.\n"
+			..Dot_red.." Выстрел в воздух тратит "..COLORS_KWords_ru.Crit_chance_l_rgb_ru..".", -- Верная цель
 		-- fr = "Toucher {weakspot_hits:%s} "..COLORS_KWords_fr.Weakspothits_rgb_fr.." garantit à votre prochaine attaque à distance un "..COLORS_KWords_fr.Crit_rgb_fr.." garanti."..TALENTS_Enh_desc_fr.ED_PSY_Passive_31_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1931,12 +1946,12 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 28 - Kinetic Deflection +]--	01.11.2025
+	--[+ Passive 28 - Kinetic Deflection +]--	03.11.2025
 	["loc_talent_psyker_block_costs_warp_charge_desc"] = { -- warp_charge_block_cost: 25%, +colors
 		en = Dot_green.." While below "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb..",  Blocking an attack causes you to gain "..COLORS_KWords.Peril_rgb.." instead of losing "..COLORS_KWords.Stamina_rgb..".\n"
 			.."\n"
 			..Dot_nc.." Gained "..COLORS_KWords.Peril_rgb.." is {warp_charge_block_cost:%s} of the blocked attack's "..COLORS_KWords.Stamina_rgb.." cost.",
-		-- ru = "Пока уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..", блокирование атак приводит к повышению уровня "..COLORS_KWords_ru.Peril_rgb_ru.." вместо потери "..COLORS_KWords_ru.Stamina_rgb_ru..".\n\nПолучаемый уровень "..COLORS_KWords_ru.Peril_rgb_ru.." составляет {warp_charge_block_cost:%s} от стоимости "..COLORS_KWords_ru.Stamina_rgb_ru..", затрачиваемой на такое же блокирование."..TALENTS_Enh_desc_ru.ED_PSY_Passive_27_rgb_ru, -- Кинетическое отклонение
+		ru = "Пока уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..", блокирование атак приводит к повышению уровня "..COLORS_KWords_ru.Peril_rgb_ru.." вместо потери "..COLORS_KWords_ru.Stamina_rgb_ru..". Получаемый уровень "..COLORS_KWords_ru.Peril_rgb_ru.." составляет {warp_charge_block_cost:%s} от стоимости "..COLORS_KWords_ru.Stamina_rgb_ru..", затрачиваемой на обычное блокирование.", -- Кинетическое отклонение
 		-- fr = "Tant que vous êtes en dessous de 97 % de "..COLORS_KWords_fr.Peril_rgb_fr..", bloquer une attaque vous fait gagner du "..COLORS_KWords_fr.Peril_rgb_fr.." au lieu de perdre de l'"..COLORS_KWords_fr.Stamina_rgb_fr..".\n\nLe "..COLORS_KWords_fr.Peril_rgb_fr.." gagné représente {warp_charge_block_cost:%s} du coût en "..COLORS_KWords_fr.Stamina_rgb_fr.." de l'attaque bloquée."..TALENTS_Enh_desc_fr.ED_PSY_Passive_27_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1948,11 +1963,16 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 29 - Empyric Resolve +]--	01.11.2025
+	--[+ Passive 29 - Empyric Resolve +]--	03.11.2025
 	["loc_talent_psyker_warp_glass_cannon_desc"] = { -- peril_reduction: -40%, toughness_reduction: -30%, +colors
 		en = Dot_green.." {peril_reduction:%s} "..COLORS_KWords.Peril_rgb.." Generation.\n"
 			.."\n"
-			..Dot_red.." {toughness_reduction:%s} "..COLORS_KWords.Toughness_rgb.." Replenished.",
+			..Dot_red.." {toughness_reduction:%s} "..COLORS_KWords.Toughness_rgb.." Replenished.\n"
+			..PHRS.Dont_intw_coher_toughn.." Only affects Melee kills and Talents.",
+		ru = Dot_green.." {peril_reduction:%s} к набору "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
+			.."\n"
+			..Dot_red.." {toughness_reduction:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru..".\n"
+			..PHRS.Dont_intw_coher_toughn_ru.." Влияет только на получение "..COLORS_KWords_ru.Toughness_rgb_ru.." от убийств и талантов.",
 		-- ru = "{peril_reduction:%s} генерации "..COLORS_KWords_ru.Peril_rgb_ru..".\n{toughness_reduction:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_29_rgb_ru, -- Эмпирическая решимость
 		-- fr = "{peril_reduction:%s} de génération de "..COLORS_KWords_fr.Peril_rgb_fr..".\n{toughness_reduction:%s} de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_PSY_Passive_29_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -1965,16 +1985,22 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 30 - Penetration of the Soul +]--	01.11.2025
+	--[+ Passive 30 - Penetration of the Soul +]--	03.11.2025
 	["loc_talent_psyker_warp_attacks_rending_alt_desc"] = { -- rending: +10%, threshold: 75%, +colors
 		en = Dot_green.." Up to {rending:%s} "..COLORS_KWords.Rending_rgb.." on Warp-Attacks, based on "..COLORS_KWords.Peril_rgb..":\n"
 			.."_______________________________\n"
-			..COLORS_KWords.Peril_rgb.."(%):         0| 20| 40| 50| 60| 80| 100\n"
-			..COLORS_KWords.Rending_rgb.."(%):  0|    4|   8|  10|  12|  16|  20\n"
+			..COLORS_KWords.Peril_rgb.."("..COLORS_Numbers.pc_rgb.."):          "..COLORS_Numbers.n_0_rgb.."| "..COLORS_Numbers.n_20_rgb.."| "..COLORS_Numbers.n_40_rgb.."| "..COLORS_Numbers.n_50_rgb.."| "..COLORS_Numbers.n_60_rgb.."| "..COLORS_Numbers.n_80_rgb.."| "..COLORS_Numbers.n_100_rgb.."\n"
+			..COLORS_KWords.Rending_rgb.."("..COLORS_Numbers.pc_rgb.."):   "..COLORS_Numbers.n_0_rgb.."|    "..COLORS_Numbers.n_4_rgb.."|   "..COLORS_Numbers.n_8_rgb.."|  "..COLORS_Numbers.n_10_rgb.."|  "..COLORS_Numbers.n_12_rgb.."|  "..COLORS_Numbers.n_16_rgb.."|  "..COLORS_Numbers.n_20_rgb.."\n"
 			.."_______________________________\n"
 			.."\n"
-			..Dot_red.." Only affects "..COLORS_KWords.cls_psy2_rgb.." own "..COLORS_KWords.Damage_rgb..".",
-		-- ru = "{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." для варп-атак, если ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." выше {threshold:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Passive_30_rgb_ru, -- Проникновение в душу
+			..NTS.Rend_note_rgb,
+		ru = Dot_green.." До {rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." брони для варп-атак, в зависимости от уровне "..COLORS_KWords_ru.Peril_rgb_ru..":\n"
+			.."_______________________________\n"
+			..COLORS_KWords_ru.Perl0_rgb_ru.."("..COLORS_Numbers.pc_rgb.."):      "..COLORS_Numbers.n_0_rgb.."| "..COLORS_Numbers.n_20_rgb.."| "..COLORS_Numbers.n_40_rgb.."| "..COLORS_Numbers.n_60_rgb.."| "..COLORS_Numbers.n_80_rgb.."| "..COLORS_Numbers.n_100_rgb.."\n"
+			..COLORS_KWords_ru.Rndg_rgb_ru.."("..COLORS_Numbers.pc_rgb.."):   "..COLORS_Numbers.n_0_rgb.."|   "..COLORS_Numbers.n_4_rgb.."|    "..COLORS_Numbers.n_8_rgb.."|  "..COLORS_Numbers.n_12_rgb.."|  "..COLORS_Numbers.n_16_rgb.."|  "..COLORS_Numbers.n_20_rgb.."\n"
+			.."_______________________________\n"
+			.."\n"
+			..NTS.Rend_note_rgb_ru, -- Проникновение в душу
 		-- fr = "{rending:%s} de "..COLORS_KWords_fr.Rending_rgb_fr.." sur les attaques Warp lorsque vous êtes au-dessus de {threshold:%s} de "..COLORS_KWords_fr.Peril_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_PSY_Passive_30_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -1986,14 +2012,19 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 31 - Crystalline Will +]--	01.11.2025
+	--[+ Passive 31 - Crystalline Will +]--	03.11.2025
 	["loc_talent_psyker_alternative_peril_explosion_new_desc"] = { -- overload_damage: +100%, overload_radius: +25%, +colors
 		en = Dot_green.." {overload_damage:%s} Overload Explosion "..COLORS_KWords.Damage_rgb..",\n"
 			..Dot_green.." {overload_radius:%s} Overload Explosion Radius.\n"
 			.."\n"
-			..Dot_nc.." Overloading through "..COLORS_KWords.Perils_rgb.." of the Warp no longer knocks you down, but you still take the appropriate "..COLORS_KWords.Corruption_rgb.." "..COLORS_KWords.Damage_rgb..".\n"
-			..Dot_green.." If the explosion kills an Elite enemy, you don't take any "..COLORS_KWords.Corruption_rgb.." "..COLORS_KWords.Damage_rgb..".",
-		-- ru = "Взрыв от перегрузки "..COLORS_KWords_ru.Perils_rgb_ru.." варпа больше не выводит вас из строя, но все ещё применяет к вам соответствующий "..COLORS_KWords_ru.Corruptdmg_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_26_rgb_ru, -- Чистая воля
+			..Dot_green.." Overloading through "..COLORS_KWords.Perils_rgb.." of the Warp no longer knocks you down, but you lose "..COLORS_Numbers.n_1_rgb.." "..COLORS_KWords.Health_rgb.." segment from "..COLORS_KWords.Corruptdmg_rgb..".\n"
+			..Dot_green.." If the explosion kills an Elite enemy, you don't take any "..COLORS_KWords.Corruptdmg_rgb..".",
+		ru = "Взрыв от перегрузки, после набора "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru..", получает:\n"
+			..Dot_green.." {overload_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+			..Dot_green.." {overload_radius:%s} к радиусу.\n"
+			.."\n"
+			..Dot_green.." Взрыв от перегрузки "..COLORS_KWords_ru.PerilsozWarp_rgb_ru.." больше не выводит вас из строя, но забирает "..COLORS_Numbers.n_1_rgb.." сегмент "..COLORS_KWords_ru.Wound_rgb_ru..", нанося вам "..COLORS_KWords_ru.Corruptdmg_rgb_ru..".\n"
+			..Dot_green.." Если взрыв убьёт элитного врага, вы не получите "..COLORS_KWords_ru.Corruptdmg_rgb_ru..".", -- Чистая воля
 		-- fr = "La surcharge des "..COLORS_KWords_fr.Perils_rgb_fr.." du Warp ne vous met plus à terre, mais vous subissez toujours les "..COLORS_KWords_fr.Corruptdmg_rgb_fr.." appropriées."..TALENTS_Enh_desc_fr.ED_PSY_Passive_26_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -2005,13 +2036,20 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 32 - Warp Ghost +]--	01.11.2025
+	--[+ Passive 32 - Warp Ghost +]--	03.11.2025
 	["loc_talent_psyker_stat_mix_desc"] = { -- peril_reduction: -80%, stamina: +2, toughness_replenish: +25%, +colors
 		en = Dot_green.." {peril_reduction:%s} Passive quelling.\n"
+			.."\n"
 			..Dot_green.." {stamina:%s} "..COLORS_KWords.Stamina_rgb..".\n"
+			.."\n"
 			..Dot_green.." {toughness_replenish:%s} "..COLORS_KWords.Toughness_rgb.." Replenishment.\n"
-			..Dot_red.." Does not apply to "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb.." Regeneration.",
-		-- ru = "До "..COLORS_Numbers.n_plus_rgb.."{wield_speed:%s} к скорости смены оружия в зависимости от текущего уровня "..COLORS_KWords_ru.Peril_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Passive_13_rgb_ru, -- Рискованное нападение -- руоф Пагубное нападение
+			..PHRS.Dont_intw_coher_toughn.." Only affects Melee kills and Talents.",
+		ru = Dot_green.." {peril_reduction:%s} к пассивному подавлению "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
+			.."\n"
+			..Dot_green.." {stamina:%s} к "..COLORS_KWords_ru.Stamina_rgb_ru..".\n"
+			.."\n"
+			..Dot_green.." {toughness_replenish:%s} к восстановлению "..COLORS_KWords_ru.Toughness_rgb_ru..".\n"
+			..PHRS.Dont_intw_coher_toughn_ru.." Влияет только на получение "..COLORS_KWords_ru.Toughness_rgb_ru.." от убийств и талантов.", -- Призрак варпа
 		-- fr = "Jusqu'à {wield_speed:%s} de vitesse de changement d'armes, en fonction de votre "..COLORS_KWords_fr.Peril_rgb_fr.." actuel."..TALENTS_Enh_desc_fr.ED_PSY_Passive_13_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -2023,13 +2061,16 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 33 - Tranquility Through Slaughter +]--	01.11.2025
+	--[+ Passive 33 - Tranquility Through Slaughter +]--	03.11.2025
 	["loc_talent_psyker_ranged_crits_vent_desc"] = { -- percent: 4%, +colors
 		en = Dot_green.." {percent:%s} "..COLORS_KWords.Peril_rgb.." is quelled on Non-Warp Ranged "..COLORS_KWords.Crit_hits_rgb..".\n"
 			.."\n"
 			..Dot_green.." Procs when hitting Shields.\n"
-			..Dot_nc.." Procs only Once per shot regardless of how many enemies have been hit.",
-		-- ru = "{percent:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." подавляется при "..COLORS_KWords_ru.Crit_chance_r_rgb_ru.." не из варп источника."..TALENTS_Enh_desc_ru.ED_PSY_Passive_28_rgb_ru, -- Спокойствие посредством убийств
+			..Dot_red.." Procs only Once per shot regardless of how many enemies have been hit.",
+		ru = Dot_green.." {percent:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." подавляется при "..COLORS_KWords_ru.Crit_chance_r_rgb_ru.." не из варп источника.\n"
+			.."\n"
+			..Dot_green.." Срабатывает при попадании в щиты.\n"
+			..Dot_red.." Срабатывает только раз за выстрел, независимо от количества поражённых целей.", -- Успокоение через резню -- руоф Спокойствие посредством убийств
 		-- fr = "{percent:%s} de "..COLORS_KWords_fr.Peril_rgb_fr.." est atténué sur les "..COLORS_KWords_fr.Crit_hits_rgb_fr.." à distance n'utilisant pas le Warp."..TALENTS_Enh_desc_fr.ED_PSY_Passive_28_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -2041,13 +2082,16 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 34 - Surety of Arms +]--	01.11.2025
+	--[+ Passive 34 - Surety of Arms +]--	03.11.2025
 	["loc_talent_psyker_reload_speed_warp_desc"] = { -- reload_speed: 25%, threshold: 75%, warp_charge: 25%, +colors
 		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{reload_speed:%s} Reload Speed while below {threshold:%s} "..COLORS_KWords.Peril_rgb..".\n"
 			..Dot_red.." On Reload, generate up to {warp_charge:%s} "..COLORS_KWords.Peril_rgb.." based on the Percentage of the Clip Restored.\n"
 			.."\n"
 			..Dot_red.." Reloading an Empty clip generates the max amount of {warp_charge:%s} "..COLORS_KWords.Peril_rgb..".",
-		-- ru = COLORS_Numbers.n_plus_rgb.."{reload_speed:%s} к скорости перезарядки оружия пока ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже {threshold:%s}. При перезарядке генерируется до {warp_charge:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." в зависимости от процентного соотношения восстановленных патронов в магазине."..TALENTS_Enh_desc_ru.ED_PSY_Passive_32_rgb_ru, -- Варп в залог -- руоф Верность оружия
+		ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{reload_speed:%s} к скорости перезарядки оружия пока ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже {threshold:%s}.\n"
+			..Dot_red.." При перезарядке сгенерирует до {warp_charge:%s} "..COLORS_KWords_ru.Peril_rgb_ru.." в зависимости от процентного соотношения восстановленных патронов в магазине.\n"
+			.."\n"
+			..Dot_red.." Если патроны кончились, перезарядка сгенерирует вам {warp_charge:%s} "..COLORS_KWords_ru.Peril_rgb_ru..".", -- Варп в залог -- руоф Верность оружия
 		-- fr = "{reload_speed:%s} de vitesse de rechargement lorsque vous êtes en dessous de {threshold:%s} de "..COLORS_KWords_fr.Peril_rgb_fr..". Lors du rechargement, générez jusqu'à {warp_charge:%s} de "..COLORS_KWords_fr.Peril_rgb_fr.." en fonction du pourcentage du chargeur restauré."..TALENTS_Enh_desc_fr.ED_PSY_Passive_32_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
