@@ -2,13 +2,14 @@
 
 # ENHANCED DESCRIPTIONS
 [![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
+***
 
-###Mod parts readiness:
+### Mod parts readiness:
 🟢 - ready,
 🟡 - partially ready,
 🔴 - not ready.
 ﻿
-##All localizations:
+## All localizations:
 🟢 Curios Blessings and Perks.
 🟢 Weapon Blessings and Perks.
 🟢 Psyker Talent descriptions.
@@ -18,10 +19,20 @@
 🔴 Ogryn Talent descriptions.
 🔴Penance descriptions.
 
-##Non-English localizations only:
+## Non-English localizations only:
 🟡 Various Menu texts.
 🟡 Names of Enemies and Weapons.
 🟡 Names of Blessings and Talents.
+
+## TODO:
+- [x] Add Traditional Chinese localization.
+- [x] Add Simplified Chinese localization.
+- [x] Merge parts of extended descriptions into the main Blessings descriptions.
+	- [ ] Proofread Blessings text.
+- [ ] Merge parts of extended descriptions into the main Talent descriptions.
+	- [ ] Proofread Talents text.
+
+*** 
 
 *This mod aims to improve visibility and clarity by enhancing Numbers, Keywords, and Descriptions across Talents, Blessings, Perks, Penances, Curios, and some Menu texts.*
 
@@ -41,16 +52,6 @@ __*Let us know if you spot any issues!*__
    *For example: `..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\Enhanced_descriptions\`*
 ### ﻿ ﻿2. Add **Enhanced_descriptions** to **mod_load_order.txt** manually or with my [Mod Load Order File Maker](https://www.nexusmods.com/warhammer40kdarktide/mods/139).
 ### ﻿ ﻿3. Launch the game and enjoy!
-***
-
-## TODO:
-- [x] Add Traditional Chinese localization.
-- [x] Add Simplified Chinese localization.
-- [ ] Merge parts of extended descriptions into the main Blessings descriptions.
-	- [ ] Proofread Blessings text.
-- [ ] Merge parts of extended descriptions into the main Talent descriptions.
-	- [ ] Proofread Talents text.
-
 ***
 
 ## Special Thanks to:
