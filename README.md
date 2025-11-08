@@ -5,30 +5,30 @@
 ***
 
 ### Mod parts readiness:
-🟢 - ready,
-🟡 - partially ready,
-🔴 - not ready.
+- 🟢 - ready,
+- 🟡 - partially ready,
+- 🔴 - not ready.
 ﻿
 ## All localizations:
-🟢 Curios Blessings and Perks.
-🟢 Weapon Blessings and Perks.
-🟢 Psyker Talent descriptions.
-🟡 Arbites Talent descriptions.
-🔴 Veteran Talent descriptions.
-🔴 Zealot Talent descriptions.
-🔴 Ogryn Talent descriptions.
-🔴Penance descriptions.
+- 🟢 Curios Blessings and Perks.
+- 🟢 Weapon Blessings and Perks.
+- 🟢 Psyker Talent descriptions.
+- 🟡 Arbites Talent descriptions.
+- 🔴 Veteran Talent descriptions.
+- 🔴 Zealot Talent descriptions.
+- 🔴 Ogryn Talent descriptions.
+- 🔴 Penance descriptions.
 
 ## Non-English localizations only:
-🟡 Various Menu texts.
-🟡 Names of Enemies and Weapons.
-🟡 Names of Blessings and Talents.
+- 🟡 Various Menu texts.
+- 🟡 Names of Enemies and Weapons.
+- 🟡 Names of Blessings and Talents.
 
 ## TODO:
 - [x] Add Traditional Chinese localization.
 - [x] Add Simplified Chinese localization.
 - [x] Merge parts of extended descriptions into the main Blessings descriptions.
-	- [ ] Proofread Blessings text.
+	- [x] Proofread Blessings text.
 - [ ] Merge parts of extended descriptions into the main Talent descriptions.
 	- [ ] Proofread Talents text.
 
