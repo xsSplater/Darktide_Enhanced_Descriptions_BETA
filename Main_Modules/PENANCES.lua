@@ -53,7 +53,7 @@ local PHRS = {
 }
 
 
-local talent_localizations = {
+local penances_localizations = {
 -- TEMPLATE
 	-- ["loc_code"] = {
 		-- en = "",
@@ -6169,7 +6169,7 @@ local talent_localizations = {
 
 --[+ Automatically create templates from the new structure +]--
 local localization_templates = {}
-for loc_key, locales in pairs(talent_localizations) do
+for loc_key, locales in pairs(penances_localizations) do
 	for locale, text in pairs(locales) do
 		table.insert(localization_templates, {
 			loc_keys = {loc_key},

@@ -1474,10 +1474,13 @@ local arbites_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 35 - Priority Endowment +]--
+	--[+ Passive 35 - Priority Endowment +]--	10.11.2025
+	-- ! Double: Veteran - Passive 39 - Lock and Load !
 	["loc_talent_adamant_clip_size_alt_desc"] = { -- clip_size: +15%
-		en = "{clip_size:%s} Clip Size. Rounded Up.",
-		ru = "{clip_size:%s} к размеру магазина. Округляется в большую сторону.", -- Приоритетное снабжение
+		en = Dot_green.." {clip_size:%s} Clip Size.\n"
+			..Dot_nc.." Rounded Up.",
+		ru = Dot_green.." {clip_size:%s} к размеру магазина.\n"
+			..Dot_nc.." Округляется в большую сторону.", -- Приоритетное снабжение
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",

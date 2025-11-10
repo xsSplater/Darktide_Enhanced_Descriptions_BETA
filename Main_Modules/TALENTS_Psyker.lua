@@ -98,8 +98,8 @@ local psyker_talent_localizations = {
 			..Dot_green.." Always scores a "..COLORS_KWords.Weakspothit_rgb..".\n"
 			..PHRS.Cant_Crit
 			.."\n"
-			..Dot_red.." {#color(255, 35, 5)}You will explode!{#reset()}\n"
-			.."Don't use if "..COLORS_KWords.Peril_rgb.." level is "..COLORS_Numbers.pc_97_rgb.." or above!",
+			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
+			.."Casting with "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb.." or higher will trigger a self-explosion!",
 		ru = "Зарядите психическую мощь и высвободите её, чтобы нанести высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\n"
 			.."\n"
 			..Dot_green.." Эффективно против врагов в противоосколочной и панцирной броне.\n"
@@ -136,8 +136,8 @@ local psyker_talent_localizations = {
 			..Dot_red.." Cannot "..COLORS_KWords.Stagger_rgb.." Mutants, Ogryns, Monstrosities or enemies with active Void shield.\n"
 			..PHRS.Cant_Crit
 			.."\n"
-			..Dot_red.." {#color(255, 35, 5)}You will explode!{#reset()}\n"
-			.."  Do not use at "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb.." or higher.",
+			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
+			..Dot_red.." Casting with "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb.." or higher will trigger a self-explosion!",
 		ru = "Зарядите свою психическую мощь и высвободите её, чтобы нанести огромный "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\n"
 			..Dot_green.." Это улучшенная версия таланта {talent_old:%s}, наносящая {damage:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru..".\n"
 			.."\n"
@@ -149,8 +149,8 @@ local psyker_talent_localizations = {
 			..Dot_green.." При полном заряде "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов, кроме мутантов, монстров и врагов с активным пустотным щитом.\n"
 			..PHRS.Cant_Crit_ru
 			.."\n"
-			..Dot_red.." {#color(255, 35, 5)}Вы можете взорваться!{#reset()}\n"
-			.."Не используйте если уровень "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше!", -- Разрыв мозга
+			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
+			..Dot_red.." Не используйте при уровне "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше иначе вы взорвётесь!", -- Разрыв мозга
 		-- fr = "Chargez votre pouvoir Psychique et relachez-le pour infliger d'immense "..COLORS_KWords_fr.Damage_rgb_fr.." à un ennemi unique. Efficace contre les ennemies en armure Légère et Carapace. Dégâts plus élevés contre les Maniaques et les Implacables.\n\nCeci est une version améliorée d'{talent_old:%s} infligeant {damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_1_rgb_fr, -- Éclatement cérébrale
 		-- ["zh-tw"] = "凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。\n"
 			-- .."- 基礎傷害：1350。\n"
@@ -233,7 +233,8 @@ local psyker_talent_localizations = {
 			.."\n"
 			..Dot_nc.." Forces a brief Quelling action upon reaching "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb..", removing ~"..COLORS_Numbers.pc_8_5_rgb.." "..COLORS_KWords.Peril_rgb..". If released below "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb..", it pushes enemies back.\n"
 			.."\n"
-			..Dot_red.." {#color(255, 35, 5)}You will explode{#reset()} if you raise your "..COLORS_KWords.Peril_rgb.." to "..COLORS_Numbers.pc_100_rgb.." with a charged attack and use a normal attack simultaneously.",
+			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
+			..Dot_red.." Do not use a Primary attack while channeling a Secondary attack at "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb..", or you will self-explode.",
 		ru = "Вы выпускаете поток цепной биомолнии, которая медленно распространяется между врагами, нанося им низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." "..COLORS_KWords_ru.Electrocuted_rgb_ru.." с течением времени и высокое "..COLORS_KWords_ru.Stagger_rgb_ru..".\n"
 			.."Вторичная заряженная атака наносит повышенный "..COLORS_KWords_ru.Dmg_rgb_ru.." при высвобождении, а также быстрее распространяется.\n"
 			.."\n"
@@ -245,7 +246,8 @@ local psyker_talent_localizations = {
 			..Dot_red.." Наносит низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." панцирной броне.\n"
 			..Dot_red.." Не "..COLORS_KWords_ru.Staggers_e_rgb_ru.." монстров и врагов с активным пустотным щитом.\n"
 			.."\n"
-			..Dot_red.." {#color(255, 35, 5)}Вы можете взорваться{#reset()} если поднимите уровень "..COLORS_KWords_ru.Peril_rgb_ru.." до "..COLORS_Numbers.pc_100_rgb.." с помощью вторичной атаки и одновременно нажмёте основную атаку.", -- Сокрушение
+			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
+			..Dot_red.." Не используйте основную атаку пока держите дополнительную при "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb.." или вы взорвётесь.", -- Сокрушение
 		-- fr = "Déchaînez un torrent de bio-foudre qui se propage lentement entre les ennemis, infligeant de faible "..COLORS_KWords_fr.Damage_rgb_fr.." et "..COLORS_KWords_fr.Electrcuting_rgb_fr.."  sur la durée avec un fort "..COLORS_KWords_fr.Stagger_rgb_fr..".\nL'attaque chargée secondaire inflige plus de "..COLORS_KWords_fr.Damage_rgb_fr.." et le taux de dispersion.\nNe peut pas étourdir les Monstruosités et les ennemis avec bouclier de vide actif. Pénétration d'armure moyenne pour toutes les armures, Pénétration d'armure faible contre les carapaces."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_2_rgb_fr,
 		-- ["zh-tw"] = "釋放一道生物閃電在敵人間跳躍，\n並造成低 "..COLORS_KWords_tw.Damage_rgb_tw.." 並持續 "..COLORS_KWords_tw.Electrocutes_rgb_tw.."，\n附帶強烈 "..COLORS_KWords_tw.Stagger_rgb_tw.."。\n"
 			-- .."- 蓄力可提升"..COLORS_KWords_tw.Damage_rgb_tw.."與傳導範圍。\n"
@@ -332,8 +334,8 @@ local psyker_talent_localizations = {
 			..Dot_red.." Deals very low "..COLORS_KWords.Damage_rgb.." to Carapace and low "..COLORS_KWords.Damage_rgb.." to Unyielding.\n"
 			..Dot_red.." Cannot "..COLORS_KWords.Cleave_rgb.." through Carapace armor by default.\n"
 			.."\n"
-			..Dot_red.." {#color(255, 35, 5)}You will explode!{#reset()}\n"
-			.."Do not use at "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb.." or higher.",
+			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
+			..Dot_red.." Do not use at "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords.Peril_rgb..", or you will self-explode.",
 		ru = "Основная атака:\n"
 			..Dot_nc.." Вы бросаете быстрые самонаводящиеся снаряды, которые отслеживают ближайших врагов в течение "..COLORS_Numbers.n_2_5_rgb.." секунд.\n"
 			..Dot_nc.." Наносит "..COLORS_Numbers.n_225_rgb.." базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." первой цели и стоит "..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
@@ -348,8 +350,8 @@ local psyker_talent_localizations = {
 			..Dot_red.." Наносит очень низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне и низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." по несгибаемым врагам.\n"
 			..Dot_red.." Не "..COLORS_KWords_ru.Cleaving_et_rgb_ru.." врагов в панцирной броне.\n"
 			.."\n"
-			..Dot_red.." {#color(255, 35, 5)}Вы можете взорваться!{#reset()}\n"
-			.."Не используйте при "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." или выше.", -- Нападение
+			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
+			..Dot_red.." Не используйте при "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." иначе вы взорвётесь.", -- Нападение
 		-- fr = "Vous lancez des projectiles rapides et autoguidés formés d'énergie psychique qui suivent le réticule du joueur pendant "..COLORS_Numbers.n_2_5_rgb.." secondes jusqu'à l'ennemi le plus proche. Inflige "..COLORS_Numbers.n_200_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." à la première cible et coûte "..COLORS_Numbers.pc_10_rgb.." de "..COLORS_KWords_fr.Peril_rgb_fr..".\nL'attaque secondaire lance un projectile autoguidé qui vole pendant "..COLORS_Numbers.n_3_rgb.." secondes et touche les ennemis dans un rayon de "..COLORS_Numbers.n_50_rgb.." mètres avec une touche garantie. Inflige "..COLORS_Numbers.n_340_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." et coûte "..COLORS_Numbers.pc_25_rgb.." de "..COLORS_KWords_fr.Peril_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_3_rgb_fr,
 		-- ["zh-tw"] = "投擲高速、自動鎖敵的靈能投擲物。\n"
 			-- .."- 自動追蹤準星附近敵人，持續"..COLORS_Numbers.n_2_5_rgb.."秒。\n"
@@ -1035,10 +1037,10 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ KEYSTONE 1-3 - Warp Battery +]--	01.11.2025
+	--[+ KEYSTONE 1-3 - Warp Battery +]--	10.11.2025
 	["loc_talent_psyker_increased_souls_desc"] = { -- soul_amount: 6
-		en = Dot_green.." You can store up to {soul_amount:%s} Warp Charges.",
-		ru = Dot_green.." Вы можете хранить до {soul_amount:%s} варп-зарядов.", -- Варп-аккумулятор
+		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_2_rgb.." Maximum Warp Charges. Increased from "..COLORS_Numbers.n_4_rgb.." to {soul_amount:%s}.",
+		ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_2_rgb.." к максимуму варп-зарядов. Увеличивается с "..COLORS_Numbers.n_4_rgb.." до {soul_amount:%s} варп-зарядов.", -- Варп-аккумулятор
 		-- fr = "Vous pouvez stocker jusqu'à {soul_amount:%s} charges de Siphon de Warp."..TALENTS_Enh_desc_fr.ED_PSY_Keystone_1_6_rgb_fr,
 		-- ["zh-tw"] = "最多可以儲存 {soul_amount:%s} 個亞空間充能。" .. TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_6_rgb_tw, -- 亞空間電池 -- 能掌握的亞空間充能的最高層數提高至{soul_amount:%s}。
 		-- ["zh-cn"] = "",
@@ -1163,10 +1165,10 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--	01.11.2025
+	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--	10.11.2025
 	["loc_talent_psyker_increase_empower_chain_lighting_chance_description"] = { -- talent_name: Empowered Psionics, proc_chance_before: 7.5%, proc_chance_after: 12.5%
-		en = Dot_green.." Increases the chance to gain {talent_name:%s} on Kill from {proc_chance_before:%s} to {proc_chance_after:%s}.",
-		ru = Dot_green.." С {proc_chance_before:%s} до {proc_chance_after:%s} возрастает шанс получить заряд таланта {talent_name:%s} при убийстве.", -- Биопритяжение
+		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_5_rgb.." chance to gain {talent_name:%s} on Kill. Increased from {proc_chance_before:%s} to {proc_chance_after:%s}.",
+		ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_5_rgb.." к шансу получить заряд таланта {talent_name:%s} при убийстве. Увеличивается с {proc_chance_before:%s} до {proc_chance_after:%s}.", -- Биопритяжение
 		-- fr = "Augmente les chances de gagner {talent_name:%s} lors d'une élimination de {proc_chance_before:%s} à {proc_chance_after:%s}.",
 		-- ["zh-tw"] = "擊殺獲得 {talent_name:%s} 的機率提升。\n"
 			-- .."- 機率由 {proc_chance_before:%s} 提升至 {proc_chance_after:%s}。", -- 生物磁石 -- 擊殺後獲得{talent_name:%s}的幾率從{proc_chance_before:%s}提高至{proc_chance_after:%s}。
@@ -1229,12 +1231,12 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ KEYSTONE 3 - Disrupt Destiny +]--	01.11.2025
+	--[+ KEYSTONE 3 - Disrupt Destiny +]--	07.11.2025
 	["loc_talent_psyker_marked_enemies_passive_updated_desc"] = { -- radius: 40, toughness: 10%, move_speed: +20%, move_speed_duration: 2.5, bonus_duration 4, base_damage: +1%, crit_damage: +2%, weakspot_damage: +2.5%, bonus_stacks: 15 -- m->meters, s->seconds, +colors
 		en = "Every second, Enemies within {radius:%s} meters have a chance of being "..COLORS_KWords.Psy_Mark_rgb..".\n"
 			.."\n"
 			.."On Killing a "..COLORS_KWords.Psy_Mark_rgb.." Enemy:\n"
-			..Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." is replenished over {move_speed_duration:%s} seconds,\n"
+			..Dot_green.." "..COLORS_Numbers.n_10_rgb.." "..COLORS_KWords.Toughness_rgb.." restored per second, up to {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {move_speed_duration:%s} seconds,\n"
 			..Dot_green.." {move_speed:%s} Movement Speed is granted for {move_speed_duration:%s} seconds,\n"
 			..Dot_green.." "..COLORS_Numbers.n_1_rgb.." Stack of "..COLORS_KWords.Precision_rgb.." is added for {bonus_duration} seconds.\n"
 			.."\n"
@@ -1291,10 +1293,10 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ KEYSTONE 3-1 - Perfectionism +]--	01.11.2025
+	--[+ KEYSTONE 3-1 - Perfectionism +]--	10.11.2025
 	["loc_talent_psyker_mark_increased_max_stacks_description"] = { -- stacks_previous: 15, stacks_after: 25, +colors
-		en = Dot_green.." Maximum "..COLORS_KWords.Precision_rgb.." Bonus Stacks are increased from {stacks_previous:%s} to {stacks_after:%s}.",
-		ru = Dot_green.." Максимальное количество зарядов "..COLORS_KWords_ru.Precision_rgb_ru.." увеличено с {stacks_previous:%s} до {stacks_after:%s}.", -- Перфекционизм
+		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_10_rgb.." to Maximum "..COLORS_KWords.Precision_rgb.." Bonus Stacks. Increased from {stacks_previous:%s} to {stacks_after:%s}.",
+		ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_10_rgb.." к максимуму зарядов "..COLORS_KWords_ru.Precision_rgb_ru..". Увеличивается с {stacks_previous:%s} до {stacks_after:%s}.", -- Перфекционизм
 		fr = "Le nombre maximum de charges de cumuls de "..COLORS_KWords_fr.Precision_rgb_fr.." est augmenté de {stacks_previous:%s} à {stacks_after:%s}.",
 		["zh-tw"] = COLORS_KWords_tw.Precision_rgb_tw.."的上限層數由 {stacks_previous:%s} 提升至 {stacks_after:%s}。", -- 完美主義 -- 精準加成可疊加層數從{stacks_previous:%s}增至{stacks_after:%s}。
 		-- ["zh-cn"] = "",
@@ -1326,10 +1328,10 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ KEYSTONE 3-3 - Lingering Influence +]--	01.11.2025
+	--[+ KEYSTONE 3-3 - Lingering Influence +]--	10.11.2025
 	["loc_talent_psyker_mark_increased_duration_description"] = { -- talent_name: Disrupt Destiny, duration_previous: 15, duration_after: 10, s->seconds
-		en = Dot_green.." Increase the duration of {talent_name:%s} from {duration_previous:%s} to {duration_after:%s} seconds.",
-		ru = Dot_green.." С {duration_previous:%s} до {duration_after:%s} секунд увеличено действие таланта {talent_name:%s}.", -- Длительное влияние -- руоф Длящееся влияние
+		en = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_5_rgb.." seconds to the duration of "..COLORS_KWords.Precision_rgb.." Stacks. Increased from {duration_previous:%s} to {duration_after:%s} seconds.",
+		ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_5_rgb.." секунд к длительности зарядов "..COLORS_KWords_ru.Precision_rgb_ru..". Увеличивается с {duration_previous:%s} до {duration_after:%s} секунд.", -- Длительное влияние -- руоф Длящееся влияние
 		fr = "Augmente la durée de {talent_name:%s} de {duration_previous:%s} à {duration_after:%s} secondes.",
 		["zh-tw"] = "{talent_name:%s} 持續時間從 {duration_previous:%s} 秒增加至 {duration_after:%s} 秒。", -- 持久影響 -- {talent_name:%s}的持續時間從{duration_previous:%s}增加至{duration_after:%s}。
 		-- ["zh-cn"] = "",
@@ -1376,16 +1378,16 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 2 - Mettle +]--	01.11.2025
-	["loc_talent_psyker_crits_regen_toughness_speed_description"] = { -- toughness: 5%, movement_speed: +5%, seconds: 4, stacks: 3, s->seconds, +colors
-		en = Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." replenishes over {seconds:%s} seconds on "..COLORS_KWords.Crit_hits_rgb..".\n"
+	--[+ Passive 2 - Mettle +]--	07.11.2025
+	["loc_talent_psyker_crits_regen_toughness_speed_description"] = { -- toughness: 10%, movement_speed: +5%, seconds: 4, stacks: 3, s->seconds, +colors
+		en = Dot_green.." "..COLORS_Numbers.pc_2_5_rgb.." "..COLORS_KWords.Toughness_rgb.." restored per second on "..COLORS_KWords.Crit_hits_rgb..", up to {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {seconds:%s} seconds.\n"
 			..PHRS.Can_be_refr.."\n"
 			.."\n"
 			..Dot_green.." {movement_speed:%s} Movement Speed for {seconds:%s} seconds on "..COLORS_KWords.Crit_hits_rgb..".\n"
 			..Dot_nc.." Stacks {stacks:%s} times.\n"
 			..Dot_green.." Can generate multiple Stacks per "..COLORS_KWords.Crit_Attk_rgb.." when "..COLORS_KWords.Cleaving_rgb..".\n"
 			..PHRS.Can_be_refr,
-		ru = Dot_green.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за {seconds:%s} секунды при "..COLORS_KWords_ru.Crit_hit_rgb_ru..".\n"
+		ru = Dot_green.." "..COLORS_Numbers.pc_2_5_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду при "..COLORS_KWords_ru.Crit_hit_rgb_ru..", вплоть до {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." за {seconds:%s} секунды.\n"
 			..PHRS.Can_be_refr_ru.."\n"
 			.."\n"
 			..Dot_green.." {movement_speed:%s} к скорости движения на {seconds:%s} секунды при "..COLORS_KWords_ru.Crit_hit_rgb_ru..".\n"
@@ -1418,14 +1420,14 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 4 - Warp Expenditure +]--	01.11.2025
+	--[+ Passive 4 - Warp Expenditure +]--	07.11.2025
 	["loc_talent_psyker_toughness_on_melee_description"] = { -- toughness: 15%, duration: 3, instant_toughness: 2.5%, +colors
-		en = Dot_green.." {toughness:%s} "..COLORS_KWords.Toughness_rgb.." restores over {duration:%s} seconds on Melee "..COLORS_KWords.Weakspot_rgb.." Kills.\n"
+		en = Dot_green.." "..COLORS_Numbers.pc_5_rgb.." "..COLORS_KWords.Toughness_rgb.." restored per second on Melee "..COLORS_KWords.Weakspot_rgb.." Kills, up to {toughness:%s} "..COLORS_KWords.Toughness_rgb.." over {duration:%s} seconds.\n"
 			..PHRS.Can_be_refr.."\n"
 			.."\n"
 			..Dot_green.." {instant_toughness:%s} "..COLORS_KWords.Toughness_rgb.." restores instantly on successful Melee Attacks.\n"
 			..Dot_red.." Procs once per Attack regardless of how many enemies have been hit.",
-		ru = Dot_green.." {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за {duration:%s} секунды при убийстве в "..COLORS_KWords_ru.Weakspothit_rgb_ru.." в ближнем бою.\n"
+		ru = Dot_green.." "..COLORS_Numbers.pc_5_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается в секунду при убийствах в "..COLORS_KWords_ru.Weakspot_rgb_ru.." в ближнем бою, вплоть до {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." за {duration:%s} секунды.\n"
 			..PHRS.Can_be_refr_ru.."\n"
 			.."\n"
 			..Dot_green.." {instant_toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается моментально при успешной атаке в ближнем бою.\n"
@@ -1560,15 +1562,15 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 10 - Souldrinker +]--	01.11.2025
+	--[+ Passive 10 - Souldrinker +]--	07.11.2025
 	["loc_talent_psyker_killing_enemy_with_warpfire_boosts_duration_desc"] = { -- toughness: 15%, crit_chance: 5%, duration: 5, s->seconds, +colors
-		en = "Killing an enemy with "..COLORS_KWords.Soulblaze_rgb.." grants for {duration:%s} seconds:\n"
+		en = "Killing an enemy with "..COLORS_KWords.Soulblaze_rgb.." grants the following for {duration:%s} seconds:\n"
 			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{crit_chance:%s} "..COLORS_KWords.Crit_hit_chance_rgb..",\n"
-			..Dot_green.." "..COLORS_Numbers.pc_3_rgb.." "..COLORS_KWords.Toughness_rgb.." per second, up to {toughness:%s} "..COLORS_KWords.Toughness_rgb..".\n"
+			..Dot_green.." "..COLORS_Numbers.pc_3_rgb.." "..COLORS_KWords.Toughness_rgb.." per second, up to {toughness:%s} "..COLORS_KWords.Toughness_rgb.." total.\n"
 			.."\n"
 			..Dot_green.." Can be refreshed during active duration.\n"
 			..Dot_green.." This Talent's effects have no range limit and can be procced at any distance to the dying enemy.",
-		ru = "Убийство врага с помощью эффекта "..COLORS_KWords_ru.Soulblaze_rgb_ru.." даёт на {duration:%s} секунд:\n"
+		ru = "Убийство врага с помощью "..COLORS_KWords_ru.Soulblaze_rgb_ru.." даёт на {duration:%s} секунд:\n"
 			..Dot_green.." "..COLORS_Numbers.n_plus_rgb.."{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru..",\n"
 			..Dot_green.." "..COLORS_Numbers.pc_3_rgb.." восстановления "..COLORS_KWords_ru.Toughness_rgb_ru.." в секунду, вплоть до {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..".\n"
 			.."\n"
@@ -1815,9 +1817,9 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ Passive 21 - Just a Dream +]--	03.11.2025
+	--[+ Passive 21 - Just a Dream +]--	07.11.2025
 	["loc_talent_psyker_damage_to_peril_conversion_desc"] = { -- percent: 25%, +colors
-		en = Dot_green.." {percent:%s} of "..COLORS_KWords.Damage_rgb.." Taken is converted into "..COLORS_KWords.Peril_rgb.." while below "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb..".",
+		en = Dot_green.." {percent:%s} of "..COLORS_KWords.Damage_rgb.." Taken is converted into "..COLORS_KWords.Peril_rgb..", while below "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb..".",
 		ru = Dot_green.." {percent:%s} получаемого "..COLORS_KWords_ru.Dmg_a_rgb_ru.." преобразуется в "..COLORS_KWords_ru.Perl_rgb_ru..", пока ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..".", -- Лишь сон
 		-- fr = "{min_damage:%s} à {max_damage:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." en fonction de votre "..COLORS_KWords_fr.Peril_rgb_fr.." actuel."..TALENTS_Enh_desc_fr.ED_PSY_Passive_20_rgb_fr,
 		-- ["zh-tw"] = "",

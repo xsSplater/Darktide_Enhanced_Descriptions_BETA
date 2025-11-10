@@ -29,6 +29,7 @@ local CONFIG = {
 -- KEYWORDS
 	bleed_text_colour = {
 		Bleed = "Bleed",
+		Bleeds = "Bleeds",
 		Bleeding = "Bleeding",
 	},
 	brittleness_text_colour = {
@@ -163,6 +164,7 @@ local CONFIG = {
 	},
 	luckyb_text_colour = {
 		Lucky_bullet = "Lucky Bullet",
+		Tghnss_gold = "Toughness",
 	},
 	trample_text_colour = {
 		Trample = "Trample",
@@ -220,6 +222,7 @@ local CONFIG = {
 		Enfeeble = "Enfeeble",
 		Frag_gren = "Frag Grenade",
 		Fragm_gren = "Fragmentation Grenade",
+		Rangd_stnc = "Ranged Stance",
 		Scriers_gaze = "Scrier's Gaze",
 		Smite = "Smite",
 		Stun_gren = "Stun Grenade",

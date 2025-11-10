@@ -11,7 +11,7 @@ end
 --[+ Getting rid of repeating parts: function(locale, value) return ... end +]--
 local function loc_text(text)
 	return function(locale, value) 
-		return text 
+		return text
 	end
 end
 
@@ -27,12 +27,19 @@ local localization_templates = {
 
 -- Make changes to this file only if you need them!
 
+
+-- FOR TESTS ONLY!!!
+-- create_template("weap_testum00", {"loc_talent_veteran_crits_rend_alt_description"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
+-- create_template("weap_testum01", {"loc_talent_adamant_pinning_dog_elite_damage_description"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
+-- FOR TESTS ONLY!!!
+
+
 --[+ ++ВРАГИ - 敵人 ++ +]--
-	--[+ Орда +]--
+	--[+ ОРДА +]--
 		--[+ Groaner - Ворчун +]--
-		create_template("enemies_chaos_groaner_ext_ru",
-			{"loc_breed_display_name_chaos_newly_infected"}, {"ru"},
-				loc_text("Ворчун")),
+		-- create_template("enemies_chaos_groaner_ext_ru",
+			-- {"loc_breed_display_name_chaos_newly_infected"}, {"ru"},
+				-- loc_text("Ворчун")),
 		create_template("enemies_chaos_groaner_ext_ru",
 			{"loc_breed_display_name_chaos_newly_infected"}, {"ru"},
 				loc_text("Ворчун")),
@@ -59,8 +66,7 @@ local localization_templates = {
 				loc_text("Чумной ходок мутировавший")),
 		--[+ Traditional Chinese  +]--
 
-	--[+ Специалисты - 專家 +]--
-
+	--[+ СПЕЦИАЛИСТЫ - 專家 +]--
 		--[+ Poxburster - Чумной взрывник +]--
 		--[+ Russian +]	--
 		create_template("enemies_chaos_poxwalker_bomber_ext_ru",
@@ -121,7 +127,7 @@ local localization_templates = {
 			{"loc_breed_display_name_renegade_netgunner"}, {"zh-tw"},
 				loc_text("血痂陷阱兵")),
 
-	--[+ Элита - 精英 +]--
+	--[+ ЭЛИТА - 精英 +]--
 		--[+ Dreg Shotgunner - Дрег-штурмовик +]--
 		--[+ Russian +]	--
 		create_template("enemies_cultist_shocktrooper_ext_ru",

@@ -1230,13 +1230,13 @@ local zealot_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	-- },
-	--[+ Passive 28 - Ambuscade +]--
-	-- ["loc_talent_zealot_increased_flanking_damage_description"] = { -- damage:+20%., +colors
-		-- en = "{damage:%s} "..COLORS_KWords.Damage_rgb.." to Ranged Backstab Attacks.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_28_rgb,
-		-- ru = "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." для выстрелов в спину."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_28_rgb_ru, -- Засада
-		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." sur les attaques de dos à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_28_rgb_fr,
-		-- ["zh-tw"] = "",
+	--[+ Passive 28 - Ambuscade +]--	10.11.2025
+	-- ! Double: Veteran - Passive 16 - Covert Operative !
+	["loc_talent_zealot_increased_flanking_damage_description"] = { -- damage: +30%, +colors
+		en = Dot_green.." {damage:%s} "..COLORS_KWords.Damage_rgb.." to Ranged Backstab Attacks.",
+		ru = Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." дальнобойных атак при попаданиях врагам в спину.",
+		-- fr = "",
+		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
 		-- de = "",
 		-- it = "",
@@ -1245,7 +1245,7 @@ local zealot_talent_localizations = {
 		-- pl = "",
 		-- ["pt-br"] = "",
 		-- es = "",
-	-- },
+	},
 	--[+ Passive 29 - Punishment +]--
 	-- ["loc_talent_zealot_multi_hits_increase_impact_desc"] = { -- min_hits: 3, impact_modifier: +30%, time: 5, max_stacks: 5, s->seconds, +colors
 		-- en = "Melee Attacks that Hit at least {min_hits:%s} Enemies grant {impact_modifier:%s} "..COLORS_KWords.Impact_rgb.." strength for {time:%s} seconds. Stacks {max_stacks:%s} times. At max Stacks gain Uninterruptible.\n"

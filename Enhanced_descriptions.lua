@@ -368,6 +368,5 @@ mod:command("desc_stats", "Show Enhanced Descriptions statistics", function()
 	mod:echo(message)
 end)
 
-
 -- INITIALIZATION
-mod:info("Enhanced Descriptions mod loaded with improved architecture")
+-- mod:info("Enhanced Descriptions mod loaded")

@@ -1004,12 +1004,12 @@ local localizations = {
 	},
 
 	--[+Difficulties+]--
-	sedition_colour = {
-		en = "Sedition",
-		fr = "",
-		ru = "Мятеж",
-		["zh-tw"] = "暴動",
-		["zh-cn"] = "煽动",
+	-- sedition_colour = {
+		-- en = "Sedition",
+		-- fr = "",
+		-- ru = "Мятеж",
+		-- ["zh-tw"] = "暴動",
+		-- ["zh-cn"] = "煽动",
 		-- de = "",
 		-- it = "",
 		-- ja = "",
@@ -1017,7 +1017,7 @@ local localizations = {
 		-- pl = "",
 		-- ["pt-BR"] = "",
 		-- es = "",
-	},
+	-- },
 	uprising_colour = {
 		en = "Uprising",
 		-- fr = "",

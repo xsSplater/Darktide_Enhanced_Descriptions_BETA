@@ -21,8 +21,8 @@ local function create_template(id, loc_keys, locales, handle_func)
 end
 
 local function loc_text(text)
-	return function(locale, value) 
-		return text 
+	return function(locale, value)
+		return text
 	end
 end
 

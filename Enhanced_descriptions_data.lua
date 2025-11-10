@@ -70,12 +70,12 @@ local COLOR_SETTINGS = {
 	{ id = "warning", default = "item_rarity_6" },
 
 	-- Difficulty
-	{ id = "sedition", default = "ui_difficulty_1" },
-	{ id = "uprising", default = "ui_difficulty_2" },
-	{ id = "malice", default = "ui_difficulty_3" },
-	{ id = "heresy", default = "ui_difficulty_4" },
-	{ id = "damnation", default = "ui_difficulty_5" },
-	{ id = "auric", default = "gold" },
+	-- { id = "sedition", default = "ui_green_light" },
+	{ id = "uprising", default = "ui_difficulty_1" },
+	{ id = "malice", default = "ui_difficulty_2" },
+	{ id = "heresy", default = "ui_difficulty_3" },
+	{ id = "damnation", default = "ui_difficulty_4" },
+	{ id = "auric", default = "ui_difficulty_5" },
 }
 
 -- UTILITY FUNCTIONS

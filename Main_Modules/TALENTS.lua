@@ -485,11 +485,15 @@ local talent_localizations = {
 	},
 	--[+ Reload Boost Low +]-- Ogryn 1	01.11.2025
 	["loc_talent_reload_speed_low_desc"] = { -- reload_speed: +5%
-		en = Dot_green.." {reload_speed:%s} Reload Speed.",
-		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки.", -- Повышение скорости перезарядки малое
-		fr = "{reload_speed:%s} de vitesse de rechargement.",
-		["zh-tw"] = "{reload_speed:%s} 換彈速度增幅。", -- 換彈速度增幅
-		["zh-cn"] = "{reload_speed:%s} 装弹速度。", -- 装弹强化
+		en = Dot_green.." {reload_speed:%s} Reload Speed.\n"
+			.."\n"
+			..Dot_nc.." This also increases the speed of the loading special action of Combat Shotguns.",
+		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки.\n"
+			.."\n"
+			..Dot_nc.." Этот талант также увеличивает скорость перезарядки специальных патронов для боевых дробовиков.", -- Повышение скорости перезарядки малое
+		-- fr = "{reload_speed:%s} de vitesse de rechargement.",
+		-- ["zh-tw"] = "{reload_speed:%s} 換彈速度增幅。", -- 換彈速度增幅
+		-- ["zh-cn"] = "{reload_speed:%s} 装弹速度。", -- 装弹强化
 		-- de = "",
 		-- it = "",
 		-- ja = "",
@@ -500,11 +504,15 @@ local talent_localizations = {
 	},
 	--[+ Reload Boost Medium +]-- Veteran 1	01.11.2025
 	["loc_talent_reload_speed_medium_desc"] = { -- reload_speed: +10%
-		en = Dot_green.." {reload_speed:%s} Reload Speed.",
-		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки.", -- Повышение скорости перезарядки среднее -- руоф Усиление перезарядки
-		fr = "{reload_speed:%s} de vitesse de rechargement.",
-		["zh-tw"] = "{reload_speed:%s} 換彈速度增幅。", -- 換彈速度增幅
-		["zh-cn"] = "{reload_speed:%s} 装弹速度。", -- 装弹强化
+		en = Dot_green.." {reload_speed:%s} Reload Speed.\n"
+			.."\n"
+			..Dot_nc.." This also increases the speed of the loading special action of Combat Shotguns.",
+		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки.\n"
+			.."\n"
+			..Dot_nc.." Этот талант также увеличивает скорость перезарядки специальных патронов для боевых дробовиков.", -- Повышение скорости перезарядки среднее -- руоф Усиление перезарядки
+		-- fr = "{reload_speed:%s} de vitesse de rechargement.",
+		-- ["zh-tw"] = "{reload_speed:%s} 換彈速度增幅。", -- 換彈速度增幅
+		-- ["zh-cn"] = "{reload_speed:%s} 装弹速度。", -- 装弹强化
 		-- de = "",
 		-- it = "",
 		-- ja = "",
@@ -521,9 +529,9 @@ local talent_localizations = {
 		ru = Dot_green.." {rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." брони.\n"
 				.."\n"
 				..NTS.Rend_note_rgb_ru, -- Повышение пробивания брони малое -- руоф Усиление «Терзания»
-		fr = "{rending:%s} de "..COLORS_KWords_fr.Rending_rgb_fr..".",
-		["zh-tw"] = "{rending:%s} "..COLORS_KWords_tw.Rending_rgb_tw.."。", -- 撕裂增幅
-		["zh-cn"] = "{rending:%s} "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."。", -- 撕裂强化
+		-- fr = "{rending:%s} de "..COLORS_KWords_fr.Rending_rgb_fr..".",
+		-- ["zh-tw"] = "{rending:%s} "..COLORS_KWords_tw.Rending_rgb_tw.."。", -- 撕裂增幅
+		-- ["zh-cn"] = "{rending:%s} "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."。", -- 撕裂强化
 		-- de = "",
 		-- it = "",
 		-- ja = "",
