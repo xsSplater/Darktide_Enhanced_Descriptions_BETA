@@ -100,6 +100,7 @@ local psyker_talent_localizations = {
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
 			.."Casting with "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb.." or higher will trigger a self-explosion!",
+		--[+ БЛИЦ 0 - Взрыв мозга +]-- руоф Взрыв разума
 		ru = "Зарядите психическую мощь и высвободите её, чтобы нанести высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\n"
 			.."\n"
 			..Dot_green.." Эффективно против врагов в противоосколочной и панцирной броне.\n"
@@ -108,7 +109,7 @@ local psyker_talent_localizations = {
 			..PHRS.Cant_Crit_ru
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Вы можете взорваться!{#reset()}\n"
-			.."Не используйте если уровень "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше!", -- Взрыв мозга -- руоф Взрыв разума
+			.."Не используйте если уровень "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше!",
 		-- fr = "Chargez votre pouvoir Psychique et relachez-le pour infliger de gros "..COLORS_KWords_fr.Damage_rgb_fr.." à un ennemi unique. Efficace contre les ennemies en armure Légère et Carapace. Dégâts plus élevés contre Maniaques et Implacables."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_0_rgb_fr, -- Explosion cérébrale
 		-- ["zh-tw"] = "凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_rgb_tw.." 。\n"
 			-- .."- 對防彈、甲殼敵人效果不佳。\n"
@@ -138,6 +139,7 @@ local psyker_talent_localizations = {
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
 			..Dot_red.." Casting with "..COLORS_Numbers.pc_97_rgb.." "..COLORS_KWords.Peril_rgb.." or higher will trigger a self-explosion!",
+		--[+ БЛИЦ 1 - Разрыв мозга +]--
 		ru = "Зарядите свою психическую мощь и высвободите её, чтобы нанести огромный "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\n"
 			..Dot_green.." Это улучшенная версия таланта {talent_old:%s}, наносящая {damage:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru..".\n"
 			.."\n"
@@ -150,7 +152,7 @@ local psyker_talent_localizations = {
 			..PHRS.Cant_Crit_ru
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
-			..Dot_red.." Не используйте при уровне "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше иначе вы взорвётесь!", -- Разрыв мозга
+			..Dot_red.." Не используйте при уровне "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше иначе вы взорвётесь!",
 		-- fr = "Chargez votre pouvoir Psychique et relachez-le pour infliger d'immense "..COLORS_KWords_fr.Damage_rgb_fr.." à un ennemi unique. Efficace contre les ennemies en armure Légère et Carapace. Dégâts plus élevés contre les Maniaques et les Implacables.\n\nCeci est une version améliorée d'{talent_old:%s} infligeant {damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_1_rgb_fr, -- Éclatement cérébrale
 		-- ["zh-tw"] = "凝聚靈能，對單一敵人造成 "..COLORS_KWords_tw.Dmg_h_rgb_tw.." 。\n"
 			-- .."- 基礎傷害：1350。\n"
@@ -176,11 +178,12 @@ local psyker_talent_localizations = {
 			..Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{warp_charge_cost:%s} "..COLORS_KWords.Peril_rgb.." generation.\n"
 			.."\n"
 			..Dot_nc.." Affects both Primary and Secondary attacks.",
+		--[+ БЛИЦ 1-1 - Кинетический резонанс +]--
 		ru = "При использовании вашей "..COLORS_KWords_ru.Combat_ability_rgb_ru.." усиливается ваш {talent_name:%s} на {duration:%s} секунд:\n"
 			..Dot_green.." {smite_attack_speed:%s} к скорости заряжания,\n"
 			..Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{warp_charge_cost:%s} к набору "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
 			.."\n"
-			..Dot_nc.." Влияет как на основную, так и на дополнительную атаку.", -- Кинетический резонанс
+			..Dot_nc.." Влияет как на основную, так и на дополнительную атаку.",
 		-- fr = "Lorsque vous utilisez votre "..COLORS_KWords_fr.Combat_ability_rgb_fr..", {talent_name:%s} charge {smite_attack_speed:%s} plus rapidement et génère {warp_charge_cost:%s} de "..COLORS_KWords_fr.Peril_rgb_fr.." en moins, pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_1_1_rgb_fr,
 		-- ["zh-tw"] = "", -- 動能共鳴 -- 使用戰鬥技能會加快{talent_name:%s}充能{smite_attack_speed:%s}且降低反噬生成{warp_charge_cost:%s}，持續{duration:%s}秒。
 		-- ["zh-cn"] = "使用 "..COLORS_KWords_tw.Combat_ability_rgb_tw.." 後 {smite_attack_speed:%s} 增加閃擊充能速度 {talent_name:%s}。\n" 
@@ -242,8 +245,8 @@ local psyker_talent_localizations = {
 			..Dot_nc.." Бьёт только в зону туловища.\n"
 			..Dot_nc.." При "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." запускается автоматическое подавление ~"..COLORS_Numbers.pc_8_5_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru..". Если отпустить атаку при уровне "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_100_rgb..", врагов отбросит назад.\n"
 			..PHRS.Cant_Crit_ru
-			..Dot_red.." Наносит средний "..COLORS_KWords_ru.Dmg_rgb_ru.." броне.\n"
-			..Dot_red.." Наносит низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." панцирной броне.\n"
+			..Dot_red.." Средний "..COLORS_KWords_ru.Dmg_rgb_ru.." по противоосколочной броне.\n"
+			..Dot_red.." Слабый "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.\n"
 			..Dot_red.." Не "..COLORS_KWords_ru.Staggers_e_rgb_ru.." монстров и врагов с активным пустотным щитом.\n"
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
@@ -615,15 +618,13 @@ local psyker_talent_localizations = {
 			.."_______________________________\n"
 			.."Заряды:              "..COLORS_Numbers.n_1_rgb.."|    "..COLORS_Numbers.n_2_rgb.."|    "..COLORS_Numbers.n_3_rgb.."|    "..COLORS_Numbers.n_4_rgb.."|     "..COLORS_Numbers.n_5_rgb.."|    "..COLORS_Numbers.n_6_rgb.."\n"
 			..COLORS_KWords_ru.Perl0_rgb_ru.." ("..COLORS_Numbers.pc_rgb.."):  "..COLORS_Numbers.n_0_rgb.."|"..COLORS_Numbers.n__17_rgb.."|"..COLORS_Numbers.n__33_rgb.."|"..COLORS_Numbers.n__50_rgb.."|"..COLORS_Numbers.n__67_rgb.."|"..COLORS_Numbers.n__83_rgb.."\n"
-			-- .."Заряды:        1|     2|     3|      4|     5|     6\n"
-			-- ..COLORS_KWords_ru.Perl0_rgb_ru..":  0|  ~17| ~33| ~50| ~67| ~83\n"
 			.."_______________________________\n"
 			..Dot_nc.." Срабатывает раз в "..COLORS_Numbers.n_075_rgb.." секунды.\n"
 			..Dot_nc.." Длится "..COLORS_Numbers.n_8_rgb.." секунд.\n"
 			.."\n"
 			..PHRS.Refr_dur_stappl_ru.."\n"
-			..Dot_green.." Очень высокие модификаторы "..COLORS_KWords_ru.Dmg_a_rgb_ru.." по броне.\n"
-			..Dot_red.." Очень низкий модификатор "..COLORS_KWords_ru.Dmg_a_rgb_ru.." по панцирной броне.", -- Ползучее пламя -- руоф Раздувающееся пламя
+			..Dot_green.." Большой "..COLORS_KWords_ru.Dmg_rgb_ru.." по противоосколочной броне.\n"
+			..Dot_red.." Слабый "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.", -- Ползучее пламя -- руоф Раздувающееся пламя
 		-- fr = "{talent_name:%s} applique {min_stacks:%s}{warpfire_stacks:%s} cumuls d'"..COLORS_KWords_fr.Soulblaze_rgb_fr.." aux cibles touchées en fonction de votre "..COLORS_KWords_fr.Peril_rgb_fr.." actuel."..TALENTS_Enh_desc_fr.ED_PSY_Ability_1_3_rgb_fr,
 		-- ["zh-tw"] = "{talent_name:%s} 依據當前的"..COLORS_KWords_tw.Peril_rgb_tw.."，\n對命中的目標施加 "..COLORS_Numbers.n_1_rgb.." 至 {warpfire_stacks:%s} 層"..COLORS_KWords_tw.Soulblaze_rgb_tw.."。"..TALENTS_Enh_desc_tw.ED_PSY_Ability_1_3_rgb_tw, -- 蔓延火焰
 		-- ["zh-cn"] = "",
@@ -724,7 +725,7 @@ local psyker_talent_localizations = {
 			..Dot_green.." Наносит "..COLORS_Numbers.n_250_rgb.." базового "..COLORS_KWords_ru.Dmg_a_rgb_ru..".\n"
 			..Dot_green.." Может "..COLORS_KWords_ru.Staggernt_rgb_ru.." всех врагов исключая монстров и врагов с активным пустотным щитом.\n"
 			..Dot_nc.." "..COLORS_KWords_ru.Staggerr_rgb_ru.." всегда применяется к специалистам и монстрам при контакте.\n"
-			..Dot_red.." Очень низкие модификаторы "..COLORS_KWords_ru.Dmg_a_rgb_ru.." по броне.\n"
+			..Dot_red.." Слабый "..COLORS_KWords_ru.Dmg_rgb_ru.." по броне.\n"
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}СЛОМАНО{#reset()}\n"
 			.."Специалисты и монстры наносят щиту при контакте только "..COLORS_Numbers.n_1_rgb.." "..COLORS_KWords_ru.Dmg_a_rgb_ru.." вместо задуманных "..COLORS_Numbers.n_8_rgb..".", -- Порог ослабления
@@ -1459,8 +1460,8 @@ local psyker_talent_localizations = {
 			..Dot_nc.." Срабатывает каждые "..COLORS_Numbers.n_075_rgb.." секунды.\n"
 			..PHRS.Refr_dur_stappl_ru.."\n"
 			..Dot_green.." Может сработать при убийстве элитного врага или специалиста с помощью "..COLORS_KWords_ru.Soulblaze_rgb_ru..", "..COLORS_KWords_ru.Burn_rgb_ru.." или "..COLORS_KWords_ru.Bleed_rgb_ru..".\n"
-			..Dot_green.." Очень высокие модификаторы "..COLORS_KWords_ru.Dmg_a_rgb_ru.." по броне.\n"
-			..Dot_red.." Очень низкий модификатор "..COLORS_KWords_ru.Dmg_a_rgb_ru.." по панцирной броне.", -- Опасное возгорание -- руоф Пагубное воспламенение
+			..Dot_green.." Большой "..COLORS_KWords_ru.Dmg_rgb_ru.." по противоосколочной броне.\n"
+			..Dot_red.." Слабый "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.", -- Опасное возгорание -- руоф Пагубное воспламенение
 		-- fr = "Tuer un ennemi d'élite ou un spécialiste applique {stacks:%s} Stacks d'"..COLORS_KWords_fr.Soulblaze_rgb_fr.." aux ennemis à proximité, infligeant des "..COLORS_KWords_fr.Damage_rgb_fr.." sur la durée."..TALENTS_Enh_desc_fr.ED_PSY_Passive_5_rgb_fr,
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",

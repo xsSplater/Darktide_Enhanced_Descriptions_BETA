@@ -91,7 +91,7 @@ local veteran_talent_localizations = {
 
 --[+ ++VETERAN - ВЕТЕРАН++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
-	--[+ BLITZ 0 - Frag Grenade +]--	09.11.2025
+	--[+ BLITZ 0 - Frag Grenade +]--	11.11.2025
 	["loc_ability_frag_grenade_description"] = { -- +colors
 		en = COLORS_KWords.Fragm_gren_rgb.." that explodes after "..COLORS_Numbers.n_1_7_rgb.." seconds.\n"
 			.."\n"
@@ -100,7 +100,13 @@ local veteran_talent_localizations = {
 			..Dot_nc.." Max explosion radius: "..COLORS_Numbers.n_10_rgb.." meters.\n"
 			..Dot_nc.." Average armor "..COLORS_KWords.Damage_rgb.." modifiers across the board.\n"
 			..Dot_red.." Very low armor "..COLORS_KWords.Damage_rgb.." modifier against Carapace.",
-		-- ru = "Вы бросаете "..COLORS_KWords_ru.Fragm_gren_rgb_ru..", которая взрывается после "..COLORS_Numbers.n_1_7_rgb.." секунды."..TALENTS_Enh_desc2_ru.ED_VET_Blitz_0_rgb_ru, -- Фраг-граната
+		ru = "Вы бросаете "..COLORS_KWords_ru.Fragmu_grenu_rgb_ru..", которая взрывается через "..COLORS_Numbers.n_1_7_rgb.." секунд.\n"
+			.."\n"
+			..Dot_green.." Базовый "..COLORS_KWords_ru.Dmg_rgb_ru.." в эпицентре: "..COLORS_Numbers.n_500_rgb..".\n"
+			..Dot_green.." Сильно "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов, включая монстров.\n"
+			..Dot_nc.." Максимальный радиус взрыва: "..COLORS_Numbers.n_10_rgb.." метров.\n"
+			..Dot_nc.." Средний "..COLORS_KWords_ru.Dmg_rgb_ru.." по противоосколочной броне.\n"
+			..Dot_red.." Слабый "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.", -- Фраг-граната
 		-- fr = "Lancez une "..COLORS_KWords_fr.Fragm_gren_rgb_fr.." qui explose après "..COLORS_Numbers.n_1_7_rgb.." secondes."..TALENTS_Enh_desc2_fr.ED_VET_Blitz_0_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆 "..COLORS_KWords_tw.Fragm_gren_rgb_tw.." ，在 "..COLORS_Numbers.n_1_7_rgb..COLORS_Numbers.n_second_rgb.." 後爆炸。\n" ..TALENTS_Enh_desc2_tw.ED_VET_Blitz_0_rgb_tw, -- 破片手雷 --破片手雷，在引信短暫燃燒後爆炸。
 		-- ["zh-cn"] = "",

@@ -237,6 +237,7 @@ local CONFIG = {
 		Stun_gren = "Оглушающая граната",
 		Frag_gren = "Фраг-гранату",
 		Fragm_gren = "Осколочная граната",
+		Fragmu_grenu = "Осколочную гранату",
 		Electro_mine = "Вольтаическую шоковую мину",
 		Enfeeble = "Ослабление",
 		BreakZLined = "Прорыв вражеского строя",

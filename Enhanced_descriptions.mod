@@ -8,5 +8,14 @@ return {
 			mod_localization = "Enhanced_descriptions/Enhanced_descriptions_localization",
 		})
 	end,
+	-- require = {
+		-- "",
+	-- },
+	-- load_before = {
+		-- "",
+	-- },
+	-- load_after = {
+		-- "",
+	-- },
 	packages = {},
 }
