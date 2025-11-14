@@ -31,6 +31,7 @@ local CONFIG = {
 		Cleavaetsa = "рассекается",
 		Cleaving_r = "прострел",
 		Cleaving_e = "простреле",
+		Cleaving_ii = "простреливании",
 		Cleaving_u = "прострелу",
 		Cleaving_et = "простреливает",
 		Cleaving_etsa = "простреливается",
@@ -48,6 +49,7 @@ local CONFIG = {
 		Corruption = "порче",
 		Corruption_i = "порчи",
 		Corruption_a = "порча",
+		Corruption_u = "порчу",
 		Corruptdmg = "урон от порчи",
 	},
 	crit_text_colour = {
@@ -55,19 +57,23 @@ local CONFIG = {
 		Crt_chance = "шанс критического выстрела",
 		Crt_u_chance = "шансу критического выстрела",
 		Crit_chance = "шансу критического удара",
+
+		CritH = "Критические удары",
 		Crit_hit = "критическом ударе",
 		Crithit = "критический удар",
 		Crit_hits = "критическими ударами",
 		Crit0 = "критические удары",
-		CritH = "Критические удары",
 		Crit_hit_udom = "критическим ударом",
+
 		Crit_dmg_r = "критический урон",
 		Crit_dmg_u = "критическому урону",
+		Crit_hit_color = "урону критического удара",
+
+		Crit_shots = "Критические выстрелы",
 		Crit_chance_r = "критическом выстреле",
 		Crit_chance_l = "критический выстрел",
 		Crit_hit_om = "критическим выстрелом",
 		Crit_hit_ogo = "критического выстрела",
-		Crit_hit_color = "урону критического удара",
 		Crit_shot_color = "урону критического выстрела",
 	},
 	damage_text_colour = {
@@ -140,8 +146,10 @@ local CONFIG = {
 		Stunss = "Ошеломляющие",
 		Stunssx = "Ошеломлённые",
 		Staggerr = "Ошеломление",
+		Stagger_et = "Ошеломляет",
 	},
 	stamina_text_colour = {
+		Stamin = "выносливость",
 		Stamina = "выносливости",
 	},
 	toughness_text_colour = {
@@ -204,6 +212,8 @@ local CONFIG = {
 	-- Ветеран
 	class_veteran_text_colour = {
 		cls_vet = "Ветеран",
+		cls_veta = "Ветерана",
+		cls_vetu = "Ветерану",
 		cls_vet2 = "Ветераном",
 	},
 	focus_text_colour = {
@@ -212,6 +222,7 @@ local CONFIG = {
 	},
 	focust_text_colour = {
 		Focus_Target = "Важной цели",
+		Focus_Targt = "Важная цель",
 		Markedenemy = "Отмеченного врага",
 	},
 	meleespec_text_colour = {
@@ -229,19 +240,20 @@ local CONFIG = {
 	},
 
 -- ТАЛАНТЫ
-	talents_text_colour = { -- жёлтый
+	talents_text_colour = { -- ЖЁЛТЫЙ цвет
 		Assail = "Нападение",
 		Arbites_gren = "Гранату арбитрес",
 		Brain_rupture = "Разрыв мозга",
-		Scriers_gaze = "Взор провидца",
-		Stun_gren = "Оглушающая граната",
+		BreakZLined = "Прорыв вражеского строя",
+		BreakZLine = "Прорыва вражеского строя",
+		Electro_mine = "Вольтаическую шоковую мину",
+		Enfeeble = "Ослабление",
 		Frag_gren = "Фраг-гранату",
 		Fragm_gren = "Осколочная граната",
 		Fragmu_grenu = "Осколочную гранату",
-		Electro_mine = "Вольтаическую шоковую мину",
-		Enfeeble = "Ослабление",
-		BreakZLined = "Прорыв вражеского строя",
-		BreakZLine = "Прорыва вражеского строя",
+		Rangd_stnc = "Стойку дальнего боя",
+		Scriers_gaze = "Взор провидца",
+		Stun_gren = "Оглушающая граната",
 
 	-- Искупления
 		Prologue_p = "Пролог",
@@ -252,7 +264,7 @@ local CONFIG = {
 	},
 
 -- ИСКУПЛЕНИЯ
-	talents_penances_text_colour = { -- зелёный
+	talents_penances_text_colour = { -- ЗЕЛЁНЫЙ цвет
 	-- Псайкер
 		bburst = "Взрыва мозга",
 		bburst0 = "Взрыв мозга",

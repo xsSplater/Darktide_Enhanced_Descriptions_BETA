@@ -89,12 +89,25 @@ local arbites_talent_localizations = {
 
 --[+ ++ARBITES - АРБИТЕС++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
-	--[+ BLITZ 0 - Arbites Grenade +]--
+	--[+ BLITZ 0 - Arbites Grenade +]--	14.11.2025
 	["loc_talent_ability_adamant_grenade_description"] = { -- charges: 4, +colors
 		en = "Throw an "..COLORS_KWords.Arbites_gren_rgb.." that explodes after a short delay.\n"
-			..Dot_nc.." {charges:%s} Max Grenades.",
+			..Dot_nc.." {charges:%s} Max Grenades.\n"
+			.."\n"
+			..Dot_green.." Base "..COLORS_KWords.Damage_rgb.." epicenter: "..COLORS_Numbers.n_1500_rgb..".\n"
+			..Dot_green.." "..COLORS_KWords.Staggers_rgb.." all enemies except Mutants and enemies with an active Void shield.\n"
+			..Dot_nc.." Max explosion radius: "..COLORS_Numbers.n_10_rgb.." meters.\n"
+			..Dot_nc.." Above average armor "..COLORS_KWords.Damage_rgb.." modifiers across the board.\n"
+			..Dot_red.." Very low armor "..COLORS_KWords.Damage_rgb.." modifier against Carapace.",
+		--[+ БЛИЦ 0 - Граната арбитрес +]-- руоф Граната Арбитрес
 		ru = "Вы бросаете "..COLORS_KWords_ru.Arbites_gren_rgb_ru..", которая взрывается после короткой задержки.\n"
-			..Dot_nc.." Максимум {charges:%s} гранаты.", -- Граната арбитрес -- руоф Граната Арбитрес
+			..Dot_nc.." Максимум {charges:%s} гранаты.\n"
+			.."\n"
+			..Dot_green.." Базовый "..COLORS_KWords_ru.Dmg_rgb_ru.." в эпицентре: "..COLORS_Numbers.n_1500_rgb..".\n"
+			..Dot_green.." "..COLORS_KWords_ru.Stagger_et_rgb_ru.." всех врагов кроме мутантов и врагов с активным пустотным щитом.\n"
+			..Dot_nc.." Максимальный радиус взрыва: "..COLORS_Numbers.n_10_rgb.." метров.\n"
+			..Dot_nc.." Средний "..COLORS_KWords_ru.Dmg_rgb_ru.." по противоосколочной броне.\n"
+			..Dot_red.." Слабый "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.",
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -106,14 +119,22 @@ local arbites_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ BLITZ 1 - Remote Detonation +]--
-	["loc_talent_ability_detonate_description"] = { -- max_charges: 3, cooldown: 60, s->seconds, +colors
+	--[+ BLITZ 1 - Remote Detonation +]--	14.11.2025
+	["loc_talent_ability_detonate_description"] = { -- max_charges: 3, cooldown: 50, s->seconds, +colors
 		en = "Cause an Explosion at your Cyber-Mastiff's Location. "..COLORS_KWords.Staggering_rgb.." and "..COLORS_KWords.Electrcuting_rgb.." nearby Enemies.\n"
 			..Dot_nc.." {max_charges:%s} Charges.\n"
-			..Dot_nc.." Cooldown {cooldown:%s} seconds.",
+			..Dot_nc.." Cooldown {cooldown:%s} seconds.\n"
+			.."\n"
+			..Dot_green.." Base "..COLORS_KWords.Damage_rgb.." epicenter: "..COLORS_Numbers.n_600_rgb..".\n"
+			..Dot_green.." Forces a light "..COLORS_KWords.Stagger_rgb.." on all enemies within radius for "..COLORS_Numbers.n_2_5_rgb.." seconds.\n"
+			..Dot_nc.." Max explosion radius: "..COLORS_Numbers.n_4_rgb.." meters.\n"
+			..Dot_nc.." Arbitrator cannot pick up grenade Ammo.\n"
+			..Dot_nc.." Above average armor "..COLORS_KWords.Damage_rgb.." modifiers across the board.\n"
+			..Dot_red.." Very low armor "..COLORS_KWords.Damage_rgb.." modifier against Carapace.",
+		--[+ БЛИЦ 1 - Дистанционный подрыв +]--
 		ru = "Ваш кибермастиф взрывается в месте своего нахождения, "..COLORS_KWords_ru.Staggern_rgb_ru.." и поражая "..COLORS_KWords_ru.Electrocuted_rgb_ru.." ближайших врагов.\n"
 			..Dot_nc.." {max_charges:%s} заряда.\n"
-			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Дистанционный подрыв
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",
 		-- fr = ,
 		-- ["zh-tw"] = ,
 		-- ["zh-cn"] = "",
@@ -1478,8 +1499,10 @@ local arbites_talent_localizations = {
 	-- ! Double: Veteran - Passive 39 - Lock and Load !
 	["loc_talent_adamant_clip_size_alt_desc"] = { -- clip_size: +15%
 		en = Dot_green.." {clip_size:%s} Clip Size.\n"
+			.."\n"
 			..Dot_nc.." Rounded Up.",
 		ru = Dot_green.." {clip_size:%s} к размеру магазина.\n"
+			.."\n"
 			..Dot_nc.." Округляется в большую сторону.", -- Приоритетное снабжение
 		-- fr = ,
 		-- ["zh-tw"] = ,

@@ -33,35 +33,35 @@ local RELOAD_DELAY = 0.1 -- seconds
 local FIXES = {
 -- BLESSINGS - БЛАГОСЛОВЕНИЯ
 	--[+ OVERLOAD +]--
-	-- "+25% Heat is reduced immediately..." -- Removed "+".
+	-- "+25% Heat is reduced immediately..." -- Removed "+"
 	loc_explosion_on_overheat_lockout_desc = {
 		overheat_reduction = function(value)
 			return tostring(value):gsub("^+", "")
 		end
 	},
 	--[+ WRATH +]--
-	-- "+50% Cleave on Hit..." -- Removed "+".
+	-- "+50% Cleave on Hit..." -- Removed "+"
 	loc_trait_bespoke_chained_hits_increases_cleave_desc = {
 		cleave = function(value)
 			return tostring(value):gsub("^+", "")
 		end
 	},
 	--[+ HEATSINK +]--
-	-- "+10% Heat..." -- Removed "+" and replaced with "-".
+	-- "+10% Heat..." -- Removed "+" and replaced with "-"
 	loc_reduce_fixed_overheat_amount_desc = {
 		amount = function(value)
 			return tostring(value):gsub("^+", "")
 		end
 	},
 	--[+ SLOW AND STEADY +]--
-	-- "Up to +8% Toughness recovered..." -- Removed "+".
+	-- "Up to +8% Toughness recovered..." -- Removed "+"
 	loc_trait_bespoke_toughness_on_hit_based_on_charge_time_desc = {
 		toughness = function(value)
 			return tostring(value):gsub("^+", "")
 		end
 	},
 	--[+ FOCUSED COOLING +]--
-	-- "+60% Heat generation..." -- Removed "+".
+	-- "+60% Heat generation..." -- Removed "+"
 	loc_trait_bespoke_reduced_overheat_on_crits_desc = {
 		heat_percentage = function(value)
 			return tostring(value):gsub("^+", "")
@@ -71,7 +71,7 @@ local FIXES = {
 -- TALENTS - ТАЛАНТЫ
 	--[+ NODES - УЗЛЫ +]--
 		--[+ Peril Resistance Medium +]--
-		-- "+10.00% Peril Generation." -- Removed ".00".
+		-- "+10.00% Peril Generation." -- Removed ".00"
 	loc_talent_warp_charge_low_desc = {
 		warp_charge = function(value)
 			return tostring(value):gsub("%.00%%", "%%")
@@ -79,13 +79,21 @@ local FIXES = {
 	},
 	--[+ PSYKER - ПСАЙКЕР +]--
 		--[+ ABILITY 1-3 - Creeping Flames +]--
-		-- "Venting Shriek applies 1 - 6 Stacks..." -- Removed " -" from number "1 -".
+		-- "Venting Shriek applies 1 - 6 Stacks..." -- Removed " -" from number "1 -"
 	loc_talent_psyker_warpfire_on_shout_desc = {
 		min_stacks = function(value)
 			return tostring(value):gsub("%s*%-%s*", "")
 		end
-	}
-
+	},
+	--[+ VETERAN - ВЕТЕРАН +]--
+		--[+ Passive 23 - Deadshot +]--
+		-- "+60% Sway Reduction..." -- Removed "+"
+	loc_talent_veteran_ads_drains_stamina_boost_desc = {
+		sway_reduction = function(value)
+			local str = tostring(value)
+			return str:gsub("%+", "")
+		end,
+	},
 }
 
 -- hook for fixes

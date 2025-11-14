@@ -654,7 +654,7 @@ local psyker_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
-	--[+ ABILITY 2 - Telekine Shield +]--	01.11.2025
+	--[+ ABILITY 2 - Telekine Shield +]--	14.11.2025
 	["loc_talent_psyker_combat_ability_shield_description"] = { -- duration: 17.5, cooldown: 40, s->seconds
 		en = "Spawns a {talent_name:%s} that blocking incoming enemy ranged attacks while allowing you and your allies to fire through it.\n"
 			..Dot_nc.." Lasts {duration:%s} seconds.\n"
@@ -688,7 +688,7 @@ local psyker_talent_localizations = {
 			.."   "..Dot_red.." Облака токсичного газа,\n"
 			.."   "..Dot_red.." Подрыв взрывника.\n"
 			.."\n"
-			..Dot_nc.." Удерживайте кнопку активации способности, чтобы увидеть место размещения. Вы можете отменить размещение блоком.",
+			..Dot_nc.." Удерживание кнопки активации способности показывает место размещения. Отменяется блоком.",
 		-- fr = "Invoque un bouclier psychique devant vous pendant {duration:%s} secondes. Le bouclier bloque les attaques à distance des ennemis, tandis que vous et vos alliés pouvez toujours tirer à travers.\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_PSY_Ability_2_rgb_fr,
 		-- ["zh-tw"] = "在面前生成靈能護盾，持續 {duration:%s} 秒。\n"
 			-- .."\n"

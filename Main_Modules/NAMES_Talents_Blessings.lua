@@ -4268,9 +4268,9 @@ local localization_templates = {
 		-- {"loc_talent_veteran_toughness_on_weakspot_kill"}, {"en"},
 			-- loc_text("Exhilarating Takedown")),
 	--[+ Russian +]-- Подбадривающее убийство -- руоф Бодрящее сокрушение
-	create_template("talent_tree_vet_pas_004_ru",
-		{"loc_talent_veteran_toughness_on_weakspot_kill"}, {"ru"},
-			loc_text("Подбадривающее убийство")),
+	-- create_template("talent_tree_vet_pas_004_ru",
+		-- {"loc_talent_veteran_toughness_on_weakspot_kill"}, {"ru"},
+			-- loc_text("Подбадривающее убийство")),
 	--[+ Traditional Chinese - 振奮擊倒 +]--
 	-- create_template("talent_tree_vet_pas_004_tw",
 		-- {"loc_talent_veteran_toughness_on_weakspot_kill"}, {"zh-tw"},
@@ -4722,10 +4722,10 @@ local localization_templates = {
 	-- create_template("talent_tree_vet_pas_039_en",
 		-- {"loc_talent_veteran_attack_speed"}, {"en"},
 			-- loc_text("Trench Fighter Drill")),
-	--[+ Russian +]-- Окопные тренировки -- руоф Тренировка в окопах
+	--[+ Russian +]-- Отработка окопного боя -- руоф Тренировка в окопах
 	create_template("talent_tree_vet_pas_039_ru",
 		{"loc_talent_veteran_attack_speed"}, {"ru"},
-			loc_text("Окопные тренировки")),
+			loc_text("Отработка окопного боя")),
 	--[+ Traditional Chinese - 戰壕兵訓練 +]--
 	-- create_template("talent_tree_vet_pas_039_tw",
 		-- {"loc_talent_veteran_attack_speed"}, {"zh-tw"},

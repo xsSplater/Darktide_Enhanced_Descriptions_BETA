@@ -69,6 +69,7 @@ local CONFIG = {
 		Crit_hit_chance = "Critical Hit Chance",
 		Crit_hit_color = "Critical Hit Damage",
 		Crit_hits = "Critical Hits",
+		Crit_shots = "Critical Shots",
 		Crt_dmg_r = "Crit Damage",
 		Crit_dmg_r = "Critical Damage",
 		Crit_strike = "Critical Strike",
