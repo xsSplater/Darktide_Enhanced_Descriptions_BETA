@@ -4,7 +4,7 @@
 [![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 ***
 
-https://www.youtube.com/watch?v=EJXcAlEOpeU
+[![Превью видео](https://img.youtube.com/vi/EJXcAlEOpeU/0.jpg)](https://www.youtube.com/live/EJXcAlEOpeU)
 
 
 ### Mod parts readiness:
