@@ -100,4 +100,4 @@ Download from: [Nexus](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-272179268.png)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-325096076.png)
 
-[Перейти в начало](https://github.com/xsSplater/Darktide_Enhanced_Descriptions_BETA/edit/xss0/README.md#enhanced-descriptions)
+[Перейти в начало](#enhanced-descriptions)
