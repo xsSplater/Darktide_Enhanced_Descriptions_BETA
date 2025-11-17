@@ -93,25 +93,42 @@
 ***
 
 ## 📋 Versions:
-### ﻿ ﻿*Version: __3.5b__*
+### ﻿ ﻿*Version: __4.7b__*
+- *Updated Veteran Talents for the Bound by Duty update. EN+RU*
+- *Some fixes*
+
+#### ﻿ ﻿*Version: __4.6b__*
+- *Updated Blessings and Psyker's Talents for the Bound by Duty update. EN+RU*
+- *The code has been rewritten.*
+- *The file structure has been changed.*
+- *Mod settings and color changes are applied immediately.*
+- *The dependency on WhatTheLocalization has been removed.*
+
+#### ﻿ ﻿*Version: __3.69b__*
+- *First update for Arbites Talents. EN+RU*
+
+#### ﻿ ﻿*Version: __3.52b__*
+- *Temporarily disabled Extended Descriptions in Chinese Traditional Translation due to a bug.*
+
+#### ﻿ ﻿*Version: __3.5b__*
 - *Added Traditional Chinese localization.*
 - *Added Simplified Chinese localization.*
 - *Updated Blessings, Talents, Penances, Menus, Curios, etc.*
 - *Refactored code structure to reduce character count and improve localization handling.*
 - *Various fixes.*
 
-### ﻿ ﻿*Version: __3.402b__*
+#### ﻿ ﻿*Version: __3.402b__*
    - *Updated English and Russian localizations for the new patch (core content only; extended descriptions will follow in a later updates).*
 
-### ﻿ ﻿*Version: __3.2b__*
+#### ﻿ ﻿*Version: __3.2b__*
    - *Fixed COLORS_Numbers, CURIOS_Blessings_Perks, WEAPONS_Blessings_Perks.*
 
-### ﻿ ﻿*Version: __3.1b__*
+#### ﻿ ﻿*Version: __3.1b__*
    - *Added Russian localization.*
    - *Added Russian and some English Penances.*
    - *Refactored the structure to enable multilingual support.*
 
-### ﻿ ﻿*Version: __3.0b__*
+#### ﻿ ﻿*Version: __3.0b__*
    - *Added French localization.*
    - *Added missing Blessings for Relic Blade.*
 ***
