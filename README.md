@@ -1,5 +1,5 @@
-|[<code>[ 📋 Versions      ]</code>](#-versions)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
-|---------------------------------|---------------------------------|
+|[<code>[ 🛠 Installation  ]</code>](#-manual-installation)|[<code>[ 📋 Versions      ]</code>](#-versions)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
+|---------------------------------|---------------------------------|---------------------------------|
 # 📚 ENHANCED DESCRIPTIONS
 <div align="left">
 	<table>
@@ -55,7 +55,7 @@
 	- [x] Proofread Blessings text.
 - [ ] Merge parts of extended descriptions into the main Talent descriptions.
 	- [ ] Proofread Talents text.
-*** 
+***
 
 ### Mod parts readiness:
 - 🟢 - ready.
@@ -76,12 +76,12 @@
 ## Non-English localizations only:
 - 🟡 Names of Enemies and Weapons.
 - 🟡 Names of Blessings and Talents.
-*** 
+***
 
 
 > [!TIP]
 > |![Donation_Alerts](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985089-1092127534.png)|![Boosty](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-2070927141.png)|![Discord](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-993073092.png)|
-> |---------------------------------|----------------------|------------------------|
+> |---------------------------------|---------------------------------|---------------------------------|
 ***
 
 
@@ -92,7 +92,9 @@
   - _[Rin Anarchy](https://github.com/RinAnarchy) - **Simplified Chinese** localization._
 ***
 
-## 📋 Versions:
+## 📋 Versions
+|[<code>[ ⏫ Back to top   ]</code>](#-enhanced-descriptions)|[<code>[ 💾 Download      ]</code>](#-download)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
+|---------------------------------|---------------------------------|---------------------------------|
 ### ﻿ ﻿*Version: __4.7b__*
 - *Updated Veteran Talents for the Bound by Duty update. EN+RU*
 - *Some fixes*
@@ -134,6 +136,9 @@
 ***
 
 ## 🖼 Screenshots
+|[<code>[ ⏫ Back to top   ]</code>](#-enhanced-descriptions)|[<code>[ 🛠 Installation  ]</code>](#-manual-installation)|[<code>[ 📋 Versions      ]</code>](#-versions)|
+|---------------------------------|---------------------------------|---------------------------------|
+
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191260-940401537.png)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191259-128111157.png)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-2127869553.png)
@@ -141,5 +146,5 @@
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-272179268.png)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-325096076.png)
 
-|[<code>[ 🎰 Menu          ]</code>](#-enhanced-descriptions)|[<code>[ 🛠 Installation  ]</code>](#-manual-installation)|[<code>[ 📋 Versions      ]</code>](#-versions)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
-|---------------------------------|---------------------------------|---------------------------------|---------------------------------|
+|[<code>[ ⏫ Back to top   ]</code>](#-enhanced-descriptions)|[<code>[ 🛠 Installation  ]</code>](#-manual-installation)|[<code>[ 📋 Versions      ]</code>](#-versions)|
+|---------------------------------|---------------------------------|---------------------------------|
