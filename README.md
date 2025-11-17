@@ -33,13 +33,27 @@
 </div>
 <hr>
 
-## 🛠 Manual Installation:
+## 🛠 Manual Installation
+### Github
 <div align="left">
 	<ol>
-		<li> Extract the mod into your <b>mods</b> folder.</li>
-				<i>For example: ..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\Enhanced_descriptions\</i>
-		<li> Add <b>Enhanced_descriptions<b> to <b>mod_load_order.txt<b> manually or with my <b><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/139?tab=files">[ 🔬 Servo-Modquisitor ]</a></b>.</li>
-		<li>﻿ Launch the game and enjoy!</li>
+		<li>Download the <b><a href="https://github.com/xsSplater/Darktide_Enhanced_Descriptions_BETA/archive/refs/heads/xss0.zip">[ 🅱 Github Beta ]</a></b> archive.</li>
+		<li>Extract the <mark>Darktide_Enhanced_Descriptions_BETA-xss0</mark> folder into your <mark>mods</mark> folder.</li>
+		<i>For example: <code>..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods</code></i>
+		<li>Rename the <mark>Darktide_Enhanced_Descriptions_BETA-xss0</mark> folder to <mark>Enhanced_descriptions</mark>.</li>
+		<li>Add <mark>Enhanced_descriptions</mark> to <mark>mod_load_order.txt</mark> manually or with my <b><a href="https://github.com/xsSplater/Servo-Modquisitor">[ 🔬 Servo-Modquisitor ]</a></b>.</li>
+		<li>Launch the game and enjoy!</li>
+	</ol>
+</div>
+
+### Nexus
+<div align="left">
+	<ol>
+		<li>Download the <b><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/210?tab=files">[ ✅ Nexus Release ]</a></b> archive.</li>
+		<li>Extract the <mark>Enhanced_Descriptions</mark> folder into your <mark>mods</mark> folder.</li>
+		<i>For example: <code>..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods</code></i>
+		<li>Add <mark>Enhanced_descriptions</mark> to <mark>mod_load_order.txt</mark> manually or with my <b><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/139?tab=files">[ 🔬 Servo-Modquisitor ]</a></b>.</li>
+		<li>Launch the game and enjoy!</li>
 	</ol>
 </div>
 <hr>
