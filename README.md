@@ -23,10 +23,10 @@
 	<table valign="middle" align="center">
 		<tr align="center">
 			<td width="300px">
-				<a href="https://www.nexusmods.com/warhammer40kdarktide/mods/210?tab=files">[💾 Download - Release - Nexus]</a>
+				<a href="https://www.nexusmods.com/warhammer40kdarktide/mods/210?tab=files">[💾 Download - Nexus Release ]</a>
 			</td>
 			<td width="300px">
-				<a href="https://github.com/xsSplater/Darktide_Enhanced_Descriptions_BETA/archive/refs/heads/xss0.zip">[💾 Download - Beta - GitHub]</a>
+				<a href="https://github.com/xsSplater/Darktide_Enhanced_Descriptions_BETA/archive/refs/heads/xss0.zip">[💾 Download - GitHub Beta ]</a>
 			</td>
 		</tr>
 	</table>
