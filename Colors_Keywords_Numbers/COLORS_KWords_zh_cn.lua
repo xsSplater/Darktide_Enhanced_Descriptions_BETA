@@ -336,10 +336,24 @@ local function create_colored_keywords(config)
 	local result = {}
 
 	for color_setting, keywords in pairs(config) do
-		local color = Color[mod:get(color_setting)](255, true)
+		local color_name = mod:get(color_setting)
+
+		-- Checking if a color setting exists
+		if not color_name then
+			mod:warning("Color setting '" .. color_setting .. "' not found, using fallback color")
+			color_name = "white"  -- Fallback color
+		end
+
+		-- Check if a color exists in the Color table
+		if not Color[color_name] then
+			mod:error("Color '" .. tostring(color_name) .. "' not defined in color.lua for setting '" .. color_setting .. "', using white")
+			color_name = "white"
+		end
+
+		local color = Color[color_name](255, true)
 
 		for name, text in pairs(keywords) do
-			result[name .. "_rgb_zh_cn"] = iu_actit(text, color)
+			result[name .. "_rgb_zh_cn"] = iu_actit(text, color) -- "_rgb_zh_cn" NOT just "_rgb"
 		end
 	end
 
@@ -356,7 +370,7 @@ local function validate_all()
 	for color_setting, items in pairs(CONFIG) do
 		for name, _ in pairs(items) do
 			total_expected = total_expected + 1
-			local var_name = name .. "_rgb_zh_cn"
+			local var_name = name .. "_rgb_zh_cn" -- "_rgb_zh_cn" NOT just "_rgb"
 			if colors[var_name] then
 				created_count = created_count + 1
 			else

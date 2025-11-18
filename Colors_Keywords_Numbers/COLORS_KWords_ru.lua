@@ -5,6 +5,11 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
+-- Все эти ключевые слова необходимо перевести, чтобы иметь к ним доступ в файлах TALENTS.lua, WEAPONS_Blessings_Perks.lua и т.д.:
+-- COLORS_KWords_ru.Ability_cd_rgb_ru
+-- COLORS_KWords_ru.Cd_rgb_ru
+-- COLORS_KWords_ru.Combat_ability_rgb_ru
+
 local CONFIG = {
 -- КЛЮЧЕВЫЕ СЛОВА
 	bleed_text_colour = {
@@ -357,24 +362,39 @@ local CONFIG = {
 	},
 }
 
--- Универсальная функция создания цветных переменных
-local function create_colored_keywords_ru(config)
+
+-- Universal function for creating colored variables
+local function create_colored_keywords(config)
 	local result = {}
 
 	for color_setting, keywords in pairs(config) do
-		local color = Color[mod:get(color_setting)](255, true)
+		local color_name = mod:get(color_setting)
+
+		-- Checking if a color setting exists
+		if not color_name then
+			mod:warning("Color setting '" .. color_setting .. "' not found, using fallback color")
+			color_name = "white"  -- Fallback color
+		end
+
+		-- Check if a color exists in the Color table
+		if not Color[color_name] then
+			mod:error("Color '" .. tostring(color_name) .. "' not defined in color.lua for setting '" .. color_setting .. "', using white")
+			color_name = "white"
+		end
+
+		local color = Color[color_name](255, true)
 
 		for name, text in pairs(keywords) do
-			result[name .. "_rgb_ru"] = iu_actit(text, color)
+			result[name .. "_rgb_ru"] = iu_actit(text, color) -- "_rgb_ru" NOT just "_rgb"
 		end
 	end
 
 	return result
 end
 
--- Валидация: проверяем что ВСЕ переменные созданы
+-- Validation: check that ALL variables have been created
 local function validate_all()
-	local colors = create_colored_keywords_ru(CONFIG)
+	local colors = create_colored_keywords(CONFIG)
 	local total_expected = 0
 	local created_count = 0
 	local missing_vars = {}
@@ -382,7 +402,7 @@ local function validate_all()
 	for color_setting, items in pairs(CONFIG) do
 		for name, _ in pairs(items) do
 			total_expected = total_expected + 1
-			local var_name = name .. "_rgb_ru"
+			local var_name = name .. "_rgb_ru" -- "_rgb_ru" NOT just "_rgb"
 			if colors[var_name] then
 				created_count = created_count + 1
 			else
@@ -393,13 +413,13 @@ local function validate_all()
 	end
 
 	if created_count == total_expected then
-		mod:info("✅ All " .. total_expected .. " Russian keyword variables created successfully")
+		mod:info("✅ All " .. total_expected .. " keyword variables created successfully")
 	else
-		mod:warning("⚠️ Created " .. created_count .. "/" .. total_expected .. " Russian keyword variables")
+		mod:warning("⚠️ Created " .. created_count .. "/" .. total_expected .. " keyword variables")
 	end
 
 	return colors
 end
 
--- Создаем и валидируем все переменные
+-- Create and validate all variables
 return validate_all()

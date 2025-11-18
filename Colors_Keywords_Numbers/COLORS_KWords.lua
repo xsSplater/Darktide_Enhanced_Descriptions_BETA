@@ -1,29 +1,14 @@
 ---@diagnostic disable: undefined-global
--- Version 4.7b
+-- Version 4.73b
 
 local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
--- LANGUAGE CODES:
--- English				en
--- Russian				ru			_ru
--- French				fr			_fr
--- Chinese Traditional	["zh-tw"]	_tw
--- Chinese Simplified	["zh-cn"]	_zh_cn
--- German				de			_de
--- Italian				it			_it
--- Japanese				ja			_ja
--- Korean				ko			_ko
--- Polish				pl			_pl
--- Portuguese			["pt-br"]	_rgb_pt_br
--- Spanish				es			_es
-
--- FOR TRANSLATORS
 -- All these keywords need to be translated to be able to access them in the TALENTS.lua, WEAPONS_Blessings_Perks.lua, etc. files:
--- COLORS_KWords_YOURLANGUAGECODE.Ability_cd_rgb_YOURLANGUAGECODE
--- COLORS_KWords_YOURLANGUAGECODE.Cd_rgb_YOURLANGUAGECODE
--- COLORS_KWords_YOURLANGUAGECODE.Combat_ability_rgb_YOURLANGUAGECODE
+-- COLORS_KWords.Ability_cd_rgb
+-- COLORS_KWords.Cd_rgb
+-- COLORS_KWords.Combat_ability_rgb
 
 local CONFIG = {
 -- KEYWORDS
@@ -240,9 +225,7 @@ local CONFIG = {
 	talents_penances_text_colour = { -- green
 	-- Psyker
 		bburst = "Brain Burst",
-		-- bburst0 = "Brain Burst",
 		bburst1 = "Brain Rupture",
-		-- bburst2 = "Brain Rupture",
 		smite = "Smite",
 		disrdest = "Disrupt Destiny",
 		psy_wrath = "Psykinetic's Wrath",
@@ -256,8 +239,6 @@ local CONFIG = {
 		seerspres = "Seer's Presence",
 	-- Ogryn
 		bull_rush = "Bull Rush",
-		-- bull_rush2 = "Bull Rush",
-		-- bull_rush3 = "Bull Rush",
 		bull_rush4 = "Indomitable",
 		big_box = "Big Box of Hurt",
 		big_box2 = "Bombs Away!",
@@ -287,13 +268,10 @@ local CONFIG = {
 		weapspec = "Weapons Specialist",
 		survivalist = "Survivalist",
 	-- Zealot
-		-- shock_gren0 = "Stunstorm Grenade",
 		shock_gren = "Stunstorm Grenade",
 		fire_gren = "Immolation Grenade",
 		shock_gren1 = "Stun Grenade",
-		-- shock_gren2 = "Stun Grenade",
 		chast_wckd = "Chastise the Wicked",
-		-- chast_wckd2 = "Chastise the Wicked",
 		fury_faithful = "Fury of the Faithful",
 		martydom = "Martyrdom",
 		holy_revenant = "Holy Revenant",
@@ -334,32 +312,31 @@ local CONFIG = {
 -- Universal function for creating colored variables
 local function create_colored_keywords(config)
 	local result = {}
-	
+
 	for color_setting, keywords in pairs(config) do
-		local color = Color[mod:get(color_setting)](255, true)
-		
+		local color_name = mod:get(color_setting)
+
+		-- Checking if a color setting exists
+		if not color_name then
+			mod:warning("Color setting '" .. color_setting .. "' not found, using fallback color")
+			color_name = "white"  -- Fallback color
+		end
+
+		-- Check if a color exists in the Color table
+		if not Color[color_name] then
+			mod:error("Color '" .. tostring(color_name) .. "' not defined in color.lua for setting '" .. color_setting .. "', using white")
+			color_name = "white"
+		end
+
+		local color = Color[color_name](255, true)
+
 		for name, text in pairs(keywords) do
--- FOR TRANSLATORS -- For other languages _rgb_YOURLANGUAGECODE
 			result[name .. "_rgb"] = iu_actit(text, color)
 		end
 	end
-	
+
 	return result
 end
-
--- LANGUAGE CODES:
--- English				en			_rgb
--- Russian				ru			_rgb_ru
--- French				fr			_rgb_fr
--- Chinese Traditional	["zh-tw"]	_rgb_tw
--- Chinese Simplified	["zh-cn"]	_rgb_zh_cn
--- German				de			_rgb_de
--- Italian				it			_rgb_it
--- Japanese				ja			_rgb_ja
--- Korean				ko			_rgb_ko
--- Polish				pl			_rgb_pl
--- Portuguese			["pt-br"]	_rgb_pt_br
--- Spanish				es			_rgb_es
 
 -- Validation: check that ALL variables have been created
 local function validate_all()
@@ -367,11 +344,10 @@ local function validate_all()
 	local total_expected = 0
 	local created_count = 0
 	local missing_vars = {}
-	
+
 	for color_setting, items in pairs(CONFIG) do
 		for name, _ in pairs(items) do
 			total_expected = total_expected + 1
--- FOR TRANSLATORS -- For other languages _rgb_YOURLANGUAGECODE
 			local var_name = name .. "_rgb"
 			if colors[var_name] then
 				created_count = created_count + 1
@@ -381,13 +357,13 @@ local function validate_all()
 			end
 		end
 	end
-	
+
 	if created_count == total_expected then
 		mod:info("✅ All " .. total_expected .. " keyword variables created successfully")
 	else
 		mod:warning("⚠️ Created " .. created_count .. "/" .. total_expected .. " keyword variables")
 	end
-	
+
 	return colors
 end
 

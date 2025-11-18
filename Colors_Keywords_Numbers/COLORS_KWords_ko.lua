@@ -313,15 +313,29 @@ local CONFIG = {
 -- Universal function for creating colored variables
 local function create_colored_keywords(config)
 	local result = {}
-	
+
 	for color_setting, keywords in pairs(config) do
-		local color = Color[mod:get(color_setting)](255, true)
-		
+		local color_name = mod:get(color_setting)
+
+		-- Checking if a color setting exists
+		if not color_name then
+			mod:warning("Color setting '" .. color_setting .. "' not found, using fallback color")
+			color_name = "white"  -- Fallback color
+		end
+
+		-- Check if a color exists in the Color table
+		if not Color[color_name] then
+			mod:error("Color '" .. tostring(color_name) .. "' not defined in color.lua for setting '" .. color_setting .. "', using white")
+			color_name = "white"
+		end
+
+		local color = Color[color_name](255, true)
+
 		for name, text in pairs(keywords) do
-			result[name .. "_rgb_ko"] = iu_actit(text, color)
+			result[name .. "_rgb_ko"] = iu_actit(text, color) -- "_rgb_ko" NOT just "_rgb"
 		end
 	end
-	
+
 	return result
 end
 
@@ -331,11 +345,11 @@ local function validate_all()
 	local total_expected = 0
 	local created_count = 0
 	local missing_vars = {}
-	
+
 	for color_setting, items in pairs(CONFIG) do
 		for name, _ in pairs(items) do
 			total_expected = total_expected + 1
-			local var_name = name .. "_rgb_ko"
+			local var_name = name .. "_rgb_ko" -- "_rgb_ko" NOT just "_rgb"
 			if colors[var_name] then
 				created_count = created_count + 1
 			else
@@ -344,13 +358,13 @@ local function validate_all()
 			end
 		end
 	end
-	
+
 	if created_count == total_expected then
 		mod:info("✅ All " .. total_expected .. " keyword variables created successfully")
 	else
 		mod:warning("⚠️ Created " .. created_count .. "/" .. total_expected .. " keyword variables")
 	end
-	
+
 	return colors
 end
 
