@@ -1,6 +1,4 @@
-# ⚙️MENU
-|[🛠️Preparation](#%EF%B8%8Fpreparation)|[📚Mod Structure](#mod-structure)|[📝Translation](#translation)|
-|--------------------------------------|---------------------------------|-----------------------------|
+
 > [!WARNING]
 > My one firm request is that you stick to translating the mod. Please do not add unnecessary fluff, personal opinions, or off-topic comments.
 >
@@ -86,11 +84,136 @@ In general, you can translate in whatever you like best.
 ***
 
 # 📝TRANSLATION
-__WIP__
+## Simple strings
+### 1. Open a file, for example: TALENTS.lua
+### 2. Find the part you want to translate, for example:
+	--[+ Blitz +]--
+	["loc_glossary_term_tactical"] = {
+		en = "Blitz",
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+### 3. I'll choose the Russian localization as an example: -- ru = "",
+#### 3.1. You need to remove two hyphens and a space before the line to uncomment it: ru = "",
+#### 3.2. Then add the translation: ru = "Блиц",
+	--[+ Blitz +]--
+	["loc_glossary_term_tactical"] = {
+		en = "Blitz",
+		ru = "Блиц",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+### 4. Save the file (CTRL+S).
+### 5. Done. You can test it in-game.
 ***
+## Slightly more complex
+### 1. Open a file, for example: TALENTS_Veteran.lua
+### 2. Find the part you want to translate, for example:
+	--[+ Passive 41 - Onslaught +]--
+	["loc_talent_veteran_continous_hits_apply_rending_description"] = { -- rending_multiplier: 2.5%, duration: 5, max_stacks: 16, +colors
+		en = "On continuous hits to a Single target:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			..PHRS.Can_be_refr.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb,
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = ,
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+### 3. I'll choose the Russian localization as an example: -- ru = "",
+#### 3.1. You need to remove two hyphens and a space before the line to uncomment it: ru = "",
+#### 3.2. Then copy the English localization to yours:
+	--[+ Passive 41 - Onslaught +]--
+	["loc_talent_veteran_continous_hits_apply_rending_description"] = {
+		en = "On continuous hits to a Single target:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			..PHRS.Can_be_refr.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb,
+		ru = "On continuous hits to a Single target:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			..PHRS.Can_be_refr.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb,
+		-- fr = "",
+		-- ["zh-tw"] = ,
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+### 4. Translate the text into your language.
+   *Don't forget to go to your language's Keyword file ("**_ru**" is __COLORS_KWords_ru.lua__) and translate it too.*
 
-
-### THANK YOU!
-
-|[🛠️Menu](#%EF%B8%8Fmenu)|[🛠️Preparation](#%EF%B8%8Fpreparation)|[📚Mod Structure](#mod-structure)|
-|------------------------|--------------------------------------|---------------------------------|
+	--[+ Passive 41 - Onslaught +]--
+	["loc_talent_veteran_continous_hits_apply_rending_description"] = {
+		en = "On continuous hits to a Single target:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			..PHRS.Can_be_refr.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb,
+		--[+ Пассивный 41 - Натиск +]--
+		ru = "При повторных атаках по одной цели на неё накладывается:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." брони на {duration:%s} секунд.\n"
+			..Dot_nc.." Суммируется до {max_stacks:%s} раз.\n"
+			.."\n"
+			..PHRS.Can_be_refr_ru.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb_ru,
+		-- fr = "",
+		-- ["zh-tw"] = ,
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+You need to add Keywords from your file:
+	
+	..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." брони на {duration:%s} секунд.\n"
+- The text has been translated and "**_ru**" has been added to the Keyword "..**COLORS_KWords.Brittleness_rgb**..": *"..**COLORS_KWords_ru.Brittleness_rgb_ru**.."*
+ - This means that the "**COLORS_KWords_ru.lua**" file contains the Keyword "**Brittleness**" *(it is always added with **_rgb_your_localization***.
+  - For "**_ru**" it's "**COLORS_KWords_ru.Brittleness_rgb_ru**", for "**_fr**" it's "**COLORS_KWords_fr.Brittleness_rgb_fr**", etc.
+### 5. Save the file (CTRL+S).
+### 6. Done. You can test it in-game.
+***
