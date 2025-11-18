@@ -1,141 +1,219 @@
-|[<code>[ 🛠 Installation  ]</code>](#-manual-installation)|[<code>[ 📋 Versions      ]</code>](#-versions)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
-|---------------------------------|---------------------------------|---------------------------------|
-# 📚 ENHANCED DESCRIPTIONS
-<div align="left">
-	<table>
-		<tr>
-			<td valign="middle" align="center">
-				<p>This mod enhances visibility and clarity by improving Numbers, Keywords, and Descriptions for Talents, Blessings, Perks, Penances, Curios, and some Menu texts.
-				I've also fixed various localization issues to create a smoother experience.
-				I hope these small but meaningful changes make your game time more enjoyable!</p>
-				<p>Please let me know if you spot any issues.</p>
-			</td>
-			<td width="15%">
-				<a href="https://www.playdarktide.com"><img src="https://cdn2.steamgriddb.com/icon/a933845584061f71dcaf5044998c7980/32/256x256.png"></a>
-			</td>
-		</tr>
-	</table>
-</div>
-<hr>
 
-## 💾 Download
-<div align="left">
-	<table valign="middle" align="center">
-		<tr align="center">
-			<td width="300px">
-				<a href="https://www.nexusmods.com/warhammer40kdarktide/mods/210?tab=files">[💾 Download - Nexus Release ]</a>
-			</td>
-			<td width="300px">
-				<a href="https://github.com/xsSplater/Darktide_Enhanced_Descriptions_BETA/archive/refs/heads/xss0.zip">[💾 Download - GitHub Beta ]</a>
-			</td>
-		</tr>
-	</table>
-</div>
-<hr>
+> [!WARNING]
+> My one firm request is that you stick to translating the mod. Please do not add unnecessary fluff, personal opinions, or off-topic comments.
+>
+> This mod represents me as much as it represents you. If I am notified that a translation contains inappropriate or offensive content, I will review it and may simply remove the entire localization into your language rather than search for every potential issue. My passion and the thousands of hours I've invested are too valuable to risk.
+>
+> Thank you for your understanding and cooperation!
+***
 
-## 🛠 Manual Installation
-### Github
-<div align="left">
-	<ol>
-		<li>Download the <b><a href="https://github.com/xsSplater/Darktide_Enhanced_Descriptions_BETA/archive/refs/heads/xss0.zip">[ 🅱 Github Beta ]</a></b> archive.</li>
-		<li>Extract the <mark>Darktide_Enhanced_Descriptions_BETA-xss0</mark> folder into your <mark>mods</mark> folder.</li>
-		<i>For example: <code>..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods</code></i>
-		<li>Rename the <mark>Darktide_Enhanced_Descriptions_BETA-xss0</mark> folder to <mark>Enhanced_descriptions</mark>.</li>
-		<li>Add <mark>Enhanced_descriptions</mark> to <mark>mod_load_order.txt</mark> manually or with my <b><a href="https://github.com/xsSplater/Servo-Modquisitor">[ 🔬 Servo-Modquisitor ]</a></b>.</li>
-		<li>Launch the game and enjoy!</li>
-	</ol>
-</div>
+> [!NOTE]
+> If you're still reading this, you must be planning to translate the "Enhanced Descriptions" mod.
+> 
+> Well, you'll need that determination — and a whole lot of time, you crazy bastard! I admire you!
+> 
+> Once you start down this path, there's no turning back. You'll never be the same!
+> 
+> Don't say I didn't warn you! ;)
+***
 
-### Nexus
-<div align="left">
-	<ol>
-		<li>Download the <b><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/210?tab=files">[ ✅ Nexus Release ]</a></b> archive.</li>
-		<li>Extract the <mark>Enhanced_Descriptions</mark> folder into your <mark>mods</mark> folder.</li>
-		<i>For example: <code>..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods</code></i>
-		<li>Add <mark>Enhanced_descriptions</mark> to <mark>mod_load_order.txt</mark> manually or with my <b><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/139?tab=files">[ 🔬 Servo-Modquisitor ]</a></b>.</li>
-		<li>Launch the game and enjoy!</li>
-	</ol>
-</div>
-<hr>
-
-## 🧾TODO
-- 🟢 - ready, 🟡 - partially ready, 🔴 - not ready.
-﻿## All localizations:
-- 🟢 Curios Blessings and Perks.
-- 🟢 Weapon Blessings and Perks.
-- 🟢 Psyker Talent descriptions.
-- 🟡 Arbites Talent descriptions.
-- 🟡 Various Menu texts. 
-- 🔴 Veteran Talent descriptions.
-- 🔴 Zealot Talent descriptions.
-- 🔴 Ogryn Talent descriptions.
-- 🔴 Penance descriptions.
-## Non-English localizations only:
-- 🟡 Names of Enemies and Weapons.
-- 🟡 Names of Blessings and Talents.
-<hr>
-
-> [!TIP]
-> |![Donation_Alerts](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985089-1092127534.png)|![Boosty](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-2070927141.png)|![Discord](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-993073092.png)|
-> |---------------------------------|---------------------------------|---------------------------------|
-<hr>
+If you have any questions or run into difficulties while translating, feel free to ask.
+I'll be happy to help:
+[💬xsSplater's Discord](https://discord.gg/BGZagw3xnz)|[⚙️Darktide Modders](https://discord.com/channels/1048312349867646996/1165372604379570268)|[🎮Enhanced Descriptions Nexus](https://www.nexusmods.com/warhammer40kdarktide/mods/210)|
+|--------------------------------------|---------------------------------|-----------------------------|
+***
 
 [![Превью видео](https://img.youtube.com/vi/EJXcAlEOpeU/0.jpg)](https://www.youtube.com/live/EJXcAlEOpeU)
-<hr>
+***
+# 🛠️PREPARATION
+## Recommended Programs:
+For translating mods, I use and can recommend __[Notepad++](https://notepad-plus-plus.org/downloads/)__ or __[Visual Studio Code](https://code.visualstudio.com/download)__.
+You can also use __AI__ for the initial translation, then edit it yourself for accuracy and style.
+- 🃏 __Notepad++__ is straightforward and feels familiar like the standard Notepad, but adds powerful features like syntax highlighting and convenient hotkeys.
+- 📊 __Visual Studio Code__ includes advanced tools like error checking, but it takes a bit of time to set up and learn.
 
-## Special Thanks to:
-  - _[deluxghost](https://github.com/deluxghost) - For making this mod possible._
-  - _[Ebo](https://github.com/Ebowny) - **French** localization._
-  - _[SyuanTsai](https://github.com/SyuanTsai) - **Traditional Chinese** localization._
-  - _[Rin Anarchy](https://github.com/RinAnarchy) - **Simplified Chinese** localization._
-<hr>
+In general, you can translate in whatever you like best.
+***
 
-## 📋 Versions
-|[<code>[ ⏫ Back to top   ]</code>](#-enhanced-descriptions)|[<code>[ 💾 Download      ]</code>](#-download)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
-|---------------------------------|---------------------------------|---------------------------------|
-### ﻿ ﻿*Version: __4.7b__*
-- *Updated Veteran Talents for the Bound by Duty update. EN+RU*
-- *Some fixes*
-#### ﻿ ﻿*Version: __4.6b__*
-- *Updated Blessings and Psyker's Talents for the Bound by Duty update. EN+RU*
-- *The code has been rewritten.*
-- *The file structure has been changed.*
-- *Mod settings and color changes are applied immediately.*
-- *The dependency on WhatTheLocalization has been removed.*
-#### ﻿ ﻿*Version: __3.69b__*
-- *First update for Arbites Talents. EN+RU*
-#### ﻿ ﻿*Version: __3.52b__*
-- *Temporarily disabled Extended Descriptions in Chinese Traditional Translation due to a bug.*
-#### ﻿ ﻿*Version: __3.5b__*
-- *Added Traditional Chinese localization.*
-- *Added Simplified Chinese localization.*
-- *Updated Blessings, Talents, Penances, Menus, Curios, etc.*
-- *Refactored code structure to reduce character count and improve localization handling.*
-- *Various fixes.*
-#### ﻿ ﻿*Version: __3.402b__*
-   - *Updated English and Russian localizations for the new patch (core content only; extended descriptions will follow in a later updates).*
-#### ﻿ ﻿*Version: __3.2b__*
-   - *Fixed COLORS_Numbers, CURIOS_Blessings_Perks, WEAPONS_Blessings_Perks.*
-#### ﻿ ﻿*Version: __3.1b__*
-   - *Added Russian localization.*
-   - *Added Russian and some English Penances.*
-   - *Refactored the structure to enable multilingual support.*
-#### ﻿ ﻿*Version: __3.0b__*
-   - *Added French localization.*
-   - *Added missing Blessings for Relic Blade.*
-<hr>
+# 📚MOD STRUCTURE
+*To help you locate the files that need translation, I'll provide a brief description of their contents and whether they require any translation at all.*
+- *📗Translation is required. 📒Translation is optional. 📕Translation is not required.*
+## 0. FOLDER "!HOW TO TRANSLATE"
+- 📒 __!HOW TO TRANSLATE.md__ *-- >> You are here <<*
+- __!HOW TO TRANSLATE TW.md__ *-- Chinese Traditional version.*
 
-## 🖼 Screenshots
-|[<code>[ ⏫ Back to top   ]</code>](#-enhanced-descriptions)|[<code>[ 🛠 Installation  ]</code>](#-manual-installation)|[<code>[ 📋 Versions      ]</code>](#-versions)|
-|---------------------------------|---------------------------------|---------------------------------|
+## 1. FOLDER "COLORS_KEYWORDS_NUMBERS"
+### 1.1. 📗COLORS_KWords_xx.lua
+- *Files with language-specific __Keywords__ here: __Damage__, __Health__, __Wound__, __Stamina__, __Toughness__, etc.*
+### 1.2. 📒COLORS_Numbers.lua -- All Numbers and Variables here.
+- *For basic translation, __you can safely ignore this file__, because I have already added All the necessary Numbers to the descriptions.*
 
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191260-940401537.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191259-128111157.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-2127869553.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191284-2123215510.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-272179268.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-325096076.png)
-<hr>
+## 2. FOLDER "MAIN_MODULES"
+- *The __File Names__ are pretty self-explanatory, I think.*
+- *The suggested order, from easiest to hardest, is:*
+	- *__Curios Blessings and Perks__ --> __Weapons Blessings and Perks__ --> __Talents__, etc., but the final order is up to you.*
+### 2.1. 📗CURIOS_Blessings_Perks.lua
+### 2.2. 📒MENUS.lua
+- *The main thing is the highlighted numbers in __Sir Melk's Contracts Menu__.*
+- *The rest can only be translated where something needs to be corrected.*
+### 2.3. 📒NAMES_Enemies_Weapons.lua
+### 2.4. 📒NAMES_Talents_Blessings.lua
+### 2.5. 📗PENANCES.lua
+### 2.6. 📗TALENTS.lua
+- *Small Nodes*
+### 2.7. 📗TALENTS_Arbites.lua
+### 2.8. 📗TALENTS_Ogryn.lua
+### 2.9. 📗TALENTS_Psyker.lua
+### 3.0. 📗TALENTS_Veteran.lua
+### 3.1. 📗TALENTS_Zealot.lua
+### 3.2. 📗WEAPONS_Blessings_Perks.lua
 
-|[<code>[ ⏫ Back to top   ]</code>](#-enhanced-descriptions)|[<code>[ 🛠 Installation  ]</code>](#-manual-installation)|[<code>[ 📋 Versions      ]</code>](#-versions)|
-|---------------------------------|---------------------------------|---------------------------------|
+## 3. 📕Enhanced_descriptions.lua
+- *The main file needed for this mod to work.*
+
+## 4. 📕Enhanced_descriptions.mod
+- *The main file that is needed to connect the main files of this mod to the framework.*
+
+## 5. 📕Enhanced_descriptions_data.lua
+- *The main file needed for this mod's menu to work.*
+
+## 6. 📗Enhanced_descriptions_localization.lua
+- *The main file with the Localization of the Menu of this mod.*
+
+## 7. 📒README.md
+***
+
+# 📝TRANSLATION
+## Simple strings
+### 1. Open a file, for example: TALENTS.lua
+### 2. Find the part you want to translate, for example:
+	--[+ Blitz +]--
+	["loc_glossary_term_tactical"] = {
+		en = "Blitz",
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+### 3. I'll choose the Russian localization as an example: -- ru = "",
+#### 3.1. You need to remove two hyphens and a space before the line to uncomment it: ru = "",
+#### 3.2. Then add the translation: ru = "Блиц",
+	--[+ Blitz +]--
+	["loc_glossary_term_tactical"] = {
+		en = "Blitz",
+		ru = "Блиц",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+### 4. Save the file (CTRL+S).
+### 5. Done. You can test it in-game.
+***
+## Slightly more complex
+### 1. Open a file, for example: TALENTS_Veteran.lua
+### 2. Find the part you want to translate, for example:
+	--[+ Passive 41 - Onslaught +]--
+	["loc_talent_veteran_continous_hits_apply_rending_description"] = { -- rending_multiplier: 2.5%, duration: 5, max_stacks: 16, +colors
+		en = "On continuous hits to a Single target:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			..PHRS.Can_be_refr.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb,
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = ,
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+### 3. I'll choose the Russian localization as an example: -- ru = "",
+#### 3.1. You need to remove two hyphens and a space before the line to uncomment it: ru = "",
+#### 3.2. Then copy the English localization to yours:
+	--[+ Passive 41 - Onslaught +]--
+	["loc_talent_veteran_continous_hits_apply_rending_description"] = {
+		en = "On continuous hits to a Single target:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			..PHRS.Can_be_refr.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb,
+		ru = "On continuous hits to a Single target:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			..PHRS.Can_be_refr.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb,
+		-- fr = "",
+		-- ["zh-tw"] = ,
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+### 4. Translate the text into your language.
+   *Don't forget to go to your language's Keyword file ("**_ru**" is __COLORS_KWords_ru.lua__) and translate it too.*
+
+	--[+ Passive 41 - Onslaught +]--
+	["loc_talent_veteran_continous_hits_apply_rending_description"] = {
+		en = "On continuous hits to a Single target:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			..PHRS.Can_be_refr.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb,
+		--[+ Пассивный 41 - Натиск +]--
+		ru = "При повторных атаках по одной цели на неё накладывается:\n"
+			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." брони на {duration:%s} секунд.\n"
+			..Dot_nc.." Суммируется до {max_stacks:%s} раз.\n"
+			.."\n"
+			..PHRS.Can_be_refr_ru.."\n"
+			.."\n"
+			..NTS.Brtl_note_rgb_ru,
+		-- fr = "",
+		-- ["zh-tw"] = ,
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+You need to add Keywords from your file:
+	
+	..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." брони на {duration:%s} секунд.\n"
+- The text has been translated and "**_ru**" has been added to the Keyword "..**COLORS_KWords.Brittleness_rgb**..": *"..**COLORS_KWords_ru.Brittleness_rgb_ru**.."*
+ - This means that the "**COLORS_KWords_ru.lua**" file contains the Keyword "**Brittleness**" *(it is always added with **_rgb_your_localization***.
+  - For "**_ru**" it's "**COLORS_KWords_ru.Brittleness_rgb_ru**", for "**_fr**" it's "**COLORS_KWords_fr.Brittleness_rgb_fr**", etc.
+### 5. Save the file (CTRL+S).
+### 6. Done. You can test it in-game.
+***
