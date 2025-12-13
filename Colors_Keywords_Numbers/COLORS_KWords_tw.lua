@@ -367,9 +367,9 @@ local CONFIG = {
 	damnation_text_colour = {
 		damnation = "詛咒",
 	},
-	-- auric_text_colour = {
-		-- auric = "Auric",
-	-- },
+	auric_text_colour = {
+		auric = "奧里克",
+	},
 }
 
 -- Universal function for creating colored variables
