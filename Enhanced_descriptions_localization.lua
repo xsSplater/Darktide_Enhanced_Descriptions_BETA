@@ -1,339 +1,420 @@
 ---@diagnostic disable: undefined-global, undefined-field
+-- The main file with the Localization of the Menu of this mod.
+-- FOR TRANSLATORS: TRANSLATION PROOFREADING REQUIRED!
 
---[+ Chinese Traditional +]-- ["zh-tw"]
---[+ Chinese Simplified +]-- ["zh-cn"]
---[+ English +]-- en
---[+ French +]-- fr
---[+ German +]-- de
---[+ Italian +]-- it
---[+ Japanese +]-- ja
---[+ Korean +]-- ko
---[+ Polish +]-- pl
---[+ Portuguese +]-- pt-BR
---[+ Russian +]-- ru
---[+ Spanish +]-- es
-
--- local mod = get_mod("Enhanced_descriptions")
+local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 
--- Duplicate the line and translate. For example:
---		en = "Enhanced Descriptions",
---		ru = "Улучшенные описания", <- Don't forget the comma at the end!
+-- LOCALIZATION CONFIGURATION
+local LOCALIZATION_GROUPS = {
+	-- Main modules
+	"enable_menus_file",
+	"enable_curious_file",
+	"enable_penances_file",
+	"enable_weapons_file",
+	"enable_talents_file",
+	"enable_names_file",
+	"enable_names_tal_bless_file",
+	"enable_debug_mode",
+
+	"bleed",
+	"brittleness",
+	"burn",
+	"cleave",
+	"coherency",
+	"combat_ability",
+	"corruption",
+	"crit",
+	"damage",
+	"electrocuted",
+	"finesse",
+	"health",
+	"hit_mass",
+	"impact",
+	"peril",
+	"power",
+	"rending",
+	"soulblaze",
+	"stagger",
+	"stamina",
+	"toughness",
+	"weakspot",
+
+	-- Classes and abilities
+	"class_psyker",
+	"precision",
+	"class_ogryn",
+	"fnp",
+	"luckyb",
+	"trample",
+	"class_zealot",
+	"fury",
+	"momentum",
+	"stealth",
+	"class_veteran",
+	"focus",
+	"focust",
+	"meleespec",
+	"rangedspec",
+	"class_arbites",
+	"class_scum",
+	"chemtox",
+
+	-- Misc
+	"talents",
+	"talents_penances",
+	"numbers",
+	"variables",
+	"note",
+	"warning",
+
+	-- Difficulty
+	"sedition",
+	"uprising",
+	"malice",
+	"heresy",
+	"damnation",
+	"auric",
+}
+
+-- UTILITY FUNCTIONS
+local function readable(text)
+	local tokens = string.split(text, "_")
+	for i, token in ipairs(tokens) do
+		tokens[i] = string.upper(string.sub(token, 1, 1)) .. string.sub(token, 2)
+	end
+	return table.concat(tokens, " ")
+end
+
+local function add_color_localizations(localizations)
+	for _, color_name in ipairs(Color.list) do
+		local color_values = Color[color_name](255, true)
+		local text = InputUtils.apply_color_to_input_text(readable(color_name), color_values)
+		localizations[color_name] = { en = text }
+	end
+end
+
+
+local function add_localisation_entry(localizations, type_name)
+localizations[type_name .. "_text_colour"] = {
+	en = "Pick color",
+	ru = "Выберите цвет",
+	fr = "Couleur", 
+	["zh-tw"] = "顏色",
+	["zh-cn"] = "颜色",
+	de = "Farbe auswählen",
+	it = "Seleziona colore",
+	ja = "色を選択",
+	ko = "색상 선택",
+	pl = "Wybierz kolor",
+	["pt-br"] = "Escolher cor",
+	es = "Elegir color",
+}
+end
+
 
 local localizations = {
 	mod_name = {
-		en = "Enhanced Descriptions",
-		-- fr = "Descriptions avancées", -- ???
-		ru = "Улучшенные описания",
-		["zh-tw"] = "描述改善",
-		["zh-cn"] = "描述增强",
+		en = "{#color(192, 255, 26)} Enhanced Descriptions{#reset()}",
+		ru = "{#color(192, 255, 26)} Улучшенные описания{#reset()}",
+		["zh-tw"] = "{#color(192, 255, 26)} 描述改善{#reset()}",
+		["zh-cn"] = "{#color(192, 255, 26)} 描述增强{#reset()}",
+		de = "{#color(192, 255, 26)} Erweiterte Beschreibungen{#reset()}",
+		it = "{#color(192, 255, 26)} Descrizioni Migliorate{#reset()}",
+		ja = "{#color(192, 255, 26)} 詳細な説明{#reset()}",
+		ko = "{#color(192, 255, 26)} 향상된 설명{#reset()}",
+		pl = "{#color(192, 255, 26)} Rozszerzone Opisy{#reset()}",
+		["pt-br"] = "{#color(192, 255, 26)} Descrições Aprimoradas{#reset()}",
+		es = "{#color(192, 255, 26)} Descripciones Mejoradas{#reset()}",
 	},
 	mod_description = {
-		en = "Enhanced Descriptions — fixes and additions to game descriptions. Merged mod. Included TALENTS, CURIOS, WEAPON PERKS and BLESSINGS.",
-		fr = "Descriptions avancées : corrections et ajouts aux descriptions du jeu. Version fusionnée incluant les Talents, Curiosités, Atouts et Bénédictions des armes.",
-		ru = "Улучшенные описания — Улучшенная локализация и расширенные описания ТАЛАНТОВ, БЛАГОСЛОВЕНИЙ и УЛУЧШЕНИЙ ОРУЖИЯ, а также РЕЛИКВИЙ(диковинок), различных МЕНЮ и всех мест, куда я успел добраться.",
-		["zh-tw"] = "描述改善 - 修正和添加遊戲內的各項描述。包括天賦、珍品、武器特性、領主任務和祝福；目前苦修僅支援俄語。",
-		["zh-cn"] = "描述增强 - 修正并增加游戏内文本的描述的一体式模组。包含天赋，珍品，武器专长及武器祝福。",
+		en = "Improves readability by highlighting numbers and keywords in descriptions of Talents, Blessings, Penances, Curios, and other menu texts. Also fixes localizations and adds clarity to some descriptions.",
+		ru = "Улучшает читаемость за счёт выделения чисел и ключевых слов в описаниях Талантов, Благословений, Искуплений, Реликвий и других текстах меню. Также вносит исправления в локализации и добавляет ясности в некоторые описания.",
+		fr = "Améliore la lisibilité en mettant en évidence les nombres et mots-clés dans les descriptions des Talents, Bénédictions, Pénitences, Curiosités et autres textes de menu. Corrige également les localisations et ajoute de la clarté à certaines descriptions.",
+		["zh-tw"] = "透過高亮顯示天賦、祝福、苦行、珍奇物品和其他選單文字描述中的數字和關鍵字來提升可讀性。同時修復在地化問題並為部分描述增加清晰度。",
+		["zh-cn"] = "通过高亮显示天赋、祝福、苦修、珍品和其他菜单文本描述中的数字和关键词来提升可读性。同时修复本地化问题并为部分描述增加清晰度。",
+		de = "Verbessert die Lesbarkeit durch Hervorhebung von Zahlen und Schlüsselwörtern in Beschreibungen von Talenten, Segnungen, Bußen, Kuriositäten und anderen Menütexten. Korrigiert außerdem Lokalisierungsfehler und fügt einigen Beschreibungen mehr Klarheit hinzu.",
+		it = "Migliora la leggibilità evidenziando numeri e parole chiave nelle descrizioni di Talenti, Benedizioni, Penitenze, Curiosità e altri testi di menu. Corregge anche le localizzazioni e aggiunge chiarezza ad alcune descrizioni.",
+		ja = "タレント、祝福、苦行、収集品、その他のメニューテキストの説明内の数値とキーワードを強調表示することで、読みやすさを向上させます。また、ローカライズを修正し、一部の説明に明確さを追加します。",
+		ko = "특성, 축복, 참회, 골동품 및 기타 메뉴 텍스트 설명에서 숫자와 키워드를 강조하여 가독성을 향상시킵니다. 또한 현지화를 수정하고 일부 설명에 명확성을 더합니다.",
+		pl = "Poprawia czytelność poprzez wyróżnianie liczb i słów kluczowych w opisach Talentów, Błogosławieństw, Pokut, Kuriozów i innych tekstach menu. Również poprawia lokalizacje i dodaje przejrzystości do niektórych opisów.",
+		["pt-br"] = "Melhora a legibilidade destacando números e palavras-chave nas descrições de Talentos, Bênçãos, Penitências, Curiosidades e outros textos de menu. Também corrige localizações e adiciona clareza a algumas descrições.",
+		es = "Mejora la legibilidad resaltando números y palabras clave en descripciones de Talentos, Bendiciones, Penitencias, Curiosidades y otros textos de menú. También corrige localizaciones y añade claridad a algunas descripciones.",
 	},
 
+-- MAIN MODULES
 	enable_weapons_file = {
-		en = "Toggle \"Weapons\" module",
-		fr = "Activer le module des armes",
+		en = "\"Weapons\" module",
 		ru = "Модуль «Оружие»",
-		["zh-tw"] = "切換 {#color(255, 223,135)}武器{#reset()} 模組",
-		["zh-cn"] = "启用「武器」模块",
+		fr = "Module « Armes »",
+		["zh-tw"] = "「武器」模組",
+		["zh-cn"] = "「武器」模块",
+		de = "„Waffen“-Modul",
+		it = "Modulo \"Armi\"",
+		ja = "「武器」モジュール",
+		ko = "\"무기\" 모듈",
+		pl = "Moduł „Bronie”",
+		["pt-br"] = "Módulo \"Armas\"",
+		es = "Módulo \"Armas\"",
 	},
 	enable_weapons_file_description = {
-		en = "This module highlights the Words and Numbers of Weapon Blessings and Perks. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		fr = "Ce module met en évidence les mots et les chiffres des bénédictions et avantages des armes. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль выделяет слова и числа Благословений и Улучшений Оружия. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "突顯 {#color(255, 223,135)}武器祝福{#reset()} 和 {#color(255, 223,135)}附加屬性{#reset()} 的文字和數字。\n\n"
-		.."如果您不需要此模組，可以將其禁用。\n"
-		.."{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n"
-		.."{#color(100, 100, 100)}  \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "此模块将高亮显示武器的祝福和专长的关键词及数字，并重写了效果描述。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+		en = "This module highlights the keywords and numbers of Weapon Blessings and Perks. You can disable this module if you don't need it.",
+		ru = "Этот модуль выделяет ключевые слова и числа Благословений и Улучшений Оружия. Вы можете отключить этот модуль, если он вам не нужен.",
+		fr = "Ce module met en évidence les mots-clés et les chiffres des Bénédictions et Avantages des armes. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
+		["zh-tw"] = "此模組會高亮顯示武器祝福和特權的關鍵字與數字。如果不需要，可以停用此模組。",
+		["zh-cn"] = "此模块会高亮显示武器祝福和特权的关键词与数字。如果不需要，可以禁用此模块。",
+		de = "Dieses Modul hebt die Schlüsselwörter und Zahlen von Waffensegnungen und Vorteilen hervor. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
+		it = "Questo modulo evidenzia le parole chiave e i numeri delle Benedizioni e dei Benefici delle armi. Puoi disattivare questo modulo se non ne hai bisogno.",
+		ja = "このモジュールは武器の祝福とパークのキーワードと数値を強調表示します。必要ない場合はこのモジュールを無効にできます。",
+		ko = "이 모듈은 무기 축복과 특전의 키워드와 숫자를 강조 표시합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
+		pl = "Ten moduł wyróżnia słowa kluczowe i liczby Błogosławieństw i Atutów broni. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
+		["pt-br"] = "Este módulo destaca as palavras-chave e números das Bênçãos e Vantagens de armas. Você pode desativar este módulo se não precisar dele.",
+		es = "Este módulo resalta las palabras clave y números de las Bendiciones y Ventajas de armas. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
 	enable_curious_file = {
-		en = "Toggle \"Curios\" module",
-		fr = "Activer le module des curiosités",
+		en = "\"Curios\" module",
 		ru = "Модуль «Реликвии»",
-		["zh-tw"] = "切換 {#color(255, 223,135)}珍品{#reset()} 模組",
-		["zh-cn"] = "启用「珍品」模块",
+		fr = "Module « Curiosités »",
+		["zh-tw"] = "「珍奇物品」模組",
+		["zh-cn"] = "「珍品」模块",
+		de = "„Kuriositäten“-Modul",
+		it = "Modulo \"Curiosità\"",
+		ja = "「収集品」モジュール",
+		ko = "\"골동품\" 모듈",
+		pl = "Moduł „Kurioza”",
+		["pt-br"] = "Módulo \"Curiosidades\"",
+		es = "Módulo \"Curiosidades\"",
 	},
 	enable_curious_file_description = {
-		en = "This module highlights the Words and Numbers of the Blessings and Perks of the Curios. You can disable this module if you don't need it .\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		fr = "Ce module met en évidence les mots et les chiffres des bénédictions et avantages des curiosités. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль выделяет слова и числа Благословений и Улучшений Реликвий. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "突顯 {#color(255, 223,135)}珍品{#reset()} 的 {#color(255, 223,135)}祝福{#reset()} 和 {#color(255, 223,135)}附加屬性{#reset()} 的文字和數字。\n如果您不需要此模組，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}  \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "此模块将高亮显示珍品的祝福和专长的关键词及数字。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+		en = "This module highlights the keywords and numbers of the Blessings and Perks of the Curios. You can disable this module if you don't need it.",
+		ru = "Этот модуль выделяет ключевые слова и числа Благословений и Улучшений Реликвий. Вы можете отключить этот модуль, если он вам не нужен.",
+		fr = "Ce module met en évidence les mots-clés et les chiffres des Bénédictions et Avantages des Curiosités. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
+		["zh-tw"] = "此模組會高亮顯示珍奇物品的祝福和特權的關鍵字與數字。如果不需要，可以停用此模組。",
+		["zh-cn"] = "此模块会高亮显示珍品的祝福和特权的关键词与数字。如果不需要，可以禁用此模块。",
+		de = "Dieses Modul hebt die Schlüsselwörter und Zahlen der Segnungen und Vorteile der Kuriositäten hervor. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
+		it = "Questo modulo evidenzia le parole chiave e i numeri delle Benedizioni e dei Benefici delle Curiosità. Puoi disattivare questo modulo se non ne hai bisogno.",
+		ja = "このモジュールは収集品の祝福とパークのキーワードと数値を強調表示します。必要ない場合はこのモジュールを無効にできます。",
+		ko = "이 모듈은 골동품의 축복과 특전의 키워드와 숫자를 강조 표시합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
+		pl = "Ten moduł wyróżnia słowa kluczowe i liczby Błogosławieństw i Atutów Kuriozów. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
+		["pt-br"] = "Este módulo destaca as palavras-chave e números das Bênçãos e Vantagens das Curiosidades. Você pode desativar este módulo se não precisar dele.",
+		es = "Este módulo resalta las palabras clave y números de las Bendiciones y Ventajas de las Curiosidades. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
 	enable_menus_file = {
-		en = "Toggle \"Menus\" module",
-		fr = "Activer le module des menus",
+		en = "\"Menus\" module",
 		ru = "Модуль «Меню»",
-		["zh-tw"] = "切換 {#color(255, 223,135)}領主{#reset()} 模組",
-		["zh-cn"] = "启用「菜单」模块",
+		fr = "Module « Menus »",
+		["zh-tw"] = "「選單」模組",
+		["zh-cn"] = "「菜单」模块",
+		de = "„Menüs“-Modul",
+		it = "Modulo \"Menu\"",
+		ja = "「メニュー」モジュール",
+		ko = "\"메뉴\" 모듈",
+		pl = "Moduł „Menu”",
+		["pt-br"] = "Módulo \"Menus\"",
+		es = "Módulo \"Menús\"",
 	},
 	enable_menus_file_description = {
-		en = "This module highlights the Numbers of the Melk's Contracts. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль исправляет надписи в различных меню. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "突顯領主的 {#color(255, 223,135)}合約{#reset()} 數字。\n如果您不需要此模組，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)} \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "此模块将高亮梅尔克的协议中的数字，并修正菜单中的部分文字。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+		en = "This module fixes labels in various menus and also highlights numbers in Melk's Contracts. You can disable this module if you don't need it.",
+		ru = "Этот модуль исправляет надписи в различных меню, а также подсвечивает цифры в Контрактах Мелка. Вы можете отключить этот модуль, если он вам не нужен.",
+		fr = "Ce module corrige les libellés dans divers menus et met également en évidence les chiffres dans les Contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
+		["zh-tw"] = "此模組會修正各種選單中的標籤，並高亮顯示梅爾克合約中的數字。如果不需要，可以停用此模組。",
+		["zh-cn"] = "此模块会修正各种菜单中的标签，并高亮显示梅尔克合约中的数字。如果不需要，可以禁用此模块。",
+		de = "Dieses Modul korrigiert Beschriftungen in verschiedenen Menüs und hebt auch Zahlen in Melks Verträgen hervor. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
+		it = "Questo modulo corregge le etichette in vari menu ed evidenzia anche i numeri nei Contratti di Melk. Puoi disattivare questo modulo se non ne hai bisogno.",
+		ja = "このモジュールは様々なメニューのラベルを修正し、メルクの契約の数値を強調表示します。必要ない場合はこのモジュールを無効にできます。",
+		ko = "이 모듈은 다양한 메뉴의 레이블을 수정하고 멜크의 계약서에서 숫자를 강조 표시합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
+		pl = "Ten moduł poprawia etykiety w różnych menu, a także wyróżnia liczby w Kontraktach Melka. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
+		["pt-br"] = "Este módulo corrige rótulos em vários menus e também destaca números nos Contratos do Melk. Você pode desativar este módulo se não precisar dele.",
+		es = "Este módulo corrige las etiquetas en varios menús y también resalta los números en los Contratos de Melk. Puedes desactivar este módulo si no lo necesitas.",
 	},
+
 	enable_talents_file = {
-		en = "Toggle \"Talents\" module",
-		fr = "Activer le module des talents",
+		en = "\"Talents\" module",
 		ru = "Модуль «Таланты»",
-		["zh-tw"] = "切換 {#color(255, 223,135)}天賦{#reset()} 模組",
-		["zh-cn"] = "启用「天赋」模块",
+		fr = "Module « Talents »",
+		["zh-tw"] = "「天賦」模組",
+		["zh-cn"] = "「天赋」模块",
+		de = "„Talente“-Modul",
+		it = "Modulo \"Talenti\"",
+		ja = "「タレント」モジュール",
+		ko = "\"특성\" 모듈",
+		pl = "Moduł „Talenty”",
+		["pt-br"] = "Módulo \"Talentos\"",
+		es = "Módulo \"Talentos\"",
 	},
 	enable_talents_file_description = {
-		en = "This module highlights Talent words. You can disable this module if you don't need it, but all Extended Descriptions will also be disabled.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		fr = "Ce module met en avant les mots clés des Talents. Vous pouvez désactiver ce module si vous n'en avez pas besoin mais les descriptions avancées seront également désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль выделяет слова Талантов и немного улучшает описания некоторых из них. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "突顯 {#color(255, 223,135)}天賦{#reset()} 文字。\n如果您不需要此模組，可以將其禁用，但所有擴充描述也將被禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)}\n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "此模块将高亮天赋的关键词。\n可以按需开关此模块。\n需注意，关闭此模块将同时禁用扩充描述功能。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+		en = "This module highlights Talent keywords and slightly improves descriptions of some of them. You can disable this module if you don't need it.",
+		ru = "Этот модуль выделяет ключевые слова Талантов и немного улучшает описания некоторых из них. Вы можете отключить этот модуль, если он вам не нужен.",
+		fr = "Ce module met en évidence les mots-clés des Talents et améliore légèrement les descriptions de certains d'entre eux. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
+		["zh-tw"] = "此模組會高亮顯示天賦的關鍵字，並稍微改進部分天賦的描述。如果不需要，可以停用此模組。",
+		["zh-cn"] = "此模块会高亮显示天赋的关键词，并稍微改进部分天赋的描述。如果不需要，可以禁用此模块。",
+		de = "Dieses Modul hebt die Schlüsselwörter der Talente hervor und verbessert leicht die Beschreibungen einiger davon. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
+		it = "Questo modulo evidenzia le parole chiave dei Talenti e migliora leggermente le descrizioni di alcuni di essi. Puoi disattivare questo modulo se non ne hai bisogno.",
+		ja = "このモジュールはタレントのキーワードを強調表示し、一部の説明を少し改善します。必要ない場合はこのモジュールを無効にできます。",
+		ko = "이 모듈은 특성 키워드를 강조 표시하고 일부 특성의 설명을 약간 개선합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
+		pl = "Ten moduł wyróżnia słowa kluczowe Talentów i nieco poprawia opisy niektórych z nich. Możesz wyłączyć ten moduł, если nie jest ci potrzebny.",
+		["pt-br"] = "Este módulo destaca as palavras-chave dos Talentos e melhora ligeiramente as descrições de alguns deles. Você pode desativar este módulo se não precisar dele.",
+		es = "Este módulo resalta las palabras clave de los Talentos y mejora ligeramente las descripciones de algunos de ellos. Puedes desactivar este módulo si no lo necesitas.",
 	},
+
 	enable_penances_file = {
-		en = "{#color(15, 15, 15)}(Toggle \"Penances\" module){#reset()}",
-		-- fr = "",
+		en = "\"Penances\" module",
 		ru = "Модуль «Искупления»",
-		["zh-tw"] = "切換 {#color(255, 223,135)}苦修{#reset()} 模組",
-		["zh-cn"] = "（启用「苦修」模块）",
+		fr = "Module « Pénitences »",
+		["zh-tw"] = "「苦行」模組",
+		["zh-cn"] = "「苦修」模块",
+		de = "„Bußen“-Modul",
+		it = "Modulo \"Penitenze\"",
+		ja = "「苦行」モジュール",
+		ko = "\"참회\" 모듈",
+		pl = "Moduł „Pokuty”",
+		["pt-br"] = "Módulo \"Penitências\"",
+		es = "Módulo \"Penitencias\"",
 	},
-	enable_penances_file_description = { -- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
-		en = "{#color(255, 35, 5)}BETA! FOR NOW ONLY FOR THE RUSSIAN VERSION!{#reset()} This module highlights the Words and Numbers of the Penances. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль выделяет слова Искуплений и немного переписывает некоторые из них. Названия талантов берутся из модуля с исправленными названиями талантов! Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "突顯 {#color(255, 223,135)}苦修{#reset()} 的文字。\n可以按需求開關此模組。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-    ["zh-cn"] = "{#color(255, 35, 5)}测试版！仅供俄语版本使用！{#reset()} 此模块将高亮苦修中的数字。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+	enable_penances_file_description = {
+		en = "This module highlights the keywords and numbers of Penances and slightly expands descriptions of some of them. You can disable this module if you don't need it.",
+		ru = "Этот модуль выделяет ключевые слова и цифры Искуплений и немного дополняет описания некоторых из них. Вы можете отключить этот модуль, если он вам не нужен.",
+		fr = "Ce module met en évidence les mots-clés et les chiffres des Pénitences et complète légèrement les descriptions de certaines d'entre elles. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
+		["zh-tw"] = "此模組會高亮顯示苦行的關鍵字與數字，並稍微擴充部分苦行的描述。如果不需要，可以停用此模組。",
+		["zh-cn"] = "此模块会高亮显示苦修的关键词与数字，并稍微扩充部分苦修的描述。如果不需要，可以禁用此模块。",
+		de = "Dieses Modul hebt die Schlüsselwörter und Zahlen der Bußen hervor und erweitert leicht die Beschreibungen einiger davon. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
+		it = "Questo modulo evidenzia le parole chiave e i numeri delle Penitenze e amplia leggermente le descrizioni di alcune di esse. Puoi disattivare questo modulo se non ne hai bisogno.",
+		ja = "このモジュールは苦行のキーワードと数値を強調表示し、一部の説明を少し拡張します。必要ない場合はこのモジュールを無効にできます。",
+		ko = "이 모듈은 참회의 키워드와 숫자를 강조 표시하고 일부 참회의 설명을 약간 확장합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
+		pl = "Ten moduł wyróżnia słowa kluczowe i liczby Pokut oraz nieco rozszerza opisy niektórych z nich. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
+		["pt-br"] = "Este módulo destaca as palavras-chave e números das Penitências e expande ligeiramente as descrições de algumas delas. Você pode desativar este módulo se não precisar dele.",
+		es = "Este módulo resalta las palabras clave y números de las Penitencias y amplía ligeramente las descripciones de algunas de ellas. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
-	-- FOR RUSSIAN VERSION ONLY!
 	enable_names_file = {
-		en = "{#color(15, 15, 15)}(Toggle \"Names of enemies and weapons\" module){#reset()}",
-		-- fr = "",
+		en = "{#color(15, 15, 15)}\"Names of Enemies and Weapons\" module{#reset()}",
 		ru = "Модуль «Названия врагов и оружия»",
-		["zh-tw"] = "切換 {#color(255, 223,135)}敵人{#reset()} 與 {#color(255, 223,135)}武器名稱{#reset()} 模組",
-		["zh-cn"] = "{#color(15, 15, 15)}(启用「敌人与武器名称」模块){#reset()}",
+		fr = "Module « Noms des ennemis et armes »",
+		["zh-tw"] = "「敵人與武器名稱」模組",
+		["zh-cn"] = "「敌人与武器名称」模块",
+		de = "„Namen von Feinden und Waffen“-Modul",
+		it = "Modulo \"Nomi di nemici e armi\"",
+		ja = "「敵と武器の名前」モジュール",
+		ko = "\"적 및 무기 이름\" 모듈",
+		pl = "Moduł „Nazwy wrogów i broni”",
+		["pt-br"] = "Módulo \"Nomes de inimigos e armas\"",
+		es = "Módulo \"Nombres de enemigos y armas\"",
 	},
-	enable_names_file_description = { -- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
-		en = "{#color(255, 35, 5)}FOR RUSSIAN VERSION ONLY!{#reset()}",
-		-- en = "This module changes the names of weapons and enemies. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль меняет названия некоторых врагов и видов брони, а также улучшает названия некоторого оружия, моделей и кузниц. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "突顯 {#color(255, 223,135)}武器型號{#reset()} 。可以按需求開關此模組。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "{#color(255, 35, 5)}仅供俄语版本使用！{#reset()}此模块将高亮敌人与武器名称。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
+	enable_names_file_description = {
+		en = "{#color(255, 35, 5)}NON-ENGLISH LOCALIZATIONS ONLY!{#reset()}\n"
+			.."This module changes the names of weapons and enemies. You can disable this module if you don't need it.",
+		ru = "Этот модуль исправляет названия некоторых врагов, видов брони и тела, а также названия оружия. Вы можете отключить этот модуль, если он вам не нужен.",
+		fr = "Ce module modifie les noms des armes et des ennemis. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
+		["zh-tw"] = "此模組會更改武器和敵人的名稱。如果不需要，可以停用此模組。",
+		["zh-cn"] = "此模块会更改武器和敌人的名称。如果不需要，可以禁用此模块。",
+		de = "Dieses Modul ändert die Namen von Waffen und Feinden. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
+		it = "Questo modulo modifica i nomi di armi e nemici. Puoi disattivare questo modulo se non ne hai bisogno.",
+		ja = "このモジュールは武器と敵の名前を変更します。必要ない場合はこのモジュールを無効にできます。",
+		ko = "이 모듈은 무기와 적의 이름을 변경합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
+		pl = "Ten moduł zmienia nazwy broni i wrogów. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
+		["pt-br"] = "Este módulo altera os nomes de armas e inimigos. Você pode desativar este módulo se não precisar dele.",
+		es = "Este módulo cambia los nombres de armas y enemigos. Puedes desactivar este módulo si no lo necesitas.",
 	},
+
 	enable_names_tal_bless_file = {
-		en = "{#color(15, 15, 15)}(Toggle \"Names of Talents and Blessings\" module){#reset()}",
-		-- fr = "",
+		en = "{#color(15, 15, 15)}\"Names of Talents and Blessings\" module{#reset()}",
 		ru = "Модуль «Названия талантов и благословений»",
-		["zh-tw"] = "{#color(15, 15, 15)}(切換『天賦與祝福名稱』模組){#reset()}",
-		["zh-cn"] = "{#color(15, 15, 15)}(启用「天赋与祝福名称」模块){#reset()}",
+		fr = "Module « Noms des talents et bénédictions »",
+		["zh-tw"] = "「天賦與祝福名稱」模組",
+		["zh-cn"] = "「天赋与祝福名称」模块",
+		de = "„Namen von Talenten und Segnungen“-Modul",
+		it = "Modulo \"Nomi di talenti e benedizioni\"",
+		ja = "「タレントと祝福の名前」モジュール",
+		ko = "\"특성 및 축복 이름\" 모듈",
+		pl = "Moduł „Nazwy talentów i błogosławieństw”",
+		["pt-br"] = "Módulo \"Nomes de talentos e bênçãos\"",
+		es = "Módulo \"Nombres de talentos y bendiciones\"",
 	},
-	enable_names_tal_bless_file_description = {	-- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
-		en = "{#color(255, 35, 5)}FOR RUSSIAN VERSION ONLY!{#reset()}",
-		-- en = "This module changes the names of Talents and Blessings. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль меняет названия некоторых Талантов и Благословений. Вы можете конечно отключить этот модуль, но тогда названия талантов в Расширенных описаниях и в Искуплениях не будут совпадать. Более правильный перевод, но может немного ухудшать понимание вами других игроков и другими игроками вас, т.к. будет чуть сложнее соотносить названия.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "{#color(255, 35, 5)}測試版！僅供俄語版本使用！\n{#reset()}突顯 {#color(255, 223,135)}天賦{#reset()} 與 {#color(255, 223,135)}祝福{#reset()} 名稱。\n可以按需求開關此模組。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "{#color(255, 35, 5)}仅供俄语版本使用！{#reset()}此模块将高亮天赋与祝福名称。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
-	},
-
---[+ Enhanced Descriptions - Talents +]--
-	enhanced_descriptions_ = {
-		en = " Extended Descriptions",
-		fr = " Descriptions avancées",
-		ru = " Расширенные описания",
-		["zh-tw"] = " 擴充描述",
-		["zh-cn"] = " 扩充描述",
-	},
-	enhanced_descriptions_enabled = {
-		en = "Talents - Psyker + Zealot",
-		fr = "Activer descriptions avancées pour Psyker et Fanatique",
-		ru = "Таланты - Псайкер + Изувер",
-		["zh-tw"] = "切換擴充描述 - 天賦 - 靈能者、狂信徒",
-		["zh-cn"] = "启用扩充描述 - 天赋 - 灵能者+狂信徒",
-	},
-	enhanced_descriptions_enabled_description = {
-		en = "If you don't need Extended Descriptions for Talents, you can Disable them.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		fr = "Si vous n'avez pas besoin des descriptions étendues pour les talents, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Если вам не нужны Расширенные описания Талантов, вы можете их отключить.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "如果您不需要天賦的擴充描述，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)} \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "此模块将扩充天赋树的描述。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
-	},
-	enhanced_descriptions_enabled2 = {
-		en = "Talents - Veteran + Ogryn",
-		fr = "Activer descriptions avancées pour Vétéran et Ogryn",
-		ru = "Таланты - Ветеран + Огрин",
-		["zh-tw"] = "切換擴充描述 - 天賦 - 老兵、歐格林",
-		["zh-cn"] = "启用扩充描述 - 天赋 - 老兵+欧格林",
-	},
-	enhanced_descriptions_enabled2_description = {
-		en = "If you don't need Extended Descriptions for Talents, you can Disable them.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		fr = "Si vous n'avez pas besoin des descriptions étendues pour les talents, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Если вам не нужны Расширенные описания Талантов, вы можете их отключить.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "如果您不需要天賦的擴充描述，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)} \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "此模块将扩充天赋树的描述。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
-	},
---[+ Enhanced Descriptions - Nodes +]--
-	enhanced_descriptions_nodes_enabled = {
-		en = "Talents - Nodes",
-		fr = "Activer descriptions avancées pour les noeuds des arbres de talents",
-		ru = "Таланты - Узлы",
-		["zh-tw"] = "切換擴充描述 - 天賦節點",
-		["zh-cn"] = "启用扩充描述 - 天赋树节点",
-	},
-	enhanced_descriptions_nodes_enabled_description = {
-		en = "If you don't need Extended Descriptions for small Nodes, you can Disable them.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		fr = "Si vous n'avez pas besoin des descriptions étendues pour les noeuds, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Если вам не нужны Расширенные описания узлов Талантов, вы можете их отключить.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "如果您不需要小節點的擴充描述，可以將其禁用。\n{#color(255, 155, 55)}但您必須按下 CTRL+SHIFT+R 重新加載模組！{#reset()}\n{#color(100, 100, 100)} \n\n要切換此功能，需要重啟遊戲或進入 Darktide Mod Framework 選項並啟用開發人員模式。{#reset()}",
-		["zh-cn"] = "此模块将扩充天赋树节点的描述。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
-	},
---[+ Enhanced Descriptions - Penances +]--
-	enhanced_descriptions_penances_enabled = {
-		en = "{#color(15, 15, 15)}(Penances){#reset()}",
-		-- fr = "",
-		ru = "Искупления",
-		["zh-tw"] = "{#color(15, 15, 15)}（苦修）{#reset()}",
-		["zh-cn"] = "{#color(15, 15, 15)}（苦修）{#reset()}",
-	},
-	enhanced_descriptions_penances_enabled_description = {	-- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
-		en = "{#color(255, 35, 5)}BETA! FOR NOW ONLY FOR THE RUSSIAN VERSION!{#reset()} If you don't need Extended Descriptions for Penances, you can Disable them. Added some tips for completing Penances.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		-- fr = "Si vous n'avez pas besoin des descriptions étendues pour les noeuds, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Если вам не нужны Расширенные описания Искуплений, вы можете их отключить. Добавлены некоторые советы по выполнению Искуплений. Названия талантов берутся из модуля с исправленными названиями талантов.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-		["zh-tw"] = "{#color(255, 35, 5)}測試版！僅供俄語版本使用！{#reset()} 如果您不需要苦修的擴充描述，可以將其禁用。\n{#color(255, 155, 55)}但你必須按下 CTRL+SHIFT+R 以重載模組！{#reset()}\n{#color(100, 100, 100)} \n\n若使用此功能，你需要在 Darktide Mod Framework 中開啟開發者模式。{#reset()}",
-		["zh-cn"] = "{#color(255, 35, 5)}测试版！仅供俄语版本使用。{#reset()} 此模块将扩充苦修描述。\n可以按需开关此模块。\n{#color(255, 155, 55)}但你必须按下 CTRL+SHIFT+R 以重载模组！{#reset()}\n{#color(100, 100, 100)}* 若使用该特性，你需要在 Darktide Mod Framework 中开启开发者模式。{#reset()}",
-	},
-	enhdesc_colour = {
-		en = "",
-		fr = "",
-		ru = "",
-		["zh-tw"] = "",
-		["zh-cn"] = "",
+	enable_names_tal_bless_file_description = {
+		en = "{#color(255, 35, 5)}NON-ENGLISH LOCALIZATIONS ONLY!{#reset()}\n"
+			.."This module changes the names of Talents and Blessings. You can disable this module if you don't need it.",
+		ru = "Этот модуль исправляет названия некоторых Талантов и Благословений. Вы можете отключить этот модуль, если он вам не нужен.",
+		fr = "Ce module modifie les noms des Talents et Bénédictions. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
+		["zh-tw"] = "此模組會更改天賦和祝福的名稱。如果不需要，可以停用此模組。",
+		["zh-cn"] = "此模块会更改天赋和祝福的名称。如果不需要，可以禁用此模块。",
+		de = "Dieses Modul ändert die Namen von Talenten und Segnungen. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
+		it = "Questo modulo modifica i nomi di Talenti e Benedizioni. Puoi disattivare questo modulo se non ne hai bisogno.",
+		ja = "このモジュールはタレントと祝福の名前を変更します。必要ない場合はこのモジュールを無効にできます。",
+		ko = "이 모듈은 특성과 축복의 이름을 변경합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
+		pl = "Ten moduł zmienia nazwy Talentów i Błogosławieństw. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
+		["pt-br"] = "Este módulo altera os nomes de Talentos e Bênçãos. Você pode desativar este módulo se não precisar dele.",
+		es = "Este módulo cambia los nombres de Talentos y Bendiciones. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
---[+Main+]--
-	combat_ability_colour = {
-		en = " Combat Ability",
-		fr = " Capacité de combat",
-		ru = " Боевая способность",
-		["zh-tw"] = " 戰鬥能力",
-		["zh-cn"] = " 能力",
+	enable_debug_mode = {
+		en = "\"Debug Mode\" module",
+		ru = "Модуль «Режим отладки»",
+		fr = "Module « Mode Débogage »",
+		["zh-tw"] = "「除錯模式」模組",
+		["zh-cn"] = "「调试模式」模块",
+		de = "„Debug-Modus“-Modul",
+		it = "Modulo \"Modalità Debug\"",
+		ja = "「デバッグモード」モジュール",
+		ko = "\"디버그 모드\" 모듈",
+		pl = "Moduł „Tryb Debugowania”",
+		["pt-br"] = "Módulo \"Modo de Depuração\"",
+		es = "Módulo \"Modo Depuración\"",
 	},
-	health_colour = {
-		en = " Health / Wound",
-		fr = " Santé / Blessure",
-		ru = " Здоровье / Рана",
-		["zh-tw"] = " 生命 / 傷痕",
-		["zh-cn"] = " 生命值 / 伤口",
-	},
-	peril_colour = {
-		en = " Peril",
-		fr = " Péril",
-		ru = " Опасность",
-		["zh-tw"] = " 反噬",
-		["zh-cn"] = " 危机值",
-	},
-	stamina_colour = {
-		en = " Stamina",
-		fr = " Endurance",
-		ru = " Выносливость",
-		["zh-tw"] = " 耐力",
-		["zh-cn"] = " 耐力",
-	},
-	toughness_colour = {
-		en = " Toughness",
-		fr = " Robustesse",
-		ru = " Стойкость",
-		["zh-tw"] = " 韌性",
-		["zh-cn"] = " 韧性",
-	},
-	coherency_colour = {
-		en = " Coherency",
-		-- fr = "",
-		ru = " Сплочённость",
-		["zh-tw"] = " 協同",
-		["zh-cn"] = " 连携",
-	},
-
---[+Buffs+]--
-	cleave_colour = {
-		en = " Cleave",
-		fr = " Transpercement",
-		ru = " Рассечение",
-		["zh-tw"] = " 順劈目標",
-		["zh-cn"] = " 劈裂",
-	},
-	crit_colour = {
-		en = " Crit",
-		fr = " Critique",
-		ru = " Криты",
-		["zh-tw"] = " 暴擊",
-		["zh-cn"] = " 暴击",
-	},
-	damage_colour = {
-		en = " Damage",
-		fr = " Dégât",
-		ru = " Урон",
-		["zh-tw"] = " 傷害",
-		["zh-cn"] = " 伤害",
-	},
-	finesse_colour = {
-		en = " Finesse",
-		fr = " Finesse",
-		ru = " Точность",
-		["zh-tw"] = " 技巧",
-		["zh-cn"] = " 灵巧",
-	},
-	hit_mass_colour = {
-		en = " Hit Mass",
-		fr = " Coup en masse",
-		ru = " Ударная масса",
-		["zh-tw"] = " 順劈目標",
-		["zh-cn"] = " 打击质量",
-	},
-	impact_colour = {
-		en = " Impact",
-		fr = " Impact",
-		ru = " Выведение из равновесия",
-		["zh-tw"] = " 衝擊",
-		["zh-cn"] = " 冲击",
-	},
-	power_colour = {
-		en = " Power",
-		fr = " Puissance",
-		ru = " Сила",
-		["zh-tw"] = " 威力",
-		["zh-cn"] = " 强度",
-	},
-	rending_colour = {
-		en = " Rending",
-		fr = " Déchirure",
-		ru = " Пробитие брони",
-		["zh-tw"] = " 撕裂",
-		["zh-cn"] = " 撕裂",
-	},
-	weakspot_colour = {
-		en = " Weak Spot",
-		fr = " Coup sur point faible",
-		ru = " Уязвимые места",
-		["zh-tw"] = " 弱點",
-		["zh-cn"] = " 弱点",
+	enable_debug_mode_description = {
+		en = "{#color(255, 35, 5)}FOR DEVELOPERS ONLY!{#reset()}\n"
+			.."This module enables debug commands and utilities for testing and troubleshooting. Use with caution.\n"
+			.."/ed_reload - Reload Enhanced Descriptions\n"
+			.."/ed_clear_cache - Clear color cache\n"
+			.."/ed_status - Show mod status\n"
+			.."/ed_mem - Show memory usage\n"
+			.."/ed_gc - Force garbage collection\n"
+			.."/ed_test_color - Test if colors work\n"
+			.."/ed_lang - Show current language info\n"
+			.."/ed_modules - Check enabled modules\n"
+			.."/ed_test_loc - Test specific localization key\n"
+			.."/ed_reset - Quick reset (clear cache + reload)",
+		ru = "{#color(255, 35, 5)}ТОЛЬКО ДЛЯ РАЗРАБОТЧИКОВ!{#reset()}\n"
+			.."Этот модуль включает команды отладки и утилиты для тестирования и устранения неполадок. Используйте с осторожностью.\n"
+			.."/ed_reload - Перезагрузить расширенные описания\n"
+			.."/ed_clear_cache - Очистить кэш цветов\n"
+			.."/ed_status - Показать статус мода\n"
+			.."/ed_mem - Показать использование памяти\n"
+			.."/ed_gc - Принудительная сборка мусора\n"
+			.."/ed_test_color - Проверить работу цветов\n"
+			.."/ed_lang - Показать информацию о текущем языке\n"
+			.."/ed_modules - Проверить включённые модули\n"
+			.."/ed_test_loc - Проверить определённый ключ локализации\n"
+			.."/ed_reset - Быстрый сброс (очистка кэша + перезагрузка)",
+		fr = "{#color(255, 35, 5)}UNIQUEMENT POUR LES DÉVELOPPEURS !{#reset()}\n"
+			.."Ce module active les commandes de débogage et les utilitaires pour les tests et le dépannage. À utiliser avec prudence.",
+		["zh-tw"] = "{#color(255, 35, 5)}僅供開發者使用！{#reset()}\n此模組啟用除錯指令和用於測試與故障排除的工具。請謹慎使用。",
+		["zh-cn"] = "{#color(255, 35, 5)}仅供开发者使用！{#reset()}\n此模块启用调试命令和用于测试与故障排除的工具。请谨慎使用。",
+		de = "{#color(255, 35, 5)}NUR FÜR ENTWICKLER!{#reset()}\nDieses Modul aktiviert Debug-Befehle und Dienstprogramme zum Testen und Fehlerbeheben. Mit Vorsicht verwenden.",
+		it = "{#color(255, 35, 5)}SOLO PER GLI SVILUPPATORI!{#reset()}\nQuesto modulo abilita i comandi di debug e le utilità per il test e la risoluzione dei problemi. Usare con cautela.",
+		ja = "{#color(255, 35, 5)}開発者のみ！{#reset()}\nこのモジュールは、テストとトラブルシューティングのためのデバッグコマンドとユーティリティを有効にします。注意して使用してください。",
+		ko = "{#color(255, 35, 5)}개발자 전용!{#reset()}\n이 모듈은 테스트 및 문제 해결을 위한 디버그 명령과 유틸리티를 활성화합니다. 주의해서 사용하십시오.",
+		pl = "{#color(255, 35, 5)}TYLKO DLA PROGRAMISTÓW!{#reset()}\nTen moduł umożliwia komendy debugowania i narzędzia do testowania i rozwiązywania problemów. Używaj ostrożnie.",
+		["pt-br"] = "{#color(255, 35, 5)}SOMENTE PARA DESENVOLVEDORES!{#reset()}\nEste módulo ativa comandos de depuração e utilitários para teste e solução de problemas. Use com cautela.",
+		es = "{#color(255, 35, 5)}¡SOLO PARA DESARROLLADORES!{#reset()}\nEste módulo habilita comandos de depuración y utilidades para pruebas y solución de problemas. Usar con precaución.",
 	},
 
---[+Debuffs+]--
+
+--[+MAIN+]--
 	bleed_colour = {
 		en = " Bleed",
 		fr = " Saignement",
 		ru = " Кровотечение",
 		["zh-tw"] = " 流血",
 		["zh-cn"] = " 流血",
+		de = " Bluten",
+		it = " Sanguinamento",
+		ja = " 出血",
+		ko = " 출혈",
+		pl = " Krwawienie",
+		["pt-br"] = " Sangramento",
+		es = " Sangrado",
 	},
 	brittleness_colour = {
 		en = " Brittleness",
@@ -341,6 +422,13 @@ local localizations = {
 		ru = " Хрупкость",
 		["zh-tw"] = " 脆弱",
 		["zh-cn"] = " 脆弱",
+		de = " Sprödigkeit",
+		it = " Fragilità",
+		ja = " 脆弱",
+		ko = " 취약",
+		pl = " Kruchość",
+		["pt-br"] = " Fragilidade",
+		es = " Fragilidad",
 	},
 	burn_colour = {
 		en = " Burn",
@@ -348,6 +436,55 @@ local localizations = {
 		ru = " Горение",
 		["zh-tw"] = " 燃燒",
 		["zh-cn"] = " 燃烧",
+		de = " Brennen",
+		it = " Bruciatura",
+		ja = " 燃焼",
+		ko = " 연소",
+		pl = " Płonięcie",
+		["pt-br"] = " Queimadura",
+		es = " Quemadura",
+	},
+	cleave_colour = {
+		en = " Cleave",
+		fr = " Transpercement",
+		ru = " Рассечение",
+		["zh-tw"] = " 順劈目標",
+		["zh-cn"] = " 劈裂",
+		de = " Spalten",
+		it = " Fendente",
+		ja = " 薙ぎ払い",
+		ko = " cleave",
+		pl = " Rozcinanie",
+		["pt-br"] = " Fender",
+		es = " Hendir",
+	},
+	coherency_colour = {
+		en = " Coherency",
+		fr = " Cohérence",
+		ru = " Сплочённость",
+		["zh-tw"] = " 協同",
+		["zh-cn"] = " 连携",
+		de = " Kohärenz",
+		it = " Coerenza",
+		ja = " 連携",
+		ko = " 일체감",
+		pl = " Spójność",
+		["pt-br"] = " Coerência",
+		es = " Coherencia",
+	},
+	combat_ability_colour = {
+		en = " Combat Ability",
+		fr = " Capacité de combat",
+		ru = " Боевая способность",
+		["zh-tw"] = " 戰鬥能力",
+		["zh-cn"] = " 能力",
+		de = " Kampffähigkeit",
+		it = " Abilità di combattimento",
+		ja = " 戦闘能力",
+		ko = " 전투 능력",
+		pl = " Zdolność bojowa",
+		["pt-br"] = " Habilidade de Combate",
+		es = " Habilidad de Combate",
 	},
 	corruption_colour = {
 		en = " Corruption",
@@ -355,6 +492,41 @@ local localizations = {
 		ru = " Порча",
 		["zh-tw"] = " 腐敗",
 		["zh-cn"] = " 腐化",
+		de = " Korruption",
+		it = " Corruzione",
+		ja = " 腐敗",
+		ko = " 타락",
+		pl = " Skażenie",
+		["pt-br"] = " Corrupção",
+		es = " Corrupción",
+	},
+	crit_colour = {
+		en = " Crit",
+		fr = " Critique",
+		ru = " Криты",
+		["zh-tw"] = " 暴擊",
+		["zh-cn"] = " 暴击",
+		de = " Kritisch",
+		it = " Critico",
+		ja = " クリティカル",
+		ko = " 치명타",
+		pl = " Cios krytyczny",
+		["pt-br"] = " Crítico",
+		es = " Crítico",
+	},
+	damage_colour = {
+		en = " Damage",
+		fr = " Dégât",
+		ru = " Урон",
+		["zh-tw"] = " 傷害",
+		["zh-cn"] = " 伤害",
+		de = " Schaden",
+		it = " Danno",
+		ja = " ダメージ",
+		ko = " 피해",
+		pl = " Obrażenia",
+		["pt-br"] = " Dano",
+		es = " Daño",
 	},
 	electrocuted_colour = {
 		en = " Electrocuted",
@@ -362,6 +534,111 @@ local localizations = {
 		ru = " Поражение током",
 		["zh-tw"] = " 電擊",
 		["zh-cn"] = " 电击",
+		de = " Elektroschock",
+		it = " Elettrocuzione",
+		ja = " 感電",
+		ko = " 감전",
+		pl = " Porażenie prądem",
+		["pt-br"] = " Electrocutado",
+		es = " Electrocutado",
+	},
+	finesse_colour = {
+		en = " Finesse",
+		fr = " Finesse",
+		ru = " Точность",
+		["zh-tw"] = " 技巧",
+		["zh-cn"] = " 灵巧",
+		de = " Finesse",
+		it = " Finezza",
+		ja = " 技巧",
+		ko = " 섬세함",
+		pl = " Finezja",
+		["pt-br"] = " Fineza",
+		es = " Sutileza",
+	},
+	health_colour = {
+		en = " Health / Wound",
+		fr = " Santé / Blessure",
+		ru = " Здоровье / Рана",
+		["zh-tw"] = " 生命 / 傷痕",
+		["zh-cn"] = " 生命值 / 伤口",
+		de = " Gesundheit / Wunde",
+		it = " Salute / Ferita",
+		ja = " 体力 / 負傷",
+		ko = " 생명력 / 부상",
+		pl = " Zdrowie / Rana",
+		["pt-br"] = " Vida / Ferimento",
+		es = " Salud / Herida",
+	},
+	hit_mass_colour = {
+		en = " Hit Mass",
+		fr = " Coup en masse",
+		ru = " Ударная масса",
+		["zh-tw"] = " 順劈目標",
+		["zh-cn"] = " 打击质量",
+		de = " Treffermasse",
+		it = " Massa d'impatto",
+		ja = " ヒットマス",
+		ko = " 타격 질량",
+		pl = " Masa uderzenia",
+		["pt-br"] = " Massa de Acerto",
+		es = " Masa de Impacto",
+	},
+	impact_colour = {
+		en = " Impact",
+		fr = " Impact",
+		ru = " Выведение из равновесия",
+		["zh-tw"] = " 衝擊",
+		["zh-cn"] = " 冲击",
+		de = " Wucht",
+		it = " Impatto",
+		ja = " 衝撃",
+		ko = " 충격",
+		pl = " Uderzenie",
+		["pt-br"] = " Impacto",
+		es = " Impacto",
+	},
+	peril_colour = {
+		en = " Peril",
+		fr = " Péril",
+		ru = " Опасность",
+		["zh-tw"] = " 反噬",
+		["zh-cn"] = " 危机值",
+		de = " Gefahr",
+		it = " Pericolo",
+		ja = " 危険度",
+		ko = " 위험",
+		pl = " Niebezpieczeństwo",
+		["pt-br"] = " Perigo",
+		es = " Peligro",
+	},
+	power_colour = {
+		en = " Power",
+		fr = " Puissance",
+		ru = " Сила",
+		["zh-tw"] = " 威力",
+		["zh-cn"] = " 强度",
+		de = " Kraft",
+		it = " Potere",
+		ja = " 威力",
+		ko = " 위력",
+		pl = " Moc",
+		["pt-br"] = " Poder",
+		es = " Poder",
+	},
+	rending_colour = {
+		en = " Rending",
+		fr = " Déchirure",
+		ru = " Пробитие брони",
+		["zh-tw"] = " 撕裂",
+		["zh-cn"] = " 撕裂",
+		de = " Zerreißen",
+		it = " Lacerazione",
+		ja = " 切断",
+		ko = " 분열",
+		pl = " Rozdzieranie",
+		["pt-br"] = " Dilaceração",
+		es = " Desgarro",
 	},
 	soulblaze_colour = {
 		en = " Soulblaze",
@@ -369,6 +646,13 @@ local localizations = {
 		ru = " Горение души",
 		["zh-tw"] = " 靈魂之火",
 		["zh-cn"] = " 灵魂之火",
+		de = " Seelenbrand",
+		it = " Fiamma d'Anima",
+		ja = " ソウルフレイム",
+		ko = " 영혼 불꽃",
+		pl = " Płomień Duszy",
+		["pt-br"] = " Chama da Alma",
+		es = " Llama de Alma",
 	},
 	stagger_colour = {
 		en = " Stagger",
@@ -376,151 +660,349 @@ local localizations = {
 		ru = " Ошеломление",
 		["zh-tw"] = " 踉蹌",
 		["zh-cn"] = " 踉跄",
+		de = " Taumeln",
+		it = " Barcollamento",
+		ja = " スタッガー",
+		ko = " 비틀거림",
+		pl = " Oszołomienie",
+		["pt-br"] = " Cambaleante",
+		es = " Tambaleo",
+	},
+	stamina_colour = {
+		en = " Stamina",
+		fr = " Endurance",
+		ru = " Выносливость",
+		["zh-tw"] = " 耐力",
+		["zh-cn"] = " 耐力",
+		de = " Ausdauer",
+		it = " Vigore",
+		ja = " スタミナ",
+		ko = " 스태미나",
+		pl = " Wytrzymałość",
+		["pt-br"] = " Vigor",
+		es = " Aguante",
+	},
+	toughness_colour = {
+		en = " Toughness",
+		fr = " Robustesse",
+		ru = " Стойкость",
+		["zh-tw"] = " 韌性",
+		["zh-cn"] = " 韧性",
+		de = " Zähigkeit",
+		it = " Tenacia",
+		ja = " タフネス",
+		ko = " 탄력성",
+		pl = " Wytrwałość",
+		["pt-br"] = " Resistência",
+		es = " Dureza",
+	},
+	weakspot_colour = {
+		en = " Weak Spot",
+		fr = " Coup sur point faible",
+		ru = " Уязвимые места",
+		["zh-tw"] = " 弱點",
+		["zh-cn"] = " 弱点",
+		de = " Schwachstelle",
+		it = " Punto Debole",
+		ja = " 弱点",
+		ko = " 약점",
+		pl = " Miejsce wrażliwe",
+		["pt-br"] = " Ponto Fraco",
+		es = " Punto Débil",
 	},
 
 --[+PSYKER+]--
 	class_psyker_colour = {
 		en = " Psyker",
-		-- fr = "",
+		fr = " Psyker",
 		ru = " Псайкер",
 		["zh-tw"] = " 靈能者",
 		["zh-cn"] = " 灵能者",
+		de = " Psyker",
+		it = " Psyker",
+		ja = " プサイカー",
+		ko = " 싸이커",
+		pl = " Psyker",
+		["pt-br"] = " Psíquico",
+		es = " Psíquico",
 	},
 	precision_colour = {
-		en = "     Precision",
+		en = " Precision",
 		fr = " Precision",
-		ru = "     Точность",
+		ru = " Точность",
 		["zh-tw"] = " 精準",
 		["zh-cn"] = " 精准",
+		de = " Präzision",
+		it = " Precisione",
+		ja = " 精密",
+		ko = " 정밀도",
+		pl = " Precyzja",
+		["pt-br"] = " Precisão",
+		es = " Precisión",
 	},
 
 --[+OGRYN+]--
 	class_ogryn_colour = {
 		en = " Ogryn",
-		-- fr = "",
+		fr = " Ogryn",
 		ru = " Огрин",
 		["zh-tw"] = " 歐格林",
 		["zh-cn"] = " 欧格林",
+		de = " Ogryn",
+		it = " Ogryn",
+		ja = " オグリン",
+		ko = " 오그린",
+		pl = " Ogryn",
+		["pt-br"] = " Ogryn",
+		es = " Ogryn",
 	},
 	fnp_colour = {
-		en = "     Feel No Pain",
+		en = " Feel No Pain",
 		fr = " Adieu la douleur",
-		ru = "     Неболит",
+		ru = " Неболит",
 		["zh-tw"] = " 麻木",
 		["zh-cn"] = " 不痛不痒",
+		de = " Schmerzunempfindlich",
+		it = " Insensibilità al Dolore",
+		ja = " 痛覚鈍麻",
+		ko = " 고통 무감각",
+		pl = " Nieczułość na Ból",
+		["pt-br"] = " Insensibilidade à Dor",
+		es = " Insensibilidad al Dolor",
 	},
 	luckyb_colour = {
-		en = "     Lucky bullet",
+		en = " Lucky bullet",
 		fr = " Balles chanceuses",
-		ru = "     Счастливая пуля",
+		ru = " Счастливая пуля",
 		["zh-tw"] = " 幸運子彈",
 		["zh-cn"] = " 幸运子弹",
+		de = " Glücksgeschoss",
+		it = " Proiettile Fortunato",
+		ja = " ラッキーバレット",
+		ko = " 행운의 탄환",
+		pl = " Szczęśliwy Pocisk",
+		["pt-br"] = " Bala Sortuda",
+		es = " Bala Afortunada",
 	},
 	trample_colour = {
-		en = "     Trample",
+		en = " Trample",
 		fr = " Piétinement",
-		ru = "     Топот",
+		ru = " Топот",
 		["zh-tw"] = " 衝鋒",
 		["zh-cn"] = " 践踏",
+		de = " Zertrampeln",
+		it = " Calpestio",
+		ja = " トランプル",
+		ko = " 짓밟기",
+		pl = " Depczenie",
+		["pt-br"] = " Atropelar",
+		es = " Arrollar",
 	},
 
 --[+ZEALOT+]--
 	class_zealot_colour = {
 		en = " Zealot",
-		-- fr = "",
+		fr = " Zélote",
 		ru = " Изувер",
 		["zh-tw"] = " 狂信徒",
 		["zh-cn"] = " 狂信徒",
+		de = " Fanatiker",
+		it = " Fanatico",
+		ja = " ジーロット",
+		ko = " 광신자",
+		pl = " Fanatyk",
+		["pt-br"] = " Fanático",
+		es = " Fanático",
 	},
 	fury_colour = {
-		en = "     Fury",
+		en = " Fury",
 		fr = " Piété embrasée",
-		ru = "     Ярость",
+		ru = " Ярость",
 		["zh-tw"] = " 狂怒",
 		["zh-cn"] = " 怒火",
+		de = " Raserei",
+		it = " Furia",
+		ja = " フューリー",
+		ko = " 분노",
+		pl = " Furia",
+		["pt-br"] = " Fúria",
+		es = " Furia",
 	},
 	momentum_colour = {
-		en = "     Momentum",
+		en = " Momentum",
 		fr = " Jugement inexorable",
-		ru = "     Моментум",
+		ru = " Моментум",
 		["zh-tw"] = " 勢能",
 		["zh-cn"] = " 动量",
+		de = " Schwung",
+		it = " Slancio",
+		ja = " モメンタム",
+		ko = " 모멘텀",
+		pl = " Impet",
+		["pt-br"] = " Momentum",
+		es = " Impulso",
 	},
 	stealth_colour = {
-		en = "     Stealth",
+		en = " Stealth",
 		fr = " Furtivité",
-		ru = "     Скрытность",
+		ru = " Скрытность",
 		["zh-tw"] = " 隱形",
 		["zh-cn"] = " 潜行",
+		de = " Tarnung",
+		it = " Furtività",
+		ja = " ステルス",
+		ko = " 은신",
+		pl = " Skradanie",
+		["pt-br"] = " Furtividade",
+		es = " Sigilo",
 	},
 
 --[+VETERAN+]--
 	class_veteran_colour = {
 		en = " Veteran",
-		-- fr = "",
+		fr = " Vétéran",
 		ru = " Ветеран",
 		["zh-tw"] = " 老兵",
 		["zh-cn"] = " 老兵",
+		de = " Veteran",
+		it = " Veterano",
+		ja = " ベテラン",
+		ko = " 베테랑",
+		pl = " Weteran",
+		["pt-br"] = " Veterano",
+		es = " Veterano",
 	},
 	focus_colour = {
-		en = "     Focus",
+		en = " Focus",
 		fr = " Focalisation",
-		ru = "     Концентрация",
+		ru = " Концентрация",
 		["zh-tw"] = " 專注",
 		["zh-cn"] = " 专注",
+		de = " Fokus",
+		it = " Concentrazione",
+		ja = " 集中",
+		ko = " 집중",
+		pl = " Skupienie",
+		["pt-br"] = " Foco",
+		es = " Concentración",
 	},
 	focust_colour = {
-		en = "     Focus Target",
+		en = " Focus Target",
 		fr = " Ciblage",
-		ru = "     Важная цель",
+		ru = " Важная цель",
 		["zh-tw"] = " 專注目標",
 		["zh-cn"] = " 聚焦目标",
+		de = " Fokusziel",
+		it = " Bersaglio Prioritario",
+		ja = " フォーカスターゲット",
+		ko = " 집중 대상",
+		pl = " Cel Skupienia",
+		["pt-br"] = " Alvo Focal",
+		es = " Objetivo Prioritario",
 	},
 	meleespec_colour = {
-		en = "     Melee Specialist",
-		fr = " Spcécialiste en mêlée",
-		ru = "     Специалист-рукопашник",
+		en = " Melee Specialist",
+		fr = " Spécialiste en mêlée",
+		ru = " Специалист-рукопашник",
 		["zh-tw"] = " 近戰專家",
 		["zh-cn"] = " 近战专家",
+		de = " Nahkampfspezialist",
+		it = " Specialista Mischia",
+		ja = " 近接専門家",
+		ko = " 근접 전문가",
+		pl = " Specjalista Walki Wręcz",
+		["pt-br"] = " Especialista Corpo a Corpo",
+		es = " Especialista Cuerpo a Cuerpo",
 	},
 	rangedspec_colour = {
-		en = "     Ranged Specialist",
-		fr = " Spcécialiste à distance",
-		ru = "     Специалист-стрелок",
+		en = " Ranged Specialist",
+		fr = " Spécialiste à distance",
+		ru = " Специалист-стрелок",
 		["zh-tw"] = " 遠程專家",
 		["zh-cn"] = " 远程专家",
+		de = " Fernkampfspezialist",
+		it = " Specialista a Distanza",
+		ja = " 遠隔専門家",
+		ko = " 원거리 전문가",
+		pl = " Specjalista Walki Dystansowej",
+		["pt-br"] = " Especialista à Distância",
+		es = " Especialista a Distancia",
 	},
 
 --[+ARBITRATOR+]--
 	class_arbites_colour = {
 		en = " Arbitrator",
-		-- fr = "",
+		fr = " Arbitre",
 		ru = " Арбитратор",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	},
-	meleejust_colour = {
-		en = "    Melee Justice",
-		-- fr = "",
-		ru = "    Судья-рукопашник", --???
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	},
-	rangedjust_colour = {
-		en = "    Ranged Justice",
-		-- fr = "",
-		ru = "    Судья-стрелок", --???
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
+		["zh-tw"] = " 仲裁官",
+		["zh-cn"] = " 仲裁官",
+		de = " Schiedsrichter",
+		it = " Arbitro",
+		ja = " アービター",
+		ko = " 중재관",
+		pl = " Arbitrator",
+		["pt-br"] = " Árbitro",
+		es = " Árbitro",
 	},
 
---[+Misc+]--
-	note_colour = {
-		en = " Note",
-		fr = " Annotation",
-		ru = " Примечания",
-		["zh-tw"] = " 註釋",
-		["zh-cn"] = " 注释",
+--[+HIVE SCUM+]--
+	class_scum_colour = {
+		en = " Hive Scum",
+		-- fr = "",
+		ru = " Отброс Улья",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+	chemtox_colour = {
+		en = " Chem Toxin",
+		-- fr = "",
+		ru = " Хим-токсин",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+
+--[+MISC+]--
+	talents_colour = {
+		en = " Talents",
+		fr = " Talents",
+		ru = " Таланты",
+		["zh-tw"] = " 天賦",
+		["zh-cn"] = " 天赋",
+		de = " Talente",
+		it = " Talent",
+		ja = " タレント",
+		ko = " 특성",
+		pl = " Talenty",
+		["pt-br"] = " Talentos",
+		es = " Talentos",
+	},
+	talents_penances_colour = {
+		en = " Talents - Penances",
+		fr = " Talents - Pénitences",
+		ru = " Таланты - Искупления",
+		["zh-tw"] = " 天賦 - 苦修",
+		["zh-cn"] = " 天赋 - 苦修",
+		de = " Talente - Bußen",
+		it = " Talent - Penitenze",
+		ja = " タレント - 苦行",
+		ko = " 특성 - 참회",
+		pl = " Talenty - Pokuty",
+		["pt-br"] = " Talentos - Penitências",
+		es = " Talentos - Penitencias",
 	},
 	numbers_colour = {
 		en = " Numbers",
@@ -528,6 +1010,13 @@ local localizations = {
 		ru = " Числа",
 		["zh-tw"] = " 數字",
 		["zh-cn"] = " 数字",
+		de = " Zahlen",
+		it = " Numeri",
+		ja = " 数字",
+		ko = " 숫자",
+		pl = " Liczby",
+		["pt-br"] = " Números",
+		es = " Números",
 	},
 	variables_colour = {
 		en = " Variables",
@@ -535,6 +1024,27 @@ local localizations = {
 		ru = " Переменные",
 		["zh-tw"] = " 變數",
 		["zh-cn"] = " 变量",
+		de = " Variablen",
+		it = " Variabili",
+		ja = " 変数",
+		ko = " 변수",
+		pl = " Zmienne",
+		["pt-br"] = " Variáveis",
+		es = " Variables",
+	},
+	note_colour = {
+		en = " Note",
+		fr = " Annotation",
+		ru = " Примечания",
+		["zh-tw"] = " 註釋",
+		["zh-cn"] = " 注释",
+		de = " Hinweis",
+		it = " Nota",
+		ja = " 注釈",
+		ko = " 참고",
+		pl = " Uwaga",
+		["pt-br"] = " Nota",
+		es = " Nota",
 	},
 	warning_colour = {
 		en = " Warning",
@@ -542,180 +1052,109 @@ local localizations = {
 		ru = " Предупреждения",
 		["zh-tw"] = " 警告",
 		["zh-cn"] = " 警告",
+		de = " Warnung",
+		it = " Avviso",
+		ja = " 警告",
+		ko = " 경고",
+		pl = " Ostrzeżenie",
+		["pt-br"] = " Aviso",
+		es = " Advertencia",
 	},
 
-	--[+Difficulties+]--
+--[+DIFFICULTIES+]--
 	sedition_colour = {
 		en = "Sedition",
-		fr = "",
+		fr = "Sédition",
 		ru = "Мятеж",
-		["zh-tw"] = "暴動",
-		["zh-cn"] = "煽动",
+		["zh-tw"] = "煽動叛亂",
+		["zh-cn"] = "煽动叛乱",
+		de = "Aufruhr",
+		it = "Sedizione",
+		ja = "煽動",
+		ko = "선동",
+		pl = "Bunt",
+		["pt-br"] = "Sedição",
+		es = "Sedición",
 	},
 	uprising_colour = {
 		en = "Uprising",
-		-- fr = "",
+		fr = "Soulèvement",
 		ru = "Восстание",
 		["zh-tw"] = "起義",
 		["zh-cn"] = "起义",
+		de = "Aufstand",
+		it = "Rivolta",
+		ja = "蜂起",
+		ko = "봉기",
+		pl = "Powstanie",
+		["pt-br"] = "Revolta",
+		es = "Levantamiento",
 	},
 	malice_colour = {
 		en = "Malice",
-		-- fr = "",
+		fr = "Malveillance",
 		ru = "Злоба",
 		["zh-tw"] = "惡毒",
 		["zh-cn"] = "憎恶",
+		de = "Boshaftigkeit",
+		it = "Malizia",
+		ja = "悪意",
+		ko = "악의",
+		pl = "Złośliwość",
+		["pt-br"] = "Maldade",
+		es = "Maldad",
 	},
 	heresy_colour = {
 		en = "Heresy",
-		-- fr = "",
+		fr = "Hérésie",
 		ru = "Ересь",
 		["zh-tw"] = "異端",
 		["zh-cn"] = "异端",
+		de = "Häresie",
+		it = "Eresia",
+		ja = "異端",
+		ko = "이단",
+		pl = "Herezja",
+		["pt-br"] = "Heresia",
+		es = "Herejía",
 	},
 	damnation_colour = {
 		en = "Damnation",
-		-- fr = "",
+		fr = "Damnation",
 		ru = "Проклятие",
 		["zh-tw"] = "詛咒",
 		["zh-cn"] = "诅咒",
+		de = "Verdammnis",
+		it = "Dannazione",
+		ja = "呪い",
+		ko = "저주",
+		pl = "Potępienie",
+		["pt-br"] = "Danação",
+		es = "Condenación",
 	},
 	auric_colour = {
 		en = "Auric",
-		-- fr = "",
+		fr = "Aurique",
 		ru = "Золото",
-		-- ["zh-tw"] = "",
-		-- ["zh-cn"] = "",
-	},
-
-	talents_colour = {
-		en = " Talents",
-		fr = " Talents",
-		ru = " Таланты",
-		["zh-tw"] = " 天賦",
-		["zh-cn"] = " 天赋",
-	},
-	talents_penances_colour = {
-		en = " Talents - Penances",
-		-- fr = " Talents",
-		ru = " Таланты - Искупления",
-		["zh-tw"] = " 天賦 - 苦修",
-		["zh-cn"] = " 天赋 - 苦修",
+		["zh-tw"] = "奧瑞克",
+		["zh-cn"] = "奥瑞克",
+		de = "Aurisch",
+		it = "Aurico",
+		ja = "アウリック",
+		ko = "아우릭",
+		pl = "Auryczny",
+		["pt-br"] = "Áurico",
+		es = "Áurico",
 	},
 }
 
-local function addLocalisation(localisations, typeName)
-	localisations[typeName .. "_text_colour"] = {
-		en = "Pick color",
-		fr = "Couleur",
-		ru = "Выберите цвет",
-		["zh-tw"] = "顏色",
-		["zh-cn"] = "颜色",
-	}
+-- INITIALIZATION
+-- Add color picker localizations for all groups
+for _, group_name in ipairs(LOCALIZATION_GROUPS) do
+	add_localisation_entry(localizations, group_name)
 end
 
-			-- ============ DO NOT DO ANYTHING BELOW! ============ --
-
-
-
-local function readable(text)
-	local readable_string = ""
-	local tokens = string.split(text, "_")
-		for i, token in ipairs(tokens) do
-	local first_letter = string.sub(token, 1, 1)
-		token = string.format("%s%s", string.upper(first_letter), string.sub(token, 2))
-		readable_string = string.trim(string.format("%s %s", readable_string, token))
-end
-	return readable_string
-end
-
-local color_names = Color.list
-for i, color_name in ipairs(color_names) do
-	local color_values = Color[color_name](255, true)
-	local text = InputUtils.apply_color_to_input_text(readable(color_name), color_values)
-		localizations[color_name] = {
-			en = text
-		}
-end
-
---[+Enhanced Descriptions+]--
-addLocalisation(localizations, "enhdesc")
-
---[+Main+]--
-addLocalisation(localizations, "combat_ability")
-addLocalisation(localizations, "health")
-addLocalisation(localizations, "peril")
-addLocalisation(localizations, "stamina")
-addLocalisation(localizations, "toughness")
-addLocalisation(localizations, "coherency")
-
---[+Buffs+]--
-addLocalisation(localizations, "cleave")
-addLocalisation(localizations, "crit")
-addLocalisation(localizations, "damage")
-addLocalisation(localizations, "finesse")
-addLocalisation(localizations, "hit_mass")
-addLocalisation(localizations, "impact")
-addLocalisation(localizations, "power")
-addLocalisation(localizations, "rending")
-addLocalisation(localizations, "weakspot")
-
---[+Debuffs+]--
-addLocalisation(localizations, "bleed")
-addLocalisation(localizations, "brittleness")
-addLocalisation(localizations, "burn")
-addLocalisation(localizations, "corruption")
-addLocalisation(localizations, "electrocuted")
-addLocalisation(localizations, "soulblaze")
-addLocalisation(localizations, "stagger")
-
---[+PSYKER+]--
-addLocalisation(localizations, "precision")
-
---[+OGRYN+]--
-addLocalisation(localizations, "fnp")
-addLocalisation(localizations, "luckyb")
-addLocalisation(localizations, "trample")
-
---[+ZEALOT+]--
-addLocalisation(localizations, "fury")
-addLocalisation(localizations, "momentum")
-addLocalisation(localizations, "stealth")
-
---[+VETERAN+]--
-addLocalisation(localizations, "focus")
-addLocalisation(localizations, "focust")
-addLocalisation(localizations, "meleespec")
-addLocalisation(localizations, "rangedspec")
-
---[+ARBITES+]--
-addLocalisation(localizations, "meleejust")
-addLocalisation(localizations, "rangedjust")
-
---[+Misc+]--
-addLocalisation(localizations, "note")
-addLocalisation(localizations, "variables")
-addLocalisation(localizations, "numbers")
-addLocalisation(localizations, "warning")
-addLocalisation(localizations, "talents")
-
---[+Difficulty+]--
-addLocalisation(localizations, "sedition")
-addLocalisation(localizations, "uprising")
-addLocalisation(localizations, "malice")
-addLocalisation(localizations, "heresy")
-addLocalisation(localizations, "damnation")
-addLocalisation(localizations, "auric")
-
---[+Penances+]--
-addLocalisation(localizations, "talents_penances")
-
---[+Classes+]--
-addLocalisation(localizations, "class_veteran")
-addLocalisation(localizations, "class_zealot")
-addLocalisation(localizations, "class_psyker")
-addLocalisation(localizations, "class_ogryn")
-addLocalisation(localizations, "class_arbites")
-
+-- Add color names localizations
+add_color_localizations(localizations)
 
 return localizations

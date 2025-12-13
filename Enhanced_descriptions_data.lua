@@ -1,299 +1,176 @@
----@diagnostic disable: undefined-global, undefined-field
-
---[+ Chinese Traditional +]-- ["zh-tw"]
---[+ Chinese Simplified +]-- ["zh-cn"]
---[+ English +]-- en
---[+ French +]-- fr
---[+ German +]-- de
---[+ Italian +]-- it
---[+ Japanese +]-- ja
---[+ Korean +]-- ko
---[+ Polish +]-- pl
---[+ Portuguese +]-- pt-BR
---[+ Russian +]-- ru
---[+ Spanish +]-- es
-
-			-- ============ DO NOT DO ANYTHING BELOW! ============ --
+---@diagnostic disable: undefined-global
+-- The main file needed for this mod's menu to work.
+-- FOR TRANSLATORS: YOU DON'T NEED TO DO ANYTHING IN THIS FILE!
 
 local mod = get_mod("Enhanced_descriptions")
 
+-- CONSTANTS AND CONFIGURATION
+local DEFAULT_SETTINGS = {
+	-- Main modules
+	enable_menus_file =				true,
+	enable_curious_file =			true,
+	enable_penances_file =			true,
+	enable_weapons_file =			true,
+	enable_talents_file =			true,
+	enable_names_file =				true,
+	enable_names_tal_bless_file =	true,
+	enable_debug_mode =				false,
+
+}
+
+local COLOR_SETTINGS = {
+	-- Enhanced Descriptions
+	{ id = "bleed",				default = "ui_zealot" },
+	{ id = "brittleness",		default = "medium_orchid" },
+	{ id = "burn",				default = "sienna" },
+	{ id = "cleave",			default = "player_slot_2_bright" },
+	{ id = "coherency",			default = "citadel_kindleflame" },
+	{ id = "combat_ability",	default = "olive_drab" },
+	{ id = "corruption",		default = "ui_corruption_medium" },
+	{ id = "crit",				default = "citadel_yriel_yellow" },
+	{ id = "damage",			default = "citadel_jokaero_orange" },
+	{ id = "electrocuted",		default = "citadel_stormfang" },
+	{ id = "finesse",			default = "dodger_blue" },
+	{ id = "health",			default = "red" },
+	{ id = "hit_mass",			default = "item_rarity_dark_2" },
+	{ id = "impact",			default = "sea_green" },
+	{ id = "peril",				default = "ui_orange_dark" },
+	{ id = "power",				default = "steel_blue" },
+	{ id = "rending",			default = "violet" },
+	{ id = "soulblaze",			default = "ui_toughness_default" },
+	{ id = "stagger",			default = "terminal_background_selected" },
+	{ id = "stamina",			default = "light_salmon" },
+	{ id = "toughness",			default = "ui_difficulty_1" },
+	{ id = "weakspot",			default = "green_yellow" },
+
+	-- Classes
+	{ id = "class_psyker",		default = "player_slot_4" },
+	{ id = "precision",			default = "ui_psyker" },
+	{ id = "class_ogryn",		default = "player_slot_3" },
+	{ id = "fnp",				default = "light_coral" },
+	{ id = "luckyb",			default = "orange" },
+	{ id = "trample",			default = "dark_olive_green" },
+	{ id = "class_zealot",		default = "player_slot_2" },
+	{ id = "fury",				default = "hot_pink" },
+	{ id = "momentum",			default = "ui_red_super_light" },
+	{ id = "stealth",			default = "ui_grey_light" },
+	{ id = "class_veteran",		default = "player_slot_1" },
+	{ id = "focus",				default = "dark_violet" },
+	{ id = "focust",			default = "teal" },
+	{ id = "meleespec",			default = "ui_hud_red_light" },
+	{ id = "rangedspec",		default = "citadel_the_fang_grey" },
+	{ id = "class_arbites",		default = "plum" },
+	{ id = "class_scum",		default = "citadel_nurgling_green" },
+	{ id = "chemtox",			default = "online_green" },
+
+	-- Misc
+	{ id = "talents",			default = "ui_input_color" },
+	{ id = "talents_penances",	default = "forest_green" },
+	{ id = "numbers",			default = "ui_hud_yellow_super_light" },
+	{ id = "variables",			default = "ui_hud_yellow_super_light" },
+	{ id = "note",				default = "terminal_text_warning_dark" },
+	{ id = "warning",			default = "item_rarity_6" },
+
+	-- Difficulty
+	{ id = "sedition",			default = "white" },
+	{ id = "uprising",			default = "ui_difficulty_1" },
+	{ id = "malice",			default = "ui_difficulty_2" },
+	{ id = "heresy",			default = "ui_difficulty_3" },
+	{ id = "damnation",			default = "ui_difficulty_4" },
+	{ id = "auric",				default = "ui_difficulty_5" },
+}
+
+-- UTILITY FUNCTIONS
+local function create_checkbox_widget(setting_id, default_value)
+	return {
+		name = mod:localize(setting_id),
+		setting_id = setting_id,
+		default_value = default_value,
+		type = "checkbox",
+		description = mod:localize(setting_id .. "_description"),
+
+		change = function(new_value)
+			mod:set(setting_id, new_value)
+			-- The on_setting_changed handler in main file will handle the reload
+		end,
+		get = function()
+			return mod:get(setting_id)
+		end
+	}
+end
+
+local function get_color_options()
+	local color_options = {}
+	for _, color_name in ipairs(Color.list) do
+		table.insert(color_options, {
+			text = color_name,
+			value = color_name
+		})
+	end
+	table.sort(color_options, function(a, b)
+		return a.text < b.text
+	end)
+	return color_options
+end
+
+-- Cache the color options since they don't change
+local color_options_cache = get_color_options()
+
+local function create_color_option_group(color_setting)
+	return {
+		setting_id = color_setting.id .. "_colour",
+		type = "group",
+		sub_widgets = {
+			{
+				setting_id = color_setting.id .. "_text_colour",
+				type = "dropdown",
+				default_value = color_setting.default,
+				options = get_color_options()
+			}
+		}
+	}
+end
+
+-- MAIN OPTIONS CONFIGURATION
 local options = {
 	name = mod:localize("mod_name"),
 	description = mod:localize("mod_description"),
 	is_togglable = true,
 	options = {
-		widgets = {
-				--[+ MENUS Module +]--
-			{name = mod:localize("enable_menus_file"),
-				setting_id = "enable_menus_file",
-				default_value = true,
-				type = "checkbox",
-				description = mod:localize("enable_menus_file_description"),
-
-				change = function(new_value)
-					mod:set("enable_menus_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_menus_file") or true
-				end
-			},
-				--[+ CURIOS Module +]--
-			{name = mod:localize("enable_curious_file"),
-				setting_id = "enable_curious_file",
-				default_value = true,
-				type = "checkbox",
-				description = mod:localize("enable_curious_file_description"),
-
-				change = function(new_value)
-					mod:set("enable_curious_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_curious_file") or true
-				end
-			},
-				--[+ PENANCES Module +]--
-			{name = mod:localize("enable_penances_file"),
-				setting_id = "enable_penances_file",
-				default_value = true,
-				type = "checkbox",
-				description = mod:localize("enable_penances_file_description"),
-
-				change = function(new_value)
-					mod:set("enable_penances_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_penances_file") or true
-				end
-			},
-				--[+ WEAPONS Module +]--
-			{name = mod:localize("enable_weapons_file"),
-				setting_id = "enable_weapons_file",
-				default_value = true,
-				type = "checkbox",
-				description = mod:localize("enable_weapons_file_description"),
-				
-				change = function(new_value)
-					mod:set("enable_weapons_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_weapons_file") or true
-				end
-			},
-				--[+ TALENTS Module +]--
-			{name = mod:localize("enable_talents_file"),
-				setting_id = "enable_talents_file",
-				default_value = true,
-				type = "checkbox",
-				description = mod:localize("enable_talents_file_description"),
-				
-				change = function(new_value)
-					mod:set("enable_talents_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_talents_file") or true
-				end
-			},
-				--[+ NAMES Module - Weapons and Enemies +]--
-			{name = mod:localize("enable_names_file"),
-				setting_id = "enable_names_file",
-				default_value = true,
-				type = "checkbox",
-				description = mod:localize("enable_names_file_description"),
-				
-				change = function(new_value)
-					mod:set("enable_names_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_names_file") or true
-				end
-			},
-				--[+ NAMES Module - Talents and Blessings +]--
-			{name = mod:localize("enable_names_tal_bless_file"),
-				setting_id = "enable_names_tal_bless_file",
-				default_value = false,
-				type = "checkbox",
-				description = mod:localize("enable_names_tal_bless_file_description"),
-				
-				change = function(new_value)
-					mod:set("enable_names_tal_bless_file", new_value)
-				end,
-				get = function()
-					return mod:get("enable_names_tal_bless_file") or true
-				end
-			},
-				--[+ ENHANCED DESCRIPTIONS +]--
-			{setting_id = "enhanced_descriptions_",
-				type = "group",
-				sub_widgets = {
-						--[+ ENHANCED DESCRIPTIONS - Psyker + Zealot +]--
-					{name = mod:localize("enhanced_descriptions_enabled"),
-					setting_id = "enhanced_descriptions_enabled",
-					default_value = true,
-					type = "checkbox",
-					description = mod:localize("enhanced_descriptions_enabled_description"),
-					
-					change = function(new_value)
-						mod:set("enhanced_descriptions_enabled", new_value)
-					end,
-					get = function()
-						return mod:get("enhanced_descriptions_enabled") or true
-					end
-					},
-						--[+ ENHANCED DESCRIPTIONS - Veteran + Ogryn +]--
-					{name = mod:localize("enhanced_descriptions_enabled2"),
-					setting_id = "enhanced_descriptions_enabled2",
-					default_value = true,
-					type = "checkbox",
-					description = mod:localize("enhanced_descriptions_enabled2_description"),
-					
-					change = function(new_value)
-						mod:set("enhanced_descriptions_enabled2", new_value)
-					end,
-					get = function()
-						return mod:get("enhanced_descriptions_enabled2") or true
-					end
-					},
-						--[+ ENHANCED DESCRIPTIONS - Nodes +]--
-					{name = mod:localize("enhanced_descriptions_nodes_enabled"),
-					setting_id = "enhanced_descriptions_nodes_enabled",
-					default_value = true,
-					type = "checkbox",
-					description = mod:localize("enhanced_descriptions_nodes_enabled_description"),
-					
-					change = function(new_value)
-						mod:set("enhanced_descriptions_nodes_enabled", new_value)
-					end,
-					get = function()
-						return mod:get("enhanced_descriptions_nodes_enabled") or true
-					end
-					},
-						--[+ ENHANCED DESCRIPTIONS - Penances +]--
-					{name = mod:localize("enhanced_descriptions_penances_enabled"),
-					setting_id = "enhanced_descriptions_penances_enabled",
-					default_value = true,
-					type = "checkbox",
-					description = mod:localize("enhanced_descriptions_penances_enabled_description"),
-					
-					change = function(new_value)
-						mod:set("enhanced_descriptions_penances_enabled", new_value)
-					end,
-					get = function()
-						return mod:get("enhanced_descriptions_penances_enabled") or true
-					end
-					},
-				},
-			},
-		}
+		widgets = {}
 	}
 }
 
-local color_options = {}
-for i, color_name in ipairs(Color.list) do
-	table.insert(color_options, {
-		text = color_name,
-		value = color_name
-	})
-end
-table.sort(color_options, function(a, b)
-	return a.text < b.text
-end)
+-- Add main module checkboxes
+local main_modules = {
+	{ id = "enable_talents_file",			desc = "TALENTS Module" },
+	{ id = "enable_weapons_file",			desc = "WEAPONS Module" },
+	{ id = "enable_curious_file",			desc = "CURIOS Module" },
+	{ id = "enable_penances_file",			desc = "PENANCES Module" },
+	{ id = "enable_menus_file",				desc = "MENUS Module" },
+	{ id = "enable_names_file",				desc = "NAMES Module - Weapons and Enemies" },
+	{ id = "enable_names_tal_bless_file",	desc = "NAMES Module - Talents and Blessings" },
+	{ id = "enable_debug_mode",				desc = "Debug Mode" }
+}
 
-local function get_color_options()
-	return table.clone(color_options)
-end
-local function create_option_set(typeName, defaultColour1)
-	return {
-		setting_id = typeName .."_colour",
-		type = "group",
-		sub_widgets = {
-			{
-				setting_id = typeName .."_text_colour",
-				type = "dropdown",
-				default_value = defaultColour1,
-				options = get_color_options()
-			},
-		}
-	}
+for _, module in ipairs(main_modules) do
+	table.insert(options.options.widgets, create_checkbox_widget(
+		module.id, 
+		DEFAULT_SETTINGS[module.id]
+	))
 end
 
--- default game text color: terminal_text_body
+-- Add color options
+for _, color_setting in ipairs(COLOR_SETTINGS) do
+	table.insert(options.options.widgets, create_color_option_group(color_setting))
+end
 
---[+Enhanced Descriptions+]--
-table.insert(options.options.widgets, create_option_set("enhdesc", "terminal_text_body"))
-
---[+Main+]--
-table.insert(options.options.widgets, create_option_set("combat_ability", "olive_drab"))
-table.insert(options.options.widgets, create_option_set("health", "red"))
-table.insert(options.options.widgets, create_option_set("peril", "ui_orange_dark"))
-table.insert(options.options.widgets, create_option_set("stamina", "light_salmon"))
-table.insert(options.options.widgets, create_option_set("toughness", "ui_difficulty_1"))
-table.insert(options.options.widgets, create_option_set("coherency", "citadel_kindleflame"))
-
---[+Buffs+]--
-table.insert(options.options.widgets, create_option_set("cleave", "player_slot_2_bright"))
-table.insert(options.options.widgets, create_option_set("crit", "citadel_yriel_yellow"))
-table.insert(options.options.widgets, create_option_set("damage", "citadel_jokaero_orange"))
-table.insert(options.options.widgets, create_option_set("finesse", "dodger_blue"))
-table.insert(options.options.widgets, create_option_set("hit_mass", "item_rarity_dark_2"))
-table.insert(options.options.widgets, create_option_set("impact", "sea_green"))
-table.insert(options.options.widgets, create_option_set("power", "steel_blue"))
-table.insert(options.options.widgets, create_option_set("rending", "violet"))
-table.insert(options.options.widgets, create_option_set("weakspot", "green_yellow"))
-
---[+Debuffs+]--
-table.insert(options.options.widgets, create_option_set("bleed", "ui_zealot"))
-table.insert(options.options.widgets, create_option_set("brittleness", "medium_orchid"))
-table.insert(options.options.widgets, create_option_set("burn", "sienna"))
-table.insert(options.options.widgets, create_option_set("corruption", "ui_corruption_medium"))
-table.insert(options.options.widgets, create_option_set("electrocuted", "citadel_stormfang"))
-table.insert(options.options.widgets, create_option_set("soulblaze", "ui_toughness_default"))
-table.insert(options.options.widgets, create_option_set("stagger", "terminal_background_selected"))
-
---[+PSYKER+]--
-table.insert(options.options.widgets, create_option_set("class_psyker", "player_slot_4"))
-table.insert(options.options.widgets, create_option_set("precision", "ui_psyker"))
-
---[+OGRYN+]--
-table.insert(options.options.widgets, create_option_set("class_ogryn", "player_slot_3"))
-table.insert(options.options.widgets, create_option_set("fnp", "light_coral"))
-table.insert(options.options.widgets, create_option_set("luckyb", "orange"))
-table.insert(options.options.widgets, create_option_set("trample", "forest_green"))
-
---[+ZEALOT+]--
-table.insert(options.options.widgets, create_option_set("class_zealot", "player_slot_2"))
-table.insert(options.options.widgets, create_option_set("fury", "hot_pink"))
-table.insert(options.options.widgets, create_option_set("momentum", "ui_red_super_light"))
-table.insert(options.options.widgets, create_option_set("stealth", "ui_grey_light"))
-
---[+VETERAN+]--
-table.insert(options.options.widgets, create_option_set("class_veteran", "player_slot_1"))
-table.insert(options.options.widgets, create_option_set("focus", "dark_violet"))
-table.insert(options.options.widgets, create_option_set("focust", "teal"))
-table.insert(options.options.widgets, create_option_set("meleespec", "ui_hud_red_light"))
-table.insert(options.options.widgets, create_option_set("rangedspec", "citadel_the_fang_grey"))
-
---[+ARBITES+]--
-table.insert(options.options.widgets, create_option_set("class_arbites", "player_slot_4")) --!!!ЦВЕТ!!!
-table.insert(options.options.widgets, create_option_set("meleejust", "sandy_brown"))
-table.insert(options.options.widgets, create_option_set("rangedjust", "royal_blue"))
-
---[+Misc+]--
-table.insert(options.options.widgets, create_option_set("note", "terminal_text_warning_dark"))
-table.insert(options.options.widgets, create_option_set("numbers", "ui_hud_yellow_super_light"))
-table.insert(options.options.widgets, create_option_set("variables", "ui_hud_yellow_super_light"))
-table.insert(options.options.widgets, create_option_set("warning", "item_rarity_6"))
-table.insert(options.options.widgets, create_option_set("talents", "ui_input_color"))
-
---[+Difficulty+]--
-table.insert(options.options.widgets, create_option_set("sedition", "ui_difficulty_1"))
-table.insert(options.options.widgets, create_option_set("uprising", "ui_difficulty_2"))
-table.insert(options.options.widgets, create_option_set("malice", "ui_difficulty_3"))
-table.insert(options.options.widgets, create_option_set("heresy", "ui_difficulty_4"))
-table.insert(options.options.widgets, create_option_set("damnation", "ui_difficulty_5"))
-table.insert(options.options.widgets, create_option_set("auric", "gold"))
-
---[+Penances+]--
-table.insert(options.options.widgets, create_option_set("talents_penances", "forest_green"))
-
+-- INITIALIZATION
+-- Ensure default settings are set
+for setting_id, default_value in pairs(DEFAULT_SETTINGS) do
+	if mod:get(setting_id) == nil then
+		mod:set(setting_id, default_value)
+	end
+end
 
 return options
