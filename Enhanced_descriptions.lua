@@ -5,7 +5,7 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_zealot_dash_has_more_charges_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_adamant_disable_companion_replenish_split_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
 
 -- Main Modules Location
@@ -144,10 +144,43 @@ local FIXES = {
 				end,
 			},
 	--[+ ZEALOT - ИЗУВЕР +]--
+		--[+ BLITZ 1 - Stunstorm Grenade +]--
+			-- "+50% blast radius..." -- Removed "+"
+			loc_zealot_improved_stun_grenade_desc = {
+				radius = function(value)
+					local str = tostring(value)
+					return str:gsub("%+", "")
+				end,
+			},
 		--[+ ABILITY 1-1 - Unrelenting Fury +]--
 			-- "+20% Ability Cooldown..." -- Removed "+"
 			loc_talent_zealot_fotf_refund_cooldown_desc = {
 				cooldown = function(value)
+					local str = tostring(value)
+					return str:gsub("%+", "")
+				end,
+			},
+		--[+ Passive 5 - Enemies Within, Enemies Without +]--
+			-- "+2.5% Toughness replenished..." -- Removed "+"
+			loc_talent_zealot_toughness_near_enemies_desc = {
+				toughness = function(value)
+					local str = tostring(value)
+					return str:gsub("%+", "")
+				end,
+			},
+	--[+ ARBITES - АРБИТРЕС +]--
+		--[+ ABILITY 1 - Castigator's Stance +]--
+			-- "+80% Reduced Damage Taken..." -- Removed "+"
+			loc_talent_adamant_stance_ability_alt_description = {
+				damage_taken = function(value)
+					local str = tostring(value)
+					return str:gsub("%+", "")
+				end,
+			},
+		--[+ Passive 16 - Canine Morale +]--
+			-- "+10% Toughness replenished..." -- Removed "+"
+			loc_talent_adamant_pinning_dog_kills_buff_allies_description = {
+				toughness = function(value)
 					local str = tostring(value)
 					return str:gsub("%+", "")
 				end,

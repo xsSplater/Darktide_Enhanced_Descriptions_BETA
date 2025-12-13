@@ -152,7 +152,8 @@ local CONFIG = {
 		},
 		luckyb_text_colour = {
 			Lucky_bullet =	"Lucky Bullet",
-			Tghnss_gold =	"Toughness",
+
+			Tghnss_gold =	"Toughness",			-- Zealot
 		},
 		trample_text_colour = {
 			Trample =		"Trample",
@@ -223,19 +224,25 @@ local CONFIG = {
 
 -- TALENTS
 	talents_text_colour = {
+-- Zealot
+		Holy_relic =	"Holy relic",
+		Stun_gren =		"Stun Grenade",
+-- Arbites
 		Arbites_gren =	"Arbites Grenade",
+		BreakZLine =	"Break the Line",
+-- Psyker
 		Assail =		"Assail",
 		Brain_burst =	"Brain Burst",
 		Brain_rupture =	"Brain Rupture",
-		BreakZLine =	"Break the Line",
 		Enfeeble =		"Enfeeble",
-		Frag_gren =		"Frag Grenade",
-		Fragm_gren =	"Fragmentation Grenade",
-		Rangd_stnc =	"Ranged Stance",
 		Scrier_gaze =	"Scrier Gaze",
 		Scriers_gaze =	"Scrier's Gaze",
 		Smite =			"Smite",
-		Stun_gren =		"Stun Grenade",
+-- Veteran
+		Frag_gren =		"Frag Grenade",
+		Fragm_gren =	"Fragmentation Grenade",
+		Rangd_stnc =	"Ranged Stance",
+		Duty_honor =	"Duty and Honour",
 
 -- PENANCES
 		Base_tut_p =	"Basic Training",
@@ -243,9 +250,9 @@ local CONFIG = {
 		Omnissia_p =	"Shrine of the Omnissiah",
 		Prologue_p =	"Prologue",
 		Sir_melk_p =	"Sire Melk's Requisitorium",
-	},
+	-- },
 
-	talents_penances_text_colour = {
+	-- talents_penances_text_colour = {
 	-- Psyker
 		assail =		"Assail",
 		bburst =		"Brain Burst",
@@ -378,11 +385,14 @@ local function create_phrs_en(colors_en)
 	Can_proc_mult =				Dot_green.." Can proc multiple times per swing when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
 	Can_proc_mult_str =			Dot_green.." Can proc multiple times per swing when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
 	Refr_dur_stappl =			Dot_green.." Refreshes duration on Stack application. ",
-
+-- Psyker
 	Doesnt_Stack_Psy_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Psyker", "cls_psy_rgb")..".",
-	Doesnt_Stack_Zea_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Zealot", "cls_zea_rgb")..".",
 	Doesnt_Stack_Psy_eff =		Dot_red.." Does not Stack with the same debuff from another "..CKWord("Psyker", "cls_psy_rgb")..".",
+-- Veteran
 	Doesnt_Stack_Vet_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Veteran", "cls_vet_rgb")..".",
+-- Zealot
+	Doesnt_Stack_Zea_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Zealot", "cls_zea_rgb")..".",
+	Doesnt_Stack_Zea_abil =		Dot_red.." Does not Stack with the same talent from another "..CKWord("Zealot", "cls_zea_rgb")..".",
 
 	Cant_appl_thr_shlds =		Dot_red.." Can't apply through shields.",
 	Cant_Crit =					Dot_red.." Cannot "..CKWord("Crit", "Crit_rgb")..".\n",

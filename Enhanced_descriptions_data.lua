@@ -65,7 +65,7 @@ local COLOR_SETTINGS = {
 
 	-- Misc
 	{ id = "talents",			default = "ui_input_color" },
-	{ id = "talents_penances",	default = "forest_green" },
+	-- { id = "talents_penances",	default = "forest_green" },
 	{ id = "numbers",			default = "ui_hud_yellow_super_light" },
 	{ id = "variables",			default = "ui_hud_yellow_super_light" },
 	{ id = "note",				default = "terminal_text_warning_dark" },

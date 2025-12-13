@@ -327,7 +327,7 @@ local talent_localizations = {
 			ru = Dot_green.." На {duration:%s} секунд меньше задержка восстановления "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- руоф Усиление восстановления выносливости
 			-- fr = "{duration:%s} secondes de réduction du délai de régénération d'"..COLORS_KWords_fr.Stamina_rgb_fr..".",
 			-- ["zh-tw"] = "{duration:%s} 秒 "..COLORS_KWords_tw.Stamina_rgb_tw.." 再生延遲減少。", -- 耐力恢復增幅
-			-- ["zh-cn"] = CKWord("-", "n_minus_rgb").."{duration:%s} 秒"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."回复延迟。", -- 体力回复强化
+			-- ["zh-cn"] = CNumb("-", "n_minus_rgb").."{duration:%s} 秒"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."回复延迟。", -- 体力回复强化
 		},
 		--[+ Toughness Boost Low +]--	08.12.2025
 		-- Ogryn 1, Veteran 1
@@ -418,8 +418,8 @@ local talent_localizations = {
 			..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." по маньякам и несгибаемым врагам.\n"
 			..Dot_green.." Всегда бьёт в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n"
 			..Dot_green.." На уровне заряда "..CNumb("50%", "pc_50_rgb").." основная атака слегка "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." цель.\n"
-			..Dot_red.." Не "..CKWord("ошеломляет", "oshelomlaet_rgb_ru")..": мутантов, огринов, монстров и врагов с активным пустотным щитом.\n"
-			..Dot_green.." При полном заряде "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." всех врагов, кроме мутантов, монстров и врагов с активным пустотным щитом.\n"
+			..Dot_red.." Не "..CKWord("ошеломляет", "oshelomlaet_rgb_ru")..": мутантов, огринов, чудовищ и врагов с активным пустотным щитом.\n"
+			..Dot_green.." При полном заряде "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." всех врагов, кроме мутантов, чудовищ и врагов с активным пустотным щитом.\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
@@ -429,12 +429,12 @@ local talent_localizations = {
 	["loc_talent_psyker_ability_increase_brain_burst_speed_desc"] = { -- talent_name: Brain Rupture, smite_attack_speed: +75%, warp_charge_cost: 50%, duration: 10, s->seconds, +colors
 		en = "Using your "..CKWord("Combat Ability", "Cmbt_abil_rgb").." buffs your {talent_name:%s} for {duration:%s} seconds:\n"
 			..Dot_green.." {smite_attack_speed:%s} charge speed,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{warp_charge_cost:%s} "..CKWord("Peril", "Peril_rgb").." generation.\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_charge_cost:%s} "..CKWord("Peril", "Peril_rgb").." generation.\n"
 			.."\n"
 			..Dot_nc.." Affects both Primary and Secondary attacks.",
 		ru = "При использовании вашей "..CKWord("боевой способности", "Cmbt_abil_rgb_ru").." усиливается ваш {talent_name:%s} на {duration:%s} секунд:\n" -- Кинетический резонанс
 			..Dot_green.." {smite_attack_speed:%s} к скорости заряжания,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{warp_charge_cost:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_charge_cost:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".\n"
 			.."\n"
 			..Dot_nc.." Влияет как на основную, так и на дополнительную атаку.",
 	},
@@ -442,7 +442,7 @@ local talent_localizations = {
 	["loc_talent_psyker_smite_on_hit_special_elite_desc"] = { -- smite_chance: 10%, talent_name: Brain Rupture, time: 15, s->seconds, +colors
 		en = "Attacks vs Specials, Elites and Monstrosities, have a {smite_chance:%s} chance on Hit to inflict {talent_name:%s}.\n"
 			..Dot_nc.." Cooldown {time:%s} seconds.",
-		ru = "При атаке специалистов, элитных врагов или монстров, есть {smite_chance:%s} шанс на срабатывание блица {talent_name:%s}.\n" -- Кинетический живодёр -- руоф Кинетический истребитель
+		ru = "При атаке специалистов, элитных врагов или чудовищ, есть {smite_chance:%s} шанс на срабатывание блица {talent_name:%s}.\n" -- Кинетический живодёр -- руоф Кинетический истребитель
 			..Dot_nc.." Восстановление {time:%s} секунд.",
 	},
 	--[+ BLITZ 2 - Smite +]--	08.12.2025
@@ -470,7 +470,7 @@ local talent_localizations = {
 			..CPhrs("Cant_Crit")
 			..Dot_red.." Средний "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.\n"
-			..Dot_red.." Не "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." монстров и врагов с активным пустотным щитом.\n"
+			..Dot_red.." Не "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." чудовищ и врагов с активным пустотным щитом.\n"
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
 			..Dot_red.." Не используйте основную атаку пока держите дополнительную при "..CNumb("100%", "pc_100_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru").." или вы взорвётесь.",
@@ -544,10 +544,10 @@ local talent_localizations = {
 	},
 	--[+ BLITZ 3-2 - Quick Shards +]--	08.12.2025
 	["loc_talent_psyker_throwing_knives_cast_speed_description"] = { -- talent_name: Assail, recharge: 30%
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb").."{recharge:%s} {talent_name:%s} charge replenish speed.\n"
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} {talent_name:%s} charge replenish speed.\n"
 			.."\n"
 			..Dot_nc.." Reduces projectile recharge time from "..CNumb("3", "n_3_rgb").." to "..CNumb("2.1", "n_2_1_rgb").." seconds per projectile.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb").."{recharge:%s} к скорости восстановления зарядов.\n" -- Быстрые осколки -- руоф Быстрые частицы
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} к скорости восстановления зарядов.\n" -- Быстрые осколки -- руоф Быстрые частицы
 			.."\n"
 			..Dot_nc.." Сокращает время восстановления снарядов с "..CNumb("3", "n_3_rgb").." до "..CNumb("2.1", "n_2_1_rgb").." секунд на снаряд.",
 	},
@@ -583,7 +583,7 @@ local talent_localizations = {
 	},
 	--[+ AURA 3 - Prescience +]--	08.12.2025
 	["loc_ability_psyker_gunslinger_aura_description"] = { -- critical_strike_chance: +5%, +colors
-		en = Dot_green.." {critical_strike_chance:%s} "..CKWord("Critical Hit Chance", "Crit_hit_chance_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
+		en = Dot_green.." {critical_strike_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Applies to all attacks that can "..CKWord("Crit", "Crit_rgb")..".\n"
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
@@ -630,23 +630,23 @@ local talent_localizations = {
 	--[+ ABILITY 1-1 - Warp Rupture +]--	08.12.2025
 	["loc_talent_psyker_discharge_damage_debuff_description"] = { -- talent_name: Venting Shriek, damage_reduction: 10%, damage_taken: 10%, duration: 8, +colors
 		en = "{talent_name:%s} applies a debuff to Enemies for {duration:%s} seconds:\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Dealt,\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken.\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Dealt,\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken.\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_eff"),
 		ru = "{talent_name:%s} накладывает ослабление на врагов на {duration:%s} секунд:\n" -- Разрыв варпа -- руоф Варп-разрыв
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{damage_reduction:%s} к наносимому "..CKWord("урону", "uronu_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} к наносимому "..CKWord("урону", "uronu_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_eff"),
 	},
 	--[+ ABILITY 1-2 - Becalming Eruption +]--	13.11.2025
 	["loc_talent_psyker_shout_reduces_warp_charge_generation_description"] = { -- talent_name: Venting Shriek, warp_generation: 1%, max_stacks: 25->25%, duration: 5, s->seconds, +colors
-		en = Dot_green.." "..CKWord("-", "n_minus_rgb").."{warp_generation:%s} "..CKWord("Peril", "Peril_rgb").." Generation for each Enemy hit by {talent_name:%s}.\n"
-				..Dot_nc.." Up to "..CKWord("-", "n_minus_rgb").."{max_stacks:%s}"..CKWord("%", "pc_rgb").." "..CKWord("Peril", "Peril_rgb").." Generation.\n"
+		en = Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} "..CKWord("Peril", "Peril_rgb").." Generation for each Enemy hit by {talent_name:%s}.\n"
+				..Dot_nc.." Up to "..CNumb("-", "n_minus_rgb").."{max_stacks:%s}"..CKWord("%", "pc_rgb").." "..CKWord("Peril", "Peril_rgb").." Generation.\n"
 				..Dot_nc.." Lasts {duration:%s} seconds.",
-		ru = Dot_green.." "..CKWord("-", "n_minus_rgb").."{warp_generation:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." за каждого врага поражённого вашим талантом {talent_name:%s}.\n" -- Успокаивающее извержение -- руоф Затихающее извержение
-				..Dot_nc.." До "..CKWord("-", "n_minus_rgb").."{max_stacks:%s}"..CKWord("%", "pc_rgb").." к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".\n"
+		ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." за каждого врага поражённого вашим талантом {talent_name:%s}.\n" -- Успокаивающее извержение -- руоф Затихающее извержение
+				..Dot_nc.." До "..CNumb("-", "n_minus_rgb").."{max_stacks:%s}"..CKWord("%", "pc_rgb").." к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".\n"
 				..Dot_nc.." Длится {duration:%s} секунд.",
 	},
 -- !!! Removed " -". Fix in the Enhanced_Descriptions.lua file !!! --
@@ -736,12 +736,12 @@ local talent_localizations = {
 			.."Щит всегда поражает "..CKWord("электрошоком", "elektroshokom_rgb_ru").." специалистов, но при этом повреждается при контакте с ними.\n"
 			.."\n"
 			..Dot_green.." Наносит "..CNumb("250", "n_250_rgb").." базового "..CKWord("урона", "urona_rgb_ru")..".\n"
-			..Dot_green.." Может "..CKWord("ошеломить", "oshelomit_rgb_ru").." всех врагов исключая монстров и врагов с активным пустотным щитом.\n"
-			..Dot_nc.." "..CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." всегда применяется к специалистам и монстрам при контакте.\n"
+			..Dot_green.." Может "..CKWord("ошеломить", "oshelomit_rgb_ru").." всех врагов исключая чудовищ и врагов с активным пустотным щитом.\n"
+			..Dot_nc.." "..CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." всегда применяется к специалистам и чудовищам при контакте.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по броне.\n"
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}СЛОМАНО{#reset()}\n"
-			.."Специалисты и монстры наносят щиту при контакте только "..CNumb("1", "n_1_rgb").." "..CKWord("урона", "urona_rgb_ru").." вместо задуманных "..CNumb("8", "n_8_rgb")..".",
+			.."Специалисты и чудовища наносят щиту при контакте только "..CNumb("1", "n_1_rgb").." "..CKWord("урона", "urona_rgb_ru").." вместо задуманных "..CNumb("8", "n_8_rgb")..".",
 	},
 	--[+ ABILITY 2-3 - Telekine Dome +]--	08.12.2025
 	["loc_talent_psyker_force_field_dome_new_desc"] = { -- talent_name: Telekine Shield, duration: 25, s->seconds
@@ -887,8 +887,8 @@ local talent_localizations = {
 	},
 	--[+ KEYSTONE 1-3 - Warp Battery +]--	08.12.2025
 	["loc_talent_psyker_increased_souls_desc"] = { -- soul_amount: 6
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." Maximum Warp Charges. Increased from "..CNumb("4", "n_4_rgb").." to {soul_amount:%s}.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." к максимуму варп-зарядов. Увеличивается с "..CNumb("4", "n_4_rgb").." до {soul_amount:%s} варп-зарядов.", -- Варп-аккумулятор
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." Maximum Warp Charges. Increased from "..CNumb("4", "n_4_rgb").." to {soul_amount:%s}.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." к максимуму варп-зарядов. Увеличивается с "..CNumb("4", "n_4_rgb").." до {soul_amount:%s} варп-зарядов.", -- Варп-аккумулятор
 	},
 	--[+ KEYSTONE 1-4 - In Fire Reborn +]--	08.12.2025
 	["loc_talent_psyker_warpfire_generates_souls_desc"] = { -- chance: 10%, +colors
@@ -931,23 +931,23 @@ local talent_localizations = {
 			.."\n"
 			.."Усиленный {blitz_one:%s}:\n"
 			..Dot_green.." {smite_damage:%s} к "..CKWord("урон", "uronu_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{smite_cost:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{smite_attack_speed:%s} к времени заряжания.\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{smite_cost:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{smite_attack_speed:%s} к времени заряжания.\n"
 			.."\n"
 			.."Усиленное {blitz_two:%s}:\n"
 			..Dot_green.." {chain_lightning_damage:%s} к "..CKWord("урон", "uronu_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{chain_lightning_jump_time_multiplier:%s} к скорости распространения между врагами.\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{chain_lightning_jump_time_multiplier:%s} к скорости распространения между врагами.\n"
 			.."\n"
 			.."Усиленное {blitz_three:%s}:\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{throwing_knives_cost:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{throwing_knives_cost:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..",\n"
 			..Dot_green.." С {throwing_knives_old_damage:%s} до {throwing_knives_new_damage:%s} увеличивается "..CKWord("урон", "uron_rgb_ru")..".\n"
 			..Dot_green.." Не тратит снаряды.\n"
 			..Dot_green.." Можно использовать даже при "..CNumb("100%", "pc_100_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru")..".",
 	},
 	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--	08.12.2025
 	["loc_talent_psyker_increase_empower_chain_lighting_chance_description"] = { -- talent_name: Empowered Psionics, proc_chance_before: 7.5%, proc_chance_after: 12.5%
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." chance to gain {talent_name:%s} on Kill. Increased from {proc_chance_before:%s} to {proc_chance_after:%s}.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." к шансу получить заряд таланта {talent_name:%s} при убийстве. Увеличивается с {proc_chance_before:%s} до {proc_chance_after:%s}.", -- Биопритяжение
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." chance to gain {talent_name:%s} on Kill. Increased from {proc_chance_before:%s} to {proc_chance_after:%s}.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." к шансу получить заряд таланта {talent_name:%s} при убийстве. Увеличивается с {proc_chance_before:%s} до {proc_chance_after:%s}.", -- Биопритяжение
 	},
 	--[+ KEYSTONE 2-2 - Psychic Leeching +]--	08.12.2025
 	["loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies_description"] = { -- talent_name: Empowered Psionics, toughness: 15%, +colors
@@ -1001,8 +1001,8 @@ local talent_localizations = {
 	},
 	--[+ KEYSTONE 3-1 - Perfectionism +]--	08.12.2025
 	["loc_talent_psyker_mark_increased_max_stacks_description"] = { -- stacks_previous: 15, stacks_after: 25, +colors
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." to Maximum "..CKWord("Precision", "Precision_rgb").." Bonus Stacks. Increased from {stacks_previous:%s} to {stacks_after:%s}.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." к максимуму зарядов "..CKWord("меткости", "Precision_rgb_ru")..". Увеличивается с {stacks_previous:%s} до {stacks_after:%s}.", -- Перфекционизм
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." to Maximum "..CKWord("Precision", "Precision_rgb").." Bonus Stacks. Increased from {stacks_previous:%s} to {stacks_after:%s}.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." к максимуму зарядов "..CKWord("меткости", "Precision_rgb_ru")..". Увеличивается с {stacks_previous:%s} до {stacks_after:%s}.", -- Перфекционизм
 	},
 	--[+ KEYSTONE 3-2 - Purloin Providence +]--	08.12.2025
 	["loc_talent_psyker_mark_kills_can_vent_description"] = { -- talent_name: Disrupt Destiny, chance: 20%, warp_charge_percentage: 15%, +colors
@@ -1011,8 +1011,8 @@ local talent_localizations = {
 	},
 	--[+ KEYSTONE 3-3 - Lingering Influence +]--	08.12.2025
 	["loc_talent_psyker_mark_increased_duration_description"] = { -- talent_name: Disrupt Destiny, duration_previous: 15, duration_after: 10, s->seconds
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." seconds to the duration of "..CKWord("Precision", "Precision_rgb").." Stacks. Increased from {duration_previous:%s} to {duration_after:%s} seconds.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." секунд к длительности зарядов "..CKWord("меткости", "Precision_rgb_ru")..". Увеличивается с {duration_previous:%s} до {duration_after:%s} секунд.", -- Длительное влияние -- руоф Длящееся влияние
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." seconds to the duration of "..CKWord("Precision", "Precision_rgb").." Stacks. Increased from {duration_previous:%s} to {duration_after:%s} seconds.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." секунд к длительности зарядов "..CKWord("меткости", "Precision_rgb_ru")..". Увеличивается с {duration_previous:%s} до {duration_after:%s} секунд.", -- Длительное влияние -- руоф Длящееся влияние
 	},
 	--[+ KEYSTONE 3-4 - Cruel Fortune +]--	08.12.2025
 	["loc_talent_psyker_mark_weakspot_stacks_description"] = { -- stacks: 2 talent_name: Disrupt Destiny, +colors
@@ -1136,13 +1136,13 @@ local talent_localizations = {
 	--[+ Passive 10 - Souldrinker +]--	08.12.2025
 	["loc_talent_psyker_killing_enemy_with_warpfire_boosts_duration_desc"] = { -- toughness: 15%, crit_chance: 5%, duration: 5, s->seconds, +colors
 		en = "Killing an enemy with "..CKWord("Soulblaze", "Soulblaze_rgb").." grants the following for {duration:%s} seconds:\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{crit_chance:%s} "..CKWord("Critical Hit Chance", "Crit_hit_chance_rgb")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..",\n"
 			..Dot_green.." "..CNumb("3%", "pc_3_rgb").." "..CKWord("Toughness", "Toughness_rgb").." per second, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." total.\n"
 			.."\n"
 			..Dot_green.." Can be refreshed during active duration.\n"
 			..Dot_green.." This Talent's effects have no range limit and can be procced at any distance to the dying enemy.",
 		ru = "Убийство врага с помощью "..CKWord("горения души", "gorenia_dushi_rgb_ru").." даёт на {duration:%s} секунд:\n" -- Поглотитель душ -- руоф Поглощение душ
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..",\n"
 			..Dot_green.." "..CNumb("3%", "pc_3_rgb").." восстановления "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду, вплоть до {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
@@ -1167,8 +1167,8 @@ local talent_localizations = {
 	},
 	--[+ Passive 12 - Lightning Speed +]--	08.12.2025
 	["loc_talent_psyker_melee_attack_speed_desc"] = { -- melee_attack_speed: 10%, +colors
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb").."{melee_attack_speed:%s} Attack Speed.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb").."{melee_attack_speed:%s} к скорости атак.", -- Молниеносная скорость
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{melee_attack_speed:%s} Attack Speed.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{melee_attack_speed:%s} к скорости атак.", -- Молниеносная скорость
 	},
 	--[+ Passive 13 - Empyric Shock +]--	08.12.2025
 	["loc_talent_psyker_force_staff_quick_attack_bonus_desc"] = { -- damage_taken: 6%, max_stacks: 5, duration: 10, s->seconds, +colors
@@ -1220,12 +1220,12 @@ local talent_localizations = {
 		en = Dot_green.." {vent:%s} "..CKWord("Peril", "Peril_rgb").." Quelled on Melee "..CKWord("Weakspot", "Weakspot_rgb").." kills.\n"
 			..CPhrs("Can_proc_mult")
 			.."\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{warp_generation:%s} "..CKWord("Peril", "Peril_rgb").." Generation for {duration:%s} seconds on Melee "..CKWord("Weakspot", "Weakspot_rgb").." kills.\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} "..CKWord("Peril", "Peril_rgb").." Generation for {duration:%s} seconds on Melee "..CKWord("Weakspot", "Weakspot_rgb").." kills.\n"
 			..CPhrs("Can_be_refr"),
 		ru = Dot_green.." {vent:%s} "..CKWord("опасности", "opasnosti_rgb_ru").." подавляется при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою.\n" -- Треск костей
 			..CPhrs("Can_proc_mult")
 			.."\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{warp_generation:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." на {duration:%s} секунды при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою.\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." на {duration:%s} секунды при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою.\n"
 			..CPhrs("Can_be_refr"),
 	},
 	--[+ Passive 17 - Immaterial Focus +]--	08.12.2025
@@ -1281,33 +1281,33 @@ local talent_localizations = {
 	},
 	--[+ Passive 22 - Anticipation +]--	08.12.2025
 	["loc_talent_psyker_improved_dodge_description"] = { -- dodge_linger_time: +50%, extra_consecutive_dodges: 1
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb").."{extra_consecutive_dodges:%s} Effective Dodges.\n"
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{extra_consecutive_dodges:%s} Effective Dodges.\n"
 			.."\n"
 			..Dot_green.." {dodge_linger_time:%s} Dodge duration.\n"
 			..Dot_nc.." Increases from "..CNumb("0.2", "n_02_rgb").." to "..CNumb("0.3", "n_03_rgb").." seconds.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb").."{extra_consecutive_dodges:%s} к количеству эффективных уклонений.\n" -- Предвкушение
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{extra_consecutive_dodges:%s} к количеству эффективных уклонений.\n" -- Предвкушение
 			.."\n"
 			..Dot_green.." {dodge_linger_time:%s} к длительности уклонений.\n"
 			..Dot_nc.." Длительность увеличивается с "..CNumb("0.2", "n_02_rgb").." до "..CNumb("0.3", "n_03_rgb").." секунды.",
 	},
 	--[+ Passive 23 - Solidity +]--	08.12.2025
 	["loc_talent_psyker_increased_vent_speed_description"] = { -- vent_speed: 30%
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb").."{vent_speed:%s} Quell Speed.\n"
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} Quell Speed.\n"
 			.."\n"
 			..Dot_nc.." Applies only to Active Quelling, Passive Quelling is unaffected.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb").."{vent_speed:%s} к скорости подавления "..CKWord("опасности", "opasnosti_rgb_ru")..".\n" -- Устойчивость -- руоф Твердость
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} к скорости подавления "..CKWord("опасности", "opasnosti_rgb_ru")..".\n" -- Устойчивость -- руоф Твердость
 			.."\n"
 			..Dot_nc.." Применяется только к активному подавлению, пассивное подавление не затрагивается.",
 	},
 	--[+ Passive 24 - Puppet Master +]--	08.12.2025
 	["loc_talent_psyker_coherency_size_increase_description"] = { -- radius_modifier: 50%, +colors
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb").."{radius_modifier:%s} Radius for your "..CKWord("Coherency", "Coherency_rgb").." Aura.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb").."{radius_modifier:%s} к радиусу вашей ауры "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Кукловод
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{radius_modifier:%s} Radius for your "..CKWord("Coherency", "Coherency_rgb").." Aura.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{radius_modifier:%s} к радиусу вашей ауры "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Кукловод
 	},
 	--[+ Passive 25 - Vulnerable Minds +]--	08.12.2025
 	["loc_talent_psyker_damage_vs_ogryns_and_monsters_desc"] = { -- damage: +20%, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Ogryns and Monstrosities.",
-		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." огринам и монстрам.", -- Уязвимые разумы -- руоф Уязвимые сознания
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." огринам и чудовищам.", -- Уязвимые разумы -- руоф Уязвимые сознания
 	},
 	--[+ Passive 26 - Warp Rider +]--	08.12.2025
 	["loc_talent_psyker_damage_based_on_warp_charge_desc"] = { -- max_damage: +20%, +colors
@@ -1414,11 +1414,11 @@ local talent_localizations = {
 	},
 	--[+ Passive 34 - Surety of Arms +]--	08.12.2025
 	["loc_talent_psyker_reload_speed_warp_desc"] = { -- reload_speed: 25%, threshold: 75%, warp_charge: 25%, +colors
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb").."{reload_speed:%s} Reload Speed while below {threshold:%s} "..CKWord("Peril", "Peril_rgb")..".\n"
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} Reload Speed while below {threshold:%s} "..CKWord("Peril", "Peril_rgb")..".\n"
 			..Dot_red.." On Reload, generate up to {warp_charge:%s} "..CKWord("Peril", "Peril_rgb").." based on the Percentage of the Clip Restored.\n"
 			.."\n"
 			..Dot_red.." Reloading an Empty clip generates the max amount of {warp_charge:%s} "..CKWord("Peril", "Peril_rgb")..".",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb").."{reload_speed:%s} к скорости перезарядки оружия пока ваш уровень "..CKWord("опасности", "opasnosti_rgb_ru").." ниже {threshold:%s}.\n" -- Варп в залог -- руоф Верность оружия
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} к скорости перезарядки оружия пока ваш уровень "..CKWord("опасности", "opasnosti_rgb_ru").." ниже {threshold:%s}.\n" -- Варп в залог -- руоф Верность оружия
 			..Dot_red.." При перезарядке сгенерирует до {warp_charge:%s} "..CKWord("опасности", "opasnosti_rgb_ru").." в зависимости от процентного соотношения восстановленных патронов в магазине.\n"
 			.."\n"
 			..Dot_red.." Если патроны кончились, перезарядка сгенерирует вам {warp_charge:%s} "..CKWord("опасности", "opasnosti_rgb_ru")..".",
@@ -1439,7 +1439,7 @@ local talent_localizations = {
 		ru = "Вы бросаете "..CKWord("Fragmentation Grenade", "Fragm_gren_rgb")..", которая взрывается через "..CNumb("1.7", "n_1_7_rgb").." секунд.\n" -- Фраг-граната
 			.."\n"
 			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru").." в эпицентре: "..CNumb("500", "n_500_rgb")..".\n"
-			..Dot_green.." Сильно "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." всех врагов, включая монстров.\n"
+			..Dot_green.." Сильно "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." всех врагов, включая чудовищ.\n"
 			..Dot_nc.." Радиус взрыва: "..CNumb("10", "n_10_rgb").." метров.\n"
 			..Dot_nc.." Средний "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
@@ -1459,7 +1459,7 @@ local talent_localizations = {
 			..Dot_green.." Это улучшенная версия таланта {talent_name:%s}.\n"
 			.."\n"
 			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru").." в эпицентре: "..CNumb("500", "n_500_rgb")..".\n"
-			..Dot_green.." Сильно "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." всех врагов, включая монстров.\n"
+			..Dot_green.." Сильно "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." всех врагов, включая чудовищ.\n"
 			..Dot_nc.." Радиус взрыва: "..CNumb("10", "n_10_rgb").." метров.\n"
 			..Dot_nc.." До "..CNumb("16", "n_16_rgb").." зарядов "..CKWord("кровотечения", "krovotechenia_rgb_ru")..".\n"
 			..Dot_nc.." Средний "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
@@ -1479,7 +1479,7 @@ local talent_localizations = {
 			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru").." в эпицентре: "..CNumb("2400", "n_2400_rgb")..".\n"
 			..Dot_green.." Хороший "..CKWord("урон", "uron_rgb_ru").." по броне в эпицентре.\n"
 			..Dot_green.." Очень высокий "..CKWord("урон", "uron_rgb_ru").." по панцирной, противоосколочной броне и несгибаемым врагам в эпицентре.\n"
-			..Dot_green.." Сильно "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." всех врагов, включая монстров.\n"
+			..Dot_green.." Сильно "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." всех врагов, включая чудовищ.\n"
 			..Dot_nc.." Радиус взрыва: "..CNumb("5", "n_5_rgb").." метров.",
 	},
 	--[+ BLITZ 3 - Smoke Grenade +]--	08.12.2025
@@ -1538,10 +1538,10 @@ local talent_localizations = {
 		en = "You enter "..CKWord("Ranged Stance", "Rangd_stnc_rgb").." for {duration:%s} seconds, instantly equip your Ranged weapon and gain:\n"
 			..Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
 			..Dot_green.." {weakspot_damage:%s} Ranged "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb")..",\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("50%", "pc_50_rgb").." Ranged "..CKWord("Stagger", "Stagger_rgb").." strength,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("60%", "pc_60_rgb").." Weapon Sway,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("38%", "pc_38_rgb").." Spread,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("24%", "pc_24_rgb").." Recoil,\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("50%", "pc_50_rgb").." Ranged "..CKWord("Stagger", "Stagger_rgb").." strength,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("60%", "pc_60_rgb").." Weapon Sway,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("38%", "pc_38_rgb").." Spread,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("24%", "pc_24_rgb").." Recoil,\n"
 			..Dot_green.." Suppression Immunity.\n"
 			.."\n"
 			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.\n"
@@ -1550,10 +1550,10 @@ local talent_localizations = {
 		ru = "Вы входите в "..CKWord("Стойку дальнего боя", "Rangd_stnc_rgb_ru").." на {duration:%s} секунд, мгновенно экипируете своё оружие дальнего боя и улучшаете навык его владения, получая:\n" -- Залповый огонь
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
 			..Dot_green.." {weakspot_damage:%s} к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("50%", "pc_50_rgb").." к силе "..CKWord("ошеломления", "oshelomlenia_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("60%", "pc_60_rgb").." к раскачиванию,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("38%", "pc_38_rgb").." к разбросу,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("24%", "pc_24_rgb").." к отдаче, а также\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("50%", "pc_50_rgb").." к силе "..CKWord("ошеломления", "oshelomlenia_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("60%", "pc_60_rgb").." к раскачиванию,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("38%", "pc_38_rgb").." к разбросу,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("24%", "pc_24_rgb").." к отдаче, а также\n"
 			..Dot_green.." иммунитет к подавлению.\n"
 			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n", -- ..Dot_green.." Убийство отмеченного врага обновляет длительность стойки на {duration:%s} секунд.",
 	},
@@ -1562,10 +1562,10 @@ local talent_localizations = {
 		en = "You enter "..CKWord("Ranged Stance", "Rangd_stnc_rgb").." for {duration:%s} seconds, instantly equip your Ranged weapon and gain:\n"
 			..Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
 			..Dot_green.." {weakspot_damage:%s} Ranged "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb")..",\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("100%", "pc_100_rgb").." Ranged "..CKWord("Stagger", "Stagger_rgb").." strength,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("60%", "pc_60_rgb").." Weapon Sway,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("38%", "pc_38_rgb").." Spread,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("24%", "pc_24_rgb").." Recoil,\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("100%", "pc_100_rgb").." Ranged "..CKWord("Stagger", "Stagger_rgb").." strength,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("60%", "pc_60_rgb").." Weapon Sway,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("38%", "pc_38_rgb").." Spread,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("24%", "pc_24_rgb").." Recoil,\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes per second,\n"
 			..Dot_green.." Suppression Immunity.\n"
 			.."\n"
@@ -1575,13 +1575,13 @@ local talent_localizations = {
 			..Dot_nc.." Human-sized Elite and Specialist Enemies within "..CNumb("50", "n_50_rgb").." meters of the "..CKWord("Veteran", "cls_vet_rgb").." are highlighted for {duration:%s} seconds.\n"
 			..Dot_nc.." Killing an outlined enemy refreshes "..CKWord("Ranged Stance", "Rangd_stnc_rgb").."'s active duration by {refresh_duration:%s} seconds. This also refreshes the duration of outlines on enemies for "..CKWord("Veteran", "cls_vet_rgb")..".\n"
 			..Dot_red.." Outlines are only visible to "..CKWord("Veteran", "cls_vet_rgb")..".",
-		ru = "Вы входите в "..CKWord("Стойку дальнего боя", "Rangd_stnc_rgb_ru").." на {duration:%s} секунд, мгновенно экипируете своё оружие дальнего боя и улучшаете навык его владения, получая:\n" -- Стойка палача
-			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
+		ru = "Вы входите в "..CKWord("Стойку дальнего боя", "Rangd_stnc_rgb_ru").." на {duration:%s} секунд, мгновенно экипируете своё оружие дальнего боя и улучшаете навык его владения, получая:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n" -- Стойка палача
 			..Dot_green.." {weakspot_damage:%s} к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("100%", "pc_100_rgb").." к силе "..CKWord("ошеломления", "oshelomlenia_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("60%", "pc_60_rgb").." к раскачиванию оружия,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("38%", "pc_38_rgb").." к разбросу,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("24%", "pc_24_rgb").." к отдаче,\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("100%", "pc_100_rgb").." к силе "..CKWord("ошеломления", "oshelomlenia_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("60%", "pc_60_rgb").." к раскачиванию оружия,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("38%", "pc_38_rgb").." к разбросу,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("24%", "pc_24_rgb").." к отдаче,\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду,\n"
 			..Dot_green.." Иммунитет к подавлению.\n"
 			.."\n"
@@ -1607,13 +1607,13 @@ local talent_localizations = {
 		en = Dot_green.." {talent_name:%s} now outlines Bulwarks, Crushers and Reapers, Captains, and Monstrosity Enemies, additionally to all human-sized Elites and Specials.\n"
 			.."\n"
 			..Dot_green.." Duration increased to {duration:%s} seconds.",
-		ru = Dot_green.." {talent_name:%s} теперь также отмечает бастионов, крушителей, жнецов, капитанов и монстров, в дополнение к элитным врагам человеческого роста и специалистам.\n" -- Чем больше шкаф...
+		ru = Dot_green.." {talent_name:%s} теперь также отмечает бастионов, крушителей, жнецов, капитанов и чудовищ, в дополнение к элитным врагам человеческого роста и специалистам.\n" -- Чем больше шкаф...
 			.."\n"
 			..Dot_green.." Длительность увеличена до {duration:%s} секунд.",
 	},
 	--[+ ABILITY 1-4 - Marksman +]--	08.12.2025
 	["loc_talent_veteran_ability_marksman_desc"] = { -- duration: 10, power: +20%, talent_name: Infiltrate, s->seconds, +colors
-		en = "{power:%s} "..CKWord("Strength", "Strength_rgb").." to "..CKWord("Weakspot Hits", "Weakspothits_rgb").." for {duration:%s} seconds on "..CKWord("Combat Ability", "Combat_ability_rgb").." use.\n"
+		en = "{power:%s} "..CKWord("Strength", "Strength_rgb").." to "..CKWord("Weakspot Hits", "Weakspothits_rgb").." for {duration:%s} seconds on "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use.\n"
 			.."\n"
 			..Dot_nc.." When using {talent_name:%s}, this is applied after leaving "..CKWord("Stealth", "Stealth_rgb")..".\n"
 			.."\n"
@@ -1657,11 +1657,11 @@ local talent_localizations = {
 	--[+ ABILITY 2-2 - Only In Death Does Duty End +]--	08.12.2025
 	["loc_talent_veteran_combat_ability_revives_description"] = { -- talent_name: Voice of Command, range: 33%, ability_cooldown: 50%, &->and, +colors
 		en = Dot_green.." {talent_name:%s} revives Knocked Down Allies within its radius.\n"
-			..Dot_red.." "..CKWord("-", "n_minus_rgb").."{range:%s} radius, down to "..CNumb("6", "n_6_rgb").." meters.\n"
-			..Dot_red.." "..CKWord("+", "n_plus_rgb").."{ability_cooldown:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb")..", up to "..CNumb("45", "n_45_rgb").." seconds.",
+			..Dot_red.." "..CNumb("-", "n_minus_rgb").."{range:%s} radius, down to "..CNumb("6", "n_6_rgb").." meters.\n"
+			..Dot_red.." "..CNumb("+", "n_plus_rgb").."{ability_cooldown:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb")..", up to "..CNumb("45", "n_45_rgb").." seconds.",
 		ru = Dot_green.." {talent_name:%s} поднимает сбитых с ног союзников в радиусе действия.\n" -- Лишь со смертью заканчивается долг -- руоф Лишь после смерти заканчивается служение долгу
-			..Dot_red.." "..CKWord("-", "n_minus_rgb").."{range:%s} радиус действия, уменьшается до "..CNumb("6", "n_6_rgb").." метров.\n"
-			..Dot_red.." "..CKWord("+", "n_plus_rgb").."{ability_cooldown:%s} к времени "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru")..", увеличивается до "..CNumb("45", "n_45_rgb").." секунд.",
+			..Dot_red.." "..CNumb("-", "n_minus_rgb").."{range:%s} радиус действия, уменьшается до "..CNumb("6", "n_6_rgb").." метров.\n"
+			..Dot_red.." "..CNumb("+", "n_plus_rgb").."{ability_cooldown:%s} к времени "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru")..", увеличивается до "..CNumb("45", "n_45_rgb").." секунд.",
 	},
 	--[+ ABILITY 3 - Infiltrate +]--	08.12.2025
 	["loc_talent_veteran_invisibility_on_combat_ability_damage_desc"] = { -- duration: 8, movement_speed: +25%, damage_duration: 5, damage: +30%, cooldown: 45, s->seconds, +colors
@@ -1686,7 +1686,7 @@ local talent_localizations = {
 	},
 	--[+ ABILITY 3-1 - Overwatch +]--	08.12.2025
 	["loc_talent_veteran_combat_ability_extra_charge_description"] = { -- charges: +1, ability_cooldown: +33%
-		en = Dot_green.." {charges:%s} "..CKWord("Combat Ability", "Combat_ability_rgb").." charge.\n"
+		en = Dot_green.." {charges:%s} "..CKWord("Combat Ability", "Cmbt_abil_rgb").." charge.\n"
 			..Dot_red.." {ability_cooldown:%s} "..CKWord("Cooldown", "Cd_rgb")..", up to "..CKWord("~60", "n__60_rgb").." seconds.\n"
 			.."\n"
 			..Dot_nc.." The "..CKWord("Cooldown", "Cd_rgb").." of the Second charge only starts after the First charge finished its "..CKWord("Cooldown", "Cd_rgb")..".",
@@ -1697,7 +1697,7 @@ local talent_localizations = {
 	},
 	--[+ ABILITY 3-2 - Hunter's Resolve +]--	08.12.2025
 	["loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"] = { -- talent_name: Infiltrate, tdr: +50%, duration: 10, s->seconds, +colors
-		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." for {duration:%s} seconds upon leaving "..CKWord("Stealth", "Stealth_rgb")..".",
+		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {duration:%s} seconds upon leaving "..CKWord("Stealth", "Stealth_rgb")..".",
 		ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." на {duration:%s} секунд после выхода из "..CKWord("Скрытности", "Stealth_rgb_ru")..".", -- Упорство охотника
 	},
 	--[+ ABILITY 3-3 - Low Profile +]--	08.12.2025
@@ -1707,7 +1707,7 @@ local talent_localizations = {
 	},
 	--[+ ABILITY 3-4 - Close Quarters Killzone +]--	08.12.2025
 	["loc_talent_veteran_ability_assault_desc"] = { -- power: +15%, duration: 10, talent_name: Infiltrate, s->seconds, +colors
-		en = Dot_green.." {power:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds to enemies within "..CNumb("12.5", "n_12_5_rgb").." meters on "..CKWord("Combat Ability", "Combat_ability_rgb").." use.\n"
+		en = Dot_green.." {power:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds to enemies within "..CNumb("12.5", "n_12_5_rgb").." meters on "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use.\n"
 			.."Beyond "..CNumb("12.5", "n_12_5_rgb").." meters, the "..CKWord("Damage", "Damage_rgb").." buff decreases linearly until it loses its effect at "..CNumb("30", "n_30_rgb").." meters:\n"
 			.."_______________________________\n"
 			.."Distance ("..CKWord("m", "n_meter_rgb")..")   "..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." |   "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb").."\n"
@@ -1779,8 +1779,8 @@ local talent_localizations = {
 	},
 	--[+ KEYSTONE 1-3 - Long Range Assassin +]--	08.12.2025
 	["loc_talent_veteran_snipers_focus_increased_stacks_description"] = { -- stacks: 10, new_stacks: 15, +colors
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." Maximum "..CKWord("Focus", "Focus_rgb").." Stacks. Increased from {stacks:%s} to {new_stacks:%s}.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." к максимуму зарядов "..CKWord("Концентрации", "Focus_rgb_ru")..". Увеличивается с {stacks:%s} до {new_stacks:%s}.", -- Дальнобойный ассасин
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." Maximum "..CKWord("Focus", "Focus_rgb").." Stacks. Increased from {stacks:%s} to {new_stacks:%s}.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." к максимуму зарядов "..CKWord("Концентрации", "Focus_rgb_ru")..". Увеличивается с {stacks:%s} до {new_stacks:%s}.", -- Дальнобойный ассасин
 	},
 	--[+ KEYSTONE 2 - Focus Target! +]--	08.12.2025
 	["loc_talent_veteran_improved_tag_description"] = { -- time: 1.5, max_stacks: 5, damage: +5%, s->seconds, +colors
@@ -1791,7 +1791,7 @@ local talent_localizations = {
 			..Dot_nc.." Enemies tagged with this Talent are highlighted Yellow.\n"
 			.."\n"
 			.."Per Stack, enemy takes:\n"
-			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..", up to "..CKWord("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb").." "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..", up to "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb").." "..CKWord("Damage", "Damage_rgb")..".\n"
 			..Dot_nc.." Lasts "..CNumb("25", "n_25_rgb").." seconds.",
 		ru = "Вы получаете "..CNumb("1", "n_1_rgb").." заряд "..CKWord("Важной цели", "Focus_Target_rgb_ru").." каждые {time:%s} секунды.\n" -- Важная цель!
 			..Dot_nc.." Суммируется до {max_stacks:%s} раз.\n"
@@ -1800,7 +1800,7 @@ local talent_localizations = {
 			..Dot_nc.." Враги, отмеченные этим талантом, подсвечиваются жёлтым цветом.\n"
 			.."\n"
 			.."За каждый заряд враг получает:\n"
-			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..", до "..CKWord("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb")..".\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..", до "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb")..".\n"
 			..Dot_nc.." Длится "..CNumb("25", "n_25_rgb").." секунд.",
 	},
 	--[+ KEYSTONE 2-1 - Target Down! +]--	08.12.2025
@@ -1823,8 +1823,8 @@ local talent_localizations = {
 	},
 	--[+ KEYSTONE 2-3 - Focused Fire +]--	08.12.2025
 	["loc_talent_veteran_improved_tag_more_damage_description"] = { -- max_stacks: 6, +colors
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." Maximum "..CKWord("Focus Target", "Focus_Target_rgb").." Stacks. Increased from "..CNumb("4", "n_4_rgb").." to {max_stacks:%s}.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." к максимуму зарядов "..CKWord("Важной цели", "Focus_Target_rgb_ru")..". Увеличивается с "..CNumb("4", "n_4_rgb").." до {max_stacks:%s}.", -- Сосредоточенный огонь
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." Maximum "..CKWord("Focus Target", "Focus_Target_rgb").." Stacks. Increased from "..CNumb("4", "n_4_rgb").." to {max_stacks:%s}.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." к максимуму зарядов "..CKWord("Важной цели", "Focus_Target_rgb_ru")..". Увеличивается с "..CNumb("4", "n_4_rgb").." до {max_stacks:%s}.", -- Сосредоточенный огонь
 	},
 	--[+ KEYSTONE 3 - Weapons Specialist +]--	08.12.2025
 	["loc_talent_veteran_weapon_switch_new_description"] = { -- ranged_stacks: 10, melee_stacks: 1, ranged_attack_speed: +2%, reload_speed: 2%, ranged_crit_chance: +33%, ranged_duration: 5, melee_attack_speed: +15%, dodge_modifier: 10%, melee_duration: 10, s->seconds, +colors
@@ -1835,15 +1835,15 @@ local talent_localizations = {
 			..Dot_nc.." Stacks {melee_stacks:%s} times.\n"
 			.."\n"
 			.."When you wield your Ranged weapon, you activate your "..CKWord("Ranged Specialist", "Rangedspec_rgb").." effect, to gain per Stack:\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{reload_speed:%s} Reload Speed, up to "..CNumb("20%", "pc_20_rgb")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} Reload Speed, up to "..CNumb("20%", "pc_20_rgb")..",\n"
 			..Dot_green.." {ranged_attack_speed:%s} Ranged Attack Speed, up to "..CNumb("20%", "pc_20_rgb")..",\n"
 			..Dot_green.." {ranged_crit_chance:%s} Ranged "..CKWord("Critical Hit", "Crit_hit_rgb").." Chance on your next shot. Guaranteed "..CKWord("Crit", "Crit_rgb").." at "..CNumb("3", "n_3_rgb").." Stacks.\n"
 			..Dot_nc.." Lasts {ranged_duration:%s} seconds.\n"
 			.."\n"
 			.."When you wield your Melee weapon, you activate your "..CKWord("Melee Specialist", "Meleespec_rgb").." effect, to gain:\n"
 			..Dot_green.." {melee_attack_speed:%s} Melee Attack Speed,\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{dodge_modifier:%s} Dodge Speed,\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{dodge_modifier:%s} Dodge Distance.\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{dodge_modifier:%s} Dodge Speed,\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{dodge_modifier:%s} Dodge Distance.\n"
 			..Dot_nc.." Lasts {melee_duration:%s} seconds.",
 		ru = "Вы получаете заряды "..CKWord("Специалиста-стрелка", "Rangedspec_rgb_ru").." за убийства в ближнем бою.\n" -- Специалист по оружию -- руоф Специалист по вооружениям
 			..Dot_nc.." Суммируется до {ranged_stacks:%s} раз.\n"
@@ -1852,15 +1852,15 @@ local talent_localizations = {
 			..Dot_nc.." Суммируется {melee_stacks:%s} раз.\n"
 			.."\n"
 			.."Когда вы берёте в руки оружие дальнего боя, вы активируете эффект "..CKWord("Специалиста-стрелка", "Rangedspec_rgb_ru").." и получаете за каждый заряд:\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{reload_speed:%s} к скорости перезарядки, до максимум "..CKWord("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb")..",\n"
-			..Dot_green.." {ranged_attack_speed:%s} к скорострельности, до максимум "..CKWord("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} к скорости перезарядки, до максимум "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb")..",\n"
+			..Dot_green.." {ranged_attack_speed:%s} к скорострельности, до максимум "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb")..",\n"
 			..Dot_green.." {ranged_crit_chance:%s} к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru").." для вашего следующего выстрела. Гарантированный "..CKWord("критический выстрел", "krit_vystrel_rgb_ru").." при "..CNumb("3", "n_3_rgb").." зарядах.\n"
 			..Dot_nc.." Длится {ranged_duration:%s} секунд.\n"
 			.."\n"
 			.."Когда вы берёте в руки оружие ближнего боя, вы активируете эффект "..CKWord("Специалиста-рукопашника", "Meleespec_rgb_ru").." и получаете:\n"
 			..Dot_green.." {melee_attack_speed:%s} к скорости атаки,\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{dodge_modifier:%s} к скорости уклонений,\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{dodge_modifier:%s} к дистанции уклонений.\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{dodge_modifier:%s} к скорости уклонений,\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{dodge_modifier:%s} к дистанции уклонений.\n"
 			..Dot_nc.." Длится {melee_duration:%s} секунд.",
 	},
 	--[+ KEYSTONE 3-1 - Always Prepared +]--	08.12.2025
@@ -1875,11 +1875,11 @@ local talent_localizations = {
 	--[+ KEYSTONE 3-2 - Invigorated +]--	08.12.2025
 	["loc_talent_veteran_weapon_switch_replenish_stamina_new_description"] = { -- stamina: 20%, stamina_reduction: 25%, +colors
 		en = "On activation, "..CKWord("Melee Specialist", "Meleespec_rgb").." grants you for {duration:%s} seconds:\n"
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{stamina:%s} Maximum "..CKWord("Stamina", "Stamina_rgb")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{stamina:%s} Maximum "..CKWord("Stamina", "Stamina_rgb")..",\n"
 			..Dot_green.." {stamina_reduction:%s} "..CKWord("Stamina", "Stamina_rgb").." Cost Reduction.",
 		ru = "При активации "..CKWord("Специалиста-рукопашника", "Meleespec_rgb_ru").." даёт вам на {duration:%s} секунды:\n" -- Ободрение
-			..Dot_green.." "..CKWord("+", "n_plus_rgb").."{stamina:%s} к максимуму "..CKWord("выносливости", "vynoslivosti_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{stamina_reduction:%s} от затрат "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".",
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{stamina:%s} к максимуму "..CKWord("выносливости", "vynoslivosti_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{stamina_reduction:%s} от затрат "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".",
 	},
 	--[+ KEYSTONE 3-3 - On Your Toes +]--	08.12.2025
 	["loc_talent_veteran_weapon_switch_replenish_toughness_description"] = { -- toughness: 20%, cooldown: 3, s->seconds, +colors
@@ -1895,7 +1895,7 @@ local talent_localizations = {
 	["loc_talent_veteran_toughness_on_weakspot_kill_alt_desc"] = { -- toughness: 15%, toughness_damage_reduction: +10%, duration: 8, stacks: 3, s->seconds, +colors
 		en = "On Ranged "..CKWord("Weakspot", "Weakspot_rgb").." Kill, you gain:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..",\n"
-			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb")..".\n"
+			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".\n"
 			..Dot_nc.." Lasts {duration:%s} seconds.\n"
 			..Dot_nc.." Stacks {stacks:%s} times.\n"
 			.."\n"
@@ -1949,14 +1949,14 @@ local talent_localizations = {
 			.."\n"
 			.."Against targets beyond {ranged_close:%s} meters, Ranged "..CKWord("Damage", "Damage_rgb").." increases linearly up to {max_ranged_damage:%s} at {ranged_far:%s} meters:\n"
 			.."_______________________________\n"
-			.."Distance ("..CKWord("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CKWord("+", "n_plus_rgb").."\n"
+			.."Distance ("..CKWord("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
 			..CKWord("Damage", "Damage_rgb").." ("..CKWord("%", "pc_rgb").."):  "..CNumb("10", "n_10_rgb").."|    "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."| "..CNumb("25", "n_25_rgb").."\n"
 			.."_______________________________\n",
 		ru = Dot_green.." {ranged_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." в дальнем бою на расстоянии до {ranged_close:%s} метров.\n" -- Дальнобойный выстрел -- руоф Далекая перспектива
 			.."\n"
 			.."Против целей за пределами {ranged_close:%s} метров, "..CKWord("урон", "uron_rgb_ru").." в дальнем бою увеличивается линейно до {max_ranged_damage:%s} на {ranged_far:%s} метрах:\n"
 			.."_______________________________\n"
-			.."Дистанция("..CKWord("м", "n_metr_rgb").."): "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}|  "..CNumb("15", "n_15_rgb").."|   "..CNumb("20", "n_20_rgb").."|  "..CNumb("25", "n_25_rgb").."|  "..CNumb("30", "n_30_rgb")..CKWord("+", "n_plus_rgb").."\n"
+			.."Дистанция("..CKWord("м", "n_metr_rgb").."): "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}|  "..CNumb("15", "n_15_rgb").."|   "..CNumb("20", "n_20_rgb").."|  "..CNumb("25", "n_25_rgb").."|  "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
 			..CKWord("Урон", "Uron_rgb_ru").." ("..CKWord("%", "pc_rgb").."):        "..CNumb("10", "n_10_rgb").."|    "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."|  "..CNumb("25", "n_25_rgb").."\n"
 			.."_______________________________\n",
 	},
@@ -1993,8 +1993,8 @@ local talent_localizations = {
 	},
 	--[+ Passive 9 - Close Order Drill +]--	08.12.2025
 	["loc_talent_veteran_toughness_damage_reduction_per_ally_description"] = { -- toughness: +33%, +colors
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." per Ally in "..CKWord("Coherency", "Coherency_rgb")..". Stacks up to {toughness:%s}.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." за каждого союзника в "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Суммируется до {toughness:%s}.", -- Строевая подготовка
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." per Ally in "..CKWord("Coherency", "Coherency_rgb")..". Stacks up to {toughness:%s}.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." за каждого союзника в "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Суммируется до {toughness:%s}.", -- Строевая подготовка
 	},
 	--[+ Passive 10 - Superiority Complex +]--	08.12.2025
 	["loc_talent_veteran_increase_damage_vs_elites_desc"] = { -- damage: +15%, +colors
@@ -2003,7 +2003,7 @@ local talent_localizations = {
 	},
 	--[+ Passive 11 - Iron Will +]--	08.12.2025
 	["loc_talent_veteran_tdr_on_high_toughness_desc"] = { -- toughness_damage_reduction: +50%, toughness_percent: 75%, +colors
-		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." if above {toughness_percent:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
+		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." if above {toughness_percent:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
 		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..", если ваш уровень "..CKWord("стойкости", "stoikosti_rgb_ru").." выше {toughness_percent:%s}.", -- Железная воля
 	},
 	--[+ Passive 12 - Trench Fighter Drill +]--	08.12.2025
@@ -2085,10 +2085,10 @@ local talent_localizations = {
 	},
 	--[+ Passive 19 - Grenadier +]--	08.12.2025
 	["loc_talent_veteran_extra_grenade_and_throw_chance_description"] = { -- ammo: 1,  20%, Grenade(s)->Grenade
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb").."{ammo:%s} extra Grenade.\n"
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{ammo:%s} extra Grenade.\n"
 			.."\n"
 			..Dot_green.." {chance:%s} chance to throw an additional Grenade. Consumes only "..CNumb("1", "n_1_rgb").." Grenade.",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb").."{ammo:%s} дополнительная граната.\n" -- Гренадёр -- руоф Гренадер
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{ammo:%s} дополнительная граната.\n" -- Гренадёр -- руоф Гренадер
 			.."\n"
 			..Dot_green.." {chance:%s} шанс бросить дополнительную гранату, потратив только "..CNumb("1", "n_1_rgb").." гранату.",
 	},
@@ -2129,9 +2129,9 @@ local talent_localizations = {
 	["loc_talent_veteran_ads_drains_stamina_boost_desc"] = { -- crit_chance: +25%, sway_reduction: +60%, stamina: 0.75, stamina_per_shot: 0.1, &->and, +colors
 		en = "While Aiming with "..CKWord("Stamina", "Stamina_rgb").." above "..CNumb("0", "n_0_rgb").." you gain:\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("Critical Chance", "Crit_chance_rgb")..",\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{sway_reduction:%s} Weapon Sway,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("19%", "pc_19_rgb").." Spread,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("12%", "pc_12_rgb").." Recoil.\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{sway_reduction:%s} Weapon Sway,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("19%", "pc_19_rgb").." Spread,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("12%", "pc_12_rgb").." Recoil.\n"
 			.."Aiming also drains "..CKWord("Stamina", "Stamina_rgb")..":\n"
 			..Dot_red.." {stamina:%s} per second,\n"
 			..Dot_red.." {stamina_per_shot:%s} per shot.\n"
@@ -2139,9 +2139,9 @@ local talent_localizations = {
 			..Dot_red.." This talent has no effect on Plasma Gun.",
 		ru = "Пока вы целитесь и ваш уровень "..CKWord("выносливости", "vynoslivosti_rgb_ru").." выше "..CNumb("0", "n_0_rgb")..", вы получаете:\n" -- Смертельный выстрел
 			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru")..",\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb").."{sway_reduction:%s} к раскачиванию прицела,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("19%", "pc_19_rgb").." к разбросу,\n"
-			..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("12%", "pc_12_rgb").." к отдаче.\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{sway_reduction:%s} к раскачиванию прицела,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("19%", "pc_19_rgb").." к разбросу,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("12%", "pc_12_rgb").." к отдаче.\n"
 			.."Прицеливание при этом расходует "..CKWord("выносливость", "vynoslivost_rgb_ru")..":\n"
 			..Dot_red.." {stamina:%s} в секунду и\n"
 			..Dot_red.." {stamina_per_shot:%s} за каждый выстрел.\n"
@@ -2227,13 +2227,13 @@ local talent_localizations = {
 	--[+ Passive 30 - Tactical Awareness +]--	08.12.2025
 	["loc_talent_veteran_elite_kills_reduce_cooldown_alt_desc"] = { -- regen: +100%, duration: 6, s->seconds, +colors
 		en = "On Specialist Kill:\n"
-			..Dot_green.." {regen:%s} "..CKWord("Combat Ability", "Combat_ability_rgb").." Cooldown Regeneration for {duration:%s} seconds.",
+			..Dot_green.." {regen:%s} "..CKWord("Combat Ability", "Cmbt_abil_rgb").." Cooldown Regeneration for {duration:%s} seconds.",
 		ru = "При убийстве специалиста:\n" -- Тактическая осведомлённость -- руоф Тактическая осведомленность
 			..Dot_green.." {regen:%s} к восстановлению "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." на {duration:%s} секунд.",
 	},
 	--[+ Passive 31 - Desperado +]--	08.12.2025
 	["loc_talent_veteran_increased_melee_crit_chance_and_melee_finesse_desc"] = { -- crit_chance: +10%, finesse: +25%, &->and, +colors
-		en = Dot_green.." {crit_chance:%s} Melee "..CKWord("Critical Hit Chance", "Crit_hit_chance_rgb")..".\n"
+		en = Dot_green.." {crit_chance:%s} Melee "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..".\n"
 			..Dot_green.." {finesse:%s} Melee "..CKWord("Finesse", "Finesse_rgb").." Bonus.\n"
 			.."\n"
 			..CPhrs("Fns_note"),
@@ -2319,7 +2319,7 @@ local talent_localizations = {
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." to Ogryns and Monstrosities.\n"
 			.."\n"
 			..Dot_red.." Does not buff "..CKWord("Damage", "Damage_rgb").." against Captains/Twins.",
-		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." по огринам и монстрам.\n" -- Убей их! -- руоф Убивай!
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." по огринам и чудовищам.\n" -- Убей их! -- руоф Убивай!
 			.."\n"
 			..Dot_red.." Не усиливает "..CKWord("урон", "uron_rgb_ru").." против капитанов и близнецов.",
 	},
@@ -2342,14 +2342,14 @@ local talent_localizations = {
 	},
 	--[+ Passive 42 - Exploit Weakness +]--	08.12.2025
 	["loc_talent_veteran_crits_rend_alt_description"] = { -- damage: 20%, duration: 6, s->seconds, +colors
-		en = Dot_green.." "..CKWord("+", "n_plus_rgb").."{damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on Melee "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
-		ru = Dot_green.." "..CKWord("+", "n_plus_rgb").."{damage:%s} "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." атакой ближнего боя.", -- Использование слабостей
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on Melee "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." атакой ближнего боя.", -- Использование слабостей
 	},
 
 
 --[+ ++ZEALOT - ИЗУВЕР++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
-	--[+ BLITZ 0 - Stun Grenade +]--	09.12.2025
+	--[+ BLITZ 0 - Stun Grenade +]--	13.12.2025
 	["loc_ability_shock_grenade_description"] = { -- +colors
 		en = "Throw a "..CKWord("Stun Grenade", "Stun_gren_rgb").." that explodes after "..CNumb("1.5", "n_1_5_rgb").." seconds and "..CKWord("Electrocutes", "Electrocutes_rgb").." all Enemies within its blast radius.\n"
 			..Dot_nc.." Explosion radius: "..CNumb("8", "n_8_rgb").." meters.\n"
@@ -2358,29 +2358,42 @@ local talent_localizations = {
 			..Dot_green.." "..CKWord("Staggers", "Staggers_rgb").." all Enemies in range except Mutants, Poxburster, Monstrosities and Captains/Twins.\n"
 			..Dot_green.." Ignores Bulwark shields.\n"
 			..CPhrs("Can_be_refr"),
-		-- ru = "", -- Оглушающая граната
+		ru = "Вы бросаете "..CKWord("Оглушающую гранату", "Oglush_granatu_rgb_ru")..", которая взрывается через "..CNumb("1.5", "n_1_5_rgb").." секунды и поражает "..CKWord("электрошоком", "elektroshokom_rgb_ru").." всех врагов в радиусе поражения.\n" -- Оглушающая граната
+			..Dot_nc.." Радиус поражения: "..CNumb("8", "n_8_rgb").." метров.\n"
+			..Dot_nc.." Длится "..CNumb("8", "n_8_rgb").." секунд.\n"
+			.."\n"
+			..Dot_green.." "..CKWord("Ошеломляет", "Oshelomlaet_rgb_ru").." всех врагов кроме мутантов, взрывунов, чудовищ, капитанов и близнецов.\n"
+			..Dot_green.." Игнорирует щиты бастионов.\n"
+			..CPhrs("Can_be_refr"),
 		-- fr = "Lancez une "..CKWord("Grenade étourdissante", "Stun_gren_rgb_fr").." qui vas "..CKWord("Électrocute", "Electrocute_rgb_fr").." et "..CKWord("Étourdit", "Stun_rgb_fr").." tous les ennemis dans son rayon d'explosion.",
 		-- ["zh-tw"] = "投擲一顆 "..CKWord("眩暈手雷", "Stun_gren_rgb_tw").. "，\n"
 			-- .."範圍內的敵人陷入 "..CKWord("電擊", "Electrocuted_rgb_tw").." 與 "..CKWord("致眩", "Staggers_e_rgb_tw").." 。", -- 眩暈手雷 -- 投擲一枚眩暈手雷，電擊爆炸範圍內敵人並致眩。
 	},
-	--[+ BLITZ 1 - Stunstorm Grenade +]--	09.12.2025
+	--[+ BLITZ 1 - Stunstorm Grenade +]--	13.12.2025
 	["loc_zealot_improved_stun_grenade_desc"] = { -- talent_name: Stun Grenade, radius: +50%, +colors
 		en = "Throw a "..CKWord("Stun Grenade", "Stun_gren_rgb").." that explodes after "..CNumb("1.5", "n_1_5_rgb").." seconds and "..CKWord("Electrocutes", "Electrocutes_rgb").." all Enemies within its blast radius.\n"
-			..Dot_green.." This is an augmented version of {talent_name:%s} with {radius:%s} blast radius.\n"
+			..Dot_green.." This is an augmented version of {talent_name:%s} with "..CNumb("+", "n_plus_rgb").."{radius:%s} blast radius.\n"
 			..Dot_nc.." Explosion radius: "..CNumb("12", "n_12_rgb").." meters.\n"
 			..Dot_nc.." Lasts "..CNumb("8", "n_8_rgb").." seconds.\n"
 			.."\n"
 			..Dot_green.." "..CKWord("Staggers", "Staggers_rgb").." all Enemies in range except Mutants, Poxburster, Monstrosities and Captains/Twins.\n"
 			..Dot_green.." Ignores Bulwark shields.\n"
 			..CPhrs("Can_be_refr"),
-		-- ru = "", -- Оглушающе-штурмовая граната -- руоф Граната шквального оглушения
+		ru = "Вы бросаете "..CKWord("Оглушающую гранату", "Oglush_granatu_rgb_ru")..", которая взрывается через "..CNumb("1.5", "n_1_5_rgb").." секунды и поражает "..CKWord("электрошоком", "elektroshokom_rgb_ru").." всех врагов в радиусе поражения.\n" -- Оглушающе-штурмовая граната -- руоф Граната шквального оглушения
+			..Dot_green.." Это улучшенная версия блица {talent_name:%s} с увеличенным на {radius:%s} радиусом взрыва.\n"
+			..Dot_nc.." Радиус поражения: "..CNumb("12", "n_12_rgb").." метров.\n"
+			..Dot_nc.." Длится "..CNumb("8", "n_8_rgb").." секунд.\n"
+			.."\n"
+			..Dot_green.." "..CKWord("Ошеломляет", "Oshelomlaet_rgb_ru").." всех врагов кроме мутантов, взрывунов, чудовищ, капитанов и близнецов.\n"
+			..Dot_green.." Игнорирует щиты бастионов.\n"
+			..CPhrs("Can_be_refr"),
 		-- fr = "Lancez une "..CKWord("Grenade étourdissante", "Stun_gren_rgb_fr").." qui vas "..CKWord("Électrocute", "Electrocute_rgb_fr").." et "..CKWord("Étourdit", "Stun_rgb_fr").." tous les ennemis dans sa portée.\n\nCeci est une version augmentée de {talent_name:%s} avec un rayon d'explosion de {radius:%s}.",
 		-- ["zh-tw"] = "投擲一顆 "..CKWord("眩暈手雷", "Stun_gren_rgb_tw").." ，\n"
 			-- .."範圍內的敵人陷入 "..CKWord("電擊", "Electrocuted_rgb_tw").." 與 "..CKWord("致眩", "Staggers_e_rgb_tw").." 。"
 			-- .."。\n\n這是 {talent_name:%s} 天賦的強化版本，\n"
 			-- .."爆炸半徑增加 {radius:%s}。", -- 眩暈風暴手雷 -- 投擲一枚手雷，使爆炸範圍內的所有敵人眩暈。\n\n該天賦是{talent_name:%s}的增強版，擁有{radius:%s}爆炸範圍。
 	},
-	--[+ BLITZ 2 - Immolation Grenade +]--	08.12.2025
+	--[+ BLITZ 2 - Immolation Grenade +]--	13.12.2025
 	["loc_talent_ability_fire_grenade_desc"] = { -- +colors
 		en = "Throw a grenade that explodes after "..CNumb("1.7", "n_1_7_rgb").." seconds. It leaves a layer of flaming liquid that "..CKWord("Burning", "Burning_rgb").." and "..CKWord("Staggering", "Staggering_rgb").." enemies, and barring their path.\n"
 			..Dot_nc.." Lasts "..CNumb("15", "n_15_rgb").." seconds.\n"
@@ -2390,30 +2403,41 @@ local talent_localizations = {
 			..Dot_green.." Very high "..CKWord("Damage", "Damage_rgb").." to Unyielding.\n"
 			..Dot_green.." High "..CKWord("Damage", "Damage_rgb").." to Unarmoured, Infested, Maniac.\n"
 			..Dot_red.." Very low "..CKWord("Damage", "Damage_rgb").." to Carapace.",
-		-- ru = "", -- Огненная граната -- руоф Жертвенная граната
-		-- fr = "Lancez une grenade qui laisse une couche de liquide enflammé, "..CKWord("Brule", "Burning_rgb_fr").." et faisant "..CKWord("Étourdissant", "Staggering_rgb_fr").." les ennemis, barrant la voie. Éfficacité maximale contre les ennemis sans armures.",
-		-- ["zh-tw"] = "投擲一顆 {talent_name:%s}，\n"
-			-- .."爆炸後產生火焰地面，\n"
-			-- .."該火焰可 "..CKWord("燃燒", "Burnd_rgb_tw").." 並 "..CKWord("致眩", "Staggers_e_rgb_tw").." 敵人，\n"
-			-- .."\n"
-			-- .."- 火焰會迫使敵人改變路線。\n"
-			-- .."- 對無裝甲敵人最為有效。", -- 獻祭手雷 -- 投擲一枚手雷，在爆炸處形成一層燃燒的液體，燃燒並使敵人暈眩, 同時阻擋他們的道路。針對無護甲敵人最為有效。
+		ru = "Вы бросаете гранату, которая взрывается через "..CNumb("1.7", "n_1_7_rgb").." секунды и оставляет слой "..CKWord("горящей", "goriaschej_rgb_ru").." жидкости. Жидкость преграждает путь врагам, а также "..CKWord("сжигающей", "sjigauschei_rgb_ru").." и "..CKWord("ошеломляющей", "oshelomlauschej_rgb_ru").." их.\n" -- !!! Испепеляющая граната -- руоф Жертвенная граната
+			..Dot_nc.." Длится "..CNumb("15", "n_15_rgb").." секунд.\n"
+			..Dot_nc.." Весь запас пополняется при подборе гранат.\n"
+			.."\n"
+			..CPhrs("Can_appl_thr_shlds").."\n"
+			..Dot_green.." Очень высокий "..CKWord("урон", "Damage_rgb_ru").." несгибаемым.\n"
+			..Dot_green.." Высокий "..CKWord("урон", "Damage_rgb_ru").." небронированным, заражённым и маньякам.\n"
+			..Dot_red.." Низкий "..CKWord("урон", "Damage_rgb_ru").." врагам в панцирной броне.",
 	},
-	--[+ BLITZ 3 - Blades of Faith +]--	08.12.2025
+	--[+ BLITZ 3 - Blades of Faith +]--	13.12.2025
 	["loc_ability_zealot_throwing_knifes_desc"] = { -- +colors
 		en = "Quickly throw a consecrated knife to deal High "..CKWord("Damage", "Damage_rgb").." to a Single Enemy.\n"
 			.."\n"
 			..Dot_green.." Base "..CKWord("Damage", "Damage_rgb")..": "..CNumb("585", "n_585_rgb")..".\n"
 			..Dot_green.." High "..CKWord("Damage", "Damage_rgb").." to Maniac and Infested.\n"
 			..Dot_green.." Can "..CKWord("Cleave", "Cleave_rgb").." "..CNumb("1", "n_1_rgb").." Groaner, Poxwalker, Scab/Dreg Stalker or Scab Shooter.\n"
-			..Dot_red.." Deals no "..CKWord("Damage", "Damage_rgb").." to Carapace except on "..CKWord("Weakspots", "Weakspots_rgb")..", such as a Mauler's head.\n"
+			..Dot_red.." Deals no "..CKWord("Damage", "Damage_rgb").." to Carapace except on "..CKWord("Weakspots", "Weakspots_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Knives replenish:\n"
-			.."    "..Dot_nc.." "..CKWord("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." - Elite or Specialist Melee kill.\n"
-			.."    "..Dot_nc.." "..CKWord("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." - Small ammo pickup.\n"
-			.."    "..Dot_nc.." "..CKWord("+", "n_plus_rgb")..CNumb("6", "n_6_rgb").." - Large ammo pickup.\n"
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." - Elite or Specialist Melee kill.\n"
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." - Small ammo pickup.\n"
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("6", "n_6_rgb").." - Large ammo pickup.\n"
 			.."    "..Dot_nc.." Full refill - Ammo crate.",
-		-- ru = "", -- Клинки веры
+		ru = "Вы быстро бросаете освящённый нож, наносящий "..CKWord("урон", "uron_rgb_ru").." врагу.\n" -- Клинки веры
+			.."\n"
+			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru")..": "..CNumb("585", "n_585_rgb")..".\n"
+			..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." заражённым и маньякам.\n"
+			..Dot_green.." Может "..CKWord("пробить", "probit_rgb_ru").." "..CNumb("1", "n_1_rgb").." ворчуна, ходока, охотника или скаба-стрелка.\n"
+			..Dot_red.." Не наносит "..CKWord("урон", "uron_rgb_ru").." врагам в панцирной броне, если попадает не попадает в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n"
+			.."\n"
+			..Dot_nc.." Пополнение ножей:\n"
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." - за убийство элитного врага или специалиста в ближнем бою.\n"
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." - подбор малой сумки патронов.\n"
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("6", "n_6_rgb").." - подбор большой сумки патронов.\n"
+			.."    "..Dot_nc.." Все ножи - из ящика с патронами.",
 		-- fr = "Lancez un couteau consacré pour infliger de gros "..CKWord("Dégâts", "Damage_rgb_fr").." à un seul ennemi.",
 		-- ["zh-tw"] = "投擲 {talent_name:%s}，對單一敵人 "..CKWord("高傷害", "Dmg_h2_rgb_tw").." 。\n"
 			-- .."\n"
@@ -2426,58 +2450,69 @@ local talent_localizations = {
 			-- .."- 彈藥箱回復全部匕首。", -- 信仰之刃 --擲出一把聖化小刀，可對單體敵人造成高額傷害。這把小刀對大多數敵人效果拔群，但對護甲堅固的敵人威力較弱。\n\n-快速投擲\n-近戰擊殺精英和專家敵人可補充一把小刀\n-使用彈藥箱可補充小刀
 	},
 --[+ +AURA - АУРЫ+ +]--
-	--[+ AURA 0 - The Emperors's Will +]--	08.12.2025
+	--[+ AURA 0 - The Emperors's Will +]--	13.12.2025
 	["loc_talent_zealot_aura_toughness_damage_coherency_desc"] = { -- damage_reduction: +7.5%, +colors
-		en = Dot_green.." {damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
+		en = Dot_green.." {damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_Aura"),
-		-- ru = "", -- Воля Императора
-		-- fr = "{damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Toughness_dmg_red_rgb_fr").." pour vous et les alliés en syntonie."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
+		ru = Dot_green.." {damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n" -- Воля Императора
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_Aura"),
+		-- fr = "{damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." pour vous et les alliés en syntonie."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
 		-- ["zh-tw"] = "與"..CKWord("協同", "Coherencing_rgb_tw").."盟友 {damage_reduction:%s} "..CKWord("韌性減傷", "Toughness_dmg_red_u_rgb_tw").."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw, -- 帝皇之諭 -- 你和協同中的盟友{damage_reduction:%s}韌性減傷。
 	},
-	--[+ AURA 1 - Benediction +]--	08.12.2025
+	--[+ AURA 1 - Benediction +]--	13.12.2025
 	["loc_talent_zealot_toughness_aura_efficiency_desc"] = { -- damage_reduction: +15%, talent_name: The Emperor's Will, +colors
-		en = Dot_green.." {damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
+		en = Dot_green.." {damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			..Dot_green.." This is an augmented version of the base Aura, {talent_name:%s}.\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_Aura"),
-		-- ru = "", -- Благословение
-		-- fr = "{damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Toughness_dmg_red_rgb_fr").." pour vous et les alliés en syntonie.\n\nCeci est une version augmentée de l'Aura de base - {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
+		ru = Dot_green.." {damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n" -- Благословение
+			..Dot_green.." Это улучшенная версия базовой ауры - {talent_name:%s}.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_Aura"),
+		-- fr = "{damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." pour vous et les alliés en syntonie.\n\nCeci est une version augmentée de l'Aura de base - {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
 		-- ["zh-tw"] = "與"..CKWord("協同", "Coherencing_rgb_tw").."盟友 {damage_reduction:%s} "..CKWord("韌性減傷", "Toughness_dmg_red_u_rgb_tw").."。\n\n"
 			-- .."這是基礎光環 {talent_name:%s} 的強化版本。" ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_0_n_1_rgb_tw, -- 恩賜 --你和協同中的盟友{damage_reduction:%s}韌性減傷。\n\n該天賦是{talent_name:%s}的增強版。
 	},
-	--[+ AURA 2 - Beacon of Purity +]--	08.12.2025
+	--[+ AURA 2 - Beacon of Purity +]--	13.12.2025
 	["loc_talent_zealot_corruption_healing_coherency_improved_desc"] = { -- corruption: 1.5, interval: 1, s->second, +colors
 		en = Dot_green.." {corruption:%s} "..CKWord("Corruption", "Corruption_rgb").." Heal from the current "..CKWord("Wound", "Wound_rgb").." per second for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Negates Grimoire's passive "..CKWord("Corruption", "Corruption_rgb")..", but not the initial "..CNumb("40", "n_40_rgb").." "..CKWord("Corruption", "Corruption_rgb").." from it.\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_Aura").."\n",
-		-- ru = "", -- Маяк очищения -- руоф Маяк непорочности
+		ru = Dot_green.." {corruption:%s} "..CKWord("порчи", "porchi_rgb_ru").." исцеляется в секунду для текущей "..CKWord("раны", "rany_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n" -- Маяк очищения -- руоф Маяк непорочности
+			.."\n"
+			..Dot_nc.." Полностью гасит пассивный набор "..CKWord("порчи", "porchi_rgb_ru").." от гримуара, но изначальные "..CNumb("40", "n_40_rgb").." единиц "..CKWord("порчи", "porchi_rgb_ru").." от взятия гримуара всё равно применяются.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_Aura").."\n",
 		-- fr = "Soigne {corruption:%s} de "..CKWord("Corruption", "Corruption_rgb_fr").." de la blessure actuelle pour vous et les alliés en syntonie toutes les {interval:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_2_rgb_fr,
 		-- ["zh-tw"] = "與 "..CKWord("協同", "Coherencing_rgb_tw").." 的盟友，\n"
 			-- .."- 每秒淨化當前 "..CKWord("傷勢", "Wound_y_rgb_tw").." 的 "..CKWord("腐敗", "Corruption_i_rgb_tw").." {corruption:%s} 點。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_2_rgb_tw, -- 純潔信標 -- 每{interval:%s}秒為你和協同中的盟友淨化當前傷勢下{corruption:%s}腐敗。
 	},
-	--[+ AURA 3 - Zealous +]--	08.12.2025
+	--[+ AURA 3 - Zealous +]--	13.12.2025
 	["loc_talent_zealot_stamina_cost_multiplier_aura_description"] = { -- stamina_cost_multiplier: -15%, +colors
 		en = Dot_green.." {stamina_cost_multiplier:%s} "..CKWord("Stamina", "Stamina_rgb").." Cost for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Includes "..CKWord("Stamina", "Stamina_rgb").." drain by Blocking, Pushing, Sprinting, Jumping while Sprinting, Dodge-cancelling sticky attacks.",
-		-- ru = "", -- Ревностный
+		ru = Dot_green.." {stamina_cost_multiplier:%s} к снижению затрат "..CKWord("выносливости", "vynoslivosti_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n" -- Ревностный -- руоф Рвение
+			.."\n"
+			..Dot_nc.." Включает затраты "..CKWord("выносливости", "vynoslivosti_rgb_ru").." на блокирование, отталкивание, бег, прыжки во время бега и отмену атак уворотами.",
 		-- fr = "Le Fanatique compte comme étant en syntonie avec un allié, ce qui permet le taux le plus bas de régénération de "..CKWord("Endurance", "Toughness_rgb_fr").." en syntonie de "..CNumb("3.75", "n_3_75_rgb").." de "..CKWord("Endurance", "Toughness_rgb_fr").." par seconde."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_3_rgb_fr,
 		-- ["zh-tw"] = "系統默認身旁至少有"..CNumb("1", "n_1_rgb").."名玩家。\n"
 			-- .."\n"
 			-- .."-"..CKWord("韌性恢復", "Toughness_rs_rgb_tw").." 從 "..CNumb("0", "n_0_rgb").." 提升至每秒 "..CNumb("3.75", "n_3_75_rgb").." 。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Aura_3_rgb_tw, -- 孤狼 --你始終被視作擁有至少{coherency_min_stack:%s}層協同。
 	},
---[+ +ABILITIES - СПОСОБНОСТИ+ +]--	08.12.2025
+--[+ +ABILITIES - СПОСОБНОСТИ+ +]--	13.12.2025
 	--[+ ABILITY 0 - Chastise the Wicked +]--
 	["loc_talent_zealot_2_combat_description_new"] = { -- toughness: 50%, damage: 25%, cooldown: 30, s->seconds, +colors
 		en = "Dash forward and replenish:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
 			.."Your next Melee Hit is a guaranteed "..CKWord("Critical Hit", "Crit_hit_rgb").." and deals:\n"
-			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." for "..CNumb("3", "n_3_rgb").." seconds.\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("Damage", "Damage_rgb").." for "..CNumb("3", "n_3_rgb").." seconds.\n"
 			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.\n"
 			.."\n"
 			..Dot_green.." Grants immunity to "..CKWord("Toughness", "Toughness_rgb").." "..CKWord("Damage", "Damage_rgb").." and you Dodge all attacks while dashing.\n"
@@ -2486,16 +2521,27 @@ local talent_localizations = {
 			..Dot_nc.." Dash Range:\n"
 			.."    "..Dot_nc.." Base: "..CNumb("7", "n_7_rgb").." meters.\n"
 			.."    "..Dot_nc.." Aimed: up to "..CNumb("21", "n_21_rgb").." meters.",
-		-- ru = "", -- Кара для нечестивых
+		ru = "Вы делаете рывок вперёд и восстанавливаете:\n" -- Кара для нечестивых
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
+			.."Ваш следующий удар ближнего боя будет гарантированно "..CKWord("критическим", "kritom_rgb_ru").." и наносит:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("урона", "urona_rgb_ru").." в течение "..CNumb("3", "n_3_rgb").." секунд.\n"
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.\n"
+			.."\n"
+			..Dot_green.." Во время рывка вы получаете иммунитет к "..CKWord("урону", "uronu_rgb_ru").." "..CKWord("стойкости", "stoikosti_rgb_ru").." и уклонение от всех атак.\n"
+			..Dot_green.." Накладывает малое "..CKWord("ошеломление", "oshelomlenie_rgb_ru").." на врагов при столкновении в радиусе "..CNumb("3", "n_3_rgb").." метров.\n",
+			-- .."\n"
+			-- ..Dot_nc.." Расстояние рывка при нажатии кнопки способности:\n"
+			-- .."    "..Dot_nc.." быстром: "..CNumb("7", "n_7_rgb").." метров.\n"
+			-- .."    "..Dot_nc.." зажатии: до "..CNumb("21", "n_21_rgb").." метра.",
 		-- fr = "Effectuez une ruée vers l'avant, régénérez {toughness:%s} "..CKWord("Endurance", "Toughness_rgb_fr")..". Votre prochaine attaque de mêlée gagne {damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." et est un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." garanti.\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_0_rgb_fr,
 		-- ["zh-tw"] = "向前方衝鋒並恢復 "..CNumb("50", "n_50_rgb").." 點 "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			-- .."\n"
-			-- .."- "..CNumb("3", "n_3_rgb")..CNumb("s", "n_second_rgb").." 內首次攻擊 "..CKWord("+", "n_plus_rgb").."{damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."\n"
+			-- .."- "..CNumb("3", "n_3_rgb")..CNumb("s", "n_second_rgb").." 內首次攻擊 "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."\n"
 			-- .."--必定 "..CKWord("暴擊", "Crit_hit_udom_rgb_tw").. " 。\n"
 			-- .."\n"
 			-- .."- 冷卻時間：{cooldown:%s} 秒。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_0_rgb_tw, -- 懲奸除惡 -- 向前猛衝，恢復{toughness%s}韌性。你的下一次近戰攻擊命中時造成的傷害{damage%s}且必定暴擊。\n\n基礎冷卻時間：{cooldown:%s}秒。
 	},
-	--[+ ABILITY 1 - Fury of the Faithful +]--	08.12.2025
+	--[+ ABILITY 1 - Fury of the Faithful +]--	13.12.2025
 	["loc_talent_zealot_attack_speed_after_dash_new_desc"] = { -- toughness: 50%, attack_speed: +20%, time: 10, damage: +25%, cooldown: 30, talent_name: Chastise the Wicked, &->and, s->seconds, +colors
 		en = "Dash forward and replenish:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
@@ -2517,7 +2563,26 @@ local talent_localizations = {
 			..Dot_nc.." You can't change direction, but you can cancel the dash with Block or Back buttons.\n"
 			..Dot_red.." Cannot be activated while jumping or falling.\n"
 			..Dot_red.." You can be stopped by Unyielding, Carapace, Monstrosities, as well as the Void shields.",
-		-- ru = "", -- Ярость верующего -- руоф Ударный страх
+		ru = "Вы делаете рывок вперёд и восстанавливаете:\n" -- Ярость верующего -- руоф Ударный страх
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
+			.."Также вы получаете:\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки на {time:%s} секунд.\n"
+			.."\n"
+			.."Ваш следующий удар ближнего боя будет гарантированно "..CKWord("критическим", "kritom_rgb_ru").." и получает:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
+			..Dot_green.." "..CNumb("100%", "pc_100_rgb").." к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони.\n"
+			.."\n"
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.\n"
+			..Dot_green.." Это улучшенная версия таланта {talent_name:%s}.\n"
+			.."\n"
+			..Dot_green.." Во время рывка вы получаете иммунитет к "..CKWord("урону", "uronu_rgb_ru").." "..CKWord("стойкости", "stoikosti_rgb_ru").." и уклонение от всех атак.\n"
+			.."\n"
+			..Dot_nc.." Расстояние рывка при нажатии кнопки способности:\n"
+			.."    "..Dot_nc.." быстром: "..CNumb("7", "n_7_rgb").." метров.\n"
+			.."    "..Dot_nc.." зажатии: до "..CNumb("21", "n_21_rgb").." метра.\n"
+			..Dot_nc.." Вы не можете сменить направление рывка, но можете прервать рывок блоком или нажав кнопку движения назад.\n"
+			..Dot_red.." Не активируется во время прыжка или падения.\n"
+			..Dot_red.." Рывок прервётся при столкновении с несгибаемыми врагами, врагами в панцирной броне, с чудовищами и с пустотным щитом.",
 		-- fr = "Effectuez une ruée vers l'avant, régénérez {toughness:%s} "..CKWord("Endurance", "Toughness_rgb_fr").." et gagne {attack_speed:%s} de vitesse d'attaque pendant {time:%s} secondes. Votre prochaine attaque de mêlée gagne {damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." et est un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." garanti.\nTemps de recharge de base : {cooldown:%s} secondes.\nCeci est une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_1_rgb_fr,
 		-- ["zh-tw"] = "向前方衝鋒並恢復 "..CNumb("50", "n_50_rgb").." 點"..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			-- .."\n"
@@ -2528,31 +2593,78 @@ local talent_localizations = {
 			-- .."- 冷卻時間：{cooldown:%s} 秒。"
 			-- .."\n\n這是 {talent_name:%s} 能力的強化版本。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_1_rgb_tw, -- 有信者之怒 --向前猛衝，恢復{toughness:%s}韌性，同時獲得{attack_speed:%s}攻擊速度，持續{time:%s}秒。下一次近戰攻擊命中時，附加{damage:%s}傷害，且必定暴擊。\n\n基礎冷卻時間：{cooldown:%s}秒。\n\n該天賦是{talent_name:%s}的增強版。
 	},
-	--[+ ABILITY 1-1 - Unrelenting Fury +]--
+	--[+ ABILITY 1-1 - Unrelenting Fury +]--	13.12.2025
 	["loc_talent_zealot_fotf_refund_cooldown_desc"] = { -- duration: 5, talent_name: Fury of the Faithful, cooldown: +20%, s->seconds, +colors
 		en = "Killing an Elite or Specialist within {duration:%s} seconds of using {talent_name:%s} restores:\n"
 			..Dot_green.." {cooldown:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb")..".\n"
-			.."Maximum once per use.",
-		-- ru = "", -- 
+			.."\n"
+			..Dot_nc.." Maximum once per use.",
+		ru = "Убийство элитного врага или специалиста в течение {duration:%s} после применения способности {talent_name:%s} восстанавливает:\n"
+			..Dot_green.." {cooldown:%s} "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
+			.."\n"
+			..Dot_nc.." Максимум одно восстановление за применение.", -- руоф Неумолимая ярость
 	},
-	--[+ ABILITY 1-2 - Redoubled Zeal +]--
+	--[+ ABILITY 1-2 - Redoubled Zeal +]--	13.12.2025
 	["loc_talent_zealot_dash_has_more_charges_desc"] = { -- talent_name: Fury of the Faithful, charges: 2
 		en = Dot_green.." {talent_name:%s} now has {charges:%s} charges.",
-		-- ru = "", -- 
+		ru = Dot_green.." Способность {talent_name:%s} получает {charges:%s} заряд.", -- руоф Удвоенное рвение
 	},
-	--[+ ABILITY 2 - Chorus of Spiritual Fortitude +]--
-	-- ["loc_talent_zealot_bolstering_prayer_variant_two_description"] = { -- interval: 0.8, toughness: 45%, flat_toughness: +20, max_toughness: +100, cooldown: 60, s->seconds, +colors
-		-- en = "Wield a Holy relic that releases pulses of energy "..CNumb("7", "n_7_rgb").." times every {interval:%s} seconds.\n"
-			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-			-- ..Dot_green.." Each pulse grants Zealot and Allies in "..CKWord("Coherency", "Coherency_rgb").." immunity to "..CKWord("Stuns", "Stuns_rgb").." from both Melee and Ranged attacks and Invulnerability for "..CNumb("1.5", "n_1_5_rgb").." seconds.\n"
-			-- ..Dot_green.." Each pulse Replenishes {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." to Allies in "..CKWord("Coherency", "Coherency_rgb")..". If the Ally is at full "..CKWord("Toughness", "Toughness_rgb").." they instead gain {flat_toughness:%s} Max (yellow) "..CKWord("Toughness", "Toughness_rgb").." up to a total of {max_toughness:%s}.\n"
-			-- ..Dot_green.." Immunity to "..CKWord("Stuns", "Stuns_rgb").." and Invulnerability can be refreshed during active duration.\n"
-			-- ..Dot_nc.." Radius: "..CNumb("10", "n_10_rgb").." meters.\n"
-			-- ..Dot_nc.." Bonus "..CKWord("Toughness", "Toughness_rgb").." acts as a 'second' "..CKWord("Toughness", "Toughness_rgb").." bar and can be replenished by Melee kills, respective Talents, and Weapon Blessings.\n"
-			-- ..Dot_nc.." Yellow "..CKWord("Toughness", "Toughness_rgb").." bonus lasts "..CNumb("10", "n_10_rgb").." seconds and does not Stack with bonus "..CKWord("Toughness", "Toughness_rgb").." from the same Talent of another Zealot. But does Stack additively with Veteran's bonus "..CKWord("Toughness", "Toughness_rgb").." from \"Duty and Honour\".\n"
-			-- ..Dot_nc.." \"Invulnerability\" means that player "..CKWord("Health", "Health_rgb").." can't fall below "..CNumb("1", "n_1_rgb")..". Players can still lose any "..CKWord("Health", "Health_rgb").." above "..CNumb("1", "n_1_rgb")..".",
-		--[+ СПОСОБНОСТЬ 2 - Хор духовной стойкости +]--
-		-- ru = "Вы берёте в руки Святую реликвию, которая испускает до "..CNumb("7", "n_7_rgb").." импульсов энергии, раз в {interval:%s} секунды.\nКаждый импульс даёт изуверу и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru").." от атак ближнего и дальнего боя, а также в течение "..CNumb("1.5", "n_1_5_rgb").." секунд вас нельзя убить.\nКаждый импульс восполняет {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Если у союзника полный запас "..CKWord("стойкости", "stoikosti_rgb_ru")..", он вместо этого получает {flat_toughness:%s} максимальной жёлтой "..CKWord("стойкости", "stoikosti_rgb_ru").." за импульс, вплоть до {max_toughness:%s}.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_rgb"),
+	--[+ ABILITY 2 - Chorus of Spiritual Fortitude +]--	13.12.2025
+	["loc_talent_zealot_bolstering_prayer_variant_two_description"] = { -- interval: 0.8, toughness: 45%, flat_toughness: +20, max_toughness: +100, cooldown: 60, s->seconds, +colors
+		en = "Wield a "..CKWord("Holy relic", "Holy_relic_rgb").." that releases a pulse of energy "..CNumb("7", "n_7_rgb").." times every {interval:%s} seconds.\n"
+			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.\n"
+			..Dot_nc.." Radius: "..CNumb("10", "n_10_rgb").." meters.\n"
+			..Dot_nc.." Can be canceled by blocking, sprinting, swapping weapons, or by pressing the ability button again.\n"
+			.."\n"
+			.."Each pulse grants the "..CKWord("Zealot", "cls_zea_rgb").." and Allies in "..CKWord("Coherency", "Coherency_rgb").." for "..CNumb("1.5", "n_1_5_rgb").." seconds:\n"
+			..Dot_green.." Invulnerability and\n"
+			..Dot_green.." Immunity to "..CKWord("Stuns", "Stuns_rgb").." from both Melee and Ranged attacks.\n"
+			..CPhrs("Can_be_refr").."\n"
+			.."\n"
+			.."While below "..CNumb("100%", "pc_100_rgb").." "..CKWord("Toughness", "Toughness_rgb")..", the "..CKWord("Zealot", "cls_zea_rgb").." and Allies gain:\n"
+			..Dot_green.." "..CNumb("20%", "pc_20_rgb").." "..CKWord("Toughness", "Toughness_rgb").." instantly and\n"
+			..Dot_green.." "..CNumb("25%", "pc_25_rgb").." "..CKWord("Toughness", "Toughness_rgb").." over the next second.\n"
+			-- .."\n"
+			.."If at full "..CKWord("Toughness", "Toughness_rgb")..", adds:\n"
+			..Dot_green.." {flat_toughness:%s} maximum "..CKWord("Toughness", "Tghnss_gold_rgb")..", up to {max_toughness:%s}.\n"
+			-- .."\n"
+			..Dot_nc.." Bonus "..CKWord("Toughness", "Tghnss_gold_rgb").." acts as a 'second' bar and can be replenished by melee kills, respective talents, and weapon blessings.\n"
+			..Dot_nc.." Lasts "..CNumb("10", "n_10_rgb").." seconds.\n"
+			.."\n"
+			.."Each pulse while channeling:\n"
+			..Dot_green.." Suppresses all suppressible enemies.\n"
+			..Dot_green.." "..CKWord("Staggers", "Staggers_rgb").." all enemies.\n"
+			..Dot_nc.." Monstrosities/Captains: pulses "..CNumb("1", "n_1_rgb")..", "..CNumb("3", "n_3_rgb")..", "..CNumb("5", "n_5_rgb")..", "..CNumb("7", "n_7_rgb")..".\n"
+			-- .."Can be suppressed: Armored Groaner, Groaner, Dreg Gunner, Dreg Stalker, Radio Operator, Reaper, Scab Gunner, Scab Shooter, Scab Stalker.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_abil"),
+		ru = "Вы берёте в руки "..CKWord("Священную реликвию", "Sv_relikviu_rgb_ru")..", которая испускает "..CNumb("7", "n_7_rgb").." волн энергии каждые {interval:%s} секунд.\n"
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.\n"
+			..Dot_nc.." Радиус: "..CNumb("10", "n_10_rgb").." метров.\n"
+			-- ..Dot_nc.." Можно отменить блокированием, использованием бега, сменой оружия или повторным нажатием кнопки способности.\n"
+			-- .."\n"
+			.."Каждая волна даёт вам и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." на "..CNumb("1.5", "n_1_5_rgb").." секунды:\n"
+			..Dot_green.." Неуязвимость и\n"
+			..Dot_green.." Иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru").." от атак.\n" -- ближнего и дальнего боя
+			..CPhrs("Can_be_refr").."\n"
+			.."\n"
+			.."Если у вас меньше "..CNumb("100%", "pc_100_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru")..", вы восстанавливаете:\n" -- и союзников
+			..Dot_green.." "..CNumb("20%", "pc_20_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." мгновенно и\n"
+			..Dot_green.." "..CNumb("25%", "pc_25_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." в течение следующей секунды.\n"
+			-- .."\n"
+			.."Если у вас и союзников "..CKWord("стойкость", "stoikost_rgb_ru").." заполнена, вам добавляется:\n"
+			..Dot_green.." {flat_toughness:%s} максимальной "..CKWord("стойкости", "stojkosti_zolot_rgb_ru")..", вплоть до {max_toughness:%s}.\n"
+			-- .."\n"
+			..Dot_nc.." Золотая "..CKWord("стойкость", "stojkost_zolot_rgb_ru").." работает как вторая полоска и заполняется от убийств в ближнем бою, талантов и благословений оружия.\n"
+			..Dot_nc.." Длится "..CNumb("10", "n_10_rgb").." секунд.\n"
+			.."\n"
+			-- .."Каждая волна:\n"
+			..Dot_green.." Подавляются всех враги, которых можно подавить.\n"
+			..Dot_green.." "..CKWord("Ошеломляются", "Oshelomlautsa_rgb_ru").." всех врагов.\n"
+			..Dot_nc.." чудовища и капитаны ошеломляются на "..CNumb("1", "n_1_rgb")..", "..CNumb("3", "n_3_rgb")..", "..CNumb("5", "n_5_rgb")..", "..CNumb("7", "n_7_rgb").." волнах.\n"
+			-- .."Can be suppressed: Armored Groaner, Groaner, Dreg Gunner, Dreg Stalker, Radio Operator, Reaper, Scab Gunner, Scab Shooter, Scab Stalker.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_abil"), -- Хор духовной стойкости
 		-- fr = "Utilisez une relique sacrée qui libère des pulsations énérgetiques "..CNumb("7", "n_7_rgb").." fois toutes les {interval:%s} secondes.\nChaque pulsation accorde au Fanatique et aux alliés en syntonie une immunité aux "..CKWord("Étourdissements", "Stuns_rgb_fr").." des attaques de mêlée et de distance et une invulnérabilité de "..CNumb("1.5", "n_1_5_rgb").." secondes.\nChaque pulsation régénère {toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." pour les alliés en syntonie. Si l'allié est à toute ça "..CKWord("Endurance", "Toughness_rgb_fr")..", il gagne à la place {flat_toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." maximale (jaune) jusqu'à un total de {max_toughness:%s}.\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_rgb_fr,
 		-- ["zh-tw"] = "揮舞聖物幫助 "..CKWord("協同", "Coherencing_rgb_tw").." 隊友恢復 "..CKWord("韌性", "Toughness_rgb_tw").." ，\n"
 			-- .."並暫時突破 "..CKWord("韌性上限", "Toughness_m_rgb_tw").." 上限。\n"
@@ -2567,70 +2679,66 @@ local talent_localizations = {
 			-- .."- "..CKWord("韌性上限", "Toughness_m_rgb_tw").."".." 最多 {max_toughness:%s}，持續 "..CNumb("10", "n_10_rgb").." 秒。\n"
 			-- .."- 冷卻時間：{cooldown:%s} 秒。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_rgb_tw, -- 不屈靈魂合唱 --運用一件每{interval:%s}秒釋放一次能量脈衝的聖物。引導時，協同中的盟友獲得眩暈免疫和無敵。\n\n每次脈衝為協同中的盟友恢復{toughness:%s}韌性。若盟友韌性值已滿，則會提高{flat_toughness:%s}最大韌性值，最多提高{max_toughness}。\n\n基礎冷卻時間：{cooldown:%s}秒。
-	-- },
-	--[+ ABILITY 2-1 - Holy Cause +]--
-	-- ["loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"] = { -- stacks: 5, toughness: +30%, duration: 10, s->seconds, +colors
-		-- en = "After channeling {stacks:%s} pulses, grants {toughness:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." to you and Allies in "..CKWord("Coherency", "Coherency_rgb")..". Lasts {duration:%s} seconds.\n"
-			-- ..2_1_rgb,
-		--[+ СПОСОБНОСТЬ 2-1 - Святое дело +]--
-		-- ru = "После {stacks:%s} импульса, вы и союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." получаете {toughness:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..". Длится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_1_rgb"),
-		-- fr = "Après avoir canalisé {stacks:%s} pulsations, accorde {toughness:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Toughness_dmg_red_rgb_fr").." à vous et aux alliés en syntonie. Dure {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_1_rgb_fr,
+	},
+	--[+ ABILITY 2-1 - Holy Cause +]--	13.12.2025
+	["loc_talent_zealot_zealot_channel_grants_defensive_buff_desc"] = { -- stacks: 5, toughness: +30%, duration: 10, s->seconds, +colors
+		en = "After channeling {stacks:%s} pulses, grants to you and Allies in "..CKWord("Coherency", "Coherency_rgb")..":\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_abil"),
+		ru = "После {stacks:%s} волны вы с союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." получите:\n" -- Святое дело
+			..Dot_green.." {toughness:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".\n"
+			..Dot_nc.." Длится {duration:%s} секунд.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_abil"),
+		-- fr = "Après avoir canalisé {stacks:%s} pulsations, accorde {toughness:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." à vous et aux alliés en syntonie. Dure {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_1_rgb_fr,
 		-- ["zh-tw"] = "第 {stacks:%s} 次之後的脈衝，\n"
 			-- .."可以 {toughness:%s} 的"..CKWord("韌性減傷", "Toughness_dmg_red_u_rgb_tw").."。\n"
 			-- .."\n"
 			-- .."- "..CKWord("協同", "Coherencing_rgb_tw").." 的隊友才有 "..CKWord("韌性減傷", "Toughness_dmg_red_u_rgb_tw").."。\n"
 			-- .."- 上限 "..CNumb("1", "n_1_rgb").." 層，持續 {duration:%s} 秒。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_1_rgb_tw, -- 神聖事業 --為你和協同中的盟友貫注所有{stacks:%s}層脈衝，賦予{toughness:%s}韌性減傷，持續{duration:%s}秒。
-	-- },
-	--[+ ABILITY 2-2 - Banishing Light +]--
-	-- ["loc_talent_zealot_channel_staggers_desc"] = { -- talent_name: Chorus of Spiritual Fortitude, &->and, +colors
-		-- en = "Each pulse from {talent_name:%s} also "..CKWord("Staggers", "Staggers_rgb").." and Suppresses Enemies. Range increases with every pulse.\n"
-			-- ..2_2_rgb,
-		--[+ СПОСОБНОСТЬ 2-2 - Изгоняющий свет +]--
-		-- ru = "Каждый импульс способности {talent_name:%s} также "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." и подавляет врагов. Дальность распространения увеличивается с каждым импульсом."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_2_rgb"),
-		-- fr = "À Chaque pulsation du {talent_name:%s} les ennemis "..CKWord("Étourdit", "Staggers_rgb_fr").." et sont sous Suppresion. La portée augmente à chaque impulsion."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_2_rgb_fr,
-		-- ["zh-tw"] = "{talent_name:%s} 脈衝會 "..CKWord("致眩", "Staggers_e_rgb_tw").." 並壓制敵人。\n".."- 脈衝的影響範圍會逐漸擴大。" ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_2_rgb_tw, -- 放逐之光 -- {talent_name:%s}的每次脈衝都會壓制敵人並導致暈眩，影響範圍隨脈衝次數增加。
-	-- },
-	--[+ ABILITY 2-3 - Ecclesiarch's Call +]--
-	-- ["loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"] = { -- stacks: 5, damage: +20%, duration: 10, s->seconds, +colors
-		-- en = "After channeling {stacks:%s} pulses, grants {damage:%s} "..CKWord("Damage", "Damage_rgb").." to you and Allies in "..CKWord("Coherency", "Coherency_rgb")..". Lasts {duration:%s} seconds.\n"
-			-- ..2_3_rgb,
-		--[+ СПОСОБНОСТЬ 2-3 - Призыв экклезиарха -- руоф Вызов экклезиарха
-		-- ru = "После {stacks:%s} импульса, вы и союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." получаете {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..". Длится {duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_3_rgb"),
+	},
+	--[+ ABILITY 2-2 - Ecclesiarch's Call +]--	13.12.2025
+	["loc_talent_zealot_zealot_channel_grants_offensive_buff_desc"] = { -- stacks: 5, damage: +20%, duration: 10, s->seconds, +colors
+		en = "After channeling {stacks:%s} pulses, grants to you and Allies in "..CKWord("Coherency", "Coherency_rgb")..":\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_abil"),
+		ru = "После {stacks:%s} волны вы с союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." получите:\n" -- Призыв экклезиарха -- руоф Вызов экклезиарха
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			..Dot_nc.." Длится {duration:%s} секунд.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Zea_abil"),
 		-- fr = "Après avoir canalisé {stacks:%s} pulsations, accorde {damage:%s} "..CKWord("Dégâts", "Damage_rgb_fr").." à vous et aux alliés en syntonie. Dure {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_3_rgb_fr,
 		-- ["zh-tw"] = "第 {stacks:%s} 次之後的脈衝， {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			-- .."\n"
 			-- .."- "..CKWord("協同", "Coherencing_rgb_tw").." 的隊友才有 "..CKWord("傷害", "Damage_rgb_tw").." 加成。\n"
 			-- .."- 上限 "..CNumb("1", "n_1_rgb").." 層，持續 {duration:%s} 秒。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_3_rgb_tw, -- 教宗之喚 --為你和協同中的盟友貫注所有{stacks:%s}層脈衝，提高{damage:%s}傷害，持續{duration:%s}秒。
-	-- },
-	--[+ ABILITY 2-4 - Martyr's Purpose +]--
-	-- ["loc_talent_zealot_damage_taken_restores_cd_description"] = { -- stacks: 5, damage: +20%, duration: 10, s->seconds, +colors
-		-- en = "{cooldown_restore:%s} of "..CKWord("Health", "Health_rgb").." "..CKWord("Damage", "Damage_rgb").." taken is converted to "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Reduction.\n"
-			-- ..2_4_rgb,
-		--[+ СПОСОБНОСТЬ 2-4 - Предназначение мученика -- руоф Цель мученика
-		-- ru = "Каждый полученный {cooldown_restore:%s} "..CKWord("урона", "urona_rgb_ru").." "..CKWord("здоровью", "zdoroviu_rgb_ru").." сокращает время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_4_rgb"),
-		-- fr = "{cooldown_restore:%s} des "..CKWord("Dégâts", "Damage_rgb_fr").." de "..CKWord("Santé", "Health_rgb_fr").." subits sont converti en réduction du "..CKWord("Temps de recharge de capacité", "Combat_ability_cd_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_4_rgb_fr,
-		-- ["zh-tw"] = CKWord("生命值", "Health_rgb_tw").." 受到 "..CKWord("傷害", "Dmg_a_rgb_tw").." 時，縮短冷卻時間。\n"
-			-- .."\n"
-			-- .."- 受到 "..CNumb("1", "n_1_rgb").." 點 "..CKWord("生命值", "Health_rgb_tw").." "..CKWord("傷害", "Dmg_a_rgb_tw").."時，\n"
-			-- .."--將縮短 "..CKWord("戰鬥技能冷卻", "Combat_ability_cd_rgb_tw").." 的冷卻時間。\n"
-			-- .."--秒數 ＝ CD ×（受到生命傷害 × 0.01）"
-			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_2_4_rgb_tw, -- 殉道者之願 --受到的{cooldown_restore:%s}傷害轉化為技能冷卻縮減。
-	-- },
-	--[+ ABILITY 3 - Shroudfield +]--
-	-- ["loc_ability_zealot_stealth_description"] = { -- duration: 3, movement_speed: +20%, backstab_damage: +100%, finesse_damage: +100%, crit_chance: +100%, cooldown: 30, s->seconds, &->and, +colors
-		-- en = "You enter "..CKWord("Stealth", "Stealth_rgb").." for {duration:%s} seconds and gain {movement_speed:%s} Movement Speed.\n"
-			-- .."Your next Melee Attack gain:\n"
-			-- .."{backstab_damage:%s} Backstab "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- .."{finesse_damage:%s} "..CKWord("Finesse Damage", "Finesse_dmg_rgb").." and\n"
-			-- .."{crit_chance:%s} "..CKWord("Critical Chance", "Crit_chance_rgb")..".\n"
-			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-			-- ..3_rgb,
-		--[+ СПОСОБНОСТЬ 3 - Покров +]--
-		-- ru = "Вы входите в режим "..CKWord("Скрытности", "Stealth_rgb_ru").." на {duration:%s} секунды и получаете {movement_speed:%s} к скорости движения.\nВаша следующая атака ближнего боя получает:\n{backstab_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." при ударе в спину,\n{finesse_damage:%s} к "..CKWord("урону от ловкости", "lovkosti_uron_rgb_ru").." и\n{crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
-				-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд."
-				-- ..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_rgb"),
+	},
+	--[+ ABILITY 3 - Shroudfield +]--	13.12.2025
+	["loc_ability_zealot_stealth_rending_description"] = { -- duration: 3, movement_speed: +20%, backstab_damage: +100%, finesse_damage: +100%, crit_chance: +100%, cooldown: 30, s->seconds, &->and, +colors
+		en = "You enter "..CKWord("Stealth", "Stealth_rgb").." for {duration:%s} seconds and gain:\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed,\n"
+			..Dot_green.." {backstab_damage:%s} Backstab "..CKWord("Damage", "Damage_rgb")..",\n"
+			..Dot_green.." {finesse_damage:%s} "..CKWord("Finesse Damage", "Finesse_dmg_rgb")..",\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("Critical Chance", "Crit_chance_rgb").." and\n"
+			..Dot_green.." {rending:%s} Melee "..CKWord("Rending", "Rending_rgb")..".\n"
+			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.\n"
+			.."\n"
+			.."Attacking makes you leave "..CKWord("Stealth", "Stealth_rgb")..".",
+		ru = "Вы входите в режим "..CKWord("Скрытности", "Stealth_rgb_ru").." на {duration:%s} секунды и получаете:\n" -- Покров
+			..Dot_green.." {movement_speed:%s} к скорости движения,\n"
+			..Dot_green.." {backstab_damage:%s} "..CKWord("урону", "uronu_rgb_ru").." атак в спину,\n"
+			..Dot_green.." {finesse_damage:%s} к "..CKWord("урону от ловкости", "lovkosti_uron_rgb_ru")..",\n"
+			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..",\n"
+			..Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони в ближнем бою.\n"
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.\n"
+			.."\n"
+			.."При атаке вы выходите из режима "..CKWord("Скрытности", "Stealth_rgb_ru")..".",
 		-- fr = "Vous passez en "..CKWord("Furtivité", "Stealth_rgb_fr").." pendant {duration:%s} secondes et gagnez {movement_speed:%s} de Vitesse de Déplacement.\nVotre prochaine attaque de Mélée gagne:\n{backstab_damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." dans le dos,\n{finesse_damage:%s} de "..CKWord("Dégâts de finesse", "Finesse_dmg_rgb_fr").." et\n{crit_chance:%s} "..CKWord("Chances de coup critique", "Crit_chance_rgb_fr")..".\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_rgb_fr,
 		-- ["zh-tw"] = "進入"..CKWord("隱形", "Stealth_rgb_tw").."狀態，獲得以下增益：\n"
 			-- .."- {movement_speed:%s} 的移動速度加成。\n"
@@ -2641,23 +2749,51 @@ local talent_localizations = {
 			-- .."\n"
 			-- .."- 持續{duration:%s} 秒。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_rgb_tw, -- 隱秘領域 --進入潛行狀態{duration:%s}秒。潛行期間獲得{movement_speed:%s}移動速度，{backstab_damage:%s}背刺傷害，{finesse_damage:%s}靈巧傷害和{crit_chance:%s}暴擊幾率。\n\n基礎冷卻時間：{cooldown:%s}秒。
-	-- },
-	--[+ ABILITY 3-1 - Master-Crafted Shroudfield +]--
-	-- ["loc_talent_zealot_increased_stealth_duration_description"] = { -- duration_2: 2!!!, s->seconds, +colors
-		-- en = CKWord("Stealth", "Stealth_rgb").." Duration is increased from "..CNumb("3", "n_3_rgb").." to {duration_2:%s} seconds.",
-		--[+ СПОСОБНОСТЬ 3-1 - Мастерский покров -- руоф Искусно изготовленный покров
-		-- ru = "Длительность действия "..CKWord("Скрытности", "Stealth_rgb_ru").." увеличивается с "..CNumb("3", "n_3_rgb").." до {duration_2:%s} секунд.",
+	},
+	--[+ ABILITY 3-1 - Master-Crafted Shroudfield +]--	13.12.2025
+	["loc_talent_zealot_stealth_duration_threat_damage_desc"] = { -- talent_name: Shroudfield, duration: 2, buff_duration: 5, threat: -75%, damage: 50%, s->seconds, +colors
+		en = Dot_green.." {talent_name:%s} duration increased by {duration:%s} seconds.\n"
+			.."\n"
+			.."Upon leaving "..CKWord("Stealth", "Stealth_rgb")..", gain for {buff_duration:%s} seconds:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} Backstab "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {threat:%s} Threat.",
+		ru = Dot_green.." Длительность действия способности {talent_name:%s} увеличивается на {duration:%s} секунды.\n" -- Мастерский покров -- руоф Искусно изготовленный покров
+			.."\n"
+			.."При выходе из "..CKWord("Скрытности", "Stealth_rgb_ru")..", вы получаете на {buff_duration:%s} секунд:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." атак в спину и\n"
+			..Dot_green.." {threat:%s} к вероятности стать целью врага.",
 		-- fr = "La durée de la "..CKWord("Furtivité", "Stealth_rgb_fr").." est augmentée de "..CNumb("3", "n_3_rgb").." à {duration_2:%s} secondes.",
 		-- ["zh-tw"] = CKWord("隱形", "Stealth_rgb_tw").."的持續時間從 "..CNumb("3", "n_3_rgb").." 秒延長至 {duration_2:%s} 秒。", -- 潛行持續時間增至{duration_2:%s}秒。
-	-- },
-	--[+ ABILITY 3-2 - Perfectionist +]--
-	-- ["loc_talent_zealot_stealth_increased_damage_description"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
-		-- en = "{talent_name:%s} grants an additional:\n"
-			-- .."{damage_2:%s} Backstab "..CKWord("Damage", "Damage_rgb").." and\n"
-			-- .."{damage:%s} "..CKWord("Finesse Damage", "Finesse_dmg_rgb")..", but increases "..CKWord("Ability Cooldown", "Ability_cd_rgb").." by {cooldown:%s}.\n"
-			-- ..3_2_rgb,
-		--[+ СПОСОБНОСТЬ 3-2 - Перфекционист +]--
-		-- ru = "{talent_name:%s} даёт дополнительно:\n{damage_2:%s} к "..CKWord("урону", "uronu_rgb_ru").." при ударе в спину и\n{damage:%s} к "..CKWord("урону от ловкости", "lovkosti_uron_rgb_ru")..", но\nна {cooldown:%s} увеличивается время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_2_rgb"),
+	},
+	--[+ ABILITY 3-2 - Invigorating Revelation +]--	13.12.2025
+	["loc_talent_zealot_stealth_toughness_dr_desc"] = { -- toughness: 40%, time: 5, damage: +20%, time: 5, s->seconds, +colors
+		en = "{talent_name:%s} replenishes:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
+			.."\n"
+			.."Upon leaving "..CKWord("Stealth", "Stealth_rgb")..", gain for {duration:%s} seconds:\n"
+			..Dot_green.." {dr:%s} "..CKWord("Damage", "Damage_rgb").." Resistance.",
+		ru = "{talent_name:%s} восстанавливает:\n" -- Оживляющее откровение -- руоф Подбадривающее откровение
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
+			.."\n"
+			.."При выходе из "..CKWord("Скрытности", "Stealth_rgb_ru")..", вы получаете на {duration:%s} секунд:\n"
+			..Dot_green.." {dr:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".",
+		-- fr = "Vous récuperez {toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." en {time:%s} secondes à la sortie de la "..CKWord("Furtivité", "Stealth_rgb_fr")..". Vous gagnez aussi une réduction des "..CKWord("Dégâts", "Damage_rgb_fr").." de {damage:%s} pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_3_rgb_fr,
+		-- ["zh-tw"] = "脫離 "..CKWord("隱形", "Stealth_rgb_tw").." 後觸發以下效果：\n"
+			-- .."- 在 {time:%s} 秒內恢復 "..CKWord("韌性上限", "Toughness_m_rgb_tw").." 的 {toughness:%s} 。\n"
+			-- .."- {damage:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，持續 {time:%s} 秒。"
+			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_3_rgb_tw, -- 振奮啟示 --脫離潛行後，{talent_name:%s}提供{tdr%s}韌性減傷，持續{duration%s}秒。
+	},
+	--[+ ABILITY 3-3 - Perfectionist +]--	13.12.2025
+	["loc_talent_zealot_stealth_cooldown_regeneration_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
+		en = "Restore "..CKWord("Ability Cooldown", "Ability_cd_rgb").." on "..CKWord("Stealth", "Stealth_rgb").." Kill:\n"
+			..Dot_green.." {monster:%s} - Beast of Nurgle, Chaos Spawn, Daemonhosts, Plague Ogryn,\n"
+			..Dot_green.." {ogryn:%s} - Bulwark, Crusher, Reaper,\n"
+			..Dot_green.." {other:%s} - others.",
+		ru = "При убийстве в режиме "..CKWord("Скрытности", "Stealth_rgb_ru").." вы сокращаете время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." на:\n"
+			..Dot_green.." {monster:%s} - при убийстве чудовищ: Зверя Нургла, Отродья Хаоса, Демонхоста или Чумного огрина,\n"
+			..Dot_green.." {ogryn:%s} - при убийстве огринов: Бастиона, Дробителя или Жнеца,\n"
+			..Dot_green.." {other:%s} - при убийстве других врагов.",
+			--"{talent_name:%s} даёт дополнительно:\n{damage_2:%s} к "..CKWord("урону", "uronu_rgb_ru").." при ударе в спину и\n{damage:%s} к "..CKWord("урону от ловкости", "lovkosti_uron_rgb_ru")..", но\nна {cooldown:%s} увеличивается время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_2_rgb"), -- Перфекционист
 		-- fr = "{talent_name:%s} octroie:\n{damage_2:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." dans le dos et\n{damage:%s} de "..CKWord("Dégâts de finesse", "Finesse_dmg_rgb_fr")..", mais augmente le "..CKWord("Temps de recharge de capacité", "Combat_ability_cd_rgb_fr").." de {cooldown:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_2_rgb_fr,
 		-- ["zh-tw"] = "{talent_name:%s} 額外提供：\n"
 			-- .."\n"
@@ -2665,121 +2801,130 @@ local talent_localizations = {
 			-- .."- "..CKWord("靈巧傷害", "Finesse_dmg_rgb_tw").." {damage:%s} 。\n"
 			-- .."- 技能冷卻時間增加 {cooldown:%s}。\n"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_2_rgb_tw, -- 完美主義者 -- {talent_name:%s}賦予額外{damage:%s}靈巧傷害和{damage_2:%s}背刺傷害，但技能冷卻時間增加{cooldown:%s}。
-	-- },
-	--[+ ABILITY 3-3 - Invigorating Revelation +]--
-	-- ["loc_talent_zealot_leaving_stealth_restores_toughness_desc"] = { -- toughness: 40%, time: 5, damage: +20%, time: 5, s->seconds, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes over {time:%s} seconds on leaving "..CKWord("Stealth", "Stealth_rgb")..". Also gain {damage:%s} "..CKWord("Damage", "Damage_rgb").." Reduction for {time:%s} seconds.\n"
-			-- ..3_3_rgb,
-		--[+ СПОСОБНОСТЬ 3-3 - Оживляющее откровение -- руоф Подбадривающее откровение
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за {time:%s} секунд после выхода из "..CKWord("Скрытности", "Stealth_rgb_ru")..". Также вы получите {damage:%s} к снижению "..CKWord("урона", "urona_rgb_ru").." на {time:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_3_rgb"),
-		-- fr = "Vous récuperez {toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." en {time:%s} secondes à la sortie de la "..CKWord("Furtivité", "Stealth_rgb_fr")..". Vous gagnez aussi une réduction des "..CKWord("Dégâts", "Damage_rgb_fr").." de {damage:%s} pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_3_rgb_fr,
-		-- ["zh-tw"] = "脫離 "..CKWord("隱形", "Stealth_rgb_tw").." 後觸發以下效果：\n"
-			-- .."- 在 {time:%s} 秒內恢復 "..CKWord("韌性上限", "Toughness_m_rgb_tw").." 的 {toughness:%s} 。\n"
-			-- .."- {damage:%s} "..CKWord("韌性傷害減免", "Toughness_dmg_red_rgb_tw").."，持續 {time:%s} 秒。"
-			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_3_rgb_tw, -- 振奮啟示 --脫離潛行後，{talent_name:%s}提供{tdr%s}韌性減傷，持續{duration%s}秒。
-	-- },
-	--[+ ABILITY 3-4 - Pious Cut-Throat +]--
-	-- ["loc_talent_zealot_backstab_kills_restore_cd_description"] = { -- ability_cooldown: 20%, +colors
-		-- en = CKWord("-", "n_minus_rgb").."{ability_cooldown:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." on Backstab kills.\n"
-			-- ..3_4_rgb,
-		--[+ СПОСОБНОСТЬ 3-4 - Оживляющее откровение -- руоф Подбадривающее откровение
-		-- ru = CKWord("-", "n_minus_rgb").."{ability_cooldown:%s} от времени "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." при убийстве врага в спину."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_4_rgb"), -- Благочестивый убийца -- руоф Добродетельный головорез
-		-- fr = CKWord("-", "n_minus_rgb").."{ability_cooldown:%s} de "..CKWord("Temps de recharge de capacité", "Ability_cd_rgb_fr").." lors d'un élimination dans le dos."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_4_rgb_fr,
-		-- ["zh-tw"] = CKWord("背刺擊殺", "Dmg_bs_K_rgb_tw").." 可減少 "..CKWord("戰鬥技能冷卻", "Combat_ability_cd_rgb_tw").." 冷卻。\n"
-			-- .."- 恢復最大冷卻時間 {ability_cooldown:%s} 。"
-			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_4_rgb_tw, -- 虔誠刺客 -- 背刺擊殺恢復{ability_cooldown:%s}技能冷卻。
-	-- },
+	},
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
-	--[+ KEYSTONE 1 - Blazing Piety +]--
-	-- ["loc_talent_zealot_fanatic_rage_desc"] = { -- crit_chance: +15%, duration: 8, max_stacks: 25, radius: 25, m->meters, s->seconds, +colors
-		-- en = "When {max_stacks:%s} Enemies have died within {radius:%s} meters of you, you enter "..CKWord("Fury", "Fury_rgb").." and get {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crit_hit_chance_rgb").." for {duration:%s} seconds. The active "..CKWord("Fury", "Fury_rgb").." duration can be refreshed by killing enemies.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_rgb,
-		--[+ КЛЮЧЕВОЙ 1 - Пылающая благочестивость -- руоф Пламенное благочестие
-		-- ru = "Когда {max_stacks:%s} врагов погибает в радиусе {radius:%s} метров от вас, вы входите в режим "..CKWord("Ярости", "Fury_i_rgb_ru").." и получаете {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." на {duration:%s} секунд. Длительность действия "..CKWord("Ярости", "Fury_i_rgb_ru").." можно обновить, убивая врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_rgb"),
-		-- fr = "Quand {max_stacks:%s} ennemis meurent dans un rayon de {radius:%s} mètres autour de vous, vous entrez en "..CKWord("Fureur", "Fury_rgb_fr").." et obtenez {crit_chance:%s} "..CKWord("Chances de coup critique", "Crit_hit_chance_rgb_fr").." pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_rgb_fr,
+	--[+ KEYSTONE 1 - Blazing Piety +]--	13.12.2025
+	["loc_talent_zealot_fanatic_rage_crit_desc"] = { -- crit_chance: +15%, duration: 8, max_stacks: 25, radius: 25, m->meters, s->seconds, +colors
+		en = "When {max_stacks:%s} enemies have died within {radius:%s} meters, you enter "..CKWord("Fury", "Fury_rgb").." and gain for {duration:%s} seconds:\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..".\n"
+			.."\n"
+			..CKWord("Critical Hits", "Crit_hits_rgb").." also count up towards triggering "..CKWord("Fury", "Fury_rgb")..".",
+		ru = "Когда {max_stacks:%s} врагов погибает в радиусе {radius:%s} метров, вы входите в режим "..CKWord("Ярости", "Fury_i_rgb_ru").." и получаете на {duration:%s} секунд:\n" -- Пылающая благочестивость -- руоф Пламенное благочестие
+			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
+			.."\n"
+			..CKWord("Критические удары", "Krit_udary_rgb_ru").." также засчитываются для активации "..CKWord("Ярости", "Fury_i_rgb_ru")..".",
+		-- fr = "Quand {max_stacks:%s} ennemis meurent dans un rayon de {radius:%s} mètres autour de vous, vous entrez en "..CKWord("Fureur", "Fury_rgb_fr").." et obtenez {crit_chance:%s} "..CKWord("Chances de coup critique", "Crt_hit_chnc_rgb_fr").." pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_rgb_fr,
 		-- ["zh-tw"] = "{radius:%s} "..CKWord("m", "n_meter_rgb").." 內擊殺 {max_stacks:%s} 名敵人，\n"
 			-- .."獲得以下效果：\n"
 			-- .."- 進入"..CKWord("狂暴", "Fury_i_rgb_tw").."狀態。\n"
 			-- .."- {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."，持續 {duration:%s} 秒。\n"
 			-- .."- 擊殺敵人可延長 "..CKWord("狂暴", "Fury_i_rgb_tw").." 的持續時間。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_rgb_tw, -- 熾熱虔誠 --狂怒時獲得{crit_chance:%s}暴擊幾率，持續{duration:%s}秒。{radius:%s}公尺範圍內有{max_stacks:%s}個敵人死亡時觸發狂怒。
-	-- },
-	--[+ KEYSTONE 1-1 - Stalwart +]--
-	-- ["loc_talent_zealot_fanatic_rage_toughness_reduction_desc"] = { -- toughness: 50%, toughness_damage_reduction: +25%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." is restored by triggering "..CKWord("Fury", "Fury_rgb")..". In addition, while "..CKWord("Fury", "Fury_rgb").." is Active, you have {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb")..".\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_1_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при входе в "..CKWord("Ярость", "Fury_rgb_ru").." и пока она активна, вы получаете {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_1_rgb"), -- Непоколебимый -- руоф Верный последователь
-		-- fr = "{toughness:%s} "..CKWord("Endurance", "Toughness_rgb_fr").." est régénérée en déclenchant la "..CKWord("Fureur", "Fury_rgb_fr")..". De plus, pendant que la "..CKWord("Fureur", "Fury_rgb_fr").." est active, vous avez gagnez {toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Toughness_dmg_red_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_1_rgb_fr,
+	},
+	--[+ KEYSTONE 1-1 - Infectious Zeal +]--	13.12.2025
+	["loc_talent_zealot_shared_fanatic_rage_new_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
+		en = "While {talent_name:%s} is active, Allies in "..CKWord("Coherency", "Coherency_rgb").." have:\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..".",
+		ru = "Пока активно {talent_name:%s}, союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." получают:\n" -- Заразительное рвение 
+			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".",
+		-- fr = CNumb("10%", "pc_10_rgb").." de "..CKWord("Chances de coup critique", "Crit_chance_rgb_fr").." est conféré aux alliés en syntonie lorsque vous atteignez "..CNumb("25", "n_25_rgb").." cumuls de "..CKWord("Fureur", "Fury_rgb_fr")..". "..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_3_rgb_fr,
+		-- ["zh-tw"] = CNumb("25", "n_25_rgb").." 層 "..CKWord("狂暴", "Fury_i_rgb_tw").." 時， "..CKWord("協同", "Coherencing_rgb_tw").." 隊友獲得：\n"
+			-- .."- "..CKWord("暴擊機率", "Crit_chance_rgb_tw").." "..CNumb("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." 。"
+			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_3_rgb_tw, -- 迅疾狂熱 -- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
+	},
+	--[+ KEYSTONE 1-2 - Righteous Warrior +]--	13.12.2025
+	["loc_talent_zealot_fanatic_rage_improved_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
+		en = Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." from {talent_name:%s}.",
+		ru = Dot_green.." {crit_chance:%s} "..CKWord("шанса критического удара", "sha_krit_udara_rgb_ru").." дополнительно для таланта {talent_name:%s}.", -- Праведный воин
+		-- fr = "{crit_chance:%s} de "..CKWord("Chances de coup critique", "Crt_hit_chnc_rgb_fr").." grâce à {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_4_rgb_fr,
+		-- ["zh-tw"] = "{talent_name:%s} 額外賦予 {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_4_rgb_tw, -- 正義勇士 -- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
+	},
+	--[+ KEYSTONE 1-3 - Stalwart +]--	13.12.2025
+	["loc_talent_zealot_fanatic_rage_toughness_replenish_desc"] = { -- toughness: 50%, toughness_damage_reduction: +25%, toughness_small: 2%, +colors
+		en = "Triggering "..CKWord("Fury", "Fury_rgb").." replenishes:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
+			.."\n"
+			.."While "..CKWord("Fury", "Fury_rgb").." is active:\n"
+			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..",\n"
+			..Dot_green.." {toughness_small:%s} "..CKWord("Toughness", "Toughness_rgb").." per second.",
+		ru = "Активация "..CKWord("Ярости", "Fury_i_rgb_ru").." восстанавливает:\n" -- Непоколебимый -- руоф Верный последователь
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
+			.."\n"
+			.."Пока активна "..CKWord("Ярость", "Fury_rgb_ru").." вы получаете:\n"
+			..Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..",\n"
+			..Dot_green.." {toughness_small:%s} восстановления "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.",
+		-- fr = "{toughness:%s} "..CKWord("Endurance", "Toughness_rgb_fr").." est régénérée en déclenchant la "..CKWord("Fureur", "Fury_rgb_fr")..". De plus, pendant que la "..CKWord("Fureur", "Fury_rgb_fr").." est active, vous avez gagnez {toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_1_rgb_fr,
 		-- ["zh-tw"] = "進入 "..CKWord("狂暴", "Fury_rgb_tw").." 時獲得以下效果：\n"
 			-- .."- 立即恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 。\n"	
 			-- .."- 持續時間內 {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Toughness_dmg_red_u_rgb_tw").." 。\n" 
 			-- .."- 擊殺敵人額外恢復 "..CKWord("韌性", "Toughness_rgb_tw").." "..CNumb("2%", "pc_2_rgb").." 。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_1_rgb_tw, -- 死忠 --觸發狂怒技能恢復{toughness:%s}韌性。狂怒技能啟動狀態下，每一個死亡的敵人會為你回復{toughness_small:%s}韌性。
-	-- },
-	--[+ KEYSTONE 1-2 - Fury Rising +]--
-	-- ["loc_talent_zealot_fanatic_rage_crits_desc"] = { -- +colors
-		-- en = "You gain one Stack of "..CKWord("Fury", "Fury_rgb").." per Melee or Ranged "..CKWord("Critical Hit", "Crit_hit_rgb")..".\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_2_rgb,
-		-- ru = "Вы получаете один заряд "..CKWord("Ярости", "Fury_i_rgb_ru").." при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." ближнего или дальнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_2_rgb"), -- Возрастание ярости -- руоф Подъем ярости
-		-- fr = "Vous gagnez un cumul de "..CKWord("Fureur", "Fury_rgb_fr").." par "..CKWord("Coup critique", "Crit_hit_rgb_fr").." de mélée et de distance."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_2_rgb_fr,
-		-- ["zh-tw"] = "造成 "..CKWord("暴擊", "Crit_hit_chance_rgb_tw").." 時，獲得一層 "..CKWord("狂暴", "Fury_i_rgb_tw").." 。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_2_rgb_tw, -- 怒火升騰 --積累暴擊次數也可觸發狂怒。
-	-- },
-	--[+ KEYSTONE 1-3 - Infectious Zeal +]--
-	-- ["loc_talent_zealot_shared_fanatic_rage_desc"] = { -- crit_chance: +66%, talent_name: Blazing Piety, +colors, {crit_chance:%s}
-		-- en = CNumb("10%", "pc_10_rgb").." "..CKWord("Critical Chance", "Crit_chance_rgb").." is spread to Allies in "..CKWord("Coherency", "Coherency_rgb").." when you reach "..CNumb("25", "n_25_rgb").." Stacks of "..CKWord("Fury", "Fury_rgb")..". \n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_3_rgb,
-		-- ru = CKWord("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." получают союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." в момент получения вами "..CNumb("25", "n_25_rgb").." зарядов "..CKWord("Ярости", "Fury_i_rgb_ru")..". "..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_3_rgb"), -- Заразительное рвение 
-		-- fr = CNumb("10%", "pc_10_rgb").." de "..CKWord("Chances de coup critique", "Crit_chance_rgb_fr").." est conféré aux alliés en syntonie lorsque vous atteignez "..CNumb("25", "n_25_rgb").." cumuls de "..CKWord("Fureur", "Fury_rgb_fr")..". "..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_3_rgb_fr,
-		-- ["zh-tw"] = CNumb("25", "n_25_rgb").." 層 "..CKWord("狂暴", "Fury_i_rgb_tw").." 時， "..CKWord("協同", "Coherencing_rgb_tw").." 隊友獲得：\n"
-			-- .."- "..CKWord("暴擊機率", "Crit_chance_rgb_tw").." "..CKWord("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." 。"
-			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_3_rgb_tw, -- 迅疾狂熱 -- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
-	-- },
-	--[+ KEYSTONE 1-4 - Righteous Warrior +]--
-	-- ["loc_talent_zealot_fanatic_rage_improved_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
-		-- en = "{crit_chance:%s} "..CKWord("Critical Hit Chance", "Crit_hit_chance_rgb").." from {talent_name:%s}.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_1_4_rgb,
-		-- ru = "{crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." дополнительно от таланта {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_4_rgb"), -- Праведный воин
-		-- fr = "{crit_chance:%s} de "..CKWord("Chances de coup critique", "Crit_hit_chance_rgb_fr").." grâce à {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_4_rgb_fr,
-		-- ["zh-tw"] = "{talent_name:%s} 額外賦予 {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_4_rgb_tw, -- 正義勇士 -- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
-	-- },
-	--[+ KEYSTONE 2 - Martyrdom +]--
-	-- ["loc_talent_zealot_martyrdom_desc"] = { -- damage: +8%, max_wounds: 7, +colors
-		-- en = "{damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." for each missing "..CKWord("Wound", "Wound_rgb")..", up to a Maximum {max_wounds:%s} missing "..CKWord("Wounds", "Wounds_rgb")..".\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_rgb,
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя за каждую потерянную "..CKWord("рану", "ranu_rgb_ru")..". Складывается вплоть до {max_wounds:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_rgb"), -- Мученичество
+	},
+	--[+ KEYSTONE 1-4 - Invocation of Death +]--	13.12.2025
+	["loc_talent_maniac_cooldown_on_melee_crits_buff_desc"] = { -- cooldown_regen: +100%, duration: 3, +colors
+		en = Dot_green.." {cooldown_regen:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration for {duration:%s} seconds on Melee "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
+		ru = Dot_green.." {cooldown_regen:%s} к скорости восстановления "..CKWord("боевой способности", "boeva_sposobnost_rgb_ru").." на {duration:%s} секунды при "..CKWord("критических ударах", "krit_udary_rgb_ru").." в ближнем бою.", -- 
+	},
+	--[+ KEYSTONE 2 - Martyrdom +]--	13.12.2025
+	["loc_talent_zealot_martyrdom_desc"] = { -- damage: +10%, max_wounds: 5, +colors
+		en = Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." for each missing "..CKWord("Wound", "Wound_rgb")..", up to a Maximum {max_wounds:%s} missing "..CKWord("Wounds", "Wounds_rgb")..".",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя за каждую потерянную "..CKWord("рану", "ranu_rgb_ru")..", максимум до {max_wounds:%s} потерянных "..CKWord("ран", "ran_rgb_ru")..".", -- Мученичество
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pour chaque "..CKWord("Blessure", "Wound_rgb_fr").." manquante, jusqu'à un maximum de {max_wounds:%s} "..CKWord("Blessures", "Wounds_rgb_fr").." manquantes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_rgb_fr,
 		-- ["zh-tw"] = "每失去一格 "..CKWord("傷勢", "Wound_u_rgb_tw").." 獲得：\n"
 			-- .."-  {damage:%s}  "..CKWord("近戰傷害", "Damage_melee_rgb_tw").." ，上限 {max_wounds:%s} 層。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_rgb_tw, -- 殉道 -- 每個缺損的傷口使你獲得{damage:%s}近戰傷害，最多計算{max_wounds:%s}個缺損傷口。
-	-- },
-	--[+ KEYSTONE 2-1 - I Shall Not Fall +]--
-	-- ["loc_talent_zealot_martyrdom_grants_toughness_desc"] = { -- talent_name: Martyrdom, toughness_damage_reduction: +6.5%, +colors
-		-- en = "{toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." is granted by {talent_name:%s} for each missing "..CKWord("Wound", "Wound_rgb")..".\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_1_rgb,
-		-- ru = "{toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." даётся талантом {talent_name:%s} за каждую потерянную "..CKWord("рану", "ranu_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_1_rgb"), -- Я не паду -- руоф Я не отступлю
-		-- fr = "{toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Toughness_dmg_red_rgb_fr").." par "..CKWord("Blessure", "Wound_rgb_fr").." manquante."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_1_rgb_fr,
+	},
+	--[+ KEYSTONE 2-1 - I Shall Not Fall +]--	13.12.2025
+	["loc_talent_zealot_martyrdom_grants_toughness_upd_desc"] = { -- talent_name: Martyrdom, toughness_damage_reduction: +7.5%, +colors
+		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." per Stack of {talent_name:%s}.",
+		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." за каждый заряд таланта {talent_name:%s}.", -- Я не паду -- руоф Я не отступлю
+		-- fr = "{toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." par "..CKWord("Blessure", "Wound_rgb_fr").." manquante."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_1_rgb_fr,
 		-- ["zh-tw"] = "每失去一格 "..CKWord("傷勢", "Wound_u_rgb_tw").." {talent_name:%s} 提供：\n"
 			-- .."- {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Toughness_dmg_red_u_rgb_tw").."。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_1_rgb_tw, -- 不滅意志 --根據傷口治癒數量，{talent_name:%s}將提供{toughness_damage_reduction:%s}韌性減傷效果。
-	-- },
-	--[+ KEYSTONE 2-2 - Maniac +]--
-	-- ["loc_talent_zealot_attack_speed_per_martyrdom_desc"] = { -- talent_name: Martyrdom, attack_speed: +4%, +colors
-		-- en = "{attack_speed:%s} Attack Speed is granted by {talent_name:%s} for each missing "..CKWord("Wound", "Wound_rgb")..".\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_2_2_rgb,
-		-- ru = "{attack_speed:%s} к скорости атаки даётся талантом {talent_name:%s} за каждую потерянную "..CKWord("рану", "ranu_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_2_2_rgb"), -- Маньяк
+	},
+	--[+ KEYSTONE 2-2 - On the Brink +]--	13.12.2025
+	["loc_talent_zealot_corruption_resistance_stacking_desc"] = { -- talent_name: Martyrdom, corruption_resistance: +10%, +colors
+		en = Dot_green.." {corruption_resistance:%s} "..CKWord("Corruption", "Corruption_rgb").." Resistance per Stack of {talent_name:%s}.",
+		ru = Dot_green.." {corruption_resistance:%s} к сопротивлению "..CKWord("порче", "porche_rgb_ru").." за каждый заряд таланта {talent_name:%s}.", -- 
+	},
+	--[+ KEYSTONE 2-3 - Maniac +]--	13.12.2025
+	["loc_talent_zealot_attack_speed_per_martyrdom_upd_desc"] = { -- talent_name: Martyrdom, attack_speed: +6%, +colors
+		en = Dot_green.." {attack_speed:%s} Attack Speed per Stack of {talent_name:%s}.",
+		ru = Dot_green.." {attack_speed:%s} к скорости атаки за каждый заряд таланта {talent_name:%s}.", -- Маньяк
 		-- fr = "{attack_speed:%s} Vitesse d'attaque de mêlée par "..CKWord("Blessure", "Wound_rgb_fr").." manquante."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_2_rgb_fr,
 		-- ["zh-tw"] = "每失去一格 "..CKWord("傷勢", "Wound_u_rgb_tw").." {talent_name:%s} 提供：\n"
 			-- .."- {attack_speed:%s} 攻擊速度。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_2_rgb_tw, -- 狂燥之心 --{talent_name:%s}還會使每個缺損傷口為你獲得{attack_speed:%s}攻擊速度。
-	-- },
-	--[+ KEYSTONE 3 - Inexorable Judgement +]--
-	-- ["loc_talent_zealot_quickness_desc"] = { -- max_stacks: 15, melee_attack_speed: +1%, ranged_attack_speed: +1%, damage_modifier: +1%, duration: 6, +colors, note
-		-- en = "Moving grants you "..CKWord("Momentum", "Momentum_rgb")..". Stacks {max_stacks:%s} times.\n"
-			-- .."When you Hit an Enemy, spend all "..CKWord("Momentum", "Momentum_rgb").." and gain per Stack for {duration:%s} seconds:\n"
-			-- .."{damage_modifier:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- .."{melee_attack_speed:%s} Melee Attack Speed,\n"
-			-- .."{ranged_attack_speed:%s} Ranged Attack Speed.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_rgb,
-		-- ru = "Движение даёт вам заряды "..CKWord("Моментума", "Momentum_rgb_ru")..". Суммируется {max_stacks:%s} раз.\nПри попадании по врагу, вы тратите все заряды "..CKWord("Моментума", "Momentum_rgb_ru").." и за каждый заряд получаете на {duration:%s} секунд:\n{damage_modifier:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n{melee_attack_speed:%s} к скорости атаки в ближнем бою,\n{ranged_attack_speed:%s} к скорости атаки в дальнем бою."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_rgb"), -- Неумолимый приговор -- руоф Безжалостностный приговор
+	},
+	--[+ KEYSTONE 2-4 - Restorative Verses +]--	13.12.2025
+	["loc_talent_zealot_martyrdom_toughness_modifier_upd_desc"] = { -- talent_name: Martyrdom, toughness_modifier: 5%, +colors
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_modifier:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment per Stack of {talent_name:%s}.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_modifier:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." за каждый заряд таланта {talent_name:%s}.", -- Маньяк
+		-- fr = "{attack_speed:%s} Vitesse d'attaque de mêlée par "..CKWord("Blessure", "Wound_rgb_fr").." manquante."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_2_rgb_fr,
+		-- ["zh-tw"] = "每失去一格 "..CKWord("傷勢", "Wound_u_rgb_tw").." {talent_name:%s} 提供：\n"
+			-- .."- {attack_speed:%s} 攻擊速度。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_2_2_rgb_tw, -- 狂燥之心 --{talent_name:%s}還會使每個缺損傷口為你獲得{attack_speed:%s}攻擊速度。
+	},
+	--[+ KEYSTONE 2-5 - Martyr's Purpose +]--	13.12.2025
+	["loc_talent_zealot_damage_taken_restores_cd_new_description"] = { -- talent_name: Martyrdom, cooldown_regen: +50%, current_health: 25%, +colors
+		en = "Up to {cooldown_regen:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration based on Missing "..CKWord("Health", "Health_rgb")..". Max reached at {current_health:%s} current "..CKWord("Health", "Health_rgb")..".",
+		ru = "До {cooldown_regen:%s} к скорости восстановления "..CKWord("боевой способности", "boeva_sposobnost_rgb_ru").." в зависимости от потерянного "..CKWord("здоровья", "zdorovia_rgb_ru")..". Максимум достигается при {current_health:%s} текущего "..CKWord("здоровья", "zdorovia_rgb_ru")..".",
+	},
+	--[+ KEYSTONE 3 - Inexorable Judgement +]--	13.12.2025
+	["loc_talent_zealot_quickness_desc"] = { -- max_stacks: 20, melee_attack_speed: +1%, ranged_attack_speed: +1%, damage_modifier: +1%, duration: 6, +colors, note
+		en = "Moving grants you "..CKWord("Momentum", "Momentum_rgb")..".\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			.."\n"
+			.."When you Hit an Enemy, spend all "..CKWord("Momentum", "Momentum_rgb").." and gain per Stack for {duration:%s} seconds:\n"
+			..Dot_green.." {damage_modifier:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
+			..Dot_green.." {melee_attack_speed:%s} Melee Attack Speed,\n"
+			..Dot_green.." {ranged_attack_speed:%s} Ranged Attack Speed.",
+		ru = "Движение даёт вам заряды "..CKWord("Моментума", "Momentum_rgb_ru")..".\n" -- Неумолимый приговор -- руоф Безжалостностный приговор
+			..Dot_nc.." Суммируется до {max_stacks:%s} раз.\n"
+			.."\n"
+			.."При попадании по врагу вы тратите все заряды "..CKWord("Моментума", "Momentum_rgb_ru").." и за каждый заряд получаете на {duration:%s} секунд:\n"
+			..Dot_green.." {damage_modifier:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
+			..Dot_green.." {melee_attack_speed:%s} к скорости атаки ближнего боя,\n"
+			..Dot_green.." {ranged_attack_speed:%s} к скорости атаки дальнего боя.",
 		-- fr = "Vos déplacement vous octroient "..CKWord("Élan", "Momentum_rgb_fr")..". Se cumule {max_stacks:%s} fois.\nLorsque vous touchez un ennemi, dépensez tout les cumuls de "..CKWord("Élan", "Momentum_rgb_fr").." et gagnez par cumul pendant {duration:%s} secondes:\n{damage_modifier:%s} de "..CKWord("Dégâts", "Damage_rgb_fr")..",\n{melee_attack_speed:%s} Vitesse d'attaque de mêlée,\n{ranged_attack_speed:%s} Vitesse d'attaque à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_rgb_fr,
 		-- ["zh-tw"] = "移動時會獲得 "..CKWord("動能", "Momentum_rgb_tw").."。\n"
 			-- .."- 上限 {max_stacks:%s} 層。\n"
@@ -2789,297 +2934,412 @@ local talent_localizations = {
 			-- .."-- {ranged_attack_speed:%s} 遠程攻擊速度。\n"
 			-- .."-- 持續時間：{duration:%s} 秒。"
 			-- ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_rgb_tw, -- 命定審判 --移動積累勢能（可疊加{max_stacks:%s}層）。\n\n命中後，消耗所有勢能，每層賦予{melee_attack_speed:%s}近戰攻擊速度，{ranged_attack_speed:%s}遠端攻擊速度和{damage_modifier:%s}傷害，持續{duration:%s}秒。
-	-- },
-	--[+ KEYSTONE 3-1 - Retributor's Stance +]--
-	-- ["loc_talent_zealot_quickness_toughness_per_stack_desc"] = { -- toughness: 2%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." is replenished for each spent Stack of "..CKWord("Momentum", "Momentum_rgb")..".\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_1_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстановливается за каждый потраченный заряд "..CKWord("Моментума", "Momentum_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_1_rgb"), -- Стойка карателя
+	},
+	--[+ KEYSTONE 3-1 - Retributor's Stance +]--	13.12.2025
+	["loc_talent_zealot_momentum_toughness_replenish_desc"] = { -- toughness: 0.4%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." is replenished per spent Stack of "..CKWord("Momentum", "Momentum_rgb").." during its Duration.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за каждый потраченный заряд "..CKWord("Моментума", "Momentum_rgb_ru").." во время его действия.", -- Стойка карателя
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." est régénérée pour chaque cumul de "..CKWord("Élan", "Momentum_rgb_fr").." dépensé."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_1_rgb_fr,
 		-- ["zh-tw"] = "每消耗一層 "..CKWord("動能", "Momentum_rgb_tw").." 恢復 {toughness:%s} "..CKWord("韌性上限", "Toughness_m_rgb_tw").."。"..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_1_rgb_tw, -- 懲戒者姿態 --每消耗一層勢能恢復{toughness:%s}韌性。
-	-- },
-	--[+ KEYSTONE 3-2 - Inebriate's Poise +]--
-	-- ["loc_talent_zealot_quickness_dodge_stacks_desc"] = { -- stacks: 3, +colors
-		-- en = "Gain {stacks:%s} Stacks of "..CKWord("Momentum", "Momentum_rgb").." on a successful Dodge.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Keystone_3_2_rgb,
-		-- ru = "{stacks:%s} заряда "..CKWord("Моментума", "Momentum_rgb_ru").." вы получаете при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_3_2_rgb"), -- Грация пьяницы -- руоф Самообладание пьяницы
+	},
+	--[+ KEYSTONE 3-2 - Inebriate's Poise +]--	13.12.2025
+	["loc_talent_zealot_quickness_dodge_stacks_desc"] = { -- stacks: 3, +colors
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{stacks:%s} Stacks of "..CKWord("Momentum", "Momentum_rgb").." on a successful Dodge.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{stacks:%s} заряда "..CKWord("Моментума", "Momentum_rgb_ru").." при успешном уклонении.", -- Грация пьяницы -- руоф Самообладание пьяницы
 		-- fr = "Gagnez {stacks:%s} cumuls de "..CKWord("Élan", "Momentum_rgb_fr").." après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_2_rgb_fr,
 		-- ["zh-tw"] = "成功閃避時，獲得 {stacks:%s} 層 "..CKWord("動能", "Momentum_rgb_tw").." 。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_2_rgb_tw, -- 飄忽身形 -- 成功閃避積累{stacks:%s}層勢能。
-	-- },
+	},
+	--[+ KEYSTONE 3-3 - Eternal +]--	13.12.2025
+	["loc_talent_zealot_quickness_increased_duration_desc"] = { -- duration: 10, +colors
+		en = Dot_green.." Duration of {talent_name:%s} increased to {duration:%s} seconds.",
+		ru = Dot_green.." Длительность таланта {talent_name:%s} увеличена до {duration:%s} секунд.", -- руоф Вечный
+		-- fr = "Gagnez {stacks:%s} cumuls de "..CKWord("Élan", "Momentum_rgb_fr").." après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_2_rgb_fr,
+		-- ["zh-tw"] = "成功閃避時，獲得 {stacks:%s} 層 "..CKWord("動能", "Momentum_rgb_tw").." 。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_3_2_rgb_tw, -- 飄忽身形 -- 成功閃避積累{stacks:%s}層勢能。
+	},
+	--[+ KEYSTONE 3-4 - Pious Cut-Throat +]--	13.12.2025
+	["loc_talent_zealot_cooldown_on_backstab_weakspot_desc"] = { -- cooldown: +75%, duration: 2, +colors
+		en = Dot_green.." {cooldown:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration for {duration:%s} seconds after a Melee Backstab or Melee "..CKWord("Weakspot Hit", "Weakspothit_rgb")..".",
+		ru = Dot_green.." {cooldown:%s} к скорости восстановления "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." на {duration:%s} секунды после удара в спину или попадания в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru").." в ближнем бою.", -- руоф Добродетельный головорез
+	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
-	--[+ Passive 1 - Disdain +]--
-	-- ["loc_talent_zealot_3_tier_2_ability_1_description"] = { -- damage: +5%, max_stacks: 5, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." for every Second Melee Attack you make for each enemy Hit by your previous Melee Attack. Stacks {max_stacks:%s} times.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_1_rgb,
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." для каждой второй атаки ближнего боя за каждого врага, поражённого вашей предыдущей атакой ближнего боя. Суммируется {max_stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_1_rgb"), -- Презрение
-		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." pour chaque deuxième attaque de mêlée que vous effectuez pour chaque ennemi touché par votre précédente attaque de mêlée. Se cumule jusqu'à {max_stacks:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_1_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 2 - Backstabber +]--
-	-- ["loc_talent_zealot_increased_backstab_damage_description"] = { -- damage: +20%, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." on Melee Backstab Hits.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_2_rgb,
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." при ударах в спину оружием ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_2_rgb"), -- Бьющий в спину
-		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." sur les coups dans le dos en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_2_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 3 - Anoint in Blood +]--
-	-- ["loc_talent_zealot_ranged_damage_increased_to_close_desc"] = { -- damage: +25%, +colors
-		-- en = "Up to {damage:%s} Base Ranged "..CKWord("Damage", "Damage_rgb")..", reduced the further you are from the target.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_3_rgb,
-		-- ru = "До {damage:%s} к базовому "..CKWord("урону", "uronu_rgb_ru").." дальнего боя, уменьшается по мере удаления от цели."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_3_rgb"), -- Помазанный кровью
+	--[+ Passive 1 - Anoint in Blood +]--	13.12.2025
+	["loc_talent_zealot_ranged_damage_increased_to_close_desc"] = { -- damage: +25%, +colors
+		en = "Up to {damage:%s} Base Ranged "..CKWord("Damage", "Damage_rgb")..", reduced the further you are from the target.",
+		ru = "До {damage:%s} к базовому "..CKWord("урону", "uronu_rgb_ru").." дальнего боя, уменьшается по мере удаления от цели.", -- Помазанный кровью
 		-- fr = "Jusqu'à {damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." à distance , réduits plus vous êtes éloigné de la cible."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_3_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 4 - Scourge +]--
-	-- ["loc_talent_zealot_bleed_melee_crit_chance_desc"] = { -- crit_chance: +10%, duration: 3, max_stacks: 3, s->seconds, +colors
-		-- en = "Melee "..CKWord("Critical Hits", "Crit_hits_rgb").." apply "..CKWord("Bleed", "Bleed_rgb")..", causing "..CKWord("Damage", "Damage_rgb").." over time.\n"
-			-- .."Melee Hits on "..CKWord("Bleeding", "Bleeding_rgb").." Enemies grant {crit_chance:%s} "..CKWord("Critical Chance", "Crit_chance_rgb").." for {duration:%s} seconds. Stacks {max_stacks:%s} times. Up to "..CNumb("16", "n_16_rgb").." Max Bleed Stacks on a target.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_4_rgb,
-		-- ru = "К врагам применяется "..CKWord("кровотечение", "krovotechenie_rgb_ru").." при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." в ближнем бою, причиняя "..CKWord("урон", "uron_rgb_ru").." с течением времени.\nУдары ближнего боя по врагам с зарядами "..CKWord("кровотечения", "krovotechenia_rgb_ru").." дают {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." на {duration:%s} секунды. Суммируется {max_stacks:%s} раза. До "..CNumb("16", "n_16_rgb").." зарядов "..CKWord("кровотечения", "krovotechenia_rgb_ru").." максимум."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_4_rgb"), -- Бичевание -- руоф Бич
-		-- fr = "Les coups "..CKWord("Critiques", "Crit_hits_rgb_fr").." en mêlée appliquent "..CKWord("Saignement", "Bleed_rgb_fr")..", causant des "..CKWord("Dégâts", "Damage_rgb_fr").." au fil du temps.\nLes coups en mêlée sur les ennemis qui "..CKWord("Saignent", "Bleeding_rgb_fr").." octroient {crit_chance:%s} "..CKWord("Chances de coup critique", "Crit_chance_rgb_fr").." pendant {duration:%s} secondes. Se cumule jusqu'à {max_stacks:%s} fois. Jusqu'à "..CNumb("16", "n_16_rgb").." cumuls de saignement max sur une cible."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_4_rgb_fr,
+	},
+	--[+ Passive 2 - Disdain +]--	13.12.2025
+	["loc_talent_zealot_3_tier_2_ability_1_description"] = { -- damage: +5%, max_stacks: 5, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." for every Second Melee Attack you make for each enemy Hit by your previous Melee Attack.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." за каждую вторую атаку ближнего боя за каждого врага, поражённого вашей предыдущей атакой ближнего боя.\n" -- Презрение
+			..Dot_nc.." Суммируется до {max_stacks:%s} раз.",
+		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." pour chaque deuxième attaque de mêlée que vous effectuez pour chaque ennemi touché par votre précédente attaque de mêlée. Se cumule jusqu'à {max_stacks:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_1_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 5 - Enemies Within, Enemies Without +]--
-	-- ["loc_talent_zealot_toughness_regen_in_melee_desc"] = { -- toughness: 2.5%, range: 5, num_enemies: 3, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishment per second while within {range:%s} meters of at least {num_enemies:%s} enemies.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_5_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду, если в пределах {range:%s} метров от вас находится не менее {num_enemies:%s} врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_5_rgb"), -- Враги внутри, враги снаружи -- руоф Не дай ему уйти
-		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." par seconde lorsque vous êtes à moins de {range:%s} mètres d'au moins {num_enemies:%s} ennemis."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_5_rgb_fr,
+	},
+	--[+ Passive 3 - Backstabber +]--	13.12.2025
+	["loc_talent_zealot_backstab_flanking_damage_all_desc"] = { -- damage: +25%, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." on Backstab and Flanking Hits.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." при ударах в спину и с фланга.", -- Бьющий в спину
+		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." sur les coups dans le dos en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_2_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 6 - Fortitude in Fellowship +]--
-	-- ["loc_talent_zealot_increased_coherency_regen_desc"] = { -- toughness: +50%, +colors
-		-- en = "{toughness:%s} "..CKWord("Coherency", "Coherency_rgb").." "..CKWord("Toughness", "Toughness_rgb").." Regeneration.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_6_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливаемой от "..CKWord("сплочённости", "splochennosti_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_6_rgb"), -- Стойкость в товариществе -- руоф Стойкость в общении
-		-- fr = "{toughness:%s} régénération de "..CKWord("Endurance", "Toughness_rgb_fr").." en syntonie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_6_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 7 - Purge the Unclean +]--
-	-- ["loc_talent_zealot_3_passive_2_description"] = { -- damage: +20%, &->and, +colors
-		-- en = "{damage:%s} Increased "..CKWord("Damage", "Damage_rgb").." against Infested and Unyielding Enemies.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_7_rgb,
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против заражённых и несгибаемых врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_7_rgb"), -- Очищение нечестивых -- руоф Очищение нечистых
-		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." contre les ennemis infestés et implacable."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_7_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 8 - Blood Redemption +]--
-	-- ["loc_talent_zealot_toughness_on_melee_kill_desc"] = { -- toughness: +50%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment on Melee Kill.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_8_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийствах в ближнем бою."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_8_rgb"), -- Искупление кровью -- руоф Кровавое искупление
-		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une élimination en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_8_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 9 - Bleed for the Emperor +]--
-	-- ["loc_talent_zealot_3_tier_3_ability_2_description"] = { -- damage_reduction: 40%, +colors
-		-- en = CKWord("Damage", "Damage_rgb").." that would take your "..CKWord("Health", "Health_rgb").." to the next "..CKWord("Wound", "Wound_rgb").." is reduced by {damage_reduction:%s}.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_9_rgb,
-		-- ru = "На {damage_reduction:%s} снижается "..CKWord("урон", "uron_rgb_ru").." который должен был привести к потере "..CKWord("здоровья", "zdorovia_rgb_ru").." до следующей "..CKWord("раны", "rany_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_9_rgb"), -- Кровь за Императора -- руоф Кровь во имя Императора
-		-- fr = "Les "..CKWord("Dégâts", "Damage_rgb_fr").." qui réduirait votre "..CKWord("Santé", "Health_rgb_fr").." à la prochaine "..CKWord("Blessure", "Wound_rgb_fr").." sont réduit de {damage_reduction:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_9_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 10 - Vicious Offering +]--
-	-- ["loc_talent_zealot_toughness_on_heavy_kills_desc"] = { -- toughness: 7.5%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishment on Heavy Attack Kill.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_10_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийствах тяжёлыми атаками."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_10_rgb_ru), -- Жертвоприношение -- руоф Порочное подношение
-		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une élimination en mêlée avec une attaque puissante ."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_10_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 11 - The Voice of Terra +]--
-	-- ["loc_talent_zealot_toughness_on_ranged_kill_desc"] = { -- toughness: 2.5%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishment on Ranged Kill.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_11_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийствах дальнобойными атаками."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_11_rgb"), -- Голос Терры
+	},
+	--[+ Passive 4 - The Voice of Terra +]--	13.12.2025
+	["loc_talent_zealot_toughness_on_ranged_kill_desc"] = { -- toughness: 4%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on Ranged Kill.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве дальнобойной атакой.", -- Голос Терры
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." régénérée lors d'une élimination à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_11_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 12 - Restoring Faith +]--
-	-- ["loc_talent_zealot_heal_damage_taken_desc"] = { -- damage_reduction: 25%, time: 5, s->seconds, +colors
-		-- en = "On taking "..CKWord("Damage", "Damage_rgb")..", heal {damage_reduction:%s} of that "..CKWord("Damage", "Damage_rgb")..". Occurs over {time:%s} seconds.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_12_rgb,
-		-- ru = "При получении "..CKWord("урона", "urona_rgb_ru").." "..CKWord("здоровью", "zdoroviu_rgb_ru")..", вы восполняете до {damage_reduction:%s} от потерянного "..CKWord("здоровья", "zdorovia_rgb_ru")..". Срабатывает раз в {time:%s} секунды."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_12_rgb"), -- Восстановление веры
-		-- fr = "Lorsque vous subissez des "..CKWord("Dégâts", "Damage_rgb_fr")..", récuperez de la "..CKWord("Santé", "Health_rgb_fr").." à hauteur de {damage_reduction:%s} de ces "..CKWord("Dégâts", "Damage_rgb_fr")..". Se produit sur {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_12_rgb_fr,
+	},
+	--[+ Passive 5 - Enemies Within, Enemies Without +]--	13.12.2025
+	["loc_talent_zealot_toughness_near_enemies_desc"] = { -- toughness: +2.5%, range: 5, more_toughness: +1%, monster_count: 5, max: +7.5%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished per second while within {range:%s} meters range of an Enemy.\n"
+			..Dot_green.." {more_toughness:%s} per addition Enemy. Monstrosities count as {monster_count:%s}. Up to {max:%s}.\n"
+			.."_______________________________\n"
+			.."Enemies:              "..CNumb("1", "n_1_rgb").."|     "..CNumb("2", "n_2_rgb").."|    "..CNumb("3", "n_3_rgb").."|     "..CNumb("4", "n_4_rgb").."|    "..CNumb("5", "n_5_rgb").."|  >"..CNumb("5", "n_5_rgb").."\n"
+			..CKWord("Toughness", "Toughness_rgb").."("..CKWord("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
+			.."_______________________________",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду восстанавливается, пока враг находится в радиусе {range:%s} метров.\n" -- Враги внутри, враги снаружи -- руоф Не дай ему уйти
+			..Dot_green.." {more_toughness:%s} за каждого дополнительного врага. Чудовища считаются за {monster_count:%s}. До {max:%s}.\n"
+			.."_______________________________\n"
+			.."Враги:                  "..CNumb("1", "n_1_rgb").."|    "..CNumb("2", "n_2_rgb").."|     "..CNumb("3", "n_3_rgb").."|    "..CNumb("4", "n_4_rgb").."|     "..CNumb("5", "n_5_rgb").."| >"..CNumb("5", "n_5_rgb").."\n"
+			..CKWord("Стойкость", "Stoikost_rgb_ru").."("..CKWord("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
+			.."_______________________________",
+		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." par seconde lorsque vous êtes à moins de {range:%s} mètres d'au moins {num_enemies:%s} ennemis."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_5_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 13 - Second Wind +]--
-	-- ["loc_talent_zealot_toughness_on_dodge_desc"] = { -- toughness: 15%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishment on a Successful Dodge.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_13_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_13_rgb"), -- Второе дыхание -- руоф Второй ветер
+	},
+	--[+ Passive 6 - Blood Redemption +]--	13.12.2025
+	["loc_talent_zealot_toughness_on_melee_kill_desc"] = { -- toughness: +100%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment on Melee Kill.",
+		ru = Dot_green.." {toughness:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." при убийстве в ближнем бою.", -- Искупление кровью -- руоф Кровавое искупление
+		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une élimination en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_8_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 7 - Second Wind +]--	13.12.2025
+	["loc_talent_zealot_toughness_on_dodge_desc"] = { -- toughness: 15%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on a Successful Dodge.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при успешном уклонении.", -- Второе дыхание -- руоф Второй ветер
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une Esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_13_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 14 - Enduring Faith +]--
-	-- ["loc_talent_zealot_toughness_melee_effectiveness_desc"] = { -- toughness_damage_reduction: +50%, time: 4, s->seconds, +colors
-		-- en = "{toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." on "..CKWord("Critical Hit", "Crit_hit_rgb").." for {time:%s} seconds.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_14_rgb,
-		-- ru = "{toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." на {time:%s} секунды."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_14_rgb"), -- Непоколебимая вера
-		-- fr = "{toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Toughness_dmg_red_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_14_rgb_fr,
+	},
+	--[+ Passive 8 - Vicious Offering +]--	13.12.2025
+	["loc_talent_zealot_toughness_on_heavy_kills_desc"] = { -- toughness: 10%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on Heavy Attack Kill.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве тяжёлой атакой.", -- Жертвоприношение -- руоф Порочное подношение
+		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une élimination en mêlée avec une attaque puissante ."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_10_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 15 - The Emperor's Bullet +]--
-	-- ["loc_talent_zealot_improved_melee_after_no_ammo_desc"] = { -- impact: +30%, attack_speed: +10%, duration: 5, s->seconds, &->and, +colors
-		-- en = "{impact:%s} "..CKWord("Impact", "Impact_rgb").." strength and {attack_speed:%s} Attack speed for Melee attacks for {duration:%s} seconds after emptying your Ranged weapon.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_15_rgb,
-		-- ru = "{impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." и {attack_speed:%s} к скорости атак ближнего боя на {duration:%s} секунд, если вы выстрелили последний патрон из обоймы."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_15_rgb"), -- Пуля Императора
-		-- fr = "{impact:%s} d'"..CKWord("Impact", "Impact_rgb_fr").." et {attack_speed:%s} de vitesse d'attaque pour les attaques de mêlée pendant {duration:%s} secondes après avoir vidé chargement votre arme à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_15_rgb_fr,
+	},
+	--[+ Passive 9 - Purge the Unclean +]--	13.12.2025
+	["loc_talent_zealot_3_passive_2_description"] = { -- damage: +20%, &->and, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." against Infested and Unyielding Enemies.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против заражённых и несгибаемых врагов.", -- Очищение нечестивых -- руоф Очищение нечистых
+		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." contre les ennemis infestés et implacable."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_7_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 16 - Dance of Death +]--
-	-- ["loc_talent_zealot_improved_spread_post_dodge_desc"] = { -- spread: -75%, recoil: -50%, duration: 3, s->seconds, +colors
-		-- en = "{spread:%s} Spread and {recoil:%s} Recoil for {duration:%s} seconds on successful Dodge.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_16_rgb,
-		-- ru = "{spread:%s} к разбросу и {recoil:%s} к отдаче на {duration:%s} секунды при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_16_rgb"), -- Танец смерти
-		-- fr = "{spread:%s} de dispersion et {recoil:%s} de recul pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_16_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 17 - Duellist +]--
-	-- ["loc_talent_zealot_increased_finesse_post_dodge_description"] = { -- damage: +50%, duration: 3, s->seconds, +colors
-		-- en = "{damage:%s} "..CKWord("Weak Spot", "Weak_spot_rgb").." and "..CKWord("Critical Hit", "Crit_hit_rgb").." "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on successful Dodge.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_17_rgb,
-		-- ru = "{damage:%s} к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru").." и "..CKWord("критическому урону", "krit_uronu_rgb_ru").." на {duration:%s} секунды при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_17_rgb"), -- Дуэлянт
+	},
+	--[+ Passive 10 - Duellist +]--	13.12.2025
+	["loc_talent_zealot_duelist_new_desc"] = { -- damage: +50%, duration: 3, s->seconds, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Finesse Damage", "Finesse_dmg_rgb").." for {duration:%s} seconds on successful Dodge.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону от ловкости", "lovkosti_uron_rgb_ru").." на {duration:%s} секунды при успешном уклонении.", -- Дуэлянт
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de "..CKWord("Point faible", "Weakspot_rgb_fr").." et de "..CKWord("Coup critique", "Crit_hit_rgb_fr").."  pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_17_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 18 - Until Death +]--
-	-- ["loc_talent_zealot_resist_death_desc"] = { -- active_duration: 5, cooldown_duration: 120, s->seconds, +colors
-		-- en = "Fatal "..CKWord("Damage", "Damage_rgb").." instead grants you Invulnerability for {active_duration:%s} seconds. Occurs every {cooldown_duration:%s} seconds.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_18_rgb,
-		-- ru = "Смертельный "..CKWord("урон", "uron_rgb_ru").." теперь не приводит к смерти, но даёт неуязвимость на {active_duration:%s} секунд. Может сработать не чаще, чем раз в {cooldown_duration:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_18_rgb"), -- До самой смерти
+	},
+	--[+ Passive 11 - Until Death +]--	13.12.2025
+	["loc_talent_zealot_resist_death_desc"] = { -- active_duration: 5, cooldown_duration: 120, s->seconds, +colors
+		en = "Fatal "..CKWord("Damage", "Damage_rgb").." instead grants you Invulnerability for {active_duration:%s} seconds. Occurs every {cooldown_duration:%s} seconds.",
+		ru = "Смертельный "..CKWord("урон", "uron_rgb_ru").." вместо этого даёт вам неуязвимость на {active_duration:%s} секунд. Срабатывает раз в {cooldown_duration:%s} секунд.", -- До самой смерти
 		-- fr = "Les "..CKWord("Dégâts", "Damage_rgb_fr").." mortels vous accordent à la place l'invulnérabilité pendant {active_duration:%s} secondes. Se produit toutes les {cooldown_duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_18_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 19 - Unremitting +]--
-	-- ["loc_talent_zealot_reduced_sprint_cost_description"] = { -- cost: -20%
-		-- en = "{cost:%s} Sprint "..CKWord("Stamina", "Stamina_rgb").." cost.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_19_rgb,
-		-- ru = "{cost:%s} от затрат "..CKWord("выносливости", "vynoslivosti_rgb_ru").." на бег."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_19_rgb"), -- Неустанный
-		-- fr = "{cost:%s} Réduction du coût en "..CKWord("Endurance", "Stamina_rgb_fr").." de la course."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_19_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 20 - Shield of Contempt +]--
-	-- ["loc_talent_zealot_3_tier_4_ability_3_description"] = { -- damage_reduction: +60%, duration: 4, cooldown: 10, s->seconds, +colors
-		-- en = "{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Reduction for {duration:%s} seconds when you or an Ally in "..CKWord("Coherency", "Coherency_rgb").." takes "..CKWord("Health", "Health_rgb").." "..CKWord("Damage", "Damage_rgb")..". Triggers every {cooldown:%s} seconds.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_20_rgb,
-		-- ru = "{damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." вам и вашим союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." на {duration:%s} секунды, если кто-то из вас получил "..CKWord("урон", "uron_rgb_ru").." "..CKWord("здоровью", "zdoroviu_rgb_ru")..". Срабатывает каждые {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_20_rgb"), -- Щит презрения
-		-- fr = "{damage_reduction:%s} Réduction des "..CKWord("Dégâts", "Damage_rgb_fr").." pendant {duration:%s} secondes pour vous ou un allié lorsque le joueur subit des "..CKWord("Dégâts", "Damage_rgb_fr").." de "..CKWord("Santé", "Health_rgb_fr").." . Se déclenche toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_20_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 21 - Thy Wrath be Swift +]--
-	-- ["loc_talent_zealot_movement_speed_on_damaged_desc"] = { -- movement_speed: +15%, time: 2, s->seconds, +colors
-		-- en = "{movement_speed:%s} Movement Speed for {time:%s} seconds on taking "..CKWord("Damage", "Damage_rgb")..". Enemy Melee Attacks cannot "..CKWord("Stun", "Stun_rgb").." you.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_21_rgb,
-		-- ru = "{movement_speed:%s} к скорости движения на {time:%s} секунды при получении "..CKWord("урона", "urona_rgb_ru")..". Вражеские атаки ближнего боя не "..CKWord("ошеломляют", "oshelomlaut_rgb_ru").." вас."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_21_rgb"), -- Да будет Твой гнев быстр -- руоф Скорое возмездие
-		-- fr = "{movement_speed:%s} Vitesse de déplacement pendant {time:%s} secondes après avoir subi des "..CKWord("Dégâts", "Damage_rgb_fr")..". Les attaques de mêlée ennemies ne peuvent pas vous "..CKWord("Étourdissent", "Stun_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_21_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 22 - Good Balance +]--
-	-- ["loc_talent_reduced_damage_after_dodge_description"] = { -- damage: +25%, duration: 2.5, s->seconds, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." Reduction for {duration:%s} seconds after a successful Dodge.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_22_rgb,
-		-- ru = "{damage:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунды при успешном уклонении."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_22_rgb"), -- Хороший баланс -- руоф Разумный баланс
-		-- fr = "{damage:%s} Réduction des "..CKWord("Dégâts", "Damage_rgb_fr").." pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_22_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 23 - Desperation +]--
-	-- ["loc_talent_zealot_increased_damage_on_low_stamina_description"] = { -- damage: +20%, duration: 5, s->seconds, +colors
-		-- en = "{damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds when "..CKWord("Stamina", "Stamina_rgb").." is depleted.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_23_rgb,
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя на {duration:%s} секунд, когда уровень "..CKWord("выносливости", "vynoslivosti_rgb_ru").." на нуле."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_23_rgb"), -- Отчаяние
-		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pendant {duration:%s} secondes lorsque "..CKWord("Endurance", "Stamina_rgb_fr").." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_23_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 24 - Holy Revenant +]--
-	-- ["loc_talent_zealot_heal_during_resist_death_clamped_desc"] = { -- talent_name: Until Death, max_health: 25%, melee_multiplier: 3, +colors
-		-- en = "When {talent_name:%s} ends, you regain "..CKWord("Health", "Health_rgb").." based on the "..CKWord("Damage", "Damage_rgb").." you dealt during {talent_name:%s}, to a Maximum of {max_health:%s} Max "..CKWord("Health", "Health_rgb")..". Melee "..CKWord("Damage", "Damage_rgb").." dealt Heals for {melee_multiplier:%s} times that amount.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_24_rgb,
-		-- ru = "Когда {talent_name:%s} заканчивает своё действие, вы восстанавливаете некоторое количество "..CKWord("здоровья", "zdorovia_rgb_ru").." в зависимости от нанесённого вами "..CKWord("урона", "urona_rgb_ru").." на протяжении действия таланта {talent_name:%s}, вплоть до {max_health:%s}. Атаки ближнего боя восстанавливают в {melee_multiplier:%s} раза больше "..CKWord("здоровья", "zdorovia_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_24_rgb"), -- Святой призрак -- руоф Священный призрак
-		-- fr = "Lorsque {talent_name:%s} se termine, vous récupérez de la "..CKWord("Santé", "Health_rgb_fr").." en fonction des "..CKWord("Dégâts", "Damage_rgb_fr").." que vous avez infligés pendant {talent_name:%s}, jusqu'à {max_health:%s} de la "..CKWord("Santé", "Health_rgb_fr").." maximum. Les "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée guérissent pour {melee_multiplier:%s} fois ce montant."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_24_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 25 - Sainted Gunslinger +]--
-	-- ["loc_talent_zealot_increased_reload_speed_on_melee_kills_desc"] = { -- reload_speed: +3%, max_stacks: 10
-		-- en = "{reload_speed:%s} Reload Speed on Melee Kill. Stacks {max_stacks:%s} times.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_25_rgb,
-		-- ru = "talent_tree_zea_pas_025_desc_ru",
-		-- {"loc_talent_zealot_increased_reload_speed_on_melee_kills_desc"}, {"ru"},
-			-- loc_text("{reload_speed:%s} к скорости перезарядки при убийствах в ближнем бою. Суммируется {max_stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_25_rgb"), -- Святой стрелок -- руоф Святой быстрый стрелок
-		-- fr = "{reload_speed:%s} Vitesse de rechargement en cas d'élimination de mêlée. Cumulable {max_stacks:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_25_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 26 - Hammer of Faith +]--
-	-- ["loc_talent_zealot_3_tier_1_ability_1_description"] = { -- stagger: +30%, +colors
-		-- en = "{stagger:%s} "..CKWord("Impact", "Impact_rgb").." strength.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_26_rgb,
-		-- ru = "{stagger:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." врагов при атаках."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_26_rgb"), -- Молот веры
-		-- fr = "{stagger:%s} d'"..CKWord("Impact", "Impact_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_26_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 27 - Grievous Wounds +]--
-	-- ["loc_talent_zealot_increased_stagger_on_weakspot_melee_description"] = { -- impact_modifier: +50%, +colors
-		-- en = "{impact_modifier:%s} "..CKWord("Stagger", "Stagger_rgb").." on Melee "..CKWord("Weakspot Hits", "Weakspothits_rgb")..".\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_27_rgb,
-		-- ru = "{impact_modifier:%s} к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru").." при попадании в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." оружием ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_27_rgb"), -- Тяжёлые раны -- руоф Опасные раны
-		-- fr = "{impact_modifier:%s} de "..CKWord("Étourdissement", "Stagger_rgb_fr").." sur les attaques de mêlée sur "..CKWord("Coups aux points faibles", "Weakspothits_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_27_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 28 - Ambuscade +]--	10.11.2025
-	-- ! Double: Veteran - Passive 16 - Covert Operative !
-	-- ["loc_talent_zealot_increased_flanking_damage_description"] = { -- damage: +30%, +colors
-		-- en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." to Ranged Backstab Attacks.",
-		-- ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." дальнобойных атак при попаданиях врагам в спину.",
-	-- },
-	--[+ Passive 29 - Punishment +]--
-	-- ["loc_talent_zealot_multi_hits_increase_impact_desc"] = { -- min_hits: 3, impact_modifier: +30%, time: 5, max_stacks: 5, s->seconds, +colors
-		-- en = "Melee Attacks that Hit at least {min_hits:%s} Enemies grant {impact_modifier:%s} "..CKWord("Impact", "Impact_rgb").." strength for {time:%s} seconds. Stacks {max_stacks:%s} times. At max Stacks gain Uninterruptible.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_29_rgb,
-		-- ru = "Атаки ближнего боя, попавшие хотя бы по {min_hits:%s} врагам, дают {impact_modifier:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." на {time:%s} секунд. Суммируется {max_stacks:%s} раз. При максимуме зарядов ваши атаки невозможно прервать."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_29_rgb"), -- Наказание
-		-- fr = "Les attaques de mêlée qui touchent au moins {min_hits:%s} ennemis augmentent l'"..CKWord("Impact", "Impact_rgb_fr").." de {impact_modifier:%s} pendant {time:%s} secondes. Cumulable jusqu'à {max_stacks:%s} fois. Au maximum de cumuls, gagnez Inarrêtable."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_29_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 30 - Faithful Frenzy +]--
-	-- ["loc_talent_zealot_attack_speed_desc"] = { -- attack_speed: +10%
-		-- en = "{attack_speed:%s} Melee Attack Speed.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_30_rgb,
-		-- ru = "{attack_speed:%s} к скорости атак ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_30_rgb"), -- Правоверное неистовство -- руоф Верное безумие
-		-- fr = "{attack_speed:%s} Vitesse d'attaque en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_30_rgb_fr,
-		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 31 - Sustained Assault +]--
-	-- ["loc_talent_zealot_increased_damage_stacks_on_hit_desc"] = { -- damage: +4%, time: 5, amount: 5, s->seconds, +colors
-		-- en = "{damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." for {time:%s} seconds on Hitting an Enemy with a Melee Attack. Stacks {amount:%s} times.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_31_rgb,
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя на {time:%s} секунд при попадании по врагу атакой ближнего боя. Суммируется {amount:%s} раз."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_31_rgb"), -- Непрерывное нападение -- руоф Непрерывный штурм
+	},
+	--[+ Passive 12 - Sustained Assault +]--	13.12.2025
+	["loc_talent_zealot_increased_damage_stacks_on_hit_desc"] = { -- damage: +4%, time: 5, amount: 5, s->seconds, +colors
+		en = Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." for {time:%s} seconds on Hitting an Enemy with a Melee Attack.\n"
+			..Dot_nc.." Stacks {amount:%s} times.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя на {time:%s} секунд при попадании по врагу атакой ближнего боя.\n" -- Непрерывное нападение -- руоф Непрерывный штурм
+			..Dot_nc.." Суммируется до {amount:%s} раз.",
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pendant {time:%s} secondes après avoir touché un ennemi avec une attaque de mêlée. Cumulable jusqu'à {amount:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_31_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 32 - The Master's Retribution +]--
-	-- ["loc_talent_zealot_3_tier_3_ability_1_description"] = { -- cooldown: 10, s->seconds
-		-- en = "Knock back the Attacker on taking a Melee Hit. Cooldown: {cooldown:%s} seconds.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_32_rgb,
-		-- ru = "При нанесении вам удара в ближнем бою, враг отбрасывается. Восстановление: {cooldown:%s} секунд."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_32_rgb"), -- Возмездие Владыки
+	},
+	--[+ Passive 13 - Holy Revenant +]--	13.12.2025
+	["loc_talent_zealot_heal_during_resist_death_clamped_desc"] = { -- talent_name: Until Death, max_health: 25%, melee_multiplier: 3, +colors
+		en = "When {talent_name:%s} ends, you regain "..CKWord("Health", "Health_rgb").." based on the "..CKWord("Damage", "Damage_rgb").." you dealt during {talent_name:%s}, to a Maximum of {max_health:%s} Max "..CKWord("Health", "Health_rgb")..".\n"
+			.."Melee "..CKWord("Damage", "Damage_rgb").." dealt Heals for {melee_multiplier:%s} times that amount.",
+		ru = "Когда действие таланта {talent_name:%s} заканчивается, вы восстанавливаете "..CKWord("здоровье", "zdorovie_rgb_ru").." в зависимости от нанесённого "..CKWord("урона", "urona_rgb_ru").." во время действия таланта {talent_name:%s}, максимум до {max_health:%s} максимального "..CKWord("здоровья", "zdorovia_rgb_ru")..".\n" -- Святой призрак -- руоф Священный призрак
+			..CKWord("Урон", "Uron_rgb_ru").." в ближнем бою восстанавливает в {melee_multiplier:%s} раза больше "..CKWord("здоровья", "zdorovia_rgb_ru")..".",
+		-- fr = "Lorsque {talent_name:%s} se termine, vous récupérez de la "..CKWord("Santé", "Health_rgb_fr").." en fonction des "..CKWord("Dégâts", "Damage_rgb_fr").." que vous avez infligés pendant {talent_name:%s}, jusqu'à {max_health:%s} de la "..CKWord("Santé", "Health_rgb_fr").." maximum. Les "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée guérissent pour {melee_multiplier:%s} fois ce montant."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_24_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 14 - Thy Wrath be Swift +]--	13.12.2025
+	["loc_talent_zealot_movement_speed_on_damaged_desc"] = { -- movement_speed: +15%, time: 2, s->seconds, +colors
+		en = Dot_green.." {movement_speed:%s} Movement Speed for {time:%s} seconds on taking "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_green.." Enemy Melee Attacks cannot "..CKWord("Stun", "Stun_rgb").." you.",
+		ru = Dot_green.." {movement_speed:%s} к скорости движения на {time:%s} секунды при получении "..CKWord("урона", "urona_rgb_ru")..".\n" -- Да будет Твой гнев быстр -- руоф Скорое возмездие
+			..Dot_green.." Вражеские атаки ближнего боя не могут "..CKWord("оглушить", "oglushit_rgb_ru").." вас.",
+		-- fr = "{movement_speed:%s} Vitesse de déplacement pendant {time:%s} secondes après avoir subi des "..CKWord("Dégâts", "Damage_rgb_fr")..". Les attaques de mêlée ennemies ne peuvent pas vous "..CKWord("Étourdissent", "Stun_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_21_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 15 - Desperation +]--	13.12.2025
+	["loc_talent_zealot_damage_based_on_stamina_desc"] = { -- damage: +20%, s->seconds, +colors
+		en = "Up to {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." based on missing "..CKWord("Stamina", "Stamina_rgb")..":\n"
+			.."_______________________________\n"
+			..CKWord("Stamina", "Stamina_rgb").."("..CKWord("%", "pc_rgb").."):   "..CNumb("100", "n_100_rgb").."|  "..CNumb("80", "n_80_rgb").."|  "..CNumb("60", "n_60_rgb").."|  "..CNumb("40", "n_40_rgb").."|  "..CNumb("20", "n_20_rgb").."|    "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("Damage", "Damage_rgb").."("..CKWord("%", "pc_rgb").."):       "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|   "..CNumb("12", "n_12_rgb").."|   "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
+			.."_______________________________",
+		ru = "До {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя в зависимости от потерянной "..CKWord("выносливости", "vynoslivosti_rgb_ru")..":\n" -- Отчаяние
+			.."_______________________________\n"
+			..CKWord("Выносливость", "Vynoslivost_rgb_ru")..": "..CNumb("100", "n_100_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("20", "n_20_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("Урон", "Uron_rgb_ru").."("..CKWord("%", "pc_rgb").."):                  "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			.."_______________________________",
+		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pendant {duration:%s} secondes lorsque "..CKWord("Endurance", "Stamina_rgb_fr").." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_23_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 16 - Punishment +]--	13.12.2025
+	["loc_talent_zealot_multi_hits_increase_impact_desc"] = { -- min_hits: 3, impact_modifier: +8%, time: 8, max_stacks: 5, s->seconds, +colors
+		en = Dot_green.." {impact_modifier:%s} "..CKWord("Impact", "Impact_rgb").." strength for {time:%s} seconds on Melee Attacks hitting at least {min_hits:%s} Enemies.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			..Dot_nc.." At Max Stacks gain Uninterruptible.",
+		ru = Dot_green.." {impact_modifier:%s} к силе "..CKWord("выведения из равновесия", "vyveda_ravnovesia_rgb_ru").." на {time:%s} секунд при атаках ближнего боя, попадающих хотя бы по {min_hits:%s} врагам.\n"
+			..Dot_nc.." Суммируется до {max_stacks:%s} раз.\n"
+			..Dot_nc.." При максимуме зарядов вы получаете Непрерываемость.", -- Наказание
+		-- fr = "Les attaques de mêlée qui touchent au moins {min_hits:%s} ennemis augmentent l'"..CKWord("Impact", "Impact_rgb_fr").." de {impact_modifier:%s} pendant {time:%s} secondes. Cumulable jusqu'à {max_stacks:%s} fois. Au maximum de cumuls, gagnez Inarrêtable."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_29_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 17 - Against the Odds +]--	13.12.2025
+	["loc_talent_zealot_offensive_vs_many_desc"] = { -- num_enemies: 2, range: 5, damage: +2%, cleave: +10%, stacks: 5, s->seconds, +colors
+		en = "For every {num_enemies:%s} enemies within {range:%s} meters, gain:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {cleave:%s} "..CKWord("Cleave", "Cleave_rgb")..".\n"
+			..Dot_nc.." Stacks {stacks:%s} times.",
+		ru = "За каждые {num_enemies:%s} врага в радиусе {range:%s} метров, получаете:\n" -- Вопреки всему
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
+			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru")..".\n"
+			..Dot_nc.." Суммируется до {stacks:%s} раз.",
+	},
+	--[+ Passive 18 - Shield of Contempt +]--	13.12.2025
+	["loc_talent_zealot_3_tier_4_ability_3_description"] = { -- damage_reduction: +60%, duration: 4, cooldown: 8, s->seconds, +colors
+		en = "When you or an Ally in "..CKWord("Coherency", "Coherency_rgb").." takes "..CKWord("Damage", "Damage_rgb")..", they gain for {duration:%s} seconds:\n"
+			..Dot_green.." {damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Reduction.\n"
+			.."Triggers every {cooldown:%s} seconds.",
+		ru = "Если вы или союзник в "..CKWord("сплочённости", "splochennosti_rgb_ru").." получаете "..CKWord("урон", "uron_rgb_ru")..", то на {duration:%s} секунды вам даётся:\n" -- Щит презрения
+			..Dot_green.." {damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			.."Срабатывает раз в {cooldown:%s} секунд.",
+	},
+	--[+ Passive 19 - Unseen Blade +]--	13.12.2025
+	["loc_talent_zealot_damage_vs_nonthreat_desc"] = { -- damage: +15%, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Enemies not targeting you.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против врагов, которые не атакуют вас.", -- руоф Невидимый клинок
+	},
+	--[+ Passive 20 - Out of Pocket +]--	13.12.2025
+	["loc_talent_zealot_reload_from_backstab_desc"] = { -- ammo: +5%, stacks: 5
+		en = "Melee Backstab Kills replenish {ammo:%s} of your Missing Ammo from your Reserve when swapping to your Ranged Weapon.\n"
+			..Dot_nc.." Stacks {stacks:%s} times.",
+		ru = "Убийства в спину восстанавливают {ammo:%s} недостающих патронов из вашего резерва при переключении на дальнобойное оружие.\n"
+			..Dot_nc.." Суммируется до {stacks:%s} раз.", -- руоф За свой счет
+	},
+	--[+ Passive 21 - Faithful Frenzy +]--	13.12.2025
+	["loc_talent_zealot_attack_speed_desc"] = { -- attack_speed: +10%
+		en = Dot_green.." {attack_speed:%s} Melee Attack Speed.",
+		ru = Dot_green.." {attack_speed:%s} к скорости атаки ближнего боя.", -- Правоверное неистовство -- руоф Верное безумие
+		-- fr = "{attack_speed:%s} Vitesse d'attaque en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_30_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 22 - Providence +]--	13.12.2025
+	["loc_talent_zealot_revive_speed_desc"] = { -- revive_speed: +25%, duration: 5, movement_speed: +10%, tdr: 15%
+		en = Dot_green.." {revive_speed:%s} Revive Speed.\n"
+			.."\n"
+			.."Allies you Assist or Revive get for {duration:%s} seconds:\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed and\n"
+			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
+		ru = Dot_green.." {revive_speed:%s} к скорости оживления.\n"
+			.."\n"
+			.."Союзники, которых вы поднимаете или оживляете, получают на {duration:%s} секунд:\n"
+			..Dot_green.." {movement_speed:%s} к скорости движения и\n"
+			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".", -- Правоверное неистовство -- руоф Верное безумие
+		-- fr = "{attack_speed:%s} Vitesse d'attaque en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_30_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 23 - Good Balance +]--	13.12.2025
+	["loc_talent_reduced_damage_after_dodge_description"] = { -- damage: +25%, duration: 2.5, s->seconds, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." Reduction for {duration:%s} seconds after a successful Dodge.",
+		ru = Dot_green.." {damage:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после успешного уклонения.", -- Хороший баланс -- руоф Разумный баланс
+		-- fr = "{damage:%s} Réduction des "..CKWord("Dégâts", "Damage_rgb_fr").." pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_22_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 24 - Impassible +]--	13.12.2025
+	["loc_talent_zealot_block_dodging_desc"] = { -- linger_time: 2, block_cost: +25%, cooldown: 8, dodges: 3, s->seconds, +colors
+		en = "While Dodging and for {linger_time:%s} seconds afterwards you gain:\n"
+			..Dot_green.." {block_cost:%s} Block Cost Reduction.\n"
+			..Dot_nc.." Internal Cooldown: {cooldown:%s} seconds.\n"
+			.."\n"
+			.."Perfect Blocking an Attack restores {dodges:%s} Dodges.",
+		ru = "Во время уклонения и на {linger_time:%s} секунды после вы получаете:\n" -- руоф Бесстрастный
+			..Dot_green.." {block_cost:%s} к снижению стоимости блокирования.\n"
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.\n"
+			.."\n"
+			.."Идеальный блок атаки восстанавливает {dodges:%s} уклонения.",
+	},
+	--[+ Passive 25 - Retaliatory Defence +]--	13.12.2025
+	["loc_talent_zealot_stamina_on_block_break_alt_desc"] = { -- stamina: 50%, cooldown: 12, s->seconds, +colors
+		en = "On Block Break, you are no longer "..CKWord("Stunned", "Stunned_rgb").." and instead restore {stamina:%s} "..CKWord("Stamina", "Stamina_rgb")..".\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
+		ru = "При пробивании блока вы не "..CKWord("оглушаетесь", "oglushaetes_rgb_ru")..", а вместо этого восстанавливаете {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".\n" -- руоф Активная оборона
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
+	},
+	--[+ Passive 25 - Abolish Blasphemers +]--	13.12.2025
+	["loc_talent_zealot_damage_vs_elites_desc"] = { -- damage: +15%, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Elites.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против элитных врагов.", -- руоф Ликвидируй богохульников
+	},
+	--[+ Passive 26 - The Master's Retribution +]--	13.12.2025
+	["loc_talent_zealot_3_tier_3_ability_1_description"] = { -- cooldown: 8, s->seconds
+		en = "Knock back the Attacker on taking a Melee Hit.\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
+		ru = "При получении удара в ближнем бою вы отбрасываете атакующего врага.\n" -- Возмездие Владыки
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
 		-- fr = "Repousse l'attaquant après avoir reçu un coup de mêlée. Temps de recharge : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_32_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 33 - Faith's Fortitude +]--
-	-- ["loc_talent_zealot_3_tier_1_ability_3_description"] = { -- health_segment: +2
-		-- en = "{health_segment:%s} "..CKWord("Wounds", "Wounds_rgb")..".\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_33_rgb,
-		-- ru = "{health_segment:%s} "..CKWord("раны", "rany_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_33_rgb"), -- Стойкость веры
+	},
+	--[+ Passive 27 - Dance of Death +]--	13.12.2025
+	["loc_talent_zealot_improved_spread_post_dodge_desc"] = { -- spread: -75%, recoil: -50%, duration: 3, s->seconds, +colors
+		en = "On successful Dodge you gain for {duration:%s} seconds:\n"
+			..Dot_green.." {spread:%s} Spread and\n"
+			..Dot_green.." {recoil:%s} Recoil.",
+		ru = "При успешном уклонении вы получаете на {duration:%s} секунд:\n" -- Танец смерти
+			..Dot_green.." {spread:%s} к снижению разброса и\n"
+			..Dot_green.." {recoil:%s} к снижению отдачи.",
+		-- fr = "{spread:%s} de dispersion et {recoil:%s} de recul pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_16_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 28 - Grievous Wounds +]--	13.12.2025
+	["loc_talent_zealot_increased_stagger_on_weakspot_melee_description"] = { -- impact_modifier: +50%, +colors
+		en = Dot_green.." {impact_modifier:%s} "..CKWord("Stagger", "Stagger_rgb").." on Melee "..CKWord("Weakspot Hits", "Weakspothits_rgb")..".",
+		ru = Dot_green.." {impact_modifier:%s} к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru").." при попаданиях в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою.", -- Тяжёлые раны -- руоф Опасные раны
+		-- fr = "{impact_modifier:%s} de "..CKWord("Étourdissement", "Stagger_rgb_fr").." sur les attaques de mêlée sur "..CKWord("Coups aux points faibles", "Weakspothits_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_27_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 29 - Scourge +]--	13.12.2025
+	["loc_talent_zealot_bleed_melee_crit_chance_desc"] = { -- crit_chance: +10%, duration: 3, max_stacks: 3, s->seconds, +colors
+		en = "Melee "..CKWord("Critical Hits", "Crit_hits_rgb").." apply "..CKWord("Bleed", "Bleed_rgb")..", causing "..CKWord("Damage", "Damage_rgb").." over time. Up to "..CNumb("16", "n_16_rgb").." Max "..CKWord("Bleed", "Bleed_rgb").." Stacks on a target.\n"
+			.."\n"
+			.."Melee Hits on "..CKWord("Bleeding", "Bleeding_rgb").." Enemies grant for {duration:%s} seconds:\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("Critical Chance", "Crit_chance_rgb")..".\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.",
+		ru = CKWord("Критические удары", "Krit_udary_rgb_ru").." в ближнем бою накладывают "..CKWord("кровотечение", "krovotechenie_rgb_ru")..", наносящее "..CKWord("урон", "uron_rgb_ru").." со временем. До максимум "..CNumb("16", "n_16_rgb").." зарядов "..CKWord("кровотечения", "krovotechenia_rgb_ru").." на цели.\n"
+			.."\n"
+			.."Удары ближнего боя по врагам с "..CKWord("кровотечением", "krovotecheniem_rgb_ru").." дают на {duration:%s} секунды:\n"
+			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
+			..Dot_nc.." Суммируется до {max_stacks:%s} раз.", -- Бичевание -- руоф Бич
+		-- fr = "Les coups "..CKWord("Critiques", "Crit_hits_rgb_fr").." en mêlée appliquent "..CKWord("Saignement", "Bleed_rgb_fr")..", causant des "..CKWord("Dégâts", "Damage_rgb_fr").." au fil du temps.\nLes coups en mêlée sur les ennemis qui "..CKWord("Saignent", "Bleeding_rgb_fr").." octroient {crit_chance:%s} "..CKWord("Chances de coup critique", "Crit_chance_rgb_fr").." pendant {duration:%s} secondes. Se cumule jusqu'à {max_stacks:%s} fois. Jusqu'à "..CNumb("16", "n_16_rgb").." cumuls de saignement max sur une cible."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_4_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 30 - Enduring Faith +]--	13.12.2025
+	["loc_talent_zealot_toughness_melee_effectiveness_desc"] = { -- toughness_damage_reduction: +50%, time: 4, s->seconds, +colors
+		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {time:%s} seconds on "..CKWord("Critical Hit", "Crit_hit_rgb")..".",
+		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." на {time:%s} секунды при "..CKWord("критическом ударе", "krit_udare_rgb_ru")..".", -- Непоколебимая вера
+		-- fr = "{toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_14_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 31 - Punish Impiety +]--	13.12.2025
+	["loc_talent_zealot_push_attacks_attack_speed_desc"] = { -- attack_speed: +10%, duration: 5, s->seconds
+		en = Dot_green.." {attack_speed:%s} Melee Attack Speed for {duration:%s} seconds on push followup attacks.",
+		ru = Dot_green.." {attack_speed:%s} к скорости атаки ближнего боя на {duration:%s} секунд при атаках после отталкивания.", -- руоф Карай нечестивых
+	},
+	--[+ Passive 32 - Bleed for the Emperor +]--	13.12.2025
+	["loc_talent_zealot_3_tier_3_ability_2_description"] = { -- damage_reduction: 40%, +colors
+		en = Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." that would take your "..CKWord("Health", "Health_rgb").." to the next "..CKWord("Wound", "Wound_rgb")..".",
+		ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} к "..CKWord("урону", "uronu_rgb_ru")..", который привёл бы к потере "..CKWord("здоровья", "zdorovia_rgb_ru").." до следующей "..CKWord("раны", "rany_rgb_ru")..".", -- Кровь за Императора -- руоф Кровь во имя Императора
+		-- fr = "Les "..CKWord("Dégâts", "Damage_rgb_fr").." qui réduirait votre "..CKWord("Santé", "Health_rgb_fr").." à la prochaine "..CKWord("Blessure", "Wound_rgb_fr").." sont réduit de {damage_reduction:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_9_rgb_fr,
+		-- ["zh-tw"] = "",
+	},
+	--[+ Passive 33 - Time to Kill +]--	13.12.2025
+	["loc_talent_zealot_backstab_periodic_damage_desc"] = { -- damage: +50%, cooldown: 8, +colors
+		en = Dot_green.." {damage:%s} Melee Backstab "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." при ударе в спину в ближнем бою.\n" -- руоф Время убивать
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
+	},
+	--[+ Passive 34 - Hubris +]--	13.12.2025
+	["loc_talent_zealot_weakspot_damage_reduction_desc"] = { -- damage_resistance: +15%, duration: 4, +colors
+		en = Dot_green.." {damage_resistance:%s} "..CKWord("Damage", "Damage_rgb").." Resistance after "..CKWord("Weakspot", "Weakspot_rgb").." Kill.\n"
+			..Dot_nc.." Lasts: {duration:%s} seconds.",
+		ru = Dot_green.." {damage_resistance:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." после убийства в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n" -- руоф Гордыня
+			..Dot_nc.." Длится: {duration:%s} секунд.",
+	},
+	--[+ Passive 35 - Blinded by Blood +]--	13.12.2025
+	["loc_talent_zealot_bled_enemies_take_more_damage_desc"] = { -- damage_taken: +15%, duration: 5, +colors
+		en = "Attacks that apply "..CKWord("Bleed", "Bleed_rgb").." also debuff enemy for {duration:%s} seconds:\n"
+			..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken.",
+		ru = "Атаки, накладывающие "..CKWord("кровотечение", "krovotechenie_rgb_ru").." на врага, также ослабляют его на {duration:%s} секунд:\n" -- руоф Ослеплённый кровью
+			..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru")..".",
+	},
+	--[+ Passive 36 - Prime Target +]--	13.12.2025
+	["loc_talent_zealot_elite_kills_empowers_desc"] = { -- damage: 10%, toughness: 15%, duration: 5, +colors
+		en = "After Elite Kill you gain:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {duration:%s} seconds.",
+		ru = "После убийства элитного врага вы получаете:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в течение {duration:%s} секунд.", -- Главная цель -- руоф Первостепенная цель
+	},
+	--[+ Passive 37 - No Respite +]--	13.12.2025
+	["loc_talent_zealot_melee_crits_restore_stamina_desc"] = { -- stamina: 10%, cooldown: 1, +colors
+		en = Dot_green.." {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." replenished on Melee "..CKWord("Critical Hit", "Crit_hit_rgb")..".\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
+		ru = Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." восстанавливается при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." в ближнем бою.\n" -- Без передышки
+			..Dot_nc.." Восстановление: {cooldown:%s} секунда.",
+	},
+	--[+ Passive 38 - Unfaltering +]--	13.12.2025
+	["loc_talent_zealot_uninterruptible_no_slow_heavies_desc"] = {
+		en = Dot_green.." Become Uninterruptible while charging Melee Attacks.\n"
+			.."\n"
+			..Dot_green.." Remove Heavy Melee Attack Movement Speed penalties.",
+		ru = Dot_green.." Вы становитесь Непрерываемым во время заряжания атак ближнего боя.\n" -- руоф Непреклонный
+			.."\n"
+			..Dot_green.." Убираются штрафы к скорости движения при тяжёлых атаках ближнего боя.",
+	},
+	--[+ Passive 39 - Faith's Fortitude +]--	13.12.2025
+	["loc_talent_zealot_3_tier_1_ability_3_description"] = { -- health_segment: +2
+		en = "{health_segment:%s} "..CKWord("Wounds", "Wounds_rgb")..".",
+		ru = "{health_segment:%s} "..CKWord("раны", "rany_rgb_ru")..".", -- Стойкость веры
 		-- fr = "{health_segment:%s} "..CKWord("Blessures", "Wounds_rgb_fr").."."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_33_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
-	--[+ Passive 34 - Swift Certainty +]--
-	-- ["loc_talent_zealot_improved_sprint_description"] = { -- speed: +5%
-		-- en = "{speed:%s} increase to Sprint speed. In addition, always counts as Dodging while Sprinting, even if "..CKWord("Stamina", "Stamina_rgb").." is depleted.\n"
-			-- ..TALENTS_Enh_desc.ED_ZEA_Passive_34_rgb,
-		-- ru = "{speed:%s} к скорости бега. Теперь бег считается уклонением, даже если уровень "..CKWord("выносливости", "vynoslivosti_rgb_ru").." на нуле."..TALENTS_Enh_desc_ru.ED_ZEA_Passive_34_rgb"), -- Быстрая уверенность -- руоф Скорая определенность
-		-- fr = "{speed:%s} augmentation de la vitesse de la course. De plus, la course compte toujours comme une esquive, même si l'"..CKWord("Endurance", "Stamina_rgb_fr").." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_34_rgb_fr,
+	},
+	--[+ Passive 40 - Restoring Faith +]--	13.12.2025
+	["loc_talent_zealot_heal_damage_taken_desc"] = { -- damage_reduction: 20%, time: 4, s->seconds, +colors
+		en = "On taking "..CKWord("Damage", "Damage_rgb")..", heal {damage_reduction:%s} of that "..CKWord("Damage", "Damage_rgb")..". Occurs over {time:%s} seconds.",
+		ru = "При получении "..CKWord("урона", "urona_rgb_ru")..", вы восстановите {damage_reduction:%s} от этого "..CKWord("урона", "urona_rgb_ru").." в виде "..CKWord("здоровья", "zdorovia_rgb_ru").." в течение {time:%s} секунд.", -- Восстановление веры
+		-- fr = "Lorsque vous subissez des "..CKWord("Dégâts", "Damage_rgb_fr")..", récuperez de la "..CKWord("Santé", "Health_rgb_fr").." à hauteur de {damage_reduction:%s} de ces "..CKWord("Dégâts", "Damage_rgb_fr")..". Se produit sur {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_12_rgb_fr,
 		-- ["zh-tw"] = "",
-	-- },
+	},
+	--[+ Passive 41 - Behind the Lines +]--	13.12.2025
+	["loc_talent_zealot_suppress_on_backstab_kill_desc"] = { -- range: 8, cooldown: 5
+		en = "Heavy Melee Backstab Kills suppress enemies within {range:%s} meters.\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
+		ru = "Убийства тяжёлой атакой в спину подавляют врагов в радиусе {range:%s} метров.\n" -- руоф В тылу врага
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
+	},
+	--[+ Passive 42 - Relentless Fervor +]--	13.12.2025
+	["loc_talent_zealot_sprint_improvements_alt_desc"] = { -- sprint_speed: +10%, sprint_cost: -10%, duration: 1
+		en = Dot_green.." {sprint_speed:%s} Sprint Speed and\n"
+			..Dot_green.." {sprint_cost:%s} Sprint Cost.\n"
+			.."\n"
+			.."Sprinting for {duration:%s} second grants:\n"
+			..Dot_green.." Slowdown Immunity.",
+		ru = Dot_green.." {sprint_speed:%s} к скорости бега и\n" -- Безжалостная страсть
+			..Dot_green.." {sprint_cost:%s} к стоимости бега.\n"
+			.."\n"
+			.."Бег в течение {duration:%s} секунды даёт:\n"
+			..Dot_green.." Иммунитет к замедлению.",
+	},
+	--[+ Passive 43 - Riposte +]--	13.12.2025
+	["loc_talent_zealot_stacking_melee_damage_after_dodge_desc"] = { -- damage: +3%, stacks: 5, duration: 8
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." after Successful Dodge.\n"
+			..Dot_nc.." Stacking: {stacks:%s} times.\n"
+			..Dot_nc.." Lasts: {duration:%s} seconds.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." после успешного уклонения.\n" -- Ответный удар
+			..Dot_nc.." Суммируется: до {stacks:%s} раз.\n"
+			..Dot_nc.." Длится: {duration:%s} секунд.",
+	},
 
 
 --[+ ++OGRYN - ОГРИН++ +]--
@@ -3206,7 +3466,7 @@ local talent_localizations = {
 			-- .."\n"
 			-- .."Base Cooldown: {cooldown:%s} seconds."
 			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_0_rgb,
-		-- ru = "Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается при столкновении с врагами в панцирной броне, несгибаемыми врагами или монстрами.\n\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_0_rgb"), -- Рывок быка -- руоф Бычий натиск
+		-- ru = "Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается при столкновении с врагами в панцирной броне, несгибаемыми врагами или чудовищами.\n\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_0_rgb"), -- Рывок быка -- руоф Бычий натиск
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée en cas de collision avec des ennemis en armure carapace, implacables et des monstruosités.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_0_rgb_fr,
 	-- },
 	--[+ ABILITY 1 - Indomitable +]--
@@ -3215,7 +3475,7 @@ local talent_localizations = {
 			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
 			-- .."This is an augmented version of {talent_name:%s} with an increased charge distance of {distance:%s}."
 			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_rgb,
-		-- ru = "Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается только при столкновении с монстрами.\n\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s} с увеличенным на {distance:%s} расстоянием рывка."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_rgb"), -- Неукротимый -- руоф Неукротимость
+		-- ru = "Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается только при столкновении с чудовищами.\n\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s} с увеличенным на {distance:%s} расстоянием рывка."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_rgb"), -- Неукротимый -- руоф Неукротимость
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée uniquement en cas de collision avec des monstruosités.\nTemps de recharge de base : {cooldown:%s} secondes.\nCeci est une version augmentée de {talent_name:%s} avec une distance de charge accrue de {distance:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_rgb_fr,
 	-- },
 	--[+ ABILITY 1-1 - Stomping Boots +]--
@@ -3278,11 +3538,11 @@ local talent_localizations = {
 			-- .."{damage:%s} Close Range "..CKWord("Damage", "Damage_rgb")..",\n"
 			-- .."{ranged_attack_speed:%s} Rate of Fire,\n"
 			-- .."{reload_speed:%s} Reload Speed and\n"
-			-- ..CKWord("-", "n_minus_rgb").."{reduced_move_penalty:%s} to Braced Movement Speed penalties.\n"
+			-- ..CNumb("-", "n_minus_rgb").."{reduced_move_penalty:%s} to Braced Movement Speed penalties.\n"
 			-- .."\n"
 			-- .."Base Cooldown {cooldown:%s} seconds."
 			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_rgb,
-		-- ru = "Вы переключаетесь на оружие дальнего боя и перезаряжаете его. Вы получаете на {duration:%s} секунд:\n{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на ближней дистанции,\n{ranged_attack_speed:%s} к скорострельности,\n{reload_speed:%s} к скорости перезарядки и\n"..CKWord("-", "n_minus_rgb").."{reduced_move_penalty:%s} к штрафу скорости движения при прицеливании.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_rgb"), -- Беспощадный обстрел в упор -- руоф Решительный натиск
+		-- ru = "Вы переключаетесь на оружие дальнего боя и перезаряжаете его. Вы получаете на {duration:%s} секунд:\n{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на ближней дистанции,\n{ranged_attack_speed:%s} к скорострельности,\n{reload_speed:%s} к скорости перезарядки и\n"..CNumb("-", "n_minus_rgb").."{reduced_move_penalty:%s} к штрафу скорости движения при прицеливании.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_rgb"), -- Беспощадный обстрел в упор -- руоф Решительный натиск
 		-- fr = "Échange et recharge votre arme à distance. Pendant les {duration:%s} secondes suivantes, vous avez une vitesse de tir de {ranged_attack_speed:%s}, une vitesse de recharge de {reload_speed:%s}, des pénalités de vitesse de déplacement réduites de {reduced_move_penalty:%s}, et vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à courte portée.\nTemps de recharge de base {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_rgb_fr, -- Barrage à bout portant
 	-- },
 	--[+ ABILITY 3-1 - Bullet Bravado +]--
@@ -3301,9 +3561,9 @@ local talent_localizations = {
 	-- },
 	--[+ ABILITY 3-3 - Light 'em Up +]--
 	-- ["loc_talent_ogryn_special_ammo_fire_shots_new_desc"] = { -- stacks: 2, ability: Point-Blank Barrage, +colors
-		-- en = CKWord("+", "n_plus_rgb").."{stacks:%s} Stacks of "..CKWord("Burn", "Burn_rgb").." are applied on Ranged Attacks while {ability:%s} is active. Max Stacks {max_stacks:%s}."
+		-- en = CNumb("+", "n_plus_rgb").."{stacks:%s} Stacks of "..CKWord("Burn", "Burn_rgb").." are applied on Ranged Attacks while {ability:%s} is active. Max Stacks {max_stacks:%s}."
 			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_3_rgb,
-		-- ru = CKWord("+", "n_plus_rgb").."{stacks:%s} заряда "..CKWord("горения", "gorenia_rgb_ru").." накладывают ваши выстрелы во время действия способности {ability:%s}. Максимум {max_stacks:%s} зарядов."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_3_rgb"), -- Задай жару -- руоф Зададим жару
+		-- ru = CNumb("+", "n_plus_rgb").."{stacks:%s} заряда "..CKWord("горения", "gorenia_rgb_ru").." накладывают ваши выстрелы во время действия способности {ability:%s}. Максимум {max_stacks:%s} зарядов."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_3_rgb"), -- Задай жару -- руоф Зададим жару
 		-- fr = "Les attaques à distance appliquent {stacks:%s} cumuls de "..COLORS_KWords_fr.Burn_rgb_fr.." pendant que {ability:%s} est actif. Jusqu'à un maximum de {max_stacks:%s} cumuls."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_3_rgb_fr, -- Allumez-les!
 	-- },
 --[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
@@ -3316,9 +3576,9 @@ local talent_localizations = {
 	-- },
 	--[+ KEYSTONE 1-1 - Don't Feel a Thing +]--
 	-- ["loc_talent_ogryn_passive_heavy_hitter_tdr_desc"] = { -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
-		-- en = "{toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." for each Stack, also granted by {talent_name:%s}.",
+		-- en = "{toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for each Stack, also granted by {talent_name:%s}.",
 		-- ru = "{toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." за каждый заряд даётся талантом {talent_name:%s}.", -- Не чувствую ничего
-		-- fr = "{toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." par cumuls de {talent_name:%s}.", -- Rien senti
+		-- fr = "{toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr.." par cumuls de {talent_name:%s}.", -- Rien senti
 	-- },
 	--[+ KEYSTONE 1-2 - Just Getting Started +]--
 	-- ["loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed_description"] = { -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
@@ -3452,9 +3712,9 @@ local talent_localizations = {
 	-- },
 	--[+ Passive 6 - Furious +]--
 	-- ["loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"] = { -- damage: +2.5%, +colors
-		-- en = "You gain "..CNumb("1", "n_1_rgb").." Stack of {damage:%s} "..CKWord("Damage", "Damage_rgb").." for each enemy Hit during a Single Melee Attack. Up to "..CKWord("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." "..CKWord("Damage", "Damage_rgb").." at "..CNumb("10", "n_10_rgb").." Stacks. Calculated separately for each Attack.",
-		-- ru = "Вы получаете "..CNumb("1", "n_1_rgb").." заряд {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." за каждого поражённого врага в течение одной атаки ближнего боя. До "..CKWord("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." при "..CNumb("10", "n_10_rgb").." зарядах. Рассчитывается отдельно для каждой атаки.", -- Разъярённый -- руоф Разъяренный
-		-- fr = "Vous gagnez "..CNumb("1", "n_1_rgb").." cumul de {damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." par ennemis touchez durant une attaque de mélée unique. Jusqu'à "..CKWord("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." de "..COLORS_KWords_fr.Damage_rgb_fr.." à "..CNumb("10", "n_10_rgb").." cumuls. calculer séparement pour chaque attaque.", -- Furieux
+		-- en = "You gain "..CNumb("1", "n_1_rgb").." Stack of {damage:%s} "..CKWord("Damage", "Damage_rgb").." for each enemy Hit during a Single Melee Attack. Up to "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." "..CKWord("Damage", "Damage_rgb").." at "..CNumb("10", "n_10_rgb").." Stacks. Calculated separately for each Attack.",
+		-- ru = "Вы получаете "..CNumb("1", "n_1_rgb").." заряд {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." за каждого поражённого врага в течение одной атаки ближнего боя. До "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." при "..CNumb("10", "n_10_rgb").." зарядах. Рассчитывается отдельно для каждой атаки.", -- Разъярённый -- руоф Разъяренный
+		-- fr = "Vous gagnez "..CNumb("1", "n_1_rgb").." cumul de {damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." par ennemis touchez durant une attaque de mélée unique. Jusqu'à "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." de "..COLORS_KWords_fr.Damage_rgb_fr.." à "..CNumb("10", "n_10_rgb").." cumuls. calculer séparement pour chaque attaque.", -- Furieux
 	-- },
 	--[+ Passive 7 - Towering Presence +]--
 	-- ["loc_talent_ogryn_bigger_coherency_radius_desc"] = { -- radius: +50%
@@ -3556,11 +3816,11 @@ local talent_localizations = {
 	-- },
 	--[+ Passive 23 - For the Lil'Uns +]--
 	-- ["loc_talent_ogryn_protect_allies_desc"] = { -- stacks: +4, +colors
-		-- en = "{power:%s} "..CKWord("Strength", "Strength_rgb").." and {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." for {duration:%s} seconds when an Ally's "..CKWord("Toughness", "Toughness_rgb").." breaks. Cooldown {cooldown:%s} seconds.\n"
+		-- en = "{power:%s} "..CKWord("Strength", "Strength_rgb").." and {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {duration:%s} seconds when an Ally's "..CKWord("Toughness", "Toughness_rgb").." breaks. Cooldown {cooldown:%s} seconds.\n"
 			-- .."\n"
 			-- .."{revive_speed:%s} Revive Speed and "..CKWord("Stun", "Stun_rgb").." Immunity for {duration:%s} seconds when an Ally is Knocked Down.",
 		-- ru = , -- За малых
-		-- fr = "{power:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." et {toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." pendant {duration:%s} secondes quand la "..COLORS_KWords_fr.Toughness_rgb_fr.." d'un allié se brise. Temps de recharge : {cooldown:%s} secondes.\n\n{revive_speed:%s} de vitesse de réanimation et l'immunité à l'"..COLORS_KWords_fr.Stuns_rgb_fr.." pendant {duration:%s} secondes quand un allié tombe à terre.", -- Pour les microbes
+		-- fr = "{power:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." et {toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr.." pendant {duration:%s} secondes quand la "..COLORS_KWords_fr.Toughness_rgb_fr.." d'un allié se brise. Temps de recharge : {cooldown:%s} secondes.\n\n{revive_speed:%s} de vitesse de réanimation et l'immunité à l'"..COLORS_KWords_fr.Stuns_rgb_fr.." pendant {duration:%s} secondes quand un allié tombe à terre.", -- Pour les microbes
 	-- },
 	--[+ Passive 24 - Concentrate +]--
 	-- ["loc_talent_ogryn_drain_stamina_for_handling_desc"] = { -- stacks: +4, +colors
@@ -3639,7 +3899,6 @@ local talent_localizations = {
 	-- ["loc_talent_ogryn_wield_speed_increase_desc"] = { -- stacks: +4, +colors
 		-- en = "{wield_speed:%s} Weapon Swap Speed.",
 		-- ru = "{wield_speed:%s} к скорости смены оружия.", -- Упорные тренировки
-		-- fr = ,
 	-- },
 	--[+ Passive 36 - Mobile Emplacement +]--
 	-- ["loc_talent_ogryn_bracing_reduces_damage_taken_desc"] = { -- damage_taken_multiplier: -20.00%, +colors
@@ -3667,11 +3926,11 @@ local talent_localizations = {
 	-- },
 	--[+ Passive 40 - Get Stuck In +]--
 	-- ["loc_talent_ogryn_ability_movement_speed_desc"] = { -- movement_speed: +20%, time: 4 -- &->and, s->seconds, +colors
-		-- en = "Activating your "..CKWord("Combat Ability", "Combat_ability_rgb").." grants you and Allies in "..CKWord("Coherency", "Coherency_rgb").." for {time:%s} seconds:\n"
+		-- en = "Activating your "..CKWord("Combat Ability", "Cmbt_abil_rgb").." grants you and Allies in "..CKWord("Coherency", "Coherency_rgb").." for {time:%s} seconds:\n"
 			-- .."{movement_speed:%s} Movement Speed,\n"
 			-- ..CKWord("Stuns", "Stuns_rgb").." and Suppression Immunity.",
 		-- ru = "При активации вашей "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы и союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." получаете на {time:%s} секунды:\n{movement_speed:%s} к скорости движения и\nиммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru").." и подавлению.", -- Очертя голову
-		-- fr = "En activant votre "..COLORS_KWords_fr.Combat_ability_rgb_fr..", vous et vos alliés en syntonie gagnez {movement_speed:%s} de vitesse de déplacement et êtes également immunisés contre les "..COLORS_KWords_fr.Stuns_rgb_fr.." et la suppression pendant {time:%s} secondes.",
+		-- fr = "En activant votre "..COLORS_KWords_fr.Cmbt_abil_rgb_fr..", vous et vos alliés en syntonie gagnez {movement_speed:%s} de vitesse de déplacement et êtes également immunisés contre les "..COLORS_KWords_fr.Stuns_rgb_fr.." et la suppression pendant {time:%s} secondes.",
 	-- },
 	--[+ Passive 41 - Reloaded and Ready +]--
 	-- ["loc_talent_ogryn_ranged_damage_on_reload_desc"] = { -- damage :+15%, duration: 8, s->seconds, +colors
@@ -3698,16 +3957,18 @@ local talent_localizations = {
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance lors d'une élimination en mélée. Pendant {duration:%s} secondes. Cumuls maximuml : {max_stacks:%s}.", -- Pluie de coups
 	-- },
 	--[+ Passive 45 - Hard Knocks +]--
-	-- ["loc_talent_ogryn_big_bully_heavy_hits_new_desc"] = { -- damage: +1%, stacks: 25, duration: 10, s->seconds, +colors
-		-- en = "{damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." taken for {duration:%s} seconds by enemies "..CKWord("Staggered", "Staggered_rgb").." by your Melee Attacks.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя на {duration:%s} секунд врагам "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." вашими атаками ближнего боя.", -- Тяжёлые удары -- руоф Мощные удары
+	["loc_talent_ogryn_big_bully_heavy_hits_new_desc"] = { -- damage: +1%, stacks: 25, duration: 10, s->seconds, +colors
+		en = "Enemies "..CKWord("Staggered", "Staggered_rgb").." by your Melee Attacks receive for {duration:%s} seconds:\n"
+			..Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb")..".",
+		ru = "Враги "..CKWord("ошеломлённые", "oshelomlennye_rgb_ru").." вашими атаками ближнего боя получают в течение {duration:%s} секунд:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." в ближнем бою.", -- Тяжёлые удары -- руоф Мощные удары
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." subit pendant {duration:%s} secondes par les ennemies qui "..COLORS_KWords_fr.Staggered_rgb_fr.." à cause de vos attaques de mélées.", -- Coup dur
-	-- },
+	},
 	--[+ Passive 46 - No Hurting Friends! +]--
 	-- ["loc_talent_ogryn_damage_taken_by_all_increases_strength_tdr_desc"] = { -- stacks: +4, +colors
-		-- en = "{strength:%s} "..CKWord("Strength", "Strength_rgb").." on "..CKWord("Damage", "Damage_rgb").." Taken by you or Allies in "..CKWord("Coherency", "Coherency_rgb")..". {stacks:%s} Max Stacks. Lasts {duration:%s} seconds. {tdr:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." on Max Stacks.",
+		-- en = "{strength:%s} "..CKWord("Strength", "Strength_rgb").." on "..CKWord("Damage", "Damage_rgb").." Taken by you or Allies in "..CKWord("Coherency", "Coherency_rgb")..". {stacks:%s} Max Stacks. Lasts {duration:%s} seconds. {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." on Max Stacks.",
 		-- ru = "{strength:%s} к "..CKWord("силе", "sile_rgb_ru").." при получении "..CKWord("урона", "uronu_rgb_ru").." вами или союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Максимум {stacks:%s} зарядов. Длится {duration:%s} секунд. {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." при максимуме зарядов.", -- За друзей порву!
-		-- fr = "{strength:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." lors de "..COLORS_KWords_fr.Damage_rgb_fr.." subit par vous ou des alliés en syntonie. {stacks:%s} cumuls maximum. Pendant {duration:%s} secondes. {tdr:%s} de "..COLORS_KWords_fr.Toughness_dmg_red_rgb_fr.." en étant au cumul maximal.",
+		-- fr = "{strength:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." lors de "..COLORS_KWords_fr.Damage_rgb_fr.." subit par vous ou des alliés en syntonie. {stacks:%s} cumuls maximum. Pendant {duration:%s} secondes. {tdr:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr.." en étant au cumul maximal.",
 	-- },
 	--[+ Passive 47 - Won't Give In +]--
 	-- ["loc_talent_ogryn_tanky_with_downed_allies_desc"] = { -- damage_taken: +20%, range: 20, +colors
@@ -3731,806 +3992,819 @@ local talent_localizations = {
 
 --[+ ++ARBITES - АРБИТЕС++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
-	--[+ BLITZ 0 - Arbites Grenade +]--	08.12.2025
-	-- ["loc_talent_ability_adamant_grenade_description"] = { -- charges: 4, +colors
-		-- en = "Throw an "..CKWord("Arbites Grenade", "Arbites_gren_rgb").." that explodes after a short delay.\n"
-			-- ..Dot_nc.." {charges:%s} Max Grenades.\n"
-			-- .."\n"
-			-- ..Dot_green.." Base "..CKWord("Damage", "Damage_rgb").." epicenter: "..CNumb("1500", "n_1500_rgb")..".\n"
-			-- ..Dot_green.." "..CKWord("Staggers", "Staggers_rgb").." all enemies except Mutants and enemies with an active Void shield.\n"
-			-- ..Dot_nc.." Max explosion radius: "..CNumb("10", "n_10_rgb").." meters.\n"
-			-- ..Dot_nc.." Above average armor "..CKWord("Damage", "Damage_rgb").." modifiers across the board.\n"
-			-- ..Dot_red.." Very low armor "..CKWord("Damage", "Damage_rgb").." modifier against Carapace.",
-		-- [+ БЛИЦ 0 - Граната арбитрес -- руоф Граната Арбитрес
-		-- ru = "Вы бросаете "..CKWord("Гранату арбитрес", "Arbites_gren_rgb_ru")..", которая взрывается после короткой задержки.\n"
-			-- ..Dot_nc.." Максимум {charges:%s} гранаты.\n"
-			-- .."\n"
-			-- ..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru").." в эпицентре: "..CNumb("1500", "n_1500_rgb")..".\n"
-			-- ..Dot_green.." "..CKWord("Ошеломляет", "Oshelomlaet_rgb_ru").." всех врагов кроме мутантов и врагов с активным пустотным щитом.\n"
-			-- ..Dot_nc.." Максимальный радиус взрыва: "..CNumb("10", "n_10_rgb").." метров.\n"
-			-- ..Dot_nc.." Средний "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
-			-- ..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
-		-- fr = ,
-	-- },
-	--[+ BLITZ 1 - Remote Detonation +]--	08.12.2025
-	-- ["loc_talent_ability_detonate_description"] = { -- max_charges: 3, cooldown: 50, s->seconds, +colors
-		-- en = "Cause an Explosion at your Cyber-Mastiff's Location. "..CKWord("Staggering", "Staggering_rgb").." and "..CKWord("Electrocuting", "Electrcuting_rgb").." nearby Enemies.\n"
-			-- ..Dot_nc.." {max_charges:%s} Charges.\n"
-			-- ..Dot_nc.." Cooldown {cooldown:%s} seconds.\n"
-			-- .."\n"
-			-- ..Dot_green.." Base "..CKWord("Damage", "Damage_rgb").." epicenter: "..CNumb("600", "n_600_rgb")..".\n"
-			-- ..Dot_green.." Forces a light "..CKWord("Stagger", "Stagger_rgb").." on all enemies within radius for "..CNumb("2.5", "n_2_5_rgb").." seconds.\n"
-			-- ..Dot_nc.." Max explosion radius: "..CNumb("4", "n_4_rgb").." meters.\n"
-			-- ..Dot_nc.." Arbitrator cannot pick up grenade Ammo.\n"
-			-- ..Dot_nc.." Above average armor "..CKWord("Damage", "Damage_rgb").." modifiers across the board.\n"
-			-- ..Dot_red.." Very low armor "..CKWord("Damage", "Damage_rgb").." modifier against Carapace.",
-		-- [+ БЛИЦ 1 - Дистанционный подрыв +]--
-		-- ru = "Ваш кибермастиф взрывается в месте своего нахождения, "..CKWord("ошеломляя", "oshelomlaa_rgb_ru").." и поражая "..CKWord("электрошоком", "elektroshokom_rgb_ru").." ближайших врагов.\n"
-			-- ..Dot_nc.." {max_charges:%s} заряда.\n"
-			-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",
-		-- fr = ,
-	-- },
+	--[+ BLITZ 0 - Arbites Grenade +]--
+	["loc_talent_ability_adamant_grenade_description"] = { -- charges: 4, +colors
+		en = "Throw an "..CKWord("Arbites Grenade", "Arbites_gren_rgb").." that explodes after a short delay.\n"
+			..Dot_nc.." {charges:%s} Max Grenades.\n"
+			.."\n"
+			..Dot_green.." Base "..CKWord("Damage", "Damage_rgb").." epicenter: "..CNumb("1500", "n_1500_rgb")..".\n"
+			..Dot_green.." "..CKWord("Staggers", "Staggers_rgb").." all enemies except Mutants and enemies with an active Void shield.\n"
+			..Dot_nc.." Max explosion radius: "..CNumb("10", "n_10_rgb").." meters.\n"
+			..Dot_nc.." Above average armor "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_red.." Very low "..CKWord("Damage", "Damage_rgb").." to Carapace.",
+		ru = "Вы бросаете "..CKWord("Гранату арбитрес", "Arbites_gren_rgb_ru")..", которая взрывается после короткой задержки.\n" -- Граната арбитрес -- руоф Граната Арбитрес
+			..Dot_nc.." Максимум {charges:%s} гранаты.\n"
+			.."\n"
+			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru").." в эпицентре: "..CNumb("1500", "n_1500_rgb")..".\n"
+			..Dot_green.." "..CKWord("Ошеломляет", "Oshelomlaet_rgb_ru").." всех врагов кроме мутантов и врагов с активным пустотным щитом.\n"
+			..Dot_nc.." Максимальный радиус взрыва: "..CNumb("10", "n_10_rgb").." метров.\n"
+			..Dot_nc.." Средний "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
+			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
+	},
+	--[+ BLITZ 1 - Remote Detonation +]--
+	["loc_talent_ability_detonate_description"] = { -- max_charges: 3, cooldown: 50, s->seconds, +colors
+		en = "Cause an Explosion at your Cyber-Mastiff's Location. "..CKWord("Staggering", "Staggering_rgb").." and "..CKWord("Electrocuting", "Electrcuting_rgb").." nearby Enemies.\n"
+			..Dot_nc.." {max_charges:%s} Charges.\n"
+			..Dot_nc.." Cooldown {cooldown:%s} seconds.\n"
+			.."\n"
+			..Dot_green.." Base "..CKWord("Damage", "Damage_rgb").." epicenter: "..CNumb("600", "n_600_rgb")..".\n"
+			..Dot_green.." Forces a light "..CKWord("Stagger", "Stagger_rgb").." on all enemies within radius for "..CNumb("2.5", "n_2_5_rgb").." seconds.\n"
+			..Dot_nc.." Max explosion radius: "..CNumb("4", "n_4_rgb").." meters.\n"
+			..Dot_nc.." Above average armor "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_red.." Very low "..CKWord("Damage", "Damage_rgb").." to Carapace.\n"
+			.."\n"
+			..Dot_red.." Arbitrator cannot pick up grenade Ammo.",
+		ru = "Создаёт взрыв в месте нахождения вашего кибермастифа, "..CKWord("ошеломляя", "oshelomlaa_rgb_ru").." и поражает "..CKWord("электрошоком", "elektroshokom_rgb_ru").." ближайших врагов.\n"
+			..Dot_nc.." {max_charges:%s} заряда.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
+			.."\n"
+			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru").." в эпицентре: "..CNumb("600", "n_600_rgb")..".\n"
+			..Dot_green.." Наносит лёгкое "..CKWord("ошеломление", "oshelomlenie_rgb_ru").." всем врагам в радиусе на "..CNumb("2.5", "n_2_5_rgb").." секунды.\n"
+			..Dot_nc.." Максимальный радиус взрыва: "..CNumb("4", "n_4_rgb").." метра.\n"
+			..Dot_nc.." Высокий "..CKWord("урон", "uron_rgb_ru").." по броне.\n"
+			..Dot_red.." Очень низкий "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.\n"
+			.."\n"
+			..Dot_red.." Арбитратор не может подбирать гранаты.", -- Дистанционный подрыв
+	},
 	--[+ BLITZ 2 - Voltaic Shock Mine +]--
-	-- ["loc_talent_ability_shock_mine_description"] = { -- talent_name: Voltaic Shock Min, duration: 15, !range!: 5, s->seconds, m->meters, +colors
-		-- en = "Throw a {talent_name:%s} that activates as it lands.\n"
-			-- ..Dot_nc.." For {duration:%s} seconds it will "..CKWord("Electrocute", "Electrocute_rgb").." all enemies within {range:%s} meters.",
-		-- ru = "Вы бросаете "..CKWord("Вольтаическую шоковую мину", "Electro_mine_rgb_ru")..", которая активируется при приземлении.\n"
-			-- ..Dot_nc.." В течение {duration:%s} секунд она будет поражать "..CKWord("электрошоком", "elektroshokom_rgb_ru").." всех врагов в радиусе {range:%s} метров.",  -- Вольтаическая шоковая мина
-		-- fr = ,
-	-- },
+	["loc_talent_ability_shock_mine_description"] = { -- talent_name: Voltaic Shock Min, duration: 15, range: 3, s->seconds, m->meters, +colors
+		en = "Throw a {talent_name:%s} that activates as it lands.\n"
+			.."For {duration:%s} seconds it will "..CKWord("Electrocute", "Electrocute_rgb").." all enemies within {range:%s} meters.",
+		ru = "Вы бросаете "..CKWord("Вольтаическую шоковую мину", "Electro_mine_rgb_ru")..", которая активируется при приземлении.\n"
+			.."В течение {duration:%s} секунд она будет поражать "..CKWord("электрошоком", "elektroshokom_rgb_ru").." всех врагов в радиусе {range:%s} метров.", -- Вольтаическая шоковая мина
+	},
 	--[+ BLITZ 3 - Arbites Grenade +]--
-	-- ["loc_talent_ability_adamant_grenade_improved_description"] = { -- talent_name: Arbites Grenade, charges: 4
-		-- en = "Throw an {talent_name:%s} that explodes after a short delay.\n"
-			-- ..Dot_nc.." {charges:%s} Max Grenades.\n"
-			-- ..Dot_nc.." This is an augmented version of {talent_name:%s}.",
-		-- ru = "Вы бросаете "..CKWord("Гранату арбитрес", "Arbites_gren_rgb_ru")..", которая взрывается после короткой задержки.\n"
-			-- ..Dot_nc.." Максимум {charges:%s} гранаты.\n"
-			-- ..Dot_nc.." Это улучшенная версия таланта {talent_name:%s}.",  -- Граната арбитрес -- руоф Граната Арбитрес
-		-- fr = ,
-	-- },
+	["loc_talent_ability_adamant_grenade_improved_description"] = { -- talent_name: Arbites Grenade, charges: 4
+		en = "Throw an {talent_name:%s} that explodes after a short delay.\n"
+			..Dot_nc.." {charges:%s} Max Grenades.\n"
+			..Dot_green.." This is an augmented version of {talent_name:%s}.",
+		ru = "Вы бросаете "..CKWord("Гранату арбитрес", "Arbites_gren_rgb_ru")..", которая взрывается после короткой задержки.\n"
+			..Dot_nc.." Максимум {charges:%s} гранаты.\n"
+			..Dot_green.." Это улучшенная версия таланта {talent_name:%s}.",  -- Граната арбитрес -- руоф Граната Арбитрес
+	},
 --[+ +AURA - АУРА+ +]--
 	--[+ AURA 0 - Part of the Squad +]--
-	-- ["loc_talent_adamant_companion_coherency_desc"] = { 
-		-- en = "Your Cyber-Mastiff counts towards unit "..CKWord("Coherency", "Coherency_rgb")..".",
-		-- ru = "Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",  -- Часть отряда
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_companion_coherency_desc"] = { 
+		en = "Your Cyber-Mastiff counts towards unit "..CKWord("Coherency", "Coherency_rgb")..".",
+		ru = "Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Часть отряда
+	},
 	--[+ AURA 1 - Part of the Squad +]--
-	-- ["loc_talent_adamant_companion_coherency_alt_desc"] = { -- tdr: +7.5%, +colors
-		-- en = "{tdr:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
-			-- .."\n"
-			-- .."Your Cyber-Mastiff counts towards unit "..CKWord("Coherency", "Coherency_rgb")..".",
-		-- ru = "{tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n"
-			-- .."\n"
-			-- .."Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",  -- Часть отряда
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_companion_coherency_alt_desc"] = { -- tdr: +7.5%, +colors
+		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
+			.."\n"
+			.."Your Cyber-Mastiff counts towards unit "..CKWord("Coherency", "Coherency_rgb")..".",
+		ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n"
+			.."\n"
+			.."Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Часть отряда
+	},
 	--[+ AURA 2 - Ruthless Efficiency +]--
-	-- ["loc_talent_adamant_reload_speed_aura_desc"] = { -- reload_speed: +7.5%, +colors
-		-- en = "{reload_speed:%s} Reload Speed for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
-		-- ru = "{reload_speed:%s} к скорости перезарядки оружия для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Беспощадная эффективность -- руоф Беспощадная сила
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_reload_speed_aura_desc"] = { -- reload_speed: +7.5%, +colors
+		en = Dot_green.." {reload_speed:%s} Reload Speed for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
+		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Беспощадная эффективность -- руоф Беспощадная сила
+	},
 	--[+ AURA 3 - Breaking Dissent +]--
-	-- ["loc_talent_adamant_damage_vs_staggered_aura_alt_desc"] = { -- damage_vs_stagger: +10%, +colors
-		-- en = "{damage_vs_stagger:%s} "..CKWord("Damage", "Damage_rgb").." vs "..CKWord("Staggered", "Staggered_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
-		-- ru = "{damage_vs_stagger:%s} к "..CKWord("урону", "uronu_rgb_ru").." "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." врагам для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Подавление инакомыслия -- руоф Преодоление разногласий
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_damage_vs_staggered_aura_alt_desc"] = { -- damage_vs_stagger: +10%, +colors
+		en = Dot_green.." {damage_vs_stagger:%s} "..CKWord("Damage", "Damage_rgb").." vs "..CKWord("Staggered", "Staggered_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
+		ru = Dot_green.." {damage_vs_stagger:%s} к "..CKWord("урону", "uronu_rgb_ru").." по "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." врагам для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Подавление инакомыслия -- руоф Преодоление разногласий
+	},
 --[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 	--[+ ABILITY 0 - Nuncio-Aquila +]--
-	-- ["loc_talent_adamant_ability_nuncio_base_desc"] = { -- range: 7.5, toughness: 5%, damage_taken: +15%, duration: 20, cooldown: 60, m->meters, s->seconds, +colors
-		-- en = "Deploy a {talent_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n"
-			-- .."\n"
-			-- .."Allies gain:\n"
-			-- ..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenish per second.\n"
-			-- .."\n"
-			-- .."Enemies gain:\n"
-			-- ..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken.\n"
-			-- .."\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.\n"
-			-- ..Dot_nc.." Cooldown {cooldown:%s} seconds.",
-		-- ru = "{talent_name:%s}, которую вы развёртываете в выбранном направлении, усиливает союзников и ослабляет врагов в радиусе {range:%s} метров.\n"
-			-- .."\n"
-			-- .."Союзники получают:\n"
-			-- ..Dot_green.." {toughness:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.\n"
-			-- .."\n"
-			-- .."Враги получают:\n"
-			-- ..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru")..".\n"
-			-- .."\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.\n"
-			-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Нунцио-аквила
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_ability_nuncio_base_desc"] = { -- range: 7.5, toughness: 5%, damage_taken: +15%, duration: 20, cooldown: 60, m->meters, s->seconds, +colors
+		en = "Deploy a {talent_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n"
+			.."\n"
+			.."Allies:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." per second.\n"
+			.."\n"
+			.."Enemies:\n"
+			..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken.\n"
+			.."\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			..Dot_nc.." Cooldown {cooldown:%s} seconds.",
+		ru = "Вы развёртываете "..CKWord("Нунцио-аквилу", "Nuncio_akvilu_rgb_ru").." в выбранном направлении, усиливая союзников и ослабляя врагов в радиусе {range:%s} метров.\n"
+			.."\n"
+			.."Усиление союзников:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду.\n"
+			.."\n"
+			.."Ослабления врагов:\n"
+			..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			.."\n"
+			..Dot_nc.." Длится {duration:%s} секунд.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.", -- Нунцио-аквила
+	},
 	--[+ ABILITY 1 - Castigator's Stance +]--
-	-- ["loc_talent_adamant_stance_ability_alt_description"] = { -- talent_name: Castigator's Stance, duration: 10, movement_speed: +25%, damage_taken: +80%, movement_reduction: 100%, cooldown: 45, s->seconds, +colors
-		-- en = "Enter the {talent_name:%s} for {duration:%s} seconds, during which you have:\n"
-			-- ..Dot_green.." {movement_speed:%s} Movement Speed,\n"
-			-- ..Dot_green.." {damage_taken:%s} Reduced "..CKWord("Damage", "Damage_rgb").." Taken,\n"
-			-- ..Dot_green.." {movement_reduction:%s} Reduced Movement Speed Penalty from Actions, but you cannot Sprint.\n"
-			-- ..Dot_green.." All your "..CKWord("Toughness", "Toughness_rgb").." replenishes on activation.\n"
-			-- ..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
-		-- ru = "Вы входите в стойку на {duration:%s} секунд и получаете:\n"
-			-- ..Dot_green.." {movement_speed:%s} к скорости движения,\n"
-			-- ..Dot_green.." {damage_taken:%s} к снижению получаемого "..CKWord("урона", "urona_rgb_ru")..",\n"
-			-- ..Dot_green.." на {movement_reduction:%s} снижается штраф скорости движения от действий, но вы не сможете бегать.\n"
-			-- ..Dot_green.." Вся ваша "..CKWord("стойкость", "stoikost_rgb_ru").." восстанавливается при активации.\n"
-			-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",  -- Стойка карателя -- руоф Стойка бичевателя
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_stance_ability_alt_description"] = { -- talent_name: Castigator's Stance, duration: 10, movement_speed: +15%, damage_taken: +80%, movement_reduction: 100%, cooldown: 45, s->seconds, +colors
+		en = "Enter the {talent_name:%s} for {duration:%s} seconds, during which you have:\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{movement_reduction:%s} Movement Speed Penalty from Actions, but you cannot Sprint.\n"
+			..Dot_green.." On activation you replenish all "..CKWord("Toughness", "Toughness_rgb")..".\n"
+			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
+		ru = "Вы входите в "..CKWord("Стойку бичевателя", "Stojku_bicha_rgb_ru").." на {duration:%s} секунд, во время которой вы получаете:\n"
+			..Dot_green.." {movement_speed:%s} к скорости движения,\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{movement_reduction:%s} штрафа скорости движения от действий, но вы не можете бегать.\n"
+			..Dot_green.." При активации восстанавливается вся "..CKWord("стойкость", "stoikost_rgb_ru")..".\n"
+			..Dot_nc.." Базовое восстановление: {cooldown:%s} секунд.", -- Стойка карателя -- руоф Стойка бичевателя
+	},
 	--[+ ABILITY 1-1 - Blessed Armament +]--
-	-- ["loc_talent_adamant_stance_ranged_kills_transfer_ammo_desc"] = { -- stance_name: Castigator's Stance, ammo: 10%, cooldown: 1.5, s->seconds
-		-- en = "{ammo:%s} of the total Ammo in your Clip is replenished from Reserve on Ranged kills during {stance_name:%s}. Rounded Up.\n"
-			-- ..Dot_nc.." Cooldown {cooldown:%s} seconds.",
-		-- ru = "{ammo:%s} от общего количества боеприпасов в вашей обойме пополняется из резерва при убийствах в дальнем бою во время действия способности {stance_name:%s}.\n"
-			-- ..Dot_nc.." Округляется в большую сторону.\n"
-			-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунды.", -- Благословенное вооружение -- руоф Благословенное орудие
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_stance_ranged_kills_transfer_ammo_desc"] = { -- stance_name: Castigator's Stance, ammo: 10%, cooldown: 1.5, s->seconds
+		en = "During {stance_name:%s}, ranged kills replenish:\n"
+			..Dot_green.." Up to {ammo:%s} of the total Ammo in your Clip from Reserve.\n"
+			..Dot_green.." Rounded Up.\n"
+			..Dot_nc.." Cooldown {cooldown:%s} seconds.",
+		ru = "Во время действия таланта {stance_name:%s} убийства дальнобойными атаками восстанавливают:\n"
+			..Dot_green.." До {ammo:%s} общего количества боеприпасов в магазине из резерва.\n"
+			..Dot_green.." Округляется в большую сторону.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунды.", -- Благословенное вооружение -- руоф Благословенное орудие
+	},
 	--[+ ABILITY 1-2 - Writ of Execution +]--
-	-- ["loc_talent_adamant_stance_elite_kills_stack_damage_desc"] = { -- stance_name: Castigator's Stance, damage: +5%, duration: 10, stacks: 10, s->seconds, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." for each Elite or Specialist Kill during {stance_name:%s}.\n"
-			-- ..Dot_nc.." {stacks:%s} Max Stacks.\n"
-			-- ..Dot_nc.." Lasting {duration:%s} seconds.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." за каждого убитого специалиста или элитного врага во время действия способности {stance_name:%s}.\n"
-			-- ..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.", -- Ордер на казнь
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_stance_elite_kills_stack_damage_desc"] = { -- stance_name: Castigator's Stance, damage: +5%, duration: 10, stacks: 10, s->seconds, +colors
+		en = "During {stance_name:%s}, each Elite or Specialist Kill grants:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_nc.." {stacks:%s} Max Stacks.\n"
+			..Dot_nc.." Lasting {duration:%s} seconds.",
+		ru = "Во время действия таланта {stance_name:%s} каждое убийство элитного врага или специалиста даёт:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Ордер на казнь
+	},
 	--[+ ABILITY 1-3 - Bloodlust +]--
-	-- ["loc_talent_adamant_stance_bloodlust_desc"] = { -- stance_name: Castigator's Stance, damage: +75%, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." to your Cyber-Mastiff during {stance_name:%s}.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." вашего кибермастифа во время действия способности {stance_name:%s}.", -- Жажда крови
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_stance_bloodlust_desc"] = { -- stance_name: Castigator's Stance, damage: +75%, +colors
+		en = "During {stance_name:%s} your Cyber-Mastiff has:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".",
+		ru = "Во время действия таланта {stance_name:%s} ваш кибермастиф получает:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".", -- Жажда крови
+	},
 	--[+ ABILITY 2 - Nuncio-Aquila +]--
-	-- ["loc_talent_ability_area_buff_drone_ct_description"] = { -- range: 7.5, toughness: 7.5%, suppression: +30%, impact: +30%, recoil: -25%, damage_taken: +15%, duration: 20, cooldown: 60, nuncio_name: Nuncio-Aquila, m->meters, s->seconds, +colors
-		-- en = "Deploy a {nuncio_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n"
-			-- .."\n"
-			-- .."Allies gain buffs:\n"
-			-- ..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenish per second,\n"
-			-- ..Dot_green.." {suppression:%s} Suppression Dealt,\n"
-			-- ..Dot_green.." {impact:%s} "..CKWord("Impact", "Impact_rgb")..",\n"
-			-- ..Dot_green.." {recoil:%s} Recoil,\n"
-			-- ..Dot_green.." Slowdown and Suppression Immune,\n"
-			-- ..Dot_green.." Immune to interruption during Alternate Fire.\n"
-			-- .."\n"
-			-- .."Enemies gain debuffs:\n"
-			-- ..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken.\n"
-			-- .."\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.\n"
-			-- ..Dot_nc.." Cooldown: {cooldown:%s} seconds.\n"
-			-- ..Dot_nc.." This is an augmented version of {nuncio_name:%s}.",
-		-- ru = "{nuncio_name:%s}, которую вы развёртываете в выбранном направлении, усиливает союзников и ослабляет врагов в радиусе {range:%s} метров.\n"
-			-- .."\n"
-			-- .."Усиления союзников:\n"
-			-- ..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду,\n"
-			-- ..Dot_green.." {suppression:%s} к подавлению врагов,\n"
-			-- ..Dot_green.." {impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..",\n"
-			-- ..Dot_green.." {recoil:%s} к отдаче,\n"
-			-- ..Dot_green.." Иммунитет к замедлению и подавлению,\n"
-			-- ..Dot_green.." Иммунитет к прерыванию во время режима прицельного огня.\n"
-			-- .."\n"
-			-- .."Ослабления врагов:\n"
-			-- ..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru")..".\n"
-			-- .."\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.\n"
-			-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
-			-- ..Dot_nc.." Это улучшенная версия способности {nuncio_name:%s}.", -- Нунцио-аквила
-		-- fr = ,
-	-- },
+	["loc_talent_ability_area_buff_drone_ct_description"] = { -- range: 7.5, toughness: 7.5%, suppression: +30%, impact: +30%, recoil: -25%, damage_taken: +15%, duration: 20, cooldown: 60, nuncio_name: Nuncio-Aquila, m->meters, s->seconds, +colors
+		en = "Deploy a {nuncio_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n"
+			.."\n"
+			.."Allies:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." per second,\n"
+			..Dot_green.." {suppression:%s} Suppression Dealt,\n"
+			..Dot_green.." {impact:%s} "..CKWord("Impact", "Impact_rgb")..",\n"
+			..Dot_green.." {recoil:%s} Recoil,\n"
+			..Dot_green.." Slowdown Immunity,\n"
+			..Dot_green.." Suppression Immunity,\n"
+			..Dot_green.." Immunity to interruption during Alternate Fire.\n"
+			.."\n"
+			.."Enemies:\n"
+			..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken.\n"
+			.."\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} seconds.\n"
+			..Dot_green.." This is an augmented version of {nuncio_name:%s}.",
+		ru = "Вы развёртываете "..CKWord("Нунцио-аквилу", "Nuncio_akvilu_rgb_ru").." в выбранном направлении, усиливая союзников и ослабляя врагов в радиусе {range:%s} метров.\n"
+			.."\n"
+			.."Усиления союзников:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду,\n"
+			..Dot_green.." {suppression:%s} к подавлению врагов,\n"
+			..Dot_green.." {impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..",\n"
+			..Dot_green.." {recoil:%s} к отдаче оружия,\n"
+			..Dot_green.." Иммунитет к замедлению,\n"
+			..Dot_green.." Иммунитет к подавлению,\n"
+			..Dot_green.." Иммунитет к прерыванию во время прицельного огня.\n"
+			.."\n"
+			.."Ослабления врагов:\n"
+			..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			.."\n"
+			..Dot_nc.." Длится {duration:%s} секунд.\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
+			..Dot_green.." Это улучшенная версия способности {nuncio_name:%s}.", -- Нунцио-аквила
+	},
 	--[+ ABILITY 2-1 - Inspiring Recitation +]--
-	-- ["loc_talent_adamant_drone_buff_talent_alt_desc"] = { -- tdr: 30%, revive_speed: 30%, attack_speed: 10%, +colors
-		-- en ="Affected Allies also gain buffs:\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb").."{tdr:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb")..",\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb").."{revive_speed:%s} Revive Speed, and\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb").."{attack_speed:%s} Attack Speed." ,
-		-- ru = "Союзники, попавшие под эффект способности, получают дополнительные усиления:\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb").."{tdr:%s} к "..CKWord("снижение урона стойкости", "Toughness_dmg_red_rgb_ru")..",\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb").."{attack_speed:%s} к скорости атак и\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb").."{revive_speed:%s} к скорости поднятия союзников.", -- Воодушевляющая проповедь -- руоф Вдохновляющая декламация
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_drone_buff_talent_alt_desc"] = { -- tdr: 30%, revive_speed: 30%, attack_speed: 10%, +colors
+		en ="Affected Allies also gain:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{revive_speed:%s} Revive Speed, and\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed:%s} Attack Speed." ,
+		ru = "Затронутые союзники также получают:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{revive_speed:%s} к скорости оживления и\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed:%s} к скорости атаки.", -- Воодушевляющая проповедь -- руоф Вдохновляющая декламация
+	},
 	--[+ ABILITY 2-2 - Fear of Justice +]--
-	-- ["loc_talent_adamant_drone_debuff_talent_desc"] = { -- attack_speed_reduction: 50%, damage_reduction: 25%, +colors
-		-- en = "Affected enemies also gain debuffs to their Melee Attacks:\n"
-			-- ..Dot_green.." "..CKWord("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb").."{attack_speed_reduction:%s} time between attacks.",
-		-- ru = "Враги, попавшие под эффект способности, получают дополнительные ослабления для их атак ближнего боя:\n"
-			-- ..Dot_green.." "..CKWord("-", "n_minus_rgb").."{damage_reduction:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb").."{attack_speed_reduction:%s} к увеличению времени между атаками.", -- Страх перед Правосудием -- руоф Страх правосудия
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_drone_debuff_talent_desc"] = { -- attack_speed_reduction: 50%, damage_reduction: 25%, +colors
+		en = "Affected enemies also gain debuffs to their Melee Attacks:\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed_reduction:%s} time between attacks.",
+		ru = "Затронутые враги также получают ослабления для их атак ближнего боя:\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed_reduction:%s} к увеличению времени между атаками.", -- Страх перед Правосудием -- руоф Страх правосудия
+	},
 	--[+ ABILITY 3 - Break the Line +]--
-	-- ["loc_talent_adamant_bash_ability_description"] = { -- damage: +25%, stagger: +50%, duration: 6, cooldown: 20, s->seconds, +colors
-		-- en = "Charge forward and Bash, causing high "..CKWord("Stagger", "Stagger_rgb").." to enemies in front of you, and gain for {duration:%s} seconds:\n"
-			-- ..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- ..Dot_green.." {stagger:%s} "..CKWord("Impact", "Impact_rgb")..".\n"
-			-- ..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
-		-- ru = "Вы делаете рывок вперёд и наносите удар, который "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." врагов перед вами, и получаете на {duration:%s} секунд усиления:\n"
-			-- ..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
-			-- ..Dot_green.." {stagger:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..".\n"
-			-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд.", -- Прорыв строя -- руоф Прорыв фронта
-		-- fr = ,
-	-- },
+	["loc_ability_adamant_charge_blocking_desc"] = { -- damage: +25%, stagger: +50%, duration: 6, cooldown: 20, s->seconds, +colors
+		en = "Charge forward and Bash, causing high "..CKWord("Stagger", "Stagger_rgb").." to enemies in front of you, and gain for {duration:%s} seconds:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
+			..Dot_green.." {stagger:%s} "..CKWord("Impact", "Impact_rgb")..".\n"
+			.."\n"
+			..Dot_green.." During the Bash you count as Blocking.\n"
+			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
+		ru = "Вы делаете рывок вперёд и наносите удар, сильно "..CKWord("ошеломляющий", "oshelomlauschij_rgb_ru").." врагов перед вами, и получаете на {duration:%s} секунд:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
+			..Dot_green.." {stagger:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..".\n"
+			.."\n"
+			..Dot_green.." Во время рывка вы находитесь в состоянии блокирования.\n"
+			..Dot_nc.." Базовое восстановление: {cooldown:%s} секунд.", -- Прорыв строя -- руоф Прорыв фронта
+	},
 	--[+ ABILITY 3-1 - Commendation from Condemnation +]--
-	-- ["loc_talent_adamant_charge_toughness_alt_description"] = { -- toughness: 20%, stamina: 15%, toughness_max: 100%, stamina_max: 75%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." and {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." replenishes for each Elite, Specialist, or Monstrosity hit, up to {toughness_max:%s} "..CKWord("Toughness", "Toughness_rgb").." and {stamina_max:%s} "..CKWord("Stamina", "Stamina_rgb")..".",
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." и {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." восстанавливается за каждый удар по элитному врагу, специалисту или монстру, вплоть до {toughness_max:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." и {stamina_max:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- Похвала за осуждение -- руоф Не наказали - значит, похвалили???
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_charge_toughness_alt_description"] = { -- toughness: 20%, stamina: 15%, toughness_max: 100%, stamina_max: 75%, +colors
+		en = "For each Elite, Specialist, or Monstrosity hit you replenish:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." and\n"
+			..Dot_green.." {stamina:%s} "..CKWord("Stamina", "Stamina_rgb")..".\n"
+			.."Up to {toughness_max:%s} "..CKWord("Toughness", "Toughness_rgb").." and {stamina_max:%s} "..CKWord("Stamina", "Stamina_rgb")..".",
+		ru = "За каждого элитного врага, специалиста или чудовища, поражённого рывком, восстанавливается:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." и\n"
+			..Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".\n"
+			.."Вплоть до {toughness_max:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." и {stamina_max:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- Похвала за осуждение -- руоф Не наказали - значит, похвалили???
+	},
 	--[+ ABILITY 3-2 - Targeted Brutality +]--
-	-- ["loc_talent_adamant_charge_cooldown_alt_description"] = { -- cooldown: 0.5, cooldown_elite: 5, max_cooldown: 5, s->seconds, +colors
-		-- en = "On charge end, reduces the remaining "..CKWord("Ability Cooldown", "Ability_cd_rgb").." of "..CKWord("Break the Line", "BreakZLine_rgb").." by:\n"
-			-- ..Dot_green.." {cooldown_elite:%s} seconds for each Elite, Special, or Monstrosity hit while charging,\n"
-			-- ..Dot_green.." {cooldown:%s} seconds for any other enemy hit while charging.\n"
-			-- ..Dot_nc.." Max {max_cooldown:%s} seconds per charge.",
-		-- ru = "После рывка, сокращается время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." вашего "..CKWord("Прорыва вражеского строя", "BreakZLine_rgb_ru").." на:\n"
-			-- ..Dot_green.." {cooldown_elite:%s} секунду за каждого, поражённого рывком, элитного врага, специалиста или монстра,\n"
-			-- ..Dot_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"
-			-- ..Dot_nc.." Максимум {max_cooldown:%s} секунд за рывок.", -- Направленная жестокость
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_charge_cooldown_alt_description"] = { -- cooldown: 0.5, cooldown_elite: 5, max_cooldown: 5, s->seconds, +colors
+		en = "At charge end, reduce "..CKWord("Cooldown", "Cd_rgb").." of your "..CKWord("Break the Line", "BreakZLine_rgb").." per hit during charge:\n"
+			..Dot_green.." {cooldown_elite:%s} second per Elite/Specialist/Monstrosity,\n"
+			..Dot_green.." {cooldown:%s} seconds per other enemy.\n"
+			..Dot_nc.." Max reduction: {max_cooldown} seconds.",
+		ru = "После рывка, сокращается время "..CKWord("восстановления", "vosstanovlenia_rgb_ru").." вашего "..CKWord("Прорыва вражеского строя", "BreakZLine_rgb_ru").." на:\n" -- Направленная жестокость
+			..Dot_green.." {cooldown_elite:%s} секунду за каждого, поражённого рывком, элитного врага, специалиста или чудовища,\n"
+			..Dot_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"
+			..Dot_nc.." Максимум {max_cooldown:%s} секунд за рывок.",
+	},
 	--[+ ABILITY 3-3 - Kill Order +]--
-	-- ["loc_talent_adamant_dog_damage_after_ability_desc"] = { -- companion_damage: +50%, duration: 12, s->seconds, +colors
-		-- en = "{companion_damage:%s} "..CKWord("Damage", "Damage_rgb").." for your Cyber Mastiff, for {duration:%s} seconds after using your "..CKWord("Combat Ability", "Combat_ability_rgb")..".",
-		-- ru = "{companion_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." вашего кибермастифа на {duration:%s} секунд после активации вашей "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".", -- Фас! -- руоф Приказ убивать
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_dog_damage_after_ability_desc"] = { -- companion_damage: +50%, duration: 12, s->seconds, +colors
+		en = "After using your "..CKWord("Combat Ability", "Cmbt_abil_rgb").." your Cyber Mastiff gain for {duration:%s} seconds:\n"
+			..Dot_green.." {companion_damage:%s} "..CKWord("Damage", "Damage_rgb")..".",
+		ru = "После использования вашей "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." ваш кибермастиф получает на {duration:%s} секунд:\n"
+			..Dot_green.." {companion_damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".", -- Фас! -- руоф Приказ убивать
+	},
 	--[+ ABILITY 3-4 - Engage +]--
-	-- ["loc_talent_adamant_charge_longer_distance_desc"] = { -- charge_ability_name: Break the Line, distance: 7.5, m->meters
-		-- en = CKWord("+", "n_plus_rgb").."{distance:%s} meters to the distance of {charge_ability_name:%s}.",
-		-- ru = CKWord("+", "n_plus_rgb").."{distance:%s} метров к расстоянию способности {charge_ability_name:%s}.", -- Дальний прорыв -- руоф К бою
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_charge_longer_distance_desc"] = { -- charge_ability_name: Break the Line, distance: 7.5, m->meters
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{distance:%s} meters to the distance of {charge_ability_name:%s}.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{distance:%s} метров к расстоянию способности {charge_ability_name:%s}.", -- Дальний прорыв -- руоф К бою
+	},
 --[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 	--[+ KEYSTONE 1 - Unleashed Brutality +]--
-	-- ["loc_talent_adamant_cyber_mastiff_elites_desc"] = { -- damage: +25%, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." to Elite and Specialist Enemies dealt by your Cyber-Mastiff.\n"
-			-- .."Elite and Specialist Enemies become its Primary targets.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." элитным врагам и специалистам для вашего кибермастифа.\n"
-			-- .."Элитные враги и специалисты становятся приоритетными целями для него.", -- Высвобожденнная жестокость
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_cyber_mastiff_elites_desc"] = { -- damage: +25%, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." to Elite and Specialist Enemies dealt by your Cyber-Mastiff.\n"
+			.."\n"
+			.."Elite and Specialist Enemies become its Primary targets.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." элитным врагам и специалистам для вашего кибермастифа.\n"
+			.."\n"
+			.."Элитные враги и специалисты становятся его приоритетными целями.", -- Высвобожденнная жестокость
+	},
 	--[+ KEYSTONE 2 - Lone Wolf +]--
-	-- ["loc_talent_adamant_disable_companion_replenish_desc"] = { -- tdr: +15%, attack_speed: +10%, damage: +10%, time: 60, s->seconds, +colors
-		-- en = "You are no longer accompanied by your Cyber-Mastiff, but gain:\n"
-			-- ..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- ..Dot_green.." {attack_speed:%s} Attack Speed,\n"
-			-- ..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb")..",\n"
-			-- ..Dot_green.." {charges:%s} increased Charges on your Blitz Abilities, and you replenish a charge of your Blitz Ability every {time:%s} seconds.",
-		-- ru = "Вам больше не помогает кибермастиф, но вы получаете усиления:\n"
-			-- ..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
-			-- ..Dot_green.." {attack_speed:%s} к скорости атаки,\n"
-			-- ..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..",\n"
-			-- ..Dot_green.." {charges:%s} заряд блица, а также ваш блиц теперь восстанавливает заряд раз в {time:%s} секунд.", -- Одинокий волк
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_disable_companion_replenish_split_desc"] = { -- tdr: +15%, attack_speed: +10%, damage: +10%, time: 60, s->seconds, +colors
+		en = "You are no longer accompanied by your Cyber-Mastiff, but gain:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed,\n"
+			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".\n"
+			.."\n"
+			.."Blitz Ability:\n"
+			..Dot_green.." {charges:%s} max charge.\n"
+			..Dot_green.." "..CNumb("1", "n_1_rgb").." charge replenished every:\n"
+			.."    "..Dot_green.." {grenade_time:%s} seconds - {grenade_blitz_name:%s},\n"
+			.."    "..Dot_green.." {time_shock_mine:%s} seconds - {shock_mine_name:%s}.",
+		ru = "Вам больше не помогает кибермастиф, но вы получаете:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки,\n"
+			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".\n"
+			.."\n"
+			.."Усиление Блица:\n"
+			..Dot_green.." {charges:%s} заряд.\n"
+			..Dot_green.." "..CNumb("1", "n_1_rgb").." заряд восстанавливается каждые:\n"
+			.."    "..Dot_green.." {grenade_time:%s} секунд - {grenade_blitz_name:%s},\n"
+			.."    "..Dot_green.." {time_shock_mine:%s} секунд - {shock_mine_name:%s}.", -- Одинокий волк
+	},
 	--[+ KEYSTONE 3 - Go Get 'Em! +]--
-	-- ["loc_talent_adamant_cyber_mastiff_ranged_desc"] = { -- !damage!: +50%, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." to Ranged Enemies dealt by your Cyber-Mastiff.\n"
-			-- .."Ranged Enemies become its Primary targets.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." дальнобойным врагам для вашего кибермастифа.\n"
-			-- .."Дальнобойные враги становятся приоритетными целями для него.", -- Взять их!
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_cyber_mastiff_ranged_desc"] = { -- !damage!: +50%, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." to Ranged Enemies dealt by your Cyber-Mastiff.\n"
+			.."\n"
+			.."Ranged Enemies become its Primary targets.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." дальнобойным врагам для вашего кибермастифа.\n"
+			.."\n"
+			.."Дальнобойные враги становятся его приоритетными целями.", -- Взять их!
+	},
 	--[+ KEYSTONE 4 - Execution Order +]--
-	-- ["loc_talent_execution_order_description"] = { -- toughness: 15%, dog_damage: +150%, time: 8, damage: +15%, attack_speed: +10%, s->seconds, +colors
-		-- en = "Periodically mark Elites, Specialists and Bosses for Mercy Sanction. Killing a "..CKWord("Marked Enemy", "Markedenemy_rgb").." replenishes {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
-			-- .."\n"
-			-- .."Your Cyber-Mastiff gains for {time:%s} seconds after attacking a "..CKWord("Marked Enemy", "Markedenemy_rgb")..":\n"
-			-- ..Dot_green.." {dog_damage:%s} Cyber-Mastiff "..CKWord("Damage", "Damage_rgb")..".\n"
-			-- .."\n"
-			-- .."You gain for {time:%s} seconds after killing a "..CKWord("Marked Enemy", "Markedenemy_rgb")..":\n"
-			-- ..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
-			-- ..Dot_green.." {attack_speed:%s} Attack Speed.",
-		-- ru = "Элитные враги, специалисты и боссы периодически помечаются для Санкции милосердия. Убийство "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru").." восстанавливает {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
-			-- .."\n"
-			-- .."Ваш кибермастиф получает на {time:%s} секунд после атаки "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru")..":\n"
-			-- ..Dot_green.." {dog_damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".\n"
-			-- .."\n"
-			-- .."Вы получаете на {time:%s} секунд после убийства "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru")..":\n"
-			-- ..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
-			-- ..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Метка возмездия -- Приказ казнить
-		-- fr = ,
-	-- },
+	["loc_talent_execution_order_description"] = { -- toughness: 15%, dog_damage: +150%, time: 8, damage: +10%, attack_speed: +10%, s->seconds, +colors
+		en = "Periodically mark Elites, Specialists and Bosses for Mercy Sanction. Killing a "..CKWord("Marked Enemy", "Markedenemy_rgb").." replenishes:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
+			.."\n"
+			.."Your Cyber-Mastiff gains for {time:%s} seconds after attacking a "..CKWord("Marked Enemy", "Markedenemy_rgb")..":\n"
+			..Dot_green.." {dog_damage:%s} Cyber-Mastiff "..CKWord("Damage", "Damage_rgb")..".\n"
+			.."\n"
+			.."You gain for {time:%s} seconds after killing a "..CKWord("Marked Enemy", "Markedenemy_rgb")..":\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed.",
+		ru = "Периодически вы помечаете элитных врагов, специалистов и боссов для Санкции милосердия. Убийство "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru").." восстанавливает:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
+			.."\n"
+			.."Ваш кибермастиф получает на {time:%s} секунд после атаки "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru")..":\n"
+			..Dot_green.." {dog_damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			.."\n"
+			.."Вы получаете на {time:%s} секунд после убийства "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru")..":\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Метка возмездия -- Приказ казнить
+	},
 	--[+ KEYSTONE 4-1 - Efficient Killer +]--
-	-- ["loc_talent_execution_order_crit_description"] = { -- crit_chance: +10%, crit_damage: +25%, time: 8, s->seconds, +colors
-		-- en = "On killing a "..CKWord("Marked Enemy", "Markedenemy_rgb")..", you gain:\n"
-			-- ..Dot_green.." {crit_chance:%s} "..CKWord("Crit Chance", "Crt_chance_rgb").." and\n"
-			-- ..Dot_green.." {crit_damage:%s} "..CKWord("Crit Damage", "Crt_dmg_r_rgb")..".\n"
-			-- ..Dot_nc.." Lasts {time:%s} seconds.",
-		-- ru = "При убийстве "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru").." вы получаете:\n"
-			-- ..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." и\n"
-			-- ..Dot_green.." {crit_damage:%s} к "..CKWord("критическому урону", "krit_uronu_rgb_ru")..".\n"
-			-- ..Dot_nc.." Длится {time:%s} секунд.", -- Эффективный убийца
-		-- fr = ,
-	-- },
+	["loc_talent_execution_order_crit_description"] = { -- crit_chance: +10%, crit_damage: +25%, time: 8, s->seconds, +colors
+		en = "On killing a "..CKWord("Marked Enemy", "Markedenemy_rgb")..", you gain:\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("Crit Chance", "Crt_chance_rgb").." and\n"
+			..Dot_green.." {crit_damage:%s} "..CKWord("Crit Damage", "Crt_dmg_r_rgb")..".\n"
+			..Dot_nc.." Lasts {time:%s} seconds.",
+		ru = "При убийстве "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru").." вы получаете:\n"
+			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." и\n"
+			..Dot_green.." {crit_damage:%s} к "..CKWord("критическому урону", "krit_uronu_rgb_ru")..".\n"
+			..Dot_nc.." Длится {time:%s} секунд.", -- Эффективный убийца
+	},
 	--[+ KEYSTONE 4-2 - Malocator +]--
-	-- ["loc_talent_execution_order_cdr_on_kill_description"] = { -- regen: +50%, time: 8, s->seconds, +colors
-		-- en = "{regen:%s} "..CKWord("Cooldown", "Cd_rgb").." Regeneration for {time:%s} seconds after killing a "..CKWord("Marked Enemy", "Markedenemy_rgb")..".",
-		-- ru = "{regen:%s} к "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." на {time:%s} секунд после убийства "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru")..".", -- Малокатор
-		-- fr = ,
-	-- },
+	["loc_talent_execution_order_cdr_on_kill_description"] = { -- regen: +50%, time: 8, s->seconds, +colors
+		en = Dot_green.." {regen:%s} "..CKWord("Cooldown", "Cd_rgb").." Regeneration for {time:%s} seconds after killing a "..CKWord("Marked Enemy", "Markedenemy_rgb")..".",
+		ru = Dot_green.." {regen:%s} к "..CKWord("восстановлению способности", "vost_sposobnosti_rgb_ru").." на {time:%s} секунд после убийства "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru")..".", -- Малокатор
+	},
 	--[+ KEYSTONE 4-3 - No Lenience +]--
-	-- ["loc_talent_execution_order_command_applies_brittleness_description"] = { -- rending: +10%, time: 8, s->seconds, +colors
-		-- en = "{rending:%s} "..CKWord("Rending", "Rending_rgb").." for {time:%s} seconds after killing a "..CKWord("Marked Enemy", "Markedenemy_rgb")..".",
-		-- ru = "{rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." на {time:%s} секунд после убийства "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru")..".", -- Нетерпимость
-		-- fr = ,
-	-- },
+	["loc_talent_execution_order_command_applies_brittleness_description"] = { -- rending: +10%, time: 8, s->seconds, +colors
+		en = Dot_green.." {rending:%s} "..CKWord("Rending", "Rending_rgb").." for {time:%s} seconds after killing a "..CKWord("Marked Enemy", "Markedenemy_rgb")..".",
+		ru = Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони на {time:%s} секунд после убийства "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru")..".", -- Нетерпимость
+	},
 	--[+ KEYSTONE 4-4 - Keeping Protocol +]--
-	-- ["loc_talent_execution_order_perma_buff_new_description"] = { -- damage: +1%, damage_red: +1%, max_stacks: 30, +colors
-		-- en = "Killing a "..CKWord("Marked Enemy", "Markedenemy_rgb").." grants:\n"
-			-- ..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Monstrosities and\n"
-			-- ..Dot_green.." {damage_red:%s} "..CKWord("Damage", "Damage_rgb").." Resistance vs Monstrosities.\n"
-			-- ..Dot_nc.." {max_stacks:%s} Max Stacks.\n"
-			-- ..Dot_nc.." Lasts until the end of the Mission.",
-		-- ru = "Убийство "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru").." даёт:\n"
-			-- ..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." монстрам и\n"
-			-- ..Dot_green.." {damage_red:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." от монстров.\n"
-			-- ..Dot_nc.." Максимум {max_stacks:%s} зарядов.\n"
-			-- ..Dot_nc.." Длится до конца миссии.", -- Соблюдение протокола -- руоф Поддердание протокола
-		-- fr = ,
-	-- },
+	["loc_talent_execution_order_perma_buff_new_description"] = { -- damage: +1%, damage_red: +1%, max_stacks: 30, +colors
+		en = "Killing a "..CKWord("Marked Enemy", "Markedenemy_rgb").." grants:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Monstrosities and\n"
+			..Dot_green.." {damage_red:%s} "..CKWord("Damage", "Damage_rgb").." Resistance vs Monstrosities.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			..Dot_nc.." Lasts until the end of the Mission.",
+		ru = "Убийство "..CKWord("Отмеченного врага", "Markedenemy_rgb_ru").." даёт:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." чудовищам и\n"
+			..Dot_green.." {damage_red:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." от чудовищ.\n"
+			..Dot_nc.." Максимум {max_stacks:%s} зарядов.\n"
+			..Dot_nc.." Длится до конца миссии.", -- Соблюдение протокола -- руоф Поддердание протокола
+	},
 	--[+ KEYSTONE 4-5 - Not Far Behind +]--
-	-- ["loc_talent_adamant_pinning_dog_bonus_moving_towards_description"] = { -- movement_speed: +10%, damage: +10%, time: 5, s->seconds, +colors
-		-- en = "After Pounce you gain for {time:%s} seconds:\n"
-			-- ..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
-			-- ..Dot_green.." {movement_speed:%s} Movement Speed.",
-		-- ru = "После нападения на врага вашего кибермастифа вы получаете на {time:%s} секунд:\n"
-			-- ..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
-			-- ..Dot_green.." {movement_speed:%s} к скорости движения.", -- В зоне досягаемости -- руоф Не так далеко позади
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_pinning_dog_bonus_moving_towards_description"] = { -- movement_speed: +10%, damage: +10%, time: 5, s->seconds, +colors
+		en = "After Pounce you gain for {time:%s} seconds:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed.",
+		ru = "После нападения вашего кибермастифа на врага вы получаете на {time:%s} секунд:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
+			..Dot_green.." {movement_speed:%s} к скорости движения.", -- В зоне досягаемости -- руоф Не так далеко позади
+	},
 	--[+ KEYSTONE 5 - Terminus Warrant +]--
-	-- ["loc_talent_adamant_terminus_warrant_shortened_alt_desc"] = { -- max_stacks: 30, melee_remove: 1, melee_damage: +15%, melee_impact: +25%, ranged_remove: 1, ranged_damage: +15%, ranged_cleave: +50%, suppression: +50%, +colors
-		-- en = "Ranged Attacks grant Stacks of "..CKWord("Melee Justice", "Meleejust_rgb").." for each Enemy Hit, up to {max_stacks:%s}. Melee Hits remove {melee_remove:%s} Stack.\n"
-			-- .."While you have Stacks of "..CKWord("Melee Justice", "Meleejust_rgb")..", gain:\n"
-			-- ..Dot_green.." {melee_damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." and\n"
-			-- ..Dot_green.." {melee_impact:%s} Melee "..CKWord("Impact", "Impact_rgb")..".\n"
-			-- .."\n"
-			-- .."Melee Hits grant Stacks of "..CKWord("Ranged Justice", "Rangedjust_rgb")..", up to {max_stacks:%s}. Ranged Attacks remove {ranged_remove:%s} Stack for each Enemy Hit.\n"
-			-- .."While you have Stacks of "..CKWord("Ranged Justice", "Rangedjust_rgb")..", gain:\n"
-			-- ..Dot_green.." {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- ..Dot_green.." {ranged_cleave:%s} Ranged "..CKWord("Cleave", "Cleave_rgb").." and\n"
-			-- ..Dot_green.." {suppression:%s} Suppression.",
-		-- ru = "Дальнобойные атаки дают заряды "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru").." за каждый удар по врагу, до {max_stacks:%s} зарядов. Удар в ближнем бою снимает {melee_remove:%s} заряд.\n"
-			-- .."Пока у вас есть заряды "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru")..", вы получаете усиления для ближнего боя:\n"
-			-- ..Dot_green.." {melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
-			-- ..Dot_green.." {melee_impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..".\n"
-			-- .."\n"
-			-- .."Атаки ближнего боя дают заряды  "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru").." за каждое попадание по врагу, до {max_stacks:%s} зарядов. Дальнобойная атака снимает {ranged_remove:%s} заряд.\n"
-			-- .."Пока у вас есть заряды "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..", вы получаете усиления для дальнобойных атак:\n"
-			-- ..Dot_green.." {ranged_damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru")..",\n"
-			-- ..Dot_green.." {suppression:%s} к подавлению и\n"
-			-- ..Dot_green.." {ranged_cleave:%s} к "..CKWord("прострелу", "prostrelu_rgb_ru").." в дальнем бою.", -- Ордер Терминус -- руоф Распоряжение «Терминус»
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_terminus_warrant_shortened_alt_desc"] = { -- max_stacks: 30, melee_remove: 1, melee_damage: +15%, melee_impact: +25%, ranged_remove: 1, ranged_damage: +15%, ranged_cleave: +50%, suppression: +50%, +colors
+		en = "Ranged Attacks grant Stacks of "..CKWord("Melee Justice", "Meleejust_rgb").." for each Enemy Hit, up to {max_stacks:%s}.\n"
+			.."Melee Hits remove {melee_remove:%s} Stack.\n"
+			.."While you have Stacks of "..CKWord("Melee Justice", "Meleejust_rgb")..", gain:\n"
+			..Dot_green.." {melee_damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {melee_impact:%s} Melee "..CKWord("Impact", "Impact_rgb")..".\n"
+			.."\n"
+			.."Melee Hits grant Stacks of "..CKWord("Ranged Justice", "Rangedjust_rgb")..", up to {max_stacks:%s}.\n"
+			.."Ranged Attacks remove {ranged_remove:%s} Stack for each Enemy Hit.\n"
+			.."While you have Stacks of "..CKWord("Ranged Justice", "Rangedjust_rgb")..", gain:\n"
+			..Dot_green.." {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
+			..Dot_green.." {ranged_cleave:%s} Ranged "..CKWord("Cleave", "Cleave_rgb").." and\n"
+			..Dot_green.." {suppression:%s} Suppression.",
+		ru = "Дальнобойные атаки дают заряды "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru").." за каждого поражённого врага, до {max_stacks:%s} зарядов.\n"
+			.."Удары ближнего боя снимают {melee_remove:%s} заряд.\n"
+			.."Пока у вас есть заряды "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru")..", вы получаете:\n"
+			..Dot_green.." {melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя и\n"
+			..Dot_green.." {melee_impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." в ближнем бою.\n"
+			.."\n"
+			.."Удары ближнего боя дают заряды "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..", до {max_stacks:%s} зарядов.\n"
+			.."Дальнобойные атаки снимают {ranged_remove:%s} заряд за каждого поражённого врага.\n"
+			.."Пока у вас есть заряды "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..", вы получаете:\n"
+			..Dot_green.." {ranged_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." дальнего боя,\n"
+			..Dot_green.." {ranged_cleave:%s} к "..CKWord("прострелу", "prostrelu_rgb_ru").." врагов и\n"
+			..Dot_green.." {suppression:%s} к подавлению.", -- Ордер Терминус -- руоф Распоряжение «Терминус»
+	},
 	--[+ KEYSTONE 5-1 - Dispense Justice +]--
-	-- ["loc_talent_adamant_terminus_warrant_ranged_alt_desc"] = { -- reload_speed: +20%, +colors
-		-- en = "{reload_speed:%s} Reload Speed while you have Stacks of "..CKWord("Ranged Justice", "Rangedjust_rgb")..".",
-		-- ru = "{reload_speed:%s} к скорости перезарядки пока у вас есть заряды "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..".", -- Исполнение приговора -- руоф Охват правосудия
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_terminus_warrant_ranged_alt_desc"] = { -- reload_speed: +20%, +colors
+		en = "While you have Stacks of "..CKWord("Ranged Justice", "Rangedjust_rgb").." you gain:\n"
+			..Dot_green.." {reload_speed:%s} Reload Speed.",
+		ru = "Пока у вас есть заряды "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..", вы получаете:\n"
+			..Dot_green.." {reload_speed:%s} к скорости перезарядки.", -- Исполнение приговора -- руоф Охват правосудия
+	},
 	--[+ KEYSTONE 5-2 - Obstinate +]--
-	-- ["loc_talent_adamant_terminus_warrant_upgrade_alt_desc"] = { -- swap_stacks: 15, melee_attack_speed: +15%, fire_rate: +15%, +colors
-		-- en = "Swapping to your Melee Weapon while you have {swap_stacks:%s} "..CKWord("Melee Justice", "Meleejust_rgb").." Stacks or more, grants you:\n"
-			-- ..Dot_green.." {melee_attack_speed:%s} Melee Attack Speed until you run out of Stacks, or swap to your Ranged Weapon.\n"
-			-- .."\n"
-			-- .."Swapping to your Ranged Weapon while you have {swap_stacks:%s} "..CKWord("Ranged Justice", "Rangedjust_rgb").." Stacks or more, grants you:\n"
-			-- ..Dot_green.." {fire_rate:%s} Fire Rate until you run out of Stacks, or swap to your Melee Weapon.",
-		-- ru = "Переключение на оружие ближнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru")..", вы получаете:\n"
-			-- ..Dot_green.." {melee_attack_speed:%s} к скорости атак ближнего боя пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n"
-			-- .."\n"
-			-- .."Переключение на оружие дальнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..", вы получаете:\n"
-			-- ..Dot_green.." {fire_rate:%s} к скорострельности пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.", -- Непреклонный -- руоф Упрямый
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_terminus_warrant_upgrade_alt_desc"] = { -- swap_stacks: 15, melee_attack_speed: +15%, fire_rate: +15%, +colors
+		en = "Swapping to your Melee Weapon while you have {swap_stacks:%s} "..CKWord("Melee Justice", "Meleejust_rgb").." Stacks or more, grants you:\n"
+			..Dot_green.." {melee_attack_speed:%s} Melee Attack Speed until you run out of Stacks, or swap to your Ranged Weapon.\n"
+			.."\n"
+			.."Swapping to your Ranged Weapon while you have {swap_stacks:%s} "..CKWord("Ranged Justice", "Rangedjust_rgb").." Stacks or more, grants you:\n"
+			..Dot_green.." {fire_rate:%s} Fire Rate until you run out of Stacks, or swap to your Melee Weapon.",
+		ru = "Переключение на оружие ближнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru")..", даёт вам:\n"
+			..Dot_green.." {melee_attack_speed:%s} к скорости атак ближнего боя пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n"
+			.."\n"
+			.."Переключение на оружие дальнего боя пока у вас есть как минимум {swap_stacks:%s} зарядов "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..", даёт вам:\n"
+			..Dot_green.." {fire_rate:%s} к скорострельности пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.", -- Непреклонный -- руоф Упрямый
+	},
 	--[+ KEYSTONE 5-3 - Terminal Decree +]--
-	-- ["loc_talent_adamant_terminus_warrant_toughness_desc"] = { -- melee_toughness: +100%, toughness: 25%, +colors
-		-- en = "While you have stacks of "..CKWord("Melee Justice", "Meleejust_rgb")..", you gain additional:\n"
-			-- ..Dot_green.." {melee_toughness:%s} Melee "..CKWord("Toughness", "Toughness_rgb").." Regeneration, and Allies in "..CKWord("Coherency", "Coherency_rgb").." Replenish:\n"
-			-- ..Dot_green.." {toughness:%s} of any "..CKWord("Toughness", "Toughness_rgb").." that you Replenish.",
-		-- ru = "Пока у вас есть заряды "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru")..", вы дополнительно получаете:\n"
-			-- ..Dot_green.." {melee_toughness:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." в ближнем бою, а союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." восстанавливают:\n"
-			-- ..Dot_green.." {toughness:%s} любой "..CKWord("стойкости", "stoikosti_rgb_ru")..", восстановленной вами.", -- Последний приговор -- руоф Окончательное постановление
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_terminus_warrant_toughness_desc"] = { -- melee_toughness: +100%, toughness: 25%, +colors
+		en = "While you have stacks of "..CKWord("Melee Justice", "Meleejust_rgb")..", you gain additional:\n"
+			..Dot_green.." {melee_toughness:%s} Melee "..CKWord("Toughness", "Toughness_rgb").." Regeneration.\n"
+			.."\n"
+			.."Allies in "..CKWord("Coherency", "Coherency_rgb").." replenish:\n"
+			..Dot_green.." {toughness:%s} of any "..CKWord("Toughness", "Toughness_rgb").." that you replenish.",
+		ru = "Пока у вас есть заряды "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru")..", вы дополнительно получаете:\n"
+			..Dot_green.." {melee_toughness:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." в ближнем бою.\n"
+			.."\n"
+			.."Союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." восстанавливают:\n"
+			..Dot_green.." {toughness:%s} любой "..CKWord("стойкости", "stoikosti_rgb_ru")..", восстановленной вами.", -- Последний приговор -- руоф Окончательное постановление
+	},
 	--[+ KEYSTONE 5-4 - Writ of Judgement +]--
-	-- ["loc_talent_adamant_terminus_warrant_improved_alt_desc"] = { -- talent_max_stacks: 30, melee_rending: +15%, crit_damage: +25%, weakspot_damage: +25%, +colors
-		-- en = "Swapping to your Melee Weapon while at {talent_max_stacks:%s} "..CKWord("Melee Justice", "Meleejust_rgb").." Stacks grants you:\n"
-			-- ..Dot_green.." {melee_rending:%s} Melee "..CKWord("Rending", "Rending_rgb").." until you run out of Stacks, or swap to your Ranged Weapon.\n"
-			-- .."\n"
-			-- .."Swapping to your Ranged Weapon while at {talent_max_stacks:%s} "..CKWord("Ranged Justice", "Rangedjust_rgb").." Stacks grants you:\n"
-			-- ..Dot_green.." {crit_damage:%s} "..CKWord("Critical Strike Damage", "Crit_strike_dmg_rgb").." and\n"
-			-- ..Dot_green.." {weakspot_damage:%s} "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb").." until you run out of Stacks, or swap to your Melee Weapon.",
-		-- ru = "Переключение на оружие ближнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru")..", вы получаете:\n"
-			-- ..Dot_green.." {melee_rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." в ближнем бою пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n\n"
-			-- .."Переключение на оружие дальнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..", вы получаете:\n"
-			-- ..Dot_green.." {crit_damage:%s} к "..CKWord("критическому урону", "krit_uronu_rgb_ru").." и\n"
-			-- ..Dot_green.." {weakspot_damage:%s} к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru").." пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.", -- Судебный ордер -- руоф Судебное предписание
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_terminus_warrant_improved_alt_desc"] = { -- talent_max_stacks: 30, melee_rending: +15%, crit_damage: +25%, weakspot_damage: +25%, +colors
+		en = "Swapping to your Melee Weapon while at {talent_max_stacks:%s} "..CKWord("Melee Justice", "Meleejust_rgb").." Stacks grants you:\n"
+			..Dot_green.." {melee_rending:%s} Melee "..CKWord("Rending", "Rending_rgb").." until you run out of Stacks, or swap to your Ranged Weapon.\n"
+			.."\n"
+			.."Swapping to your Ranged Weapon while at {talent_max_stacks:%s} "..CKWord("Ranged Justice", "Rangedjust_rgb").." Stacks grants you:\n"
+			..Dot_green.." {crit_damage:%s} "..CKWord("Critical Strike Damage", "Crit_strike_dmg_rgb").." and\n"
+			..Dot_green.." {weakspot_damage:%s} "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb").." until you run out of Stacks, or swap to your Melee Weapon.",
+		ru = "Переключение на оружие ближнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..CKWord("Судьи-рукопашника", "Meleejust_rgb_ru")..", даёт вам:\n"
+			..Dot_green.." {melee_rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони в ближнем бою пока заряды не кончатся или пока вы не переключитесь на дальнобойное оружие.\n"
+			.."\n"
+			.."Переключение на оружие дальнего боя пока у вас есть {talent_max_stacks:%s} зарядов "..CKWord("Судьи-стрелка", "Rangedjust_rgb_ru")..", даёт вам:\n"
+			..Dot_green.." {crit_damage:%s} к "..CKWord("критическому урону", "krit_uronu_rgb_ru").." и\n"
+			..Dot_green.." {weakspot_damage:%s} к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru").." пока заряды не кончатся или пока вы не переключитесь на оружие ближнего боя.", -- Судебный ордер -- руоф Судебное предписание
+	},
 	--[+ KEYSTONE 6 - Forceful +]--
-	-- ["loc_talent_adamant_forceful_base_alt_desc"] = { -- forceful_name: Forceful, duration: 5, stacks: 10, impact: +5%, dr: +2.5%, s->seconds, +colors
-		-- en = CKWord("Staggering", "Staggering_rgb").." Hits and Blocked Attacks grant Stacks of "..CKWord("Forceful", "Forceful_rgb")..". Lasting {duration:%s} seconds and Stacking {stacks:%s} times. Each Stack gives:\n"
-			-- ..Dot_green.." {impact:%s} "..CKWord("Impact", "Impact_rgb").." and\n"
-			-- ..Dot_green.." {dr:%s} "..CKWord("Damage", "Damage_rgb").." Resistance.\n"
-			-- .."Remove Stack on "..CKWord("Damage", "Damage_rgb").." taken.",
-		-- ru = CKWord("Ошеломляющие", "Oshelomlauschie_rgb_ru").." удары и заблокированные атаки дают заряды "..CKWord("Неудержимости", "Forceful_rgb_ru")..". Длится {duration:%s} секунд и суммируется до {stacks:%s} раз. Каждый заряд даёт:\n"
-			-- ..Dot_green.." {impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." и\n"
-			-- ..Dot_green.." {dr:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".\n"
-			-- ..Dot_nc.." Заряд снимается при получении "..CKWord("урона", "urona_rgb_ru")..".", -- Неудержимый -- руоф Напористый
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_forceful_base_alt_desc"] = { -- forceful_name: Forceful, duration: 5, stacks: 10, impact: +5%, dr: +2.5%, s->seconds, +colors
+		en = CKWord("Staggering", "Staggering_rgb").." Hits and Blocked Attacks grant Stacks of "..CKWord("Forceful", "Forceful_rgb")..".\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {stacks:%s} times.\n"
+			.."\n"
+			.."Each Stack gives:\n"
+			..Dot_green.." {impact:%s} "..CKWord("Impact", "Impact_rgb").." and\n"
+			..Dot_green.." {dr:%s} "..CKWord("Damage", "Damage_rgb").." Resistance.\n"
+			.."\n"
+			..Dot_red.." Remove Stack on "..CKWord("Damage", "Damage_rgb").." taken.",
+		ru = CKWord("Ошеломляющие", "Oshelomlauschie_rgb_ru").." удары и заблокированные атаки дают заряды "..CKWord("Неудержимости", "Forceful_rgb_ru")..".\n"
+			..Dot_nc.." Длится {duration:%s} секунд.\n"
+			..Dot_nc.." Складывается до {stacks:%s} раз.\n"
+			.."\n"
+			.."Каждый заряд даёт:\n"
+			..Dot_green.." {impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." и\n"
+			..Dot_green.." {dr:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			.."\n"
+			..Dot_red.." Заряды снимаются при получении "..CKWord("урона", "urona_rgb_ru")..".", -- Неудержимый -- руоф Напористый
+	},
 	--[+ KEYSTONE 6-1 - Adamant Will +]--
-	-- ["loc_talent_adamant_forceful_stun_immune_and_block_all_linger_desc"] = { -- duration: 3, s->seconds, +colors
-		-- en = CKWord("Stun", "Stun_rgb").." Immunity while having "..CNumb("10", "n_10_rgb").." Stacks of "..CKWord("Forceful", "Forceful_rgb").." and for {duration:%s} seconds after dropping below "..CNumb("10", "n_10_rgb").." Stacks.\n"
-			-- .."Your Perfect blocks can block All Attacks.",
-		-- ru = "Пока у вас "..CNumb("10", "n_10_rgb").." зарядов "..CKWord("Неудержимости", "Forceful_rgb_ru").." и на {duration:%s} секунды после того, как количество зарядов падает ниже "..CNumb("10", "n_10_rgb")..", вы получаете иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru")..".\n"
-			-- .."Ваши идеальные блоки могут блокировать любые атаки.", -- Адамантовая воля
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_forceful_stun_immune_and_block_all_linger_desc"] = { -- duration: 3, s->seconds, +colors
+		en = "While having "..CNumb("10", "n_10_rgb").." Stacks of "..CKWord("Forceful", "Forceful_rgb").." and for {duration:%s} seconds after dropping below "..CNumb("10", "n_10_rgb").." Stacks you gain:\n"
+			..Dot_green.." "..CKWord("Stun", "Stun_rgb").." Immunity and\n"
+			..Dot_green.." Perfect blocks can block All Attacks.",
+		ru = "Пока у вас "..CNumb("10", "n_10_rgb").." зарядов "..CKWord("Неудержимости", "Forceful_rgb_ru").." и на {duration:%s} секунды после того, как количество зарядов упадёт ниже "..CNumb("10", "n_10_rgb")..", вы получаете:\n"
+			..Dot_green.." Иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru")..",\n"
+			..Dot_green.." Идеальные блоки могут блокировать все атаки.", -- Адамантовая воля
+	},
 	--[+ KEYSTONE 6-2 - Will of the Lex +]--
-	-- ["loc_talent_adamant_forceful_toughness_regen_per_stack_desc"] = { -- toughness: +0.5%, +colors
-		-- en = "Replenish {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." each second per Stack.",
-		-- ru = "Восстанавливается {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." каждую секунду за заряд "..CKWord("Неудержимости", "Forceful_rgb_ru")..".",
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_forceful_toughness_regen_per_stack_desc"] = { -- toughness: +0.5%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished each second per "..CKWord("Forceful", "Forceful_rgb").." Stack.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается каждую секунду за заряд "..CKWord("Неудержимости", "Forceful_rgb_ru")..".",
+	},
 	--[+ KEYSTONE 6-3 - Targets Acquired +]--
-	-- ["loc_talent_adamant_forceful_melee_alt_desc"] = { -- duration: 3, attack_speed: +10%, cleave: +50%, s->seconds, +colors
-		-- en = "While at Max Stacks, and for {duration:%s} seconds afterwards, gain:\n"
-			-- ..Dot_green.." {attack_speed:%s} Attack Speed and\n"
-			-- ..Dot_green.." {cleave:%s} "..CKWord("Cleave", "Cleave_rgb")..".",
-		-- ru = "Пока у вас "..CNumb("10", "n_10_rgb").." зарядов "..CKWord("Неудержимости", "Forceful_rgb_ru").." и на {duration:%s} секунды после того, как количество зарядов падает ниже "..CNumb("10", "n_10_rgb")..", вы получаете:\n"
-			-- ..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." и\n"
-			-- ..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Цели обнаружены
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_forceful_melee_alt_desc"] = { -- duration: 3, attack_speed: +10%, cleave: +50%, s->seconds, +colors
+		en = "While having "..CNumb("10", "n_10_rgb").." Stacks of "..CKWord("Forceful", "Forceful_rgb").." and for {duration:%s} seconds after dropping below "..CNumb("10", "n_10_rgb").." Stacks you gain:\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed and\n"
+			..Dot_green.." {cleave:%s} "..CKWord("Cleave", "Cleave_rgb")..".",
+		ru = "Пока у вас "..CNumb("10", "n_10_rgb").." зарядов "..CKWord("Неудержимости", "Forceful_rgb_ru").." и на {duration:%s} секунды после того, как количество зарядов упадёт ниже "..CNumb("10", "n_10_rgb")..", вы получаете:\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки и\n"
+			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." врагов.", -- Цели обнаружены
+	},
 	--[+ KEYSTONE 6-4 - Arbites Vigilant +]--
-	-- ["loc_talent_adamant_forceful_ability_damage"] = { -- strength: +2.5%, duration: 10, s->seconds, +colors
-		-- en = "On "..CKWord("Combat Ability", "Combat_ability_rgb").." use, you spend all Stacks and gain for each Stack:\n"
-			-- ..Dot_green.." {strength:%s} "..CKWord("Strength", "Strength_rgb")..".\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.",
-		-- ru = "При использовании "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..", вы тратите все заряды и получаете за каждый заряд:\n"
-			-- ..Dot_green.." {strength:%s} к "..CKWord("силе", "sile_rgb_ru")..".\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.", -- Бдительный Арбитрес -- руоф Бдительность Арбитрес
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_forceful_ability_damage"] = { -- strength: +2.5%, duration: 10, s->seconds, +colors
+		en = "On "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use, you spend all Stacks and gain per Stack:\n"
+			..Dot_green.." {strength:%s} "..CKWord("Strength", "Strength_rgb")..".\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
+		ru = "При использовании "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы тратите все заряды и получаете за каждый из них:\n"
+			..Dot_green.." {strength:%s} к "..CKWord("силе", "sile_rgb_ru")..".\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Бдительный Арбитрес -- руоф Бдительность Арбитрес
+	},
 	--[+ KEYSTONE 6-5 - Judicial Force +]--
-	-- ["loc_talent_adamant_forceful_stagger_on_low_high_desc"] = { -- low_stacks: 0, high_stacks: 10, cooldown: 5, s->seconds, +colors
-		-- en = CKWord("Stagger", "Stagger_rgb").." nearby Enemies upon reaching {low_stacks:%s} Stacks or {high_stacks:%s} Stacks of "..CKWord("Forceful", "Forceful_rgb")..".\n"
-			-- ..Dot_nc.." Cooldown {cooldown:%s} seconds. Cooldown is separate for {low_stacks:%s} Stacks and for {high_stacks:%s} Stacks.",
-		-- ru = "Ближайшие враги получают "..CKWord("ошеломление", "oshelomlenie_rgb_ru").." при достижении вами {low_stacks:%s} или {high_stacks:%s} зарядов "..CKWord("Неудержимости", "Forceful_rgb_ru")..".\n"
-			-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунд. Восстановление раздельное для {low_stacks:%s} зарядов и для {high_stacks:%s} зарядов.", -- Сила правосудия -- руоф Судебная сила
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_forceful_stagger_on_low_high_desc"] = { -- low_stacks: 0, high_stacks: 10, cooldown: 5, s->seconds, +colors
+		en = CKWord("Stagger", "Stagger_rgb").." nearby Enemies upon reaching {low_stacks:%s} Stacks or {high_stacks:%s} Stacks of "..CKWord("Forceful", "Forceful_rgb")..".\n"
+			..Dot_nc.." Cooldown {cooldown:%s} seconds.\n"
+			..Dot_nc.." Cooldown is separate for {low_stacks:%s} Stacks and for {high_stacks:%s} Stacks.",
+		ru = "Вы "..CKWord("ошеломляете", "oshelomlaete_rgb_ru").." ближайших врагов при достижении вами {low_stacks:%s} или {high_stacks:%s} зарядов "..CKWord("Неудержимости", "Forceful_rgb_ru")..".\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
+			..Dot_nc.." Восстановление раздельное для {low_stacks:%s} зарядов и для {high_stacks:%s} зарядов.", -- Сила правосудия -- руоф Судебная сила
+	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - No Escape +]--
-	-- ["loc_talent_adamant_elite_special_kills_offensive_boost_alt_desc"] = { -- damage: +10%, movement_speed: +10%, duration: 4, s->seconds, +colors
-		-- en = "On Elite or Specialist Kill, gain:\n"
-			-- ..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
-			-- ..Dot_green.." {movement_speed:%s} Movement Speed.\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.",
-		-- ru = "После убийства элитного врага или специалиста, вы получаете:\n"
-			-- ..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
-			-- ..Dot_green.." {movement_speed:%s} к скорости движения.\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунды.", -- Не уйдёшь -- руоф Не сбежишь
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_elite_special_kills_offensive_boost_alt_desc"] = { -- damage: +10%, movement_speed: +10%, duration: 4, s->seconds, +colors
+		en = "On Elite or Specialist Kill, gain:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
+		ru = "После убийства элитного врага или специалиста, вы получаете:\n" -- Не уйдёшь -- руоф Не сбежишь
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
+			..Dot_green.." {movement_speed:%s} к скорости движения.\n"
+			..Dot_nc.." Длится {duration:%s} секунды.",
+	},
 	--[+ Passive 2 - Withering Fire +]--
-	-- ["loc_talent_adamant_damage_after_reloading_desc"] = { -- damage: +15%, duration: 5, s->seconds, +colors
-		-- en = "{damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Reloading.",
-		-- ru = "{damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после перезарядки.", -- Истребляющий огонь -- Изнуряющий огонь
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_damage_after_reloading_desc"] = { -- damage: +15%, duration: 5, s->seconds, +colors
+		en = Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Reloading.",
+		ru = Dot_green.." {damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после перезарядки.", -- Истребляющий огонь -- Изнуряющий огонь
+	},
 	--[+ Passive 3 - Hammer of Judgement +]--
-	-- ["loc_talent_adamant_multiple_hits_attack_speed_desc"] = { -- melee_attack_speed: +10%, duration: 3, hits: 3, s->seconds
-		-- en = "{melee_attack_speed:%s} Melee Attack Speed for {duration:%s} seconds on hitting {hits:%s} or more enemies with a Melee Attack.",
-		-- ru = "{melee_attack_speed:%s} к скорости атак ближнего боя на {duration:%s} секунды при попадании по {hits:%s} или более врагам атакой ближнего боя.", -- Молот Правосудия -- руоф Молот правосудия
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_multiple_hits_attack_speed_desc"] = { -- melee_attack_speed: +10%, duration: 3, hits: 3, s->seconds
+		en = Dot_green.." {melee_attack_speed:%s} Melee Attack Speed for {duration:%s} seconds on hitting {hits:%s} or more enemies with a Melee Attack.",
+		ru = Dot_green.." {melee_attack_speed:%s} к скорости атак ближнего боя на {duration:%s} секунды при попадании по {hits:%s} или более врагам атакой ближнего боя.", -- Молот Правосудия -- руоф Молот правосудия
+	},
 	--[+ Passive 4 - Razor-Jaw Augment +]--
-	-- ["loc_talent_adamant_dog_pounces_bleed_nearby_desc"] = { -- stacks: 8, +colors
-		-- en = "{stacks:%s} Stacks of "..CKWord("Bleed", "Bleed_rgb").." applies to Enemies knocked away by your Cyber Mastiff's Pounce.",
-		-- ru = "{stacks:%s} зарядов "..CKWord("кровотечения", "krovotechenia_rgb_ru").." применяется к врагам, опрокинутым вашим кибермастифом.", -- Аугментация челюсти-бритвы -- руоф Аугментация челюстей: бритва
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_dog_pounces_bleed_nearby_desc"] = { -- stacks: 8, +colors
+		en = Dot_green.." {stacks:%s} Stacks of "..CKWord("Bleed", "Bleed_rgb").." applied to Enemies knocked away by your Cyber Mastiff's Pounce.",
+		ru = Dot_green.." {stacks:%s} зарядов "..CKWord("кровотечения", "krovotechenia_rgb_ru").." применяется к врагам, опрокинутым вашим кибермастифом.", -- Аугментация челюсти-бритвы -- руоф Аугментация челюстей: бритва
+	},
 	--[+ Passive 5 - Target Neutralised +]--
-	-- ["loc_talent_adamant_elite_special_kills_replenish_toughness_desc"] = { -- instant_toughness: 10%, toughness: 10%, duration: 4, s->seconds, +colors
-		-- en = "{instant_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes instantly, and {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {duration:%s} seconds, on Elite or Specialist Kill.",
-		-- ru = "{instant_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается сразу и ещё {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за {duration:%s} секунды после убийства элитных врагов или специалистов.", -- Цель уничтожена -- руоф Цель нейтрализована
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_elite_special_kills_replenish_toughness_desc"] = { -- instant_toughness: 10%, toughness: 10%, duration: 4, s->seconds, +colors
+		en = "On Elite or Specialist Kill you replenish:\n"
+			..Dot_green.." {instant_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." instantly and\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {duration:%s} seconds.",
+		ru = "При убийстве элитного врага или специалиста вы восстанавливаете:\n"
+			..Dot_green.." {instant_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." мгновенно и\n"
+			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в течение {duration:%s} секунд.", -- Цель уничтожена -- руоф Цель нейтрализована
+	},
 	--[+ Passive 6 - Up Close +]--
-	-- ["loc_talent_adamant_close_kills_restore_toughness_desc"] = { -- toughness: 5%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes on Close Kill.",
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве на ближней дистанции.", -- В упор -- руоф Лицом к лицу
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_close_kills_restore_toughness_desc"] = { -- toughness: 5%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished after killing enemy within "..CNumb("12.5", "n_12_5_rgb").." meters.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве на дистанции до "..CNumb("12.5", "n_12_5_rgb").." метров.", -- В упор -- руоф Лицом к лицу
+	},
 	--[+ Passive 7 - Force of Will +]--
-	-- ["loc_talent_adamant_staggers_replenish_toughness_melee_desc"] = { -- toughness: 10%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes on "..CKWord("Staggering", "Staggering_rgb").." Melee Attack.",
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при "..CKWord("ошеломлении", "oshelomlenii_rgb_ru").." врага атакой ближнего боя.", -- Сила воли
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_staggers_replenish_toughness_melee_desc"] = { -- toughness: 10%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on "..CKWord("Staggering", "Staggering_rgb").." Melee Attack.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при "..CKWord("ошеломлении", "oshelomlenii_rgb_ru").." врага атакой ближнего боя.", -- Сила воли
+	},
 	--[+ Passive 8 - Retaliatory Force +]--
-	-- ["loc_talent_adamant_perfect_block_damage_boost_alt_desc"] = { -- block_cost: 15%, damage: +15%, attack_speed: +10%, duration: 8, s->seconds, +colors
-		-- en = "Gain {block_cost:%s} Reduced Block Cost.\n"
-			-- .."On Perfect Block gain for {duration:%s} seconds:\n"
-			-- ..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
-			-- ..Dot_green.." {attack_speed:%s} Attack Speed.",
-		-- ru = "На {block_cost:%s} снижены затраты выносливости на блокирование.\n"
-			-- .."При идеальном блокировании вы получаете на {duration:%s} секунд:\n"
-			-- ..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
-			-- ..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Сила возмездия
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_perfect_block_damage_boost_alt_desc"] = { -- block_cost: 15%, damage: +15%, attack_speed: +15%, duration: 8, s->seconds, +colors
+		en = Dot_green.." "..CNumb("-", "n_minus_rgb").."{block_cost:%s} Block Cost.\n"
+			.."\n"
+			.."On Perfect Block you gain for {duration:%s} seconds:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed.",
+		ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{block_cost:%s} затрат "..CKWord("выносливости", "vynoslivosti_rgb_ru").." на блок.\n" -- Сила возмездия
+			.."\n"
+			.."При идеальном блокировании вы получаете на {duration:%s} секунд:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
+			..Dot_green.." {attack_speed:%s} к скорости атаки.",
+	},
 	--[+ Passive 9 - Man and Cyber-Mastiff +]--
-	-- ["loc_talent_adamant_toughness_regen_near_companion_desc"] = { -- toughness: 5%, range: 8, m->meters, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes per second while Cyber-Mastiff is within {range:%s} meters of you.",
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду пока ваш кибермастиф в пределах {range:%s} метров от вас.", -- Человек и кибермастиф
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_toughness_regen_near_companion_desc"] = { -- toughness: 5%, range: 8, m->meters, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished per second while Cyber-Mastiff is within {range:%s} meters of you.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду пока ваш кибермастиф в пределах {range:%s} метров от вас.", -- Человек и кибермастиф
+	},
 	--[+ Passive 10 - Walk It Off +]--
-	-- ["loc_talent_adamant_stamina_spent_replenish_toughness_desc"] = { -- stamina: 1, toughness: 15%, duration: 3, s->seconds, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes over {duration:%s} seconds per {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." spent.",
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за {duration:%s} секунды за каждую единицу потраченной "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- Заживёт на ходу -- руоф Остынь --{stamina:%s}
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_stamina_spent_replenish_toughness_desc"] = { -- stamina: 1, toughness: 15%, duration: 3, s->seconds, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished over {duration:%s} seconds per {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." spent.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за {duration:%s} секунды за каждую единицу потраченной "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- Заживёт на ходу -- руоф Остынь --{stamina:%s}
+	},
 	--[+ Passive 11 - Shield Plates +]--
-	-- ["loc_talent_adamant_shield_plates_alt_desc"] = { -- toughness: 15%, duration: 3, perfect_toughness: 10%, cooldown: 1, s->second, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes over {duration:%s} seconds on successful Block.\n"
-			-- .."{perfect_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." instantly replenishes on Perfect Block.\n"
-			-- ..Dot_nc.." Cooldown {cooldown:%s} second.",
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за {duration:%s} секунды при успешном блоке.\n"
-			-- .."{perfect_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." мгновенно восполняется при идеальном блоке.\n"
-			-- ..Dot_nc.." Восстанавливается {cooldown:%s} секунду.", -- Щитовые пластины -- руоф Пластинчатые щиты
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_shield_plates_alt_desc"] = { -- toughness: 15%, duration: 3, perfect_toughness: 10%, cooldown: 1, s->second, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished over {duration:%s} seconds on successful Block.\n"
+			.."\n"
+			..Dot_green.." {perfect_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." instantly replenished on Perfect Block.\n"
+			.."\n"
+			..Dot_nc.." Cooldown {cooldown:%s} second.",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за {duration:%s} секунды при успешном блоке.\n"
+			.."\n"
+			..Dot_green.." {perfect_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." мгновенно восполняется при идеальном блоке.\n"
+			.."\n"
+			..Dot_nc.." Восстанавливается {cooldown:%s} секунду.", -- Щитовые пластины -- руоф Пластинчатые щиты
+	},
 	--[+ Passive 12 - Arbitrator Armour +]--
-	-- ["loc_talent_adamant_armor_desc"] = { -- toughness: +25, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".", -- Броня арбитратора -- руоф Броня Арбитратора
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_armor_desc"] = { -- toughness: +25, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".", -- Броня арбитратора -- руоф Броня Арбитратора
+	},
 	--[+ Passive 13 - Voltaic Mandibles Augment +]--
-	-- ["loc_talent_adamant_dog_attacks_electrocute_desc"] = { -- duration: 5, s->seconds, +colors
-		-- en = "Your Cyber-Mastiff "..CKWord("Electrocutes", "Electrocutes_rgb").." Enemies it attacks for {duration:%s} seconds.",
-		-- ru = "Ваш кибермастиф поражает "..CKWord("электрошоком", "elektroshokom_rgb_ru").." врагов на {duration:%s} секунд при атаке.", -- Аугментация Вольтаические жвала -- руоф Аугментация челюстей: электрошок
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_dog_attacks_electrocute_desc"] = { -- duration: 5, s->seconds, +colors
+		en = "Your Cyber-Mastiff "..CKWord("Electrocutes", "Electrocutes_rgb").." Enemies it attacks for {duration:%s} seconds.",
+		ru = "Ваш кибермастиф поражает "..CKWord("электрошоком", "elektroshokom_rgb_ru").." врагов на {duration:%s} секунд при атаке.", -- Аугментация Вольтаические жвала -- руоф Аугментация челюстей: электрошок
+	},
 	--[+ Passive 14 - Ammo Belt +]--
-	-- ["loc_talent_adamant_ammo_belt_desc"] = { -- ammo: +25%
-		-- en = "{ammo:%s} Ammo Capacity.",
-		-- ru = "{ammo:%s} к боезапасу.", -- Патронтаж -- руоф Поясная разгрузка
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_ammo_belt_desc"] = { -- ammo: +25%
+		en = Dot_green.." {ammo:%s} Ammo Capacity.",
+		ru = Dot_green.." {ammo:%s} к боезапасу.", -- Патронтаж -- руоф Поясная разгрузка
+	},
 	--[+ Passive 15 - Concussive +]--
-	-- ["loc_talent_adamant_melee_weakspot_hits_count_as_stagger_desc"] = { -- duration: 4, s->seconds, +colors
-		-- en = "Melee "..CKWord("Weakspot Hits", "Weakspothits_rgb").." make the Enemy count as "..CKWord("Staggered", "Staggered_rgb").." for {duration:%s} seconds.",
-		-- ru = "Попадания в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою "..CKWord("ошеломляют", "oshelomlaut_rgb_ru").." врагов на {duration:%s} секунды.", -- Ошеломление -- руоф Сотрясение
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_melee_weakspot_hits_count_as_stagger_desc"] = { -- duration: 4, s->seconds, +colors
+		en = "Melee "..CKWord("Weakspot Hits", "Weakspothits_rgb").." make the Enemy count as "..CKWord("Staggered", "Staggered_rgb").." for {duration:%s} seconds.",
+		ru = "Попадания в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою "..CKWord("ошеломляют", "oshelomlaut_rgb_ru").." врагов на {duration:%s} секунды.", -- Ошеломление -- руоф Сотрясение
+	},
 	--[+ Passive 16 - Canine Morale +]--
-	-- ["loc_talent_adamant_pinning_dog_kills_buff_allies_description"] = { -- tdr: +20%, toughness: +10%, duration: 5, s->seconds, +colors
-		-- en = "Killing Pounced Targets grants for you and Allies in "..CKWord("Coherency", "Coherency_rgb").." over {duration:%s} seconds:\n"
-			-- ..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." and\n"
-			-- ..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb")..".",
-		-- ru = "Убийство врага, прижатого кибермастифом к земле, даёт вам и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." на {duration:%s} секунд:\n"
-			-- ..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." и\n"
-			-- ..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..".", -- Боевой настрой пса -- руоф Собачий настрой
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_pinning_dog_kills_buff_allies_description"] = { -- tdr: +20%, toughness: +10%, duration: 5, s->seconds, +colors
+		en = "Killing Pounced Targets grants for you and Allies in "..CKWord("Coherency", "Coherency_rgb").." for {duration:%s} seconds:\n"
+			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..",\n"
+			..Dot_green.." "..CNumb("2%", "pc_2_rgb").." "..CKWord("Toughness", "Toughness_rgb").." per second, up to {toughness:%s}.",
+		ru = "Убийство врага, прижатого кибермастифом к земле, даёт вам и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." на {duration:%s} секунд:\n" -- Боевой настрой пса -- руоф Собачий настрой
+			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." и\n"
+			..Dot_green.." "..CNumb("2%", "pc_2_rgb").." восстановления "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду, вплоть до {toughness:%s}.",
+	},
 	--[+ Passive 17 - Imposing Force +]--
-	-- ["loc_talent_adamant_damage_reduction_after_elite_kill_desc"] = { -- damage_reduction: +25%, duration: 5, s->seconds, +colors
-		-- en = "{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Resistance for {duration:%s} seconds after Elite or Specialist Kill.",
-		-- ru = "{damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после убийства элитного врага или специалиста.", -- Давящая мощь -- руоф Впечатляющая сила
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_damage_reduction_after_elite_kill_desc"] = { -- damage_reduction: +25%, duration: 5, s->seconds, +colors
+		en = Dot_green.." {damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Resistance for {duration:%s} seconds after Elite or Specialist Kill.",
+		ru = Dot_green.." {damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после убийства элитного врага или специалиста.", -- Давящая мощь -- руоф Впечатляющая сила
+	},
 	--[+ Passive 18 - Suppression Force +]--
-	-- ["loc_talent_adamant_staggered_enemies_deal_less_damage_desc"] = { -- damage: -20%, duration: 5, s->seconds, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." dealt by Enemies successfully "..CKWord("Staggered", "Staggered_rgb").." by Melee Attacks, Pushes, and direct impacts of "..CKWord("Break the Line", "BreakZLine_rgb")..".\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." от врагов, "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." вами с помощью атак ближнего боя, толчков или прямых столкновений способности "..CKWord("Прорыв вражеского строя", "BreakZLined_rgb_ru")..".\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.", -- Сила подавления
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_staggered_enemies_deal_less_damage_desc"] = { -- damage: -20%, duration: 5, s->seconds, +colors
+		en = "Enemies "..CKWord("Staggered", "Staggered_rgb").." by Melee Attacks, Pushes, and direct impacts of "..CKWord("Break the Line", "BreakZLine_rgb").." deal:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
+		ru = "Враги, "..CKWord("ошеломлённые", "oshelomlennye_rgb_ru").." вами с помощью атак ближнего боя, толчков или прямых столкновений способности "..CKWord("Прорыв вражеского строя", "BreakZLined_rgb_ru")..", наносят:\n"
+			..Dot_green.." {damage:%s} "..CKWord("урона", "urona_rgb_ru")..".\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Сила подавления
+	},
 	--[+ Passive 19 - Suppression Protocols +]--
-	-- ["loc_talent_adamant_hitting_multiple_gives_tdr_desc"] = { -- hits: 3, tdr: +20%, duration: 5, s->seconds, +colors
-		-- en = "{tdr:%s} "..CKWord("Toughness Damage Reduction", "Toughness_dmg_red_rgb").." for {duration:%s} seconds after hitting {hits:%s} or more Enemies with an Attack.",
-		-- ru = "{tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." на {duration:%s} секунд после попадания атакой по {hits:%s} или более врагам.", -- Протоколы подавления
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_hitting_multiple_gives_tdr_desc"] = { -- hits: 3, tdr: +20%, duration: 5, s->seconds, +colors
+		en = "Hitting {hits:%s} or more enemies with an Attack grants you for {duration:%s} seconds:\n"
+			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
+		ru = "После попадания атакой по {hits:%s} или более врагам даёт вам на {duration:%s} секунд:\n"
+			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..".", -- Протоколы подавления
+	},
 	--[+ Passive 20 - Plasteel Plates +]--
-	-- ["loc_talent_adamant_plasteel_plates_desc"] = { -- toughness: +25, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".", -- Пласталевые пластины -- руоф Пластины из пластали
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_plasteel_plates_desc"] = { -- toughness: +25, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
+		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".", -- Пласталевые пластины -- руоф Пластины из пластали
+	},
 	--[+ Passive 21 - Arbites Revelatum +]--
-	-- ["loc_talent_adamant_dodge_grants_damage_desc"] = { -- damage: 15%, duration: 5, s->seconds, +colors
-		-- en = CKWord("+", "n_plus_rgb").."{damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Successful Dodge.",
-		-- ru = CKWord("+", "n_plus_rgb").."{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд при успешном уклонении.", -- Арбитрес Ревелатум
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_dodge_grants_damage_desc"] = { -- damage: 15%, duration: 5, s->seconds, +colors
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Successful Dodge.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд при успешном уклонении.", -- Арбитрес Ревелатум
+	},
 	--[+ Passive 22 - Justified Measures +]--
-	-- ["loc_talent_adamant_stacking_damage_desc"] = { -- damage: +3%, stacks: 5, duration: 5, s->seconds, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." on Successful Attack.\n"
-			-- ..Dot_nc.." {stacks:%s} Max Stacks.\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." при успешной атаке.\n"
-			-- ..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.", -- Оправданные меры
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_stacking_damage_desc"] = { -- damage: +3%, stacks: 5, duration: 5, s->seconds, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." on Successful Attack.\n"
+			..Dot_nc.." {stacks:%s} Max Stacks.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." при успешной атаке.\n"
+			..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Оправданные меры
+	},
 	--[+ Passive 23 - Hold the Line +]--
-	-- ["loc_talent_adamant_staggers_reduce_damage_taken_alt_desc"] = { -- normal_stacks: 1, damage_taken_multiplier: +3%, max_stacks: 5, ogryn_stacks: 5, +colors
-		-- en = CKWord("Staggering", "Staggering_rgb").." an Enemy grants {normal_stacks:%s} Stack of {damage_taken_multiplier:%s} "..CKWord("Damage", "Damage_rgb").." Resistance, on the next Melee hit taken.\n"
-			-- ..Dot_nc.." Stacking {max_stacks:%s} times.\n"
-			-- .."\n"
-			-- ..CKWord("Staggering", "Staggering_rgb").." Non-Human Sized Enemies grants {ogryn_stacks:%s} Stacks.",
-		-- ru = CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." врага даёт {normal_stacks:%s} заряд {damage_taken_multiplier:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." для следующего полученного удара в ближнем бою.\n"
-			-- ..CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." врагов больше человеческого роста даёт {ogryn_stacks:%s} зарядов.\n"
-			-- ..Dot_nc.." Суммируется максимум {max_stacks:%s} раз.\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.", -- Держи строй -- руоф Держать строй
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_staggers_reduce_damage_taken_alt_desc"] = { -- normal_stacks: 1, damage_taken_multiplier: +3%, max_stacks: 5, duration: 8, ogryn_stacks: 5, +colors
+		en = CKWord("Staggering", "Staggering_rgb").." an Enemy grants {normal_stacks:%s} Stack of {damage_taken_multiplier:%s} "..CKWord("Damage", "Damage_rgb").." Resistance, on the next Melee hit taken.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			.."\n"
+			..CKWord("Staggering", "Staggering_rgb").." Non-Human Sized Enemies grants {ogryn_stacks:%s} Stacks.",
+		ru = CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." врага даёт {normal_stacks:%s} заряд {damage_taken_multiplier:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." для следующего полученного удара в ближнем бою.\n"
+			..Dot_nc.." Суммируется {max_stacks:%s} раз.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.\n"
+			.."\n"
+			..CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." врагов больше человеческого роста даёт {ogryn_stacks:%s} зарядов.", -- Держи строй -- руоф Держать строй
+	},
 	--[+ Passive 24 - Judicious Efficiency +]--
-	-- ["loc_talent_adamant_elite_special_kills_reload_speed_desc"] = { -- reload_speed: 20%
-		-- en = CKWord("+", "n_plus_rgb").."{reload_speed:%s} Reload Speed on next reload after Elite or Specialist Kill.",
-		-- ru = CKWord("+", "n_plus_rgb").."{reload_speed:%s} к скорости следующей перезарядки после убийства элитного врага или специалиста.", -- Судейская эффективность -- руоф Разумная эффективность
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_elite_special_kills_reload_speed_desc"] = { -- reload_speed: 20%
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} Reload Speed on next reload after Elite or Specialist Kill.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} к скорости следующей перезарядки после убийства элитного врага или специалиста.", -- Судейская эффективность -- руоф Разумная эффективность
+	},
 	--[+ Passive 25 - Rapid Movement +]--
-	-- ["loc_talent_adamant_sprinting_sliding_description"] = { -- speed: +5%, duration: 5, stamina: +5%, cd: 0.75, s->seconds, +colors
-		-- en = "{speed:%s} Sprint Speed for {duration:%s} seconds after Sliding.\n"
-			-- .."{stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." after killing Enemies.\n"
-			-- ..Dot_nc.." Cooldown {cd:%s} seconds.",
-		-- ru = "{speed:%s} к скорости бега на {duration:%s} секунд после подката.\n"
-			-- .."{stamina:%s} к "..CKWord("выносливости", "vynoslivosti_rgb_ru").." после убийства врага.\n"
-			-- ..Dot_nc.." Восстанавливается {cd:%s} секунды.", -- Быстрые движения -- руоф Быстрое перемещение
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_sprinting_sliding_description"] = { -- speed: +5%, duration: 5, stamina: +5%, cd: 0.75, s->seconds, +colors
+		en = Dot_green.." {speed:%s} Sprint Speed for {duration:%s} seconds after Sliding.\n"
+			.."\n"
+			..Dot_green.." {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." on Kill.\n"
+			..Dot_nc.." Cooldown {cd:%s} seconds.",
+		ru = Dot_green.." {speed:%s} к скорости бега на {duration:%s} секунд после подката.\n"
+			.."\n"
+			..Dot_green.." {stamina:%s} к "..CKWord("выносливости", "vynoslivosti_rgb_ru").." после убийства врага.\n"
+			..Dot_nc.." Восстанавливается {cd:%s} секунды.", -- Быстрые движения -- руоф Быстрое перемещение
+	},
 	--[+ Passive 26 - Rebreather +]--
-	-- ["loc_talent_adamant_rebreather_desc"] = { -- corruption: +20%, toxic_reduction: +75%, +colors
-		-- en = "{corruption:%s} "..CKWord("Corruption", "Corruption_rgb").." Resistance and\n"
-			-- .."{toxic_reduction:%s} Reduced "..CKWord("Damage", "Damage_rgb").." taken from Toxic Gas.",
-		-- ru = "{corruption:%s} к сопротивлению "..CKWord("порче", "porche_rgb_ru").." и\n"
-			-- .."{toxic_reduction:%s} к снижению "..CKWord("урона", "urona_rgb_ru")..", получаемого от токсичного газа.", -- Ребризер -- руоф Противогаз
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_rebreather_desc"] = { -- corruption: +20%, toxic_reduction: +75%, +colors
+		en = Dot_green.." {corruption:%s} "..CKWord("Corruption", "Corruption_rgb").." Resistance and\n"
+			..Dot_green.." {toxic_reduction:%s} Reduced "..CKWord("Damage", "Damage_rgb").." taken from Toxic Gas.",
+		ru = Dot_green.." {corruption:%s} к сопротивлению "..CKWord("порче", "porche_rgb_ru").." и\n"
+			..Dot_green.." {toxic_reduction:%s} к снижению "..CKWord("урона", "urona_rgb_ru")..", получаемого от токсичного газа.", -- Ребризер -- руоф Противогаз
+	},
 	--[+ Passive 27 - Cower, Miscreants! +]--
-	-- ["loc_talent_adamant_damage_vs_suppressed_desc"] = { -- damage_vs_suppressed: +25%, +colors
-		-- en = "{damage_vs_suppressed:%s} "..CKWord("Damage", "Damage_rgb").." vs Suppressed Enemies.",
-		-- ru = "{damage_vs_suppressed:%s} к "..CKWord("урону", "uronu_rgb_ru").." подавленным врагам.", -- Трепещите, негодяи!
-		-- fr = ,
-	-- },
-	--[+ Passive 28 - Target the Weak +]-- DOUBLE!
-	-- ["loc_talent_ogryn_big_bully_heavy_hits_new_desc"] = { 
-		-- en = ,
-		-- ru = , -- Цель - слабаки
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_damage_vs_suppressed_desc"] = { -- damage_vs_suppressed: +25%, +colors
+		en = Dot_green.." {damage_vs_suppressed:%s} "..CKWord("Damage", "Damage_rgb").." vs Suppressed Enemies.",
+		ru = Dot_green.." {damage_vs_suppressed:%s} к "..CKWord("урону", "uronu_rgb_ru").." подавленным врагам.", -- Трепещите, негодяи!
+	},
+
+	--[+ Passive 28 - Target the Weak +]-- DOUBLE! OGRYN - Passive 45 - Hard Knocks
+	-- ["loc_talent_ogryn_big_bully_heavy_hits_new_desc"] = {  },
+
 	--[+ Passive 29 - The Emperor's Fist +]--
-	-- ["loc_talent_adamant_first_melee_hit_increased_damage_desc"] = { -- damage: +15%, impact: +30%, +colors
-		-- en = "{damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." and\n"
-			-- .."{impact:%s} "..CKWord("Impact", "Impact_rgb").." on first Enemy hit with each attack.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя и\n"
-			-- .."{impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." первого врага в каждой атаке.", -- Кулак Императора
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_first_melee_hit_increased_damage_desc"] = { -- damage: +15%, impact: +30%, +colors
+		en = "Your first Melee strike against a target also applies:\n"
+			..Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {impact:%s} "..CKWord("Impact", "Impact_rgb")..".",
+		ru = "Первый удар ближнего боя по цели также приняет к ней дополнительно:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя и\n"
+			..Dot_green.." {impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..".", -- Кулак Императора
+	},
 	--[+ Passive 30 - Zealous Dedication +]--
-	-- ["loc_talent_adamant_crit_chance_on_kill_desc"] = { -- crit_chance: 2%, max_stacks: 8, duration: 10, s->seconds, +colors
-		-- en = CKWord("+", "n_plus_rgb").."{crit_chance:%s} "..CKWord("Critical Strike Chance", "Crit_chance_r_rgb").." on Kill.\n"
-			-- ..Dot_nc.." {max_stacks:%s} Stacks.\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.",
-		-- ru = CKWord("+", "n_plus_rgb").."{crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." при убийстве.\n"
-			-- ..Dot_nc.." До {max_stacks:%s} зарядов.\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.", -- Фанатичная преданность
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_crit_chance_on_kill_desc"] = { -- crit_chance: 2%, max_stacks: 8, duration: 10, s->seconds, +colors
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb").." on Kill.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." при убийстве.\n"
+			..Dot_nc.." Суммируется {max_stacks:%s} раз.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Фанатичная преданность
+	},
 	--[+ Passive 31 - Street Smarts +]--
-	-- ["loc_talent_adamant_dodge_improvement_desc"] = { -- dodge: +1, dodge_duration: +25%
-		-- en = "{dodge:%s} Effective Dodges and\n"
-			-- .."{dodge_duration:%s} Dodge Duration, increases from "..CNumb("0.2", "n_02_rgb").." to "..CNumb("0.25", "n_025_rgb").." seconds.",
-		-- ru = "{dodge:%s} эффективное уклонение и\n"
-			-- .."{dodge_duration:%s} к длительности уклонения.", -- Уличная хватка -- руоф Законы улицы
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_dodge_improvement_desc"] = { -- dodge: +1, dodge_duration: +25%
+		en = Dot_green.." {dodge:%s} Effective Dodges.\n"
+			.."\n"
+			..Dot_green.." {dodge_duration:%s} Dodge Duration, increased from "..CNumb("0.2", "n_02_rgb").." to "..CNumb("0.25", "n_025_rgb").." seconds.",
+		ru = Dot_green.." {dodge:%s} эффективное уклонение.\n"
+			.."\n"
+			..Dot_green.." {dodge_duration:%s} к длительности уклонения.", -- Уличная хватка -- руоф Законы улицы
+	},
 	--[+ Passive 32 - Drive them Back +]--
-	-- ["loc_talent_adamant_cleave_after_push_desc"] = { -- cleave: 75%, duration: 5, s->seconds, +colors
-		-- en = "{cleave:%s} "..CKWord("Cleave", "Cleave_rgb").." for {duration:%s} seconds on Push.",
-		-- ru = "{cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." на {duration:%s} секунд после толчка.", -- Натиск -- руоф Отбрось их
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_cleave_after_push_desc"] = { -- cleave: 75%, duration: 5, s->seconds, +colors
+		en = "Pushing grants for {duration:%s} seconds:\n"
+			..Dot_green.." {cleave:%s} "..CKWord("Cleave", "Cleave_rgb")..".",
+		ru = "Отталкивание даёт на {duration:%s} секунд:\n"
+			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru")..".", -- Натиск -- руоф Отбрось их
+	},
 	--[+ Passive 33 - Target Selection +]--
-	-- ["loc_talent_adamant_pinning_dog_elite_damage_description"] = { -- damage: +15%, time: 8, s->seconds, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Elites and Specialists after killing a Pounced Elite or Specialist.\n"
-			-- ..Dot_nc.." Lasts {time:%s} seconds.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." элитным врагам и специалистам после убийства такого врага, прижатого вашим кибермастифом.\n"
-			-- ..Dot_nc.." Длится {time:%s} секунд.", -- Выбор целей -- руоф Выбор цели
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_pinning_dog_elite_damage_description"] = { -- damage: +15%, time: 8, s->seconds, +colors
+		en = "Killing a Pounced Elite or Specialist grants:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Elites and Specialists.\n"
+			..Dot_nc.." Lasts {time:%s} seconds.",
+		ru = "Убийство элитного врага или специалиста, прижатого кибермастифом к земле, даёт:\n"
+			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." элитным врагам и специалистам.\n"
+			..Dot_nc.." Длится {time:%s} секунд.", -- Выбор целей -- руоф Выбор цели
+	},
 	--[+ Passive 34 - Soulguilt Scan +]--
-	-- ["loc_talent_adamant_stacking_weakspot_strength_duration_desc"] = { -- strength: 2%, max_stacks: 8, duration: 10, s->seconds, +colors
-		-- en = CKWord("+", "n_plus_rgb").."{strength:%s} "..CKWord("Weakspot", "Weakspot_rgb").." strength after "..CKWord("Weakspot Hits", "Weakspothits_rgb")..".\n"
-			-- ..Dot_nc.." {max_stacks:%s} Max Stacks.\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.",
-		-- ru = CKWord("+", "n_plus_rgb").."{strength:%s} к силе атак в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." после попадания в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n"
-			-- ..Dot_nc.." Максимум {max_stacks:%s} зарядов.\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.", -- Поиск виновных душ
-		-- fr = ,
-	-- },
-	--[+ Passive 35 - Priority Endowment +]--	10.11.2025
+	["loc_talent_adamant_stacking_weakspot_strength_duration_desc"] = { -- strength: 2%, max_stacks: 8, duration: 10, s->seconds, +colors
+		en = CKWord("Weakspot Hits", "Weakspothits_rgb").." grants:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{strength:%s} "..CKWord("Weakspot", "Weakspot_rgb").." attacks strength.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
+		ru = CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru").." даёт:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{strength:%s} к силе атак в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".\n"
+			..Dot_nc.." Суммируется {max_stacks:%s} раз.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Поиск виновных душ
+	},
+	--[+ Passive 35 - Priority Endowment +]--	13.12.2025
 	-- ! Double: Veteran - Passive 39 - Lock and Load !
-	-- ["loc_talent_adamant_clip_size_alt_desc"] = { -- clip_size: +15%
-		-- en = Dot_green.." {clip_size:%s} Clip Size.\n"
-			-- .."\n"
-			-- ..Dot_nc.." Rounded Up.",
-		-- ru = Dot_green.." {clip_size:%s} к размеру магазина.\n"
-			-- .."\n"
-			-- ..Dot_nc.." Округляется в большую сторону.", -- Приоритетное снабжение
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_clip_size_alt_desc"] = { -- clip_size: +15%
+		en = Dot_green.." {clip_size:%s} Clip Size.\n"
+			.."\n"
+			..Dot_nc.." Rounded Up.",
+		ru = Dot_green.." {clip_size:%s} к размеру магазина.\n"
+			.."\n"
+			..Dot_nc.." Округляется в большую сторону.", -- Приоритетное снабжение
+	},
 	--[+ Passive 36 - Target Priority +]--
-	-- ["loc_talent_adamant_increased_damage_to_high_health_desc"] = { -- damage: 15%, health: 75%, +colors
-		-- en = CKWord("+", "n_plus_rgb").."{damage:%s} "..CKWord("Damage", "Damage_rgb").." to Enemies above {health:%s} "..CKWord("Health", "Health_rgb")..".",
-		-- ru = CKWord("+", "n_plus_rgb").."{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." врагам со "..CKWord("здоровьем", "zdoroviem_rgb_ru").." выше {health:%s}.", -- Приоритет целей
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_increased_damage_to_high_health_desc"] = { -- damage: 15%, health: 75%, +colors
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("Damage", "Damage_rgb").." to Enemies above {health:%s} "..CKWord("Health", "Health_rgb")..".",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." врагам со "..CKWord("здоровьем", "zdoroviem_rgb_ru").." выше {health:%s}.", -- Приоритет целей
+	},
 	--[+ Passive 37 - Final Warning +]--
-	-- ["loc_talent_adamant_ranged_damage_on_melee_stagger_desc"] = { -- damage: 15%, duration: 5, s->seconds, +colors
-		-- en = CKWord("+", "n_plus_rgb").."{damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." on Melee "..CKWord("Staggering", "Staggering_rgb").." Hits.\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.",
-		-- ru = CKWord("+", "n_plus_rgb").."{damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." при "..CKWord("ошеломлении", "oshelomlenii_rgb_ru").." врагов ударами в ближнем бою.\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунд.", -- Последнее предупреждение
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_ranged_damage_on_melee_stagger_desc"] = { -- damage: 15%, duration: 5, s->seconds, +colors
+		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." on Melee "..CKWord("Staggering", "Staggering_rgb").." Hits.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
+		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." при "..CKWord("ошеломлении", "oshelomlenii_rgb_ru").." врагов ударами в ближнем бою.\n"
+			..Dot_nc.." Длится {duration:%s} секунд.", -- Последнее предупреждение
+	},
 	--[+ Passive 38 - Weight of the Lex +]--
-	-- ["loc_talent_adamant_heavy_attacks_increase_damage_desc"] = { -- damage: +15%, duration: 5, s->seconds, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Heavy Melee Attack.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после заряженной атаки ближнего боя.", -- Вес Закона
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_heavy_attacks_increase_damage_desc"] = { -- damage: +15%, duration: 5, s->seconds, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Heavy Melee Attack.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после заряженной атаки ближнего боя.", -- Вес Закона
+	},
 	--[+ Passive 39 - Serrated Maw +]--
-	-- ["loc_talent_adamant_dog_applies_brittleness_desc"] = { -- stacks: 6, +colors
-		-- en = "{stacks:%s} Stacks of "..CKWord("Brittleness", "Brittleness_rgb").." on attack applies by your Cyber-Mastiff.",
-		-- ru = "{stacks:%s} зарядов "..CKWord("хрупкости", "hrupkosti_rgb_ru").." при атаке накладывает ваш кибермастиф.", -- Зазубренная пасть
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_dog_applies_brittleness_desc"] = { -- stacks: 6, +colors
+		en = "Your Cyber-Mastiff applies on attack:\n"
+			..Dot_green.." {stacks:%s} Stacks of "..CKWord("Brittleness", "Brittleness_rgb")..".",
+		ru = "Ваш кибермастиф при атаке накладывает:\n"
+			..Dot_green.." {stacks:%s} зарядов "..CKWord("хрупкости", "hrupkosti_rgb_ru")..".", -- Зазубренная пасть
+	},
 	--[+ Passive 40 - Prosecution Blow +]--
-	-- ["loc_talent_adamant_crits_rend_alt_desc"] = { -- rending: +20%, +colors
-		-- en = "{rending:%s} "..CKWord("Rending", "Rending_rgb").." on Ranged "..CKWord("Critical Strike", "Crit_strike_rgb")..".",
-		-- ru = "{rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." при "..CKWord("критическом выстреле", "krit_vystrele_rgb_ru")..".", -- Карающий удар -- руоф Обвиняющий удар
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_crits_rend_alt_desc"] = { -- rending: +20%, +colors
+		en = Dot_green.." {rending:%s} "..CKWord("Rending", "Rending_rgb").." on Ranged "..CKWord("Critical Strike", "Crit_strike_rgb")..".",
+		ru = Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." при "..CKWord("критическом выстреле", "krit_vystrele_rgb_ru")..".", -- Карающий удар -- руоф Обвиняющий удар
+	},
 	--[+ Passive 41 - March +]--
-	-- ["loc_talent_adamant_movement_speed_on_block_alt_desc"] = { -- movement_speed: +15%, duration: 3, s->seconds, +colors
-		-- en = "{movement_speed:%s} Movement Speed on Ranged Hit.\n"
-			-- ..Dot_nc.." Lasts {duration:%s} seconds.",
-		-- ru = "{movement_speed:%s} к скорости движения после любой дальнобойной атаки.\n"
-			-- ..Dot_nc.." Длится {duration:%s} секунды.", -- Марш
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_movement_speed_on_block_alt_desc"] = { -- movement_speed: +15%, duration: 3, s->seconds, +colors
+		en = Dot_green.." {movement_speed:%s} Movement Speed on Ranged Hit.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
+		ru = Dot_green.." {movement_speed:%s} к скорости движения после любой дальнобойной атаки.\n"
+			..Dot_nc.." Длится {duration:%s} секунды.", -- Марш
+	},
 	--[+ Passive 42 - Monstrosity Hunter +]--
-	-- ["loc_talent_adamant_monster_hunter_desc"] = { -- damage: +20%, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." to Ogryns and Monstrosities.",
-		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." огринам и монстрам.", -- Охотник на монстров -- руоф Охота на чудовищ
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_monster_hunter_desc"] = { -- damage: +20%, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." to Ogryns and Monstrosities.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." огринам и чудовищам.", -- Охотник на чудовищ -- руоф Охота на чудовищ
+	},
 	--[+ Passive 43 - Strike Down +]--
-	-- ["loc_talent_adamant_melee_attacks_on_staggered_rend_alt_desc"] = { -- rending: +15%, +colors
-		-- en = "{rending:%s} Melee "..CKWord("Rending", "Rending_rgb").." on "..CKWord("Staggered", "Staggered_rgb").." Enemies.",
-		-- ru = "{rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." в ближнем бою "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." врагам.", -- Сокрушительный удар -- руоф Сбивающий удар
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_melee_attacks_on_staggered_rend_alt_desc"] = { -- rending: +15%, +colors
+		en = Dot_green.." {rending:%s} Melee "..CKWord("Rending", "Rending_rgb").." on "..CKWord("Staggered", "Staggered_rgb").." Enemies.",
+		ru = Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." в ближнем бою "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." врагам.", -- Сокрушительный удар -- руоф Сбивающий удар
+	},
 	--[+ Passive 44 - True Grit +]--
-	-- ["loc_talent_adamant_limit_dmg_taken_from_hits_desc"] = { -- limit: 50, +colors
-		-- en = "Limit the maximum "..CKWord("Health", "Health_rgb").." "..CKWord("Damage", "Damage_rgb").." Taken from an Attack to {limit:%s}.",
-		-- ru = "Максимальный получаемый "..CKWord("урон", "uron_rgb_ru").." "..CKWord("здоровью", "zdoroviu_rgb_ru").." от атак снижается до {limit:%s}.", -- Настоящая закалка -- руоф Истинная выдержка
-		-- fr = ,
-	-- },
+	["loc_talent_adamant_limit_dmg_taken_from_hits_desc"] = { -- limit: 50, +colors
+		en = "Limit the maximum "..CKWord("Health", "Health_rgb").." "..CKWord("Damage", "Damage_rgb").." Taken from an Attack to {limit:%s}.",
+		ru = "Максимальный получаемый "..CKWord("урон", "uron_rgb_ru").." "..CKWord("здоровью", "zdoroviu_rgb_ru").." от атак снижается до {limit:%s}.", -- Настоящая закалка -- руоф Истинная выдержка
+	},
 
 
 --[+ ++HIVE SCUM - ОТБРОС УЛЬЯ++ +]--
@@ -4611,14 +4885,14 @@ local talent_localizations = {
 	-- ["loc_talent_veteran_damage_coherency_desc"] = { -- : +, talent_name: , +colors
 		-- en = Dot_green.." {:%s} Melee "..CKWord("Damage", "Damage_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
 		--[+ АУРА 2 - Хулиган +]--
-		-- ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." в ближнем бою для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",
+		-- ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." в ближнем бою для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",
 		-- ["zh-tw"] = "",
 	-- },
 	--[+ AURA 3 - Anarchist +]--
 	-- ["loc_talent_veteran_movement_speed_coherency_desc"] = { -- : , +colors
 		-- en = Dot_green.." {:%s} "..CKWord("Critical Chance", "Crit_chance_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
 		--[+ АУРА 3 - Анархист +]--
-		-- ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("5%", "pc_5_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",
+		-- ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5%", "pc_5_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",
 		-- ["zh-tw"] = "",
 	-- },
 --[+ +ABILITIES - СПОСОБНОСТИ+ +]--
@@ -4680,9 +4954,9 @@ local talent_localizations = {
 	--[+ ABILITY 2 - Rampage! +]--
 	-- ["loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"] = { -- : , : , s->seconds
 		-- en = "Enter "..CKWord("Rampage", "Rampage_rgb").." gain for "..CNumb("5", "n_5_rgb").." seconds:\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." Melee Attack power,\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." Attack Speed,\n"
-			-- ..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb").." "..CKWord("Damage", "Damage_rgb").." Taken,\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." Melee Attack power,\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." Attack Speed,\n"
+			-- ..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb").." "..CKWord("Damage", "Damage_rgb").." Taken,\n"
 			-- ..Dot_green.." Immunity to "..CKWord("Stuns", "Stuns_rgb")..", and\n"
 			-- ..Dot_green.." Immunity to Suppression.\n"
 			-- .."\n"
@@ -4691,9 +4965,9 @@ local talent_localizations = {
 			-- ..Dot_red.." Exiting "..CKWord("Rampage", "Rampage_rgb").." leaves you exhausted and vulnerable for a "..CNumb("10", "n_10_rgb").." seconds.",
 		--[+ СПОСОБНОСТЬ 2 -  +]--
 		-- ru = "Вы впадаете в "..CKWord("Буйство!", "Rampage_rgb_ru").." и получаете на "..CNumb("5", "n_5_rgb").." секунд:\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." к "..CKWord("силе", "sile_rgb_ru").." атак ближнего боя,\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." к скорости атаки,\n"
-			-- ..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb").." к получаемому "..CKWord("урону", "uronu_rgb_ru")..",\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." к "..CKWord("силе", "sile_rgb_ru").." атак ближнего боя,\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." к скорости атаки,\n"
+			-- ..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb").." к получаемому "..CKWord("урону", "uronu_rgb_ru")..",\n"
 			-- ..Dot_green.." Иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru")..", и\n"
 			-- ..Dot_green.." Иммунитет к подавлению.\n"
 			-- .."\n"
@@ -4782,18 +5056,18 @@ local talent_localizations = {
 	-- ["loc_talent_veteran_snipers_focus_duration_desc"] = { -- : , : , : , : , +colors
 		-- en = "Killing Specials or Elites with a Ranged Weapon gives you Stacks of "..CKWord("Vulture's Mark", "VultsMark_rgb")..".\n"
 			-- .." For every Stack you gain:\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." Movement Speed, and\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." Ranged "..CKWord("Critical Strike Chance", "Crit_chance_r_rgb")..".\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." Movement Speed, and\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." Ranged "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb")..".\n"
 			-- .."\n"
 			-- .." At Max Stacks you also replenish:\n"
 			-- ..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("Toughness", "Toughness_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb").." on Ranged Special and Elite kills.",
 		--[+ КЛЮЧЕВОЙ 1 - Метка стервятника +]--
 		-- ru = "Убийство элитных врагов или специалистов оружием дальнего боя даёт вам заряды "..CKWord("Метки стервятника", "VultsMark_rgb_ru")..".\n"
 			-- .."За каждый заряд вы получаете:\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." к дальнобойному "..CKWord("урону", "uronu_rgb_ru")..",\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." к скорости передвижения, и\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru")..".\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." к дальнобойному "..CKWord("урону", "uronu_rgb_ru")..",\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." к скорости передвижения, и\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru")..".\n"
 			-- .."\n"
 			-- .." При максимуме зарядов вы также восстанавливаете:\n"
 			-- ..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru").." при убийствах элитных врагов или специалистов оружием дальнего боя.",
@@ -4846,14 +5120,14 @@ local talent_localizations = {
 		-- en = "Melee hits grant Stacks of "..CKWord("Adrenaline", "Adren_rgb")..", which are lost over time when not attacking.\n"
 			-- .."\n"
 			-- .." At Max "..CNumb("20", "n_20_rgb").." Stacks you lose all Stacks and gain "..CKWord("Adrenaline Frenzy", "AdrenFr_rgb").." for a "..CNumb("6", "n_6_rgb").." seconds which gives you per Stack:\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." Attack Speed and\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." Melee "..CKWord("Damage", "Damage_rgb")..".",
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." Attack Speed and\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." Melee "..CKWord("Damage", "Damage_rgb")..".",
 		--[+ КЛЮЧЕВОЙ 2 - Адреналиновое безумие +]--
 		-- ru =  "Атаки ближнего боя дают вам заряды "..CKWord("Адреналина", "Adren_rgb_ru")..", которые расходуются со временем, если вы не атакуете врага.\n"
 			-- .."\n"
 			-- .."Набрав максимальные "..CNumb("20", "n_20_rgb").." зарядов, вы тратите все заряды и получаете "..CKWord("Адреналиновое безумие", "AdrenFr_rgb_ru").." на "..CNumb("6", "n_6_rgb").." секунд, которое даёт вам за заряд:\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." к скорости атаки и\n"
-			-- ..Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." в ближнем бою.",
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." к скорости атаки и\n"
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." в ближнем бою.",
 		-- ["zh-tw"] = "",
 	-- },
 	-- ["loc_talent_veteran_improved_tag"] = { -- : , +colors
@@ -4893,10 +5167,10 @@ local talent_localizations = {
 	--[+ KEYSTONE 3 - Chemical Dependency +]--
 	-- ["loc_talent_veteran_weapon_switch_new_description"] = { -- : , +colors
 		-- en = "Using a Stimm grants a Stack of "..CKWord("Dependency", "Depend_rgb").." for "..CNumb("20", "n_20_rgb").." seconds. Each Stack grants:\n"
-			-- ..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("1%", "pc_1_rgb").." "..CKWord("Ability Cooldown", "Ability_cd_rgb")..", up to "..CKWord("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb")..".",
+			-- ..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("1%", "pc_1_rgb").." "..CKWord("Ability Cooldown", "Ability_cd_rgb")..", up to "..CNumb("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb")..".",
 		--[+ КЛЮЧЕВОЙ 3 - Зависимость от химии - Химическая зависимость +]--
 		-- ru = "Использование стима даёт заряд "..CKWord("Зависимости", "Depend_rgb_ru").." на "..CNumb("20", "n_20_rgb").." секунд. Каждый заряд даёт:\n"
-			-- ..Dot_green.." "..CKWord("-", "n_minus_rgb")..CNumb("1%", "pc_1_rgb").." "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru")..", вплоть до "..CKWord("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb")..".",
+			-- ..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("1%", "pc_1_rgb").." "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru")..", вплоть до "..CNumb("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb")..".",
 		-- ["zh-tw"] = "",
 	-- },
 	-- ["loc_talent_veteran_weapon_switch"] = { -- : , +colors
@@ -4951,9 +5225,9 @@ local talent_localizations = {
 
 --[+ Passive  - In Your Face +]--
 	-- ["loc_talent_veteran_increased_damage_based_on_range_new_desc"] = { -- : , +colors
-		-- en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." at a distance within "..CNumb("12.5", "n_12_5_rgb").." meters, which is further increased for a short while after Reloading.",
+		-- en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." at a distance within "..CNumb("12.5", "n_12_5_rgb").." meters, which is further increased for a short while after Reloading.",
 		--[+ Пассивный 2 - Прямо в харю - Прямо в лицо +]--
-		-- ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." в дальнем бою на расстоянии до "..CNumb("12.5", "n_12_5_rgb").." метров. Эффект усиливается на некоторое время после перезарядки.",
+		-- ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." в дальнем бою на расстоянии до "..CNumb("12.5", "n_12_5_rgb").." метров. Эффект усиливается на некоторое время после перезарядки.",
 		-- ["zh-tw"] = "",
 	-- },
 	-- ["loc_talent_veteran_increased_damage_based_on_range"] = { -- : , +colors
@@ -4965,10 +5239,10 @@ local talent_localizations = {
 
 --[+ Passive  - Like the Wind +]--
 	-- ["loc_talent_veteran_movement_bonus_on_toughness_broken_desc"] = { -- : , +colors
-		-- en = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." Sprint Dodge Angle.\n"
+		-- en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." Sprint Dodge Angle.\n"
 			-- ..Dot_green.." You can Sprint Dodge even without "..CKWord("Stamina", "Stamina_rgb")..".",
 		-- [+ Пассивный 2 - Словно ветер +]--
-		-- ru = Dot_green.." "..CKWord("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." к углу уклонения.\n"
+		-- ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." к углу уклонения.\n"
 			-- ..Dot_green.." Вы можете уклоняться даже если ваш уровень "..CKWord("выносливости", "vynoslivosti_rgb_ru").." на нуле.",
 		-- ["zh-tw"] = "",
 	-- },
