@@ -181,7 +181,7 @@ local weapon_localizations = {
 			en = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..CKWord("Stamina", "Stamina_rgb").." Cost Reduction for Sprinting",
 			ru = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." к снижению затрат "..CKWord("выносливости", "vynoslivosti_rgb_ru").." на бег",
 			-- fr = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." de réduction du coût d'"..COLORS_KWords_fr.Stamina_rgb_fr.." de la course",
-			-- ["zh-tw"] = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..COLORS_KWords_tw.Stamina_se_rgb_tw, -- 衝刺體力消耗
+			["zh-tw"] = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..CKWord("Stamina", "Stamina_se_rgb_tw"), -- 衝刺體力消耗
 			-- ["zh-cn"] = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." 疾跑"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."效益", -- 疾跑效益
 		},
 

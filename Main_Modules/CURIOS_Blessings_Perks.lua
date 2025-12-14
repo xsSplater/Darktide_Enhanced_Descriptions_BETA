@@ -69,7 +69,7 @@ local curios_localizations = {
 			en = CNumb("{max_health_modifier:%s}", "maxhlth_rgb").." Maximum "..CKWord("Health", "Health_rgb"),
 			ru = CNumb("{max_health_modifier:%s}", "maxhlth_rgb").." к максимальному "..CKWord("здоровью", "zdoroviu_rgb_ru"),
 			-- fr = CKWord({max_health_modifier:%s}, "maxhlth_rgb").." de "..CKWord("", "Health_rgb_fr").." Maximum",
-			-- ["zh-tw"] = CKWord({max_health_modifier:%s}, "maxhlth_rgb").." "..CKWord("", "Health_m_rgb_tw"),
+			["zh-tw"] = CNumb("{max_health_modifier:%s}", "maxhlth_rgb").." "..CKWord("Health", "Health_m_rgb_tw"),
 			-- ["zh-cn"] = CKWord({max_health_modifier:%s}, "maxhlth_rgb").." 最大"..CKWord("", "Health_rgb_zh_cn"),
 		},
 		--[+ Wound +]--
@@ -77,7 +77,7 @@ local curios_localizations = {
 			en = CNumb("{extra_max_amount_of_wounds:%s}", "maxwnds_rgb").." "..CKWord("Wound", "Wound_rgb"),
 			ru = CNumb("{extra_max_amount_of_wounds:%s}", "maxwnds_rgb").." сегмент полоски "..CKWord("здоровья", "zdorovia_rgb_ru"),
 			-- fr = CNumb("{extra_max_amount_of_wounds:%s}", "maxwnds_rgb").."  "..CKWord("", "Wound_rgb_fr"),
-			-- ["zh-tw"] = CNumb("{extra_max_amount_of_wounds:%s}", "maxwnds_rgb").." "..CKWord("", "Wound_rgb_tw"),
+			["zh-tw"] = CNumb("{extra_max_amount_of_wounds:%s}", "maxwnds_rgb").." "..CKWord("", "Wound_rgb_tw"),
 			-- ["zh-cn"] = CNumb("{extra_max_amount_of_wounds:%s}", "maxwnds_rgb").." "..CKWord("", "Wound_rgb_zh_cn"),
 		},
 		--[+ Stamina +]--
@@ -85,7 +85,7 @@ local curios_localizations = {
 			en = CNumb("{stamina_modifier:%s}", "maxstam_rgb").." Maximum "..CKWord("Stamina", "Stamina_rgb"),
 			ru = CNumb("{stamina_modifier:%s}", "maxstam_rgb").." к максимальной "..CKWord("выносливости", "vynoslivosti_rgb_ru"),
 			-- fr = CNumb("{stamina_modifier:%s}", "maxstam_rgb").." d'"..CKWord("", "Stamina_rgb_fr").." Maximum",
-			-- ["zh-tw"] = CNumb("{stamina_modifier:%s}", "maxstam_rgb").." "..CKWord("", "Stamina_m_rgb_tw"),
+			["zh-tw"] = CNumb("{stamina_modifier:%s}", "maxstam_rgb").." "..CKWord("", "Stamina_m_rgb_tw"),
 			-- ["zh-cn"] = CNumb("{stamina_modifier:%s}", "maxstam_rgb").." 最大"..CKWord("", "Stamina_rgb_zh_cn"),
 		},
 		--[+ Toughness +]--
@@ -93,7 +93,7 @@ local curios_localizations = {
 			en = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." Maximum "..CKWord("Toughness", "Toughness_rgb"),
 			ru = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." к максимальной "..CKWord("стойкости", "stoikosti_rgb_ru"),
 			-- fr = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." de "..CKWord("", "Toughness_rgb_fr"),
-			-- ["zh-tw"] = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." "..CKWord("", "Toughness_m_rgb_tw"),
+			["zh-tw"] = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." "..CKWord("", "Toughness_m_rgb_tw"),
 			-- ["zh-cn"] = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." 最大"..CKWord("", "Toughness_rgb_zh_cn"),
 		},
 
@@ -103,7 +103,7 @@ local curios_localizations = {
 			en = CNumb("{ability_cooldown_modifier:%s}", "abil_cd_rgb").." "..CKWord("Combat Ability", "Cmbt_abil_rgb").." Regeneration",
 			ru = CNumb("{ability_cooldown_modifier:%s}", "abil_cd_rgb").." к восстановлению "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru"),
 			-- fr = CNumb("{ability_cooldown_modifier:%s}", "abil_cd_rgb").." de régénération du "..CKWord("", "Combat_ability_cd_rgb_fr"),
-			-- ["zh-tw"] = CNumb("{ability_cooldown_modifier:%s}", "abil_cd_rgb").." "..CKWord("", "Combat_ability_cd_rgb_tw"),
+			["zh-tw"] = CNumb("{ability_cooldown_modifier:%s}", "abil_cd_rgb").." "..CKWord("", "Combat_ability_cd_rgb_tw"),
 			-- ["zh-cn"] = CNumb("{ability_cooldown_modifier:%s}", "abil_cd_rgb").." "..CKWord("", "Combat_ability_rgb_zh_cn").."回复",
 		},
 		--[+ Corruption Resistance +]--
@@ -111,7 +111,7 @@ local curios_localizations = {
 			en = CNumb("{corruption_taken_multiplier:%s}", "corr_rgb").." "..CKWord("Corruption", "Corruption_rgb").." Resistance",
 			ru = CNumb("{corruption_taken_multiplier:%s}", "corr_rgb").." к сопротивлению "..CKWord("порче", "porche_rgb_ru"),
 			-- fr = CNumb("{corruption_taken_multiplier:%s}", "corr_rgb").." de résistance à la "..CKWord("", "Corruption_rgb_fr"),
-			-- ["zh-tw"] = CNumb("{corruption_taken_multiplier:%s}", "corr_rgb").." "..CKWord("", "Corruption_rgb_tw").." 抗性",
+			["zh-tw"] = CNumb("{corruption_taken_multiplier:%s}", "corr_rgb").." "..CKWord("", "Corruption_rgb_tw").." 抗性",
 			-- ["zh-cn"] = CNumb("{corruption_taken_multiplier:%s}", "corr_rgb").." "..CKWord("", "Corruption_rgb_zh_cn").."抗性",
 		},
 		--[+ Corruption Resistance from Grimoires +]--
@@ -119,7 +119,7 @@ local curios_localizations = {
 			en = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." "..CKWord("Corruption", "Corruption_rgb").." Resistance from Grimoires",
 			ru = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." к сопротивлению "..CKWord("порче", "porche_rgb_ru").." от гримуаров",
 			-- fr = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." de résistance à la "..CKWord("", "Corruption_rgb_fr").." (Grimoires)",
-			-- ["zh-tw"] = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." "..CKWord("", "Corruption_rgb_tw").." 抗性(法術書)",
+			["zh-tw"] = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." "..CKWord("", "Corruption_rgb_tw").." 抗性(法術書)",
 			-- ["zh-cn"] = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." "..CKWord("", "Corruption_rgb_zh_cn").."抗性 (魔法书)",
 		},
 		--[+ Health +]--
@@ -127,7 +127,7 @@ local curios_localizations = {
 			en = CNumb("{max_health_modifier:%s}", "maxhlth_rgb").." Maximum "..CKWord("Health", "Health_rgb"),
 			ru = CNumb("{max_health_modifier:%s}", "maxhlth_rgb").." к максимальному "..CKWord("здоровью", "zdoroviu_rgb_ru"),
 			-- fr = CKWord({max_health_modifier:%s}, "maxhlth_rgb").." de "..CKWord("", "Health_rgb_fr").." maximum",
-			-- ["zh-tw"] = CKWord({max_health_modifier:%s}, "maxhlth_rgb").." "..CKWord("", "Health_m_rgb_tw"),
+			["zh-tw"] = CNumb("{max_health_modifier:%s}", "maxhlth_rgb").." "..CKWord("", "Health_m_rgb_tw"),
 			-- ["zh-cn"] = CKWord({max_health_modifier:%s}, "maxhlth_rgb").." 最大"..CKWord("", "Health_rgb_zh_cn"),
 		},
 		--[+ Block Cost Reduction +]--
@@ -135,7 +135,7 @@ local curios_localizations = {
 			en = CNumb("{block_cost_multiplier:%s}", "blckcst_rgb").." Block Cost Reduction",
 			ru = CNumb("{block_cost_multiplier:%s}", "blckcst_rgb").." к снижению стоимости блока",
 			-- fr = CNumb("{block_cost_multiplier:%s}", "blckcst_rgb").." d'éfficacité de blocage",
-			-- ["zh-tw"] = CNumb("{block_cost_multiplier:%s}", "blckcst_rgb").." 格擋消耗",
+			["zh-tw"] = CNumb("{block_cost_multiplier:%s}", "blckcst_rgb").." 格擋消耗",
 			-- ["zh-cn"] = CNumb("{block_cost_multiplier:%s}", "blckcst_rgb").." 格挡效益",
 		},
 		--[+ Ally Revive Speed +]--
@@ -143,7 +143,7 @@ local curios_localizations = {
 			en = CNumb("{revive_speed_modifier:%s}", "revive_rgb").." Ally Revive Speed",
 			ru = CNumb("{revive_speed_modifier:%s}", "revive_rgb").." к скорости возрождения союзников",
 			-- fr = CNumb("{revive_speed_modifier:%s}", "revive_rgb").." de vitesse de réanimation des alliés",
-			-- ["zh-tw"] = CNumb("{revive_speed_modifier:%s}", "revive_rgb").." 復活速度 (盟友)",
+			["zh-tw"] = CNumb("{revive_speed_modifier:%s}", "revive_rgb").." 復活速度 (盟友)",
 			-- ["zh-cn"] = CNumb("{revive_speed_modifier:%s}", "revive_rgb").." 复活速度 (盟友)",
 		},
 		--[+ Stamina Regeneration +]--
@@ -151,15 +151,15 @@ local curios_localizations = {
 			en = CNumb("{stamina_regeneration_modifier:%s}", "stamreg_rgb").." "..CKWord("Stamina", "Stamina_rgb").." Regeneration",
 			ru = CNumb("{stamina_regeneration_modifier:%s}", "stamreg_rgb").." к восстановлению "..CKWord("выносливости", "vynoslivosti_rgb_ru"),
 			-- fr = CNumb("{stamina_regeneration_modifier:%s}", "stamreg_rgb").." de régénération d'"..CKWord("", "Stamina_rgb_fr"),
-			-- ["zh-tw"] = CNumb("{stamina_regeneration_modifier:%s}", "stamreg_rgb").." "..CKWord("", "Stamina_rgb_tw").." 恢復",
-			-- ["zh-cn"] = CNumb("{stamina_regeneration_modifier:%s}", "stamreg_rgb").." "..CKWord("", "Stamina_rgb_zh_cn").."回复",
+			["zh-tw"] = CNumb("{stamina_regeneration_modifier:%s}", "stamreg_rgb").." "..CKWord("", "Stamina_rgb_tw").." 恢復",
+			-- ["zh-cn"] = CNumb("{stamina_regeneration_modifier:%s}", "stamreg_rgb").." "..CKWord("", "Stamina_rgb_zh_cn").."复",
 		},
 		--[+ Toughness +]--
 		["loc_trait_gadget_toughness_increase_desc"] = { -- toughness_bonus: +5%
 			en = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." "..CKWord("Toughness", "Toughness_rgb"),
 			ru = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." к "..CKWord("стойкости", "stoikosti_rgb_ru"),
 			-- fr = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." de "..CKWord("", "Toughness_rgb_fr"),
-			-- ["zh-tw"] = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." "..CKWord("", "Toughness_m_rgb_tw"),
+			["zh-tw"] = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." "..CKWord("", "Toughness_m_rgb_tw"),
 			-- ["zh-cn"] = CNumb("{toughness_bonus:%s}", "maxtghns_rgb").." 最大"..CKWord("", "Toughness_rgb_zh_cn"),
 		},
 		--[+ Toughness Regeneration Speed +]--
@@ -167,7 +167,7 @@ local curios_localizations = {
 			en = CNumb("{toughness_regen_delay_multiplier:%s}", "tghn_reg_del_rgb").." "..CKWord("Toughness", "Toughness_rgb").." Regeneration Speed",
 			ru = CNumb("{toughness_regen_delay_multiplier:%s}", "tghn_reg_del_rgb").." к скорости восстановления "..CKWord("стойкости", "stoikosti_rgb_ru"),
 			-- fr = CNumb("{toughness_regen_delay_multiplier:%s}", "tghn_reg_del_rgb").." de vitesse de régénération de "..CKWord("", "Toughness_rgb_fr").." de syntonie",
-			-- ["zh-tw"] = CNumb("{toughness_regen_delay_multiplier:%s}", "tghn_reg_del_rgb").." "..CKWord("", "Toughness_rs_rgb_tw"),
+			["zh-tw"] = CNumb("{toughness_regen_delay_multiplier:%s}", "tghn_reg_del_rgb").." "..CKWord("", "Toughness_rs_rgb_tw"),
 			-- ["zh-cn"] = CNumb("{toughness_regen_delay_multiplier:%s}", "tghn_reg_del_rgb").." "..CKWord("", "Toughness_rgb_zh_cn").."回复速度",
 		},
 		--[+ Experience +]--
@@ -175,7 +175,7 @@ local curios_localizations = {
 			en = CNumb("{mission_reward_xp_modifier:%s}", "xp_rgb").." Experience",
 			ru = CNumb("{mission_reward_xp_modifier:%s}", "xp_rgb").." к опыту",
 			-- fr = CNumb("{mission_reward_xp_modifier:%s}", "xp_rgb").." d'expérience",
-			-- ["zh-tw"] = CNumb("{mission_reward_xp_modifier:%s}", "xp_rgb").." 經驗",
+			["zh-tw"] = CNumb("{mission_reward_xp_modifier:%s}", "xp_rgb").." 經驗",
 			-- ["zh-cn"] = CNumb("{mission_reward_xp_modifier:%s}", "xp_rgb").." 经验",
 		},
 		--[+ Ordo +]--
@@ -183,7 +183,7 @@ local curios_localizations = {
 			en = CNumb("{mission_reward_credit_modifier:%s}", "credits_rgb").." Ordo Dockets",
 			ru = CNumb("{mission_reward_credit_modifier:%s}", "credits_rgb").." купонов ордо",
 			-- fr = CNumb("{mission_reward_credit_modifier:%s}", "credits_rgb").." bordereaux de l'Ordo (récompenses de mission)",
-			-- ["zh-tw"] = CNumb("{mission_reward_credit_modifier:%s}", "credits_rgb").." 教團標籤 (任務獎勵)",
+			["zh-tw"] = CNumb("{mission_reward_credit_modifier:%s}", "credits_rgb").." 教團標籤 (錢)",
 			-- ["zh-cn"] = CNumb("{mission_reward_credit_modifier:%s}", "credits_rgb").." 审判庭双子币 （任务奖励）",
 		},
 		--[+ Curio as Mission Reward instead of Weapon +]--
@@ -191,7 +191,7 @@ local curios_localizations = {
 			en = CNumb("{mission_reward_gear_instead_of_weapon_modifier:%s}", "gears_rgb").." chance of Curio as Mission Reward instead of Weapon",
 			ru = CNumb("{mission_reward_gear_instead_of_weapon_modifier:%s}", "gears_rgb").." шанс получить редкость вместо оружия в награду",
 			-- fr = CNumb("{mission_reward_gear_instead_of_weapon_modifier:%s}", "gears_rgb").." de chance d'obtenir une curiosité comme récompense à la place d'une arme",
-			-- ["zh-tw"] = CNumb("{mission_reward_gear_instead_of_weapon_modifier:%s}", "gears_rgb").." 機率獲得珍品作為任務獎勵(非武器)",
+			["zh-tw"] = CNumb("{mission_reward_gear_instead_of_weapon_modifier:%s}", "gears_rgb").." 任務獎勵珍品機率(非武器)",
 			-- ["zh-cn"] = CNumb("{mission_reward_gear_instead_of_weapon_modifier:%s}", "gears_rgb").." 以珍品作为任务奖励 （而非武器） 的几率",
 		},
 		--[+ Damage Resistance vs Flamers +]--
@@ -199,7 +199,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Flamers",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от огнемётчиков",
 			-- fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("", "Damage_rgb_fr").." (Incendiaires, Incendiaires toxiques) ",
-			-- ["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (毒焰噴射者)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (毒焰噴射者)",
 			-- ["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_rgb_zh_cn").."抗性（火焰兵）",
 		},
 		--[+ Damage Resistance vs Bombers +]--
@@ -207,7 +207,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Bombers",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от гренадёров",
 			-- fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("", "Damage_rgb_fr").." (Bombardiers)",
-			-- ["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (轟炸者)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (轟炸者)",
 			-- ["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_rgb_zh_cn").."抗性（轰炸者）",
 		},
 		--[+ Damage Resistance vs Gunners +]--
@@ -215,7 +215,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Gunners",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от пулемётчиков",
 			-- fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("", "Damage_rgb_fr").." (Mitrailleurs)",
-			-- ["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (砲手)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (砲手)",
 			-- ["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_rgb_zh_cn").."抗性（炮手）",
 		},
 		--[+ Damage Resistance vs Pox Hounds +]--
@@ -223,7 +223,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Pox Hounds",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от чумных гончих",
 			-- fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("", "Damage_rgb_fr").." (Cerdères vérolés)",
-			-- ["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (瘟疫獵犬)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (瘟疫獵犬)",
 			-- ["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_rgb_zh_cn").."抗性（瘟疫猎犬）",
 		},
 		--[+ Damage Resistance vs Mutants +]--
@@ -231,7 +231,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Mutants",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от мутантов",
 			-- fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("", "Damage_rgb_fr").." (Mutants)",
-			-- ["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (變種人)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (變種人)",
 			-- ["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_rgb_zh_cn").."抗性（变种人）",
 		},
 		--[+ Damage Resistance vs Snipers +]--
@@ -239,7 +239,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Snipers",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от снайперов",
 			-- fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("", "Damage_rgb_fr").." (Snipers)",
-			-- ["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (狙擊手)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_res_rgb_tw").." (狙擊手)",
 			-- ["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("", "Damage_rgb_zh_cn").."抗性（狙击手）",
 		},
 
