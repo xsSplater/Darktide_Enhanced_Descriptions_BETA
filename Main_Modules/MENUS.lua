@@ -449,7 +449,7 @@ local menus_templates = {
 --[+ ++WEAPON CARD - КАРТОЧКА ОРУЖИЯ++ +]--
 --[+ +Weapon - Оружие+ +]--
 	["loc_inventory_menu_favorite_item"] = {
-		-- en = "Favourite",
+		en = "Favourite",
 		ru = "Избранное", -- руоф Добавить в избранное
 		["zh-tw"] = "最愛",
 		["zh-cn"] = "已收藏", -- 收藏物品
