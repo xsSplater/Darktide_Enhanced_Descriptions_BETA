@@ -253,9 +253,7 @@ local CONFIG = {
 		Omnissia_p =	"Shrine of the Omnissiah",
 		Prologue_p =	"Prologue",
 		Sir_melk_p =	"Sire Melk's Requisitorium",
-	-- },
 
-	-- talents_penances_text_colour = {
 	-- Psyker
 		assail =		"Assail",
 		bburst =		"Brain Burst",
@@ -321,9 +319,9 @@ local CONFIG = {
 	},
 
 -- DIFFICULTY
-	sedition_text_colour = {
-		sedition =		"Sedition",
-	},
+	-- sedition_text_colour = {
+		-- sedition =		"Sedition",
+	-- },
 	uprising_text_colour = {
 		uprising =		"Uprising",
 	},
@@ -395,6 +393,7 @@ local function create_phrs_en(colors_en)
 	Doesnt_Stack_Zea_abil =		Dot_red.." Does not Stack with the same talent from another "..CKWord("Zealot", "cls_zea_rgb")..".",
 -- Ogryn
 	Doesnt_Stack_Ogr_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Ogryn", "cls_ogr_rgb")..".",
+	Doesnt_Stack_Ogr_abil =		Dot_red.." Does not Stack with the same talent from another "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 
 	Cant_appl_thr_shlds =		Dot_red.." Can't apply through shields.",
 	Cant_Crit =					Dot_red.." Cannot "..CKWord("Crit", "Crit_rgb")..".\n",

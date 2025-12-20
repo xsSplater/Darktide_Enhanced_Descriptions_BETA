@@ -196,17 +196,17 @@ local DOT_GREEN = "{#color(35, 255, 5)}•{#reset()}"
 
 -- Экспортируемый объект
 local Utils = {
-	get_colors = get_colors,
+	clear_global_cache = clear_global_cache,
 	get_number_color = get_number_color,
 	create_template = create_template,
-	clear_global_cache = clear_global_cache,
+	get_colors = get_colors,
 	loc_text = loc_text,
-	CKWord = CKWord,	-- Умная функция для всего
-	CNumb = CNumb,		-- Специально для цифр
-	CPhrs = CPhrs,		-- Фразы
-	CNote = CNote,		-- Заметки
-	DOT_RED = DOT_RED,
+	CKWord = CKWord,						-- Умная функция для всего
+	CNumb = CNumb,							-- Специально для цифр
+	CPhrs = CPhrs,							-- Фразы
+	CNote = CNote,							-- Заметки
 	DOT_NC = DOT_NC,
+	DOT_RED = DOT_RED,
 	DOT_GREEN = DOT_GREEN,
 }
 

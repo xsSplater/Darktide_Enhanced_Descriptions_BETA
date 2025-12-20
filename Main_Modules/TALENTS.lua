@@ -1058,7 +1058,7 @@ local talent_localizations = {
 			.."\n"
 			..Dot_green.." {instant_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." restores instantly on successful Melee Attacks.\n"
 			..Dot_red.." Procs once per Attack regardless of how many enemies have been hit.",
-		ru = Dot_green.." "..CNumb("5", "pc_5_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою, вплоть до {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за {duration:%s} секунды.\n" -- Затраты варпа -- руоф Варп-затраты
+		ru = Dot_green.." "..CNumb("5%", "pc_5_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою, вплоть до {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за {duration:%s} секунды.\n" -- Затраты варпа -- руоф Варп-затраты
 			..CPhrs("Can_be_refr").."\n"
 			.."\n"
 			..Dot_green.." {instant_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается моментально при успешной атаке в ближнем бою.\n"
@@ -3663,239 +3663,338 @@ local talent_localizations = {
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de Mélée pendant {duration:%s} secondes lors d'une attaque réussie. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_rgb_fr, -- Frappe lourde
 	},
 	--[+ KEYSTONE 1-1 - Don't Feel a Thing +]--
-	-- ["loc_talent_ogryn_passive_heavy_hitter_tdr_desc"] = { -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
-		-- en = "{toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for each Stack, also granted by {talent_name:%s}.",
+	["loc_talent_ogryn_passive_heavy_hitter_tdr_desc"] = { -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
+		en = "{talent_name:%s} also grants, per Stack:\n"
+			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..". Up to "..CNumb("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb")..".",
 		-- ru = "{toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." за каждый заряд даётся талантом {talent_name:%s}.", -- Не чувствую ничего
 		-- fr = "{toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr.." par cumuls de {talent_name:%s}.", -- Rien senti
-	-- },
+	},
 	--[+ KEYSTONE 1-2 - Just Getting Started +]--
-	-- ["loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed_description"] = { -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
-		-- en = "{attack_speed:%s} Attack Speed while {talent_name:%s} is at {stacks:%s} Stacks."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_2_rgb,
+	["loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed_description"] = { -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
+		en = "While {talent_name:%s} is at {stacks:%s} Stacks, gain for "..CNumb("7.5", "n_7_5_rgb").." seconds:\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed.\n"
+			.."\n"
+			..CPhrs("Can_be_refr"),
 		-- ru = "{attack_speed:%s} к скорости атаки пока у вас {stacks:%s} зарядов таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_1_2_rgb"), -- Я только начал -- руоф Лишь начало!
 		-- fr = "{attack_speed:%s} Vitesse d'attaque tant que {talent_name:%s} est à {stacks:%s} cumuls."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_2_rgb_fr, -- Rien que le début
-	-- },
+	},
 	--[+ KEYSTONE 1-3 - Unstoppable +]--
-	-- ["loc_talent_ogryn_heavy_hitter_max_stacks_improves_toughness_new_description"] = { -- talent_name: Heavy Hitter, stacks: 5, toughness_melee_replenish: +100%, +colors
-		-- en = "{melee_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished from Melee Kills for each Stack, also granted by {talent_name:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_3_rgb,
+	["loc_talent_ogryn_heavy_hitter_max_stacks_improves_toughness_new_description"] = { -- talent_name: Heavy Hitter, stacks: 5, toughness_melee_replenish: +100%, +colors
+		en = "{talent_name:%s} also grants, per Stack:\n"
+			..Dot_green.." {melee_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished from Melee Kills.\n"
+			.."\n"
+			.."Increases Ogryn's base "..CNumb("5%", "pc_5_rgb").." of Maximum "..CKWord("Toughness", "Toughness_rgb").." gained on Melee kill by {melee_toughness:%s} per Stack:\n"
+			.."_______________________________\n"
+			.."Stacks: "..CNumb("0", "n_0_rgb").."|     "..CNumb("1", "n_1_rgb").."|    "..CNumb("2", "n_2_rgb").."|    "..CNumb("3", "n_3_rgb").."|  "..CNumb("4", "n_4_rgb").."|    "..CNumb("5", "n_5_rgb").."|    "..CNumb("6", "n_6_rgb").."|     "..CNumb("7", "n_7_rgb").."| "..CNumb("8", "n_8_rgb").."\n"
+			..CKWord("TGHN", "TGHN_rgb")..":  "..CNumb("5", "n_5_rgb").."| "..CNumb("5.8", "n_5_8_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.3", "n_7_3_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("8.8", "n_8_8_rgb").."| "..CNumb("9.5", "n_9_5_rgb").."|"..CNumb("10.3", "n_10_3_rgb").."|"..CNumb("11", "n_11_rgb").."\n"
+			.."_______________________________\n"
+			.."* rounded for brevity.\n",
 		-- ru = "{melee_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается от убийств в ближнем бою за каждый заряд даётся талантом {talent_name:%s}.", -- Неудержимый -- руоф Неудержимость
 		-- fr = "{melee_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée par les éliminations en mêlée par cumuls de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_3_rgb_fr, -- Instoppable
-	-- },
+	},
 	--[+ KEYSTONE 1-4 - Great Cleaver +]--
-	-- ["loc_talent_ogryn_passive_heavy_hitter_cleave_desc"] = { -- talent_name: Heavy Hitter
-		-- en = "{cleave:%s} "..CKWord("Cleave", "Cleave_rgb").." for each Stack, also granted by {talent_name:%s}.",
+	["loc_talent_ogryn_passive_heavy_hitter_cleave_desc"] = { -- talent_name: Heavy Hitter
+		en = "{talent_name:%s} also grants, per Stack:\n"
+			..Dot_green.." {cleave:%s} "..CKWord("Cleave", "Cleave_rgb")..".\n"
+				.."\n"
+				..CPhrs("Carap_cant_cleave"),
 		-- ru = "{cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." за каждый заряд даётся талантом {talent_name:%s}.", -- Брутальный моментум -- руоф Зверский моментум
 		-- fr = "{cleave:%s} de "..COLORS_KWords_fr.Cleave_rgb_fr.." par cumul de {talent_name:%s}.", -- Fouet de guerre
-	-- },
+	},
 	--[+ KEYSTONE 1-5 - Impactful +]--
-	-- ["loc_talent_ogryn_passive_heavy_hitter_stagger_desc"] = { 
-		-- en = "{impact:%s} "..CKWord("Impact", "Impact_rgb").." for each Stack, also granted by {talent_name:%s}.",
+	["loc_talent_ogryn_passive_heavy_hitter_stagger_desc"] = { 
+		en = "{talent_name:%s} also grants, per Stack:\n"
+			..Dot_green.." {impact:%s} "..CKWord("Impact", "Impact_rgb")..". Up to "..CNumb("+", "n_plus_rgb")..CNumb("60%", "pc_60_rgb")..".",
 		-- ru = "{impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." врагов за каждый заряд даётся талантом {talent_name:%s}.", -- Брутальный моментум -- руоф Зверский моментум
 		-- fr = "{impact:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.."par cumul de {talent_name:%s}.", -- Impactant
-	-- },
+	},
 	--[+ KEYSTONE 2 - Feel No Pain +]--
-	-- ["loc_talent_ogryn_carapace_armor_any_damage_desc"] = { -- stacks: 10, toughness_regen: +2.5%, damage_reduction: +2.5%, duration: 3, s->seconds, +colors
-		-- en = "You are blessed with {stacks:%s} Stacks of "..CKWord("Feel No Pain", "Feel_no_pain_rgb")..". Each Stack grants:\n"
-			-- .."{toughness_regen:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment and\n"
-			-- .."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Reduction.\n"
-			-- .."Taking "..CKWord("Damage", "Damage_rgb").." removes one Stack. Stacks are restored every {duration:%s} seconds."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_rgb,
+	["loc_talent_ogryn_carapace_armor_any_damage_desc"] = { -- stacks: 10, toughness_regen: +2.5%, damage_reduction: +2.5%, duration: 3, s->seconds, +colors
+		en = "You are blessed with {stacks:%s} Stacks of "..CKWord("Feel No Pain", "Feel_no_pain_rgb")..".\n"
+			.."Each Stack grants:\n"
+			..Dot_green.." {toughness_regen:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment and\n"
+			..Dot_green.." {damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Reduction.\n"
+			.."\n"
+			..Dot_nc.." Regenerates "..CNumb("1", "n_1_rgb").." Stack every {duration:%s} seconds.\n"
+			..Dot_red.." Taking "..CKWord("Damage", "Damage_rgb").." removes "..CNumb("1", "n_1_rgb").." Stack.\n"
+			.."\n"
+			..CPhrs("Dont_intw_coher_toughn"),
 		-- ru = "Вам даровано {stacks:%s} зарядов "..CKWord("Неболита", "Feel_no_pain_rgb_ru")..". Каждый заряд даёт:\n{toughness_regen:%s} восполнения "..CKWord("стойкости", "stoikosti_rgb_ru").." и\n{damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".\nПолучение "..CKWord("урона", "uronu_rgb_ru").." снимает один заряд. Заряды восстанавливаются каждые {duration:%s} секунды."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_2_rgb"), -- Неболит
 		-- fr = "Vous recevez {stacks:%s} cumuls de "..COLORS_KWords_fr.Feel_no_pain_rgb_fr..". Chaque cumul accorde :\n{toughness_regen:%s} de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." et\n{damage_reduction:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr..".\nPrendre des "..COLORS_KWords_fr.Damage_rgb_fr.." retire un cumul. Les cumuls sont restaurées toutes les {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_rgb_fr,
-	-- },
+	},
 	--[+ KEYSTONE 2-1 - Pained Outburst +]--
-	-- ["loc_talent_ogryn_carapace_armor_trigger_on_zero_stacks_new_desc"] = { -- talent_name: Feel No Pain, toughness_replenish: +20%, cooldown: 30, s->seconds, +colors
-		-- en = "{toughness_replenish:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished when {talent_name:%s} reaches {stacks:%s} Stacks or below. It also creates an explosion that deals No "..CKWord("Damage", "Damage_rgb").." but "..CKWord("Staggers", "Staggers_rgb").." surrounding enemies.\n"
-			-- .."\n"
-			-- .."This effect can occur once every {cooldown:%s} seconds."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_1_rgb,
+	["loc_talent_ogryn_carapace_armor_trigger_on_zero_stacks_new_desc"] = { -- talent_name: Feel No Pain, toughness_replenish: +20%, cooldown: 30, s->seconds, +colors
+		en = "If not on "..CKWord("Cooldown", "Cd_rgb").." and if when {talent_name:%s} reaches {stacks:%s} Stacks or below, you push back Enemies and replenish:\n"
+			..Dot_green.." {toughness_replenish:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
+			.."\n"
+			..Dot_nc.." This effect can occur once every {cooldown:%s} seconds.\n"
+			.."\n"
+			..Dot_green.." Also creates an explosion that deals No "..CKWord("Damage", "Damage_rgb").." but "..CKWord("Staggers", "Staggers_rgb").." surrounding enemies.\n"
+			.."The explosion:\n"
+			..Dot_nc.." Radius: "..CNumb("2.5", "n_2_5_rgb").." meters.\n"
+			..Dot_green.." "..CKWord("Staggers", "Staggers_rgb").." all enemies except for Mutants, Monstrosities, and Captains/Twins.",
 		-- ru = "{toughness_replenish:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается, если заряды таланта {talent_name:%s} достигают {stacks:%s} зарядов или меньше. Обнуление зарядов также создаёт взрыв, который не наносит "..CKWord("урона", "uronu_rgb_ru")..", но "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." врагов вокруг.\n\nЭтот эффект может срабатывать раз в {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_2_1_rgb"), -- Вспышка боли
 		-- fr = "{toughness_replenish:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée quand {talent_name:%s} atteint {stacks:%s} cumul ou moins. Cela crée aussi une explosion qui ne cause pas de dégâts mais fait "..COLORS_KWords_fr.Staggering_rgb_fr.." les ennemis environnants.\n\nCet effet peut se produire une fois toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_1_rgb_fr, -- Éclat de douleur
-	-- },
+	},
 	--[+ KEYSTONE 2-2 - Strongest! +]--
-	-- ["loc_talent_ogryn_carapace_armor_add_stack_on_push_desc"] = { -- talent_name: Feel No Pain
-		-- en = CNumb("1", "n_1_rgb").." Stack of {talent_name:%s} is restored by Pushing enemies."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_2_rgb,
+	["loc_talent_ogryn_carapace_armor_add_stack_on_push_desc"] = { -- talent_name: Feel No Pain
+		en = "Pushing enemies restores:\n"
+			..Dot_green.." "..CNumb("1", "n_1_rgb").." Stack of {talent_name:%s}.\n"
+			.."\n"
+			..Dot_red.." "..CNumb("1", "n_1_rgb").." Stack per Push, regardless of enemies hit.",
 		-- ru = CNumb("1", "n_1_rgb").." заряд таланта {talent_name:%s} восстанавливается при отталкивании врагов."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_2_2_rgb"), -- Сильнейший!
 		-- fr = CNumb("1", "n_1_rgb").." cumul de {talent_name:%s} est restaurée en poussant les ennemis."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_2_rgb_fr, -- Le plus fort!
-	-- },
+	},
 	--[+ KEYSTONE 2-3 - Toughest! +]--
-	-- ["loc_talent_ogryn_carapace_armor_more_toughness_desc"] = { -- talent_name: Feel No Pain, toughness_regen: +2.5%, +colors
-		-- en = "{toughness_regen:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishment per stack is granted by {talent_name:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_2_3_rgb,
+	["loc_talent_ogryn_carapace_armor_more_toughness_desc"] = { -- talent_name: Feel No Pain, toughness_regen: +2.5%, +colors
+		en = "{talent_name:%s} grants, per Stack:\n"
+			..Dot_green.." {toughness_regen:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment.\n"
+			.."\n"
+			..CPhrs("Dont_intw_coher_toughn"),
 		-- ru = "{toughness_regen:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за каждый заряд таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_2_3_rgb"), -- Стойкий! -- руоф Самый выносливый!
 		-- fr = "{toughness_regen:%s} de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." par cumul est accordée par {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_3_rgb_fr, -- Le plus résistant!
-	-- },
+	},
 	--[+ KEYSTONE 3 - Burst Limiter Override +]--
-	-- ["loc_talent_ogryn_blo_new_alt_desc"] = { -- proc_chance: 8%, +colors
-		-- en = "{proc_chance:%s} chance of triggering "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." and not consuming Ammo when making Ranged Attacks.\n"
-			-- .."\n"
-			-- .."In addition, gain {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." on Ranged Kills. Max Stacks {stacks:%s}. Lasts {duration:%s} seconds."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_rgb,
+	["loc_talent_ogryn_blo_new_alt_desc"] = { -- proc_chance: 8%, +colors
+		en = Dot_green.." {proc_chance:%s} chance of triggering "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." and not consuming Ammo when making Ranged Attacks.\n"
+			.."\n"
+			.."In addition, gain:\n"
+			..Dot_green.." {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." on Ranged Kills.\n"
+			..Dot_nc.." Max Stacks {stacks:%s}.\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			.."\n"
+			..Dot_green.." Can generate multiple Stacks when "..CKWord("Cleaving", "Cleaving_rgb").." or on explosions.",
 		-- ru = "{proc_chance:%s} шанс получить "..CKWord("Счастливую пулю", "Lucky_bullet_rgb_ru").." и не потратить боеприпас при выстреле.\n\nТакже вы получаете {ranged_damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." при дальнобойных убийствах. Максимум {stacks:%s} зарядов. Длится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_3_rgb"), -- Обход ограничителя очереди -- руоф Взлом ограничителя взрыва
 		-- fr = "{proc_chance:%s} de chance de déclencher "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." et de ne pas consommer de munitions lors des attaques à distance.\n\nDe plus, vous gagnez {ranged_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance lors d'une élimination à distance. Se cumuls {stacks:%s} fois. Dure {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_rgb_fr, -- Obstruction du limiteur de tir
-	-- },
+	},
 	--[+ KEYSTONE 3-1 - Back Off! +]--
-	-- ["loc_talent_ogryn_blo_melee_desc"] = { -- cooldown_reduction: +200%, duration: 2, s->seconds, +colors
-		-- en = "{chance:%s} chance to trigger "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." on next Shot when killing an enemy with a Melee Attack. Stacks {stacks:%s} times.",
+	["loc_talent_ogryn_blo_melee_desc"] = { -- cooldown_reduction: +200%, duration: 2, s->seconds, +colors
+		en = "On Killing Melee Attack gain:\n"
+			..Dot_green.." {chance:%s} chance to trigger "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." on next Shot.\n"
+			..Dot_nc.." Stacks {stacks:%s} times.\n"
+			.."\n"
+			..Dot_red.." "..CNumb("1", "n_1_rgb").." Stack per Swing, regardless of enemies killed.",
 		-- ru = "{chance:%s} шанс активировать "..CKWord("Счастливую пулю", "Lucky_bullet_rgb_ru").." для вашего следующего выстрела после убийства врага в ближнем бою. Суммируется {stacks:%s} раз.", -- Максимальная огневая мощь
 		-- fr = "{chance:%s} de chance de déclancher une "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." lors de votre prochain tir lors d'une élimination en mélée. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_1_rgb_fr, -- Reculez!
-	-- },
+	},
 	--[+ KEYSTONE 3-2 - Maximum Firepower +]--
-	-- ["loc_talent_ogryn_leadbelcher_grant_cooldown_reduction_desc"] = { -- cooldown_reduction: +200%, duration: 2, s->seconds, +colors
-		-- en = "{cooldown_reduction:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Reduction for {duration:%s} seconds when "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." triggers."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_3_2_rgb,
+	["loc_talent_ogryn_leadbelcher_grant_cooldown_reduction_desc"] = { -- cooldown_reduction: +200%, duration: 2, s->seconds, +colors
+		en = "When "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." triggers, gain for {duration:%s} seconds:\n"
+			..Dot_green.." {cooldown_reduction:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Reduction.",
 		-- ru = "{cooldown_reduction:%s} к сокращению времени "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." на  {duration:%s} секунды, когда вы получаете "..CKWord("Счастливую пулю", "Lucky_bullet_rgb_ru").."."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_3_2_rgb"), -- Максимальная огневая мощь
 		-- fr = "{cooldown_reduction:%s} de "..COLORS_KWords_fr.Ability_cd_rgb_fr.." pendant {duration:%s} secondes lorsque "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." est déclenché."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_2_rgb_fr, -- Maximale puissance de feu
-	-- },
+	},
 	--[+ KEYSTONE 3-3 - Good Shootin' +]--
-	-- ["loc_talent_ogryn_critical_leadbelcher_desc"] = { -- +colors
-		-- en = "The shot that triggers "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." is a guaranteed "..CKWord("Critical", "Critical_rgb").." (if it Hits).",
-		-- ru = "Выстрел активировавший "..CKWord("Счастливую пулю", "Lucky_bullet_rgb_ru").." гарантированно будет "..CKWord("критическим выстрелом", "krit_vystrelom_rgb_ru").." (если попадёт).", -- Хорошая стрельба -- руоф Хороший выстрел
-		-- fr = "Le tir qui déclenche "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." est un "..COLORS_KWords_fr.Crit_hit_rgb_fr.." garanti (s'il touche).", -- Bonne visée
-	-- },
+	["loc_talent_ogryn_critical_leadbelcher_desc"] = { -- +colors
+		en = "The shot that triggers "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." is a guaranteed "..CKWord("Critical", "Critical_rgb").." (if it Hits).",
+		ru = "Выстрел активировавший "..CKWord("Счастливую пулю", "Lucky_bullet_rgb_ru").." гарантированно будет "..CKWord("критическим выстрелом", "krit_vystrelom_rgb_ru").." (если попадёт).", -- Хорошая стрельба -- руоф Хороший выстрел
+		fr = "Le tir qui déclenche "..CKWord("Balle chanceuse", "Lucky_bullet_rgb_fr").." est un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." garanti (s'il touche).", -- Bonne visée
+	},
 	--[+ KEYSTONE 3-4 - Heat of Battle +]--
-	-- ["loc_talent_ogryn_blo_fire_rate_desc"] = { -- proc_chance: 12%, +colors
-		-- en = "{fire_rate:%s} Fire Rate per Stack, also granted by {talent_name:%s}.",
+	["loc_talent_ogryn_blo_fire_rate_desc"] = { -- proc_chance: 12%, +colors
+		en = "{talent_name:%s} also grants, per Stack:\n"
+			..Dot_green.." {fire_rate:%s} Fire Rate.",
 		-- ru = "{fire_rate:%s} к скорострельности за каждый заряд даётся талантом {talent_name:%s}.", -- Горячка боя
 		-- fr = "{fire_rate:%s} de vitesse de tir par cumul de {talent_name:%s}.", -- Chaleur de la bataille
-	-- },
-	--[+ KEYSTONE 3-5 - More Burst Limiter Overrides! +]--
-	-- ["loc_talent_ogryn_blo_ally_ranged_buffs_desc"] = { -- proc_chance: 12%, +colors
-		-- en = "{ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." to you and Allies in "..CKWord("Coherency", "Coherency_rgb").." on "..CKWord("Lucky Bullet", "Lucky_bullet_rgb")..". Lasts {duration:%s} seconds.",
+	},
+	--[+ KEYSTONE 3-5 - Bulletstorm +]--
+	["loc_talent_ogryn_blo_ally_ranged_buffs_desc"] = { -- proc_chance: 12%, +colors
+		en = "{ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." to you and Allies in "..CKWord("Coherency", "Coherency_rgb").." on "..CKWord("Lucky Bullet", "Lucky_bullet_rgb")..".\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			.."\n"
+			..CPhrs("Can_be_refr").."\n"
+			..CPhrs("Doesnt_Stack_Ogr_abil"),
 		-- ru = "{ranged_damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." для вас и ваших союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", когда вы получаете "..CKWord("Счастливую пулю", "Lucky_bullet_rgb_ru")..". Длится {duration:%s} секунд.", -- Ещё больший обход ограничителя очереди! -- руоф Больше взлома ограничителя взрыва!
 		-- fr = "{ranged_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance pour vous et vos alliés en syntonie lors d'une "..COLORS_KWords_fr.Lucky_bullet_rgb_fr..". Dure {duration:%s} secondes..", -- Encore plus de contournement du limiteur de tir!
-	-- },
+	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - Lynchpin +]--
-	-- ["loc_talent_ogryn_coherency_toughness_increase_desc"] = { -- toughness_multiplier: +50%, +colors
-		-- en = "{toughness_multiplier:%s} "..CKWord("Toughness", "Toughness_rgb").." replenish while in "..CKWord("Coherency", "Coherency_rgb")..".",
+	["loc_talent_ogryn_coherency_toughness_increase_desc"] = { -- toughness_multiplier: +50%, +colors
+		en = Dot_green.." {toughness_multiplier:%s} "..CKWord("Coherency", "Coherency_rgb").." "..CKWord("Toughness", "Toughness_rgb").." Regeneration.",
 		-- ru = "{toughness_multiplier:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается пока вы в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Опора -- руоф Переломный момент
 		-- fr = "{toughness_multiplier:%s} de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_7_rgb_fr, -- Opérateur
-	-- },
+	},
 	--[+ Passive 2 - Heavyweight +]--
-	-- ["loc_talent_ogryn_ogryn_fighter_desc"] = { -- damage: +30%, damage_reduction: +30%, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." against Bulwarks, Crushers, Plague Ogryns and Reapers. Also receive {damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Reduction against the same.",
+	["loc_talent_ogryn_ogryn_fighter_desc"] = { -- damage: +30%, damage_reduction: +30%, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." against Bulwarks, Crushers, Plague Ogryns and Reapers.\n"
+			.."\n"
+			..Dot_green.." {damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Reduction against the same.",
 		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." бастионам, жнецам, крушителям и чумным огринам. Также вы получаете {damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." от них.", -- Тяжеловес
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les Remparts, Broyeurs, Ogryns de la Peste et Fauchers. Vous recevez également {damage_reduction:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les mêmes ennemis.", -- Poid Lourd
-	-- },
+	},
 	--[+ Passive 3 - Steady Grip +]--
-	-- ["loc_talent_ogryn_toughness_regen_while_bracing_desc"] = { -- toughness_regen: +3%, +colors
-		-- en = "{toughness_regen:%s} "..CKWord("Toughness", "Toughness_rgb").." Regeneration while bracing your Ranged weapon.",
+	["loc_talent_ogryn_toughness_regen_while_bracing_desc"] = { -- toughness_regen: +3%, +colors
+		en = Dot_green.." {toughness_regen:%s} "..CKWord("Toughness", "Toughness_rgb").." Regeneration while bracing your Ranged weapon.\n"
+			.."\n"
+			..CPhrs("Dont_intw_coher_toughn"),
 		-- ru = "{toughness_regen:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается пока вы целитесь из дальнобойного оружия.", -- Крепкий хват -- руоф Крепкая хватка
 		-- fr = "{toughness_regen:%s} de régénération de "..COLORS_KWords_fr.Toughness_rgb_fr.." lors de la mis en joue de votre arme à distance.", -- Poigne ferme
-	-- },
+	},
 	--[+ Passive 4 - Smash 'Em! +]--
-	-- ["loc_talent_ogryn_toughness_on_single_heavy_new_desc"] = { -- toughness: 20%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes after hitting a single Enemy with a Melee Attack. Increased to {heavy_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." if it is a Heavy Attack.",
+	["loc_talent_ogryn_toughness_on_single_heavy_new_desc"] = { -- toughness: 20%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished after hitting a single Enemy with a Melee Attack.\n"
+			.."\n"
+			..Dot_green.." {heavy_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." if it is a Heavy Attack.\n"
+			.."\n"
+			..Dot_nc.." The Melee Special actions of Grenadier Gauntlet (Melee part), Rumbler, Twin-Linked Stubbers, and Kickback are considered Heavy attacks.\n"
+			..Dot_nc.." The Melee Special action of Ripper Guns is a Light attack.",
 		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается после попадания по одному врагу тяжёлой атакой ближнего боя. Увеличивается до {heavy_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..", если вы ударили тяжёлой атакой.", -- Круши их! -- руоф Вдарь им!
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère après avoir frappé un seul ennemi avec une attaque de mêlée et {heavy_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." si c'est une attaque de mélée puissante.", -- Ecrabouille les
-	-- },
+	},
 	--[+ Passive 5 - The Best Defence +]--
-	-- ["loc_talent_ogryn_toughness_on_multiple_new_desc"] = { -- toughness: 20%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes after hitting multiple Enemies with a single Melee Attack. Increased to {heavy_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." if it is a Heavy Attack.",
+	["loc_talent_ogryn_toughness_on_multiple_new_desc"] = { -- toughness: 20%, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished after hitting multiple Enemies with a single Melee Attack.\n"
+			.."\n"
+			..Dot_green.." {heavy_toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." if it is a Heavy Attack.\n"
+			.."\n"
+			..Dot_nc.." The Melee Special actions of Grenadier Gauntlet (Melee part), Rumbler, Twin-Linked Stubbers, and Kickback are considered Heavy attacks.\n"
+			..Dot_nc.." The Melee Special action of Ripper Guns is a Light attack.",
 		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при нанесении удара по нескольким врагам одной тяжёлой атакой ближнего боя. Увеличивается до {heavy_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..", если вы ударили тяжёлой атакой.", -- Лучшая защита
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère après avoir touché plusieurs ennemis avec une seule attaque de mêlée et {heavy_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." si c'est une attaque de mélée puissante.", -- La meilleure défense
-	-- },
+	},
 	--[+ Passive 6 - Furious +]--
-	-- ["loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"] = { -- damage: +2.5%, +colors
-		-- en = "You gain "..CNumb("1", "n_1_rgb").." Stack of {damage:%s} "..CKWord("Damage", "Damage_rgb").." for each enemy Hit during a Single Melee Attack. Up to "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." "..CKWord("Damage", "Damage_rgb").." at "..CNumb("10", "n_10_rgb").." Stacks. Calculated separately for each Attack.",
+	["loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"] = { -- damage: +2.5%, +colors
+		en = "For each Enemy you hit during the same Melee Attack, gain:\n"
+			..Dot_green.." "..CNumb("1", "n_1_rgb").." Stack of {damage:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_nc.." Up to "..CNumb("+", "n_plus_rgb")..CNumb("30%", "pc_30_rgb").." "..CKWord("Damage", "Damage_rgb").." at "..CNumb("10", "n_10_rgb").." Stacks.\n"
+			..Dot_nc.." Calculated separately for each Attack.\n"
+			.."\n"
+			..Dot_nc.." Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Twin-Linked Stubbers, and Kickback can also proc this Talent.",
 		-- ru = "Вы получаете "..CNumb("1", "n_1_rgb").." заряд {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." за каждого поражённого врага в течение одной атаки ближнего боя. До "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." при "..CNumb("10", "n_10_rgb").." зарядах. Рассчитывается отдельно для каждой атаки.", -- Разъярённый -- руоф Разъяренный
 		-- fr = "Vous gagnez "..CNumb("1", "n_1_rgb").." cumul de {damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." par ennemis touchez durant une attaque de mélée unique. Jusqu'à "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." de "..COLORS_KWords_fr.Damage_rgb_fr.." à "..CNumb("10", "n_10_rgb").." cumuls. calculer séparement pour chaque attaque.", -- Furieux
-	-- },
+	},
 	--[+ Passive 7 - Towering Presence +]--
-	-- ["loc_talent_ogryn_bigger_coherency_radius_desc"] = { -- radius: +50%
-		-- en = "{radius:%s} "..CKWord("Coherency", "Coherency_rgb").." radius.",
+	["loc_talent_ogryn_bigger_coherency_radius_desc"] = { -- radius: +50%
+		en = Dot_green.." {radius:%s} "..CKWord("Coherency", "Coherency_rgb").." radius. Increased from "..CNumb("8", "n_8_rgb").." to "..CNumb("14", "n_14_rgb").." meters.",
 		-- ru = "{radius:%s} к радиусу "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Живая башня -- Величественное присутствие -- руоф Выдающееся присутствие
 		-- fr = "{radius:%s} de rayon de syntonie.",
-	-- },
+	},
 	--[+ Passive 8 - Soften Them Up +]--
-	-- ["loc_talent_ogryn_targets_recieve_damage_increase_debuff_new_desc"] = { -- damage: +15%, duration: 5, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." taken by Enemies for {duration:%s} seconds after receiving "..CKWord("Damage", "Damage_rgb").." from your Melee Attacks.",
+	["loc_talent_ogryn_targets_recieve_damage_increase_debuff_new_desc"] = { -- damage: +15%, duration: 5, +colors
+		en = "Enemies hit by your Melee Attacks gain for {duration:%s} seconds:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." Taken.\n"
+			.."\n"
+			..CPhrs("Can_be_refr").."\n"
+			..CPhrs("Doesnt_Stack_Ogr_abil").."\n"
+			.."\n"
+			..Dot_nc.." Can also be applied with Melee Special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Twin-Linked Stubbers, and Kickback.",
 		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." получаемому врагами в течение {duration:%s} секунд после получения "..CKWord("урона", "uronu_rgb_ru").." от ваших атак ближнего боя.", -- Ослабь их -- руоф Упокоить их
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." pendant {duration:%s} secondes est subit par les ennemis que vous frappez.",
-	-- },
+	},
 	--[+ Passive 9 - Payback Time +]--
-	-- ["loc_talent_ogryn_revenge_damage_new_desc"] = { -- damage: +20%, duration: 5, s->seconds, +colors
-		-- en = "{damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on taking or blocking a Melee hit, and on successfully Dodging enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper), and Disabler attacks (Pox Hound jump, Trapper net, Mutant grab).",
+	["loc_talent_ogryn_revenge_damage_new_desc"] = { -- damage: +20%, duration: 5, s->seconds, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on taking or blocking a Melee hit, and on successfully Dodging enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper), and Disabler attacks (Pox Hound jump, Trapper net, Mutant grab).\n"
+			.."\n"
+			..CPhrs("Can_be_refr"),
 		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд при получении или блокировании удара в ближнем бою, при успешном уклонении от атак противника в ближнем или дальнем бою (кроме атак Пулемётчиков, Жнецов и Снайперов), а также атак обездвиживающих врагов (прыжок Гончей, сетка Ловца, захват Мутанта).", -- Время расплаты
 		-- fr = "Vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." durant {duration:%s} secondes en subbisant ou en bloquant une attaque de mélée, ainsi qu'une esquive réussie d'une attaque de mélée ou d'une attaque à distance (sauf Mitrailleurs, Faucheurs, Snipers), et les attaques des spéciaux (saut de cerbère, filet de trappeuse, Mutant).",
-	-- },
+	},
 	--[+ Passive 10 - Pumped Up +]--
-	-- ["loc_talent_ogryn_damage_reduction_on_high_stamina_desc"] = { -- damage_taken: +15%, stamina: 75%, +colors
-		-- en = "{damage_taken:%s} "..CKWord("Health", "Health_rgb").." and "..CKWord("Toughness", "Toughness_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance while above {stamina:%s} max "..CKWord("Stamina", "Stamina_rgb")..".",
+	["loc_talent_ogryn_damage_reduction_on_high_stamina_desc"] = { -- damage_taken: +15%, stamina: 75%, +colors
+		en = "While above {stamina:%s} "..CKWord("Stamina", "Stamina_rgb")..":\n"
+			..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Resistance.",
 		-- ru = "{damage_taken:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." "..CKWord("стойкости", "stoikosti_rgb_ru").." и "..CKWord("здоровью", "zdoroviu_rgb_ru").." пока ваш уровень "..CKWord("выносливости", "vynoslivosti_rgb_ru").." выше {stamina:%s}.", -- Качок
 		-- fr = "{damage_taken:%s} Résistance au "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Health_rgb_fr.." et de "..COLORS_KWords_fr.Toughness_rgb_fr.."  en étant au dessus de {stamina:%s} max "..CKWord("Stamina", "Stamina_rgb")..".", -- Gonflé
-	-- },
+	},
 	--[+ Passive 11 - Focused Fighter +]--
-	-- ["loc_talent_ogryn_melee_attacks_give_mtdr_desc"] = { -- : +4%, : 5, +colors
-		-- en = "{reduction:%s} "..CKWord("Damage", "Damage_rgb").." Resistance from Melee Attacks after your Successful Melee Attack. You gain "..CNumb("1", "n_1_rgb").." Stack per swing, Up to {stacks:%s}. Stacks are removed upon taking "..CKWord("Damage", "Damage_rgb").." from a Melee Attack.",
+	["loc_talent_ogryn_melee_attacks_give_mtdr_desc"] = { -- : +4%, : 5, +colors
+		en = "On Successful Melee Attack, you gain "..CNumb("1", "n_1_rgb").." Stack per swing:\n"
+			..Dot_green.." {reduction:%s} "..CKWord("Damage", "Damage_rgb").." Resistance from Melee Attacks.\n"
+			..Dot_nc.." Stacks {stacks:%s} times.\n"
+			.."\n"
+			..Dot_nc.." Stacks are only removed by Melee "..CKWord("Damage", "Damage_rgb")..".",
 		-- ru = "{reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." от атак ближнего боя после успешной вашей атаки ближнего боя. Вы получаете "..CNumb("1", "n_1_rgb").." заряд за удар, вплоть до {stacks:%s}. Заряды сбрасываются при получении "..CKWord("урона", "uronu_rgb_ru").." от атак ближнего боя.", -- Сосредоточенный боец
 		-- fr = "{reduction:%s} Réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." des attaques de mélée lors d'une attaque de mélée réussie.Vous gagnez "..CNumb("1", "n_1_rgb").." cumul par coup, Jusqu'à {stacks:%s}. Les cumuls sont retirés lorsque vous subissez des "..COLORS_KWords_fr.Damage_rgb_fr.." d'une attaque de mélée.",
-	-- },
+	},
 	--[+ Passive 12 - Strongman +]--
-	-- ["loc_talent_ogryn_damage_reduction_after_elite_kill_desc"] = { -- : +10%, : 5, +colors
-		-- en = "{damage_reduction:%s} "..CKWord("Health", "Health_rgb").." and "..CKWord("Toughness", "Toughness_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance on Elite or Special Kill. Lasts {duration:%s} seconds.",
+	["loc_talent_ogryn_damage_reduction_after_elite_kill_desc"] = { -- : +10%, : 5, +colors
+		en = "Killing an Elite or Specialist grants for {duration:%s} seconds:\n"
+			..Dot_green.." {damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Resistance.",
 		-- ru = "{damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." "..CKWord("стойкости", "stoikosti_rgb_ru").." и "..CKWord("здоровью", "zdoroviu_rgb_ru").." после убийства элитного врага или специалиста. Длится {duration:%s} секунд.", -- Силач
 		-- fr = "{damage_reduction:%s} Réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Health_rgb_fr.." et de "..COLORS_KWords_fr.Toughness_rgb_fr.."  lors d'une élimination d'élite ou de spécialiste. Pendant {duration:%s} secondes.",
-	-- },
-	--[+ Passive 13 - Can't Hit Me...Again - Can't Hit Me... Again +]--
-	-- ["loc_talent_ogryn_ranged_damage_immunity_desc"] = { -- : +10%, : 5, +colors
-		-- en = "{resistance:%s} "..CKWord("Health", "Health_rgb").." and "..CKWord("Toughness", "Toughness_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Ranged for {duration:%s} seconds after getting hit by a Ranged Attack (including hits by Beast of Nurgle vomit, Flamers' direct fire, and Bombers' grenade direct impact). Cooldown {cooldown:%s} seconds.",
+	},
+	--[+ Passive 13 - Can't Hit Me...Again +]--
+	["loc_talent_ogryn_ranged_damage_immunity_desc"] = { -- : +10%, : 5, +colors
+		en = "On taking Ranged Hit, gain for {duration:%s} seconds:\n"
+			..Dot_green.." {resistance:%s} "..CKWord("Damage", "Damage_rgb").." Resistance vs Ranged.\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
 		-- ru = "{resistance:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." "..CKWord("стойкости", "stoikosti_rgb_ru").." и "..CKWord("здоровью", "zdoroviu_rgb_ru").." против атак дальнего боя в течение {duration:%s} секунд после попадания вражеского снаряда в вас (включая попадание рвоты Зверя Нургла, а также прямые попадания огнём Огнемётчика и гранатой Гренадёра). Восстановление {cooldown:%s} секунды.", -- Попробуй попади... снова
 		-- fr = "{resistance:%s} de Résistance au "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Health_rgb_fr.." et de "..COLORS_KWords_fr.Toughness_rgb_fr.." à distance pendant {duration:%s} secondes après avoir été touchez par une attaque à distance (incluant le vomit de la bête de Nurgle, le feu direct des incendiaires, et l'impact directe des grenades des grenadiers). Temps de recharge {cooldown:%s} secondes.",
-	-- },
+	},
 	--[+ Passive 14 - Keep Shooting +]--
-	-- ["loc_talent_ogryn_reload_speed_on_empty_desc"] = { -- : +10%, : 5, +colors
-		-- en = "{reload_speed:%s} Reload Speed when reloading an Empty Clip.",
-		-- ru = "{reload_speed:%s} к скорости перезарядки при перезарядке пустого магазина.", -- Продолжай стрелять
-		-- fr = "{reload_speed:%s} de vitesse de rechargement si le chargeur est vide.",
-	-- },
+	["loc_talent_ogryn_reload_speed_on_empty_desc"] = { -- : +10%, : 5, +colors
+		en = Dot_green.." {reload_speed:%s} Reload Speed when reloading an Empty Clip.",
+		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки при перезарядке пустого магазина.", -- Продолжай стрелять
+		fr = Dot_green.." {reload_speed:%s} de vitesse de rechargement si le chargeur est vide.",
+	},
 	--[+ Passive 15 - Beat Them Back +]--
-	-- ["loc_talent_ogryn_melee_damage_after_heavy_desc"] = { -- : +10%, : 5, +colors
-		-- en = "{melee_damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." on Successful Heavy Melee Attack. Lasts {duration:%s} seconds.",
+	["loc_talent_ogryn_melee_damage_after_heavy_desc"] = { -- : +10%, : 5, +colors
+		en = "On Successful Heavy Melee Attack, you gain:\n"
+			..Dot_green.." {melee_damage:%s} Melee "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.",
 		-- ru = "{melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя при успешной тяжёлой атаке ближнего боя. Длится {duration:%s} секунд.", -- Дай им отпор -- руоф Дай сдачи
 		-- fr = "{melee_damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée lors d'une attaque puissante de mélée réussie. Dure pendant {duration:%s} secondes.",
-	-- },
+	},
 	--[+ Passive 16 - Strike True +]--
-	-- ["loc_talent_ogryn_weakspot_damage_desc"] = { -- : +10%, : 5, +colors
-		-- en = "{damage:%s} Melee "..CKWord("Weak Spot", "Weak_spot_rgb").." "..CKWord("Strength", "Strength_rgb").."."..CNote("Pwr_note"),
-		-- ru = "{damage:%s} к  "..CKWord("силе", "sile_rgb_ru").." атак ближнего боя при попадании в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").."."..CNote("Pwr_note"), -- Меткий удар
+	["loc_talent_ogryn_weakspot_damage_desc"] = { -- : +10%, : 5, +colors
+		en = Dot_green.." {damage:%s} Melee "..CKWord("Weakspot", "Weakspot_rgb").." "..CKWord("Strength", "Strength_rgb")..".\n"
+			.."\n"
+			..CNote("Pwr_note"),
+		ru = Dot_green.." {damage:%s} к  "..CKWord("силе", "sile_rgb_ru").." атак ближнего боя при попадании в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".\n"
+			.."\n"
+			..CNote("Pwr_note"), -- Меткий удар
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." de mélée lors d'un coup en mélée sur un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."."..COLORS_KWords_fr.Pwr_note_fr, -- Coup au but
-	-- },
+	},
 	--[+ Passive 17 - Slam +]--
-	-- ["loc_talent_ogryn_melee_stagger_new_desc"] = { -- stagger: +25%, +colors
-		-- en = "{stagger:%s} "..CKWord("Impact", "Impact_rgb").." bonus on Melee Attacks. {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." replenished when "..CKWord("Staggering", "Staggering_rgb").." an enemy with a Melee Attack. Cooldown {cooldown:%s} second.",
+	["loc_talent_ogryn_melee_stagger_new_desc"] = { -- stagger: +25%, +colors
+		en = Dot_green.." {stagger:%s} "..CKWord("Impact", "Impact_rgb").." bonus on Melee Attacks.\n"
+			.."\n"
+			..Dot_green.." {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." replenished on "..CKWord("Staggering", "Staggering_rgb").." an enemy with a Melee Attack.\n"
+			.."\n"
+			..Dot_nc.." Cooldown: {cooldown:%s} second.",
 		-- ru = "{stagger:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru").." врагов от атак ближнего боя.\n{stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." восполняется при "..CKWord("ошеломлении", "oshelomlenii_rgb_ru").." врага атакой ближнего боя. Восстановление {cooldown:%s} секунда.", -- Сокрушение -- руоф Хлопок
 		-- fr = "{stagger:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." bonus sur les attaques de mêlée. {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." est régénérée lorsque vous faites "..COLORS_KWords_fr.Staggering_rgb_fr.." un ennemie avec une attaque de mélée. Temps de recharge : {cooldown:%s} seconde.",
-	-- },
+	},
 	--[+ Passive 18 - Ammo Stash +]--
-	-- ["loc_talent_ogryn_increased_ammo_desc"] = { -- max_ammo: +25%
-		-- en = "{max_ammo:%s} to your Maximum Ammo reserve, rounds down.",
-		-- ru = "{max_ammo:%s} к максимальному количеству боеприпасов в резерве. Округляется в меньшую сторону.", -- Схрон патронов
+	["loc_talent_ogryn_increased_ammo_desc"] = { -- max_ammo: +25%
+		en = Dot_green.." {max_ammo:%s} to your Maximum Ammo reserve. Rounds down.",
+		ru = Dot_green.." {max_ammo:%s} к максимальному количеству боеприпасов в резерве. Округляется в меньшую сторону.", -- Схрон патронов
 		-- fr = "Augmente votre réserve de munitions maximale de {max_ammo:%s}, arrondi à l'inférieur.",
-	-- },
+	},
 	--[+ Passive 19 - Big Boom +]--
-	-- ["loc_talent_ogryn_increase_explosion_radius_desc"] = { -- explosion_radius: +27.5%
-		-- en = "{explosion_radius:%s} to the radius of any explosions you cause.",
-		-- ru = "{explosion_radius:%s} к радиусу любых взрывов, вызванных вами.", -- Большой бабах
+	["loc_talent_ogryn_increase_explosion_radius_desc"] = { -- explosion_radius: +27.5%
+		en = Dot_green.." {explosion_radius:%s} radius to your explosions.",
+		ru = Dot_green.." {explosion_radius:%s} к радиусу любых взрывов, вызванных вами.", -- Большой бабах
 		-- fr = "Augmentez le rayon de vos explosion de {explosion_radius:%s} peu importe la source.", -- Baboom
-	-- },
+	},
 	--[+ Passive 20 - Crunch! +]--
-	-- ["loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_new_desc"] = { -- damage: +40%, stagger: +40%, &->and, +colors
-		-- en = "Based on charge time, your charged Melee Attack gains:\n"
-			-- .."{damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
-			-- .."{stagger:%s} "..CKWord("Impact", "Impact_rgb")..".",
+	["loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_new_desc"] = { -- damage: +15%, stagger: +30%, &->and, +colors
+		en = "Charging your Heavy Melee attack builds Stacks, up to "..CNumb("4", "n_4_rgb")..".\n"
+			.."\n"
+			.."You gain per Stack:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("3.75%", "pc_3_75_rgb").." "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("7.5%", "pc_7_5_rgb").." "..CKWord("Impact", "Impact_rgb")..".\n"
+			.."\n"
+			.."At "..CNumb("4", "n_4_rgb").." Stacks:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {stagger:%s} "..CKWord("Impact", "Impact_rgb")..".\n"
+			.."\n"
+			..Dot_nc.." Stacks are unaffected by Attack Speed buffs.",
 		-- ru = "В зависимости от времени заряжания, ваша заряженная атака ближнего боя получает прибавку:\n{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n{stagger:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..".", -- Хрусь! -- руоф Хрясь!
 		-- fr = "En fonction du temps de charge de votre attaque vous gagnez :\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." bonus et\n{stagger:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." bonus."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_10_rgb_fr,
-	-- },
+	},
 	--[+ Passive 21 - Batter +]--
-	-- ["loc_talent_ogryn_heavy_bleeds_new_desc"] = { -- stacks: +4, +colors
-		-- en = "Inflict {stacks:%s} Stacks of "..CKWord("Bleed", "Bleed_rgb").." on Melee Hit. Increased to {heavy_stacks:%s} on Heavy Melee Hit. Up to "..CNumb("16", "n_16_rgb").." Max "..CKWord("Bleed", "Bleed_rgb").." Stacks on a target.",
+	["loc_talent_ogryn_heavy_bleeds_new_desc"] = { -- stacks: +4, +colors
+		en = "On Light Melee Hit:\n"
+			..Dot_green.." {stacks:%s} Stacks of "..CKWord("Bleed", "Bleed_rgb")..".\n"
+			.."\n"
+			.."On Heavy Melee Hit:\n"
+			..Dot_green.." {heavy_stacks:%s} Stacks of "..CKWord("Bleed", "Bleed_rgb")..".\n"
+			.."\n"
+			..Dot_nc.." Up to "..CNumb("16", "n_16_rgb").." Max "..CKWord("Bleed", "Bleed_rgb").." Stacks on a target.",
 		-- ru = "{stacks:%s} заряда "..CKWord("кровотечения", "krovotechenia_rgb_ru").." накладывается на врага атаками ближнего боя. Увеличивается до {heavy_stacks:%s} при тяжёлом ударе ближнего боя. Вплоть до "..CNumb("16", "n_16_rgb").." зарядов на цель.", -- Месиво
 		-- fr = "Inflige {stacks:%s} cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." sur une attaque de mêlée. Et {heavy_stacks:%s} cumuls sur une attaque puissante. Jusqu'à "..CNumb("16", "n_16_rgb").." cumuls maximum de "..COLORS_KWords_fr.Bleed_rgb_fr.." sur une cible.",
-	-- },
+	},
 	--[+ Passive 22 - Brutish Strength +]--
 	-- ["loc_talent_ogryn_pushing_applies_brittlenes_desc"] = { -- stacks: +4, +colors
 		-- en = "{stacks:%s} Stacks of "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("Brittleness", "Brittleness_rgb").." applied to enemies on Push. Up to "..CNumb("40%", "pc_40_rgb").." Max at "..CNumb("16", "n_16_rgb").." Stacks.",

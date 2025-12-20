@@ -323,10 +323,7 @@ local CONFIG = {
 		Omnissia_p =		"Святилище Омниссии",
 		Prologue_p =		"Пролог",
 		Sir_melk_p =		"Реквизиториум сира Мелка",
-	-- },
 
--- ИСКУПЛЕНИЯ
-	-- talents_penances_text_colour = { -- ЗЕЛЁНЫЙ цвет
 	-- Псайкер
 		assail =			"Нападение",
 		bburst =			"Взрыва мозга",
@@ -399,9 +396,9 @@ local CONFIG = {
 	},
 
 -- СЛОЖНОСТЬ
-	sedition_text_colour = {
-		sedition =			"Мятеж",
-	},
+	-- sedition_text_colour = {
+		-- sedition =			"Мятеж",
+	-- },
 	uprising_text_colour = {
 		uprising =			"Восстание",
 	},

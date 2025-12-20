@@ -19,7 +19,7 @@ local DEFAULT_SETTINGS = {
 }
 
 local COLOR_SETTINGS = {
-	-- Enhanced Descriptions
+	-- Default text color = terminal_text_body
 	{ id = "bleed",				default = "ui_zealot" },
 	{ id = "brittleness",		default = "medium_orchid" },
 	{ id = "burn",				default = "sienna" },
@@ -65,20 +65,21 @@ local COLOR_SETTINGS = {
 
 	-- Misc
 	{ id = "talents",			default = "ui_input_color" },
-	-- { id = "talents_penances",	default = "forest_green" },
 	{ id = "numbers",			default = "ui_hud_yellow_super_light" },
 	{ id = "variables",			default = "ui_hud_yellow_super_light" },
 	{ id = "note",				default = "terminal_text_warning_dark" },
 	{ id = "warning",			default = "item_rarity_6" },
 
 	-- Difficulty
-	{ id = "sedition",			default = "white" },
 	{ id = "uprising",			default = "ui_difficulty_1" },
 	{ id = "malice",			default = "ui_difficulty_2" },
 	{ id = "heresy",			default = "ui_difficulty_3" },
 	{ id = "damnation",			default = "ui_difficulty_4" },
 	{ id = "auric",				default = "ui_difficulty_5" },
 }
+-- УДАЛЕНЫ! Очищаются в Enhanced_descriptions.lua
+	-- { id = "talents_penances",	default = "forest_green" },
+	-- { id = "sedition",			default = "terminal_text_body" },
 
 -- UTILITY FUNCTIONS
 local function create_checkbox_widget(setting_id, default_value)
