@@ -451,9 +451,6 @@ local function create_phrs_ru(colors_ru)
 	local Dot_green =	"{#color(35, 255, 5)}•{#reset()}"
 	local Dot_red =		"{#color(255, 35, 5)}•{#reset()}"
 
-	-- local function CKWord(fallback, colors, key)
-		-- return colors[key] or fallback
-	-- end
 	local CKWord = function(fallback, key)
 		return fallback
 	end
@@ -486,9 +483,6 @@ end
 local function create_nts_ru(colors_ru)
 	local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 
-	-- local function CKWord(fallback, colors, key)
-		-- return colors[key] or fallback
-	-- end
 	local CKWord = function(fallback, key)
 		return fallback
 	end
