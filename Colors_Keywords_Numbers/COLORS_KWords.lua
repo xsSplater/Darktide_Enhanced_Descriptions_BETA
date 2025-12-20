@@ -117,6 +117,7 @@ local CONFIG = {
 	},
 	toughness_text_colour = {
 		TDR =			"TDR",
+		TGHN =			"TGHN",
 		Tghns_dmg_red =	"Toughness Damage Reduction",
 		Toughness =		"Toughness",
 	},
@@ -373,11 +374,8 @@ local function create_phrs_en(colors_en)
 	local Dot_green =	"{#color(35, 255, 5)}•{#reset()}"
 	local Dot_red =		"{#color(255, 35, 5)}•{#reset()}"
 
-	-- local function CKWord(fallback, colors, key)
-		-- return colors[key] or fallback
-	-- end
 	local CKWord = function(fallback, key)
-		return fallback
+		return colors_en[key] or fallback
 	end
 
 	return {
@@ -402,7 +400,7 @@ local function create_phrs_en(colors_en)
 	Cant_Crit =					Dot_red.." Cannot "..CKWord("Crit", "Crit_rgb")..".\n",
 	Carap_cant_clv =			Dot_red.." Carapace armor cannot be "..CKWord("Cleaved", "Cleaved_rgb").." by default.",
 	Carap_cant_cleave =			Dot_red.." Carapace armor cannot be "..CKWord("Cleaved", "Cleaved_rgb").." by default.",
-	Dont_intw_coher_toughn =	Dot_red.." Does not interact with "..CKWord("Coherency", "Coherency_rgb").." "..CKWord("Toughness", "Toughness_rgb")..".",
+	Dont_intw_coher_toughn =	Dot_red.." Does not interact with "..CKWord("Coherency", "Coherency_rgb").." "..CKWord("Toughness", "Toughness_rgb").." Regeneration.",
 	}
 end
 
@@ -410,11 +408,8 @@ end
 local function create_nts_en(colors_en)
 	local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 
-	-- local function CKWord(fallback, colors, key)
-		-- return colors[key] or fallback
-	-- end
 	local CKWord = function(fallback, key)
-		return fallback
+		return colors_en[key] or fallback
 	end
 
 	return {
