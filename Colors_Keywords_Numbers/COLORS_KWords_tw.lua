@@ -77,6 +77,7 @@ local CONFIG = {
 	},
 	health_text_colour = {
 		Health = "生命",
+		Health_m = "最大生命",
 		Wound = "傷痕",
 		Wounds = "傷痕",
 	},
@@ -112,12 +113,14 @@ local CONFIG = {
 	},
 	stamina_text_colour = {
 		Stamina = "耐力",
+		Stamina_m = "最大耐力",
 		Stamina_c_r = "耐力消耗",
 	},
 	toughness_text_colour = {
 		TDR = "韌性傷害減免",
 		Tghns_dmg_red = "韌性傷害減免",
 		Toughness = "韌性",
+		Toughness_m = "最大韌性",
 	},
 	weakspot_text_colour = {
 		Weak_spot = "弱點部位",
