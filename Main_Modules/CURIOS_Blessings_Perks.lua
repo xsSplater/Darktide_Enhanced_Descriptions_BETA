@@ -199,7 +199,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Flamers",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от огнемётчиков",
 			fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("Dégâts", "Damage_rgb_fr").." (Incendiaires, Incendiaires toxiques) ",
-			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_r_rgb_tw").." (毒焰噴射者)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_res_rgb_tw").." (毒焰噴射者)",
 			["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."抗性（火焰兵）",
 		},
 		--[+ Damage Resistance vs Bombers +]--
@@ -207,7 +207,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Bombers",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от гренадёров",
 			fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("Dégâts", "Damage_rgb_fr").." (Bombardiers)",
-			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_r_rgb_tw").." (轟炸者)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_res_rgb_tw").." (轟炸者)",
 			["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."抗性（轰炸者）",
 		},
 		--[+ Damage Resistance vs Gunners +]--
@@ -215,7 +215,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Gunners",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от пулемётчиков",
 			fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("Dégâts", "Damage_rgb_fr").." (Mitrailleurs)",
-			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_r_rgb_tw").." (砲手)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_res_rgb_tw").." (砲手)",
 			["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."抗性（炮手）",
 		},
 		--[+ Damage Resistance vs Pox Hounds +]--
@@ -223,7 +223,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Pox Hounds",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от чумных гончих",
 			fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("Dégâts", "Damage_rgb_fr").." (Cerdères vérolés)",
-			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_r_rgb_tw").." (瘟疫獵犬)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_res_rgb_tw").." (瘟疫獵犬)",
 			["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."抗性（瘟疫猎犬）",
 		},
 		--[+ Damage Resistance vs Mutants +]--
@@ -231,7 +231,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Mutants",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от мутантов",
 			fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("Dégâts", "Damage_rgb_fr").." (Mutants)",
-			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_r_rgb_tw").." (變種人)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_res_rgb_tw").." (變種人)",
 			["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."抗性（变种人）",
 		},
 		--[+ Damage Resistance vs Snipers +]--
@@ -239,7 +239,7 @@ local curios_localizations = {
 			en = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("Damage", "Damage_rgb").." Resistance vs Snipers",
 			ru = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." сопротивления "..CKWord("урону", "uronu_rgb_ru").." от снайперов",
 			fr = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." de resistance aux "..CKWord("Dégâts", "Damage_rgb_fr").." (Snipers)",
-			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_r_rgb_tw").." (狙擊手)",
+			["zh-tw"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("傷害抗性", "Damage_res_rgb_tw").." (狙擊手)",
 			["zh-cn"] = CNumb("{damage_reduction:%s}", "dmg_red_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."抗性（狙击手）",
 		},
 

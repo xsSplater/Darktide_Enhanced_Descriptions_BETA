@@ -63,7 +63,7 @@ local CONFIG = {
 	},
 	damage_text_colour = {
 		Damage = "傷害",
-		Damage_r = "傷害抗性", -- Resistance
+		Damage_res = "傷害抗性", -- Resistance
 		Damagewrp = "亞空間傷害",
 	},
 	electrocuted_text_colour = {
