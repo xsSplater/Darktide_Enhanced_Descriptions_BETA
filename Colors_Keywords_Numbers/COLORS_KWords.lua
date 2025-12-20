@@ -243,6 +243,8 @@ local CONFIG = {
 		Fragm_gren =	"Fragmentation Grenade",
 		Rangd_stnc =	"Ranged Stance",
 		Duty_honor =	"Duty and Honour",
+-- Ogryn
+		Att_Seeker =		"Attention Seeker",
 
 -- PENANCES
 		Base_tut_p =	"Basic Training",
@@ -393,6 +395,8 @@ local function create_phrs_en(colors_en)
 -- Zealot
 	Doesnt_Stack_Zea_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Zealot", "cls_zea_rgb")..".",
 	Doesnt_Stack_Zea_abil =		Dot_red.." Does not Stack with the same talent from another "..CKWord("Zealot", "cls_zea_rgb")..".",
+-- Ogryn
+	Doesnt_Stack_Ogr_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 
 	Cant_appl_thr_shlds =		Dot_red.." Can't apply through shields.",
 	Cant_Crit =					Dot_red.." Cannot "..CKWord("Crit", "Crit_rgb")..".\n",

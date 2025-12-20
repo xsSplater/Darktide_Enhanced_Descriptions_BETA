@@ -643,10 +643,10 @@ local talent_localizations = {
 	--[+ ABILITY 1-2 - Becalming Eruption +]--	13.11.2025
 	["loc_talent_psyker_shout_reduces_warp_charge_generation_description"] = { -- talent_name: Venting Shriek, warp_generation: 1%, max_stacks: 25->25%, duration: 5, s->seconds, +colors
 		en = Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} "..CKWord("Peril", "Peril_rgb").." Generation for each Enemy hit by {talent_name:%s}.\n"
-				..Dot_nc.." Up to "..CNumb("-", "n_minus_rgb").."{max_stacks:%s}"..CKWord("%", "pc_rgb").." "..CKWord("Peril", "Peril_rgb").." Generation.\n"
+				..Dot_nc.." Up to "..CNumb("-", "n_minus_rgb").."{max_stacks:%s}"..CNumb("%", "pc_rgb").." "..CKWord("Peril", "Peril_rgb").." Generation.\n"
 				..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." за каждого врага поражённого вашим талантом {talent_name:%s}.\n" -- Успокаивающее извержение -- руоф Затихающее извержение
-				..Dot_nc.." До "..CNumb("-", "n_minus_rgb").."{max_stacks:%s}"..CKWord("%", "pc_rgb").." к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".\n"
+				..Dot_nc.." До "..CNumb("-", "n_minus_rgb").."{max_stacks:%s}"..CNumb("%", "pc_rgb").." к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".\n"
 				..Dot_nc.." Длится {duration:%s} секунд.",
 	},
 -- !!! Removed " -". Fix in the Enhanced_Descriptions.lua file !!! --
@@ -655,7 +655,7 @@ local talent_localizations = {
 		en = "{talent_name:%s} applies {min_stacks:%s} - {warpfire_stacks:%s} Stacks of "..CKWord("Soulblaze", "Soulblaze_rgb").." to targets Hit based on your current "..CKWord("Peril", "Peril_rgb")..".\n"
 			.."_______________________________\n"
 			..CKWord("Soulblaze", "Soulblaze_rgb")..":   "..CNumb("1", "n_1_rgb").." |    "..CNumb("2", "n_2_rgb").." |     "..CNumb("3", "n_3_rgb").." |      "..CNumb("4", "n_4_rgb").." |     "..CNumb("5", "n_5_rgb").." |     "..CNumb("6", "n_6_rgb").."\n"
-			..CKWord("Peril", "Peril_rgb").." ("..CKWord("%", "pc_rgb").."):     "..CNumb("0", "n_0_rgb").." | "..CKWord("~17", "n__17_rgb").." | "..CKWord("~33", "n__33_rgb").." | "..CKWord("~50", "n__50_rgb").." | "..CKWord("~67", "n__67_rgb").." | "..CKWord("~83", "n__83_rgb").."\n"
+			..CKWord("Peril", "Peril_rgb").." ("..CNumb("%", "pc_rgb").."):     "..CNumb("0", "n_0_rgb").." | "..CKWord("~17", "n__17_rgb").." | "..CKWord("~33", "n__33_rgb").." | "..CKWord("~50", "n__50_rgb").." | "..CKWord("~67", "n__67_rgb").." | "..CKWord("~83", "n__83_rgb").."\n"
 			.."_______________________________\n"
 			..Dot_nc.." Lasts "..CNumb("8", "n_8_rgb").." seconds.\n"
 			..Dot_nc.." Ticks every "..CNumb("0.75", "n_075_rgb").." seconds.\n"
@@ -666,7 +666,7 @@ local talent_localizations = {
 		ru = "{talent_name:%s} накладывает от "..CNumb("1", "n_1_rgb").." до {warpfire_stacks:%s} зарядов "..CKWord("горения души", "gorenia_dushi_rgb_ru").." на поражённые цели в зависимости от текущего процента "..CKWord("опасности", "opasnosti_rgb_ru")..":\n" -- Ползучее пламя -- руоф Раздувающееся пламя
 			.."_______________________________\n"
 			.."Заряды:              "..CNumb("1", "n_1_rgb").."|    "..CNumb("2", "n_2_rgb").."|    "..CNumb("3", "n_3_rgb").."|    "..CNumb("4", "n_4_rgb").."|    "..CNumb("5", "n_5_rgb").."|     "..CNumb("6", "n_6_rgb").."\n"
-			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CKWord("%", "pc_rgb").."):   "..CNumb("0", "n_0_rgb").."|"..CKWord("~17", "n__17_rgb").."|"..CKWord("~33", "n__33_rgb").."|"..CKWord("~50", "n__50_rgb").."|"..CKWord("~67", "n__67_rgb").."|"..CKWord("~83", "n__83_rgb").."\n"
+			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CNumb("%", "pc_rgb").."):   "..CNumb("0", "n_0_rgb").."|"..CKWord("~17", "n__17_rgb").."|"..CKWord("~33", "n__33_rgb").."|"..CKWord("~50", "n__50_rgb").."|"..CKWord("~67", "n__67_rgb").."|"..CKWord("~83", "n__83_rgb").."\n"
 			.."_______________________________\n"
 			..Dot_nc.." Срабатывает раз в "..CNumb("0.75", "n_075_rgb").." секунды.\n"
 			..Dot_nc.." Длится "..CNumb("8", "n_8_rgb").." секунд.\n"
@@ -1264,14 +1264,14 @@ local talent_localizations = {
 			..Dot_green.." Always grants a minimum of {min_damage:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." regardless of current "..CKWord("Peril", "Peril_rgb").." amount and scales linearly:\n"
 			.."_______________________________\n"
 			..CKWord("Peril", "Peril_rgb")..":       "..CNumb("0", "n_0_rgb").."|   "..CNumb("20", "n_20_rgb").."|  "..CNumb("40", "n_40_rgb").."|   "..CNumb("50", "n_50_rgb").."|   "..CNumb("60", "n_60_rgb").."|   "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("TDR", "TDR_rgb").."("..CKWord("%", "pc_rgb").."): "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~22", "n__22_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."|   "..CNumb("33", "n_33_rgb").."\n"
+			..CKWord("TDR", "TDR_rgb").."("..CNumb("%", "pc_rgb").."): "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~22", "n__22_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."|   "..CNumb("33", "n_33_rgb").."\n"
 			.."_______________________________",
 		ru = Dot_green.." От {min_damage:%s} до {max_damage:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." в зависимости от вашего текущего уровня "..CKWord("опасности", "opasnosti_rgb_ru")..".\n" -- Единство с варпом
 			.."\n"
 			..Dot_green.." Всегда даёт минимум {min_damage:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." независимо от текущего уровня "..CKWord("опасности", "opasnosti_rgb_ru").." и увеличивается линейно:\n"
 			.."_______________________________\n"
-			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CKWord("%", "pc_rgb").."): "..CNumb("0", "n_0_rgb").."|  "..CNumb("20", "n_20_rgb").."|  "..CNumb("40", "n_40_rgb").."|   "..CNumb("60", "n_60_rgb").."|   "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("СУС", "TDR_rgb_ru").."("..CKWord("%", "pc_rgb").."):           "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."|   "..CNumb("33", "n_33_rgb").."\n"
+			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CNumb("%", "pc_rgb").."): "..CNumb("0", "n_0_rgb").."|  "..CNumb("20", "n_20_rgb").."|  "..CNumb("40", "n_40_rgb").."|   "..CNumb("60", "n_60_rgb").."|   "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("СУС", "TDR_rgb_ru").."("..CNumb("%", "pc_rgb").."):           "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."|   "..CNumb("33", "n_33_rgb").."\n"
 			.."_______________________________",
 	},
 	--[+ Passive 21 - Just a Dream +]--	08.12.2025
@@ -1313,13 +1313,13 @@ local talent_localizations = {
 	["loc_talent_psyker_damage_based_on_warp_charge_desc"] = { -- max_damage: +20%, +colors
 		en = Dot_green.." Deal up to {max_damage:%s} "..CKWord("Damage", "Damage_rgb")..", based on your current "..CKWord("Peril", "Peril_rgb")..":\n"
 			.."_______________________________\n"
-			..CKWord("Peril", "Peril_rgb").."("..CKWord("%", "pc_rgb").."):         "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."|  "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("Damage", "Damage_rgb").."("..CKWord("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("10", "n_10_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|   "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("Peril", "Peril_rgb").."("..CNumb("%", "pc_rgb").."):         "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."|  "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("Damage", "Damage_rgb").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("10", "n_10_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|   "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 		ru = Dot_green.." До {max_damage:%s} к "..CKWord("урон", "uronu_rgb_ru")..", в зависимости от вашего уровня "..CKWord("опасности", "opasnosti_rgb_ru")..":\n" -- Всадник варпа -- руоф Наездник варпа
 			.."_______________________________\n"
-			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CKWord("%", "pc_rgb").."):    "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."|  "..CNumb("40", "n_40_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("Урон", "Uron_rgb_ru").."("..CKWord("%", "pc_rgb").."):               "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|   "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CNumb("%", "pc_rgb").."):    "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."|  "..CNumb("40", "n_40_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("Урон", "Uron_rgb_ru").."("..CNumb("%", "pc_rgb").."):               "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|   "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 	},
 	--[+ Passive 27 - True Aim +]--	08.12.2025
@@ -1359,15 +1359,15 @@ local talent_localizations = {
 	["loc_talent_psyker_warp_attacks_rending_alt_desc"] = { -- rending: +10%, threshold: 75%, +colors
 		en = Dot_green.." Up to {rending:%s} "..CKWord("Rending", "Rending_rgb").." on Warp-Attacks, based on "..CKWord("Peril", "Peril_rgb")..":\n"
 			.."_______________________________\n"
-			..CKWord("Peril", "Peril_rgb").."("..CKWord("%", "pc_rgb").."):          "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("Rending", "Rending_rgb").."("..CKWord("%", "pc_rgb").."):   "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("10", "n_10_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("Peril", "Peril_rgb").."("..CNumb("%", "pc_rgb").."):          "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("Rending", "Rending_rgb").."("..CNumb("%", "pc_rgb").."):   "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("10", "n_10_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
 		ru = Dot_green.." До {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони для варп-атак, в зависимости от уровне "..CKWord("опасности", "opasnosti_rgb_ru")..":\n" -- Проникновение в душу
 			.."_______________________________\n"
-			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CKWord("%", "pc_rgb").."):      "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("Пробивание", "Probivanie_rgb_ru").."("..CKWord("%", "pc_rgb").."):   "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CNumb("%", "pc_rgb").."):      "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("Пробивание", "Probivanie_rgb_ru").."("..CNumb("%", "pc_rgb").."):   "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
@@ -1710,8 +1710,8 @@ local talent_localizations = {
 		en = Dot_green.." {power:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds to enemies within "..CNumb("12.5", "n_12_5_rgb").." meters on "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use.\n"
 			.."Beyond "..CNumb("12.5", "n_12_5_rgb").." meters, the "..CKWord("Damage", "Damage_rgb").." buff decreases linearly until it loses its effect at "..CNumb("30", "n_30_rgb").." meters:\n"
 			.."_______________________________\n"
-			.."Distance ("..CKWord("m", "n_meter_rgb")..")   "..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." |   "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb").."\n"
-			..CKWord("Damage", "Damage_rgb").." ("..CKWord("%", "pc_rgb").."): "..CNumb("15", "n_15_rgb").." |    "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." |  "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." |   "..CNumb("0", "n_0_rgb").."\n"
+			.."Distance ("..CNumb("m", "n_meter_rgb")..")   "..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." |   "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb").."\n"
+			..CKWord("Damage", "Damage_rgb").." ("..CNumb("%", "pc_rgb").."): "..CNumb("15", "n_15_rgb").." |    "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." |  "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." |   "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
 			..Dot_green.." This also increases the "..CKWord("Damage", "Damage_rgb").." of explosions and DoTs as long as Veteran stays within "..CNumb("30", "n_30_rgb").." meters to the enemy.\n"
 			.."\n"
@@ -1721,7 +1721,7 @@ local talent_localizations = {
 			.."За пределами "..CNumb("12.5", "n_12_5_rgb").." метров, "..CKWord("урон", "uron_rgb_ru").." уменьшается линейно, пока не теряет свой эффект на "..CNumb("30", "n_30_rgb").." метрах:\n"
 			.."_______________________________\n"
 			.."Дистанция:   "..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." |   "..CNumb("15", "n_15_rgb").." |  "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb").."\n"
-			..CKWord("Урон", "Uron_rgb_ru").." ("..CKWord("%", "pc_rgb").."):     "..CNumb("15", "n_15_rgb").." |     "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." |  "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." |   "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("Урон", "Uron_rgb_ru").." ("..CNumb("%", "pc_rgb").."):     "..CNumb("15", "n_15_rgb").." |     "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." |  "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." |   "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
 			..Dot_green.." Это также увеличивает "..CKWord("урон", "uron_rgb_ru").." от взрывов и количество "..CKWord("урона", "urona_rgb_ru").." со временем, пока "..CKWord("Ветеран", "cls_vet_rgb_ru").." находится в пределах "..CNumb("30", "n_30_rgb").." метров от врага.\n"
 			.."\n"
@@ -1949,15 +1949,15 @@ local talent_localizations = {
 			.."\n"
 			.."Against targets beyond {ranged_close:%s} meters, Ranged "..CKWord("Damage", "Damage_rgb").." increases linearly up to {max_ranged_damage:%s} at {ranged_far:%s} meters:\n"
 			.."_______________________________\n"
-			.."Distance ("..CKWord("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("Damage", "Damage_rgb").." ("..CKWord("%", "pc_rgb").."):  "..CNumb("10", "n_10_rgb").."|    "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."| "..CNumb("25", "n_25_rgb").."\n"
+			.."Distance ("..CNumb("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
+			..CKWord("Damage", "Damage_rgb").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("10", "n_10_rgb").."|    "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."| "..CNumb("25", "n_25_rgb").."\n"
 			.."_______________________________\n",
 		ru = Dot_green.." {ranged_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." в дальнем бою на расстоянии до {ranged_close:%s} метров.\n" -- Дальнобойный выстрел -- руоф Далекая перспектива
 			.."\n"
 			.."Против целей за пределами {ranged_close:%s} метров, "..CKWord("урон", "uron_rgb_ru").." в дальнем бою увеличивается линейно до {max_ranged_damage:%s} на {ranged_far:%s} метрах:\n"
 			.."_______________________________\n"
 			.."Дистанция("..CKWord("м", "n_metr_rgb").."): "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}|  "..CNumb("15", "n_15_rgb").."|   "..CNumb("20", "n_20_rgb").."|  "..CNumb("25", "n_25_rgb").."|  "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("Урон", "Uron_rgb_ru").." ("..CKWord("%", "pc_rgb").."):        "..CNumb("10", "n_10_rgb").."|    "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."|  "..CNumb("25", "n_25_rgb").."\n"
+			..CKWord("Урон", "Uron_rgb_ru").." ("..CNumb("%", "pc_rgb").."):        "..CNumb("10", "n_10_rgb").."|    "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."|  "..CNumb("25", "n_25_rgb").."\n"
 			.."_______________________________\n",
 	},
 	--[+ Passive 6 - Covering Fire +]--	08.12.2025
@@ -2814,7 +2814,7 @@ local talent_localizations = {
 			.."\n"
 			..CKWord("Критические удары", "Krit_udary_rgb_ru").." также засчитываются для активации "..CKWord("Ярости", "Fury_i_rgb_ru")..".",
 		-- fr = "Quand {max_stacks:%s} ennemis meurent dans un rayon de {radius:%s} mètres autour de vous, vous entrez en "..CKWord("Fureur", "Fury_rgb_fr").." et obtenez {crit_chance:%s} "..CKWord("Chances de coup critique", "Crt_hit_chnc_rgb_fr").." pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_rgb_fr,
-		-- ["zh-tw"] = "{radius:%s} "..CKWord("m", "n_meter_rgb").." 內擊殺 {max_stacks:%s} 名敵人，\n"
+		-- ["zh-tw"] = "{radius:%s} "..CNumb("m", "n_meter_rgb").." 內擊殺 {max_stacks:%s} 名敵人，\n"
 			-- .."獲得以下效果：\n"
 			-- .."- 進入"..CKWord("狂暴", "Fury_i_rgb_tw").."狀態。\n"
 			-- .."- {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."，持續 {duration:%s} 秒。\n"
@@ -2998,13 +2998,13 @@ local talent_localizations = {
 			..Dot_green.." {more_toughness:%s} per addition Enemy. Monstrosities count as {monster_count:%s}. Up to {max:%s}.\n"
 			.."_______________________________\n"
 			.."Enemies:              "..CNumb("1", "n_1_rgb").."|     "..CNumb("2", "n_2_rgb").."|    "..CNumb("3", "n_3_rgb").."|     "..CNumb("4", "n_4_rgb").."|    "..CNumb("5", "n_5_rgb").."|  >"..CNumb("5", "n_5_rgb").."\n"
-			..CKWord("Toughness", "Toughness_rgb").."("..CKWord("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
+			..CKWord("Toughness", "Toughness_rgb").."("..CNumb("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
 			.."_______________________________",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду восстанавливается, пока враг находится в радиусе {range:%s} метров.\n" -- Враги внутри, враги снаружи -- руоф Не дай ему уйти
 			..Dot_green.." {more_toughness:%s} за каждого дополнительного врага. Чудовища считаются за {monster_count:%s}. До {max:%s}.\n"
 			.."_______________________________\n"
 			.."Враги:                  "..CNumb("1", "n_1_rgb").."|    "..CNumb("2", "n_2_rgb").."|     "..CNumb("3", "n_3_rgb").."|    "..CNumb("4", "n_4_rgb").."|     "..CNumb("5", "n_5_rgb").."| >"..CNumb("5", "n_5_rgb").."\n"
-			..CKWord("Стойкость", "Stoikost_rgb_ru").."("..CKWord("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
+			..CKWord("Стойкость", "Stoikost_rgb_ru").."("..CNumb("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
 			.."_______________________________",
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." par seconde lorsque vous êtes à moins de {range:%s} mètres d'au moins {num_enemies:%s} ennemis."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_5_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -3082,13 +3082,13 @@ local talent_localizations = {
 	["loc_talent_zealot_damage_based_on_stamina_desc"] = { -- damage: +20%, s->seconds, +colors
 		en = "Up to {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." based on missing "..CKWord("Stamina", "Stamina_rgb")..":\n"
 			.."_______________________________\n"
-			..CKWord("Stamina", "Stamina_rgb").."("..CKWord("%", "pc_rgb").."):   "..CNumb("100", "n_100_rgb").."|  "..CNumb("80", "n_80_rgb").."|  "..CNumb("60", "n_60_rgb").."|  "..CNumb("40", "n_40_rgb").."|  "..CNumb("20", "n_20_rgb").."|    "..CNumb("0", "n_0_rgb").."\n"
-			..CKWord("Damage", "Damage_rgb").."("..CKWord("%", "pc_rgb").."):       "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|   "..CNumb("12", "n_12_rgb").."|   "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("Stamina", "Stamina_rgb").."("..CNumb("%", "pc_rgb").."):   "..CNumb("100", "n_100_rgb").."|  "..CNumb("80", "n_80_rgb").."|  "..CNumb("60", "n_60_rgb").."|  "..CNumb("40", "n_40_rgb").."|  "..CNumb("20", "n_20_rgb").."|    "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("Damage", "Damage_rgb").."("..CNumb("%", "pc_rgb").."):       "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|   "..CNumb("12", "n_12_rgb").."|   "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 		ru = "До {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя в зависимости от потерянной "..CKWord("выносливости", "vynoslivosti_rgb_ru")..":\n" -- Отчаяние
 			.."_______________________________\n"
 			..CKWord("Выносливость", "Vynoslivost_rgb_ru")..": "..CNumb("100", "n_100_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("20", "n_20_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
-			..CKWord("Урон", "Uron_rgb_ru").."("..CKWord("%", "pc_rgb").."):                  "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("Урон", "Uron_rgb_ru").."("..CNumb("%", "pc_rgb").."):                  "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pendant {duration:%s} secondes lorsque "..CKWord("Endurance", "Stamina_rgb_fr").." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_23_rgb_fr,
 		-- ["zh-tw"] = "",
@@ -3345,11 +3345,17 @@ local talent_localizations = {
 --[+ ++OGRYN - ОГРИН++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
 	--[+ BLITZ 0 - Big Box of Hurt +]--
-	-- ["loc_ability_ogryn_grenade_box_description"] = { -- +colors
-		-- en = "Throw a box of Grenades with great strength and enthusiasm for High "..CKWord("Damage", "Damage_rgb").." against a Single Enemy.\n"
-			-- .."Slightly increased "..CKWord("Damage", "Damage_rgb").." vs Unyielding and very low "..CKWord("Damage", "Damage_rgb").." vs Carapace armor.\n"
-			-- .."Replenishes all boxes per Grenade pickup."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_0_rgb,
+	["loc_ability_ogryn_grenade_box_description"] = { -- +colors
+		en = "Throw a box of Grenades with great strength and enthusiasm for High "..CKWord("Damage", "Damage_rgb").." against a Single Enemy.\n"
+			.."\n"
+			..Dot_green.." Impact base "..CKWord("Damage", "Damage_rgb")..": "..CNumb("1850", "n_1850_rgb")..".\n"
+			..Dot_green.." Instakill: Gunners, Shotgunners, Dreg Rager, Scab Mauler, Mutants, Pox Hounds, Poxburster, Corruptor.\n"
+			.."\n"
+			..Dot_green.." Slightly increased "..CKWord("Damage", "Damage_rgb").." vs Unyielding.\n"
+			..Dot_red.." Very low "..CKWord("Damage", "Damage_rgb").." vs Carapace.\n"
+			..Dot_green.." High "..CKWord("Stagger", "Stagger_rgb").." against all enemies, except for Monstrosities and Captains/Twins.\n"
+			-- .."\n"
+			..Dot_nc.." Replenishes all boxes per Grenade pickup.",
 		-- ru = "Вы бросаете коробку гранат с огромной силой и энтузиазмом, чтобы нанести высокий "..CKWord("урон", "uronu_rgb_ru").." одному врагу.\nНемного увеличен "..CKWord("урон", "uronu_rgb_ru").." против несгибаемых врагов и очень низкий "..CKWord("урон", "uronu_rgb_ru").." против панцирной брони.\nПополняет все ящики при подборе гранат."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_0_rgb"), -- Большая коробка боли -- руоф Ящик, полный боли
 		-- fr = "Lancer une boîte de grenades avec une grande force et enthousiasme pour des "..COLORS_KWords_fr.Damage_rgb_fr.." élevés  contre un seul ennemi."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_0_rgb_fr,
 		-- ["zh-tw"] = "投擲一個手榴彈箱攻擊單一敵人。\n"
@@ -3358,13 +3364,25 @@ local talent_localizations = {
 			-- ..Dot_red.." 對裝甲敵人造成非常低 "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
 			-- ..Dot_nc.." 撿拾手榴彈時補滿所有彈箱。\n"
 			-- ..TALENTS_Enh_desc2_tw.ED_OGR_Blitz_0_rgb_tw, -- 巨量傷害盒 --激情地奮力投出手雷箱，對單一敵人造成大量傷害。
-	-- },
+	},
 	--[+ BLITZ 1 - Big Friendly Rock +]--
-	-- ["loc_ability_ogryn_friend_rock_desc"] = { -- recharge: 45, max_charges: 4, s->seconds
-		-- en = "Toss a Big rock or hunk of junk at a Single Enemy. You pick up a new rock every {recharge:%s} seconds and can hold up to {max_charges:%s} rocks at a time.\n"
-			-- .."Slightly increased "..CKWord("Damage", "Damage_rgb").." vs Maniac and very low "..CKWord("Damage", "Damage_rgb").." vs Carapace. Extra "..CKWord("Finesse", "Finesse_rgb").." boost against Unyielding.\n"
-			-- .."Ogryn cannot pick up Grenade ammo."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_1_rgb,
+	["loc_ability_ogryn_friend_rock_desc"] = { -- recharge: 45, max_charges: 4, s->seconds
+		en = "Toss a Big rock or hunk of junk at a Single Enemy.\n"
+			..Dot_nc.." You pick up a new rock every {recharge:%s} seconds.\n"
+			..Dot_nc.." Сan hold up to {max_charges:%s} rocks at a time.\n"
+			.."\n"
+			..Dot_green.." Impact base "..CKWord("Damage", "Damage_rgb")..": "..CNumb("1200", "n_1200_rgb")..".\n"
+			..Dot_green.." Instakill: Gunners, Shotgunners, Dreg Rager, Mutants, Pox Hounds, Poxburster, Corruptor.\n"
+			.."\n"
+			..Dot_green.." Slightly increased "..CKWord("Damage", "Damage_rgb").." vs Maniac.\n"
+			..Dot_red.." Very low "..CKWord("Damage", "Damage_rgb").." vs Carapace.\n"
+			.."\n"
+			.."Inflicts high "..CKWord("Stagger", "Stagger_rgb").." with varying effectiveness:\n"
+			..Dot_green.." Standard enemies: Always.\n"
+			..Dot_green.." Monstrosities: Only on "..CKWord("Weakspot Hits", "Weakspothits_rgb")..".\n"
+			..Dot_green.." Captains/Twins: Only with no Void shield.\n"
+			.."\n"
+			..Dot_red.." Ogryn cannot pick up Grenade ammo.",
 		-- ru = "Вы бросаете большой камень или обломок бетона в одного врага. Вы подбираете новый камень каждые {recharge:%s} секунд и можете иметь при себе до {max_charges:%s} камней одновременно.\nСлегка увеличен "..CKWord("урон", "uronu_rgb_ru").." против маньяков и очень низкий "..CKWord("урон", "uronu_rgb_ru").." против панцирной брони. Дополнительное усиление от "..CKWord("ловкости", "lovkosti_rgb_ru").." против несгибаемых.\nОгрин не может подбирать гранаты."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_1_rgb"), -- Большой дружелюбный валун
 		-- fr = "Lancer un gros caillou à un seul ennemi. Vous ramassez un nouveau caillou tous les {recharge:%s} secondes et pouvez en tenir jusqu'à {max_charges:%s} à la fois.\n"..COLORS_KWords_fr.Damage_rgb_fr.." légèrement augmenter contre les Maniaques et très faible "..COLORS_KWords_fr.Damage_rgb_fr.." contre ceux en armure Carapace. Bonus de "..COLORS_KWords_fr.Finesse_dmg_rgb_fr.." contre les Implacable\nL'Ogryn ne peux plus ramasser de caisse de grenade."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_1_rgb_fr,
 		-- ["zh-tw"] = "投擲巨石 攻擊單一敵人。\n"
@@ -3375,205 +3393,275 @@ local talent_localizations = {
 			-- ..Dot_green.." 對不屈敵人額外強化 "..COLORS_KWords_tw.Finesse_rgb_tw.." 效果。\n"
 			-- ..Dot_red.." 歐格林無法撿拾手榴彈。\n"
 			-- ..TALENTS_Enh_desc2_tw.ED_OGR_Blitz_1_rgb_tw, -- 投石問路 -- 向單個敵人投擲一塊巨石或一大塊垃圾。對甲殼護甲和不屈敵人的效果減弱。你每{recharge:%s}秒撿起一塊新岩石，一次可同時舉起{max_charges:%s}塊岩石。
-	-- },
+	},
 	--[+ BLITZ 1-1 - That One Didn't Count +]--
-	-- ["loc_talent_ogryn_replenish_rock_on_miss_desc"] = { -- +colors
-		-- en = "{talent_name:%s} Replenishes a Charge if you hit a "..CKWord("Weak Spot", "Weak_spot_rgb").." or hit no enemies. Cooldown "..CNumb("{cooldown_duration:%s}", "cd_dur_var_rgb").." seconds.",
+	["loc_talent_ogryn_replenish_rock_on_miss_desc"] = { -- +colors
+		en = "{talent_name:%s} Replenishes a Charge if you hit a "..CKWord("Weak Spot", "Weak_spot_rgb").." or hit no enemies.\n"
+			..Dot_nc.." Cooldown "..CNumb("{cooldown_duration:%s}", "cd_dur_var_rgb").." seconds.",
 		-- ru = "{talent_name:%s} восстанавливает заряд, если вы попали в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru").." или не попали ни в кого. Восстановление "..CNumb("{cooldown_duration:%s}", "cd_dur_var_rgb").." секунд.", -- Этот не считается -- руоф 
 		-- fr = "{talent_name:%s} rend un caillou si vous touchez un "..COLORS_KWords_fr.Weakspot_rgb_fr.." ou si vous ne touchez aucun ennemi. Temps de rechargement "..CNumb("{cooldown_duration:%s}", "cd_dur_var_rgb").." secondes", -- Ca ne comtpe pas
 		-- ["zh-tw"] = "{talent_name:%s} 若 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." 或未命中敵人，\n\n"
 			-- ..Dot_green.." 將恢復一個使用次數。\n"
 			-- ..Dot_nc.." 冷卻為 "..CNumb("{cooldown_duration:%s}", "cd_dur_var_rgb").." 秒。", -- 那下不算! -- 命中弱點或未命中任何敵人時，{talent_name:%s}將恢復一次充能。冷卻時間{cooldown_duration:%s}秒。
-	-- },
+	},
 	--[+ BLITZ 2 - Frag Bomb +]--
-	-- ["loc_ability_ogryn_grenade_demolition_desc"] = { -- radius: 16, m->meters, +colors
-		-- en = "Throw an Ogryn-sized (the only proper kind!) "..CKWord("Frag Grenade", "Frag_gren_rgb").." with a {radius:%s} meters blast radius, dealing increased "..CKWord("Damage", "Damage_rgb").." at the center.\n"
-			-- .."Fuse time: 2 seconds.\n"
-			-- .."Very high armor "..CKWord("Damage", "Damage_rgb").." vs Flak, Maniac, Unyielding.\n"
-			-- .."Deals high "..CKWord("Stagger", "Stagger_rgb").." against all enemies including Monstrosities, Captains/Twins (only without void shield).\n"
-			-- .."Instakill all enemies with an explosion except: Maulers, Crushers, Bulwarks and Monstrosities."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_2_rgb,
+	["loc_ability_ogryn_grenade_demolition_desc"] = { -- radius: 16, m->meters, +colors
+		en = "Throw an Ogryn-sized (the only proper kind!) "..CKWord("Frag Grenade", "Frag_gren_rgb")..".\n"
+			..Dot_nc.." Fuse time: 2 seconds.\n"
+			..Dot_nc.." Blast radius: {radius:%s} meters.\n"
+			.."\n"
+			..Dot_green.." Base "..CKWord("Damage", "Damage_rgb").." epicenter: "..CNumb("1500", "n_1500_rgb")..".\n"
+			..Dot_green.." Very high armor "..CKWord("Damage", "Damage_rgb").." vs Flak, Maniac, Unyielding inside epicenter.\n"
+			..Dot_red.." Low armor "..CKWord("Damage", "Damage_rgb").." vs Flak, Carapace outside epicenter.\n"
+			.."\n"
+			..Dot_green.." High "..CKWord("Stagger", "Stagger_rgb").." against all enemies including Monstrosities, Captains/Twins (only without Void shield).\n"
+			.."\n"
+			..Dot_green.." Instakill all enemies with an explosion except: Maulers, Crushers, Bulwarks and Monstrosities.",
 		-- ru = "Вы бросаете огринского размера "..CKWord("Фраг-гранату", "Frag_gren_rgb_ru").." с радиусом взрыва до {radius:%s} метров, наносящую увеличенный "..CKWord("урон", "uronu_rgb_ru").." в центре."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_2_rgb"), -- Фраг-бомба -- руоф Осколочная бомба
 		-- fr = "Lancer une "..COLORS_KWords_fr.Frag_gren_rgb_fr.." de taille Ogryn (la seule taille appropriée !) avec un rayon d'explosion de {radius:%s} mètres, infligeant des "..COLORS_KWords_fr.Damage_rgb_fr.." accrus au centre."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_2_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆歐格林專用 "..COLORS_KWords_tw.Frag_gren_rgb_tw.."。\n"
 			-- ..Dot_green.." 爆炸半徑最大為 {radius:%s} 公尺。\n"
 			-- ..Dot_green.." 中心區域造成更高 "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
 			-- ..TALENTS_Enh_desc2_tw.ED_OGR_Blitz_2_rgb_tw, -- 破片炸彈 -- 投擲一枚歐格林尺寸（唯一完美的尺寸！）的破片手雷，爆炸範圍{radius:%s}公尺，爆心造成更高傷害。
-	-- },
+	},
 	--[+ BLITZ 3 - Bombs Away! +]--
-	-- ["loc_talent_bonebreaker_grenade_super_armor_explosion_desc"] = { -- num_grenades: 6, talent_name: Big Box of Hurt, +colors
-		-- en = "Throw a box of Grenades with great strength and enthusiasm to deal High "..CKWord("Damage", "Damage_rgb").." to a Single Enemy.\n"
-			-- .."Hitting an Enemy causes the box to break open, releasing {num_grenades:%s} grenades around the target.\n"
-			-- .."This is an augmented version of {talent_name:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Blitz_3_rgb,
+	["loc_talent_bonebreaker_grenade_super_armor_explosion_desc"] = { -- num_grenades: 6, talent_name: Big Box of Hurt, +colors
+		en = "Throw a box of Grenades with great strength and enthusiasm to deal High "..CKWord("Damage", "Damage_rgb").." to a Single Enemy.\n"
+			.."Hitting an Enemy causes the box to break open, releasing {num_grenades:%s} grenades around the target.\n"
+			..Dot_green.." This is an augmented version of {talent_name:%s}.\n"
+			.."\n"
+			..Dot_green.." Impact base "..CKWord("Damage", "Damage_rgb")..": "..CNumb("1850", "n_1850_rgb")..".\n"
+			..Dot_green.." Instakill: Gunners, Shotgunners, Dreg Rager, Scab Mauler, Mutants, Pox Hounds, Poxburster, Corruptor.\n"
+			.."\n"
+			..Dot_green.." Slightly increased "..CKWord("Damage", "Damage_rgb").." vs Unyielding.\n"
+			..Dot_red.." Very low "..CKWord("Damage", "Damage_rgb").." vs Carapace.\n"
+			.."\n"
+			..Dot_green.." High "..CKWord("Stagger", "Stagger_rgb").." against all enemies, including Monstrosities and Captains/Twins (only without Void shield).\n"
+			.."\n"
+			..Dot_nc.." Replenishes all boxes per Grenade pickup.",
 		-- ru = "Вы бросаете коробку гранат с огромной силой и энтузиазмом, чтобы нанести высокий "..CKWord("урон", "uronu_rgb_ru").." одному врагу.\nПри попадании по врагу ящик разбивается, разбрасывая вокруг цели {num_grenades:%s} гранат.\nЭто улучшенная версия таланта {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Blitz_3_rgb"), -- Бросай бомбы! -- руоф Кидаю бомбу!
 		-- fr = "Lancer une boîte de grenades avec une grande force et enthousiasme pour infliger des "..COLORS_KWords_fr.Damage_rgb_fr.." élevés à un seul ennemi.\nToucher un ennemi provoque l'ouverture de la boîte, libérant {num_grenades:%s} grenades autour de la cible.\nIl s'agit d'une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_3_rgb_fr,
 		-- ["zh-tw"] = "投擲一個手榴彈箱攻擊單一敵人。\n"
 			-- ..Dot_green.." 命中敵人後向四周拋出 {num_grenades:%s} 顆手榴彈。\n\n"
 			-- .."此為 {talent_name:%s} 的強化版本。\n"
 			-- ..TALENTS_Enh_desc2_tw.ED_OGR_Blitz_3_rgb_tw, -- 投彈完畢! -- 激情地奮力投出手雷箱，對單個敵人造成大量傷害。\n\n手雷箱擊中敵人即破壞，{num_grenades:%s}個即將爆炸的手雷散落於目標周圍。\n\n該天賦是{talent_name%s}的增強版。
-	-- },
+	},
+	--[+ BLITZ 3-1 - Bigger Box of Hurt +]--
+	["loc_talent_ogryn_big_box_of_hurt_more_bombs_desc"] = { -- num_grenades: 6, talent_name: Big Box of Hurt, +colors
+		en = Dot_green.." {amount:%s} grenades released, up to "..CNumb("9", "n_9_rgb")..".",
+		-- ru = Dot_green.." {amount:%s} grenades released.", -- Бросай бомбы! -- руоф Кидаю бомбу!
+	},
 --[+ +AURA - АУРА+ +]--
 	--[+ AURA 0 - Intimidating Presence +]--
-	-- ["loc_talent_ogryn_2_base_4_description_new"] = { -- damage: +7.5%, +colors
-		-- en = "{damage:%s} Heavy Melee Attack "..CKWord("Damage", "Damage_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb").."."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Aura_0_rgb,
+	["loc_talent_ogryn_2_base_4_description_new"] = { -- damage: +7.5%, +colors
+		en = Dot_green.." {damage:%s} Heavy Melee Attack "..CKWord("Damage", "Damage_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
+			.."\n"
+			..Dot_green.." This also buffs the Melee Special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Twin-Linked Stubbers, and Kickback.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Ogr_Aura"),
 		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." тяжёлых атак ближнего боя для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru").."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_0_rgb"), -- Устрашающее присутствие -- руоф Пугающее присутствие
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." des attaques de mêlée puissantes pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_0_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n\n"
 			-- ..Dot_green.." {damage:%s} "..COLORS_KWords_tw.Damage_s_rgb_tw.." 。\n"
 			-- ..TALENTS_Enh_desc2_tw.ED_OGR_Aura_0_rgb_tw, -- 威嚇氣場 
-	-- },
+	},
 	--[+ AURA 1 - Bonebreaker's Aura +]--
-	-- ["loc_talent_damage_aura_improved_new"] = { -- damage: +10%, talent_name: Intimidating Presence, +colors
-		-- en = "{damage:%s} Melee Attack "..CKWord("Damage", "Damage_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
-			-- .."\n"
-			-- .."This is an augmented version of {talent_name:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Aura_1_rgb,
+	["loc_talent_damage_aura_improved_new"] = { -- damage: +10%, talent_name: Intimidating Presence, +colors
+		en = Dot_green.." {damage:%s} Melee Attack "..CKWord("Damage", "Damage_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
+			..Dot_green.." This is an augmented version of {talent_name:%s}.\n"
+			.."\n"
+			..Dot_green.." This also buffs the Melee Special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Twin-Linked Stubbers, and Kickback.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Ogr_Aura").."\n",
 		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." тяжёлых атак ближнего боя для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n\nЭто улучшенная версия ауры {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_1_rgb"), -- Аура костолома
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." des attaques de mêlée pour vous et les alliés en syntonie.\n\nCeci est une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_1_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
 			-- ..Dot_green.." {damage:%s} "..COLORS_KWords_tw.Damage_s_rgb_tw.." 。\n\n"
 			-- ..Dot_nc.." 此為 {talent_name:%s} 的強化版。\n"
 			-- ..TALENTS_Enh_desc2_tw.ED_OGR_Aura_1_rgb_tw, -- 破骨者之環 --你和協同中的盟友的近戰攻擊傷害提高{damage:%s}。\n\n該天賦是{talent_name:%s}的強化版。
-	-- },
+	},
 	--[+ AURA 2 - Stay Close! +]--
-	-- ["loc_talent_ogryn_toughness_regen_aura_desc"] = { -- toughness_regen_rate_modifier: +25%, +colors
-		-- en = "{toughness_regen_rate_modifier:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment for you and Allies in "..CKWord("Coherency", "Coherency_rgb").."."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Aura_2_rgb,
+	["loc_talent_ogryn_toughness_regen_aura_desc"] = { -- toughness_regen_rate_modifier: +25%, +colors
+		en = Dot_green.." {toughness_regen_rate_modifier:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
+			.."\n"
+			..CPhrs("Dont_intw_coher_toughn").."\n"
+			..CPhrs("Doesnt_Stack_Ogr_Aura"),
 		-- ru = "{toughness_regen_rate_modifier:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восполняется для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru").."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_2_rgb"), -- Будь рядом! -- руоф Не расходимся!
 		-- fr = "{toughness_regen_rate_modifier:%s} de Régénération de la "..COLORS_KWords_fr.Toughness_rgb_fr.." pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_2_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
 			-- ..Dot_green.." {toughness_regen_rate_modifier:%s} "..COLORS_KWords_tw.Toughness_rs_rgb_tw.."。\n"
 			-- ..TALENTS_Enh_desc2_tw.ED_OGR_Aura_2_rgb_tw, -- 跟緊我! 
-	-- },
+	},
 	--[+ AURA 3 - Coward Culling +]--
-	-- ["loc_talent_ogryn_damage_vs_suppressed_new_desc"] = { -- damage:+20%, +colors
-		-- en = "{suppression:%s} Suppression dealt.\n"
-			-- .."{damage:%s} "..CKWord("Damage", "Damage_rgb").." against Suppressed Enemies for you and Allies in "..CKWord("Coherency", "Coherency_rgb").."."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Aura_3_rgb,
+	["loc_talent_ogryn_damage_vs_suppressed_new_desc"] = { -- damage:+20%, +colors
+		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." against Suppressed Enemies for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
+			.."\n"
+			..Dot_green.." {suppression:%s} Suppression dealt.\n"
+			..Dot_nc.." Breeds that can be Suppressed: Armored Groaner, Groaner, Dreg Gunner, Dreg Stalker, Radio Operator, Reaper, Scab Gunner, Scab Shooter, Scab Stalker.\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Ogr_Aura").."\n",
 		-- ru = "{suppression:%s} к подавлению врагов.\n{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." по подавленным врагам для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru").."."..TALENTS_Enh_desc2_ru.ED_OGR_Aura_3_rgb"), -- Отсев трусливых -- руоф Трусливые отбросы
 		-- fr = "{suppression:%s} de Suppression infligé.\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemis sous suppression pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_3_rgb_fr,
 		-- ["zh-tw"] = "你與 "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友，\n"
 			-- ..Dot_green.." 提升 {suppression:%s} 壓制效果。\n"
 			-- ..Dot_green.." 對被壓制敵人增加 {damage:%s} "..COLORS_KWords_tw.Damage_rgb_tw.."。\n"
 			-- ..TALENTS_Enh_desc2_tw.ED_OGR_Aura_3_rgb_tw, -- 優勝劣汰 -- 你和協同中的盟友對被壓制的敵人造成的傷害增加{damage:%s}。
-	-- },
+	},
 --[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 	--[+ ABILITY 0 - Bull Rush +]--
-	-- ["loc_ability_ogryn_charge_description_new"] = { -- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, s->seconds, +colors
-		-- en = "Charge forward with great force, knocking back enemies and "..CKWord("Staggering", "Staggering_rgb").." them. Gain {attack_speed:%s} Attack Speed and {move_speed:%s} Movement Speed for {duration:%s} seconds. Charge is stopped on collision with Carapace Armoured Enemies, Unyielding Enemies and Monstrosities.\n"
-			-- .."\n"
-			-- .."Base Cooldown: {cooldown:%s} seconds."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_0_rgb,
+	["loc_ability_ogryn_charge_description_new"] = { -- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, s->seconds, +colors
+		en = "Charge forward with great force, knocking back enemies, "..CKWord("Staggering", "Staggering_rgb").." them and gain for {duration:%s} seconds:\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed and\n"
+			..Dot_green.." {move_speed:%s} Movement Speed.\n"
+			-- ..Dot_red.." Charge is stopped on collision with Carapace, Unyielding and Monstrosities.\n"
+			.."\n"
+			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.\n"
+			.."\n"
+			.."Charge:\n"
+			..Dot_nc.." Range: "..CNumb("12", "n_12_rgb").." meters.\n"
+			-- ..Dot_nc.." Can be canceled by backwards movement input.\n"
+			-- ..Dot_nc.." Can slightly change direction while charging.\n"
+			-- ..Dot_red.." Cannot be activated while jumping or falling.\n"
+			..Dot_red.." Stops at enemies with armor base types Carapace and Unyielding, at Monstrosities, and at Captains/Twins void shield.",
 		-- ru = "Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается при столкновении с врагами в панцирной броне, несгибаемыми врагами или чудовищами.\n\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_0_rgb"), -- Рывок быка -- руоф Бычий натиск
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée en cas de collision avec des ennemis en armure carapace, implacables et des monstruosités.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_0_rgb_fr,
-	-- },
+	},
 	--[+ ABILITY 1 - Indomitable +]--
-	-- ["loc_talent_ogryn_bull_rush_distance_desc"] = { -- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, talent_name: Bull Rush, distance: 100%, s->seconds, +colors
-		-- en = "Charge forward with great force, knocking back Enemies and "..CKWord("Staggering", "Staggering_rgb").." them. Gain {attack_speed:%s} Attack Speed and {move_speed:%s} Movement Speed for {duration:%s} seconds. Charge is stopped only on collision with Monstrosities.\n"
-			-- .."Base Cooldown: {cooldown:%s} seconds.\n"
-			-- .."This is an augmented version of {talent_name:%s} with an increased charge distance of {distance:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_rgb,
+	["loc_talent_ogryn_bull_rush_distance_desc"] = { -- attack_speed: +25%, move_speed: +25%, duration: 5, cooldown: 30, talent_name: Bull Rush, distance: 100%, s->seconds, +colors
+		en = "Charge forward with great force, knocking back Enemies, "..CKWord("Staggering", "Staggering_rgb").." them and gain for {duration:%s} seconds:\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed and\n"
+			..Dot_green.." {move_speed:%s} Movement Speed.\n"
+			.."\n"
+			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.\n"
+			..Dot_green.." This is an augmented version of {talent_name:%s}.\n"
+			.."\n"
+			.."Charge:\n"
+			..Dot_nc.." Range: "..CNumb("24", "n_24_rgb").." meters.\n"
+			..Dot_nc.." Can be canceled by backwards movement input.\n"
+			..Dot_nc.." Can slightly change direction while charging.\n"
+			..Dot_nc.." Charges through Captains/Twins Void shield but applies "..CKWord("Stagger", "Stagger_rgb").."  only without Void shield.\n"
+			..Dot_red.." Cannot be activated while jumping or falling.\n"
+			..Dot_red.." Stops only at monstrosities.",
 		-- ru = "Вы совершаете рывок вперёд, с огромной силой отбрасывая врагов и накладывая на них "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..". Вы получаете {attack_speed:%s} к скорости атаки и {move_speed:%s} к скорости движения на {duration:%s} секунд. Рывок прекращается только при столкновении с чудовищами.\n\nВосстанавливается {cooldown:%s} секунд.\nЭто улучшенная версия способности {talent_name:%s} с увеличенным на {distance:%s} расстоянием рывка."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_rgb"), -- Неукротимый -- руоф Неукротимость
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée uniquement en cas de collision avec des monstruosités.\nTemps de recharge de base : {cooldown:%s} secondes.\nCeci est une version augmentée de {talent_name:%s} avec une distance de charge accrue de {distance:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_rgb_fr,
-	-- },
-	--[+ ABILITY 1-1 - Stomping Boots +]--
-	-- ["loc_talent_ogryn_toughness_on_bull_rush_desc"] = { -- toughness: +10%, ability: Indomitable, +colors
-		-- en = ("{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes per Enemy Hit with {ability:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_1_rgb,
-		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за каждого врага задетого способностью {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_1_rgb"), -- Топающие сапоги -- руоф Сокрушающий топот
-		-- fr = "{toughness:%s} de la "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère par ennemi touché avec {ability:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_1_rgb_fr,
-	-- },
-	--[+ ABILITY 1-2 - Trample +]--
-	-- ["loc_talent_ogryn_ability_charge_trample_desc"] = { -- talent_name: Bull Rush, damage: +2%, duration: 8, stack: 25, s->seconds, +colors
-		-- en = "For each Enemy hit by {talent_name:%s} you gain a Stack of "..CKWord("Trample", "Trample_rgb").." which increases Base "..CKWord("Damage", "Damage_rgb").." by {damage:%s} for {duration:%s} seconds. Max Stacks {stack:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_2_rgb,
+	},
+	--[+ ABILITY 1-1 - Trample +]--
+	["loc_talent_ogryn_ability_charge_trample_desc"] = { -- talent_name: Bull Rush, damage: +2.5%, duration: 10, stack: 20, s->seconds, +colors
+		en = "For each Enemy hit by {talent_name:%s} you gain a Stack of "..CKWord("Trample", "Trample_rgb")..".\n"
+			.."Each stack provides for {duration:%s} seconds:\n"
+			..Dot_green.." {damage:%s} Base "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_nc.." Max Stacks {stack:%s}.",
 		-- ru = "За каждого врага, задетого способностью {talent_name:%s}, вы получаете заряд "..CKWord("Топота", "Trample_rgb_ru")..", который даёт {damage:%s} базового "..CKWord("урона", "uronu_rgb_ru").." на {duration:%s} секунд. Максимум {stack:%s} зарядов."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_2_rgb"), -- Топот -- руоф Топанье
 		-- fr = "Pour chaque ennemi touché par {talent_name:%s}, vous gagnez un cumul de "..COLORS_KWords_fr.Trample_rgb_fr.." qui augmente les "..COLORS_KWords_fr.Damage_rgb_fr.." de base de {damage:%s} pendant {duration:%s} secondes. Jusqu'à {stack:%s} cumuls."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_2_rgb_fr,
-	-- },
+	},
+	--[+ ABILITY 1-2 - Stomping Boots +]--
+	["loc_talent_ogryn_toughness_on_bull_rush_desc"] = { -- toughness: +10%, ability: Indomitable, +colors
+		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished per Enemy Hit with {ability:%s}.",
+		-- ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за каждого врага задетого способностью {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_1_rgb"), -- Топающие сапоги -- руоф Сокрушающий топот
+		-- fr = "{toughness:%s} de la "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère par ennemi touché avec {ability:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_1_rgb_fr,
+	},
 	--[+ ABILITY 1-3 - Pulverise +]--
-	-- ["loc_talent_ogryn_bleed_on_bull_rush_desc"] = { -- stacks: 5, ability: Indomitable, +colors
-		-- en = "{stacks:%s} Stacks of "..CKWord("Bleed", "Bleed_rgb").." are applied to enemies hit by {ability:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_1_3_rgb,
+	["loc_talent_ogryn_bleed_on_bull_rush_desc"] = { -- stacks: 5, ability: Indomitable, +colors
+		en = Dot_green.." {stacks:%s} Stacks of "..CKWord("Bleed", "Bleed_rgb").." are applied to enemies hit by {ability:%s}.\n"
+			.."\n"
+			..Dot_green.." Can apply "..CKWord("Bleed", "Bleed_rgb").." through Bulwark shield and Captains/Twins Void shield.\n"
+			..CPhrs("Refr_dur_stappl").."\n"
+			.."\n"
+			..Dot_green.." Above average armor "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_red.." Low armor "..CKWord("Damage", "Damage_rgb").." to Carapace.",
 		-- ru = "{stacks:%s} зарядов "..CKWord("кровотечения", "krovotechenia_rgb_ru").." накладывается на врагов, которых задела способность {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_1_3_rgb"), -- Разбрызгивание -- Крошилово
 		-- fr = "{stacks:%s} cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." sont appliqués aux ennemis touchés par {ability:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_3_rgb_fr,
-	-- },
+	},
 	--[+ ABILITY 2 - Loyal Protector +]--
-	-- ["loc_ability_ogryn_taunt_shout_new_desc"] = { -- radius: 12, duration: 15, first_pulse: 3, second_pulse: 6, cooldown: 45, m->meters, s->seconds
-		-- en = "Taunt Enemies within {radius:%s} meters, making them Attack only you for {duration:%s} seconds. The effect repeats after {first_pulse:%s} seconds, and after {second_pulse:%s} seconds.\n"
-			-- .."\n"
-			-- .."Base Cooldown: {cooldown:%s} seconds."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_rgb,
+	["loc_ability_ogryn_taunt_shout_new_desc"] = { -- radius: 12, duration: 15, first_pulse: 3, second_pulse: 6, cooldown: 50, m->meters, s->seconds
+		en = "Taunt Enemies within {radius:%s} meters, making them Attack only you for {duration:%s} seconds. The effect repeats after {first_pulse:%s} seconds, and after {second_pulse:%s} seconds.\n"
+			.."\n"
+			.."Base Cooldown: {cooldown:%s} seconds.",
 		-- ru = "Вы кричите, провоцируя врагов в радиусе {radius:%s} метров и заставляя их атаковать только вас в течение {duration:%s} секунд. Эффект повторяется через {first_pulse:%s} секунды и через {second_pulse:%s} секунд.\n"
 			-- .."\n"
 			-- .."Восстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_rgb"), -- Верный защитник
 		-- fr = "Provoque les ennemis dans un rayon de {radius:%s} mètres, les obligeant à ne s'attaquer qu'à vous pendant {duration:%s} secondes. L'effet se repète après {first_pulse:%s} secondes, et une seconde fois après {second_pulse:%s} secondes.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_rgb_fr, -- Protecteur Loyal
-	-- },
+	},
 	--[+ ABILITY 2-1 - Valuable Distraction +]--
-	-- ["loc_talent_ogryn_taunt_damage_taken_increase_description"] = { -- talent_name: Loyal Protector, base_damage: +25%, +colors
-		-- en = "{base_damage:%s} Base "..CKWord("Damage", "Damage_rgb").." taken from all sources by enemies affected by {talent_name:%s} for "..CNumb("15", "n_15_rgb").." seconds."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_1_rgb,
+	["loc_talent_ogryn_taunt_damage_taken_increase_description"] = { -- talent_name: Loyal Protector, base_damage: +20%, +colors
+		en = "Enemies affected by {talent_name:%s} are debuffed for "..CNumb("15", "n_15_rgb").." seconds:\n"
+			..Dot_green.." {base_damage:%s} Base "..CKWord("Damage", "Damage_rgb").." Taken from all sources.\n"
+			.."\n"
+			..Dot_red.." Enemies taunted by the means of "..CKWord("Attention Seeker", "Att_Seeker_rgb").." do not get this debuff.",
 		-- ru = "{base_damage:%s} к базовому "..CKWord("урону", "uronu_rgb_ru").." из любого источника всем врагам, которых спровоцировала способность {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_1_rgb"), -- Отвлекающий манёвр -- руоф Ценное отвлечение
 		-- fr = "{base_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." provenant de toutes les sources pour les ennemis affectés par {talent_name:%s} pendant "..CNumb("15", "n_15_rgb").." secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_1_rgb_fr,
-	-- },
+	},
 	--[+ ABILITY 2-2 - No Pain! +]--
-	-- ["loc_talent_ogryn_taunt_restore_toughness_new_desc"] = { -- tougness: 2.5%, talent_name: Loyal Protector, +colors
-		-- en = "{tougness:%s} "..CKWord("Toughness", "Toughness_rgb").." is replenished by {talent_name:%s} and its repeat effects. Plus an additional {toughness_per_hit:%s} "..CKWord("Toughness", "Toughness_rgb").." every "..CNumb("1", "n_1_rgb").." second per enemy for {duration:%s} seconds, up to {max:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_2_rgb,
+	["loc_talent_ogryn_taunt_restore_toughness_new_desc"] = { -- talent_name: Loyal Protector, tougness: 10%, toughness_per_hit: 0.5%, max: 10%, duration: 3, +colors
+		en = "{talent_name:%s} and its Repeats, replenish:\n"
+			..Dot_green.." {tougness:%s} "..CKWord("Toughness", "Toughness_rgb").." instantly and\n"
+			..Dot_green.." {toughness_per_hit:%s} "..CKWord("Toughness", "Toughness_rgb").." per second per affected enemy. Up to {max:%s} total over {duration:%s} seconds.",
 		-- ru = "{tougness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восполняется способностью {talent_name:%s} и его повторяющимися эффектами. Плюс дополнительная {toughness_per_hit:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." каждую "..CNumb("1", "n_1_rgb").." секунду за врага в течение {duration:%s} секунд, до {max:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_2_rgb"), -- Боли нет!
 		-- fr = "Régénere {tougness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." par {talent_name:%s} et ses répétitions. Plus {toughness_per_hit:%s} "..COLORS_KWords_fr.Toughness_rgb_fr.." toute les "..CNumb("1", "n_1_rgb").." second par ennemi pendant {duration:%s} secondes, jusqu'à {max:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_2_rgb_fr, -- Sans douleur!
-	-- },
+	},
 	--[+ ABILITY 2-3 - Go again! +]--
-	-- ["loc_talent_ogryn_taunt_stagger_cd_description"] = { -- talent_name: Loyal Protector, radius: 50%, +colors
-		-- en = CKWord("Staggering", "Staggering_rgb").." an Enemy replenishes {cooldown_reduction:%s} "..CKWord("Cooldown", "Cd_rgb").." of your {talent_name:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_2_3_rgb,
+	["loc_talent_ogryn_taunt_stagger_cd_description"] = { -- cooldown_reduction: 2.5%, talent_name: Loyal Protector, +colors
+		en = CKWord("Staggering", "Staggering_rgb").." an Enemy replenishes:\n"
+			..Dot_green.." {cooldown_reduction:%s} "..CKWord("Cooldown", "Cd_rgb").." of your {talent_name:%s}.",
 		-- ru = CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." врага восполняет {cooldown_reduction:%s} "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." {talent_name:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_2_3_rgb"), -- Давай по новой!
 		-- fr = "Faire "..COLORS_KWords_fr.Staggering_rgb_fr.." un ennemi régénère {cooldown_reduction:%s} du "..COLORS_KWords_fr.Cd_rgb_fr.." de votre {talent_name:%s}.", -- Encore une fois! --..TALENTS_Enh_desc2.ED_OGR_Ability_2_3_rgb_fr
-	-- },
+	},
 	--[+ ABILITY 3 - Point-Blank Barrage +]--
-	-- ["loc_talent_ogryn_combat_ability_special_ammo_new_desc"] = { -- ranged_attack_speed: +25%, reload_speed: +70%, duration: 10, cooldown: 80, s->seconds
-		-- en = "Swaps to and reloads your Ranged Weapon.\n"
-			-- .."For the next {duration:%s} seconds you have:\n"
-			-- .."{damage:%s} Close Range "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- .."{ranged_attack_speed:%s} Rate of Fire,\n"
-			-- .."{reload_speed:%s} Reload Speed and\n"
-			-- ..CNumb("-", "n_minus_rgb").."{reduced_move_penalty:%s} to Braced Movement Speed penalties.\n"
-			-- .."\n"
-			-- .."Base Cooldown {cooldown:%s} seconds."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_rgb,
+	["loc_talent_ogryn_combat_ability_special_ammo_new_desc"] = { -- ranged_attack_speed: +25%, reload_speed: +65%, reduced_move_penalty: 50%, damage: +15%, duration: 10, cooldown: 80, s->seconds, +colors
+		en = "Swaps to your Ranged Weapon, reloads it, and grants for {duration:%s} seconds:\n"
+			..Dot_green.." {damage:%s} Close Range "..CKWord("Damage", "Damage_rgb")..",\n"
+			..Dot_green.." {ranged_attack_speed:%s} Rate of Fire,\n"
+			..Dot_green.." {reload_speed:%s} Reload Speed and\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{reduced_move_penalty:%s} Braced Movement Speed penalty.\n"
+			.."\n"
+			.."Base Cooldown: {cooldown:%s} seconds.\n"
+			.."\n"
+			.."Close Range "..CKWord("Damage", "Damage_rgb").." buff is maximum within "..CNumb("12.5", "n_12_5_rgb").." meters, then decreases linearly until it loses its effect at "..CNumb("30", "n_30_rgb").." meters:\n"
+			.."_______________________________\n"
+			.."Distance ("..CNumb("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
+			..CKWord("Damage", "Damage_rgb").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("15", "n_15_rgb").."|    "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."|   "..CKWord("~9", "n__9_rgb").."|   "..CKWord("~4", "n__4_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
+			.."_______________________________\n",
 		-- ru = "Вы переключаетесь на оружие дальнего боя и перезаряжаете его. Вы получаете на {duration:%s} секунд:\n{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на ближней дистанции,\n{ranged_attack_speed:%s} к скорострельности,\n{reload_speed:%s} к скорости перезарядки и\n"..CNumb("-", "n_minus_rgb").."{reduced_move_penalty:%s} к штрафу скорости движения при прицеливании.\nВосстанавливается {cooldown:%s} секунд."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_rgb"), -- Беспощадный обстрел в упор -- руоф Решительный натиск
 		-- fr = "Échange et recharge votre arme à distance. Pendant les {duration:%s} secondes suivantes, vous avez une vitesse de tir de {ranged_attack_speed:%s}, une vitesse de recharge de {reload_speed:%s}, des pénalités de vitesse de déplacement réduites de {reduced_move_penalty:%s}, et vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à courte portée.\nTemps de recharge de base {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_rgb_fr, -- Barrage à bout portant
-	-- },
+	},
 	--[+ ABILITY 3-1 - Bullet Bravado +]--
-	-- ["loc_talent_ogryn_special_ammo_toughness_on_shot_and_reload_desc"] = { -- ability: Point-Blank Barrage, toughness: +2%, toughness_reload: +10%, +colors
-		-- en = "{toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes for every Shot Fired and {toughness_reload:%s} "..CKWord("Toughness", "Toughness_rgb").." on each Reload while {ability:%s} is active."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_1_rgb,
+	["loc_talent_ogryn_special_ammo_toughness_on_shot_and_reload_desc"] = { -- ability: Point-Blank Barrage, toughness: +2%, toughness_reload: +10%, +colors
+		en = "While {ability:%s} is active, replenish:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." per Shot fired and\n"
+			..Dot_green.." {toughness_reload:%s} "..CKWord("Toughness", "Toughness_rgb").." per Reload.",
 		-- ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за каждый сделанный выстрел и ещё {toughness_reload:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за каждую перезарядку во время действия способности {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_1_rgb"), -- Бравада стрелка -- руоф Лихая пуля
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère à chaque tir et {toughness_reload:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." à chaque rechargement pendant que {ability:%s} est actif."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_1_rgb_fr, -- Bravade de la balle
-	-- },
+	},
 	--[+ ABILITY 3-2 - Hail of Fire +]--
-	-- ["loc_talent_ogryn_special_ammo_armor_pen_new_desc"] = { 
-		-- en = "{rending_multiplier:%s} "..CKWord("Rending", "Rending_rgb").." and {damage:%s} "..CKWord("Damage", "Damage_rgb").." to your Ranged Attacks while {ability:%s} is active."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_2_rgb,
+	["loc_talent_ogryn_special_ammo_armor_pen_new_desc"] = { 
+		en = "While {ability:%s} is active your Ranged attacks gain:\n"
+			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {rending_multiplier:%s} "..CKWord("Rending", "Rending_rgb")..".",
 		-- ru = "{rending_multiplier:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." и {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." для ваших выстрелов во время действия способности {ability:%s}."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_2_rgb"), -- Град огня -- руоф Слава пламени
 		-- fr = "{rending_multiplier:%s} de "..COLORS_KWords_fr.Rending_rgb_fr.." et {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à vos attaques à distance pendant que {ability:%s} est actif."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_2_rgb_fr,
-	-- },
+	},
 	--[+ ABILITY 3-3 - Light 'em Up +]--
-	-- ["loc_talent_ogryn_special_ammo_fire_shots_new_desc"] = { -- stacks: 2, ability: Point-Blank Barrage, +colors
-		-- en = CNumb("+", "n_plus_rgb").."{stacks:%s} Stacks of "..CKWord("Burn", "Burn_rgb").." are applied on Ranged Attacks while {ability:%s} is active. Max Stacks {max_stacks:%s}."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Ability_3_3_rgb,
+	["loc_talent_ogryn_special_ammo_fire_shots_new_desc"] = { -- stacks: 2, ability: Point-Blank Barrage, +colors
+		en = "While {ability:%s} is active, Ranged Attacks applied:\n"
+			..Dot_green.." {stacks:%s} Stacks of "..CKWord("Burn", "Burn_rgb")..".\n"
+			..Dot_nc.." Max Stacks {max_stacks:%s}.",
 		-- ru = CNumb("+", "n_plus_rgb").."{stacks:%s} заряда "..CKWord("горения", "gorenia_rgb_ru").." накладывают ваши выстрелы во время действия способности {ability:%s}. Максимум {max_stacks:%s} зарядов."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_3_rgb"), -- Задай жару -- руоф Зададим жару
 		-- fr = "Les attaques à distance appliquent {stacks:%s} cumuls de "..COLORS_KWords_fr.Burn_rgb_fr.." pendant que {ability:%s} est actif. Jusqu'à un maximum de {max_stacks:%s} cumuls."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_3_rgb_fr, -- Allumez-les!
-	-- },
+	},
 --[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 	--[+ KEYSTONE 1 - Heavy Hitter +]--
-	-- ["loc_talent_ogryn_passive_heavy_hitter_new_desc"] = { -- damage: +5%, duration: 7.5, stacks: 5, s->seconds, +colors
-		-- en = "{damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on Melee Attack Hit. Stacks {stacks:%s} times. Gain {heavy_stacks:%s} Stacks on Heavy Attack Hit."
-			-- ..TALENTS_Enh_desc2.ED_OGR_Keystone_1_rgb,
+	["loc_talent_ogryn_passive_heavy_hitter_new_desc"] = { -- damage: +5%, duration: 7.5, stacks: 5, s->seconds, +colors
+		en = "Hitting enemies with Melee attacks grants up to {stacks:%s} stacks:\n"
+			..Dot_green.." Light attacks: "..CNumb("1", "n_1_rgb").." Stack,\n"
+			..Dot_green.." Heavy attacks: {heavy_stacks:%s} Stacks.\n"
+			-- .."\n"
+			..Dot_red.." Generates "..CNumb("1", "n_1_rgb").." or {heavy_stacks:%s} Stacks per swing, not per enemy hit.\n"
+			.."\n"
+			.."Each Stacks lasts {duration:%s} seconds and grants:\n"
+			..Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb")..".",
 		-- ru = "{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя на {duration:%s} секунды при нанесении ударов в ближнем бою. Суммируется {stacks:%s} раз. Даёт {heavy_stacks:%s} заряда при тяжёлых ударах."..TALENTS_Enh_desc2_ru.ED_OGR_Keystone_1_rgb"), -- Тяжёлый нападающий -- руоф Тяжеловес
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de Mélée pendant {duration:%s} secondes lors d'une attaque réussie. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_rgb_fr, -- Frappe lourde
-	-- },
+	},
 	--[+ KEYSTONE 1-1 - Don't Feel a Thing +]--
 	-- ["loc_talent_ogryn_passive_heavy_hitter_tdr_desc"] = { -- talent_name: Heavy Hitter, stacks: 5, attack_speed: +10%
 		-- en = "{toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for each Stack, also granted by {talent_name:%s}.",
