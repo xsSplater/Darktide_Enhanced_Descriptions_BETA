@@ -174,6 +174,10 @@ local CONFIG = {
 		momentum_text_colour = {
 			Momentum =		"Momentum",
 
+			Taunt =			"Taunt",				-- Ogryn
+			Taunted =		"Taunted",				-- Ogryn
+			Taunting =		"Taunting",				-- Ogryn
+
 			Adren =			"Adrenaline",			-- Hive Scum
 			AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
 		},
@@ -366,7 +370,7 @@ local function create_colored_keywords()
 	return result
 end
 
---[+ +FREQUENTLY REPEATED PHRASES+ +]--
+--[+ +FREQUENTLY REPEATED PHRASES+ +]-- CPhrs("")
 local function create_phrs_en(colors_en)
 	-- Local constants for this file
 	local Dot_green =	"{#color(35, 255, 5)}•{#reset()}"
@@ -380,6 +384,7 @@ local function create_phrs_en(colors_en)
 	Can_appl_thr_shlds =		Dot_green.." Can be applied through shields.",
 	Can_be_refr =				Dot_green.." Can be refreshed during active duration. ",
 	Can_be_refr_drop_1 =		Dot_green.." Stacks can be refreshed during active duration, and are dropped one by one.",
+	Can_gen_mult =				Dot_green.." Can generate multiple Stacks per Swing.\n",
 	Can_proc_mult =				Dot_green.." Can proc multiple times per swing when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
 	Can_proc_mult_str =			Dot_green.." Can proc multiple times per swing when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
 	Refr_dur_stappl =			Dot_green.." Refreshes duration on Stack application. ",
@@ -396,6 +401,7 @@ local function create_phrs_en(colors_en)
 	Doesnt_Stack_Ogr_abil =		Dot_red.." Does not Stack with the same talent from another "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 
 	Cant_appl_thr_shlds =		Dot_red.." Can't apply through shields.",
+	Cant_be_refr =				Dot_red.." Cannot be refreshed during active duration. ",
 	Cant_Crit =					Dot_red.." Cannot "..CKWord("Crit", "Crit_rgb")..".\n",
 	Carap_cant_clv =			Dot_red.." Carapace armor cannot be "..CKWord("Cleaved", "Cleaved_rgb").." by default.",
 	Carap_cant_cleave =			Dot_red.." Carapace armor cannot be "..CKWord("Cleaved", "Cleaved_rgb").." by default.",
@@ -403,7 +409,7 @@ local function create_phrs_en(colors_en)
 	}
 end
 
---[+ +NOTES+ +]--
+--[+ +NOTES+ +]-- CNote("")
 local function create_nts_en(colors_en)
 	local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 

@@ -12,7 +12,7 @@ local mod = get_mod("Enhanced_descriptions")
 local location = "Enhanced_descriptions/Main_Modules/"
 
 -- CONSTANTS
-local VERSION = "4.92b"
+local VERSION = "4.95b"
 local LOCALIZATION_FILES = {
 	WEAPONS_Blessings_Perks =	"enable_weapons_file",
 	TALENTS =					"enable_talents_file",
@@ -44,32 +44,32 @@ mod._color_cache = {
 mod.SUPPORTED_LANGUAGES = {
 	"en",		-- English
 	"ru",		-- Russian
+	"fr",		-- French
 	"zh-cn",	-- Chinese Simplified
 	"zh-tw",	-- Chinese Traditional
-	"de",		-- German
-	"it",		-- Italian
-	"ja",		-- Japanese
-	"ko",		-- Korean
-	"pl",		-- Polish
-	"pt-br",	-- Portuguese (Brazil)
-	"es",		-- Spanish
-	"fr",		-- French
+	-- "de",		-- German
+	-- "it",		-- Italian
+	-- "ja",		-- Japanese
+	-- "ko",		-- Korean
+	-- "pl",		-- Polish
+	-- "pt-br",	-- Portuguese (Brazil)
+	-- "es",		-- Spanish
 }
 
 -- Карта языков для файлов
 local LANGUAGE_FILE_MAP = {
 	["en"] =	"en",
 	["ru"] =	"ru",
+	["fr"] =	"fr",
 	["zh-cn"] =	"zh_cn",
 	["zh-tw"] =	"tw",
-	["de"] =	"de",
-	["it"] =	"it",
-	["ja"] =	"ja",
-	["ko"] =	"ko",
-	["pl"] =	"pl",
-	["pt-br"] =	"pt_br",
-	["es"] =	"es",
-	["fr"] =	"fr",
+	-- ["de"] =	"de",
+	-- ["it"] =	"it",
+	-- ["ja"] =	"ja",
+	-- ["ko"] =	"ko",
+	-- ["pl"] =	"pl",
+	-- ["pt-br"] =	"pt_br",
+	-- ["es"] =	"es",
 }
 
 -- МЕТА-ФАБРИКА ФИКСОВ
@@ -163,10 +163,21 @@ local FIXES = {
 		},
 
 	--[+ OGRYN - ОГРИН +]--
+		--[+ ABILITY 3-1 - Bullet Bravado +]--
+		loc_talent_ogryn_special_ammo_toughness_on_shot_and_reload_desc = {
+			toughness =				MFF.fixes.all_plus,
+			toughness_reload =		MFF.fixes.all_plus
+		},
 		--[+ Passive 21 - Batter +]--
 		loc_talent_ogryn_heavy_bleeds_new_desc = {
 			stacks =				MFF.fixes.all_plus,
 			heavy_stacks =			MFF.fixes.all_plus
+		},
+		--[+ Passive 24 - Concentrate +]--
+		loc_talent_ogryn_drain_stamina_for_handling_desc = {
+			sway_reduction =		MFF.fixes.all_plus,
+			spread_reduction =		MFF.fixes.all_plus,
+			recoil_reduction =		MFF.fixes.all_plus
 		},
 }
 

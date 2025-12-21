@@ -45,6 +45,7 @@ local CONFIG = {
 	combat_ability_text_colour = {
 		boeva_sposobnost =	"боевая способность",			-- Таланты
 		boev_sposobnosti =	"боевой способности",			-- Таланты, Редкости
+		vosstanovlenii =	"восстановлении",				-- Таланты
 		vosstanovlenia =	"восстановления",				-- Таланты
 		vost_sposobnosti =	"восстановления способности",	-- Таланты
 	},
@@ -60,7 +61,6 @@ local CONFIG = {
 		Krit_udary =		"Критические удары",			-- Благословения
 
 		krit_udar =			"критический удар",				-- Таланты
-		kritom =			"критическим",					-- Таланты
 		krit_udarom =		"критическим ударом",			-- Таланты, Благословения
 		krit_udary =		"критические удары",			-- Таланты
 		krit_udarami =		"критическими ударами",			-- Благословения
@@ -76,6 +76,7 @@ local CONFIG = {
 		krit_vystrelom =	"критическим выстрелом",		-- Таланты
 		krit_vystr_uron =	"урону критического выстрела",	-- Благословения
 
+		kritom =			"критическим",					-- Таланты
 		kriticheskomu =		"критическому",					-- Благословения
 
 		sh_krit_vystrela =	"шансу критического выстрела",	-- Таланты, Благословения
@@ -164,6 +165,7 @@ local CONFIG = {
 		oshelomlautsa =		"ошеломляются",					-- Таланты
 		oshelomlauschej =	"ошеломляющей",					-- Таланты
 		oshelomlauschij =	"ошеломляющий",					-- Таланты
+		oshelomlauschih =	"ошеломляющих",					-- Таланты
 		oshelomlaa =		"ошеломляя",					-- Таланты
 	},
 	stamina_text_colour = {
@@ -202,6 +204,7 @@ local CONFIG = {
 -- Огрин
 	class_ogryn_text_colour = {
 		cls_ogr =			"Огрин",
+		cls_ogra =			"Огрина",
 		cls_ogr2 =			"Огрином",
 	},
 		fnp_text_colour = {
@@ -210,6 +213,8 @@ local CONFIG = {
 			Desperadki =		"Отчаянной атаки",			-- Падаль
 		},
 		luckyb_text_colour = {
+			Lucky_bullt =		"Счастливая пуля",
+			Lucky_bllt =		"Счастливой пули",
 			Lucky_bullet =		"Счастливую пулю",
 
 			stojkosti_zolot =	"стойкости",				-- Изувер
@@ -236,6 +241,12 @@ local CONFIG = {
 		},
 		momentum_text_colour = {
 			Momentum =			"Моментума",
+
+			TauntT =			"Провокация",				-- Огрин
+			Taunt =				"спровоцированные",			-- Огрин
+			Taunted =			"спровоцировала",			-- Огрин
+			Tauntin =			"провоцируете",				-- Огрин
+			Taunting =			"провоцируя",				-- Огрин
 
 			Adren =				"Адреналина",				-- Падаль
 			AdrenFr =			"Адреналиновое безумие",	-- Падаль
@@ -312,10 +323,12 @@ local CONFIG = {
 		Fragm_gren =		"Осколочная граната",
 		Fragmu_grenu =		"Осколочную гранату",
 		Rangd_stnc =		"Стойку дальнего боя",
-	--Изувер
+	-- Изувер
 		Sv_relikviu =		"Священную реликвию",
 		Stun_gren =			"Оглушающая граната",
 		Oglush_granatu =	"Оглушающую гранату",
+	-- Огрин
+		Att_Seeker =		"Провокатор",
 
 -- ИСКУПЛЕНИЯ
 		Base_tut_p =		"Базовое обучение",
@@ -466,9 +479,13 @@ local function create_phrs_ru(colors_ru)
 		Doesnt_Stack_Vet_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Ветерана", "cls_veta_rgb_ru")..".",
 -- Изувер
 		Doesnt_Stack_Zea_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Изувера", "cls_zeaa_rgb_ru")..".",
-	Doesnt_Stack_Zea_abil =		Dot_red.." Не суммируется с эффектом такого же таланта другого "..CKWord("Изувера", "cls_zeaa_rgb_ru")..".",
+		Doesnt_Stack_Zea_abil =		Dot_red.." Не суммируется с эффектом такого же таланта другого "..CKWord("Изувера", "cls_zeaa_rgb_ru")..".",
+-- Огрин
+		Doesnt_Stack_Ogr_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
+		Doesnt_Stack_Ogr_abil =		Dot_red.." Не суммируется с эффектом такого же таланта другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
 
 		Cant_appl_thr_shlds =		Dot_red.." Не накладывается через щиты.",
+		Cant_be_refr =				Dot_red.." Не обновляется во время действия. ",
 		Cant_Crit =					Dot_red.." Не наносит "..CKWord("критические удары", "krit_udary_rgb_ru")..".\n",
 		Carap_cant_clv =			Dot_red.." Панцирная броня не "..CKWord("рассекается", "rassekaetsa_rgb_ru")..".",
 		Carap_cant_cleave =			Dot_red.." Панцирная броня не "..CKWord("простреливается", "prostrelivaetsa_rgb_ru")..".",
