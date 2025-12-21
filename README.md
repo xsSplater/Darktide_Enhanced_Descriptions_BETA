@@ -60,7 +60,8 @@
 
 ## 🧾TODO
 - 🟢 - ready, 🟡 - partially ready, 🔴 - not ready.
-﻿## All localizations:
+
+## All localizations:
 - 🟢 Curios Blessings and Perks.
 - 🟢 Weapon Blessings and Perks.
 - 🟢 Psyker Talent descriptions.
