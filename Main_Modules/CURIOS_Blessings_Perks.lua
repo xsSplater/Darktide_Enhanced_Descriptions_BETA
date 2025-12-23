@@ -119,7 +119,7 @@ local curios_localizations = {
 			en = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." "..CKWord("Corruption", "Corruption_rgb").." Resistance from Grimoires",
 			ru = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." к сопротивлению "..CKWord("порче", "porche_rgb_ru").." от гримуаров",
 			fr = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." de résistance à la "..CKWord("Corruption", "Corruption_rgb_fr").." (Grimoires)",
-			["zh-tw"] = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." "..CKWord("腐敗抗性", "Corruption_r_rgb_tw").."(法術書)",
+			["zh-tw"] = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." "..CKWord("腐敗抗性", "Corruption_res_rgb_tw").."(法術書)",
 			["zh-cn"] = CNumb("{permanent_damage_converter_resistance:%s}", "corrgrm_rgb").." "..CKWord("腐化", "Corruption_rgb_zh_cn").."抗性 (魔法书)",
 		},
 		--[+ Health +]--

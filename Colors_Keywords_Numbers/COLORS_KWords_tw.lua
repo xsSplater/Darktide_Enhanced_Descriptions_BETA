@@ -37,7 +37,7 @@ local CONFIG = {
 		Corrupted = "腐敗",
 		Corruptdmg = "腐敗傷害",
 		Corruption = "腐敗",
-		Corruption_r = "腐敗抗性", -- Resistance
+		Corruption_res = "腐敗抗性", -- Resistance
 	},
 	crit_text_colour = {
 		Crit = "暴擊",
