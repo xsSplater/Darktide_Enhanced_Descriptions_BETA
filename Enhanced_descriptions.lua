@@ -12,7 +12,7 @@ local mod = get_mod("Enhanced_descriptions")
 local location = "Enhanced_descriptions/Main_Modules/"
 
 -- CONSTANTS
-local VERSION = "4.88b"
+local VERSION = "4.92b"
 local LOCALIZATION_FILES = {
 	WEAPONS_Blessings_Perks =	"enable_weapons_file",
 	TALENTS =					"enable_talents_file",
@@ -72,120 +72,127 @@ local LANGUAGE_FILE_MAP = {
 	["fr"] =	"fr",
 }
 
--- FIXES FOR DESCRIPTIONS - ФИКСЫ ДЛЯ ОПИСАНИЙ
+-- МЕТА-ФАБРИКА ФИКСОВ
+local MFF = {}
+
+MFF.patterns = {
+	plus_prefix = "^%+",
+	all_plus = "%+",
+	percent_zeros = "%.00%%",
+	hyphen_spaces = "%s*%-%s*"
+}
+
+MFF.fixes = setmetatable({}, {
+	__index = function(t, key)
+		-- Автоматически создаем фиксы по шаблону
+		if MFF.patterns[key] then
+			local func = function(value)
+				return tostring(value):gsub(MFF.patterns[key], "")
+			end
+			t[key] = func
+			return func
+		end
+	end
+})
+
+-- FIXES FOR DESCRIPTIONS
 local FIXES = {
 --[+ ++BLESSINGS - БЛАГОСЛОВЕНИЯ++ +]--
 	--[+ OVERLOAD +]--
-		-- "+25% Heat is reduced immediately..." -- Removed "+"
 		loc_explosion_on_overheat_lockout_desc = {
-			overheat_reduction = function(value)
-				local str = tostring(value)
-				return str:gsub("^+", "")
-			end
+			overheat_reduction =	MFF.fixes.plus_prefix
 		},
 	--[+ WRATH +]--
-		-- "+50% Cleave on Hit..." -- Removed "+"
 		loc_trait_bespoke_chained_hits_increases_cleave_desc = {
-			cleave = function(value)
-				local str = tostring(value)
-				return str:gsub("^+", "")
-			end
+			cleave =				MFF.fixes.plus_prefix
 		},
 	--[+ HEATSINK +]--
-		-- "+10% Heat..." -- Removed "+" and replaced with "-"
 		loc_reduce_fixed_overheat_amount_desc = {
-			amount = function(value)
-				local str = tostring(value)
-				return str:gsub("^+", "")
-			end
+			amount =				MFF.fixes.plus_prefix
 		},
 	--[+ SLOW AND STEADY +]--
-		-- "Up to +8% Toughness recovered..." -- Removed "+"
 		loc_trait_bespoke_toughness_on_hit_based_on_charge_time_desc = {
-			toughness = function(value)
-				local str = tostring(value)
-				return str:gsub("^+", "")
-			end
+			toughness =				MFF.fixes.plus_prefix
 		},
 	--[+ FOCUSED COOLING +]--
-		-- "+60% Heat generation..." -- Removed "+"
 		loc_trait_bespoke_reduced_overheat_on_crits_desc = {
-			heat_percentage = function(value)
-				local str = tostring(value)
-				return str:gsub("^+", "")
-			end
+			heat_percentage =		MFF.fixes.plus_prefix
 		},
+
 --[+ ++TALENTS - ТАЛАНТЫ++ +]--
 	--[+ NODES - УЗЛЫ +]--
 		--[+ Peril Resistance Medium +]--
-			-- "+10.00% Peril Generation." -- Removed ".00"
-			loc_talent_warp_charge_low_desc = {
-				warp_charge = function(value)
-					local str = tostring(value)
-					return str:gsub("%.00%%", "%%")
-				end
-			},
+		loc_talent_warp_charge_low_desc = {
+			warp_charge =			MFF.fixes.percent_zeros
+		},
+
 	--[+ PSYKER - ПСАЙКЕР +]--
 		--[+ ABILITY 1-3 - Creeping Flames +]--
-			-- "Venting Shriek applies 1 - 6 Stacks..." -- Removed " -" from number "1 -"
-			loc_talent_psyker_warpfire_on_shout_desc = {
-				min_stacks = function(value)
-					local str = tostring(value)
-					return str:gsub("%s*%-%s*", "")
-				end
-			},
+		loc_talent_psyker_warpfire_on_shout_desc = {
+			min_stacks =			MFF.fixes.hyphen_spaces
+		},
+
 	--[+ VETERAN - ВЕТЕРАН +]--
 		--[+ Passive 23 - Deadshot +]--
-			-- "+60% Sway Reduction..." -- Removed "+"
-			loc_talent_veteran_ads_drains_stamina_boost_desc = {
-				sway_reduction = function(value)
-					local str = tostring(value)
-					return str:gsub("%+", "")
-				end,
-			},
+		loc_talent_veteran_ads_drains_stamina_boost_desc = {
+			sway_reduction =		MFF.fixes.all_plus
+		},
+
 	--[+ ZEALOT - ИЗУВЕР +]--
 		--[+ BLITZ 1 - Stunstorm Grenade +]--
-			-- "+50% blast radius..." -- Removed "+"
-			loc_zealot_improved_stun_grenade_desc = {
-				radius = function(value)
-					local str = tostring(value)
-					return str:gsub("%+", "")
-				end,
-			},
+		loc_zealot_improved_stun_grenade_desc = {
+			radius =				MFF.fixes.all_plus
+		},
 		--[+ ABILITY 1-1 - Unrelenting Fury +]--
-			-- "+20% Ability Cooldown..." -- Removed "+"
-			loc_talent_zealot_fotf_refund_cooldown_desc = {
-				cooldown = function(value)
-					local str = tostring(value)
-					return str:gsub("%+", "")
-				end,
-			},
+		loc_talent_zealot_fotf_refund_cooldown_desc = {
+			cooldown =				MFF.fixes.all_plus
+		},
 		--[+ Passive 5 - Enemies Within, Enemies Without +]--
-			-- "+2.5% Toughness replenished..." -- Removed "+"
-			loc_talent_zealot_toughness_near_enemies_desc = {
-				toughness = function(value)
-					local str = tostring(value)
-					return str:gsub("%+", "")
-				end,
-			},
+		loc_talent_zealot_toughness_near_enemies_desc = {
+			toughness =				MFF.fixes.all_plus
+		},
+
 	--[+ ARBITES - АРБИТРЕС +]--
 		--[+ ABILITY 1 - Castigator's Stance +]--
-			-- "+80% Reduced Damage Taken..." -- Removed "+"
-			loc_talent_adamant_stance_ability_alt_description = {
-				damage_taken = function(value)
-					local str = tostring(value)
-					return str:gsub("%+", "")
-				end,
-			},
+		loc_talent_adamant_stance_ability_alt_description = {
+			damage_taken =			MFF.fixes.all_plus
+		},
 		--[+ Passive 16 - Canine Morale +]--
-			-- "+10% Toughness replenished..." -- Removed "+"
-			loc_talent_adamant_pinning_dog_kills_buff_allies_description = {
-				toughness = function(value)
-					local str = tostring(value)
-					return str:gsub("%+", "")
-				end,
-			},
+		loc_talent_adamant_pinning_dog_kills_buff_allies_description = {
+			toughness =				MFF.fixes.all_plus
+		},
+
+	--[+ OGRYN - ОГРИН +]--
+		--[+ Passive 21 - Batter +]--
+		loc_talent_ogryn_heavy_bleeds_new_desc = {
+			stacks =				MFF.fixes.all_plus,
+			heavy_stacks =			MFF.fixes.all_plus
+		},
 }
+
+-- ФУНКЦИЯ ДЛЯ ОЧИСТКИ СТАРЫХ НАСТРОЕК
+local function cleanup_old_settings()
+	local old_settings_to_remove = {
+		"talents_penances_text_colour",
+		"sedition_text_colour",
+		-- Сюда можно добавить другие устаревшие настройки для удаления
+	}
+
+	local cleaned = false
+	for _, old_setting in ipairs(old_settings_to_remove) do
+		local value = mod:get(old_setting)
+		if value ~= nil then
+			-- Если настройка существует, удаляем её
+			mod:set(old_setting, nil)
+			cleaned = true
+			mod:warning("Removed old setting: %s", old_setting)
+		end
+	end
+
+	if cleaned then
+		mod:warning("Old settings cleanup completed")
+	end
+end
 
 -- ФУНКЦИИ ДЛЯ ЗАГРУЗКИ ЦВЕТОВ
 function mod.load_colors_numbers()
@@ -215,26 +222,26 @@ function mod.load_colors_keywords(language)
 		file_suffix = file_suffix:gsub("-", "_")
 		file_name = string.format("Enhanced_descriptions/Colors_Keywords_Numbers/COLORS_KWords_%s", file_suffix)
 	end
-	
+
 	local colors_func
 	local success, err = pcall(function()
 		colors_func = mod:io_dofile(file_name)
 	end)
-	
+
 	local colors = {}
-	
+
 	if success and colors_func then
 		if type(colors_func) == "function" then
 			colors = colors_func() or {}
 		else
 			colors = colors_func or {}
 		end
-		
+
 		mod:info("Loaded colors for language: %s", language)
 	else
 		mod:warning("Failed to load colors for language: %s, file: %s, error: %s", 
-				   language, file_name, tostring(err))
-		
+					language, file_name, tostring(err))
+
 		if language ~= "en" then
 			mod:info("Falling back to English colors for language: %s", language)
 			colors = mod.load_colors_keywords("en")
@@ -246,7 +253,7 @@ function mod.load_colors_keywords(language)
 			}
 		end
 	end
-	
+
 	if not colors.keywords then
 		local old_structure = colors
 		colors = {
@@ -255,10 +262,10 @@ function mod.load_colors_keywords(language)
 			nts = {}
 		}
 	end
-	
+
 	mod._color_cache.keywords = colors
 	mod._color_cache.current_lang = language
-	
+
 	return mod._color_cache.keywords
 end
 
@@ -266,9 +273,9 @@ function mod.get_current_language_colors()
 	if not Managers or not Managers.localization then
 		return {}, {}, "en"
 	end
-	
+
 	local current_lang = Managers.localization._language or "en"
-	
+
 	local is_supported = false
 	for _, lang in ipairs(mod.SUPPORTED_LANGUAGES) do
 		if lang == current_lang then
@@ -276,15 +283,15 @@ function mod.get_current_language_colors()
 			break
 		end
 	end
-	
+
 	if not is_supported then
 		mod:info("Language %s is not supported, falling back to English", current_lang)
 		current_lang = "en"
 	end
-	
+
 	local numbers = mod.load_colors_numbers()
 	local keywords = mod.load_colors_keywords(current_lang)
-	
+
 	return {numbers, keywords, current_lang}
 end
 
@@ -292,38 +299,38 @@ function mod.clear_color_cache()
 	mod._color_cache.numbers = nil
 	mod._color_cache.keywords = nil
 	mod._color_cache.current_lang = nil
-	
+
 	-- Очищаем глобальный кэш утилит
 	local success, utils = pcall(function()
 		return mod:io_dofile("Enhanced_descriptions/Enhanced_descriptions_utils")
 	end)
-	
+
 	if success and utils and utils.clear_global_cache then
 		utils.clear_global_cache()
 	end
-	
+
 	mod:info("Color cache cleared")
 end
 
 mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)
 	local result = func(self, loc_key, no_cache, context)
-	
+
 	if context and FIXES[loc_key] then
 		local modified_context = table.shallow_copy(context)
 		local modified = false
-		
+
 		for field, fix_func in pairs(FIXES[loc_key]) do
 			if modified_context[field] then
 				modified_context[field] = fix_func(modified_context[field])
 				modified = true
 			end
 		end
-		
+
 		if modified then
 			result = func(self, loc_key, no_cache, modified_context)
 		end
 	end
-	
+
 	return result
 end)
 
@@ -458,20 +465,23 @@ mod:hook(LocalizationManager, "_process_string", function(func, self, key, raw_s
 end)
 
 function mod.on_all_mods_loaded()
+	-- Очищаем старые настройки перед загрузкой всего остального
+	cleanup_old_settings()
+
 	setup_button_offsets()
 	setup_window_offsets()
 	mod.reload_templates()
-	
+
 	-- Экспортируем переменные для Debug модуля
 	mod.registered_fixes = registered_fixes
 	mod.FIXES = FIXES
 	mod.LOCALIZATION_FILES = LOCALIZATION_FILES
-	
+
 	-- Пробуем загрузить debug модуль (опционально)
 	local debug_success, debug_result = pcall(function()
 		return mod:io_dofile("Enhanced_descriptions/Main_Modules/Debug")
 	end)
-	
+
 	if debug_success and debug_result then
 		mod:info("Debug module loaded")
 	else
@@ -481,6 +491,8 @@ function mod.on_all_mods_loaded()
 end
 
 function mod.on_enabled()
+	-- Также очищаем при включении мода
+	cleanup_old_settings()
 	mod.reload_templates()
 	mod:info("Enhanced Descriptions enabled")
 end

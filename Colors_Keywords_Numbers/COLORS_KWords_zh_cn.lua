@@ -306,9 +306,9 @@ local CONFIG = {
 	},
 
 	-- DIFFICULTY
-	sedition_text_colour = {
-		sedition = "煽动",
-	},
+	-- sedition_text_colour = {
+		-- sedition = "煽动",
+	-- },
 	uprising_text_colour = {
 		uprising = "起义",
 	},

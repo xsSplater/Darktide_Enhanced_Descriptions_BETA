@@ -323,10 +323,7 @@ local CONFIG = {
 		Omnissia_p =		"Святилище Омниссии",
 		Prologue_p =		"Пролог",
 		Sir_melk_p =		"Реквизиториум сира Мелка",
-	-- },
 
--- ИСКУПЛЕНИЯ
-	-- talents_penances_text_colour = { -- ЗЕЛЁНЫЙ цвет
 	-- Псайкер
 		assail =			"Нападение",
 		bburst =			"Взрыва мозга",
@@ -399,9 +396,9 @@ local CONFIG = {
 	},
 
 -- СЛОЖНОСТЬ
-	sedition_text_colour = {
-		sedition =			"Мятеж",
-	},
+	-- sedition_text_colour = {
+		-- sedition =			"Мятеж",
+	-- },
 	uprising_text_colour = {
 		uprising =			"Восстание",
 	},
@@ -452,7 +449,7 @@ local function create_phrs_ru(colors_ru)
 	local Dot_red =		"{#color(255, 35, 5)}•{#reset()}"
 
 	local CKWord = function(fallback, key)
-		return fallback
+		return colors_ru[key] or fallback
 	end
 
 	return {
@@ -484,7 +481,7 @@ local function create_nts_ru(colors_ru)
 	local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 
 	local CKWord = function(fallback, key)
-		return fallback
+		return colors_ru[key] or fallback
 	end
 
 	return {
