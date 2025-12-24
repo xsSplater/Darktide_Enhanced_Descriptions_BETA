@@ -20,6 +20,8 @@ local DEFAULT_SETTINGS = {
 
 local COLOR_SETTINGS = {
 	-- Default text color = terminal_text_body
+	{ id = "dump_stat",			default = "terminal_text_body" },
+
 	{ id = "bleed",				default = "ui_zealot" },
 	{ id = "brittleness",		default = "medium_orchid" },
 	{ id = "burn",				default = "sienna" },

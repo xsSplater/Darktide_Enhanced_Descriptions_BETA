@@ -75,6 +75,8 @@ local LOCALIZATION_GROUPS = {
 	"heresy",
 	"damnation",
 	"auric",
+
+	"dump_stat",
 }
 
 -- UTILITY FUNCTIONS
@@ -400,6 +402,19 @@ local localizations = {
 		es = "{#color(255, 35, 5)}¡SOLO PARA DESARROLLADORES!{#reset()}\nEste módulo habilita comandos de depuración y utilidades para pruebas y solución de problemas. Usar con precaución.",
 	},
 
+--[+DUMP STATS+]--
+	dump_stat_colour = {
+		en = "Dump Stat",
+		ru = "Мусорный стат",
+	},
+	dump_stat_colour_description = {
+		en = "Dump Stats:\n"
+			.."Mobility is the only thing we have here for now. Feel free to suggest other options!\n"
+			.."This is necessary for convenient weapon purchasing. You can see which stat is \"dump\" and quickly select the weapon you need.",
+		ru = "Мусорные статы:\n"
+			.."Мобильность -- пока только она. Предлагайте другие варианты!\n"
+			.."Нужно для удобной покупки оружия. Вы видите, какой стат «мусорный» и можете быстрее выбрать нужное оружие.",
+	},
 
 --[+MAIN+]--
 	bleed_colour = {

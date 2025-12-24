@@ -207,6 +207,8 @@ local CONFIG = {
 			Meleespec =		"Melee Specialist",
 
 			Meleejust =		"Melee Justice",		-- Arbites
+
+			Exhausted =		"Exhausted",			-- Hive Scum
 		},
 		rangedspec_text_colour = {
 			Rangedspec =	"Ranged Specialist",
@@ -341,6 +343,11 @@ local CONFIG = {
 	auric_text_colour = {
 		auric =			"Auric",
 	},
+
+-- DUMP STAT
+	dump_stat_text_colour = {
+		Mobility =		"Mobility",
+	},
 }
 
 -- Основная функция для создания цветных ключевых слов
@@ -386,7 +393,7 @@ local function create_phrs_en(colors_en)
 	Can_be_refr_drop_1 =		Dot_green.." Stacks can be refreshed during active duration, and are dropped one by one.",
 	Can_gen_mult =				Dot_green.." Can generate multiple Stacks per Swing.\n",
 	Can_proc_mult =				Dot_green.." Can proc multiple times per swing when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
-	Can_proc_mult_str =			Dot_green.." Can proc multiple times per swing when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
+	Can_proc_mult_str =			Dot_green.." Can proc multiple times when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
 	Refr_dur_stappl =			Dot_green.." Refreshes duration on Stack application. ",
 -- Psyker
 	Doesnt_Stack_Psy_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Psyker", "cls_psy_rgb")..".",
@@ -399,6 +406,9 @@ local function create_phrs_en(colors_en)
 -- Ogryn
 	Doesnt_Stack_Ogr_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 	Doesnt_Stack_Ogr_abil =		Dot_red.." Does not Stack with the same talent from another "..CKWord("Ogryn", "cls_ogr_rgb")..".",
+-- Hive Scum
+	Doesnt_Stack_Scm_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Hive Scum", "cls_scm_rgb")..".",
+	Doesnt_Stack_Scm_eff =		Dot_red.." Does not Stack with the same debuff from another "..CKWord("Hive Scum", "cls_scm_rgb")..".",
 
 	Cant_appl_thr_shlds =		Dot_red.." Can't apply through shields.",
 	Cant_be_refr =				Dot_red.." Cannot be refreshed during active duration. ",

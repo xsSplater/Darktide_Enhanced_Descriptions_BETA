@@ -5,8 +5,57 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_ogryn_taunt_damage_taken_increase_description"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_veteran_elite_kills_reduce_cooldown_alt_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
+
+-- Кэш утилит
+mod._utils_cache = nil
+
+-- Функция для получения утилит с кэшированием
+function mod.get_utils()
+	if mod._utils_cache then
+		return mod._utils_cache
+	end
+
+	local success, result = pcall(function()
+		return mod:io_dofile("Enhanced_descriptions/Enhanced_descriptions_utils")
+	end)
+
+	if success and result then
+		mod._utils_cache = result
+		mod:info("Utils loaded and cached successfully")
+		return result
+	else
+		mod:error("Failed to load utils: %s", tostring(result))
+		-- Возвращаем минимальные утилиты
+		local fallback_utils = {
+			CKWord = function(fallback, key) return fallback end,
+			CNumb = function(fallback, key) return fallback end,
+			CPhrs = function(key) return "" end,
+			CNote = function(key) return "" end,
+			create_template = function(id, loc_keys, locales, handle_func)
+				return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
+			end,
+			loc_text = function(text)
+				if type(text) == "table" then
+					return function(locale) return text[locale] or text["en"] or "" end
+				end
+				return function() return text end 
+			end,
+			DOT_NC = "•",
+			DOT_RED = "•",
+			DOT_GREEN = "•",
+		}
+		mod._utils_cache = fallback_utils
+		return fallback_utils
+	end
+end
+
+-- Функция для очистки кэша утилит
+function mod.clear_utils_cache()
+	mod._utils_cache = nil
+	mod:info("Utils cache cleared")
+end
 
 -- Main Modules Location
 local location = "Enhanced_descriptions/Main_Modules/"
@@ -14,24 +63,24 @@ local location = "Enhanced_descriptions/Main_Modules/"
 -- CONSTANTS
 local VERSION = "4.95b"
 local LOCALIZATION_FILES = {
-	WEAPONS_Blessings_Perks =	"enable_weapons_file",
-	TALENTS =					"enable_talents_file",
-	CURIOS_Blessings_Perks =	"enable_curious_file",
-	MENUS =						"enable_menus_file",
-	PENANCES =					"enable_penances_file",
+	WEAPONS_Blessings_Perks =		"enable_weapons_file",
+	TALENTS =						"enable_talents_file",
+	CURIOS_Blessings_Perks =		"enable_curious_file",
+	MENUS =							"enable_menus_file",
+	PENANCES =						"enable_penances_file",
 	-- NAMES_Enemies_Weapons =		"enable_names_file",
 	-- NAMES_Talents_Blessings =	"enable_names_tal_bless_file"
 }
 
 local BUTTON_OFFSETS = {
-	InventoryWeaponsView =		"equip_button",
-	MarksVendorView =			"purchase_button", 
-	InventoryWeaponMarksView =	"equip_button"
+	InventoryWeaponsView =			"equip_button",
+	MarksVendorView =				"purchase_button",
+	InventoryWeaponMarksView =		"equip_button"
 }
 
 -- UI OFFSET CONSTANTS
-local WIDGET_OFFSET =			{-622, 20, 0}
-local WINDOW_OFFSET =			200
+local WIDGET_OFFSET =				{-622, 20, 0}
+local WINDOW_OFFSET =				200
 
 -- Кэш цветов
 mod._color_cache = {
@@ -42,34 +91,34 @@ mod._color_cache = {
 
 -- Список поддерживаемых языков
 mod.SUPPORTED_LANGUAGES = {
-	"en",		-- English
-	"ru",		-- Russian
-	"fr",		-- French
-	"zh-cn",	-- Chinese Simplified
-	"zh-tw",	-- Chinese Traditional
+	"en",			-- English
+	"ru",			-- Russian
+	"fr",			-- French
+	"zh-cn",		-- Chinese Simplified
+	"zh-tw",		-- Chinese Traditional
 	-- "de",		-- German
 	-- "it",		-- Italian
 	-- "ja",		-- Japanese
 	-- "ko",		-- Korean
 	-- "pl",		-- Polish
-	-- "pt-br",	-- Portuguese (Brazil)
+	-- "pt-br",		-- Portuguese (Brazil)
 	-- "es",		-- Spanish
 }
 
 -- Карта языков для файлов
 local LANGUAGE_FILE_MAP = {
-	["en"] =	"en",
-	["ru"] =	"ru",
-	["fr"] =	"fr",
-	["zh-cn"] =	"zh_cn",
-	["zh-tw"] =	"tw",
-	-- ["de"] =	"de",
-	-- ["it"] =	"it",
-	-- ["ja"] =	"ja",
-	-- ["ko"] =	"ko",
-	-- ["pl"] =	"pl",
+	["en"] =		"en",
+	["ru"] =		"ru",
+	["fr"] =		"fr",
+	["zh-cn"] =		"zh_cn",
+	["zh-tw"] =		"tw",
+	-- ["de"] =		"de",
+	-- ["it"] =		"it",
+	-- ["ja"] =		"ja",
+	-- ["ko"] =		"ko",
+	-- ["pl"] =		"pl",
 	-- ["pt-br"] =	"pt_br",
-	-- ["es"] =	"es",
+	-- ["es"] =		"es",
 }
 
 -- МЕТА-ФАБРИКА ФИКСОВ
@@ -310,17 +359,9 @@ function mod.clear_color_cache()
 	mod._color_cache.numbers = nil
 	mod._color_cache.keywords = nil
 	mod._color_cache.current_lang = nil
+	mod.clear_utils_cache()	 -- Очищаем кэш утилит
 
-	-- Очищаем глобальный кэш утилит
-	local success, utils = pcall(function()
-		return mod:io_dofile("Enhanced_descriptions/Enhanced_descriptions_utils")
-	end)
-
-	if success and utils and utils.clear_global_cache then
-		utils.clear_global_cache()
-	end
-
-	mod:info("Color cache cleared")
+	mod:info("Color cache and utils cache cleared")
 end
 
 mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)

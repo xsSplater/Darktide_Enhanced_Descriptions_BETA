@@ -427,6 +427,11 @@ local CONFIG = {
 	auric_text_colour = {
 		auric =				"Золото",
 	},
+
+-- МУСОРНЫЕ СТАТЫ
+	dump_stat_text_colour = {
+		Mobility =			"Мобильность",
+	},
 }
 
 -- Основная функция для создания цветных ключевых слов

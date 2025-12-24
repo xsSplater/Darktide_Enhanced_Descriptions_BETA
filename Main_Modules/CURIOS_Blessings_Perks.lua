@@ -2,36 +2,8 @@
 
 local mod = get_mod("Enhanced_descriptions")
 
--- Загружаем утилиты
-local Utils
-local success, result = pcall(function()
-	return mod:io_dofile("Enhanced_descriptions/Enhanced_descriptions_utils")
-end)
-
-if success and result then
-	Utils = result
-	mod:info("Utils loaded successfully")
-else
-	mod:error("Failed to load utils: %s", tostring(result))
-	Utils = {
-		CKWord = function(fallback, key) return fallback end,
-		CNumb = function(fallback, key) return fallback end,
-		CPhrs = function(key) return "" end,
-		CNote = function(key) return "" end,
-		create_template = function(id, loc_keys, locales, handle_func)
-			return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
-		end,
-		loc_text = function(text)
-			if type(text) == "table" then
-				return function(locale) return text[locale] or text["en"] or "" end
-			end
-			return function() return text end 
-		end,
-		DOT_RED = "•",
-		DOT_NC = "•",
-		DOT_GREEN = "•",
-	}
-end
+-- ИСПОЛЬЗУЕМ КЭШИРОВАННЫЕ УТИЛИТЫ
+local Utils = mod.get_utils()
 
 -- ИМПОРТ ВСЕХ НУЖНЫХ ФУНКЦИЙ И КОНСТАНТ
 local create_template = Utils.create_template
