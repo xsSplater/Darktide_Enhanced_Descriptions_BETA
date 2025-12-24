@@ -431,6 +431,12 @@ local CONFIG = {
 -- МУСОРНЫЕ СТАТЫ
 	dump_stat_text_colour = {
 		Mobility =			"Мобильность",
+		Melee_dmg =			"Урон рукопашный",
+		Warp_resist =		"Сопротивление варпу",
+	},
+	dump_stat2_text_colour = {
+		Ammo =				"Боеприпасы",
+		Defences =			"Защита",
 	},
 }
 

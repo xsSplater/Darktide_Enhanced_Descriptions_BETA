@@ -344,9 +344,15 @@ local CONFIG = {
 		auric =			"Auric",
 	},
 
--- DUMP STAT
+-- DUMP STATS
 	dump_stat_text_colour = {
 		Mobility =		"Mobility",
+		Melee_dmg =		"Melee Damage",
+		Warp_resist =	"Warp Resistance",
+	},
+	dump_stat2_text_colour = {
+		Ammo =			"Ammo",
+		Defences =		"Defences",
 	},
 }
 

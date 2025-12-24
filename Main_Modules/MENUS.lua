@@ -462,12 +462,40 @@ local menus_templates = {
 		["zh-tw"] = "特殊攻擊", -- 特殊功能(近戰)
 	},
 
-	["loc_stats_display_mobility_stat"] = {
+
+--[+ +DUMP STATS+ +]--
+	["loc_stats_display_mobility_stat"] = { -- Mobility
 		en = CKWord("Mobility", "Mobility_rgb"),
 		ru = CKWord("Мобильность", "Mobility_rgb_ru"),
 		-- ["zh-tw"] = "", -- 
 		-- ["zh-cn"] = "", -- 
 	},
+	["loc_glossary_term_melee_damage"] = { -- Melee Damage -- Ogryn
+		en = CKWord("Melee Damage", "Melee_dmg_rgb"),
+		ru = CKWord("Урон рукопашный", "Melee_dmg_rgb_ru"),
+		-- ["zh-tw"] = "", -- 
+		-- ["zh-cn"] = "", -- 
+	},
+	["loc_stats_display_warp_resist_stat"] = { -- Warp Resistance
+		en = CKWord("Warp Resistance", "Warp_resist_rgb"),
+		ru = CKWord("Сопротивление варпу", "Warp_resist_rgb_ru"),
+		-- ["zh-tw"] = "", -- 
+		-- ["zh-cn"] = "", -- 
+	},
+--[+ +DUMP STATS 2+ +]--
+	["loc_stats_display_ammo_stat"] = { -- Ammo -- Ogryn
+		en = CKWord("Ammo", "Ammo_rgb"),
+		ru = CKWord("Боеприпасы", "Ammo_rgb_ru"),
+		-- ["zh-tw"] = "", -- 
+		-- ["zh-cn"] = "", -- 
+	},
+	["loc_stats_display_defense_stat"] = { -- Defences
+		en = CKWord("Defences", "Defences_rgb"),
+		ru = CKWord("Защита", "Defences_rgb_ru"),
+		-- ["zh-tw"] = "", -- 
+		-- ["zh-cn"] = "", -- 
+	},
+
 
 	["loc_stats_display_finesse_stat"] = {
 		-- en = "Finesse",

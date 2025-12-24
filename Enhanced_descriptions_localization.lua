@@ -77,6 +77,7 @@ local LOCALIZATION_GROUPS = {
 	"auric",
 
 	"dump_stat",
+	"dump_stat2",
 }
 
 -- UTILITY FUNCTIONS
@@ -406,6 +407,11 @@ local localizations = {
 	dump_stat_colour = {
 		en = "Dump Stats",
 		ru = "Мусорные статы",
+	},
+--[+DUMP STATS 2+]--
+	dump_stat2_colour = {
+		en = "Dump Stats 2",
+		ru = "Мусорные статы 2",
 	},
 
 --[+MAIN+]--
