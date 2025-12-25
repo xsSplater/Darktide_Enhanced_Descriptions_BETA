@@ -210,7 +210,7 @@ local CONFIG = {
 		fnp_text_colour = {
 			Feel_no_pain =		"Неболита",
 
-			Desperadki =		"Отчаянной атаки",			-- Падаль
+			Desperadki =		"Отчаянной атаки",			-- Отребье
 		},
 		luckyb_text_colour = {
 			Lucky_bullt =		"Счастливая пуля",
@@ -223,7 +223,7 @@ local CONFIG = {
 		trample_text_colour = {
 			Trample =			"Топота",
 
-			Depend =			"Зависимости",				-- Падаль
+			Depend =			"Зависимости",				-- Отребье
 	},
 -- Изувер
 	class_zealot_text_colour = {
@@ -236,8 +236,8 @@ local CONFIG = {
 			Fury =				"Ярость",
 			Fury_i =			"Ярости",
 
-			Rampage =			"Буйство!",					-- Падаль
-			Rampaga =			"Буйства!",					-- Падаль
+			Rampage =			"Буйство!",					-- Отребье
+			Rampaga =			"Буйства!",					-- Отребье
 		},
 		momentum_text_colour = {
 			Momentum =			"Моментума",
@@ -248,8 +248,8 @@ local CONFIG = {
 			Tauntin =			"провоцируете",				-- Огрин
 			Taunting =			"провоцируя",				-- Огрин
 
-			Adren =				"Адреналина",				-- Падаль
-			AdrenFr =			"Адреналиновое безумие",	-- Падаль
+			Adren =				"Адреналина",				-- Отребье
+			AdrenFr =			"Адреналиновое безумие",	-- Отребье
 		},
 		stealth_text_colour = {
 			Stealth =			"Скрытности",
@@ -273,13 +273,15 @@ local CONFIG = {
 			Focus_Target =		"Важной цели",
 			Focus_Targt =		"Важная цель",
 
-			VultsMark =			"Метки стервятника",		-- Падаль
+			VultsMark =			"Метки стервятника",		-- Отребье
 			Markedenemy =		"Отмеченного врага",		-- Псайкер
 		},
 		meleespec_text_colour = {
 			Meleespec =			"Специалиста-рукопашника",
 
 			Meleejust =			"Судьи-рукопашника",		-- Арбитрес
+
+			Exhausted =			"Истощение",				-- Hive Scum
 		},
 		rangedspec_text_colour = {
 			Rangedspec =		"Специалиста-стрелка",
@@ -291,15 +293,16 @@ local CONFIG = {
 		cls_arb =			"Арбитратор",
 		cls_arb2 =			"Арбитратором",
 	},
--- Падаль Улья
+-- Отребье Улья
 	class_scum_text_colour = {
-		cls_scm =			"Падаль Улья",
-		cls_scma =			"Падали Улья",
-		cls_scm2 =			"Падалью Улья",
+		cls_scm =			"Отребье Улья",
+		cls_scma =			"Отребья Улья",
+		cls_scm2 =			"Отребьем Улья",
 	},
 		chemtox_text_colour = {
-			Chem_Toxom =		"Хим-токсином",
+			Chem_Tox =			"Хим-токсин",
 			Chem_Toxa =			"Хим-токсина",
+			Chem_Toxom =		"Хим-токсином",
 		},
 
 -- ТАЛАНТЫ
@@ -309,15 +312,6 @@ local CONFIG = {
 		Brain_rupture =		"Разрыв мозга",
 		Enfeeble =			"Ослабление",
 		Scriers_gaze =		"Взор провидца",
-	-- Арбитрес
-		Electro_mine =		"Вольтаическую шоковую мину",
-		Arbites_gren =		"Гранату арбитрес",
-		Nuncio_akvilu =		"Нунцио-аквилу",
-		BreakZLined =		"Прорыв вражеского строя",
-		BreakZLine =		"Прорыва вражеского строя",
-		Stojku_bicha =		"Стойку бичевателя",
-	-- Падаль
-		Blind_greny =		"Ослепляющие гранаты",
 	-- Ветеран
 		Frag_gren =			"Фраг-гранату",
 		Fragm_gren =		"Осколочная граната",
@@ -329,6 +323,16 @@ local CONFIG = {
 		Oglush_granatu =	"Оглушающую гранату",
 	-- Огрин
 		Att_Seeker =		"Провокатор",
+	-- Арбитрес
+		Electro_mine =		"Вольтаическую шоковую мину",
+		Arbites_gren =		"Гранату арбитрес",
+		Nuncio_akvilu =		"Нунцио-аквилу",
+		BreakZLined =		"Прорыв вражеского строя",
+		BreakZLine =		"Прорыва вражеского строя",
+		Stojku_bicha =		"Стойку бичевателя",
+	-- Отребье
+		Blind_greny =		"Ослепляющие гранаты",
+		Desperady =			"Сорвиголовы",
 
 -- ИСКУПЛЕНИЯ
 		Base_tut_p =		"Базовое обучение",
@@ -483,9 +487,19 @@ local function create_phrs_ru(colors_ru)
 		Can_proc_mult = 			Dot_green.." Может срабатывать несколько раз за удар при "..CKWord("рассечении", "rassechenii_rgb_ru").." нескольких врагов.\n",
 		Can_proc_mult_str =			Dot_green.." Может срабатывать несколько раз за выстрел при "..CKWord("простреливании", "prostrelivanii_rgb_ru").." нескольких врагов.\n",
 		Refr_dur_stappl =			Dot_green.." Длительность обновляется при наложении заряда. ",
+
+
+		Cant_appl_thr_shlds =		Dot_red.." Не накладывается через щиты.",
+		Cant_be_refr =				Dot_red.." Не обновляется во время действия. ",
+		Cant_Crit =					Dot_red.." Не наносит "..CKWord("критические удары", "krit_udary_rgb_ru")..".\n",
+		Carap_cant_clv =			Dot_red.." Панцирная броня не "..CKWord("рассекается", "rassekaetsa_rgb_ru")..".",
+		Carap_cant_cleave =			Dot_red.." Панцирная броня не "..CKWord("простреливается", "prostrelivaetsa_rgb_ru")..".",
+		Dont_intw_coher_toughn =	Dot_red.." Не влияет на "..CKWord("стойкость", "stoikost_rgb_ru").." от "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",
+
+
 -- Псайкер
 		Doesnt_Stack_Psy_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("псайкера", "cls_psya_rgb_ru")..".",
-		Doesnt_Stack_Psy_eff =		Dot_red.." Не суммируется с таким же ослаблением от другого псайкера.",
+		Doesnt_Stack_Psy_eff =		Dot_red.." Не суммируется с таким же ослаблением от другого "..CKWord("псайкера", "cls_psya_rgb_ru")..".",
 -- Ветеран
 		Doesnt_Stack_Vet_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Ветерана", "cls_veta_rgb_ru")..".",
 -- Изувер
@@ -494,13 +508,9 @@ local function create_phrs_ru(colors_ru)
 -- Огрин
 		Doesnt_Stack_Ogr_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
 		Doesnt_Stack_Ogr_abil =		Dot_red.." Не суммируется с эффектом такого же таланта другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
-
-		Cant_appl_thr_shlds =		Dot_red.." Не накладывается через щиты.",
-		Cant_be_refr =				Dot_red.." Не обновляется во время действия. ",
-		Cant_Crit =					Dot_red.." Не наносит "..CKWord("критические удары", "krit_udary_rgb_ru")..".\n",
-		Carap_cant_clv =			Dot_red.." Панцирная броня не "..CKWord("рассекается", "rassekaetsa_rgb_ru")..".",
-		Carap_cant_cleave =			Dot_red.." Панцирная броня не "..CKWord("простреливается", "prostrelivaetsa_rgb_ru")..".",
-		Dont_intw_coher_toughn =	Dot_red.." Не влияет на "..CKWord("стойкость", "stoikost_rgb_ru").." от "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",
+-- Hive Scum
+		Doesnt_Stack_Scm_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Отребья Улья", "cls_scma_rgb_ru")..".",
+		Doesnt_Stack_Scm_eff =		Dot_red.." Не суммируется с таким же ослаблением от другого "..CKWord("Отребья Улья", "cls_scma_rgb_ru")..".",
 	}
 end
 

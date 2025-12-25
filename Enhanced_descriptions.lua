@@ -228,6 +228,12 @@ local FIXES = {
 			spread_reduction =		MFF.fixes.all_plus,
 			recoil_reduction =		MFF.fixes.all_plus
 		},
+
+	--[+ HIVE SCUM - ОТРЕБЬЕ УЛЬЯ +]--
+		--[+ ABILITY 2 - Rampage! +]--
+		loc_talent_broker_ability_punk_rage_desc_2 = {
+			damage_taken =			MFF.fixes.all_plus
+		},
 }
 
 -- ФУНКЦИЯ ДЛЯ ОЧИСТКИ СТАРЫХ НАСТРОЕК
