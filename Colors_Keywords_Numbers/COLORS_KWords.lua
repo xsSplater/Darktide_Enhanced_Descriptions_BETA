@@ -357,7 +357,7 @@ local CONFIG = {
 		Heat_mngt =		"Heat Management",
 	},
 	dump_stat3_text_colour = {
-		Damage =		"Damage",
+		DamageDS =		"Damage",
 	},
 }
 
