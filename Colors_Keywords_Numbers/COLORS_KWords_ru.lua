@@ -444,7 +444,7 @@ local CONFIG = {
 		Heat_mngt =			"Отведение тепла",
 	},
 	dump_stat3_text_colour = {
-		Damage =			"Урон",
+		DamageDS =			"Урон",
 	},
 }
 
