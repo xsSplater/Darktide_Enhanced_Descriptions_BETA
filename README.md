@@ -65,12 +65,12 @@
 - 🟢 Curios Blessings and Perks.
 - 🟢 Weapon Blessings and Perks.
 - 🟢 Psyker Talent descriptions.
-- 🟡 Arbites Talent descriptions.
+- 🟢 Arbites Talent descriptions.
+- 🟢 Veteran Talent descriptions.
+- 🟢 Zealot Talent descriptions.
+- 🟢 Ogryn Talent descriptions.
+- 🟢 Scum Talent descriptions.
 - 🟡 Various Menu texts. 
-- 🟡 Veteran Talent descriptions.
-- 🟡 Zealot Talent descriptions.
-- 🟡 Ogryn Talent descriptions.
-- 🔴 Scum Talent descriptions.
 - 🔴 Penance descriptions.
 ## Non-English localizations only:
 - 🔴 Names of Enemies and Weapons.
