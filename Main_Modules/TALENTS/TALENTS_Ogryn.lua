@@ -1127,11 +1127,11 @@ local ogryn_localizations = {
 		en = "When you or an Ally in "..CKWord("Coherency", "Coherency_rgb").." kills an Elite enemy, you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {cooldown_regen:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration.\n"
 			.."\n"
-			..CPhrs("Cant_be_refr"),
+			..CPhrs("Can_be_refr"),
 		ru = "Когда вы или союзник в "..CKWord("сплочённости", "splochennosti_rgb_ru").." убиваете элитного врага, вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {cooldown_regen:%s} восстановления "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
 			.."\n"
-			..CPhrs("Cant_be_refr"), -- Бугай
+			..CPhrs("Can_be_refr"), -- Бугай
 		-- fr = "+{cooldown_regen:%s} de régénération du "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.." pendant {duration:%s} secondes quand vous ou un allié en syntonie effectués une élimination d'élite.", -- Cogneure
 	},
 	--[+ Passive 32 - Pacemaker +]--	21.12.2025
