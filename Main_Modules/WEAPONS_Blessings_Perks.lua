@@ -36,245 +36,448 @@ local weapon_localizations = {
 
 --[+ ++WEAPON - PERKS - 武器专长++ +]--
 	--[+ MELEE - 近戰武器 - 近战武器 +]--
-		--[+ +DAMAGE VS FLAK +]--	08.12.2025
+		--[+ +DAMAGE VS FLAK +]--	31.12.2025
 		["loc_trait_melee_common_wield_increased_armored_damage_desc"] = { -- damage: +25%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Flak Armoured Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." по противоосколочной броне",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Ennemies en armure légère",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 防彈護甲的敵人", -- 防彈護甲的敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（防弹装甲敌人）", -- 防弹装甲敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 防彈護甲的敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（防弹装甲敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Gegner mit Flak-Rüstung",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici con Armatura Flak",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs フラック装甲の敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 플랙 아머 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Wrogowie w zbroi przeciwodłamkowej",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos com Armadura Flak",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos con Armadura Flak",
 		},
-		--[+ +DAMAGE VS MANIACS +]--	08.12.2025
+		--[+ +DAMAGE VS MANIACS +]--	31.12.2025
 		["loc_trait_melee_common_wield_increased_berserker_damage_desc"] = { -- damage: +25%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Maniacs",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." маньякам",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Maniaques",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 狂熱者", -- 狂熱者
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（狂人）", -- 狂人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 狂熱者",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（狂人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Maniacs",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Maniaci",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs マニアック",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 광신자",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Maniacy",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Maníacos",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Maníacos",
 		},
-		--[+ +DAMAGE VS INFESTED +]--	08.12.2025
+		--[+ +DAMAGE VS INFESTED +]--	31.12.2025
 		["loc_trait_melee_common_wield_increased_disgustingly_resilient_damage_desc"] = { -- damage: +25%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Infested Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." заражённым",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Ennemies infestés",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 被感染的敵人", -- 被感染的敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（感染敌人）", -- 感染敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 被感染的敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（感染敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Verseuchte Gegner",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici Infestati",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs 感染敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 감염된 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Zainfekowani Wrogowie",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos Infestados",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos Infestados",
 		},
-		--[+ +DAMAGE VS UNYIELDING +]--	08.12.2025
+		--[+ +DAMAGE VS UNYIELDING +]--	31.12.2025
 		["loc_trait_melee_common_wield_increased_resistant_damage_desc"] = { -- damage: +25%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Unyielding Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." несгибаемым",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Ennemies implacables",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 不屈的敵人", -- 不屈的敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（不屈敌人）", -- 不屈敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 不屈的敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（不屈敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Unnachgiebige Gegner",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici Incrollabili",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs 不屈の敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 굴하지 않는 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Nieugięci Wrogowie",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos Inabaláveis",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos Inquebrantables",
 		},
-		--[+ +DAMAGE VS CARAPACE +]--	08.12.2025
+		--[+ +DAMAGE VS CARAPACE +]--	31.12.2025
 		["loc_trait_melee_common_wield_increased_super_armor_damage_desc"] = { -- damage: +25%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Carapace Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." по панцирной броне",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Ennemies en armure carapace",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 甲殼護甲的敵人", -- 甲殼護甲的敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（硬壳装甲敌人）", -- 硬壳装甲敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 甲殼護甲的敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（硬壳装甲敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Gegner mit Carapax-Rüstung",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici con Armatura Carapace",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs カラペース装甲の敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 카라페이스 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Wrogowie w zbroi karapaksowej",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos com Armadura Carapaça",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos con Armadura Caparazón",
 		},
-		--[+ +DAMAGE VS UNARMOURED +]--	08.12.2025
+		--[+ +DAMAGE VS UNARMOURED +]--	31.12.2025
 		["loc_trait_melee_common_wield_increased_unarmored_damage_desc"] = { -- damage: +25%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Unarmoured Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." врагам без брони",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Ennemies sans armure",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 無護甲敵人", -- 無護甲敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（无甲敌人）", -- 无甲敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 無護甲敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（无甲敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Ungepanzerte Gegner",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici Non Corazzati",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs 無防備な敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 무장하지 않은 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Nieopancerzeni Wrogowie",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos Desarmados",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos Sin Armadura",
 		},
-		--[+ +CRIT CHANCE +]--	08.12.2025
+		--[+ +CRIT CHANCE +]--	31.12.2025
 		["loc_trait_melee_common_wield_increase_critical_hit_chance_desc"] = { -- crit_chance: +5%
 			en = CNumb("{crit_chance:%s}", "crit_var_rgb").." Melee "..CKWord("Critical Chance", "Crit_chance_rgb"),
 			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru"),
 			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." en Mélée",
-			["zh-tw"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("近戰暴擊機率", "Crit_m_chance_rgb_tw"), -- 近戰暴擊機率
-			["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn"), -- 暴击几率
+			["zh-tw"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("近戰暴擊機率", "Crit_m_chance_rgb_tw"),
+			["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn"),
+			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." Nahkampf-"..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de"),
+			it = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Probabilità di critico", "Crit_chance_rgb_it").." in Corpo a Corpo",
+			ja = CNumb("{crit_chance:%s}", "crit_var_rgb").." 近接"..CKWord("クリティカル発生率", "Crit_chance_rgb_ja"),
+			ko = CNumb("{crit_chance:%s}", "crit_var_rgb").." 근접 "..CKWord("크리티컬 확률", "Crit_chance_rgb_ko"),
+			pl = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Szansa na krytyka", "Crit_chance_rgb_pl").." w Walce Wręcz",
+			["pt-br"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Chance de crítico", "Crit_chance_rgb_pt_br").." em Corpo a Corpo",
+			es = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Probabilidad de crítico", "Crit_chance_rgb_es").." en Cuerpo a Cuerpo",
 		},
-		--[+ +CRIT DAMAGE +]--	08.12.2025
+		--[+ +CRIT DAMAGE +]--	31.12.2025
 		["loc_trait_melee_common_wield_wield_increase_critical_strike_damage_desc"] = { -- crit_damage: +10%
-			en = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." Melee "..CKWord("критическому урону", "Crt_hit_col_rgb"),
+			en = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." Melee "..CKWord("Critical Strike Damage", "Crt_strk_dmg_rgb"),
 			ru = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." к "..CKWord("урону критического удара", "krit_udara_uron_rgb_ru"),
-			fr = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Dégâts de coup critique", "Crit_hit_color_rgb_fr").." de Mélée",
-			["zh-tw"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("近戰暴擊傷害", "Crit_hit_m_dmg_rgb_tw"), -- 近戰暴擊傷害
-			["zh-cn"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 近战"..CKWord("暴击伤害", "Crit_hit_color_rgb_zh_cn"), -- 暴击伤害
+			fr = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Dégâts de coup critique", "Crt_hit_col_rgb_fr").." de Mélée",
+			["zh-tw"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("近戰暴擊傷害", "Crit_hit_m_dmg_rgb_tw"),
+			["zh-cn"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 近战"..CKWord("暴击伤害", "Crt_hit_col_rgb_zh_cn"),
+			de = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." Nahkampf-"..CKWord("Kritischer Trefferschaden", "Crt_strk_dmg_rgb_de"),
+			it = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Danno da colpo critico", "Crt_strk_dmg_rgb_it").." in Corpo a Corpo",
+			ja = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 近接"..CKWord("クリティカルストライクダメージ", "Crt_strk_dmg_rgb_ja"),
+			ko = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 근접 "..CKWord("크리티컬 스트라이크 피해", "Crt_strk_dmg_rgb_ko"),
+			pl = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Obrażenia krytycznego ataku", "Crt_strk_dmg_rgb_pl").." w Walce Wręcz",
+			["pt-br"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Dano de golpe crítico", "Crt_strk_dmg_rgb_pt_br").." em Corpo a Corpo",
+			es = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Daño de golpe crítico", "Crt_strk_dmg_rgb_es").." en Cuerpo a Cuerpo",
 		},
-		--[+ +DAMAGE VS GROANERS AND POXWALKERS +]--	08.12.2025
+		--[+ +DAMAGE VS GROANERS AND POXWALKERS +]--	31.12.2025
 		["loc_trait_melee_common_wield_increase_horde_enemy_damage_desc"] = { -- damage: +10%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Melee "..CKWord("Damage", "Damage_rgb").." vs Groaners and Poxwalkers",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." ворчунам и чумным ходокам в ближнем бою",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Grogneurs et Scrofuleux",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 呻吟者和瘟疫行者", -- 呻吟者、瘟疫行者
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("伤害", "Damage_rgb_zh_cn").."（呻吟者、瘟疫行者）", -- 呻吟者、瘟疫行者
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 呻吟者和瘟疫行者",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("伤害", "Damage_rgb_zh_cn").."（呻吟者、瘟疫行者）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." Nahkampf-"..CKWord("Schaden", "Damage_rgb_de").." gegen Stöhner und Poxwalker",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." in Corpo a Corpo vs Gemitori e Poxwalker",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." 近接"..CKWord("ダメージ", "Damage_rgb_ja").." vs グローナーとポックスウォーカー",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." 근접 "..CKWord("피해", "Damage_rgb_ko").." vs 신음병사와 역병 걸음이",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." w Walce Wręcz vs Stękańców i Zarazowców",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." em Corpo a Corpo vs Gemidos e Pestilentos",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." en Cuerpo a Cuerpo vs Gemidores y Pestilentes",
 		},
-		--[+ +DAMAGE VS ELITES +]--	08.12.2025
+		--[+ +DAMAGE VS ELITES +]--	31.12.2025
 		["loc_trait_melee_common_wield_increase_elite_enemy_damage_desc"] = { -- damage: +10%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Melee "..CKWord("Damage", "Damage_rgb").." vs Elites",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." элитным врагам в ближнем бою",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Élites",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 精英", -- 精英
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("伤害", "Damage_rgb_zh_cn").."（精英）", -- 精英
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 精英",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("伤害", "Damage_rgb_zh_cn").."（精英）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." Nahkampf-"..CKWord("Schaden", "Damage_rgb_de").." gegen Eliten",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." in Corpo a Corpo vs Élite",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." 近接"..CKWord("ダメージ", "Damage_rgb_ja").." vs エリート",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." 근접 "..CKWord("피해", "Damage_rgb_ko").." vs 엘리트",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." w Walce Wręcz vs Elity",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." em Corpo a Corpo vs Élites",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." en Cuerpo a Cuerpo vs Élites",
 		},
-		--[+ +DAMAGE VS SPECIALISTS +]--	08.12.2025
+		--[+ +DAMAGE VS SPECIALISTS +]--	31.12.2025
 		["loc_trait_melee_common_wield_increase_special_enemy_damage_desc"] = { -- damage: +10%
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Melee "..CKWord("Damage", "Damage_rgb").." vs Specialists",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." специалистам в ближнем бою",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Mélée vs Spécialistes",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 專家", -- 專家
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("伤害", "Damage_rgb_zh_cn").."（专家）", -- 专家
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 專家",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("伤害", "Damage_rgb_zh_cn").."（专家）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." Nahkampf-"..CKWord("Schaden", "Damage_rgb_de").." gegen Spezialisten",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." in Corpo a Corpo vs Specialisti",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." 近接"..CKWord("ダメージ", "Damage_rgb_ja").." vs スペシャリスト",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." 근접 "..CKWord("피해", "Damage_rgb_ko").." vs 전문가",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." w Walce Wręcz vs Specjaliści",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." em Corpo a Corpo vs Especialistas",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." en Cuerpo a Cuerpo vs Especialistas",
 		},
-		--[+ +STAMINA +]--	08.12.2025
+		--[+ +STAMINA +]--	31.12.2025
 		["loc_trait_melee_common_wield_increase_stamina_desc"] = { -- stamina: +2
 			en = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Stamina", "Stamina_rgb"),
 			ru = CNumb("{stamina:%s}", "stam_var_rgb").." ячейки "..CKWord("выносливости", "vynoslivosti_rgb_ru"),
 			fr = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Endurance", "Stamina_rgb_fr"),
-			["zh-tw"] = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("耐力", "Stamina_rgb_tw"), -- 耐力
-			["zh-cn"] = CNumb("{stamina:%s}", "stam_var_rgb").." 最大"..CKWord("体力", "Stamina_rgb_zh_cn"), -- 耐力
+			["zh-tw"] = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("耐力", "Stamina_rgb_tw"),
+			["zh-cn"] = CNumb("{stamina:%s}", "stam_var_rgb").." 最大"..CKWord("体力", "Stamina_rgb_zh_cn"),
+			de = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Ausdauer", "Stamina_rgb_de"),
+			it = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Vigore", "Stamina_rgb_it"),
+			ja = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("スタミナ", "Stamina_rgb_ja"),
+			ko = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("스태미나", "Stamina_rgb_ko"),
+			pl = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Wytrzymałość", "Stamina_rgb_pl"),
+			["pt-br"] = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Vigor", "Stamina_rgb_pt_br"),
+			es = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Aguante", "Stamina_rgb_es"),
 		},
-		--[+ +WEAKSPOT DAMAGE +]--	08.12.2025
+		--[+ +WEAKSPOT DAMAGE +]--	31.12.2025
 		["loc_trait_melee_common_wield_increase_weakspot_damage_desc"] = { -- 
 			en = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." Melee "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb"),
 			ru = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru").." в ближнем бою",
 			fr = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Dégât sur point faible", "Weakspot_dmg_rgb_fr").." en Mélée",
-			["zh-tw"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("近戰弱點傷害", "Weakspot_m_dmg_rgb_tw"), -- 近戰弱點傷害
-			["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 近战"..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn"), -- 弱点伤害
+			["zh-tw"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("近戰弱點傷害", "Weakspot_m_dmg_rgb_tw"),
+			["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 近战"..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn"),
+			de = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." Nahkampf-"..CKWord("Schwachstellen-Schaden", "Weakspot_dmg_rgb_de"),
+			it = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Danno a punto debole", "Weakspot_dmg_rgb_it").." in Corpo a Corpo",
+			ja = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 近接"..CKWord("弱点ダメージ", "Weakspot_dmg_rgb_ja"),
+			ko = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 근접 "..CKWord("약점 피해", "Weakspot_dmg_rgb_ko"),
+			pl = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Obrażenia w słaby punkt", "Weakspot_dmg_rgb_pl").." w Walce Wręcz",
+			["pt-br"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Dano em ponto fraco", "Weakspot_dmg_rgb_pt_br").." em Corpo a Corpo",
+			es = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Daño en punto débil", "Weakspot_dmg_rgb_es").." en Cuerpo a Cuerpo",
 		},
-		--[+ +BLOCK EFFICIENCY +]--	08.12.2025
+		--[+ +BLOCK EFFICIENCY +]--	31.12.2025
 		["loc_trait_melee_common_wield_reduce_block_cost_desc"] = { -- 
 			en = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." Block Efficiency",
 			ru = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." к эффективности блока",
 			fr = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." d'éfficacité de blocage",
-			["zh-tw"] = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." 格擋效率", -- 格檔效率
-			["zh-cn"] = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." 格挡效益", -- 格挡效益
+			["zh-tw"] = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." 格擋效率",
+			["zh-cn"] = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." 格挡效益",
+			de = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." Block-Effizienz",
+			it = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." Efficienza di Blocco",
+			ja = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." ブロック効率",
+			ko = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." 블록 효율",
+			pl = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." Skuteczność Blokowania",
+			["pt-br"] = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." Eficiência de Bloqueio",
+			es = CNumb("{reduced_block_cost:%s}", "rbc_rgb").." Eficiencia de Bloqueo",
 		},
-		--[+ -COST FOR SPRINTING +]--	08.12.2025
+		--[+ -COST FOR SPRINTING +]--	31.12.2025
 		["loc_gadget_sprint_cost_reduction_desc"] = { -- 
 			en = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..CKWord("Stamina", "Stamina_rgb").." Cost Reduction for Sprinting",
 			ru = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." к снижению затрат "..CKWord("выносливости", "vynoslivosti_rgb_ru").." на бег",
 			fr = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." de réduction du coût d'"..CKWord("Endurance", "Stamina_rgb_fr").." de la course",
-			["zh-tw"] = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..CKWord("衝刺效率", "Stamina_se_rgb_tw"), -- 衝刺體力消耗
-			["zh-cn"] = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." 疾跑"..CKWord("体力", "Stamina_rgb_zh_cn").."效益", -- 疾跑效益
+			["zh-tw"] = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..CKWord("衝刺效率", "Stamina_se_rgb_tw"),
+			["zh-cn"] = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." 疾跑"..CKWord("体力", "Stamina_rgb_zh_cn").."效益",
+			de = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..CKWord("Ausdauer", "Stamina_rgb_de").."-Kostenreduktion für Sprinten",
+			it = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." Riduzione Costo "..CKWord("Vigore", "Stamina_rgb_it").." per Scatto",
+			ja = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..CKWord("スタミナ", "Stamina_rgb_ja").."消費削減（スプリント時）",
+			ko = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." "..CKWord("스태미나", "Stamina_rgb_ko").." 소모 감소（전력 질주）",
+			pl = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." Redukcja Kosztu "..CKWord("Wytrzymałości", "Stamina_rgb_pl").." dla Szybkiego Biegu",
+			["pt-br"] = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." Redução de Custo de "..CKWord("Vigor", "Stamina_rgb_pt_br").." para Corrida",
+			es = CNumb("{sprinting_cost_multiplier:%s}", "bcm_rgb").." Reducción de Coste de "..CKWord("Aguante", "Stamina_rgb_es").." para Esprintar",
 		},
 
 	--[+ RANGED - 遠程武器 - 远程武器 +]--
-		--[+ +DAMAGE VS FLAK +]--	08.12.2025
+		--[+ +DAMAGE VS FLAK +]--	31.12.2025
 		["loc_trait_ranged_common_wield_armored_damage_desc"] = { -- 
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Flak Armoured Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." врагам в противоосколочной броне",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Ennemies en armure légère",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 防彈護甲的敵人", -- 防彈護甲的敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").."  "..CKWord("伤害", "Damage_rgb_zh_cn").."（防弹装甲敌人）", -- 防弹装甲敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 防彈護甲的敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（防弹装甲敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Gegner mit Flak-Rüstung",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici con Armatura Flak",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs フラック装甲の敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 플랙 아머 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Wrogowie w zbroi przeciwodłamkowej",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos com Armadura Flak",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos con Armadura Flak",
 		},
-		--[+ +DAMAGE VS MANIACS +]--	08.12.2025
+		--[+ +DAMAGE VS MANIACS +]--	31.12.2025
 		["loc_trait_ranged_common_wield_berserker_damage_desc"] = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Maniacs",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." маньякам",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Maniaques",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 狂熱者", -- 狂熱者
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（狂人）", -- 狂人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 狂熱者",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（狂人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Maniacs",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Maniaci",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs マニアック",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 광신자",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Maniacy",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Maníacos",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Maníacos",
 		},
-		--[+ +DAMAGE VS INFESTED +]--	08.12.2025
+		--[+ +DAMAGE VS INFESTED +]--	31.12.2025
 		["loc_trait_ranged_common_wield_disgustinglyresilient_damage_desc"] = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Infested Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." заражённым врагам",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Ennemies infestés",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 被感染的敵人", -- 被感染的敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（感染敌人）", -- 感染敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 被感染的敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（感染敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Verseuchte Gegner",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici Infestati",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs 感染敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 감염된 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Zainfekowani Wrogowie",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos Infestados",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos Infestados",
 		},
-		--[+ +DAMAGE VS UNYIELDING +]--	08.12.2025
+		--[+ +DAMAGE VS UNYIELDING +]--	31.12.2025
 		["loc_trait_ranged_common_wield_resistant_damage_desc"] = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Unyielding Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." несгибаемым врагам",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Ennemies implacables",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 不屈的敵人", -- 不屈的敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（不屈敌人）", -- 不屈敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 不屈的敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（不屈敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Unnachgiebige Gegner",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici Incrollabili",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs 不屈の敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 굴하지 않는 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Nieugięci Wrogowie",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos Inabaláveis",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos Inquebrantables",
 		},
-		--[+ +DAMAGE VS CARAPACE +]--	08.12.2025
+		--[+ +DAMAGE VS CARAPACE +]--	31.12.2025
 		["loc_trait_ranged_common_wield_superarmor_damage_desc"] = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Carapace Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." врагам в панцирной броне",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Ennemies en armure carapace",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 甲殼護甲的敵人", -- 甲殼護甲的敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（硬壳装甲敌人）", -- 硬壳装甲敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 甲殼護甲的敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（硬壳装甲敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Gegner mit Carapax-Rüstung",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici con Armatura Carapace",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs カラペース装甲の敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 카라페이스 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Wrogowie w zbroi karapaksowej",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos com Armadura Carapaça",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos con Armadura Caparazón",
 		},
-		--[+ +DAMAGE VS UNARMOURED +]--	08.12.2025
+		--[+ +DAMAGE VS UNARMOURED +]--	31.12.2025
 		["loc_trait_ranged_common_wield_unarmored_damage_desc"] = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Unarmoured Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." врагам без брони",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Ennemies sans armure",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 無護甲敵人", -- 無護甲敵人
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（无甲敌人）", -- 无甲敌人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").." vs 無護甲敵人",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."（无甲敌人）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." gegen Ungepanzerte Gegner",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." vs Nemici Non Corazzati",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("ダメージ", "Damage_rgb_ja").." vs 無防備な敵",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("피해", "Damage_rgb_ko").." vs 무장하지 않은 적",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." vs Nieopancerzeni Wrogowie",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." vs Inimigos Desarmados",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." vs Enemigos Sin Armadura",
 		},
-		--[+ +CRIT CHANCE +]--	08.12.2025
+		--[+ +CRIT CHANCE +]--	31.12.2025
 		["loc_trait_ranged_common_wield_increase_crit_chance_desc"] = {
 			en = CNumb("{crit_chance:%s}", "crit_var_rgb").." Ranged "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb"),
 			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru"),
-			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Taux de coup critique", "Crit_chance_r_rgb_fr").." à Distance",
-			["zh-tw"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("遠程暴擊機率", "Crit_r_chance_rgb_tw"), -- 遠程暴擊機率
-			["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn"), -- 暴击几率
+			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Taux de coup critique", "Crt_chnc_r_rgb_fr").." à Distance",
+			["zh-tw"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("遠程暴擊機率", "Crit_r_chance_rgb_tw"),
+			["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crt_chnc_r_rgb_zh_cn"),
+			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." Distanz-"..CKWord("Kritische Trefferchance", "Crt_chnc_r_rgb_de"),
+			it = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Probabilità di colpo critico", "Crt_chnc_r_rgb_it").." a Distanza",
+			ja = CNumb("{crit_chance:%s}", "crit_var_rgb").." 遠隔"..CKWord("クリティカルストライク発生率", "Crt_chnc_r_rgb_ja"),
+			ko = CNumb("{crit_chance:%s}", "crit_var_rgb").." 원거리 "..CKWord("크리티컬 스트라이크 확률", "Crt_chnc_r_rgb_ko"),
+			pl = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Szansa na krytyczny atak", "Crt_chnc_r_rgb_pl").." na Dystans",
+			["pt-br"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Chance de golpe crítico", "Crt_chnc_r_rgb_pt_br").." à Distância",
+			es = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Probabilidad de golpe crítico", "Crt_chnc_r_rgb_es").." a Distancia",
 		},
-		--[+ +CRIT DAMAGE +]--	08.12.2025
+		--[+ +CRIT DAMAGE +]--	31.12.2025
 		["loc_trait_ranged_common_wield_wield_increase_critical_strike_damage_desc"] = {
-			en = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." Ranged "..CKWord("критическому урону", "Crt_hit_col_rgb"),
+			en = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." Ranged "..CKWord("Critical Strike Damage", "Crt_strk_dmg_rgb"),
 			ru = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." к "..CKWord("урону критического выстрела", "krit_vystr_uron_rgb_ru"),
-			fr = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Dégâts de coup critique", "Crit_hit_color_rgb_fr").." de Distance",
-			["zh-tw"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("遠程暴擊傷害", "Crit_hit_r_dmg_rgb_tw"), -- 遠程暴擊傷害
-			["zh-cn"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 远程"..CKWord("暴击伤害", "Crit_hit_color_rgb_zh_cn"), -- 暴击伤害
+			fr = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Dégâts de coup critique", "Crt_strk_dmg_rgb_fr").." de Distance",
+			["zh-tw"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("遠程暴擊傷害", "Crit_hit_r_dmg_rgb_tw"),
+			["zh-cn"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 远程"..CKWord("暴击伤害", "Crt_strk_dmg_rgb_zh_cn"),
+			de = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." Distanz-"..CKWord("Kritischer Trefferschaden", "Crt_strk_dmg_rgb_de"),
+			it = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Danno da colpo critico", "Crt_strk_dmg_rgb_it").." a Distanza",
+			ja = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 遠隔"..CKWord("クリティカルストライクダメージ", "Crt_strk_dmg_rgb_ja"),
+			ko = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 원거리 "..CKWord("크리티컬 스트라이크 피해", "Crt_strk_dmg_rgb_ko"),
+			pl = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Obrażenia krytycznego ataku", "Crt_strk_dmg_rgb_pl").." na Dystans",
+			["pt-br"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Dano de golpe crítico", "Crt_strk_dmg_rgb_pt_br").." à Distância",
+			es = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Daño de golpe crítico", "Crt_strk_dmg_rgb_es").." a Distancia",
 		},
-		--[+ +DAMAGE VS ELITES +]--	08.12.2025
+		--[+ +DAMAGE VS ELITES +]--	31.12.2025
 		["loc_trait_ranged_common_wield_increase_elite_enemy_damage_desc"] = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." vs Elites",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." элите в дальнем бою",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Élites",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("遠程傷害", "Damage_r_rgb_tw").." vs 精英", -- 精英
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..CKWord("伤害", "Damage_rgb_zh_cn").."（精英）", -- 精英
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("遠程傷害", "Damage_r_rgb_tw").." vs 精英",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..CKWord("伤害", "Damage_rgb_zh_cn").."（精英）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." Distanz-"..CKWord("Schaden", "Damage_rgb_de").." gegen Eliten",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." a Distanza vs Élite",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." 遠隔"..CKWord("ダメージ", "Damage_rgb_ja").." vs エリート",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." 원거리 "..CKWord("피해", "Damage_rgb_ko").." vs 엘리트",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." na Dystans vs Elity",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." à Distância vs Élites",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." a Distancia vs Élites",
 		},
-		--[+ +DAMAGE VS GROANERS AND POXWALKERS +]--	08.12.2025
+		--[+ +DAMAGE VS GROANERS AND POXWALKERS +]--	31.12.2025
 		["loc_trait_ranged_common_wield_increase_horde_enemy_damage_desc"] = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." vs Groaners and Poxwalkers",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." ворчунам и чумным ходокам в дальнем бою",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Grogneurs et Scrofuleux",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("遠程傷害", "Damage_r_rgb_tw").." vs 呻吟者和瘟疫行者", -- 呻吟者、瘟疫行者
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..CKWord("伤害", "Damage_rgb_zh_cn").."（呻吟者、瘟疫行者）", --呻吟者、瘟疫行者
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("遠程傷害", "Damage_r_rgb_tw").." vs 呻吟者和瘟疫行者",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..CKWord("伤害", "Damage_rgb_zh_cn").."（呻吟者、瘟疫行者）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." Distanz-"..CKWord("Schaden", "Damage_rgb_de").." gegen Stöhner und Poxwalker",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." a Distanza vs Gemitori e Poxwalker",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." 遠隔"..CKWord("ダメージ", "Damage_rgb_ja").." vs グローナーとポックスウォーカー",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." 원거리 "..CKWord("피해", "Damage_rgb_ko").." vs 신음병사와 역병 걸음이",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." na Dystans vs Stękańców i Zarazowców",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." à Distância vs Gemidos e Pestilentos",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." a Distancia vs Gemidores y Pestilentes",
 		},
-		--[+ +DAMAGE VS SPECIALISTS +]--	08.12.2025
+		--[+ +DAMAGE VS SPECIALISTS +]--	31.12.2025
 		["loc_trait_ranged_common_wield_increase_special_enemy_damage_desc"] = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." vs Specialists",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." специалистам в дальнем бою",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dégâts", "Damage_rgb_fr").." de Distance vs Spécialistes",
-			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("遠程傷害", "Damage_r_rgb_tw").." vs 專家", -- 專家
-			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..CKWord("伤害", "Damage_rgb_zh_cn").."（专家）", -- 专家
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("遠程傷害", "Damage_r_rgb_tw").." vs 專家",
+			["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..CKWord("伤害", "Damage_rgb_zh_cn").."（专家）",
+			de = CNumb("{damage:%s}", "dmg_var_rgb").." Distanz-"..CKWord("Schaden", "Damage_rgb_de").." gegen Spezialisten",
+			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." a Distanza vs Specialisti",
+			ja = CNumb("{damage:%s}", "dmg_var_rgb").." 遠隔"..CKWord("ダメージ", "Damage_rgb_ja").." vs スペシャリスト",
+			ko = CNumb("{damage:%s}", "dmg_var_rgb").." 원거리 "..CKWord("피해", "Damage_rgb_ko").." vs 전문가",
+			pl = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Obrażenia", "Damage_rgb_pl").." na Dystans vs Specjaliści",
+			["pt-br"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Dano", "Damage_rgb_pt_br").." à Distância vs Especialistas",
+			es = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Daño", "Damage_rgb_es").." a Distancia vs Especialistas",
 		},
-		--[+ +STAMINA +]--	08.12.2025
+		--[+ +STAMINA +]--	31.12.2025
 		["loc_trait_ranged_common_wield_increase_stamina_desc"] = {
 			en = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Stamina", "Stamina_rgb").." when Weapon is Active",
 			ru = CNumb("{stamina:%s}", "stam_var_rgb").." ячейки "..CKWord("выносливости", "vynoslivosti_rgb_ru").." с этим оружием в руках",
 			fr = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Endurance", "Stamina_rgb_fr"),
-			["zh-tw"] = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("耐力", "Stamina_rgb_tw"), -- 耐力
-			["zh-cn"] = CNumb("{stamina:%s}", "stam_var_rgb").." 最大"..CKWord("体力", "Stamina_rgb_zh_cn").."（使用武器时）", -- 耐力
+			["zh-tw"] = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("耐力", "Stamina_rgb_tw").."（武器使用時）",
+			["zh-cn"] = CNumb("{stamina:%s}", "stam_var_rgb").." 最大"..CKWord("体力", "Stamina_rgb_zh_cn").."（使用武器时）",
+			de = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Ausdauer", "Stamina_rgb_de").." bei aktiver Waffe",
+			it = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Vigore", "Stamina_rgb_it").." con Arma Attiva",
+			ja = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("スタミナ", "Stamina_rgb_ja").."（武器使用時）",
+			ko = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("스태미나", "Stamina_rgb_ko").."（무기 사용 시）",
+			pl = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Wytrzymałość", "Stamina_rgb_pl").." przy Aktywnej Broni",
+			["pt-br"] = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Vigor", "Stamina_rgb_pt_br").." com Arma Ativa",
+			es = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Aguante", "Stamina_rgb_es").." con Arma Activa",
 		},
-		--[+ +WEAKSPOT DAMAGE +]--	08.12.2025
+		--[+ +WEAKSPOT DAMAGE +]--	31.12.2025
 		["loc_trait_ranged_common_wield_increase_weakspot_damage_desc"] = {
 			en = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." Ranged "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb"),
 			ru = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru").." в дальнем бою",
 			fr = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Dégât sur point faible", "Weakspot_dmg_rgb_fr").." à Distance",
-			["zh-tw"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("遠程弱點傷害", "Weakspot_r_dmg_rgb_tw"), -- 遠程弱點傷害
-			["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 远程"..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn"), -- 弱点伤害
+			["zh-tw"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("遠程弱點傷害", "Weakspot_r_dmg_rgb_tw"),
+			["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 远程"..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn"),
+			de = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." Distanz-"..CKWord("Schwachstellen-Schaden", "Weakspot_dmg_rgb_de"),
+			it = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Danno a punto debole", "Weakspot_dmg_rgb_it").." a Distanza",
+			ja = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 遠隔"..CKWord("弱点ダメージ", "Weakspot_dmg_rgb_ja"),
+			ko = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 원거리 "..CKWord("약점 피해", "Weakspot_dmg_rgb_ko"),
+			pl = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Obrażenia w słaby punkt", "Weakspot_dmg_rgb_pl").." na Dystans",
+			["pt-br"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Dano em ponto fraco", "Weakspot_dmg_rgb_pt_br").." à Distância",
+			es = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Daño en punto débil", "Weakspot_dmg_rgb_es").." a Distancia",
 		},
-		--[+ +RELOAD SPEED +]--	08.12.2025
+		--[+ +RELOAD SPEED +]--	31.12.2025
 		["loc_trait_ranged_common_wield_increase_reload_speed_desc"] = {
 			en = CNumb("{reload_speed:%s}", "reload_var_rgb").." Reload Speed",
 			ru = CNumb("{reload_speed:%s}", "reload_var_rgb").." к скорости перезарядки",
 			fr = CNumb("{reload_speed:%s}", "reload_var_rgb").." Vitesse de rechargement de l'arme",
-			["zh-tw"] = CNumb("{reload_speed:%s}", "reload_var_rgb").." 裝填速度", -- 裝填速度
-			["zh-cn"] = CNumb("{reload_speed:%s}", "reload_var_rgb").." 装弹速度", -- 装弹速度
+			["zh-tw"] = CNumb("{reload_speed:%s}", "reload_var_rgb").." 裝填速度",
+			["zh-cn"] = CNumb("{reload_speed:%s}", "reload_var_rgb").." 装弹速度",
+			de = CNumb("{reload_speed:%s}", "reload_var_rgb").." Nachladegeschwindigkeit",
+			it = CNumb("{reload_speed:%s}", "reload_var_rgb").." Velocità di Ricarica",
+			ja = CNumb("{reload_speed:%s}", "reload_var_rgb").." リロード速度",
+			ko = CNumb("{reload_speed:%s}", "reload_var_rgb").." 재장전 속도",
+			pl = CNumb("{reload_speed:%s}", "reload_var_rgb").." Prędkość Przeładowania",
+			["pt-br"] = CNumb("{reload_speed:%s}", "reload_var_rgb").." Velocidade de Recarga",
+			es = CNumb("{reload_speed:%s}", "reload_var_rgb").." Velocidad de Recarga",
 		},
 
 
 --[+ ++WEAPON BLESSINGS - БЛАГОСЛОВЕНИЯ ОРУЖИЯ - 武器祝福++ +]--
 	--[+ MELEE - БЛИЖНИЙ БОЙ - 近戰 +]--
-		--[+ OPPORTUNIST +]--	08.12.2025
+		--[+ OPPORTUNIST +]--	31.12.2025
 		--Rending vs Staggered (per tier)
 		-- Battle Maul and Shield, Chainaxes, Crowbar, Crusher, Eviscerators, Latrine Shovels, Power Maul, Shock Mauls, Shock Mauls and Shield -- 10% | 15% | 20% | 25%
 		["loc_trait_bespoke_armor_penetration_against_staggered_desc"] = { -- rending: +25%, +colors, +note
@@ -282,11 +485,28 @@ local weapon_localizations = {
 				..CNote("Rend_note"),
 			ru = CNumb("{rending:%s}", "rending_var_rgb").." к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов.\n"
 				..CNote("Rend_note"), -- Оппортунист -- руоф Приспособленец
-			-- fr = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Déchirure", "Rending_rgb_fr").." vs les Enemies qui "..CKWord("vacille", "Staggered_rgb_fr").." "..CNote("Rend_note"),
-			-- ["zh-tw"] = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_tw").." vs "..CKWord("硬直中", "Staggered_rgb_tw").." 的敵人", -- 機會主義者-- 作戰大槌and板盾, 突擊鏈斧, 輾壓者, 重型開膛劍, 廁所鏟, 動力錘, 電擊錘 -- 10% | 15% | 20% | 25%
-			-- ["zh-cn"] = "对抗"..CKWord("踉跄", "Staggered_rgb_zh_cn").."敌人时 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_zh_cn").."。"..CNote("Rend_note"), --机会主义者
+			fr = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Déchirure", "Rending_rgb_fr").." vs les Ennemis "..CKWord("Étourdies", "Staggered_rgb_fr")..".\n"
+				..CNote("Rend_note"),
+			["zh-tw"] = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_tw").." vs "..CKWord("硬直中", "Staggered_rgb_tw").." 的敵人。\n"
+				..CNote("Rend_note"),
+			["zh-cn"] = "对抗"..CKWord("踉跄", "Staggered_rgb_zh_cn").."敌人时 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_zh_cn").."。\n"
+				..CNote("Rend_note"),
+			de = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Durchschlag", "Rending_rgb_de").." vs "..CKWord("Getaumelt", "Staggered_rgb_de").." Gegner.\n"
+				..CNote("Rend_note"),
+			es = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Penetración", "Rending_rgb_es").." contra Enemigos "..CKWord("Tambaleantes", "Staggered_rgb_es")..".\n"
+				..CNote("Rend_note"),
+			it = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Penetrazione", "Rending_rgb_it").." contro Nemici "..CKWord("Barcollanti", "Staggered_rgb_it")..".\n"
+				..CNote("Rend_note"),
+			ja = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("貫通", "Rending_rgb_ja").." vs "..CKWord("スタッガー状態", "Staggered_rgb_ja").." の敵。\n"
+				..CNote("Rend_note"),
+			ko = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("관통", "Rending_rgb_ko").." vs "..CKWord("스태거 상태", "Staggered_rgb_ko").." 적.\n"
+				..CNote("Rend_note"),
+			pl = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Rozrywanie", "Rending_rgb_pl").." przeciwko "..CKWord("Oślepionym", "Staggered_rgb_pl").." wrogom.\n"
+				..CNote("Rend_note"),
+			["pt-br"] = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Penetração", "Rending_rgb_pt_br").." contra Inimigos "..CKWord("Cambaleantes", "Staggered_rgb_pt_br")..".\n"
+				..CNote("Rend_note"),
 		},
-		--[+ BLOODLETTER +]--	08.12.2025
+		--[+ BLOODLETTER +]--	31.12.2025
 		-- Bleed Stacks (per tier)
 		-- Chainaxes -- 10 | 12 | 14 | 16
 		-- Chainswords -- 11 | 12 | 13 | 14
@@ -305,7 +525,7 @@ local weapon_localizations = {
 				-- 重型開膛劍 -- 3 | 4 | 5 | 6
 			-- ["zh-cn"] = "特殊攻击 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("流血", "Bleed_rgb_zh_cn").."。\n最多叠加 "..CNumb("16", "n_16_rgb").." 层。", -- 放血者
 		},
-		--[+ BLOODTHIRSTY +]--	08.12.2025
+		--[+ BLOODTHIRSTY +]--	31.12.2025
 		-- Melee Crit Chance (per tier)
 		-- Chainaxes, Chainswords, Eviscerators, Force Swords -- 40% | 60% | 80% | 100%
 		["loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"] = { -- crit_chance: +100%, +colors
@@ -316,7 +536,7 @@ local weapon_localizations = {
 				-- 突擊鏈斧, 突擊鏈鋸劍, 重型開膛劍, 烈焰力場劍 -- 40% | 60% | 80% | 100%
 			-- ["zh-cn"] = "特殊攻击击杀敌人时，\n使下次近战攻击 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。", -- 嗜血
 		},
-		--[+ HEADTAKER +]--	08.12.2025
+		--[+ HEADTAKER +]--	31.12.2025
 		-- Melee Power per stack (per tier)
 		-- Chainaxes, Combat Axes, Pickaxes, Tactical Axes, Thunder Hammers -- 3.5% 4% 4.5% 5% (up to +25%)
 		-- Heavy Swords -- 6.5% 7% 7.5% 8% (up to +40%)
@@ -331,7 +551,7 @@ local weapon_localizations = {
 				-- 重劍 -- 6.5% 7% 7.5% 8% (up to +40%)
 			-- ["zh-cn"] = "命中时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。\n攻击每命中一个目标叠加 "..CNumb("1", "n_1_rgb").." 层。"..CNote("Pwr_note"), -- 夺颅者
 		},
-		--[+ SLAUGHTERER +]--	08.12.2025
+		--[+ SLAUGHTERER +]--	31.12.2025
 		-- Power per stack (per tier)
 		-- Chainaxes, Cleavers, Crusher, Force Swords, Pickaxes, Power Swords, Thunder Hammers -- 5% | 6% | 7% | 8% (up to +40%)
 		["loc_trait_bespoke_increase_power_on_kill_desc"] = { -- power_level: +5%, time: 4.5, stacks: 5, s->seconds, +colors, +added info, +note
@@ -346,7 +566,7 @@ local weapon_localizations = {
 				-- 突擊鏈斧, 砍刀, 輾壓者, 烈焰力場劍, 十字鎬, 動力劍, 雷鎚 -- 5% | 6% | 7% | 8% (up to +40%)
 			-- ["zh-cn"] = "击杀敌人时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 屠宰者
 		},
-		--[+ REV IT UP +]--	08.12.2025
+		--[+ REV IT UP +]--	31.12.2025
 		-- Movement Speed (per tier)
 		-- Chainaxes, Chainswords, Eviscerators -- 17% | 18% | 19% | 20%
 		["loc_trait_bespoke_movement_speed_on_activation_desc"] = { -- movement_speed: +20%, time: 2, s->seconds, +colors
@@ -357,7 +577,7 @@ local weapon_localizations = {
 				-- 突擊鏈斧, 突擊鏈鋸劍, 重型開膛劍 -- 17% | 18% | 19% | 20%
 			-- ["zh-cn"] = "激活武器特殊动作时\n"..CNumb("{movement_speed:%s}", "movspd_var_rgb").." 移动速度，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 加速
 		},
-		--[+ THRUST +]--	08.12.2025
+		--[+ THRUST +]--	31.12.2025
 		-- Melee Power per stack (per tier)
 		-- Bully Clubs, Chainaxes, Cleavers, Combat Axes, Crusher, Duelling Swords, Heavy Swords, Latrine Shovels, Pickaxes, Power Swords, Sapper Shovels, Shock Mauls, Thunder Hammers -- 5% | 10% | 15% | 20% (up to +60%)
 		["loc_trait_bespoke_power_bonus_based_on_charge_time_desc"] = { -- power_level: +5%, stacks: 3, +colors, +note
@@ -370,7 +590,7 @@ local weapon_localizations = {
 				-- 惡棍棒, 突擊鏈斧, 砍刀, 戰鬥斧, 輾壓者, 決鬥劍, 重劍, 廁所鏟, 十字鎬, 動力劍, 工兵鏟, 電擊錘, 雷鎚 -- 5% | 10% | 15% | 20% (up to +60%)
 			-- ["zh-cn"] = "随重攻击蓄力时间增加叠加层数，\n每层 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 助推
 		},
-		--[+ THUNDEROUS +]--	08.12.2025
+		--[+ THUNDEROUS +]--	31.12.2025
 		-- Brittleness Stacks (per tier)
 		-- Arbites Shock Maul, Bully Clubs, Chainaxes, Combat Axes, Crusher, Latrine Shovels, Pickaxes, Thunder Hammers -- 1 | 2 | 3 | 4
 		["loc_trait_bespoke_targets_receive_rending_debuff_desc"] = { -- stacks: 4, rending: 2.5%, time: 5, max_stacks: 16, rewrited, +colors, +added info, +note
@@ -383,7 +603,7 @@ local weapon_localizations = {
 				-- 惡棍棒, 突擊鏈斧, 戰鬥斧, 輾壓者, 廁所鏟, 十字鎬, 雷鎚 -- 1 | 2 | 3 | 4
 			-- ["zh-cn"] = "命中时，对目标施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("脆弱", "Brittleness_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 层，最高 "..CNumb("40%", "pc_40_rgb").." 。"..CNote("Brtl_note"), -- 雷鸣
 		},
-		--[+ WRATH +]--	08.12.2025
+		--[+ WRATH +]--	31.12.2025
 		-- Max Hit Mass Increase per stack (per tier)
 		-- Bone Saw -- 10% | 15% | 20% | 25% (up to +125%)
 		-- Chainswords, Devil's Claw Swords, Eviscerators, Force Greatswords, Heavy Swords, Pickaxes, Power Falchions, Relic Blades -- 25% | 30% | 35% | 40% (up to +200%)
@@ -400,7 +620,7 @@ local weapon_localizations = {
 				-- 動力劍 -- 35% | 40% | 45% | 50% (up to +250%)
 			-- ["zh-cn"] = "连锁攻击命中时 "..CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("劈裂值", "Cleave_rgb_zh_cn").."，\n持续 "..CNumb("3.5", "n_3_5_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 怒火
 		},
-	--[+ SHRED +]--	08.12.2025
+	--[+ SHRED +]--	31.12.2025
 		-- Crit Chance per stack (per tier)
 		-- Bone Saw, Chainswords, Combat Axes, Devil's Claw Swords, Duelling Swords, Eviscerators, Force Greatswords, Force Swords, Tactical Axes -- 2.5% | 3% | 3.5% | 4% (up to +20%)
 		["loc_trait_bespoke_chained_hits_increases_crit_chance_desc"] = { -- crit_chance: +4%, stacks: 5, +colors, +added info
@@ -414,7 +634,7 @@ local weapon_localizations = {
 				-- 突擊鏈鋸劍, 戰鬥斧, 『惡魔之爪』劍, 決鬥劍, 重型開膛劍, 烈焰力場劍, 烈焰力場巨劍, 戰術斧 -- 2.5% | 3% | 3.5% | 4% (up to +20%)
 			-- ["zh-cn"] = "连锁攻击命中时\n"..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("3.5", "n_3_5_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 撕碎
 		},
-		--[+ SAVAGE SWEEP +]--	08.12.2025
+		--[+ SAVAGE SWEEP +]--	31.12.2025
 		-- Max Hit Mass Increase (per tier)
 		-- Chainswords, Cleavers, Devil's Claw Swords, Eviscerators, Heavy Swords -- 140% | 160% | 180% | 200%
 		["loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"] = { -- multiple_hit: 3, cleave: +200%, time: 2, +colors, +added info
@@ -427,7 +647,7 @@ local weapon_localizations = {
 				-- 突擊鏈鋸劍, 砍刀, 『惡魔之爪』劍, 重型開膛劍, 重劍 -- 140% | 160% | 180% | 200%
 			-- ["zh-cn"] = "命中至少 "..CNumb("{multiple_hit:%s}", "mult_hit_var_rgb").." 名敌人时 \n"..CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("劈裂值", "Cleave_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 野蛮扫荡
 		},
-		--[+ RAMPAGE +]--	08.12.2025
+		--[+ RAMPAGE +]--	31.12.2025
 		-- Melee Power (per tier)
 		-- Chainswords, Devil's Claw Swords, Duelling Swords, Eviscerators, Heavy Swords, Power Swords, Relic Blades -- 24% | 28% | 32% | 36%
 		["loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"] = { -- multiple_hit: 3, damage: 36%, time: 3, Damage -> Strength, +colors, +added info, +note
@@ -440,7 +660,7 @@ local weapon_localizations = {
 				-- 突擊鏈鋸劍, 『惡魔之爪』劍, 決鬥劍, 重型開膛劍, 重劍, 動力劍, 上古神刃 -- 24% | 28% | 32% | 36%
 			-- ["zh-cn"] = "命中至少 "..CNumb("{multiple_hit:%s}", "mult_hit_var_rgb").." 名敌人 \n"..CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"..CNote("Pwr_note"), -- 狂暴
 		},
-		--[+ DEVASTATING STRIKE +]--	08.12.2025
+		--[+ DEVASTATING STRIKE +]--	31.12.2025
 		-- Max Hit Mass Increase (per tier)
 		-- Chainswords, Cleavers, Devil's Claw Swords, Relic Blades -- 65% | 70% | 75% | 80%
 		["loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"] = { -- hit_mass: +80%, time: 5, +colors, +added info
@@ -453,7 +673,7 @@ local weapon_localizations = {
 				-- 突擊鏈鋸劍, 砍刀, 『惡魔之爪』劍, 上古神刃 -- 65% | 70% | 75% | 80%
 			-- ["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时 "..CNumb("{hit_mass:%s}", "hitmass_var_rgb").." "..CKWord("劈裂值", "Cleave_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 毁灭打击
 		},
-		--[+ DECIMATOR +]--	08.12.2025
+		--[+ DECIMATOR +]--	31.12.2025
 		-- Melee Power per stack (per tier)
 		-- Bone Saw, Combat Axes, Sapper Shovels, Tactical Axes -- 2% | 3% | 4% | 5% (up to +50%)
 		["loc_trait_bespoke_chained_hits_increases_power_desc"] = { -- power_level: +5%, stacks: 10, Power -> Strength, +colors, +added info, +note
@@ -467,7 +687,7 @@ local weapon_localizations = {
 			-- 戰鬥斧, 工兵鏟, 戰術斧 -- 2% | 3% | 4% | 5% (up to +50%)
 			-- ["zh-cn"] = "连锁攻击命中 "..CNumb("2", "n_2_rgb").." 次时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 屠戮者
 		},
-		--[+ BRUTAL MOMENTUM +]--	08.12.2025
+		--[+ BRUTAL MOMENTUM +]--	31.12.2025
 		-- Melee Weakspot Damage (per tier)
 		-- Battle Maul and Shield, Combat Axes, Heavy Swords, Latrine Shovels, Power Maul, Power Swords, Tactical Axes -- 7.5% | 10% | 12.5% | 15%
 		["loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc"] = { -- weakspot_damage: 15%, +colors, +added info
@@ -478,7 +698,7 @@ local weapon_localizations = {
 			-- 作戰大槌and板盾, 戰鬥斧, 重劍, 廁所鏟, 動力錘, 動力劍, 戰術斧 -- 7.5% | 10% | 12.5% | 15%
 			-- ["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."。\n"..CKWord("弱点击杀", "Weakspothits_k_rgb_zh_cn").."无视 "..CNumb("3", "n_3_rgb").." 名敌人的"..CKWord("打击质量", "Hit_mass_rgb_zh_cn").."。"..CNote("Hit_Mass_note"), -- 野蛮势头
 		},
-		--[+ DEATHBLOW +]--	08.12.2025
+		--[+ DEATHBLOW +]--	31.12.2025
 		-- Melee Weakspot Damage (per tier)
 		-- Battle Maul and Shield, Combat Axes, Heavy Swords, Latrine Shovels, Power Maul, Power Swords, Tactical Axes -- 7.5% | 10% | 12.5% | 15%
 		["loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"] = { -- weakspot_damage: 15%, +colors, +added info
@@ -489,7 +709,7 @@ local weapon_localizations = {
 			-- 作戰大槌and板盾, 戰鬥斧, 重劍, 廁所鏟, 動力錘, 動力劍, 戰術斧 -- 7.5% | 10% | 12.5% | 15%
 			-- ["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."。\n"..CKWord("弱点击杀", "Weakspothits_k_rgb_zh_cn").."无视 "..CNumb("3", "n_3_rgb").." 名敌人的"..CKWord("打击质量", "Hit_mass_rgb_zh_cn").."。"..CNote("Hit_Mass_note"), -- 野蛮势头
 		},
-		--[+ LIMBSPLITTER +]--	08.12.2025
+		--[+ LIMBSPLITTER +]--	31.12.2025
 		-- Cooldown (per tier)
 		-- Bone Saw, Combat Axes, Crowbar, Pickaxes, Sapper Shovels, Tactical Axes -- 5 | 4.5 | 4 | 3.5 seconds
 		["loc_trait_bespoke_power_bonus_on_first_attack_desc"] = { -- power_level: +60%, cooldown: 3.5, +colors, +note
@@ -502,7 +722,7 @@ local weapon_localizations = {
 				-- 戰鬥斧, 十字鎬, 工兵鏟, 戰術斧 -- 5 | 4.5 | 4 | 3.5
 			-- ["zh-cn"] = "每 "..CNumb("{cooldown:%s}", "cd_var_rgb").." 秒，首次攻击 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。"..CNote("Pwr_note"), -- 断肢者
 		},
-		--[+ ALL OR NOTHING +]--	08.12.2025
+		--[+ ALL OR NOTHING +]--	31.12.2025
 		-- Melee Power per stack (per tier)
 		-- Arbites Shock Maul, Combat Axes, Crowbar, Pickaxes, Sapper Shovels, Shock Maul and Shield, Tactical Axes -- 5% | 6% | 7% | 8% (up to +40%)
 		["loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"] = { -- power_level: +8%, rewrited, +colors, +note
@@ -516,7 +736,7 @@ local weapon_localizations = {
 				-- 工兵鏟, 戰術斧 -- 一般力量: 10% | 10% | 10% | 10% (up to +50%) (bugged)
 			-- ["zh-cn"] = "随"..CKWord("体力", "Stamina_rgb_zh_cn").."消耗叠加层数，\n每消耗 "..CNumb("20%", "pc_20_rgb").."，"..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。\n最多叠加 "..CNumb("5", "n_5_rgb").." 层。 "..CNote("Pwr_note"), -- 孤注一掷
 		},
-		--[+ DECAPITATOR +]--	08.12.2025
+		--[+ DECAPITATOR +]--	31.12.2025
 		-- Melee Finesse Bonus per stack (per tier)
 		-- Bone Saw, Combat Axes, Power Falchions -- 18% | 20% | 22% | 24% (up to +120%)
 		["loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"] = { -- finesse: +24%, time: 5, stacks: 5, s->seconds, +colors, +note
@@ -530,7 +750,7 @@ local weapon_localizations = {
 				-- 戰鬥斧 -- 18% | 20% | 22% | 24% (up to +120%)
 			-- ["zh-cn"] = "一击毙敌时 "..CNumb("{finesse:%s}", "fin_var_rgb").." "..CKWord("灵巧伤害", "Finesse_dmg_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Fns_note"), -- 斩首者
 		},
-		--[+ AGILE +]--	08.12.2025
+		--[+ AGILE +]--	31.12.2025
 		-- Melee Weakspot Damage (per tier)
 		-- Duelling Swords, Tactical Axes -- 2.5% | 5% | 7.5% | 10%
 		["loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"] = { -- melee_weakspot_damage: +10%, +colors
@@ -541,7 +761,7 @@ local weapon_localizations = {
 				-- 決鬥劍, 戰術斧 -- 2.5% | 5% | 7.5% | 10%
 			-- ["zh-cn"] = CNumb("{melee_weakspot_damage}", "mel_weapsp_dmg_var_rgb").." "..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."。\n"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时，刷新有效闪避。", -- 敏捷
 		},
-		--[+ SLAUGHTER SPREE +]--	08.12.2025
+		--[+ SLAUGHTER SPREE +]--	31.12.2025
 		-- Crit Chance (per tier)
 		-- Tactical Axes -- 40% | 60% | 80% | 100%
 		["loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"] = { -- crit_chance: +100%, +colors
@@ -552,7 +772,7 @@ local weapon_localizations = {
 				-- 戰術斧 -- 40% | 60% | 80% | 100%
 			-- ["zh-cn"] = CKWord("弱点", "Weakspot_rgb_zh_cn")..""..CKWord("暴击击杀", "Crit_hits_k_rgb_zh_cn").."时，下次近战攻击 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("5", "n_5_rgb").." 秒。", -- 屠杀狂欢
 		},
-		--[+ RELENTLESS STRIKES +]--	08.12.2025
+		--[+ RELENTLESS STRIKES +]--	31.12.2025
 		-- Melee Power per stack (per tier)
 		-- Arbites Shock Maul, Bone Saw, Duelling Swords, Tactical Axes -- 4% | 6% | 8% | 10% (up to +50%)
 		["loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"] = { -- power_level: +10%, time: 2, stacks: 5, s->seconds, +colors
@@ -566,7 +786,7 @@ local weapon_localizations = {
 				-- 決鬥劍, 戰術斧 -- 4% | 6% | 8% | 10% (up to +50%)
 			-- ["zh-cn"] = "再次命中同一敌人时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 无情打击
 		},
-		--[+ FLESH TEARER +]--	08.12.2025
+		--[+ FLESH TEARER +]--	31.12.2025
 		-- Bleed Stacks (per tier)
 		-- Combat Blades, Shivs -- 5 | 6 | 7 | 8
 		["loc_trait_bespoke_bleed_on_crit_melee_desc"] = { -- stacks: +8, +colors
@@ -580,7 +800,7 @@ local weapon_localizations = {
 				-- 戰刃 -- 5 | 6 | 7 | 8
 			-- ["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时 ".. CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("流血", "Bleed_rgb_zh_cn").."。\n最多叠加 "..CNumb("16", "n_16_rgb").." 层。", -- 撕裂者
 		},
-		--[+ LACERATE +]--	08.12.2025
+		--[+ LACERATE +]--	31.12.2025
 		-- Combat Blades, Shivs -- 1 | 2 | 3 | 4
 		["loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"] = { -- stacks: +4, +colors
 			en = CNumb("{stacks:%s}", "stacks_var_rgb").." "..CKWord("Bleed", "Bleed_rgb").." Stacks on non-"..CKWord("Weakspot Hits", "Weakspothits_rgb")..".\n"
@@ -594,7 +814,7 @@ local weapon_localizations = {
 				-- 戰刃 -- 1 | 2 | 3 | 4
 			-- ["zh-cn"] = "非"..CKWord("弱点命中", "Weakspothits_rgb_zh_cn").."时 ".. CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("流血", "Bleed_rgb_zh_cn").."。\n最多叠加 "..CNumb("16", "n_16_rgb").." 层。", -- 割裂
 		},
-		--[+ EXECUTOR +]--	08.12.2025
+		--[+ EXECUTOR +]--	31.12.2025
 		-- Power per stack (per tier)
 		-- Combat Blades, Force Swords, Shivs -- 4.5% | 5% | 5.5% | 6% (up to +30%)
 		["loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"] = { -- power_level: +6%, stacks: 5, +colors
@@ -609,7 +829,7 @@ local weapon_localizations = {
 				-- 戰刃, 烈焰力場劍 -- 5% | 5% | 5% | 5% (up to +25%) (bugged)
 			-- ["zh-cn"] = "连续"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时"..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。 "..CNote("Pwr_note"), -- 处刑者
 		},
-		--[+ RIPOSTE +]--	08.12.2025
+		--[+ RIPOSTE +]--	31.12.2025
 		-- Crit Chance (per tier)
 		-- Combat Blades, Duelling Swords, Force Greatswords, Force Swords, Shivs -- 12.5% | 15% | 17.5% | 20%
 		["loc_trait_bespoke_dodge_grants_crit_chance_desc"] = { -- crit_chance: +20%, time: 6, s->seconds, +colors
@@ -622,7 +842,7 @@ local weapon_localizations = {
 				-- 戰刃, 決鬥劍, 烈焰力場劍, 烈焰力場巨劍 -- 12.5% | 15% | 17.5% | 20%
 			-- ["zh-cn"] = "成功闪避时 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 还击
 		},
-		--[+ PRECOGNITION +]--	08.12.2025
+		--[+ PRECOGNITION +]--	31.12.2025
 		-- Finesse Bonus (per tier)
 		-- Combat Blades, Duelling Swords, Force Greatswords, Force Swords -- 45% | 50% | 55% | 60%
 		-- Shivs -- 30% | 35% | 40% | 45%
@@ -636,7 +856,7 @@ local weapon_localizations = {
 				-- 戰刃, 決鬥劍, 烈焰力場劍, 烈焰力場巨劍 -- 45% | 50% | 55% | 60%
 			-- ["zh-cn"] = "成功闪避时 "..CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("灵巧伤害", "Finesse_dmg_rgb_zh_cn").."".."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"..CNote("Fns_note"), -- 预知
 		},
-		--[+ HAYMAKER +]--	08.12.2025
+		--[+ HAYMAKER +]--	31.12.2025
 		-- Instakill Chance per stack (per tier)
 		-- Bully Clubs, Combat Blades, Shivs -- 1% | 2% | 3% | 4% (up to +20%)
 		["loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"] = { -- proc_chance: +4%, stacks: 5, +colors
@@ -662,7 +882,7 @@ local weapon_localizations = {
 				-- 惡棍棒, 戰刃 -- 12.5% | 15% | 17.5% | 20%
 			-- ["zh-cn"] = "特殊攻击命中"..CKWord("踉跄", "Staggered_rgb_zh_cn").."敌人时 \n"..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 攻击波
 		},
-		--[+ MERCY KILLER +]--	08.12.2025
+		--[+ MERCY KILLER +]--	31.12.2025
 		-- Melee Weakspot Damage (per tier)
 		-- Combat Blades, Shivs -- 52.5% | 55% | 57.5% | 60%
 		["loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"] = { -- damage: +60%, +colors
@@ -687,7 +907,7 @@ local weapon_localizations = {
 				-- 戰刃 -- 70% | 80% | 90% | 100%
 			-- ["zh-cn"] = "背刺时 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_zh_cn").."。"..CNote("Rend_note"), -- 无情背刺
 		},
-		--[+ UNCANNY STRIKE +]--	08.12.2025
+		--[+ UNCANNY STRIKE +]--	31.12.2025
 		-- Rending per stack (per tier)
 		-- Combat Blades, Duelling Swords, Force Swords, Sapper Shovels -- 12% | 16% | 20% | 24% (up to +120%)
 		-- Shivs -- 4% | 5% | 6% | 8% (up to +40%)
@@ -899,7 +1119,7 @@ local weapon_localizations = {
 				-- 烈焰力場劍 -- 2% | 3% | 4% | 5%
 			-- ["zh-cn"] = "连锁攻击"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时，\n平息 "..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("危机值", "Peril_rgb_zh_cn").."。", -- 驱魔者
 		},
-		--[+ SUPERIORITY +]--	08.12.2025
+		--[+ SUPERIORITY +]--	31.12.2025
 		-- Power per stack (per tier)
 		-- Crowbar, Force Swords -- 5% | 7.5% | 10% | 12.5% (up to +37.5%)
 		["loc_trait_bespoke_elite_kills_grants_stackable_power_desc"] = { -- stacks: 5, power_level: +12.5%, time: 7, s->seconds, +colors
@@ -1076,7 +1296,7 @@ local weapon_localizations = {
 				-- 工兵鏟 -- 45% | 50% | 55% | 60%
 			-- ["zh-cn"] = "推搡敌人 \n"..CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 挥拳出击
 		},
-		--[+ SUPERCHARGE +]--	08.12.2025
+		--[+ SUPERCHARGE +]--	31.12.2025
 		-- Brittleness Stacks (per tier)
 		-- Power Maul -- 10 | 12 | 14 | 16
 		-- Power Swords -- 1 | 2 | 3 | 4
@@ -1186,7 +1406,7 @@ local weapon_localizations = {
 				-- 砍刀 -- 10% | 15% | 20% | 25%
 			-- ["zh-cn"] = "特殊攻击命中敌人时，\n下 "..CNumb("3", "n_3_rgb").." 次近战攻击 "..CNumb("{power:%s}", "pwr_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。"..CNote("Pwr_note"), -- 大肉锤
 		},
-		--[+ UNSTOPPABLE FORCE +]--	08.12.2025
+		--[+ UNSTOPPABLE FORCE +]--	31.12.2025
 		-- Fully Charged Melee Damage (per tier)
 		-- Cleavers, Crowbar -- 2.5% | 5% | 7.5% | 10%
 		["loc_trait_bespoke_pass_past_armor_and_damage_on_heavy_attack_desc"] = { -- damage: 10%, +colors
@@ -1222,7 +1442,7 @@ local weapon_localizations = {
 				-- 十字鎬 -- 5% | 6% | 7% | 8% (up to 24%)
 			-- ["zh-cn"] = "随重攻击蓄力时间增加叠加层数，\n命中敌人时，每层使"..CKWord("韧性", "Toughness_rgb_zh_cn").." "..CNumb("{toughness:%s}", "tghns_var_rgb").."。\n最多叠加 "..CNumb("3", "n_3_rgb").." 层。", -- 步稳行远
 		},
-		--[+ POWER SURGE +]--	08.12.2025
+		--[+ POWER SURGE +]--	31.12.2025
 		-- Explosion Radius Increase (per tier)
 		-- Power Maul -- 10% | 15% | 20% | 25%
 		["loc_trait_bespoke_explosion_on_activated_attacks_on_armor_new_desc"] = { -- explosion_radius: 25%, +colors
@@ -1255,7 +1475,7 @@ local weapon_localizations = {
 				-- 作戰大槌and板盾 -- 4% | 6% | 8% | 10% (up to +50%)
 			-- ["zh-cn"] = "格挡期间，每消耗 "..CNumb("1", "n_1_rgb").." "..CKWord("体力", "Stamina_rgb_zh_cn").." "..CNumb("{power:%s}", "pwr_var_rgb").." 近战"..CKWord("强度", "Strength_rgb_zh_cn").."，\n持续 "..CNumb("{duration:%s}", "dur_var_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 以守为攻
 		},
-		--[+ CAN OPENER +]-- MELEE!	08.12.2025
+		--[+ CAN OPENER +]-- MELEE!	31.12.2025
 		-- Brittleness Stacks (per tier)
 		-- Crowbar -- 1 | 2 | 3 | 4
 		["loc_trait_bespoke_armor_rending_bayonette_crowbar_desc"] = { -- rending: 2.5%, stacks: 4, time: 5, max_stacks: 16, s->seconds, +colors
@@ -1268,7 +1488,7 @@ local weapon_localizations = {
 				-- 撕裂槍 -- 10 | 12 | 14 | 16
 			-- ["zh-cn"] = "特殊攻击命中时，对目标施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("脆弱", "Brittleness_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 层，最高 "..CNumb("40%", "pc_40_rgb").."。"..CNote("Brtl_note"), -- 开罐器
 		},
-		--[+ REFINED LETHALITY +]--	08.12.2025
+		--[+ REFINED LETHALITY +]--	31.12.2025
 		-- Melee Weakspot Damage (per tier)
 		-- Bone Saw -- 52.5% | 55% | 57.5% | 60%
 		["loc_trait_bespoke_increased_weakspot_damage_against_toxin_status_desc"] = { -- damage: +60%, time: 2, s->seconds, +colors, +note
@@ -1281,8 +1501,28 @@ local weapon_localizations = {
 		},
 
 
+
+
+
+
+
+--
+--
+--
+--
+--
+--
+--
+
+
+
+
+
+
+
+
 	--[+ RANGED - ДАЛЬНИЙ БОЙ - 远程武器 +]--
-		--[+ RAKING FIRE +]--	08.12.2025
+		--[+ RAKING FIRE +]--	31.12.2025
 		-- Flanking Damage (per tier)
 		-- Autopistol, Dual Autopistols, Dual Stub Pistols, Infantry Autoguns, Laspistols -- 32.5% | 35% | 37.5% | 40%
 		["loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking_desc"] = { -- damage: +40%, +colors
@@ -1306,7 +1546,7 @@ local weapon_localizations = {
 				-- 步兵自動槍, 重型雷射手槍, 偵查雷射槍 -- 4.5% | 5% | 5.5% | 6% (up to +30%)
 			-- ["zh-cn"] = "反复命中时，对 "..CNumb("12.5", "n_12_5_rgb").." 米内的敌人\n"..CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 达姆弹
 		},
-		--[+ HIT & RUN / HIT AND RUN +]--	08.12.2025
+		--[+ HIT & RUN / HIT AND RUN +]--	31.12.2025
 		-- Duration (per tier)
 		-- Braced Autoguns, Combat Shotguns, Double-Barrel Shotgun, Dual Stub Pistols, Infantry Autoguns, Recon Lasguns -- 0.7s | 0.8s | 0.9s | 1s
 		["loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill_desc"] = { -- time: 1, s->second, +colors
@@ -1319,7 +1559,7 @@ local weapon_localizations = {
 				-- 槍托自動槍, 戰鬥霰彈槍, 雙管霰彈槍, 步兵自動槍, 偵查雷射槍 -- 0.7 | 0.8 | 0.9 | 1
 			-- ["zh-cn"] = "击杀 "..CNumb("12.5", "n_12_5_rgb").." 米内的敌人时，\n闪避全部远程攻击，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 边打边跑
 		},
-		--[+ SUSTAINED FIRE +]--	08.12.2025
+		--[+ SUSTAINED FIRE +]--	31.12.2025
 		-- Ranged Damage (per tier)
 		-- Autopistol, Dual Autopistols, Dual Stub Pistols, Electrokinetic Staff, Exterminator Shotguns, Helbore Lasguns, Infantry Autoguns, Recon Lasguns, Stub Revolvers, Voidblast Staff, Voidstrike Staff -- 14% | 16% | 18% | 20%
 		["loc_trait_bespoke_followup_shots_ranged_damage_desc"] = { -- damage: +20%, +colors
@@ -1369,7 +1609,7 @@ local weapon_localizations = {
 			-- 雙管霰彈槍 -- 5% | 5.5% | 6% | 6.5% (up to +32.5%) | 5s
 			-- ["zh-cn"] = "击杀 "..CNumb("12.5", "n_12_5_rgb").." 米内的敌人时 \n"..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("5", "n_5_rgb").." 层。"..CNote("Pwr_note"), -- 死亡喷吐
 		},
-		--[+ STRIPPED DOWN +]--	08.12.2025
+		--[+ STRIPPED DOWN +]--	31.12.2025
 		-- Max Stamina Percentage Threshold (per tier)
 		-- Braced Autoguns, Infantry Autoguns, Needle Pistols, Recon Lasguns -- 80% | 70% | 60% | 50%
 		["loc_trait_bespoke_increased_sprint_speed_desc"] = { -- stamina: 50%, +colors
@@ -1380,7 +1620,7 @@ local weapon_localizations = {
 			-- 槍托自動槍, 步兵自動槍, 偵查雷射槍 -- 80% | 70% | 60% | 50%
 			-- ["zh-cn"] = "以超过 "..CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("体力", "Stamina_rgb_zh_cn").."疾跑时，\n闪避全部远程攻击。", -- 简装
 		},
-		--[+ SPEEDLOAD +]--	08.12.2025
+		--[+ SPEEDLOAD +]--	31.12.2025
 		-- Reload Speed per stack (per tier) and Duration
 		-- Autopistol, Dual Autopistols, Dual Stub Pistols -- 7% | 8% | 9% | 10% (up to +50%) | 2s
 		-- Braced Autoguns, Infantry Autoguns -- 7% | 8% | 9% | 10% (up to +50%) | 2.5s 
@@ -1399,7 +1639,7 @@ local weapon_localizations = {
 				-- 快拔左輪手槍-- 7% | 8% | 9% | 10% (up to +50%) | 4s
 			-- ["zh-cn"] = "击杀 "..CNumb("12.5", "n_12_5_rgb").." 米内的敌人时\n"..CNumb("{reload_speed:%s}", "reload_var_rgb").." 装弹速度，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 速度装弹
 		},
-		--[+ TERRIFYING BARRAGE +]--	08.12.2025
+		--[+ TERRIFYING BARRAGE +]--	31.12.2025
 		-- Suppression Amount (per tier)
 		-- Autopistol, Boltguns, Braced Autoguns, Combat Shotguns, Double-Barrel Shotgun, Dual Autopistols, Dual Stub Pistols, Electrokinetic Staff, Twin-Linked Stubbers, Infantry Autoguns, Inferno Staff, Kickback, Ripper Guns, Stub Revolvers, Voidblast Staff, Voidstrike Staff -- 15 | 20 | 25 | 30
 		["loc_trait_bespoke_suppression_on_close_kill_desc"] = { -- rewrited, +colors, 5m->5meters
@@ -1445,7 +1685,7 @@ local weapon_localizations = {
 				-- 撕裂者自動手槍, 矛頭爆矢槍, 槍托自動槍, 淨化噴火器, 戰鬥霰彈槍, 雙鏈重型機槍, 撕裂槍 -- 1% | 2% | 3% | 4% (up to 20%)
 			-- ["zh-cn"] = "连续射击期间，\n每消耗弹匣容量 "..CNumb("{ammo:%s}", "ammo_var_rgb").." 的弹药，回复"..CKWord("韧性", "Toughness_rgb_zh_cn")..",\n每叠加 "..CNumb("1", "n_1_rgb").." 层，"..CKWord("韧性", "Toughness_rgb_zh_cn").."回复效果 "..CNumb("{toughness:%s}", "tghns_var_rgb").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 鼓舞弹幕
 		},
-		--[+ GHOST +]--	08.12.2025
+		--[+ GHOST +]--	31.12.2025
 		-- Duration (per tier)
 		-- Infantry Lasguns, Laspistols, Needle Pistols, Vigilant Autoguns -- 0.6s | 0.8s | 1s | 1.2s
 		["loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"] = { -- time: 1.2, +colors
@@ -1472,7 +1712,7 @@ local weapon_localizations = {
 				-- 快拔左輪手槍, 爆彈手槍, 冥潮雷射槍 -- 0.45s | 0.4s | 0.35s | 0.3s
 			-- ["zh-cn"] = "瞄准期间，每 "..CNumb("{time:%s}", "time_var_rgb").." 秒 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层，射击后清空所有层数。", -- 外科手术
 		},
-		--[+ CRUCIAN ROULETTE +]--	08.12.2025
+		--[+ CRUCIAN ROULETTE +]--	31.12.2025
 		-- Crit Chance per Missing Round (per tier)
 		-- Dual Stub Pistols -- 1% | 1.25% | 1.5% | 2%
 		-- Stub Revolvers -- 4.5% | 5% | 5.5% | 6%
@@ -1533,7 +1773,7 @@ local weapon_localizations = {
 				-- 偵查雷射槍 -- 3.5% | 4% | 4.5% | 5% (up to +20%)
 			-- ["zh-cn"] = CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层，\n"..CKWord("暴击命中", "Crit_hit_rgb_tw").."后清空所有叠加层数。", -- 猎颅者
 		},
-		--[+ BETWEEN THE EYES +]--	08.12.2025
+		--[+ BETWEEN THE EYES +]--	31.12.2025
 		-- Duration (per tier)
 		-- Infantry Lasguns, Laspistols, Needle Pistols, Vigilant Autoguns -- 2.4s | 2.8s | 3.2s | 3.6s
 		["loc_trait_bespoke_suppression_negation_on_weakspot_desc"] = { -- time: 3.6, s->seconds, +colors
@@ -1546,7 +1786,7 @@ local weapon_localizations = {
 				-- 步兵雷射槍, 重型雷射手槍, 機動自動槍 -- 2.4 | 2.8 | 3.2 | 3.6
 			-- ["zh-cn"] = CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时免疫压制，持续"..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 正中眉心
 		},
-		--[+ BLAZE AWAY +]--	08.12.2025
+		--[+ BLAZE AWAY +]--	31.12.2025
 		-- Power per stack (per tier)
 		-- Autopistol, Dual Autopistols, Flamer, Heavy Stubbers, Twin-Linked Stubbers, Ripper Guns -- 5% | 6% | 7% | 8% (up to +40%)
 		["loc_trait_bespoke_power_bonus_on_continuous_fire_desc"] = { -- power_level: +8%, ammo: 10%, stacks: 5, +colors
@@ -1559,7 +1799,7 @@ local weapon_localizations = {
 				-- 撕裂者自動手槍, 淨化噴火器, 雙鏈重型機槍, 撕裂槍, 擲彈兵臂鎧, 烈焰力場法杖, 反衝者, 電漿槍, 震盪槍 -- 5% | 6% | 7% | 8% (up to +40%)
 			-- ["zh-cn"] = "连续射击期间，\n每消耗弹匣容量 "..CNumb("{ammo:%s}", "ammo_var_rgb").." 的弹药，\n"..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 连续射击
 		},
-		--[+ POWDERBURN +]--	08.12.2025
+		--[+ POWDERBURN +]--	31.12.2025
 		-- Damage vs Suppressed and Suppression and Reduced Recoil (per tier)
 		-- Autopistol, Dual Autopistols, Dual Stub Pistols, Exterminator Shotguns -- 14% and 28% and -28% | 16% and 32% and -32% | 18% and 36% and -36% | 20% and 40% and -40%
 		["loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills_desc"] = { -- damage: +20%, suppression: +40%, recoil_reduction: -40%, +colors
@@ -1572,7 +1812,7 @@ local weapon_localizations = {
 				-- 撕裂者自動手槍 -- 14% and 28% and -28% | 16% and 32% and -32% | 18% and 36% and -36% | 20% and 40% and -40%
 			-- ["zh-cn"] = "对被压制敌人 "..CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."。\n击杀 "..CNumb("12.5", "n_12_5_rgb").." 米内的敌人时\n"..CNumb("{suppression:%s}", "spprsn_var_rgb").." 压制效果，同时 "..CNumb("{recoil_reduction:%s}", "recoil_red_var_rgb").." 后坐力。", -- 火药燃烧
 		},
-		--[+ CAVALCADE +]--	08.12.2025
+		--[+ CAVALCADE +]--	31.12.2025
 		-- Crit Chance per stack (per tier)
 		-- Autopistol, Boltguns, Heavy Stubbers, Ripper Guns -- 3.5% | 4% | 4.5% | 5% (up to +25%)
 		["loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"] = { -- crit_chance: +20%, ammo: 10%, stacks: 5, +colors
@@ -1583,7 +1823,7 @@ local weapon_localizations = {
 				-- 撕裂者自動手槍, 矛頭爆矢槍, 撕裂槍 -- 3.5% | 4% | 4.5% | 5% (up to +25%)
 			-- ["zh-cn"] = "连续射击期间，\n每消耗弹匣容量 "..CNumb("{ammo:%s}", "ammo_var_rgb").."的弹药，\n"..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 列队行进
 		},
-		--[+ PINNING FIRE +]--	08.12.2025
+		--[+ PINNING FIRE +]--	31.12.2025
 		-- Power per stack (per tier)
 		-- Autopistol, Boltguns, Dual Autopistols, Dual Stub Pistols, Heavy Stubbers -- 4.25% | 4.5% | 4.75% | 5% (up to +25%)
 		["loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"] = { -- power_level: +8%, stacks: 5, +colors
@@ -1598,7 +1838,7 @@ local weapon_localizations = {
 				-- 撕裂者自動手槍, 矛頭爆矢槍 -- 4.25% | 4.5% | 4.75% | 5% (up to +25%)
 			-- ["zh-cn"] = CKWord("踉跄", "Stagger_rgb_zh_cn").."敌人时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 火力压制
 		},
-		--[+ RUN 'N' GUN - RUN AND GUN +]--	08.12.2025
+		--[+ RUN 'N' GUN - RUN AND GUN +]--	31.12.2025
 		-- Close Damage (per tier) and Spread Reduction
 		-- Bolt Pistols, Dual Autopistols, Dual Stub Pistols, Electrokinetic Staff, Inferno Staff, Kickback, Needle Pistols, Shotpistol and Shield, Stub Revolvers, Voidblast Staff, Voidstrike Staff -- 6% | 9% | 12% | 15% | -30%
 		-- Double-Barrel Shotgun -- 6% | 9% | 12% | 15% | -10%
@@ -1639,7 +1879,7 @@ local weapon_localizations = {
 				-- 爆彈手槍 -- 10% | 15% | 20% | 25%
 			-- ["zh-cn"] = CNumb("{radius:%s}", "radius_var_rgb").." 爆炸范围。\n"..CNumb("5", "n_5_rgb").." 米内射击也会引发爆炸。", -- 致命距离
 		},
-		--[+ POINT BLANK +]--	08.12.2025
+		--[+ POINT BLANK +]--	31.12.2025
 		-- Ranged Crit Chance (per tier) and Duration
 		-- Bolt Pistols, Needle Pistols -- 14% | 16% | 18% | 20% | 3.5s
 		-- Stub Revolvers -- 14% | 16% | 18% | 20% | 2.5s
@@ -1665,7 +1905,7 @@ local weapon_localizations = {
 				-- 爆彈手槍 -- 5% |10% | 15% | 20%
 			-- ["zh-cn"] = "对"..CKWord("踉跄", "Staggered_rgb_zh_cn").."敌人 "..CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."。", -- 处决
 		},
-		--[+ GLORYHUNTER +]--	08.12.2025
+		--[+ GLORYHUNTER +]--	31.12.2025
 		-- Max Toughness Percentage (per tier)
 		-- Boltguns, Heavy Stubbers -- 10% | 12% | 14% | 16%
 		-- Needle Pistols, Plasma Gun -- 17.5% | 20% | 22.5% | 25%
@@ -1845,7 +2085,7 @@ local weapon_localizations = {
 				-- 步兵雷射槍 -- 5.5 | 5 | 4.5 | 4
 			-- ["zh-cn"] = "下次射击 "..CNumb("-", "n_minus_rgb")..CNumb("{ammo:%s}", "ammo_var_rgb").." 弹药消耗，\n冷却时间 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 效益
 		},
-		--[+ CONCENTRATED FIRE +]--	08.12.2025
+		--[+ CONCENTRATED FIRE +]--	31.12.2025
 		-- Crit Chance per stack (per tier)
 		-- Laspistols, Needle Pistols -- 2% | 3% | 4% | 5% (up to +25%)
 		["loc_trait_bespoke_crit_chance_on_chained_weakspot_hits_desc"] = { -- crit_chance: +5%, +colors
@@ -1858,7 +2098,7 @@ local weapon_localizations = {
 				-- 重型雷射手槍 -- 2% | 3% | 4% | 5% (up to +25%)
 			-- ["zh-cn"] = "连续"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n最多叠加 "..CNumb("5", "n_5_rgb").." 层。", -- 集中火力
 		},
-		--[+ DESPERADO +]--	08.12.2025
+		--[+ DESPERADO +]--	31.12.2025
 		-- Crit Chance (per tier)
 		-- Dual Stub Pistols, Laspistols, Needle Pistols -- 12.5% | 15% | 17.5% | 20%
 		["loc_trait_bespoke_crit_chance_on_successful_dodge_desc"] = { -- crit_chance: +12.5%, time: 6, +colors
@@ -2040,7 +2280,7 @@ local weapon_localizations = {
 				-- 淨化噴火器 -- 2% | 3% | 4% | 5% (up to +25%)
 			-- ["zh-cn"] = "随弹匣剩余弹药叠加层数，\n每消耗弹匣容量 "..CNumb("20%", "pc_20_rgb").." 的弹药\n"..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 超压
 		},
-		--[+ HOT-SHOT +]--	08.12.2025
+		--[+ HOT-SHOT +]--	31.12.2025
 		-- Enemy Hit Mass Reduction (per tier)
 		-- Helbore Lasguns, Needle Pistols -- 20% | 30% | 40% | 50%
 		["loc_trait_bespoke_cleave_on_weakspot_hits_desc"] = { -- hit_mass_reduction: +50%, +colors
@@ -2272,7 +2512,7 @@ local weapon_localizations = {
 				-- 撕裂槍 -- 10 | 12 | 14 | 16
 			-- ["zh-cn"] = "特殊攻击命中时，对目标施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("脆弱", "Brittleness_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 层，最高 "..CNumb("40%", "pc_40_rgb").."。"..CNote("Brtl_note"), -- 开罐器
 		},
-		--[+ BORN IN BLOOD +]--	08.12.2025
+		--[+ BORN IN BLOOD +]--	31.12.2025
 		-- Max Toughness Percentage (per tier)
 		-- Dual Stub Pistols, Exterminator Shotguns, Ripper Guns -- 4.5% | 5% | 5.5% | 6%
 		["loc_trait_bespoke_toughness_on_close_range_kills_desc"] = { -- toughness: +6%, +colors

@@ -110,6 +110,7 @@ local CONFIG = {
 		n_plus =	"+",
 		n_minus =	"-",
 		n_equal =	"=",
+		n_greater =	">",
 		n_meter =	"m",
 		n_metr =	"м",
 		n_second =	"s",

@@ -3451,26 +3451,16 @@ local penances_localizations = {
 		-- {"loc_achievement_ogryn_team_suppressed_aura_kills_description"}, {"zh-tw"},
 			-- loc_text("在 "..COLORS_KWords_tw.Aura_p_rgb_tw.."『"..COLORS_KWords_tw.cowculaura_rgb_tw.."』效果內，擊殺 "..CNumb("{target}", "target_rgb").." 名被壓制的敵人。\n隊友在光環下所造成的擊殺同樣會被計算。")),
 
-	-- --[+ Something In Your Eye - У тебя что-то в глазу +]-- руоф Нечто в твоих глазах
-	-- --[+ Russian +]--
-	-- create_template("ach_red_ogr_3_ext_ru",
-		-- {"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"}, {"ru"},
-			-- loc_text("У тебя что-то в глазу")),
-	-- --[+ Traditional Chinese 你眼睛裡有東西 +]--
-	-- create_template("ach_red_ogr_3_ext_tw",
-		-- {"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"}, {"zh-tw"},
-			-- loc_text("你眼睛裡有東西")),
-
-	-- --[+ Kill a Corruptor by hitting it in the eye with your grenade box. +]-- руоф Убейте осквернителя, попав ему в глаз гранатой.
-	-- --[+ Russian +]--
-	-- -- create_template("ach_red_ogr_3_ext_desc_ru",
-		-- -- {"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"}, {"ru"},
-			-- -- loc_text("Убейте Осквернителя, попав ему ящиком с гранатами в глаз."..TALENTS_Enh_desc_penances_ru.ED_Something_in_your_eye_rgb_ru)),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用手雷擊中腐蝕者的眼睛來殺死它。
-	-- -- create_template("ach_red_ogr_3_ext_desc_tw",
-		-- -- {"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"}, {"zh-tw"},
-			-- -- loc_text("用 "..COLORS_KWords_tw.Blitz_p_rgb_tw.."『"..COLORS_KWords_tw.big_box_rgb_tw.."』直接擊中腐蝕者眼睛將其擊殺。" ..TALENTS_Enh_desc_penances_tw.ED_Something_in_your_eye_rgb_tw)),
+	--[+ Something In Your Eye +]--
+	["loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"] = {
+		ru = "У тебя что-то в глазу", -- У тебя что-то в глазу -- руоф Нечто в твоих глазах
+		-- ["zh-tw"] = "你眼睛裡有東西",
+	},
+	--[+ Kill a Corruptor by hitting it in the eye with your grenade box. +]--
+	["loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"] = {
+		ru = "Убейте Осквернителя, попав ему ящиком с гранатами в глаз.", -- руоф Убейте осквернителя, попав ему в глаз гранатой.
+		-- ["zh-tw"] = "用 "..COLORS_KWords_tw.Blitz_p_rgb_tw.."『"..COLORS_KWords_tw.big_box_rgb_tw.."』直接擊中腐蝕者眼睛將其擊殺。",
+	},
 
 	-- --[+ Heavyweight Champion +]-- руоф Чемпион-тяжеловес
 	-- --[+ Russian +]--

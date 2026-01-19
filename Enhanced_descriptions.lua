@@ -95,15 +95,15 @@ mod.SUPPORTED_LANGUAGES = {
 	"en",			-- English
 	"ru",			-- Russian
 	"fr",			-- French
-	"zh-cn",		-- Chinese Simplified
 	"zh-tw",		-- Chinese Traditional
-	-- "de",		-- German
-	-- "it",		-- Italian
-	-- "ja",		-- Japanese
-	-- "ko",		-- Korean
-	-- "pl",		-- Polish
-	-- "pt-br",		-- Portuguese (Brazil)
-	-- "es",		-- Spanish
+	"zh-cn",		-- Chinese Simplified
+	"de",			-- German
+	"it",			-- Italian
+	"ja",			-- Japanese
+	"ko",			-- Korean
+	"pl",			-- Polish
+	"pt-br",		-- Portuguese (Brazil)
+	"es",			-- Spanish
 }
 
 -- Карта языков для файлов
@@ -111,8 +111,8 @@ local LANGUAGE_FILE_MAP = {
 	["en"] =		"en",
 	["ru"] =		"ru",
 	["fr"] =		"fr",
-	["zh-cn"] =		"zh_cn",
 	["zh-tw"] =		"tw",
+	["zh-cn"] =		"zh_cn",
 	["de"] =		"de",
 	["it"] =		"it",
 	["ja"] =		"ja",
@@ -128,8 +128,8 @@ local function get_language_name(lang_code)
 		["en"] =	"English",
 		["ru"] =	"Russian",
 		["fr"] =	"French",
-		["zh-cn"] =	"Chinese Simplified",
 		["zh-tw"] =	"Chinese Traditional",
+		["zh-cn"] =	"Chinese Simplified",
 		["de"] =	"German",
 		["it"] =	"Italian",
 		["ja"] =	"Japanese",

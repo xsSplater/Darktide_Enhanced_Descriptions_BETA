@@ -980,7 +980,7 @@ local psyker_localizations = {
 	},
 	--[+ Passive 28 - Kinetic Deflection +]--	08.12.2025
 	["loc_talent_psyker_block_costs_warp_charge_desc"] = { -- warp_charge_block_cost: 25%, +colors
-		en = Dot_green.." While below "..CNumb("97%", "pc_97_rgb").." "..CKWord("Peril", "Peril_rgb")..",	 Blocking an attack causes you to gain "..CKWord("Peril", "Peril_rgb").." instead of losing "..CKWord("Stamina", "Stamina_rgb")..".\n"
+		en = Dot_green.." While below "..CNumb("97%", "pc_97_rgb").." "..CKWord("Peril", "Peril_rgb")..", Blocking an attack causes you to gain "..CKWord("Peril", "Peril_rgb").." instead of losing "..CKWord("Stamina", "Stamina_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Gained "..CKWord("Peril", "Peril_rgb").." is {warp_charge_block_cost:%s} of the blocked attack's "..CKWord("Stamina", "Stamina_rgb").." cost.",
 		ru = "Пока уровень "..CKWord("опасности", "opasnosti_rgb_ru").." ниже "..CNumb("97%", "pc_97_rgb")..", блокирование атак приводит к повышению уровня "..CKWord("опасности", "opasnosti_rgb_ru").." вместо потери "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".\n" -- Кинетическое отклонение

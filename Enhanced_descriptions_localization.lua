@@ -406,18 +406,24 @@ local localizations = {
 
 --[+DUMP STATS+]--
 	dump_stat_colour = {
-		en = "Dump Stats\n{#size(17)}{#color(95, 95, 95)}// Mobility, Melee Damage, Warp Resistance{#reset()}",
-		ru = "Мусорные статы\n{#size(17)}{#color(95, 95, 95)}// Мобильность, Урон рукопашный, Сопротивление варпу{#reset()}",
+		en = "Dump Stats"
+			.."\n{#size(17)}{#color(95, 95, 95)}// Mobility, Melee Damage, Warp Resistance{#reset()}",
+		ru = "Мусорные статы"
+			.."\n{#size(17)}{#color(95, 95, 95)}// Мобильность, Урон рукопашный, Сопротивление варпу{#reset()}",
 	},
 --[+DUMP STATS 2+]--
 	dump_stat2_colour = {
-		en = "Dump Stats 2\n{#size(17)}{#color(95, 95, 95)}// Ammo, Defences, Heat Management{#reset()}",
-		ru = "Мусорные статы 2\n{#size(17)}{#color(95, 95, 95)}// Боеприпасы, Защита, Отведение тепла{#reset()}",
+		en = "Dump Stats 2"
+			.."\n{#size(17)}{#color(95, 95, 95)}// Ammo, Defences, Heat Management{#reset()}",
+		ru = "Мусорные статы 2"
+			.."\n{#size(17)}{#color(95, 95, 95)}// Боеприпасы, Защита, Отведение тепла{#reset()}",
 	},
 --[+DUMP STATS 3+]--
 	dump_stat3_colour = {
-		en = "Dump Stats 3\n{#size(17)}{#color(95, 95, 95)}// Damage{#reset()}",
-		ru = "Мусорные статы 3\n{#size(17)}{#color(95, 95, 95)}// Урон {#reset()}", -- {#size(14)}(Игольный пистолет, Огнемёт и др., наносят урон со временем, на который не влияет эта стата).
+		en = "Dump Stats 3"
+			.."\n{#size(17)}{#color(95, 95, 95)}// Damage{#reset()}",
+		ru = "Мусорные статы 3"
+			.."\n{#size(17)}{#color(95, 95, 95)}// Урон {#reset()}", -- {#size(14)}(Игольный пистолет, Огнемёт и др., наносят урон со временем, на который не влияет эта стата).
 	},
 
 --[+MAIN+]--
@@ -1009,20 +1015,20 @@ local localizations = {
 		["pt-br"] = " Talentos",
 		es = " Talentos",
 	},
-	-- talents_penances_colour = {
-		-- en = " Talents - Penances",
-		-- fr = " Talents - Pénitences",
-		-- ru = " Таланты - Искупления",
-		-- ["zh-tw"] = " 天賦 - 苦修",
-		-- ["zh-cn"] = " 天赋 - 苦修",
-		-- de = " Talente - Bußen",
-		-- it = " Talent - Penitenze",
-		-- ja = " タレント - 苦行",
-		-- ko = " 특성 - 참회",
-		-- pl = " Talenty - Pokuty",
-		-- ["pt-br"] = " Talentos - Penitências",
-		-- es = " Talentos - Penitencias",
-	-- },
+	talents_penances_colour = {
+		en = " Talents - Penances",
+		fr = " Talents - Pénitences",
+		ru = " Таланты - Искупления",
+		["zh-tw"] = " 天賦 - 苦修",
+		["zh-cn"] = " 天赋 - 苦修",
+		de = " Talente - Bußen",
+		it = " Talent - Penitenze",
+		ja = " タレント - 苦行",
+		ko = " 특성 - 참회",
+		pl = " Talenty - Pokuty",
+		["pt-br"] = " Talentos - Penitências",
+		es = " Talentos - Penitencias",
+	},
 	numbers_colour = {
 		en = " Numbers",
 		fr = " Nombres",

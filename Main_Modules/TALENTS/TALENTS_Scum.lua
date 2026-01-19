@@ -678,25 +678,27 @@ local scum_localizations = {
 	--[+ Passive 2 - Quick and Deadly +]--	30.12.2025
 	["loc_talent_broker_passive_close_range_damage_on_dodge_desc"] = { -- damage_near: +15%, duration: 3, +colors
 		en = "After a Successful Dodge you gain for {duration:%s} seconds:\n"
-			..Dot_green.." {damage_near:%s} Ranged "..CKWord("Damage", "Damage_rgb").." against targets within "..CNumb("12.5", "n_12_5_rgb").." meters.\n"
-			.."\n"
+			..Dot_green.." {damage_near:%s} "..CKWord("Damage", "Damage_rgb").." against targets within "..CNumb("12.5", "n_12_5_rgb").." meters.\n"
+			-- .."\n"
 			.."_______________________________\n"
 			.."Distance ("..CNumb("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
 			..CKWord("Damage", "Damage_rgb").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("15", "n_15_rgb").."|    "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."|   "..CKWord("~9", "n__9_rgb").."|   "..CKWord("~4", "n__4_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
+			..CPhrs("Can_proc_mult_str")
+			.."\n"
 			.."Procs on successfully Dodging:\n"
 			..Dot_nc.." Enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper),\n"
 			..Dot_nc.." Disabler attacks (Pox Hound jump, Trapper net, Mutant grab).",
 		ru = "После успешного уклонения,вы получаете на {duration:%s} секунды:\n"
-			..Dot_green.." {damage_near:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." по целям в пределах "..CNumb("12.5", "n_12_5_rgb").." метров.\n"
-			.."\n"
+			..Dot_green.." {damage_near:%s} к "..CKWord("урону", "uronu_rgb_ru").." по целям в пределах "..CNumb("12.5", "n_12_5_rgb").." метров.\n"
+			-- .."\n"
 			.."_______________________________\n"
 			.."Дистанция ("..CNumb("м", "n_metr_rgb").."):  "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."|  "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
 			..CKWord("Урон", "Uron_rgb_ru").." ("..CNumb("%", "pc_rgb").."):          "..CNumb("15", "n_15_rgb").."|    "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."|  "..CKWord("~4", "n__4_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
-			..CPhrs("Can_proc_mult_str").."\n"
+			..CPhrs("Can_proc_mult_str")
 			.."\n"
 			.."Срабатывает при успешном уклонении от:\n"
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
@@ -1032,10 +1034,14 @@ local scum_localizations = {
 	["loc_talent_broker_passive_melee_crit_instakill_desc"] = { -- threshold: 2, +colors
 		en = CKWord("Critical Strikes", "Crit_strikes_rgb").." instantly kill Human Sized Enemies if their current "..CKWord("Health", "Health_rgb").." is less than {threshold:%s} times the amount of "..CKWord("Damage", "Damage_rgb").." of the "..CKWord("Critical Strikes", "Crit_strikes_rgb")..".\n"
 			.."\n"
-			..Dot_nc.." Breeds that are NOT considered 'human-sized': Beast of Nurgle, Bulwark, Captains/Twins, Chaos Spawn, Crusher, Daemonhost, Plague Ogryn, Reaper.",
-		ru = CKWord("Критические удары", "Krit_udary_rgb_ru").." мгновенно убивают врагов человеческого размера, если их текущее "..CKWord("здоровье", "zdoroviu_rgb_ru").." в {threshold:%s} раза меньше "..CKWord("урона", "urona_rgb_ru").." от "..CKWord("критического удара", "krit_udara_rgb_ru")..".\n"
+			..Dot_nc.." ["..CKWord("Crit Damage", "Crt_dmg_r_rgb").."] x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("Health", "Health_rgb").."]\n"
 			.."\n"
-			..Dot_nc.." Типы врагов, не человеческого размера: Зверь Нургла, Отродье Хаоса, Чумной огрин, бастион, демонхост, жнец, капитаны/близнецы, крушитель.",
+			..Dot_nc.." Breeds that are NOT considered 'human-sized': Beast of Nurgle, Bulwark, Captains/Twins, Chaos Spawn, Crusher, Daemonhost, Plague Ogryn, Reaper.",
+		ru = CKWord("Критические удары", "Krit_udary_rgb_ru").." мгновенно убивают врагов человеческого размера, если "..CKWord("урон критического удара", "krit_udar_uron_rgb_ru")..", умноженный на {threshold:%s}, больше, чем текущее "..CKWord("здоровье", "zdorovie_rgb_ru").." врага.\n"
+			.."\n"
+			.."["..CKWord("Крит. урон", "Krt_uron_rgb_ru").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("Здоровье", "Zdorovie_rgb_ru").."]\n"
+			.."\n"
+			..Dot_nc.." Типы врагов НЕ человеческого размера: Зверь Нургла, Отродье Хаоса, Чумной огрин, бастион, демонхост, жнец, капитаны/близнецы, крушитель.",
 	},
 	--[+ Passive 32 - The Sweet Spot +]--	30.12.2025
 	["loc_talent_broker_passive_increased_weakspot_damage_desc"] = { -- weakspot_damage: +25%, +colors
@@ -1049,7 +1055,7 @@ local scum_localizations = {
 			.."Flat "..CKWord("Damage", "Damage_rgb").." buff equal to:\n"
 			..Dot_green.." {percentage:%s} of your Overkill "..CKWord("Damage", "Damage_rgb")..".\n"
 			.."\n"
-			..Dot_nc.." "..CKWord("Damage", "Damage_rgb").." Dealt "..CNumb("-", "n_minus_rgb").." Enemy's remaining "..CKWord("Health", "Health_rgb").." "..CNumb("=", "n_equal_rgb").." Overkill "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_nc.." [Overkill "..CKWord("Damage", "Damage_rgb").."] "..CNumb("=", "n_equal_rgb").." ["..CKWord("Damage", "Damage_rgb").." Dealt] "..CNumb("-", "n_minus_rgb").." [Enemy's remaining "..CKWord("Health", "Health_rgb").."].\n"
 			.."\n"
 			..Dot_nc.." The Buff's duration refreshes only if your new Overkill "..CKWord("Damage", "Damage_rgb").." is greater than the previous one.",
 		ru = "При убийстве вы получаете на {duration:%s} секунду усиление, добавляющее фиксированный "..CKWord("урон", "uron_rgb_ru").." к следующей атаке ближнего боя.\n"
@@ -1057,7 +1063,7 @@ local scum_localizations = {
 			.."Фиксированный "..CKWord("урон", "uron_rgb_ru").." равен:\n"
 			..Dot_green.." {percentage:%s} от избыточного "..CKWord("урона", "urona_rgb_ru")..".\n"
 			.."\n"
-			..Dot_nc.." Нанесённый "..CKWord("урон", "uron_rgb_ru").." "..CNumb("-", "n_minus_rgb").." остаток "..CKWord("здоровья", "zdorovia_rgb_ru").." врага "..CNumb("=", "n_equal_rgb").." избыточный "..CKWord("урон", "uron_rgb_ru")..".\n"
+			..Dot_nc.." [Избыточный "..CKWord("урон", "uron_rgb_ru").."] "..CNumb("=", "n_equal_rgb").." [Нанесённый "..CKWord("урон", "uron_rgb_ru").."] "..CNumb("-", "n_minus_rgb").." ["..CKWord("Здоровье", "Zdorovie_rgb_ru").." врага оставшееся]\n"
 			.."\n"
 			..Dot_nc.." Длительность усиления обновляется только если новый избыточный "..CKWord("урон", "uron_rgb_ru").." больше предыдущего.",
 	},
