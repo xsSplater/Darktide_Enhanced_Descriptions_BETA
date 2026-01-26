@@ -1091,18 +1091,18 @@ local scum_localizations = {
 			..Dot_green.." Normal enemy: "..CNumb("-", "n_minus_rgb").."{restore:%s}.\n"
 			..Dot_green.." "..CKWord("Chem Toxin", "Chem_Tox_rgb").."-infected enemy: "..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}.\n"
 			.."\n"
-			..CPhrs("Can_proc_mult")
-			.."\n"
-			..Dot_nc.." This Talent only works after "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").."'s active effect has ended.",
+			..CPhrs("Can_proc_mult"),
+			-- .."\n"
+			-- ..Dot_nc.." This Talent only works after "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").."'s active effect has ended.",
 		ru = "Убийство врага любой атакой сокращает оставшееся время восстановления "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".\n"
 			.."\n"
 			.."Сокращение восстановления за убийство врага:\n"
 			..Dot_green.." Обычный враг: "..CNumb("-", "n_minus_rgb").."{restore:%s}.\n"
 			..Dot_green.." Заражённый "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru")..": "..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}.\n"
 			.."\n"
-			..CPhrs("Can_proc_mult")
-			.."\n"
-			..Dot_nc.." Этот талант срабатывает только после окончания действия "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+			..CPhrs("Can_proc_mult"),
+			-- .."\n"
+			-- ..Dot_nc.." Этот талант срабатывает только после окончания действия "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
 	},
 	--[+ Passive 37 - Pocket Toxin +]--	30.12.2025
 	["loc_talent_broker_passive_blitz_inflicts_toxin_desc"] = { -- stacks: 3, +colors
