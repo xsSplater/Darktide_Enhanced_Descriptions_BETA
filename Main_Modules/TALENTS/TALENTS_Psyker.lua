@@ -612,7 +612,7 @@ local psyker_localizations = {
 		en = "Every second, Enemies within {radius:%s} meters have a chance of being "..CKWord("Marked", "Psy_Mark_rgb")..".\n"
 			.."\n"
 			.."On Killing a "..CKWord("Marked", "Psy_Mark_rgb").." Enemy:\n"
-			..Dot_green.." "..CNumb("10", "n_10_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored per second, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {move_speed_duration:%s} seconds,\n"
+			..Dot_green.." "..CNumb("10", "n_10_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored per second, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {move_speed_duration:%s} seconds,\n"
 			..Dot_green.." {move_speed:%s} Movement Speed is granted for {move_speed_duration:%s} seconds,\n"
 			..Dot_green.." "..CNumb("1", "n_1_rgb").." Stack of "..CKWord("Precision", "Precision_rgb").." is added for {bonus_duration} seconds.\n"
 			.."\n"
