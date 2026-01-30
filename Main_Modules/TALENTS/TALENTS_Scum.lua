@@ -67,12 +67,27 @@ local scum_localizations = {
 			..Dot_nc.." Max travel time: "..CNumb("1.5", "n_1_5_rgb").." seconds.\n"
 			.."\n"
 			..Dot_nc.." Projectile impact base "..CKWord("Damage", "Damage_rgb")..": "..CNumb("1800", "n_1800_rgb")..".\n"
-			..Dot_green.." Good armor "..CKWord("Damage", "Damage_rgb")..".\n"
+			..Dot_green.." Armor "..CKWord("Damage", "Damage_rgb").." modifiers:\n"
+			.."_______________________________\n"
+			.."Carapace                                         |      "..CNumb("1.1", "n_1_1_rgb").."\n"
+			.."Unarmoured, Flak, Void Shield    |        "..CNumb("1", "n_1_rgb").."\n"
+			.."Maniac                                             |    "..CNumb("0.9", "n_0_9_rgb").."\n"
+			.."Unyielding                                       |  "..CNumb("0.75", "n_0_75_rgb").."\n"
+			.."Infested                                            | "..CNumb("0.25", "n_0_25_rgb").."\n"
+			.."_______________________________\n"
 			..Dot_green.." Ignores Bulwark shield.\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
 			..Dot_green.." Explosion base "..CKWord("Damage", "Damage_rgb")..": ["..CNumb("2800", "n_2800_rgb").."-"..CNumb("1300", "n_1300_rgb").."].\n"
-			..Dot_green.." High armor "..CKWord("Damage", "Damage_rgb").." vs Flak, Carapace, Unyielding.\n"
+			..Dot_green.." Armor "..CKWord("Damage", "Damage_rgb").." modifiers:\n"
+			.."_______________________________\n"
+			.."Carapace                                         |    "..CNumb("2.4", "n_2_4_rgb").."\n"
+			.."Flak, Unyielding                             |        "..CNumb("2", "n_2_rgb").."\n"
+			.."Maniac                                             |   "..CNumb("1.35", "n_1_35_rgb").."\n"
+			.."Unarmoured                                   |   "..CNumb("1.25", "n_1_25_rgb").."\n"
+			.."Void Shield                                      |      "..CNumb("1.1", "n_1_1_rgb").."\n"
+			.."Infested                                            |  "..CNumb("0.75", "n_0_75_rgb").."\n"
+			.."_______________________________\n"
 			.."\n"
 			..Dot_green.." Very high "..CKWord("Stagger", "Stagger_rgb").." against all enemies except for Mutants and Twins/Captains without Void shield.\n"
 			..Dot_nc.." Replenishes all missiles per grenade pickup.",
@@ -83,12 +98,12 @@ local scum_localizations = {
 			..Dot_nc.." Максимальное время полёта: "..CNumb("1.5", "n_1_5_rgb").." секунды.\n"
 			.."\n"
 			..Dot_nc.." Базовый "..CKWord("урон", "uron_rgb_ru").." от попадания: "..CNumb("1800", "n_1800_rgb")..".\n"
-			..Dot_green.." Хороший "..CKWord("урон", "uron_rgb_ru").." по броне.\n"
+			-- ..Dot_green.." Хороший "..CKWord("урон", "uron_rgb_ru").." по броне.\n"
 			..Dot_green.." Игнорирует щит бастиона.\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
 			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru").." от взрыва: ["..CNumb("2800", "n_2800_rgb").."-"..CNumb("1300", "n_1300_rgb").."].\n"
-			..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." против несгибаемых, противоосколочной и панцирной брони.\n"
+			-- ..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." против несгибаемых, противоосколочной и панцирной брони.\n"
 			.."\n"
 			..Dot_green.." Очень высокое "..CKWord("ошеломление", "oshelomlenie_rgb_ru").." против всех врагов, кроме мутантов, близнецов и капитанов без пустотного щита.\n"
 			..Dot_nc.." Все заряды пополняются из подобранного ящика гранат.", -- Бабахер
@@ -675,7 +690,7 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Уменьшается до {damage_far:%s} к "..CKWord("урону", "uronu_rgb_ru").." на дистанции от {range_far:%s} метров и далее.", -- В харю
 	},
-	--[+ Passive 2 - Quick and Deadly +]--	30.12.2025
+	--[+ Passive 2 - Quick and Deadly +]--	30.01.2026
 	["loc_talent_broker_passive_close_range_damage_on_dodge_desc"] = { -- damage_near: +15%, duration: 3, +colors
 		en = "After a Successful Dodge you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {damage_near:%s} "..CKWord("Damage", "Damage_rgb").." against targets within "..CNumb("12.5", "n_12_5_rgb").." meters.\n"
@@ -684,8 +699,8 @@ local scum_localizations = {
 			.."Distance ("..CNumb("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
 			..CKWord("Damage", "Damage_rgb").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("15", "n_15_rgb").."|    "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."|   "..CKWord("~9", "n__9_rgb").."|   "..CKWord("~4", "n__4_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
-			.."\n"
-			..CPhrs("Can_proc_mult_str")
+			-- .."\n"
+			-- ..CPhrs("Can_proc_mult_str")
 			.."\n"
 			.."Procs on successfully Dodging:\n"
 			..Dot_nc.." Enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper),\n"
@@ -697,8 +712,8 @@ local scum_localizations = {
 			.."Дистанция ("..CNumb("м", "n_metr_rgb").."):  "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."|  "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
 			..CKWord("Урон", "Uron_rgb_ru").." ("..CNumb("%", "pc_rgb").."):          "..CNumb("15", "n_15_rgb").."|    "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."|  "..CKWord("~4", "n__4_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
-			.."\n"
-			..CPhrs("Can_proc_mult_str")
+			-- .."\n"
+			-- ..CPhrs("Can_proc_mult_str")
 			.."\n"
 			.."Срабатывает при успешном уклонении от:\n"
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
@@ -1020,8 +1035,12 @@ local scum_localizations = {
 	},
 	--[+ Passive 29 - Coated Weaponry +]--	30.12.2025
 	["loc_talent_broker_passive_melee_attacks_apply_toxin_desc"] = { -- stacks: 1, toxin: Chem Toxin, +colors
-		en = Dot_green.." {stacks:%s} Stack of "..CKWord("Chem Toxin", "Chem_Tox_rgb").." applied to enemies by Melee "..CKWord("Critical Strikes", "Crit_strikes_rgb")..".",
-		ru = Dot_green.." {stacks:%s} заряд "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru").." накладывается на врагов "..CKWord("критическими ударами", "krit_udarami_rgb_ru").." в ближнем бою.",
+		en = Dot_green.." {stacks:%s} Stack of "..CKWord("Chem Toxin", "Chem_Tox_rgb").." applied to enemies by Melee "..CKWord("Critical Strikes", "Crit_strikes_rgb")..".\n"
+			.."\n"
+			..CPhrs("Can_appl_thr_shldsb"),
+		ru = Dot_green.." {stacks:%s} заряд "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru").." накладывается на врагов "..CKWord("критическими ударами", "krit_udarami_rgb_ru").." в ближнем бою.\n"
+			.."\n"
+			..CPhrs("Can_appl_thr_shldsb"),
 	},
 	--[+ Passive 30 - Pickpocket +]--	30.12.2025
 	["loc_talent_broker_passive_low_ammo_regen_desc"] = { -- ammo_threshold: +20% -> 20%, +colors
@@ -1087,9 +1106,9 @@ local scum_localizations = {
 	["loc_talent_broker_passive_stimm_cd_on_kill_desc"] = { -- restore: 1%, restore_toxined: 2%, +colors
 		en = "Killing an enemy with any Attack reduces the remaining "..CKWord("Cooldown", "Cd_rgb").." of "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".\n"
 			.."\n"
-			.."Reduction amount:\n"
-			..Dot_green.." Normal enemy: "..CNumb("-", "n_minus_rgb").."{restore:%s}.\n"
-			..Dot_green.." "..CKWord("Chem Toxin", "Chem_Tox_rgb").."-infected enemy: "..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}.\n"
+			.."Reduction amount per kill:\n"
+			..Dot_green.." Any attack: "..CNumb("-", "n_minus_rgb").."{restore:%s}.\n"
+			..Dot_green.." "..CKWord("Chem Toxin", "Chem_Tox_rgb").." tick: "..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}.\n"
 			.."\n"
 			..CPhrs("Can_proc_mult"),
 			-- .."\n"
@@ -1097,8 +1116,8 @@ local scum_localizations = {
 		ru = "Убийство врага любой атакой сокращает оставшееся время восстановления "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".\n"
 			.."\n"
 			.."Сокращение восстановления за убийство врага:\n"
-			..Dot_green.." Обычный враг: "..CNumb("-", "n_minus_rgb").."{restore:%s}.\n"
-			..Dot_green.." Заражённый "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru")..": "..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}.\n"
+			..Dot_green.." Любой атакой: "..CNumb("-", "n_minus_rgb").."{restore:%s}.\n"
+			..Dot_green.." "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru")..": "..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}.\n"
 			.."\n"
 			..CPhrs("Can_proc_mult"),
 			-- .."\n"
