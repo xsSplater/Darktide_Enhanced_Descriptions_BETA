@@ -8,7 +8,7 @@ local InputUtils = require("scripts/managers/input/input_utils")
 local CONFIG = {
 	bleed_text_colour = {
 		krovotechenie =		"кровотечение",					-- Таланты
-		krovotecheniem =		"кровотечением",					-- Таланты
+		krovotecheniem =	"кровотечением",				-- Таланты
 		krovotechenia =		"кровотечения",					-- Таланты, Благословения
 	},
 	brittleness_text_colour = {
@@ -72,7 +72,7 @@ local CONFIG = {
 		krit_udar_uron =	"урон критического удара",		-- Таланты
 		krit_udara_uron =	"урону критического удара",		-- Таланты, Благословения
 
-		Krt_uron =			"Крит. урон",				-- Таланты
+		Krt_uron =			"Крит. урон",					-- Таланты
 		krit_uron =			"критический урон",				-- Таланты, Примечания внизу
 		krit_uronu =		"критическому урону",			-- Таланты, Благословения
 
@@ -355,9 +355,10 @@ local CONFIG = {
 		Desperady =			"Сорвиголовы",
 
 -- ИСКУПЛЕНИЯ
-		Base_tut_p =		"Базовое обучение",
+		Base_tut_p =		"Базовое руководство",
 		Curio_p =			"Реликвий",
 		Omnissia_p =		"Святилище Омниссии",
+		PthOTrst_p =		"Пути доверия",
 		Prologue_p =		"Пролог",
 		Sir_melk_p =		"Реквизиториум сира Мелка",
 
@@ -506,6 +507,7 @@ local function create_phrs_ru(colors_ru)
 
 	return {
 		Can_appl_thr_shlds =		Dot_green.." Накладывается через щиты.",
+		Can_appl_thr_shldsb =		Dot_green.." Накладывается через щит бастиона.",
 		Can_be_refr =				Dot_green.." Обновляется во время действия. ",
 		Can_be_refr_drop_1 =		Dot_green.." Заряды обновляются во время действия и сбрасываются по одному. ",
 		Can_proc_mult = 			Dot_green.." Может срабатывать несколько раз за удар при "..CKWord("рассечении", "rassechenii_rgb_ru").." нескольких врагов.\n",

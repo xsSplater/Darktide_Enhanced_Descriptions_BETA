@@ -7,6 +7,14 @@ local InputUtils = require("scripts/managers/input/input_utils")
 
 -- LOCALIZATION CONFIGURATION
 local LOCALIZATION_GROUPS = {
+	-- Groups
+	"general_settings_group",
+	"main_modules_group",
+	"language_group",
+
+	-- Language settings
+	"language_override",
+
 	-- Main modules
 	"enable_menus_file",
 	"enable_curious_file",
@@ -98,24 +106,22 @@ local function add_color_localizations(localizations)
 	end
 end
 
-
 local function add_localisation_entry(localizations, type_name)
-localizations[type_name .. "_text_colour"] = {
-	en = "Pick color",
-	ru = "Выберите цвет",
-	fr = "Couleur", 
-	["zh-tw"] = "顏色",
-	["zh-cn"] = "颜色",
-	de = "Farbe auswählen",
-	it = "Seleziona colore",
-	ja = "色を選択",
-	ko = "색상 선택",
-	pl = "Wybierz kolor",
-	["pt-br"] = "Escolher cor",
-	es = "Elegir color",
-}
+	localizations[type_name .. "_text_colour"] = {
+		en = "Pick color",
+		ru = "Выберите цвет",
+		fr = "Couleur", 
+		["zh-tw"] = "顏色",
+		["zh-cn"] = "颜色",
+		de = "Farbe auswählen",
+		it = "Seleziona colore",
+		ja = "色を選択",
+		ko = "색상 선택",
+		pl = "Wybierz kolor",
+		["pt-br"] = "Escolher cor",
+		es = "Elegir color",
+	}
 end
-
 
 local localizations = {
 	mod_name = {
@@ -133,7 +139,7 @@ local localizations = {
 	},
 	mod_description = {
 		en = "Improves readability by highlighting numbers and keywords in descriptions of Talents, Blessings, Penances, Curios, and other menu texts. Also fixes localizations and adds clarity to some descriptions.",
-		ru = "Улучшает читаемость за счёт выделения чисел и ключевых слов в описаниях Талантов, Благословений, Искуплений, Реликвий и других текстах меню. Также вносит исправления в локализации и добавляет ясности в некоторые описания.",
+		ru = "Enhanced Descriptions - Улучшает читаемость за счёт выделения чисел и ключевых слов в описаниях Талантов, Благословений, Искуплений, Реликвий и других текстах меню. Также вносит исправления в локализации и добавляет ясности в некоторые описания.",
 		fr = "Améliore la lisibilité en mettant en évidence les nombres et mots-clés dans les descriptions des Talents, Bénédictions, Pénitences, Curiosités et autres textes de menu. Corrige également les localisations et ajoute de la clarté à certaines descriptions.",
 		["zh-tw"] = "透過高亮顯示天賦、祝福、苦行、珍品及其他選單文字描述中的數值與效果，提升整體可讀性；同時修正翻譯問題，改善描述內容的清晰度與一致性。",
 		["zh-cn"] = "通过高亮显示天赋、祝福、苦修、珍品和其他菜单文本描述中的数字和关键词来提升可读性。同时修复本地化问题并为部分描述增加清晰度。",
@@ -147,6 +153,303 @@ local localizations = {
 	},
 
 -- MAIN MODULES
+	general_settings_group = {
+		en = "General settings",
+		ru = "Основные настройки",
+		fr = "Paramètres généraux",
+		["zh-tw"] = "一般設定",
+		["zh-cn"] = "常规设置",
+		de = "Allgemeine Einstellungen",
+		it = "Impostazioni generali",
+		ja = "一般設定",
+		ko = "일반 설정",
+		pl = "Ustawienia ogólne",
+		["pt-br"] = "Configurações gerais",
+		es = "Configuración general",
+	},
+
+	modules_group = {
+		en = "Modules",
+		ru = "Модули",
+		fr = "Modules",
+		["zh-tw"] = "模組",
+		["zh-cn"] = "模块",
+		de = "Module",
+		it = "Moduli",
+		ja = "モジュール",
+		ko = "모듈",
+		pl = "Moduły",
+		["pt-br"] = "Módulos",
+		es = "Módulos",
+	},
+
+	colors_group = {
+		en = "Color settings",
+		ru = "Настройки цветов",
+		fr = "Paramètres de couleur",
+		["zh-tw"] = "顏色設定",
+		["zh-cn"] = "颜色设置",
+		de = "Farbeinstellungen",
+		it = "Impostazioni colore",
+		ja = "カラー設定",
+		ko = "색상 설정",
+		pl = "Ustawienia kolorów",
+		["pt-br"] = "Configurações de cor",
+		es = "Configuración de color",
+	},
+
+	-- Language Override
+	language_group = {
+		en = "Language settings",
+		ru = "Настройки языка",
+		fr = "Paramètres de langue",
+		["zh-tw"] = "語言設定",
+		["zh-cn"] = "语言设置",
+		de = "Spracheinstellungen",
+		it = "Impostazioni lingua",
+		ja = "言語設定",
+		ko = "언어 설정",
+		pl = "Ustawienia języka",
+		["pt-br"] = "Configurações de idioma",
+		es = "Configuración de idioma",
+	},
+	language_override = {
+		en = "Language Override",
+		ru = "Переопределение языка",
+		fr = "Surcharge de langue",
+		["zh-tw"] = "語言覆寫",
+		["zh-cn"] = "语言覆盖",
+		de = "Sprach-Überschreibung",
+		it = "Sovrascrittura lingua",
+		ja = "言語オーバーライド",
+		ko = "언어 재정의",
+		pl = "Nadpisanie języka",
+		["pt-br"] = "Substituição de idioma",
+		es = "Anulación de idioma",
+	},
+	language_override_description = {
+		en = "Choose which language to use for Enhanced Descriptions\n" ..
+			 "• Auto: Use your game language\n" ..
+			 "• Manual: Force a specific language for all descriptions",
+		ru = "Выберите язык для улучшенных описаний\n" ..
+			 "• Авто: Использовать язык игры\n" ..
+			 "• Вручную: Принудительно использовать определенный язык для всех описаний",
+		fr = "Choisissez la langue à utiliser pour les descriptions améliorées\n" ..
+			 "• Auto : Utiliser la langue du jeu\n" ..
+			 "• Manuel : Forcer une langue spécifique pour toutes les descriptions",
+		["zh-tw"] = "選擇用於增強描述的語言\n" ..
+				   "• 自動：使用遊戲語言\n" ..
+				   "• 手動：強制所有描述使用特定語言",
+		["zh-cn"] = "选择用于增强描述的语言\n" ..
+				   "• 自动：使用游戏语言\n" ..
+				   "• 手动：强制所有描述使用特定语言",
+		de = "Wählen Sie die Sprache für erweiterte Beschreibungen\n" ..
+			 "• Auto: Spielsprache verwenden\n" ..
+			 "• Manuell: Bestimmte Sprache für alle Beschreibungen erzwingen",
+		it = "Scegli la lingua da utilizzare per le descrizioni migliorate\n" ..
+			 "• Auto: Usa la lingua di gioco\n" ..
+			 "• Manuale: Forza una lingua specifica per tutte le descrizioni",
+		ja = "拡張説明に使用する言語を選択\n" ..
+			 "• 自動：ゲームの言語を使用\n" ..
+			 "• 手動：すべての説明に特定の言語を強制",
+		ko = "향상된 설명에 사용할 언어 선택\n" ..
+			 "• 자동: 게임 언어 사용\n" ..
+			 "• 수동: 모든 설명에 특정 언어 강제 사용",
+		pl = "Wybierz język używany w rozszerzonych opisach\n" ..
+			 "• Auto: Użyj języka gry\n" ..
+			 "• Ręcznie: Wymuś konkretny język dla wszystkich opisów",
+		["pt-br"] = "Escolha o idioma para usar nas Descrições Aprimoradas\n" ..
+				   "• Auto: Usar o idioma do jogo\n" ..
+				   "• Manual: Forçar um idioma específico para todas as descrições",
+		es = "Elija el idioma para usar en las Descripciones Mejoradas\n" ..
+			 "• Auto: Usar el idioma del juego\n" ..
+			 "• Manual: Forzar un idioma específico para todas las descripciones",
+	},
+
+	-- Language options для dropdown
+	language_auto = {
+		en = "Auto (Game Language)",
+		ru = "Авто (Язык игры)",
+		fr = "Auto (Langue du jeu)",
+		["zh-tw"] = "自動（遊戲語言）",
+		["zh-cn"] = "自动（游戏语言）",
+		de = "Auto (Spielsprache)",
+		it = "Auto (Lingua di gioco)",
+		ja = "自動（ゲーム言語）",
+		ko = "자동 (게임 언어)",
+		pl = "Auto (Język gry)",
+		["pt-br"] = "Auto (Idioma do jogo)",
+		es = "Auto (Idioma del juego)",
+	},
+	language_en = {
+		en = "English",
+		ru = "Английский",
+		fr = "Anglais",
+		["zh-tw"] = "英文",
+		["zh-cn"] = "英语",
+		de = "Englisch",
+		it = "Inglese",
+		ja = "英語",
+		ko = "영어",
+		pl = "Angielski",
+		["pt-br"] = "Inglês",
+		es = "Inglés",
+	},
+	language_ru = {
+		en = "Russian",
+		ru = "Русский",
+		fr = "Russe",
+		["zh-tw"] = "俄文",
+		["zh-cn"] = "俄语",
+		de = "Russisch",
+		it = "Russo",
+		ja = "ロシア語",
+		ko = "러시아어",
+		pl = "Rosyjski",
+		["pt-br"] = "Russo",
+		es = "Ruso",
+	},
+	language_fr = {
+		en = "French",
+		ru = "Французский",
+		fr = "Français",
+		["zh-tw"] = "法文",
+		["zh-cn"] = "法语",
+		de = "Französisch",
+		it = "Francese",
+		ja = "フランス語",
+		ko = "프랑스어",
+		pl = "Francuski",
+		["pt-br"] = "Francês",
+		es = "Francés",
+	},
+	language_zh_tw = {
+		en = "Chinese Traditional",
+		ru = "Китайский (традиционный)",
+		fr = "Chinois traditionnel",
+		["zh-tw"] = "繁體中文",
+		["zh-cn"] = "繁体中文",
+		de = "Traditionelles Chinesisch",
+		it = "Cinese tradizionale",
+		ja = "繁体字中国語",
+		ko = "번체 중국어",
+		pl = "Chiński tradycyjny",
+		["pt-br"] = "Chinês tradicional",
+		es = "Chino tradicional",
+	},
+	language_zh_cn = {
+		en = "Chinese Simplified",
+		ru = "Китайский (упрощенный)",
+		fr = "Chinois simplifié",
+		["zh-tw"] = "簡體中文",
+		["zh-cn"] = "简体中文",
+		de = "Vereinfachtes Chinesisch",
+		it = "Cinese semplificato",
+		ja = "簡体字中国語",
+		ko = "간체 중국어",
+		pl = "Chiński uproszczony",
+		["pt-br"] = "Chinês simplificado",
+		es = "Chino simplificado",
+	},
+	language_de = {
+		en = "German",
+		ru = "Немецкий",
+		fr = "Allemand",
+		["zh-tw"] = "德文",
+		["zh-cn"] = "德语",
+		de = "Deutsch",
+		it = "Tedesco",
+		ja = "ドイツ語",
+		ko = "독일어",
+		pl = "Niemiecki",
+		["pt-br"] = "Alemão",
+		es = "Alemán",
+	},
+	language_it = {
+		en = "Italian",
+		ru = "Итальянский",
+		fr = "Italien",
+		["zh-tw"] = "義大利文",
+		["zh-cn"] = "意大利语",
+		de = "Italienisch",
+		it = "Italiano",
+		ja = "イタリア語",
+		ko = "이탈리아어",
+		pl = "Włoski",
+		["pt-br"] = "Italiano",
+		es = "Italiano",
+	},
+	language_ja = {
+		en = "Japanese",
+		ru = "Японский",
+		fr = "Japonais",
+		["zh-tw"] = "日文",
+		["zh-cn"] = "日语",
+		de = "Japanisch",
+		it = "Giapponese",
+		ja = "日本語",
+		ko = "일본어",
+		pl = "Japoński",
+		["pt-br"] = "Japonês",
+		es = "Japonés",
+	},
+	language_ko = {
+		en = "Korean",
+		ru = "Корейский",
+		fr = "Coréen",
+		["zh-tw"] = "韓文",
+		["zh-cn"] = "韩语",
+		de = "Koreanisch",
+		it = "Coreano",
+		ja = "韓国語",
+		ko = "한국어",
+		pl = "Koreański",
+		["pt-br"] = "Coreano",
+		es = "Coreano",
+	},
+	language_pl = {
+		en = "Polish",
+		ru = "Польский",
+		fr = "Polonais",
+		["zh-tw"] = "波蘭文",
+		["zh-cn"] = "波兰语",
+		de = "Polnisch",
+		it = "Polacco",
+		ja = "ポーランド語",
+		ko = "폴란드어",
+		pl = "Polski",
+		["pt-br"] = "Polonês",
+		es = "Polaco",
+	},
+	language_pt_br = {
+		en = "Portuguese (Brazil)",
+		ru = "Португальский (Бразилия)",
+		fr = "Portugais (Brésil)",
+		["zh-tw"] = "葡萄牙文 (巴西)",
+		["zh-cn"] = "葡萄牙语 (巴西)",
+		de = "Portugiesisch (Brasilien)",
+		it = "Portoghese (Brasile)",
+		ja = "ポルトガル語 (ブラジル)",
+		ko = "포르투갈어 (브라질)",
+		pl = "Portugalski (Brazylia)",
+		["pt-br"] = "Português (Brasil)",
+		es = "Portugués (Brasil)",
+	},
+	language_es = {
+		en = "Spanish",
+		ru = "Испанский",
+		fr = "Espagnol",
+		["zh-tw"] = "西班牙文",
+		["zh-cn"] = "西班牙语",
+		de = "Spanisch",
+		it = "Spagnolo",
+		ja = "スペイン語",
+		ko = "스페인어",
+		pl = "Hiszpański",
+		["pt-br"] = "Espanhol",
+		es = "Español",
+	},
+
 	enable_weapons_file = {
 		en = "\"Weapons\" module",
 		ru = "Модуль «Оружие»",

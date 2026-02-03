@@ -265,12 +265,13 @@ local CONFIG = {
 		Rangd_stnc =	"Ranged Stance",
 		Duty_honor =	"Duty and Honour",
 -- Ogryn
-		Att_Seeker =		"Attention Seeker",
+		Att_Seeker =	"Attention Seeker",
 
 -- PENANCES
 		Base_tut_p =	"Basic Training",
 		Curio_p =		"Curio",
 		Omnissia_p =	"Shrine of the Omnissiah",
+		PthOTrst_p =	"Path of Trust",
 		Prologue_p =	"Prologue",
 		Sir_melk_p =	"Sire Melk's Requisitorium",
 
@@ -413,6 +414,7 @@ local function create_phrs_en(colors_en)
 
 	return {
 	Can_appl_thr_shlds =		Dot_green.." Can be applied through shields.",
+	Can_appl_thr_shldsb =		Dot_green.." Can be applied through Bulwark shield.",
 	Can_be_refr =				Dot_green.." Can be refreshed during active duration. ",
 	Can_be_refr_drop_1 =		Dot_green.." Stacks can be refreshed during active duration, and are dropped one by one.",
 	Can_gen_mult =				Dot_green.." Can generate multiple Stacks per Swing.\n",

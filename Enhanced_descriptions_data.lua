@@ -16,6 +16,25 @@ local DEFAULT_SETTINGS = {
 	enable_names_tal_bless_file =	true,
 	enable_debug_mode =				false,
 
+	-- Language override
+	language_override =				"auto",
+}
+
+-- Добавляем список поддерживаемых языков для опций
+local SUPPORTED_LANGUAGES = {
+	{ value = "auto",			text = "language_auto" },
+	{ value = "en",				text = "language_en" },
+	{ value = "ru",				text = "language_ru" },
+	{ value = "fr",				text = "language_fr" },
+	{ value = "zh-tw",			text = "language_zh_tw" },
+	{ value = "zh-cn",			text = "language_zh_cn" },
+	{ value = "de",				text = "language_de" },
+	{ value = "it",				text = "language_it" },
+	{ value = "ja",				text = "language_ja" },
+	{ value = "ko",				text = "language_ko" },
+	{ value = "pl",				text = "language_pl" },
+	{ value = "pt-br",			text = "language_pt_br" },
+	{ value = "es",				text = "language_es" },
 }
 
 local COLOR_SETTINGS = {
@@ -102,7 +121,24 @@ local function create_checkbox_widget(setting_id, default_value)
 
 		change = function(new_value)
 			mod:set(setting_id, new_value)
-			-- The on_setting_changed handler in main file will handle the reload
+		end,
+		get = function()
+			return mod:get(setting_id)
+		end
+	}
+end
+
+local function create_dropdown_widget(setting_id, options, default_value)
+	return {
+		setting_id = setting_id,
+		type = "dropdown",
+		default_value = default_value,
+		options = options,
+		name = mod:localize(setting_id),
+		description = mod:localize(setting_id .. "_description"),
+		
+		change = function(new_value)
+			mod:set(setting_id, new_value)
 		end,
 		get = function()
 			return mod:get(setting_id)
@@ -123,9 +159,6 @@ local function get_color_options()
 	end)
 	return color_options
 end
-
--- Cache the color options since they don't change
-local color_options_cache = get_color_options()
 
 local function create_color_option_group(color_setting)
 	return {
@@ -152,6 +185,22 @@ local options = {
 	}
 }
 
+-- 1. Общие настройки группа
+local general_settings_group = {
+	setting_id = "general_settings_group",
+	type = "group",
+	sub_widgets = {
+		create_dropdown_widget("language_override", SUPPORTED_LANGUAGES, DEFAULT_SETTINGS.language_override)
+	}
+}
+
+-- 2. Модули группа
+local modules_group = {
+	setting_id = "modules_group",
+	type = "group",
+	sub_widgets = {}
+}
+
 -- Add main module checkboxes
 local main_modules = {
 	{ id = "enable_talents_file",			desc = "TALENTS Module" },
@@ -165,16 +214,28 @@ local main_modules = {
 }
 
 for _, module in ipairs(main_modules) do
-	table.insert(options.options.widgets, create_checkbox_widget(
+	table.insert(modules_group.sub_widgets, create_checkbox_widget(
 		module.id, 
 		DEFAULT_SETTINGS[module.id]
 	))
 end
 
+-- 3. Цвета группа
+local colors_group = {
+	setting_id = "colors_group",
+	type = "group",
+	sub_widgets = {}
+}
+
 -- Add color options
 for _, color_setting in ipairs(COLOR_SETTINGS) do
-	table.insert(options.options.widgets, create_color_option_group(color_setting))
+	table.insert(colors_group.sub_widgets, create_color_option_group(color_setting))
 end
+
+-- Добавляем все группы
+table.insert(options.options.widgets, general_settings_group)
+table.insert(options.options.widgets, modules_group)
+table.insert(options.options.widgets, colors_group)
 
 -- INITIALIZATION
 -- Ensure default settings are set

@@ -25,6 +25,27 @@ local function get_global_numbers()
 	return _global_numbers_cache
 end
 
+-- Функция для получения текущего языка
+local function get_current_language()
+	local colors_data = {}
+	
+	if mod and mod.get_current_language_colors then
+		local success, data = pcall(function()
+			return mod.get_current_language_colors()
+		end)
+		
+		if success and data then
+			colors_data = data
+		end
+	end
+	
+	if colors_data and #colors_data >= 3 then
+		return colors_data[3] or "en"
+	end
+	
+	return "en"
+end
+
 -- Умный CKWord - теперь понимает цифры и ключевые слова
 local function CKWord(fallback_text, key_or_table, maybe_key)
 	local color_table, key
@@ -122,26 +143,27 @@ local function loc_text(text)
 end
 
 -- ЧАСТО ПОВТОРЯЕМЫЕ ФРАЗЫ
-local function CPhrs(key, language)
+local function CPhrs(key)
 	local colors_data = get_global_colors()
+	local current_lang = get_current_language()
 
 	if not colors_data or not colors_data.phrs then
 		return ""
 	end
 
-	-- Если передан язык, используем его
-	if language and language ~= "en" then
-		local lang_key = key .. "_" .. language
+	-- Если не английский, ищем локализованную версию
+	if current_lang and current_lang ~= "en" then
+		local lang_key = key .. "_" .. current_lang
 		if colors_data.phrs[lang_key] then
 			return colors_data.phrs[lang_key]
 		end
 
-		-- Специальные случаи
-		if language == "zh-cn" then
+		-- Специальные случаи для языков с дефисом
+		if current_lang == "zh-cn" then
 			lang_key = key .. "_zh_cn"
-		elseif language == "zh-tw" then
+		elseif current_lang == "zh-tw" then
 			lang_key = key .. "_tw"
-		elseif language == "pt-br" then
+		elseif current_lang == "pt-br" then
 			lang_key = key .. "_pt_br"
 		end
 
@@ -150,28 +172,30 @@ local function CPhrs(key, language)
 		end
 	end
 
+	-- Fallback на английский
 	return colors_data.phrs[key] or ""
 end
 
 -- ЗАМЕТКИ
-local function CNote(key, language)
+local function CNote(key)
 	local colors_data = get_global_colors()
+	local current_lang = get_current_language()
 
 	if not colors_data or not colors_data.nts then
 		return ""
 	end
-	-- Добавляем _ и ключ локализации _en, _ru, etc
-	if language and language ~= "en" then
-		local lang_key = key .. "_" .. language
+	
+	if current_lang and current_lang ~= "en" then
+		local lang_key = key .. "_" .. current_lang
 		if colors_data.nts[lang_key] then
 			return colors_data.nts[lang_key]
 		end
-		-- Локализации с дефисом
-		if language == "zh-cn" then
+		
+		if current_lang == "zh-cn" then
 			lang_key = key .. "_zh_cn"
-		elseif language == "zh-tw" then
+		elseif current_lang == "zh-tw" then
 			lang_key = key .. "_tw"
-		elseif language == "pt-br" then
+		elseif current_lang == "pt-br" then
 			lang_key = key .. "_pt_br"
 		end
 
@@ -197,6 +221,7 @@ local DOT_GREEN = "{#color(35, 255, 5)}•{#reset()}"
 -- Экспортируемый объект
 local Utils = {
 	clear_global_cache = clear_global_cache,
+	get_current_language = get_current_language,
 	get_number_color = get_number_color,
 	create_template = create_template,
 	get_colors = get_colors,
