@@ -138,8 +138,8 @@ local scum_localizations = {
 		ru = "Вы бросаете контейнер, который разбивается и разливает "..CKWord("Хим-токсин", "Chem_Tox_rgb_ru").." по области при взрыве.\n"
 			.."\n"
 			..Dot_nc.." Максимум гранат: {max_charges:%s}.\n"
-			..Dot_nc.." Время до взрыва: "..CNumb("5", "n_5_rgb").." секунд, "..CNumb("1.5", "n_1_5_rgb").." секунды при попадании во врага.\n"
-			..Dot_nc.." Первоначальный радиус взрыва: "..CNumb("4", "n_4_rgb").." метра.\n"
+			..Dot_nc.." Время до взрыва: "..CNumb("5", "n_5_rgb").." секунд.\n"
+			-- ..Dot_nc.." Первоначальный радиус взрыва: "..CNumb("4", "n_4_rgb").." метра.\n"
 			..Dot_nc.." Токсичная область: "..CNumb("10", "n_10_rgb").." метров.\n"
 			..Dot_nc.." Длится: "..CNumb("15", "n_15_rgb").." секунд.\n"
 			..Dot_nc.." Все гранаты пополняются из подобранного ящика гранат.\n"
@@ -356,7 +356,7 @@ local scum_localizations = {
 			..Dot_green.." {rending:%s} "..CKWord("Rending", "Rending_rgb")..".\n"
 			.."\n"
 			..CNote("Rend_note"),
-		ru = "Пока активен {punk_rage:%s} тяжёлые атаки получают:\n"
+		ru = "Пока активно {punk_rage:%s} тяжёлые атаки получают:\n"
 			..Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони.\n"
 			.."\n"
 			..CNote("Rend_note"),
@@ -366,7 +366,7 @@ local scum_localizations = {
 		en = Dot_green.." Melee Strikes against Elites, Specials, Monstrosities extend the duration of {punk_rage:%s} from "..CNumb("0.3", "n_0_3_rgb").." to {rage_duration_extend_elites:%s} second.\n"
 			.."\n"
 			..Dot_green.." Additionally, the time before extending becomes diminished is now {rage_duration_max_upgrade:%s} seconds.",
-		ru = Dot_green.." Удары в ближнем бою по элитным врагам, специалистам и чудовищам продлевают время действия {punk_rage:%s} с "..CNumb("0.3", "n_0_3_rgb").." до {rage_duration_extend_elites:%s} секунды.\n"
+		ru = Dot_green.." Удары в ближнем бою по элитным врагам, специалистам и чудовищам продлевают время действия способности {punk_rage:%s} с "..CNumb("0.3", "n_0_3_rgb").." до {rage_duration_extend_elites:%s} секунды.\n"
 			.."\n"
 			..Dot_green.." Дополнительно, ослабление эффекта продления времени за удары в ближнем бою увеличивается до {rage_duration_max_upgrade:%s} секунд.",
 	},
@@ -383,7 +383,7 @@ local scum_localizations = {
 			.."The "..CKWord("Shout", "Shout_rgb").." repeats when {punk_rage:%s} ends.\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Scm_eff"),
-		ru = "Усиливает способность {punk_rage:%s}, заставляя его издавать "..CKWord("Крик", "Shout_rgb_ru").." при активации.\n"
+		ru = "Усиливает способность {punk_rage:%s}, заставляя вас издавать "..CKWord("Крик", "Shout_rgb_ru").." при активации.\n"
 			..Dot_nc.." Радиус: "..CNumb("4.5", "n_4_5_rgb").." метра.\n"
 			..Dot_nc.." Длится: {duration:%s} секунд.\n"
 			.."\n"
@@ -391,7 +391,7 @@ local scum_localizations = {
 			..Dot_green.." {attack_speed_reduction:%s} к времени между их атаками.\n"
 			..Dot_green.." Наносит "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..".\n"
 			.."\n"
-			.."Этот "..CKWord("Крик", "Shout_rgb_ru").." повторяется после окончания действия {punk_rage:%s}.\n"
+			.."Этот "..CKWord("Крик", "Shout_rgb_ru").." повторяется после окончания действия способности {punk_rage:%s}\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Scm_eff"),
 	},
@@ -403,14 +403,14 @@ local scum_localizations = {
 			.."Every second while {punk_rage:%s} is active grants Stacks, up to {max_stacks:%s}.\n"
 			.."\n"
 			.."Per stack, you gain:\n"
-			..Dot_green.." {melee_power:%s} Melee "..CKWord("Strength", "Strength_rgb")..", up to "..CNumb("25%", "pc_25_rgb")..".",
-		ru = "Пока активен {punk_rage:%s} вы получаете:\n"
+			..Dot_green.." {melee_power:%s} Melee "..CKWord("Strength", "Strength_rgb")..", up to "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb")..".",
+		ru = "Пока активно {punk_rage:%s} вы получаете:\n"
 			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." врагов.\n"
 			.."\n"
-			.."Каждую секунду, пока активен {punk_rage:%s}, даются заряды, до {max_stacks:%s}.\n"
+			.."Каждую секунду, пока активно {punk_rage:%s}, вам даются заряды, вплоть до {max_stacks:%s}.\n"
 			.."\n"
 			.."За каждый заряд вы получаете:\n"
-			..Dot_green.." {melee_power:%s} к "..CKWord("силе", "sile_rgb_ru").." атак ближнего боя, до "..CNumb("25%", "pc_25_rgb")..".",
+			..Dot_green.." {melee_power:%s} к "..CKWord("силе", "sile_rgb_ru").." атак ближнего боя, вплоть до "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb")..".",
 	},
 	--[+ ABILITY 3 - Stimm Supply +]--	30.12.2025
 	["loc_talent_broker_ability_stimm_field_desc_3"] = { -- duration: 20, total_corruption_heal: 40, stimm_field: Stimm Supply, cooldown: 60, s->seconds, +colors
