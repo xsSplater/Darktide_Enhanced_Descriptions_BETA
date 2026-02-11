@@ -184,15 +184,15 @@ local menus_templates = {
 --[+ +HADRON - 欧姆尼塞亚神龛+ +]--
 	--[+ Max Rarity reached! +]
 	["loc_crafting_error_no_consecrate"] = {
-		en = "Max Rarity reached!",
-		-- ru = "Достигнут максимум редкости!",
+		-- en = "Max Rarity reached!",
+		ru = "Достигнут максимум редкости!",
 		["zh-tw"] = "以聖化至最高稀有度!", -- 已達最高稀有度。
 		-- ["zh-cn"] = "已达到最高稀有度。",
 	},
 	--[+ Max Power reached! +]--
 	["loc_crafting_error_max_power"] = {
-		en = "Max Power reached!",
-		-- ru = "Достигнут максимум силы!",
+		-- en = "Max Power reached!",
+		ru = "Достигнут максимум силы!",
 		["zh-tw"] = "以強化至最高等級!",  -- 已達最高升級級別。
 		["zh-cn"] = "已达到最高等级。",
 	},

@@ -5,7 +5,7 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_buff_cooldown_on_melee_kills"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_buff_toughness_during_stimm"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
 
 -- Кэш утилит
@@ -257,7 +257,7 @@ local FIXES = {
 
 	--[+ HIVE SCUM - ОТРЕБЬЕ УЛЬЯ +]--
 		--[+ ABILITY 2 - Rampage! +]--
-		loc_talent_broker_ability_punk_rage_desc_2 = {
+		loc_talent_broker_ability_punk_rage_desc_3 = {
 			damage_taken =						MFF.fixes.all_plus
 		},
 		--[+ KEYSTONE 3 - Chemical Dependency +]--
@@ -288,6 +288,14 @@ local FIXES = {
 		--[+ Passive 42 - Toxic Renewal +]--
 		loc_talent_broker_toughness_on_toxined_kill_desc = {
 			toughness =							MFF.fixes.all_plus
+		},
+		--[+ Barrage I-IV / Tank +]--
+		loc_talent_stat_damage_taken_multiplier = {
+			damage_taken_multiplier =			MFF.fixes.all_plus
+		},
+		--[+ Regain +]--
+		loc_talent_buff_toughness_during_stimm = {
+			toughness_amount =					MFF.fixes.all_plus
 		},
 }
 

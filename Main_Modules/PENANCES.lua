@@ -2439,25 +2439,24 @@ local penances_localizations = {
 			-- loc_text("在『"..CKWord("", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bburst0_rgb_tw").."』或『"..CKWord("", "bburst1_rgb_tw").."』，\n對巨獸造成不少於 "..CNumb("50%", "pc_50_rgb").." 的生命值傷害，並將其擊殺。")),
 
 	-- --[+ Perilous Focus +]-- руоф Пагубная концентрация
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_ru",
-		-- {"loc_achievement_psyker_kills_during_overcharge_stance_name"}, {"ru"},
-			-- loc_text("Угрожающая концентрация")),
-	-- --[+ Traditional Chinese 險惡聚焦 +]--
-	-- create_template("ach_class_psy_7_ext_tw",
-		-- {"loc_achievement_psyker_kills_during_overcharge_stance_name"}, {"zh-tw"},
-			-- loc_text("險惡聚焦")),
+	-- ["loc_achievement_psyker_kills_during_overcharge_stance_name"] = {
+		-- en = "Perilous Focus",
+		-- ru = "Угрожающая концентрация",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+	-- },
+	["loc_achievement_psyker_kills_during_overcharge_stance_description"] = {
+		en = "Kill "..CNumb("{target}", "target_rgb").." enemies under the effects of a single "..CKWord("Scrier's Gaze", "Scriers_gaze_rgb").." activation.",
+		ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под эффектом способности "..CKWord("", "Scriers_gaze_rgb_ru")..", в течение однократного её применения.", -- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
+		-- fr = "",
+		-- ["zh-tw"] = "單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "scriersgaze_rgb_tw").."』期間，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。", -- 於同一次賽爾凝視效果期間，擊殺40名敵人。
+		-- ["zh-cn"] = "",
+	},
 
-	-- --[+ Kill 40 enemies under the effects of a single Scrier's Gaze activation. +]-- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
-	-- --[+ Russian +]--
-	-- create_template("ach_class_psy_7_ext_desc_ru",
 		-- {"loc_achievement_psyker_kills_during_overcharge_stance_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под эффектом способности "..CKWord("", "scriersgaze_rgb_ru")..", в течение однократного её применения.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 於同一次賽爾凝視效果期間，擊殺40名敵人。
-	-- create_template("ach_class_psy_7_ext_desc_tw",
-		-- {"loc_achievement_psyker_kills_during_overcharge_stance_description"}, {"zh-tw"},
-			-- loc_text("單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "scriersgaze_rgb_tw").."』期間，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
+			-- loc_text("")),
+
 
 	-- --[+ Overwhelming Presence +]-- руоф Подавляющее присутствие
 	-- --[+ Russian +]--

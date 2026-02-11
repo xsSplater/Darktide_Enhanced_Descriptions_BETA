@@ -285,7 +285,7 @@ local CONFIG = {
 			Focus =				"Концентрации",
 			Forceful =			"Неудержимости",
 
-			Shout =				"Крик",						-- Hive Scum
+			Shout =				"Крик",						-- Отребье
 		},
 		focust_text_colour = {
 			Focus_Target =		"Важной цели",
@@ -299,7 +299,7 @@ local CONFIG = {
 
 			Meleejust =			"Судьи-рукопашника",		-- Арбитрес
 
-			Exhausted =			"Истощение",				-- Hive Scum
+			Exhausted =			"Истощение",				-- Отребье
 		},
 		rangedspec_text_colour = {
 			Rangedspec =		"Специалиста-стрелка",
@@ -534,7 +534,7 @@ local function create_phrs_ru(colors_ru)
 -- Огрин
 		Doesnt_Stack_Ogr_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
 		Doesnt_Stack_Ogr_abil =		Dot_red.." Не суммируется с эффектом такого же таланта другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
--- Hive Scum
+-- Отребье
 		Doesnt_Stack_Scm_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Отребья Улья", "cls_scma_rgb_ru")..".",
 		Doesnt_Stack_Scm_eff =		Dot_red.." Не суммируется с таким же ослаблением от другого "..CKWord("Отребья Улья", "cls_scma_rgb_ru")..".",
 	}
