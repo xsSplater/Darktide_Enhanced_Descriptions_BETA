@@ -723,7 +723,7 @@ local arbites_localizations = {
 		en = "Your first Melee strike against a target also applies:\n"
 			..Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." and\n"
 			..Dot_green.." {impact:%s} "..CKWord("Impact", "Impact_rgb")..".",
-		ru = "Первый удар ближнего боя по цели также приняет к ней дополнительно:\n"
+		ru = "Первый удар ближнего боя по цели также применяет к ней дополнительно:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя и\n"
 			..Dot_green.." {impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..".", -- Кулак Императора
 	},

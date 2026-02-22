@@ -100,7 +100,7 @@ local zealot_localizations = {
 			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru")..": "..CNumb("585", "n_585_rgb")..".\n"
 			..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." заражённым и маньякам.\n"
 			..Dot_green.." Может "..CKWord("пробить", "probit_rgb_ru").." "..CNumb("1", "n_1_rgb").." ворчуна, ходока, охотника или скаба-стрелка.\n"
-			..Dot_red.." Не наносит "..CKWord("урон", "uron_rgb_ru").." врагам в панцирной броне, если попадает не попадает в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n"
+			..Dot_red.." Не наносит "..CKWord("урон", "uron_rgb_ru").." врагам в панцирной броне, если попадает не в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n"
 			.."\n"
 			..Dot_nc.." Пополнение ножей:\n"
 			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." - за убийство элитного врага или специалиста в ближнем бою.\n"
@@ -532,7 +532,7 @@ local zealot_localizations = {
 	--[+ KEYSTONE 1-4 - Invocation of Death +]--	13.12.2025
 	["loc_talent_maniac_cooldown_on_melee_crits_buff_desc"] = { -- cooldown_regen: +100%, duration: 3, +colors
 		en = Dot_green.." {cooldown_regen:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration for {duration:%s} seconds on Melee "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
-		ru = Dot_green.." {cooldown_regen:%s} к скорости восстановления "..CKWord("боевой способности", "boeva_sposobnost_rgb_ru").." на {duration:%s} секунды при "..CKWord("критических ударах", "krit_udary_rgb_ru").." в ближнем бою.", -- 
+		ru = Dot_green.." {cooldown_regen:%s} к скорости восстановления "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." на {duration:%s} секунды при "..CKWord("критических ударах", "krit_udarah_rgb_ru").." в ближнем бою.", -- 
 	},
 	--[+ KEYSTONE 2 - Martyrdom +]--	13.12.2025
 	["loc_talent_zealot_martyrdom_desc"] = { -- damage: +10%, max_wounds: 5, +colors
