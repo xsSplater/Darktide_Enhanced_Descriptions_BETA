@@ -1,5 +1,5 @@
 ---@diagnostic disable: undefined-global
--- ARBITRES TALENT MODULE -- МОДУЛЬ ТАЛАНТОВ АРБИТРЕС
+-- ARBITES TALENT MODULE -- МОДУЛЬ ТАЛАНТОВ АРБИТРЕС
 
 local mod = get_mod("Enhanced_descriptions")
 local Utils = mod.get_utils()
@@ -14,11 +14,11 @@ local Dot_nc = Utils.DOT_NC or "•"
 local Dot_red = Utils.DOT_RED or "•"
 local Dot_green = Utils.DOT_GREEN or "•"
 
--- LOCALIZATION OF ARBITRESS TALENTS -- ЛОКАЛИЗАЦИИ ТАЛАНТОВ АРБИТРЕС
+-- LOCALIZATION OF ARBITES TALENTS -- ЛОКАЛИЗАЦИИ ТАЛАНТОВ АРБИТРЕС
 local arbites_localizations = {
 --[+ ++ARBITES - АРБИТЕС++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
-	--[+ BLITZ 0 - Arbites Grenade +]--	21.03.2026
+	--[+ BLITZ 0 - Arbites Grenade +]--	26.03.2026
 	["loc_talent_ability_adamant_grenade_description"] = { -- charges: 4, +colors
 		en = "Throw an "..CKWord("Arbites Grenade", "Arbites_gren_rgb").." that explodes after a short delay.\n"
 			..Dot_nc.." {charges:%s} Max Grenades.\n"
@@ -37,7 +37,7 @@ local arbites_localizations = {
 			..Dot_nc.." Средний "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
 	},
-	--[+ BLITZ 1 - Remote Detonation +]--	21.03.2026
+	--[+ BLITZ 1 - Remote Detonation +]--	26.03.2026
 	["loc_talent_ability_detonate_description"] = { -- max_charges: 3, cooldown: 50, s->seconds, +colors
 		en = "Cause an Explosion at your Cyber-Mastiff's Location. "..CKWord("Staggering", "Staggering_rgb").." and "..CKWord("Electrocuting", "Electrcuting_rgb").." nearby Enemies.\n"
 			..Dot_nc.." {max_charges:%s} Charges.\n"
@@ -64,14 +64,14 @@ local arbites_localizations = {
 			.."\n"
 			..Dot_red.." Арбитратор не может подбирать гранаты.", -- Дистанционный подрыв
 	},
-	--[+ BLITZ 2 - Voltaic Shock Mine +]--	21.03.2026
+	--[+ BLITZ 2 - Voltaic Shock Mine +]--	26.03.2026
 	["loc_talent_ability_shock_mine_description"] = { -- talent_name: Voltaic Shock Min, duration: 15, range: 3, s->seconds, m->meters, +colors
 		en = "Throw a {talent_name:%s} that activates as it lands.\n"
 			.."For {duration:%s} seconds it will "..CKWord("Electrocute", "Electrocute_rgb").." all enemies within {range:%s} meters.",
 		ru = "Вы бросаете "..CKWord("Вольтаическую шоковую мину", "Electro_mine_rgb_ru")..", которая активируется при приземлении.\n"
 			.."В течение {duration:%s} секунд она будет поражать "..CKWord("электрошоком", "elektroshokom_rgb_ru").." всех врагов в радиусе {range:%s} метров.", -- Вольтаическая шоковая мина
 	},
-	--[+ BLITZ 3 - Arbites Grenade +]--	21.03.2026
+	--[+ BLITZ 3 - Arbites Grenade +]--	26.03.2026
 	["loc_talent_ability_adamant_grenade_improved_description"] = { -- talent_name: Arbites Grenade, charges: 4
 		en = "Throw an {talent_name:%s} that explodes after a short delay.\n"
 			..Dot_nc.." {charges:%s} Max Grenades.\n"
@@ -81,12 +81,12 @@ local arbites_localizations = {
 			..Dot_green.." Это улучшенная версия таланта {talent_name:%s}.",  -- Граната арбитрес -- руоф Граната Арбитрес
 	},
 --[+ +AURA - АУРА+ +]--
-	--[+ AURA 0 - Part of the Squad +]--	21.03.2026
+	--[+ AURA 0 - Part of the Squad +]--	26.03.2026
 	["loc_talent_adamant_companion_coherency_desc"] = { 
 		en = "Your Cyber-Mastiff counts towards unit "..CKWord("Coherency", "Coherency_rgb")..".",
 		ru = "Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Часть отряда
 	},
-	--[+ AURA 1 - Part of the Squad +]--	21.03.2026
+	--[+ AURA 1 - Part of the Squad +]--	26.03.2026
 	["loc_talent_adamant_companion_coherency_alt_desc"] = { -- tdr: +7.5%, +colors
 		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
@@ -95,18 +95,18 @@ local arbites_localizations = {
 			.."\n"
 			.."Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Часть отряда
 	},
-	--[+ AURA 2 - Ruthless Efficiency +]--	21.03.2026
+	--[+ AURA 2 - Ruthless Efficiency +]--	26.03.2026
 	["loc_talent_adamant_reload_speed_aura_desc"] = { -- reload_speed: +7.5%, +colors
 		en = Dot_green.." {reload_speed:%s} Reload Speed for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
 		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Беспощадная эффективность -- руоф Беспощадная сила
 	},
-	--[+ AURA 3 - Breaking Dissent +]--	21.03.2026
+	--[+ AURA 3 - Breaking Dissent +]--	26.03.2026
 	["loc_talent_adamant_damage_vs_staggered_aura_alt_desc"] = { -- damage_vs_stagger: +10%, +colors
 		en = Dot_green.." {damage_vs_stagger:%s} "..CKWord("Damage", "Damage_rgb").." vs "..CKWord("Staggered", "Staggered_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
 		ru = Dot_green.." {damage_vs_stagger:%s} к "..CKWord("урону", "uronu_rgb_ru").." по "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." врагам для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Подавление инакомыслия -- руоф Преодоление разногласий
 	},
 --[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
-	--[+ ABILITY 0 - Nuncio-Aquila +]--	21.03.2026
+	--[+ ABILITY 0 - Nuncio-Aquila +]--	26.03.2026
 	["loc_talent_adamant_ability_nuncio_base_desc"] = { -- range: 7.5, toughness: 5%, damage_taken: +15%, duration: 20, cooldown: 60, m->meters, s->seconds, +colors
 		en = "Deploy a {talent_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n"
 			.."\n"
@@ -129,7 +129,7 @@ local arbites_localizations = {
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
 			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.", -- Нунцио-аквила
 	},
-	--[+ ABILITY 1 - Castigator's Stance +]--	21.03.2026
+	--[+ ABILITY 1 - Castigator's Stance +]--	26.03.2026
 	["loc_talent_adamant_stance_ability_power_description"] = { -- talent_name: Castigator's Stance, duration: 10, strength: +20%, movement_speed: +15%, damage_taken: +70%, movement_reduction: 100%, cooldown: 50, s->seconds, +colors
 		en = "Enter the {talent_name:%s} for {duration:%s} seconds, during which you have:\n"
 			..Dot_green.." {strength:%s} "..CKWord("Strength", "Strength_rgb")..",\n"
@@ -150,7 +150,7 @@ local arbites_localizations = {
 			.."\n"
 			..Dot_nc.." Базовое восстановление: {cooldown:%s} секунд.", -- Стойка карателя -- руоф Стойка бичевателя
 	},
-	--[+ ABILITY 1-1 - Blessed Armament +]--	21.03.2026
+	--[+ ABILITY 1-1 - Blessed Armament +]--	26.03.2026
 	["loc_talent_adamant_stance_ranged_kills_transfer_ammo_no_cd_desc"] = { -- stance_name: Castigator's Stance, ammo: 10%, s->seconds
 		en = "During {stance_name:%s}, Ranged Kills replenish:\n"
 			..Dot_green.." Up to {ammo:%s} of the total Ammo in your Clip from Reserve.\n"
@@ -161,7 +161,7 @@ local arbites_localizations = {
 			..Dot_green.." Округляется в большую сторону.\n"
 			..Dot_nc.." Срабатывает раз за атаку.", -- Благословенное вооружение -- руоф Благословенное орудие
 	},
-	--[+ ABILITY 1-2 - Writ of Execution +]--	21.03.2026
+	--[+ ABILITY 1-2 - Writ of Execution +]--	26.03.2026
 	["loc_talent_adamant_stance_elite_kills_stack_damage_desc"] = { -- stance_name: Castigator's Stance, damage: +7.5%, duration: 12, stacks: 6, s->seconds, +colors
 		en = "During {stance_name:%s}, each Elite or Specialist Kill grants:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
@@ -172,14 +172,14 @@ local arbites_localizations = {
 			..Dot_nc.." Максимум {stacks:%s} зарядов.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.", -- Ордер на казнь
 	},
-	--[+ ABILITY 1-3 - Bloodlust +]--	21.03.2026
+	--[+ ABILITY 1-3 - Bloodlust +]--	26.03.2026
 	["loc_talent_adamant_stance_bloodlust_desc"] = { -- stance_name: Castigator's Stance, damage: +75%, +colors
 		en = "During {stance_name:%s} your Cyber-Mastiff has:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".",
 		ru = "Во время действия таланта {stance_name:%s} ваш кибермастиф получает:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".", -- Жажда крови
 	},
-	--[+ ABILITY 2 - Nuncio-Aquila +]--	21.03.2026
+	--[+ ABILITY 2 - Nuncio-Aquila +]--	26.03.2026
 	["loc_talent_ability_area_buff_drone_improved_description"] = { -- range: 7.5, toughness: 7.5%, suppression: +30%, impact: +30%, recoil: -25%, damage_taken: +15%, duration: 20, cooldown: 60, nuncio_name: Nuncio-Aquila, m->meters, s->seconds, +colors
 		en = "Deploy a {nuncio_name:%s} in a target direction that buffs Allies and debuffs Enemies within {range:%s} meters.\n"
 			.."\n"
@@ -216,7 +216,7 @@ local arbites_localizations = {
 			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
 			..Dot_green.." Это улучшенная версия способности {nuncio_name:%s}.", -- Нунцио-аквила
 	},
-	--[+ ABILITY 2-1 - Inspiring Recitation +]--	21.03.2026
+	--[+ ABILITY 2-1 - Inspiring Recitation +]--	26.03.2026
 	["loc_talent_adamant_drone_buff_talent_alt_desc"] = { -- tdr: 30%, revive_speed: 30%, attack_speed: 10%, +colors
 		en ="Affected Allies also gain:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..",\n"
@@ -227,7 +227,7 @@ local arbites_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{revive_speed:%s} к скорости оживления и\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed:%s} к скорости атаки.", -- Воодушевляющая проповедь -- руоф Вдохновляющая декламация
 	},
-	--[+ ABILITY 2-2 - Fear of Justice +]--	21.03.2026
+	--[+ ABILITY 2-2 - Fear of Justice +]--	26.03.2026
 	["loc_talent_adamant_drone_debuff_talent_desc"] = { -- damage_reduction: 25%, attack_speed_reduction: 50%, +colors
 		en = "Affected enemies also gain debuffs to their Melee Attacks:\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
@@ -236,7 +236,7 @@ local arbites_localizations = {
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} к "..CKWord("урону", "uronu_rgb_ru")..",\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed_reduction:%s} к увеличению времени между атаками.", -- Страх перед Правосудием -- руоф Страх правосудия
 	},
-	--[+ ABILITY 3 - Break the Line +]--	21.03.2026
+	--[+ ABILITY 3 - Break the Line +]--	26.03.2026
 	["loc_ability_adamant_charge_blocking_desc"] = { -- damage: +25%, stagger: +50%, duration: 6, cooldown: 20, s->seconds, +colors
 		en = "Charge forward and Bash, causing high "..CKWord("Stagger", "Stagger_rgb").." to enemies in front of you, and gain for {duration:%s} seconds:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
@@ -251,7 +251,7 @@ local arbites_localizations = {
 			..Dot_green.." Во время рывка вы находитесь в состоянии блокирования.\n"
 			..Dot_nc.." Базовое восстановление: {cooldown:%s} секунд.", -- Прорыв строя -- руоф Прорыв фронта
 	},
-	--[+ ABILITY 3-1 - Commendation from Condemnation +]--	21.03.2026
+	--[+ ABILITY 3-1 - Commendation from Condemnation +]--	26.03.2026
 	["loc_talent_adamant_charge_toughness_alt_description"] = { -- toughness: 20%, stamina: 15%, toughness_max: 100%, stamina_max: 75%, +colors
 		en = "For each Elite, Specialist, or Monstrosity hit you replenish:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." and\n"
@@ -262,7 +262,7 @@ local arbites_localizations = {
 			..Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".\n"
 			.."Вплоть до {toughness_max:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." и {stamina_max:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- Похвала за осуждение -- руоф Не наказали - значит, похвалили???
 	},
-	--[+ ABILITY 3-2 - Targeted Brutality +]--	21.03.2026
+	--[+ ABILITY 3-2 - Targeted Brutality +]--	26.03.2026
 	["loc_talent_adamant_charge_cooldown_alt_description"] = { -- cooldown: 0.5, cooldown_elite: 1, max_cooldown: 5, s->seconds, +colors
 		en = "At charge end, reduce "..CKWord("Cooldown", "Cd_rgb").." of your "..CKWord("Break the Line", "BreakZLine_rgb").." per hit during charge:\n"
 			..Dot_green.." {cooldown_elite:%s} second per Elite/Specialist/Monstrosity,\n"
@@ -273,14 +273,14 @@ local arbites_localizations = {
 			..Dot_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"
 			..Dot_nc.." Максимум {max_cooldown:%s} секунд за рывок.",
 	},
-	--[+ ABILITY 3-3 - Kill Order +]--	21.03.2026
+	--[+ ABILITY 3-3 - Kill Order +]--	26.03.2026
 	["loc_talent_adamant_dog_damage_after_ability_desc"] = { -- companion_damage: +50%, duration: 12, s->seconds, +colors
 		en = "After using your "..CKWord("Combat Ability", "Cmbt_abil_rgb").." your Cyber-Mastiff gain for {duration:%s} seconds:\n"
 			..Dot_green.." {companion_damage:%s} "..CKWord("Damage", "Damage_rgb")..".",
 		ru = "После использования вашей "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." ваш кибермастиф получает на {duration:%s} секунд:\n"
 			..Dot_green.." {companion_damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".", -- Фас! -- руоф Приказ убивать
 	},
-	--[+ ABILITY 3-4 - Engage +]--	21.03.2026
+	--[+ ABILITY 3-4 - Engage +]--	26.03.2026
 	["loc_talent_adamant_charge_longer_distance_desc"] = { -- charge_ability_name: Break the Line, distance: 7.5, m->meters
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{distance:%s} meters to the distance of {charge_ability_name:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{distance:%s} метров к расстоянию способности {charge_ability_name:%s}.", -- Дальний прорыв -- руоф К бою
@@ -391,7 +391,7 @@ local arbites_localizations = {
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
 			..Dot_green.." {movement_speed:%s} к скорости движения.", -- В зоне досягаемости -- руоф Не так далеко позади
 	},
-	--[+ KEYSTONE 5 - Terminus Warrant +]--	21.03.2026
+	--[+ KEYSTONE 5 - Terminus Warrant +]--	26.03.2026
 	["loc_talent_adamant_terminus_warrant_new_desc"] = { -- max_stacks: 20, weakspot_stacks: 3, melee_duration: 12, melee_strength: +10%, tdr: +20%, ranged_duration: 12, ranged_strength: +10%, ranged_cleave: +50%, suppression: +50%, +colors
 		en = "Ranged Attacks grant Stacks of "..CKWord("Melee Justice", "Meleejust_rgb")..".\n"
 			..Dot_nc.." Up to {max_stacks:%s} Stacks.\n"

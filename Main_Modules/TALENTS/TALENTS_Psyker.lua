@@ -1,5 +1,5 @@
 ---@diagnostic disable: undefined-global
--- МОДУЛЬ ТАЛАНТОВ ПСАЙКЕРА
+-- PSYKER TALENT MODULE -- МОДУЛЬ ТАЛАНТОВ ПСАЙКЕРА
 
 local mod = get_mod("Enhanced_descriptions")
 local Utils = mod.get_utils()
@@ -14,17 +14,17 @@ local Dot_nc = Utils.DOT_NC or "•"
 local Dot_red = Utils.DOT_RED or "•"
 local Dot_green = Utils.DOT_GREEN or "•"
 
--- ЛОКАЛИЗАЦИИ ТАЛАНТОВ ПСАЙКЕРА
+-- LOCALIZATION OF PSYKER TALENTS -- ЛОКАЛИЗАЦИИ ТАЛАНТОВ ПСАЙКЕРА
 local psyker_localizations = {
 --[+ ++PSYKER - ПСАЙКЕР++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
-	--[+ BLITZ 0 - Brain Burst +]--	08.12.2025
+	--[+ BLITZ 0 - Brain Burst +]--	26.03.2026
 	["loc_ability_psyker_smite_description_new"] = { -- &->and, +colors
 		en = "Charge up psychic power and release it to deal high "..CKWord("Damage", "Damage_rgb").." to a single enemy.\n"
 			.."\n"
 			..Dot_green.." Effective against Flak and Carapace.\n"
-			..Dot_green.." High "..CKWord("Damage", "Damage_rgb").." to Maniac and Unyielding.\n"
-			..Dot_green.." Always scores a "..CKWord("Weakspot Hit", "Weakspothit_rgb")..".\n"
+			-- ..Dot_green.." High "..CKWord("Damage", "Damage_rgb").." to Maniac and Unyielding.\n"
+			..Dot_green.." Always targets "..CKWord("Weakspots", "Weakspots_rgb")..".\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
@@ -32,21 +32,21 @@ local psyker_localizations = {
 		ru = "Зарядите психическую мощь и высвободите её, чтобы нанести высокий "..CKWord("урон", "uron_rgb_ru").." одному врагу.\n" -- Взрыв мозга -- руоф Взрыв разума
 			.."\n"
 			..Dot_green.." Эффективно против врагов в противоосколочной и панцирной броне.\n"
-			..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." по маньякам и несгибаемым врагам.\n"
+			-- ..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." по маньякам и несгибаемым врагам.\n"
 			..Dot_green.." Всегда бьёт в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Вы можете взорваться!{#reset()}\n"
 			.."Не используйте если уровень "..CKWord("опасности", "opasnosti_rgb_ru").." "..CNumb("97%", "pc_97_rgb").." или выше!",
 	},
-	--[+ BLITZ 1 - Brain Rupture +]--	08.12.2025
+	--[+ BLITZ 1 - Brain Rupture +]--	26.03.2026
 	["loc_talent_psyker_brain_burst_improved_description"] = { -- talent_old: Brain Burst, damage: +50%, &->and, +colors
 		en = "Charge up your psychic power and release it to deal immense "..CKWord("Damage", "Damage_rgb").." to a Single Enemy.\n"
 			..Dot_green.." An augmented version of {talent_old:%s} that deals {damage:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
 			.."\n"
 			..Dot_green.." Effective against Flak and Carapace.\n"
-			..Dot_green.." High "..CKWord("Damage", "Damage_rgb").." to Maniac and Unyielding.\n"
-			..Dot_green.." Always scores a "..CKWord("Weakspot Hit", "Weakspothit_rgb").."..\n"
+			-- ..Dot_green.." High "..CKWord("Damage", "Damage_rgb").." to Maniac and Unyielding.\n"
+			..Dot_green.." Always targets "..CKWord("Weakspots", "Weakspots_rgb")..".\n"
 			..Dot_green.." Charging the main attack to "..CNumb("50%", "pc_50_rgb").." lightly "..CKWord("Staggers", "Staggers_rgb").." the target.\n"
 			..Dot_green.." On impact, "..CKWord("Staggers", "Staggers_rgb").." almost all enemies.\n"
 			..Dot_red.." Cannot "..CKWord("Stagger", "Stagger_rgb").." Mutants, Ogryns, Monstrosities or enemies with active Void shield.\n"
@@ -58,7 +58,7 @@ local psyker_localizations = {
 			..Dot_green.." Это улучшенная версия таланта {talent_old:%s}, наносящая {damage:%s} "..CKWord("урона", "urona_rgb_ru")..".\n"
 			.."\n"
 			..Dot_green.." Эффективно против врагов в противоосколочной и панцирной броне.\n"
-			..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." по маньякам и несгибаемым врагам.\n"
+			-- ..Dot_green.." Высокий "..CKWord("урон", "uron_rgb_ru").." по маньякам и несгибаемым врагам.\n"
 			..Dot_green.." Всегда бьёт в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n"
 			..Dot_green.." На уровне заряда "..CNumb("50%", "pc_50_rgb").." основная атака слегка "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." цель.\n"
 			..Dot_red.." Не "..CKWord("ошеломляет", "oshelomlaet_rgb_ru")..": мутантов, огринов, чудовищ и врагов с активным пустотным щитом.\n"
@@ -68,7 +68,7 @@ local psyker_localizations = {
 			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
 			..Dot_red.." Не используйте при уровне "..CKWord("опасности", "opasnosti_rgb_ru").." "..CNumb("97%", "pc_97_rgb").." или выше иначе вы взорвётесь!",
 	},
-	--[+ BLITZ 1-1 - Kinetic Resonance +]--	08.12.2025
+	--[+ BLITZ 1-1 - Kinetic Resonance +]--	26.03.2026
 	["loc_talent_psyker_ability_increase_brain_burst_speed_desc"] = { -- talent_name: Brain Rupture, smite_attack_speed: +75%, warp_charge_cost: 50%, duration: 10, s->seconds, +colors
 		en = "Using your "..CKWord("Combat Ability", "Cmbt_abil_rgb").." buffs your {talent_name:%s} for {duration:%s} seconds:\n"
 			..Dot_green.." {smite_attack_speed:%s} charge speed,\n"
@@ -81,14 +81,14 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_nc.." Влияет как на основную, так и на дополнительную атаку.",
 	},
-	--[+ BLITZ 1-2 - Kinetic Flayer +]--	08.12.2025
+	--[+ BLITZ 1-2 - Kinetic Flayer +]--	26.03.2026
 	["loc_talent_psyker_smite_on_hit_special_elite_desc"] = { -- smite_chance: 10%, talent_name: Brain Rupture, time: 15, s->seconds, +colors
 		en = "Attacks vs Specials, Elites and Monstrosities, have a {smite_chance:%s} chance on Hit to inflict {talent_name:%s}.\n"
 			..Dot_nc.." Cooldown {time:%s} seconds.",
 		ru = "При атаке специалистов, элитных врагов или чудовищ, есть {smite_chance:%s} шанс на срабатывание блица {talent_name:%s}.\n" -- Кинетический живодёр -- руоф Кинетический истребитель
 			..Dot_nc.." Восстановление {time:%s} секунд.",
 	},
-	--[+ BLITZ 2 - Smite +]--	08.12.2025
+	--[+ BLITZ 2 - Smite +]--	26.03.2026
 	["loc_ability_psyker_chain_lightning_description"] = { -- +colors
 		en = "Unleash a torrent of chain bio-lightning that arcs between enemies, dealing low "..CKWord("Electrocuting", "Electrcuting_rgb").." "..CKWord("Damage", "Damage_rgb").." over time and inflicting high "..CKWord("Stagger", "Stagger_rgb")..".\n"
 			.."The secondary charged attack deals increased "..CKWord("Damage", "Damage_rgb").." and jumps faster.\n"
@@ -118,7 +118,7 @@ local psyker_localizations = {
 			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
 			..Dot_red.." Не используйте основную атаку пока держите дополнительную при "..CNumb("100%", "pc_100_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru").." или вы взорвётесь.",
 	},
-	--[+ BLITZ 2-1 - Charged Strike +]--	08.12.2025
+	--[+ BLITZ 2-1 - Charged Strike +]--	26.03.2026
 	["loc_talent_psyker_chain_lightning_damage_heavy_attacks_desc"] = { -- +colors
 		en = "Your Heavy Melee Attacks "..CKWord("Electrocute", "Electrocute_rgb").." enemies, damaging them over time.\n"
 			.."\n"
@@ -135,7 +135,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." При выбранном модификаторе "..CKWord("Ослабление", "Enfeeble_rgb_ru")..", эффект "..CKWord("электрошока", "elektroshoka_rgb_ru").." наносит "..CKWord("урон", "uron_rgb_ru").." вдвое дольше и достигает максимального заряда быстрее.",
 	},
-	--[+ BLITZ 2-2 - Enfeeble +]--	08.12.2025
+	--[+ BLITZ 2-2 - Enfeeble +]--	26.03.2026
 	["loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"] = { -- damage: +10%, talent_name: Smite, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." Taken from all sources for enemies under your {talent_name:%s}'s "..CKWord("Electrocution", "Electrocution_rgb")..".\n"
 			.."\n"
@@ -144,7 +144,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_eff"),
 	},
-	--[+ BLITZ 3 - Assail +]--	08.12.2025
+	--[+ BLITZ 3 - Assail +]--	26.03.2026
 	["loc_ability_psyker_blitz_throwing_knives_description"] = { -- +colors
 		en = "Primary attack:\n"
 			..Dot_nc.." Throw swift, homing projectiles that track the nearest enemy for "..CNumb("2.5", "n_2_5_rgb").." seconds.\n"
@@ -157,8 +157,8 @@ local psyker_localizations = {
 			..Dot_green.." Can "..CKWord("Crit", "Crit_rgb")..".\n"
 			..Dot_nc.." Costs "..CNumb("1", "n_1_rgb").." ammo.\n"
 			..Dot_nc.." Regenerates "..CNumb("1", "n_1_rgb").." ammo every "..CNumb("3", "n_3_rgb").." seconds.\n"
-			..Dot_red.." Very low "..CKWord("Damage", "Damage_rgb").." vs Carapace.\n"
-			..Dot_red.." Low "..CKWord("Damage", "Damage_rgb").." to Unyielding.\n"
+			-- ..Dot_red.." Very low "..CKWord("Damage", "Damage_rgb").." vs Carapace.\n"
+			-- ..Dot_red.." Low "..CKWord("Damage", "Damage_rgb").." to Unyielding.\n"
 			..Dot_red.." Cannot "..CKWord("Cleave", "Cleave_rgb").." through Carapace armor by default.\n"
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
@@ -174,18 +174,18 @@ local psyker_localizations = {
 			..Dot_green.." Наносит "..CKWord("критические удары", "krit_udary_rgb_ru")..".\n"
 			..Dot_nc.." Тратит "..CNumb("1", "n_1_rgb").." заряд.\n"
 			..Dot_nc.." "..CNumb("1", "n_1_rgb").." заряд восстанавливается каждые "..CNumb("3", "n_3_rgb").." секунды.\n"
-			..Dot_red.." Наносит очень низкий "..CKWord("урон", "uron_rgb_ru").." по панцирной броне и низкий "..CKWord("урон", "uron_rgb_ru").." по несгибаемым врагам.\n"
+			-- ..Dot_red.." Наносит очень низкий "..CKWord("урон", "uron_rgb_ru").." по панцирной броне и низкий "..CKWord("урон", "uron_rgb_ru").." по несгибаемым врагам.\n"
 			..Dot_red.." Не "..CKWord("простреливает", "prostrelivaet_rgb_ru").." врагов в панцирной броне.\n"
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Внимание!{#reset()}\n"
 			..Dot_red.." Не используйте при "..CNumb("100%", "pc_100_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru").." иначе вы взорвётесь.",
 	},
-	--[+ BLITZ 3-1 - Ethereal Shards +]--	08.12.2025
+	--[+ BLITZ 3-1 - Ethereal Shards +]--	26.03.2026
 	["loc_talent_psyker_throwing_knives_pierce_description"] = { -- talent_name: Assail, +colors
 		en = Dot_green.." {talent_name:%s} projectiles now pierce through additional targets.",
 		ru = Dot_green.." Снаряды теперь пробивают дополнительные цели.", -- Эфирные осколки -- руоф Эфирные частицы
 	},
-	--[+ BLITZ 3-2 - Quick Shards +]--	08.12.2025
+	--[+ BLITZ 3-2 - Quick Shards +]--	26.03.2026
 	["loc_talent_psyker_throwing_knives_cast_speed_description"] = { -- talent_name: Assail, recharge: 30%
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} {talent_name:%s} charge replenish speed.\n"
 			.."\n"
@@ -195,7 +195,7 @@ local psyker_localizations = {
 			..Dot_nc.." Сокращает время восстановления снарядов с "..CNumb("3", "n_3_rgb").." до "..CNumb("2.1", "n_2_1_rgb").." секунд на снаряд.",
 	},
 --[+ +AURA - АУРЫ+ +]--
-	--[+ AURA 0 - The Quickening +]--	08.12.2025
+	--[+ AURA 0 - The Quickening +]--	26.03.2026
 	["loc_talent_psyker_aura_reduced_ability_cooldown_description"] = { -- cooldown_reduction: +7.5%, +colors
 		en = Dot_green.." {cooldown_reduction:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Reduction for you and allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
@@ -204,7 +204,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
 	},
-	--[+ AURA 1 - Kinetic Presence +]--	08.12.2025
+	--[+ AURA 1 - Kinetic Presence +]--	26.03.2026
 	["loc_talent_psyker_base_3_description"] = { -- damage: +7.5%, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." against Elite Enemies for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
@@ -213,7 +213,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
 	},
-	--[+ AURA 2 - Seer's Presence +]--	08.12.2025
+	--[+ AURA 2 - Seer's Presence +]--	26.03.2026
 	["loc_talent_psyker_cooldown_aura_improved_description"] = { -- cooldown_reduction: +10%, talent_name: The Quickening, +colors
 		en = Dot_green.." {cooldown_reduction:%s} "..CKWord("Cooldown", "Cd_rgb").." Reduction on Abilities for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			..Dot_green.." An augmented version of {talent_name:%s}.\n"
@@ -224,7 +224,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
 	},
-	--[+ AURA 3 - Prescience +]--	08.12.2025
+	--[+ AURA 3 - Prescience +]--	26.03.2026
 	["loc_ability_psyker_gunslinger_aura_description"] = { -- critical_strike_chance: +5%, +colors
 		en = Dot_green.." {critical_strike_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
@@ -236,7 +236,7 @@ local psyker_localizations = {
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
 	},
 --[+ +ABILITIES - СПОСОБНОСТИ+ +]--
-	--[+ ABILITY 0 - Psykinetic's Wrath +]--	08.12.2025
+	--[+ ABILITY 0 - Psykinetic's Wrath +]--	26.03.2026
 	["loc_talent_psyker_shout_ability_description"] = { -- warpcharge_vent: 10%, cooldown: 30, s->seconds, +colors
 		en = "Quells {warpcharge_vent:%s} "..CKWord("Peril", "Peril_rgb").." while releasing a cone-shaped shout that "..CKWord("Staggers", "Staggers_rgb").." enemies in front of you.\n"
 			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.\n"
@@ -251,7 +251,7 @@ local psyker_localizations = {
 			..Dot_nc.." Враги в "..CNumb("5", "n_5_rgb").."-метровом радиусе перед вами "..CKWord("ошеломляются", "oshelomlautsa_rgb_ru")..".\n"
 			..Dot_nc.." Волна варпа проходит сквозь стены и распространяется на расстояние до "..CNumb("30", "n_30_rgb").." метров, позволяя вам "..CKWord("ошеломить", "oshelomit_rgb_ru").." сквозь препятствия Гончую, атакующую союзника.",
 	},
-	--[+ ABILITY 1 - Venting Shriek +]--	08.12.2025
+	--[+ ABILITY 1 - Venting Shriek +]--	26.03.2026
 	["loc_talent_psyker_shout_vent_warp_charge_description"] = { -- warpcharge_vent: 50%, cooldown: 30, talent_name: Psykinetic's Wrath, s->seconds, +colors
 		en = "Quells {warpcharge_vent:%s} "..CKWord("Peril", "Peril_rgb").." while releasing a cone-shaped shout that "..CKWord("Staggers", "Staggers_rgb").." enemies in front of you.\n"
 			..Dot_green.." An augmented version of {talent_name:%s}.\n"
@@ -270,7 +270,7 @@ local psyker_localizations = {
 			..Dot_nc.." Волна варпа проходит сквозь стены и распространяется на расстояние до "..CNumb("30", "n_30_rgb").." метров, позволяя вам "..CKWord("ошеломить", "oshelomit_rgb_ru").." сквозь препятствия Гончую, атакующую союзника.\n"
 			..Dot_nc.." Всегда поражает в зону торса.",
 	},
-	--[+ ABILITY 1-1 - Warp Rupture +]--	08.12.2025
+	--[+ ABILITY 1-1 - Warp Rupture +]--	26.03.2026
 	["loc_talent_psyker_discharge_damage_debuff_description"] = { -- talent_name: Venting Shriek, damage_reduction: 10%, damage_taken: 10%, duration: 8, +colors
 		en = "{talent_name:%s} applies a debuff to Enemies for {duration:%s} seconds:\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Dealt,\n"
@@ -283,7 +283,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_eff"),
 	},
-	--[+ ABILITY 1-2 - Becalming Eruption +]--	13.11.2025
+	--[+ ABILITY 1-2 - Becalming Eruption +]--	26.03.2026
 	["loc_talent_psyker_shout_reduces_warp_charge_generation_description"] = { -- talent_name: Venting Shriek, warp_generation: 1%, max_stacks: 25->25%, duration: 5, s->seconds, +colors
 		en = Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} "..CKWord("Peril", "Peril_rgb").." Generation for each Enemy hit by {talent_name:%s}.\n"
 				..Dot_nc.." Up to "..CNumb("-", "n_minus_rgb").."{max_stacks:%s}"..CNumb("%", "pc_rgb").." "..CKWord("Peril", "Peril_rgb").." Generation.\n"
@@ -293,7 +293,7 @@ local psyker_localizations = {
 				..Dot_nc.." Длится {duration:%s} секунд.",
 	},
 -- !!! Removed " -". Fix in the Enhanced_Descriptions.lua file !!! --
-	--[+ ABILITY 1-3 - Creeping Flames +]--	08.12.2025
+	--[+ ABILITY 1-3 - Creeping Flames +]--	26.03.2026
 	["loc_talent_psyker_warpfire_on_shout_desc"] = { -- talent_name: Venting Shriek, min_stacks: 1 -, warpfire_stacks: 6, Stack(s)->Stacks, +colors
 		en = "{talent_name:%s} applies {min_stacks:%s} - {warpfire_stacks:%s} Stacks of "..CKWord("Soulblaze", "Soulblaze_rgb").." to targets Hit based on your current "..CKWord("Peril", "Peril_rgb")..".\n"
 			.."_______________________________\n"
@@ -318,13 +318,13 @@ local psyker_localizations = {
 			..Dot_green.." Большой "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
 	},
-	--[+ ABILITY 2 - Telekine Shield +]--	08.12.2025
-	["loc_talent_psyker_combat_ability_shield_description"] = { -- duration: 17.5, cooldown: 40, s->seconds
+	--[+ ABILITY 2 - Telekine Shield +]--	26.03.2026
+	["loc_talent_psyker_combat_ability_shield_description"] = { -- duration: 17.5, cooldown: 45, s->seconds
 		en = "Spawns a {talent_name:%s} that blocking incoming enemy ranged attacks while allowing you and your allies to fire through it.\n"
 			..Dot_nc.." Lasts {duration:%s} seconds.\n"
 			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.\n"
 			.."\n"
-			..Dot_nc.." Shield Health: 20.\n"
+			..Dot_nc.." Shield Health: "..CNumb("20", "n_20_rgb")..".\n"
 			..Dot_green.." Blocks:\n"
 			.."   "..Dot_green.." Ranged hit scan attacks,\n"
 			.."   "..Dot_green.." Projectiles (Bomber grenades),\n"
@@ -340,7 +340,7 @@ local psyker_localizations = {
 			..Dot_nc.." Длится {duration:%s} секунды.\n"
 			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
 			.."\n"
-			..Dot_nc.." Здоровье щита: 20.\n"
+			..Dot_nc.." Здоровье щита: "..CNumb("20", "n_20_rgb")..".\n"
 			..Dot_green.." Блокирует:\n"
 			.."   "..Dot_green.." Дальнобойные выстрелы,\n"
 			.."   "..Dot_green.." Снаряды (гранаты Гренадёра),\n"
@@ -353,18 +353,18 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_nc.." Удерживание кнопки активации способности показывает место размещения. Отменяется блоком.",
 	},
-	--[+ ABILITY 2-1 - Bolstered Shield +]--	08.12.2025
+	--[+ ABILITY 2-1 - Bolstered Shield +]--	26.03.2026
 	["loc_talent_psyker_force_field_charges_cooldown_description"] = { -- talent_name: Telekine Shield, max_charges: 2, cooldown: 35, +colors
 		en = Dot_green.." {talent_name:%s} now holds up to {max_charges:%s} charges.\n"
-			..Dot_green.." Cooldown decreased to {cooldown:%s} seconds.\n"
+			-- ..Dot_green.." Cooldown decreased to {cooldown:%s} seconds.\n"
 			.."\n"
 			..Dot_nc.." The second charge's "..CKWord("Cooldown", "Cd_rgb").." starts once the first one is ready.",
 		ru = Dot_green.." {talent_name:%s} теперь имеет {max_charges:%s} заряда.\n" -- Усиленный щит
-			..Dot_green.." Время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." снижено на {cooldown:%s} секунд.\n"
+			-- ..Dot_green.." Время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." снижено на {cooldown:%s} секунд.\n"
 			.."\n"
 			..Dot_nc.." Время восстановления второго заряда начинается после готовности первого.",
 	},
-	--[+ ABILITY 2-2 - Enervating Threshold +]--	08.12.2025
+	--[+ ABILITY 2-2 - Enervating Threshold +]--	26.03.2026
 	["loc_talent_psyker_force_field_stun_increased_new_description"] = { -- ability: Telekine Shield, proc_chance: 20%, special_proc_chance: 100%, +colors
 		en = "{ability:%s} has a {proc_chance:%s} chance to "..CKWord("Electrocute", "Electrocute_rgb").." enemies that pass through it. Specialists and Monstrosities have a {special_proc_chance:%s} chance to get "..CKWord("Electrocuted", "Electrocuted_rgb").." but also damage the {ability:%s}.\n"
 			.."\n"
@@ -386,20 +386,24 @@ local psyker_localizations = {
 			..Dot_red.." {#color(255, 35, 5)}СЛОМАНО{#reset()}\n"
 			.."Специалисты и чудовища наносят щиту при контакте только "..CNumb("1", "n_1_rgb").." "..CKWord("урона", "urona_rgb_ru").." вместо задуманных "..CNumb("8", "n_8_rgb")..".",
 	},
-	--[+ ABILITY 2-3 - Telekine Dome +]--	08.12.2025
-	["loc_talent_psyker_force_field_dome_new_desc"] = { -- talent_name: Telekine Shield, duration: 25, s->seconds
+	--[+ ABILITY 2-3 - Telekine Dome +]--	26.03.2026
+	["loc_talent_psyker_force_field_dome_increased_cd_desc"] = { -- talent_name: Telekine Shield, duration: 25, cooldown: 60, s->seconds
 		en = "{talent_name:%s} now forms a spherical shield.\n"
 			..Dot_nc.." Lasts {duration:%s} seconds.\n"
 			.."\n"
 			..Dot_nc.." Sphere radius: "..CNumb("6", "n_6_rgb").." meters.\n"
-			..Dot_nc.." Protects from enemy attacks from all angles.",
+			..Dot_nc.." Protects from enemy attacks from all angles.\n"
+			.."\n"
+			..Dot_red.." Cooldown is increased to {cooldown:%s} seconds.",
 		ru = "{talent_name:%s} теперь формирует сферу.\n" -- Телекинетический купол
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
 			.."\n"
 			..Dot_nc.." Радиус сферы: "..CNumb("6", "n_6_rgb").." метров.\n"
-			..Dot_nc.." Защищает от атак со всех сторон.",
+			..Dot_nc.." Защищает от атак со всех сторон.\n"
+			.."\n"
+			..Dot_red.." Время восстановления увеличено до {cooldown:%s} секунд.",
 	},
-	--[+ ABILITY 2-4 - Sanctuary +]--	08.12.2025
+	--[+ ABILITY 2-4 - Sanctuary +]--	26.03.2026
 	["loc_talent_psyker_force_field_grants_toughness_desc"] = { -- talent_name: Telekine Shield, toughness: 10%, toughness_damage_reduction: +50%, duration: 5, s->seconds, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." per second replenishes for Allies inside your {talent_name:%s}.\n"
 			.."\n"
@@ -412,7 +416,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Эффект суммируется, если перекрываются несколько сфер.",
 	},
-	--[+ ABILITY 3 - Scrier's Gaze +]--	08.12.2025
+	--[+ ABILITY 3 - Scrier's Gaze +]--	26.03.2026
 	["loc_talent_psyker_combat_ability_overcharge_stance_improved_description"] = { -- duration: 10, base_damage: +10%, weakspot_damage: +10%, crit_chance: +20%, max_peril: 100%, cooldown: 25, damage_per_stack: +1%, vent: 50%, tdr: +20%, toughness: 2.5%, max_damage: +30%, s->seconds, +colors
 		en = "You enter "..CKWord("Scrier Gaze", "Scrier_gaze_rgb")..", Quell {vent:%s} "..CKWord("Peril", "Peril_rgb").." and gain:\n"
 			..Dot_green.." {base_damage:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
@@ -443,7 +447,7 @@ local psyker_localizations = {
 			.."При {max_peril:%s} "..CKWord("опасности", "opasnosti_rgb_ru").." способность выключается.\n"
 			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.",
 	},
-	--[+ ABILITY 3-1 - Precognition +]--	08.12.2025
+	--[+ ABILITY 3-1 - Precognition +]--	26.03.2026
 	["loc_ability_psyker_overcharge_weakspot_description"] = { -- second: 1, talent_name: Scrier's Gaze, finesse_damage_per_stack: +1%, max_finesse_damage: +30%, duration: 10, s->seconds, +colors
 		en = CKWord("Weakspot", "Weakspot_rgb").." kills generate {second:%s} additional Stack while {talent_name:%s} overcharging.\n"
 			..Dot_green.." Can proc multiple times per attack when "..CKWord("Cleaving", "Cleaving_rgb")..".\n"
@@ -458,7 +462,7 @@ local psyker_localizations = {
 			.."За каждую секунду, проведённую по действием способности, вы теперь также получаете:\n"
 			..Dot_green.." {finesse_damage_per_stack:%s} к "..CKWord("урону от ловкости", "lovkosti_uron_rgb_ru")..", до максимум {max_finesse_damage:%s}. Эффект продлевается на {duration:%s} секунд после действия способности {talent_name:%s}.",
 	},
-	--[+ ABILITY 3-2 - Warp Speed +]--	08.12.2025
+	--[+ ABILITY 3-2 - Warp Speed +]--	26.03.2026
 	["loc_ability_psyker_overcharge_movement_speed_description"] = { -- talent_name: Scrier's Gaze, movement_speed: +20%
 		en = "While {talent_name:%s} overcharging:\n"
 			..Dot_green.." {movement_speed:%s} Movement Speed.\n"
@@ -469,7 +473,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." Не продлевается после окончания действия способности.",
 	},
-	--[+ ABILITY 3-3 - Reality Anchor +]--	08.12.2025
+	--[+ ABILITY 3-3 - Reality Anchor +]--	26.03.2026
 	["loc_ability_psyker_overcharge_reduced_warp_charge_vent_speed_description"] = { -- talent_name: Scrier's Gaze, warp_charge: -20%, venting: , +colors
 		en = "While {talent_name:%s} overcharging:\n"
 			..Dot_green.." {warp_charge:%s} "..CKWord("Peril", "Peril_rgb").." Generated,\n"
@@ -482,7 +486,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." Не продлевается после окончания действия способности.",
 	},
-	--[+ ABILITY 3-4 - Warp Unbound +]--	08.12.2025
+	--[+ ABILITY 3-4 - Warp Unbound +]--	26.03.2026
 	["loc_talent_psyker_overcharge_infinite_casting_desc"] = { -- talent_name: Scrier's Gaze
 		en = "{talent_name:%s} now also prevents overloading from "..CKWord("Perils of the Warp", "PerilsozWarp_rgb")..", during its lingering effect.\n"
 			.."\n"
@@ -495,7 +499,7 @@ local psyker_localizations = {
 			..Dot_nc.." Этот модификатор имеет скрытый эффект: по истечении "..CNumb("10", "n_10_rgb").." секунд вы получите ещё "..CNumb("1.5", "n_1_5_rgb").." секунды этого же эффекта.",
 	},
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
-	--[+ KEYSTONE 1 - Warp Siphon +]--	08.12.2025
+	--[+ KEYSTONE 1 - Warp Siphon +]--	26.03.2026
 	["loc_talent_psyker_souls_new_desc"] = { -- duration: 25, stack: 4, damage: +4, cooldown_reduction: 7.5%, time(s)->times, +colors
 		en = "Killing an Elite or Specialist Enemy gains you a Warp Charge for {duration:%s} seconds.\n"
 			..Dot_green.." {damage:%s} Base "..CKWord("Damage", "Damage_rgb").." per Stack.\n"
@@ -512,12 +516,12 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr"),
 	},
-	--[+ KEYSTONE 1-1 - Inner Tranquility +]--	08.12.2025
+	--[+ KEYSTONE 1-1 - Inner Tranquility +]--	26.03.2026
 	["loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"] = { -- warp_charge_amount: -6%, +colors
 		en = Dot_green.." {warp_charge_amount:%s} "..CKWord("Peril", "Peril_rgb").." Generation Reduction for each Warp Charge.",
 		ru = Dot_green.." {warp_charge_amount:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." за каждый варп-заряд.", -- Внутреннее спокойствие
 	},
-	--[+ KEYSTONE 1-2 - Essence Harvest +]--	08.12.2025
+	--[+ KEYSTONE 1-2 - Essence Harvest +]--	26.03.2026
 	["loc_talent_psyker_toughness_regen_on_soul_desc"] = { -- toughness: 30%, time: 5, s->seconds, +colors
 		en = Dot_green.." "..CNumb("6%", "pc_6_rgb").." "..CKWord("Toughness", "Toughness_rgb").." is replenished per second for {time:%s} seconds after gaining Warp Charge, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
 			.."\n"
@@ -528,12 +532,12 @@ local psyker_localizations = {
 			..CPhrs("Can_be_refr").."\n"
 			..Dot_nc.." Не увеличивает количество восстанавливаемой "..CKWord("стойкости", "stoikosti_rgb_ru")..".",
 	},
-	--[+ KEYSTONE 1-3 - Warp Battery +]--	08.12.2025
+	--[+ KEYSTONE 1-3 - Warp Battery +]--	26.03.2026
 	["loc_talent_psyker_increased_souls_desc"] = { -- soul_amount: 6
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." Maximum Warp Charges. Increases from "..CNumb("4", "n_4_rgb").." to {soul_amount:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." к максимуму варп-зарядов. Увеличивается с "..CNumb("4", "n_4_rgb").." до {soul_amount:%s} варп-зарядов.", -- Варп-аккумулятор
 	},
-	--[+ KEYSTONE 1-4 - In Fire Reborn +]--	08.12.2025
+	--[+ KEYSTONE 1-4 - In Fire Reborn +]--	26.03.2026
 	["loc_talent_psyker_warpfire_generates_souls_desc"] = { -- chance: 10%, +colors
 		en = Dot_green.." {chance:%s} chance to gain a Warp Charge when you or an Ally kill an enemy who is currently affected by "..CKWord("Soulblaze", "Soulblaze_rgb")..".\n"
 			.."\n"
@@ -543,7 +547,7 @@ local psyker_localizations = {
 			..Dot_green.." Эффект не имеет ограничения по дальности.\n"
 			..Dot_green.." Этот эффект влияет на всех "..CKWord("псайкеров", "cls_psyov_rgb").." у которых выбран этот талант.",
 	},
-	--[+ KEYSTONE 1-5 - Psychic Vampire +]--	08.12.2025
+	--[+ KEYSTONE 1-5 - Psychic Vampire +]--	26.03.2026
 	["loc_talent_psyker_souls_on_kill_coop_desc"] = { -- soul_chance: 4%
 		en = Dot_green.." {soul_chance:%s} chance to gain a Warp Charge whenever you or an Ally in "..CKWord("Coherency", "Coherency_rgb").." kills an enemy.\n"
 			.."\n"
@@ -552,7 +556,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Этот эффект влияет на всех "..CKWord("псайкеров", "cls_psyov_rgb").." у которых выбран этот талант.",
 	},
-	--[+ KEYSTONE 2 - Empowered Psionics +]--	08.12.2025
+	--[+ KEYSTONE 2 - Empowered Psionics +]--	26.03.2026
 	["loc_talent_psyker_empowered_ability_description"] = { -- chance: 7.5%, blitz_one: Brain Rupture, smite_cost: 100%, smite_attack_speed: 50%, smite_damage: +50%, blitz_two: Smite, chain_lightning_damage: +200%, chain_lightning_jump_time_multiplier: 50%, blitz_three: Assail, throwing_knives_cost: 100%, throwing_knives_old_damage: 100, throwing_knives_new_damage: 150, +colors
 		en = "Kills have a {chance:%s} chance to Empower your next Blitz.\n"
 			.."\n"
@@ -587,27 +591,27 @@ local psyker_localizations = {
 			..Dot_green.." Не тратит снаряды.\n"
 			..Dot_green.." Можно использовать даже при "..CNumb("100%", "pc_100_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru")..".",
 	},
-	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--	08.12.2025
+	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--	26.03.2026
 	["loc_talent_psyker_increase_empower_chain_lighting_chance_description"] = { -- talent_name: Empowered Psionics, proc_chance_before: 7.5%, proc_chance_after: 12.5%
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." chance to gain {talent_name:%s} on Kill. Increases from {proc_chance_before:%s} to {proc_chance_after:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." к шансу получить заряд таланта {talent_name:%s} при убийстве. Увеличивается с {proc_chance_before:%s} до {proc_chance_after:%s}.", -- Биопритяжение
 	},
-	--[+ KEYSTONE 2-2 - Psychic Leeching +]--	08.12.2025
+	--[+ KEYSTONE 2-2 - Psychic Leeching +]--	26.03.2026
 	["loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies_description"] = { -- talent_name: Empowered Psionics, toughness: 15%, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes for you and Allies in "..CKWord("Coherency", "Coherency_rgb").." on using your Blitz while {talent_name:%s} is active.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восполняется для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru").." при использовании вашего блица, пока активны {talent_name:%s}.", -- Психическое высасывание -- руоф Психическая пиявка
 	},
-	--[+ KEYSTONE 2-3 - Overpowering Souls +]--	08.12.2025
+	--[+ KEYSTONE 2-3 - Overpowering Souls +]--	26.03.2026
 	["loc_talent_psyker_empowered_ability_on_elite_kills_description"] = { -- talent_name: Empowered Psionics
 		en = Dot_green.." Guaranteed chance to gain {talent_name:%s} on Elite Kills.",
 		ru = Dot_green.." Вы гарантированно получаете заряд таланта {talent_name:%s} при убийстве элитного врага.", -- Могучие души
 	},
-	--[+ KEYSTONE 2-4 - Charged Up +]--	08.12.2025
+	--[+ KEYSTONE 2-4 - Charged Up +]--	26.03.2026
 	["loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"] = { -- max_stacks: 3, talent_name: Empowered Psionics
 		en = Dot_green.." You can now hold up to {max_stacks:%s} Stacks of {talent_name:%s}.",
 		ru = Dot_green.." Вы теперь можете набирать до {max_stacks:%s} зарядов таланта {talent_name:%s}.", -- Заряженный -- руоф Зарядка
 	},
-	--[+ KEYSTONE 3 - Disrupt Destiny +]--	08.12.2025
+	--[+ KEYSTONE 3 - Disrupt Destiny +]--	26.03.2026
 	["loc_talent_psyker_marked_enemies_passive_updated_desc"] = { -- radius: 40, toughness: 10%, move_speed: +20%, move_speed_duration: 2.5, bonus_duration 4, base_damage: +1%, crit_damage: +2%, weakspot_damage: +2.5%, bonus_stacks: 15 -- m->meters, s->seconds, +colors
 		en = "Every second, Enemies within {radius:%s} meters have a chance of being "..CKWord("Marked", "Psy_Mark_rgb")..".\n"
 			.."\n"
@@ -642,22 +646,22 @@ local psyker_localizations = {
 			..Dot_green.." Нанесение "..CKWord("урона", "urona_rgb_ru").." "..CKWord("отмеченным", "Psy_Mark_ym_rgb_ru").." врагам обновляет длительность зарядов.\n"
 			..Dot_nc.." Допустимые цели: громила, ритуалист, охотник, скаб-стрелок, берсерк, пулемётчик, скаб с дробовиком, плазмомётчик и палач.",
 	},
-	--[+ KEYSTONE 3-1 - Perfectionism +]--	08.12.2025
+	--[+ KEYSTONE 3-1 - Perfectionism +]--	26.03.2026
 	["loc_talent_psyker_mark_increased_max_stacks_description"] = { -- stacks_previous: 15, stacks_after: 25, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." to Maximum "..CKWord("Precision", "Precision_rgb").." Bonus Stacks. Increases from {stacks_previous:%s} to {stacks_after:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." к максимуму зарядов "..CKWord("меткости", "Precision_rgb_ru")..". Увеличивается с {stacks_previous:%s} до {stacks_after:%s}.", -- Перфекционизм
 	},
-	--[+ KEYSTONE 3-2 - Purloin Providence +]--	08.12.2025
+	--[+ KEYSTONE 3-2 - Purloin Providence +]--	26.03.2026
 	["loc_talent_psyker_mark_kills_can_vent_description"] = { -- talent_name: Disrupt Destiny, chance: 20%, warp_charge_percentage: 15%, +colors
 		en = Dot_green.." {chance:%s} chance to instantly Quell {warp_charge_percentage:%s} of your "..CKWord("Peril", "Peril_rgb").." on killing enemies "..CKWord("Marked", "Psy_Mark_rgb").." {talent_name:%s}.",
 		ru = Dot_green.." {chance:%s} шанс, что вы моментально подавите {warp_charge_percentage:%s} вашей "..CKWord("опасности", "opasnosti_rgb_ru").." при убийстве врага, "..CKWord("отмеченного", "Psy_Mark_ogo_rgb_ru").." талантом {talent_name:%s}.", -- Похищение провидения -- руоф Похищенное провидение
 	},
-	--[+ KEYSTONE 3-3 - Lingering Influence +]--	08.12.2025
+	--[+ KEYSTONE 3-3 - Lingering Influence +]--	26.03.2026
 	["loc_talent_psyker_mark_increased_duration_description"] = { -- talent_name: Disrupt Destiny, duration_previous: 15, duration_after: 10, s->seconds
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." seconds to the duration of "..CKWord("Precision", "Precision_rgb").." Stacks. Increases from {duration_previous:%s} to {duration_after:%s} seconds.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." секунд к длительности зарядов "..CKWord("меткости", "Precision_rgb_ru")..". Увеличивается с {duration_previous:%s} до {duration_after:%s} секунд.", -- Длительное влияние -- руоф Длящееся влияние
 	},
-	--[+ KEYSTONE 3-4 - Cruel Fortune +]--	08.12.2025
+	--[+ KEYSTONE 3-4 - Cruel Fortune +]--	26.03.2026
 	["loc_talent_psyker_mark_weakspot_stacks_description"] = { -- stacks: 2 talent_name: Disrupt Destiny, +colors
 		en = Dot_green.." "..CKWord("Weakspot", "Weakspot_rgb").." Kills grant {stacks:%s} additional Stacks of {talent_name:%s}.\n"
 			.."\n"
@@ -667,12 +671,12 @@ local psyker_localizations = {
 			..Dot_nc.." Срабатывает от атак ближнего и дальнего боя, от блица "..CKWord("Нападение", "Assail_rgb_ru").." и "..CKWord("Разрыв мозга", "Brain_rupture_rgb_ru")..".",
 	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
-	--[+ Passive 1 - Soulstealer +]--	08.12.2025
+	--[+ Passive 1 - Soulstealer +]--	26.03.2026
 	["loc_talent_psyker_toughness_on_warp_kill_desc"] = { -- toughness: 7.5%., +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes on Warp Attack Kill.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве врага варп-атакой.", -- Похититель душ -- руоф Похититель души
 	},
-	--[+ Passive 2 - Mettle +]--	08.12.2025
+	--[+ Passive 2 - Mettle +]--	26.03.2026
 	["loc_talent_psyker_crits_regen_toughness_speed_description"] = { -- toughness: 10%, movement_speed: +5%, seconds: 4, stacks: 3, s->seconds, +colors
 		en = Dot_green.." "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored per second on "..CKWord("Critical Hits", "Crit_hits_rgb")..", up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {seconds:%s} seconds.\n"
 			..CPhrs("Can_be_refr").."\n"
@@ -689,12 +693,12 @@ local psyker_localizations = {
 			..Dot_green.." Можно получить несколько зарядов за "..CKWord("критический удар", "krit_udar_rgb_ru").." при пробивании нескольких врагов.\n"
 			..CPhrs("Can_be_refr"),
 	},
-	--[+ Passive 3 - Quietude +]--	08.12.2025
+	--[+ Passive 3 - Quietude +]--	26.03.2026
 	["loc_talent_psyker_toughness_from_vent_and_gen_desc"] = { -- toughness: 5%, warp_charge: 10%, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes for each {warp_charge:%s} of "..CKWord("Peril", "Peril_rgb").." Quelled or Generated.",
 		ru = "{toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за каждые {warp_charge:%s} подавленной и набранной "..CKWord("опасности", "opasnosti_rgb_ru")..".", -- Спокойствие -- руоф Тишина
 	},
-	--[+ Passive 4 - Warp Expenditure +]--	08.12.2025
+	--[+ Passive 4 - Warp Expenditure +]--	26.03.2026
 	["loc_talent_psyker_toughness_on_melee_description"] = { -- toughness: 15%, duration: 3, instant_toughness: 2.5%, +colors
 		en = Dot_green.." "..CNumb("5", "pc_5_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored per second on Melee "..CKWord("Weakspot", "Weakspot_rgb").." Kills, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {duration:%s} seconds.\n"
 			..CPhrs("Can_be_refr").."\n"
@@ -707,7 +711,7 @@ local psyker_localizations = {
 			..Dot_green.." {instant_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается моментально при успешной атаке в ближнем бою.\n"
 			..Dot_red.." Срабатывает один раз за атаку, независимо от количества поражённых врагов.",
 	},
-	--[+ Passive 5 - Perilous Combustion +]--	08.12.2025
+	--[+ Passive 5 - Perilous Combustion +]--	26.03.2026
 	["loc_talent_psyker_elite_and_special_kills_add_warpfire_desc"] = { -- stacks: 3, stack(s)->Stacks, +colors
 		en = "Killing an Elite or a Specialist applies {stacks:%s} Stacks of "..CKWord("Soulblaze", "Soulblaze_rgb").." to all enemies within a "..CNumb("4", "n_4_rgb").."-meter radius. Up to "..CNumb("31", "n_31_rgb").." Stacks on a target.\n"
 			.."\n"
@@ -726,16 +730,20 @@ local psyker_localizations = {
 			..Dot_green.." Большой "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
 	},
-	--[+ Passive 6 - Battle Meditation +]--	08.12.2025
+	--[+ Passive 6 - Battle Meditation +]--	26.03.2026
 	["loc_talent_psyker_quell_on_kill_and_reduction_desc"] = { -- warp_charge_reduction: 10%, chance: 10%, warp_charge_percent: 10%, +colors
 		en = Dot_green.." {warp_charge_reduction:%s} "..CKWord("Peril", "Peril_rgb").." Generation.\n"
 			.."\n"
-			..Dot_green.." {chance:%s} chance to Quell {warp_charge_percent:%s} "..CKWord("Peril", "Peril_rgb").." on Kill.",
+			..Dot_green.." {chance:%s} chance to Quell {warp_charge_percent:%s} "..CKWord("Peril", "Peril_rgb").." on Kill.\n"
+			.."\n"
+			..Dot_nc.." Can be used to prevent the "..CKWord("Psyker", "cls_psy_rgb").." from exploding.",
 		ru = Dot_green.." {warp_charge_reduction:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".\n" -- Боевая медитация
 			.."\n"
-			..Dot_green.." {chance:%s} шанс подавить {warp_charge_percent:%s} "..CKWord("опасности", "opasnosti_rgb_ru").." при убийстве.",
+			..Dot_green.." {chance:%s} шанс подавить {warp_charge_percent:%s} "..CKWord("опасности", "opasnosti_rgb_ru").." при убийстве.\n"
+			.."\n"
+			..Dot_nc.." Может использоваться для предотвращения самоподрыва.",
 	},
-	--[+ Passive 7 - Perfect Timing +]--	08.12.2025
+	--[+ Passive 7 - Perfect Timing +]--	26.03.2026
 	["loc_talent_psyker_damage_on_crit_stacking_desc"] = { -- damage: +3%, duration: 10, stacks: 5, s->seconds, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on "..CKWord("Critical Attack", "Crit_Attk_rgb")..".\n"
 			..Dot_nc.." Stacks {stacks:%s} times.\n"
@@ -748,7 +756,7 @@ local psyker_localizations = {
 			..CPhrs("Can_be_refr").."\n"
 			..Dot_red.." Даёт "..CNumb("1", "n_1_rgb").." заряд за "..CKWord("критический удар", "krit_udar_rgb_ru")..", независимо от количества поражённых целей.",
 	},
-	--[+ Passive 8 - Channeled Force +]--	08.12.2025
+	--[+ Passive 8 - Channeled Force +]--	26.03.2026
 	["loc_talent_psyker_force_staff_both_bonus_desc"] = { -- damage: +20%, time: 5, secondary_damage: +10%, secondary_time: 5, s->seconds, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." to Force Staff's Primary Attacks after Fully Charged Force Staff Secondary Attacks.\n"
 			..Dot_nc.." Lasts {time:%s} seconds.\n"
@@ -767,7 +775,7 @@ local psyker_localizations = {
 			..CPhrs("Can_be_refr").."\n"
 			..Dot_red.." Для посоха Инферно, оба усиления увеличивают только "..CKWord("урон", "uron_rgb_ru").." от прямых попаданий огнём, урон от "..CKWord("горения души", "gorenia_dushi_rgb_ru").." не затрагивается.",
 	},
-	--[+ Passive 9 - Mind in Motion +]--	08.12.2025
+	--[+ Passive 9 - Mind in Motion +]--	26.03.2026
 	["loc_talent_psyker_no_movement_penalty_quell_reload_desc"] = { -- +colors
 		en = "Your Movement Speed is not reduced while Quelling "..CKWord("Peril", "Peril_rgb").." or Reloading.\n"
 			.."\n"
@@ -776,7 +784,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." Не взаимодействует с усилениями скорости передвижения.",
 	},
-	--[+ Passive 10 - Souldrinker +]--	08.12.2025
+	--[+ Passive 10 - Souldrinker +]--	26.03.2026
 	["loc_talent_psyker_killing_enemy_with_warpfire_boosts_duration_desc"] = { -- toughness: 15%, crit_chance: 5%, duration: 5, s->seconds, +colors
 		en = "Killing an enemy with "..CKWord("Soulblaze", "Soulblaze_rgb").." grants the following for {duration:%s} seconds:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..",\n"
@@ -791,8 +799,8 @@ local psyker_localizations = {
 			..CPhrs("Can_be_refr").."\n"
 			..Dot_green.." Эффект этого таланта не имеет ограничений по дальности и может применяться на любом расстоянии от умирающего врага.",
 	},
-	--[+ Passive 11 - Malefic Momentum +]--	08.12.2025
-	["loc_talent_psyker_kills_stack_other_weapon_damage_both_description"] = { -- warp_damage/non_warp_damage: +4%, duration: 8, stacks: 5, s->seconds, +colors
+	--[+ Passive 11 - Malefic Momentum +]--	26.03.2026
+	["loc_talent_psyker_kills_stack_other_weapon_damage_both_description"] = { -- warp_damage/non_warp_damage: +5%, duration: 10, stacks: 5, s->seconds, +colors
 		en = Dot_green.." {warp_damage:%s} "..CKWord("Damage", "Damage_rgb").." to Warp Attacks for {duration:%s} seconds after a non-Warp based Kill.\n"
 			..Dot_nc.." Stacks {stacks:%s} times.\n"
 			.."\n"
@@ -808,12 +816,12 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr"),
 	},
-	--[+ Passive 12 - Lightning Speed +]--	08.12.2025
+	--[+ Passive 12 - Lightning Speed +]--	26.03.2026
 	["loc_talent_psyker_melee_attack_speed_desc"] = { -- melee_attack_speed: 10%, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{melee_attack_speed:%s} Attack Speed.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{melee_attack_speed:%s} к скорости атак.", -- Молниеносная скорость
 	},
-	--[+ Passive 13 - Empyric Shock +]--	08.12.2025
+	--[+ Passive 13 - Empyric Shock +]--	26.03.2026
 	["loc_talent_psyker_force_staff_quick_attack_bonus_desc"] = { -- damage_taken: 6%, max_stacks: 5, duration: 10, s->seconds, +colors
 		en = Dot_green.." {damage_taken:%s} "..CKWord("Warp-Damage", "Damagewrp_rgb").." Taken by victims of your Force Staff’s Primary Attack.\n"
 			..Dot_nc.." Maximum {max_stacks:%s} Stacks.\n"
@@ -828,7 +836,7 @@ local psyker_localizations = {
 			..CPhrs("Can_be_refr").."\n"
 			..CPhrs("Can_appl_thr_shlds"),
 	},
-	--[+ Passive 14 - Wildfire +]--	08.12.2025
+	--[+ Passive 14 - Wildfire +]--	26.03.2026
 	["loc_talent_psyker_warpfire_spread_desc"] = { -- stacks: 4, +colors
 		en = "When an Enemy dies while affected by your "..CKWord("Soulblaze", "Soulblaze_rgb")..", nearby Enemies each gain up to {stacks:%s} Stacks of "..CKWord("Soulblaze", "Soulblaze_rgb")..". They cannot gain more Stacks than the dying Enemy had.\n"
 			.."\n"
@@ -849,7 +857,7 @@ local psyker_localizations = {
 			..Dot_red.." Цели не получают заряды "..CKWord("горения души", "gorenia_dushi_rgb_ru")..", если на них уже наложено {stacks:%s} заряда или более.\n"
 			..Dot_green.." Не накладывается на демонхостов.",
 	},
-	--[+ Passive 15 - Warp Splitting +]--	08.12.2025
+	--[+ Passive 15 - Warp Splitting +]--	26.03.2026
 	["loc_talent_psyker_cleave_from_peril_desc"] = { -- max_cleave: +100%, +colors
 		en = Dot_green.." Up to {max_cleave:%s} "..CKWord("Cleave", "Cleave_rgb")..", based on "..CKWord("Peril", "Peril_rgb")..".\n"
 			.."\n"
@@ -858,7 +866,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Carap_cant_clv"),
 	},
-	--[+ Passive 16 - By Crack of Bone +]--	08.12.2025
+	--[+ Passive 16 - By Crack of Bone +]--	26.03.2026
 	["loc_talent_psyker_melee_weaving_desc"] = { -- vent: 10%, warp_generation: 20%, duration: 4, s->seconds, +colors
 		en = Dot_green.." {vent:%s} "..CKWord("Peril", "Peril_rgb").." Quelled on Melee "..CKWord("Weakspot", "Weakspot_rgb").." kills.\n"
 			..CPhrs("Can_proc_mult")
@@ -871,7 +879,7 @@ local psyker_localizations = {
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." на {duration:%s} секунды при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою.\n"
 			..CPhrs("Can_be_refr"),
 	},
-	--[+ Passive 17 - Immaterial Focus +]--	08.12.2025
+	--[+ Passive 17 - Immaterial Focus +]--	26.03.2026
 	["loc_talent_psyker_damage_resistance_stun_immunity_desc"] = { -- dr: +10%, duration: 4, s->seconds, +colors
 		en = Dot_green.." {dr:%s} "..CKWord("Damage", "Damage_rgb").." Resistance.\n"
 			.."\n"
@@ -882,8 +890,8 @@ local psyker_localizations = {
 			.."При "..CNumb("97%", "pc_97_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru").." или более и на {duration:%s} секунды после снижения уровня "..CKWord("опасности", "opasnosti_rgb_ru").." ниже "..CNumb("97%", "pc_97_rgb")..", вы получаете иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru").." от атак ближнего и дальнего боя.\n"
 			..CPhrs("Can_be_refr"),
 	},
-	--[+ Passive 18 - Psykinetic's Aura +]--	08.12.2025
-	["loc_talent_psyker_cooldown_on_allied_elite_kills_desc"] = { -- cooldown: 100%, time: 3, +colors
+	--[+ Passive 18 - Psykinetic's Aura +]--	26.03.2026
+	["loc_talent_psyker_cooldown_on_allied_elite_kills_desc"] = { -- cooldown: 50%, time: 5, +colors
 		en = Dot_green.." {cooldown:%s} "..CKWord("Cooldown", "Cd_rgb").." Regeneration for {time:%s} seconds when you or an Ally in "..CKWord("Coherency", "Coherency_rgb").." kills an Elite or Specialist enemy.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -891,7 +899,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr"),
 	},
-	--[+ Passive 19 - Empathic Evasion +]--	08.12.2025
+	--[+ Passive 19 - Empathic Evasion +]--	26.03.2026
 	["loc_talent_psyker_dodge_after_crits_description"] = { -- duration: 1, s->second, +colors
 		en = Dot_green.." A "..CKWord("Critical Hit", "Crit_hit_rgb").." makes you count as Dodging against Ranged Attacks for {duration:%s} second.\n"
 			.."\n"
@@ -900,7 +908,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr"),
 	},
-	--[+ Passive 20 - One with the Warp +]--	08.12.2025
+	--[+ Passive 20 - One with the Warp +]--	26.03.2026
 	["loc_talent_psyker_toughness_damage_reduction_from_warp_charge_desc"] = { -- min_damage: +10%, max_damage: +33%, +colors
 		en = Dot_green.." {min_damage:%s} to {max_damage:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." based on your current "..CKWord("Peril", "Peril_rgb")..".\n"
 			.."\n"
@@ -917,12 +925,12 @@ local psyker_localizations = {
 			..CKWord("СУС", "TDR_rgb_ru").."("..CNumb("%", "pc_rgb").."):           "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."|   "..CNumb("33", "n_33_rgb").."\n"
 			.."_______________________________",
 	},
-	--[+ Passive 21 - Just a Dream +]--	08.12.2025
+	--[+ Passive 21 - Just a Dream +]--	26.03.2026
 	["loc_talent_psyker_damage_to_peril_conversion_desc"] = { -- percent: 25%, +colors
 		en = Dot_green.." {percent:%s} of "..CKWord("Damage", "Damage_rgb").." Taken is converted into "..CKWord("Peril", "Peril_rgb")..", while below "..CNumb("97%", "pc_97_rgb").." "..CKWord("Peril", "Peril_rgb")..".",
 		ru = Dot_green.." {percent:%s} получаемого "..CKWord("урона", "urona_rgb_ru").." преобразуется в "..CKWord("опасность", "opasnost_rgb_ru")..", пока ваш уровень "..CKWord("опасности", "opasnosti_rgb_ru").." ниже "..CNumb("97%", "pc_97_rgb")..".", -- Лишь сон -- руоф Просто грезы
 	},
-	--[+ Passive 22 - Anticipation +]--	08.12.2025
+	--[+ Passive 22 - Anticipation +]--	26.03.2026
 	["loc_talent_psyker_improved_dodge_description"] = { -- dodge_linger_time: +50%, extra_consecutive_dodges: 1
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{extra_consecutive_dodges:%s} Effective Dodges.\n"
 			.."\n"
@@ -933,7 +941,7 @@ local psyker_localizations = {
 			..Dot_green.." {dodge_linger_time:%s} к длительности уклонений.\n"
 			..Dot_nc.." Длительность увеличивается с "..CNumb("0.2", "n_0_2_rgb").." до "..CNumb("0.3", "n_0_3_rgb").." секунды.",
 	},
-	--[+ Passive 23 - Solidity +]--	08.12.2025
+	--[+ Passive 23 - Solidity +]--	26.03.2026
 	["loc_talent_psyker_increased_vent_speed_description"] = { -- vent_speed: 30%
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} Quell Speed.\n"
 			.."\n"
@@ -942,17 +950,17 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_nc.." Применяется только к активному подавлению, пассивное подавление не затрагивается.",
 	},
-	--[+ Passive 24 - Puppet Master +]--	08.12.2025
+	--[+ Passive 24 - Puppet Master +]--	26.03.2026
 	["loc_talent_psyker_coherency_size_increase_description"] = { -- radius_modifier: 50%, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{radius_modifier:%s} Radius for your "..CKWord("Coherency", "Coherency_rgb").." Aura.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{radius_modifier:%s} к радиусу вашей ауры "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Кукловод
 	},
-	--[+ Passive 25 - Vulnerable Minds +]--	08.12.2025
+	--[+ Passive 25 - Vulnerable Minds +]--	26.03.2026
 	["loc_talent_psyker_damage_vs_ogryns_and_monsters_desc"] = { -- damage: +20%, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Ogryns and Monstrosities.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." огринам и чудовищам.", -- Уязвимые разумы -- руоф Уязвимые сознания
 	},
-	--[+ Passive 26 - Warp Rider +]--	08.12.2025
+	--[+ Passive 26 - Warp Rider +]--	26.03.2026
 	["loc_talent_psyker_damage_based_on_warp_charge_desc"] = { -- max_damage: +20%, +colors
 		en = Dot_green.." Deal up to {max_damage:%s} "..CKWord("Damage", "Damage_rgb")..", based on your current "..CKWord("Peril", "Peril_rgb")..":\n"
 			.."_______________________________\n"
@@ -965,7 +973,7 @@ local psyker_localizations = {
 			..CKWord("Урон", "Uron_rgb_ru").."("..CNumb("%", "pc_rgb").."):               "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|   "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 	},
-	--[+ Passive 27 - True Aim +]--	08.12.2025
+	--[+ Passive 27 - True Aim +]--	26.03.2026
 	["loc_talent_psyker_weakspot_grants_crit_once_description"] = { -- weakspot_hits: 5, +colors
 		en = Dot_green.." Landing {weakspot_hits:%s} "..CKWord("Weakspot Hits", "Weakspothits_rgb").." grants your next Ranged Attack a guaranteed "..CKWord("Critical", "Critical_rgb")..".\n"
 			.."\n"
@@ -978,7 +986,7 @@ local psyker_localizations = {
 			..Dot_nc.." Срабатывает только раз за атаку.\n"
 			..Dot_red.." Выстрел в воздух тратит "..CKWord("критический выстрел", "krit_vystrel_rgb_ru")..".",
 	},
-	--[+ Passive 28 - Kinetic Deflection +]--	08.12.2025
+	--[+ Passive 28 - Kinetic Deflection +]--	26.03.2026
 	["loc_talent_psyker_block_costs_warp_charge_desc"] = { -- warp_charge_block_cost: 25%, +colors
 		en = Dot_green.." While below "..CNumb("97%", "pc_97_rgb").." "..CKWord("Peril", "Peril_rgb")..", Blocking an attack causes you to gain "..CKWord("Peril", "Peril_rgb").." instead of losing "..CKWord("Stamina", "Stamina_rgb")..".\n"
 			.."\n"
@@ -987,7 +995,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_nc.." Получаемый уровень "..CKWord("опасности", "opasnosti_rgb_ru").." составляет {warp_charge_block_cost:%s} от стоимости "..CKWord("выносливости", "vynoslivosti_rgb_ru")..", затрачиваемой на обычное блокирование.",
 	},
-	--[+ Passive 29 - Empyric Resolve +]--	08.12.2025
+	--[+ Passive 29 - Empyric Resolve +]--	26.03.2026
 	["loc_talent_psyker_warp_glass_cannon_desc"] = { -- peril_reduction: -40%, toughness_reduction: -30%, +colors
 		en = Dot_green.." {peril_reduction:%s} "..CKWord("Peril", "Peril_rgb").." Generation.\n"
 			.."\n"
@@ -998,7 +1006,7 @@ local psyker_localizations = {
 			..Dot_red.." {toughness_reduction:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			..CPhrs("Dont_intw_coher_toughn").." Влияет только на получение "..CKWord("стойкости", "stoikosti_rgb_ru").." от убийств и талантов.",
 	},
-	--[+ Passive 30 - Penetration of the Soul +]--	08.12.2025
+	--[+ Passive 30 - Penetration of the Soul +]--	26.03.2026
 	["loc_talent_psyker_warp_attacks_rending_alt_desc"] = { -- rending: +10%, threshold: 75%, +colors
 		en = Dot_green.." Up to {rending:%s} "..CKWord("Rending", "Rending_rgb").." on Warp-Attacks, based on "..CKWord("Peril", "Peril_rgb")..":\n"
 			.."_______________________________\n"
@@ -1015,7 +1023,7 @@ local psyker_localizations = {
 			.."\n"
 			..CNote("Rend_note"),
 	},
-	--[+ Passive 31 - Crystalline Will +]--	08.12.2025
+	--[+ Passive 31 - Crystalline Will +]--	26.03.2026
 	["loc_talent_psyker_alternative_peril_explosion_new_desc"] = { -- overload_damage: +100%, overload_radius: +25%, +colors
 		en = Dot_green.." {overload_damage:%s} Overload Explosion "..CKWord("Damage", "Damage_rgb")..",\n"
 			..Dot_green.." {overload_radius:%s} Overload Explosion Radius.\n"
@@ -1035,7 +1043,7 @@ local psyker_localizations = {
 			..Dot_green.." Взрыв от перегрузки "..CKWord("Опасностей варпа", "Opasnostei_warpa_rgb_ru").." больше не выводит вас из строя, но забирает "..CNumb("1", "n_1_rgb").." сегмент "..CKWord("здоровья", "zdorovia_rgb_ru")..", нанося вам "..CKWord("урон от порчи", "porchi_uron_rgb_ru")..".\n"
 			..Dot_green.." Если взрыв убьёт элитного врага, вы не получите "..CKWord("урон от порчи", "porchi_uron_rgb_ru")..".",
 	},
-	--[+ Passive 32 - Warp Ghost +]--	08.12.2025
+	--[+ Passive 32 - Warp Ghost +]--	26.03.2026
 	["loc_talent_psyker_stat_mix_desc"] = { -- peril_reduction: -80%, stamina: +2, toughness_replenish: +25%, +colors
 		en = Dot_green.." {peril_reduction:%s} Passive quelling.\n"
 			.."\n"
@@ -1050,7 +1058,7 @@ local psyker_localizations = {
 			..Dot_green.." {toughness_replenish:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			..CPhrs("Dont_intw_coher_toughn_ru").." Влияет только на получение "..CKWord("стойкости", "stoikosti_rgb_ru").." от убийств и талантов.",
 	},
-	--[+ Passive 33 - Tranquility Through Slaughter +]--	08.12.2025
+	--[+ Passive 33 - Tranquility Through Slaughter +]--	26.03.2026
 	["loc_talent_psyker_ranged_crits_vent_desc"] = { -- percent: 4%, +colors
 		en = Dot_green.." {percent:%s} "..CKWord("Peril", "Peril_rgb").." is quelled on Non-Warp Ranged "..CKWord("Critical Hits", "Crit_hits_rgb")..".\n"
 			.."\n"
@@ -1061,7 +1069,7 @@ local psyker_localizations = {
 			..Dot_green.." Срабатывает при попадании в щиты.\n"
 			..Dot_red.." Срабатывает только раз за выстрел, независимо от количества поражённых целей.",
 	},
-	--[+ Passive 34 - Surety of Arms +]--	08.12.2025
+	--[+ Passive 34 - Surety of Arms +]--	26.03.2026
 	["loc_talent_psyker_reload_speed_warp_desc"] = { -- reload_speed: 25%, threshold: 75%, warp_charge: 25%, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} Reload Speed while below {threshold:%s} "..CKWord("Peril", "Peril_rgb")..".\n"
 			..Dot_red.." On Reload, generate up to {warp_charge:%s} "..CKWord("Peril", "Peril_rgb").." based on the Percentage of the Clip Restored.\n"
@@ -1074,7 +1082,7 @@ local psyker_localizations = {
 	},
 }
 
--- СОЗДАЁМ ШАБЛОНЫ
+-- CREATING TEMPLATES -- СОЗДАЁМ ШАБЛОНЫ
 local psyker_templates = {}
 
 for loc_key, locales in pairs(psyker_localizations) do
