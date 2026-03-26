@@ -308,40 +308,40 @@ local menus_templates = {
 		-- ["zh-cn"] = COLORS_KWords_zh_cn.sedition_rgb_zh_cn, -- 煽动
 	-- },
 	-- [+ UPRISING +]--
-	["loc_mission_board_danger_low"] = {
-		en = CKWord("Uprising", "uprising_rgb"), -- Light blue -- ui_difficulty_1
-		ru = CKWord("Восстание", "uprising_rgb_ru"), -- Восстание
+	-- ["loc_mission_board_danger_low"] = {
+		-- en = CKWord("Uprising", "uprising_rgb"), -- Light blue -- ui_difficulty_1
+		-- ru = CKWord("Восстание", "uprising_rgb_ru"), -- Восстание
 		-- ["zh-tw"] = CKWord("起義", "uprising_rgb_tw"), -- 起義
 		-- ["zh-cn"] = CKWord("起义", "uprising_rgb_zh_cn"), -- 起义
-	},
+	-- },
 	-- [+ MALICE +]--
-	["loc_mission_board_danger_medium"] = {
-		en = CKWord("Malice", "malice_rgb"), -- Light green -- ui_difficulty_2
-		ru = CKWord("Злоба", "malice_rgb_ru"), -- Злоба
+	-- ["loc_mission_board_danger_medium"] = {
+		-- en = CKWord("Malice", "malice_rgb"), -- Light green -- ui_difficulty_2
+		-- ru = CKWord("Злоба", "malice_rgb_ru"), -- Злоба
 		-- ["zh-tw"] = CKWord("惡毒", "malice_rgb_tw"), -- 惡毒
 		-- ["zh-cn"] = CKWord("憎恶", "malice_rgb_zh_cn"), -- 憎恶
-	},
+	-- },
 	-- [+ HERESY +]--
-	["loc_mission_board_danger_high"] = {
-		en = CKWord("Heresy", "heresy_rgb"), -- Yellow -- ui_difficulty_3
-		ru = CKWord("Ересь", "heresy_rgb_ru"), -- Ересь
+	-- ["loc_mission_board_danger_high"] = {
+		-- en = CKWord("Heresy", "heresy_rgb"), -- Yellow -- ui_difficulty_3
+		-- ru = CKWord("Ересь", "heresy_rgb_ru"), -- Ересь
 		-- ["zh-tw"] = CKWord("異端", "heresy_rgb_tw"), -- 異端
 		-- ["zh-cn"] = CKWord("异端", "heresy_rgb_zh_cn"), -- 异端
-	},
+	-- },
 	-- [+ DAMNATION +]--
-	["loc_mission_board_danger_highest"] = {
-		en = CKWord("Damnation", "damnation_rgb"), -- Orange -- ui_difficulty_4
-		ru = CKWord("Проклятие", "damnation_rgb_ru"), -- Проклятие
+	-- ["loc_mission_board_danger_highest"] = {
+		-- en = CKWord("Damnation", "damnation_rgb"), -- Orange -- ui_difficulty_4
+		-- ru = CKWord("Проклятие", "damnation_rgb_ru"), -- Проклятие
 		-- ["zh-tw"] = CKWord("詛咒", "damnation_rgb_tw"), -- 詛咒
 		-- ["zh-cn"] = CKWord("诅咒", "damnation_rgb_zh_cn"), -- 诅咒
-	},
+	-- },
 	-- [+ AURIC +]--
-	["loc_group_finder_difficulty_auric"] = {
-		en = CKWord("Auric", "auric_rgb"), -- Red -- ui_difficulty_5
-		ru = CKWord("Золото", "auric_rgb_ru"), -- Золото
+	-- ["loc_group_finder_difficulty_auric"] = {
+		-- en = CKWord("Auric", "auric_rgb"), -- Red -- ui_difficulty_5
+		-- ru = CKWord("Золото", "auric_rgb_ru"), -- Золото
 		-- ["zh-tw"] = CKWord("詛咒", "auric_rgb_tw"), -- 詛咒
 		-- ["zh-cn"] = CKWord("诅咒", "auric_rgb_zh_cn"), -- 诅咒
-	},
+	-- },
 
 --[+ ++INVENTORY++ +]--
 	-- [+ Curios - 珍品 +]--
