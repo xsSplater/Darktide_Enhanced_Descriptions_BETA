@@ -481,6 +481,20 @@ local scum_localizations = {
 			..Dot_green.." Но его эффекты сохраняются {linger_duration:%s} секунд после выхода из области.",
 	},
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
+	--[+ KEYSTONE 0-1 - Alley Rat +]--	17.03.2026
+	["loc_talent_broker_keystone__desc"] = { -- : +50%
+		en = "+50% Dodge Distance.",
+		ru = "+50% к расстоянию уклонения.", -- Уличная крыса
+	},
+	--[+ KEYSTONE 0-2 - Nimble +]--	17.03.2026
+	["loc_talent_broker_passive_improved_dodges_desc_02"] = { -- dodge_distance_modifier: +25%, dodge_linger_time: +0.15, s->seconds, +colors
+		en = Dot_green.." {dodge_distance_modifier:%s} Dodge Speed.\n"
+			.."\n"
+			..Dot_green.." {dodge_linger_time:%s} seconds Dodge linger time.",
+		ru = Dot_green.." {dodge_distance_modifier:%s} к скорости уклонения.\n"
+			.."\n"
+			..Dot_green.." {dodge_linger_time:%s} секунды к длительности уклонения.",
+	},
 	--[+ KEYSTONE 1 - Vulture’s Mark +]--	11.02.2026
 	["loc_talent_broker_keystone_vultures_mark_on_kill_desc"] = { -- duration: 8, max_stacks: 3, ranged_damage: +5%, movement_speed: +5%, crit_chance: +5%, toughness: 15%, s->seconds, +colors
 		en = "Killing Special or Elite enemy with a Ranged weapon within "..CNumb("12.5", "n_12_5_rgb").." meters grants you a Stacks of "..CKWord("Vulture's Mark", "VultsMark_rgb")..".\n"
@@ -707,7 +721,7 @@ local scum_localizations = {
 	--[+ Passive 3 - A Tertium Welcome +]--	30.12.2025
 	["loc_talent_broker_passive_first_target_damage_desc"] = { -- : +15%, +colors
 		en = Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." on first Enemy hit with each attack.",
-		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя по первому врагу при каждой атаке.",
+		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя по первому врагу при каждой атаке.",
 	},
 	--[+ Passive 4 - Voice of Tertium +]--	30.12.2025
 	["loc_talent_broker_passive_restore_toughness_on_close_ranged_kill_desc"] = { -- toughness: +8%, toughness_elites: +15%, +colors
@@ -824,15 +838,15 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Скорость смены оружия и предметов сокращает время действий при смене слотов (оружие, гранаты, стимы, медпаки, ящики с боеприпасами, книги и т.д.).",
 	},
-	--[+ Passive 11 - Gang Tough +]--	30.12.2025
-	["loc_talent_broker_passive_punk_grit_desc"] = { -- ranged_damage: +10%, toughness_damage_taken_modifier: +10%, +colors
-		en = Dot_green.." {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..".\n"
-			.."\n"
-			..Dot_green.." {toughness_damage_taken_modifier:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
-		ru = Dot_green.." {ranged_damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru")..".\n"
-			.."\n"
-			..Dot_green.." {toughness_damage_taken_modifier:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".",
-	},
+	--[+ Passive 11 - Gang Tough +]--	-- removed in Beyond the Hive 17.03.2026
+	-- ["loc_talent_broker_passive_punk_grit_desc"] = { -- ranged_damage: +10%, toughness_damage_taken_modifier: +10%, +colors
+		-- en = Dot_green.." {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..".\n"
+			-- .."\n"
+			-- ..Dot_green.." {toughness_damage_taken_modifier:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
+		-- ru = Dot_green.." {ranged_damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru")..".\n"
+			-- .."\n"
+			-- ..Dot_green.." {toughness_damage_taken_modifier:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".",
+	-- },
 	--[+ Passive 12 - Regained Posture +]--	30.12.2025
 	["loc_talent_broker_passive_stamina_on_successful_dodge_desc"] = { -- stamina: +10%, +colors
 		en = Dot_green.." {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." on Successful Dodge.\n"
@@ -846,39 +860,30 @@ local scum_localizations = {
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
 			..Dot_nc.." Атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
 	},
-	--[+ Passive 13 - Nimble +]--	11.02.2026
-	["loc_talent_broker_passive_improved_dodges_desc_02"] = { -- dodge_distance_modifier: +25%, dodge_linger_time: +0.15, s->seconds, +colors
-		en = Dot_green.." {dodge_distance_modifier:%s} Dodge Speed.\n"
-			.."\n"
-			..Dot_green.." {dodge_linger_time:%s} seconds Dodge linger time.",
-		ru = Dot_green.." {dodge_distance_modifier:%s} к скорости уклонения.\n"
-			.."\n"
-			..Dot_green.." {dodge_linger_time:%s} секунды к продолжительности уклонения.",
-	},
 	--[+ Passive 14 - Slippery Customer +]--	11.02.2026
 	-- ["loc_talent_broker_passive_dodge_melee_on_slide_desc"] = {
 		-- en = "While sliding, you count as Dodging against Melee Attacks.",
 		-- ru = "При подкате вы входите в состояние уклонения от атак ближнего боя.",
 	-- },
-	--[+ Passive 15 - Untouchable +]--	30.12.2025
-	["loc_talent_broker_passive_sprinting_reduces_threat_desc"] = { -- threshold: 1, threat_weight_multiplier: -12.5%, duration: 3, max_stacks: 4, +colors
-		en = "Sprinting and sliding actions generate Stacks.\n"
-			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
-			.."\n"
-			.."Per Stack, grants for {duration:%s} seconds:\n"
-			..Dot_green.." {threat_weight_multiplier:%s} Threat.\n"
-			..Dot_nc.." Less likely to be targeted by enemies.\n"
-			.."\n"
-			..Dot_nc.." Stacks can be refreshed during active duration by sprinting, sliding, and successfully dodging enemy melee or ranged attacks (except Gunners, Reaper, Sniper) and disabler attacks (Pox Hound jump, Trapper net, Mutant grab).",
-		ru = "Бег и скольжение создают заряды.\n"
-			..Dot_nc.." Суммируется {max_stacks:%s} раза.\n"
-			.."\n"
-			.."За каждый заряд вы получаете на {duration:%s} секунды:\n"
-			..Dot_green.." {threat_weight_multiplier:%s} угрозы.\n"
-			..Dot_nc.." Враги реже атакуют вас.\n"
-			.."\n"
-			..Dot_nc.." Заряды можно обновлять во время действия c помощью бега, скольжения и успешных уклонений от атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера) и атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
-	},
+	--[+ Passive 15 - Untouchable +]--	-- removed in Beyond the Hive 17.03.2026
+	-- ["loc_talent_broker_passive_sprinting_reduces_threat_desc"] = { -- threshold: 1, threat_weight_multiplier: -12.5%, duration: 3, max_stacks: 4, +colors
+		-- en = "Sprinting and sliding actions generate Stacks.\n"
+			-- ..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			-- .."\n"
+			-- .."Per Stack, grants for {duration:%s} seconds:\n"
+			-- ..Dot_green.." {threat_weight_multiplier:%s} Threat.\n"
+			-- ..Dot_nc.." Less likely to be targeted by enemies.\n"
+			-- .."\n"
+			-- ..Dot_nc.." Stacks can be refreshed during active duration by sprinting, sliding, and successfully dodging enemy melee or ranged attacks (except Gunners, Reaper, Sniper) and disabler attacks (Pox Hound jump, Trapper net, Mutant grab).",
+		-- ru = "Бег и скольжение создают заряды.\n"
+			-- ..Dot_nc.." Суммируется {max_stacks:%s} раза.\n"
+			-- .."\n"
+			-- .."За каждый заряд вы получаете на {duration:%s} секунды:\n"
+			-- ..Dot_green.." {threat_weight_multiplier:%s} угрозы.\n"
+			-- ..Dot_nc.." Враги реже атакуют вас.\n"
+			-- .."\n"
+			-- ..Dot_nc.." Заряды можно обновлять во время действия c помощью бега, скольжения и успешных уклонений от атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера) и атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
+	-- },
 	--[+ Passive 16 - Tis but a Scratch +]--	30.12.2025
 	["loc_talent_broker_passive_replenish_toughness_on_ranged_toughness_damage_desc"] = { -- toughness: 30%, duration: 3, +colors
 		en = "Taking a Ranged "..CKWord("Toughness Damage", "Tghns_dmg_rgb")..", while "..CKWord("Toughness", "Toughness_rgb").." is above "..CNumb("0", "n_0_rgb")..", replenishes:\n"
@@ -975,17 +980,17 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Типы элитных врагов и чудовищ: Зверь Нургла, Отродье Хаоса, Чумной огрин, бастион, берсерк, демонхост, жнец, крушитель, палач, плазмомётчик, пулемётчики, радист, скабы с дробовиками.",
 	},
-	--[+ Passive 24 - Like the Wind +]--	30.12.2025
-	["loc_talent_broker_passive_improved_sprint_dodge_desc"] = { -- angle: +15, +colors
-		en = Dot_green.." {angle:%s} Sprint Dodge Angle.\n"
-			..Dot_green.." This allows you to Dodge incoming fire almost diagonally while continuing to move forward.\n"
-			.."\n"
-			..Dot_green.." Sprint Dodging is available even when "..CKWord("Stamina", "Stamina_rgb").." is depleted.",
-		ru = Dot_green.." {angle:%s} к углу уклонения при беге.\n"
-			..Dot_green.." Позволяет уклоняться от вражеских выстрелов, продолжая двигаться почти по диагонали вперёд.\n"
-			.."\n"
-			..Dot_green.." Уклонение при беге доступно даже при нулевой "..CKWord("выносливости", "vynoslivost_rgb_ru")..".",
-	},
+	--[+ Passive 24 - Like the Wind +]--	-- removed in Beyond the Hive 17.03.2026
+	-- ["loc_talent_broker_passive_improved_sprint_dodge_desc"] = { -- angle: +15, +colors
+		-- en = Dot_green.." {angle:%s} Sprint Dodge Angle.\n"
+			-- ..Dot_green.." This allows you to Dodge incoming fire almost diagonally while continuing to move forward.\n"
+			-- .."\n"
+			-- ..Dot_green.." Sprint Dodging is available even when "..CKWord("Stamina", "Stamina_rgb").." is depleted.",
+		-- ru = Dot_green.." {angle:%s} к углу уклонения при беге.\n"
+			-- ..Dot_green.." Позволяет уклоняться от вражеских выстрелов, продолжая двигаться почти по диагонали вперёд.\n"
+			-- .."\n"
+			-- ..Dot_green.." Уклонение при беге доступно даже при нулевой "..CKWord("выносливости", "vynoslivost_rgb_ru")..".",
+	-- },
 	--[+ Passive 25 - Cheap Shots +]--	11.02.2026
 	["loc_talent_broker_passive_damage_vs_heavy_staggered_desc_02"] = { -- power_light: +10%, power_heavy: +15%, +colors
 		en = Dot_green.." {power_light:%s} "..CKWord("Strength", "Strength_rgb").." against "..CKWord("Staggered", "Staggered_rgb").." Enemies.\n"
@@ -1016,11 +1021,11 @@ local scum_localizations = {
 			.."\n"
 			..CPhrs("Can_proc_mult"),
 	},
-	--[+ Passive 27 - Loose Formation +]--	30.12.2025
-	["loc_talent_broker_passive_increased_aura_size_desc"] = { -- multiplier: +75%, +colors
-		en = Dot_green.." {multiplier:%s} "..CKWord("Coherency", "Coherency_rgb").." Radius. Increases base "..CKWord("Coherency", "Coherency_rgb").." radius from "..CNumb("8", "n_8_rgb").." to "..CNumb("14", "n_14_rgb").." meters.",
-		ru = Dot_green.." {multiplier:%s} к радиусу "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Увеличивает базовый радиус "..CKWord("сплочённости", "splochennosti_rgb_ru").." с "..CNumb("8", "n_8_rgb").." до "..CNumb("14", "n_14_rgb").." метров.",
-	},
+	--[+ Passive 27 - Loose Formation +]--	-- removed in Beyond the Hive 17.03.2026
+	-- ["loc_talent_broker_passive_increased_aura_size_desc"] = { -- multiplier: +75%, +colors
+		-- en = Dot_green.." {multiplier:%s} "..CKWord("Coherency", "Coherency_rgb").." Radius. Increases base "..CKWord("Coherency", "Coherency_rgb").." radius from "..CNumb("8", "n_8_rgb").." to "..CNumb("14", "n_14_rgb").." meters.",
+		-- ru = Dot_green.." {multiplier:%s} к радиусу "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Увеличивает базовый радиус "..CKWord("сплочённости", "splochennosti_rgb_ru").." с "..CNumb("8", "n_8_rgb").." до "..CNumb("14", "n_14_rgb").." метров.",
+	-- },
 	--[+ Passive 28 - Extra Pouches +]--	30.12.2025
 	["loc_talent_broker_passive_increased_blitz_ammo_desc"] = { -- ammo: +1, +colors
 		en = Dot_green.." {ammo:%s} Blitz Charges.",
@@ -1035,13 +1040,13 @@ local scum_localizations = {
 			.."\n"
 			..CPhrs("Can_appl_thr_shldsb"),
 	},
-	--[+ Passive 30 - Pickpocket +]--	30.12.2025
-	["loc_talent_broker_passive_low_ammo_regen_desc"] = { -- ammo_threshold: +20% -> 20%, +colors
-		en = "While current Ammo in reserve is below {ammo_threshold:%s}, killing an Elite or Specialist Enemy with any Attack sets the Ammo count in reserve to:\n"
-			..Dot_green.." {ammo_threshold:%s} of Max Ammo.",
-		ru = "При запасе боеприпасов ниже {ammo_threshold:%s}, убийство элитных врагов или специалистов любой атакой восстанавливает запас боеприпасов до:\n"
-			..Dot_green.." {ammo_threshold:%s} от максимального запаса.",
-	},
+	--[+ Passive 30 - Pickpocket +]--	17.03.2026
+	-- ["loc_talent_broker_passive_low_ammo_regen_desc"] = { -- ammo_threshold: 20%, +colors
+		-- en = "While current Ammo in reserve is below {ammo_threshold:%s}, killing an Elite or Specialist Enemy with Melee Attack sets the Ammo count in reserve to:\n"
+			-- ..Dot_green.." {ammo_threshold:%s} of Max Ammo.",
+		-- ru = "При запасе боеприпасов ниже {ammo_threshold:%s}, убийство элитных врагов или специалистов атакой ближнего боя восстанавливает запас боеприпасов до:\n"
+			-- ..Dot_green.." {ammo_threshold:%s} от максимального запаса.",
+	-- },
 	--[+ Passive 31 - Hyper-Critical +]--	30.12.2025
 	["loc_talent_broker_passive_melee_crit_instakill_desc"] = { -- threshold: 2, +colors
 		en = CKWord("Critical Strikes", "Crit_strikes_rgb").." instantly kill Human Sized Enemies if their current "..CKWord("Health", "Health_rgb").." is less than {threshold:%s} times the amount of "..CKWord("Damage", "Damage_rgb").." of the "..CKWord("Critical Strikes", "Crit_strikes_rgb")..".\n"
@@ -1079,6 +1084,15 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Длительность усиления обновляется только если новый избыточный "..CKWord("урон", "uron_rgb_ru").." больше предыдущего.",
 	},
+	--[+ Passive 3_ - Street Tough +]--	17.03.2026
+	["loc_talent_broker_passive__desc"] = { -- movement_speed: +10%, duration: 3, : 8, +colors
+		en = "When taking Melee "..CKWord("Damage", "Damage_rgb")..", knock All nearby Enemies around you backwards and gain for 3 seconds:\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed."
+			..Dot_nc.." Can only trigger once every {:%s} seconds.",
+		ru = "При получении "..CKWord("урона", "urona_rgb_ru").." в ближнем бою, вы отбрасываете всех врагов назад и получаете на 3 секунды:\n"
+			..Dot_green.." {movement_speed:%s} к скорости движения."
+			..Dot_nc.." Срабатывает раз в {:%s} секунд.",
+	},
 	--[+ Passive 34 - Hive City Brawler +]--	30.12.2025
 	["loc_talent_broker_passive_dr_damage_tradeoff_on_stamina_desc"] = { -- damage_increase: 20%, damage_reduction: 20%, +colors
 		en = Dot_green.." Up to "..CNumb("+", "n_plus_rgb").."{damage_increase:%s} Melee "..CKWord("Damage", "Damage_rgb").." depending on spent "..CKWord("Stamina", "Stamina_rgb")..".\n"
@@ -1094,6 +1108,11 @@ local scum_localizations = {
 			..Dot_green.." {multiplier:%s} "..CKWord("Cleave", "Cleave_rgb").." for your next Melee Attack.",
 		ru = "Попадание по {min_targets:%s} или более врагам атакой ближнего боя даёт:\n"
 			..Dot_green.." {multiplier:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." врагов для следующей атаки ближнего боя.",
+	},
+	--[+ Passive 3_ - Splash Damage +]--	17.03.2026
+	["loc_talent_broker_passive__desc"] = { -- : 10, range: 4, stacks: 2, +colors
+		en = "Killing an Elite Enemy with a Melee Attack infect up to {:%s} enemies within {range:%s} meters of the target with {stacks:%s} Stacks of "..CKWord("Chem Toxin", "Chem_Tox_rgb")..".",
+		ru = "Убийсто элитного врага атакой ближнего боя заражает до {:%s} врагов в радиусе {range:%s} метров от цели {stacks:%s} зарядами "..CKWord("Chem_Toxa_rgb_ru", "Хим-токсина")..".",
 	},
 	--[+ Passive 36 - Sample Collector +]--	30.12.2025
 	["loc_talent_broker_passive_stimm_cd_on_kill_desc"] = { -- restore: 1%, restore_toxined: 2%, +colors
@@ -1151,12 +1170,12 @@ local scum_localizations = {
 			.."Чудовища наносят:\n"
 			..Dot_green.." {monster:%s} "..CKWord("урона", "urona_rgb_ru")..".",
 	},
-	--[+ Passive 40 - Moving Target +]--	30.12.2025
-	["loc_talent_broker_passive_increased_ranged_dodges_desc"] = { -- extra_consecutive_dodges: +1, +colors
-		en = "While wielding your Ranged Weapon you gain:\n"
-			..Dot_green.." {extra_consecutive_dodges:%s} Effective Dodges.",
-		ru = "С дальнобойным оружием в руках вы получаете:\n"
-			..Dot_green.." {extra_consecutive_dodges:%s} эффективное уклонение.",
+	--[+ Passive 4_ - Channelled Devastation +]--	17.03.2026
+	["loc_talent_broker_passive__desc"] = { -- : 1%, : +0.5%, stacks: 30, melee_damage: +15%, +colors
+		en = "Each {critical_chance:%s} of your current "..CKWord("Critical Hit Chance", "Crit_chance_rgb").." grants a Stack of {melee_damage:%s} Melee "..CKWord("Damage", "Damage_rgb").."."
+			..Dot_nc.." Stacks {stacks:%s} times. Up to {melee_damage:%s} Melee "..CKWord("Damage", "Damage_rgb")..".",
+		ru = "Каждый {critical_chance:%s} вашего текущего "..CKWord("шанса критического удара", "sha_krit_udara_rgb_ru").." даёт заряд {melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя."
+			..Dot_nc.." Суммируется {stacks:%s} раз. Вплоть до {melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.",
 	},
 	--[+ Passive 41 - Ramping Backstabs +]--	30.12.2025
 	["loc_talent_broker_passive_ramping_backstabs_desc"] = { -- power: +10%, stacks: 5, +colors
@@ -1175,13 +1194,22 @@ local scum_localizations = {
 			.."\n"
 			..Dot_red.." Обычные удары в ближнем бою снимают все заряды.",
 	},
-	--[+ Passive 42 - Toxic Renewal +]--	30.12.2025
-	["loc_talent_broker_toughness_on_toxined_kill_desc"] = { -- toughness: +15%, +colors
-		en = "When "..CKWord("Chem Toxin", "Chem_Tox_rgb").."-infected Enemy is killed by a Melee Attack you replenish:\n"
-			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
-		ru = "При убийстве заражённого "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru").." врага атакой ближнего боя вы восполняете:\n"
-			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".",
+	--[+ Passive 4_ - Virulent Strain +]--	17.03.2026
+	["loc_talent_broker_passive__desc"] = { -- damage_taken: +10%, duration: 5, +colors
+		en = "When you infect enemies with "..CKWord("Chem Toxin", "Chem_Tox_rgb").." they gain for {duration:%s} seconds:\n"
+			..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Taken from all sources.",
+		ru = "Когда вы заражаете врагов "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru").." они получают на {duration:%s} секунд:\n"
+			..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru").." из любых источников.",
 	},
+	--[+ Passive 42 - Toxic Renewal +]--	17.03.2026
+	-- ["loc_talent_broker_toughness_on_toxined_kill_desc"] = { -- toughness: 1%, range: 15, : 10, m->meters, +colors
+		-- en = "For each "..CKWord("Chem Toxin", "Chem_Tox_rgb").."-infected Enemy within {range:%s} meters you replenish:\n"
+			-- ..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." per second.\n"
+			-- ..Dot_nc.." Up to Maximum "..CNumb("10", "n_10_rgb").." Enemies.",
+		-- ru = "За каждого заражённого "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru").." врага в радиусе {range:%s} метров вы восполняете:\n"
+			-- ..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.\n"
+			-- ..Dot_nc.." Максимум "..CNumb("10", "n_10_rgb").." заражённых врагов.",
+	-- },
 
 
 --[+ +STIMM LAB - СТИМ ЛАБА+ +]--

@@ -5,7 +5,7 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_buff_toughness_during_stimm"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_adamant_terminus_warrant_improved_combined_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
 
 -- Кэш утилит
@@ -229,8 +229,12 @@ local FIXES = {
 
 	--[+ ARBITES - АРБИТРЕС +]--
 		--[+ ABILITY 1 - Castigator's Stance +]--
-		loc_talent_adamant_stance_ability_alt_description = {
+		loc_talent_adamant_stance_ability_power_description = {
 			damage_taken =						MFF.fixes.all_plus
+		},
+		--[+ KEYSTONE 5-2 - Terminal Decree +]--
+		loc_talent_adamant_terminus_warrant_support_desc = {
+			toughness =							MFF.fixes.all_plus
 		},
 		--[+ Passive 16 - Canine Morale +]--
 		loc_talent_adamant_pinning_dog_kills_buff_allies_description = {
