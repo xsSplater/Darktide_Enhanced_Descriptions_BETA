@@ -477,7 +477,7 @@ local weapon_localizations = {
 
 --[+ ++WEAPON BLESSINGS - БЛАГОСЛОВЕНИЯ ОРУЖИЯ - 武器祝福++ +]--
 	--[+ MELEE - БЛИЖНИЙ БОЙ - 近戰 +]--
-		--[+ OPPORTUNIST +]--	31.12.2025
+		--[+ OPPORTUNIST +]--	27.03.2026
 		--Rending vs Staggered (per tier)
 		-- Battle Maul and Shield, Chainaxes, Crowbar, Crusher, Eviscerators, Latrine Shovels, Power Maul, Shock Mauls, Shock Mauls and Shield -- 10% | 15% | 20% | 25%
 		["loc_trait_bespoke_armor_penetration_against_staggered_desc"] = { -- rending: +25%, +colors, +note
@@ -506,14 +506,14 @@ local weapon_localizations = {
 			["pt-br"] = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Penetração", "Rending_rgb_pt_br").." contra Inimigos "..CKWord("Cambaleantes", "Staggered_rgb_pt_br")..".\n"
 				..CNote("Rend_note"),
 		},
-		--[+ BLOODLETTER +]--	31.12.2025
+		--[+ BLOODLETTER +]--	27.03.2026
 		-- Bleed Stacks (per tier)
 		-- Chainaxes -- 10 | 12 | 14 | 16
 		-- Chainswords -- 11 | 12 | 13 | 14
 		-- Eviscerators -- 3 | 4 | 5 | 6
 		["loc_trait_bespoke_bleed_on_activated_hit_desc"] = { -- stacks: +14, +colors
 			en = CNumb("{stacks:%s}", "stacks_var_rgb").." "..CKWord("Bleed", "Bleed_rgb").." Stacks from Special Attacks. "
-				.."Lasts "..CNumb("1.5", "n_1_5_rgb").." seconds. Ticks every "..CNumb("0.5", "n_05_rgb").." seconds.\n"
+				.."Lasts "..CNumb("1.5", "n_1_5_rgb").." seconds. Ticks every "..CNumb("0.5", "n_0_5_rgb").." seconds.\n"
 				..CPhrs("Refr_dur_stappl")..CPhrs("Cant_appl_thr_shlds"),
 			ru = CNumb("{stacks:%s}", "stacks_var_rgb").." зарядов "..CKWord("кровотечения", "krovotechenia_rgb_ru").." накладывается от специальных атак. "
 				.."Длится "..CNumb("1.5", "n_1_5_rgb").." секунды. "..CPhrs("Refr_dur_stappl").."\n"
@@ -525,7 +525,7 @@ local weapon_localizations = {
 				-- 重型開膛劍 -- 3 | 4 | 5 | 6
 			-- ["zh-cn"] = "特殊攻击 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("流血", "Bleed_rgb_zh_cn").."。\n最多叠加 "..CNumb("16", "n_16_rgb").." 层。", -- 放血者
 		},
-		--[+ BLOODTHIRSTY +]--	31.12.2025
+		--[+ BLOODTHIRSTY +]--	27.03.2026
 		-- Melee Crit Chance (per tier)
 		-- Chainaxes, Chainswords, Eviscerators, Force Swords -- 40% | 60% | 80% | 100%
 		["loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"] = { -- crit_chance: +100%, +colors
@@ -536,7 +536,7 @@ local weapon_localizations = {
 				-- 突擊鏈斧, 突擊鏈鋸劍, 重型開膛劍, 烈焰力場劍 -- 40% | 60% | 80% | 100%
 			-- ["zh-cn"] = "特殊攻击击杀敌人时，\n使下次近战攻击 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。", -- 嗜血
 		},
-		--[+ HEADTAKER +]--	31.12.2025
+		--[+ HEADTAKER +]--	27.03.2026
 		-- Melee Power per stack (per tier)
 		-- Chainaxes, Combat Axes, Pickaxes, Tactical Axes, Thunder Hammers -- 3.5% 4% 4.5% 5% (up to +25%)
 		-- Heavy Swords -- 6.5% 7% 7.5% 8% (up to +40%)
@@ -1015,8 +1015,8 @@ local weapon_localizations = {
 		},
 		--[+ BLADED MOMENTUM +]--
 		-- Rending per stack (per tier)
-		-- Heavy Swords -- 4% | 6% | 8% | 10% (up to +50%)
-		["loc_trait_bespoke_stacking_rending_on_cleave_desc"] = { -- rending: +10%, time: 2.5, stacks: 5, +colors, +note
+		-- Heavy Swords -- 5% & 2.5s | 6% & 3s | 7% & 3.5s | 8% & 4s (up to +32%)
+		["loc_trait_bespoke_stacking_rending_on_cleave_desc"] = { -- rending: +8%, time: 4, stacks: 4, +colors, +note
 			en = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Rending", "Rending_rgb").." for "..CNumb("{time:%s}", "time_var_rgb").." seconds when hitting "..CNumb("2", "n_2_rgb").." or more enemies with a melee attack. Stacks "..CNumb("{stacks:%s}", "stacks_var_rgb").." times. "
 				..CPhrs("Can_be_refr")..CNote("Rend_note"),
 			ru = CNumb("{rending:%s}", "rending_var_rgb").." к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони на "..CNumb("{time:%s}", "time_var_rgb").." секунды при ударе по "..CNumb("2", "n_2_rgb").." или более врагам за раз. Суммируется "..CNumb("{stacks:%s}", "stacks_var_rgb").." раз.\n"
@@ -1475,7 +1475,7 @@ local weapon_localizations = {
 				-- 作戰大槌and板盾 -- 4% | 6% | 8% | 10% (up to +50%)
 			-- ["zh-cn"] = "格挡期间，每消耗 "..CNumb("1", "n_1_rgb").." "..CKWord("体力", "Stamina_rgb_zh_cn").." "..CNumb("{power:%s}", "pwr_var_rgb").." 近战"..CKWord("强度", "Strength_rgb_zh_cn").."，\n持续 "..CNumb("{duration:%s}", "dur_var_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 以守为攻
 		},
-		--[+ CAN OPENER +]-- MELEE!	31.12.2025
+		--[+ CAN OPENER +]-- MELEE!	27.03.2026
 		-- Brittleness Stacks (per tier)
 		-- Crowbar -- 1 | 2 | 3 | 4
 		["loc_trait_bespoke_armor_rending_bayonette_crowbar_desc"] = { -- rending: 2.5%, stacks: 4, time: 5, max_stacks: 16, s->seconds, +colors
@@ -2074,8 +2074,8 @@ local weapon_localizations = {
 		},
 		--[+ EFFICIENCY +]--
 		-- Cooldown (per tier)
-		-- Infantry Lasguns -- 5.5s | 5s | 4.5s | 4s
-		["loc_trait_bespoke_first_shot_ammo_cost_reduction_desc"] = { -- ammo: 33%, time: 4, s->seconds, +colors
+		-- Infantry Lasguns -- 1.25s | 1s | 0.75s | 0.5s
+		["loc_trait_bespoke_first_shot_ammo_cost_reduction_desc"] = { -- ammo: 66%, time: 4, s->seconds, +colors
 			en = CNumb("-", "n_minus_rgb")..CNumb("66%", "pc_66_rgb").." Ammo consumption per shot every "..CNumb("{time:%s}", "time_var_rgb").." seconds. "
 				..Dot_nc.." The Mk "..CKWord("VII", "n_VII_rgb").." and the Mk "..CKWord("IX", "n_IX_rgb").." consumes "..CNumb("1", "n_1_rgb").." ammo per shot instead of "..CNumb("3", "n_3_rgb")..", and the Mk "..CKWord("IIB", "n_IIB_rgb").." - "..CNumb("1", "n_1_rgb").." instead of "..CNumb("2", "n_2_rgb")..".",
 			ru = CNumb("-", "n_minus_rgb")..CNumb("66%", "pc_66_rgb").." от затрат боеприпасов на выстрел раз в "..CNumb("{time:%s}", "time_var_rgb").." секунды. "
@@ -2499,7 +2499,7 @@ local weapon_localizations = {
 				-- 雙鏈重型機槍 -- 7% | 8% | 9% | 10% (up to +50%)
 			-- ["zh-cn"] = "每命中同一敌人 "..CNumb("{hit:%s}", "hit_var_rgb").." 次 "..CNumb("{power:%s}", "pwr_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 狂猛火力
 		},
-		--[+ CAN OPENER +]--
+		--[+ CAN OPENER +]--	27.03.2026
 		-- Brittleness Stacks (per tier)
 		-- Ripper Guns -- 10 | 12 | 14 | 16
 		["loc_trait_bespoke_armor_rending_bayonette_desc"] = { -- rending: 2.5%, stacks: 16, time: 5, max_stacks: 16, s->seconds, +colors

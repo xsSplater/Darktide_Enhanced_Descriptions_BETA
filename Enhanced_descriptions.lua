@@ -5,7 +5,7 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_psyker_force_field_dome_increased_cd_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_zealot_stamina_cost_multiplier_delay_aura_description"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
 
 -- Кэш утилит

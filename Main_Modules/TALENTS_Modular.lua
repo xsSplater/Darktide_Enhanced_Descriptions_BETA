@@ -331,11 +331,11 @@ local talent_localizations = {
 			-- ["zh-tw"] = "{stamina:%s} "..COLORS_KWords_tw.Stamina_rgb_tw.."。", -- 耐力增幅
 			-- ["zh-cn"] = "{stamina:%s} "..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."。", -- 体力强化
 		},
-		--[+ Stamina Regeneration Boost +]--	08.12.2025
+		--[+ Stamina Regeneration Boost +]--	27.03.2026
 		-- Veteran 1
 		["loc_talent_stamina_regen_delay_desc"] = { -- duration: 0.25
-			en = Dot_green.." {duration:%s} seconds "..CKWord("Stamina", "Stamina_rgb").." Regeneration Delay Reduction.",
-			ru = Dot_green.." На {duration:%s} секунд меньше задержка восстановления "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- руоф Усиление восстановления выносливости
+			en = Dot_green.." "..CNumb("-", "n_minus_rgb").."{duration:%s} seconds "..CKWord("Stamina", "Stamina_rgb").." Regeneration Delay.",
+			ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{duration:%s} секунды задержка восстановления "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- руоф Усиление восстановления выносливости
 			-- fr = "{duration:%s} secondes de réduction du délai de régénération d'"..COLORS_KWords_fr.Stamina_rgb_fr..".",
 			-- ["zh-tw"] = "{duration:%s} 秒 "..COLORS_KWords_tw.Stamina_rgb_tw.." 再生延遲減少。", -- 耐力恢復增幅
 			-- ["zh-cn"] = CNumb("-", "n_minus_rgb").."{duration:%s} 秒"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."回复延迟。", -- 体力回复强化
