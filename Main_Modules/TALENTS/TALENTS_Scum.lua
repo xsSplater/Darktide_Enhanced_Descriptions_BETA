@@ -1119,7 +1119,7 @@ local scum_localizations = {
 	--[+ Passive 35 - Splash Damage +]--	26.03.2026
 	["loc_talent_broker_passive_toxin_spread_on_kills_desc_02"] = { -- max_targets: 10, radius: 4, toxin_stacks: 2, +colors
 		en = "Killing an Elite Enemy with a Melee Attack infects up to {max_targets:%s} enemies within {radius:%s} meters of the target with {toxin_stacks:%s} Stacks of "..CKWord("Chem Toxin", "Chem_Tox_rgb")..".",
-		ru = "Убийсто элитного врага атакой ближнего боя заражает до {max_targets:%s} врагов в радиусе {radius:%s} метров от цели {toxin_stacks:%s} зарядами "..CKWord("Chem_Toxa_rgb_ru", "Хим-токсина")..".",
+		ru = "Убийсто элитного врага атакой ближнего боя заражает до {max_targets:%s} врагов в радиусе {radius:%s} метров от цели {toxin_stacks:%s} зарядами "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru")..".",
 	},
 	--[+ Passive 36 - Toxic Renewal +]--	26.03.2026
 	["loc_talent_broker_passive_replenish_toughness_while_toxined_enemies_in_proximity_desc"] = { -- toughness_amount: 1%, range: 15, max_enemies: 10, m->meters, +colors
