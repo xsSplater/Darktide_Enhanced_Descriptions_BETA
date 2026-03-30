@@ -248,7 +248,7 @@ local CONFIG = {
 		Duty_honor = "職責與榮譽",
 		-- Ogryn
 		Att_Seeker = "注意力尋求者",
-		-- PENANCES
+	-- PENANCES
 		Base_tut_p = "基礎訓練",
 		Curio_p = "珍品",
 		Omnissia_p = "歐姆尼賽亞的神龕",
