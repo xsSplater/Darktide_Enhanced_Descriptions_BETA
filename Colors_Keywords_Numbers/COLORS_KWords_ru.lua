@@ -160,6 +160,7 @@ local CONFIG = {
 		Oshelomlautsa =		"Ошеломляются",					-- Таланты
 		Oshelomlauschie =	"Ошеломляющие",					-- Таланты
 
+		Oglushite =			"Оглушите",						-- Таланты
 		oglushit =			"оглушить",						-- Таланты
 		oglushaetes =		"оглушаетесь",					-- Таланты
 
