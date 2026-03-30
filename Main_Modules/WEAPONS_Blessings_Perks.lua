@@ -2331,15 +2331,19 @@ local weapon_localizations = {
 				-- 電漿槍 -- 2% | 3% | 4% | 5% (up to +25%)
 			-- ["zh-cn"] = "随充能程度叠加层数，每充能\n"..CNumb("20%", "pc_20_rgb").." 叠加 "..CNumb("1", "n_1_rgb").." 层，每层 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance_min:%s}", "critchmin_var_rgb").." "..CKWord("暴击几率", "Crt_chance_rgb_zh_cn").."。\n最多叠加 "..CNumb("5", "n_5_rgb").." 层，最高 "..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").."。", -- 充能爆破
 		},
-		--[+ GETS HOT! +]--
+		--[+ GETS HOT! +]--	30.03.2026
 		-- Crit Chance and Ranged Crit Damage per stack (per tier)
 		-- Plasma Gun -- 5.5% and 4% | 7% and 6% | 8.5 and 8% | 10% and 10% (up to +50% and +50%)
 		["loc_trait_bespoke_crit_chance_scaled_on_heat_desc"] = { -- crit_chance: 50%, ranged_crit_damage: 10%, +colors
-			en = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." and\n"
-				..CNumb("{ranged_crit_damage:%s}", "rangcrtdmg_var_rgb").." "..CKWord("Critical Damage", "Crit_dmg_r_rgb").." per Stack.\n"
+			en = "Scaling with overheat, grants Stacks.\n"
+				.."Per Stack you gain:\n"
+				..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." and\n"
+				..CNumb("{ranged_crit_damage:%s}", "rangcrtdmg_var_rgb").." "..CKWord("Critical Damage", "Crit_dmg_r_rgb")..".\n"
 				..Dot_nc.." Stacks up to "..CNumb("5", "n_5_rgb").." times.",
-			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru").." и\n"
-				..CNumb("{ranged_crit_damage:%s}", "rangcrtdmg_var_rgb").." к "..CKWord("критическому урону", "krit_uronu_rgb_ru").." за заряд.\n"
+			ru = "Повышение перегрева даёт заряды.\n"
+				.."За заряд вы получаете:\n"
+				..CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru").." и\n"
+				..CNumb("{ranged_crit_damage:%s}", "rangcrtdmg_var_rgb").." к "..CKWord("критическому урону", "krit_uronu_rgb_ru")..".\n"
 				..Dot_nc.." Суммируется до "..CNumb("5", "n_5_rgb").." раз.", -- Критическая жара! -- руоф Становится жарко!
 			-- fr = "Augmente de "..CNumb("{crit_chance:%s}", "crit_var_rgb").." par cumul le "..CKWord("Taux de coup critique", "Crit_hit_chance_rgb_fr").."  proportionnellement à votre niveau de "..CKWord("Chaleur", "Heat_rgb_fr").." actuel. Augmente également les "..CKWord("Dégâts de coup critique", "Crit_hit_color_rgb_fr").." à distance de "..CNumb("{ranged_crit_damage:%s}", "rangcrtdmg_var_rgb").." par cumul.",
 			-- ["zh-tw"] = "依據 "..CKWord("熱能", "Heat_rgb_tw").." 提升 "..CKWord("暴擊機率", "Crt_chance_rgb_tw").."，\n每層 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊", "Crit_hits_rgb_tw").." 跟 "..CNumb("{ranged_crit_damage:%s}", "rangcrtdmg_var_rgb").." "..CKWord("遠程暴擊傷害", "Crit_hit_r_color_rgb_tw").."。\n上限 "..CNumb("5", "n_5_rgb").." 層，共 "..CNumb("50%", "pc_50_rgb").." 。", -- 燃起來!

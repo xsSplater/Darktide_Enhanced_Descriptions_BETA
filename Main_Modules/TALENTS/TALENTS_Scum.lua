@@ -495,9 +495,9 @@ local scum_localizations = {
 			.."\n"
 			..Dot_green.." {dodge_linger_time:%s} секунды к длительности уклонения.",
 	},
-	--[+ KEYSTONE 1 - Vulture’s Mark +]--	26.03.2026
+	--[+ KEYSTONE 1 - Vulture’s Mark +]--	30.03.2026
 	["loc_talent_broker_keystone_vultures_mark_on_kill_desc"] = { -- duration: 8, max_stacks: 3, ranged_damage: +5%, movement_speed: +5%, crit_chance: +5%, toughness: 15%, s->seconds, +colors
-		en = "Killing Special or Elite enemy with a Ranged weapon within "..CNumb("12.5", "n_12_5_rgb").." meters grants you a Stacks of "..CKWord("Vulture's Mark", "VultsMark_rgb")..".\n"
+		en = "Killing Special or Elite enemy with a Ranged weapon grants you a Stacks of "..CKWord("Vulture's Mark", "VultsMark_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Lasts {duration:%s} seconds.\n"
 			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
@@ -510,7 +510,7 @@ local scum_localizations = {
 			.."\n"
 			.." While at Max Stacks, Special and Elite Ranged Kills restore to you and Allies in "..CKWord("Coherency", "Coherency_rgb")..":\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
-		ru = "Убийство элитного врага или специалиста дальнобойным оружием в пределах "..CNumb("12.5", "n_12_5_rgb").." даёт вам заряд "..CKWord("Метки стервятника", "VultsMark_rgb_ru")..".\n"
+		ru = "Убийство элитного врага или специалиста дальнобойным оружием даёт вам заряд "..CKWord("Метки стервятника", "VultsMark_rgb_ru")..".\n"
 			.."\n"
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
 			..Dot_nc.." Суммируется {max_stacks:%s} раза.\n"

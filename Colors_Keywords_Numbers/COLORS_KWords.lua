@@ -245,13 +245,13 @@ local CONFIG = {
 
 -- TALENTS
 	talents_text_colour = {
--- Zealot
+-- ZEALOT
 		Holy_relic =	"Holy relic",
 		Stun_gren =		"Stun Grenade",
--- Arbites
+-- ARBITES
 		Arbites_gren =	"Arbites Grenade",
 		BreakZLine =	"Break the Line",
--- Psyker
+-- PSYKER
 		Assail =		"Assail",
 		Brain_burst =	"Brain Burst",
 		Brain_rupture =	"Brain Rupture",
@@ -259,12 +259,12 @@ local CONFIG = {
 		Scrier_gaze =	"Scrier Gaze",
 		Scriers_gaze =	"Scrier's Gaze",
 		Smite =			"Smite",
--- Veteran
+-- VETERAN
 		Frag_gren =		"Frag Grenade",
 		Fragm_gren =	"Fragmentation Grenade",
 		Rangd_stnc =	"Ranged Stance",
 		Duty_honor =	"Duty and Honour",
--- Ogryn
+-- OGRYN
 		Att_Seeker =	"Attention Seeker",
 
 -- PENANCES
@@ -275,7 +275,7 @@ local CONFIG = {
 		Prologue_p =	"Prologue",
 		Sir_melk_p =	"Sire Melk's Requisitorium",
 
-	-- Psyker
+	-- PSYKER
 		assail =		"Assail",
 		bburst =		"Brain Burst",
 		bburst1 =		"Brain Rupture",
@@ -289,7 +289,7 @@ local CONFIG = {
 		seerspres =		"Seer's Presence",
 		smite =			"Smite",
 		telekshii =		"Telekine Shield",
-	-- Ogryn
+	-- OGRYN
 		big_box =		"Big Box of Hurt",
 		big_box2 =		"Bombs Away!",
 		bigfriendro =	"Big Friendly Rock",
@@ -304,7 +304,7 @@ local CONFIG = {
 		loyalprot =		"Loyal Protector",
 		pbbarrage =		"Point-Blank Barrage",
 		stayclose =		"Stay Close!",
-	-- Veteran
+	-- VETERAN
 		closenkill =	"Close and Kill",
 		exec_stan =		"Executioner's Stance",
 		fcs_trg =		"Focus Target!",
@@ -313,13 +313,14 @@ local CONFIG = {
 		infiltr =		"Infiltrate",
 		krak_gr =		"Krak Grenade",
 		scavenger =		"Scavenger",
+		shfrag_gr =		"Shredder Frag Grenade",
 		snipcon =		"Marksman's Focus",
 		smok_gr =		"Smoke Grenade",
 		survivalist =	"Survivalist",
 		voiceoc =		"Voice of Command",
 		volley_fire =	"Volley Fire",
 		weapspec =		"Weapons Specialist",
-	-- Zealot
+	-- ZEALOT
 		beaconop =		"Beacon of Purity",
 		benedict =		"Benediction",
 		blazingp =		"Blazing Piety",
