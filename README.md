@@ -71,7 +71,7 @@
 - 🟢 Ogryn Talent descriptions.
 - 🟢 Scum Talent descriptions.
 - 🟡 Various Menu texts. 
-- 🔴 Penance descriptions.
+- 🟡 Penance descriptions.
 ## Non-English localizations only:
 - 🔴 Names of Enemies and Weapons.
 - 🔴 Names of Blessings and Talents.
@@ -95,7 +95,31 @@
 ## 📋 Versions
 |[<code>[ ⏫ Back to top   ]</code>](#-enhanced-descriptions)|[<code>[ 💾 Download      ]</code>](#-download)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
 |---------------------------------|---------------------------------|---------------------------------|
-### ﻿ ﻿*Version: __4.7b__*
+### ﻿ ﻿*Version: __5.7b__*
+- *Added Veteran Penances.*
+- *Some fixes*
+#### ﻿ ﻿*Version: __5.5__*
+- *Updated Talents and Blessings.*
+- *Some fixes*
+#### ﻿ ﻿*Version: __5.2b__*
+- *Updated Hive Scum Talents.*
+- *Some fixes*
+- *Added test AI-generated translations for all Weapon Perks and Curios localizations.*
+- *I can't verify their accuracy, so I'm asking for your help.*
+- *Added description localization override.*
+- *Now you can, for example, keep your game in French but have my mod's descriptions in English — just set it in the settings.*
+#### ﻿ ﻿*Version: __5.0__*
+- *Updated Hive Scum Talents. EN+RU*
+- *Some fixes*
+- *Color settings for Dump Stats have been added to the Enhanced Descriptions Mod menu.*
+#### ﻿ ﻿*Version: __4.5b__*
+- *Updated Ogryn Talents. EN+RU*
+- *Some fixes*
+- *Updated some localizations*
+#### ﻿ ﻿*Version: __4.9b__*
+- *Updated Zealot and Arbites Talents. EN+RU*
+- *Some fixes*
+###№ ﻿ ﻿*Version: __4.7b__*
 - *Updated Veteran Talents for the Bound by Duty update. EN+RU*
 - *Some fixes*
 #### ﻿ ﻿*Version: __4.6b__*
