@@ -477,7 +477,7 @@ local weapon_localizations = {
 
 --[+ ++WEAPON BLESSINGS - БЛАГОСЛОВЕНИЯ ОРУЖИЯ - 武器祝福++ +]--
 	--[+ MELEE - БЛИЖНИЙ БОЙ - 近戰 +]--
-		--[+ OPPORTUNIST +]--	27.03.2026
+		--[+ OPPORTUNIST +]--	04.04.2026
 		--Rending vs Staggered (per tier)
 		-- Battle Maul and Shield, Chainaxes, Crowbar, Crusher, Eviscerators, Latrine Shovels, Power Maul, Shock Mauls, Shock Mauls and Shield -- 10% | 15% | 20% | 25%
 		["loc_trait_bespoke_armor_penetration_against_staggered_desc"] = { -- rending: +25%, +colors, +note
@@ -506,11 +506,11 @@ local weapon_localizations = {
 			["pt-br"] = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Penetração", "Rending_rgb_pt_br").." contra Inimigos "..CKWord("Cambaleantes", "Staggered_rgb_pt_br")..".\n"
 				..CNote("Rend_note"),
 		},
-		--[+ BLOODLETTER +]--	27.03.2026
+		--[+ BLOODLETTER +]--	04.04.2026
 		-- Bleed Stacks (per tier)
-		-- Chainaxes -- 10 | 12 | 14 | 16
-		-- Chainswords -- 11 | 12 | 13 | 14
-		-- Eviscerators -- 3 | 4 | 5 | 6
+		-- Chainaxes -- 10 | 12 | 14 | 16 -- 突擊鏈斧
+		-- Chainswords -- 11 | 12 | 13 | 14 -- 突擊鏈鋸劍
+		-- Eviscerators -- 3 | 4 | 5 | 6 -- 重型開膛劍
 		["loc_trait_bespoke_bleed_on_activated_hit_desc"] = { -- stacks: +14, +colors
 			en = CNumb("{stacks:%s}", "stacks_var_rgb").." "..CKWord("Bleed", "Bleed_rgb").." Stacks from Special Attacks. "
 				.."Lasts "..CNumb("1.5", "n_1_5_rgb").." seconds. Ticks every "..CNumb("0.5", "n_0_5_rgb").." seconds.\n"
@@ -520,12 +520,9 @@ local weapon_localizations = {
 				..CPhrs("Cant_appl_thr_shlds"), -- Кровопускатель -- руоф Кровопускание
 			-- fr = CNumb("{stacks:%s}", "stacks_var_rgb").." Cumuls de "..CKWord("Saignement", "Bleed_rgb_fr").." lors des attaques spéciales. Jusqu'à "..CNumb("16", "n_16_rgb").." Cumuls.",
 			-- ["zh-tw"] = "特殊攻擊時，使其獲得 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("流血", "Bleed_rgb_tw").."。\n上限 "..CNumb("16", "n_16_rgb").." 層。", -- 放血者
-				-- 突擊鏈斧 -- 10 | 12 | 14 | 16
-				-- 突擊鏈鋸劍 -- 11 | 12 | 13 | 14
-				-- 重型開膛劍 -- 3 | 4 | 5 | 6
 			-- ["zh-cn"] = "特殊攻击 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("流血", "Bleed_rgb_zh_cn").."。\n最多叠加 "..CNumb("16", "n_16_rgb").." 层。", -- 放血者
 		},
-		--[+ BLOODTHIRSTY +]--	27.03.2026
+		--[+ BLOODTHIRSTY +]--	04.04.2026
 		-- Melee Crit Chance (per tier)
 		-- Chainaxes, Chainswords, Eviscerators, Force Swords -- 40% | 60% | 80% | 100%
 		["loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"] = { -- crit_chance: +100%, +colors
@@ -536,7 +533,7 @@ local weapon_localizations = {
 				-- 突擊鏈斧, 突擊鏈鋸劍, 重型開膛劍, 烈焰力場劍 -- 40% | 60% | 80% | 100%
 			-- ["zh-cn"] = "特殊攻击击杀敌人时，\n使下次近战攻击 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。", -- 嗜血
 		},
-		--[+ HEADTAKER +]--	27.03.2026
+		--[+ HEADTAKER +]--	04.04.2026
 		-- Melee Power per stack (per tier)
 		-- Chainaxes, Combat Axes, Pickaxes, Tactical Axes, Thunder Hammers -- 3.5% 4% 4.5% 5% (up to +25%)
 		-- Heavy Swords -- 6.5% 7% 7.5% 8% (up to +40%)
@@ -551,7 +548,7 @@ local weapon_localizations = {
 				-- 重劍 -- 6.5% 7% 7.5% 8% (up to +40%)
 			-- ["zh-cn"] = "命中时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。\n攻击每命中一个目标叠加 "..CNumb("1", "n_1_rgb").." 层。"..CNote("Pwr_note"), -- 夺颅者
 		},
-		--[+ SLAUGHTERER +]--	31.12.2025
+		--[+ SLAUGHTERER +]--	04.04.2026
 		-- Power per stack (per tier)
 		-- Chainaxes, Cleavers, Crusher, Force Swords, Pickaxes, Power Swords, Thunder Hammers -- 5% | 6% | 7% | 8% (up to +40%)
 		["loc_trait_bespoke_increase_power_on_kill_desc"] = { -- power_level: +5%, time: 4.5, stacks: 5, s->seconds, +colors, +added info, +note
@@ -566,7 +563,7 @@ local weapon_localizations = {
 				-- 突擊鏈斧, 砍刀, 輾壓者, 烈焰力場劍, 十字鎬, 動力劍, 雷鎚 -- 5% | 6% | 7% | 8% (up to +40%)
 			-- ["zh-cn"] = "击杀敌人时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 屠宰者
 		},
-		--[+ REV IT UP +]--	31.12.2025
+		--[+ REV IT UP +]--	04.04.2026
 		-- Movement Speed (per tier)
 		-- Chainaxes, Chainswords, Eviscerators -- 17% | 18% | 19% | 20%
 		["loc_trait_bespoke_movement_speed_on_activation_desc"] = { -- movement_speed: +20%, time: 2, s->seconds, +colors
@@ -577,7 +574,7 @@ local weapon_localizations = {
 				-- 突擊鏈斧, 突擊鏈鋸劍, 重型開膛劍 -- 17% | 18% | 19% | 20%
 			-- ["zh-cn"] = "激活武器特殊动作时\n"..CNumb("{movement_speed:%s}", "movspd_var_rgb").." 移动速度，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 加速
 		},
-		--[+ THRUST +]--	31.12.2025
+		--[+ THRUST +]--	04.04.2026
 		-- Melee Power per stack (per tier)
 		-- Bully Clubs, Chainaxes, Cleavers, Combat Axes, Crusher, Duelling Swords, Heavy Swords, Latrine Shovels, Pickaxes, Power Swords, Sapper Shovels, Shock Mauls, Thunder Hammers -- 5% | 10% | 15% | 20% (up to +60%)
 		["loc_trait_bespoke_power_bonus_based_on_charge_time_desc"] = { -- power_level: +5%, stacks: 3, +colors, +note
@@ -590,7 +587,7 @@ local weapon_localizations = {
 				-- 惡棍棒, 突擊鏈斧, 砍刀, 戰鬥斧, 輾壓者, 決鬥劍, 重劍, 廁所鏟, 十字鎬, 動力劍, 工兵鏟, 電擊錘, 雷鎚 -- 5% | 10% | 15% | 20% (up to +60%)
 			-- ["zh-cn"] = "随重攻击蓄力时间增加叠加层数，\n每层 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 助推
 		},
-		--[+ THUNDEROUS +]--	31.12.2025
+		--[+ THUNDEROUS +]--	04.04.2026
 		-- Brittleness Stacks (per tier)
 		-- Arbites Shock Maul, Bully Clubs, Chainaxes, Combat Axes, Crusher, Latrine Shovels, Pickaxes, Thunder Hammers -- 1 | 2 | 3 | 4
 		["loc_trait_bespoke_targets_receive_rending_debuff_desc"] = { -- stacks: 4, rending: 2.5%, time: 5, max_stacks: 16, rewrited, +colors, +added info, +note
@@ -603,7 +600,7 @@ local weapon_localizations = {
 				-- 惡棍棒, 突擊鏈斧, 戰鬥斧, 輾壓者, 廁所鏟, 十字鎬, 雷鎚 -- 1 | 2 | 3 | 4
 			-- ["zh-cn"] = "命中时，对目标施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("脆弱", "Brittleness_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 层，最高 "..CNumb("40%", "pc_40_rgb").." 。"..CNote("Brtl_note"), -- 雷鸣
 		},
-		--[+ WRATH +]--	31.12.2025
+		--[+ WRATH +]--	04.04.2026
 		-- Max Hit Mass Increase per stack (per tier)
 		-- Bone Saw -- 10% | 15% | 20% | 25% (up to +125%)
 		-- Chainswords, Devil's Claw Swords, Eviscerators, Force Greatswords, Heavy Swords, Pickaxes, Power Falchions, Relic Blades -- 25% | 30% | 35% | 40% (up to +200%)
@@ -620,7 +617,7 @@ local weapon_localizations = {
 				-- 動力劍 -- 35% | 40% | 45% | 50% (up to +250%)
 			-- ["zh-cn"] = "连锁攻击命中时 "..CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("劈裂值", "Cleave_rgb_zh_cn").."，\n持续 "..CNumb("3.5", "n_3_5_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 怒火
 		},
-	--[+ SHRED +]--	31.12.2025
+	--[+ SHRED +]--	04.04.2026
 		-- Crit Chance per stack (per tier)
 		-- Bone Saw, Chainswords, Combat Axes, Devil's Claw Swords, Duelling Swords, Eviscerators, Force Greatswords, Force Swords, Tactical Axes -- 2.5% | 3% | 3.5% | 4% (up to +20%)
 		["loc_trait_bespoke_chained_hits_increases_crit_chance_desc"] = { -- crit_chance: +4%, stacks: 5, +colors, +added info
@@ -634,7 +631,7 @@ local weapon_localizations = {
 				-- 突擊鏈鋸劍, 戰鬥斧, 『惡魔之爪』劍, 決鬥劍, 重型開膛劍, 烈焰力場劍, 烈焰力場巨劍, 戰術斧 -- 2.5% | 3% | 3.5% | 4% (up to +20%)
 			-- ["zh-cn"] = "连锁攻击命中时\n"..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("3.5", "n_3_5_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 撕碎
 		},
-		--[+ SAVAGE SWEEP +]--	31.12.2025
+		--[+ SAVAGE SWEEP +]--	04.04.2026
 		-- Max Hit Mass Increase (per tier)
 		-- Chainswords, Cleavers, Devil's Claw Swords, Eviscerators, Heavy Swords -- 140% | 160% | 180% | 200%
 		["loc_trait_bespoke_increased_attack_cleave_on_multiple_hits_desc"] = { -- multiple_hit: 3, cleave: +200%, time: 2, +colors, +added info
@@ -647,7 +644,7 @@ local weapon_localizations = {
 				-- 突擊鏈鋸劍, 砍刀, 『惡魔之爪』劍, 重型開膛劍, 重劍 -- 140% | 160% | 180% | 200%
 			-- ["zh-cn"] = "命中至少 "..CNumb("{multiple_hit:%s}", "mult_hit_var_rgb").." 名敌人时 \n"..CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("劈裂值", "Cleave_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 野蛮扫荡
 		},
-		--[+ RAMPAGE +]--	31.12.2025
+		--[+ RAMPAGE +]--	04.04.2026
 		-- Melee Power (per tier)
 		-- Chainswords, Devil's Claw Swords, Duelling Swords, Eviscerators, Heavy Swords, Power Swords, Relic Blades -- 24% | 28% | 32% | 36%
 		["loc_trait_bespoke_increased_melee_damage_on_multiple_hits_desc"] = { -- multiple_hit: 3, damage: 36%, time: 3, Damage -> Strength, +colors, +added info, +note
@@ -660,7 +657,7 @@ local weapon_localizations = {
 				-- 突擊鏈鋸劍, 『惡魔之爪』劍, 決鬥劍, 重型開膛劍, 重劍, 動力劍, 上古神刃 -- 24% | 28% | 32% | 36%
 			-- ["zh-cn"] = "命中至少 "..CNumb("{multiple_hit:%s}", "mult_hit_var_rgb").." 名敌人 \n"..CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"..CNote("Pwr_note"), -- 狂暴
 		},
-		--[+ DEVASTATING STRIKE +]--	31.12.2025
+		--[+ DEVASTATING STRIKE +]--	04.04.2026
 		-- Max Hit Mass Increase (per tier)
 		-- Chainswords, Cleavers, Devil's Claw Swords, Relic Blades -- 65% | 70% | 75% | 80%
 		["loc_trait_bespoke_infinite_melee_cleave_on_crit_desc"] = { -- hit_mass: +80%, time: 5, +colors, +added info
@@ -673,7 +670,7 @@ local weapon_localizations = {
 				-- 突擊鏈鋸劍, 砍刀, 『惡魔之爪』劍, 上古神刃 -- 65% | 70% | 75% | 80%
 			-- ["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时 "..CNumb("{hit_mass:%s}", "hitmass_var_rgb").." "..CKWord("劈裂值", "Cleave_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 毁灭打击
 		},
-		--[+ DECIMATOR +]--	31.12.2025
+		--[+ DECIMATOR +]--	04.04.2026
 		-- Melee Power per stack (per tier)
 		-- Bone Saw, Combat Axes, Sapper Shovels, Tactical Axes -- 2% | 3% | 4% | 5% (up to +50%)
 		["loc_trait_bespoke_chained_hits_increases_power_desc"] = { -- power_level: +5%, stacks: 10, Power -> Strength, +colors, +added info, +note
@@ -687,7 +684,7 @@ local weapon_localizations = {
 			-- 戰鬥斧, 工兵鏟, 戰術斧 -- 2% | 3% | 4% | 5% (up to +50%)
 			-- ["zh-cn"] = "连锁攻击命中 "..CNumb("2", "n_2_rgb").." 次时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 屠戮者
 		},
-		--[+ BRUTAL MOMENTUM +]--	31.12.2025
+		--[+ BRUTAL MOMENTUM +]--	04.04.2026
 		-- Melee Weakspot Damage (per tier)
 		-- Battle Maul and Shield, Combat Axes, Heavy Swords, Latrine Shovels, Power Maul, Power Swords, Tactical Axes -- 7.5% | 10% | 12.5% | 15%
 		["loc_trait_bespoke_infinite_cleave_on_weakspot_kill_desc"] = { -- weakspot_damage: 15%, +colors, +added info
@@ -698,7 +695,7 @@ local weapon_localizations = {
 			-- 作戰大槌and板盾, 戰鬥斧, 重劍, 廁所鏟, 動力錘, 動力劍, 戰術斧 -- 7.5% | 10% | 12.5% | 15%
 			-- ["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."。\n"..CKWord("弱点击杀", "Weakspothits_k_rgb_zh_cn").."无视 "..CNumb("3", "n_3_rgb").." 名敌人的"..CKWord("打击质量", "Hit_mass_rgb_zh_cn").."。"..CNote("Hit_Mass_note"), -- 野蛮势头
 		},
-		--[+ DEATHBLOW +]--	31.12.2025
+		--[+ DEATHBLOW +]--	04.04.2026
 		-- Melee Weakspot Damage (per tier)
 		-- Battle Maul and Shield, Combat Axes, Heavy Swords, Latrine Shovels, Power Maul, Power Swords, Tactical Axes -- 7.5% | 10% | 12.5% | 15%
 		["loc_trait_bespoke_infinite_melee_cleave_on_weakspot_kill_desc"] = { -- weakspot_damage: 15%, +colors, +added info
@@ -709,7 +706,7 @@ local weapon_localizations = {
 			-- 作戰大槌and板盾, 戰鬥斧, 重劍, 廁所鏟, 動力錘, 動力劍, 戰術斧 -- 7.5% | 10% | 12.5% | 15%
 			-- ["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."。\n"..CKWord("弱点击杀", "Weakspothits_k_rgb_zh_cn").."无视 "..CNumb("3", "n_3_rgb").." 名敌人的"..CKWord("打击质量", "Hit_mass_rgb_zh_cn").."。"..CNote("Hit_Mass_note"), -- 野蛮势头
 		},
-		--[+ LIMBSPLITTER +]--	31.12.2025
+		--[+ LIMBSPLITTER +]--	04.04.2026
 		-- Cooldown (per tier)
 		-- Bone Saw, Combat Axes, Crowbar, Pickaxes, Sapper Shovels, Tactical Axes -- 5 | 4.5 | 4 | 3.5 seconds
 		["loc_trait_bespoke_power_bonus_on_first_attack_desc"] = { -- power_level: +60%, cooldown: 3.5, +colors, +note
@@ -722,21 +719,23 @@ local weapon_localizations = {
 				-- 戰鬥斧, 十字鎬, 工兵鏟, 戰術斧 -- 5 | 4.5 | 4 | 3.5
 			-- ["zh-cn"] = "每 "..CNumb("{cooldown:%s}", "cd_var_rgb").." 秒，首次攻击 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。"..CNote("Pwr_note"), -- 断肢者
 		},
-		--[+ ALL OR NOTHING +]--	31.12.2025
+		--[+ ALL OR NOTHING +]--	04.04.2026
 		-- Melee Power per stack (per tier)
 		-- Arbites Shock Maul, Combat Axes, Crowbar, Pickaxes, Sapper Shovels, Shock Maul and Shield, Tactical Axes -- 5% | 6% | 7% | 8% (up to +40%)
 		["loc_trait_bespoke_power_bonus_scaled_on_stamina_desc"] = { -- power_level: +8%, rewrited, +colors, +note
-			en = CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("Strength", "Strength_rgb").." per Stack. Gains "..CNumb("1", "n_1_rgb").." Stack per "..CNumb("20%", "pc_20_rgb").." of missing "..CKWord("Stamina", "Stamina_rgb")..". Stacks "..CNumb("5", "n_5_rgb").." times.\n"
+			en = "You gain "..CNumb("1", "n_1_rgb").." Stack of "..CNumb("+", "n_plus_rgb")..CNumb("8%", "pc_8_rgb").." "..CKWord("Strength", "Strength_rgb").." per "..CNumb("20%", "pc_20_rgb").." of missing "..CKWord("Stamina", "Stamina_rgb")..". Stacks "..CNumb("5", "n_5_rgb").." times. Up to "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("Strength", "Strength_rgb")..". "..Dot_red.." T4 description!\n"
+				..Dot_nc.." T1: "..CNumb("+", "n_plus_rgb")..CNumb("5%", "pc_5_rgb").." | T2: "..CNumb("+", "n_plus_rgb")..CNumb("6%", "pc_6_rgb").." | T3: "..CNumb("+", "n_plus_rgb")..CNumb("7%", "pc_7_rgb")..". "
 				..CNote("Pwr_note"),
-			ru = CNumb("{power_level:%s}", "pwrlvl_var_rgb").." к "..CKWord("силе", "sile_rgb_ru").." за заряд. Вы получаете "..CNumb("1", "n_1_rgb").." заряд за каждые "..CNumb("20%", "pc_20_rgb").." потерянной "..CKWord("выносливости", "vynoslivosti_rgb_ru")..". Суммируется "..CNumb("5", "n_5_rgb").." раз.\n"
-				..CNote("Pwr_note"), -- Всё или ничего -- руоф Все или ничего
+			ru = "Вы получаете "..CNumb("1", "n_1_rgb").." заряд "..CNumb("+", "n_plus_rgb")..CNumb("8%", "pc_8_rgb").." к "..CKWord("силе", "sile_rgb_ru").." за каждые "..CNumb("20%", "pc_20_rgb").." потраченной "..CKWord("выносливости", "vynoslivosti_rgb_ru")..". До "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." к "..CKWord("силе", "sile_rgb_ru").." при "..CNumb("5", "n_5_rgb").." зарядах. "..Dot_red.." Описание 4 уровня!\n"
+				..Dot_nc.." У1: "..CNumb("+", "n_plus_rgb")..CNumb("5%", "pc_5_rgb").." | У2: "..CNumb("+", "n_plus_rgb")..CNumb("6%", "pc_6_rgb").." | У3: "..CNumb("+", "n_plus_rgb")..CNumb("7%", "pc_7_rgb")..".",
+				-- ..CNote("Pwr_note"), -- Всё или ничего -- руоф Все или ничего
 			-- fr = "Jusqu'à "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." de "..CKWord("Puissance", "Strength_rgb_fr")..", en fonction "..CKWord("Endurance", "Stamina_rgb_fr").." épuisée. Chaque "..CNumb("20%", "pc_20_rgb").." de la barre d'"..CKWord("Endurance", "Stamina_rgb_fr").." épuisée donne "..CNumb("1", "n_1_rgb").." cumule. Jusqu'à "..CNumb("5", "n_5_rgb").." cumuls. "..CNote("Pwr_note"),
 			-- ["zh-tw"] = "每消耗最大 "..CKWord("耐力", "Stamina_rgb_tw").." 的 "..CNumb("20%", "pc_20_rgb").." 獲得一層。\n每一層 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("威力", "Strength_rgb_tw").." ，上限 "..CNumb("5", "n_5_rgb").." 層。 "..CNote("Pwr_note"), -- 孤注一擲
 				-- 戰鬥斧, 十字鎬 -- 5% | 6% | 7% | 8% (up to +40%)
 				-- 工兵鏟, 戰術斧 -- 一般力量: 10% | 10% | 10% | 10% (up to +50%) (bugged)
 			-- ["zh-cn"] = "随"..CKWord("体力", "Stamina_rgb_zh_cn").."消耗叠加层数，\n每消耗 "..CNumb("20%", "pc_20_rgb").."，"..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。\n最多叠加 "..CNumb("5", "n_5_rgb").." 层。 "..CNote("Pwr_note"), -- 孤注一掷
 		},
-		--[+ DECAPITATOR +]--	31.12.2025
+		--[+ DECAPITATOR +]--	04.04.2026
 		-- Melee Finesse Bonus per stack (per tier)
 		-- Bone Saw, Combat Axes, Power Falchions -- 18% | 20% | 22% | 24% (up to +120%)
 		["loc_trait_bespoke_stacking_rending_on_one_hit_kills_desc"] = { -- finesse: +24%, time: 5, stacks: 5, s->seconds, +colors, +note
@@ -750,7 +749,7 @@ local weapon_localizations = {
 				-- 戰鬥斧 -- 18% | 20% | 22% | 24% (up to +120%)
 			-- ["zh-cn"] = "一击毙敌时 "..CNumb("{finesse:%s}", "fin_var_rgb").." "..CKWord("灵巧伤害", "Finesse_dmg_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Fns_note"), -- 斩首者
 		},
-		--[+ AGILE +]--	31.12.2025
+		--[+ AGILE +]--	04.04.2026
 		-- Melee Weakspot Damage (per tier)
 		-- Duelling Swords, Tactical Axes -- 2.5% | 5% | 7.5% | 10%
 		["loc_trait_bespoke_dodge_count_reset_on_weakspot_hit_and_weakspot_damage_desc"] = { -- melee_weakspot_damage: +10%, +colors
@@ -761,7 +760,7 @@ local weapon_localizations = {
 				-- 決鬥劍, 戰術斧 -- 2.5% | 5% | 7.5% | 10%
 			-- ["zh-cn"] = CNumb("{melee_weakspot_damage}", "mel_weapsp_dmg_var_rgb").." "..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."。\n"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时，刷新有效闪避。", -- 敏捷
 		},
-		--[+ SLAUGHTER SPREE +]--	31.12.2025
+		--[+ SLAUGHTER SPREE +]--	04.04.2026
 		-- Crit Chance (per tier)
 		-- Tactical Axes -- 40% | 60% | 80% | 100%
 		["loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill_new_desc"] = { -- crit_chance: +100%, +colors
@@ -772,7 +771,7 @@ local weapon_localizations = {
 				-- 戰術斧 -- 40% | 60% | 80% | 100%
 			-- ["zh-cn"] = CKWord("弱点", "Weakspot_rgb_zh_cn")..""..CKWord("暴击击杀", "Crit_hits_k_rgb_zh_cn").."时，下次近战攻击 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("5", "n_5_rgb").." 秒。", -- 屠杀狂欢
 		},
-		--[+ RELENTLESS STRIKES +]--	31.12.2025
+		--[+ RELENTLESS STRIKES +]--	04.04.2026
 		-- Melee Power per stack (per tier)
 		-- Arbites Shock Maul, Bone Saw, Duelling Swords, Tactical Axes -- 4% | 6% | 8% | 10% (up to +50%)
 		["loc_trait_bespoke_power_bonus_on_same_enemy_attacks_desc"] = { -- power_level: +10%, time: 2, stacks: 5, s->seconds, +colors
@@ -786,7 +785,7 @@ local weapon_localizations = {
 				-- 決鬥劍, 戰術斧 -- 4% | 6% | 8% | 10% (up to +50%)
 			-- ["zh-cn"] = "再次命中同一敌人时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"), -- 无情打击
 		},
-		--[+ FLESH TEARER +]--	31.12.2025
+		--[+ FLESH TEARER +]--	04.04.2026
 		-- Bleed Stacks (per tier)
 		-- Combat Blades, Shivs -- 5 | 6 | 7 | 8
 		["loc_trait_bespoke_bleed_on_crit_melee_desc"] = { -- stacks: +8, +colors
@@ -800,7 +799,7 @@ local weapon_localizations = {
 				-- 戰刃 -- 5 | 6 | 7 | 8
 			-- ["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时 ".. CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("流血", "Bleed_rgb_zh_cn").."。\n最多叠加 "..CNumb("16", "n_16_rgb").." 层。", -- 撕裂者
 		},
-		--[+ LACERATE +]--	31.12.2025
+		--[+ LACERATE +]--	04.04.2026
 		-- Combat Blades, Shivs -- 1 | 2 | 3 | 4
 		["loc_trait_bespoke_bleed_on_non_weakspot_hit_desc"] = { -- stacks: +4, +colors
 			en = CNumb("{stacks:%s}", "stacks_var_rgb").." "..CKWord("Bleed", "Bleed_rgb").." Stacks on non-"..CKWord("Weakspot Hits", "Weakspothits_rgb")..".\n"
@@ -814,7 +813,7 @@ local weapon_localizations = {
 				-- 戰刃 -- 1 | 2 | 3 | 4
 			-- ["zh-cn"] = "非"..CKWord("弱点命中", "Weakspothits_rgb_zh_cn").."时 ".. CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("流血", "Bleed_rgb_zh_cn").."。\n最多叠加 "..CNumb("16", "n_16_rgb").." 层。", -- 割裂
 		},
-		--[+ EXECUTOR +]--	31.12.2025
+		--[+ EXECUTOR +]--	04.04.2026
 		-- Power per stack (per tier)
 		-- Combat Blades, Force Swords, Shivs -- 4.5% | 5% | 5.5% | 6% (up to +30%)
 		["loc_trait_bespoke_chained_weakspot_hits_increases_power_desc"] = { -- power_level: +6%, stacks: 5, +colors
@@ -829,7 +828,7 @@ local weapon_localizations = {
 				-- 戰刃, 烈焰力場劍 -- 5% | 5% | 5% | 5% (up to +25%) (bugged)
 			-- ["zh-cn"] = "连续"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时"..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。 "..CNote("Pwr_note"), -- 处刑者
 		},
-		--[+ RIPOSTE +]--	31.12.2025
+		--[+ RIPOSTE +]--	04.04.2026
 		-- Crit Chance (per tier)
 		-- Combat Blades, Duelling Swords, Force Greatswords, Force Swords, Shivs -- 12.5% | 15% | 17.5% | 20%
 		["loc_trait_bespoke_dodge_grants_crit_chance_desc"] = { -- crit_chance: +20%, time: 6, s->seconds, +colors
@@ -842,7 +841,7 @@ local weapon_localizations = {
 				-- 戰刃, 決鬥劍, 烈焰力場劍, 烈焰力場巨劍 -- 12.5% | 15% | 17.5% | 20%
 			-- ["zh-cn"] = "成功闪避时 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 还击
 		},
-		--[+ PRECOGNITION +]--	31.12.2025
+		--[+ PRECOGNITION +]--	04.04.2026
 		-- Finesse Bonus (per tier)
 		-- Combat Blades, Duelling Swords, Force Greatswords, Force Swords -- 45% | 50% | 55% | 60%
 		-- Shivs -- 30% | 35% | 40% | 45%
@@ -856,7 +855,7 @@ local weapon_localizations = {
 				-- 戰刃, 決鬥劍, 烈焰力場劍, 烈焰力場巨劍 -- 45% | 50% | 55% | 60%
 			-- ["zh-cn"] = "成功闪避时 "..CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("灵巧伤害", "Finesse_dmg_rgb_zh_cn").."".."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"..CNote("Fns_note"), -- 预知
 		},
-		--[+ HAYMAKER +]--	31.12.2025
+		--[+ HAYMAKER +]--	04.04.2026
 		-- Instakill Chance per stack (per tier)
 		-- Bully Clubs, Combat Blades, Shivs -- 1% | 2% | 3% | 4% (up to +20%)
 		["loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance_desc"] = { -- proc_chance: +4%, stacks: 5, +colors
@@ -869,7 +868,7 @@ local weapon_localizations = {
 				-- 惡棍棒, 戰刃 -- 1% | 2% | 3% | 4% (up to +20%)
 			-- ["zh-cn"] = "连锁重攻击命中时 \n"..CNumb("{proc_chance:%s}", "procch_var_rgb").." 直接击杀人形敌人的几率。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。\n攻击每命中一个目标叠加 "..CNumb("1", "n_1_rgb").." 层。\n注意，通过这种方式直接击杀敌人不会触发其他效果。", -- 干草机
 		},
-		--[+ SMACKDOWN +]--
+		--[+ SMACKDOWN +]--	04.04.2026
 		-- Crit Chance (per tier)
 		-- Bully Clubs, Combat Blades -- 12.5% | 15% | 17.5% | 20%
 		["loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy_desc"] = { -- crit_chance: +20%, time: 2, s->seconds, +colors
@@ -882,7 +881,7 @@ local weapon_localizations = {
 				-- 惡棍棒, 戰刃 -- 12.5% | 15% | 17.5% | 20%
 			-- ["zh-cn"] = "特殊攻击命中"..CKWord("踉跄", "Staggered_rgb_zh_cn").."敌人时 \n"..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。", -- 攻击波
 		},
-		--[+ MERCY KILLER +]--	31.12.2025
+		--[+ MERCY KILLER +]--	04.04.2026
 		-- Melee Weakspot Damage (per tier)
 		-- Combat Blades, Shivs -- 52.5% | 55% | 57.5% | 60%
 		["loc_trait_bespoke_increased_weakspot_damage_on_bleeding_desc"] = { -- damage: +60%, +colors
@@ -893,7 +892,7 @@ local weapon_localizations = {
 				-- 戰刃 -- 52.5% | 55% | 57.5% | 60%
 			-- ["zh-cn"] = "对"..CKWord("流血", "Bleed_rgb_zh_cn").."敌人 "..CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."。", -- 仁慈杀手
 		},
-		--[+ RUTHLESS BACKSTAB +]--
+		--[+ RUTHLESS BACKSTAB +]--	04.04.2026
 		-- Backstab Rending (per tier)
 		-- Combat Blades, Shivs -- 70% | 80% | 90% | 100%
 		["loc_trait_bespoke_rending_on_backstabs_desc"] = { -- rending: +100%, +colors
@@ -907,7 +906,7 @@ local weapon_localizations = {
 				-- 戰刃 -- 70% | 80% | 90% | 100%
 			-- ["zh-cn"] = "背刺时 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_zh_cn").."。"..CNote("Rend_note"), -- 无情背刺
 		},
-		--[+ UNCANNY STRIKE +]--	31.12.2025
+		--[+ UNCANNY STRIKE +]--	04.04.2026
 		-- Rending per stack (per tier)
 		-- Combat Blades, Duelling Swords, Force Swords, Sapper Shovels -- 12% | 16% | 20% | 24% (up to +120%)
 		-- Shivs -- 4% | 5% | 6% | 8% (up to +40%)
@@ -922,7 +921,7 @@ local weapon_localizations = {
 				-- 戰刃, 決鬥劍, 烈焰力場劍, 工兵鏟 -- 12% | 16% | 20% | 24% (up to +120%)
 			-- ["zh-cn"] = CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加"..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Rend_note"), -- 神秘打击
 		},
-		--[+ TRAUMA +]--
+		--[+ TRAUMA +]--	04.04.2026
 		-- Melee Stagger Strength and Stagger Duration per stack (per tier)
 		-- Crusher, Devil's Claw Swords, Sapper Shovels, Thunder Hammers -- 14% and 10% | 16% and 10% | 18% and 10% | 20% and 10% (up to +100% and +61%)
 		["loc_trait_bespoke_consecutive_hits_increases_stagger_desc"] = { -- impact: +20%, time: 2, stacks: 5, +colors
@@ -935,7 +934,7 @@ local weapon_localizations = {
 				-- 輾壓者, 『惡魔之爪』劍, 工兵鏟, 雷鎚 -- 14% | 16% | 18% | 20% (up to +100%)
 			-- ["zh-cn"] = "再次命中同一敌人时 "..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("冲击", "Impact_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。", -- 创伤
 		},
-		--[+ VICIOUS SLICE +]--
+		--[+ VICIOUS SLICE +]--	04.04.2026
 		-- Melee Stagger Strength per stack (per tier)
 		-- Devil's Claw Swords -- 14% | 16% | 18% | 20% (up to +100%)
 		["loc_trait_bespoke_increase_stagger_per_hit_in_sweep_desc"] = { -- impact: +20%, +colors
@@ -949,7 +948,7 @@ local weapon_localizations = {
 				-- 『惡魔之爪』劍 -- 14% | 16% | 18% | 20% (up to +100%)
 			-- ["zh-cn"] = "每有一个已被同一攻击命中的敌人，\n"..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("冲击", "Impact_rgb_zh_cn").."。最多叠加 "..CNumb("5", "n_5_rgb").." 层。", -- 邪恶斩切
 		},
-		--[+ HAMMERBLOW +]--
+		--[+ HAMMERBLOW +]--	04.04.2026
 		-- Melee Stagger Strength per stack (per tier)
 		-- Arbites Shock Maul, Crusher, Devil's Claw Swords, Sapper Shovels, Shock Mauls, Shock Mauls and Shield, Thunder Hammers -- 19% | 21% | 23% | 25% (up to +125%)
 		["loc_trait_bespoke_stacking_increase_impact_on_hit_desc"] = { -- impact: +25%, time: 1.5, stacks: 5, s->seconds, +colors
@@ -962,7 +961,7 @@ local weapon_localizations = {
 				-- 輾壓者, 『惡魔之爪』劍, 工兵鏟, 電擊錘, 雷鎚 -- 19% | 21% | 23% | 25% (up to +125%)
 			-- ["zh-cn"] = "命中时 "..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("冲击", "Impact_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。\n攻击每命中一个目标叠加 "..CNumb("1", "n_1_rgb").." 层。", -- 锤击
 		},
-		--[+ SKULLCRUSHER +]--
+		--[+ SKULLCRUSHER +]--	04.04.2026
 		-- Debuff Stacks Applied (per tier)
 		-- Battle Maul and Shield, Bully Clubs, Crusher, Devil's Claw Swords, Latrine Shovels, Power Maul, Sapper Shovels, Shock Mauls, Thunder Hammers -- 1 | 2 | 3 | 4
 		["loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"] = { -- stacks: 4, damage: +10%, time: 5, Stack(s)->Stacks, +colors
@@ -975,7 +974,7 @@ local weapon_localizations = {
 				-- 作戰大槌and板盾, 惡棍棒, 輾壓者, 『惡魔之爪』劍, 工兵鏟, 電擊錘, 雷鎚 -- 1 | 2 | 3 | 4
 			-- ["zh-cn"] = "对"..CKWord("踉跄", "Staggered_rgb_zh_cn").."敌人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."效果，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加 "..CNumb("8", "n_8_rgb").." 层。", -- 碎颅者
 		},
-		--[+ THUNDERSTRIKE +]--
+		--[+ THUNDERSTRIKE +]--	04.04.2026
 		-- Debuff Stacks Applied (per tier)
 		-- Battle Maul and Shield, Crusher, Devil's Claw Swords, Power Maul, Sapper Shovels, Thunder Hammers -- 1 | 2 | 3 | 4
 		["loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff_desc"] = { -- stacks: 4, impact: +10%, time: 5, Stack(s)->Stacks, +colors
@@ -988,7 +987,7 @@ local weapon_localizations = {
 				-- 作戰大槌and板盾, 輾壓者, 『惡魔之爪』劍, 動力錘, 工兵鏟, 雷鎚 -- 1 | 2 | 3 | 4
 			-- ["zh-cn"] = "对"..CKWord("踉跄", "Staggered_rgb_zh_cn").."敌人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("冲击", "Impact_rgb_zh_cn").."效果，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加 "..CNumb("8", "n_8_rgb").." 层。", -- 雷击
 		},
-		--[+ CHAINED DEATHBLOW +]--
+		--[+ CHAINED DEATHBLOW +]--	04.04.2026
 		-- Melee Crit Chance (per tier)
 		-- Heavy Swords -- 5% | 10% | 15% | 20%
 		["loc_trait_bespoke_increased_crit_chance_on_weakspot_kill_desc"] = { -- crit_chance: +20%, time: 3, s->seconds, +colors
@@ -1001,7 +1000,7 @@ local weapon_localizations = {
 				-- 重劍 -- 5% | 10% | 15% | 20%
 			-- ["zh-cn"] = CKWord("弱点击杀", "Weakspothits_k_rgb_zh_cn").."时 \n"..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。{#color(255, 35, 5)}\n（存在BUG：无论祝福级别如何，数值始终为 +10% 暴击几率。）{#reset()}", -- 连锁死亡打击
 		},
-		--[+ PERFECT STRIKE +]--
+		--[+ PERFECT STRIKE +]--	04.04.2026
 		-- Melee Crit Damage (per tier)
 		-- Battle Maul and Shield, Bully Clubs, Eviscerators, Heavy Swords, Latrine Shovels, Power Maul -- 2.5% | 5% | 7.5% | 10%
 		["loc_trait_bespoke_pass_past_armor_on_crit_new_desc"] = { -- crit_damage: +10%, +colors

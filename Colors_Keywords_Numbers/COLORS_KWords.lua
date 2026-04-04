@@ -52,6 +52,7 @@ local CONFIG = {
 
 		Crit_strike =	"Critical Strike",
 		Crit_strikes =	"Critical Strikes",
+		Crtcll_strk =	"Critically strike",
 		Crt_chnc_r =	"Critical Strike Chance",
 		Crt_strk_dmg =	"Critical Strike Damage",
 
@@ -149,7 +150,7 @@ local CONFIG = {
 		precision_text_colour = {
 			Precision =		"Precision",
 
-			Celerity_Stimm = "Celerity Stimm",
+				Celerity_Stimm = "Celerity Stimm",
 		},
 	-- Ogryn
 	class_ogryn_text_colour = {
@@ -159,17 +160,17 @@ local CONFIG = {
 		fnp_text_colour = {
 			Feel_no_pain =	"Feel No Pain",
 
-			Desperado =		"Desperado",			-- Hive Scum
+				Desperado =		"Desperado",			-- Hive Scum
 		},
 		luckyb_text_colour = {
 			Lucky_bullet =	"Lucky Bullet",
 
-			Tghnss_gold =	"Toughness",			-- Zealot
+				Tghnss_gold =	"Toughness",			-- Zealot
 		},
 		trample_text_colour = {
 			Trample =		"Trample",
 
-			Depend =		"Dependency",			-- Hive Scum
+				Depend =		"Dependency",			-- Hive Scum
 		},
 	-- Zealot
 	class_zealot_text_colour = {
@@ -179,7 +180,7 @@ local CONFIG = {
 		fury_text_colour = {
 			Fury =			"Fury",
 
-			Rampage =		"Rampage!",				-- Hive Scum
+				Rampage =		"Rampage!",				-- Hive Scum
 		},
 		momentum_text_colour = {
 			Momentum =		"Momentum",
@@ -188,14 +189,14 @@ local CONFIG = {
 			Taunted =		"Taunted",				-- Ogryn
 			Taunting =		"Taunting",				-- Ogryn
 
-			Adren =			"Adrenaline",			-- Hive Scum ???
-			AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
+				Adren =			"Adrenaline",			-- Hive Scum ???
+				AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
 		},
 		stealth_text_colour = {
 			Stealth =		"Stealth",
 
-			Psy_Mark =		"Marked",				-- Psyker
-			Psy_mark =		"marked",				-- Psyker
+				Psy_Mark =		"Marked",				-- Psyker
+				Psy_mark =		"marked",				-- Psyker
 		},
 	-- Veteran
 	class_veteran_text_colour = {
@@ -206,26 +207,26 @@ local CONFIG = {
 			Forceful =		"Forceful",
 			Focus =			"Focus",
 
-			Shout =			"Shout",				-- Hive Scum
+				Shout =			"Shout",				-- Hive Scum
 		},
 		focust_text_colour = {
 			Focus_Target =	"Focus Target",
 
-			Markedenemy =	"Marked Enemy",			-- Psyker
+				Markedenemy =	"Marked Enemy",			-- Psyker
 
-			VultsMark =		"Vulture's Mark",		-- Hive Scum
+				VultsMark =		"Vulture's Mark",		-- Hive Scum
 		},
 		meleespec_text_colour = {
 			Meleespec =		"Melee Specialist",
 
-			Meleejust =		"Melee Justice",		-- Arbites
+				Meleejust =		"Melee Justice",		-- Arbites
 
-			Exhausted =		"Exhausted",			-- Hive Scum
+				Exhausted =		"Exhausted",			-- Hive Scum
 		},
 		rangedspec_text_colour = {
 			Rangedspec =	"Ranged Specialist",
 
-			Rangedjust =	"Ranged Justice",		-- Arbites
+				Rangedjust =	"Ranged Justice",		-- Arbites
 		},
 	-- Arbitres
 	class_arbites_text_colour = {
@@ -240,7 +241,7 @@ local CONFIG = {
 		chemtox_text_colour = {
 			Chem_Tox =		"Chem Toxin",
 
-			Med_Stimm =		"Med Stimm",
+				Med_Stimm =		"Med Stimm",
 		},
 
 -- TALENTS
