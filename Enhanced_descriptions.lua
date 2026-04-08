@@ -5,7 +5,7 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
-local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_achievement_adamant_hunt_snipers_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_achievement_broker_stimm_apply_toxin_description"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
 
 -- Кэш утилит
@@ -74,7 +74,7 @@ local LOCALIZATION_FILES = {
 	MENUS =							"enable_menus_file",
 	PENANCES =						"enable_penances_file",
 	-- NAMES_Enemies_Weapons =		"enable_names_file",
-	-- NAMES_Talents_Blessings =	"enable_names_tal_bless_file"
+	NAMES_Talents_Blessings =		"enable_names_tal_bless_file"
 }
 
 local BUTTON_OFFSETS = {
@@ -153,7 +153,7 @@ MFF.patterns = {
 	plus_prefix = "^%+",
 	all_plus = "%+",
 	all_minus = "%-",
-	percent_zeros = "%.00%%",
+	dot_zeros = "%.00",
 	hyphen_spaces = "%s*%-%s*"
 }
 
@@ -198,7 +198,7 @@ local FIXES = {
 	--[+ NODES - УЗЛЫ +]--
 		--[+ Peril Resistance Medium +]--
 		loc_talent_warp_charge_low_desc = {
-			warp_charge =						MFF.fixes.percent_zeros
+			warp_charge =						MFF.fixes.dot_zeros
 		},
 
 	--[+ PSYKER - ПСАЙКЕР +]--

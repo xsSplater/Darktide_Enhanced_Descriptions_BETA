@@ -446,7 +446,7 @@ local penances_localizations = {
 		--[+ Kill 7500 enemies while affected by Fire Team. Kills made by any affected team member also count. +]-- руоф Убейте врагов (7500), находясь под действием «Огневой поддержки». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
 		["loc_achievement_veteran_team_damage_amplified_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while affected by "..CKWord("Fire Team", "firetim_rgb").." Aura. Kills made by any affected team member also count.",
-			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Боевая группа", "firetim_rgb_ru")..". Убийства членами команды под вашей аурой также засчитываются.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Боевая группа", "firetim_rgb_ru")..". Убийства членами команды под вашей аурой также учитываются.",
 			-- ["zh-tw"] = "在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "firetim_rgb_tw").."』的影響下，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
 				-- ..""..CKWord("", "Aura_i_p_rgb_tw").." 的隊友擊殺也會計算。",
 		},
@@ -1054,7 +1054,7 @@ local penances_localizations = {
 		--[+ Kill 2500 enemies stunned by your Smite. Kills made by your team members also count. +]-- руоф Убейте врагов (2500), оглушенных вашим «Сокрушением». Убийства, совершенные членами команды, тоже учитываются.
 		["loc_achievement_psyker_threshold_kills_reached_with_grenade_chain_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies "..CKWord("Stunned", "Stunned_rgb").." by your "..CKWord("Smite", "Smite_rgb").." Blitz. Kills made by your team members also count.",
-			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, оглушённых вашим блицом "..CKWord("Сокрушение", "smite_rgb_ru")..". Убийства, совершённые членами вашей команды, также учитываются.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, "..CKWord("оглушённых", "oglushennyh_rgb_ru").." вашим блицом "..CKWord("Сокрушение", "smite_rgb_ru")..". Убийства, совершённые членами вашей команды, также учитываются.",
 			-- ["zh-tw"] = "擊殺 "..CNumb("{target}", "target_rgb").." 名被 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "smite_rgb_tw").."』"..CKWord("", "Staggers_rgb_tw").." 的敵人。\n"
 					-- .."由隊友擊殺的也會計算。",
 		},
@@ -1345,7 +1345,7 @@ local penances_localizations = {
 		--[+ Kill 5000 enemies with Heavy Attacks while under the effect of Bonebreaker's Aura. Heavy Attack kills made by your team members also count. +]-- руоф Убейте врагов (5000) мощными атаками, находясь под действием «Ауры костолома». Если члены команды убивают мощными атаками, это тоже учитывается.
 		["loc_achievement_ogryn_team_heavy_aura_kills_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies with Heavy Attacks while under the effect of "..CKWord("Bonebreaker's Aura", "bonebraura_rgb")..". Heavy Attack kills made by your team members also count.",
-			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов заряженными атаками, находясь под действием ауры "..CKWord("", "bonebraura_rgb_ru")..". Убийства заряженными атаками, совершённые членами команды также засчитываются.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов заряженными атаками, находясь под действием ауры "..CKWord("", "bonebraura_rgb_ru")..". Убийства заряженными атаками, совершённые членами команды также учитываются.",
 			-- ["zh-tw"] = "在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "bonebraura_rgb_tw").."』效果內，\n"
 				-- .."以蓄力攻擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
 				-- .."隊友的蓄力擊殺也會計算。",
@@ -1497,196 +1497,196 @@ local penances_localizations = {
 		},
 	--[+ Targeted Kills +]-- руоф 
 	-- ["loc_achievement_adamant_hunt_snipers"] = {
-		-- ru = "",
+		-- ru = "Целевые убийства",
 	-- },
 		--[+ Have your Cyber-Mastiff Pounce on 50 Bombers, Snipers, and Trappers. +]-- руоф 
 		["loc_achievement_adamant_hunt_snipers_desc"] = {
 			en = "Have your Cyber-Mastiff Pounce on "..CNumb("{amount:%s}", "amountp_var_rgb").." Bombers, Snipers, and Trappers.",
-			ru = "Заставьте вашего кибер-мастифа наброситься на "..CNumb("{amount:%s}", "amountp_var_rgb").." гренадёров, снайперов или ловушечников.",
+			ru = "Заставьте вашего кибермастифа наброситься на "..CNumb("{amount:%s}", "amountp_var_rgb").." гренадёров, снайперов или ловушечников.",
 		},
 	--[+ Guard Command +]-- руоф 
 	-- ["loc_achievement_adamant_knock_chargers"] = {
-		-- ru = "",
+		-- ru = "Охраняй!",
 	-- },
 		--[+ Have your Cyber-Mastiff Knock Away 50 Mutants and Poxbusters. Counts once per Enemy. +]-- руоф 
 		["loc_achievement_adamant_knock_chargers_desc"] = {
 			en = "Have your Cyber-Mastiff Knock Away "..CNumb("{amount:%s}", "amountp_var_rgb").." Mutants and Poxbusters. Counts once per Enemy.",
-			ru = "Заставьте вашего кибер-мастифа сбить с ног "..CNumb("{amount:%s}", "amountp_var_rgb").." мутантов и поскбастеров. Засчитывается один раз за врага.",
+			ru = "Заставьте вашего кибермастифа сбить с ног "..CNumb("{amount:%s}", "amountp_var_rgb").." мутантов и поскбастеров. Засчитывается один раз за врага.",
 		},
 	--[+ Shoot'em When They're Down +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Стреляйте в них, когда они лежат на земле.",
+	-- ["loc_achievement_adamant_kill_pounced_enemies"] = {
+		-- ru = "Стреляй в них пока они лежат",
 	-- },
 		--[+ Kill 750 enemies pounced by your Cyber-Mastiff. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 750 enemies pounced by your Cyber-Mastiff.",
-			-- ru = "Уничтожьте 750 врагов, на которых набросился ваш Кибер-мастиф.",
-		-- },
+		["loc_achievement_adamant_kill_pounced_enemies_desc"] = {
+			en = "Kill "..CNumb("{amount:%s}", "amountp_var_rgb").." enemies pounced by your Cyber-Mastiff.",
+			ru = "Уничтожьте "..CNumb("{amount:%s}", "amountp_var_rgb").." врагов, на которых набросился ваш кибермастифа.",
+		},
 	--[+ Voltaic Persecution +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_kill_electrocuted"] = {
 		-- ru = "Вольтаическое преследование",
 	-- },
 		--[+ Kill 500 Electrocuted enemies. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 500 Electrocuted enemies.",
-			-- ru = "Убейте 500 врагов, пораженных электрическим током.",
-		-- },
+		["loc_achievement_adamant_kill_electrocuted_desc"] = {
+			en = "Kill "..CNumb("{amount:%s}", "amountp_var_rgb").." Electrocuted enemies.",
+			ru = "Убейте "..CNumb("{amount:%s}", "amountp_var_rgb").." врагов, поражённых электрошоком.",
+		},
 	--[+ Loyal Companion +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_saved_from_dog"] = {
 		-- ru = "Верный компаньон",
 	-- },
 		--[+ Get Rescued from a Pox Hound that has pounced on you, by your Cyber-Mastiff. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
+		-- ["loc_achievement_adamant_saved_from_dog_desc"] = {
 			-- en = "Get Rescued from a Pox Hound that has pounced on you, by your Cyber-Mastiff.",
-			-- ru = "Спаситесь от напавшего на вас оспы с помощью вашего кибер-мастифа.",
+			-- ru = "Спаситесь от напавшей на вас Чумной гончей с помощью вашего кибермастифа.",
 		-- },
 	--[+ Good Killing Machine +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Хорошая машина для убийства",
+	-- ["loc_achievement_adamant_pet_dog"] = {
+		-- ru = "Хорошая машина для убийств",
 	-- },
 		--[+ Pet your Cyber-Mastiff. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
+		-- ["loc_achievement_adamant_pet_dog_desc"] = {
 			-- en = "Pet your Cyber-Mastiff.",
 			-- ru = "Погладьте своего кибермастифа.",
 		-- },
 	--[+ The Lex Defiant +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Закон непокорный",
+	-- ["loc_achievement_adamant_block_enemies"] = {
+		-- ru = "Закон Непокорный",
 	-- },
 		--[+ Block Damage from 250 unique enemies. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Block Damage from 250 unique enemies.",
-			-- ru = "Блокирует урон от 250 уникальных врагов.",
-		-- },
-	--[+ Arbitrator Master of War +]-- руоф 
+		["loc_achievement_adamant_block_enemies_desc"] = {
+			en = "Block "..CKWord("Damage", "Damage_rgb").." from "..CNumb("{amount:%s}", "amountp_var_rgb").." unique enemies.",
+			ru = "Заблокируйте "..CKWord("урон", "uron_rgb_ru").." от "..CNumb("{amount:%s}", "amountp_var_rgb").." уникальных врагов.",
+		},
+	--[+ Arbitrator Master of War +]-- руоф Арбитратор — знаток войны
 
 		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
 	--[+ Handing Out the Emperor's Judgement +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_team_staggered_enemies_aura_kills_name"] = {
 		-- ru = "Вынесение императорского приговора",
 	-- },
 		--[+ Kill 5000 staggered enemies while under the effect of Breaking Dissent. Kill made by allies in coherency with you also count. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 5000 staggered enemies while under the effect of Breaking Dissent. Kill made by allies in coherency with you also count.",
-			-- ru = "Убейте 5000 оглушенных врагов, находящихся под действием эффекта «Слом несогласия». Убийства, совершенные союзниками, действующими согласованно с вами, также засчитываются.",
-		-- },
+		["loc_achievement_adamant_team_staggered_enemies_aura_kills_description"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." "..CKWord("Staggered", "Staggered_rgb").." enemies while under the effect of "..CKWord("Breaking Dissent", "BreaknDissent_rgb").." Aura. Kill made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with you also count.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." "..CKWord("оглушённых", "oglushennyh_rgb_ru").." врагов, находящихся под действием ауры "..CKWord("Уничтожение инакомыслия", "BreaknDissent_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вами, также учитываются.",
+		},
 	--[+ Efficient Execution +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_team_wield_speed_aura_kills_name"] = {
 		-- ru = "Эффективное исполнение",
 	-- },
 		--[+ Kill 7500 enemies while under the effect of Ruthless Efficiency. Kills made by allies in coherency with you also count. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 7500 enemies while under the effect of Ruthless Efficiency. Kills made by allies in coherency with you also count.",
-			-- ru = "Убейте 7500 врагов, находясь под действием способности «Безжалостная эффективность». Убийства, совершенные союзниками, действующими согласованно с вами, также засчитываются.",
-		-- },
+		["loc_achievement_adamant_team_wield_speed_aura_kills_description"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies while under the effect of "..CKWord("Ruthless Efficiency", "RuthlEffcy_rgb").." Aura. Kill made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with you also count.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Безжалостная эффективность", "RuthlEffcy_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вами, также учитываются.",
+		},
 	--[+ Well Oiled Killteam +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_team_companion_in_coherency_kills_name"] = {
 		-- ru = "Хорошо отлаженная команда убийц",
 	-- },
 		--[+ With Part of the Squad Aura active, kill 2500 enemies while in coherency with Cyber-Mastiff. Kills made by allies in coherency with your Cyber-Mastiff also count. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "With Part of the Squad Aura active, kill 2500 enemies while in coherency with Cyber-Mastiff. Kills made by allies in coherency with your Cyber-Mastiff also count.",
-			-- ru = "При активной ауре «Часть отряда» уничтожьте 2500 врагов, находясь в согласованном состоянии с Кибер-Мастифом. Убийства, совершенные союзниками, находящимися в согласованном состоянии с вашим Кибер-Мастифом, также засчитываются.",
-		-- },
+		["loc_achievement_adamant_team_companion_in_coherency_kills_description"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies while in "..CKWord("Coherency", "Coherency_rgb").." with Cyber-Mastiff under the effect of "..CKWord("Part of the Squad", "PartozSquad_rgb").." Aura. Kills made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with your Cyber-Mastiff also count.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Часть отряда", "PartozSquad_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вашим кибермастифом, также учитываются.",
+		},
 	--[+ Voltaic Restraint +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_time_enemies_electrocuted_by_shockmine_name"] = {
 		-- ru = "Вольтаическое ограничение",
 	-- },
 		--[+ Stun enemies using the Voltaic Shock Mine for a total duration of 5000 seconds. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Stun enemies using the Voltaic Shock Mine for a total duration of 5000 seconds.",
-			-- ru = "Оглушите врагов с помощью вольтовой ударной мины на общую продолжительность 5000 секунд.",
-		-- },
+		["loc_achievement_adamant_time_enemies_electrocuted_by_shockmine_description"] = {
+			en = CKWord("Stun", "Stun_rgb").." enemies using the "..CKWord("Voltaic Shock Mine", "Electro_mine_rgb").." Blitz for a total duration of "..CNumb("{target:%s}", "target_rgb").." seconds.",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." врагов используя блиц "..CKWord("Вольтаическая шоковая мина", "Electro_mine0_rgb_ru").." в общей сложности на "..CNumb("{target:%s}", "target_rgb").." секунд.",
+		},
 	--[+ Suppression Protocols +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_enemies_affected_by_buff_drone_name"] = {
 		-- ru = "Протоколы подавления",
 	-- },
 		--[+ Debuff 2500 enemies using the Nuncio Aquila. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Debuff 2500 enemies using the Nuncio Aquila.",
-			-- ru = "С помощью Нунция Орла ослабьте 2500 врагов.",
-		-- },
+		["loc_achievement_adamant_enemies_affected_by_buff_drone_description"] = {
+			en = "Debuff "..CNumb("{target:%s}", "target_rgb").." enemies using the "..CKWord("Nuncio Aquila", "Nuncio_aquila_rgb").." Ability.",
+			ru = "Ослабьте "..CNumb("{target:%s}", "target_rgb").." врагов с помощью способности "..CKWord("Нунцио-аквила", "Nuncio_aquila_rgb_ru")..".",
+		},
 	--[+ Fortifying Command +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_time_allies_buffed_by_buff_drone_name"] = {
 		-- ru = "Укрепление командования",
 	-- },
 		--[+ Buff allies using the Nuncio Aquila for a total duration of 10000 seconds. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Buff allies using the Nuncio Aquila for a total duration of 10000 seconds.",
-			-- ru = "Усиление союзников с помощью «Нунция Орла» на общую продолжительность 10000 секунд.",
-		-- },
+		["loc_achievement_adamant_time_allies_buffed_by_buff_drone_description"] = {
+			en = "Buff Allies using the "..CKWord("Nuncio Aquila", "Nuncio_aquila_rgb").." Ability for a total duration of "..CNumb("{target:%s}", "target_rgb").." seconds.",
+			ru = "Усильте союзников с помощью способности "..CKWord("Нунцио-аквила", "Nuncio_aquila_rgb_ru").." в общей сложности на "..CNumb("{target:%s}", "target_rgb").." секунд.",
+		},
 	--[+ Sanction Redactus +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_adamant_kill_during_stance"] = {
+		-- ru = "Санкция Редактус",
 	-- },
 		--[+ Kill 250 enemies during Castigator's Stance. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 250 enemies during Castigator's Stance.",
-			-- ru = "Убейте 250 врагов во время действия "Стойки рестлера".",
-		-- },
+		["loc_achievement_adamant_kill_during_stance_desc"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies during "..CKWord("Castigator's Stance", "CastigatorSt_rgb").." Ability.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов во время действия способности "..CKWord("Стойка карателя", "CastigatorSt_rgb_ru")..".",
+		},
 	--[+ Street Brawler +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_stagger_elites_with_bash"] = {
 		-- ru = "Уличный боец",
 	-- },
 		--[+ Stagger 500 Elite or Specialist Enemies using Break the Line. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Stagger 500 Elite or Specialist Enemies using Break the Line.",
-			-- ru = "Используйте прием "Прорыв линии", чтобы оглушить 500 элитных или специализированных врагов.",
-		-- },
+		["loc_achievement_adamant_stagger_elites_with_bash_desc"] = {
+			en = CKWord("Stagger", "Stagger_rgb").." "..CNumb("{target:%s}", "target_rgb").." Elite or Specialist Enemies using "..CKWord("Break the Line", "BreakZLine_rgb").." Ability.",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." "..CNumb("{target:%s}", "target_rgb").." элитных врагов или специалистов с помощью способности "..CKWord("Прорыв строя", "BreakZLine_rgb_ru")..".",
+		},
 	--[+ Abomination Protocols +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_stagger_monster_detonation"] = {
 		-- ru = "Протоколы мерзостей",
 	-- },
 		--[+ Stagger a Monstrosity using Remote Detonation, 50 times. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Stagger a Monstrosity using Remote Detonation, 50 times.",
-			-- ru = "Оглушите чудовище с помощью дистанционного подрыва 50 раз.",
-		-- },
+		["loc_achievement_adamant_stagger_monster_detonation_desc"] = {
+			en = CKWord("Stagger", "Stagger_rgb").." a Monstrosity using "..CKWord("Remote Detonation", "RemoteDeton_rgb").." Blitz, "..CNumb("{target:%s}", "target_rgb").." times.",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." чудовище с помощью блица "..CKWord("Дистанционный подрыв", "RemoteDeton_rgb_ru")..". Выполните это задание "..CNumb("{target:%s}", "target_rgb").." раз.",
+		},
 	--[+ Efficient Demolition +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Эффективный снос",
+	-- ["loc_achievement_adamant_kill_cluster_with_grenade"] = {
+		-- ru = "Эффективный подрыв",
 	-- },
 		--[+ Kill 3 enemies with a single Arbites Grenade, 50 times. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 3 enemies with a single Arbites Grenade, 50 times.",
-			-- ru = "Убейте 3 врагов одной гранатой «Арбитес» 50 раз.",
-		-- },
+		["loc_achievement_adamant_kill_cluster_with_grenade_desc"] = {
+			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies with a single "..CKWord("Arbites Grenade", "Arbites_gren_rgb")..", "..CNumb("{target:%s}", "target_rgb").." times.",
+			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов одной "..CKWord("Гранатой арбитрес", "Arbites_grenoi_rgb_ru")..". Выполните это задание "..CNumb("{target:%s}", "target_rgb").." раз.",
+		},
 	--[+ Justice Dispensed +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Воскрешение правосудия",
+	-- ["loc_achievement_adamant_kill_marked_enemies"] = {
+		-- ru = "Высвобождение правосудия",
 	-- },
 		--[+ On Heresy Threat or higher, Kill 750 enemies marked by Execution Order. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "On Heresy Threat or higher, Kill 750 enemies marked by Execution Order.",
-			-- ru = "При уровне угрозы ереси или выше уничтожьте 750 врагов, отмеченных приказом о казни.",
-		-- },
+		["loc_achievement_adamant_kill_marked_enemies_desc"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies marked by "..CKWord("Execution Order", "ExecutOrder_rgb").." Keystone.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов, отмеченных ключевым талантом "..CKWord("Приказ на казнь", "ExecutOrder_rgb_ru")..".",
+		},
 	--[+ Castigator's Arrest +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_kill_with_melee"] = {
 		-- ru = "Арест кастигатора",
 	-- },
 		--[+ On Heresy Threat or higher, Kill 2000 enemies with Melee Attacks while using Terminus Warrant. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "On Heresy Threat or higher, Kill 2000 enemies with Melee Attacks while using Terminus Warrant.",
-			-- ru = "При уровне угрозы ереси или выше убейте 2000 врагов рукопашными атаками, используя ордер на уничтожение противника.",
-		-- },
+		["loc_achievement_adamant_kill_with_melee_desc"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies with Melee Attacks while using "..CKWord("Terminus Warrant", "TerminusWarr_rgb").." Keystone.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов в ближнем бою с помощью ключевого таланта "..CKWord("Ордер Терминус", "TerminusWarr_rgb_ru")..".",
+		},
 	--[+ Arbites Gunner +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_kill_with_ranged"] = {
 		-- ru = "Пулемётчик Арбитрес",
 	-- },
 		--[+ On Heresy Threat or higher, Kill 2000 enemies with Ranged Attacks while using Terminus Warrant. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "On Heresy Threat or higher, Kill 2000 enemies with Ranged Attacks while using Terminus Warrant.",
-			-- ru = "При уровне угрозы ереси или выше уничтожьте 2000 врагов с помощью дистанционных атак, используя ордер на уничтожение.",
-		-- },
+		["loc_achievement_adamant_kill_with_ranged_desc"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies with Ranged Attacks while using "..CKWord("Terminus Warrant", "TerminusWarr_rgb").." Keystone.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов в дальнем бою с помощью ключевого таланта "..CKWord("Ордер Терминус", "TerminusWarr_rgb_ru")..".",
+		},
 	--[+ Full Force of the Lex +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_adamant_time_in_forceful"] = {
 		-- ru = "Полная мощь Закона",
 	-- },
 		--[+ On Heresy Threat or higher, spend 3500s with Forceful active. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "On Heresy Threat or higher, spend 3500 seconds with Forceful active.",
-			-- ru = "При уровне угрозы ереси или выше, потратьте 3500 секунд, активировав способность «Принудительное действие».",
-		-- },
+		["loc_achievement_adamant_time_in_forceful_desc"] = {
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, spend "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Forceful", "Forceful_rgb").." Keystone active.",
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, проведите "..CNumb("{target}", "target_rgb").." секунд с активным ключевым талантом "..CKWord("Неудержимый", "Forceful_rgb_ru")..".",
+		},
 
 
 	--[+ +HIVE SCUM - ОТРЕБЬЕ УЛЬЯ+ +]--
@@ -1696,54 +1696,54 @@ local penances_localizations = {
 	},
 		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
 	--[+ Trusted Cartel Member (1-6) +]-- руоф  (1-6)
-	-- ["loc_achievement_rank_adamant_2_x_name"] = {
+	-- ["loc_achievement_rank_broker_2_x_name"] = {
 		-- ru = "Доверенный член картеля ({tier})",
 	-- },
-		--[+ Reach Trust Level __ as a Arbitrator. +]-- руоф Заслужить уровень доверия __, играя за Арбитратора.
-		-- ["loc_achievement_rank_adamant_2_x_description"] = {
-			-- en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Arbitrator", "cls_arb_rgb")..".",
-			-- ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
-		-- },
+		--[+ Reach Trust Level __ as a Hive Scum. +]-- руоф Заслужить уровень доверия __, играя за .
+		["loc_achievement_rank_broker_2_x_description"] = {
+			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Hive Scum", "cls_scm_rgb")..".",
+			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+		},
 	--[+ Conclave's Will (1-5) +]-- руоф  (1-5)
-	-- ["loc_achievement_missions_adamant_2_x_name"] = {
+	-- ["loc_achievement_missions_broker_2_x_name"] = {
 		-- ru = "Воля Конклава ({tier})",
 	-- },
 		--[+ Complete 100 Missions as a Arbitrator. +]-- руоф Выполнить Арбитратором задания: 100.
-		-- ["loc_achievement_missions_adamant_2_x_description"] = {
-			-- en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Arbitrator", "cls_arb_rgb")..".",
-			-- ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 次任務。",
-		-- },
+		["loc_achievement_missions_broker_2_x_description"] = {
+			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Hive Scum", "cls_scm_rgb")..".",
+			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 次任務。",
+		},
 	--[+ Savvy Operator +]-- руоф 
-	-- ["loc_achievement_missions_adamant_2_objective_1_name"] = {
+	-- ["loc_achievement_missions_broker_2_objective_1_name"] = {
 		-- en = "Savvy Operator (1)",
 		-- ru = "Опытный оператор (1)",
 	-- },
 		--[+ As a Arbitrator, complete at least one Mission of each type. +]-- руоф Выполнить Арбитратором по меньшей мере одно задание каждого типа.
-		-- ["loc_achievement_missions_adamant_2_objective_1_description"] = {
-			-- en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
-			-- ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
-			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").."完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
-		-- },
+		["loc_achievement_missions_broker_2_objective_1_description"] = {
+			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
+			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
+			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+		},
 	--[+ Savvy Operator (2) +]-- руоф  (2)
-	-- ["loc_achievement_missions_adamant_2_objective_2_name"] = {
+	-- ["loc_achievement_missions_broker_2_objective_2_name"] = {
 		-- ru = "Опытный оператор (2)",
 	-- },
 		--[+ As a Arbitrator, complete a Mission of each type on Malice Threat or higher. +]--
-		-- ["loc_achievement_missions_adamant_2_objective_2_description"] = {
-			-- en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
-			-- ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
-		-- },
+		["loc_achievement_missions_broker_2_objective_2_description"] = {
+			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+		},
 	--[+ Savvy Operator (3) +]-- руоф  (3)
-	-- ["loc_achievement_missions_adamant_2_objective_3_name"] = {
+	-- ["loc_achievement_missions_broker_2_objective_3_name"] = {
 		-- ru = "Опытный оператор (3)",
 	-- },
 		--[+ As a Arbitrator, complete a Mission of each type on Heresy Threat or higher. +]--
-		-- ["loc_achievement_missions_adamant_2_objective_3_description"] = {
-			-- en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
-			-- ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
-		-- },
+		["loc_achievement_missions_broker_2_objective_3_description"] = {
+			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
+			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+		},
 	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
 	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
 	--[+ First Steps (1-2) +]-- руоф Первые шаги (1-2) -- 首要步驟 (1-2)
@@ -1753,283 +1753,289 @@ local penances_localizations = {
 	--[+ Hive Blooded +]-- руоф 
 	--[+ Hive Protector +]-- руоф 
 		--[+ Complete the following Penances as the Arbitrator. +]-- руоф Выполнить следующие искупления за Арбитратора.
-		-- ["loc_achievement_group_adamant_2_description"] = {
-			-- en = "Complete the following Penances as the "..CKWord("Arbitrator", "cls_arb_rgb")..".",
-			-- ru = "Выполните следующие Искупления "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("老兵", "cls_arb_rgb_tw").." 完成以下苦修。",
-		-- },
+		["loc_achievement_group_broker_2_description"] = {
+			en = "Complete the following Penances as the "..CKWord("Hive Scum", "cls_scm_rgb")..".",
+			ru = "Выполните следующие Искупления "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成以下苦修。",
+		},
 	--[+ Hive Scum Master of War +]-- руоф 
 
 		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
 	--[+ Generous +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Вынесение императорского приговора",
+	-- ["loc_achievement_broker_gunslinger_aura_name"] = {
+		-- ru = "Щедрый",
 	-- },
 		--[+ Share 3500 amount of ammo using Gunslinger. Ammo shared by allies in coherency also count. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 5000 staggered enemies while under the effect of Breaking Dissent. Kill made by allies in coherency with you also count.",
-			-- ru = "Убейте 5000 оглушенных врагов, находящихся под действием эффекта «Слом несогласия». Убийства, совершенные союзниками, действующими согласованно с вами, также засчитываются.",
-		-- },
+		["loc_achievement_broker_gunslinger_aura_description"] = {
+			en = "Share "..CNumb("{target}", "target_rgb").." amount of Ammo using "..CKWord("Gunslinger", "Gunslinger_rgb").." Aura. Ammo shared by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
+			ru = "Раздайте "..CNumb("{target}", "target_rgb").." патронов, используя ауру "..CKWord("Стрелок", "Gunslinger_rgb_ru")..". Патроны, которыми делятся союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+		},
 	--[+ Brawler +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Эффективное исполнение",
+	-- ["loc_achievement_broker_ruffian_aura_name"] = {
+		-- ru = "Драчун",
 	-- },
-		--[+ Kill 5000 enemies in melee while under the effect of Ruffian. Kills made by allies in coherency also count. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 7500 enemies while under the effect of Ruthless Efficiency. Kills made by allies in coherency with you also count.",
-			-- ru = "Убейте 7500 врагов, находясь под действием способности «Безжалостная эффективность». Убийства, совершенные союзниками, действующими согласованно с вами, также засчитываются.",
-		-- },
+		--[+ Kill 5000 enemies in melee while under the effects of Ruffian. Kills by allies in coherency also count. +]-- руоф 
+		["loc_achievement_broker_ruffian_aura_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies in Melee while under the effects of "..CKWord("Ruffian", "Ruffian_rgb").." Aura. Kills made by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в ближнем бою под действием ауры "..CKWord("Хулиган", "Ruffian_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+		},
 	--[+ Shooter +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Хорошо отлаженная команда убийц",
+	-- ["loc_achievement_broker_anarchist_aura_name"] = {
+		-- ru = "Стрелок",
 	-- },
 		--[+ Perform 1200 Critical Strikes while under the effect of Anarchist. Critical Strikes performed by allies in coherency also count. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "With Part of the Squad Aura active, kill 2500 enemies while in coherency with Cyber-Mastiff. Kills made by allies in coherency with your Cyber-Mastiff also count.",
-			-- ru = "При активной ауре «Часть отряда» уничтожьте 2500 врагов, находясь в согласованном состоянии с Кибер-Мастифом. Убийства, совершенные союзниками, находящимися в согласованном состоянии с вашим Кибер-Мастифом, также засчитываются.",
-		-- },
-	--[+ Binding! +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Вольтаическое ограничение",
+		["loc_achievement_broker_anarchist_aura_alt_description"] = {
+			en = "Perform "..CNumb("{target}", "target_rgb").." "..CKWord("Critical strikes", "Crit_strikes_rgb").." while under the effect of "..CKWord("Anarchist", "Anarchist_rgb").." Aura. "..CKWord("Critical strikes", "Crit_strikes_rgb").." performed by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
+			ru = "Нанесите "..CNumb("{target}", "target_rgb").." "..CKWord("критических ударов", "krit_udarov_rgb_ru")..", находясь под действием ауры "..CKWord("Анархист", "Anarchist_rgb_ru")..". "..CKWord("Критические удары", "Krit_udary_rgb_ru")..", нанесённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+		},
+	--[+ Blinding! +]-- руоф 
+	-- ["loc_achievement_broker_enemies_hit_by_flash_grenade_name"] = {
+		-- ru = "Ослепление!",
+	-- },
+	--[+ Played a Blinder +]-- руоф 
+	-- ["loc_achievement_broker_enemies_hit_by_flash_grenade_2_name"] = {
+		-- ru = "Ослепительная игра",
 	-- },
 		--[+ Stagger 3 enemies 50 times with a Blinder. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Stun enemies using the Voltaic Shock Mine for a total duration of 5000 seconds.",
-			-- ru = "Оглушите врагов с помощью вольтовой ударной мины на общую продолжительность 5000 секунд.",
-		-- },
-	--[+ Played a Blinder +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Протоколы подавления",
-	-- },
-		--[+ Stagger 3 enemies 100 times with a Blinder. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Debuff 2500 enemies using the Nuncio Aquila.",
-			-- ru = "С помощью Нунция Орла ослабьте 2500 врагов.",
-		-- },
+		["loc_achievement_broker_enemies_hit_by_flash_grenade_description"] = {
+			en = CKWord("Stagger", "Stagger_rgb").." "..CNumb("{enemy_count}", "enemy_count_rgb").." enemies with a "..CKWord("Blinder", "Blinder_rgb").." Blitz, "..CNumb("{target}", "target_rgb").." times.",
+			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." "..CNumb("{enemy_count}", "enemy_count_rgb").." врагов "..CNumb("{target}", "target_rgb").." раз с помощью блица "..CKWord("Ослепитель", "Blinder_rgb_ru")..".",
+		},
 	--[+ Bring the Boom +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Укрепление командования",
+	-- ["loc_achievement_broker_enemies_killed_by_missile_launcher_name"] = {
+		-- ru = "Притащи Бабах",
+	-- },
+	--[+ Boom Brought +]-- руоф 
+	-- ["loc_achievement_broker_enemies_killed_by_missile_launcher_2_name"] = {
+		-- ru = "Притащил Бабах",
 	-- },
 		--[+ Kill 45 Elites/Monstrosities with the Boom Bringer. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Buff allies using the Nuncio Aquila for a total duration of 10000 seconds.",
-			-- ru = "Усиление союзников с помощью «Нунция Орла» на общую продолжительность 10000 секунд.",
-		-- },
-	--[+ Boom Brought +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
-	-- },
-		--[+ Kill 90 Elites/Monstrosities with the Boom Bringer. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 250 enemies during Castigator's Stance.",
-			-- ru = "Убейте 250 врагов во время действия "Стойки рестлера".",
-		-- },
+		["loc_achievement_broker_enemies_killed_by_missile_launcher_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." Elites or Monstrosities with the "..CKWord("Boom Bringer", "BoomBringer_rgb").." Blitz.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных противников или чудовищ с помощью блица "..CKWord("Бабахер", "BoomBringer_rgb_ru")..".",
+		},
 	--[+ Choke on This +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Уличный боец",
+	-- ["loc_achievement_broker_enemies_affected_by_chem_bomb_name"] = {
+		-- ru = "На, подавись!",
+	-- },
+	--[+ 'Ave it! +]-- руоф 
+	-- ["loc_achievement_broker_enemies_affected_by_chem_bomb_2_name"] = {
+		-- ru = "Получи!",
 	-- },
 		--[+ Affect 400 unique enemies with a Chem Grenade. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Stagger 500 Elite or Specialist Enemies using Break the Line.",
-			-- ru = "Используйте прием "Прорыв линии", чтобы оглушить 500 элитных или специализированных врагов.",
-		-- },
-	--[+ 'Ave it!' +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Протоколы мерзостей",
-	-- },
-		--[+ Affect 800 unique enemies with a Chem Grenade. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Stagger a Monstrosity using Remote Detonation, 50 times.",
-			-- ru = "Оглушите чудовище с помощью дистанционного подрыва 50 раз.",
-		-- },
+		["loc_achievement_broker_enemies_affected_by_chem_bomb_description"] = {
+			en = "Affect "..CNumb("{target}", "target_rgb").." unique enemies with a "..CKWord("Chem Grenade", "ChemGrenade_rgb").." Blitz.",
+			ru = "Воздействуйте на "..CNumb("{target}", "target_rgb").." уникальных врагов блицом "..CKWord("Хим-граната", "ChemGrenade_rgb_ru")..".",
+		},
 	--[+ Gun For Hire +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Эффективный снос",
+	-- ["loc_achievement_broker_enemies_killed_with_focus_mode_name"] = {
+		-- ru = "Наёмник",
 	-- },
 		--[+ Kill 1000 enemies while Desperado is active. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "Kill 3 enemies with a single Arbites Grenade, 50 times.",
-			-- ru = "Убейте 3 врагов одной гранатой «Арбитес» 50 раз.",
-		-- },
+		["loc_achievement_broker_enemies_killed_with_focus_mode_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while "..CKWord("Desperado", "Desperad_rgb").." Ability is active.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов пока активна способность "..CKWord("Безбашенный", "Desperad_rgb_ru")..".",
+		},
+	--[+ Nimble +]-- руоф 
+	-- ["loc_achievement_broker_attacks_dodged_in_focus_mode_name"] = {
+		-- ru = "Ловкач",
+	-- },
+		--[+ Dodge 750 attacks while Desperado is active. +]-- руоф 
+		["loc_achievement_broker_attacks_dodged_in_focus_mode_description"] = {
+			en = "Dodge "..CNumb("{target}", "target_rgb").." attacks while "..CKWord("Desperado", "Desperad_rgb").." Ability is active.",
+			ru = "Уклонитесь от "..CNumb("{target}", "target_rgb").." атак, пока активна способность "..CKWord("Безбашенный", "Desperad_rgb_ru")..".",
+		},
 	--[+ Hive Streets of Rage +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Воскрешение правосудия",
+	-- ["loc_achievement_broker_deal_damage_in_punk_rage_name"] = {
+		-- ru = "Улицы Ярости Улья",
 	-- },
 		--[+ Deal 60000 damage while Rampage! is active. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "On Heresy Threat or higher, Kill 750 enemies marked by Execution Order.",
-			-- ru = "При уровне угрозы ереси или выше уничтожьте 750 врагов, отмеченных приказом о казни.",
-		-- },
+		["loc_achievement_broker_deal_damage_in_punk_rage_description"] = {
+			en = "Deal "..CNumb("{target}", "target_rgb").." "..CKWord("Damage", "Damage_rgb").." while "..CKWord("Rampage!", "Rampag_rgb").." Ability is active.",
+			ru = "Нанесите "..CNumb("{target}", "target_rgb").." "..CKWord("урона", "urona_rgb_ru").." пока активна способность "..CKWord("Ярость!", "Rampag_rgb_ru"),
+		},
 	--[+ Rampager +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Арест кастигатора",
+	-- ["loc_achievement_broker_stay_in_punk_rage_name"] = {
+		-- ru = "Буйный",
 	-- },
 		--[+ Spend 900 seconds with Rampage! active. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "On Heresy Threat or higher, Kill 2000 enemies with Melee Attacks while using Terminus Warrant.",
-			-- ru = "При уровне угрозы ереси или выше убейте 2000 врагов рукопашными атаками, используя ордер на уничтожение противника.",
-		-- },
+		["loc_achievement_broker_stay_in_punk_rage_description"] = {
+			en = "Spend "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Rampage!", "Rampag_rgb").." Ability is active.",
+			ru = "Проведите "..CNumb("{target}", "target_rgb").." секунд пока активна способность "..CKWord("Ярость!", "Rampag_rgb_ru"),
+		},
 	--[+ Street Doctor +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Пулемётчик Арбитрес",
+	-- ["loc_achievement_broker_deploy_stimm_field_name"] = {
+		-- ru = "Уличный доктор",
 	-- },
 		--[+ Deploy the Stimm Supply 45 times. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "On Heresy Threat or higher, Kill 2000 enemies with Ranged Attacks while using Terminus Warrant.",
-			-- ru = "При уровне угрозы ереси или выше уничтожьте 2000 врагов с помощью дистанционных атак, используя ордер на уничтожение.",
-		-- },
+		["loc_achievement_broker_deploy_stimm_field_description"] = {
+			en = "Deploy the "..CKWord("Stimm Supply", "StimmSupply_rgb").." Ability "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Разверните способность "..CKWord("Стим-поддержка", "StimmSupply_rgb_ru").." "..CNumb("{target}", "target_rgb").." раз.",
+		},
 	--[+ Shared Benefits +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "Полная мощь Закона",
+	-- ["loc_achievement_broker_buff_allies_chem_field_name"] = {
+		-- ru = "Разделённая выгода",
 	-- },
 		--[+ Buff allies for 2400 seconds with Stimm Supply. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "On Heresy Threat or higher, spend 3500 seconds with Forceful active.",
-			-- ru = "При уровне угрозы ереси или выше, потратьте 3500 секунд, активировав способность «Принудительное действие».",
-		-- },
+		["loc_achievement_broker_buff_allies_chem_field_description"] = {
+			en = "Buff Allies for "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Stimm Supply", "StimmSupply_rgb").." Ability.",
+			ru = "Усильте союзников на "..CNumb("{target}", "target_rgb").." секунд с помощью способности "..CKWord("Стим-поддержка", "StimmSupply_rgb_ru")..".",
+		},
 	--[+ Raptor's Eye +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_gunslinger_keystone_a_name"] = {
+		-- ru = "Взгляд хищника",
 	-- },
 		--[+ Gain 150 stacks of Vulture's Mark. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_gunslinger_keystone_a_description"] = {
+			en = "Gain "..CNumb("{target}", "target_rgb").." Stacks of "..CKWord("Vulture's Mark", "VulturesMark_rgb").." Keystone.",
+			ru = "Получите "..CNumb("{target}", "target_rgb").." зарядов ключевого таланта "..CKWord("Метка стервятника", "VulturesMark_rgb_ru")..".",
+		},
 	--[+ Raptor's Strike +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_gunslinger_keystone_b_name"] = {
+		-- ru = "Удар хищника",
 	-- },
 		--[+ Gain 300 stacks of Vulture's Mark. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_gunslinger_keystone_b_description"] = {
+			en = "Gain "..CNumb("{target}", "target_rgb").." Stacks of "..CKWord("Vulture's Mark", "VulturesMark_rgb").." Keystone.",
+			ru = "Получите "..CNumb("{target}", "target_rgb").." зарядов ключевого таланта "..CKWord("Метка стервятника", "VulturesMark_rgb_ru")..".",
+		},
 	--[+ What a Rush! +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_broker_ruffian_keystone_a_name"] = {
 		-- ru = "",
 	-- },
 		--[+ Proc Adrenaline Frenzy 80 times. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_ruffian_keystone_a_description"] = {
+			en = "Trigger the "..CKWord("Adrenaline", "Adren_rgb").." effect from "..CKWord("Adrenaline Frenzy", "AdrenFrenz_rgb").." Keystone "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Активируйте "..CNumb("{target}", "target_rgb").." раз эффект "..CKWord("Адреналина", "Adren_rgb_ru").." от ключевого таланта "..CKWord("Адреналиновое безумие", "AdrenFrenz_rgb_ru")..".",
+		},
 	--[+ Battle Focussed +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_ruffian_keystone_b_name"] = {
+		-- ru = "Боевая сосредоточенность",
 	-- },
 		--[+ Proc Adrenaline Frenzy 160 times. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_ruffian_keystone_b_description"] = {
+			en = "Trigger the "..CKWord("Adrenaline", "Adren_rgb").." effect from "..CKWord("Adrenaline Frenzy", "AdrenFrenz_rgb").." Keystone "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Активируйте "..CNumb("{target}", "target_rgb").." раз эффект "..CKWord("Адреналина", "Adren_rgb_ru").." от ключевого таланта "..CKWord("Адреналиновое безумие", "AdrenFrenz_rgb_ru")..".",
+		},
 	--[+ Stimmed +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
+	-- ["loc_achievement_broker_anarchist_keystone_a_name"] = {
 		-- ru = "",
 	-- },
 		--[+ Remain at full stacks of Chemical Dependency for 1000s. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_anarchist_keystone_a_description"] = {
+			en = "Remain at full Stacks of "..CKWord("Chemical Dependency", "ChemDepend_rgb").." Keystone for "..CNumb("{target}", "target_rgb").." seconds.",
+			ru = "Поддерживайте полный заряд ключевого таланта "..CKWord("Хим-зависимость", "ChemDepend_rgb_ru").." в течение "..CNumb("{target}", "target_rgb").." секунд.",
+		},
 	--[+ Alchemist +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_anarchist_keystone_b_name"] = {
+		-- ru = "Алхимик",
 	-- },
 		--[+ Remain at full stacks of Chemical Dependency for 2000s. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_anarchist_keystone_b_description"] = {
+			en = "Remain at full Stacks of "..CKWord("Chemical Dependency", "ChemDepend_rgb").." Keystone for "..CNumb("{target}", "target_rgb").." seconds.",
+			ru = "Поддерживайте полный заряд ключевого таланта "..CKWord("Хим-зависимость", "ChemDepend_rgb_ru").." в течение "..CNumb("{target}", "target_rgb").." секунд.",
+		},
 	--[+ Speedster +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_stimm_celerity_potency_name"] = {
+		-- ru = "Быстрый",
 	-- },
 		--[+ Gain 3000% total attack speed with at least 50% Viscosity allocated in the Cartel Special. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_stimm_celerity_potency_description"] = {
+			en = "Gain "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." total Attack Speed with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
+			ru = "Получите в общей сложности "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." к скорости атаки с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+		},
 	--[+ Clinical Assassin +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_stimm_hit_weakspots_name"] = {
+		-- ru = "Клинический убийца",
 	-- },
 		--[+ Hit weakspots while Cartel Special is active 2000 times. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_stimm_hit_weakspots_description"] = {
+			en = "Hit "..CKWord("Weakspots", "Weakspots_rgb").." while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Попадите "..CNumb("{target}", "target_rgb").." раз в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+		},
 	--[+ Pugilist +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_stimm_combat_potency_name"] = {
+		-- ru = "Борец",
 	-- },
 		--[+ Gain 2000% total strength with at least 50% Viscosity allocated in the Cartel Special. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_stimm_combat_potency_description"] = {
+			en = "Gain "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." total "..CKWord("Strength", "Strength_rgb").." with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
+			ru = "Получите в общей сложности "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." к "..CKWord("силе", "sile_rgb_ru").." с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+		},
 	--[+ Brutal Bludgeons +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_stimm_heavy_attack_kills_name"] = {
+		-- ru = "Жестокое избиение",
 	-- },
 		--[+ Kill enemies with heavy attacks while Cartel Special is active, 650 times. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_stimm_heavy_attack_kills_description"] = {
+			en = "Kill enemies with Heavy Attacks while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов тяжёлыми атаками пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+		},
 	--[+ Enhanced +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_stimm_durability_potency_name"] = {
+		-- ru = "Улучшенный",
 	-- },
 		--[+ Replenish 1500 total Toughness with at least 50% Viscosity allocated in the Cartel Special. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
-			-- en = "",
-			-- ru = "",
-		-- },
+		["loc_achievement_broker_stimm_durability_potency_description"] = {
+			en = "Replenish "..CNumb("{target}", "target_rgb").." total "..CKWord("Toughness", "Toughness_rgb").." with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
+			ru = "Восстановите в общей сложности "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+		},
 	--[+ Toxic Shock +]-- руоф 
-	-- ["loc_achievement__2_easy_1_name"] = {
-		-- ru = "",
+	-- ["loc_achievement_broker_stimm_apply_toxin_name"] = {
+		-- ru = "Токсический шок",
 	-- },
 		--[+ Apply stacks of Chem Toxin while Cartel Special is active, 1500 times. +]-- руоф 
-		-- ["loc_achievement__2_easy_1_description"] = {
+		["loc_achievement_broker_stimm_apply_toxin_description"] = {
+			en = "Apply Stacks of "..CKWord("Chem Toxin", "Chem_Tox_rgb").." while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active, "..CNumb("{target}", "target_rgb").." times.",
+			ru = "Наложите на врагов "..CNumb("{target}", "target_rgb").." зарядов "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru").." пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+		},
+
+
+--[+ +TACTICAL - ТАКТИЧЕСКИЕ - 戰術 + +]--
+	--[+ OFFENSIVE - АТАКА +]-- руоф Наступление
+	["loc_achievement_category_offensive_label"] = {
+		ru = "Атака",
+		["zh-tw"] = "攻擊",
+	},
+
+	--[+ Situational Awarness +]-- руоф На примете
+	-- ["loc_achievement_enemies_killed_by_barrels_name"] = {
+		-- ru = "Ситуационная осведомленность",
+	-- },
+		--[+ Kill __ enemies by blowing up explosive barrels. +]-- руоф Убейте врагов (__) с помощью взрывных бочек.
+		["loc_achievement_enemies_killed_by_barrels_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies by blowing up Explosive barrels.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов с помощью подрыва взрывных бочек.",
+			-- ["zh-tw"] = "利用爆炸桶擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ The Enemy of my Enemy is my Friend +]-- руоф Враг моего врага - мой друг
+	["loc_achievement_enemies_killed_by_poxburster_name"] = {
+		["zh-tw"] = "敵人的敵人即朋友",
+	},
+		--[+ Kill 10 enemies by having a Poxbuster explode next to them. +]-- руоф Убейте врагов (10), уничтожив рядом с ними чумного Взрывуна.
+		["loc_achievement_enemies_killed_by_poxburster_description"] = {
+			en = "Kill "..CNumb("{target}", "target_rgb").." enemies by having a Poxbuster explode next to them.",
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, взорвав рядом с ними Чумного взрывника.",
+			-- ["zh-tw"] = "引爆瘟疫爆者以擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		},
+	--[+ No time to Bleed +]--
+	-- ["loc_code"] = {
+		-- en = "",
+		-- ru = "",
+		-- ["zh-tw"] = "",
+	-- },
+		--[+ As a team complete a mission on Heresy Threat or +]--
+		-- ["loc_code"] = {
 			-- en = "",
 			-- ru = "",
+			-- ["zh-tw"] = "",
 		-- },
 
 
 
 
-	-- --[+ +TACTICAL - ТАКТИЧЕСКИЕ - 戰術 + +]--
-		-- --[+ OFFENSIVE - АТАКА +]--
-		-- --[+ Offensive +]-- руоф Наступление
-	-- --[+ Russian +]--
-	-- create_template("ach_off_0_ext_ru",
-		-- {"loc_achievement_category_offensive_label"}, {"ru"},
-			-- loc_text("Атака")),
-	-- --[+ Traditional Chinese 攻擊 +]--
-	-- create_template("ach_off_0_ext_tw",
-		-- {"loc_achievement_category_offensive_label"}, {"zh-tw"},
-			-- loc_text("攻擊")),
 
-	-- --[+	 +]-- руоф Враг моего врага - мой друг
-	-- --[+ Russian +]--
-	-- -- create_template("ach_off_1_ext_ru",
-		-- -- {"loc_achievement_enemies_killed_by_poxburster_name"}, {"ru"},
-			-- -- loc_text("Враг моего врага - мой друг")),
-	-- create_template("ach_off_1_ext_tw",
-		-- {"loc_achievement_enemies_killed_by_poxburster_name"}, {"zh-tw"},
-			-- loc_text("敵人的敵人即朋友")),
 
-	-- --[+	 +]-- руоф Убейте врагов (10), уничтожив рядом с ними чумного Взрывуна.
-	-- --[+ Russian +]--
-	-- create_template("ach_off_1_ext_desc_ru",
-		-- {"loc_achievement_enemies_killed_by_poxburster_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов, уничтожив рядом с ними Чумного взрывника.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用瘟疫爆者的爆炸即鯊100名敵人。
-	-- create_template("ach_off_1_ext_desc_tw",
-		-- {"loc_achievement_enemies_killed_by_poxburster_description"}, {"zh-tw"},
-			-- loc_text("引爆瘟疫爆者以擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
 
 	-- --[+ Flyswatter +]-- руоф Мухобойка
 	-- --[+ Russian +]--
@@ -2051,27 +2057,6 @@ local penances_localizations = {
 	-- create_template("ach_off_5_ext_desc_tw",
 		-- {"loc_achievement_enemies_climbing_description"}, {"zh-tw"},
 			-- loc_text("擊殺 "..CNumb("{target}", "target_rgb").." 名正在攀爬中的敵人。")),
-
-	-- --[+	 +]-- руоф На примете 
-	-- --[+ Russian +]--
-	-- -- create_template("ach_off_1_ext_ru",
-		-- -- {"loc_achievement_enemies_killed_by_barrels_name"}, {"ru"},
-			-- -- loc_text("На примете")),
-	-- --[+ Traditional Chinese 狀態意識 +]--
-	-- create_template("ach_off_1_ext_tw",
-		-- {"loc_achievement_enemies_killed_by_barrels_name"}, {"zh-tw"},
-			-- loc_text("狀態意識")),
-
-	-- --[+ Kill 500000 enemies in total. +]-- руоф Убейте врагов (100) с помощью взрывных бочек.
-	-- --[+ Russian +]--
-	-- create_template("ach_off_1_ext_desc_ru",
-		-- {"loc_achievement_enemies_killed_by_barrels_description"}, {"ru"},
-			-- loc_text("Убейте "..CNumb("{target}", "target_rgb").." врагов с помощью взрывных бочек.")),
-	-- --[+ Traditional Chinese +]--
-	-- -- 使用爆炸統擊殺xx名敵人。
-	-- create_template("ach_off_1_ext_desc_tw",
-		-- {"loc_achievement_enemies_killed_by_barrels_description"}, {"zh-tw"},
-			-- loc_text("利用爆炸桶擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。")),
 
 	-- --[+ Attack, Attack, Attack! +]-- руоф Нападай, нападай!
 	-- --[+ Russian +]--

@@ -213,7 +213,7 @@ local scum_localizations = {
 			..Dot_green.." Reloading consumes no Ammo from your Reserve.\n"
 			.."\n"
 			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
-		ru = "Вы восполняете всю "..CKWord("стойкость", "stoikost_rgb_ru")..", берёте в руки ваше перезаряженное дальнобойное оружие, входя в режим "..CKWord("Сорвиголовы", "Desperady_rgb_ru").." на {duration:%s} секунд.\n"
+		ru = "Вы восполняете всю "..CKWord("стойкость", "stoikost_rgb_ru")..", берёте в руки ваше перезаряженное дальнобойное оружие, входя в режим "..CKWord("Безбашенного", "Desperady_rgb_ru").." на {duration:%s} секунд.\n"
 			.."\n"
 			.."На время действия вы получаете:\n"
 			..Dot_green.." {sprint_movement_speed:%s} к скорости бега,\n"
@@ -222,7 +222,7 @@ local scum_localizations = {
 			..Dot_green.." Иммунитет к подавлению,\n"
 			..Dot_green.." Перезарядка не тратит боеприпасы из резерва.\n"
 			-- .."\n"
-			..Dot_nc.." Восстановление: {cooldown:%s} секунд.", -- Отчаянная атака
+			..Dot_nc.." Восстановление: {cooldown:%s} секунд.", -- Безбашенный
 	},
 	--[+ ABILITY 1 - Enhanced Desperado +]--	26.03.2026
 	["loc_talent_broker_ability_focus_improved_desc"] = { -- talent_name: Enhanced Desperado, duration: 10, sprint_movement_speed: +20%, duration_extend: 1, duration_max: 20, cooldown: 45, s->seconds, +colors
@@ -245,7 +245,7 @@ local scum_localizations = {
 			..CPhrs("Can_proc_mult_str")
 			.."\n"
 			..Dot_nc.." Base Cooldown: {cooldown:%s} seconds.",
-		ru = "Вы восполняете всю "..CKWord("стойкость", "stoikost_rgb_ru")..", берёте в руки ваше перезаряженное дальнобойное оружие, входя в режим "..CKWord("Сорвиголовы", "Desperady_rgb_ru").." на {duration:%s} секунд.\n"
+		ru = "Вы восполняете всю "..CKWord("стойкость", "stoikost_rgb_ru")..", берёте в руки ваше перезаряженное дальнобойное оружие, входя в режим "..CKWord("Безбашенного", "Desperady_rgb_ru").." на {duration:%s} секунд.\n"
 			..Dot_green.." Это улучшенная версия таланта {default_talent:%s}.\n"
 			.."\n"
 			.."На время действия вы получаете:\n"
@@ -263,7 +263,7 @@ local scum_localizations = {
 			..Dot_nc.." Эффект ослабевает дальше каждые {duration_max:%s} секунд.\n"
 			..CPhrs("Can_proc_mult_str")
 			.."\n"
-			..Dot_nc.." Базовое время восстановления: {cooldown:%s} секунд.", -- Отчаянная атака
+			..Dot_nc.." Базовое время восстановления: {cooldown:%s} секунд.", -- Улучшенный Безбашенный
 	},
 	--[+ ABILITY 1-1 - Pick Your Targets +]--	26.03.2026
 	["loc_talent_broker_ability_focus_sub_2_desc"] = { -- rending: +15%, focus: Enhanced Desperado, damage: +3%, stacks: 5, +colors
@@ -452,7 +452,7 @@ local scum_localizations = {
 		ru = "Сбрасывается время восстановления {stimm_field:%s}, когда вы:\n"
 			..Dot_green.." Подбираете стим,\n"
 			..Dot_green.." Получаете стим от союзника,\n"
-			..Dot_green.." У особого Стима Картеля заканчивается время восстановления.\n"
+			..Dot_green.." У "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru").." заканчивается время восстановления.\n"
 			.."\n"
 			.."Активация заблокирована при:\n"
 			..Dot_red.." Активном {stimm_field:%s}.\n"

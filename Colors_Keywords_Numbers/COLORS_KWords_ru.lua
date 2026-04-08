@@ -149,6 +149,7 @@ local CONFIG = {
 		Probivanie =		"Пробивание",					-- Примечания внизу
 		probivaniu =		"пробиванию",					-- Таланты, Благословения
 
+		Cartel_Stim =		"Особый стим Картеля",
 		Cartel_Stimm =		"Особого стима Картеля",
 	},
 	soulblaze_text_colour = {
@@ -318,9 +319,9 @@ local CONFIG = {
 	},
 -- Отребье Улья
 	class_scum_text_colour = {
-		cls_scm =			"Отребье Улья",
-		cls_scma =			"Отребья Улья",
-		cls_scm2 =			"Отребьем Улья",
+		cls_scm =			"Отребье улья",
+		cls_scma =			"Отребья улья",
+		cls_scm2 =			"Отребьем улья",
 	},
 		chemtox_text_colour = {
 			Chem_Tox =			"Хим-токсин",
@@ -416,15 +417,39 @@ local CONFIG = {
 		pbbarrage =			"Беспощадный обстрел в упор",
 		stayclose =			"Держись рядом!",
 	-- АРБИТРЕС
-		Electro_mine =		"Вольтаическую шоковую мину",
 		Arbites_gren =		"Гранату арбитрес",
-		Nuncio_akvilu =		"Нунцио-аквилу",
+		Arbites_grenoi =	"Гранатой арбитрес",
+		BreaknDissent =		"Уничтожение инакомыслия",
 		BreakZLined =		"Прорыв вражеского строя",
 		BreakZLine =		"Прорыва вражеского строя",
+		CastigatorSt =		"Стойка карателя",
+		Electro_mine0 =		"Вольтаическая шоковая мина",
+		Electro_mine =		"Вольтаическую шоковую мину",
+		ExecutOrder =		"Приказ на казнь",
+		Forceful =			"Неудержимый",
+		Nuncio_aquila =		"Нунцио-аквила",
+		Nuncio_akvilu =		"Нунцио-аквилу",
+		PartozSquad =		"Часть отряда",
+		RemoteDeton =		"Дистанционный подрыв",
+		RuthlEffcy =		"Безжалостная эффективность",
 		Stojku_bicha =		"Стойку бичевателя",
+		TerminusWarr =		"Ордер Терминус",
 	-- ОТРЕБЬЕ
+		AdrenFrenz =		"Адреналиновое безумие",
+		Anarchist =			"Анархист",
+		Blinder =			"Ослепитель",
 		Blind_greny =		"Ослепляющие гранаты",
-		Desperady =			"Сорвиголовы",
+		BoomBringer =		"Бабахер",
+		ChemDepend =		"Хим-зависимость",
+		ChemGrenade =		"Хим-граната",
+		Desperad =			"Безбашенный",
+		Desperady =			"Безбашенного",
+		Gunslinger =		"Стрелок",
+		Rampag =			"Ярость!",
+		Ruffian =			"Хулиган",
+		StimmSupply =		"Стим-поддержка",
+		VulturesMark =		"Метка стервятника",
+		Viscosity =			"Вязкость",
 
 -- ИСКУПЛЕНИЯ
 		Base_tut_p =		"Базовое обучение",

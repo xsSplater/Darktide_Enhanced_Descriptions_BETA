@@ -477,14 +477,14 @@ local weapon_localizations = {
 
 --[+ ++WEAPON BLESSINGS - БЛАГОСЛОВЕНИЯ ОРУЖИЯ - 武器祝福++ +]--
 	--[+ MELEE - БЛИЖНИЙ БОЙ - 近戰 +]--
-		--[+ OPPORTUNIST +]--	04.04.2026
+		--[+ OPPORTUNIST +]-- руоф Приспособленец	08.04.2026
 		--Rending vs Staggered (per tier)
 		-- Battle Maul and Shield, Chainaxes, Crowbar, Crusher, Eviscerators, Latrine Shovels, Power Maul, Shock Mauls, Shock Mauls and Shield -- 10% | 15% | 20% | 25%
 		["loc_trait_bespoke_armor_penetration_against_staggered_desc"] = { -- rending: +25%, +colors, +note
 			en = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Rending", "Rending_rgb").." vs "..CKWord("Staggered", "Staggered_rgb").." Enemies.\n"
 				..CNote("Rend_note"),
 			ru = CNumb("{rending:%s}", "rending_var_rgb").." к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов.\n"
-				..CNote("Rend_note"), -- Оппортунист -- руоф Приспособленец
+				..CNote("Rend_note"), -- Оппортунист
 			fr = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Déchirure", "Rending_rgb_fr").." vs les Ennemis "..CKWord("Étourdies", "Staggered_rgb_fr")..".\n"
 				..CNote("Rend_note"),
 			["zh-tw"] = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_tw").." vs "..CKWord("硬直中", "Staggered_rgb_tw").." 的敵人。\n"
@@ -506,7 +506,7 @@ local weapon_localizations = {
 			["pt-br"] = CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Penetração", "Rending_rgb_pt_br").." contra Inimigos "..CKWord("Cambaleantes", "Staggered_rgb_pt_br")..".\n"
 				..CNote("Rend_note"),
 		},
-		--[+ BLOODLETTER +]--	04.04.2026
+		--[+ BLOODLETTER +]-- руоф Кровопускание	08.04.2026
 		-- Bleed Stacks (per tier)
 		-- Chainaxes -- 10 | 12 | 14 | 16 -- 突擊鏈斧
 		-- Chainswords -- 11 | 12 | 13 | 14 -- 突擊鏈鋸劍
@@ -517,17 +517,17 @@ local weapon_localizations = {
 				..CPhrs("Refr_dur_stappl")..CPhrs("Cant_appl_thr_shlds"),
 			ru = CNumb("{stacks:%s}", "stacks_var_rgb").." зарядов "..CKWord("кровотечения", "krovotechenia_rgb_ru").." накладывается от специальных атак. "
 				.."Длится "..CNumb("1.5", "n_1_5_rgb").." секунды. "..CPhrs("Refr_dur_stappl").."\n"
-				..CPhrs("Cant_appl_thr_shlds"), -- Кровопускатель -- руоф Кровопускание
+				..CPhrs("Cant_appl_thr_shlds"), -- Кровопускатель
 			-- fr = CNumb("{stacks:%s}", "stacks_var_rgb").." Cumuls de "..CKWord("Saignement", "Bleed_rgb_fr").." lors des attaques spéciales. Jusqu'à "..CNumb("16", "n_16_rgb").." Cumuls.",
 			-- ["zh-tw"] = "特殊攻擊時，使其獲得 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("流血", "Bleed_rgb_tw").."。\n上限 "..CNumb("16", "n_16_rgb").." 層。", -- 放血者
 			-- ["zh-cn"] = "特殊攻击 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("流血", "Bleed_rgb_zh_cn").."。\n最多叠加 "..CNumb("16", "n_16_rgb").." 层。", -- 放血者
 		},
-		--[+ BLOODTHIRSTY +]--	04.04.2026
+		--[+ BLOODTHIRSTY +]-- руоф Жажда крови	08.04.2026
 		-- Melee Crit Chance (per tier)
 		-- Chainaxes, Chainswords, Eviscerators, Force Swords -- 40% | 60% | 80% | 100%
 		["loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill_desc"] = { -- crit_chance: +100%, +colors
 			en = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Critical Chance", "Crit_chance_rgb").." on your next Melee Attack after Special Attack Kill.",
-			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." для вашей следующей атаки ближнего боя после убийства врага специальной атакой.", -- Кровожадный -- руоф Жажда крови
+			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." для вашей следующей атаки ближнего боя после убийства врага специальной атакой.", -- Кровожадный
 			-- fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." sur votre prochaine attaque de mêlée après une élimination avec une attaque spéciale.",
 			-- ["zh-tw"] = "在特殊攻擊擊殺敵人後，\n下一次近戰攻擊 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。", -- 嗜血
 				-- 突擊鏈斧, 突擊鏈鋸劍, 重型開膛劍, 烈焰力場劍 -- 40% | 60% | 80% | 100%
@@ -1012,7 +1012,7 @@ local weapon_localizations = {
 				-- 作戰大槌and板盾, 惡棍棒, 重型開膛劍, 重劍, 廁所鏟, 動力錘 -- 2.5% | 5% | 7.5% | 10%
 			-- ["zh-cn"] = "近战"..CKWord("暴击命中", "Crit_hit_rgb_tw").."时 "..CNumb("{crit_damage:%s}", "critdmg_var_rgb")..CKWord("", "Damage_rgb_zh_cn").."。\n"..CKWord("暴击", "Crit0_rgb_zh_cn").."同时无视装甲赋予的"..CKWord("打击质量", "Hit_mass_rgb_zh_cn").."。"..CNote("Hit_Mass_note"), -- 完美打击
 		},
-		--[+ BLADED MOMENTUM +]--
+		--[+ BLADED MOMENTUM +]--	07.04.2026
 		-- Rending per stack (per tier)
 		-- Heavy Swords -- 5% & 2.5s | 6% & 3s | 7% & 3.5s | 8% & 4s (up to +32%)
 		["loc_trait_bespoke_stacking_rending_on_cleave_desc"] = { -- rending: +8%, time: 4, stacks: 4, +colors, +note
@@ -1026,7 +1026,7 @@ local weapon_localizations = {
 				-- 重劍 -- 4% | 6% | 8% | 10% (up to +50%)
 			-- ["zh-cn"] = "命中多名敌人时"..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("撕裂", "Rending_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Rend_note"), -- 刀刃势头
 		},
-		--[+ DEFLECTOR +]--
+		--[+ DEFLECTOR +]--	07.04.2026
 		-- Block Cost Reduction (per tier)
 		-- Force Greatswords, Force Swords -- 22.5% | 25% | 27.5% | 30%
 		["loc_trait_bespoke_can_block_ranged_desc"] = { -- block_cost: 30%, +colors
@@ -1037,7 +1037,7 @@ local weapon_localizations = {
 			-- 烈焰力場劍, 烈焰力場巨劍 -- 22.5% | 25% | 27.5% | 30%
 			["zh-cn"] = CNumb("{block_cost:%s}", "block_var_rgb").." 格挡消耗。\n此武器可格挡近战与远程攻击。", -- 偏转器
 		},
-		--[+ MOMENTUM +]--
+		--[+ MOMENTUM +]--	07.04.2026
 		-- Max Toughness Percentage (per tier)
 		-- Bully Clubs, Cleavers, Eviscerators, Force Greatswords, Thunder Hammers
 		-- 12% | 13% | 14% | 15%
@@ -1051,7 +1051,7 @@ local weapon_localizations = {
 				-- 烈焰力場巨劍, 惡棍棒, 砍刀, 重型開膛劍, 雷鎚 -- 12% | 13% | 14% | 15%
 			-- ["zh-cn"] = "命中至少 "..CNumb("{multiple_hit:%s}", "mult_hit_var_rgb").." 名敌人时，\n"..CKWord("韧性", "Toughness_rgb_zh_cn").." "..CNumb("{toughness:%s}", "tghns_var_rgb").."。", -- 动量
 		},
-		--[+ MURDEROUS TRANQUILITY +]--
+		--[+ MURDEROUS TRANQUILITY +]--	07.04.2026
 		-- Peril Amount Removed (per tier)
 		-- Force Greatswords -- 2% | 3% | 4% | 5%
 		["loc_trait_bespoke_vent_warp_charge_on_multiple_hits_desc"] = { -- multiple_hit: 3, warp_charge: 2%, +colors
@@ -1065,7 +1065,7 @@ local weapon_localizations = {
 				-- 烈焰力場巨劍 -- 2% | 3% | 4% | 5% ???
 			-- ["zh-cn"] = "命中至少 "..CNumb("{multiple_hit:%s}", "mult_hit_var_rgb").." 名敌人时，\n平息 " ..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("危机值", "Peril_rgb_zh_cn").."。", -- 杀意如水
 		},
-		--[+ BLAZING SPIRIT -- !!! MELEE !!!
+		--[+ BLAZING SPIRIT -- !!! MELEE !!!	07.04.2026
 		-- Soulblaze Stacks and Max Stacks (per tier)
 		-- Force Swords -- 1 (3 max) | 2 (6 max) | 3 (9 max) | 4 (12 max)
 		-- !!!FORCE GREATSWORD TEMPORARILY USES THE DESCRIPTION FROM THE RANGED BLESSING!!!
@@ -1081,7 +1081,7 @@ local weapon_localizations = {
 			-- 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
 			-- ["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时, 对敌人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("灵魂之火", "Soulblaze_rgb_zh_cn").."。最多叠加 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 次。", -- 烈焰之魂
 		},
-		--[+ UNSTABLE POWER +]--
+		--[+ UNSTABLE POWER +]--	07.04.2026
 		-- Power per stack (per tier)
 		-- Force Greatswords, Force Swords -- 3.5% | 4% | 4.5% | 5% (up to +20%)
 		["loc_trait_bespoke_warp_charge_power_bonus_desc"] = { -- power_level: +20%, +colors
@@ -1446,7 +1446,7 @@ local weapon_localizations = {
 		-- Power Maul -- 10% | 15% | 20% | 25%
 		["loc_trait_bespoke_explosion_on_activated_attacks_on_armor_new_desc"] = { -- explosion_radius: 25%, +colors
 			en = CNumb("{explosion_radius:%s}", "explosion_rad_var_rgb").." Explosion Radius to Special Attacks. Special Attacks on Armored Enemies cause an additional Shockwave.",
-			ru = CNumb("{explosion_radius:%s}", "explosion_rad_var_rgb").." к радиусу взрыва от специальных атак. Специальные атаки по бронированным врагам создают дополнительную ударную волну.", -- Энергетический заряд -- руоф Скачок напряжения
+			ru = CNumb("{explosion_radius:%s}", "explosion_rad_var_rgb").." к радиусу взрыва от специальных атак. Специальные атаки по бронированным врагам создают дополнительную ударную волну.", -- Энерговсплеск -- руоф Скачок напряжения
 			-- fr = "Le rayon d'explosion des attaques spéciales augmente de "..CNumb("{explosion_radius:%s}", "explosion_rad_var_rgb")..". Les attaques spéciales sur des ennemies en armure engendrent une onde de choc supplémentaire.",
 			-- ["zh-tw"] = "特殊攻擊的爆炸半徑 "..CNumb("{explosion_radius:%s}", "explosion_rad_var_rgb").."。\n對護甲敵人使用特殊攻擊時產生額外的衝擊波。", -- 能量湧動
 				-- 動力錘 -- 10% | 15% | 20% | 25%
@@ -1498,26 +1498,6 @@ local weapon_localizations = {
 				-- 戰刃, 決鬥劍, 烈焰力場劍, 烈焰力場巨劍 -- 45% | 50% | 55% | 60%
 			-- ["zh-cn"] = "成功闪避时 "..CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("灵巧伤害", "Finesse_dmg_rgb_zh_cn").."".."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"..CNote("Fns_note"), -- 预知
 		},
-
-
-
-
-
-
-
---
---
---
---
---
---
---
-
-
-
-
-
-
 
 
 	--[+ RANGED - ДАЛЬНИЙ БОЙ - 远程武器 +]--
