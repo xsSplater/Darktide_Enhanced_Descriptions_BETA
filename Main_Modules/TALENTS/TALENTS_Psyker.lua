@@ -616,7 +616,7 @@ local psyker_localizations = {
 		en = "Every second, Enemies within {radius:%s} meters have a chance of being "..CKWord("Marked", "Psy_Mark_rgb")..".\n"
 			.."\n"
 			.."On Killing a "..CKWord("Marked", "Psy_Mark_rgb").." Enemy:\n"
-			..Dot_green.." "..CNumb("10", "n_10_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored per second, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {move_speed_duration:%s} seconds,\n"
+			..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored per second, up to {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {move_speed_duration:%s} seconds,\n"
 			..Dot_green.." {move_speed:%s} Movement Speed is granted for {move_speed_duration:%s} seconds,\n"
 			..Dot_green.." "..CNumb("1", "n_1_rgb").." Stack of "..CKWord("Precision", "Precision_rgb").." is added for {bonus_duration} seconds.\n"
 			.."\n"
@@ -632,7 +632,7 @@ local psyker_localizations = {
 		ru = "Каждую секунду враги в радиусе {radius:%s} метров могут быть "..CKWord("отмечены", "Psy_Mark_rgb_ru")..".\n" -- Прерывание судьбы -- руоф Разрушенная судьба
 			.."\n"
 			.."При убийстве "..CKWord("отмеченного", "Psy_Mark_ogo_rgb_ru").." врага вы получаете:\n"
-			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за {move_speed_duration:%s} секунды,\n"
+			..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду, вплоть до {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за {move_speed_duration:%s} секунды,\n"
 			..Dot_green.." {move_speed:%s} к скорости передвижения на {move_speed_duration:%s} секунды и\n"
 			..Dot_green.." "..CNumb("1", "n_1_rgb").." заряд "..CKWord("меткости", "Precision_rgb_ru").." на {bonus_duration} секунд.\n"
 			.."\n"
