@@ -611,7 +611,7 @@ local psyker_localizations = {
 		en = Dot_green.." You can now hold up to {max_stacks:%s} Stacks of {talent_name:%s}.",
 		ru = Dot_green.." Вы теперь можете набирать до {max_stacks:%s} зарядов таланта {talent_name:%s}.", -- Заряженный -- руоф Зарядка
 	},
-	--[+ KEYSTONE 3 - Disrupt Destiny +]--	26.03.2026
+	--[+ KEYSTONE 3 - Disrupt Destiny +]--	12.04.2026
 	["loc_talent_psyker_marked_enemies_passive_updated_desc"] = { -- radius: 40, toughness: 10%, move_speed: +20%, move_speed_duration: 2.5, bonus_duration 4, base_damage: +1%, crit_damage: +2%, weakspot_damage: +2.5%, bonus_stacks: 15 -- m->meters, s->seconds, +colors
 		en = "Every second, Enemies within {radius:%s} meters have a chance of being "..CKWord("Marked", "Psy_Mark_rgb")..".\n"
 			.."\n"

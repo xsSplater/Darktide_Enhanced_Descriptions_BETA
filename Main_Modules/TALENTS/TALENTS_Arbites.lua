@@ -723,12 +723,12 @@ local arbites_localizations = {
 	--[+ Passive 28 - Target the Weak +]-- DOUBLE! OGRYN - Passive 45 - Hard Knocks
 	-- ["loc_talent_ogryn_big_bully_heavy_hits_new_desc"] = {  },	26.03.2026
 
-	--[+ Passive 29 - The Emperor's Fist +]--	26.03.2026
+	--[+ Passive 29 - The Emperor's Fist +]--	12.04.2026
 	["loc_talent_adamant_first_melee_hit_increased_damage_desc"] = { -- damage: +15%, impact: +30%, +colors
-		en = "Your first Melee strike against a target also applies:\n"
+		en = "The First target hit by a Melee attack additionally receives:\n"
 			..Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." and\n"
 			..Dot_green.." {impact:%s} "..CKWord("Impact", "Impact_rgb")..".",
-		ru = "Первый удар ближнего боя по цели также применяет к ней дополнительно:\n"
+		ru = "Первая поражённая цель атаки ближнего боя получает дополнительно:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя и\n"
 			..Dot_green.." {impact:%s} к "..CKWord("выведению из равновесия", "vyved_ravnovesia_rgb_ru")..".", -- Кулак Императора
 	},
