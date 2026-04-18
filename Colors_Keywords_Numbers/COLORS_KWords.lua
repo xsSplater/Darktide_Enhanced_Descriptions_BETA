@@ -482,7 +482,8 @@ local function create_nts_en(colors_en)
 		Fns_note =				Dot_green.." "..CKWord("Finesse", "Finesse_rgb").." increases "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb").." and "..CKWord("Crit Damage", "Crit_dmg_r_rgb")..".",
 		Impact_note =			Dot_green.." "..CKWord("Impact", "Impact_rgb").." increases the effectiveness of "..CKWord("Stagger", "Stagger_rgb").." on enemies.",
 		Pwr_note =				Dot_green.." "..CKWord("Strength", "Strength_rgb").." increases "..CKWord("Damage", "Damage_rgb")..", "..CKWord("Stagger", "Stagger_rgb").." and "..CKWord("Cleave", "Cleave_rgb")..".",
-		Rend_note =				Dot_green.." "..CKWord("Rending", "Rending_rgb").." increases your own "..CKWord("Damage", "Damage_rgb").."."
+		Rend_note =				Dot_green.." "..CKWord("Rending", "Rending_rgb").." increases your own "..CKWord("Damage", "Damage_rgb")..".",
+		Weaksp_note =			Dot_green.." "..CKWord("Weakspots", "Weakspots_rgb").." are heads. For the Beast of Nurgle, it's a Bubble on its back.",
 	}
 end
 

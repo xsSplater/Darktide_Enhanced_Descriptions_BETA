@@ -203,6 +203,7 @@ local CONFIG = {
 		stoikosti_urona =	"урона стойкости",				-- Таланты
 	},
 	weakspot_text_colour = {
+		Ujazvimye_mesta =	"Уязвимые места",				-- Таланты, Благословения
 		ujazvimye_mesta =	"уязвимые места",				-- Таланты, Благословения
 		ujazvimym_mestam =	"уязвимым местам",				-- Таланты
 		u_mestam_uronu =	"урону по уязвимым местам",		-- Таланты, Благословения
@@ -581,6 +582,7 @@ local function create_nts_ru(colors_ru)
 		Impact_note =		Dot_green.." "..CKWord("Выведение из равновесия", "Vyved_ravnovesia_rgb_ru").." увеличивает эффективность "..CKWord("ошеломления", "oshelomlenia_rgb_ru").." врагов.",
 		Pwr_note =			Dot_green.." "..CKWord("Сила", "Sila_rgb_ru").." повышает "..CKWord("урон", "uron_rgb_ru")..", "..CKWord("ошеломление", "oshelomlenie_rgb_ru").." и "..CKWord("рассечение", "rassechenie_rgb_ru")..".",
 		Rend_note =			Dot_green.." "..CKWord("Пробивание", "Probivanie_rgb_ru").." брони повышает ваш "..CKWord("урон", "uron_rgb_ru")..".",
+		Weaksp_note =			Dot_green.." "..CKWord("Уязвимые места", "Ujazvimye_mesta_rgb_ru").." - это головы. У Чудовища Нургла это пузырь на спине.",
 	}
 end
 

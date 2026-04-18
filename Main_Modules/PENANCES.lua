@@ -278,8 +278,10 @@ local penances_localizations = {
 	},
 	--[+ Kill 350 enemies with ranged weakspot hits. +]-- руоф Убейте врагов (350) попаданиями по слабым местам с дальнего расстояния.
 	["loc_achievement_veteran_2_easy_1_description"] = {
-		en = "Kill "..CNumb("{target}", "target_rgb").." enemies with Ranged "..CKWord("Weakspot Hits", "Weakspothits_rgb")..".",
-		ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." из дальнобойного оружия.",
+		en = "Kill "..CNumb("{target}", "target_rgb").." enemies with Ranged "..CKWord("Weakspot Hits", "Weakspothits_rgb")..".\n"
+			..CNote("Weaksp_note"),
+		ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." из дальнобойного оружия.\n"
+			..CNote("Weaksp_note"),
 		["zh-tw"] = "使用遠程武器 "..CKWord("遠程弱點傷害", "Weakspot_r_dmg_rgb_tw").." "..CNumb("{target}", "target_rgb").." 名敵人。",
 	},
 	--[+ Fire Down Range +]-- -- руоф Заградительный огонь
@@ -433,8 +435,10 @@ local penances_localizations = {
 	},
 		--[+ Kill 250 Specialist or Elites with critical weakspot hits while Weapons Specialist is active. +]-- руоф Убейте особых или элитных врагов (250) с помощью критических ударов по слабым местам, пока действует «Мастер оружия».
 		["loc_achievement_veteran_weapon_switch_passive_keystone_kills_description"] = {
-			en = "Kill "..CNumb("{target}", "target_rgb").." Specialist or Elites with "..CKWord("Critical", "Critical_rgb").." "..CKWord("Weakspot Hits", "Weakspothits_rgb").." while "..CKWord("Weapons Specialist", "weapspec_rgb").." Keystone is active.",
-			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью "..CKWord("критических", "kritickih_rgb_ru").." попаданий в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..", пока действует ключевой талант "..CKWord("Специалист по оружию", "weapspec_rgb_ru")..".",
+			en = "Kill "..CNumb("{target}", "target_rgb").." Specialist or Elites with "..CKWord("Critical", "Critical_rgb").." "..CKWord("Weakspot Hits", "Weakspothits_rgb").." while "..CKWord("Weapons Specialist", "weapspec_rgb").." Keystone is active.\n"
+			..CNote("Weaksp_note"),
+			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью "..CKWord("критических", "kritickih_rgb_ru").." попаданий в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..", пока действует ключевой талант "..CKWord("Специалист по оружию", "weapspec_rgb_ru")..".\n"
+			..CNote("Weaksp_note"),
 			-- ["zh-tw"] = "在 "..CKWord("", "KeyStone_i_p_rgb_tw").."『"..CKWord("", "weapspec_rgb_tw").."』時，\n"
 				-- .."使用 "..CKWord("", "Crit_hits_rgb_tw").." 加上 "..CKWord("", "Weakspot_k_dmg_rgb_tw").." "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
 		},
@@ -507,8 +511,10 @@ local penances_localizations = {
 	},
 		--[+ During a single use of Volley Fire or Executioner's Stance, hit enemy Weak Spots 4 times using a weapon's Secondary Action, without missing a shot. +]-- руоф За однократное применение «Залпового огня» поразите слабые места врагов (4) дополнительным действием оружия, не промахнувшись.
 		["loc_achievement_veteran_2_weakspot_hits_during_volley_fire_alternate_fire_fix_description"] = {
-			en = "During a single use of "..CKWord("Volley Fire", "volley_fire_rgb").." or "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability, hit enemy "..CKWord("Weakspots", "Weakspots_rgb").." "..CNumb("{target}", "target_rgb").." times while Aiming without missing a shot.",
-			ru = "За одно использование способностей "..CKWord("Залповый огонь", "volley_fire_rgb_ru").." или "..CKWord("Стойка палача", "exec_stan_rgb_ru").." поразите "..CNumb("{target}", "target_rgb").." врага прицельными выстрелами в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." не промахиваясь.",
+			en = "During a single use of "..CKWord("Volley Fire", "volley_fire_rgb").." or "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability, hit enemy "..CKWord("Weakspots", "Weakspots_rgb").." "..CNumb("{target}", "target_rgb").." times while Aiming without missing a shot.\n"
+			..CNote("Weaksp_note"),
+			ru = "За одно использование способностей "..CKWord("Залповый огонь", "volley_fire_rgb_ru").." или "..CKWord("Стойка палача", "exec_stan_rgb_ru").." поразите "..CNumb("{target}", "target_rgb").." врага прицельными выстрелами в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." не промахиваясь.\n"
+			..CNote("Weaksp_note"),
 			-- ["zh-tw"] = "於單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』期間，\n"
 				-- .."使用瞄準射擊連續命中 "..CNumb("{target}", "target_rgb").." 名敵人的 "..CKWord("", "Weakspot_rgb_tw").."，且不得中斷。",
 		},
@@ -529,8 +535,10 @@ local penances_localizations = {
 	},
 		--[+ On Heresy Threat or higher, during a single use of Volley Fire or Executioner's Stance, kill 5 highlighted enemies with Weak Spot hits whilst using a weapon's Secondary Action. +]-- руоф При угрозе «Ересь» или выше за однократное применение «Залпового огня»  убейте выделенных врагов (5) попаданием в слабое место, используя дополнительное действие оружия.
 		["loc_achievement_veteran_2_elite_weakspot_kills_during_volley_fire_alternate_fire_fix_description"] = {
-			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, during a single use of "..CKWord("Volley Fire", "volley_fire_rgb").." or "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability, kill "..CNumb("{target}", "target_rgb").." highlighted enemies with "..CKWord("Weakspot Hits", "Weakspothits_rgb").." while using a weapon's Secondary Action.",
-			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, на протяжении одного использования способностей "..CKWord("Залповый огонь", "volley_fire_rgb_ru").." или "..CKWord("Стойка палача", "exec_stan_rgb_ru")..", убейте прицельными выстрелами "..CNumb("{target}", "target_rgb").." подсвеченных врагов в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".",
+			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, during a single use of "..CKWord("Volley Fire", "volley_fire_rgb").." or "..CKWord("Executioner's Stance", "exec_stan_rgb").." Ability, kill "..CNumb("{target}", "target_rgb").." highlighted enemies with "..CKWord("Weakspot Hits", "Weakspothits_rgb").." while using a weapon's Secondary Action.\n"
+			..CNote("Weaksp_note"),
+			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, на протяжении одного использования способностей "..CKWord("Залповый огонь", "volley_fire_rgb_ru").." или "..CKWord("Стойка палача", "exec_stan_rgb_ru")..", убейте прицельными выстрелами "..CNumb("{target}", "target_rgb").." подсвеченных врагов в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".\n"
+			..CNote("Weaksp_note"),
 			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
 				-- .."在單次 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "volley_fire_rgb_tw").."』或『"..CKWord("", "executioner_stance_rgb_tw").."』期間，\n"
 				-- .."使用瞄準射擊 "..CKWord("", "Weakspothits_rgb_tw").." ，擊殺 "..CNumb("{target}", "target_rgb").." 名被標記的敵人。",

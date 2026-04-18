@@ -35,35 +35,47 @@ local menus_templates = {
 		-- },
 
 	--[+ Plasteel +]--
-	-- ["loc_currency_name_plasteel"] = {
+	["loc_currency_name_plasteel"] = {
 		-- en = "Plasteel",
-		-- ru = "Пласталь",
-	-- },
+		ru = "Пласталь",
+	},
 	--[+  +]--
-	-- ["loc_pickup_large_metal"] = {
+	["loc_pickup_large_metal"] = {
 		-- en = "",
-		-- ru = "Балшой пиластал",
-	-- },
+		ru = "Большой кусок пластали",
+	},
 	--[+  +]--
-	-- ["loc_pickup_small_metal"] = {
+	["loc_pickup_small_metal"] = {
 		-- en = "",
-		-- ru = "Малой пиластал",
-	-- },
+		ru = "Малый кусок пластали",
+	},
 	--[+ Diamantine +]--
-	-- ["loc_currency_name_diamantine"] = {
+	["loc_currency_name_diamantine"] = {
 		-- en = "Diamantine",
-		-- ru = "Диамантин",
-	-- },
+		ru = "Диамантин",
+	},
 	--[+  +]--
-	-- ["loc_pickup_large_platinum"] = {
+	["loc_pickup_large_platinum"] = {
 		-- en = "",
-		-- ru = "Балшой дьямантин",
-	-- },
+		ru = "Большой кусок диамантина",
+	},
 	--[+  +]--
-	-- ["loc_pickup_small_platinum"] = {
+	["loc_pickup_small_platinum"] = {
 		-- en = "",
-		-- ru = "Малой дьямантин",
-	-- },
+		ru = "Малый кусок диамантина",
+	},
+
+-- WEAPON INSPECT
+	--[+  +]-- Проверка магазина оружия
+	["loc_inspect_input_description_alternate_inspect_start"] = {
+		-- en = "Examine",
+		ru = "Проверить магазин",
+	},
+	--[+  +]-- Осмотр оружия
+	["loc_inspect_input_description_alternate_inspect_stop"] = {
+		-- en = "Inspect",
+		ru = "Осмотреть оружие",
+	},
 
 --[+ ++MELK - 梅爾克 - 梅尔克大人的采购店++ +]--
 --[+ +Contracts - 合約 - 合同+ +]-- Highlighted numbers
