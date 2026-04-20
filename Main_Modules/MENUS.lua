@@ -1,4 +1,5 @@
 ---@diagnostic disable: undefined-global
+-- FOR TRANSLATORS: If the translation of a line of dialogue, a name, etc. in the game is correct in your localization, DO NOT DUPLICATE the line here. I only changed something in the Russian localization if I wasn't satisfied with the official translation, so I marked "ruof" (the official Russian translation) and then wrote my correct version in the lines below. Don't burden the game with unnecessary duplicate data in the mod and burden yourself with unnecessary work.
 
 local mod = get_mod("Enhanced_descriptions")
 
@@ -36,91 +37,83 @@ local menus_templates = {
 
 	--[+ Plasteel +]--
 	["loc_currency_name_plasteel"] = {
-		-- en = "Plasteel",
 		ru = "Пласталь",
 	},
 	--[+  +]--
 	["loc_pickup_large_metal"] = {
-		-- en = "",
 		ru = "Большой кусок пластали",
 	},
 	--[+  +]--
 	["loc_pickup_small_metal"] = {
-		-- en = "",
 		ru = "Малый кусок пластали",
 	},
 	--[+ Diamantine +]--
 	["loc_currency_name_diamantine"] = {
-		-- en = "Diamantine",
 		ru = "Диамантин",
 	},
 	--[+  +]--
 	["loc_pickup_large_platinum"] = {
-		-- en = "",
 		ru = "Большой кусок диамантина",
 	},
 	--[+  +]--
 	["loc_pickup_small_platinum"] = {
-		-- en = "",
 		ru = "Малый кусок диамантина",
 	},
 
 -- WEAPON INSPECT
-	--[+  +]-- Проверка магазина оружия
+	--[+ Examine +]--
 	["loc_inspect_input_description_alternate_inspect_start"] = {
-		-- en = "Examine",
 		ru = "Проверить магазин",
 	},
-	--[+  +]-- Осмотр оружия
+	--[+ Inspect +]--
 	["loc_inspect_input_description_alternate_inspect_stop"] = {
-		-- en = "Inspect",
 		ru = "Осмотреть оружие",
 	},
 
 --[+ ++MELK - 梅爾克 - 梅尔克大人的采购店++ +]--
---[+ +Contracts - 合約 - 合同+ +]-- Highlighted numbers
-	--[+ Pick up Х kind +]--
-	["loc_contracts_task_label_collect_pickups"] = {
-		en = "Pick up "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}",
-		ru = "{kind:%s}: собрать "..CNumb("{count:%s}", "counts_var_rgb").." штук",
-		["zh-tw"] = "撿起 "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}", -- 撿起[x]本[聖典/法術書]
-		["zh-cn"] = "拾取 "..CNumb("{count:%s}", "counts_var_rgb").." 本{kind:%s}", -- 拾取 X 本 kind
-	},
-	--[+ Kill Х Monstrosities +]--
-	["loc_contracts_task_label_kill_bosses"] = {
-		en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
-		ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
-		["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸
-		["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
-	},
-	--[+ Collect Х kind +]--
-	["loc_contracts_task_label_collect_resources"] = {
-		en = "Collect "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}",
-		ru = "{kind:%s}: собрать "..CNumb("{count:%s}", "counts_var_rgb").." единиц", -- Пласталь/Диамантин: собрать 200/750 единиц
-		["zh-tw"] = "收集 "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}", -- 蒐集[x]數量
-		["zh-cn"] = "收集 "..CNumb("{count:%d}", "countd_var_rgb").." {kind:%s}", -- 收集 X 资源
-	},
-	--[+ Kill Х enemy_type with weapon_type +]--
-	["loc_contracts_task_label_kill_minions"] = {
-		en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s} with {weapon_type:%s}",
-		ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",
-		["zh-tw"] = "使用 {weapon_type:%s} 擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s}", -- 使用[遠/近]擊殺[x][血痂/渣仔]
-		["zh-cn"] = "用{weapon_type:%s}杀死 "..CNumb("{count:%d}", "countd_var_rgb").." 个{enemy_type:%s}", -- 用 weapon_type 杀死 X enemy_type
-	},
-	--[+ Complete Х missions +]--
-	["loc_contracts_task_label_complete_missions"] = {
-		en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions",
-		ru = "Завершите "..CNumb("{count:%d}", "countd_var_rgb").." миссий",
-		["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務", -- 完成[x]場任務
-		["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 个任务", -- 完成 X 任务
-	},
-	--[+ Complete Х missions with no player deaths +]--
-	["loc_contracts_task_label_complete_mission_no_death"] = {
-		en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions with no player deaths",
-		ru = "Завершите миссии без гибели союзников: "..CNumb("{count:%d}", "countd_var_rgb"),
-		["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務，且無玩家死亡", -- 完成[x]場任務，並且無人死亡
-		["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任务且没有玩家死亡", -- 完成 X 任务且没有玩家死亡
-	},
+	--[+ +Contracts - 合約 - 合同+ +]-- Highlighted numbers
+		--[+ Pick up Х kind +]--
+		["loc_contracts_task_label_collect_pickups"] = {
+			en = "Pick up "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}",
+			ru = "{kind:%s}: собрать "..CNumb("{count:%s}", "counts_var_rgb").." штук",
+			["zh-tw"] = "撿起 "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}", -- 撿起[x]本[聖典/法術書]
+			["zh-cn"] = "拾取 "..CNumb("{count:%s}", "counts_var_rgb").." 本{kind:%s}", -- 拾取 X 本 kind
+		},
+		--[+ Kill Х Monstrosities +]--
+		["loc_contracts_task_label_kill_bosses"] = {
+			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
+			ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
+			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸
+			["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
+		},
+		--[+ Collect Х kind +]--
+		["loc_contracts_task_label_collect_resources"] = {
+			en = "Collect "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}",
+			ru = "{kind:%s}: собрать "..CNumb("{count:%s}", "counts_var_rgb").." единиц", -- Пласталь/Диамантин: собрать 200/750 единиц
+			["zh-tw"] = "收集 "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}", -- 蒐集[x]數量
+			["zh-cn"] = "收集 "..CNumb("{count:%d}", "countd_var_rgb").." {kind:%s}", -- 收集 X 资源
+		},
+		--[+ Kill Х enemy_type with weapon_type +]--
+		["loc_contracts_task_label_kill_minions"] = {
+			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s} with {weapon_type:%s}",
+			ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",
+			["zh-tw"] = "使用 {weapon_type:%s} 擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s}", -- 使用[遠/近]擊殺[x][血痂/渣仔]
+			["zh-cn"] = "用{weapon_type:%s}杀死 "..CNumb("{count:%d}", "countd_var_rgb").." 个{enemy_type:%s}", -- 用 weapon_type 杀死 X enemy_type
+		},
+		--[+ Complete Х missions +]--
+		["loc_contracts_task_label_complete_missions"] = {
+			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions",
+			ru = "Завершите "..CNumb("{count:%d}", "countd_var_rgb").." миссий",
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務", -- 完成[x]場任務
+			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 个任务", -- 完成 X 任务
+		},
+		--[+ Complete Х missions with no player deaths +]--
+		["loc_contracts_task_label_complete_mission_no_death"] = {
+			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions with no player deaths",
+			ru = "Завершите миссии без гибели союзников: "..CNumb("{count:%d}", "countd_var_rgb"),
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務，且無玩家死亡", -- 完成[x]場任務，並且無人死亡
+			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任务且没有玩家死亡", -- 完成 X 任务且没有玩家死亡
+		},
 	--[+ Melk's Intro +]--
 	["loc_contract_view_intro_description"] = {
 		-- en = "Well? What is it you want?",
@@ -311,7 +304,7 @@ local menus_templates = {
 		["zh-tw"] = "{killer:%s} 擊殺 {victim:%s}",
 	},
 
---[+ +TREAT - СЛОЖНОСТЬ - 威胁度等级+ +]--
+--[+ +TREAT - СЛОЖНОСТЬ - 威胁度等级+ +]-- 
 	--[+ SEDITION +]--
 	-- ["loc_mission_board_danger_lowest"] = {
 		-- en = COLORS_KWords.sedition_rgb, -- Green -- ui_green_light
