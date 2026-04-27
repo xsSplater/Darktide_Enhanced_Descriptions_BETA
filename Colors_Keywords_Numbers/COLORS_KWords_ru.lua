@@ -116,6 +116,7 @@ local CONFIG = {
 	},
 	health_text_colour = {
 		ran =				"ран",							-- Таланты
+		rana =				"рана",							-- Таланты
 		ranu =				"рану",							-- Таланты
 		rany =				"раны",							-- Таланты
 		Zdorovie =			"Здоровье",						-- Таланты
@@ -162,6 +163,7 @@ local CONFIG = {
 		Oshelomlautsa =		"Ошеломляются",					-- Таланты
 		Oshelomlauschie =	"Ошеломляющие",					-- Таланты
 
+		Oglushenie =		"Оглушение",					-- Таланты
 		Oglushite =			"Оглушите",						-- Таланты
 		oglushit =			"оглушить",						-- Таланты
 		oglushaetes =		"оглушаетесь",					-- Таланты

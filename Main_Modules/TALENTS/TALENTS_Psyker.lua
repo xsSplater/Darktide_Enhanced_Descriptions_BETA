@@ -1015,7 +1015,7 @@ local psyker_localizations = {
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
-		ru = Dot_green.." До {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони для варп-атак, в зависимости от уровне "..CKWord("опасности", "opasnosti_rgb_ru")..":\n" -- Проникновение в душу
+		ru = Dot_green.." До {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони для варп-атак, в зависимости от уровня "..CKWord("опасности", "opasnosti_rgb_ru")..":\n" -- Проникновение в душу
 			.."_______________________________\n"
 			..CKWord("Опасность", "Opasnost_rgb_ru").."("..CNumb("%", "pc_rgb").."):      "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
 			..CKWord("Пробивание", "Probivanie_rgb_ru").."("..CNumb("%", "pc_rgb").."):   "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|    "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"

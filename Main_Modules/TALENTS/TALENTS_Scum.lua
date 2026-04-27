@@ -476,7 +476,7 @@ local scum_localizations = {
 		en = Dot_red.." Duration of {stimm_field:%s} reduced from "..CNumb("20", "n_20_rgb").." to {duration:%s} seconds.\n"
 			.."\n"
 			..Dot_green.." Lingering effect continues for {linger_duration:%s} seconds after leaving the area.",
-		ru = Dot_red.." Длительность {stimm_field:%s} сокращается с "..CNumb("20", "n_20_rgb").." до {duration:%s} секунд.\n"
+		ru = Dot_red.." Длительность способности {stimm_field:%s} сокращается с "..CNumb("20", "n_20_rgb").." до {duration:%s} секунд.\n"
 			.."\n"
 			..Dot_green.." Но его эффекты сохраняются {linger_duration:%s} секунд после выхода из области.",
 	},
@@ -1128,7 +1128,7 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Up to {max_enemies:%s}"..CNumb("%", "pc_rgb").." "..CKWord("Toughness", "Toughness_rgb").." per second.",
 		ru = "За каждого заражённого "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru").." врага в радиусе {range:%s} метров вы восполняете:\n"
-			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.\n"
+			..Dot_green.." {toughness_amount:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.\n"
 			.."\n"
 			..Dot_nc.." Вплоть до {max_enemies:%s}"..CNumb("%", "pc_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.",
 	},

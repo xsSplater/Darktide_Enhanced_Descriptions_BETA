@@ -470,7 +470,7 @@ local ogryn_localizations = {
 			..Dot_nc.." Maximum {max_stacks:%s} Stacks.",
 		ru = "Пока активна способность {ability:%s}, атаки дальнего боя накладывают:\n"
 			..Dot_green.." {stacks:%s} заряда "..CKWord("горения", "gorenia_rgb_ru")..".\n"
-			..Dot_nc.." Максимум {max_stacks:%s} зарядов.",-- ru = CNumb("+", "n_plus_rgb").."{stacks:%s} заряда "..CKWord("горения", "gorenia_rgb_ru").." накладывают ваши выстрелы во время действия способности {ability:%s}. Максимум {max_stacks:%s} зарядов."..TALENTS_Enh_desc2_ru.ED_OGR_Ability_3_3_rgb"), -- Задай жару -- руоф Зададим жару
+			..Dot_nc.." Максимум {max_stacks:%s} зарядов.", -- Задай жару -- руоф Зададим жару
 		-- fr = "Les attaques à distance appliquent {stacks:%s} cumuls de "..COLORS_KWords_fr.Burn_rgb_fr.." pendant que {ability:%s} est actif. Jusqu'à un maximum de {max_stacks:%s} cumuls."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_3_rgb_fr, -- Allumez-les!
 	},
 --[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
