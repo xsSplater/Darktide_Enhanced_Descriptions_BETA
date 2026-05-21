@@ -1654,10 +1654,10 @@ local penances_localizations = {
 	-- ["loc_achievement_adamant_kill_cluster_with_grenade"] = {
 		-- ru = "Эффективный подрыв",
 	-- },
-		--[+ Kill 3 enemies with a single Arbites Grenade, 50 times. +]-- руоф 
+		--[+ Kill 3 enemies with a single Arbites Grenade, 50 times. +]-- руоф 	21.05.2026
 		["loc_achievement_adamant_kill_cluster_with_grenade_desc"] = {
-			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies with a single "..CKWord("Arbites Grenade", "Arbites_gren_rgb")..", "..CNumb("{target:%s}", "target_rgb").." times.",
-			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов одной "..CKWord("Гранатой арбитрес", "Arbites_grenoi_rgb_ru")..". Выполните это задание "..CNumb("{target:%s}", "target_rgb").." раз.",
+			en = "Kill "..CNumb("{cluster:%s}", "cluster_var_rgb").." enemies with a single "..CKWord("Arbites Grenade", "Arbites_gren_rgb")..", "..CNumb("{target:%s}", "target_rgb").." times.",
+			ru = "Убейте "..CNumb("{cluster:%s}", "cluster_var_rgb").." врагов одной "..CKWord("Гранатой арбитрес", "Arbites_grenoi_rgb_ru")..". Выполните это задание "..CNumb("{target:%s}", "target_rgb").." раз.",
 		},
 	--[+ Justice Dispensed +]-- руоф 
 	-- ["loc_achievement_adamant_kill_marked_enemies"] = {

@@ -127,6 +127,7 @@ local localizations = {
 	mod_name = {
 		en = "{#color(192, 255, 26)} Enhanced Descriptions{#reset()}",
 		ru = "{#color(192, 255, 26)} Улучшенные описания{#reset()}",
+		fr = "{#color(192, 255, 26)} Descriptions améliorées{#reset()}",
 		["zh-tw"] = "{#color(192, 255, 26)} 描述改善{#reset()}",
 		["zh-cn"] = "{#color(192, 255, 26)} 描述增强{#reset()}",
 		de = "{#color(192, 255, 26)} Erweiterte Beschreibungen{#reset()}",

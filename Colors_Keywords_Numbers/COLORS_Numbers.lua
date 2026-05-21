@@ -16,6 +16,7 @@ local CONFIG = {
 		chnc_var =				"{chance:%s}",
 		chrgtime_var =			"{charge_time:%s}",
 		cleave_var =			"{cleave:%s}",
+		cluster_var =			"{cluster:%s}",
 		cd_dur_var =			"{cooldown_duration:%s}",
 		cd_var =				"{cooldown:%s}",
 		countd_var =			"{count:%d}",
