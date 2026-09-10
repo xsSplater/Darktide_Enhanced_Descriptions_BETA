@@ -41,22 +41,22 @@ local names_talents_blessings_templates = {
 		-- Battle Maul and Shield, Chainaxes, Crowbar, Crusher, Eviscerators, Latrine Shovels, Power Maul, Shock Mauls, Shock Mauls and Shield
 		["loc_trait_bespoke_armor_penetration_against_staggered"] = {
 			ru = "Оппортунист",
-			["zh-tw"] = "機會主義者",
-			["zh-cn"] = "机会主义者",
+	 ["zh-tw"] = "機會主義者",
+	 ["zh-cn"] = "机会主义者",
 		},
 		--[+ BLOODLETTER +]-- ruof Кровопускание	20.04.2026
 		-- Chainaxes, Chainswords, Eviscerators
 		["loc_trait_bespoke_bleed_on_activated_hit"] = {
 			ru = "Кровопускатель",
-			["zh-tw"] = "放血者",
-			["zh-cn"] = "放血者",
+	 ["zh-tw"] = "放血者",
+	 ["zh-cn"] = "放血者",
 		},
 		--[+ BLOODTHIRSTY +]-- ruof Жажда крови	20.04.2026
 		-- Chainaxes, Chainswords, Eviscerators, Force Swords
 		["loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill"] = {
 			ru = "Кровожадный",
-			["zh-tw"] = "嗜血",
-			["zh-cn"] = "嗜血",
+	 ["zh-tw"] = "嗜血",
+	 ["zh-cn"] = "嗜血",
 		},
 		--[+ HEADTAKER +]-- ruof Головорез	20.04.2026
 		-- Chainaxes, Combat Axes, Pickaxes, Tactical Axes, Thunder Hammers, Heavy Swords
@@ -72,8 +72,8 @@ local names_talents_blessings_templates = {
 		-- Chainaxes, Chainswords, Eviscerators
 		["loc_trait_bespoke_movement_speed_on_activation"] = {
 			ru = "Ускорься",
-			["zh-tw"] = "提速",
-			["zh-cn"] = "提速",
+	 ["zh-tw"] = "提速",
+	 ["zh-cn"] = "提速",
 		},
 		--[+ THRUST +]-- ruof Выпад	20.04.2026
 		-- Bully Clubs, Chainaxes, Cleavers, Combat Axes, Crusher, Duelling Swords, Heavy Swords, Latrine Shovels, Pickaxes, Power Swords, Sapper Shovels, Shock Mauls, Thunder Hammers
@@ -84,8 +84,8 @@ local names_talents_blessings_templates = {
 		-- Arbites Shock Maul, Bully Clubs, Chainaxes, Combat Axes, Crusher, Latrine Shovels, Pickaxes, Thunder Hammers
 		["loc_trait_bespoke_targets_receive_rending_debuff"] = {
 			ru = "Громобой",
-			["zh-tw"] = "雷鳴",
-			["zh-cn"] = "雷鸣",
+	 ["zh-tw"] = "雷鳴",
+	 ["zh-cn"] = "雷鸣",
 		},
 		--[+ WRATH +]-- ruof Гнев	20.04.2026
 		-- Bone Saw, Chainswords, Devil's Claw Swords, Eviscerators, Force Greatswords, Heavy Swords, Pickaxes, Power Falchions, Relic Blades, Power Swords
@@ -96,15 +96,15 @@ local names_talents_blessings_templates = {
 		-- Bone Saw, Chainswords, Combat Axes, Devil's Claw Swords, Duelling Swords, Eviscerators, Force Greatswords, Force Swords, Tactical Axes
 		["loc_trait_bespoke_chained_hits_increases_crit_chance"] = {
 			ru = "Кромсание",
-			["zh-tw"] = "粉碎",
-			["zh-cn"] = "粉碎",
+	 ["zh-tw"] = "粉碎",
+	 ["zh-cn"] = "粉碎",
 		},
 		--[+ SAVAGE SWEEP +]-- ruof Дикость	20.04.2026
 		-- Chainswords, Cleavers, Devil's Claw Swords, Eviscerators, Heavy Swords
 		["loc_trait_bespoke_increased_attack_cleave_on_multiple_hits"] = {
 			ru = "Дикий взмах",
-			["zh-tw"] = "野蠻橫掃",
-			["zh-cn"] = "野蛮横扫",
+	 ["zh-tw"] = "野蠻橫掃",
+	 ["zh-cn"] = "野蛮横扫",
 		},
 		--[+ RAMPAGE +]-- ruof Буйство	20.04.2026
 		-- Chainswords, Devil's Claw Swords, Duelling Swords, Eviscerators, Heavy Swords, Power Swords, Relic Blades
@@ -125,8 +125,8 @@ local names_talents_blessings_templates = {
 		-- Battle Maul and Shield, Combat Axes, Heavy Swords, Latrine Shovels, Power Maul, Power Swords, Tactical Axes
 		["loc_trait_bespoke_infinite_cleave_on_weakspot_kill"] = {
 			ru = "Жестокий моментум",
-			["zh-tw"] = "野蠻攻勢",
-			["zh-cn"] = "野蛮攻势",
+	 ["zh-tw"] = "野蠻攻勢",
+	 ["zh-cn"] = "野蛮攻势",
 		},
 		--[+ DEATHBLOW +]-- ruof Смертельный удар	20.04.2026
 		-- Battle Maul and Shield, Combat Axes, Heavy Swords, Latrine Shovels, Power Maul, Power Swords, Tactical Axes
@@ -137,15 +137,15 @@ local names_talents_blessings_templates = {
 		-- Bone Saw, Combat Axes, Crowbar, Pickaxes, Sapper Shovels, Tactical Axes
 		["loc_trait_bespoke_power_bonus_on_first_attack"] = {
 			ru = "Расчленитель",
-			["zh-tw"] = "斷肢者",
-			["zh-cn"] = "断肢者",
+	 ["zh-tw"] = "斷肢者",
+	 ["zh-cn"] = "断肢者",
 		},
 		--[+ ALL OR NOTHING +]-- ruof Все или ничего	20.04.2026
 		-- Arbites Shock Maul, Combat Axes, Crowbar, Pickaxes, Sapper Shovels, Shock Maul and Shield, Tactical Axesы
 		["loc_trait_bespoke_power_bonus_scaled_on_stamina"] = {
 			ru = "Всё или ничего",
-			["zh-tw"] = "孤注一擲",
-			["zh-cn"] = "孤注一掷",
+	 ["zh-tw"] = "孤注一擲",
+	 ["zh-cn"] = "孤注一掷",
 		},
 		--[+ DECAPITATOR +]-- ruof Палач	20.04.2026
 		-- Bone Saw, Combat Axes, Power Falchions
@@ -156,22 +156,22 @@ local names_talents_blessings_templates = {
 		-- Duelling Swords, Tactical Axes
 		["loc_trait_bespoke_dodge_count_reset_on_weakspot_hit"] = {
 			ru = "Проворный",
-			["zh-tw"] = "敏捷",
-			["zh-cn"] = "敏捷",
+	 ["zh-tw"] = "敏捷",
+	 ["zh-cn"] = "敏捷",
 		},
 		--[+ SLAUGHTER SPREE +]-- ruof Убойная сила	20.04.2026
 		-- Tactical Axes
 		["loc_trait_bespoke_guaranteed_melee_crit_after_crit_weakspot_kill"] = {
 			ru = "Резня",
-			["zh-tw"] = "殺戮狂潮",
-			["zh-cn"] = "杀戮狂潮",
+	 ["zh-tw"] = "殺戮狂潮",
+	 ["zh-cn"] = "杀戮狂潮",
 		},
 		--[+ RELENTLESS STRIKES +]-- ruof Безжалостность	20.04.2026
 		-- Arbites Shock Maul, Bone Saw, Duelling Swords, Tactical Axes
 		["loc_trait_bespoke_power_bonus_on_same_enemy_attacks"] = {
 			ru = "Безжалостные удары",
-			["zh-tw"] = "持續打擊",
-			["zh-cn"] = "持续打击",
+	 ["zh-tw"] = "持續打擊",
+	 ["zh-cn"] = "持续打击",
 		},
 		--[+ FLESH TEARER +]-- ruof Раздиратель плоти	20.04.2026
 		-- Combat Blades, Shivs
@@ -187,8 +187,8 @@ local names_talents_blessings_templates = {
 		-- Combat Blades, Force Swords, Shivs
 		["loc_trait_bespoke_chained_weakspot_hits_increases_power"] = {
 			ru = "Каратель",
-			["zh-tw"] = "行刑者",
-			["zh-cn"] = "行刑者",
+	 ["zh-tw"] = "行刑者",
+	 ["zh-cn"] = "行刑者",
 		},
 		--[+ RIPOSTE +]-- ruof Ответный удар	20.04.2026
 		-- Combat Blades, Duelling Swords, Force Greatswords, Force Swords, Shivs
@@ -199,29 +199,29 @@ local names_talents_blessings_templates = {
 		-- Combat Blades, Duelling Swords, Force Greatswords, Force Swords, Shivs
 		["loc_trait_bespoke_dodge_grants_finesse_bonus"] = {
 			ru = "Предвидение",
-			["zh-tw"] = "未卜先知",
-			["zh-cn"] = "未卜先知",
+	 ["zh-tw"] = "未卜先知",
+	 ["zh-cn"] = "未卜先知",
 		},
 		--[+ HAYMAKER +]-- ruof Коса	20.04.2026
 		-- Bully Clubs, Combat Blades, Shivs
 		["loc_trait_bespoke_heavy_chained_hits_increases_killing_blow_chance"] = {
 			ru = "Жнец",
-			["zh-tw"] = "強力一擊",
-			["zh-cn"] = "强力一击",
+	 ["zh-tw"] = "強力一擊",
+	 ["zh-cn"] = "强力一击",
 		},
 		--[+ SMACKDOWN +]-- ruof Смятение	20.04.2026
 		-- Bully Clubs, Combat Blades
 		["loc_trait_bespoke_increased_crit_chance_after_punching_staggered_enemy"] = {
 			ru = "Сокрушение",
-			["zh-tw"] = "擊倒",
-			["zh-cn"] = "击倒",
+	 ["zh-tw"] = "擊倒",
+	 ["zh-cn"] = "击倒",
 		},
 		--[+ MERCY KILLER +]-- ruof Милосердие	20.04.2026
 		-- Combat Blades, Shivs
 		["loc_trait_bespoke_increased_weakspot_damage_on_bleeding"] = {
 			ru = "Милосердный убийца",
-			["zh-tw"] = "仁慈殺手",
-			["zh-cn"] = "仁慈杀手",
+	 ["zh-tw"] = "仁慈殺手",
+	 ["zh-cn"] = "仁慈杀手",
 		},
 		--[+ RUTHLESS BACKSTAB +]-- ruof Беспощадный удар в спину	20.04.2026
 		-- Combat Blades, Shivs
@@ -242,15 +242,15 @@ local names_talents_blessings_templates = {
 		-- Devil's Claw Swords
 		["loc_trait_bespoke_increase_stagger_per_hit_in_sweep"] = {
 			ru = "Жестокий разрез",
-			["zh-tw"] = "凶狠切割",
-			["zh-cn"] = "凶狠切割",
+	 ["zh-tw"] = "凶狠切割",
+	 ["zh-cn"] = "凶狠切割",
 		},
 		--[+ HAMMERBLOW +]-- ruof Удар молотом	20.04.2026
 		-- Arbites Shock Maul, Crusher, Devil's Claw Swords, Sapper Shovels, Shock Mauls, Shock Mauls and Shield, Thunder Hammers
 		["loc_trait_bespoke_stacking_increase_impact_on_hit"] = {
 			ru = "Молотобой",
-			["zh-tw"] = "錘擊",
-			["zh-cn"] = "锤击",
+	 ["zh-tw"] = "錘擊",
+	 ["zh-cn"] = "锤击",
 		},
 		--[+ SKULLCRUSHER +]-- ruof Череподробитель	20.04.2026
 		-- Battle Maul and Shield, Bully Clubs, Crusher, Devil's Claw Swords, Latrine Shovels, Power Maul, Sapper Shovels, Shock Mauls, Thunder Hammers
@@ -261,15 +261,15 @@ local names_talents_blessings_templates = {
 		-- Battle Maul and Shield, Crusher, Devil's Claw Swords, Power Maul, Sapper Shovels, Thunder Hammers
 		["loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff"] = {
 			ru = "Удар грома",
-			["zh-tw"] = "雷霆打擊",
-			["zh-cn"] = "雷霆打击",
+	 ["zh-tw"] = "雷霆打擊",
+	 ["zh-cn"] = "雷霆打击",
 		},
 		--[+ CHAINED DEATHBLOW +]-- ruof Цепочка смертельных ударов	20.04.2026
 		-- Heavy Swords
 		["loc_trait_bespoke_increased_crit_chance_on_weakspot_kill"] = {
 			ru = "Цепь смертоносных ударов",
-			["zh-tw"] = "致命連擊",
-			["zh-cn"] = "致命连击",
+	 ["zh-tw"] = "致命連擊",
+	 ["zh-cn"] = "致命连击",
 		},
 		--[+ PERFECT STRIKE +]-- ruof Безупречный удар	20.04.2026
 		-- Battle Maul and Shield, Bully Clubs, Eviscerators, Heavy Swords, Latrine Shovels, Power Maul
@@ -280,8 +280,8 @@ local names_talents_blessings_templates = {
 		-- Heavy Swords
 		["loc_trait_bespoke_stacking_rending_on_cleave"] = {
 			ru = "Инерция клинка",
-			["zh-tw"] = "利刃攻勢",
-			["zh-cn"] = "利刃攻势",
+	 ["zh-tw"] = "利刃攻勢",
+	 ["zh-cn"] = "利刃攻势",
 		},
 		--[+ DEFLECTOR +]-- ruof Отражатель	20.04.2026
 		-- Force Greatswords, Force Swords
@@ -304,8 +304,8 @@ local names_talents_blessings_templates = {
 		-- Force Greatswords
 		["loc_trait_bespoke_warp_burninating_on_crit"] = {
 			ru = "Пылающий дух",
-			["zh-tw"] = "燃燒靈魂",
-			["zh-cn"] = "燃烧灵魂",
+	 ["zh-tw"] = "燃燒靈魂",
+	 ["zh-cn"] = "燃烧灵魂",
 		},
 		--[+ UNSTABLE POWER +]-- ruof Нестабильная мощь	20.04.2026
 		-- Force Greatswords, Force Swords
@@ -316,8 +316,8 @@ local names_talents_blessings_templates = {
 		-- Force Greatswords
 		["loc_trait_bespoke_wind_slash_crits"] = {
 			ru = "Варп нарезка",
-			["zh-tw"] = "亞空間斬擊",
-			["zh-cn"] = "亚空间斩击",
+	 ["zh-tw"] = "亞空間斬擊",
+	 ["zh-cn"] = "亚空间斩击",
 		},
 		--[+ EXORCIST +]-- ruof Экзорцист	20.04.2026
 		-- Force Swords
@@ -373,8 +373,8 @@ local names_talents_blessings_templates = {
 		-- Relic Blade
 		["loc_trait_bespoke_regain_toughness_on_multiple_hits_by_weapon_special"] = {
 			ru = "Выкачивание",
-			["zh-tw"] = "虹吸",
-			["zh-cn"] = "虹吸",
+	 ["zh-tw"] = "虹吸",
+	 ["zh-cn"] = "虹吸",
 		},
 		--[+ ENERGY TRANSFER +]-- ruof Передача энергии	20.04.2026
 		-- Power Falchions, Relic Blades
@@ -399,15 +399,15 @@ local names_talents_blessings_templates = {
 		-- Power Swords
 		["loc_trait_bespoke_extended_activation_duration_and_stagger_on_chained_attacks"] = {
 			ru = "Энергоцикл",
-			["zh-tw"] = "能量循環",
-			["zh-cn"] = "能量循环",
+	 ["zh-tw"] = "能量循環",
+	 ["zh-cn"] = "能量循环",
 		},
 		--[+ SUNDER +]-- ruof Сандер	20.04.2026
 		-- Power Swords
 		["loc_trait_bespoke_infinite_armor_cleave_on_activated_attacks"] = {
 			ru = "Рассечение",
-			["zh-tw"] = "破甲",
-			["zh-cn"] = "破甲",
+	 ["zh-tw"] = "破甲",
+	 ["zh-cn"] = "破甲",
 		},
 		--[+ SUCKER PUNCH +]-- ruof Удар исподтишка	20.04.2026
 		-- Latrine Shovels
@@ -448,15 +448,15 @@ local names_talents_blessings_templates = {
 		-- Pickaxes
 		["loc_trait_bespoke_toughness_on_hit_based_on_charge_time"] = {
 			ru = "Медленно, но верно",
-			["zh-tw"] = "緩慢而確實",
-			["zh-cn"] = "缓慢而确实",
+	 ["zh-tw"] = "緩慢而確實",
+	 ["zh-cn"] = "缓慢而确实",
 		},
 		--[+ POWER SURGE +]-- ruof Скачок напряжения	20.04.2026
 		-- Power Maul
 		["loc_trait_bespoke_explosion_on_activated_attacks_on_armor"] = {
 			ru = "Энерговсплеск",
-			["zh-tw"] = "能量湧動",
-			["zh-cn"] = "能量涌动",
+	 ["zh-tw"] = "能量湧動",
+	 ["zh-cn"] = "能量涌动",
 		},
 		--[+ LAST GUARD +]-- ruof Последний страж	20.04.2026
 		-- Battle Maul and Shield, Shock Mauls and Shield
@@ -467,8 +467,8 @@ local names_talents_blessings_templates = {
 		-- Battle Maul and Shield, Shock Mauls and Shield
 		["loc_trait_damage_bonus_on_block"] = {
 			ru = "Атакующая оборона",
-			["zh-tw"] = "反守為攻",
-			["zh-cn"] = "反守为攻",
+	 ["zh-tw"] = "反守為攻",
+	 ["zh-cn"] = "反守为攻",
 		},
 		--[+ CAN OPENER +]-- ruof Открывашка !MELEE!	20.04.2026
 		-- Crowbar
@@ -486,15 +486,15 @@ local names_talents_blessings_templates = {
 		-- Autopistol, Dual Autopistols, Dual Stub Pistols, Infantry Autoguns, Laspistols
 		["loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking"] = {
 			ru = "Огонь по тылам",
-			["zh-tw"] = "掃射",
-			["zh-cn"] = "扫射",
+	 ["zh-tw"] = "掃射",
+	 ["zh-cn"] = "扫射",
 		},
 		--[+ DUMDUM +]-- ruof Дамдам	20.04.2026
 		-- Infantry Autoguns, Laspistols, Recon Lasguns
 		["loc_trait_bespoke_consecutive_hits_increases_close_damage"] = {
 			ru = "Дум-дум",
-			["zh-tw"] = "達姆彈",
-			["zh-cn"] = "达姆弹",
+	 ["zh-tw"] = "達姆彈",
+	 ["zh-cn"] = "达姆弹",
 		},
 		--[+ HIT & RUN / HIT AND RUN +]-- ruof Бей и беги	20.04.2026
 		-- Braced Autoguns, Combat Shotguns, Double-Barrel Shotgun, Dual Stub Pistols, Infantry Autoguns, Recon Lasguns
@@ -505,8 +505,8 @@ local names_talents_blessings_templates = {
 		-- Autopistol, Dual Autopistols, Dual Stub Pistols, Electrokinetic Staff, Exterminator Shotguns, Helbore Lasguns, Infantry Autoguns, Recon Lasguns, Stub Revolvers, Voidblast Staff, Voidstrike Staff
 		["loc_trait_bespoke_followup_shots_ranged_damage"] = {
 			ru = "Непрерывная стрельба",
-			["zh-tw"] = "持續射擊",
-			["zh-cn"] = "持续射击",
+	 ["zh-tw"] = "持續射擊",
+	 ["zh-cn"] = "持续射击",
 		},
 		--[+ PUNISHING SALVO +]-- ruof Карательный залп	20.04.2026
 		-- Exterminator Shotguns, Infantry Autoguns, Recon Lasguns
@@ -517,36 +517,36 @@ local names_talents_blessings_templates = {
 		-- Boltguns, Braced Autoguns, Combat Shotguns, Exterminator Shotguns, Twin-Linked Stubbers, Infantry Autoguns, Ripper Guns, Shotpistol and Shield
 		["loc_trait_bespoke_increase_close_damage_on_close_kill"] = {
 			ru = "Неистовая стрельба",
-			["zh-tw"] = "烈火熱焰",
-			["zh-cn"] = "烈火热焰",
+	 ["zh-tw"] = "烈火熱焰",
+	 ["zh-cn"] = "烈火热焰",
 		},
 		--[+ DEATHSPITTER +]-- ruof Смертоносец	20.04.2026
 		-- Braced Autoguns, Combat Shotguns, Exterminator Shotguns, Twin-Linked Stubbers, Infantry Autoguns, Recon Lasguns, Shotpistol and Shield, Double-Barrel Shotgun
 		["loc_trait_bespoke_increase_power_on_close_kill"] = {
 			ru = "Смертоплюй",
-			["zh-tw"] = "死亡噴吐",
-			["zh-cn"] = "死亡喷吐",
+	 ["zh-tw"] = "死亡噴吐",
+	 ["zh-cn"] = "死亡喷吐",
 		},
 		--[+ STRIPPED DOWN +]-- ruof Срез	20.04.2026
 		-- Braced Autoguns, Infantry Autoguns, Needle Pistols, Recon Lasguns
 		["loc_trait_bespoke_increased_sprint_speed"] = {
 			ru = "Сбросить лишнее",
-			["zh-tw"] = "輕裝",
-			["zh-cn"] = "轻装",
+	 ["zh-tw"] = "輕裝",
+	 ["zh-cn"] = "轻装",
 		},
 		--[+ SPEEDLOAD +]-- ruof Скоростная загрузка	20.04.2026
 		-- Autopistol, Dual Autopistols, Dual Stub Pistols, Braced Autoguns, Infantry Autoguns, Double-Barrel Shotgun, Laspistols, Needle Pistols, Recon Lasguns, Shotpistol and Shield, Stub Revolvers
 		["loc_trait_bespoke_reload_speed_on_slide"] = {
 			ru = "Быстрая перезарядка",
-			["zh-tw"] = "快速裝彈",
-			["zh-cn"] = "快速装弹",
+	 ["zh-tw"] = "快速裝彈",
+	 ["zh-cn"] = "快速装弹",
 		},
 		--[+ TERRIFYING BARRAGE +]-- ruof Устрашающий натиск	20.04.2026
 		-- Autopistol, Boltguns, Braced Autoguns, Combat Shotguns, Double-Barrel Shotgun, Dual Autopistols, Dual Stub Pistols, Electrokinetic Staff, Twin-Linked Stubbers, Infantry Autoguns, Inferno Staff, Kickback, Ripper Guns, Stub Revolvers, Voidblast Staff, Voidstrike Staff
 		["loc_trait_bespoke_suppression_on_close_kill"] = {
 			ru = "Ужасающий шквал",
-			["zh-tw"] = "恐怖阻擊",
-			["zh-cn"] = "恐怖阻击",
+	 ["zh-tw"] = "恐怖阻擊",
+	 ["zh-cn"] = "恐怖阻击",
 		},
 		--[+ ROARING ADVANCE +]-- ruof Ревущее наступление	20.04.2026
 		-- Braced Autoguns, Twin-Linked Stubbers
@@ -557,15 +557,15 @@ local names_talents_blessings_templates = {
 		-- Braced Autoguns, Twin-Linked Stubbers
 		["loc_trait_bespoke_suppression_on_continuous_fire"] = {
 			ru = "Бесконечный шквал",
-			["zh-tw"] = "持續阻擊",
-			["zh-cn"] = "持续阻击",
+	 ["zh-tw"] = "持續阻擊",
+	 ["zh-cn"] = "持续阻击",
 		},
 		--[+ INSPIRING BARRAGE +]-- ruof Вдохновляющий натиск	20.04.2026
 		-- Autopistol, Boltguns, Braced Autoguns, Dual Autopistols, Flamer, Heavy Stubbers, Twin-Linked Stubbers, Ripper Guns
 		["loc_trait_bespoke_toughness_on_continuous_fire"] = {
 			ru = "Вдохновляющий шквал",
-			["zh-tw"] = "振奮彈幕",
-			["zh-cn"] = "振奋弹幕",
+	 ["zh-tw"] = "振奮彈幕",
+	 ["zh-cn"] = "振奋弹幕",
 		},
 		--[+ GHOST +]-- ruof Призрак	20.04.2026
 		-- Infantry Lasguns, Laspistols, Needle Pistols, Vigilant Autoguns
@@ -576,8 +576,8 @@ local names_talents_blessings_templates = {
 		-- Boltguns, Heavy Stubbers, Kickback, Vigilant Autoguns, Bolt Pistols, Helbore Lasguns, Stub Revolvers
 		["loc_trait_bespoke_crit_chance_based_on_aim_time"] = {
 			ru = "Хирургическая точность",
-			["zh-tw"] = "精確打擊",
-			["zh-cn"] = "精确打击",
+	 ["zh-tw"] = "精確打擊",
+	 ["zh-cn"] = "精确打击",
 		},
 		--[+ CRUCIAN ROULETTE +]-- ruof Круцианская рулетка	20.04.2026
 		-- Dual Stub Pistols, Stub Revolvers, Vigilant Autoguns
@@ -593,8 +593,8 @@ local names_talents_blessings_templates = {
 		-- Combat Shotguns, Helbore Lasguns, Infantry Lasguns, Shotpistol and Shield, Vigilant Autoguns
 		["loc_trait_bespoke_stagger_count_bonus_damage"] = {
 			ru = "Без передышки",
-			["zh-tw"] = "刻不容緩",
-			["zh-cn"] = "刻不容缓",
+	 ["zh-tw"] = "刻不容緩",
+	 ["zh-cn"] = "刻不容缓",
 		},
 		--[+ OPENING SALVO +]-- ruof Открывающий залп	20.04.2026
 		-- Heavy Stubbers, Infantry Lasguns, Vigilant Autoguns
@@ -613,8 +613,8 @@ local names_talents_blessings_templates = {
 		-- Autopistol, Dual Autopistols, Flamer, Heavy Stubbers, Twin-Linked Stubbers, Ripper Guns
 		["loc_trait_bespoke_power_bonus_on_continuous_fire"] = {
 			ru = "Стрельба без устали",
-			["zh-tw"] = "連續發射",
-			["zh-cn"] = "连续发射",
+	 ["zh-tw"] = "連續發射",
+	 ["zh-cn"] = "连续发射",
 		},
 		--[+ POWDERBURN +]-- ruof Пороховой ожог	20.04.2026
 		-- Autopistol, Dual Autopistols, Dual Stub Pistols, Exterminator Shotguns
@@ -630,8 +630,8 @@ local names_talents_blessings_templates = {
 		-- Autopistol, Boltguns, Dual Autopistols, Dual Stub Pistols, Heavy Stubbers
 		["loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies"] = {
 			ru = "Подавляющий огонь",
-			["zh-tw"] = "鉗制射擊",
-			["zh-cn"] = "钳制射击",
+	 ["zh-tw"] = "鉗制射擊",
+	 ["zh-cn"] = "钳制射击",
 		},
 		--[+ RUN 'N' GUN - RUN AND GUN +]-- ruof Стреляй и беги	20.04.2026
 		-- Bolt Pistols, Dual Autopistols, Dual Stub Pistols, Electrokinetic Staff, Inferno Staff, Kickback, Needle Pistols, Shotpistol and Shield, Stub Revolvers, Voidblast Staff, Voidstrike Staff, Double-Barrel Shotgun
@@ -667,15 +667,15 @@ local names_talents_blessings_templates = {
 		-- Electrokinetic Staff, Voidblast Staff, Voidstrike Staff
 		["loc_trait_bespoke_double_shot_on_crit"] = {
 			ru = "Всплеск",
-			["zh-tw"] = "湧動",
-			["zh-cn"] = "涌动",
+	 ["zh-tw"] = "湧動",
+	 ["zh-cn"] = "涌动",
 		},
 		--[+ SURGE +]-- ruof Импульс !DOUBLE!	20.04.2026
 		-- Electrokinetic Staff, Voidblast Staff, Voidstrike Staff
 		["loc_trait_bespoke_double_shot_on_crit_and_crit_chance"] = {
 			ru = "Всплеск",
-			["zh-tw"] = "湧動",
-			["zh-cn"] = "涌动",
+	 ["zh-tw"] = "湧動",
+	 ["zh-cn"] = "涌动",
 		},
 		--[+ WARP FLURRY +]-- ruof Варп-шквал	20.04.2026
 		-- Electrokinetic Staff, Inferno Staff, Voidblast Staff, Voidstrike Staff
@@ -686,15 +686,15 @@ local names_talents_blessings_templates = {
 		-- Electrokinetic Staff, Inferno Staff, Voidblast Staff, Voidstrike Staff
 		["loc_trait_bespoke_increased_crit_chance_scaled_on_peril"] = {
 			ru = "Связь с варпом",
-			["zh-tw"] = "亞空間樞紐",
-			["zh-cn"] = "亚空间枢纽",
+	 ["zh-tw"] = "亞空間樞紐",
+	 ["zh-cn"] = "亚空间枢纽",
 		},
 		--[+ TRANSFER PERIL +]-- ruof Перемещение угрозы	20.04.2026
 		-- Electrokinetic Staff, Voidblast Staff, Voidstrike Staff
 		["loc_trait_bespoke_peril_vent_on_weakspot_hit"] = {
 			ru = "Перемещение опасности",
-			["zh-tw"] = "轉移反噬",
-			["zh-cn"] = "转移反噬",
+	 ["zh-tw"] = "轉移反噬",
+	 ["zh-cn"] = "转移反噬",
 		},
 		--[+ RENDING SHOCKWAVE +]-- ruof Разрушительная волна	20.04.2026
 		-- Voidblast Staff
@@ -710,22 +710,22 @@ local names_talents_blessings_templates = {
 		-- Voidblast Staff, Voidstrike Staff
 		["loc_trait_bespoke_warpfire_burn_on_crit"] = {
 			ru = "Пылающий дух",
-			["zh-tw"] = "燃燒靈魂",
-			["zh-cn"] = "燃烧灵魂",
+	 ["zh-tw"] = "燃燒靈魂",
+	 ["zh-cn"] = "燃烧灵魂",
 		},
 		--[+ PENETRATING FLAME +]-- ruof Убойное пламя	20.04.2026
 		-- Flamer, Inferno Staff
 		["loc_trait_bespoke_armor_rending_from_dot_burning"] = {
 			ru = "Проникающее пламя",
-			["zh-tw"] = "穿透火焰",
-			["zh-cn"] = "穿透火焰",
+	 ["zh-tw"] = "穿透火焰",
+	 ["zh-cn"] = "穿透火焰",
 		},
 		--[+ SHOWSTOPPER +]-- ruof Театральная пауза	20.04.2026
 		-- Flamer, Inferno Staff
 		["loc_trait_bespoke_chance_to_explode_elites_on_kill"] = {
 			ru = "Взрывной финал",
-			["zh-tw"] = "嘆為觀止",
-			["zh-cn"] = "叹为观止",
+	 ["zh-tw"] = "嘆為觀止",
+	 ["zh-cn"] = "叹为观止",
 		},
 		--[+ INFERNUS +]-- ruof Инфернус	20.04.2026
 		-- Helbore Lasguns, Infantry Lasguns, Laspistols, Recon Lasguns
@@ -741,8 +741,8 @@ local names_talents_blessings_templates = {
 		-- Laspistols, Needle Pistols
 		["loc_trait_bespoke_crit_chance_on_chained_weakspot_hits"] = {
 			ru = "Сосредоточенный огонь",
-			["zh-tw"] = "集中火力",
-			["zh-cn"] = "集中火力",
+	 ["zh-tw"] = "集中火力",
+	 ["zh-cn"] = "集中火力",
 		},
 		--[+ DESPERADO +]-- ruof Сорвиголова	20.04.2026
 		-- Dual Stub Pistols, Laspistols, Needle Pistols
@@ -753,8 +753,8 @@ local names_talents_blessings_templates = {
 		-- Grenadier Gauntlet, Laspistols
 		["loc_trait_bespoke_toughness_on_crit_kills"] = {
 			ru = "Успокаивающая точность",
-			["zh-tw"] = "慰藉精準",
-			["zh-cn"] = "慰藉精准",
+	 ["zh-tw"] = "慰藉精準",
+	 ["zh-cn"] = "慰藉精准",
 		},
 		--[+ FLECHETTE +]-- ruof Флешетта	20.04.2026
 		-- Combat Shotguns, Double-Barrel Shotgun, Ripper Guns
@@ -765,22 +765,22 @@ local names_talents_blessings_templates = {
 		-- Combat Shotguns, Double-Barrel Shotgun, Shotpistol and Shield
 		["loc_trait_bespoke_cleave_on_crit"] = {
 			ru = "Тяжёлый боеприпас",
-			["zh-tw"] = "大口徑彈藥",
-			["zh-cn"] = "大口径弹药",
+	 ["zh-tw"] = "大口徑彈藥",
+	 ["zh-cn"] = "大口径弹药",
 		},
 		--[+ SCATTERSHOT +]-- ruof Разброс	20.04.2026
 		-- Combat Shotguns, Double-Barrel Shotgun, Exterminator Shotguns, Shotpistol and Shield
 		["loc_trait_bespoke_crit_chance_on_hitting_multiple_with_one_shot"] = {
 			ru = "Картечь",
-			["zh-tw"] = "散彈",
-			["zh-cn"] = "散弹",
+	 ["zh-tw"] = "散彈",
+	 ["zh-cn"] = "散弹",
 		},
 		--[+ FULL BORE +]-- ruof Напор	20.04.2026
 		-- Combat Shotguns, Double-Barrel Shotgun, Exterminator Shotguns, Shotpistol and Shield, Kickback
 		["loc_trait_bespoke_power_bonus_on_hitting_single_enemy_with_all"] = {
 			ru = "Полный калибр",
-			["zh-tw"] = "全孔射擊",
-			["zh-cn"] = "全孔射击",
+	 ["zh-tw"] = "全孔射擊",
+	 ["zh-cn"] = "全孔射击",
 		},
 		--[+ BOTH BARRELS +]-- ruof Дуплет	20.04.2026
 		-- Double-Barrel Shotgun
@@ -801,29 +801,29 @@ local names_talents_blessings_templates = {
 		-- Boltguns, Grenadier Gauntlet, Plasma Gun, Rumbler
 		["loc_trait_bespoke_armor_rend_on_projectile_hit"] = {
 			ru = "Разрушительный удар",
-			["zh-tw"] = "破碎衝擊",
-			["zh-cn"] = "破碎冲击",
+	 ["zh-tw"] = "破碎衝擊",
+	 ["zh-cn"] = "破碎冲击",
 		},
 		--[+ EVERLASTING FLAME +]-- ruof Бесконечное пламя	20.04.2026
 		-- Flamer
 		["loc_trait_bespoke_ammo_spent_from_reserve_on_crit"] = {
 			ru = "Неугасимое пламя",
-			["zh-tw"] = "永燃烈焰",
-			["zh-cn"] = "永燃烈焰",
+	 ["zh-tw"] = "永燃烈焰",
+	 ["zh-cn"] = "永燃烈焰",
 		},
 		--[+ QUICKFLAME +]-- ruof Воспламенение	20.04.2026
 		-- Flamer
 		["loc_trait_bespoke_faster_reload_on_empty_clip"] = {
 			ru = "Скорое пламя",
-			["zh-tw"] = "迅捷火焰",
-			["zh-cn"] = "迅捷火焰",
+	 ["zh-tw"] = "迅捷火焰",
+	 ["zh-cn"] = "迅捷火焰",
 		},
 		--[+ FAN THE FLAMES +]-- ruof Раздувая пламя	20.04.2026
 		-- Flamer
 		["loc_trait_bespoke_ignore_stagger_reduction_with_primary_on_burning"] = {
 			ru = "Раздуй пламя",
-			["zh-tw"] = "煽風點火",
-			["zh-cn"] = "煽风点火",
+	 ["zh-tw"] = "煽風點火",
+	 ["zh-cn"] = "煽风点火",
 		},
 		--[+ OVERPRESSURE +]-- ruof Избыточное давление	20.04.2026
 		-- Flamer
@@ -834,8 +834,8 @@ local names_talents_blessings_templates = {
 		-- Helbore Lasguns, Needle Pistols
 		["loc_trait_bespoke_cleave_on_weakspot_hits"] = {
 			ru = "Прожигающий выстрел",
-			["zh-tw"] = "激射",
-			["zh-cn"] = "激射",
+	 ["zh-tw"] = "激射",
+	 ["zh-cn"] = "激射",
 		},
 		--[+ WEIGHT OF FIRE +]-- ruof Плотность огня	20.04.2026
 		-- Helbore Lasguns
@@ -851,36 +851,36 @@ local names_talents_blessings_templates = {
 		-- Plasma Gun
 		["loc_trait_bespoke_increased_crit_chance_bonus_based_on_charge_time"] = {
 			ru = "Энерговзрыв",
-			["zh-tw"] = "聚能爆發",
-			["zh-cn"] = "聚能爆发",
+	 ["zh-tw"] = "聚能爆發",
+	 ["zh-cn"] = "聚能爆发",
 		},
 		--[+ GETS HOT! +]-- ruof Становится жарко!	20.04.2026
 		-- Plasma Gun
 		["loc_trait_bespoke_crit_chance_scaled_on_heat"] = {
 			ru = "Перегрев!",
-			["zh-tw"] = "燃起來！",
-			["zh-cn"] = "燃起来!",
+	 ["zh-tw"] = "燃起來！",
+	 ["zh-cn"] = "燃起来!",
 		},
 		--[+ VOLATILE +]-- ruof Испарение	20.04.2026
 		-- Plasma Gun
 		["loc_trait_bespoke_lower_overheat_gives_faster_charge"] = {
 			ru = "Нестабильность",
-			["zh-tw"] = "熱力震盪",
-			["zh-cn"] = "热力震荡",
+	 ["zh-tw"] = "熱力震盪",
+	 ["zh-cn"] = "热力震荡",
 		},
 		--[+ BLAZE AWAY +]-- ALT OGRYN ruof Энтузиазм	20.04.2026
 		-- Grenadier Gauntlet, Inferno Staff, Plasma Gun, Kickback, Rumbler
 		["loc_trait_bespoke_power_bonus_on_continuous_fire_alternative"] = {
 			ru = "Стрельба без устали",
-			["zh-tw"] = "連續發射",
-			["zh-cn"] = "连续发射",
+	 ["zh-tw"] = "連續發射",
+	 ["zh-cn"] = "连续发射",
 		},
 		--[+ RISING HEAT +]-- ruof Сильная жара	20.04.2026
 		-- Plasma Gun
 		["loc_trait_bespoke_power_bonus_scaled_on_heat"] = {
 			ru = "Нарастающий жар",
-			["zh-tw"] = "升溫",
-			["zh-cn"] = "升温",
+	 ["zh-tw"] = "升溫",
+	 ["zh-cn"] = "升温",
 		},
 		--[+ OPTIMISED COOLING +]-- ruof Оптимизированное охлаждение	20.04.2026
 		-- Plasma Gun
@@ -896,15 +896,15 @@ local names_talents_blessings_templates = {
 		-- Grenadier Gauntlet
 		["loc_trait_bespoke_power_bonus_on_chained_melee"] = {
 			ru = "Инерция перчатки",
-			["zh-tw"] = "交叉動量",
-			["zh-cn"] = "交叉动量",
+	 ["zh-tw"] = "交叉動量",
+	 ["zh-cn"] = "交叉动量",
 		},
 		--[+ PULVERISE +]-- ruof Пульверизация	20.04.2026
 		-- Grenadier Gauntlet
 		["loc_trait_bespoke_crit_chance_on_melee_kill"] = {
 			ru = "Измельчение",
-			["zh-tw"] = "粉碎",
-			["zh-cn"] = "粉碎",
+	 ["zh-tw"] = "粉碎",
+	 ["zh-cn"] = "粉碎",
 		},
 		--[+ DISRUPTIVE +]-- ruof Разрывной эффект	20.04.2026
 		-- Grenadier Gauntlet
@@ -930,8 +930,8 @@ local names_talents_blessings_templates = {
 		-- Heavy Stubbers, Twin-Linked Stubbers
 		["loc_trait_bespoke_power_bonus_on_chained_hits_on_single_target"] = {
 			ru = "Подавляющий огонь",
-			["zh-tw"] = "壓倒性火力",
-			["zh-cn"] = "压倒性火力",
+	 ["zh-tw"] = "壓倒性火力",
+	 ["zh-cn"] = "压倒性火力",
 		},
 		--[+ CAN OPENER +]-- ruof Открывашка	20.04.2026
 		-- Ripper Guns
@@ -942,15 +942,15 @@ local names_talents_blessings_templates = {
 		-- Dual Stub Pistols, Exterminator Shotguns, Ripper Guns
 		["loc_trait_bespoke_toughness_on_close_range_kills"] = {
 			ru = "Рождённый в крови",
-			["zh-tw"] = "浴血而生",
-			["zh-cn"] = "浴血而生",
+	 ["zh-tw"] = "浴血而生",
+	 ["zh-cn"] = "浴血而生",
 		},
 		--[+ PIERCE +]-- ruof Прокол	20.04.2026
 		-- Kickback, Rumbler
 		["loc_trait_bespoke_pass_trough_armor_on_weapon_special_and_stagger"] = {
 			ru = "Пробивание",
-			["zh-tw"] = "穿透",
-			["zh-cn"] = "穿透",
+	 ["zh-tw"] = "穿透",
+	 ["zh-cn"] = "穿透",
 		},
 		--[+ PUNISHING FIRE +]-- ruof Карательный обстрел	20.04.2026
 		-- Kickback
@@ -961,15 +961,15 @@ local names_talents_blessings_templates = {
 		-- Kickback
 		["loc_trait_bespoke_toughness_on_continuous_fire_alternative"] = {
 			ru = "Вдохновляющий шквал",
-			["zh-tw"] = "激勵彈幕",
-			["zh-cn"] = "激励弹幕",
+	 ["zh-tw"] = "激勵彈幕",
+	 ["zh-cn"] = "激励弹幕",
 		},
 		--[+ EXPANSIVE +]-- ruof Расширение	20.04.2026
 		-- Kickback
 		["loc_trait_bespoke_weapon_special_power_bonus_after_one_shots"] = {
 			ru = "Экспансивный",
-			["zh-tw"] = "擴展性",
-			["zh-cn"] = "扩展性",
+	 ["zh-tw"] = "擴展性",
+	 ["zh-cn"] = "扩展性",
 		},
 		--[+ SHRAPNEL +]-- ruof Шрапнель	20.04.2026
 		-- Rumbler
@@ -985,8 +985,8 @@ local names_talents_blessings_templates = {
 		-- Rumbler
 		["loc_trait_bespoke_grenades_stick_to_monsters_and_damage"] = {
 			ru = "Липкий заряд",
-			["zh-tw"] = "黏著炸藥",
-			["zh-cn"] = "黏著炸药",
+	 ["zh-tw"] = "黏著炸藥",
+	 ["zh-cn"] = "黏著炸药",
 		},
 		--[+ MARKSMAN'S REFLEX +]-- ruof Рефлекс стрелка	20.04.2026
 		-- Rumbler
@@ -1001,73 +1001,73 @@ local names_talents_blessings_templates = {
 		-- Arbites 1
 		["loc_talent_cleave_boost_medium"] = {
 			ru = "Усиление рассечения",
-			["zh-tw"] = "順劈增幅",
-			["zh-cn"] = "顺劈增幅",
+	 ["zh-tw"] = "順劈增幅",
+	 ["zh-cn"] = "顺劈增幅",
 		},
 		--[+ Critical Chance Boost +]-- ruof Усиление вероятности крит. удара	20.04.2026
 		-- Psyker 1, Scum 1
 		["loc_talent_crit_chance_low"] = {
 			ru = "Усиление шанса критического удара",
-			["zh-tw"] = "爆擊率增幅",
-			["zh-cn"] = "暴击机率增幅",
+	 ["zh-tw"] = "爆擊率增幅",
+	 ["zh-cn"] = "暴击机率增幅",
 		},
 		--[+ Impact Boost +]-- ruof Усиление подчинения	20.04.2026
 		-- Arbites 1
 		["loc_talent_impact_boost_medium"] = {
 			ru = "Усиление выведения из равновесия",
-			["zh-tw"] = "衝擊增幅",
-			["zh-cn"] = "冲击增幅",
+	 ["zh-tw"] = "衝擊增幅",
+	 ["zh-cn"] = "冲击增幅",
 		},
 		--[+ Melee Damage Boost Low - Medium +]-- ruof Усиление урона в ближнем бою	20.04.2026
 		-- Psyker 1, Zealot 2, Ogryn 1, Arbites 1, Veteran 1, Scum 1
 		["loc_talent_melee_damage_boost_medium"] = {
 			ru = "Усиление урона ближнего боя",
-			["zh-tw"] = "近戰增幅",
-			["zh-cn"] = "重击伤害增幅",
+	 ["zh-tw"] = "近戰增幅",
+	 ["zh-cn"] = "重击伤害增幅",
 		},
 		--[+ Movement Speed Boost +]-- ruof Усиление скорости передвижения	20.04.2026
 		-- Psyker 1, Zealot 1, Veteran 1
 		["loc_talent_movement_speed_low"] = {
 			ru = "Усиление скорости движения",
-			["zh-tw"] = "移動速度增幅",
-			["zh-cn"] = "移动速度增幅",
+	 ["zh-tw"] = "移動速度增幅",
+	 ["zh-cn"] = "移动速度增幅",
 		},
 		--[+ Peril Resistance Low +]-- ruof Сопротивление угрозе	20.04.2026
 		-- Psyker 1
 		["loc_talent_warp_charge_low"] = {
 			ru = "Сопротивление опасности",
-			["zh-tw"] = "反噬抗性",
-			["zh-cn"] = "反噬抗性",
+	 ["zh-tw"] = "反噬抗性",
+	 ["zh-cn"] = "反噬抗性",
 		},
 		--[+ Ranged Damage Boost Medium +]-- ruof Усиление урона в дальнем бою	20.04.2026
 		-- Psyker 1, Ogryn 1, Arbites 1, Veteran 1
 		["loc_talent_ranged_damage_medium"] = {
 			ru = "Усиление урона дальнего боя",
-			["zh-tw"] = "遠程傷害增幅",
-			["zh-cn"] = "远程伤害增幅",
+	 ["zh-tw"] = "遠程傷害增幅",
+	 ["zh-cn"] = "远程伤害增幅",
 		},
 		--[+ Reload Boost Low +]-- ruof Усиление перезарядки	20.04.2026
 		-- Ogryn 1
 		["loc_talent_reload_speed_low"] = {
 			en = "Reload Boost Low",
 			ru = "Усиление скорости перезарядки малое",
-			["zh-tw"] = "換彈速度增幅（小）",
-			["zh-cn"] = "换弹速度增幅（小）",
+	 ["zh-tw"] = "換彈速度增幅（小）",
+	 ["zh-cn"] = "换弹速度增幅（小）",
 		},
 		--[+ Reload Boost Medium +]-- ruof Усиление перезарядки	20.04.2026
 		-- Veteran 1
 		["loc_talent_reload_speed_medium"] = {
 			en = "Reload Boost Medium",
 			ru = "Усиление скорости перезарядки среднее",
-			["zh-tw"] = "換彈速度增幅（中）",
-			["zh-cn"] = "换弹速度增幅（中）",
+	 ["zh-tw"] = "換彈速度增幅（中）",
+	 ["zh-cn"] = "换弹速度增幅（中）",
 		},
 		-- [+ Rending Boost Low +]-- ruof Усиление «Терзания»	20.04.2026
 		-- Ogryn 1
 		["loc_talent_armor_pen_low"] = {
 			ru = "Усиление пробивания брони",
-			["zh-tw"] = "撕裂增幅",
-			["zh-cn"] = "撕裂增强",
+	 ["zh-tw"] = "撕裂增幅",
+	 ["zh-cn"] = "撕裂增强",
 		},
 		--[+ Stamina Boost Low +]-- ruof Усиление выносливости	20.04.2026
 		-- Psyker 1, Veteran 1
@@ -1084,32 +1084,32 @@ local names_talents_blessings_templates = {
 		["loc_talent_toughness_boost_low"] = {
 			en = "Toughness Boost Low",
 			ru = "Усиление стойкости малое",
-			["zh-tw"] = "韌性增幅（小）",
-			["zh-cn"] = "韧性增幅（小）",
+	 ["zh-tw"] = "韌性增幅（小）",
+	 ["zh-cn"] = "韧性增幅（小）",
 		},
 		--[+ Toughness Boost Medium +]-- ruof Усиление стойкости	20.04.2026
 		-- Psyker 2, Zealot 1, Ogryn 2, Veteran 2, Scum 2
 		["loc_talent_toughness_boost_medium"] = {
 			en = "Toughness Boost Medium",
 			ru = "Усиление стойкости среднее",
-			["zh-tw"] = "韌性增幅（中）",
-			["zh-cn"] = "韧性增幅（中）",
+	 ["zh-tw"] = "韌性增幅（中）",
+	 ["zh-cn"] = "韧性增幅（中）",
 		},
 		--[+ Toughness Damage Reduction Low +]-- ruof Снижение урона стойкости	20.04.2026
 		-- Psyker 1, Ogryn 1
 		["loc_talent_toughness_damage_reduction_low"] = {
 			en = "Toughness Damage Reduction Low",
 			ru = "Снижение урона стойкости малое",
-			["zh-tw"] = "韌性減傷（小）",
-			["zh-cn"] = "韧性减伤（小）",
+	 ["zh-tw"] = "韌性減傷（小）",
+	 ["zh-cn"] = "韧性减伤（小）",
 		},
 		--[+ Toughness Damage Reduction Medium +]-- ruof Снижение урона стойкости	20.04.2026
 		-- Psyker 1, Zealot 1, Ogryn 1, Arbites 1, Veteran 1
 		["loc_talent_toughness_damage_reduction_medium"] = {
 			en = "Toughness Damage Reduction Medium",
 			ru = "Снижение урона стойкости среднее",
-			["zh-tw"] = "韌性減傷（中）",
-			["zh-cn"] = "韧性减伤（中）",
+	 ["zh-tw"] = "韌性減傷（中）",
+	 ["zh-cn"] = "韧性减伤（中）",
 		},
 		--[+ Potent Tox +]-- ruof Мощный токсин	20.04.2026
 		-- Scum 1
@@ -1122,13 +1122,13 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 0 - Brain Burst +]-- ruof Взрыв разума	20.04.2026
 		["loc_ability_psyker_smite"] = {
 			ru = "Взрыв мозга",
-			["zh-tw"] = "顱腦爆裂",
-			["zh-cn"] = "颅脑爆裂",
+	 ["zh-tw"] = "顱腦爆裂",
+	 ["zh-cn"] = "颅脑爆裂",
 		},
 		--[+ BLITZ 1 - Brain Rupture +]-- ruof Разрыв мозга	20.04.2026
 		["loc_talent_psyker_brain_burst_improved"] = {
-			["zh-tw"] = "顱腦崩裂",
-			["zh-cn"] = "颅脑崩裂",
+	 ["zh-tw"] = "顱腦崩裂",
+	 ["zh-cn"] = "颅脑崩裂",
 		},
 		--[+ BLITZ 1-1 - Kinetic Resonance +]-- ruof Кинетический резонанс	20.04.2026
 		-- ["loc_talent_psyker_ability_increase_brain_burst_speed"] = {
@@ -1137,8 +1137,8 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 1-2 - Kinetic Flayer +]-- ruof Кинетический истребитель	20.04.2026
 		["loc_talent_psyker_smite_on_hit"] = {
 			ru = "Кинетический живодёр",
-			["zh-tw"] = "動能撕裂者",
-			["zh-cn"] = "动能剥皮者",
+	 ["zh-tw"] = "動能撕裂者",
+	 ["zh-cn"] = "动能剥皮者",
 		},
 		--[+ BLITZ 2 - Smite +]-- ruof Сокрушение	20.04.2026
 		-- ["loc_ability_psyker_chain_lightning"] = {
@@ -1159,14 +1159,14 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 3-1 - Ethereal Shards +]-- ruof Эфирные частицы	20.04.2026
 		["loc_talent_psyker_throwing_knives_pierce"] = {
 			ru = "Эфирные осколки",
-			["zh-tw"] = "乙太碎片",
-			["zh-cn"] = "乙太碎片",
+	 ["zh-tw"] = "乙太碎片",
+	 ["zh-cn"] = "乙太碎片",
 		},
 		--[+ BLITZ 3-2 - Quick Shards +]-- ruof Быстрые частицы	20.04.2026
 		["loc_talent_psyker_throwing_knives_reduced_cooldown"] = {
 			ru = "Быстрые осколки",
-			["zh-tw"] = "迅捷碎片",
-			["zh-cn"] = "迅捷碎片",
+	 ["zh-tw"] = "迅捷碎片",
+	 ["zh-cn"] = "迅捷碎片",
 		},
 	--[+ +AURA - АУРА - 光環 + +]--
 		--[+ AURA 0 - The Quickening +]-- ruof Ускорение	20.04.2026
@@ -1189,32 +1189,32 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 0 - Psykinetic's Wrath +]-- ruof Психокинетический гнев	20.04.2026
 		["loc_talent_psyker_2_combat"] = {
 			ru = "Гнев психокинетика",
-			["zh-tw"] = "靈能學者之怒",
-			["zh-cn"] = "灵能学者之怒",
+	 ["zh-tw"] = "靈能學者之怒",
+	 ["zh-cn"] = "灵能学者之怒",
 		},
 		--[+ ABILITY 1 - Venting Shriek +]-- ruof Вырвавшийся вопль	20.04.2026
 		["loc_talent_psyker_shout_vent_warp_charge"] = {
 			ru = "Сбрасывающий вопль",
-			["zh-tw"] = "靈能尖嘯",
-			["zh-cn"] = "灵能尖啸",
+	 ["zh-tw"] = "靈能尖嘯",
+	 ["zh-cn"] = "灵能尖啸",
 		},
 		--[+ ABILITY 1-1 - Warp Rupture +]-- ruof Варп-разрыв	20.04.2026
 		["loc_talent_psyker_shout_damage_per_warp_charge"] = {
 			ru = "Разрыв варпа",
-			["zh-tw"] = "亞空間爆發",
-			["zh-cn"] = "亚空间爆发",
+	 ["zh-tw"] = "亞空間爆發",
+	 ["zh-cn"] = "亚空间爆发",
 		},
 		--[+ ABILITY 1-2 - Becalming Eruption +]-- ruof Затихающее извержение	20.04.2026
 		["loc_talent_psyker_shout_reduces_warp_charge_generation"] = {
 			ru = "Успокаивающее извержение",
-			["zh-tw"] = "平靜迸發",
-			["zh-cn"] = "平静进发",
+	 ["zh-tw"] = "平靜迸發",
+	 ["zh-cn"] = "平静进发",
 		},
 		--[+ ABILITY 1-3 - Warp Creeping Flames +]-- ruof Раздувающееся пламя	20.04.2026
 		["loc_talent_psyker_warpfire_on_shout"] = {
 			ru = "Ползучее пламя",
-			["zh-tw"] = "蔓延火焰",
-			["zh-cn"] = "蔓延火焰",
+	 ["zh-tw"] = "蔓延火焰",
+	 ["zh-cn"] = "蔓延火焰",
 		},
 		--[+ ABILITY 2 - Telekine Shield +]-- ruof Телекинетический щит	20.04.2026
 		-- ["loc_talent_psyker_combat_ability_shield"] = {
@@ -1235,20 +1235,20 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 2-4 - Sanctuary +]-- ruof Святилище	20.04.2026
 		["loc_talent_psyker_force_field_grants_toughness"] = {
 			ru = "Убежище",
-			["zh-tw"] = "庇護所",
-			["zh-cn"] = "庇护所",
+	 ["zh-tw"] = "庇護所",
+	 ["zh-cn"] = "庇护所",
 		},
 		--[+ ABILITY 3 - Scrier's Gaze +]-- ruof Взор Скрира	20.04.2026
 		["loc_talent_psyker_combat_ability_overcharge_stance"] = {
 			ru = "Взор провидца",
-			["zh-tw"] = "占卜者的注視",
-			["zh-cn"] = "占卜者的注视",
+	 ["zh-tw"] = "占卜者的注視",
+	 ["zh-cn"] = "占卜者的注视",
 		},
 	--[+ ABILITY 3-1 - Precognition +]-- ruof Познание	20.04.2026
 		["loc_ability_psyker_overcharge_weakspot"] = {
 			ru = "Предвидение",
-			["zh-tw"] = "預知未來",
-			["zh-cn"] = "预知未来",
+	 ["zh-tw"] = "預知未來",
+	 ["zh-cn"] = "预知未来",
 		},
 		--[+ ABILITY 3-2 - Warp Speed +]-- ruof Варп-скорость	20.04.2026
 		-- ["loc_ability_psyker_overcharge_movement_speed"] = {
@@ -1261,15 +1261,15 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 3-4 - Warp Unbound +]-- ruof Искажение варпа	20.04.2026
 		["loc_talent_psyker_overcharge_infinite_casting"] = {
 			ru = "Высвобождение варпа",
-			["zh-tw"] = "亞空間突破",
-			["zh-cn"] = "亚空间突破",
+	 ["zh-tw"] = "亞空間突破",
+	 ["zh-cn"] = "亚空间突破",
 		},
 	--[+ +KEYSTONES - КЛЮЧЕВЫЕ ТАЛАНТЫ - 鑰石+ +]--
 		--[+ KEYSTONE 1 - Warp Siphon +]-- ruof Варп-сифон	20.04.2026
 		["loc_talent_psyker_souls"] = {
 			ru = "Переливание варпа",
-			["zh-tw"] = "亞空間虹吸",
-			["zh-cn"] = "亚空间虹吸",
+	 ["zh-tw"] = "亞空間虹吸",
+	 ["zh-cn"] = "亚空间虹吸",
 		},
 		--[+ KEYSTONE 1-1 - Inner Tranquility +]-- ruof Внутреннее спокойствие	20.04.2026
 		-- ["loc_talent_psyker_reduced_warp_charge_cost_venting_speed"] = {
@@ -1278,8 +1278,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 1-2 - Essence Harvest +]-- ruof Сбор сущности	20.04.2026
 		["loc_talent_psyker_toughness_regen_on_soul"] = {
 			ru = "Сбор сущностей",
-			["zh-tw"] = "吸精奪萃",
-			["zh-cn"] = "吸精夺萃",
+	 ["zh-tw"] = "吸精奪萃",
+	 ["zh-cn"] = "吸精夺萃",
 		},
 		--[+ KEYSTONE 1-3 - Warp Battery +]-- ruof Варп-аккумулятор	20.04.2026
 		-- ["loc_talent_psyker_increased_souls"] = {
@@ -1288,8 +1288,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 1-4 - In Fire Reborn +]-- ruof В огне восстану	20.04.2026
 		["loc_talent_psyker_warpfire_generates_souls"] = {
 			ru = "Возрождение в огне",
-			["zh-tw"] = "涅槃",
-			["zh-cn"] = "涅槃",
+	 ["zh-tw"] = "涅槃",
+	 ["zh-cn"] = "涅槃",
 		},
 		--[+ KEYSTONE 1-5 - Psychic Vampire +]-- ruof Психический вампир	20.04.2026
 		-- ["loc_talent_psyker_souls_on_kill_coop"] = {
@@ -1306,8 +1306,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 2-2 - Psychic Leeching +]-- ruof Психическая пиявка	20.04.2026
 		["loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies"] = {
 			ru = "Психическое высасывание",
-			["zh-tw"] = "吸血閃電",
-			["zh-cn"] = "吸血闪电",
+	 ["zh-tw"] = "吸血閃電",
+	 ["zh-cn"] = "吸血闪电",
 		},
 		--[+ KEYSTONE 2-3 - Overpowering Souls +]-- ruof Могучие души	20.04.2026
 		-- ["loc_talent_psyker_empowered_ability_on_elite_kills"] = {
@@ -1316,14 +1316,14 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 2-4 - Charged Up +]-- ruof Зарядка	20.04.2026
 		["loc_talent_psyker_increased_empowered_chain_lightning_stacks"] = {
 			ru = "Заряженный",
-			["zh-tw"] = "充能完畢",
-			["zh-cn"] = "充能完毕",
+	 ["zh-tw"] = "充能完畢",
+	 ["zh-cn"] = "充能完毕",
 		},
 		--[+ KEYSTONE 3 - Disrupt Destiny +]-- ruof Разрушенная судьба	20.04.2026
 		["loc_talent_psyker_marked_enemies_passive"] = {
 			ru = "Прерывание судьбы",
-			["zh-tw"] = "擾動命運",
-			["zh-cn"] = "扰动命运",
+	 ["zh-tw"] = "擾動命運",
+	 ["zh-cn"] = "扰动命运",
 		},
 		--[+ KEYSTONE 3-1 - Perfectionism +]-- ruof Перфекционизм	20.04.2026
 		-- ["loc_talent_psyker_mark_increased_max_stacks"] = {
@@ -1332,14 +1332,14 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 3-2 - Purloin Providence +]-- ruof Похищенное провидение	20.04.2026
 		["loc_talent_psyker_mark_kills_can_vent"] = {
 			ru = "Похищение провидения",
-			["zh-tw"] = "盜竊天命",
-			["zh-cn"] = "盗窃天命",
+	 ["zh-tw"] = "盜竊天命",
+	 ["zh-cn"] = "盗窃天命",
 		},
 		--[+ KEYSTONE 3-3 - Lingering Influence +]-- ruof Длящееся влияние	20.04.2026
 		["loc_talent_psyker_mark_increased_duration"] = {
 			ru = "Длительное влияние",
-			["zh-tw"] = "持久影響",
-			["zh-cn"] = "持久影响",
+	 ["zh-tw"] = "持久影響",
+	 ["zh-cn"] = "持久影响",
 		},
 		--[+ KEYSTONE 3-4 - Cruel Fortune +]-- ruof Жестокая судьба	20.04.2026
 		-- ["loc_talent_psyker_mark_weakspot_stacks"] = {
@@ -1349,8 +1349,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 1 - Soulstealer +]-- ruof Похититель души	20.04.2026
 		["loc_talent_psyker_toughness_on_warp_kill"] = {
 			ru = "Похититель душ",
-			["zh-tw"] = "靈魂竊賊",
-			["zh-cn"] = "灵魂窃贼",
+	 ["zh-tw"] = "靈魂竊賊",
+	 ["zh-cn"] = "灵魂窃贼",
 		},
 		--[+ PASSIVE 2 - Mettle +]-- ruof Ретивость	20.04.2026
 		-- ["loc_talent_psyker_crits_regen_tougness_and_movement_speed"] = {
@@ -1359,26 +1359,26 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 3 - Quietude +]-- ruof Тишина	20.04.2026
 		["loc_talent_psyker_toughness_from_vent"] = {
 			ru = "Спокойствие",
-			["zh-tw"] = "心如止水",
-			["zh-cn"] = "心如止水",
+	 ["zh-tw"] = "心如止水",
+	 ["zh-cn"] = "心如止水",
 		},
 		--[+ PASSIVE 4 - Warp Expenditure +]-- ruof Варп-затраты	20.04.2026
 		["loc_talent_psyker_warp_charge_generation_generates_toughness"] = {
 			ru = "Затраты варпа",
-			["zh-tw"] = "亞空間耗費",
-			["zh-cn"] = "亚空间耗费",
+	 ["zh-tw"] = "亞空間耗費",
+	 ["zh-cn"] = "亚空间耗费",
 		},
 		--[+ PASSIVE 5 - Perilous Combustion +]-- ruof Пагубное воспламенение	20.04.2026
 		["loc_talent_psyker_elite_kills_add_warpfire"] = {
 			ru = "Опасное возгорание",
-			["zh-tw"] = "險惡燃燒",
-			["zh-cn"] = "险恶燃烧",
+	 ["zh-tw"] = "險惡燃燒",
+	 ["zh-cn"] = "险恶燃烧",
 		},
 		--[+ PASSIVE 6 - Perfect Timing +]-- ruof Безупречное чувство времени	20.04.2026
 		["loc_talent_psyker_crits_empower_next_attack"] = {
 			ru = "Идеальный момент",
-			["zh-tw"] = "完美時機",
-			["zh-cn"] = "完美时机",
+	 ["zh-tw"] = "完美時機",
+	 ["zh-cn"] = "完美时机",
 		},
 		--[+ PASSIVE 7 - Battle Meditation +]-- ruof Боевая медитация	20.04.2026
 		-- ["loc_talent_psyker_base_2"] = {
@@ -1387,8 +1387,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 8 - Wildfire +]-- ruof Гремучая смесь	20.04.2026
 		["loc_talent_psyker_warpfire_spread"] = {
 			ru = "Некотролируемый пожар",
-			["zh-tw"] = "野火",
-			["zh-cn"] = "野火",
+	 ["zh-tw"] = "野火",
+	 ["zh-cn"] = "野火",
 		},
 		--[+ PASSIVE 9 - Psykinetic's AURA +]-- ruof Аура психокинетика	20.04.2026
 		-- ["loc_talent_psyker_elite_kills_give_combat_ability_cd_coherency"] = {
@@ -1397,14 +1397,14 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 10 - Mind in Motion +]-- ruof Движущийся разум	20.04.2026
 		["loc_talent_psyker_venting_doesnt_slow"] = {
 			ru = "Разум в движении",
-			["zh-tw"] = "思維活躍",
-			["zh-cn"] = "灵能学者光环",
+	 ["zh-tw"] = "思維活躍",
+	 ["zh-cn"] = "灵能学者光环",
 		},
 		--[+ PASSIVE 11 - Malefic Momentum +]-- ruof Пагубный моментум	20.04.2026
 		["loc_talent_psyker_kills_stack_other_weapon_damage"] = {
 			ru = "Пагубный импульс",
-			["zh-tw"] = "惡意攻勢",
-			["zh-cn"] = "恶意攻势",
+	 ["zh-tw"] = "惡意攻勢",
+	 ["zh-cn"] = "恶意攻势",
 		},
 		--[+ PASSIVE 12 - Channeled Force +]-- ruof Направленная сила	20.04.2026
 		-- ["loc_talent_psyker_force_staff_bonus"] = {
@@ -1421,8 +1421,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 15 - Souldrinker +]-- ruof Поглощение душ	20.04.2026
 		["loc_talent_psyker_nearby_soulblaze_reduced_damage"] = {
 			ru = "Поглотитель душ",
-			["zh-tw"] = "汲魂者",
-			["zh-cn"] = "汲魂者",
+	 ["zh-tw"] = "汲魂者",
+	 ["zh-cn"] = "汲魂者",
 		},
 		--[+ PASSIVE 16 - Empyric Shock +]-- ruof Эмпирический шок	20.04.2026
 		-- ["loc_talent_psyker_force_staff_quick_attack_bonus"] = {
@@ -1439,8 +1439,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 19 - Unlucky for Some +]-- ruof Некоторым не повезло	20.04.2026
 		["loc_talent_psyker_restore_toughness_to_allies_when_ally_down"] = {
 			ru = "Не везёт некоторым",
-			["zh-tw"] = "倒楣蛋",
-			["zh-cn"] = "倒楣蛋",
+	 ["zh-tw"] = "倒楣蛋",
+	 ["zh-cn"] = "倒楣蛋",
 		},
 		--[+ PASSIVE 20 - One with the Warp +]-- ruof Единство с варпом	20.04.2026
 		-- ["loc_talent_psyker_toughness_damage_reduction_from_warp_charge"] = {
@@ -1457,8 +1457,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 23 - Solidity +]-- ruof Твердость	20.04.2026
 		["loc_talent_psyker_increased_vent_speed"] = {
 			ru = "Устойчивость",
-			["zh-tw"] = "穩固",
-			["zh-cn"] = "心如止水",
+	 ["zh-tw"] = "穩固",
+	 ["zh-cn"] = "心如止水",
 		},
 		--[+ PASSIVE 24 - Puppet Master +]-- ruof Кукловод	20.04.2026
 		-- ["loc_talent_psyker_coherency_size_increase"] = {
@@ -1467,8 +1467,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 25 - Warp Rider +]-- ruof Наездник варпа	20.04.2026
 		["loc_talent_psyker_damage_based_on_warp_charge"] = {
 			ru = "Всадник варпа",
-			["zh-tw"] = "亞空間騎士",
-			["zh-cn"] = "亚空间骑士",
+	 ["zh-tw"] = "亞空間騎士",
+	 ["zh-cn"] = "亚空间骑士",
 		},
 		--[+ PASSIVE 26 - Crystalline Will +]-- ruof Чистая воля	20.04.2026
 		-- ["loc_talent_psyker_alternative_peril_explosion"] = {
@@ -1481,8 +1481,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 28 - Tranquility Through Slaughter +]-- ruof Спокойствие посредством убийств	20.04.2026
 		["loc_talent_psyker_ranged_crits_vent"] = {
 			ru = "Успокоение через резню",
-			["zh-tw"] = "殺無赦，心祥和",
-			["zh-cn"] = "杀无赦，心祥和",
+	 ["zh-tw"] = "殺無赦，心祥和",
+	 ["zh-cn"] = "杀无赦，心祥和",
 		},
 		--[+ PASSIVE 29 - Empyric Resolve +]-- ruof Эмпирическая решимость	20.04.2026
 		-- ["loc_talent_psyker_warp_glass_cannon"] = {
@@ -1499,8 +1499,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 32 - Surety of Arms +]-- ruof Верность оружия	20.04.2026
 		["loc_talent_psyker_reload_speed_warp"] = {
 			ru = "Варп в залог",
-			["zh-tw"] = "武器在手，信心我有。",
-			["zh-cn"] = "武器在手，信心我有。",
+	 ["zh-tw"] = "武器在手，信心我有。",
+	 ["zh-cn"] = "武器在手，信心我有。",
 		},
 
 
@@ -1513,14 +1513,14 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 1 - Stunstorm Grenade +]-- ruof Граната шквального оглушения	20.04.2026
 		["loc_zealot_improved_stun_grenade"] = {
 			ru = "Оглушающе-штурмовая граната",
-			["zh-tw"] = "眩暈風暴手雷",
-			["zh-cn"] = "眩晕风暴手雷",
+	 ["zh-tw"] = "眩暈風暴手雷",
+	 ["zh-cn"] = "眩晕风暴手雷",
 		},
 		--[+ BLITZ 2 - Immolation Grenade +]-- ruof Жертвенная граната	20.04.2026
 		["loc_talent_ability_fire_grenade"] = {
 			ru = "Огненная граната",
-			["zh-tw"] = "獻祭手雷",
-			["zh-cn"] = "献祭手雷",
+	 ["zh-tw"] = "獻祭手雷",
+	 ["zh-cn"] = "献祭手雷",
 		},
 		--[+ BLITZ 3 - Blades of Faith +]-- ruof Клинки веры	20.04.2026
 		-- ["loc_ability_zealot_throwing_knifes"] = {
@@ -1538,14 +1538,14 @@ local names_talents_blessings_templates = {
 		--[+ AURA 2 - Beacon of Purity +]-- ruof Маяк непорочности	20.04.2026
 		["loc_talent_zealot_corruption_healing_coherency_improved"] = {
 			ru = "Маяк очищения",
-			["zh-tw"] = "純潔信標",
-			["zh-cn"] = "纯洁信标",
+	 ["zh-tw"] = "純潔信標",
+	 ["zh-cn"] = "纯洁信标",
 		},
 		--[+ AURA 3 - Loner +]-- ruof Одиночка	20.04.2026
 		["loc_talent_zealot_always_in_coherency"] = {
 			ru = "Единоличник",
-			["zh-tw"] = "孤狼",
-			["zh-cn"] = "孤狼",
+	 ["zh-tw"] = "孤狼",
+	 ["zh-cn"] = "孤狼",
 		},
 	--[+ +ABILITIES+ +]--
 		--[+ ABILITY 0 - Chastise the Wicked +]-- ruof Кара для нечестивых	20.04.2026
@@ -1555,8 +1555,8 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 1 - Fury of the Faithful +]-- ruof Ударный страх	20.04.2026
 		["loc_talent_maniac_attack_speed_after_dash"] = {
 			ru = "Ярость верующего",
-			["zh-tw"] = "有信者之怒",
-			["zh-cn"] = "有信者之怒",
+	 ["zh-tw"] = "有信者之怒",
+	 ["zh-cn"] = "有信者之怒",
 		},
 		--[+ ABILITY 1-1 - Redoubled Zeal +]-- ruof Удвоенное рвение	20.04.2026
 		-- ["loc_talent_zealot_dash_has_more_charges"] = {
@@ -1581,14 +1581,14 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 2-3 - Ecclesiarch's Call +]-- ruof Вызов экклезиарха	20.04.2026
 		["loc_talent_zealot_zealot_channel_grants_offensive_buff"] = {
 			ru = "Призыв экклезиарха",
-			["zh-tw"] = "教宗之喚",
-			["zh-cn"] = "教宗之唤",
+	 ["zh-tw"] = "教宗之喚",
+	 ["zh-cn"] = "教宗之唤",
 		},
 		--[+ ABILITY 2-4 - Martyr's Purpose +]-- ruof Цель мученика	20.04.2026
 		["loc_talent_zealot_damage_taken_restores_cd"] = {
 			ru = "Предназначение мученика",
-			["zh-tw"] = "殉道者之願",
-			["zh-cn"] = "殉道者之愿",
+	 ["zh-tw"] = "殉道者之願",
+	 ["zh-cn"] = "殉道者之愿",
 		},
 		--[+ ABILITY 3 - Shroudfield +]-- ruof Покров	20.04.2026
 		-- ["loc_ability_zealot_stealth"] = {
@@ -1597,8 +1597,8 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 3-1 - Master-Crafted Shroudfield +]-- ruof Искусно изготовленный покров	20.04.2026
 		["loc_talent_zealot_increased_stealth_duration"] = {
 			ru = "Мастерский покров",
-			["zh-tw"] = "大師級隱秘領域",
-			["zh-cn"] = "大师级隐秘领域",
+	 ["zh-tw"] = "大師級隱秘領域",
+	 ["zh-cn"] = "大师级隐秘领域",
 		},
 		--[+ ABILITY 3-2 - Perfectionist +]-- ruof Перфекционист	20.04.2026
 		-- ["loc_talent_zealot_stealth_increased_damage"] = {
@@ -1607,33 +1607,33 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 3-3 - Invigorating Revelation +]-- ruof Подбадривающее откровение	20.04.2026
 		["loc_talent_zealot_leaving_stealth_restores_toughness"] = {
 			ru = "Оживляющее откровение",
-			["zh-tw"] = "振奮啟示",
-			["zh-cn"] = "振奋启示",
+	 ["zh-tw"] = "振奮啟示",
+	 ["zh-cn"] = "振奋启示",
 		},
 		--[+ ABILITY 3-4 - Pious Cut-Throat +]-- ruof Добродетельный головорез	20.04.2026
 		["loc_talent_zealot_backstab_kills_restore_cd"] = {
 			ru = "Благочестивый головорез",
-			["zh-tw"] = "虔誠刺客",
-			["zh-cn"] = "虔诚刺客",
+	 ["zh-tw"] = "虔誠刺客",
+	 ["zh-cn"] = "虔诚刺客",
 		},
 	--[+ +KEYSTONES - КЛЮЧЕВЫЕ ТАЛАНТЫ+ +]--
 		--[+ KEYSTONE 1 - Blazing Piety +]-- ruof Пламенное благочестие	20.04.2026
 		["loc_talent_zealot_fanatic_rage"] = {
 			ru = "Пылающая благочестивость",
-			["zh-tw"] = "熾熱虔誠",
-			["zh-cn"] = "炽热虔诚",
+	 ["zh-tw"] = "熾熱虔誠",
+	 ["zh-cn"] = "炽热虔诚",
 		},
 		--[+ KEYSTONE 1-1 - Stalwart +]-- ruof Верный последователь	20.04.2026
 		["loc_talent_zealot_fanatic_rage_toughness"] = {
 			ru = "Непоколебимый",
-			["zh-tw"] = "死忠",
-			["zh-cn"] = "忠诚",
+	 ["zh-tw"] = "死忠",
+	 ["zh-cn"] = "忠诚",
 		},
 		--[+ KEYSTONE 1-2 - Fury Rising +]-- ruof Подъем ярости	20.04.2026
 		["loc_talent_zealot_fanatic_rage_crits"] = {
 			ru = "Возрастание ярости",
-			["zh-tw"] = "怒火升騰",
-			["zh-cn"] = "怒火升腾",
+	 ["zh-tw"] = "怒火升騰",
+	 ["zh-cn"] = "怒火升腾",
 		},
 		--[+ KEYSTONE 1-3 - Infectious Zeal +]-- ruof Заразительное рвение	20.04.2026
 		-- ["loc_talent_zealot_shared_fanatic_rage"] = {
@@ -1650,8 +1650,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 2-1 - I Shall Not Fall +]-- ruof Я не отступлю	20.04.2026
 		["loc_talent_zealot_martyrdom_grants_toughness"] = {
 			ru = "Я не паду",
-			["zh-tw"] = "不滅意志",
-			["zh-cn"] = "不灭意志",
+	 ["zh-tw"] = "不滅意志",
+	 ["zh-cn"] = "不灭意志",
 		},
 		--[+ KEYSTONE 2-2 - Maniac +]-- ruof Маньяк	20.04.2026
 		-- ["loc_talent_zealot_attack_speed_per_martyrdom"] = {
@@ -1660,8 +1660,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 3 - Inexorable Judgement +]-- ruof Безжалостный приговор	20.04.2026
 		["loc_talent_zealot_quickness"] = {
 			ru = "Неумолимый приговор",
-			["zh-tw"] = "命定審判",
-			["zh-cn"] = "命定审判",
+	 ["zh-tw"] = "命定審判",
+	 ["zh-cn"] = "命定审判",
 		},
 		--[+ KEYSTONE 3-1 - Retributor's Stance +]-- ruof Стойка карателя	20.04.2026
 		-- ["loc_talent_zealot_quickness_toughness_per_stack"] = {
@@ -1670,8 +1670,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 3-2 - Inebriate's Poise +]-- ruof Самообладание пьяницы	20.04.2026
 		["loc_talent_zealot_quickness_dodge_stacks"] = {
 			ru = "Грация пьяницы",
-			["zh-tw"] = "飄忽身形",
-			["zh-cn"] = "飘忽身形",
+	 ["zh-tw"] = "飄忽身形",
+	 ["zh-cn"] = "飘忽身形",
 		},
 	--[+ +PASSIVES+ +]--
 		--[+ PASSIVE 1 - Disdain +]-- ruof Презрение	20.04.2026
@@ -1685,32 +1685,32 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 3 - Anoint in Blood +]-- ruof Помазанный кровью	20.04.2026
 		["loc_talent_zealot_ranged_damage_increased_to_close"] = {
 			ru = "Помазанный кровью",
-			["zh-tw"] = "鮮血受膏",
-			["zh-cn"] = "鲜血受膏",
+	 ["zh-tw"] = "鮮血受膏",
+	 ["zh-cn"] = "鲜血受膏",
 		},
 		--[+ PASSIVE 4 - Scourge +]-- ruof Бич	20.04.2026
 		["loc_talent_zealot_bleed_melee_crit_chance"] = {
 			ru = "Бичевание",
-			["zh-tw"] = "天災",
-			["zh-cn"] = "天灾",
+	 ["zh-tw"] = "天災",
+	 ["zh-cn"] = "天灾",
 		},
 		--[+ PASSIVE 5 - Enemies Within, Enemies Without +]-- ruof Не дай ему уйти	20.04.2026
 		["loc_talent_zealot_toughness_regen_in_melee"] = {
 			ru = "Враги внутри, враги снаружи",
-			["zh-tw"] = "內憂外患",
-			["zh-cn"] = "内忧外患",
+	 ["zh-tw"] = "內憂外患",
+	 ["zh-cn"] = "内忧外患",
 		},
 		--[+ PASSIVE 6 - Fortitude in Fellowship +]-- ruof Стойкость в общении	20.04.2026
 		["loc_talent_zealot_increased_coherency_regen"] = {
 			ru = "Стойкость в товариществе",
-			["zh-tw"] = "合抱成林",
-			["zh-cn"] = "合抱成林",
+	 ["zh-tw"] = "合抱成林",
+	 ["zh-cn"] = "合抱成林",
 		},
 		--[+ PASSIVE 7 - Purge the Unclean +]-- ruof Очищение нечистых	20.04.2026
 		["loc_talent_zealot_3_passive_2"] = {
 			ru = "Очищение нечестивых",
-			["zh-tw"] = "淨化不潔",
-			["zh-cn"] = "净化不洁",
+	 ["zh-tw"] = "淨化不潔",
+	 ["zh-cn"] = "净化不洁",
 		},
 		--[+ PASSIVE 8 - Blood Redemption +]-- ruof Кровавое искупление	20.04.2026
 		-- ["loc_talent_zealot_toughness_on_melee_kill"] = {
@@ -1720,14 +1720,14 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 9 - Bleed for the Emperor +]-- ruof Кровь во имя Императора	20.04.2026
 		["loc_talent_zealot_3_tier_3_ability_2"] = {
 			ru = "Кровь за Императора",
-			["zh-tw"] = "為了帝皇",
-			["zh-cn"] = "为了帝皇",
+	 ["zh-tw"] = "為了帝皇",
+	 ["zh-cn"] = "为了帝皇",
 		},
 		--[+ PASSIVE 10 - Vicious Offering +]-- ruof Порочное подношение	20.04.2026
 		["loc_talent_zealot_toughness_on_heavy_kills"] = {
 			ru = "Жертвоприношение",
-			["zh-tw"] = "惡毒贈禮",
-			["zh-cn"] = "恶毒赠礼",
+	 ["zh-tw"] = "惡毒贈禮",
+	 ["zh-cn"] = "恶毒赠礼",
 		},
 		--[+ PASSIVE 11 - The Voice of Terra +]-- ruof Голос Терры	20.04.2026
 		-- ["loc_talent_zealot_toughness_on_ranged_kill"] = {
@@ -1740,8 +1740,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 13 - Second Wind +]-- ruof Второй ветер	20.04.2026
 		["loc_talent_zealot_toughness_on_dodge"] = {
 			ru = "Второе дыхание",
-			["zh-tw"] = "精力復甦",
-			["zh-cn"] = "精力复苏",
+	 ["zh-tw"] = "精力復甦",
+	 ["zh-cn"] = "精力复苏",
 		},
 		--[+ PASSIVE 14 - Enduring Faith +]-- ruof Непоколебимая вера	20.04.2026
 		-- ["loc_talent_zealot_toughness_melee_effectiveness"] = {
@@ -1774,14 +1774,14 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 21 - Thy Wrath be Swift +]-- ruof Скорое возмездие	20.04.2026
 		["loc_talent_zealot_movement_speed_on_damaged"] = {
 			ru = "Твой гнев будет быстр",
-			["zh-tw"] = "勃然大怒",
-			["zh-cn"] = "勃然大怒",
+	 ["zh-tw"] = "勃然大怒",
+	 ["zh-cn"] = "勃然大怒",
 		},
 		--[+ PASSIVE 22 - Good Balance +]-- ruof Разумный баланс	20.04.2026
 		["loc_talent_reduced_damage_after_dodge"] = {
 			ru = "Хороший баланс",
-			["zh-tw"] = "四平八穩",
-			["zh-cn"] = "四平八稳",
+	 ["zh-tw"] = "四平八穩",
+	 ["zh-cn"] = "四平八稳",
 		},
 		--[+ PASSIVE 23 - Desperation +]-- ruof Отчаяние	20.04.2026
 		-- ["loc_talent_zealot_increased_damage_on_low_stamina"] = {
@@ -1790,14 +1790,14 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 24 - Holy Revenant +]-- ruof Священный призрак	20.04.2026
 		["loc_talent_zealot_heal_during_resist_death"] = {
 			ru = "Святой призрак",
-			["zh-tw"] = "吊命聖徒",
-			["zh-cn"] = "吊命圣徒",
+	 ["zh-tw"] = "吊命聖徒",
+	 ["zh-cn"] = "吊命圣徒",
 		},
 		--[+ PASSIVE 25 - Sainted Gunslinger +]-- ruof Святой быстрый стрелок	20.04.2026
 		["loc_talent_zealot_increased_reload_speed_on_melee_kills"] = {
 			ru = "Святой стрелок",
-			["zh-tw"] = "封聖神射手",
-			["zh-cn"] = "封圣神射手",
+	 ["zh-tw"] = "封聖神射手",
+	 ["zh-cn"] = "封圣神射手",
 		},
 		--[+ PASSIVE 26 - Hammer of Faith +]-- ruof Молот веры	20.04.2026
 		-- ["loc_talent_zealot_3_tier_1_ability_1"] = {
@@ -1806,8 +1806,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 27 - Grievous Wounds +]-- ruof Опасные раны	20.04.2026
 		["loc_talent_zealot_increased_stagger_on_weakspot_melee"] = {
 			ru = "Тяжёлые раны",
-			["zh-tw"] = "重傷",
-			["zh-cn"] = "重伤",
+	 ["zh-tw"] = "重傷",
+	 ["zh-cn"] = "重伤",
 		},
 		--[+ PASSIVE 28 - Ambuscade +]-- ruof Засада	20.04.2026
 		-- ["loc_talent_zealot_increased_flanking_damage"] = {
@@ -1820,14 +1820,14 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 30 - Faithful Frenzy +]-- ruof Верное безумие	20.04.2026
 		["loc_talent_zealot_attack_speed"] = {
 			ru = "Правоверное неистовство",
-			["zh-tw"] = "信仰狂亂",
-			["zh-cn"] = "信仰狂乱",
+	 ["zh-tw"] = "信仰狂亂",
+	 ["zh-cn"] = "信仰狂乱",
 		},
 		--[+ PASSIVE 31 - Sustained Assault +]-- ruof Непрерывный штурм	20.04.2026
 		["loc_talent_zealot_increased_damage_stacks_on_hit"] = {
 			ru = "Непрерывное нападение",
-			["zh-tw"] = "持續突擊",
-			["zh-cn"] = "持续突击",
+	 ["zh-tw"] = "持續突擊",
+	 ["zh-cn"] = "持续突击",
 		},
 		--[+ PASSIVE 32 - The Master's Retribution +]-- ruof Возмездие Владыки	20.04.2026
 		-- ["loc_talent_zealot_3_tier_3_ability_1"] = {
@@ -1840,8 +1840,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 34 - Swift Certainty +]-- ruof Скорая определенность	20.04.2026
 		["loc_talent_zealot_improved_sprint"] = {
 			ru = "Быстрая уверенность",
-			["zh-tw"] = "堅定迅捷",
-			["zh-cn"] = "坚定迅捷",
+	 ["zh-tw"] = "堅定迅捷",
+	 ["zh-cn"] = "坚定迅捷",
 		},
 
 
@@ -1854,8 +1854,8 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 1 - Shredder Frag Grenade +]-- ruof Фраг-граната крошителя	20.04.2026
 		["loc_talent_veteran_grenade_apply_bleed"] = {
 			ru = "Крошащая фраг-граната",
-			["zh-tw"] = "粉碎者破片手雷",
-			["zh-cn"] = "粉碎者破片手雷",
+	 ["zh-tw"] = "粉碎者破片手雷",
+	 ["zh-cn"] = "粉碎者破片手雷",
 		},
 		--[+ BLITZ 2 - Krak Grenade +]-- ruof Крак-граната	20.04.2026
 		-- ["loc_talent_ability_krak_grenade"] = {
@@ -1869,14 +1869,14 @@ local names_talents_blessings_templates = {
 		--[+ AURA 0 - Scavenger +]-- ruof Собиратель	20.04.2026
 		["loc_talent_veteran_elite_kills_grant_ammo_coop"] = {
 			ru = "Сборщик",
-			["zh-tw"] = "拾荒者",
-			["zh-cn"] = "拾荒者",
+	 ["zh-tw"] = "拾荒者",
+	 ["zh-cn"] = "拾荒者",
 		},
 		--[+ AURA 1 - Survivalist +]-- ruof Специалист по выживанию	20.04.2026
 		["loc_talent_veteran_elite_kills_grant_ammo_coop_improved"] = {
 			ru = "Выживальщик",
-			["zh-tw"] = "生存專家",
-			["zh-cn"] = "生存专家",
+	 ["zh-tw"] = "生存專家",
+	 ["zh-cn"] = "生存专家",
 		},
 		--[+ AURA 2 - Fire Team +]-- ruof Огневая группа	20.04.2026
 		-- ["loc_talent_veteran_damage_coherency"] = {
@@ -1898,8 +1898,8 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 1-1 - Enhanced Target Priority +]-- ruof Повышенный приоритет цели	20.04.2026
 		["loc_talent_veteran_combat_ability_coherency_outlines"] = {
 			ru = "Повышенный приоритет целей",
-			["zh-tw"] = "目標引導增強",
-			["zh-cn"] = "目标引导增强",
+	 ["zh-tw"] = "目標引導增強",
+	 ["zh-cn"] = "目标引导增强",
 		},
 		--[+ ABILITY 1-2 - Counter-Fire +]-- ruof Ответный огонь	20.04.2026
 		-- ["loc_talent_veteran_combat_ability_ranged_enemies_outlines"] = {
@@ -1924,8 +1924,8 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 2-2 - Only In Death Does Duty End +]-- ruof Лишь после смерти заканчивается служение долгу	20.04.2026
 		["loc_talent_veteran_combat_ability_revives"] = {
 			ru = "Только смертью заканчивается долг",
-			["zh-tw"] = "只有死亡，職責才會終結",
-			["zh-cn"] = "只有死亡，职责才会终结",
+	 ["zh-tw"] = "只有死亡，職責才會終結",
+	 ["zh-cn"] = "只有死亡，职责才会终结",
 		},
 		--[+ ABILITY 2-3 - For the Emperor! +]-- ruof За Императора!	20.04.2026
 		-- ["loc_talent_veteran_combat_ability_melee_and_ranged_damage_to_coherency"] = {
@@ -1938,14 +1938,14 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 3-1 - Low Profile +]-- ruof Сдержанность	20.04.2026
 		["loc_talent_veteran_reduced_threat_after_combat_ability"] = {
 			ru = "Незаметность",
-			["zh-tw"] = "低調",
-			["zh-cn"] = "低调",
+	 ["zh-tw"] = "低調",
+	 ["zh-cn"] = "低调",
 		},
 		--[+ ABILITY 3-2 - Overwatch +]-- ruof Прикрытие	20.04.2026
 		["loc_talent_veteran_combat_ability_extra_charge"] = {
 			ru = "Наблюдение",
-			["zh-tw"] = "掩護射擊",
-			["zh-cn"] = "掩护射击",
+	 ["zh-tw"] = "掩護射擊",
+	 ["zh-cn"] = "掩护射击",
 		},
 		--[+ ABILITY 3-3 - Hunter's Resolve +]-- ruof Упорство охотника	20.04.2026
 		-- ["loc_talent_veteran_toughness_bonus_leaving_invisibility"] = {
@@ -1958,8 +1958,8 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 3-5 - Close Quarters Killzone +]-- ruof Зона поражения на ближней дистанции	20.04.2026
 		["loc_talent_veteran_ability_assault"] = {
 			ru = "Зона ближнего боя",
-			["zh-tw"] = "肉搏戰",
-			["zh-cn"] = "肉搏战",
+	 ["zh-tw"] = "肉搏戰",
+	 ["zh-cn"] = "肉搏战",
 		},
 	--[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
 		--[+ KEYSTONE 1 - Marksman's Focus +]-- ruof Концентрация снайпера	20.04.2026
@@ -1969,8 +1969,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 1-1 - Chink in their Armour +]-- ruof Щель в броне	20.04.2026
 		["loc_talent_veteran_snipers_focus_rending_bonus"] = {
 			ru = "Щель в их броне",
-			["zh-tw"] = "滲透盔甲",
-			["zh-cn"] = "渗透盔甲",
+	 ["zh-tw"] = "滲透盔甲",
+	 ["zh-cn"] = "渗透盔甲",
 		},
 		--[+ KEYSTONE 1-2 - Tunnel Vision +]-- ruof Тоннельное зрение	20.04.2026
 		-- ["loc_talent_veteran_snipers_focus_toughness_bonus"] = {
@@ -2003,8 +2003,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 3 - Weapons Specialist +]-- ruof Специалист по вооружениям	20.04.2026
 		["loc_talent_veteran_weapon_switch"] = {
 			ru = "Специалист по оружию",
-			["zh-tw"] = "武器專家",
-			["zh-cn"] = "武器专家",
+	 ["zh-tw"] = "武器專家",
+	 ["zh-cn"] = "武器专家",
 		},
 		--[+ KEYSTONE 3-1 - Always Prepared +]-- ruof Всегда готов	20.04.2026
 		-- ["loc_talent_veteran_weapon_switch_replenish_ammo"] = {
@@ -2025,15 +2025,15 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 3-5 - Conditioning +]-- ruof Подготовка	20.04.2026
 		["loc_talent_veteran_weapon_switch_stamina_reduction"] = {
 			ru = "Кондиционирование",
-			["zh-tw"] = "身體調節",
-			["zh-cn"] = "身体调节",
+	 ["zh-tw"] = "身體調節",
+	 ["zh-cn"] = "身体调节",
 		},
 	--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 		--[+ PASSIVE 1 - Longshot +]-- ruof Далекая перспектива	20.04.2026
 		["loc_talent_veteran_increased_damage_based_on_range"] = {
 			ru = "Дальний выстрел",
-			["zh-tw"] = "遠射",
-			["zh-cn"] = "远射",
+	 ["zh-tw"] = "遠射",
+	 ["zh-cn"] = "远射",
 		},
 		--[+ PASSIVE 2 - Close Order Drill +]-- ruof Строевая подготовка	20.04.2026
 		-- ["loc_talent_veteran_toughness_damage_reduction_per_ally"] = {
@@ -2042,14 +2042,14 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 3 - One Motion +]-- ruof Одно движение	20.04.2026
 		["loc_talent_veteran_reduce_swap_time"] = {
 			ru = "В одно движение",
-			["zh-tw"] = "行雲流水",
-			["zh-cn"] = "行云流水",
+	 ["zh-tw"] = "行雲流水",
+	 ["zh-cn"] = "行云流水",
 		},
 		--[+ PASSIVE 4 - Exhilarating Takedown +]-- ruof Бодрящее сокрушение	20.04.2026
 		["loc_talent_veteran_toughness_on_weakspot_kill"] = {
 			ru = "Подбадривающее убийство",
-			["zh-tw"] = "振奮擊倒",
-			["zh-cn"] = "振奋击倒",
+	 ["zh-tw"] = "振奮擊倒",
+	 ["zh-cn"] = "振奋击倒",
 		},
 		--[+ PASSIVE 5 - Volley Adept +]-- ruof Адепт залпа	20.04.2026
 		-- ["loc_talent_veteran_reload_speed_on_elite_kill"] = {
@@ -2059,62 +2059,62 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 6 - Charismatic +]-- ruof Обаятельный	20.04.2026
 		["loc_talent_veteran_increased_aura_radius"] = {
 			ru = "Харизматичный",
-			["zh-tw"] = "超凡魅力",
-			["zh-cn"] = "超凡魅力",
+	 ["zh-tw"] = "超凡魅力",
+	 ["zh-cn"] = "超凡魅力",
 		},
 		--[+ PASSIVE 7 - Confirmed Kill +]-- ruof Подтвержденное убийство	20.04.2026
 		["loc_talent_veteran_toughness_on_elite_kill"] = {
 			ru = "Подтверждённое убийство",
-			["zh-tw"] = "擊殺紀錄",
-			["zh-cn"] = "击杀纪录",
+	 ["zh-tw"] = "擊殺紀錄",
+	 ["zh-cn"] = "击杀纪录",
 		},
 		--[+ PASSIVE 8 - Tactical Reload +]-- ruof Тактическая перезарядка	20.04.2026
 		["loc_talent_ranger_reload_speed_empty_mag"] = {
 			ru = "Тактическая перезарядка",
-			["zh-tw"] = "戰術裝填",
-			["zh-cn"] = "战术装填",
+	 ["zh-tw"] = "戰術裝填",
+	 ["zh-cn"] = "战术装填",
 		},
 		--[+ PASSIVE 9 - Out for Blood +]-- ruof В поисках крови	20.04.2026
 		["loc_talent_veteran_all_kills_replenish_toughness"] = {
 			ru = "На тропе войны",
-			["zh-tw"] = "嗜血",
-			["zh-cn"] = "嗜血",
+	 ["zh-tw"] = "嗜血",
+	 ["zh-cn"] = "嗜血",
 		},
 		--[+ PASSIVE 10 - Get Back in the Fight! +]-- ruof Вернуться в бой!	20.04.2026
 		["loc_talent_veteran_movement_speed_on_toughness_broken"] = {
 			ru = "Возвращайся в бой!",
-			["zh-tw"] = "重投戰鬥！",
-			["zh-cn"] = "重投战斗！",
+	 ["zh-tw"] = "重投戰鬥！",
+	 ["zh-cn"] = "重投战斗！",
 		},
 		--[+ PASSIVE 11 - Catch a Breath +]-- ruof Передышка	20.04.2026
 		["loc_talent_veteran_replenish_toughness_outside_melee"] = {
 			ru = "Переведи дух",
-			["zh-tw"] = "喘息片刻",
-			["zh-cn"] = "喘息片刻",
+	 ["zh-tw"] = "喘息片刻",
+	 ["zh-cn"] = "喘息片刻",
 		},
 		--[+ PASSIVE 12 - Grenade Tinkerer +]-- ruof Любитель гранат	20.04.2026
 		["loc_talent_veteran_improved_grenades"] = {
 			ru = "Гранатный мастер",
-			["zh-tw"] = "手雷專家",
-			["zh-cn"] = "手雷专家",
+	 ["zh-tw"] = "手雷專家",
+	 ["zh-cn"] = "手雷专家",
 		},
 		--[+ PASSIVE 13 - Covering Fire +]-- ruof Прикрытие огнем	20.04.2026
 		["loc_talent_veteran_replenish_toughness_and_boost_allies"] = {
 			ru = "Прикрывающий огонь",
-			["zh-tw"] = "火力掩護",
-			["zh-cn"] = "火力掩护",
+	 ["zh-tw"] = "火力掩護",
+	 ["zh-cn"] = "火力掩护",
 		},
 		--[+ PASSIVE 14 - Serrated Blade +]-- ruof Зазубренное лезвие	20.04.2026
 		["loc_talent_veteran_hits_cause_bleed"] = {
 			ru = "Зазубренный клинок",
-			["zh-tw"] = "鋸齒刀刃",
-			["zh-cn"] = "锯齿刀刃",
+	 ["zh-tw"] = "鋸齒刀刃",
+	 ["zh-cn"] = "锯齿刀刃",
 		},
 		--[+ PASSIVE 15 - Agile Engagement +]-- ruof Ловкое взаимодействие	20.04.2026
 		["loc_talent_veteran_kill_grants_damage_to_other_slot"] = {
 			ru = "Ловкое взаимодействие",
-			["zh-tw"] = "靈活接敵",
-			["zh-cn"] = "灵活接敌",
+	 ["zh-tw"] = "靈活接敵",
+	 ["zh-cn"] = "灵活接敌",
 		},
 		--[+ PASSIVE 16 - Kill Zone +]-- ruof Зона поражение	20.04.2026
 		-- ["loc_talent_veteran_ranged_power_out_of_melee"] = {
@@ -2131,8 +2131,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 19 - Twinned Blast +]-- ruof Спаренный взрыв	20.04.2026
 		["loc_talent_veteran_extra_grenade_throw_chance"] = {
 			ru = "Двойной взрыв",
-			["zh-tw"] = "雙響炮",
-			["zh-cn"] = "双响炮",
+	 ["zh-tw"] = "雙響炮",
+	 ["zh-cn"] = "双响炮",
 		},
 		--[+ PASSIVE 20 - Demolition Stockpile +]-- ruof Склад взрывчатки	20.04.2026
 		-- ["loc_talent_ranger_replenish_grenade"] = {
@@ -2141,8 +2141,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 21 - Grenadier +]-- ruof Гренадер	20.04.2026
 		["loc_talent_veteran_extra_grenade"] = {
 			ru = "Гренадёр",
-			["zh-tw"] = "擲彈兵",
-			["zh-cn"] = "掷弹兵",
+	 ["zh-tw"] = "擲彈兵",
+	 ["zh-cn"] = "掷弹兵",
 		},
 		--[+ PASSIVE 22 - Leave No One Behind +]-- ruof Никого не оставлять позади	20.04.2026
 		-- ["loc_talent_veteran_movement_speed_towards_downed"] = {
@@ -2163,38 +2163,38 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 26 - Born Leader +]-- ruof Прирожденный лидер	20.04.2026
 		["loc_talent_veteran_allies_share_toughness"] = {
 			ru = "Прирождённый лидер",
-			["zh-tw"] = "天生領袖",
-			["zh-cn"] = "天生领袖",
+	 ["zh-tw"] = "天生領袖",
+	 ["zh-cn"] = "天生领袖",
 		},
 		--[+ PASSIVE 27 - Keep Their Heads Down! +]-- ruof Пригнитесь!	20.04.2026
 		["loc_talent_veteran_increase_suppression"] = {
 			ru = "Не давай им поднять головы!",
-			["zh-tw"] = "讓他們全趴下！",
-			["zh-cn"] = "让他们全趴下",
+	 ["zh-tw"] = "讓他們全趴下！",
+	 ["zh-cn"] = "让他们全趴下",
 		},
 		--[+ PASSIVE 28 - Reciprocity +]-- ruof Взаимная выгода	20.04.2026
 		["loc_talent_veteran_dodging_grants_crit"] = {
 			ru = "Взаимообмен",
-			["zh-tw"] = "互惠互利",
-			["zh-cn"] = "互惠互利",
+	 ["zh-tw"] = "互惠互利",
+	 ["zh-cn"] = "互惠互利",
 		},
 		--[+ PASSIVE 29 - Duck and Dive +]-- ruof Голову в песок	20.04.2026
 		["loc_talent_ranger_stamina_on_ranged_dodge"] = {
 			ru = "Пригнись и увернись",
-			["zh-tw"] = "靈活應對",
-			["zh-cn"] = "灵活应对",
+	 ["zh-tw"] = "靈活應對",
+	 ["zh-cn"] = "灵活应对",
 		},
 		--[+ PASSIVE 30 - Fully Loaded +]-- ruof Полный заряд	20.04.2026
 		["loc_talent_veteran_ammo_increase"] = {
 			ru = "Полный запас",
-			["zh-tw"] = "全副武裝",
-			["zh-cn"] = "全副武装",
+	 ["zh-tw"] = "全副武裝",
+	 ["zh-cn"] = "全副武装",
 		},
 		--[+ PASSIVE 31 - Tactical Awareness +]-- ruof Тактическая осведомленность	20.04.2026
 		["loc_talent_veteran_elite_kills_reduce_cooldown"] = {
 			ru = "Тактическая осведомлённость",
-			["zh-tw"] = "戰術意識",
-			["zh-cn"] = "战术意识",
+	 ["zh-tw"] = "戰術意識",
+	 ["zh-cn"] = "战术意识",
 		},
 		--[+ PASSIVE 32 - Desperado +]-- ruof Сорвиголова	20.04.2026
 		-- ["loc_talent_veteran_increased_melee_crit_chance_and_melee_finesse"] = {
@@ -2215,8 +2215,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 36 - Demolition Team +]-- ruof Группа подрыва	20.04.2026
 		["loc_talent_ranger_grenade_on_elite_kills_coop"] = {
 			ru = "Команда подрывников",
-			["zh-tw"] = "爆破小隊",
-			["zh-cn"] = "爆破小队",
+	 ["zh-tw"] = "爆破小隊",
+	 ["zh-cn"] = "爆破小队",
 		},
 		--[+ PASSIVE 37 - Exploit Weakness +]-- ruof Использование слабостей	20.04.2026
 		-- ["loc_talent_veteran_crits_rend"] = {
@@ -2229,8 +2229,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 39 - Trench Fighter Drill +]-- ruof Тренировка в окопах	20.04.2026
 		["loc_talent_veteran_attack_speed"] = {
 			ru = "Окопные тренировки",
-			["zh-tw"] = "戰壕兵訓練",
-			["zh-cn"] = "战壕兵训练",
+	 ["zh-tw"] = "戰壕兵訓練",
+	 ["zh-cn"] = "战壕兵训练",
 		},
 		--[+ PASSIVE 40 - Skirmisher +]-- ruof Застрельщик	20.04.2026
 		-- ["loc_talent_veteran_damage_damage_after_sprinting"] = {
@@ -2239,20 +2239,20 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 41 - Competitive Urge +]-- ruof Состязательный мотив	20.04.2026
 		["loc_talent_veteran_ally_kills_increase_damage"] = {
 			ru = "Соревновательный инстинкт",
-			["zh-tw"] = "求勝心",
-			["zh-cn"] = "求胜心",
+	 ["zh-tw"] = "求勝心",
+	 ["zh-cn"] = "求胜心",
 		},
 		--[+ PASSIVE 42 - Rending Strikes +]-- ruof Разрушительные удары	20.04.2026
 		["loc_talent_veteran_rending_bonus"] = {
 			ru = "Пробивающие удары",
-			["zh-tw"] = "裂擊",
-			["zh-cn"] = "裂击",
+	 ["zh-tw"] = "裂擊",
+	 ["zh-cn"] = "裂击",
 		},
 		--[+ PASSIVE 43 - Bring it Down! +]-- ruof Убивай!	20.04.2026
 		["loc_talent_veteran_big_game_hunter"] = {
 			ru = "Убей их!",
-			["zh-tw"] = "幹掉它！",
-			["zh-cn"] = "干掉它!",
+	 ["zh-tw"] = "幹掉它！",
+	 ["zh-cn"] = "干掉它!",
 		},
 
 
@@ -2261,8 +2261,8 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 0 - Big Box of Hurt +]-- ruof Ящик, полный боли
 		["loc_ability_ogryn_grenade_box"] = {
 			ru = "Большая коробка боли",
-			["zh-tw"] = "巨量傷害盒",
-			["zh-cn"] = "巨量伤害盒",
+	 ["zh-tw"] = "巨量傷害盒",
+	 ["zh-cn"] = "巨量伤害盒",
 		},
 		--[+ BLITZ 1 - Big Friendly Rock +]-- ruof Большой дружелюбный валун
 		-- ["loc_ability_ogryn_friend_rock"] = {
@@ -2271,21 +2271,21 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 2 - Bombs Away! +]-- ruof Кидаю бомбу!
 		["loc_talent_bonebreaker_grenade_super_armor_explosion"] = {
 			ru = "Бросай бомбы!",
-			["zh-tw"] = "投彈完畢！",
-			["zh-cn"] = "投弹完毕!",
+	 ["zh-tw"] = "投彈完畢！",
+	 ["zh-cn"] = "投弹完毕!",
 		},
 		--[+ BLITZ 3 - Frag Bomb +]-- ruof Осколочная бомба
 		["loc_ability_ogryn_grenade_demolition"] = {
 			ru = "Фраг-бомба",
-			["zh-tw"] = "破片炸彈",
-			["zh-cn"] = "破片炸弹",
+	 ["zh-tw"] = "破片炸彈",
+	 ["zh-cn"] = "破片炸弹",
 		},
 	--[+ +AURA - АУРА+ +]--
 		--[+ AURA 0 - Intimidating Presence +]-- ruof Пугающее присутствие
 		["loc_talent_ogryn_2_base_4"] = {
 			ru = "Устрашающее присутствие",
-			["zh-tw"] = "威嚇氣場",
-			["zh-cn"] = "威吓气场",
+	 ["zh-tw"] = "威嚇氣場",
+	 ["zh-cn"] = "威吓气场",
 		},
 		--[+ AURA 1 - Bonebreaker's AURA +]-- ruof Аура костолома
 		-- ["loc_talent_damage_aura"] = {
@@ -2294,45 +2294,45 @@ local names_talents_blessings_templates = {
 		--[+ AURA 2 - Stay Close! +]-- ruof Не расходимся!
 		["loc_talent_ogryn_toughness_regen_aura"] = {
 			ru = "Держись рядом!",
-			["zh-tw"] = "跟緊我！",
-			["zh-cn"] = "跟紧我!",
+	 ["zh-tw"] = "跟緊我！",
+	 ["zh-cn"] = "跟紧我!",
 		},
 		--[+ AURA 3 - Coward Culling +]-- ruof Трусливые отбросы
 		["loc_talent_ogryn_damage_vs_suppressed"] = {
 			ru = "Отсев трусливых",
-			["zh-tw"] = "優勝劣汰",
-			["zh-cn"] = "优胜劣汰",
+	 ["zh-tw"] = "優勝劣汰",
+	 ["zh-cn"] = "优胜劣汰",
 		},
 	--[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 		--[+ ABILITY 0 - Bull Rush +]-- ruof Бычий натиск
 		["loc_ability_ogryn_charge"] = {
 			ru = "Рывок быка",
-			["zh-tw"] = "蠻牛衝撞",
-			["zh-cn"] = "蛮牛冲撞",
+	 ["zh-tw"] = "蠻牛衝撞",
+	 ["zh-cn"] = "蛮牛冲撞",
 		},
 		--[+ ABILITY 1 - Indomitable +]-- ruof Неукротимость
 		["loc_talent_ogryn_bull_rush_distance"] = {
 			ru = "Неукротимый",
-			["zh-tw"] = "不屈不撓",
-			["zh-cn"] = "不屈不挠",
+	 ["zh-tw"] = "不屈不撓",
+	 ["zh-cn"] = "不屈不挠",
 		},
 		--[+ ABILITY 1-1 - Stomping Boots +]-- ruof Сокрушающий топот
 		["loc_talent_ogryn_toughness_on_bull_rush"] = {
 			ru = "Топающие сапоги",
-			["zh-tw"] = "跺殺之靴",
-			["zh-cn"] = "跺杀之靴",
+	 ["zh-tw"] = "跺殺之靴",
+	 ["zh-cn"] = "跺杀之靴",
 		},
 		--[+ ABILITY 1-2 - Trample +]-- ruof Топанье
 		["loc_talent_ogryn_ability_charge_trample"] = {
 			ru = "Топот",
-			["zh-tw"] = "踐踏",
-			["zh-cn"] = "践踏",
+	 ["zh-tw"] = "踐踏",
+	 ["zh-cn"] = "践踏",
 		},
 		--[+ ABILITY 1-3 - Pulverise +]-- ruof Крошилово
 		["loc_talent_ogryn_bleed_on_bull_rush"] = {
 			ru = "Разбрызгивание",
-			["zh-tw"] = "粉碎",
-			["zh-cn"] = "粉碎",
+	 ["zh-tw"] = "粉碎",
+	 ["zh-cn"] = "粉碎",
 		},
 		--[+ ABILITY 2 - Loyal Protector +]-- ruof Верный защитник
 		-- ["loc_ability_ogryn_taunt_shout"] = {
@@ -2341,14 +2341,14 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 2-1 - Valuable Distraction +]-- ruof Ценное отвлечение
 		["loc_talent_ogryn_taunt_damage_taken_increase"] = {
 			ru = "Отвлекающий манёвр",
-			["zh-tw"] = "重要干擾",
-			["zh-cn"] = "重要干扰",
+	 ["zh-tw"] = "重要干擾",
+	 ["zh-cn"] = "重要干扰",
 		},
 		--[+ ABILITY 2-2 - Go Again +]-- ruof Еще раз!
 		["loc_talent_ogryn_taunt_stagger_cd"] = {
 			ru = "Давай по новой!",
-			["zh-tw"] = "再來",
-			["zh-cn"] = "再来!",
+	 ["zh-tw"] = "再來",
+	 ["zh-cn"] = "再来!",
 		},
 		--[+ ABILITY 2-3 - Big Lungs +]-- ruof Мощные легкие
 		-- ["loc_talent_ogryn_taunt_radius_increase"] = {
@@ -2357,57 +2357,57 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 3 - Point-Blank Barrage +]-- ruof Решительный натиск
 		["loc_talent_ogryn_combat_ability_special_ammo"] = {
 			ru = "Беспощадный обстрел в упор",
-			["zh-tw"] = "貼身火力",
-			["zh-cn"] = "贴身火力",
+	 ["zh-tw"] = "貼身火力",
+	 ["zh-cn"] = "贴身火力",
 		},
 		--[+ ABILITY 3-1 - Bullet Bravado +]-- ruof Лихая пуля
 		["loc_talent_ogryn_special_ammo_toughness"] = {
 			ru = "Бравада стрелка",
-			["zh-tw"] = "壯膽子彈",
-			["zh-cn"] = "壮胆子弹",
+	 ["zh-tw"] = "壯膽子彈",
+	 ["zh-cn"] = "壮胆子弹",
 		},
 		--[+ ABILITY 3-2 - Hail of Fire +]-- ruof Слава пламени
 		["loc_talent_ogryn_special_ammo_armor_pen"] = {
 			ru = "Град огня",
-			["zh-tw"] = "槍林彈雨",
-			["zh-cn"] = "枪林弹雨",
+	 ["zh-tw"] = "槍林彈雨",
+	 ["zh-cn"] = "枪林弹雨",
 		},
 		--[+ ABILITY 3-3 - Light 'em Up +]-- ruof Зададим жару
 		["loc_talent_ogryn_special_ammo_fire_shots"] = {
 			ru = "Задай жару",
-			["zh-tw"] = "集火射擊",
-			["zh-cn"] = "集火射击",
+	 ["zh-tw"] = "集火射擊",
+	 ["zh-cn"] = "集火射击",
 		},
 	--[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 		--[+ KEYSTONE 1 - Heavy Hitter +]-- ruof Тяжеловес
 		["loc_talent_ogryn_passive_heavy_hitter"] = {
 			ru = "Тяжёлый нападающий",
-			["zh-tw"] = "重拳出擊",
-			["zh-cn"] = "重拳出击",
+	 ["zh-tw"] = "重拳出擊",
+	 ["zh-cn"] = "重拳出击",
 		},
 		--[+ KEYSTONE 1-1 - Just Getting Started +]-- ruof Лишь начало!
 		["loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed"] = {
 			ru = "Я только начал",
-			["zh-tw"] = "熱身完畢",
-			["zh-cn"] = "热身完毕",
+	 ["zh-tw"] = "熱身完畢",
+	 ["zh-cn"] = "热身完毕",
 		},
 		--[+ KEYSTONE 1-2 - Unstoppable +]-- ruof Неудержимость
 		["loc_talent_ogryn_heavy_hitter_max_stacks_improves_toughness"] = {
 			ru = "Неудержимый",
-			["zh-tw"] = "越戰越勇",
-			["zh-cn"] = "越战越勇",
+	 ["zh-tw"] = "越戰越勇",
+	 ["zh-cn"] = "越战越勇",
 		},
 		--[+ KEYSTONE 1-3 - Brutish Momentum +]-- ruof Зверский моментум
 		["loc_talent_ogryn_heavy_hitter_light_attacks_refresh"] = {
 			ru = "Брутальный моментум",
-			["zh-tw"] = "兇蠻打擊",
-			["zh-cn"] = "凶蛮打击",
+	 ["zh-tw"] = "兇蠻打擊",
+	 ["zh-cn"] = "凶蛮打击",
 		},
 		--[+ KEYSTONE 2 - Feel No Pain +]-- ruof Неболит
 		["loc_talent_ogryn_carapace_armor"] = {
 			ru = "Неболит",
-			["zh-tw"] = "麻木",
-			["zh-cn"] = "麻木",
+	 ["zh-tw"] = "麻木",
+	 ["zh-cn"] = "麻木",
 		},
 		--[+ KEYSTONE 2-1 - Pained Outburst +]-- ruof Вспышка боли
 		-- ["loc_talent_ogryn_carapace_armor_trigger_on_zero_stacks"] = {
@@ -2420,14 +2420,14 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 2-3 - Toughest! +]-- ruof Самый выносливый!
 		["loc_talent_ogryn_carapace_armor_more_toughness"] = {
 			ru = "Стойкий!",
-			["zh-tw"] = "最堅韌！",
-			["zh-cn"] = "最坚韧!",
+	 ["zh-tw"] = "最堅韌！",
+	 ["zh-cn"] = "最坚韧!",
 		},
 		--[+ KEYSTONE 3 - Burst Limiter Override +]-- ruof Взлом ограничителя взрыва
 		["loc_talent_ogryn_chance_to_not_consume_ammo"] = {
 			ru = "Обход ограничителя очереди",
-			["zh-tw"] = "爆限超載",
-			["zh-cn"] = "爆限超载",
+	 ["zh-tw"] = "爆限超載",
+	 ["zh-cn"] = "爆限超载",
 		},
 		--[+ KEYSTONE 3-1 - Maximum Firepower +]-- ruof Максимальная огневая мощь
 		-- ["loc_talent_ogryn_leadbelcher_grant_cooldown_reduction"] = {
@@ -2436,27 +2436,27 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 3-2 - Good Shootin' +]-- ruof Хороший выстрел
 		["loc_talent_ogryn_critical_leadbelcher"] = {
 			ru = "Хорошая стрельба",
-			["zh-tw"] = "好槍法",
-			["zh-cn"] = "好枪法",
+	 ["zh-tw"] = "好槍法",
+	 ["zh-cn"] = "好枪法",
 		},
 		--[+ KEYSTONE 3-3 - More Burst Limiter Overrides! +]-- ruof Больше взлома ограничителя взрыва!
 		["loc_talent_ogryn_increased_leadbelcher_chance"] = {
 			ru = "Ещё больший обход ограничителя очереди!",
-			["zh-tw"] = "爆限大超載！",
-			["zh-cn"] = "爆限大超载!",
+	 ["zh-tw"] = "爆限大超載！",
+	 ["zh-cn"] = "爆限大超载!",
 		},
 	--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 		--[+ PASSIVE 1 - Furious +]-- ruof Разъяренный
 		["loc_talent_ogryn_damage_per_enemy_hit_previous"] = {
 			ru = "Разъярённый",
-			["zh-tw"] = "怒不可遏",
-			["zh-cn"] = "怒不可遏",
+	 ["zh-tw"] = "怒不可遏",
+	 ["zh-cn"] = "怒不可遏",
 		},
 		--[+ PASSIVE 2 - Reloaded and Ready +]-- ruof Заряжен и готов
 		["loc_talent_ogryn_ranged_damage_on_reload"] = {
 			ru = "Перезаряжен и готов",
-			["zh-tw"] = "換彈完畢",
-			["zh-cn"] = "换弹完毕",
+	 ["zh-tw"] = "換彈完畢",
+	 ["zh-cn"] = "换弹完毕",
 		},
 		--[+ PASSIVE 3 - The Best Defence +]-- ruof Лучшая защита
 		-- ["loc_talent_ogryn_toughness_on_multiple"] = {
@@ -2469,38 +2469,38 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 5 - Steady Grip +]-- ruof Крепкая хватка
 		["loc_talent_ogryn_toughness_regen_while_bracing"] = {
 			ru = "Крепкий хват",
-			["zh-tw"] = "穩定握持",
-			["zh-cn"] = "稳固握持",
+	 ["zh-tw"] = "穩定握持",
+	 ["zh-cn"] = "稳固握持",
 		},
 		--[+ PASSIVE 6 - Smash 'Em! +]-- ruof Вдарь им!
 		["loc_talent_ogryn_toughness_on_single_heavy"] = {
 			ru = "Круши их!",
-			["zh-tw"] = "碾碎它們！",
-			["zh-cn"] = "碾碎它们!",
+	 ["zh-tw"] = "碾碎它們！",
+	 ["zh-cn"] = "碾碎它们!",
 		},
 		--[+ PASSIVE 7 - Lynchpin +]-- ruof Переломный момент
 		["loc_talent_ogryn_coherency_toughness_increase"] = {
 			ru = "Опора",
-			["zh-tw"] = "關鍵人物",
-			["zh-cn"] = "关键人物",
+	 ["zh-tw"] = "關鍵人物",
+	 ["zh-cn"] = "关键人物",
 		},
 		--[+ PASSIVE 8 - Slam +]-- ruof Хлопок
 		["loc_talent_ogryn_melee_stagger"] = {
 			ru = "Оплеуха",
-			["zh-tw"] = "猛擊",
-			["zh-cn"] = "猛击",
+	 ["zh-tw"] = "猛擊",
+	 ["zh-cn"] = "猛击",
 		},
 		--[+ PASSIVE 9 - Soften Them Up +]-- ruof Упокоить их
 		["loc_talent_ogryn_targets_recieve_damage_increase_debuff"] = {
 			ru = "Ослабь их",
-			["zh-tw"] = "削弱敵人",
-			["zh-cn"] = "削弱敌人",
+	 ["zh-tw"] = "削弱敵人",
+	 ["zh-cn"] = "削弱敌人",
 		},
 		--[+ PASSIVE 10 - Crunch! +]-- ruof Хрясь!
 		["loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger"] = {
 			ru = "Хрусь!",
-			["zh-tw"] = "嘎嘎！",
-			["zh-cn"] = "嘎嘎!",
+	 ["zh-tw"] = "嘎嘎！",
+	 ["zh-cn"] = "嘎嘎!",
 		},
 		--[+ PASSIVE 11 - Batter +]-- ruof Месиво
 		-- ["loc_talent_ogryn_bleed_on_multiple_hit"] = {
@@ -2509,8 +2509,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 12 - Pacemaker +]-- ruof Водитель ритма
 		["loc_talent_ogryn_reload_speed_on_multiple_hits"] = {
 			ru = "Задающий ритм",
-			["zh-tw"] = "領跑者",
-			["zh-cn"] = "领跑者",
+	 ["zh-tw"] = "領跑者",
+	 ["zh-cn"] = "领跑者",
 		},
 		--[+ PASSIVE 13 - Ammo Stash +]-- ruof Схрон патронов
 		-- ["loc_talent_ogryn_increased_ammo"] = {
@@ -2519,26 +2519,26 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 14 - Hard Knocks +]-- ruof Мощные удары
 		["loc_talent_ogryn_big_bully_heavy_hits"] = {
 			ru = "Тяжёлые удары",
-			["zh-tw"] = "沉重打擊",
-			["zh-cn"] = "沉重打击",
+	 ["zh-tw"] = "沉重打擊",
+	 ["zh-cn"] = "沉重打击",
 		},
 		--[+ PASSIVE 15 - Too Stubborn to Die +]-- ruof Слишком упрям, чтобы умереть
 		["loc_talent_ogryn_toughness_gain_increase_on_low_health"] = {
 			ru = "Слишком упёртый, чтобы умереть",
-			["zh-tw"] = "堅韌不屈",
-			["zh-cn"] = "坚韧不屈",
+	 ["zh-tw"] = "堅韌不屈",
+	 ["zh-cn"] = "坚韧不屈",
 		},
 		--[+ PASSIVE 16 - Delight in Destruction +]-- ruof Наслаждение разрушением
 		["loc_talent_ogryn_damage_reduction_per_bleed"] = {
 			ru = "Упоение в разрушении",
-			["zh-tw"] = "毀滅之樂",
-			["zh-cn"] = "毁灭之乐",
+	 ["zh-tw"] = "毀滅之樂",
+	 ["zh-cn"] = "毁灭之乐",
 		},
 		--[+ PASSIVE 17 - Attention Seeker +]-- ruof Внимание искателя
 		["loc_talent_ranged_enemies_taunt"] = {
 			ru = "Провокатор",
-			["zh-tw"] = "渴求關注",
-			["zh-cn"] = "渴求关注",
+	 ["zh-tw"] = "渴求關注",
+	 ["zh-cn"] = "渴求关注",
 		},
 		--[+ PASSIVE 18 - Get Stuck In +]-- ruof Очертя голову
 		-- ["loc_talent_ogryn_bull_rush_movement_speed"] = {
@@ -2547,14 +2547,14 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 19 - Towering Presence +]-- ruof Выдающееся присутствие
 		["loc_talent_ogryn_bigger_coherency_radius"] = {
 			ru = "Величественное присутствие",
-			["zh-tw"] = "卓越氣場",
-			["zh-cn"] = "卓越气场",
+	 ["zh-tw"] = "卓越氣場",
+	 ["zh-cn"] = "卓越气场",
 		},
 		--[+ PASSIVE 20 - Unstoppable Momentum +]-- ruof Неудержимый моментум
 		["loc_talent_ogryn_ranged_kill_grant_movement_speed"] = {
 			ru = "Неудержимый импульс",
-			["zh-tw"] = "勢不可擋",
-			["zh-cn"] = "势不可挡",
+	 ["zh-tw"] = "勢不可擋",
+	 ["zh-cn"] = "势不可挡",
 		},
 		--[+ PASSIVE 21 - No Stopping Me! +]-- ruof Меня не остановить!
 		-- ["loc_talent_ogryn_windup_is_uninterruptible"] = {
@@ -2563,8 +2563,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 22 - Dominate +]-- ruof Господство
 		["loc_talent_ogryn_rending_on_elite_kills"] = {
 			ru = "Доминируй",
-			["zh-tw"] = "主宰",
-			["zh-cn"] = "主宰",
+	 ["zh-tw"] = "主宰",
+	 ["zh-cn"] = "主宰",
 		},
 		--[+ PASSIVE 23 - Payback Time +]-- ruof Время расплаты
 		-- ["loc_talent_ogryn_revenge_damage"] = {
@@ -2597,8 +2597,8 @@ local names_talents_blessings_templates = {
 		-- [+ PASSIVE 30 - Mobile Emplacement +]-- ruof Передвижной окоп
 		["loc_talent_ogryn_bracing_reduces_damage_taken"] = {
 			ru = "Мобильная огневая точка",
-			["zh-tw"] = "機動部署",
-			["zh-cn"] = "机动部署",
+	 ["zh-tw"] = "機動部署",
+	 ["zh-cn"] = "机动部署",
 		},
 
 
@@ -2607,8 +2607,8 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 0 - Arbites Grenade +]-- ruof Граната Арбитрес
 		["loc_talent_ability_adamant_grenade"] = {
 			ru = "Граната арбитрес",
-			["zh-tw"] = "法務官手榴彈",
-			["zh-cn"] = "法务官手榴弹",
+	 ["zh-tw"] = "法務官手榴彈",
+	 ["zh-cn"] = "法务官手榴弹",
 		},
 		--[+ BLITZ 1 - Remote Detonation +]-- ruof Дистанционный подрыв
 		-- ["loc_talent_ability_detonate"] = {
@@ -2617,14 +2617,14 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 2 - Voltaic Shock Mine +]-- ruof Электрошоковая мина
 		["loc_talent_ability_shock_mine"] = {
 			ru = "Вольтаическая шоковая мина",
-			["zh-tw"] = "電能地雷",
-			["zh-cn"] = "电能地雷",
+	 ["zh-tw"] = "電能地雷",
+	 ["zh-cn"] = "电能地雷",
 		},
 		--[+ BLITZ 3 - Arbites Grenade Improved +]-- ruof Граната Арбитрес
 		["loc_talent_ability_adamant_grenade_improved"] = {
 			ru = "Граната арбитрес",
-			["zh-tw"] = "法務官手榴彈",
-			["zh-cn"] = "法务官手榴弹",
+	 ["zh-tw"] = "法務官手榴彈",
+	 ["zh-cn"] = "法务官手榴弹",
 		},
 	--[+ +AURA - АУРА+ +]--
 		--[+ AURA 0-1 - Part of the Squad +]-- ruof Часть отряда
@@ -2638,8 +2638,8 @@ local names_talents_blessings_templates = {
 		--[+ AURA 3 - Breaking Dissent +]-- ruof Преодоление разногласий
 		["loc_talent_adamant_damage_vs_staggered_aura"] = {
 			ru = "Подавление инакомыслия",
-			["zh-tw"] = "鎮壓異己",
-			["zh-cn"] = "镇压异己",
+	 ["zh-tw"] = "鎮壓異己",
+	 ["zh-cn"] = "镇压异己",
 		},
 	--[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 		--[+ ABILITY 0, 2 - Nuncio-Aquila +]-- ruof Нунцио-аквила
@@ -2649,14 +2649,14 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 1 - Castigator's Stance +]-- ruof Стойка бичевателя
 		["loc_talent_adamant_stance_ability_name"] = {
 			ru = "Стойка карателя",
-			["zh-tw"] = "懲戒者姿態",
-			["zh-cn"] = "惩戒者姿态",
+	 ["zh-tw"] = "懲戒者姿態",
+	 ["zh-cn"] = "惩戒者姿态",
 		},
 		--[+ ABILITY 1-1 - Blessed Armament +]-- ruof Благословенное орудие
 		["loc_talent_adamant_stance_ranged_kills_transfer_ammo"] = {
 			ru = "Благословенное вооружение",
-			["zh-tw"] = "蒙福軍武",
-			["zh-cn"] = "蒙福军武",
+	 ["zh-tw"] = "蒙福軍武",
+	 ["zh-cn"] = "蒙福军武",
 		},
 		--[+ ABILITY 1-2 - Writ of Execution +]-- ruof Ордер на казнь
 		-- ["loc_talent_adamant_stance_elite_kills_stack_damage"] = {
@@ -2669,26 +2669,26 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 2-1 - Inspiring Recitation +]-- ruof Вдохновляющая декламация
 		["loc_talent_adamant_drone_buff_talent"] = {
 			ru = "Воодушевляющая проповедь",
-			["zh-tw"] = "振奮朗誦",
-			["zh-cn"] = "振奋朗诵",
+	 ["zh-tw"] = "振奮朗誦",
+	 ["zh-cn"] = "振奋朗诵",
 		},
 		--[+ ABILITY 2-2 - Fear of Justice +]-- ruof Страх правосудия
 		["loc_talent_adamant_drone_debuff_talent"] = {
 			ru = "Страх перед Правосудием",
-			["zh-tw"] = "畏怯正義",
-			["zh-cn"] = "畏怯正义",
+	 ["zh-tw"] = "畏怯正義",
+	 ["zh-cn"] = "畏怯正义",
 		},
 		--[+ ABILITY 3 - Break the Line +]-- ruof Прорыв фронта
 		["loc_talent_adamant_charge_ability_name"] = {
 			ru = "Прорыв строя",
-			["zh-tw"] = "突破重圍",
-			["zh-cn"] = "突破重围",
+	 ["zh-tw"] = "突破重圍",
+	 ["zh-cn"] = "突破重围",
 		},
 		--[+ ABILITY 3-1 - Commendation from Condemnation +]-- ruof Не наказали - значит, похвалили
 		["loc_talent_adamant_charge_toughness_name"] = {
 			ru = "Похвала за осуждение",
-			["zh-tw"] = "懲惡揚善",
-			["zh-cn"] = "惩恶扬善",
+	 ["zh-tw"] = "懲惡揚善",
+	 ["zh-cn"] = "惩恶扬善",
 		},
 		--[+ ABILITY 3-2 - Targeted Brutality +]-- ruof Направленная жестокость
 		-- ["loc_talent_adamant_charge_cooldown_name"] = {
@@ -2697,14 +2697,14 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 3-3 - Kill Order +]-- ruof Приказ убивать
 		["loc_talent_adamant_dog_damage_after_ability"] = {
 			ru = "Фас!",
-			["zh-tw"] = "殺戮命令",
-			["zh-cn"] = "杀戮命令",
+	 ["zh-tw"] = "殺戮命令",
+	 ["zh-cn"] = "杀戮命令",
 		},
 		--[+ ABILITY 3-4 - Engage +]-- ruof К бою
 		["loc_talent_adamant_charge_longer_distance"] = {
 			ru = "Дальний прорыв",
-			["zh-tw"] = "交鋒",
-			["zh-cn"] = "交锋",
+	 ["zh-tw"] = "交鋒",
+	 ["zh-cn"] = "交锋",
 		},
 	--[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 		--[+ KEYSTONE 1 - Unleashed Brutality +]-- ruof Высвобожденнная жестокость
@@ -2722,8 +2722,8 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 4 - Execution Order +]-- ruof Приказ казнить
 		["loc_talent_adamant_exterminator"] = {
 			ru = "Метка возмездия",
-			["zh-tw"] = "處刑命令",
-			["zh-cn"] = "处刑命令",
+	 ["zh-tw"] = "處刑命令",
+	 ["zh-cn"] = "处刑命令",
 		},
 		--[+ KEYSTONE 4-1 - Efficient Killer +]-- ruof Эффективный убийца
 		-- ["loc_talent_adamant_exterminator_toughness"] = {
@@ -2740,49 +2740,49 @@ local names_talents_blessings_templates = {
 		-- [+ KEYSTONE 4-4 - Keeping Protocol +]-- ruof Поддержание протокола
 		["loc_talent_execution_order_perma_buff"] = {
 			ru = "Соблюдение протокола",
-			["zh-tw"] = "殺戮協議",
-			["zh-cn"] = "杀戮协议",
+	 ["zh-tw"] = "殺戮協議",
+	 ["zh-cn"] = "杀戮协议",
 		},
 		--[+ KEYSTONE 4-5 - Not Far Behind +]-- ruof Не так далеко позади
 		["loc_talent_adamant_pinning_dog_bonus_moving_towards"] = {
 			ru = "В зоне досягаемости",
-			["zh-tw"] = "不落人後",
-			["zh-cn"] = "不弱人后",
+	 ["zh-tw"] = "不落人後",
+	 ["zh-cn"] = "不弱人后",
 		},
 		--[+ KEYSTONE 5 - Terminus Warrant +]-- ruof Распоряжение «Терминус»
 		["loc_talent_adamant_bullet_rain"] = {
 			ru = "Ордер Терминус",
-			["zh-tw"] = "終點站令狀",
-			["zh-cn"] = "终点站令状",
+	 ["zh-tw"] = "終點站令狀",
+	 ["zh-cn"] = "终点站令状",
 		},
 		--[+ KEYSTONE 5-1 - Dispense Justice +]-- ruof Охват правосудия
 		["loc_talent_adamant_bullet_rain_fire_rate"] = {
 			ru = "Исполнение приговора",
-			["zh-tw"] = "伸張正義",
+	 ["zh-tw"] = "伸張正義",
 		},
 		--[+ KEYSTONE 5-2 - Obstinate +]-- ruof Упрямый
 		["loc_talent_adamant_bullet_rain_tdr"] = {
 			ru = "Непреклонный",
-			["zh-tw"] = "能屈能伸",
-			["zh-cn"] = "能屈能伸",
+	 ["zh-tw"] = "能屈能伸",
+	 ["zh-cn"] = "能屈能伸",
 		},
 		--[+ KEYSTONE 5-3 - Terminal Decree +]-- ruof Окончательное постановление
 		["loc_talent_adamant_bullet_rain_toughness"] = {
 			ru = "Последний приговор",
-			["zh-tw"] = "終端律令",
-			["zh-cn"] = "终端律令",
+	 ["zh-tw"] = "終端律令",
+	 ["zh-cn"] = "终端律令",
 		},
 		--[+ KEYSTONE 5-4 - Writ of Judgement +]-- ruof Судебное предписание
 		["loc_talent_adamant_bullet_rain_ability"] = {
 			ru = "Судебный ордер",
-			["zh-tw"] = "審判之旨",
-			["zh-cn"] = "审判之旨",
+	 ["zh-tw"] = "審判之旨",
+	 ["zh-cn"] = "审判之旨",
 		},
 		--[+ KEYSTONE 6 - Forceful +]-- ruof Напористый
 		["loc_talent_adamant_forceful"] = {
 			ru = "Неудержимый",
-			["zh-tw"] = "堅定不移",
-			["zh-cn"] = "坚定不移",
+	 ["zh-tw"] = "堅定不移",
+	 ["zh-cn"] = "坚定不移",
 		},
 		--[+ KEYSTONE 6-1 - Adamant Will +]-- ruof Адамантовая воля
 		-- ["loc_talent_adamant_forceful_stamina_block_and_push_alt"] = {
@@ -2799,39 +2799,39 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 6-4 - Arbites Vigilant +]-- ruof Бдительность Арбитрес
 		["loc_talent_adamant_forceful_refresh_on_ability"] = {
 			ru = "Бдительный арбитрес",
-			["zh-tw"] = "法務官警覺",
-			["zh-cn"] = "法务官警觉",
+	 ["zh-tw"] = "法務官警覺",
+	 ["zh-cn"] = "法务官警觉",
 		},
 		--[+ KEYSTONE 6-5 - Judicial Force +]-- ruof Судебная сила
 		["loc_talent_adamant_forceful_melee"] = {
 			ru = "Сила Правосудия",
-			["zh-tw"] = "審判之力",
-			["zh-cn"] = "审判之力",
+	 ["zh-tw"] = "審判之力",
+	 ["zh-cn"] = "审判之力",
 		},
 	--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 		--[+ PASSIVE 1 - No Escape +]-- ruof Не сбежишь
 		["loc_talent_adamant_elite_special_kills_offensive_boost"] = {
 			ru = "Не уйдёшь",
-			["zh-tw"] = "無處可逃",
-			["zh-cn"] = "无处可逃",
+	 ["zh-tw"] = "無處可逃",
+	 ["zh-cn"] = "无处可逃",
 		},
 		--[+ PASSIVE 2 - Withering Fire +]-- ruof Изнуряющий огонь
 		["loc_talent_adamant_damage_after_reloading"] = {
 			ru = "Истребляющий огонь",
-			["zh-tw"] = "凋零烈焰",
-			["zh-cn"] = "凋零烈焰",
+	 ["zh-tw"] = "凋零烈焰",
+	 ["zh-cn"] = "凋零烈焰",
 		},
 		--[+ PASSIVE 3 - Hammer of Judgement +]-- ruof Молот правосудия
 		["loc_talent_adamant_multiple_hits_attack_speed"] = {
 			ru = "Молот Правосудия",
-			["zh-tw"] = "審判之錘",
-			["zh-cn"] = "审判之锤",
+	 ["zh-tw"] = "審判之錘",
+	 ["zh-cn"] = "审判之锤",
 		},
 		--[+ PASSIVE 4 - Razor-Jaw Augment +]-- ruof Аугментация челюстей: бритва
 		["loc_talent_adamant_dog_pounces_bleed_nearby"] = {
 			ru = "Аугментация челюсти-бритвы",
-			["zh-tw"] = "重顎獠牙",
-			["zh-cn"] = "重颚獠牙",
+	 ["zh-tw"] = "重顎獠牙",
+	 ["zh-cn"] = "重颚獠牙",
 		},
 		--[+ PASSIVE 5 - Target Neutralised +]-- ruof Цель нейтрализована
 		-- ["loc_talent_adamant_elite_special_kills_replenish_toughness"] = {
@@ -2840,8 +2840,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 6 - Up Close +]-- ruof Лицом к лицу
 		["loc_talent_adamant_close_kills_restore_toughness"] = {
 			ru = "В упор",
-			["zh-tw"] = "近在眉睫",
-			["zh-cn"] = "近在眉睫",
+	 ["zh-tw"] = "近在眉睫",
+	 ["zh-cn"] = "近在眉睫",
 		},
 		--[+ PASSIVE 7 - Force of Will +]-- ruof Сила воли
 		-- ["loc_talent_adamant_staggers_replenish_toughness"] = {
@@ -2858,50 +2858,50 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 10 - Walk It Off +]-- ruof Остынь
 		["loc_talent_adamant_stamina_regens_toughness"] = {
 			ru = "Заживёт по ходу",
-			["zh-tw"] = "走一走治百病",
-			["zh-cn"] = "走一走治百病",
+	 ["zh-tw"] = "走一走治百病",
+	 ["zh-cn"] = "走一走治百病",
 		},
 		--[+ PASSIVE 11 - Shield Plates +]-- ruof Пластинчатые щиты
 		["loc_talent_adamant_shield_plates"] = {
 			ru = "Щитовые пластины",
-			["zh-tw"] = "盾型裝甲",
-			["zh-cn"] = "盾型装甲",
+	 ["zh-tw"] = "盾型裝甲",
+	 ["zh-cn"] = "盾型装甲",
 		},
 		--[+ PASSIVE 12 - Arbitrator Armour +]-- ruof Броня Арбитратора
 		["loc_talent_adamant_armor"] = {
 			ru = "Броня арбитратора",
-			["zh-tw"] = "法務官之鎧",
-			["zh-cn"] = "法务官之铠",
+	 ["zh-tw"] = "法務官之鎧",
+	 ["zh-cn"] = "法务官之铠",
 		},
 		--[+ PASSIVE 13 - Voltaic Mandibles Augment +]-- ruof Аугментация челюстей: электрошок
 		["loc_talent_adamant_dog_attacks_electrocute"] = {
 			ru = "Аугментация вольтаические жвала",
-			["zh-tw"] = "電能獠牙",
-			["zh-cn"] = "电能獠牙",
+	 ["zh-tw"] = "電能獠牙",
+	 ["zh-cn"] = "电能獠牙",
 		},
 		--[+ PASSIVE 14 - Ammo Belt +]-- ruof Поясная разгрузка
 		["loc_talent_adamant_ammo_belt"] = {
 			ru = "Патронтаж",
-			["zh-tw"] = "彈藥腰帶",
-			["zh-cn"] = "弹药腰带",
+	 ["zh-tw"] = "彈藥腰帶",
+	 ["zh-cn"] = "弹药腰带",
 		},
 		--[+ PASSIVE 15 - Concussive +]-- ruof Сотрясение
 		["loc_talent_adamant_melee_weakspot_hits_count_as_stagger"] = {
 			ru = "Ошеломление",
-			["zh-tw"] = "震盪攻擊",
-			["zh-cn"] = "震荡攻击",
+	 ["zh-tw"] = "震盪攻擊",
+	 ["zh-cn"] = "震荡攻击",
 		},
 		--[+ PASSIVE 16 - Canine Morale +]-- ruof Собачий настрой
 		["loc_talent_adamant_pinning_dog_kills_buff_allies"] = {
 			ru = "Боевой настрой пса",
-			["zh-tw"] = "猛犬氣場",
-			["zh-cn"] = "猛犬气场",
+	 ["zh-tw"] = "猛犬氣場",
+	 ["zh-cn"] = "猛犬气场",
 		},
 		--[+ PASSIVE 17 - Imposing Force +]-- ruof Впечатляющая сила
 		["loc_talent_adamant_damage_reduction_after_elite_kill"] = {
 			ru = "Давящая мощь",
-			["zh-tw"] = "勢如破竹",
-			["zh-cn"] = "势如破竹",
+	 ["zh-tw"] = "勢如破竹",
+	 ["zh-cn"] = "势如破竹",
 		},
 		--[+ PASSIVE 18 - Suppression Force +]-- ruof Сила подавления
 		-- ["loc_talent_adamant_staggered_enemies_deal_less_damage"] = {
@@ -2914,8 +2914,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 20 - Plasteel Plates +]-- ruof Пластины из пластали
 		["loc_talent_adamant_plasteel_plates"] = {
 			ru = "Пласталевые пластины",
-			["zh-tw"] = "塑鋼裝甲",
-			["zh-cn"] = "塑钢装甲",
+	 ["zh-tw"] = "塑鋼裝甲",
+	 ["zh-cn"] = "塑钢装甲",
 		},
 		--[+ PASSIVE 21 - Arbites Revelatum +]-- ruof Арбитрес Ревелатум
 		-- ["loc_talent_adamant_dodge_grants_damage"] = {
@@ -2928,26 +2928,26 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 23 - Hold the Line +]-- ruof Держать строй
 		["loc_talent_adamant_staggers_reduce_damage_taken"] = {
 			ru = "Держи строй",
-			["zh-tw"] = "堅守陣線",
-			["zh-cn"] = "坚守阵线",
+	 ["zh-tw"] = "堅守陣線",
+	 ["zh-cn"] = "坚守阵线",
 		},
 		--[+ PASSIVE 24 - Judicious Efficiency +]-- ruof Разумная эффективность
 		["loc_talent_adamant_elite_special_kills_reload_speed"] = {
 			ru = "Судейская эффективность",
-			["zh-tw"] = "恰如其分",
-			["zh-cn"] = "恰如其分",
+	 ["zh-tw"] = "恰如其分",
+	 ["zh-cn"] = "恰如其分",
 		},
 		--[+ PASSIVE 25 - Rapid Movement +]-- ruof Быстрое перемещение
 		["loc_talent_adamant_sprinting_sliding"] = {
 			ru = "Быстрые движения",
-			["zh-tw"] = "迅疾走位",
-			["zh-cn"] = "迅疾走位",
+	 ["zh-tw"] = "迅疾走位",
+	 ["zh-cn"] = "迅疾走位",
 		},
 		--[+ PASSIVE 26 - Rebreather +]-- ruof Противогаз
 		["loc_talent_adamant_rebreather"] = {
 			ru = "Ребризер",
-			["zh-tw"] = "呼吸器",
-			["zh-cn"] = "呼吸器",
+	 ["zh-tw"] = "呼吸器",
+	 ["zh-cn"] = "呼吸器",
 		},
 		--[+ PASSIVE 27 - Cower, Miscreants! +]-- ruof Трепещите, негодяи!
 		-- ["loc_talent_adamant_damage_vs_suppressed"] = {
@@ -2968,20 +2968,20 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 31 - Street Smarts +]-- ruof Законы улицы
 		["loc_talent_adamant_dodge_improvement"] = {
 			ru = "Уличная хватка",
-			["zh-tw"] = "街頭妙招",
-			["zh-cn"] = "街头妙招",
+	 ["zh-tw"] = "街頭妙招",
+	 ["zh-cn"] = "街头妙招",
 		},
 		--[+ PASSIVE 32 - Drive them Back +]-- ruof Отбрось их
 		["loc_talent_adamant_cleave_after_push"] = {
 			ru = "Натиск",
-			["zh-tw"] = "兵敗如山倒",
-			["zh-cn"] = "兵败如山倒",
+	 ["zh-tw"] = "兵敗如山倒",
+	 ["zh-cn"] = "兵败如山倒",
 		},
 		--[+ PASSIVE 33 - Target Selection +]-- ruof Выбор цели
 		["loc_talent_adamant_pinning_dog_elite_damage"] = {
 			ru = "Выбор целей",
-			["zh-tw"] = "篩選目標",
-			["zh-cn"] = "筛选目标",
+	 ["zh-tw"] = "篩選目標",
+	 ["zh-cn"] = "筛选目标",
 		},
 		--[+ PASSIVE 34 - Soulguilt Scan +]-- ruof Поиск виновных душ
 		-- ["loc_talent_adamant_stacking_weakspot_strength"] = {
@@ -3010,8 +3010,8 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 40 - Prosecution Blow +]-- ruof Обвиняющий удар
 		["loc_talent_adamant_crits_rend"] = {
 			ru = "Карающий удар",
-			["zh-tw"] = "制裁重擊",
-			["zh-cn"] = "制裁重击",
+	 ["zh-tw"] = "制裁重擊",
+	 ["zh-cn"] = "制裁重击",
 		},
 		--[+ PASSIVE 41 - March +]-- ruof Марш
 		-- ["loc_talent_adamant_movement_speed_on_block"] = {
@@ -3020,20 +3020,20 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 42 - Monstrosity Hunter +]-- ruof Охота на чудовищ
 		["loc_talent_adamant_monster_hunter"] = {
 			ru = "Охотник на чудовищ",
-			["zh-tw"] = "巨獸獵人",
-			["zh-cn"] = "巨兽猎人",
+	 ["zh-tw"] = "巨獸獵人",
+	 ["zh-cn"] = "巨兽猎人",
 		},
 		--[+ PASSIVE 43 - Strike Down +]-- ruof Сбивающий удар
 		["loc_talent_adamant_melee_attacks_on_staggered_rend"] = {
 			ru = "Сокрушительный удар",
-			["zh-tw"] = "毀滅打擊",
-			["zh-cn"] = "毁灭打击",
+	 ["zh-tw"] = "毀滅打擊",
+	 ["zh-cn"] = "毁灭打击",
 		},
 		--[+ PASSIVE 44 - True Grit +]-- ruof Истинная выдержка
 		["loc_talent_adamant_limit_dmg_taken_from_hits"] = {
 			ru = "Настоящая закалка",
-			["zh-tw"] = "堅忍不拔",
-			["zh-cn"] = "坚忍不拔",
+	 ["zh-tw"] = "堅忍不拔",
+	 ["zh-cn"] = "坚忍不拔",
 		},
 
 

@@ -124,20 +124,7 @@ local function add_localisation_entry(localizations, type_name)
 end
 
 local localizations = {
-	mod_name = {
-		en = "{#color(192, 255, 26)} Enhanced Descriptions{#reset()}",
-		ru = "{#color(192, 255, 26)} Улучшенные описания{#reset()}",
-		fr = "{#color(192, 255, 26)} Descriptions améliorées{#reset()}",
- ["zh-tw"] = "{#color(192, 255, 26)} 強化描述{#reset()}",
- ["zh-cn"] = "{#color(192, 255, 26)} 描述增强{#reset()}",
-		de = "{#color(192, 255, 26)} Erweiterte Beschreibungen{#reset()}",
-		it = "{#color(192, 255, 26)} Descrizioni Migliorate{#reset()}",
-		ja = "{#color(192, 255, 26)} 詳細な説明{#reset()}",
-		ko = "{#color(192, 255, 26)} 향상된 설명{#reset()}",
-		pl = "{#color(192, 255, 26)} Rozszerzone Opisy{#reset()}",
- ["pt-br"] = "{#color(192, 255, 26)} Descrições Aprimoradas{#reset()}",
-		es = "{#color(192, 255, 26)} Descripciones Mejoradas{#reset()}",
-	},
+	mod_name = {}, -- Mod name (will be filled dynamically at the end)
 	mod_description = {
 		en = "Improves readability by highlighting numbers and keywords in descriptions of Talents, Blessings, Penances, Curios, and other menu texts. Also fixes localizations and adds clarity to some descriptions.",
 		ru = "Enhanced Descriptions - Улучшает читаемость за счёт выделения чисел и ключевых слов в описаниях Талантов, Благословений, Искуплений, Реликвий и других текстах меню. Также вносит исправления в локализации и добавляет ясности в некоторые описания.",
@@ -1602,5 +1589,80 @@ end
 
 -- Add color names localizations
 add_color_localizations(localizations)
+
+-- ============================================================
+-- GRADIENT GENERATION FOR MOD NAME
+-- ============================================================
+
+local function generate_gradient(text, colors)
+	if not text or text == "" then return "" end
+	local num_colors = #colors
+	if num_colors < 2 then return text end
+
+	local chars = {}
+	for ch in string.gmatch(text, "([%z\1-\127\194-\244][\128-\191]*)") do
+		if ch ~= " " then
+			table.insert(chars, ch)
+		end
+	end
+	local n = #chars
+	if n == 0 then return text end
+
+	local result = {}
+	local idx = 0
+	local pos = 1
+	while pos <= #text do
+		local ch = string.match(text, "([%z\1-\127\194-\244][\128-\191]*)", pos)
+		if not ch then break end
+		pos = pos + #ch
+
+		if ch == " " then
+			table.insert(result, " ")
+		else
+			local t = idx / (n - 1)
+			local r, g, b
+			if num_colors == 2 then
+				local sr, sg, sb = colors[1][1], colors[1][2], colors[1][3]
+				local er, eg, eb = colors[2][1], colors[2][2], colors[2][3]
+				r = math.floor(sr + (er - sr) * t + 0.5)
+				g = math.floor(sg + (eg - sg) * t + 0.5)
+				b = math.floor(sb + (eb - sb) * t + 0.5)
+			end
+			table.insert(result, string.format("{#color(%d,%d,%d)}%s", r, g, b, ch))
+			idx = idx + 1
+		end
+	end
+	return table.concat(result) .. "{#reset()}"
+end
+
+local gradient_colors = {
+	{192, 255, 26 },	-- beginning
+	{ 26, 255, 26},		-- end
+}
+
+local icon = ""
+local prefix = "{#color(192, 255, 26)}" .. icon .. " " -- icon color
+
+local mod_name_texts = {
+		en = "Enhanced Descriptions",
+		ru = "Улучшенные описания",
+		fr = "Descriptions améliorées",
+ ["zh-tw"] = "強化描述",
+ ["zh-cn"] = "描述增强",
+		de = "Erweiterte Beschreibungen",
+		it = "Descrizioni Migliorate",
+		ja = "詳細な説明",
+		ko = "향상된 설명",
+		pl = "Rozszerzone Opisy",
+ ["pt-br"] = "Descrições Aprimoradas",
+		es = "Descripciones Mejoradas",
+}
+
+for lang, text in pairs(mod_name_texts) do
+	if text and text ~= "" then
+		local gradient_text = generate_gradient(text, gradient_colors)
+		localizations.mod_name[lang] = prefix .. gradient_text
+	end
+end
 
 return localizations
