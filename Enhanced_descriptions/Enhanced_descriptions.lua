@@ -5,7 +5,7 @@
 -- Enhanced_descriptions.lua
 
 local mod = get_mod("Enhanced_descriptions")
-local VERSION = "7.0.0b"
+local VERSION = "6.5.0b"
 
 -- <<<CODE_REVEALER>>>
 -- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_trait_bespoke_increased_melee_power_on_weapon_special_follow_up_hits_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
@@ -345,11 +345,6 @@ local function cleanup_old_settings()
 end
 
 -- МИГРАЦИЯ СТАРЫХ ЦВЕТОВ (строки "red" → ARGB {A,R,G,B})
--- DMF при смене типа настройки НЕ конвертирует сохранённые значения. У игроков
--- со старыми сейвами в настройках лежит строка "red", а новый color-picker
--- ожидает таблицу — это приводит к крашу при открытии UI настроек.
--- Проходимся по всем color-настройкам, конвертируем строки в {A,R,G,B}.
--- Идемпотентно: после первого запуска значения уже таблицы.
 local function migrate_legacy_colors()
 	local ids = mod._color_setting_ids
 	if not ids then

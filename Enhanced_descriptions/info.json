@@ -1,0 +1,68 @@
+{
+	"name": "Enhanced Descriptions",
+	"description": "Improves readability by highlighting numbers and keywords in descriptions of Talents, Blessings, Penances, Curios, and other menu texts. Also fixes localizations and adds clarity to some descriptions.",
+	"version": "6.5.0b",
+	"author": "xsSplater",
+	"homepage": "https://www.nexusmods.com/warhammer40kdarktide/mods/210",
+	"source": "https://github.com/xsSplater/Darktide_Enhanced_Descriptions_BETA",
+	"funding": {
+		"boosty": "https://boosty.to/xssplater",
+		"donationalerts": "https://www.donationalerts.com/r/xssplater"
+	},
+	"nexusId": "210",
+	"dependencies": {
+		"required": [],
+		"self_after": [],
+		"self_before": []
+	},
+	"localization": {
+		"de": {
+			"name": "Erweiterte Beschreibungen",
+			"description": "Verbessert die Lesbarkeit durch Hervorhebung von Zahlen und Schlüsselwörtern in Beschreibungen von Talenten, Segnungen, Bußen, Kuriositäten und anderen Menütexten. Korrigiert außerdem Lokalisierungsfehler und fügt einigen Beschreibungen mehr Klarheit hinzu."
+		},
+		"en": {
+			"name": "Enhanced Descriptions",
+			"description": "Improves readability by highlighting numbers and keywords in descriptions of Talents, Blessings, Penances, Curios, and other menu texts. Also fixes localizations and adds clarity to some descriptions."
+		},
+		"es": {
+			"name": "Descripciones Mejoradas",
+			"description": "Mejora la legibilidad resaltando números y palabras clave en descripciones de Talentos, Bendiciones, Penitencias, Curiosidades y otros textos de menú. También corrige localizaciones y añade claridad a algunas descripciones."
+		},
+		"fr": {
+			"name": "Descriptions améliorées",
+			"description": "Améliore la lisibilité en mettant en évidence les nombres et mots-clés dans les descriptions des Talents, Bénédictions, Pénitences, Curiosités et autres textes de menu. Corrige également les localisations et ajoute de la clarté à certaines descriptions."
+		},
+		"it": {
+			"name": "Descrizioni Migliorate",
+			"description": "Migliora la leggibilità evidenziando numeri e parole chiave nelle descrizioni di Talenti, Benedizioni, Penitenze, Curiosità e altri testi di menu. Corregge anche le localizzazioni e aggiunge chiarezza ad alcune descrizioni."
+		},
+		"ja": {
+			"name": "詳細な説明",
+			"description": "タレント、祝福、苦行、収集品、その他のメニューテキストの説明内の数値とキーワードを強調表示することで、読みやすさを向上させます。また、ローカライズを修正し、一部の説明に明確さを追加します。"
+		},
+		"ko": {
+			"name": "향상된 설명",
+			"description": "특성, 축복, 참회, 골동품 및 기타 메뉴 텍스트 설명에서 숫자와 키워드를 강조하여 가독성을 향상시킵니다. 또한 현지화를 수정하고 일부 설명에 명확성을 더합니다."
+		},
+		"pl": {
+			"name": "Rozszerzone Opisy",
+			"description": "Poprawia czytelność poprzez wyróżnianie liczb i słów kluczowych w opisach Talentów, Błogosławieństw, Pokut, Kuriozów i innych tekstach menu. Również poprawia lokalizacje i dodaje przejrzystości do niektórych opisów."
+		},
+		"pt-br": {
+			"name": "Descrições Aprimoradas",
+			"description": "Melhora a legibilidade destacando números e palavras-chave nas descrições de Talentos, Bênçãos, Penitências, Curiosidades e outros textos de menu. Também corrige localizações e adiciona clareza a algumas descrições."
+		},
+		"ru": {
+			"name": "Улучшенные описания",
+			"description": "Enhanced Descriptions - Улучшает читаемость за счёт выделения чисел и ключевых слов в описаниях Талантов, Благословений, Искуплений, Реликвий и других текстах меню. Также вносит исправления в локализации и добавляет ясности в некоторые описания."
+		},
+		"zh-cn": {
+			"name": "描述增强",
+			"description": "通过高亮显示天赋、祝福、苦修、珍品和其他菜单文本描述中的数字和关键词来提升可读性。同时修复本地化问题并为部分描述增加清晰度。"
+		},
+		"zh-tw": {
+			"name": "強化描述",
+			"description": "透過醒目標示天賦、祝福、苦修、珍品及其他選單文字描述中的數值與關鍵字，提升可讀性。此外也會修正翻譯，並讓部分描述更清楚。"
+		}
+	}
+}
