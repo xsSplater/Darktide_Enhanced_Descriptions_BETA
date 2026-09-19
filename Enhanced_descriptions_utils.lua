@@ -1,6 +1,8 @@
 ---@diagnostic disable: undefined-global
 -- Общая библиотека утилит для всех модулей Enhanced Descriptions
 
+-- Enhanced_descriptions_utils.lua
+
 local mod = get_mod("Enhanced_descriptions")
 
 -- Global caches for colors and numbers - Глобальные кэши для цветов и цифр
@@ -234,5 +236,73 @@ local Utils = {
 	DOT_RED = DOT_RED,
 	DOT_GREEN = DOT_GREEN,
 }
+
+-- ============================================================================
+-- Color helpers (for type="color" settings; legacy string values also accepted)
+-- ============================================================================
+
+-- Возвращает ARGB таблицу {A, R, G, B} (0..255) из настройки.
+-- Поддерживает:
+--	 * новый формат		 — таблица {A, R, G, B} (0..255) от DMF type="color"
+--	 * legacy (старые сейвы) — строка "red", "online_green", ...
+--	 * Vector4/Color userdata — через normalize
+-- Если ничего не подходит — возвращает fallback_color_name (default "white")
+-- или чистый белый.
+local function get_argb_from_setting(setting_id, fallback_color_name)
+	local value = mod:get(setting_id)
+
+	-- Новый формат: таблица {A, R, G, B} (0..255)
+	if type(value) == "table" and #value >= 4 then
+		return value
+	end
+
+	-- Userdata (Vector4/Color) — разворачиваем через ColorUtils (если доступно)
+	if type(value) == "userdata" then
+		local ok, unpacked = pcall(function()
+			local v = value
+			return { v[1], v[2], v[3], v[4] }
+		end)
+		if ok and unpacked and #unpacked == 4 and unpacked[1] then
+			return unpacked
+		end
+	end
+
+	-- Legacy: строка с именем цвета
+	if type(value) == "string" and value ~= "" then
+		local ctor = Color[value]
+		if ctor then
+			local c = ctor(255, true)
+			if c and #c >= 4 then
+				return { c[1], c[2], c[3], c[4] }
+			end
+		end
+	end
+
+	-- Fallback по имени
+	local fb = fallback_color_name or "white"
+	local ctor = Color[fb]
+	if ctor then
+		local c = ctor(255, true)
+		if c and #c >= 4 then
+			return { c[1], c[2], c[3], c[4] }
+		end
+	end
+
+	return { 255, 255, 255, 255 }
+end
+
+-- Оборачивает текст в DT markup-цвет: {#color(r,g,b)}text{#reset()}.
+-- Использует R, G, B из ARGB-таблицы (alpha игнорируется — для текста в DT
+-- альфа задаётся отдельно, если вообще нужна).
+local function wrap_in_color(text, argb)
+	if type(argb) ~= "table" or #argb < 4 then
+		return text
+	end
+	return string.format("{#color(%d,%d,%d)}%s{#reset()}", argb[2], argb[3], argb[4], text)
+end
+
+-- Публичный API
+Utils.get_argb_from_setting = get_argb_from_setting
+Utils.wrap_in_color			= wrap_in_color
 
 return Utils

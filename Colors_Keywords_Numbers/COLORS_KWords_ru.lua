@@ -1,7 +1,8 @@
 ---@diagnostic disable: undefined-global
 
 local mod = get_mod("Enhanced_descriptions")
-local InputUtils = require("scripts/managers/input/input_utils")
+
+local Utils = mod.get_utils()
 
 -- КЛЮЧЕВЫЕ СЛОВА
 --		Ключ_rgb_ru			"Значение"						-- Где используется?
@@ -532,29 +533,14 @@ local CONFIG = {
 }
 
 -- Основная функция для создания цветных ключевых слов
-local function create_colored_keywords_ru()
+local function create_colored_keywords()
 	local result = {}
-
 	for category, keywords in pairs(CONFIG) do
-		local color_name = mod:get(category) or "white"
-		local color = Color[color_name]
-
-		if not color then
-			color = Color.white(255, true)
-		else
-			color = color(255, true)
-		end
-
+		local argb = Utils.get_argb_from_setting(category, "white")
 		for key, text in pairs(keywords) do
-			if InputUtils and InputUtils.apply_color_to_input_text then
-				local colored_text = InputUtils.apply_color_to_input_text(text, color)
-				result[key .. "_rgb_ru"] = colored_text
-			else
-				result[key .. "_rgb_ru"] = text
-			end
+			result[key .. "_rgb_ru"] = Utils.wrap_in_color(text, argb)
 		end
 	end
-
 	return result
 end
 
@@ -621,11 +607,11 @@ local function create_nts_ru(colors_ru)
 end
 
 -- Создаём цвета
-local colored_keywords_ru = create_colored_keywords_ru()
+local colored_keywords = create_colored_keywords()
 
 -- ВОЗВРАЩАЕМ ВСЁ
 return {
-	keywords = colored_keywords_ru,					-- ЦВЕТНЫЕ КЛЮЧЕВЫЕ СЛОВА
-	phrs = create_phrs_ru(colored_keywords_ru),		-- ЧАСТО ПОВТОРЯЕМЫЕ ФРАЗЫ
-	nts = create_nts_ru(colored_keywords_ru)		-- ПРИМЕЧАНИЯ
+	keywords = colored_keywords,					-- ЦВЕТНЫЕ КЛЮЧЕВЫЕ СЛОВА
+	phrs = create_phrs_ru(colored_keywords),		-- ЧАСТО ПОВТОРЯЕМЫЕ ФРАЗЫ
+	nts = create_nts_ru(colored_keywords)		-- ПРИМЕЧАНИЯ
 }

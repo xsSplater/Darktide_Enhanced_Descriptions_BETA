@@ -2,6 +2,8 @@
 
 local mod = get_mod("Enhanced_descriptions")
 
+local Utils = mod.get_utils()
+
 -- Конфигурация (без кэширования)
 local CONFIG = {
 	VARIABLES = {
@@ -345,16 +347,8 @@ local CONFIG = {
 -- Основная функция
 local function create_colored_numbers()
 	local result = {}
-	local color_name = mod:get("variables_text_colour") or "white"
-	local color = Color[color_name]
+	local argb = Utils.get_argb_from_setting("variables_text_colour", "white")
 
-	if not color then
-		color = Color.white(255, true)
-	else
-		color = color(255, true)
-	end
-
-	local InputUtils = require("scripts/managers/input/input_utils")
 	local flat_config = {}
 	for _, config_table in pairs(CONFIG) do
 		for name, text in pairs(config_table) do
@@ -363,11 +357,7 @@ local function create_colored_numbers()
 	end
 
 	for name, text in pairs(flat_config) do
-		if InputUtils and InputUtils.apply_color_to_input_text then
-			result[name .. "_rgb"] = InputUtils.apply_color_to_input_text(text, color)
-		else
-			result[name .. "_rgb"] = text
-		end
+		result[name .. "_rgb"] = Utils.wrap_in_color(text, argb)
 	end
 
 	return result

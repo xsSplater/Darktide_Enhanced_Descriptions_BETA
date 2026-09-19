@@ -2,196 +2,181 @@
 -- The main file needed for this mod's menu to work.
 -- FOR TRANSLATORS: YOU DON'T NEED TO DO ANYTHING IN THIS FILE!
 
+-- Enhanced_descriptions_data.lua
+
 local mod = get_mod("Enhanced_descriptions")
 
--- Constants and Configuration - Константы и конфигурация
+-- ---------------------------------------------------------------------------
+-- Constants
+-- ---------------------------------------------------------------------------
 local DEFAULT_SETTINGS = {
-	-- Main modules - Основные модули
-	enable_menus_file =				true,
-	enable_curious_file =			true,
-	enable_penances_file =			true,
-	enable_weapons_file =			true,
-	enable_talents_file =			true,
-	enable_names_file =				true,
-	enable_names_tal_bless_file =	true,
-	enable_debug_mode =				false,
+	-- Main modules
+	enable_menus_file			 = true,
+	enable_curious_file			 = true,
+	enable_penances_file		 = true,
+	enable_weapons_file			 = true,
+	enable_talents_file			 = true,
+	enable_names_file			 = true,
+	enable_names_tal_bless_file	 = true,
+	enable_debug_mode			 = false,
 
-	-- Default Preset - Пресет по умолчанию
-	color_preset =					"default",
+	-- Default preset
+	color_preset				 = "default",
 
-	-- Language override - Переопределение языка
-	language_override =				"auto",
+	-- Language override
+	language_override			 = "auto",
 }
 
--- Adding a list of supported languages for options - Добавляем список поддерживаемых языков для опций
 local SUPPORTED_LANGUAGES = {
-	{ value = "auto",			text = "language_auto" },
-	{ value = "en",				text = "language_en" },
-	{ value = "ru",				text = "language_ru" },
-	{ value = "fr",				text = "language_fr" },
-	{ value = "zh-tw",			text = "language_zh_tw" },
-	{ value = "zh-cn",			text = "language_zh_cn" },
-	{ value = "de",				text = "language_de" },
-	{ value = "it",				text = "language_it" },
-	{ value = "ja",				text = "language_ja" },
-	{ value = "ko",				text = "language_ko" },
-	{ value = "pl",				text = "language_pl" },
-	{ value = "pt-br",			text = "language_pt_br" },
-	{ value = "es",				text = "language_es" },
+	{ value = "auto",  text = "language_auto" },
+	{ value = "en",	   text = "language_en" },
+	{ value = "ru",	   text = "language_ru" },
+	{ value = "fr",	   text = "language_fr" },
+	{ value = "zh-tw", text = "language_zh_tw" },
+	{ value = "zh-cn", text = "language_zh_cn" },
+	{ value = "de",	   text = "language_de" },
+	{ value = "it",	   text = "language_it" },
+	{ value = "ja",	   text = "language_ja" },
+	{ value = "ko",	   text = "language_ko" },
+	{ value = "pl",	   text = "language_pl" },
+	{ value = "pt-br", text = "language_pt_br" },
+	{ value = "es",	   text = "language_es" },
 }
 
+-- Каждый id — настройка <id>_text_colour (type="color").
+-- `default` — имя цвета из Color.* (используется для построения ARGB-дефолта).
 local COLOR_SETTINGS = {
 -- Default text color = terminal_text_body
-	{ id = "dump_stat",			default = "terminal_text_body" },
-	{ id = "dump_stat2",		default = "terminal_text_body" },
-	{ id = "dump_stat3",		default = "terminal_text_body" },
+	{ id = "dump_stat",		  default = "terminal_text_body" },
+	{ id = "dump_stat2",	  default = "terminal_text_body" },
+	{ id = "dump_stat3",	  default = "terminal_text_body" },
 
-	{ id = "bleed",				default = "ui_zealot" },
-	{ id = "brittleness",		default = "medium_orchid" },
-	{ id = "burn",				default = "sienna" },
-	{ id = "cleave",			default = "indian_red" },
-	{ id = "coherency",			default = "citadel_kindleflame" },
-	{ id = "combat_ability",	default = "olive_drab" },
-	{ id = "corruption",		default = "ui_corruption_medium" },
-	{ id = "crit",				default = "citadel_yriel_yellow" },		-- Concentration Stimm
-	{ id = "damage",			default = "citadel_jokaero_orange" },	-- Combat Stimm
-	{ id = "electrocuted",		default = "citadel_stormfang" },
-	{ id = "finesse",			default = "dodger_blue" },
-	{ id = "health",			default = "red" },
-	{ id = "hit_mass",			default = "item_rarity_dark_2" },
-	{ id = "impact",			default = "sea_green" },
-	{ id = "peril",				default = "ui_orange_dark" },
-	{ id = "power",				default = "steel_blue" },
-	{ id = "rending",			default = "violet" },					-- Cartel Special Stimm
-	{ id = "soulblaze",			default = "ui_toughness_default" },
-	{ id = "stagger",			default = "terminal_background_selected" },
-	{ id = "stamina",			default = "light_salmon" },
-	{ id = "toughness",			default = "ui_difficulty_1" },
-	{ id = "weakspot",			default = "green_yellow" },
+	{ id = "bleed",			  default = "ui_zealot" },
+	{ id = "brittleness",	  default = "medium_orchid" },
+	{ id = "burn",			  default = "sienna" },
+	{ id = "cleave",		  default = "indian_red" },
+	{ id = "coherency",		  default = "citadel_kindleflame" },
+	{ id = "combat_ability",  default = "olive_drab" },
+	{ id = "corruption",	  default = "ui_corruption_medium" },
+	{ id = "crit",			  default = "citadel_yriel_yellow" },
+	{ id = "damage",		  default = "citadel_jokaero_orange" },
+	{ id = "electrocuted",	  default = "citadel_stormfang" },
+	{ id = "finesse",		  default = "dodger_blue" },
+	{ id = "health",		  default = "red" },
+	{ id = "hit_mass",		  default = "item_rarity_dark_2" },
+	{ id = "impact",		  default = "sea_green" },
+	{ id = "peril",			  default = "ui_orange_dark" },
+	{ id = "power",			  default = "steel_blue" },
+	{ id = "rending",		  default = "violet" },
+	{ id = "soulblaze",		  default = "ui_toughness_default" },
+	{ id = "stagger",		  default = "terminal_background_selected" },
+	{ id = "stamina",		  default = "light_salmon" },
+	{ id = "toughness",		  default = "ui_difficulty_1" },
+	{ id = "weakspot",		  default = "green_yellow" },
 
--- Classes - Классы
-	-- Psyker - Псайкер
-	{ id = "class_psyker",		default = "player_slot_4" },
-	{ id = "precision",			default = "ui_psyker" },				-- Celerity Stimm
-	-- Ogryn - Огрин
-	{ id = "class_ogryn",		default = "player_slot_3" },
-	{ id = "fnp",				default = "light_coral" },				-- Scum (Desperado)
-	{ id = "luckyb",			default = "orange" },					-- Zealot (Toughness gold)
-	{ id = "trample",			default = "mb_terminal_base" },			-- Scum (Dependency)
-	-- Zealot - Изувер
-	{ id = "class_zealot",		default = "player_slot_2" },
-	{ id = "fury",				default = "hot_pink" },					-- Scum (Rampage!)
-	{ id = "momentum",			default = "ui_red_super_light" },		-- Ogryn (Taunt), Scum (Adrenaline, Adrenaline Frenzy)
-	{ id = "stealth",			default = "ui_grey_light" },			-- Psyker (Marked)
-	-- Veteran - Ветеран
-	{ id = "class_veteran",		default = "player_slot_1" },
-	{ id = "focus",				default = "dark_violet" },				-- Veteran (Forceful), Scum (Shout)
-	{ id = "focust",			default = "teal" },						-- Psyker (Marked Enemy), Scum (Vulture's Mark)
-	{ id = "meleespec",			default = "ui_hud_red_light" },			-- Arbites (Melee Justice), Scum (Exhausted)
-	{ id = "rangedspec",		default = "citadel_the_fang_grey" },	-- Arbites (Ranged Justice)
-	-- Arbites - Арбитрес/Арбитратор
-	{ id = "class_arbites",		default = "plum" },
-	-- Hive Scum - Отребье Улья
-	{ id = "class_scum",		default = "citadel_nurgling_green" },
-	{ id = "chemtox",			default = "online_green" },				-- Med Stimm
+-- Classes
+	-- Psyker
+	{ id = "class_psyker",	  default = "player_slot_4" },
+	{ id = "precision",		  default = "ui_psyker" },
+	-- Ogryn
+	{ id = "class_ogryn",	  default = "player_slot_3" },
+	{ id = "fnp",			  default = "light_coral" },
+	{ id = "luckyb",		  default = "orange" },
+	{ id = "trample",		  default = "mb_terminal_base" },
+	-- Zealot
+	{ id = "class_zealot",	  default = "player_slot_2" },
+	{ id = "fury",			  default = "hot_pink" },
+	{ id = "momentum",		  default = "ui_red_super_light" },
+	{ id = "stealth",		  default = "ui_grey_light" },
+	-- Veteran
+	{ id = "class_veteran",	  default = "player_slot_1" },
+	{ id = "focus",			  default = "dark_violet" },
+	{ id = "focust",		  default = "teal" },
+	{ id = "meleespec",		  default = "ui_hud_red_light" },
+	{ id = "rangedspec",	  default = "citadel_the_fang_grey" },
+	-- Arbites
+	{ id = "class_arbites",	  default = "plum" },
+	-- Hive Scum
+	{ id = "class_scum",	  default = "citadel_nurgling_green" },
+	{ id = "chemtox",		  default = "online_green" },
 
-	-- Misc - Разное
-	{ id = "talents",			default = "ui_input_color" },
-	{ id = "numbers",			default = "ui_hud_yellow_super_light" },
-	{ id = "variables",			default = "ui_hud_yellow_super_light" },
-	{ id = "note",				default = "terminal_text_warning_dark" },
-	{ id = "warning",			default = "item_rarity_6" },
+-- Misc
+	{ id = "talents",		  default = "ui_input_color" },
+	{ id = "numbers",		  default = "ui_hud_yellow_super_light" },
+	{ id = "variables",		  default = "ui_hud_yellow_super_light" },
+	{ id = "note",			  default = "terminal_text_warning_dark" },
+	{ id = "warning",		  default = "item_rarity_6" },
 
-	-- Difficulty - Сложность
-	{ id = "uprising",			default = "ui_difficulty_1" },
-	{ id = "malice",			default = "ui_difficulty_2" },
-	{ id = "heresy",			default = "ui_difficulty_3" },
-	{ id = "damnation",			default = "ui_difficulty_4" },
-	{ id = "auric",				default = "ui_difficulty_5" },
+-- Difficulty
+	{ id = "uprising",		  default = "ui_difficulty_1" },
+	{ id = "malice",		  default = "ui_difficulty_2" },
+	{ id = "heresy",		  default = "ui_difficulty_3" },
+	{ id = "damnation",		  default = "ui_difficulty_4" },
+	{ id = "auric",			  default = "ui_difficulty_5" },
 }
--- REMOVED! Purged in Enhanced_descriptions.lua - УДАЛЕНЫ! Очищаются в Enhanced_descriptions.lua
-	-- { id = "talents_penances",	default = "forest_green" },
-	-- { id = "sedition",			default = "terminal_text_body" },
 
--- Utility Functions - Вспомогательные функции
-local function create_checkbox_widget(setting_id, default_value)
-	return {
-		name = mod:localize(setting_id),
-		setting_id = setting_id,
-		default_value = default_value,
-		type = "checkbox",
-		description = mod:localize(setting_id .. "_description"),
+-- ---------------------------------------------------------------------------
+-- Helpers
+-- ---------------------------------------------------------------------------
 
-		change = function(new_value)
-			mod:set(setting_id, new_value)
-		end,
-		get = function()
-			return mod:get(setting_id)
-		end
-	}
-end
-
-local function create_dropdown_widget(setting_id, options, default_value)
-	return {
-		setting_id = setting_id,
-		type = "dropdown",
-		default_value = default_value,
-		options = options,
-		name = mod:localize(setting_id),
-		description = mod:localize(setting_id .. "_description"),
-		
-		change = function(new_value)
-			mod:set(setting_id, new_value)
-		end,
-		get = function()
-			return mod:get(setting_id)
-		end
-	}
-end
-
-local function get_color_options()
-	local color_options = {}
-	for _, color_name in ipairs(Color.list) do
-		table.insert(color_options, {
-			text = color_name,
-			value = color_name
-		})
+-- Имя цвета ("ui_zealot") → ARGB {A, R, G, B} (0..255).
+-- Используется для построения default_value color-виджетов.
+local function named_color_to_argb(name, alpha)
+	local ctor = Color[name]
+	if not ctor then
+		return { alpha or 255, 255, 255, 255 }
 	end
-	table.sort(color_options, function(a, b)
-		return a.text < b.text
-	end)
-	return color_options
+	local c = ctor(alpha or 255, true)
+	if not c or #c < 4 then
+		return { alpha or 255, 255, 255, 255 }
+	end
+	return { c[1], c[2], c[3], c[4] }
 end
 
-local function create_color_option_group(color_setting)
-	return {
-		setting_id = color_setting.id .. "_colour",
-		type = "group",
-		sub_widgets = {
-			{
-				setting_id = color_setting.id .. "_text_colour",
-				type = "dropdown",
-				default_value = color_setting.default,
-				options = get_color_options()
-			}
-		}
+-- ---------------------------------------------------------------------------
+-- Widget constructors — new DMF API
+-- ---------------------------------------------------------------------------
+local function checkbox_widget(setting_id, default_value, overrides)
+	local w = {
+		setting_id	  = setting_id,
+		type		  = "checkbox",
+		default_value = default_value,
 	}
+	if overrides then
+		for k, v in pairs(overrides) do w[k] = v end
+	end
+	return w
 end
 
--- Применение выбранного пресета цветов
+local function dropdown_widget(setting_id, options, default_value, overrides)
+	local w = {
+		setting_id	  = setting_id,
+		type		  = "dropdown",
+		default_value = default_value,
+		options		  = options,
+	}
+	if overrides then
+		for k, v in pairs(overrides) do w[k] = v end
+	end
+	return w
+end
+
+-- ---------------------------------------------------------------------------
+-- Preset application (called from main script via mod.apply_color_preset)
+-- ---------------------------------------------------------------------------
 local function apply_color_preset(preset)
 	mod._applying_preset = true
 
 	if preset == "monochrome" then
-		for _, color_setting in ipairs(COLOR_SETTINGS) do
-			mod:set(color_setting.id .. "_text_colour", "terminal_text_body")
+		for i = 1, #COLOR_SETTINGS do
+			mod:set(COLOR_SETTINGS[i].id .. "_text_colour", named_color_to_argb("terminal_text_body", 255))
 		end
 	elseif preset == "default" then
-		for _, color_setting in ipairs(COLOR_SETTINGS) do
-			mod:set(color_setting.id .. "_text_colour", color_setting.default)
+		for i = 1, #COLOR_SETTINGS do
+			mod:set(COLOR_SETTINGS[i].id .. "_text_colour", named_color_to_argb(COLOR_SETTINGS[i].default, 255))
 		end
 	else
-		mod:warning("Unknown preset: " .. tostring(preset))
+		mod:warning("Unknown preset: %s", tostring(preset))
 		mod._applying_preset = false
 		return
 	end
@@ -199,101 +184,116 @@ local function apply_color_preset(preset)
 	mod._applying_preset = false
 	mod:clear_color_cache()
 	mod:reload_templates()
-	mod:info("Color preset applied: " .. preset) -- для лога
+	mod:info("Color preset applied: %s", preset)
 end
 
--- Main Options Configuration - Основные параметры конфигурации
+mod.apply_color_preset = apply_color_preset
+
+-- ---------------------------------------------------------------------------
+-- Main options configuration
+-- ---------------------------------------------------------------------------
 local options = {
 	name = mod:localize("mod_name"),
 	description = mod:localize("mod_description"),
 	is_togglable = true,
 	options = {
-		widgets = {}
-	}
+		widgets = {},
+	},
 }
 
--- 1. General settings group - Группа общих настроек
+-- 1. General settings group
 local general_settings_group = {
 	setting_id = "general_settings_group",
 	type = "group",
 	sub_widgets = {
-		create_dropdown_widget("language_override", SUPPORTED_LANGUAGES, DEFAULT_SETTINGS.language_override)
-	}
+		dropdown_widget("language_override", SUPPORTED_LANGUAGES, DEFAULT_SETTINGS.language_override),
+	},
 }
 
--- 1.5. Presets group - Группа пресетов
+-- 2. Presets group
 local presets_group = {
 	setting_id = "presets_group",
 	type = "group",
 	sub_widgets = {
 		{
-			setting_id = "color_preset",
-			type = "dropdown",
+			setting_id	  = "color_preset",
+			type		  = "dropdown",
 			default_value = DEFAULT_SETTINGS.color_preset,
 			options = {
-				{ value = "default", text = "color_preset_default" },
+				{ value = "default",	text = "color_preset_default" },
 				{ value = "monochrome", text = "color_preset_monochrome" },
 			},
-			get = function()
-				return mod:get("color_preset") or "default"
-			end
-		}
-	}
+		},
+	},
 }
 
--- 2. Modules group - Группа модулей
+-- 3. Modules group
 local modules_group = {
 	setting_id = "modules_group",
 	type = "group",
-	sub_widgets = {}
+	sub_widgets = {},
 }
 
--- Add main module checkboxes - Добавляем флаги основного модуля
 local main_modules = {
-	{ id = "enable_talents_file",			desc = "TALENTS Module" },
-	{ id = "enable_weapons_file",			desc = "WEAPONS Module" },
-	{ id = "enable_curious_file",			desc = "CURIOS Module" },
-	{ id = "enable_penances_file",			desc = "PENANCES Module" },
-	{ id = "enable_menus_file",				desc = "MENUS Module" },
-	{ id = "enable_names_file",				desc = "NAMES Module - Weapons and Enemies" },
-	{ id = "enable_names_tal_bless_file",	desc = "NAMES Module - Talents and Blessings" },
-	{ id = "enable_debug_mode",				desc = "Debug Mode" }
+	"enable_talents_file",
+	"enable_weapons_file",
+	"enable_curious_file",
+	"enable_penances_file",
+	"enable_menus_file",
+	"enable_names_file",
+	"enable_names_tal_bless_file",
+	"enable_debug_mode",
 }
 
-for _, module in ipairs(main_modules) do
-	table.insert(modules_group.sub_widgets, create_checkbox_widget(
-		module.id, 
-		DEFAULT_SETTINGS[module.id]
-	))
+for i = 1, #main_modules do
+	local setting_id = main_modules[i]
+	modules_group.sub_widgets[#modules_group.sub_widgets + 1] =
+		checkbox_widget(setting_id, DEFAULT_SETTINGS[setting_id])
 end
 
--- 3. Color group - Группа цветов
+-- 4. Colors group — плоский список color-виджетов.
+-- Название виджета берётся из локализации <id>_colour (например, bleed_colour).
 local colors_group = {
 	setting_id = "colors_group",
 	type = "group",
-	sub_widgets = {}
+	sub_widgets = {},
 }
 
--- Add color options - Добавляем опции цветов
-for _, color_setting in ipairs(COLOR_SETTINGS) do
-	table.insert(colors_group.sub_widgets, create_color_option_group(color_setting))
+for i = 1, #COLOR_SETTINGS do
+	local cs = COLOR_SETTINGS[i]
+	colors_group.sub_widgets[#colors_group.sub_widgets + 1] = {
+		setting_id	  = cs.id .. "_text_colour",
+		type		  = "color",
+		has_alpha	  = false,
+		default_value = named_color_to_argb(cs.default, 255),
+	}
 end
 
--- Add all groups - Добавляем все группы
-table.insert(options.options.widgets, general_settings_group)
-table.insert(options.options.widgets, presets_group)
-table.insert(options.options.widgets, modules_group)
-table.insert(options.options.widgets, colors_group)
+-- Register all groups
+options.options.widgets[#options.options.widgets + 1] = general_settings_group
+options.options.widgets[#options.options.widgets + 1] = presets_group
+options.options.widgets[#options.options.widgets + 1] = modules_group
+options.options.widgets[#options.options.widgets + 1] = colors_group
 
--- Initialization - Инициализация
--- Ensure default settings are set - Убеждаемся, что установлены настройки по умолчанию
+-- ---------------------------------------------------------------------------
+-- Ensure defaults are set for the very first launch
+-- ---------------------------------------------------------------------------
 for setting_id, default_value in pairs(DEFAULT_SETTINGS) do
 	if mod:get(setting_id) == nil then
 		mod:set(setting_id, default_value)
 	end
 end
 
--- Экспортируем функцию для применения пресета
-mod.apply_color_preset = apply_color_preset
+-- ---------------------------------------------------------------------------
+-- Экспорт для миграции в main script: список id цветовых настроек и их
+-- default-имён. Используется в Enhanced_descriptions.lua → migrate_legacy_colors.
+-- ---------------------------------------------------------------------------
+mod._color_setting_ids = {}
+mod._color_defaults = {}
+for i = 1, #COLOR_SETTINGS do
+	local sid = COLOR_SETTINGS[i].id .. "_text_colour"
+	mod._color_setting_ids[i] = sid
+	mod._color_defaults[sid] = COLOR_SETTINGS[i].default
+end
 
 return options

@@ -89,42 +89,21 @@ local LOCALIZATION_GROUPS = {
 	"dump_stat3",
 }
 
--- UTILITY FUNCTIONS
-local function readable(text)
-	local tokens = string.split(text, "_")
-	for i, token in ipairs(tokens) do
-		tokens[i] = string.upper(string.sub(token, 1, 1)) .. string.sub(token, 2)
-	end
-	return table.concat(tokens, " ")
-end
-
-local function add_color_localizations(localizations)
-	for _, color_name in ipairs(Color.list) do
-		local color_values = Color[color_name](255, true)
-		local text = InputUtils.apply_color_to_input_text(readable(color_name), color_values)
-		localizations[color_name] = { en = text }
-	end
-end
-
-local function add_localisation_entry(localizations, type_name)
-	localizations[type_name .. "_text_colour"] = {
-		en = "Pick color",
-		ru = "Выберите цвет",
-		fr = "Couleur", 
- ["zh-tw"] = "選擇顏色",
- ["zh-cn"] = "颜色",
-		de = "Farbe auswählen",
-		it = "Seleziona colore",
-		ja = "色を選択",
-		ko = "색상 선택",
-		pl = "Wybierz kolor",
- ["pt-br"] = "Escolher cor",
-		es = "Elegir color",
-	}
-end
-
 local localizations = {
-	mod_name = {}, -- Mod name (will be filled dynamically at the end)
+	mod_name = {
+		en = "Enhanced Descriptions",
+		ru = "Улучшенные описания",
+		fr = "Descriptions améliorées",
+ ["zh-tw"] = "強化描述",
+ ["zh-cn"] = "描述增强",
+		de = "Erweiterte Beschreibungen",
+		it = "Descrizioni Migliorate",
+		ja = "詳細な説明",
+		ko = "향상된 설명",
+		pl = "Rozszerzone Opisy",
+ ["pt-br"] = "Descrições Aprimoradas",
+		es = "Descripciones Mejoradas",
+	},
 	mod_description = {
 		en = "Improves readability by highlighting numbers and keywords in descriptions of Talents, Blessings, Penances, Curios, and other menu texts. Also fixes localizations and adds clarity to some descriptions.",
 		ru = "Enhanced Descriptions - Улучшает читаемость за счёт выделения чисел и ключевых слов в описаниях Талантов, Благословений, Искуплений, Реликвий и других текстах меню. Также вносит исправления в локализации и добавляет ясности в некоторые описания.",
@@ -709,7 +688,7 @@ local localizations = {
 	},
 
 --[+DUMP STATS+]--
-	dump_stat_colour = {
+	dump_stat_text_colour = {
 		en = "Dump Stats"
 			.."\n{#size(17)}{#color(95, 95, 95)}// Mobility, Melee Damage, Warp Resistance{#reset()}",
 		ru = "Мусорные статы"
@@ -720,7 +699,7 @@ local localizations = {
 			.."\n{#size(17)}{#color(95, 95, 95)}// 机动性、近战伤害、亚空间抗性{#reset()}",
 	},
 --[+DUMP STATS 2+]--
-	dump_stat2_colour = {
+	dump_stat2_text_colour = {
 		en = "Dump Stats 2"
 			.."\n{#size(17)}{#color(95, 95, 95)}// Ammo, Defences, Heat Management{#reset()}",
 		ru = "Мусорные статы 2"
@@ -731,7 +710,7 @@ local localizations = {
 			.."\n{#size(17)}{#color(95, 95, 95)}// 弹药、防御、热量管理{#reset()}",
 	},
 --[+DUMP STATS 3+]--
-	dump_stat3_colour = {
+	dump_stat3_text_colour = {
 		en = "Dump Stats 3"
 			.."\n{#size(17)}{#color(95, 95, 95)}// Damage{#reset()}",
 		ru = "Мусорные статы 3"
@@ -743,7 +722,7 @@ local localizations = {
 	},
 
 --[+MAIN+]--
-	bleed_colour = {
+	bleed_text_colour = {
 		en = " Bleed",
 		fr = " Saignement",
 		ru = " Кровотечение",
@@ -757,7 +736,7 @@ local localizations = {
  ["pt-br"] = " Sangramento",
 		es = " Sangrado",
 	},
-	brittleness_colour = {
+	brittleness_text_colour = {
 		en = " Brittleness",
 		fr = " Fragilité",
 		ru = " Хрупкость",
@@ -771,7 +750,7 @@ local localizations = {
  ["pt-br"] = " Fragilidade",
 		es = " Fragilidad",
 	},
-	burn_colour = {
+	burn_text_colour = {
 		en = " Burn",
 		fr = " Brûlure",
 		ru = " Горение",
@@ -785,7 +764,7 @@ local localizations = {
  ["pt-br"] = " Queimadura",
 		es = " Quemadura",
 	},
-	cleave_colour = {
+	cleave_text_colour = {
 		en = " Cleave",
 		fr = " Transpercement",
 		ru = " Рассечение",
@@ -799,7 +778,7 @@ local localizations = {
  ["pt-br"] = " Fender",
 		es = " Hendir",
 	},
-	coherency_colour = {
+	coherency_text_colour = {
 		en = " Coherency",
 		fr = " Cohérence",
 		ru = " Сплочённость",
@@ -813,7 +792,7 @@ local localizations = {
  ["pt-br"] = " Coerência",
 		es = " Coherencia",
 	},
-	combat_ability_colour = {
+	combat_ability_text_colour = {
 		en = " Combat Ability",
 		fr = " Capacité de combat",
 		ru = " Боевая способность",
@@ -827,7 +806,7 @@ local localizations = {
  ["pt-br"] = " Habilidade de Combate",
 		es = " Habilidad de Combate",
 	},
-	corruption_colour = {
+	corruption_text_colour = {
 		en = " Corruption",
 		fr = " Corruption",
 		ru = " Порча",
@@ -841,7 +820,7 @@ local localizations = {
  ["pt-br"] = " Corrupção",
 		es = " Corrupción",
 	},
-	crit_colour = {
+	crit_text_colour = {
 		en = " Crit",
 		fr = " Critique",
 		ru = " Криты",
@@ -855,7 +834,7 @@ local localizations = {
  ["pt-br"] = " Crítico",
 		es = " Crítico",
 	},
-	damage_colour = {
+	damage_text_colour = {
 		en = " Damage",
 		fr = " Dégât",
 		ru = " Урон",
@@ -869,7 +848,7 @@ local localizations = {
  ["pt-br"] = " Dano",
 		es = " Daño",
 	},
-	electrocuted_colour = {
+	electrocuted_text_colour = {
 		en = " Electrocuted",
 		fr = " Eclair",
 		ru = " Поражение током",
@@ -883,7 +862,7 @@ local localizations = {
  ["pt-br"] = " Electrocutado",
 		es = " Electrocutado",
 	},
-	finesse_colour = {
+	finesse_text_colour = {
 		en = " Finesse",
 		fr = " Finesse",
 		ru = " Точность",
@@ -897,7 +876,7 @@ local localizations = {
  ["pt-br"] = " Fineza",
 		es = " Sutileza",
 	},
-	health_colour = {
+	health_text_colour = {
 		en = " Health / Wound",
 		fr = " Santé / Blessure",
 		ru = " Здоровье / Рана",
@@ -911,7 +890,7 @@ local localizations = {
  ["pt-br"] = " Vida / Ferimento",
 		es = " Salud / Herida",
 	},
-	hit_mass_colour = {
+	hit_mass_text_colour = {
 		en = " Hit Mass",
 		fr = " Coup en masse",
 		ru = " Ударная масса",
@@ -925,7 +904,7 @@ local localizations = {
  ["pt-br"] = " Massa de Acerto",
 		es = " Masa de Impacto",
 	},
-	impact_colour = {
+	impact_text_colour = {
 		en = " Impact",
 		fr = " Impact",
 		ru = " Выведение из равновесия",
@@ -939,7 +918,7 @@ local localizations = {
  ["pt-br"] = " Impacto",
 		es = " Impacto",
 	},
-	peril_colour = {
+	peril_text_colour = {
 		en = " Peril",
 		fr = " Péril",
 		ru = " Опасность",
@@ -953,7 +932,7 @@ local localizations = {
  ["pt-br"] = " Perigo",
 		es = " Peligro",
 	},
-	power_colour = {
+	power_text_colour = {
 		en = " Power",
 		fr = " Puissance",
 		ru = " Сила",
@@ -967,7 +946,7 @@ local localizations = {
  ["pt-br"] = " Poder",
 		es = " Poder",
 	},
-	rending_colour = {
+	rending_text_colour = {
 		en = " Rending",
 		fr = " Déchirure",
 		ru = " Пробитие брони",
@@ -981,7 +960,7 @@ local localizations = {
  ["pt-br"] = " Dilaceração",
 		es = " Desgarro",
 	},
-	soulblaze_colour = {
+	soulblaze_text_colour = {
 		en = " Soulblaze",
 		fr = " Embrasement d'âme",
 		ru = " Горение души",
@@ -995,7 +974,7 @@ local localizations = {
  ["pt-br"] = " Chama da Alma",
 		es = " Llama de Alma",
 	},
-	stagger_colour = {
+	stagger_text_colour = {
 		en = " Stagger",
 		fr = " Vacillement",
 		ru = " Ошеломление",
@@ -1009,7 +988,7 @@ local localizations = {
  ["pt-br"] = " Cambaleante",
 		es = " Tambaleo",
 	},
-	stamina_colour = {
+	stamina_text_colour = {
 		en = " Stamina",
 		fr = " Endurance",
 		ru = " Выносливость",
@@ -1023,7 +1002,7 @@ local localizations = {
  ["pt-br"] = " Vigor",
 		es = " Aguante",
 	},
-	toughness_colour = {
+	toughness_text_colour = {
 		en = " Toughness",
 		fr = " Robustesse",
 		ru = " Стойкость",
@@ -1037,7 +1016,7 @@ local localizations = {
  ["pt-br"] = " Resistência",
 		es = " Dureza",
 	},
-	weakspot_colour = {
+	weakspot_text_colour = {
 		en = " Weak Spot",
 		fr = " Coup sur point faible",
 		ru = " Уязвимые места",
@@ -1053,7 +1032,7 @@ local localizations = {
 	},
 
 --[+PSYKER+]--
-	class_psyker_colour = {
+	class_psyker_text_colour = {
 		en = " Psyker",
 		fr = " Psyker",
 		ru = " Псайкер",
@@ -1067,7 +1046,7 @@ local localizations = {
  ["pt-br"] = " Psíquico",
 		es = " Psíquico",
 	},
-	precision_colour = {
+	precision_text_colour = {
 		en = " Precision",
 		fr = " Precision",
 		ru = " Точность",
@@ -1083,7 +1062,7 @@ local localizations = {
 	},
 
 --[+OGRYN+]--
-	class_ogryn_colour = {
+	class_ogryn_text_colour = {
 		en = " Ogryn",
 		fr = " Ogryn",
 		ru = " Огрин",
@@ -1097,7 +1076,7 @@ local localizations = {
  ["pt-br"] = " Ogryn",
 		es = " Ogryn",
 	},
-	fnp_colour = {
+	fnp_text_colour = {
 		en = " Feel No Pain",
 		fr = " Adieu la douleur",
 		ru = " Неболит",
@@ -1111,7 +1090,7 @@ local localizations = {
  ["pt-br"] = " Insensibilidade à Dor",
 		es = " Insensibilidad al Dolor",
 	},
-	luckyb_colour = {
+	luckyb_text_colour = {
 		en = " Lucky bullet",
 		fr = " Balles chanceuses",
 		ru = " Счастливая пуля",
@@ -1125,7 +1104,7 @@ local localizations = {
  ["pt-br"] = " Bala Sortuda",
 		es = " Bala Afortunada",
 	},
-	trample_colour = {
+	trample_text_colour = {
 		en = " Trample",
 		fr = " Piétinement",
 		ru = " Топот",
@@ -1141,7 +1120,7 @@ local localizations = {
 	},
 
 --[+ZEALOT+]--
-	class_zealot_colour = {
+	class_zealot_text_colour = {
 		en = " Zealot",
 		fr = " Zélote",
 		ru = " Изувер",
@@ -1155,7 +1134,7 @@ local localizations = {
  ["pt-br"] = " Fanático",
 		es = " Fanático",
 	},
-	fury_colour = {
+	fury_text_colour = {
 		en = " Fury",
 		fr = " Piété embrasée",
 		ru = " Ярость",
@@ -1169,7 +1148,7 @@ local localizations = {
  ["pt-br"] = " Fúria",
 		es = " Furia",
 	},
-	momentum_colour = {
+	momentum_text_colour = {
 		en = " Momentum",
 		fr = " Jugement inexorable",
 		ru = " Моментум",
@@ -1183,7 +1162,7 @@ local localizations = {
  ["pt-br"] = " Momentum",
 		es = " Impulso",
 	},
-	stealth_colour = {
+	stealth_text_colour = {
 		en = " Stealth",
 		fr = " Furtivité",
 		ru = " Скрытность",
@@ -1199,7 +1178,7 @@ local localizations = {
 	},
 
 --[+VETERAN+]--
-	class_veteran_colour = {
+	class_veteran_text_colour = {
 		en = " Veteran",
 		fr = " Vétéran",
 		ru = " Ветеран",
@@ -1213,7 +1192,7 @@ local localizations = {
  ["pt-br"] = " Veterano",
 		es = " Veterano",
 	},
-	focus_colour = {
+	focus_text_colour = {
 		en = " Focus",
 		fr = " Focalisation",
 		ru = " Концентрация",
@@ -1227,7 +1206,7 @@ local localizations = {
  ["pt-br"] = " Foco",
 		es = " Concentración",
 	},
-	focust_colour = {
+	focust_text_colour = {
 		en = " Focus Target",
 		fr = " Ciblage",
 		ru = " Важная цель",
@@ -1241,7 +1220,7 @@ local localizations = {
  ["pt-br"] = " Alvo Focal",
 		es = " Objetivo Prioritario",
 	},
-	meleespec_colour = {
+	meleespec_text_colour = {
 		en = " Melee Specialist",
 		fr = " Spécialiste en mêlée",
 		ru = " Специалист-рукопашник",
@@ -1255,7 +1234,7 @@ local localizations = {
  ["pt-br"] = " Especialista Corpo a Corpo",
 		es = " Especialista Cuerpo a Cuerpo",
 	},
-	rangedspec_colour = {
+	rangedspec_text_colour = {
 		en = " Ranged Specialist",
 		fr = " Spécialiste à distance",
 		ru = " Специалист-стрелок",
@@ -1271,7 +1250,7 @@ local localizations = {
 	},
 
 --[+ARBITRATOR+]--
-	class_arbites_colour = {
+	class_arbites_text_colour = {
 		en = " Arbitrator",
 		fr = " Arbitre",
 		ru = " Арбитратор",
@@ -1287,7 +1266,7 @@ local localizations = {
 	},
 
 --[+HIVE SCUM+]--
-	class_scum_colour = {
+	class_scum_text_colour = {
 		en = " Hive Scum",
 		fr = " Racaille de la Ruche",
 		ru = " Отребье Улья",
@@ -1301,7 +1280,7 @@ local localizations = {
  ["pt-br"] = " Escória da Colmeia",
 		es = " Escoria de la colmena",
 	},
-	chemtox_colour = {
+	chemtox_text_colour = {
 		en = " Chem Toxin",
 		fr = " Toxine chimique",
 		ru = " Хим-токсин",
@@ -1317,7 +1296,7 @@ local localizations = {
 	},
 
 --[+MISC+]--
-	talents_colour = {
+	talents_text_colour = {
 		en = " Talents",
 		fr = " Talents",
 		ru = " Таланты",
@@ -1331,7 +1310,7 @@ local localizations = {
  ["pt-br"] = " Talentos",
 		es = " Talentos",
 	},
-	talents_penances_colour = {
+	talents_penances_text_colour = {
 		en = " Talents - Penances",
 		fr = " Talents - Pénitences",
 		ru = " Таланты - Искупления",
@@ -1345,7 +1324,7 @@ local localizations = {
  ["pt-br"] = " Talentos - Penitências",
 		es = " Talentos - Penitencias",
 	},
-	numbers_colour = {
+	numbers_text_colour = {
 		en = " Numbers",
 		fr = " Nombres",
 		ru = " Числа",
@@ -1359,7 +1338,7 @@ local localizations = {
  ["pt-br"] = " Números",
 		es = " Números",
 	},
-	variables_colour = {
+	variables_text_colour = {
 		en = " Variables",
 		fr = " Variables",
 		ru = " Переменные",
@@ -1373,7 +1352,7 @@ local localizations = {
  ["pt-br"] = " Variáveis",
 		es = " Variables",
 	},
-	note_colour = {
+	note_text_colour = {
 		en = " Note",
 		fr = " Annotation",
 		ru = " Примечания",
@@ -1387,7 +1366,7 @@ local localizations = {
  ["pt-br"] = " Nota",
 		es = " Nota",
 	},
-	warning_colour = {
+	warning_text_colour = {
 		en = " Warning",
 		fr = " Alerte",
 		ru = " Предупреждения",
@@ -1403,7 +1382,7 @@ local localizations = {
 	},
 
 --[+DIFFICULTIES+]--
-	sedition_colour = {
+	sedition_text_colour = {
 		en = "Sedition",
 		fr = "Sédition",
 		ru = "Мятеж",
@@ -1417,7 +1396,7 @@ local localizations = {
  ["pt-br"] = "Sedição",
 		es = "Sedición",
 	},
-	uprising_colour = {
+	uprising_text_colour = {
 		en = "Uprising",
 		fr = "Soulèvement",
 		ru = "Восстание",
@@ -1431,7 +1410,7 @@ local localizations = {
  ["pt-br"] = "Revolta",
 		es = "Levantamiento",
 	},
-	malice_colour = {
+	malice_text_colour = {
 		en = "Malice",
 		fr = "Malveillance",
 		ru = "Злоба",
@@ -1445,7 +1424,7 @@ local localizations = {
  ["pt-br"] = "Maldade",
 		es = "Maldad",
 	},
-	heresy_colour = {
+	heresy_text_colour = {
 		en = "Heresy",
 		fr = "Hérésie",
 		ru = "Ересь",
@@ -1459,7 +1438,7 @@ local localizations = {
  ["pt-br"] = "Heresia",
 		es = "Herejía",
 	},
-	damnation_colour = {
+	damnation_text_colour = {
 		en = "Damnation",
 		fr = "Damnation",
 		ru = "Проклятие",
@@ -1473,7 +1452,7 @@ local localizations = {
  ["pt-br"] = "Danação",
 		es = "Condenación",
 	},
-	auric_colour = {
+	auric_text_colour = {
 		en = "Auric",
 		fr = "Aurique",
 		ru = "Золото",
@@ -1580,89 +1559,5 @@ local localizations = {
 		es = "Monocromo (todo terminal_text_body)",
 	},
 }
-
--- INITIALIZATION
--- Add color picker localizations for all groups
-for _, group_name in ipairs(LOCALIZATION_GROUPS) do
-	add_localisation_entry(localizations, group_name)
-end
-
--- Add color names localizations
-add_color_localizations(localizations)
-
--- ============================================================
--- GRADIENT GENERATION FOR MOD NAME
--- ============================================================
-
-local function generate_gradient(text, colors)
-	if not text or text == "" then return "" end
-	local num_colors = #colors
-	if num_colors < 2 then return text end
-
-	local chars = {}
-	for ch in string.gmatch(text, "([%z\1-\127\194-\244][\128-\191]*)") do
-		if ch ~= " " then
-			table.insert(chars, ch)
-		end
-	end
-	local n = #chars
-	if n == 0 then return text end
-
-	local result = {}
-	local idx = 0
-	local pos = 1
-	while pos <= #text do
-		local ch = string.match(text, "([%z\1-\127\194-\244][\128-\191]*)", pos)
-		if not ch then break end
-		pos = pos + #ch
-
-		if ch == " " then
-			table.insert(result, " ")
-		else
-			local t = idx / (n - 1)
-			local r, g, b
-			if num_colors == 2 then
-				local sr, sg, sb = colors[1][1], colors[1][2], colors[1][3]
-				local er, eg, eb = colors[2][1], colors[2][2], colors[2][3]
-				r = math.floor(sr + (er - sr) * t + 0.5)
-				g = math.floor(sg + (eg - sg) * t + 0.5)
-				b = math.floor(sb + (eb - sb) * t + 0.5)
-			end
-			table.insert(result, string.format("{#color(%d,%d,%d)}%s", r, g, b, ch))
-			idx = idx + 1
-		end
-	end
-	return table.concat(result) .. "{#reset()}"
-end
-
-local gradient_colors = {
-	{192, 255, 26 },	-- beginning
-	{ 26, 255, 26},		-- end
-}
-
-local icon = ""
-local prefix = "{#color(192, 255, 26)}" .. icon .. " " -- icon color
-
-local mod_name_texts = {
-		en = "Enhanced Descriptions",
-		ru = "Улучшенные описания",
-		fr = "Descriptions améliorées",
- ["zh-tw"] = "強化描述",
- ["zh-cn"] = "描述增强",
-		de = "Erweiterte Beschreibungen",
-		it = "Descrizioni Migliorate",
-		ja = "詳細な説明",
-		ko = "향상된 설명",
-		pl = "Rozszerzone Opisy",
- ["pt-br"] = "Descrições Aprimoradas",
-		es = "Descripciones Mejoradas",
-}
-
-for lang, text in pairs(mod_name_texts) do
-	if text and text ~= "" then
-		local gradient_text = generate_gradient(text, gradient_colors)
-		localizations.mod_name[lang] = prefix .. gradient_text
-	end
-end
 
 return localizations

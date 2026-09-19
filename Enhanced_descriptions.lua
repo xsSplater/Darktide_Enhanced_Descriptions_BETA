@@ -2,12 +2,17 @@
 -- The main file needed for this mod to work.
 -- FOR TRANSLATORS: YOU DON'T NEED TO DO ANYTHING IN THIS FILE!
 
+-- Enhanced_descriptions.lua
+
 local mod = get_mod("Enhanced_descriptions")
-local VERSION = "6.0.2b"
+local VERSION = "7.0.0b"
 
 -- <<<CODE_REVEALER>>>
 -- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_trait_bespoke_increased_melee_power_on_weapon_special_follow_up_hits_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
+
+-- Shared empty table — чтобы не аллоцировать `{}` на каждый вызов хука.
+local EMPTY_CONTEXT = {}
 
 -- Кэш утилит
 mod._utils_cache = nil
@@ -46,11 +51,13 @@ function mod.get_utils()
 				if type(text) == "table" then
 					return function(locale) return text[locale] or text["en"] or "" end
 				end
-				return function() return text end 
+				return function() return text end
 			end,
 			DOT_NC = "•",
 			DOT_RED = "•",
 			DOT_GREEN = "•",
+			get_argb_from_setting = function() return { 255, 255, 255, 255 } end,
+			wrap_in_color = function(text) return text end,
 		}
 		mod._utils_cache = fallback_utils
 		return fallback_utils
@@ -319,14 +326,13 @@ local function cleanup_old_settings()
 	local old_settings_to_remove = {
 		"talents_penances_text_colour",
 		"sedition_text_colour",
-		-- Сюда можно добавить другие устаревшие настройки для удаления
 	}
 
 	local cleaned = false
-	for _, old_setting in ipairs(old_settings_to_remove) do
+	for i = 1, #old_settings_to_remove do
+		local old_setting = old_settings_to_remove[i]
 		local value = mod:get(old_setting)
 		if value ~= nil then
-			-- Если настройка существует, удаляем её
 			mod:set(old_setting, nil)
 			cleaned = true
 			mod:info("Removed old setting: %s", old_setting)
@@ -338,26 +344,59 @@ local function cleanup_old_settings()
 	end
 end
 
+-- МИГРАЦИЯ СТАРЫХ ЦВЕТОВ (строки "red" → ARGB {A,R,G,B})
+-- DMF при смене типа настройки НЕ конвертирует сохранённые значения. У игроков
+-- со старыми сейвами в настройках лежит строка "red", а новый color-picker
+-- ожидает таблицу — это приводит к крашу при открытии UI настроек.
+-- Проходимся по всем color-настройкам, конвертируем строки в {A,R,G,B}.
+-- Идемпотентно: после первого запуска значения уже таблицы.
+local function migrate_legacy_colors()
+	local ids = mod._color_setting_ids
+	if not ids then
+		return
+	end
+
+	local migrated = 0
+	for i = 1, #ids do
+		local sid = ids[i]
+		local value = mod:get(sid)
+		if type(value) == "string" and value ~= "" then
+			local ctor = Color[value]
+			if ctor then
+				local c = ctor(255, true)
+				if c and #c >= 4 then
+					mod:set(sid, { c[1], c[2], c[3], c[4] })
+					migrated = migrated + 1
+				end
+			end
+		end
+	end
+
+	if migrated > 0 then
+		mod:info("Migrated %d legacy color settings to ARGB", migrated)
+	end
+end
+
 -- ФУНКЦИИ ДЛЯ ЗАГРУЗКИ ЦВЕТОВ
 function mod.load_colors_numbers()
 	if mod._color_cache.numbers then
 		return mod._color_cache.numbers
 	end
-	
+
 	local colors_func = mod:io_dofile("Enhanced_descriptions/Colors_Keywords_Numbers/COLORS_Numbers")
 	local colors = type(colors_func) == "function" and colors_func() or colors_func
-	
+
 	mod._color_cache.numbers = colors or {}
 	return mod._color_cache.numbers
 end
 
 function mod.load_colors_keywords(language)
 	language = language or "en"
-	
+
 	if mod._color_cache.keywords and mod._color_cache.current_lang == language then
 		return mod._color_cache.keywords
 	end
-	
+
 	local file_name
 	if language == "en" then
 		file_name = "Enhanced_descriptions/Colors_Keywords_Numbers/COLORS_KWords"
@@ -383,7 +422,7 @@ function mod.load_colors_keywords(language)
 
 		mod:info("// 📑 Loaded colors for language: %s", language)
 	else
-		mod:warning("{#color(255, 35, 5)}{#reset()} Failed to load colors for language: %s, file: %s, error: %s", 
+		mod:warning("{#color(255, 35, 5)}{#reset()} Failed to load colors for language: %s, file: %s, error: %s",
 					language, file_name, tostring(err))
 
 		if language ~= "en" then
@@ -415,34 +454,33 @@ end
 
 function mod.get_current_language_colors()
 	-- Если уже есть кэшированный язык и он не изменился
-	if mod._color_cache.numbers and mod._color_cache.keywords and 
+	if mod._color_cache.numbers and mod._color_cache.keywords and
 	   mod._language_cache.current_lang and mod._language_cache.forced_lang then
 		local current_override = mod:get("language_override")
 		if current_override == mod._language_cache.forced_lang then
 			return {mod._color_cache.numbers, mod._color_cache.keywords, mod._language_cache.current_lang}
 		end
 	end
-	
+
 	local current_lang = "en"
 	local language_override = mod:get("language_override")
-	
+
 	-- Определяем язык
 	if language_override and language_override ~= "auto" then
-		-- Принудительный язык из настроек
 		current_lang = language_override
 		mod._language_cache.forced_lang = language_override
 	else
-		-- Автоматически определяем язык игры
 		if Managers and Managers.localization then
 			current_lang = Managers.localization._language or "en"
 		end
 		mod._language_cache.forced_lang = "auto"
 	end
-	
+
 	-- Проверяем поддержку языка
 	local is_supported = false
-	for _, lang in ipairs(mod.SUPPORTED_LANGUAGES) do
-		if lang == current_lang then
+	local supported = mod.SUPPORTED_LANGUAGES
+	for i = 1, #supported do
+		if supported[i] == current_lang then
 			is_supported = true
 			break
 		end
@@ -450,13 +488,12 @@ function mod.get_current_language_colors()
 
 	if not is_supported then
 		local supported_names = {}
-		for _, lang in ipairs(mod.SUPPORTED_LANGUAGES) do
-			table.insert(supported_names, get_language_name(lang))
+		for i = 1, #supported do
+			supported_names[#supported_names + 1] = get_language_name(supported[i])
 		end
 		local supported_list = table.concat(supported_names, ", ")
-		
 		local current_lang_name = get_language_name(current_lang)
-		
+
 		mod:warning(
 [[Sorry!
 {#color(255, 35, 5)} Localization for '%s' is not available!{#reset()}
@@ -494,29 +531,42 @@ function mod.clear_color_cache()
 	mod:info("Color cache cleared")
 end
 
+-- ============================================================================
+-- Localization hooks
+-- ============================================================================
+
+-- Хук 1: локальные фиксы для FIXES[loc_key] (точечные правки контекста).
+-- Ранний выход, если нет ни контекста, ни зарегистрированных фиксов —
+-- этот путь исполняется на КАЖДУЮ локализацию в UI, экономия аллокаций важна.
 mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)
-	local result = func(self, loc_key, no_cache, context)
+	if not context then
+		return func(self, loc_key, no_cache, context)
+	end
 
-	if context and FIXES[loc_key] then
-		local modified_context = table.shallow_copy(context)
-		local modified = false
+	local fixes = FIXES[loc_key]
+	if not fixes then
+		return func(self, loc_key, no_cache, context)
+	end
 
-		for field, fix_func in pairs(FIXES[loc_key]) do
-			if modified_context[field] then
-				modified_context[field] = fix_func(modified_context[field])
-				modified = true
-			end
-		end
+	local modified_context = table.shallow_copy(context)
+	local modified = false
 
-		if modified then
-			result = func(self, loc_key, no_cache, modified_context)
+	for field, fix_func in pairs(fixes) do
+		if modified_context[field] then
+			modified_context[field] = fix_func(modified_context[field])
+			modified = true
 		end
 	end
 
-	return result
+	if modified then
+		return func(self, loc_key, no_cache, modified_context)
+	end
+	return func(self, loc_key, no_cache, context)
 end)
 
--- LOCALIZATION SYSTEM
+-- ============================================================================
+-- Localization system
+-- ============================================================================
 local LocalizationManager = require("scripts/managers/localization/localization_manager")
 local registered_fixes = {}
 
@@ -526,7 +576,7 @@ local function safe_load_localization_file(file_path, setting_name)
 	end
 
 	local file_templates = mod:io_dofile(file_path)
-	
+
 	if file_templates then
 		mod:info("Loaded localization file: %s", file_path)
 		return file_templates
@@ -542,12 +592,13 @@ end
 
 local function load_all_templates()
 	local templates = {}
+	local count = 0
 
 	for file_name, setting_name in pairs(LOCALIZATION_FILES) do
 		local file_templates = load_localization_file(file_name, setting_name)
 		if file_templates and #file_templates > 0 then
-			for _, template in ipairs(file_templates) do
-				templates[#templates + 1] = template
+			for i = 1, #file_templates do
+				templates[#templates + 1] = file_templates[i]
 			end
 		end
 	end
@@ -561,24 +612,22 @@ local function should_load_template(template, current_lang)
 	-- Если выбран конкретный язык, игнорируем другие
 	if language_override and language_override ~= "auto" then
 		if template.locales then
-			for _, locale in ipairs(template.locales) do
-				if locale == language_override then
+			for i = 1, #template.locales do
+				if template.locales[i] == language_override then
 					return true
 				end
 			end
 			return false
 		end
-		-- Если шаблон без указания языков, загружаем для любого принудительного языка
 		return true
 	end
 
-	-- Автоматический режим
 	if not template.locales then
 		return true
 	end
 
-	for _, locale in ipairs(template.locales) do
-		if locale == current_lang then
+	for i = 1, #template.locales do
+		if template.locales[i] == current_lang then
 			return true
 		end
 	end
@@ -589,12 +638,15 @@ end
 local function register_template_fixes(templates, current_lang)
 	table.clear(registered_fixes)
 
-	for _, template in ipairs(templates) do
+	for i = 1, #templates do
+		local template = templates[i]
 		if should_load_template(template, current_lang) and template.loc_keys and template.handle_func then
-			for _, loc_key in ipairs(template.loc_keys) do
+			for j = 1, #template.loc_keys do
+				local loc_key = template.loc_keys[j]
 				if loc_key then
 					registered_fixes[loc_key] = registered_fixes[loc_key] or {}
-					registered_fixes[loc_key][#registered_fixes[loc_key] + 1] = template.handle_func
+					local list = registered_fixes[loc_key]
+					list[#list + 1] = template.handle_func
 				end
 			end
 		end
@@ -648,71 +700,76 @@ local function setup_window_offsets()
 	end)
 end
 
+-- Хук 2: применяем зарегистрированные фиксы к сырой строке локализации.
+-- Также избегаем аллокации `{}` — используем shared EMPTY_CONTEXT.
 mod:hook(LocalizationManager, "_process_string", function(func, self, key, raw_str, context)
 	local fixes = registered_fixes[key]
-
 	if not fixes then
-		return func(self, key, raw_str, context or {})
+		return func(self, key, raw_str, context or EMPTY_CONTEXT)
 	end
 
+	context = context or EMPTY_CONTEXT
 	local modified_str = raw_str
+	local language = Managers.localization._language
+
 	for i = 1, #fixes do
-		local result = fixes[i](Managers.localization._language, modified_str, context or {})
+		local result = fixes[i](language, modified_str, context)
 		if type(result) == "string" then
 			modified_str = result
 		end
 	end
 
-	return func(self, key, modified_str, context or {})
+	return func(self, key, modified_str, context)
 end)
 
 function mod.on_all_mods_loaded()
-	-- Очищаем старые настройки перед загрузкой всего остального
 	cleanup_old_settings()
+	migrate_legacy_colors()
 
 	setup_button_offsets()
 	setup_window_offsets()
 	mod.reload_templates()
 
--- Применяем сохранённый пресет цветов при загрузке
-local preset = mod:get("color_preset")
-if preset and preset ~= "default" then
-	if mod.apply_color_preset then
-		mod:info("Applying saved color preset: " .. preset)
-		mod.apply_color_preset(preset)
-	else
-		mod:warning("apply_color_preset not available")
+	-- Применяем сохранённый пресет цветов при загрузке
+	local preset = mod:get("color_preset")
+	if preset and preset ~= "default" then
+		if mod.apply_color_preset then
+			mod:info("Applying saved color preset: " .. preset)
+			mod.apply_color_preset(preset)
+		else
+			mod:warning("apply_color_preset not available")
+		end
 	end
-end
 
 	-- Экспортируем переменные для Debug модуля
 	mod.registered_fixes = registered_fixes
 	mod.FIXES = FIXES
 	mod.LOCALIZATION_FILES = LOCALIZATION_FILES
 
-	-- Пробуем загрузить debug модуль (опционально)
-	local debug_success, debug_result = pcall(function()
-		return mod:io_dofile("Enhanced_descriptions/Main_Modules/Debug")
-	end)
-
-	if debug_success and debug_result then
-		mod:info("Debug module loaded")
-	else
-		-- Не показываем warning, если файла нет
-		mod:info("Debug module not loaded (optional)")
+	-- Debug модуль — только если включена соответствующая настройка
+	if mod:get("enable_debug_mode") then
+		local debug_success, debug_result = pcall(function()
+			return mod:io_dofile("Enhanced_descriptions/Main_Modules/Debug")
+		end)
+		if debug_success and debug_result then
+			mod:info("Debug module loaded")
+		else
+			mod:info("Debug module not loaded (optional)")
+		end
 	end
 end
 
 function mod.on_enabled()
-	-- Также очищаем при включении мода
 	cleanup_old_settings()
-	-- Применяем сохранённый пресет при включении
+	migrate_legacy_colors()
+
 	local preset = mod:get("color_preset")
 	if preset and preset ~= "default" then
 		if mod.apply_color_preset then
 			mod.apply_color_preset(preset)
 		end
 	end
+
 	mod.reload_templates()
 	mod:info("Enhanced Descriptions enabled")
 end
@@ -723,6 +780,19 @@ function mod.on_disabled()
 	mod:info("Enhanced Descriptions disabled")
 end
 
+-- Вызывается DMF при сбросе настроек мода из options view (кнопка "Reset").
+-- Сбрасываем кэши, чтобы UI перестроился с новыми значениями по умолчанию.
+function mod.on_settings_reset()
+	mod._color_cache.numbers = nil
+	mod._color_cache.keywords = nil
+	mod._color_cache.current_lang = nil
+	mod._language_cache.current_lang = nil
+	mod._language_cache.forced_lang = nil
+	mod.clear_utils_cache()
+	mod.reload_templates()
+	mod:info("Settings reset — caches cleared and templates reloaded")
+end
+
 local function on_setting_changed(setting_id)
 	if mod._applying_preset then
 		return
@@ -730,16 +800,15 @@ local function on_setting_changed(setting_id)
 
 	mod:debug("Setting changed: " .. setting_id)
 
-	if string.find(setting_id, "_text_colour") then
+	if string.find(setting_id, "_text_colour", 1, true) then
 		mod.clear_color_cache()
 		mod.reload_templates()
 		mod:debug("Colors updated")
-	elseif string.find(setting_id, "enable_") or setting_id == "language_override" then
+	elseif string.find(setting_id, "enable_", 1, true) == 1 or setting_id == "language_override" then
 		mod.clear_color_cache()
 		mod.reload_templates()
 		mod:debug("Language and modules reloaded")
 	elseif setting_id == "color_preset" then
-		-- Применяем пресет
 		local preset = mod:get(setting_id)
 		mod:info("Applying color_preset from on_setting_changed: " .. tostring(preset))
 		if mod.apply_color_preset then

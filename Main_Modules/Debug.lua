@@ -228,5 +228,6 @@ mod:command("ed_reset", "Quick reset (clear cache + reload)", function()
 	end
 end)
 
+
 -- Initialization - Инициализация
 mod:info("Enhanced Descriptions debug commands loaded")
